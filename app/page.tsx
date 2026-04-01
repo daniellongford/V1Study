@@ -15,13 +15,13 @@ export default function Home() {
         </div>
       </nav>
       <section style={{padding:'6rem 2rem',textAlign:'center',background:'linear-gradient(180deg,#eff6ff 0%,#ffffff 100%)'}}>
-        <p style={{fontSize:'13px',letterSpacing:'0.2em',color:'#2563eb',marginBottom:'1rem',fontWeight:'600'}}>AUSTRALIA\'S PILOT EXAM PREP PLATFORM</p>
+        <p style={{fontSize:'13px',letterSpacing:'0.2em',color:'#2563eb',marginBottom:'1rem',fontWeight:'600'}}>AUSTRALIA&apos;S PILOT EXAM PREP PLATFORM</p>
         <h1 style={{fontSize:'56px',fontWeight:'800',color:'#0a1628',marginBottom:'1rem',lineHeight:1.1}}>
           Your Journey to the<br/>
           <span style={{color:'#2563eb'}}>Flight Deck</span> Starts Here
         </h1>
         <p style={{fontSize:'18px',color:'#64748b',maxWidth:'600px',margin:'0 auto 2rem',lineHeight:1.7}}>
-          Australia's most advanced CPL, ATPL, PPL and IREX exam preparation platform. AI-powered questions with real CASA references. Unlimited practice.
+          Australia&apos;s most advanced CPL, ATPL, PPL and IREX exam preparation platform. AI-powered questions with real CASA references. Unlimited practice.
         </p>
         <div style={{display:'flex',gap:'1rem',justifyContent:'center',marginBottom:'1rem'}}>
           <a href="/signup" style={{background:'#2563eb',color:'white',borderRadius:'8px',padding:'14px 32px',fontSize:'16px',fontWeight:'600',textDecoration:'none',display:'inline-block'}}>Start Free Trial →</a>
@@ -91,4 +91,4 @@ export default function Home() {
 
 **Commit message:**
 ```
-Fix all homepage links
+Fix all links
