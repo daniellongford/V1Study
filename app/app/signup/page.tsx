@@ -67,8 +67,3 @@ export default function SignUp() {
     </main>
   )
 }
-```
-
-**Commit message:**
-```
-Add signup page
