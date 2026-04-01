@@ -13,17 +13,3 @@
     "react-dom": "^18"
   }
 }
-```
-
----
-
-**Important — make sure:**
-- No extra text above or below the code
-- Starts with **{** and ends with **}**
-- No comments or extra characters anywhere
-
----
-
-**Commit message:**
-```
-Fix package.json
