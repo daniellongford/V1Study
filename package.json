@@ -17,22 +17,13 @@
 
 ---
 
-**Commit message:**
-```
-Add package.json
-```
-
-Click **"Commit changes"**
+**Important — make sure:**
+- No extra text above or below the code
+- Starts with **{** and ends with **}**
+- No comments or extra characters anywhere
 
 ---
 
-**Then we need one more file:**
-
-Go to:
+**Commit message:**
 ```
-github.com/daniellongford/V1Study/new/main
-```
-
-Name it:
-```
-next.config.js
+Fix package.json
