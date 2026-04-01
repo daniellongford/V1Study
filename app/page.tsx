@@ -1,18 +1,7 @@
 export default function Home() {
   return (
-    <main style={{
-      minHeight: '100vh',
-      background: '#ffffff',
-      fontFamily: 'system-ui, sans-serif',
-    }}>
-      <nav style={{
-        padding: '1rem 2rem',
-        borderBottom: '1px solid #e2e8f0',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        background: '#ffffff',
-      }}>
+    <main style={{minHeight:'100vh',background:'#ffffff',fontFamily:'system-ui,sans-serif'}}>
+      <nav style={{padding:'1rem 2rem',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',justifyContent:'space-between',background:'#ffffff'}}>
         <div>
           <span style={{fontSize:'24px',fontWeight:'800',color:'#2563eb'}}>V1</span>
           <span style={{fontSize:'24px',fontWeight:'800',color:'#0a1628'}}> Study</span>
@@ -21,47 +10,28 @@ export default function Home() {
         <div style={{display:'flex',gap:'2rem',alignItems:'center'}}>
           <a href="#features" style={{color:'#64748b',textDecoration:'none'}}>Features</a>
           <a href="#pricing" style={{color:'#64748b',textDecoration:'none'}}>Pricing</a>
-          <a href="#login" style={{color:'#64748b',textDecoration:'none'}}>Login</a>
-          <button style={{background:'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'8px 20px',cursor:'pointer',fontWeight:'600'}}>
-            Start Free Trial
-          </button>
+          <a href="/login" style={{color:'#64748b',textDecoration:'none'}}>Login</a>
+          <a href="/signup" style={{background:'#2563eb',color:'white',borderRadius:'8px',padding:'8px 20px',textDecoration:'none',fontWeight:'600',fontSize:'14px'}}>Start Free Trial</a>
         </div>
       </nav>
-      <section style={{
-        padding: '6rem 2rem',
-        textAlign: 'center',
-        background: 'linear-gradient(180deg, #eff6ff 0%, #ffffff 100%)',
-      }}>
-        <p style={{fontSize:'13px',letterSpacing:'0.2em',color:'#2563eb',marginBottom:'1rem',fontWeight:'600'}}>
-          AUSTRALIA'S PILOT EXAM PREP PLATFORM
-        </p>
+      <section style={{padding:'6rem 2rem',textAlign:'center',background:'linear-gradient(180deg,#eff6ff 0%,#ffffff 100%)'}}>
+        <p style={{fontSize:'13px',letterSpacing:'0.2em',color:'#2563eb',marginBottom:'1rem',fontWeight:'600'}}>AUSTRALIA\'S PILOT EXAM PREP PLATFORM</p>
         <h1 style={{fontSize:'56px',fontWeight:'800',color:'#0a1628',marginBottom:'1rem',lineHeight:1.1}}>
           Your Journey to the<br/>
           <span style={{color:'#2563eb'}}>Flight Deck</span> Starts Here
         </h1>
         <p style={{fontSize:'18px',color:'#64748b',maxWidth:'600px',margin:'0 auto 2rem',lineHeight:1.7}}>
-          Australia's most advanced CPL, ATPL, PPL and IREX exam preparation platform. 
-          AI-powered questions with real CASA references. Unlimited practice.
+          Australia's most advanced CPL, ATPL, PPL and IREX exam preparation platform. AI-powered questions with real CASA references. Unlimited practice.
         </p>
         <div style={{display:'flex',gap:'1rem',justifyContent:'center',marginBottom:'1rem'}}>
-          <button style={{background:'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'14px 32px',fontSize:'16px',fontWeight:'600',cursor:'pointer'}}>
-            Start Free Trial →
-          </button>
-          <button style={{background:'transparent',color:'#0a1628',border:'2px solid #e2e8f0',borderRadius:'8px',padding:'14px 32px',fontSize:'16px',fontWeight:'600',cursor:'pointer'}}>
-            See Pricing
-          </button>
+          <a href="/signup" style={{background:'#2563eb',color:'white',borderRadius:'8px',padding:'14px 32px',fontSize:'16px',fontWeight:'600',textDecoration:'none',display:'inline-block'}}>Start Free Trial →</a>
+          <a href="#pricing" style={{background:'transparent',color:'#0a1628',border:'2px solid #e2e8f0',borderRadius:'8px',padding:'14px 32px',fontSize:'16px',fontWeight:'600',textDecoration:'none',display:'inline-block'}}>See Pricing</a>
         </div>
-        <p style={{fontSize:'13px',color:'#94a3b8'}}>
-          7 day free trial · No credit card required · Cancel anytime
-        </p>
+        <p style={{fontSize:'13px',color:'#94a3b8'}}>7 day free trial · No credit card required · Cancel anytime</p>
       </section>
       <section id="features" style={{padding:'4rem 2rem',maxWidth:'1000px',margin:'0 auto'}}>
-        <h2 style={{textAlign:'center',fontSize:'36px',fontWeight:'700',color:'#0a1628',marginBottom:'0.5rem'}}>
-          Every Australian Pilot Exam Covered
-        </h2>
-        <p style={{textAlign:'center',color:'#64748b',marginBottom:'3rem',fontSize:'16px'}}>
-          From your first PPL theory to your ATPL — we have every exam covered
-        </p>
+        <h2 style={{textAlign:'center',fontSize:'36px',fontWeight:'700',color:'#0a1628',marginBottom:'0.5rem'}}>Every Australian Pilot Exam Covered</h2>
+        <p style={{textAlign:'center',color:'#64748b',marginBottom:'3rem',fontSize:'16px'}}>From your first PPL theory to your ATPL — we have every exam covered</p>
         <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'1.5rem'}}>
           {[
             {title:'PPL',full:'Private Pilot Licence',exams:'1 combined exam',color:'#10b981',desc:'Perfect for student pilots taking their first theory exam'},
@@ -82,12 +52,8 @@ export default function Home() {
       </section>
       <section id="pricing" style={{padding:'4rem 2rem',background:'#f8fafc'}}>
         <div style={{maxWidth:'900px',margin:'0 auto'}}>
-          <h2 style={{textAlign:'center',fontSize:'36px',fontWeight:'700',color:'#0a1628',marginBottom:'0.5rem'}}>
-            Simple Pricing
-          </h2>
-          <p style={{textAlign:'center',color:'#64748b',marginBottom:'3rem'}}>
-            Start free. Upgrade when you are ready.
-          </p>
+          <h2 style={{textAlign:'center',fontSize:'36px',fontWeight:'700',color:'#0a1628',marginBottom:'0.5rem'}}>Simple Pricing</h2>
+          <p style={{textAlign:'center',color:'#64748b',marginBottom:'3rem'}}>Start free. Upgrade when you are ready.</p>
           <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'1rem'}}>
             {[
               {plan:'Free Trial',price:'$0',period:'7 days',features:['All subjects','10 questions per subject','Basic progress tracking'],color:'#64748b',btn:'Start Free'},
@@ -101,12 +67,10 @@ export default function Home() {
                   <div style={{fontSize:'14px',fontWeight:'700',color:item.color,marginBottom:'4px'}}>{item.plan}</div>
                   <div style={{fontSize:'32px',fontWeight:'800',color:'#0a1628'}}>{item.price}</div>
                   <div style={{fontSize:'12px',color:'#94a3b8',marginBottom:'1rem'}}>{item.period}</div>
-                  {item.features.map(function(f){
-                    return <div key={f} style={{fontSize:'13px',color:'#475569',marginBottom:'6px'}}>✓ {f}</div>
-                  })}
-                  <button style={{width:'100%',marginTop:'1rem',background:item.popular?'#2563eb':'transparent',color:item.popular?'white':item.color,border:`2px solid ${item.color}`,borderRadius:'8px',padding:'10px',fontWeight:'600',cursor:'pointer'}}>
+                  {item.features.map(function(f){return <div key={f} style={{fontSize:'13px',color:'#475569',marginBottom:'6px'}}>✓ {f}</div>})}
+                  <a href="/signup" style={{display:'block',width:'100%',marginTop:'1rem',background:item.popular?'#2563eb':'transparent',color:item.popular?'white':item.color,border:`2px solid ${item.color}`,borderRadius:'8px',padding:'10px',fontWeight:'600',cursor:'pointer',textDecoration:'none',textAlign:'center',boxSizing:'border-box'}}>
                     {item.btn}
-                  </button>
+                  </a>
                 </div>
               )
             })}
@@ -123,3 +87,8 @@ export default function Home() {
     </main>
   )
 }
+```
+
+**Commit message:**
+```
+Fix all homepage links
