@@ -117,8 +117,3 @@ export default function Login() {
     </main>
   )
 }
-```
-
-**Commit message:**
-```
-Add login page
