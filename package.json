@@ -1,0 +1,38 @@
+{
+  "name": "v1study",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.0.0",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}
+```
+
+---
+
+**Commit message:**
+```
+Add package.json
+```
+
+Click **"Commit changes"**
+
+---
+
+**Then we need one more file:**
+
+Go to:
+```
+github.com/daniellongford/V1Study/new/main
+```
+
+Name it:
+```
+next.config.js
