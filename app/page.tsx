@@ -87,8 +87,3 @@ export default function Home() {
     </main>
   )
 }
-```
-
-**Commit message:**
-```
-Fix all links
