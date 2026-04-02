@@ -1,6 +1,5 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { supabase } from '../../../lib/supabase'
 
 const freeQuestions: Record<string, any[]> = {
   'Human Factors': [
@@ -16,16 +15,16 @@ const freeQuestions: Record<string, any[]> = {
     { question: 'What does IMSAFE stand for in pre-flight self-assessment?', options: ['A. Instruments, Maps, Safety gear, Airworthiness, Fuel, Emergency procedures', 'B. Illness, Medication, Stress, Alcohol, Fatigue, Emotion', 'C. Inspection, Maintenance, Servicing, Avionics, Fuel, Equipment', 'D. Icing, Metars, SIGMETs, Airspace, Fuel, Emergency alternates'], correct: 1, explanation: 'IMSAFE: Illness, Medication, Stress, Alcohol, Fatigue, Emotion. A personal minimums checklist used before every flight.', reference: 'CASA Human Factors Study Guide' },
   ],
   'Aerodynamics': [
-    { question: 'What is the angle of attack?', options: ['A. The angle between the aircraft and the horizon', 'B. The angle between the chord line of an aerofoil and the relative airflow', 'C. The pitch angle of the aircraft nose', 'D. The angle between the wing and the fuselage'], correct: 1, explanation: 'The angle of attack (AoA) is the angle between the chord line of the aerofoil and the relative airflow. It is the primary determinant of lift generation.', reference: 'CASA Aerodynamics Study Guide' },
+    { question: 'What is the angle of attack?', options: ['A. The angle between the aircraft and the horizon', 'B. The angle between the chord line of an aerofoil and the relative airflow', 'C. The pitch angle of the aircraft nose', 'D. The angle between the wing and the fuselage'], correct: 1, explanation: 'The angle of attack is the angle between the chord line of the aerofoil and the relative airflow. It is the primary determinant of lift generation.', reference: 'CASA Aerodynamics Study Guide' },
     { question: 'What happens when an aircraft exceeds the critical angle of attack?', options: ['A. The aircraft accelerates rapidly', 'B. A stall occurs as airflow separates from the upper wing surface', 'C. The aircraft enters a spiral dive', 'D. Engine power increases automatically'], correct: 1, explanation: 'When the critical angle of attack is exceeded, airflow separates from the upper wing surface, causing a sudden loss of lift known as a stall.', reference: 'CASA Aerodynamics Study Guide' },
     { question: 'What is induced drag?', options: ['A. Drag caused by the airframe structure', 'B. Drag created as a byproduct of lift generation', 'C. Drag caused by engine exhaust', 'D. Drag from extended landing gear'], correct: 1, explanation: 'Induced drag is created as a byproduct of lift generation. It is caused by the vortices that form at the wingtips due to pressure differences between upper and lower wing surfaces.', reference: 'CASA Aerodynamics Study Guide' },
     { question: 'What is the effect of increasing airspeed on induced drag?', options: ['A. Induced drag increases with airspeed', 'B. Induced drag decreases with increasing airspeed', 'C. Induced drag remains constant regardless of airspeed', 'D. Induced drag doubles with every 10 knot increase'], correct: 1, explanation: 'Induced drag decreases as airspeed increases because at higher speeds less angle of attack is required to generate the same lift, resulting in smaller wingtip vortices.', reference: 'CASA Aerodynamics Study Guide' },
-    { question: 'What is parasite drag?', options: ['A. Drag caused by lift generation', 'B. All drag not associated with lift production, including form drag, skin friction, and interference drag', 'C. Drag caused by propeller rotation', 'D. Drag from fuel weight'], correct: 1, explanation: 'Parasite drag encompasses all drag not associated with lift production. It includes form drag, skin friction drag, and interference drag, and increases with the square of airspeed.', reference: 'CASA Aerodynamics Study Guide' },
-    { question: 'What is the best glide speed?', options: ['A. The speed that gives maximum range with power off', 'B. The speed at which the aircraft descends most steeply', 'C. The minimum speed before stall', 'D. The speed that gives maximum endurance'], correct: 0, explanation: 'Best glide speed (Vbg) gives the maximum lift-to-drag ratio and therefore the greatest glide range with power off. It is used in engine failure situations to reach a landing area.', reference: 'Aircraft Flight Manual / CASA Aerodynamics Study Guide' },
-    { question: 'What causes a Dutch roll?', options: ['A. Excessive rudder input at low speed', 'B. A coupled oscillation in roll and yaw common in swept wing aircraft with high dihedral effect', 'C. Aileron flutter at high speed', 'D. Propeller torque effect'], correct: 1, explanation: 'Dutch roll is a coupled oscillation in roll and yaw that occurs in aircraft with high dihedral effect and low directional stability. It is common in swept wing aircraft.', reference: 'CASA Aerodynamics Study Guide' },
-    { question: 'What is Vno?', options: ['A. Never exceed speed', 'B. Maximum structural cruising speed - must not be exceeded except in smooth air', 'C. Best rate of climb speed', 'D. Minimum control speed'], correct: 1, explanation: 'Vno is the maximum structural cruising speed (top of the green arc). The aircraft must not be flown above this speed except in smooth air and with caution.', reference: 'Aircraft Flight Manual / CASA Aerodynamics Study Guide' },
+    { question: 'What is parasite drag?', options: ['A. Drag caused by lift generation', 'B. All drag not associated with lift production including form drag, skin friction, and interference drag', 'C. Drag caused by propeller rotation', 'D. Drag from fuel weight'], correct: 1, explanation: 'Parasite drag encompasses all drag not associated with lift production. It includes form drag, skin friction drag, and interference drag, and increases with the square of airspeed.', reference: 'CASA Aerodynamics Study Guide' },
+    { question: 'What is the best glide speed?', options: ['A. The speed that gives maximum range with power off', 'B. The speed at which the aircraft descends most steeply', 'C. The minimum speed before stall', 'D. The speed that gives maximum endurance'], correct: 0, explanation: 'Best glide speed gives the maximum lift-to-drag ratio and therefore the greatest glide range with power off. It is used in engine failure situations to reach a landing area.', reference: 'Aircraft Flight Manual / CASA Aerodynamics Study Guide' },
+    { question: 'What is Vno?', options: ['A. Never exceed speed', 'B. Maximum structural cruising speed, must not be exceeded except in smooth air', 'C. Best rate of climb speed', 'D. Minimum control speed'], correct: 1, explanation: 'Vno is the maximum structural cruising speed (top of the green arc). The aircraft must not be flown above this speed except in smooth air and with caution.', reference: 'Aircraft Flight Manual / CASA Aerodynamics Study Guide' },
     { question: 'What is the purpose of winglets?', options: ['A. To increase the weight of the aircraft for stability', 'B. To reduce induced drag by limiting wingtip vortex formation', 'C. To increase parasite drag for approach', 'D. To improve roll rate at low speeds'], correct: 1, explanation: 'Winglets reduce induced drag by limiting the formation of wingtip vortices, effectively increasing the aspect ratio of the wing without increasing the wingspan.', reference: 'CASA Aerodynamics Study Guide' },
     { question: 'What is the load factor in a 60 degree banked level turn?', options: ['A. 1.0 G', 'B. 1.41 G', 'C. 2.0 G', 'D. 2.5 G'], correct: 2, explanation: 'In a 60 degree banked level turn the load factor is 2.0 G. Load factor = 1/cos(bank angle). Cos 60 = 0.5, therefore load factor = 1/0.5 = 2.0 G.', reference: 'CASA Aerodynamics Study Guide' },
+    { question: 'What causes a Dutch roll?', options: ['A. Excessive rudder input at low speed', 'B. A coupled oscillation in roll and yaw common in swept wing aircraft with high dihedral effect', 'C. Aileron flutter at high speed', 'D. Propeller torque effect'], correct: 1, explanation: 'Dutch roll is a coupled oscillation in roll and yaw that occurs in aircraft with high dihedral effect and low directional stability. It is common in swept wing aircraft.', reference: 'CASA Aerodynamics Study Guide' },
   ],
   'Meteorology': [
     { question: 'What cloud type is associated with severe turbulence, icing, and heavy precipitation?', options: ['A. Altostratus', 'B. Nimbostratus', 'C. Cumulonimbus', 'D. Altocumulus castellanus'], correct: 2, explanation: 'Cumulonimbus clouds are associated with extreme turbulence, severe icing, lightning, heavy rain, and hail. They must be avoided by a significant margin.', reference: 'AIP MET 1.1 / CASA Meteorology Study Guide' },
@@ -95,9 +94,9 @@ const freeQuestions: Record<string, any[]> = {
     { question: 'What is the WAT limit?', options: ['A. Weight, Altitude, Temperature, determines maximum permissible takeoff weight to meet climb performance requirements', 'B. Wind, Altitude, Temperature affecting cruise performance', 'C. Weight, Attitude, Trim used for CG calculations', 'D. Weight at Threshold, maximum landing weight'], correct: 0, explanation: 'The WAT limit defines the maximum takeoff weight that allows the aircraft to meet minimum required climb gradients with one engine inoperative given the current pressure altitude and OAT.', reference: 'CASR Part 121 / CASA Performance Study Guide' },
     { question: 'What is MTOW?', options: ['A. Maximum Total Operating Weight including fuel at any point', 'B. Maximum Takeoff Weight, maximum certified weight at which the aircraft may begin the takeoff roll', 'C. Maximum Thrust Output Weight', 'D. Maximum Traffic Operating Weight'], correct: 1, explanation: 'MTOW is the maximum weight at which the aircraft is certified to begin the takeoff roll as specified in the AFM. It must not be exceeded for any takeoff.', reference: 'CASR / AFM / CASA Performance Study Guide' },
     { question: 'What is the standard contingency fuel for an IFR flight?', options: ['A. 5% of trip fuel or 5 minutes at cruise, whichever is greater', 'B. 10% of trip fuel', 'C. A fixed 30 minutes at holding speed', 'D. 2% of trip fuel per hour of flight'], correct: 0, explanation: 'Under CAO 20.9, contingency fuel for IFR operations is the greater of 5% of trip fuel or 5 minutes of flight at cruise consumption.', reference: 'CAO 20.9 / CASR Part 91' },
-    { question: 'What is the effect of a forward centre of gravity on performance?', options: ['A. Increased stability but reduced control authority and increased trim drag', 'B. Decreased stability and lighter control forces', 'C. Improved fuel efficiency', 'D. No effect on handling'], correct: 0, explanation: 'A forward CG increases longitudinal stability but requires more up-elevator trim, increasing trim drag and reducing maximum cruise speed.', reference: 'CASA Performance and Mass and Balance Study Guide' },
     { question: 'What is en-route alternate fuel?', options: ['A. Reserve fuel for unexpected ATC routing', 'B. Fuel to divert to a pre-selected en-route alternate at the most critical point in event of emergency', 'C. Extra contingency fuel above the minimum required', 'D. Fuel for an alternate selected only if destination goes below minima'], correct: 1, explanation: 'ERA fuel provides fuel to divert from the critical point to a pre-selected en-route alternate in the event of an emergency such as engine failure or depressurisation.', reference: 'CASR Part 121 / CASR ETOPS requirements' },
     { question: 'What is the net takeoff flight path?', options: ['A. Actual flight path with all engines operating', 'B. Gross flight path reduced by a safety margin used for obstacle clearance planning', 'C. Flight path assuming immediate engine failure at liftoff', 'D. Minimum climb gradient to clear obstacles within 5 nm'], correct: 1, explanation: 'The net takeoff flight path is the gross path degraded by a performance margin accounting for engine variability and pilot technique, used for obstacle clearance after OEI takeoff.', reference: 'CASR Part 121 / CASA Performance Study Guide' },
+    { question: 'What is the effect of a forward centre of gravity on performance?', options: ['A. Increased stability but reduced control authority and increased trim drag', 'B. Decreased stability and lighter control forces', 'C. Improved fuel efficiency', 'D. No effect on handling'], correct: 0, explanation: 'A forward CG increases longitudinal stability but requires more up-elevator trim, increasing trim drag and reducing maximum cruise speed.', reference: 'CASA Performance and Mass and Balance Study Guide' },
   ],
   'PPL Theory': [
     { question: 'What is the minimum weather for VFR flight by day?', options: ['A. 1500 m visibility and clear of cloud', 'B. 5000 m visibility and 1000 ft ceiling', 'C. 3000 m visibility and 500 ft ceiling', 'D. 8 km visibility'], correct: 0, explanation: 'For VFR flight outside controlled airspace below 3000 ft AMSL or 1000 ft AGL, the minimum is 1500 m flight visibility and clear of cloud.', reference: 'AIP ENR 1.2' },
@@ -113,16 +112,28 @@ const freeQuestions: Record<string, any[]> = {
   ],
   'Instrument Rating': [
     { question: 'What is Decision Altitude on a precision approach?', options: ['A. Altitude at which the crew must decide to divert to alternate', 'B. Altitude at which the approach must be abandoned if visual reference is not established', 'C. Lowest altitude on a non-precision approach', 'D. Altitude at which autopilot must be disconnected'], correct: 1, explanation: 'DA is the altitude on a precision approach at which the crew must decide whether to continue based on visual reference with the runway environment or execute a missed approach.', reference: 'ICAO Doc 8168 / AIP ENR 1.5' },
-    { question: 'What is Minimum Descent Altitude on a non-precision approach?', options: ['A. The lowest altitude to which an aircraft may descend before establishing visual contact', 'B. The altitude at which the missed approach must be initiated', 'C. The altitude at which the approach lights become visible', 'D. The minimum safe altitude for the approach segment'], correct: 0, explanation: 'MDA is the lowest altitude to which an aircraft may descend on a non-precision approach without the required visual reference. The aircraft must not descend below MDA until visual contact is established.', reference: 'ICAO Doc 8168 / AIP ENR 1.5' },
+    { question: 'What is Minimum Descent Altitude on a non-precision approach?', options: ['A. The lowest altitude to which an aircraft may descend before establishing visual contact', 'B. The altitude at which the missed approach must be initiated', 'C. The altitude at which the approach lights become visible', 'D. The minimum safe altitude for the approach segment'], correct: 0, explanation: 'MDA is the lowest altitude to which an aircraft may descend on a non-precision approach without the required visual reference.', reference: 'ICAO Doc 8168 / AIP ENR 1.5' },
     { question: 'What does ILS stand for?', options: ['A. Instrument Landing Sequence', 'B. Instrument Landing System', 'C. Instrument Localiser System', 'D. Integrated Landing Standard'], correct: 1, explanation: 'ILS stands for Instrument Landing System. It provides lateral guidance via the localiser and vertical guidance via the glideslope to allow precision approaches in low visibility.', reference: 'AIP ENR 1.5 / ICAO Annex 10' },
     { question: 'What is the purpose of an alternate aerodrome on an IFR flight plan?', options: ['A. A diversion aerodrome if the destination becomes unavailable', 'B. A training aerodrome for practice approaches', 'C. A fuel stop en route', 'D. A departure alternate only'], correct: 0, explanation: 'An alternate aerodrome is nominated on an IFR flight plan as a diversion option if the destination aerodrome becomes unavailable due to weather or other factors.', reference: 'CASR Part 91 / CAO 20.9' },
-    { question: 'What weather minimum is typically required to nominate an alternate aerodrome?', options: ['A. Destination forecast below 1500 ft ceiling and 8 km visibility', 'B. Destination forecast below circling minima or below precision approach minima', 'C. Any IMC conditions at destination', 'D. Destination forecast below 3000 ft and 10 km'], correct: 1, explanation: 'An alternate is generally required when the destination weather is forecast to be below the applicable approach minima during the planned arrival period.', reference: 'CASR Part 91 / CAO 20.9 / AIP ENR 1.1' },
     { question: 'What is a holding pattern?', options: ['A. A rectangular circuit at an aerodrome', 'B. A racetrack pattern flown over a fix to absorb delay or prepare for an approach', 'C. A waiting area for aircraft taxiing to the runway', 'D. A safety buffer zone around controlled airspace'], correct: 1, explanation: 'A holding pattern is a racetrack shaped flight path over a navigation fix used to absorb delay, sequence traffic, or allow pilots to prepare for an approach.', reference: 'ICAO Doc 8168 / AIP ENR 1.5' },
     { question: 'What is the standard holding pattern direction?', options: ['A. Left hand turns', 'B. Right hand turns', 'C. Pilot discretion', 'D. Depends on the aerodrome'], correct: 1, explanation: 'The standard holding pattern uses right hand turns unless a left hand pattern is specifically published on the approach chart.', reference: 'ICAO Doc 8168 / AIP ENR 1.5' },
-    { question: 'What is an ATIS broadcast?', options: ['A. A live ATC weather update', 'B. A recorded continuous broadcast of current aerodrome information', 'C. A pilot report of actual conditions', 'D. An emergency frequency broadcast'], correct: 1, explanation: 'ATIS (Automatic Terminal Information Service) is a continuous recorded broadcast providing current aerodrome information including weather, active runway, and NOTAMs to reduce ATC frequency congestion.', reference: 'AIP ENR 1.1 / AIP AD 1.1' },
+    { question: 'What is an ATIS broadcast?', options: ['A. A live ATC weather update', 'B. A recorded continuous broadcast of current aerodrome information', 'C. A pilot report of actual conditions', 'D. An emergency frequency broadcast'], correct: 1, explanation: 'ATIS (Automatic Terminal Information Service) is a continuous recorded broadcast providing current aerodrome information including weather, active runway, and NOTAMs.', reference: 'AIP ENR 1.1 / AIP AD 1.1' },
     { question: 'What does a full scale fly-up deflection of the ILS glideslope indicate?', options: ['A. Aircraft is above the glideslope', 'B. Aircraft is below the glideslope', 'C. ILS is unserviceable', 'D. Aircraft is too fast on approach'], correct: 1, explanation: 'A fly-up deflection of the glideslope needle indicates the aircraft is BELOW the glideslope and must climb to intercept. The needle always points toward where the aircraft needs to go.', reference: 'AIP ENR 1.5 / ICAO Doc 8168' },
-    { question: 'What is the IREX exam testing?', options: ['A. Basic flying skills for private pilots', 'B. Instrument flight rules, procedures, and meteorology for IFR operations in Australia', 'C. Radio communication procedures only', 'D. Aircraft systems knowledge'], correct: 1, explanation: 'The IREX (Instrument Rating Exam) tests knowledge of instrument flight rules, IFR procedures, instrument meteorology, navigation, and air law as it applies to IFR operations in Australia.', reference: 'CASA IREX Study Guide' },
+    { question: 'What weather minimum is typically required to nominate an alternate aerodrome?', options: ['A. Destination forecast below 1500 ft ceiling and 8 km visibility', 'B. Destination forecast below circling minima or precision approach minima', 'C. Any IMC conditions at destination', 'D. Destination forecast below 3000 ft and 10 km'], correct: 1, explanation: 'An alternate is generally required when the destination weather is forecast to be below the applicable approach minima during the planned arrival period.', reference: 'CASR Part 91 / CAO 20.9 / AIP ENR 1.1' },
+    { question: 'What is the IREX exam testing?', options: ['A. Basic flying skills for private pilots', 'B. Instrument flight rules, procedures, and meteorology for IFR operations in Australia', 'C. Radio communication procedures only', 'D. Aircraft systems knowledge'], correct: 1, explanation: 'The IREX tests knowledge of instrument flight rules, IFR procedures, instrument meteorology, navigation, and air law as it applies to IFR operations in Australia.', reference: 'CASA IREX Study Guide' },
   ],
+}
+
+function findQuestions(subject: string) {
+  if (freeQuestions[subject]) return freeQuestions[subject]
+  const lower = subject.toLowerCase()
+  for (const key of Object.keys(freeQuestions)) {
+    if (key.toLowerCase() === lower) return freeQuestions[key]
+  }
+  for (const key of Object.keys(freeQuestions)) {
+    if (lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) return freeQuestions[key]
+  }
+  return []
 }
 
 export default function QuizPage({ params }: { params: { subject: string } }) {
@@ -133,10 +144,9 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
   const [score, setScore] = useState(0)
   const [finished, setFinished] = useState(false)
-  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    const bank = freeQuestions[subject] || []
+    const bank = findQuestions(subject)
     const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
     setQuestions(shuffled)
   }, [subject])
@@ -158,16 +168,28 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
     }
   }
 
+  function restart() {
+    const bank = findQuestions(subject)
+    setQuestions([...bank].sort(() => Math.random() - 0.5).slice(0, 10))
+    setCurrentIdx(0)
+    setScore(0)
+    setFinished(false)
+    setAnswered(false)
+    setSelectedAnswer(null)
+  }
+
   if (questions.length === 0) return (
-    <main style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:'system-ui,sans-serif'}}>
-      <p style={{color:'#64748b'}}>Loading questions...</p>
+    <main style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:'system-ui,sans-serif',flexDirection:'column',gap:'1rem'}}>
+      <p style={{color:'#64748b',fontSize:'16px'}}>No questions found for: {subject}</p>
+      <a href="/dashboard" style={{color:'#2563eb',textDecoration:'none'}}>← Back to dashboard</a>
     </main>
   )
 
   if (finished) return (
     <main style={{minHeight:'100vh',background:'#f8fafc',fontFamily:'system-ui,sans-serif',display:'flex',alignItems:'center',justifyContent:'center',padding:'2rem'}}>
       <div style={{background:'white',borderRadius:'16px',padding:'2.5rem',maxWidth:'500px',width:'100%',border:'1px solid #e2e8f0',textAlign:'center'}}>
-        <div style={{fontSize:'56px',fontWeight:'800',color:'#1e3a6e',fontFamily:'monospace'}}>{Math.round(score/questions.length*100)}%</div>
+        <div style={{fontSize:'13px',color:'#94a3b8',fontFamily:'monospace',marginBottom:'8px'}}>{subject}</div>
+        <div style={{fontSize:'56px',fontWeight:'800',color:'#1e3a6e',fontFamily:'monospace'}}>{Math.round(score/questions.length*100)}</div>
         <div style={{fontSize:'16px',color:'#64748b',marginBottom:'8px'}}>percent</div>
         <div style={{fontSize:'16px',fontWeight:'600',color:score/questions.length>=0.7?'#16a34a':'#dc2626',marginBottom:'2rem'}}>
           {score/questions.length>=0.7?'Pass — well done!':'Below 70% — keep studying'}
@@ -183,8 +205,8 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
           </div>
         </div>
         <div style={{display:'flex',gap:'8px'}}>
-          <button onClick={() => {setCurrentIdx(0);setScore(0);setFinished(false);setAnswered(false);setSelectedAnswer(null);const bank=freeQuestions[subject]||[];setQuestions([...bank].sort(()=>Math.random()-0.5).slice(0,10))}} style={{flex:1,background:'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'11px',fontWeight:'600',cursor:'pointer'}}>Try Again</button>
-          <a href="/dashboard" style={{flex:1,background:'#f8fafc',color:'#0a1628',border:'1px solid #e2e8f0',borderRadius:'8px',padding:'11px',fontWeight:'600',textDecoration:'none',display:'flex',alignItems:'center',justifyContent:'center'}}>Dashboard</a>
+          <button onClick={restart} style={{flex:1,background:'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'11px',fontWeight:'600',cursor:'pointer',fontSize:'14px'}}>Try Again</button>
+          <a href="/dashboard" style={{flex:1,background:'#f8fafc',color:'#0a1628',border:'1px solid #e2e8f0',borderRadius:'8px',padding:'11px',fontWeight:'600',textDecoration:'none',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'14px'}}>Dashboard</a>
         </div>
       </div>
     </main>
@@ -205,7 +227,7 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
       <div style={{maxWidth:'700px',margin:'0 auto',padding:'2rem'}}>
         <div style={{marginBottom:'6px',fontSize:'11px',color:'#94a3b8',fontFamily:'monospace'}}>Question {currentIdx+1} of {questions.length}</div>
         <div style={{background:'#e2e8f0',borderRadius:'99px',height:'4px',marginBottom:'1.5rem',overflow:'hidden'}}>
-          <div style={{height:'100%',background:'#2563eb',borderRadius:'99px',width:`${(currentIdx/questions.length)*100}%`,transition:'width 0.4s'}}></div>
+          <div style={{height:'100%',background:'#2563eb',borderRadius:'99px',width:`${((currentIdx)/(questions.length))*100}%`,transition:'width 0.4s'}}></div>
         </div>
         <div style={{background:'white',borderRadius:'12px',padding:'1.5rem',border:'1px solid #e2e8f0',marginBottom:'1rem'}}>
           <div style={{fontSize:'11px',fontWeight:'600',color:'#2563eb',marginBottom:'10px',fontFamily:'monospace'}}>{subject}</div>
@@ -218,7 +240,7 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
               if (answered) {
                 if (i === q.correct) { bg = '#f0fdf4'; border = '1px solid #16a34a'; color = '#15803d' }
                 else if (i === selectedAnswer) { bg = '#fff1f2'; border = '1px solid #dc2626'; color = '#b91c1c' }
-                else { bg = 'white'; color = '#94a3b8' }
+                else { color = '#94a3b8' }
               }
               return (
                 <button key={i} onClick={() => selectAnswer(i)} disabled={answered} style={{background:bg,border,borderRadius:'8px',padding:'11px 14px',textAlign:'left',cursor:answered?'default':'pointer',fontSize:'14px',color,display:'flex',alignItems:'flex-start',gap:'10px',width:'100%'}}>
