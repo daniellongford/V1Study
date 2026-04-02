@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
 
-const subjects = {
+const subjectsByLicence: Record<string, string[]> = {
   PPL: ['PPL Theory'],
   CPL: ['Human Factors','Aerodynamics','Aircraft General Knowledge','Meteorology','Navigation','Operations, Performance and Planning','Flight Rules & Air Law'],
   ATPL: ['Human Factors','Aerodynamics','Aircraft General Knowledge','Meteorology','Navigation','Flight Planning','Flight Rules & Air Law'],
@@ -43,11 +43,17 @@ export default function Dashboard() {
     window.location.href = '/'
   }
 
+  function goToQuiz(subject: string) {
+    window.location.href = '/quiz/' + encodeURIComponent(subject)
+  }
+
   if (loading) return (
     <main style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:'system-ui,sans-serif'}}>
       <p style={{color:'#64748b'}}>Loading...</p>
     </main>
   )
+
+  const currentSubjects = subjectsByLicence[selectedLicence] || []
 
   return (
     <main style={{minHeight:'100vh',background:'#f8fafc',fontFamily:'system-ui,sans-serif'}}>
@@ -72,7 +78,7 @@ export default function Dashboard() {
           <p style={{fontSize:'15px',color:'#64748b'}}>Choose a subject and start practising.</p>
         </div>
         <div style={{display:'flex',gap:'10px',marginBottom:'2rem',flexWrap:'wrap'}}>
-          {Object.keys(subjects).map((licence) => (
+          {Object.keys(subjectsByLicence).map((licence) => (
             <button
               key={licence}
               onClick={() => setSelectedLicence(licence)}
@@ -83,21 +89,18 @@ export default function Dashboard() {
           ))}
         </div>
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(250px,1fr))',gap:'1rem',marginBottom:'2rem'}}>
-          {subjects[selectedLicence as keyof typeof subjects].map((subject) => (
-            <div
-              key={subject}
-              style={{background:'white',borderRadius:'12px',padding:'1.5rem',border:'1px solid #e2e8f0'}}
-            >
+          {currentSubjects.map((subject) => (
+            <div key={subject} style={{background:'white',borderRadius:'12px',padding:'1.5rem',border:'1px solid #e2e8f0'}}>
               <div style={{fontSize:'24px',marginBottom:'8px'}}>{subjectIcons[subject] || '📖'}</div>
               <div style={{fontSize:'13px',fontWeight:'700',color:'#2563eb',marginBottom:'4px'}}>{selectedLicence}</div>
               <div style={{fontSize:'15px',fontWeight:'600',color:'#0a1628',marginBottom:'12px',lineHeight:1.3}}>{subject}</div>
-              <div style={{fontSize:'12px',color:'#94a3b8',marginBottom:'12px',fontFamily:'monospace'}}>10 questions · Free</div>
-              <a
-                href={`/quiz/${encodeURIComponent(subject)}`}
-                style={{display:'block',width:'100%',background:'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'9px',fontSize:'13px',fontWeight:'600',cursor:'pointer',textDecoration:'none',textAlign:'center',boxSizing:'border-box'}}
+              <div style={{fontSize:'12px',color:'#94a3b8',marginBottom:'12px',fontFamily:'monospace'}}>10 questions · Free trial</div>
+              <button
+                onClick={() => goToQuiz(subject)}
+                style={{display:'block',width:'100%',background:'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'9px',fontSize:'13px',fontWeight:'600',cursor:'pointer',textAlign:'center'}}
               >
                 Start Quiz →
-              </a>
+              </button>
             </div>
           ))}
         </div>
@@ -106,9 +109,9 @@ export default function Dashboard() {
             <div style={{fontSize:'14px',fontWeight:'700',color:'#1d4ed8',marginBottom:'2px'}}>Free Trial — 7 days remaining</div>
             <div style={{fontSize:'13px',color:'#3b82f6'}}>Upgrade to unlock unlimited AI-generated questions and full progress tracking</div>
           </div>
-          <a href="/pricing" style={{background:'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'10px 20px',fontSize:'14px',fontWeight:'600',cursor:'pointer',whiteSpace:'nowrap',textDecoration:'none'}}>
+          <button style={{background:'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'10px 20px',fontSize:'14px',fontWeight:'600',cursor:'pointer',whiteSpace:'nowrap'}}>
             Upgrade Now →
-          </a>
+          </button>
         </div>
       </div>
     </main>
