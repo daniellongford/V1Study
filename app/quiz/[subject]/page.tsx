@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, use } from 'react'
 
 const freeQuestions: Record<string, any[]> = {
   'Human Factors': [
@@ -103,12 +103,12 @@ const freeQuestions: Record<string, any[]> = {
     { question: 'What is the purpose of the altimeter?', options: ['A. To measure airspeed', 'B. To measure vertical height above a pressure datum', 'C. To measure rate of climb', 'D. To measure outside air temperature'], correct: 1, explanation: 'The altimeter measures the vertical height of the aircraft above a pressure datum, either QNH (mean sea level) or QFE (aerodrome level).', reference: 'CASA PPL Study Guide' },
     { question: 'What does QNH mean?', options: ['A. Height above the aerodrome', 'B. Altimeter setting that indicates altitude above mean sea level', 'C. Standard pressure setting of 1013 hPa', 'D. Height above the highest obstacle'], correct: 1, explanation: 'QNH is the altimeter pressure setting that causes the altimeter to read altitude above mean sea level at the aerodrome reference point.', reference: 'AIP GEN 2.2' },
     { question: 'What is a METAR?', options: ['A. A forecast of expected weather conditions', 'B. A routine aviation weather observation report', 'C. A warning of significant weather', 'D. A pilot report of actual conditions'], correct: 1, explanation: 'A METAR is a routine aviation weather observation report issued at regular intervals, typically every 30 minutes at major aerodromes.', reference: 'AIP GEN 3.5' },
-    { question: 'What is the purpose of a TAF?', options: ['A. To report current weather conditions', 'B. To provide a forecast of expected weather at an aerodrome', 'C. To warn pilots of significant weather en route', 'D. To provide upper wind information'], correct: 1, explanation: 'A TAF (Terminal Aerodrome Forecast) provides a forecast of expected weather conditions at a specific aerodrome, typically valid for 24 or 30 hours.', reference: 'AIP GEN 3.5' },
+    { question: 'What is the purpose of a TAF?', options: ['A. To report current weather conditions', 'B. To provide a forecast of expected weather at an aerodrome', 'C. To warn pilots of significant weather en route', 'D. To provide upper wind information'], correct: 1, explanation: 'A TAF provides a forecast of expected weather conditions at a specific aerodrome, typically valid for 24 or 30 hours.', reference: 'AIP GEN 3.5' },
     { question: 'What does VFR stand for?', options: ['A. Very Fast Route', 'B. Visual Flight Rules', 'C. Verified Flight Requirements', 'D. Vertical Flight Regulations'], correct: 1, explanation: 'VFR stands for Visual Flight Rules. Pilots operating VFR navigate primarily by visual reference to the ground and must maintain certain visibility and cloud clearance requirements.', reference: 'CASR Part 91 / AIP ENR 1.2' },
     { question: 'What is the function of the ASI?', options: ['A. To measure groundspeed', 'B. To measure the speed of the aircraft through the air mass', 'C. To measure true airspeed directly', 'D. To measure wind speed'], correct: 1, explanation: 'The Airspeed Indicator measures the difference between pitot total pressure and static pressure, indicating the speed of the aircraft through the air mass as indicated airspeed.', reference: 'CASA PPL Study Guide' },
-    { question: 'What is a NOTAM?', options: ['A. A weather forecast for pilots', 'B. A notice containing information essential to flight operations', 'C. A mandatory training requirement', 'D. A navigation chart update'], correct: 1, explanation: 'A NOTAM (Notice to Air Missions) is a notice containing information essential to personnel concerned with flight operations, such as airspace restrictions or unserviceable facilities.', reference: 'AIP GEN 3.1' },
+    { question: 'What is a NOTAM?', options: ['A. A weather forecast for pilots', 'B. A notice containing information essential to flight operations', 'C. A mandatory training requirement', 'D. A navigation chart update'], correct: 1, explanation: 'A NOTAM is a notice containing information essential to personnel concerned with flight operations, such as airspace restrictions or unserviceable facilities.', reference: 'AIP GEN 3.1' },
     { question: 'What is the circuit direction at a non-controlled aerodrome unless otherwise specified?', options: ['A. Right hand', 'B. Left hand', 'C. Pilots choice', 'D. Depends on runway orientation'], correct: 1, explanation: 'At a non-controlled aerodrome the standard circuit direction is left hand unless a right hand circuit is specified in ERSA or by NOTAM.', reference: 'AIP ENR 1.1' },
-    { question: 'What frequency is CTAF used on at non-controlled aerodromes?', options: ['A. 121.5 MHz', 'B. 126.7 MHz or the published CTAF frequency', 'C. 118.1 MHz', 'D. 123.45 MHz'], correct: 1, explanation: 'CTAF (Common Traffic Advisory Frequency) is used for position reporting at non-controlled aerodromes. The frequency is published in ERSA and is typically 126.7 MHz unless otherwise specified.', reference: 'AIP ENR 1.1 / ERSA' },
+    { question: 'What frequency is CTAF used on at non-controlled aerodromes?', options: ['A. 121.5 MHz', 'B. 126.7 MHz or the published CTAF frequency', 'C. 118.1 MHz', 'D. 123.45 MHz'], correct: 1, explanation: 'CTAF is used for position reporting at non-controlled aerodromes. The frequency is published in ERSA and is typically 126.7 MHz unless otherwise specified.', reference: 'AIP ENR 1.1 / ERSA' },
   ],
   'Instrument Rating': [
     { question: 'What is Decision Altitude on a precision approach?', options: ['A. Altitude at which the crew must decide to divert to alternate', 'B. Altitude at which the approach must be abandoned if visual reference is not established', 'C. Lowest altitude on a non-precision approach', 'D. Altitude at which autopilot must be disconnected'], correct: 1, explanation: 'DA is the altitude on a precision approach at which the crew must decide whether to continue based on visual reference with the runway environment or execute a missed approach.', reference: 'ICAO Doc 8168 / AIP ENR 1.5' },
@@ -117,8 +117,8 @@ const freeQuestions: Record<string, any[]> = {
     { question: 'What is the purpose of an alternate aerodrome on an IFR flight plan?', options: ['A. A diversion aerodrome if the destination becomes unavailable', 'B. A training aerodrome for practice approaches', 'C. A fuel stop en route', 'D. A departure alternate only'], correct: 0, explanation: 'An alternate aerodrome is nominated on an IFR flight plan as a diversion option if the destination aerodrome becomes unavailable due to weather or other factors.', reference: 'CASR Part 91 / CAO 20.9' },
     { question: 'What is a holding pattern?', options: ['A. A rectangular circuit at an aerodrome', 'B. A racetrack pattern flown over a fix to absorb delay or prepare for an approach', 'C. A waiting area for aircraft taxiing to the runway', 'D. A safety buffer zone around controlled airspace'], correct: 1, explanation: 'A holding pattern is a racetrack shaped flight path over a navigation fix used to absorb delay, sequence traffic, or allow pilots to prepare for an approach.', reference: 'ICAO Doc 8168 / AIP ENR 1.5' },
     { question: 'What is the standard holding pattern direction?', options: ['A. Left hand turns', 'B. Right hand turns', 'C. Pilot discretion', 'D. Depends on the aerodrome'], correct: 1, explanation: 'The standard holding pattern uses right hand turns unless a left hand pattern is specifically published on the approach chart.', reference: 'ICAO Doc 8168 / AIP ENR 1.5' },
-    { question: 'What is an ATIS broadcast?', options: ['A. A live ATC weather update', 'B. A recorded continuous broadcast of current aerodrome information', 'C. A pilot report of actual conditions', 'D. An emergency frequency broadcast'], correct: 1, explanation: 'ATIS (Automatic Terminal Information Service) is a continuous recorded broadcast providing current aerodrome information including weather, active runway, and NOTAMs.', reference: 'AIP ENR 1.1 / AIP AD 1.1' },
-    { question: 'What does a full scale fly-up deflection of the ILS glideslope indicate?', options: ['A. Aircraft is above the glideslope', 'B. Aircraft is below the glideslope', 'C. ILS is unserviceable', 'D. Aircraft is too fast on approach'], correct: 1, explanation: 'A fly-up deflection of the glideslope needle indicates the aircraft is BELOW the glideslope and must climb to intercept. The needle always points toward where the aircraft needs to go.', reference: 'AIP ENR 1.5 / ICAO Doc 8168' },
+    { question: 'What is an ATIS broadcast?', options: ['A. A live ATC weather update', 'B. A recorded continuous broadcast of current aerodrome information', 'C. A pilot report of actual conditions', 'D. An emergency frequency broadcast'], correct: 1, explanation: 'ATIS is a continuous recorded broadcast providing current aerodrome information including weather, active runway, and NOTAMs.', reference: 'AIP ENR 1.1 / AIP AD 1.1' },
+    { question: 'What does a full scale fly-up deflection of the ILS glideslope indicate?', options: ['A. Aircraft is above the glideslope', 'B. Aircraft is below the glideslope', 'C. ILS is unserviceable', 'D. Aircraft is too fast on approach'], correct: 1, explanation: 'A fly-up deflection of the glideslope needle indicates the aircraft is BELOW the glideslope and must climb to intercept.', reference: 'AIP ENR 1.5 / ICAO Doc 8168' },
     { question: 'What weather minimum is typically required to nominate an alternate aerodrome?', options: ['A. Destination forecast below 1500 ft ceiling and 8 km visibility', 'B. Destination forecast below circling minima or precision approach minima', 'C. Any IMC conditions at destination', 'D. Destination forecast below 3000 ft and 10 km'], correct: 1, explanation: 'An alternate is generally required when the destination weather is forecast to be below the applicable approach minima during the planned arrival period.', reference: 'CASR Part 91 / CAO 20.9 / AIP ENR 1.1' },
     { question: 'What is the IREX exam testing?', options: ['A. Basic flying skills for private pilots', 'B. Instrument flight rules, procedures, and meteorology for IFR operations in Australia', 'C. Radio communication procedures only', 'D. Aircraft systems knowledge'], correct: 1, explanation: 'The IREX tests knowledge of instrument flight rules, IFR procedures, instrument meteorology, navigation, and air law as it applies to IFR operations in Australia.', reference: 'CASA IREX Study Guide' },
   ],
@@ -126,9 +126,9 @@ const freeQuestions: Record<string, any[]> = {
 
 function findQuestions(subject: string) {
   if (freeQuestions[subject]) return freeQuestions[subject]
-  const lower = subject.toLowerCase()
+  const lower = subject.toLowerCase().trim()
   for (const key of Object.keys(freeQuestions)) {
-    if (key.toLowerCase() === lower) return freeQuestions[key]
+    if (key.toLowerCase().trim() === lower) return freeQuestions[key]
   }
   for (const key of Object.keys(freeQuestions)) {
     if (lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) return freeQuestions[key]
@@ -136,8 +136,9 @@ function findQuestions(subject: string) {
   return []
 }
 
-export default function QuizPage({ params }: { params: { subject: string } }) {
-  const subject = decodeURIComponent(params.subject)
+export default function QuizPage({ params }: { params: Promise<{ subject: string }> }) {
+  const resolvedParams = use(params)
+  const subject = decodeURIComponent(resolvedParams.subject || '')
   const [questions, setQuestions] = useState<any[]>([])
   const [currentIdx, setCurrentIdx] = useState(0)
   const [answered, setAnswered] = useState(false)
@@ -146,6 +147,7 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
   const [finished, setFinished] = useState(false)
 
   useEffect(() => {
+    if (!subject) return
     const bank = findQuestions(subject)
     const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
     setQuestions(shuffled)
@@ -178,10 +180,16 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
     setSelectedAnswer(null)
   }
 
+  if (!subject) return (
+    <main style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:'system-ui,sans-serif'}}>
+      <p style={{color:'#64748b'}}>Loading...</p>
+    </main>
+  )
+
   if (questions.length === 0) return (
     <main style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:'system-ui,sans-serif',flexDirection:'column',gap:'1rem'}}>
-      <p style={{color:'#64748b',fontSize:'16px'}}>No questions found for: {subject}</p>
-      <a href="/dashboard" style={{color:'#2563eb',textDecoration:'none'}}>← Back to dashboard</a>
+      <p style={{color:'#64748b',fontSize:'16px'}}>Loading questions for: {subject}</p>
+      <a href="/dashboard" style={{color:'#2563eb',textDecoration:'none'}}>Back to dashboard</a>
     </main>
   )
 
@@ -227,7 +235,7 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
       <div style={{maxWidth:'700px',margin:'0 auto',padding:'2rem'}}>
         <div style={{marginBottom:'6px',fontSize:'11px',color:'#94a3b8',fontFamily:'monospace'}}>Question {currentIdx+1} of {questions.length}</div>
         <div style={{background:'#e2e8f0',borderRadius:'99px',height:'4px',marginBottom:'1.5rem',overflow:'hidden'}}>
-          <div style={{height:'100%',background:'#2563eb',borderRadius:'99px',width:`${((currentIdx)/(questions.length))*100}%`,transition:'width 0.4s'}}></div>
+          <div style={{height:'100%',background:'#2563eb',borderRadius:'99px',width:`${(currentIdx/questions.length)*100}%`,transition:'width 0.4s'}}></div>
         </div>
         <div style={{background:'white',borderRadius:'12px',padding:'1.5rem',border:'1px solid #e2e8f0',marginBottom:'1rem'}}>
           <div style={{fontSize:'11px',fontWeight:'600',color:'#2563eb',marginBottom:'10px',fontFamily:'monospace'}}>{subject}</div>
