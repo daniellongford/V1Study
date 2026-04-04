@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect, use } from 'react'
+import { supabase } from '../../../lib/supabase'
 
 const freeQuestions: Record<string, any[]> = {
   'Human Factors': [
@@ -136,6 +137,16 @@ function findQuestions(subject: string) {
   return []
 }
 
+function getLicenceForSubject(subject: string): string {
+  const cpl = ['Human Factors','Aerodynamics','Aircraft General Knowledge','Meteorology','Navigation','Operations, Performance and Planning','Flight Rules & Air Law']
+  const atpl = ['Human Factors','Aerodynamics','Aircraft General Knowledge','Meteorology','Navigation','Flight Planning','Flight Rules & Air Law']
+  if (subject === 'PPL Theory') return 'PPL'
+  if (subject === 'Instrument Rating') return 'IREX'
+  if (atpl.includes(subject)) return 'ATPL'
+  if (cpl.includes(subject)) return 'CPL'
+  return 'CPL'
+}
+
 export default function QuizPage({ params }: { params: Promise<{ subject: string }> }) {
   const resolvedParams = use(params)
   const subject = decodeURIComponent(resolvedParams.subject || '')
@@ -145,6 +156,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
   const [score, setScore] = useState(0)
   const [finished, setFinished] = useState(false)
+  const [scoreSaved, setScoreSaved] = useState(false)
 
   useEffect(() => {
     if (!subject) return
@@ -152,6 +164,24 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
     const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
     setQuestions(shuffled)
   }, [subject])
+
+  async function saveScore(finalScore: number, total: number) {
+    try {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (!user) return
+      await supabase.from('scores').insert({
+        user_id: user.id,
+        subject,
+        licence: getLicenceForSubject(subject),
+        score: finalScore,
+        total,
+        percentage: Math.round(finalScore / total * 100)
+      })
+      setScoreSaved(true)
+    } catch (e) {
+      console.error('Failed to save score:', e)
+    }
+  }
 
   function selectAnswer(idx: number) {
     if (answered) return
@@ -166,6 +196,11 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
       setAnswered(false)
       setSelectedAnswer(null)
     } else {
+      const finalScore = score + (selectedAnswer === questions[currentIdx].correct ? 0 : 0)
+      const actualScore = questions.slice(0, currentIdx + 1).reduce((acc, q, i) => {
+        return acc
+      }, score)
+      saveScore(score, questions.length)
       setFinished(true)
     }
   }
@@ -178,6 +213,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
     setFinished(false)
     setAnswered(false)
     setSelectedAnswer(null)
+    setScoreSaved(false)
   }
 
   if (!subject) return (
@@ -199,9 +235,10 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         <div style={{fontSize:'13px',color:'#94a3b8',fontFamily:'monospace',marginBottom:'8px'}}>{subject}</div>
         <div style={{fontSize:'56px',fontWeight:'800',color:'#1e3a6e',fontFamily:'monospace'}}>{Math.round(score/questions.length*100)}</div>
         <div style={{fontSize:'16px',color:'#64748b',marginBottom:'8px'}}>percent</div>
-        <div style={{fontSize:'16px',fontWeight:'600',color:score/questions.length>=0.7?'#16a34a':'#dc2626',marginBottom:'2rem'}}>
+        <div style={{fontSize:'16px',fontWeight:'600',color:score/questions.length>=0.7?'#16a34a':'#dc2626',marginBottom:'0.5rem'}}>
           {score/questions.length>=0.7?'Pass — well done!':'Below 70% — keep studying'}
         </div>
+        {scoreSaved && <div style={{fontSize:'12px',color:'#10b981',marginBottom:'1.5rem'}}>✓ Score saved to your progress</div>}
         <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px',marginBottom:'2rem'}}>
           <div style={{background:'#f0fdf4',borderRadius:'8px',padding:'12px'}}>
             <div style={{fontSize:'24px',fontWeight:'600',color:'#16a34a'}}>{score}</div>
