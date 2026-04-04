@@ -9,6 +9,7 @@ export default function Login() {
   const [message, setMessage] = useState('')
 
   async function handleLogin() {
+    if (!email || !password) { setMessage('Please enter your email and password'); return }
     setLoading(true)
     const { error } = await supabase.auth.signInWithPassword({ email, password })
     if (error) {
@@ -33,18 +34,39 @@ export default function Login() {
         </div>
         <div style={{marginBottom:'1rem'}}>
           <label style={{fontSize:'13px',fontWeight:'600',color:'#374151',display:'block',marginBottom:'6px'}}>Email</label>
-          <input type="email" placeholder="john@example.com" value={email} onChange={(e) => setEmail(e.target.value)} style={{width:'100%',padding:'10px 14px',border:'1px solid #e2e8f0',borderRadius:'8px',fontSize:'14px',outline:'none'}}/>
+          <input
+            type="email"
+            placeholder="john@example.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && handleLogin()}
+            style={{width:'100%',padding:'10px 14px',border:'1px solid #e2e8f0',borderRadius:'8px',fontSize:'14px',outline:'none'}}
+          />
         </div>
-        <div style={{marginBottom:'1.5rem'}}>
+        <div style={{marginBottom:'0.5rem'}}>
           <label style={{fontSize:'13px',fontWeight:'600',color:'#374151',display:'block',marginBottom:'6px'}}>Password</label>
-          <input type="password" placeholder="Your password" value={password} onChange={(e) => setPassword(e.target.value)} style={{width:'100%',padding:'10px 14px',border:'1px solid #e2e8f0',borderRadius:'8px',fontSize:'14px',outline:'none'}}/>
+          <input
+            type="password"
+            placeholder="Your password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && handleLogin()}
+            style={{width:'100%',padding:'10px 14px',border:'1px solid #e2e8f0',borderRadius:'8px',fontSize:'14px',outline:'none'}}
+          />
+        </div>
+        <div style={{textAlign:'right',marginBottom:'1.5rem'}}>
+          <a href="/forgot-password" style={{fontSize:'13px',color:'#2563eb',textDecoration:'none'}}>Forgot your password?</a>
         </div>
         {message && (
-          <div style={{background:'#fff1f2',border:'1px solid #dc2626',borderRadius:'8px',padding:'10px 14px',fontSize:'13px',color:'#b91c1c',marginBottom:'1rem'}}>
+          <div style={{background:'#fff1f2',border:'1px solid #fca5a5',borderRadius:'8px',padding:'10px 14px',fontSize:'13px',color:'#b91c1c',marginBottom:'1rem'}}>
             {message}
           </div>
         )}
-        <button onClick={handleLogin} disabled={loading} style={{width:'100%',background:loading?'#94a3b8':'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'12px',fontSize:'15px',fontWeight:'600',cursor:loading?'not-allowed':'pointer',marginBottom:'1rem'}}>
+        <button
+          onClick={handleLogin}
+          disabled={loading}
+          style={{width:'100%',background:loading?'#94a3b8':'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'12px',fontSize:'15px',fontWeight:'600',cursor:loading?'not-allowed':'pointer',marginBottom:'1rem'}}
+        >
           {loading ? 'Logging in...' : 'Log In'}
         </button>
         <p style={{textAlign:'center',fontSize:'13px',color:'#64748b'}}>
