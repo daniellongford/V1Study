@@ -169,9 +169,9 @@ export default function Dashboard() {
                 )}
                 <button
                   onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)}
-                  style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '9px', fontSize: '13px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em' }}
+                  style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '9px', fontSize: '13px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em' }}
                 >
-                  {best !== undefined ? 'Practise again' : 'Start quiz'}
+                  Start Quiz →
                 </button>
               </div>
             )
