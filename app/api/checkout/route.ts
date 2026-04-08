@@ -14,8 +14,11 @@ export async function POST(request: NextRequest) {
       mode: 'subscription',
       line_items: [{ price: priceId, quantity: 1 }],
       customer_email: email,
-      success_url: 'https://v1-study.vercel.app/dashboard?upgraded=true',
-      cancel_url: 'https://v1-study.vercel.app/pricing',
+      subscription_data: {
+        trial_period_days: 7,
+      },
+      success_url: 'https://v1study.com.au/dashboard?upgraded=true',
+      cancel_url: 'https://v1study.com.au/pricing',
       metadata: { email },
     })
 
