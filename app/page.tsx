@@ -14,6 +14,7 @@ export default function Home() {
           <a href="/signup" style={{background:'#2563eb',color:'white',borderRadius:'8px',padding:'8px 20px',textDecoration:'none',fontWeight:'600',fontSize:'14px'}}>Start Free Trial</a>
         </div>
       </nav>
+
       <section style={{padding:'6rem 2rem',textAlign:'center',background:'linear-gradient(180deg,#eff6ff 0%,#ffffff 100%)'}}>
         <p style={{fontSize:'13px',letterSpacing:'0.2em',color:'#2563eb',marginBottom:'1rem',fontWeight:'600'}}>AUSTRALIA&apos;S PILOT EXAM PREP PLATFORM</p>
         <h1 style={{fontSize:'56px',fontWeight:'800',color:'#0a1628',marginBottom:'1rem',lineHeight:1.1}}>
@@ -29,6 +30,7 @@ export default function Home() {
         </div>
         <p style={{fontSize:'13px',color:'#94a3b8'}}>7 day free trial · No credit card required · Cancel anytime</p>
       </section>
+
       <section id="features" style={{padding:'4rem 2rem',maxWidth:'1000px',margin:'0 auto'}}>
         <h2 style={{textAlign:'center',fontSize:'36px',fontWeight:'700',color:'#0a1628',marginBottom:'0.5rem'}}>Every Australian Pilot Exam Covered</h2>
         <p style={{textAlign:'center',color:'#64748b',marginBottom:'3rem',fontSize:'16px'}}>From your first PPL theory to your ATPL we have every exam covered</p>
@@ -50,26 +52,42 @@ export default function Home() {
           })}
         </div>
       </section>
+
       <section id="pricing" style={{padding:'4rem 2rem',background:'#f8fafc'}}>
-        <div style={{maxWidth:'900px',margin:'0 auto'}}>
+        <div style={{maxWidth:'1100px',margin:'0 auto'}}>
           <h2 style={{textAlign:'center',fontSize:'36px',fontWeight:'700',color:'#0a1628',marginBottom:'0.5rem'}}>Simple Pricing</h2>
           <p style={{textAlign:'center',color:'#64748b',marginBottom:'3rem'}}>Start free. Upgrade when you are ready.</p>
-          <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:'1rem'}}>
+          <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(180px,1fr))',gap:'1rem'}}>
             {[
-              {plan:'Free Trial',price:'$0',period:'7 days',features:['All subjects','10 questions per subject','Basic progress tracking'],color:'#64748b',btn:'Start Free'},
-              {plan:'PPL Pack',price:'$9.99',period:'per month',features:['PPL exam prep','Unlimited questions','Full explanations','CASA references'],color:'#10b981',btn:'Get Started'},
-              {plan:'CPL Pack',price:'$19.99',period:'per month',features:['PPL and all 7 CPL exams','Unlimited questions','Progress tracking','Weak area analysis'],color:'#2563eb',btn:'Get Started',popular:true},
-              {plan:'Full Access',price:'$34.99',period:'per month',features:['Every exam included','ATPL and IREX access','Priority support','Study streak tracking'],color:'#7c3aed',btn:'Get Started'},
+              {plan:'Free Trial',price:'$0',period:'7 days',features:['All subjects','10 questions per subject','Basic progress tracking'],color:'#64748b',popular:false},
+              {plan:'PPL Pack',price:'$9.99',period:'per month',features:['PPL exam prep','Unlimited AI questions','Full explanations','CASA references'],color:'#10b981',popular:false},
+              {plan:'CPL Pack',price:'$19.99',period:'per month',features:['PPL + all 7 CPL exams','Unlimited AI questions','Progress tracking','Weak area analysis'],color:'#2563eb',popular:true},
+              {plan:'ATPL Pack',price:'$29.99',period:'per month',features:['CPL + all 7 ATPL exams','Unlimited AI questions','Progress tracking','Weak area analysis'],color:'#7c3aed',popular:false},
+              {plan:'IREX Standalone',price:'$14.99',period:'per month',features:['IREX exam only','Unlimited AI questions','Full explanations','CASA references'],color:'#f59e0b',popular:false},
+              {plan:'Full Access',price:'$34.99',period:'per month',features:['Every exam included','PPL CPL ATPL IREX','Unlimited AI questions','Priority support'],color:'#0a1628',popular:false},
             ].map(function(item){
               return (
-                <div key={item.plan} style={{background:'white',borderRadius:'12px',padding:'1.5rem',border:item.popular?'2px solid #2563eb':'1px solid #e2e8f0',position:'relative'}}>
-                  {item.popular && <div style={{position:'absolute',top:'-12px',left:'50%',transform:'translateX(-50%)',background:'#2563eb',color:'white',fontSize:'11px',fontWeight:'700',padding:'3px 12px',borderRadius:'99px'}}>MOST POPULAR</div>}
-                  <div style={{fontSize:'14px',fontWeight:'700',color:item.color,marginBottom:'4px'}}>{item.plan}</div>
-                  <div style={{fontSize:'32px',fontWeight:'800',color:'#0a1628'}}>{item.price}</div>
+                <div key={item.plan} style={{background:'white',borderRadius:'12px',padding:'1.5rem',border:item.popular?'2px solid #2563eb':'1px solid #e2e8f0',position:'relative',display:'flex',flexDirection:'column'}}>
+                  {item.popular && (
+                    <div style={{position:'absolute',top:'-12px',left:'50%',transform:'translateX(-50%)',background:'#2563eb',color:'white',fontSize:'11px',fontWeight:'700',padding:'3px 12px',borderRadius:'99px',whiteSpace:'nowrap'}}>
+                      MOST POPULAR
+                    </div>
+                  )}
+                  <div style={{fontSize:'13px',fontWeight:'700',color:item.color,marginBottom:'4px'}}>{item.plan}</div>
+                  <div style={{fontSize:'30px',fontWeight:'800',color:'#0a1628',lineHeight:1}}>{item.price}</div>
                   <div style={{fontSize:'12px',color:'#94a3b8',marginBottom:'1rem'}}>{item.period}</div>
-                  {item.features.map(function(f){return <div key={f} style={{fontSize:'13px',color:'#475569',marginBottom:'6px'}}>✓ {f}</div>})}
-                  <a href="/signup" style={{display:'block',width:'100%',marginTop:'1rem',background:item.popular?'#2563eb':'transparent',color:item.popular?'white':item.color,border:`2px solid ${item.color}`,borderRadius:'8px',padding:'10px',fontWeight:'600',cursor:'pointer',textDecoration:'none',textAlign:'center',boxSizing:'border-box'}}>
-                    {item.btn}
+                  <div style={{flex:1}}>
+                    {item.features.map(function(f){
+                      return (
+                        <div key={f} style={{fontSize:'12px',color:'#475569',marginBottom:'6px',display:'flex',alignItems:'flex-start',gap:'6px'}}>
+                          <span style={{color:'#16a34a',fontWeight:'700',flexShrink:0}}>✓</span>
+                          <span>{f}</span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                  <a href="/signup" style={{display:'block',width:'100%',marginTop:'1.25rem',background:item.popular?'#2563eb':'transparent',color:item.popular?'white':item.color,border:`2px solid ${item.popular?'#2563eb':item.color}`,borderRadius:'8px',padding:'10px',fontWeight:'600',textDecoration:'none',textAlign:'center',boxSizing:'border-box',fontSize:'13px'}}>
+                    Start free trial
                   </a>
                 </div>
               )
@@ -77,12 +95,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <footer style={{padding:'2rem',textAlign:'center',borderTop:'1px solid #e2e8f0'}}>
         <div style={{marginBottom:'0.5rem'}}>
           <span style={{fontWeight:'800',color:'#2563eb'}}>V1</span>
           <span style={{fontWeight:'800',color:'#0a1628'}}> Study</span>
         </div>
-        <p style={{fontSize:'13px',color:'#94a3b8'}}>2025 V1 Study. All rights reserved. Built for Australian pilots.</p>
+        <p style={{fontSize:'13px',color:'#94a3b8'}}>© 2026 V1 Study. ABN 67 533 972 478. Built for Australian pilots.</p>
       </footer>
     </main>
   )
