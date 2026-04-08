@@ -2,24 +2,35 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
 
-const subjectsByLicence: Record<string, string[]> = {
-  PPL: ['PPL Theory'],
-  CPL: ['Human Factors','Aerodynamics','Aircraft General Knowledge','Meteorology','Navigation','Operations, Performance and Planning','Flight Rules & Air Law'],
-  ATPL: ['Human Factors','Aerodynamics','Aircraft General Knowledge','Meteorology','Navigation','Flight Planning','Flight Rules & Air Law'],
-  IREX: ['Instrument Rating']
+const subjectsByLicence: Record<string, { subject: string; code: string; questions: number }[]> = {
+  PPL: [
+    { subject: 'PPL Theory', code: 'PPL', questions: 10 },
+  ],
+  CPL: [
+    { subject: 'Human Factors', code: 'CHUF', questions: 10 },
+    { subject: 'Aerodynamics', code: 'CADA', questions: 10 },
+    { subject: 'Aircraft General Knowledge', code: 'CSYA', questions: 10 },
+    { subject: 'Meteorology', code: 'CMET', questions: 10 },
+    { subject: 'Navigation', code: 'CNAV', questions: 10 },
+    { subject: 'Operations, Performance and Planning', code: 'CFPA', questions: 10 },
+    { subject: 'Flight Rules & Air Law', code: 'CLWA', questions: 10 },
+  ],
+  ATPL: [
+    { subject: 'Human Factors', code: 'CHUF', questions: 10 },
+    { subject: 'Aerodynamics', code: 'CADA', questions: 10 },
+    { subject: 'Aircraft General Knowledge', code: 'CSYA', questions: 10 },
+    { subject: 'Meteorology', code: 'CMET', questions: 10 },
+    { subject: 'Navigation', code: 'CNAV', questions: 10 },
+    { subject: 'Flight Planning', code: 'ATPL-FP', questions: 10 },
+    { subject: 'Flight Rules & Air Law', code: 'CLWA', questions: 10 },
+  ],
+  IREX: [
+    { subject: 'Instrument Rating', code: 'IREX', questions: 10 },
+  ],
 }
 
-const subjectIcons: Record<string, string> = {
-  'Human Factors': '🧠',
-  'Aerodynamics': '✈️',
-  'Aircraft General Knowledge': '⚙️',
-  'Meteorology': '🌦️',
-  'Navigation': '🧭',
-  'Operations, Performance and Planning': '📋',
-  'Flight Planning': '📋',
-  'Flight Rules & Air Law': '⚖️',
-  'PPL Theory': '📚',
-  'Instrument Rating': '🎯',
+const passMarks: Record<string, number> = {
+  CLWA: 80,
 }
 
 export default function Dashboard() {
@@ -27,6 +38,7 @@ export default function Dashboard() {
   const [selectedLicence, setSelectedLicence] = useState('CPL')
   const [loading, setLoading] = useState(true)
   const [recentScores, setRecentScores] = useState<any[]>([])
+  const [bestScores, setBestScores] = useState<Record<string, number>>({})
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => {
@@ -34,20 +46,29 @@ export default function Dashboard() {
         window.location.href = '/login'
       } else {
         setUser(data.user)
-        loadRecentScores(data.user.id)
+        loadScores(data.user.id)
         setLoading(false)
       }
     })
   }, [])
 
-  async function loadRecentScores(userId: string) {
+  async function loadScores(userId: string) {
     const { data } = await supabase
       .from('scores')
       .select('subject, percentage, created_at')
       .eq('user_id', userId)
       .order('created_at', { ascending: false })
-      .limit(3)
-    if (data) setRecentScores(data)
+    if (data) {
+      setRecentScores(data.slice(0, 3))
+      const best: Record<string, number> = {}
+      data.forEach((s: any) => {
+        const pct = Number(s.percentage)
+        if (!best[s.subject] || pct > best[s.subject]) {
+          best[s.subject] = pct
+        }
+      })
+      setBestScores(best)
+    }
   }
 
   async function handleSignOut() {
@@ -55,97 +76,115 @@ export default function Dashboard() {
     window.location.href = '/'
   }
 
-  function goToQuiz(subject: string) {
-    window.location.href = '/quiz/' + encodeURIComponent(subject)
-  }
-
   if (loading) return (
-    <main style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:'system-ui,sans-serif'}}>
-      <p style={{color:'#64748b'}}>Loading...</p>
+    <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif' }}>
+      <p style={{ color: '#64748b' }}>Loading...</p>
     </main>
   )
 
   const currentSubjects = subjectsByLicence[selectedLicence] || []
 
   return (
-    <main style={{minHeight:'100vh',background:'#f8fafc',fontFamily:'system-ui,sans-serif'}}>
-      <nav style={{background:'white',borderBottom:'1px solid #e2e8f0',padding:'1rem 2rem',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+    <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
+      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div>
-          <span style={{fontSize:'20px',fontWeight:'800',color:'#2563eb'}}>V1</span>
-          <span style={{fontSize:'20px',fontWeight:'800',color:'#0a1628'}}> Study</span>
-          <div style={{fontSize:'11px',color:'#64748b',fontStyle:'italic'}}>V1. Rotate. Pass.</div>
+          <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
+          <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
+          <div style={{ fontSize: '11px', color: '#94a3b8', fontStyle: 'italic' }}>V1. Rotate. Pass.</div>
         </div>
-        <div style={{display:'flex',alignItems:'center',gap:'1.5rem'}}>
-          <a href="/dashboard" style={{color:'#2563eb',textDecoration:'none',fontSize:'14px',fontWeight:'600'}}>Study</a>
-          <a href="/progress" style={{color:'#64748b',textDecoration:'none',fontSize:'14px'}}>Progress</a>
-          <a href="/pricing" style={{color:'#64748b',textDecoration:'none',fontSize:'14px'}}>Upgrade</a>
-          <div style={{display:'flex',alignItems:'center',gap:'8px'}}>
-            <span style={{fontSize:'13px',color:'#64748b'}}>{user?.user_metadata?.full_name || user?.email}</span>
-            <button onClick={handleSignOut} style={{background:'none',border:'1px solid #e2e8f0',borderRadius:'8px',padding:'5px 12px',fontSize:'13px',cursor:'pointer',color:'#64748b'}}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+          <a href="/dashboard" style={{ color: '#2563eb', textDecoration: 'none', fontSize: '14px', fontWeight: '600' }}>Study</a>
+          <a href="/progress" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Progress</a>
+          <a href="/pricing" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Upgrade</a>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ fontSize: '13px', color: '#64748b' }}>{user?.user_metadata?.full_name || user?.email}</span>
+            <button onClick={handleSignOut} style={{ background: 'none', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '5px 12px', fontSize: '13px', cursor: 'pointer', color: '#64748b' }}>
               Sign out
             </button>
           </div>
         </div>
       </nav>
 
-      <div style={{maxWidth:'900px',margin:'0 auto',padding:'2rem'}}>
-        <div style={{marginBottom:'2rem',display:'flex',alignItems:'center',justifyContent:'space-between',flexWrap:'wrap',gap:'1rem'}}>
+      <div style={{ maxWidth: '960px', margin: '0 auto', padding: '2rem' }}>
+
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '2rem', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
-            <h1 style={{fontSize:'26px',fontWeight:'700',color:'#0a1628',marginBottom:'4px'}}>
-              Welcome back{user?.user_metadata?.full_name ? `, ${user.user_metadata.full_name.split(' ')[0]}` : ''}! ✈️
+            <h1 style={{ fontSize: '24px', fontWeight: '700', color: '#0a1628', marginBottom: '4px' }}>
+              Welcome back{user?.user_metadata?.full_name ? `, ${user.user_metadata.full_name.split(' ')[0]}` : ''}.
             </h1>
-            <p style={{fontSize:'15px',color:'#64748b'}}>Choose a subject and start practising.</p>
+            <p style={{ fontSize: '14px', color: '#64748b' }}>Select a licence category and begin practising.</p>
           </div>
           {recentScores.length > 0 && (
-            <a href="/progress" style={{background:'white',border:'1px solid #e2e8f0',borderRadius:'12px',padding:'12px 16px',textDecoration:'none',display:'flex',flexDirection:'column',gap:'4px',minWidth:'180px'}}>
-              <div style={{fontSize:'11px',color:'#94a3b8',fontFamily:'monospace'}}>RECENT SCORES</div>
+            <a href="/progress" style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '12px 16px', textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '6px', minWidth: '200px' }}>
+              <div style={{ fontSize: '10px', fontWeight: '700', color: '#94a3b8', fontFamily: 'monospace', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Recent Activity</div>
               {recentScores.map((s, i) => (
-                <div key={i} style={{display:'flex',justifyContent:'space-between',alignItems:'center',gap:'12px'}}>
-                  <div style={{fontSize:'12px',color:'#64748b',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',maxWidth:'120px'}}>{s.subject}</div>
-                  <div style={{fontSize:'12px',fontWeight:'700',fontFamily:'monospace',color:s.percentage>=70?'#16a34a':'#dc2626'}}>{s.percentage}%</div>
+                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
+                  <div style={{ fontSize: '12px', color: '#475569', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '130px' }}>{s.subject}</div>
+                  <div style={{ fontSize: '12px', fontWeight: '700', fontFamily: 'monospace', color: Number(s.percentage) >= 70 ? '#16a34a' : '#dc2626', flexShrink: 0 }}>{Number(s.percentage)}%</div>
                 </div>
               ))}
-              <div style={{fontSize:'11px',color:'#2563eb',marginTop:'2px'}}>View all →</div>
+              <div style={{ fontSize: '11px', color: '#2563eb', marginTop: '2px' }}>View full progress →</div>
             </a>
           )}
         </div>
 
-        <div style={{display:'flex',gap:'10px',marginBottom:'2rem',flexWrap:'wrap'}}>
+        <div style={{ display: 'flex', gap: '8px', marginBottom: '2rem', flexWrap: 'wrap' }}>
           {Object.keys(subjectsByLicence).map((licence) => (
             <button
               key={licence}
               onClick={() => setSelectedLicence(licence)}
-              style={{padding:'8px 20px',borderRadius:'99px',border:'none',fontWeight:'600',fontSize:'14px',cursor:'pointer',background:selectedLicence===licence?'#2563eb':'#e2e8f0',color:selectedLicence===licence?'white':'#475569'}}
+              style={{ padding: '8px 20px', borderRadius: '6px', border: 'none', fontWeight: '600', fontSize: '13px', cursor: 'pointer', background: selectedLicence === licence ? '#0a1628' : '#e2e8f0', color: selectedLicence === licence ? 'white' : '#475569', letterSpacing: '0.02em' }}
             >
               {licence}
             </button>
           ))}
         </div>
 
-        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(250px,1fr))',gap:'1rem',marginBottom:'2rem'}}>
-          {currentSubjects.map((subject) => (
-            <div key={subject} style={{background:'white',borderRadius:'12px',padding:'1.5rem',border:'1px solid #e2e8f0'}}>
-              <div style={{fontSize:'24px',marginBottom:'8px'}}>{subjectIcons[subject] || '📖'}</div>
-              <div style={{fontSize:'13px',fontWeight:'700',color:'#2563eb',marginBottom:'4px'}}>{selectedLicence}</div>
-              <div style={{fontSize:'15px',fontWeight:'600',color:'#0a1628',marginBottom:'12px',lineHeight:1.3}}>{subject}</div>
-              <div style={{fontSize:'12px',color:'#94a3b8',marginBottom:'12px',fontFamily:'monospace'}}>10 questions · Free trial</div>
-              <button
-                onClick={() => goToQuiz(subject)}
-                style={{display:'block',width:'100%',background:'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'9px',fontSize:'13px',fontWeight:'600',cursor:'pointer',textAlign:'center'}}
-              >
-                Start Quiz →
-              </button>
-            </div>
-          ))}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(260px,1fr))', gap: '12px', marginBottom: '2rem' }}>
+          {currentSubjects.map(({ subject, code, questions }) => {
+            const best = bestScores[subject]
+            const passMark = passMarks[code] || 70
+            const hasPassed = best !== undefined && best >= passMark
+            return (
+              <div key={subject} style={{ background: 'white', borderRadius: '10px', padding: '1.25rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <div style={{ fontSize: '11px', fontWeight: '700', color: '#2563eb', fontFamily: 'monospace', letterSpacing: '0.06em', background: '#eff6ff', padding: '3px 8px', borderRadius: '4px' }}>{code}</div>
+                  {best !== undefined && (
+                    <div style={{ fontSize: '11px', fontWeight: '600', color: hasPassed ? '#16a34a' : '#f59e0b', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <span style={{ fontSize: '10px' }}>{hasPassed ? '✓' : '○'}</span>
+                      Best: {best}%
+                    </div>
+                  )}
+                </div>
+                <div>
+                  <div style={{ fontSize: '14px', fontWeight: '600', color: '#0a1628', lineHeight: 1.3, marginBottom: '4px' }}>{subject}</div>
+                  <div style={{ fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>
+                    {questions} questions · Pass mark {passMark}%
+                  </div>
+                </div>
+                {best !== undefined && (
+                  <div style={{ background: '#f8fafc', borderRadius: '4px', height: '4px', overflow: 'hidden' }}>
+                    <div style={{ height: '100%', background: hasPassed ? '#16a34a' : '#f59e0b', borderRadius: '4px', width: Math.min(best, 100) + '%', transition: 'width 0.4s' }}></div>
+                  </div>
+                )}
+                <button
+                  onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)}
+                  style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '9px', fontSize: '13px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em' }}
+                >
+                  {best !== undefined ? 'Practise again' : 'Start quiz'}
+                </button>
+              </div>
+            )
+          })}
         </div>
 
-        <div style={{background:'#eff6ff',border:'1px solid #bfdbfe',borderRadius:'12px',padding:'1.25rem 1.5rem',display:'flex',alignItems:'center',justifyContent:'space-between',flexWrap:'wrap',gap:'1rem'}}>
+        <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '10px', padding: '1.25rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
-            <div style={{fontSize:'14px',fontWeight:'700',color:'#1d4ed8',marginBottom:'2px'}}>Free Trial — 7 days remaining</div>
-            <div style={{fontSize:'13px',color:'#3b82f6'}}>Upgrade to unlock unlimited AI-generated questions and full progress tracking</div>
+            <div style={{ fontSize: '13px', fontWeight: '700', color: '#1d4ed8', marginBottom: '2px' }}>Free Trial — Upgrade for unlimited questions</div>
+            <div style={{ fontSize: '12px', color: '#3b82f6' }}>Paid subscribers get unlimited AI-generated questions based on the full CASA MOS syllabus</div>
           </div>
-          <a href="/pricing" style={{background:'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'10px 20px',fontSize:'14px',fontWeight:'600',cursor:'pointer',whiteSpace:'nowrap',textDecoration:'none'}}>
-            Upgrade Now →
+          <a href="/pricing" style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '9px 20px', fontSize: '13px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none' }}>
+            View Plans
           </a>
         </div>
       </div>
