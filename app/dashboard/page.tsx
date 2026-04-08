@@ -2,35 +2,31 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
 
-const subjectsByLicence: Record<string, { subject: string; code: string; questions: number }[]> = {
+const subjectsByLicence: Record<string, { subject: string; code: string; passMark: number }[]> = {
   PPL: [
-    { subject: 'PPL Theory', code: 'PPL', questions: 10 },
+    { subject: 'PPL Theory', code: 'PPL', passMark: 70 },
   ],
   CPL: [
-    { subject: 'Human Factors', code: 'CHUF', questions: 10 },
-    { subject: 'Aerodynamics', code: 'CADA', questions: 10 },
-    { subject: 'Aircraft General Knowledge', code: 'CSYA', questions: 10 },
-    { subject: 'Meteorology', code: 'CMET', questions: 10 },
-    { subject: 'Navigation', code: 'CNAV', questions: 10 },
-    { subject: 'Operations, Performance and Planning', code: 'CFPA', questions: 10 },
-    { subject: 'Flight Rules & Air Law', code: 'CLWA', questions: 10 },
+    { subject: 'Human Factors', code: 'CHUF', passMark: 70 },
+    { subject: 'Aerodynamics', code: 'CADA', passMark: 70 },
+    { subject: 'Aircraft General Knowledge', code: 'CSYA', passMark: 70 },
+    { subject: 'Meteorology', code: 'CMET', passMark: 70 },
+    { subject: 'Navigation', code: 'CNAV', passMark: 70 },
+    { subject: 'Operations Performance Planning', code: 'CFPA', passMark: 70 },
+    { subject: 'Flight Rules and Air Law', code: 'CLWA', passMark: 80 },
   ],
   ATPL: [
-    { subject: 'Human Factors', code: 'CHUF', questions: 10 },
-    { subject: 'Aerodynamics', code: 'CADA', questions: 10 },
-    { subject: 'Aircraft General Knowledge', code: 'CSYA', questions: 10 },
-    { subject: 'Meteorology', code: 'CMET', questions: 10 },
-    { subject: 'Navigation', code: 'CNAV', questions: 10 },
-    { subject: 'Flight Planning', code: 'ATPL-FP', questions: 10 },
-    { subject: 'Flight Rules & Air Law', code: 'CLWA', questions: 10 },
+    { subject: 'Human Factors Advanced', code: 'AHUF', passMark: 70 },
+    { subject: 'Aerodynamics Advanced', code: 'AADA', passMark: 70 },
+    { subject: 'Aircraft General Advanced', code: 'AASY', passMark: 70 },
+    { subject: 'Meteorology Advanced', code: 'AMET', passMark: 70 },
+    { subject: 'Navigation Advanced', code: 'ANAV', passMark: 70 },
+    { subject: 'Flight Planning Advanced', code: 'AAFP', passMark: 70 },
+    { subject: 'Air Law Advanced', code: 'AALW', passMark: 80 },
   ],
   IREX: [
-    { subject: 'Instrument Rating', code: 'IREX', questions: 10 },
+    { subject: 'Instrument Rating', code: 'IREX', passMark: 70 },
   ],
-}
-
-const passMarks: Record<string, number> = {
-  CLWA: 80,
 }
 
 export default function Dashboard() {
@@ -106,7 +102,6 @@ export default function Dashboard() {
       </nav>
 
       <div style={{ maxWidth: '960px', margin: '0 auto', padding: '2rem' }}>
-
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '2rem', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <h1 style={{ fontSize: '24px', fontWeight: '700', color: '#0a1628', marginBottom: '4px' }}>
@@ -141,9 +136,8 @@ export default function Dashboard() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(260px,1fr))', gap: '12px', marginBottom: '2rem' }}>
-          {currentSubjects.map(({ subject, code, questions }) => {
+          {currentSubjects.map(({ subject, code, passMark }) => {
             const best = bestScores[subject]
-            const passMark = passMarks[code] || 70
             const hasPassed = best !== undefined && best >= passMark
             return (
               <div key={subject} style={{ background: 'white', borderRadius: '10px', padding: '1.25rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -159,7 +153,7 @@ export default function Dashboard() {
                 <div>
                   <div style={{ fontSize: '14px', fontWeight: '600', color: '#0a1628', lineHeight: 1.3, marginBottom: '4px' }}>{subject}</div>
                   <div style={{ fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>
-                    {questions} questions · Pass mark {passMark}%
+                    10 questions · Pass mark {passMark}%
                   </div>
                 </div>
                 {best !== undefined && (
