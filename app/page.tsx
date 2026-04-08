@@ -2,72 +2,186 @@
 import { useEffect, useState } from 'react'
 
 function IntroAnimation({ onComplete }: { onComplete: () => void }) {
-  const [phase, setPhase] = useState<'takeoff' | 'text' | 'fadeout'>('takeoff')
+  const [started, setStarted] = useState(false)
+  const [showText, setShowText] = useState(false)
+  const [fadeOut, setFadeOut] = useState(false)
 
   useEffect(() => {
-    const t1 = setTimeout(() => setPhase('text'), 1800)
-    const t2 = setTimeout(() => setPhase('fadeout'), 3000)
-    const t3 = setTimeout(onComplete, 3800)
-    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3) }
+    // Small delay so browser paints first
+    const t0 = setTimeout(() => setStarted(true), 200)
+    // Text starts appearing about halfway through the flight
+    const t1 = setTimeout(() => setShowText(true), 1400)
+    // Start fading out
+    const t2 = setTimeout(() => setFadeOut(true), 3200)
+    // Tell parent we are done
+    const t3 = setTimeout(onComplete, 4000)
+    return () => { clearTimeout(t0); clearTimeout(t1); clearTimeout(t2); clearTimeout(t3) }
   }, [onComplete])
+
+  // 747 SVG — accurate side silhouette
+  const Boeing747 = () => (
+    <svg
+      viewBox="0 0 520 120"
+      width="520"
+      height="120"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="white"
+    >
+      {/* Main fuselage */}
+      <ellipse cx="260" cy="58" rx="200" ry="18" />
+      {/* Nose — 747 distinctive hump */}
+      <path d="M460 58 Q490 58 510 54 Q520 51 515 48 Q510 44 500 46 Q490 48 475 52 Q468 54 462 56 Z" />
+      {/* Upper deck hump — 747 signature */}
+      <path d="M340 40 Q360 28 400 26 Q430 25 450 30 Q460 34 458 40 Q440 36 410 36 Q375 36 355 42 Z" />
+      {/* Tail */}
+      <path d="M60 58 Q40 58 30 62 Q20 65 25 68 Q30 70 40 67 Q50 64 62 61 Z" />
+      {/* Vertical tail fin */}
+      <path d="M85 58 Q80 42 90 22 Q96 12 104 16 Q108 20 104 32 Q100 44 96 56 Z" />
+      {/* Horizontal stabiliser left */}
+      <path d="M75 62 Q55 68 40 72 Q32 74 34 78 Q36 80 46 78 Q62 74 80 68 Z" />
+      {/* Horizontal stabiliser right — smaller on far side */}
+      <path d="M75 54 Q60 48 48 46 Q40 44 41 40 Q43 38 52 40 Q66 44 80 50 Z" />
+      {/* Main wing — upper surface */}
+      <path d="M220 52 Q260 20 310 6 Q330 1 338 6 Q342 10 334 14 Q316 18 278 32 Q248 44 232 56 Z" />
+      {/* Main wing — lower surface */}
+      <path d="M220 64 Q260 96 310 110 Q328 116 336 110 Q340 106 333 102 Q315 96 280 84 Q250 72 234 62 Z" />
+      {/* Engine 1 — outboard left (far side, smaller) */}
+      <ellipse cx="295" cy="22" rx="22" ry="6" />
+      <path d="M273 22 Q295 16 317 22 Q295 26 273 22 Z" opacity="0.6" />
+      {/* Engine 2 — inboard left */}
+      <ellipse cx="256" cy="36" rx="24" ry="7" />
+      <path d="M232 36 Q256 30 280 36 Q256 40 232 36 Z" opacity="0.6" />
+      {/* Engine 3 — inboard right */}
+      <ellipse cx="256" cy="80" rx="24" ry="7" />
+      <path d="M232 80 Q256 86 280 80 Q256 76 232 80 Z" opacity="0.6" />
+      {/* Engine 4 — outboard right (far side, smaller) */}
+      <ellipse cx="295" cy="94" rx="22" ry="6" />
+      <path d="M273 94 Q295 100 317 94 Q295 90 273 94 Z" opacity="0.6" />
+      {/* Windows row — dots */}
+      <rect x="160" y="50" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="172" y="49" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="184" y="48" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="196" y="47" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="208" y="47" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="220" y="47" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="232" y="47" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="244" y="47" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="256" y="47" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="268" y="47" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="280" y="48" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="292" y="48" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="304" y="49" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="316" y="50" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="328" y="51" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="340" y="52" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="352" y="53" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="364" y="54" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="376" y="55" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="388" y="55" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      <rect x="400" y="55" width="4" height="4" rx="1" fill="#0a1628" opacity="0.6" />
+      {/* Upper deck windows */}
+      <rect x="360" y="34" width="4" height="3" rx="1" fill="#0a1628" opacity="0.5" />
+      <rect x="372" y="33" width="4" height="3" rx="1" fill="#0a1628" opacity="0.5" />
+      <rect x="384" y="32" width="4" height="3" rx="1" fill="#0a1628" opacity="0.5" />
+      <rect x="396" y="31" width="4" height="3" rx="1" fill="#0a1628" opacity="0.5" />
+      <rect x="408" y="31" width="4" height="3" rx="1" fill="#0a1628" opacity="0.5" />
+      <rect x="420" y="32" width="4" height="3" rx="1" fill="#0a1628" opacity="0.5" />
+      <rect x="432" y="33" width="4" height="3" rx="1" fill="#0a1628" opacity="0.5" />
+    </svg>
+  )
 
   return (
     <div style={{
       position: 'fixed', inset: 0, zIndex: 9999,
-      background: '#0a1628',
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-      opacity: phase === 'fadeout' ? 0 : 1,
-      transition: phase === 'fadeout' ? 'opacity 0.8s ease' : 'none',
+      background: '#060e1c',
+      opacity: fadeOut ? 0 : 1,
+      transition: fadeOut ? 'opacity 0.8s ease' : 'none',
       overflow: 'hidden',
     }}>
-      <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '24px' }}>
+      {/* Subtle runway glow at centre */}
+      <div style={{
+        position: 'absolute',
+        bottom: 'calc(50% - 1px)',
+        left: 0, right: 0,
+        height: '1px',
+        background: 'rgba(255,255,255,0.06)',
+      }} />
 
-        {/* Plane */}
+      {/* Aircraft + text container — sits in vertical centre */}
+      <div style={{
+        position: 'absolute',
+        top: '50%',
+        left: 0,
+        width: '100%',
+        transform: started
+          ? 'translateX(110vw) translateY(calc(-50% - 60px)) rotate(-4deg)'
+          : 'translateX(-580px) translateY(-50%) rotate(0deg)',
+        transition: started
+          ? 'transform 3.0s cubic-bezier(0.25, 0.1, 0.5, 1)'
+          : 'none',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '0px',
+        willChange: 'transform',
+      }}>
+        {/* V1 Study text — sits directly behind the aircraft, reveals as plane moves right */}
         <div style={{
-          transform: phase === 'takeoff'
-            ? 'translateX(0px) translateY(0px) rotate(0deg)'
-            : 'translateX(80px) translateY(-50px) rotate(-14deg)',
-          transition: 'transform 1.6s cubic-bezier(0.4, 0, 0.2, 1)',
+          opacity: showText ? 1 : 0,
+          transition: 'opacity 0.8s ease',
+          marginRight: '-20px',
+          zIndex: 1,
+          whiteSpace: 'nowrap',
+          userSelect: 'none',
         }}>
-          <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="47" cy="45" rx="30" ry="7.5" fill="white" opacity="0.96" />
-            <path d="M77 45 Q86 45 82 43 Q86 45 82 47 Z" fill="white" opacity="0.96" />
-            <path d="M17 45 Q10 45 12 41 L18 41 Z" fill="white" opacity="0.8" />
-            <path d="M20 45 L25 31 L30 45 Z" fill="white" opacity="0.85" />
-            <path d="M43 45 L58 20 L63 22 L50 45 Z" fill="white" opacity="0.9" />
-            <path d="M43 45 L58 70 L63 68 L50 45 Z" fill="white" opacity="0.65" />
-            <ellipse cx="52" cy="50" rx="6.5" ry="3" fill="#2563eb" opacity="0.9" />
-            <path d="M45 50 Q52 52 59 50 Q52 48 45 50 Z" fill="#1d4ed8" opacity="0.8" />
-          </svg>
-        </div>
-
-        {/* V1 Study text */}
-        <div style={{
-          opacity: phase === 'text' || phase === 'fadeout' ? 1 : 0,
-          transform: phase === 'text' || phase === 'fadeout' ? 'translateX(0px)' : 'translateX(-24px)',
-          transition: 'opacity 0.5s ease, transform 0.5s ease',
-        }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px' }}>
-            <span style={{ fontSize: '56px', fontWeight: '800', color: '#2563eb', fontFamily: 'system-ui,sans-serif', lineHeight: 1 }}>V1</span>
-            <span style={{ fontSize: '56px', fontWeight: '800', color: 'white', fontFamily: 'system-ui,sans-serif', lineHeight: 1 }}>Study</span>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
+            <span style={{
+              fontSize: '72px',
+              fontWeight: '800',
+              color: '#2563eb',
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+              lineHeight: 1,
+              letterSpacing: '-1px',
+            }}>V1</span>
+            <span style={{
+              fontSize: '72px',
+              fontWeight: '800',
+              color: 'white',
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+              lineHeight: 1,
+              letterSpacing: '-1px',
+            }}>Study</span>
           </div>
-          <div style={{ fontSize: '14px', color: 'rgba(255,255,255,0.45)', fontStyle: 'italic', marginTop: '6px', fontFamily: 'system-ui,sans-serif', letterSpacing: '0.06em' }}>
+          <div style={{
+            fontSize: '16px',
+            color: 'rgba(255,255,255,0.4)',
+            fontStyle: 'italic',
+            marginTop: '6px',
+            fontFamily: 'system-ui, sans-serif',
+            letterSpacing: '0.12em',
+            textTransform: 'uppercase',
+          }}>
             V1. Rotate. Pass.
           </div>
         </div>
+
+        {/* 747 silhouette */}
+        <div style={{ zIndex: 2, flexShrink: 0 }}>
+          <Boeing747 />
+        </div>
       </div>
 
-      {/* Engine trail */}
-      <div style={{
-        position: 'absolute',
-        left: '20%',
-        top: '50%',
-        width: phase === 'takeoff' ? '0px' : '180px',
-        height: '2px',
-        background: 'linear-gradient(90deg, transparent, rgba(37,99,235,0.4), transparent)',
-        transition: 'width 1.6s ease',
-        transform: 'translateY(-6px)',
-      }} />
+      {/* Engine heat shimmer trails */}
+      {started && (
+        <div style={{
+          position: 'absolute',
+          top: 'calc(50% - 2px)',
+          left: 0,
+          right: 0,
+          height: '4px',
+          background: 'linear-gradient(90deg, transparent 0%, rgba(37,99,235,0.15) 40%, rgba(37,99,235,0.05) 70%, transparent 100%)',
+          pointerEvents: 'none',
+        }} />
+      )}
     </div>
   )
 }
