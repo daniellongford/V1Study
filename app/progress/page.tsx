@@ -11,7 +11,16 @@ export default function ProgressPage() {
     supabase.auth.getUser().then(({ data }) => {
       if (!data.user) { window.location.href = '/login'; return }
       supabase.from('scores').select('*').eq('user_id', data.user.id).order('created_at', { ascending: false }).then(({ data: rows }) => {
-        if (rows) setScores(rows)
+        if (rows) {
+          // Ensure all numeric fields are numbers not strings
+          const cleaned = rows.map(r => ({
+            ...r,
+            score: Number(r.score),
+            total: Number(r.total),
+            percentage: Number(r.percentage),
+          }))
+          setScores(cleaned)
+        }
         setLoading(false)
       })
     })
@@ -30,14 +39,14 @@ export default function ProgressPage() {
     subject,
     licence: rows[0].licence,
     attempts: rows.length,
-    best: Math.max(...rows.map((r) => r.percentage)),
-    last: rows[0].percentage,
-    avg: Math.round(rows.reduce((a, r) => a + r.percentage, 0) / rows.length),
+    best: Math.max(...rows.map((r) => Number(r.percentage))),
+    last: Number(rows[0].percentage),
+    avg: Math.round(rows.reduce((a, r) => a + Number(r.percentage), 0) / rows.length),
   })).sort((a, b) => b.best - a.best)
 
   const totalAttempts = scores.length
-  const avg = scores.length > 0 ? Math.round(scores.reduce((a, s) => a + s.percentage, 0) / scores.length) : 0
-  const passRate = scores.length > 0 ? Math.round(scores.filter((s) => s.percentage >= 70).length / scores.length * 100) : 0
+  const avg = scores.length > 0 ? Math.round(scores.reduce((a, s) => a + Number(s.percentage), 0) / scores.length) : 0
+  const passRate = scores.length > 0 ? Math.round(scores.filter((s) => Number(s.percentage) >= 70).length / scores.length * 100) : 0
 
   function color(pct: number) {
     if (pct >= 80) return '#16a34a'
@@ -72,7 +81,6 @@ export default function ProgressPage() {
 
         {scores.length === 0 ? (
           <div style={{ background: 'white', borderRadius: '12px', padding: '3rem', border: '1px solid #e2e8f0', textAlign: 'center' }}>
-            <div style={{ fontSize: '48px', marginBottom: '1rem' }}>📊</div>
             <h2 style={{ fontSize: '20px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>No attempts yet</h2>
             <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1.5rem' }}>Complete a quiz to start tracking your progress</p>
             <a href="/dashboard" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '10px 24px', textDecoration: 'none', fontWeight: '600', fontSize: '14px' }}>Start studying</a>
@@ -121,7 +129,7 @@ export default function ProgressPage() {
                     </div>
                   </div>
                   <div style={{ background: '#f1f5f9', borderRadius: '99px', height: '6px', overflow: 'hidden', marginBottom: '8px' }}>
-                    <div style={{ height: '100%', background: color(s.best), borderRadius: '99px', width: s.best + '%' }}></div>
+                    <div style={{ height: '100%', background: color(s.best), borderRadius: '99px', width: Math.min(s.best, 100) + '%' }}></div>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span style={{ fontSize: '12px', color: s.best >= 70 ? '#16a34a' : '#dc2626', fontWeight: '600' }}>{s.best >= 70 ? '✓ Pass achieved' : '✗ Not yet passing'}</span>
@@ -139,8 +147,8 @@ export default function ProgressPage() {
                     <div style={{ fontSize: '13px', fontWeight: '500', color: '#0a1628' }}>{s.subject}</div>
                     <div style={{ fontSize: '11px', color: '#94a3b8' }}>{new Date(s.created_at).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })}</div>
                   </div>
-                  <div style={{ background: s.percentage >= 70 ? '#f0fdf4' : '#fff1f2', borderRadius: '6px', padding: '3px 10px', fontSize: '13px', fontWeight: '700', color: color(s.percentage), fontFamily: 'monospace' }}>
-                    {s.percentage}%
+                  <div style={{ background: Number(s.percentage) >= 70 ? '#f0fdf4' : '#fff1f2', borderRadius: '6px', padding: '3px 10px', fontSize: '13px', fontWeight: '700', color: color(Number(s.percentage)), fontFamily: 'monospace' }}>
+                    {Number(s.percentage)}%
                   </div>
                 </div>
               ))}
