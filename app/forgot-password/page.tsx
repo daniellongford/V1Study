@@ -12,7 +12,7 @@ export default function ForgotPassword() {
     if (!email) { setMessage('Please enter your email address'); return }
     setLoading(true)
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: 'https://v1-study.vercel.app/reset-password',
+      redirectTo: 'https://v1study.com.au/reset-password',
     })
     if (error) {
       setMessage(error.message)
