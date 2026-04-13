@@ -34,7 +34,7 @@ export default function SignUp() {
           </div>
           <p style={{fontSize:'12px',color:'#64748b',fontStyle:'italic'}}>V1. Rotate. Pass.</p>
           <h1 style={{fontSize:'22px',fontWeight:'700',color:'#0a1628',marginTop:'1rem'}}>Create your account</h1>
-          <p style={{fontSize:'14px',color:'#64748b',marginTop:'4px'}}>Start your 7 day free trial today</p>
+          <p style={{fontSize:'14px',color:'#64748b',marginTop:'4px'}}>Start your 7 day free trial</p>
         </div>
         <div style={{marginBottom:'1rem'}}>
           <label style={{fontSize:'13px',fontWeight:'600',color:'#374151',display:'block',marginBottom:'6px'}}>Full Name</label>
@@ -60,7 +60,7 @@ export default function SignUp() {
           Already have an account?{' '}
           <a href="/login" style={{color:'#2563eb',fontWeight:'600',textDecoration:'none'}}>Log in</a>
         </p>
-        <p style={{textAlign:'center',fontSize:'12px',color:'#94a3b8',marginTop:'1rem'}}>7 day free trial · No credit card required</p>
+        <p style={{textAlign:'center',fontSize:'12px',color:'#94a3b8',marginTop:'1rem'}}>7 day free trial · Cancel anytime before day 7</p>
       </div>
     </main>
   )
