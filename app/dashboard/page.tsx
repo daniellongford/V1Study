@@ -175,7 +175,7 @@ export default function Dashboard() {
         <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '10px', padding: '1.25rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <div style={{ fontSize: '13px', fontWeight: '700', color: '#1d4ed8', marginBottom: '2px' }}>Free Trial — Upgrade for unlimited questions</div>
-            <div style={{ fontSize: '12px', color: '#3b82f6' }}>Paid subscribers get unlimited AI-generated questions based on the full CASA MOS syllabus</div>
+            <div style={{ fontSize: '12px', color: '#3b82f6' }}>Paid subscribers get unlimited practice questions written to the full CASA MOS syllabus</div>
           </div>
           <a href="/pricing" style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '9px 20px', fontSize: '13px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none' }}>
             View Plans
