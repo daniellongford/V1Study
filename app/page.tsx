@@ -124,13 +124,13 @@ export default function Home() {
             <span style={{ color: '#2563eb' }}>Flight Deck</span> Starts Here
           </h1>
           <p style={{ fontSize: '18px', color: '#64748b', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
-            Australia&apos;s most advanced CPL, ATPL, PPL and IREX exam preparation platform. AI-powered questions with real CASA references. Unlimited practice.
+            Australia&apos;s most advanced CPL, ATPL, PPL and IREX exam preparation platform. Expert-reviewed questions aligned to real CASA references. Unlimited practice.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1rem' }}>
             <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '14px 32px', fontSize: '16px', fontWeight: '600', textDecoration: 'none', display: 'inline-block' }}>Start Free Trial</a>
             <a href="#pricing" style={{ background: 'transparent', color: '#0a1628', border: '2px solid #e2e8f0', borderRadius: '8px', padding: '14px 32px', fontSize: '16px', fontWeight: '600', textDecoration: 'none', display: 'inline-block' }}>See Pricing</a>
           </div>
-          <p style={{ fontSize: '13px', color: '#94a3b8' }}>7 day free trial · Card required · Cancel anytime before day 7</p>
+          <p style={{ fontSize: '13px', color: '#94a3b8' }}>7 day free trial · Cancel anytime before day 7</p>
         </section>
 
         <section id="features" style={{ padding: '4rem 2rem', maxWidth: '1000px', margin: '0 auto' }}>
@@ -138,10 +138,10 @@ export default function Home() {
           <p style={{ textAlign: 'center', color: '#64748b', marginBottom: '3rem', fontSize: '16px' }}>From your first PPL theory to your ATPL we have every exam covered</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1.5rem' }}>
             {[
-              { title: 'PPL', full: 'Private Pilot Licence', exams: '1 combined exam', color: '#10b981', desc: 'Perfect for student pilots taking their first theory exam' },
-              { title: 'CPL', full: 'Commercial Pilot Licence', exams: '7 exams', color: '#2563eb', desc: 'All 7 subjects including Operations, Performance and Planning' },
-              { title: 'ATPL', full: 'Airline Transport Pilot', exams: '7 exams', color: '#7c3aed', desc: 'Advanced theory for pilots heading to the flight deck' },
-              { title: 'IREX', full: 'Instrument Rating Exam', exams: '1 exam', color: '#f59e0b', desc: 'IFR procedures and instrument flight rules' },
+              { title: 'PPL', full: 'Private Pilot Licence', exams: '1 combined exam', color: '#10b981', desc: 'The foundation of flight. Master the core theory required to earn your Private Pilot Licence.' },
+              { title: 'CPL', full: 'Commercial Pilot Licence', exams: '7 exams', color: '#2563eb', desc: 'All 7 CASA subjects. Built for pilots serious about going professional.' },
+              { title: 'ATPL', full: 'Airline Transport Pilot', exams: '7 exams', color: '#7c3aed', desc: 'The highest standard in Australian pilot licensing. All 7 subjects for pilots bound for the airlines.' },
+              { title: 'IREX', full: 'Instrument Rating Exam', exams: '1 exam', color: '#f59e0b', desc: 'Cleared for the clouds. Everything you need to pass the CASA Instrument Rating Exam.' },
             ].map(function (item) {
               return (
                 <div key={item.title} style={{ background: '#f8fafc', borderRadius: '12px', padding: '1.5rem', border: '1px solid #e2e8f0' }}>
@@ -159,14 +159,14 @@ export default function Home() {
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
             <h2 style={{ textAlign: 'center', fontSize: '36px', fontWeight: '700', color: '#0a1628', marginBottom: '0.5rem' }}>Simple Pricing</h2>
             <p style={{ textAlign: 'center', color: '#64748b', marginBottom: '0.5rem' }}>Start with a 7 day free trial. Cancel anytime before day 7 and pay nothing.</p>
-            <p style={{ textAlign: 'center', color: '#94a3b8', fontSize: '13px', marginBottom: '3rem' }}>Card details required at signup — your card will be charged automatically after your trial ends.</p>
+            <p style={{ textAlign: 'center', color: '#94a3b8', fontSize: '13px', marginBottom: '3rem' }}>Start free, cancel anytime before day 7 and pay nothing.</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.25rem' }}>
               {[
-                { plan: 'PPL Pack', price: '$9.99', period: 'per month', priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz', features: ['PPL exam prep', 'Unlimited AI questions', 'Full explanations', 'CASA references'], color: '#10b981', popular: false },
-                { plan: 'CPL Pack', price: '$19.99', period: 'per month', priceId: 'price_1TIP6XCbt27bkqBv9CypW42J', features: ['PPL + all 7 CPL exams', 'Unlimited AI questions', 'Progress tracking', 'Weak area analysis'], color: '#2563eb', popular: true },
-                { plan: 'ATPL Pack', price: '$29.99', period: 'per month', priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn', features: ['CPL + all 7 ATPL exams', 'Unlimited AI questions', 'Progress tracking', 'Weak area analysis'], color: '#7c3aed', popular: false },
-                { plan: 'IREX Standalone', price: '$14.99', period: 'per month', priceId: 'price_1TIPDdCbt27bkqBvZzwkYthb', features: ['IREX exam only', 'Unlimited AI questions', 'Full explanations', 'CASA references'], color: '#f59e0b', popular: false },
-                { plan: 'Full Access', price: '$34.99', period: 'per month', priceId: 'price_1TIPBvCbt27bkqBvv4fUShu3', features: ['Every exam included', 'PPL CPL ATPL IREX', 'Unlimited AI questions', 'Priority support'], color: '#0a1628', popular: false },
+                { plan: 'PPL Pack', price: '$9.99', period: 'per month', priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz', features: ['PPL exam prep', 'Unlimited practice questions', 'Full explanations', 'CASA references'], color: '#10b981', popular: false },
+                { plan: 'CPL Pack', price: '$19.99', period: 'per month', priceId: 'price_1TIP6XCbt27bkqBv9CypW42J', features: ['PPL + all 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], color: '#2563eb', popular: true },
+                { plan: 'ATPL Pack', price: '$29.99', period: 'per month', priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn', features: ['CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], color: '#7c3aed', popular: false },
+                { plan: 'IREX Standalone', price: '$14.99', period: 'per month', priceId: 'price_1TIPDdCbt27bkqBvZzwkYthb', features: ['IREX exam only', 'Unlimited practice questions', 'Full explanations', 'CASA references'], color: '#f59e0b', popular: false },
+                { plan: 'Full Access', price: '$34.99', period: 'per month', priceId: 'price_1TIPBvCbt27bkqBvv4fUShu3', features: ['Every exam included', 'PPL CPL ATPL IREX', 'Unlimited practice questions', 'Priority support'], color: '#0a1628', popular: false },
               ].map(function (item) {
                 return (
                   <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '1.5rem', border: item.popular ? '2px solid #2563eb' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
