@@ -10,7 +10,7 @@ const plans = [
     priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz',
     color: '#10b981',
     description: 'Perfect for student pilots taking their PPL theory exam',
-    features: ['PPL Theory exam', 'Unlimited AI questions', 'Full explanations', 'CASA references', 'Progress tracking'],
+    features: ['PPL Theory exam', 'Unlimited practice questions', 'Full explanations', 'CASA references', 'Progress tracking'],
   },
   {
     name: 'CPL Pack',
@@ -20,7 +20,7 @@ const plans = [
     color: '#2563eb',
     popular: true,
     description: 'Everything you need for your Commercial Pilot Licence',
-    features: ['All 7 CPL exams', 'Unlimited AI questions', 'Progress tracking', 'Weak area analysis', 'CASA syllabus aligned'],
+    features: ['All 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA syllabus aligned'],
   },
   {
     name: 'ATPL Pack',
@@ -29,7 +29,7 @@ const plans = [
     priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn',
     color: '#7c3aed',
     description: 'For pilots heading to the flight deck',
-    features: ['All 7 CPL + 7 ATPL exams', 'Unlimited AI questions', 'Progress tracking', 'Weak area analysis', 'CASA MOS aligned'],
+    features: ['All 7 CPL + 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA MOS aligned'],
   },
   {
     name: 'IREX Standalone',
@@ -38,7 +38,7 @@ const plans = [
     priceId: 'price_1TIPDdCbt27bkqBvZzwkYthb',
     color: '#f59e0b',
     description: 'Already have your CPL? Add the Instrument Rating',
-    features: ['IREX exam only', 'Unlimited AI questions', 'Full explanations', 'CASA references', 'Progress tracking'],
+    features: ['IREX exam only', 'Unlimited practice questions', 'Full explanations', 'CASA references', 'Progress tracking'],
   },
   {
     name: 'Full Access',
@@ -47,7 +47,7 @@ const plans = [
     priceId: 'price_1TIPBvCbt27bkqBvv4fUShu3',
     color: '#0a1628',
     description: 'Every exam covered — the complete V1 Study experience',
-    features: ['All 16 exams included', 'PPL + CPL + ATPL + IREX', 'Unlimited AI questions', 'Priority support', 'CASA MOS aligned'],
+    features: ['All 16 exams included', 'PPL + CPL + ATPL + IREX', 'Unlimited practice questions', 'Priority support', 'CASA MOS aligned'],
   },
 ]
 
@@ -118,7 +118,7 @@ export default function PricingPage() {
           <h1 style={{ fontSize: '40px', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>Simple, transparent pricing</h1>
           <p style={{ fontSize: '18px', color: '#64748b', maxWidth: '600px', margin: '0 auto' }}>
             {user
-              ? 'Subscribe to unlock unlimited AI-generated questions based on the full CASA MOS syllabus.'
+              ? 'Subscribe to unlock unlimited practice questions written to the full CASA MOS syllabus.'
               : 'Start with a free trial. Cancel anytime. No lock-in contracts.'}
           </p>
         </div>
