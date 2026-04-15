@@ -40,6 +40,14 @@ const subjectsByLicence: Record<string, { subject: string; code: string; passMar
   ],
 }
 
+const PLAN_ACCESS: Record<string, string[]> = {
+  PPL: ['PPL Theory'],
+  CPL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law'],
+  ATPL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Human Factors Advanced', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced', 'Navigation Advanced', 'Flight Planning Advanced', 'Air Law Advanced'],
+  IREX: ['Instrument Rating'],
+  FULL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Human Factors Advanced', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced', 'Navigation Advanced', 'Flight Planning Advanced', 'Air Law Advanced', 'Instrument Rating'],
+}
+
 export default function Dashboard() {
   const [user, setUser] = useState<any>(null)
   const [selectedLicence, setSelectedLicence] = useState('CPL')
@@ -47,6 +55,7 @@ export default function Dashboard() {
   const [recentScores, setRecentScores] = useState<any[]>([])
   const [bestScores, setBestScores] = useState<Record<string, number>>({})
   const [menuOpen, setMenuOpen] = useState(false)
+  const [plan, setPlan] = useState<string | null>(null)
   const isMobile = useIsMobile()
 
   useEffect(() => {
@@ -56,10 +65,21 @@ export default function Dashboard() {
       } else {
         setUser(data.user)
         loadScores(data.user.id)
+        loadPlan(data.user.id)
         setLoading(false)
       }
     })
   }, [])
+
+  async function loadPlan(userId: string) {
+    const { data } = await supabase
+      .from('subscriptions')
+      .select('plan, status')
+      .eq('user_id', userId)
+      .eq('status', 'active')
+      .single()
+    if (data) setPlan(data.plan)
+  }
 
   async function loadScores(userId: string) {
     const { data } = await supabase
@@ -81,6 +101,11 @@ export default function Dashboard() {
   async function handleSignOut() {
     await supabase.auth.signOut()
     window.location.href = '/'
+  }
+
+  function hasAccess(subject: string): boolean {
+    if (!plan) return false
+    return PLAN_ACCESS[plan]?.includes(subject) ?? false
   }
 
   if (loading) return (
@@ -203,47 +228,69 @@ export default function Dashboard() {
           {currentSubjects.map(({ subject, code, passMark }) => {
             const best = bestScores[subject]
             const hasPassed = best !== undefined && best >= passMark
+            const accessible = hasAccess(subject)
             return (
-              <div key={subject} style={{ background: 'white', borderRadius: '10px', padding: '1.25rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <div key={subject} style={{ background: accessible ? 'white' : '#f8fafc', borderRadius: '10px', padding: '1.25rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: '10px', opacity: accessible ? 1 : 0.65 }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <div style={{ fontSize: '11px', fontWeight: '700', color: '#2563eb', fontFamily: 'monospace', letterSpacing: '0.06em', background: '#eff6ff', padding: '3px 8px', borderRadius: '4px' }}>{code}</div>
-                  {best !== undefined && (
+                  <div style={{ fontSize: '11px', fontWeight: '700', color: accessible ? '#2563eb' : '#94a3b8', fontFamily: 'monospace', letterSpacing: '0.06em', background: accessible ? '#eff6ff' : '#f1f5f9', padding: '3px 8px', borderRadius: '4px' }}>{code}</div>
+                  {accessible && best !== undefined && (
                     <div style={{ fontSize: '11px', fontWeight: '600', color: hasPassed ? '#16a34a' : '#f59e0b', display: 'flex', alignItems: 'center', gap: '4px' }}>
                       <span style={{ fontSize: '10px' }}>{hasPassed ? '✓' : '○'}</span>
                       Best: {best}%
                     </div>
+                  )}
+                  {!accessible && (
+                    <div style={{ fontSize: '11px', color: '#94a3b8' }}>🔒 Locked</div>
                   )}
                 </div>
                 <div>
                   <div style={{ fontSize: '14px', fontWeight: '600', color: '#0a1628', lineHeight: 1.3, marginBottom: '4px' }}>{subject}</div>
                   <div style={{ fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>10 questions · Pass mark {passMark}%</div>
                 </div>
-                {best !== undefined && (
+                {accessible && best !== undefined && (
                   <div style={{ background: '#f8fafc', borderRadius: '4px', height: '4px', overflow: 'hidden' }}>
                     <div style={{ height: '100%', background: hasPassed ? '#16a34a' : '#f59e0b', borderRadius: '4px', width: Math.min(best, 100) + '%', transition: 'width 0.4s' }}></div>
                   </div>
                 )}
-                <button
-                  onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)}
-                  style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}
-                >
-                  Start Quiz →
-                </button>
+                {accessible ? (
+                  <button
+                    onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)}
+                    style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}
+                  >
+                    Start Quiz →
+                  </button>
+                ) : (
+                  <a href="/pricing" style={{ background: 'transparent', color: '#2563eb', border: '1px solid #2563eb', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
+                    Upgrade to unlock
+                  </a>
+                )}
               </div>
             )
           })}
         </div>
 
-        {/* UPGRADE BANNER */}
-        <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '10px', padding: '1.25rem', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between', gap: '1rem' }}>
-          <div>
-            <div style={{ fontSize: '13px', fontWeight: '700', color: '#1d4ed8', marginBottom: '2px' }}>Free Trial — Upgrade for unlimited questions</div>
-            <div style={{ fontSize: '12px', color: '#3b82f6' }}>Paid subscribers get unlimited practice questions written to the full CASA MOS syllabus</div>
+        {/* BANNER */}
+        {!plan ? (
+          <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '10px', padding: '1.25rem', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between', gap: '1rem' }}>
+            <div>
+              <div style={{ fontSize: '13px', fontWeight: '700', color: '#1d4ed8', marginBottom: '2px' }}>No active plan — subscribe to unlock your exams</div>
+              <div style={{ fontSize: '12px', color: '#3b82f6' }}>Choose a plan to get full access to your practice questions</div>
+            </div>
+            <a href="/pricing" style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px 20px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>
+              View Plans
+            </a>
           </div>
-          <a href="/pricing" style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px 20px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>
-            View Plans
-          </a>
-        </div>
+        ) : (
+          <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '10px', padding: '1.25rem', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between', gap: '1rem' }}>
+            <div>
+              <div style={{ fontSize: '13px', fontWeight: '700', color: '#1d4ed8', marginBottom: '2px' }}>Active plan — {plan} Pack</div>
+              <div style={{ fontSize: '12px', color: '#3b82f6' }}>Unlimited practice questions written to the full CASA MOS syllabus</div>
+            </div>
+            <a href="/pricing" style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px 20px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>
+              Manage Plan
+            </a>
+          </div>
+        )}
       </div>
     </main>
   )
