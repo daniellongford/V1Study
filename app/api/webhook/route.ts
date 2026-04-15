@@ -36,36 +36,59 @@ export async function POST(request: NextRequest) {
   }
 
   if (event.type === 'checkout.session.completed') {
-    const session = event.data.object as Stripe.Checkout.Session
-    const email = session.customer_email
+    const session = event.data.object as any
+    const email = session.customer_details?.email || session.customer_email
     const subscriptionId = session.subscription as string
 
-    if (!email || !subscriptionId) return NextResponse.json({ received: true })
+    if (!email || !subscriptionId) {
+      return NextResponse.json({ received: true, debug: 'missing email or subscription' })
+    }
 
     // Get price ID from subscription
     const subscription = await stripe.subscriptions.retrieve(subscriptionId)
     const priceId = subscription.items.data[0]?.price?.id
     const plan = PRICE_TO_PLAN[priceId]
-    if (!plan) return NextResponse.json({ received: true })
 
-    // Find user by email
-    const { data: userData } = await supabase.auth.admin.listUsers()
-    const users = userData?.users as any[]
-    const user = users?.find((u: any) => u.email === email)
-    if (!user) return NextResponse.json({ received: true })
+    if (!plan) {
+      return NextResponse.json({ received: true, debug: `unknown priceId: ${priceId}` })
+    }
 
-    // Save subscription
-    await supabase.from('subscriptions').upsert({
+    // Find user by email using filter
+    const { data: { users }, error: userError } = await supabase.auth.admin.listUsers({ perPage: 1000 })
+
+    if (userError) {
+      return NextResponse.json({ received: true, debug: `user lookup error: ${userError.message}` })
+    }
+
+    const user = users?.find((u: any) => u.email?.toLowerCase() === email.toLowerCase())
+
+    if (!user) {
+      // User not found — store by customer ID for later matching
+      await supabase.from('subscriptions').upsert({
+        stripe_customer_id: session.customer as string,
+        stripe_subscription_id: subscriptionId,
+        plan,
+        status: 'active',
+      }, { onConflict: 'stripe_customer_id' })
+      return NextResponse.json({ received: true, debug: `user not found for email: ${email}` })
+    }
+
+    // Save subscription with user_id
+    const { error: upsertError } = await supabase.from('subscriptions').upsert({
       user_id: user.id,
       stripe_customer_id: session.customer as string,
       stripe_subscription_id: subscriptionId,
       plan,
       status: 'active',
     }, { onConflict: 'user_id' })
+
+    if (upsertError) {
+      return NextResponse.json({ received: true, debug: `upsert error: ${upsertError.message}` })
+    }
   }
 
   if (event.type === 'customer.subscription.updated') {
-    const subscription = event.data.object as Stripe.Subscription
+    const subscription = event.data.object as any
     const status = subscription.status === 'active' ? 'active' : 'inactive'
     const priceId = subscription.items.data[0]?.price?.id
     const plan = PRICE_TO_PLAN[priceId] || null
@@ -76,7 +99,7 @@ export async function POST(request: NextRequest) {
   }
 
   if (event.type === 'customer.subscription.deleted') {
-    const subscription = event.data.object as Stripe.Subscription
+    const subscription = event.data.object as any
 
     await supabase.from('subscriptions')
       .update({ status: 'inactive' })
