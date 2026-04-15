@@ -1,18 +1,7 @@
 'use client'
-import { freeQuestions } from '@/lib/questions';
-
-const freeQuestions: Record<string, any[]> = {
-
-
-export const freeQuestions: Record<string, {
-  question: string;
-  options: string[];
-  correct: number;
-  explanation: string;
-  reference: string;
-}[]> = {
-
-
+import { useState, useEffect, useRef, use } from 'react'
+import { supabase } from '../../../lib/supabase'
+import { freeQuestions } from '../../../lib/questions'
 
 function findQuestions(subject: string) {
   if (freeQuestions[subject]) return freeQuestions[subject]
@@ -29,7 +18,7 @@ function findQuestions(subject: string) {
 function getLicence(subject: string): string {
   if (subject === 'PPL Theory') return 'PPL'
   if (subject === 'Instrument Rating') return 'IREX'
-  if (['Human Factors Advanced', 'Aerodynamics Advanced', 'Aircraft General Advanced', 'Meteorology Advanced', 'Navigation Advanced', 'Flight Planning Advanced', 'Air Law Advanced'].includes(subject)) return 'ATPL'
+  if (['Human Factors Advanced', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced', 'Navigation Advanced', 'Flight Planning Advanced', 'Air Law Advanced'].includes(subject)) return 'ATPL'
   return 'CPL'
 }
 
