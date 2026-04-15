@@ -50,7 +50,8 @@ export async function POST(request: NextRequest) {
 
     // Find user by email
     const { data: userData } = await supabase.auth.admin.listUsers()
-    const user = userData?.users?.find((u) => u.email === email)
+    const users = userData?.users as any[]
+    const user = users?.find((u: any) => u.email === email)
     if (!user) return NextResponse.json({ received: true })
 
     // Save subscription
