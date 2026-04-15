@@ -534,7 +534,7 @@ export const freeQuestions: Record<string, {
       'D. The engine rotates the propeller clockwise (viewed from behind), so the reaction tends to roll the aircraft anti-clockwise (left). Corrected by aileron rigging bias (slight right aileron droop)'
     ],
     correct: 3,
-    explanation: 'Newton\\\'s third law: the engine exerts clockwise torque on the propeller; the propeller exerts equal anti-clockwise reaction on the airframe. The aircraft tends to roll left. At cruise, corrected by aileron rigging (right aileron slightly drooped) or right aileron trim. Most pronounced at full power/low speed.',
+    explanation: 'Newton\'s third law: the engine exerts clockwise torque on the propeller; the propeller exerts equal anti-clockwise reaction on the airframe. The aircraft tends to roll left. At cruise, corrected by aileron rigging (right aileron slightly drooped) or right aileron trim. Most pronounced at full power/low speed.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.3.1'
   },
   {
@@ -682,7 +682,7 @@ export const freeQuestions: Record<string, {
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.3.1'
   },
   {
-    question: 'What is the effect of frost on a wing\\\'s upper surface before takeoff?',
+    question: 'What is the effect of frost on a wing\'s upper surface before takeoff?',
     options: [
       'A. Frost has no measurable effect on aerodynamic performance — applicable when the aircraft is operating under the standard configuration',
       'B. Frost only affects drag, not lift — applicable when the aircraft is operating under the standard configuration — this approach is consistent with the standard operating procedure',
@@ -732,7 +732,7 @@ export const freeQuestions: Record<string, {
   {
     question: 'What is ground effect and how does it affect aircraft performance during takeoff?',
     options: [
-      'A. Ground effect reduces induced drag when the aircraft is within approximately one wingspan of the ground — the wing\\'s upwash/downwash is restricted. This allows the aircraft to become airborne before reaching the speed required for sustained flight outside ground effect',
+      'A. Ground effect reduces induced drag when the aircraft is within approximately one wingspan of the ground — the wing\'s upwash/downwash is restricted. This allows the aircraft to become airborne before reaching the speed required for sustained flight outside ground effect',
       'B. Ground effect increases induced drag during takeoff roll — applicable when the aircraft is operating under the standard configuration',
       'C. Ground effect only applies to landing, not takeoff — this value is used across all phases of flight without adjustment',
       'D. Ground effect increases stall speed near the ground — this procedure is specified in the relevant operations manual section'
@@ -1283,11 +1283,11 @@ export const freeQuestions: Record<string, {
     options: [
       'A. They measure the same compass error from different reference points — applicable within 25 NM of the facility at altitudes below FL100',
       'B. Deviation is always a larger error than variation — valid when the compass is within 2° of its last synchronisation',
-      'C. Variation is the angular difference between true north and magnetic north at a geographic location — published on charts as isogonals. Deviation is the compass error caused by the aircraft\\'s own magnetic field — varies with aircraft heading and recorded on the compass deviation card',
+      'C. Variation is the angular difference between true north and magnetic north at a geographic location — published on charts as isogonals. Deviation is the compass error caused by the aircraft\'s own magnetic field — varies with aircraft heading and recorded on the compass deviation card',
       'D. Variation changes with aircraft heading; deviation is constant — applicable within 25 NM of the facility at altitudes below FL100'
     ],
     correct: 2,
-    explanation: 'Variation: earth\\\'s magnetic field vs true geographic north. Shown on charts as isogonals marked E or W. Deviation: individual aircraft compass deflected by onboard ferrous metals and electrical systems. Varies with heading. Recorded on the compass deviation card. TVMDC: True Variation Magnetic Deviation Compass.',
+    explanation: 'Variation: earth\'s magnetic field vs true geographic north. Shown on charts as isogonals marked E or W. Deviation: individual aircraft compass deflected by onboard ferrous metals and electrical systems. Varies with heading. Recorded on the compass deviation card. TVMDC: True Variation Magnetic Deviation Compass.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.7.1 / CASA CNAV Syllabus'
   },
   {
@@ -1522,7 +1522,7 @@ export const freeQuestions: Record<string, {
       'D. 457.4 kg'
     ],
     correct: 3,
-    explanation: 'Fuel weight = 80 × 0.72 = 57.6 kg. Useful load = MTOW − BEW − Fuel = 1,250 − 735 − 57.6 = 457.4 kg. The pilot\\\'s weight must be subtracted to find maximum passenger/freight weight.',
+    explanation: 'Fuel weight = 80 × 0.72 = 57.6 kg. Useful load = MTOW − BEW − Fuel = 1,250 − 735 − 57.6 = 457.4 kg. The pilot\'s weight must be subtracted to find maximum passenger/freight weight.',
     reference: 'CASR Part 91 / RPL PPL CPL Aeroplane Workbook v3.0a'
   },
   {
@@ -1542,7 +1542,7 @@ export const freeQuestions: Record<string, {
     options: [
       'A. The 1.15 factor increases the chart distance by 15% for wet runways only — this procedure is specified in the relevant operations manual section',
       'B. The 1.15 factor is applied to fuel calculations, not distance — this value is used across all phases of flight without adjustment',
-      'C. The chart already incorporates a 1.15× safety factor over the demonstrated (actual) distance — the aircraft\\'s actual performance will be approximately 15% better than the chart value under identical conditions',
+      'C. The chart already incorporates a 1.15× safety factor over the demonstrated (actual) distance — the aircraft\'s actual performance will be approximately 15% better than the chart value under identical conditions',
       'D. A factor of 1.15 indicates the chart is for heavy aircraft only — applicable when the aircraft is operating under the standard configuration'
     ],
     correct: 2,
@@ -2073,7 +2073,7 @@ export const freeQuestions: Record<string, {
       'A. Standard holding uses left-hand turns, documented in the applicable CASR and associated MOS',
       'B. All IFR holding patterns use left-hand turns, documented in the applicable CASR and associated MOS',
       'C. Standard holding uses RIGHT-HAND turns. The pattern: inbound leg (1 min below FL140, 1.5 min at/above FL140), outbound leg, and two 180° turns',
-      'D. Holding pattern direction is at the pilot\\'s discretion, verified against the manufacturer\'s approved flight manual'
+      'D. Holding pattern direction is at the pilot\'s discretion, verified against the manufacturer\'s approved flight manual'
     ],
     correct: 2,
     explanation: 'ICAO standard holding: RIGHT-HAND turns. Left-hand holds are specifically published when required. Timing: below FL140 — outbound leg 1 minute. At/above FL140 — 1.5 minutes. Entries: direct, parallel, or teardrop depending on aircraft heading relative to the holding course.',
@@ -2813,7 +2813,7 @@ export const freeQuestions: Record<string, {
     options: [
       'A. 2,224 m — the TODA is always used',
       'B. 2,060 m (the STODA for 1.6%) — as the TODA gradient exceeds the twin-engine minimum net gradient of 1.6%, the shorter STODA associated with the 1.6% gradient must be used',
-      'C. Either distance may be used at the pilot\\'s discretion — applicable when both primary and secondary systems are serviceable',
+      'C. Either distance may be used at the pilot\'s discretion — applicable when both primary and secondary systems are serviceable',
       'D. 2,224 m only if MTOW is below 80,000 KG — the backup system activates automatically within 3 seconds of primary failure'
     ],
     correct: 1,
@@ -3056,7 +3056,7 @@ export const freeQuestions: Record<string, {
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.4.2 / B767-300ER Operations Manual extract'
   },
   {
-    question: 'An aircraft\\\'s autopilot altitude hold function fails in cruise. The aircraft begins a slow descent. Which AFCS component most likely failed?',
+    question: 'An aircraft\'s autopilot altitude hold function fails in cruise. The aircraft begins a slow descent. Which AFCS component most likely failed?',
     options: [
       'A. The flight director computer — full scale deflection represents a 2° course deviation at this range — this is the accepted standard across all Australian operators',
       'B. The yaw damper — the signal is usable within 10 NM regardless of intercept angle — the regulation specifies this as the mandatory minimum',
@@ -3231,7 +3231,7 @@ export const freeQuestions: Record<string, {
 
 'Human Factors Advanced': [
   {
-    question: 'In Reason\\\'s Swiss Cheese Model of accident causation, what do the "holes" in the cheese slices represent and when does an accident occur?',
+    question: 'In Reason\'s Swiss Cheese Model of accident causation, what do the "holes" in the cheese slices represent and when does an accident occur?',
     options: [
       'A. Holes represent individual errors only; accidents occur from one major error — this procedure is specified in the relevant operations manual section',
       'B. Holes represent gaps in training documentation only — this value is used across all phases of flight without adjustment — required when operating above the transition altitude',
@@ -3239,7 +3239,7 @@ export const freeQuestions: Record<string, {
       'D. Holes represent latent conditions and active failures in each defensive layer — an accident occurs when holes in successive layers temporarily align, allowing the hazard trajectory to pass through all defences'
     ],
     correct: 3,
-    explanation: 'Reason\\\'s Swiss Cheese Model: each slice represents a defensive barrier (procedures, training, technology, supervision). Holes are weaknesses — latent conditions (dormant organisational failures) and active failures (human errors in the moment). A single hole rarely causes an accident. When holes align across multiple slices simultaneously, the hazard trajectory penetrates all defences resulting in an accident. The model underpins Safety Management Systems (SMS) and systemic accident investigation.',
+    explanation: 'Reason\'s Swiss Cheese Model: each slice represents a defensive barrier (procedures, training, technology, supervision). Holes are weaknesses — latent conditions (dormant organisational failures) and active failures (human errors in the moment). A single hole rarely causes an accident. When holes align across multiple slices simultaneously, the hazard trajectory penetrates all defences resulting in an accident. The model underpins Safety Management Systems (SMS) and systemic accident investigation.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.6.3 / ICAO Doc 9859 SMS Manual'
   },
   {
@@ -3269,17 +3269,17 @@ export const freeQuestions: Record<string, {
   {
     question: 'What is circadian dysrhythmia and how does it specifically affect a pilot flying Sydney–London and returning 3 days later?',
     options: [
-      'A. Circadian dysrhythmia is the misalignment between the body\\'s internal clock (set to the departure time zone) and the new local time — the pilot\\'s body is still on Sydney time in London, causing cognitive impairment, disrupted sleep, and performance degradation particularly during subjective night hours',
+      'A. Circadian dysrhythmia is the misalignment between the body\'s internal clock (set to the departure time zone) and the new local time — the pilot\'s body is still on Sydney time in London, causing cognitive impairment, disrupted sleep, and performance degradation particularly during subjective night hours',
       'B. Circadian dysrhythmia is acute dehydration from long-haul flights — cognitive performance remains within normal limits until this threshold',
       'C. Circadian dysrhythmia is fully resolved after 24 hours rest — the circadian rhythm reaches its peak performance level at this point',
       'D. Circadian dysrhythmia does not affect flight safety — the effect is most pronounced during the first 30 minutes of duty'
     ],
     correct: 0,
-    explanation: 'Circadian dysrhythmia (jet lag) results from the circadian pacemaker (suprachiasmatic nucleus) remaining synchronised to the departure time zone while external cues reflect the new zone. The Sydney–London route (typically 9 hours westward time difference) means the pilot\\\'s body clock says midnight when London clocks show 1400. Performance, particularly cognitive performance, is most impaired during subjective night (0300-0600 body time). CAO 48.1 provides for minimum rest requirements to partially address this.',
+    explanation: 'Circadian dysrhythmia (jet lag) results from the circadian pacemaker (suprachiasmatic nucleus) remaining synchronised to the departure time zone while external cues reflect the new zone. The Sydney–London route (typically 9 hours westward time difference) means the pilot\'s body clock says midnight when London clocks show 1400. Performance, particularly cognitive performance, is most impaired during subjective night (0300-0600 body time). CAO 48.1 provides for minimum rest requirements to partially address this.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.6.3 Item 2 / CAO 48.1'
   },
   {
-    question: 'What are the three stages of ICAO\\\'s TEM framework threat categories and give one example of each?',
+    question: 'What are the three stages of ICAO\'s TEM framework threat categories and give one example of each?',
     options: [
       'A. Weather, mechanical, and human — the three accident cause categories',
       'B. Threats (external), errors (crew-induced), and undesired aircraft states — e.g. threat: thunderstorm; error: wrong SID entry; UAS: aircraft 500 ft below cleared altitude',
@@ -3308,10 +3308,10 @@ export const freeQuestions: Record<string, {
       'A. Type II diabetes managed by diet and/or oral medication may be assessed as fit for Class 1/2 medical with conditions (e.g. regular monitoring). Type I (insulin-dependent) diabetes generally precludes a Class 1 medical certificate for commercial operations in Australia',
       'B. Both types have identical medical restrictions, which applies to all phases of flight under this category',
       'C. Diabetes of any type automatically disqualifies a pilot from all licences, as specified in the applicable regulatory standard',
-      'D. Medical restrictions for diabetes are at the DAME\\'s sole discretion with no regulatory standard, as specified in the applicable regulatory standard'
+      'D. Medical restrictions for diabetes are at the DAME\'s sole discretion with no regulatory standard, as specified in the applicable regulatory standard'
     ],
     correct: 0,
-    explanation: 'Under CASR Part 67 and CASA policy: Type II diabetes controlled by diet alone or oral medication may be compatible with a Class 1 medical with conditions and monitoring requirements. Insulin-dependent diabetes (Type I or insulin-treated Type II) generally precludes a Class 1 ATPL medical in Australia. This reflects the risk of hypoglycaemia incapacitating a pilot. Specific cases may be assessed individually by CASA\\\'s Aviation Medical Unit.',
+    explanation: 'Under CASR Part 67 and CASA policy: Type II diabetes controlled by diet alone or oral medication may be compatible with a Class 1 medical with conditions and monitoring requirements. Insulin-dependent diabetes (Type I or insulin-treated Type II) generally precludes a Class 1 ATPL medical in Australia. This reflects the risk of hypoglycaemia incapacitating a pilot. Specific cases may be assessed individually by CASA\'s Aviation Medical Unit.',
     reference: 'CASR Part 67 / CASA Aviation Medicine documents'
   },
   {
@@ -3335,7 +3335,7 @@ export const freeQuestions: Record<string, {
       'D. A steep authority gradient is always safer as it reduces crew confusion — cognitive performance remains within normal limits until this threshold — verified against the applicable performance charts at standard conditions The approved procedures require this to be verified at both the pre-flight and pre-departure stages.'
     ],
     correct: 2,
-    explanation: 'Authority gradient research (Helmreich, Foushee, Lauber) identified both extremes as dangerous. Steep gradient: Korean Air and other fatal accidents involved first officers unable or unwilling to challenge captains in error. Flat gradient: ineffective decision-making during emergencies. CRM training targets the optimum: the captain as decisive leader who actively solicits crew input, creates a psychologically safe environment for challenges, and acts assertively on critical issues. The captain\\\'s response to challenges reinforces or undermines the gradient.',
+    explanation: 'Authority gradient research (Helmreich, Foushee, Lauber) identified both extremes as dangerous. Steep gradient: Korean Air and other fatal accidents involved first officers unable or unwilling to challenge captains in error. Flat gradient: ineffective decision-making during emergencies. CRM training targets the optimum: the captain as decisive leader who actively solicits crew input, creates a psychologically safe environment for challenges, and acts assertively on critical issues. The captain\'s response to challenges reinforces or undermines the gradient.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.6.3 Item 4 / Human Factors for Pilots Green et al.'
   },
   {
@@ -3347,7 +3347,7 @@ export const freeQuestions: Record<string, {
       'D. Plan continuation error is resolved by longer pre-flight briefings — this condition only develops when the surface temperature exceeds ISA by 10°C or more — required when operating above the transition altitude Testing has confirmed this relationship holds under both normal and abnormal operating conditions.'
     ],
     correct: 0,
-    explanation: 'Plan continuation error contributes to approximately 75% of controlled flight into terrain (CFIT) accidents involving weather. A crew commits to a destination, accumulates evidence of deteriorating conditions but continues. Contributing factors: schedule pressure (organisational), sunk cost fallacy ("we\\\'ve come this far"), authority gradient suppressing junior crew from raising concerns, fatigue reducing cognitive flexibility, and normalisation of previous successful deviations ("it was fine last time"). Countermeasures: pre-set decision points, go/no-go criteria briefed before flight.',
+    explanation: 'Plan continuation error contributes to approximately 75% of controlled flight into terrain (CFIT) accidents involving weather. A crew commits to a destination, accumulates evidence of deteriorating conditions but continues. Contributing factors: schedule pressure (organisational), sunk cost fallacy ("we\'ve come this far"), authority gradient suppressing junior crew from raising concerns, fatigue reducing cognitive flexibility, and normalisation of previous successful deviations ("it was fine last time"). Countermeasures: pre-set decision points, go/no-go criteria briefed before flight.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.6.3 Item 6 / ATSB Aviation Safety Research'
   },
   {
@@ -3371,7 +3371,7 @@ export const freeQuestions: Record<string, {
       'D. Errors and violations require identical corrective actions — the effect is most pronounced during the first 30 minutes of duty — this limit applies throughout all phases of the flight'
     ],
     correct: 1,
-    explanation: 'Reason\\\'s taxonomy: Errors = unintentional (the person did not intend the outcome or the action itself — slips, lapses, mistakes). Violations = intentional deviation from rules (the person knew the rule and consciously chose not to follow it). Violations range from routine (widespread normalised deviations) to exceptional (one-off decisions). Understanding this distinction is critical for SMS reporting — errors call for system solutions (error-proofing); violations call for different interventions (culture, enforcement, understanding intent).',
+    explanation: 'Reason\'s taxonomy: Errors = unintentional (the person did not intend the outcome or the action itself — slips, lapses, mistakes). Violations = intentional deviation from rules (the person knew the rule and consciously chose not to follow it). Violations range from routine (widespread normalised deviations) to exceptional (one-off decisions). Understanding this distinction is critical for SMS reporting — errors call for system solutions (error-proofing); violations call for different interventions (culture, enforcement, understanding intent).',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.6.3 Item 3 / Reason GEMS Model'
   },
   {
@@ -3419,7 +3419,7 @@ export const freeQuestions: Record<string, {
       'D. Normalisation of deviance is the gradual process by which deviant practices (rule violations, degraded safety margins) become accepted as normal within an organisation because they have not yet produced adverse consequences — in Challenger: O-ring erosion was repeatedly observed and reclassified from anomaly to acceptable risk until a catastrophic failure occurred'
     ],
     correct: 3,
-    explanation: 'Diane Vaughan\\\'s analysis of the Challenger disaster showed that NASA repeatedly observed O-ring damage at cold temperatures, but because no catastrophic failure had occurred, the deviation was reclassified as "within acceptable risk" — normalised. Aviation parallel: airlines repeatedly dispatching with MEL items active that were intended for one-off use; crews repeatedly exceeding duty time limits without incident; repetitive deviations from approach procedures. The absence of accidents does not mean the practice is safe — this is the core insight.',
+    explanation: 'Diane Vaughan\'s analysis of the Challenger disaster showed that NASA repeatedly observed O-ring damage at cold temperatures, but because no catastrophic failure had occurred, the deviation was reclassified as "within acceptable risk" — normalised. Aviation parallel: airlines repeatedly dispatching with MEL items active that were intended for one-off use; crews repeatedly exceeding duty time limits without incident; repetitive deviations from approach procedures. The absence of accidents does not mean the practice is safe — this is the core insight.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.6.3 Item 4 / ICAO Doc 9859 SMS'
   },
   {
@@ -3763,10 +3763,10 @@ export const freeQuestions: Record<string, {
   {
     question: 'Under CASR Part 42, what action must an operator take when a defect is discovered that is not covered by the MEL?',
     options: [
-      'A. Defer the defect under the MEL at the operator\\'s discretion — this applies under Part 121 operations only; Part 91 has different provisions',
+      'A. Defer the defect under the MEL at the operator\'s discretion — this applies under Part 121 operations only; Part 91 has different provisions',
       'B. The aircraft may not be dispatched until the defect is either rectified by a LAME or a specific rectification authority (such as an engineering order) is obtained from the aircraft manufacturer or CASA — it cannot be deferred under the MEL if not listed',
       'C. The PIC may authorise a departure with an undocumented defect if conditions are VMC — the restriction only applies during the period from sunset to sunrise',
-      'D. All defects are automatically covered by the MEL at the operator\\'s discretion — an AOC holder may apply for exemption under CASR Part 11'
+      'D. All defects are automatically covered by the MEL at the operator\'s discretion — an AOC holder may apply for exemption under CASR Part 11'
     ],
     correct: 1,
     explanation: 'The MEL (Minimum Equipment List) is derived from the Master MEL and approved by CASA for the specific operator. It lists items that may be inoperative for specified operations. A defect not listed in the MEL cannot be deferred — it must be rectified before the aircraft is released for flight. Only defects explicitly listed in the MEL with all required conditions and procedures satisfied can be deferred. Operating with an unlisted defect renders the maintenance release invalid.',
@@ -3909,7 +3909,7 @@ export const freeQuestions: Record<string, {
     options: [
       'A. The Journey Log is completed by cabin crew only — CASR Part 91 permits this provided a NOTAM has been issued',
       'B. Journey Log entries may be made by any crew member — an AOC holder may apply for exemption under CASR Part 11',
-      'C. The Journey Log records each flight sector, fuel uplifts, defects, maintenance actions, and maintenance release status — entries are made by the flight crew (operational entries) and by LAME/AME (maintenance/defect entries). It forms part of the aircraft\\'s continuing airworthiness record',
+      'C. The Journey Log records each flight sector, fuel uplifts, defects, maintenance actions, and maintenance release status — entries are made by the flight crew (operational entries) and by LAME/AME (maintenance/defect entries). It forms part of the aircraft\'s continuing airworthiness record',
       'D. Journey Logs are optional for domestic operations — CASR Part 91 permits this provided a NOTAM has been issued'
     ],
     correct: 2,
@@ -3931,7 +3931,7 @@ export const freeQuestions: Record<string, {
   {
     question: 'What is a Minimum Safe Altitude Warning (MSAW) system and what regulatory obligation does ATC have when it activates?',
     options: [
-      'A. MSAW is an ATC ground-based safety net that triggers an alert when a transponder-equipped aircraft\\'s predicted trajectory conflicts with terrain — ATC must immediately issue a warning to the crew ("MINIMUM SAFE ALTITUDE WARNING") and provide climb instructions if the crew does not respond',
+      'A. MSAW is an ATC ground-based safety net that triggers an alert when a transponder-equipped aircraft\'s predicted trajectory conflicts with terrain — ATC must immediately issue a warning to the crew ("MINIMUM SAFE ALTITUDE WARNING") and provide climb instructions if the crew does not respond',
       'B. MSAW is a pilot-operated system for terrain awareness — an AOC holder may apply for exemption under CASR Part 11',
       'C. MSAW alerts are only advisory — ATC is not obligated to warn the crew',
       'D. MSAW replaces the need for TAWS/GPWS on aircraft — CASR Part 91 permits this provided a NOTAM has been issued'
@@ -3958,7 +3958,7 @@ export const freeQuestions: Record<string, {
       'A. 3 NM radar separation — this applies under Part 121 operations only; Part 91 has different provisions',
       'B. 6 NM radar separation (or equivalent time-based separation) between a HEAVY leading aircraft and a MEDIUM following aircraft on final approach — specific values: H/M = 6 NM; H/L = 8 NM; M/L = 5 NM',
       'C. 2 minutes separation for all wake turbulence combinations — this applies under Part 121 operations only; Part 91 has different provisions',
-      'D. Wake turbulence separation is at the pilot\\'s discretion — CASR Part 91 permits this provided a NOTAM has been issued'
+      'D. Wake turbulence separation is at the pilot\'s discretion — CASR Part 91 permits this provided a NOTAM has been issued'
     ],
     correct: 1,
     explanation: 'ICAO Doc 4444 wake turbulence separation minima (radar): Heavy leading / Medium following = 5 NM (Australian standard 6 NM). Heavy / Light = 8 NM. Medium / Light = 5 NM. Departing wake turbulence: different standards based on position and runway. Time-based alternatives are applied when radar is unavailable. Pilots may request their own separation — "caution wake turbulence" does not transfer responsibility from ATC when under radar service.',
