@@ -180,10 +180,11 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
           <div style={{ background: '#f0f7ff', border: '1px solid #bfdbfe', borderRadius: '12px', padding: '1.25rem', marginBottom: '1rem' }}>
             <div style={{ fontSize: '13px', fontWeight: '600', color: '#1d4ed8', marginBottom: '8px' }}>Explanation</div>
             <p style={{ fontSize: '13px', lineHeight: 1.65, color: '#1e3a6e', marginBottom: '12px' }}>{q.explanation}</p>
-            <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '10px' }}>
+            <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '10px', marginBottom: '12px' }}>
               <div style={{ fontSize: '10px', fontFamily: 'monospace', color: '#2563eb', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Reference — verify this yourself</div>
               <div style={{ fontSize: '12px', color: '#3b82f6', fontFamily: 'monospace' }}>{q.reference}</div>
             </div>
+            <AiHelpPanel question={q} subject={subject} />
           </div>
         )}
         {answered && (
@@ -193,5 +194,85 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         )}
       </div>
     </main>
+  )
+}
+
+function AiHelpPanel({ question, subject }: { question: any; subject: string }) {
+  const [open, setOpen] = useState(false)
+  const [userMessage, setUserMessage] = useState('')
+  const [response, setResponse] = useState('')
+  const [loading, setLoading] = useState(false)
+
+  async function handleAsk() {
+    if (!userMessage.trim()) return
+    setLoading(true)
+    setResponse('')
+    try {
+      const res = await fetch('/api/support-chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: userMessage,
+          context: {
+            question: question.question,
+            options: question.options,
+            correctAnswer: question.options[question.correct],
+            explanation: question.explanation,
+            reference: question.reference,
+            subject,
+          }
+        })
+      })
+      const data = await res.json()
+      setResponse(data.response || 'Sorry, something went wrong.')
+    } catch (e) {
+      setResponse('Sorry, something went wrong. Please try again.')
+    }
+    setLoading(false)
+  }
+
+  return (
+    <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '12px' }}>
+      {!open ? (
+        <button
+          onClick={() => setOpen(true)}
+          style={{ background: 'none', border: '1px solid #2563eb', borderRadius: '8px', padding: '8px 16px', fontSize: '13px', fontWeight: '600', color: '#2563eb', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
+        >
+          💬 Still confused? Ask for more help
+        </button>
+      ) : (
+        <div>
+          <div style={{ fontSize: '12px', fontWeight: '700', color: '#1d4ed8', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Ask a follow-up question</div>
+          <textarea
+            placeholder={`Ask anything about this question — e.g. "Can you explain why option A is wrong?" or "Give me a real world example"`}
+            value={userMessage}
+            onChange={e => setUserMessage(e.target.value)}
+            rows={3}
+            style={{ width: '100%', padding: '10px 14px', border: '1px solid #bfdbfe', borderRadius: '8px', fontSize: '14px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '8px', background: 'white' }}
+          />
+          <div style={{ display: 'flex', gap: '8px', marginBottom: response ? '12px' : '0' }}>
+            <button
+              onClick={handleAsk}
+              disabled={loading || !userMessage.trim()}
+              style={{ background: loading || !userMessage.trim() ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '9px 18px', fontSize: '13px', fontWeight: '600', cursor: loading || !userMessage.trim() ? 'not-allowed' : 'pointer' }}
+            >
+              {loading ? 'Thinking...' : 'Ask →'}
+            </button>
+            <button
+              onClick={() => { setOpen(false); setResponse(''); setUserMessage('') }}
+              style={{ background: 'none', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '9px 14px', fontSize: '13px', color: '#64748b', cursor: 'pointer' }}
+            >
+              Close
+            </button>
+          </div>
+          {response && (
+            <div style={{ background: 'white', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '1rem', fontSize: '13px', color: '#1e3a6e', lineHeight: 1.65 }}>
+              <div style={{ fontSize: '10px', fontWeight: '700', color: '#2563eb', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
+              {response}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
   )
 }
