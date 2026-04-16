@@ -231,8 +231,7 @@ export default function Home() {
             <h2 style={{ fontSize: '32px', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>Get in touch</h2>
             <p style={{ fontSize: '16px', color: '#64748b', marginBottom: '2rem' }}>Questions about V1 Study or need help choosing a plan? We're here to help.</p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="mailto:support@v1study.com.au" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 32px', textDecoration: 'none', fontWeight: '600', fontSize: '15px' }}>Email us</a>
-              <a href="/contact" style={{ background: 'transparent', color: '#2563eb', border: '2px solid #2563eb', borderRadius: '8px', padding: '12px 32px', textDecoration: 'none', fontWeight: '600', fontSize: '15px' }}>Contact page</a>
+              <a href="/contact" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 32px', textDecoration: 'none', fontWeight: '600', fontSize: '15px' }}>Get in touch</a>
             </div>
           </div>
         </section>
