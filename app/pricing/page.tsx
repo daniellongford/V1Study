@@ -8,8 +8,9 @@ const plans = [
     price: '$9.99',
     period: 'per month',
     priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz',
+    planKey: 'PPL',
     color: '#10b981',
-    description: 'Perfect for student pilots taking their PPL theory exam',
+    description: 'The foundation of flight. Master the core theory required to earn your Private Pilot Licence.',
     features: ['PPL Theory exam', 'Unlimited practice questions', 'Full explanations', 'CASA references', 'Progress tracking'],
   },
   {
@@ -17,27 +18,30 @@ const plans = [
     price: '$19.99',
     period: 'per month',
     priceId: 'price_1TIP6XCbt27bkqBv9CypW42J',
+    planKey: 'CPL',
     color: '#2563eb',
     popular: true,
-    description: 'Everything you need for your Commercial Pilot Licence',
-    features: ['All 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA syllabus aligned'],
+    description: 'All 7 CASA subjects. Built for pilots serious about going professional.',
+    features: ['PPL + all 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA syllabus aligned'],
   },
   {
     name: 'ATPL Pack',
     price: '$29.99',
     period: 'per month',
     priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn',
+    planKey: 'ATPL',
     color: '#7c3aed',
-    description: 'For pilots heading to the flight deck',
-    features: ['All 7 CPL + 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA MOS aligned'],
+    description: 'The highest standard in Australian pilot licensing. All 7 subjects for pilots bound for the airlines.',
+    features: ['PPL + CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA MOS aligned'],
   },
   {
     name: 'IREX Standalone',
     price: '$14.99',
     period: 'per month',
     priceId: 'price_1TIPDdCbt27bkqBvZzwkYthb',
+    planKey: 'IREX',
     color: '#f59e0b',
-    description: 'Already have your CPL? Add the Instrument Rating',
+    description: 'Cleared for the clouds. Everything you need to pass the CASA Instrument Rating Exam.',
     features: ['IREX exam only', 'Unlimited practice questions', 'Full explanations', 'CASA references', 'Progress tracking'],
   },
   {
@@ -45,29 +49,43 @@ const plans = [
     price: '$34.99',
     period: 'per month',
     priceId: 'price_1TIPBvCbt27bkqBvv4fUShu3',
+    planKey: 'FULL',
     color: '#0a1628',
-    description: 'Every exam covered — the complete V1 Study experience',
+    description: 'Every exam covered — the complete V1 Study experience.',
     features: ['All 16 exams included', 'PPL + CPL + ATPL + IREX', 'Unlimited practice questions', 'Priority support', 'CASA MOS aligned'],
   },
 ]
+
+// Plan upgrade hierarchy
+const PLAN_RANK: Record<string, number> = { PPL: 1, IREX: 2, CPL: 3, ATPL: 4, FULL: 5 }
 
 export default function PricingPage() {
   const [user, setUser] = useState<any>(null)
   const [loading, setLoading] = useState<string | null>(null)
   const [userLoaded, setUserLoaded] = useState(false)
+  const [currentPlan, setCurrentPlan] = useState<string | null>(null)
+  const [cancelLoading, setCancelLoading] = useState(false)
+  const [cancelDone, setCancelDone] = useState(false)
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => {
       setUser(data.user)
       setUserLoaded(true)
+      if (data.user) {
+        supabase.from('subscriptions')
+          .select('plan, status')
+          .eq('user_id', data.user.id)
+          .eq('status', 'active')
+          .single()
+          .then(({ data: sub }) => {
+            if (sub) setCurrentPlan(sub.plan)
+          })
+      }
     })
   }, [])
 
   async function handleCheckout(priceId: string) {
-    if (!user) {
-      window.location.href = '/signup'
-      return
-    }
+    if (!user) { window.location.href = '/signup'; return }
     setLoading(priceId)
     try {
       const res = await fetch('/api/checkout', {
@@ -76,23 +94,49 @@ export default function PricingPage() {
         body: JSON.stringify({ priceId, email: user.email })
       })
       const data = await res.json()
-      if (data.url) {
-        window.location.href = data.url
-      } else {
-        alert('Something went wrong. Please try again.')
-      }
-    } catch (e) {
-      alert('Something went wrong. Please try again.')
-    }
+      if (data.url) { window.location.href = data.url }
+      else { alert('Something went wrong. Please try again.') }
+    } catch (e) { alert('Something went wrong. Please try again.') }
     setLoading(null)
   }
 
-  function buttonText(priceId: string) {
-    if (loading === priceId) return 'Loading...'
+  async function handleCancel() {
+    if (!confirm('Are you sure you want to cancel your subscription? You will lose access at the end of your billing period.')) return
+    setCancelLoading(true)
+    try {
+      const res = await fetch('/api/cancel', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: user.email })
+      })
+      const data = await res.json()
+      if (data.success) {
+        setCancelDone(true)
+        setCurrentPlan(null)
+      } else {
+        alert('Something went wrong. Please contact support@v1study.com.au')
+      }
+    } catch (e) {
+      alert('Something went wrong. Please contact support@v1study.com.au')
+    }
+    setCancelLoading(false)
+  }
+
+  function isPlanVisible(planKey: string): boolean {
+    if (!currentPlan) return true
+    if (currentPlan === planKey) return true
+    return (PLAN_RANK[planKey] || 0) > (PLAN_RANK[currentPlan] || 0)
+  }
+
+  function buttonText(plan: any) {
+    if (loading === plan.priceId) return 'Loading...'
     if (!userLoaded) return 'Get started'
     if (!user) return 'Sign up and subscribe'
-    return 'Subscribe now'
+    if (currentPlan === plan.planKey) return '✓ Current plan'
+    return 'Upgrade now'
   }
+
+  const visiblePlans = plans.filter(p => isPlanVisible(p.planKey))
 
   return (
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
@@ -114,19 +158,44 @@ export default function PricingPage() {
       </nav>
 
       <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '3rem 2rem' }}>
+
+        {/* CURRENT PLAN BANNER */}
+        {currentPlan && (
+          <div style={{ background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '12px', padding: '1rem 1.5rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+            <div>
+              <div style={{ fontSize: '13px', fontWeight: '700', color: '#15803d', marginBottom: '2px' }}>
+                ✓ Active Plan — {plans.find(p => p.planKey === currentPlan)?.name}
+              </div>
+              <div style={{ fontSize: '12px', color: '#16a34a' }}>
+                {plans.find(p => p.planKey === currentPlan)?.price}/month · Renews automatically
+              </div>
+            </div>
+            <a href="/dashboard" style={{ background: '#16a34a', color: 'white', borderRadius: '8px', padding: '8px 16px', textDecoration: 'none', fontWeight: '600', fontSize: '13px' }}>
+              Back to dashboard →
+            </a>
+          </div>
+        )}
+
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <h1 style={{ fontSize: '40px', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>Simple, transparent pricing</h1>
+          <h1 style={{ fontSize: '40px', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>
+            {currentPlan ? 'Upgrade your plan' : 'Simple, transparent pricing'}
+          </h1>
           <p style={{ fontSize: '18px', color: '#64748b', maxWidth: '600px', margin: '0 auto' }}>
-            {user
-              ? 'Subscribe to unlock unlimited practice questions written to the full CASA MOS syllabus.'
-              : 'Start with a free trial. Cancel anytime. No lock-in contracts.'}
+            {currentPlan
+              ? 'Unlock more exams by upgrading to a higher plan.'
+              : 'Every plan includes a 7 day free trial. Full access from day one.'}
           </p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(200px,1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-          {plans.map((plan) => (
-            <div key={plan.name} style={{ background: 'white', borderRadius: '16px', padding: '1.5rem', border: plan.popular ? '2px solid #2563eb' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
-              {plan.popular && (
+          {visiblePlans.map((plan) => (
+            <div key={plan.name} style={{ background: 'white', borderRadius: '16px', padding: '1.5rem', border: plan.planKey === currentPlan ? '2px solid #16a34a' : plan.popular && !currentPlan ? '2px solid #2563eb' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+              {plan.planKey === currentPlan && (
+                <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#16a34a', color: 'white', fontSize: '11px', fontWeight: '700', padding: '3px 12px', borderRadius: '99px', whiteSpace: 'nowrap' }}>
+                  CURRENT PLAN
+                </div>
+              )}
+              {plan.popular && !currentPlan && (
                 <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#2563eb', color: 'white', fontSize: '11px', fontWeight: '700', padding: '3px 12px', borderRadius: '99px', whiteSpace: 'nowrap' }}>
                   MOST POPULAR
                 </div>
@@ -143,21 +212,46 @@ export default function PricingPage() {
                 ))}
               </div>
               <button
-                onClick={() => handleCheckout(plan.priceId)}
-                disabled={loading === plan.priceId}
-                style={{ width: '100%', background: plan.popular ? '#2563eb' : loading === plan.priceId ? '#94a3b8' : 'transparent', color: plan.popular ? 'white' : loading === plan.priceId ? 'white' : plan.color, border: `2px solid ${plan.popular ? '#2563eb' : plan.color}`, borderRadius: '8px', padding: '10px', fontWeight: '600', cursor: loading === plan.priceId ? 'not-allowed' : 'pointer', fontSize: '14px' }}
+                onClick={() => plan.planKey !== currentPlan && handleCheckout(plan.priceId)}
+                disabled={loading === plan.priceId || plan.planKey === currentPlan}
+                style={{ width: '100%', background: plan.planKey === currentPlan ? '#f0fdf4' : plan.popular && !currentPlan ? '#2563eb' : loading === plan.priceId ? '#94a3b8' : 'transparent', color: plan.planKey === currentPlan ? '#16a34a' : plan.popular && !currentPlan ? 'white' : plan.color, border: `2px solid ${plan.planKey === currentPlan ? '#16a34a' : plan.popular && !currentPlan ? '#2563eb' : plan.color}`, borderRadius: '8px', padding: '10px', fontWeight: '600', cursor: plan.planKey === currentPlan ? 'default' : loading === plan.priceId ? 'not-allowed' : 'pointer', fontSize: '14px' }}
               >
-                {buttonText(plan.priceId)}
+                {buttonText(plan)}
               </button>
             </div>
           ))}
         </div>
 
+        {/* CANCELLATION SECTION */}
+        {currentPlan && !cancelDone && (
+          <div style={{ background: 'white', borderRadius: '12px', padding: '1.5rem 2rem', border: '1px solid #e2e8f0', marginBottom: '2rem' }}>
+            <h3 style={{ fontSize: '15px', fontWeight: '700', color: '#0a1628', marginBottom: '4px' }}>Cancel subscription</h3>
+            <p style={{ fontSize: '13px', color: '#64748b', marginBottom: '1rem' }}>
+              You can cancel at any time. You will retain access until the end of your current billing period.
+              For assistance contact <a href="mailto:support@v1study.com.au" style={{ color: '#2563eb' }}>support@v1study.com.au</a>
+            </p>
+            <button
+              onClick={handleCancel}
+              disabled={cancelLoading}
+              style={{ background: 'none', border: '1px solid #fca5a5', borderRadius: '8px', padding: '8px 20px', fontSize: '13px', fontWeight: '600', color: '#dc2626', cursor: cancelLoading ? 'not-allowed' : 'pointer' }}
+            >
+              {cancelLoading ? 'Cancelling...' : 'Cancel subscription'}
+            </button>
+          </div>
+        )}
+
+        {cancelDone && (
+          <div style={{ background: '#fff1f2', border: '1px solid #fca5a5', borderRadius: '12px', padding: '1.5rem 2rem', marginBottom: '2rem', textAlign: 'center' }}>
+            <div style={{ fontSize: '15px', fontWeight: '700', color: '#b91c1c', marginBottom: '4px' }}>Subscription cancelled</div>
+            <p style={{ fontSize: '13px', color: '#64748b' }}>You will retain access until the end of your billing period. We hope to see you back soon.</p>
+          </div>
+        )}
+
         <div style={{ background: 'white', borderRadius: '12px', padding: '2rem', border: '1px solid #e2e8f0', textAlign: 'center' }}>
           {user ? (
             <>
-              <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Not sure which plan is right for you?</h3>
-              <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1rem' }}>Continue using the free trial to explore the platform, then subscribe when you are ready.</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Need help choosing?</h3>
+              <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1rem' }}>Contact our team at <a href="mailto:support@v1study.com.au" style={{ color: '#2563eb', fontWeight: '600' }}>support@v1study.com.au</a></p>
               <a href="/dashboard" style={{ background: '#0a1628', color: 'white', borderRadius: '8px', padding: '12px 32px', textDecoration: 'none', fontWeight: '600', fontSize: '15px', display: 'inline-block' }}>Back to dashboard →</a>
             </>
           ) : (
