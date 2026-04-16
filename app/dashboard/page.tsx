@@ -208,7 +208,7 @@ export default function Dashboard() {
         </div>
 
         {!plan && (
-          <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '10px', padding: '1.25rem 1.5rem', display: 'flex', alignItems: isMobile ? 'flex-start' : 'center', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between', gap: '1rem' }}>
+          <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '10px', padding: '1.25rem 1.5rem', display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'space-between', gap: '1rem' }}>
             <div>
               <div style={{ fontSize: '13px', fontWeight: '700', color: '#1d4ed8', marginBottom: '2px' }}>No active plan — subscribe to unlock your exams</div>
               <div style={{ fontSize: '12px', color: '#3b82f6' }}>Choose a plan to get full access to your practice questions</div>
