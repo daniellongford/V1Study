@@ -37,6 +37,17 @@ const PLAN_ACCESS: Record<string, string[]> = {
   FULL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Human Factors', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced', 'Navigation', 'Flight Planning', 'Air Law', 'Instrument Rating'],
 }
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768)
+    check()
+    window.addEventListener('resize', check)
+    return () => window.removeEventListener('resize', check)
+  }, [])
+  return isMobile
+}
+
 export default function Dashboard() {
   const [user, setUser] = useState<any>(null)
   const [selectedLicence, setSelectedLicence] = useState('CPL')
