@@ -18,7 +18,7 @@ function findQuestions(subject: string) {
 function getLicence(subject: string): string {
   if (subject === 'PPL Theory') return 'PPL'
   if (subject === 'Instrument Rating') return 'IREX'
-  if (['Human Factors Advanced', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced', 'Navigation Advanced', 'Flight Planning Advanced', 'Air Law Advanced'].includes(subject)) return 'ATPL'
+  if (['Human Factors', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology', 'Navigation', 'Flight Planning', 'Air Law'].includes(subject)) return 'ATPL'
   return 'CPL'
 }
 
