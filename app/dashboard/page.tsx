@@ -44,6 +44,8 @@ export default function Dashboard() {
   const [recentScores, setRecentScores] = useState<any[]>([])
   const [bestScores, setBestScores] = useState<Record<string, number>>({})
   const [plan, setPlan] = useState<string | null>(null)
+  const [menuOpen, setMenuOpen] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => {
@@ -220,7 +222,7 @@ export default function Dashboard() {
         )}
 
         {/* CONTACT SECTION */}
-        <ContactSection isMobile={isMobile} userEmail={user?.email} />
+        <ContactSection isMobile={isMobile === true} userEmail={user?.email} />
 
       </div>
     </main>
