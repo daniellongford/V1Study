@@ -208,17 +208,130 @@ export default function Dashboard() {
         </div>
 
         {!plan && (
-          <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '10px', padding: '1.25rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+          <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '10px', padding: '1.25rem 1.5rem', display: 'flex', alignItems: isMobile ? 'flex-start' : 'center', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between', gap: '1rem' }}>
             <div>
               <div style={{ fontSize: '13px', fontWeight: '700', color: '#1d4ed8', marginBottom: '2px' }}>No active plan — subscribe to unlock your exams</div>
               <div style={{ fontSize: '12px', color: '#3b82f6' }}>Choose a plan to get full access to your practice questions</div>
             </div>
-            <a href="/pricing" style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '9px 20px', fontSize: '13px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none' }}>
+            <a href="/pricing" style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '9px 20px', fontSize: '13px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>
               View Plans
             </a>
           </div>
         )}
+
+        {/* CONTACT SECTION */}
+        <ContactSection isMobile={isMobile} userEmail={user?.email} />
+
       </div>
     </main>
+  )
+}
+
+function ContactSection({ isMobile, userEmail }: { isMobile: boolean; userEmail?: string }) {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState(userEmail || '')
+  const [message, setMessage] = useState('')
+  const [aiMessage, setAiMessage] = useState('')
+  const [aiResponse, setAiResponse] = useState('')
+  const [aiLoading, setAiLoading] = useState(false)
+  const [tab, setTab] = useState<'chat' | 'email'>('chat')
+  const [emailSent, setEmailSent] = useState(false)
+
+  async function handleAskClaude() {
+    if (!aiMessage.trim()) return
+    setAiLoading(true)
+    setAiResponse('')
+    try {
+      const res = await fetch('/api/support-chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: aiMessage })
+      })
+      const data = await res.json()
+      setAiResponse(data.response || 'Sorry, something went wrong. Please try again.')
+    } catch (e) {
+      setAiResponse('Sorry, something went wrong. Please try again.')
+    }
+    setAiLoading(false)
+  }
+
+  function handleEmailSend() {
+    if (!name || !email || !message) return
+    window.location.href = `mailto:support@v1study.com.au?subject=Support request from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`
+    setEmailSent(true)
+  }
+
+  return (
+    <div style={{ background: 'white', borderRadius: '12px', border: '1px solid #e2e8f0', marginTop: '1.5rem', overflow: 'hidden' }}>
+      <div style={{ padding: '1.25rem 1.5rem', borderBottom: '1px solid #e2e8f0' }}>
+        <div style={{ fontSize: '15px', fontWeight: '700', color: '#0a1628', marginBottom: '2px' }}>Support</div>
+        <div style={{ fontSize: '12px', color: '#94a3b8' }}>Ask a question or send us a message</div>
+      </div>
+
+      {/* TABS */}
+      <div style={{ display: 'flex', borderBottom: '1px solid #e2e8f0' }}>
+        {(['chat', 'email'] as const).map(t => (
+          <button key={t} onClick={() => setTab(t)} style={{ flex: 1, padding: '10px', fontSize: '13px', fontWeight: '600', border: 'none', background: tab === t ? '#f8fafc' : 'white', color: tab === t ? '#2563eb' : '#64748b', cursor: 'pointer', borderBottom: tab === t ? '2px solid #2563eb' : '2px solid transparent' }}>
+            {t === 'chat' ? '💬 Ask a question' : '✉️ Email support'}
+          </button>
+        ))}
+      </div>
+
+      <div style={{ padding: '1.25rem 1.5rem' }}>
+        {tab === 'chat' ? (
+          <>
+            <textarea
+              placeholder="Ask anything about CASA exams, study tips, or how V1 Study works..."
+              value={aiMessage}
+              onChange={e => setAiMessage(e.target.value)}
+              rows={3}
+              style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '14px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '10px' }}
+            />
+            <button
+              onClick={handleAskClaude}
+              disabled={aiLoading || !aiMessage.trim()}
+              style={{ background: aiLoading || !aiMessage.trim() ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '10px 20px', fontSize: '13px', fontWeight: '600', cursor: aiLoading || !aiMessage.trim() ? 'not-allowed' : 'pointer', minHeight: '44px' }}
+            >
+              {aiLoading ? 'Thinking...' : 'Ask →'}
+            </button>
+            {aiResponse && (
+              <div style={{ marginTop: '1rem', background: '#f0f7ff', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '1rem', fontSize: '14px', color: '#1e3a6e', lineHeight: 1.65 }}>
+                <div style={{ fontSize: '11px', fontWeight: '700', color: '#2563eb', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
+                {aiResponse}
+              </div>
+            )}
+          </>
+        ) : (
+          <>
+            {!emailSent ? (
+              <>
+                <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '10px', marginBottom: '10px' }}>
+                  <input type="text" placeholder="Your name" value={name} onChange={e => setName(e.target.value)} style={{ padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none' }} />
+                  <input type="email" placeholder="Your email" value={email} onChange={e => setEmail(e.target.value)} style={{ padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none' }} />
+                </div>
+                <textarea
+                  placeholder="How can we help?"
+                  value={message}
+                  onChange={e => setMessage(e.target.value)}
+                  rows={3}
+                  style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '14px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '10px' }}
+                />
+                <button
+                  onClick={handleEmailSend}
+                  disabled={!name || !email || !message}
+                  style={{ background: !name || !email || !message ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '10px 20px', fontSize: '13px', fontWeight: '600', cursor: !name || !email || !message ? 'not-allowed' : 'pointer', minHeight: '44px' }}
+                >
+                  Send message
+                </button>
+              </>
+            ) : (
+              <div style={{ textAlign: 'center', padding: '1rem', color: '#15803d', fontSize: '14px', fontWeight: '600' }}>
+                ✓ Message sent — we'll get back to you within 24 hours
+              </div>
+            )}
+          </>
+        )}
+      </div>
+    </div>
   )
 }
