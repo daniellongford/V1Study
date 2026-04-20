@@ -44,7 +44,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ received: true, debug: 'missing email or subscription' })
     }
 
-    // Get price ID from subscription
     const subscription = await stripe.subscriptions.retrieve(subscriptionId)
     const priceId = subscription.items.data[0]?.price?.id
     const plan = PRICE_TO_PLAN[priceId]
@@ -53,7 +52,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ received: true, debug: `unknown priceId: ${priceId}` })
     }
 
-    // Find user by email using filter
     const { data: { users }, error: userError } = await supabase.auth.admin.listUsers({ perPage: 1000 })
 
     if (userError) {
@@ -63,7 +61,6 @@ export async function POST(request: NextRequest) {
     const user = users?.find((u: any) => u.email?.toLowerCase() === email.toLowerCase())
 
     if (!user) {
-      // User not found — store by customer ID for later matching
       await supabase.from('subscriptions').upsert({
         stripe_customer_id: session.customer as string,
         stripe_subscription_id: subscriptionId,
@@ -73,7 +70,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ received: true, debug: `user not found for email: ${email}` })
     }
 
-    // Save subscription with user_id
     const { error: upsertError } = await supabase.from('subscriptions').upsert({
       user_id: user.id,
       stripe_customer_id: session.customer as string,
@@ -89,9 +85,13 @@ export async function POST(request: NextRequest) {
 
   if (event.type === 'customer.subscription.updated') {
     const subscription = event.data.object as any
-    const status = subscription.status === 'active' ? 'active' : 'inactive'
     const priceId = subscription.items.data[0]?.price?.id
     const plan = PRICE_TO_PLAN[priceId] || null
+
+    let status = 'inactive'
+    if (subscription.status === 'active' && !subscription.cancel_at_period_end) status = 'active'
+    if (subscription.status === 'active' && subscription.cancel_at_period_end) status = 'cancelling'
+    if (subscription.status === 'trialing') status = 'active'
 
     await supabase.from('subscriptions')
       .update({ status, plan })
