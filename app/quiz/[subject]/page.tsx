@@ -4,20 +4,24 @@ import { supabase } from '../../../lib/supabase'
 import { freeQuestions } from '../../../lib/questions'
 import { clwaQuestions } from '../../../lib/questions-clwa'
 
-// Map subject names to their full question banks
 const fullBanks: Record<string, typeof clwaQuestions> = {
   'Air Law': clwaQuestions,
   'Flight Rules and Air Law': clwaQuestions,
-  // Add more subjects here as banks are built:
-  // 'Human Factors': humanFactorsQuestions,
-  // 'Meteorology': meteorologyQuestions,
+}
+
+// Trial question limits per subject
+const TRIAL_LIMITS: Record<string, number> = {
+  'PPL Theory': 15,
+  'Instrument Rating': 10,
+}
+function getTrialLimit(subject: string): number {
+  if (TRIAL_LIMITS[subject]) return TRIAL_LIMITS[subject]
+  return 5 // CPL and ATPL subjects
 }
 
 function getQuestionBank(subject: string, isPaid: boolean) {
   if (isPaid) {
-    // Try exact match first
     if (fullBanks[subject]) return fullBanks[subject]
-    // Try case-insensitive partial match
     const lower = subject.toLowerCase()
     for (const key of Object.keys(fullBanks)) {
       if (key.toLowerCase() === lower || lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) {
@@ -25,7 +29,6 @@ function getQuestionBank(subject: string, isPaid: boolean) {
       }
     }
   }
-  // Fall back to free questions
   if (freeQuestions[subject]) return freeQuestions[subject]
   const lower = subject.toLowerCase().trim()
   for (const key of Object.keys(freeQuestions)) {
@@ -54,33 +57,84 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const [finalScore, setFinalScore] = useState(0)
   const [isPaid, setIsPaid] = useState(false)
   const [bankSize, setBankSize] = useState(0)
+  const [trialUsed, setTrialUsed] = useState(0)
+  const [trialExhausted, setTrialExhausted] = useState(false)
+  const [userId, setUserId] = useState<string | null>(null)
   const scoreRef = useRef(0)
 
   useEffect(() => {
     if (!subject) return
     async function loadQuestions() {
-      // Check subscription status
       const { data: { user } } = await supabase.auth.getUser()
       let paid = false
       if (user) {
+        setUserId(user.id)
         const { data: sub } = await supabase
           .from('subscriptions')
           .select('status')
           .eq('user_id', user.id)
-          .eq('status', 'active')
+          .in('status', ['active', 'cancelling'])
           .maybeSingle()
         paid = !!sub
       }
       setIsPaid(paid)
 
-      const bank = getQuestionBank(subject, paid)
-      setBankSize(bank.length)
-      const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
-      setQuestions(shuffled)
+      if (!paid && user) {
+        // Check trial usage for this subject
+        const { data: usage } = await supabase
+          .from('trial_usage')
+          .select('questions_used')
+          .eq('user_id', user.id)
+          .eq('subject', subject)
+          .maybeSingle()
+
+        const used = usage?.questions_used || 0
+        const limit = getTrialLimit(subject)
+        setTrialUsed(used)
+
+        if (used >= limit) {
+          setTrialExhausted(true)
+          return
+        }
+
+        // Only serve remaining trial questions
+        const remaining = limit - used
+        const bank = getQuestionBank(subject, false)
+        setBankSize(bank.length)
+        const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, Math.min(remaining, bank.length))
+        setQuestions(shuffled)
+      } else {
+        const bank = getQuestionBank(subject, paid)
+        setBankSize(bank.length)
+        const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
+        setQuestions(shuffled)
+      }
       scoreRef.current = 0
     }
     loadQuestions()
   }, [subject])
+
+  async function updateTrialUsage(questionsCompleted: number) {
+    if (isPaid || !userId) return
+    const { data: existing } = await supabase
+      .from('trial_usage')
+      .select('questions_used')
+      .eq('user_id', userId)
+      .eq('subject', subject)
+      .maybeSingle()
+
+    if (existing) {
+      await supabase
+        .from('trial_usage')
+        .update({ questions_used: existing.questions_used + questionsCompleted, updated_at: new Date().toISOString() })
+        .eq('user_id', userId)
+        .eq('subject', subject)
+    } else {
+      await supabase
+        .from('trial_usage')
+        .insert({ user_id: userId, subject, questions_used: questionsCompleted })
+    }
+  }
 
   async function saveScore(s: number, total: number) {
     try {
@@ -116,6 +170,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
       const fs = scoreRef.current
       setFinalScore(fs)
       saveScore(fs, questions.length)
+      updateTrialUsage(questions.length)
       setFinished(true)
     } else {
       setCurrentIdx(i => i + 1)
@@ -125,8 +180,11 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   }
 
   function restart() {
+    if (trialExhausted) return
     const bank = getQuestionBank(subject, isPaid)
-    setQuestions([...bank].sort(() => Math.random() - 0.5).slice(0, 10))
+    const limit = getTrialLimit(subject)
+    const remaining = isPaid ? 10 : Math.min(limit - trialUsed, bank.length)
+    setQuestions([...bank].sort(() => Math.random() - 0.5).slice(0, remaining))
     setCurrentIdx(0)
     setFinalScore(0)
     setFinished(false)
@@ -134,6 +192,27 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
     setSelectedAnswer(null)
     setScoreSaved(false)
     scoreRef.current = 0
+  }
+
+  // Trial exhausted screen
+  if (trialExhausted) {
+    return (
+      <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
+        <div style={{ background: 'white', borderRadius: '16px', padding: '2.5rem', maxWidth: '480px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
+          <div style={{ fontSize: '48px', marginBottom: '1rem' }}>✈️</div>
+          <h2 style={{ fontSize: '22px', fontWeight: '800', color: '#0a1628', marginBottom: '8px' }}>Trial complete for {subject}</h2>
+          <p style={{ fontSize: '14px', color: '#64748b', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+            You've used all your free trial questions for this subject. Subscribe to unlock unlimited practice questions written to the full CASA MOS syllabus.
+          </p>
+          <a href="/pricing" style={{ display: 'block', background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 32px', textDecoration: 'none', fontWeight: '700', fontSize: '15px', marginBottom: '12px' }}>
+            Start subscription →
+          </a>
+          <a href="/dashboard" style={{ display: 'block', fontSize: '13px', color: '#64748b', textDecoration: 'none' }}>
+            Back to dashboard
+          </a>
+        </div>
+      </main>
+    )
   }
 
   if (!subject || questions.length === 0) return (
@@ -145,6 +224,10 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
 
   if (finished) {
     const pct = Math.round(finalScore / questions.length * 100)
+    const trialLimit = getTrialLimit(subject)
+    const newTrialUsed = trialUsed + questions.length
+    const trialDone = !isPaid && newTrialUsed >= trialLimit
+
     return (
       <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
         <div style={{ background: 'white', borderRadius: '16px', padding: '2.5rem', maxWidth: '500px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
@@ -154,8 +237,17 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
           <div style={{ fontSize: '16px', fontWeight: '600', color: pct >= 70 ? '#16a34a' : '#dc2626', marginBottom: '0.5rem' }}>
             {pct >= 70 ? 'Pass — well done!' : 'Below pass mark — keep studying'}
           </div>
-          {scoreSaved && <div style={{ fontSize: '12px', color: '#10b981', marginBottom: '1.5rem' }}>Score saved to your progress</div>}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '2rem' }}>
+          {scoreSaved && <div style={{ fontSize: '12px', color: '#10b981', marginBottom: '1rem' }}>Score saved to your progress</div>}
+
+          {!isPaid && (
+            <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '10px 14px', marginBottom: '1rem', fontSize: '12px', color: '#1d4ed8' }}>
+              {trialDone
+                ? `Trial complete for ${subject} — subscribe for unlimited access`
+                : `Trial: ${newTrialUsed} of ${trialLimit} questions used for ${subject}`}
+            </div>
+          )}
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '1.5rem' }}>
             <div style={{ background: '#f0fdf4', borderRadius: '8px', padding: '12px' }}>
               <div style={{ fontSize: '24px', fontWeight: '600', color: '#16a34a' }}>{finalScore}</div>
               <div style={{ fontSize: '12px', color: '#64748b' }}>Correct</div>
@@ -165,15 +257,26 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
               <div style={{ fontSize: '12px', color: '#64748b' }}>Incorrect</div>
             </div>
           </div>
+
           {isPaid && bankSize > 20 && (
             <div style={{ fontSize: '12px', color: '#64748b', marginBottom: '1rem' }}>
               Drawing from {bankSize}-question bank — every session is unique
             </div>
           )}
-          <div style={{ display: 'flex', gap: '8px' }}>
-            <button onClick={restart} style={{ flex: 1, background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '11px', fontWeight: '600', cursor: 'pointer', fontSize: '14px' }}>Try Again</button>
+
+          <div style={{ display: 'flex', gap: '8px', marginBottom: trialDone ? '12px' : '0' }}>
+            {!trialDone && (
+              <button onClick={restart} style={{ flex: 1, background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '11px', fontWeight: '600', cursor: 'pointer', fontSize: '14px' }}>Try Again</button>
+            )}
             <a href="/dashboard" style={{ flex: 1, background: '#f8fafc', color: '#0a1628', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '11px', fontWeight: '600', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>Dashboard</a>
           </div>
+
+          {trialDone && (
+            <a href="/pricing" style={{ display: 'block', background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px', textDecoration: 'none', fontWeight: '700', fontSize: '14px', marginTop: '8px' }}>
+              Subscribe for unlimited access →
+            </a>
+          )}
+
           <a href="/progress" style={{ display: 'block', marginTop: '12px', fontSize: '13px', color: '#2563eb', textDecoration: 'none' }}>View all progress →</a>
         </div>
       </main>
@@ -182,6 +285,8 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
 
   const q = questions[currentIdx]
   const letters = ['A', 'B', 'C', 'D']
+  const trialLimit = getTrialLimit(subject)
+  const questionsRemaining = isPaid ? null : trialLimit - trialUsed - currentIdx
 
   return (
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
@@ -190,7 +295,14 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
         </div>
-        <a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Back to dashboard</a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          {!isPaid && questionsRemaining !== null && (
+            <span style={{ fontSize: '12px', color: '#f59e0b', fontWeight: '600', fontFamily: 'monospace' }}>
+              {questionsRemaining} trial questions left
+            </span>
+          )}
+          <a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Back to dashboard</a>
+        </div>
       </nav>
       <div style={{ maxWidth: '700px', margin: '0 auto', padding: '2rem' }}>
         <div style={{ marginBottom: '6px', fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>Question {currentIdx + 1} of {questions.length}</div>
@@ -279,34 +391,24 @@ function AiHelpPanel({ question, subject }: { question: any; subject: string }) 
   return (
     <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '12px' }}>
       {!open ? (
-        <button
-          onClick={() => setOpen(true)}
-          style={{ background: 'none', border: '1px solid #2563eb', borderRadius: '8px', padding: '8px 16px', fontSize: '13px', fontWeight: '600', color: '#2563eb', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
-        >
+        <button onClick={() => setOpen(true)} style={{ background: 'none', border: '1px solid #2563eb', borderRadius: '8px', padding: '8px 16px', fontSize: '13px', fontWeight: '600', color: '#2563eb', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}>
           💬 Still confused? Ask for more help
         </button>
       ) : (
         <div>
           <div style={{ fontSize: '12px', fontWeight: '700', color: '#1d4ed8', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Ask a follow-up question</div>
           <textarea
-            placeholder={`Ask anything about this question — e.g. "Can you explain why option A is wrong?" or "Give me a real world example"`}
+            placeholder={`Ask anything about this question — e.g. "Can you explain why option A is wrong?"`}
             value={userMessage}
             onChange={e => setUserMessage(e.target.value)}
             rows={3}
             style={{ width: '100%', padding: '10px 14px', border: '1px solid #bfdbfe', borderRadius: '8px', fontSize: '14px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '8px', background: 'white' }}
           />
           <div style={{ display: 'flex', gap: '8px', marginBottom: response ? '12px' : '0' }}>
-            <button
-              onClick={handleAsk}
-              disabled={loading || !userMessage.trim()}
-              style={{ background: loading || !userMessage.trim() ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '9px 18px', fontSize: '13px', fontWeight: '600', cursor: loading || !userMessage.trim() ? 'not-allowed' : 'pointer' }}
-            >
+            <button onClick={handleAsk} disabled={loading || !userMessage.trim()} style={{ background: loading || !userMessage.trim() ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '9px 18px', fontSize: '13px', fontWeight: '600', cursor: loading || !userMessage.trim() ? 'not-allowed' : 'pointer' }}>
               {loading ? 'Thinking...' : 'Ask →'}
             </button>
-            <button
-              onClick={() => { setOpen(false); setResponse(''); setUserMessage('') }}
-              style={{ background: 'none', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '9px 14px', fontSize: '13px', color: '#64748b', cursor: 'pointer' }}
-            >
+            <button onClick={() => { setOpen(false); setResponse(''); setUserMessage('') }} style={{ background: 'none', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '9px 14px', fontSize: '13px', color: '#64748b', cursor: 'pointer' }}>
               Close
             </button>
           </div>
