@@ -1,15 +1,9 @@
 // ============================================================
 // V1 STUDY — CPL FLIGHT RULES AND AIR LAW (CLWA)
-// 500 questions — sourced from:
-//   Part 91 MOS 2020, CASR Part 61, CASR Part 67
-//   Civil Aviation Act 1988, AIP Australia (ENR 1.1–6.4)
-//   CAO 48.1 Instrument 2019, ICAO Doc 4444/8168/9574
-//   ERSA, VFRG v8.3
-// Pass mark: 80%
+// 500 questions
 // ============================================================
 
-export const clwaQuestions: {
- 
+export const clwaQuestions = [
 
 // ─── FUEL REQUIREMENTS ───────────────────────────────────────
 
