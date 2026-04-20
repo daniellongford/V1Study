@@ -1,11 +1,4 @@
-// ============================================================
-// V1 STUDY — CPL FLIGHT RULES AND AIR LAW (CLWA)
-// 500 questions
-// ============================================================
-
 export const clwaQuestions = [
-
-// ─── FUEL REQUIREMENTS ───────────────────────────────────────
 
 {
   question: 'Under Part 91 MOS Table 19.02(2), what is the final reserve fuel requirement for a piston-engine aeroplane with MTOW ≤ 5,700 kg on a VFR day flight?',
@@ -98,8 +91,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.19.05(2)'
 },
 
-// ─── VMC CRITERIA AND AIRSPACE ───────────────────────────────
-
 {
   question: 'Under Part 91 MOS Table 2.07(3), what are the VMC criteria for an aeroplane operating in Class G airspace at 5,500 ft AMSL (above 3,000 ft AMSL) by day?',
   options: [
@@ -164,8 +155,6 @@ export const clwaQuestions = [
   explanation: 'CASR Part 91 and AIP ENR 1.4: Class D airspace requires ATC clearance for all flights (VFR and IFR). Class D differs from Class G (uncontrolled) where no clearance is required, and from Class E where VFR aircraft require only a radio and may enter without clearance.',
   reference: 'CASR Part 91 / AIP ENR 1.4'
 },
-
-// ─── RADIO AND CTAF PROCEDURES ───────────────────────────────
 
 {
   question: 'Under Part 91 MOS s.21.01, which frequencies require a radio qualification to use?',
@@ -232,8 +221,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.21.07 Table 21.07(1)'
 },
 
-// ─── TRANSPONDER CODES ───────────────────────────────────────
-
 {
   question: 'Under Part 91 MOS Table 26.69(7), what Mode A code should a VFR aircraft squawk in Class E or Class G airspace when no specific code has been assigned?',
   options: [
@@ -285,8 +272,6 @@ export const clwaQuestions = [
   explanation: 'Now established in Class G VFR with a functioning radio, the correct code is 1200 per Part 91 MOS Table 26.69(7) Item 3. The pilot should immediately contact ATC to report the airspace infringement. 7700 would be inappropriate as this is not a safety emergency caused by the aircraft.',
   reference: 'Part 91 MOS 2020 s.26.69 Table 26.69(7) Item 3 / AIP ENR 1.6'
 },
-
-// ─── EQUIPMENT REQUIREMENTS ───────────────────────────────────
 
 {
   question: 'Under Part 91 MOS s.26.06(1), which instruments are required for an aeroplane conducting a VFR flight by day?',
@@ -366,8 +351,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.26.18(2)–(4)'
 },
 
-// ─── LIGHT SIGNALS ────────────────────────────────────────────
-
 {
   question: 'Under Part 91 MOS Table 2.04(1), what does a steady red light from the control tower mean to an aircraft in flight?',
   options: [
@@ -433,8 +416,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.2.04 Table 2.04(1) Item 5'
 },
 
-// ─── CRUISING LEVELS ──────────────────────────────────────────
-
 {
   question: 'Under Part 91 MOS Table 2.09(1), what is the correct IFR cruising level for a flight tracking 095° (M) (eastbound) between 9,000 ft and FL110?',
   options: [
@@ -473,8 +454,6 @@ export const clwaQuestions = [
   explanation: 'Part 91 MOS Table 2.09(1): eastbound VFR levels (tracks 000°–179°) at the 5,000 ft band = 5,500 ft. Eastbound VFR: 1,500; 3,500; 5,500; 7,500; 9,500 ft.',
   reference: 'Part 91 MOS 2020 s.2.09 Table 2.09(1)'
 },
-
-// ─── FLIGHT NOTIFICATIONS AND SARTIME ──────────────────────────
 
 {
   question: 'Under Part 91 MOS s.9.02(1), which flights must have a flight plan submitted?',
@@ -515,8 +494,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.1.07 Definitions'
 },
 
-// ─── ALTERNATE AERODROMES ────────────────────────────────────
-
 {
   question: 'Under Part 91 MOS s.8.04(1), when must the pilot in command nominate a destination alternate aerodrome for an IFR or VFR flight?',
   options: [
@@ -555,8 +532,6 @@ export const clwaQuestions = [
   explanation: 'Part 91 MOS s.8.04(2): when planning is based on TAF3 and ETA is within the first 3 hours of TAF3 validity, an alternate must be nominated only if ETA falls during the period from forecast commencement to forecast ending of relevant weather — the 30-minute buffers before and after do not apply.',
   reference: 'Part 91 MOS 2020 s.8.04(2)'
 },
-
-// ─── MAINTENANCE AND AIRWORTHINESS ───────────────────────────
 
 {
   question: 'Under Part 91 MOS s.10.02(d), what equipment check must the pilot complete before take-off?',
@@ -597,8 +572,6 @@ export const clwaQuestions = [
   reference: 'CASR Part 42 / CASR Part 91 MOS s.10.02(d)'
 },
 
-// ─── RVSM ─────────────────────────────────────────────────────
-
 {
   question: 'Under Part 91 MOS s.11.07(3), what altitude tolerance must a pilot maintain when changing levels in RVSM airspace in an Australian FIR?',
   options: [
@@ -624,8 +597,6 @@ export const clwaQuestions = [
   explanation: 'Part 91 MOS s.11.07(4): if the cleared FL cannot be maintained, the pilot must inform ATC as soon as possible and either obtain a revised clearance before deviation, or if a revised clearance cannot be obtained before the deviation, obtain it as soon as possible after.',
   reference: 'Part 91 MOS 2020 s.11.07(4)'
 },
-
-// ─── AIRCRAFT PERFORMANCE CATEGORIES ─────────────────────────
 
 {
   question: 'Under Part 91 MOS Table 2.02(2), what aircraft performance category applies to an aircraft with a VAT (threshold speed) of 105 kt?',
@@ -653,8 +624,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.2.02 Table 2.02(2) Item 3'
 },
 
-// ─── SUPPLEMENTAL OXYGEN ─────────────────────────────────────
-
 {
   question: 'Under Part 91 MOS Table 26.43(2) Item 1, when must flight crew use supplemental oxygen on a continuous basis?',
   options: [
@@ -681,8 +650,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.26.43 Table 26.43(2) Item 1(c)'
 },
 
-// ─── IFR PROCEDURES ──────────────────────────────────────────
-
 {
   question: 'Under Part 91 MOS s.14.02(1), how must the pilot navigate an aircraft during an IFR flight?',
   options: [
@@ -708,8 +675,6 @@ export const clwaQuestions = [
   explanation: 'Part 91 MOS s.11.03(2)(a): during the en-route phase, the pilot must advise ATS if there is RAIM loss or loss of GNSS integrity for more than 5 minutes. During the terminal phase, any RAIM or integrity loss must be reported.',
   reference: 'Part 91 MOS 2020 s.11.03(2)(a)'
 },
-
-// ─── CPL LICENCE PRIVILEGES ───────────────────────────────────
 
 {
   question: 'Under CASR Part 61 MOS Schedule 3 Unit 1.5.8, what subjects does CPL flight rules and air law (CFRC) cover that a pilot must be able to apply?',
@@ -750,8 +715,6 @@ export const clwaQuestions = [
   reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 s.2.2.1'
 },
 
-// ─── PROHIBITED RESTRICTED AND DANGER AREAS ──────────────────
-
 {
   question: 'Under CASR and AIP ENR 2, what is the key difference between a Prohibited Area and a Restricted Area?',
   options: [
@@ -778,8 +741,6 @@ export const clwaQuestions = [
   reference: 'CASR Part 91 / AIP ENR 2.2'
 },
 
-// ─── AERODROME SIGNALS ────────────────────────────────────────
-
 {
   question: 'Under Part 91 MOS Table 2.05(1), what does a horizontal white dumb-bell (H-shaped) ground signal adjacent to the wind direction indicator mean?',
   options: [
@@ -792,8 +753,6 @@ export const clwaQuestions = [
   explanation: 'Part 91 MOS Table 2.05(1) Item 1: a horizontal white dumb-bell displayed adjacent to the wind direction indicator means (1) use only hard surface movement areas; (2) where sealed and gravel areas exist, use only sealed; (3) where constructed gravel and natural surfaces exist, use only the gravel surfaces.',
   reference: 'Part 91 MOS 2020 s.2.05 Table 2.05(1) Item 1'
 },
-
-// ─── MINIMUM HEIGHT RULES ────────────────────────────────────
 
 {
   question: 'Under Part 91 MOS s.12.01 and CASR s.91.265, what minimum height applies when flying over a populous area or public gathering?',
@@ -808,8 +767,6 @@ export const clwaQuestions = [
   reference: 'CASR Part 91 s.91.265 / Part 91 MOS 2020 s.12.01'
 },
 
-// ─── JOURNEY LOGS ────────────────────────────────────────────
-
 {
   question: 'Under Part 91 MOS Chapter 5, when is a journey log required to be maintained?',
   options: [
@@ -823,8 +780,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.5.01 / CASR s.91.120'
 },
 
-// ─── FORMATION FLYING ─────────────────────────────────────────
-
 {
   question: 'Under Part 91 MOS Chapter 6 and CASR s.91.150, what is the meaning of "in-company" aircraft as defined in the MOS?',
   options: [
@@ -837,8 +792,6 @@ export const clwaQuestions = [
   explanation: 'Part 91 MOS s.1.07 definition: "in-company" aircraft means aircraft (a) that form a group and occupy a specific 3-dimensional volume of airspace; and (b) each of whose pilots in command self-separates from the other group aircraft in the volume of airspace.',
   reference: 'Part 91 MOS 2020 s.1.07 Definitions'
 },
-
-// ─── DEFINITIONS ─────────────────────────────────────────────
 
 {
   question: 'Under Part 91 MOS, what is the definition of "trip fuel"?',
@@ -866,8 +819,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.1.07 Definition of contingency fuel'
 },
 
-// ─── AIRCRAFT CATEGORY AND PERFORMANCE ─────────────────────────
-
 {
   question: 'Under Part 91 MOS, "additional fuel" is defined as fuel required for what purpose?',
   options: [
@@ -880,8 +831,6 @@ export const clwaQuestions = [
   explanation: 'Part 91 MOS s.1.07: additional fuel enables an aircraft suffering engine failure or pressurisation loss at the most critical point to proceed to an alternate aerodrome, fly 15 minutes at holding speed at 1,500 ft above aerodrome elevation in ISA, and make an approach and landing.',
   reference: 'Part 91 MOS 2020 s.1.07 Definition of additional fuel'
 },
-
-// ─── INTERCEPTION PROCEDURES ─────────────────────────────────
 
 {
   question: 'Under Part 91 MOS s.23.02, if an aircraft is intercepted by another aircraft, what must the pilot in command comply with?',
@@ -896,8 +845,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.23.02'
 },
 
-// ─── NIGHT LIGHTING REQUIREMENTS ────────────────────────────
-
 {
   question: 'Under Part 91 MOS s.26.23(3), when must a turbine-engine aircraft display anti-collision lights comprising red beacon lights only?',
   options: [
@@ -910,8 +857,6 @@ export const clwaQuestions = [
   explanation: 'Part 91 MOS s.26.23(3)(a): for anti-collision lights comprising red beacon lights only, a turbine-engine aircraft must display them from immediately before the engines are started until the time the engines are shut down at the end of the flight.',
   reference: 'Part 91 MOS 2020 s.26.23(3)(a)'
 },
-
-// ─── RECENCY AND LICENCE REQUIREMENTS ────────────────────────
 
 {
   question: 'Under CASR Part 61, what is the minimum recency required for a CPL holder to act as PIC of an aeroplane for a day VFR flight?',
@@ -952,8 +897,6 @@ export const clwaQuestions = [
   reference: 'CASR Part 91 s.91.195'
 },
 
-// ─── GROUND SIGNALS ADDITIONAL ───────────────────────────────
-
 {
   question: 'An aerodrome displays a white cross (×) on the signal square. What does this mean?',
   options: [
@@ -966,8 +909,6 @@ export const clwaQuestions = [
   explanation: 'AIP AD 1.1 and RPL/PPL/CPL Workbook: a white cross on the signal square indicates the aerodrome or manoeuvring area is unserviceable. Pilots must not land. The signal is displayed in the signal area (signal square) to warn arriving pilots.',
   reference: 'AIP AD 1.1 / RPL PPL CPL Aeroplane Workbook v3.0a'
 },
-
-// ─── AIRCRAFT REGISTRATION AND AIRWORTHINESS ─────────────────
 
 {
   question: 'Under CASR Part 47, what document must an aircraft carry to demonstrate it is registered?',
@@ -995,8 +936,6 @@ export const clwaQuestions = [
   reference: 'CASR Part 21 / CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.3'
 },
 
-// ─── EMERGENCY PROCEDURES ────────────────────────────────────
-
 {
   question: 'Under CASR Part 91, in an emergency a pilot in command may deviate from the requirements of CASR. What must the pilot do after such a deviation?',
   options: [
@@ -1023,8 +962,6 @@ export const clwaQuestions = [
   reference: 'Transport Safety Investigation Act 2003 / CASR Part 91'
 },
 
-// ─── AEROPLANE-SPECIFIC CPL AIR LAW ──────────────────────────
-
 {
   question: 'Under CASR Part 61 MOS Schedule 3 Unit 1.5.9 CFRA, what must a CPL aeroplane pilot be able to describe regarding Class C and D airspace operations?',
   options: [
@@ -1050,8 +987,6 @@ export const clwaQuestions = [
   explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 s.2.2.3 requires the pilot to state minimum VFR instruments. Per Part 91 MOS s.26.06(1): indicated airspeed, pressure altitude, magnetic heading, and time are the baseline. Additional instruments are required for night, aerial work, and IFR.',
   reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 s.2.2.3 / Part 91 MOS s.26.06(1)'
 },
-
-// ─── CAO 48.1 DUTY LIMITS ────────────────────────────────────
 
 {
   question: 'Under CAO 48.1, what is the maximum flight time in any 28-day period for a CPL pilot conducting single-pilot commercial operations?',
@@ -1091,8 +1026,6 @@ export const clwaQuestions = [
   explanation: 'CAO 48.1: for a standard start time (0600–0859 local), the maximum FDP for a two-pilot crew is 13 hours. Early starts (0500–0559) = 11 hours; Window starts (0900–1159) = 12 hours; Late starts (1200–2259) = 11.5 hours; Night starts (2300–0459) = 10 hours.',
   reference: 'CAO 48.1 Instrument 2019'
 },
-
-// ─── ADDITIONAL HARD QUESTIONS ────────────────────────────────
 
 {
   question: 'Under Part 91 MOS s.8.04(8), if a TAF includes a BECMG element representing a deterioration in weather, when should the change be applied for alternate planning purposes?',
@@ -1144,17 +1077,7 @@ export const clwaQuestions = [
   correct: 1,
   explanation: 'Part 91 MOS Table 21.05(1) Item 5: when a previously reported position estimate is more than 2 minutes in error, the pilot must immediately provide a corrected position estimate. This applies to VFR aircraft in Class D as they are within the scope of s.21.05(1).',
   reference: 'Part 91 MOS 2020 s.21.05(1) Table 21.05(1) Item 5'
-}
-
-{
-  question: string;
-  options: string[];
-  correct: number;
-  explanation: string;
-  reference: string;
-}[] = [
-
-// ─── RIGHT-OF-WAY RULES ──────────────────────────────────────
+},
 
 {
   question: 'Under CASR 91.330, an aircraft is compelled to land due to an emergency. Which aircraft has the right-of-way?',
@@ -1247,8 +1170,6 @@ export const clwaQuestions = [
   reference: 'CASR 91.330 / VFRG v8.3 Chapter 1'
 },
 
-// ─── CIRCUIT PROCEDURES ──────────────────────────────────────
-
 {
   question: 'Under the VFRG v8.3, what is the standard circuit height for a medium performance aircraft (55–150 kt) at a non-controlled aerodrome?',
   options: [
@@ -1340,8 +1261,6 @@ export const clwaQuestions = [
   reference: 'CASR 91.360 / VFRG v8.3 Chapter 3'
 },
 
-// ─── NOTAM TYPES ─────────────────────────────────────────────
-
 {
   question: 'Under AIP GEN 2.2, what are the three types of NOTAMs available to pilots in Australia?',
   options: [
@@ -1367,8 +1286,6 @@ export const clwaQuestions = [
   explanation: 'Part 91 MOS s.10.02(b): before take-off, the pilot must check all Head Office and FIR NOTAMs applicable to the en-route phase of the flight, and all location-specific NOTAMs for relevant aerodromes.',
   reference: 'Part 91 MOS 2020 s.10.02(b)'
 },
-
-// ─── TEMPO / INTER / BECMG ───────────────────────────────────
 
 {
   question: 'Under AIP GEN 3.5 and VFRG, what does TEMPO indicate in a TAF?',
@@ -1422,8 +1339,6 @@ export const clwaQuestions = [
   reference: 'VFRG v8.3 Chapter 2 / AIP GEN 3.5'
 },
 
-// ─── ATIS ──────────────────────────────────────────────────
-
 {
   question: 'Under AIP ENR 1.1, what must a pilot do before first contact with ATC at an ATIS-equipped aerodrome?',
   options: [
@@ -1449,8 +1364,6 @@ export const clwaQuestions = [
   explanation: 'VFRG v8.3 and AIP: when control zones are deactivated, the ATIS may be used to broadcast operational information of an unchanging nature including CTAF pilot activated lighting frequency, preferred runways, noise abatement procedures, and expected tower reopening time.',
   reference: 'VFRG v8.3 Chapter 5 / AIP ENR 1.1'
 },
-
-// ─── AIRSPACE CLASSIFICATION ──────────────────────────────────
 
 {
   question: 'Under AIP ENR 1.4, what ATC service is provided in Class D airspace?',
@@ -1491,8 +1404,6 @@ export const clwaQuestions = [
   reference: 'AIP ENR 1.4 / VFRG v8.3 Chapter 3'
 },
 
-// ─── TAXIING RULES ───────────────────────────────────────────
-
 {
   question: 'Under CASR 91.365, when taxiing on the movement area and not operating under an ATC clearance, a pilot must give way to which aircraft?',
   options: [
@@ -1505,8 +1416,6 @@ export const clwaQuestions = [
   explanation: 'CASR 91.365 / VFRG v8.3: when taxiing without ATC clearance, the pilot must give way to landing aircraft or those on final approach; aircraft taking off or preparing to take off; keep well clear when overtaking; give way to the right when on a converging course; and stop or turn right to remain clear of head-on aircraft.',
   reference: 'CASR 91.365 / VFRG v8.3 Chapter 1'
 },
-
-// ─── PASSENGER SAFETY BRIEFING ───────────────────────────────
 
 {
   question: 'Under CASR 91.565 and Part 91 MOS s.20.06, what must passenger safety briefings include before take-off?',
@@ -1521,8 +1430,6 @@ export const clwaQuestions = [
   reference: 'CASR 91.565 / Part 91 MOS 2020 s.20.06 / VFRG v8.3 Chapter 3'
 },
 
-// ─── VFR NAVIGATION REQUIREMENTS ────────────────────────────
-
 {
   question: 'Under CASR 91.273 and Part 91 MOS s.13.02, how frequently must a VFR pilot fix the aircraft\'s position when navigating by visual reference?',
   options: [
@@ -1535,8 +1442,6 @@ export const clwaQuestions = [
   explanation: 'CASR 91.273 / Part 91 MOS s.13.02: when navigating by visual reference to the ground or water, a pilot must positively fix the aircraft\'s position by visual reference to features marked on topographical charts at intervals not exceeding 30 minutes.',
   reference: 'CASR 91.273 / Part 91 MOS 2020 s.13.02 / VFRG v8.3 Chapter 3'
 },
-
-// ─── ALTIMETRY ────────────────────────────────────────────────
 
 {
   question: 'Under Part 91 MOS s.10.05, what accuracy is required of a VFR altimeter when checked against an accurate QNH at the aerodrome?',
@@ -1564,8 +1469,6 @@ export const clwaQuestions = [
   reference: 'VFRG v8.3 Chapter 3 / AIP ENR 1.7'
 },
 
-// ─── ICING AND FROST ─────────────────────────────────────────
-
 {
   question: 'Under CASR 91.705, may an aircraft take off with frost on the wings?',
   options: [
@@ -1578,8 +1481,6 @@ export const clwaQuestions = [
   explanation: 'CASR 91.705 / VFRG v8.3: before beginning a flight, there must be no frost, ice or snow adhering to the aircraft\'s wings, flaps, control surfaces, rotors, propellers, and horizontal or vertical stabilisers. Exception: if take-off is conducted in accordance with AFM procedures for those conditions.',
   reference: 'CASR 91.705 / VFRG v8.3 Chapter 2'
 },
-
-// ─── AERODROME SIGNALS FROM VFRG ──────────────────────────────
 
 {
   question: 'Under AIP ENR 1.5 (VFRG v8.3), what aerodrome ground signal indicates gliding operations are in progress?',
@@ -1607,8 +1508,6 @@ export const clwaQuestions = [
   reference: 'AIP ENR 1.5 / VFRG v8.3 Chapter 1'
 },
 
-// ─── ERSA ─────────────────────────────────────────────────────
-
 {
   question: 'Under CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.1.4, what type of information can a CPL candidate be expected to decode from ERSA?',
   options: [
@@ -1621,8 +1520,6 @@ export const clwaQuestions = [
   explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.1.4 requires pilots to decode information in ERSA. ERSA (En Route Supplement Australia) contains runway data, radio frequencies, CTAF, elevation, NOTAMs, restricted and danger area details, and is mandatory for pre-flight planning at non-controlled aerodromes.',
   reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.1.4 / VFRG v8.3'
 },
-
-// ─── AVIATION LEGISLATION STRUCTURE ──────────────────────────
 
 {
   question: 'Under the VFRG v8.3, what is the correct tier structure of Australian aviation legislation?',
@@ -1650,8 +1547,6 @@ export const clwaQuestions = [
   reference: 'VFRG v8.3 Chapter 1'
 },
 
-// ─── MANDATORY REPORTING ─────────────────────────────────────
-
 {
   question: 'Under CASR 91.606 and AIP ENR 1.14, how must an Immediately Reportable Matter (IRM) be reported to the ATSB?',
   options: [
@@ -1677,8 +1572,6 @@ export const clwaQuestions = [
   explanation: 'VFRG v8.3 / AIP ENR 1.14: examples of IRMs include: a death or serious injury caused by contact with an aircraft, jet blast or component; an aircraft believed missing; an aircraft suffering damage; a breakdown of separation standards in a CTA.',
   reference: 'VFRG v8.3 Chapter 1 / AIP ENR 1.14'
 },
-
-// ─── PRE-FLIGHT INFORMATION AND WEATHER ──────────────────────
 
 {
   question: 'Under Part 91 MOS s.7.02 and VFRG, for how long before and after ETA must an authorised weather forecast be valid?',
@@ -1706,8 +1599,6 @@ export const clwaQuestions = [
   reference: 'VFRG v8.3 Chapter 2'
 },
 
-// ─── SMOKING AND DRUGS ───────────────────────────────────────
-
 {
   question: 'Under CASR 91.565, what is the rule regarding smoking in an aircraft?',
   options: [
@@ -1734,8 +1625,6 @@ export const clwaQuestions = [
   reference: 'CASR Part 99 / VFRG v8.3 Chapter 1'
 },
 
-// ─── AERODROME DEFINITIONS ───────────────────────────────────
-
 {
   question: 'Under AIP, what defines a "non-controlled aerodrome"?',
   options: [
@@ -1748,8 +1637,6 @@ export const clwaQuestions = [
   explanation: 'VFRG v8.3 Chapter 3: a non-controlled aerodrome is one where ATC is not currently operating. This can be an aerodrome always in Class G airspace, an aerodrome with a control tower where ATC is not currently operating, or an aerodrome where ATC service is temporarily unavailable.',
   reference: 'VFRG v8.3 Chapter 3 / AIP ENR 1.4'
 },
-
-// ─── AEROBATIC OPERATIONS ────────────────────────────────────
 
 {
   question: 'Under CASR 91.185 and VFRG, what is the minimum height for aerobatic manoeuvres unless an endorsement permits lower?',
@@ -1764,8 +1651,6 @@ export const clwaQuestions = [
   reference: 'CASR 91.185 / VFRG v8.3 Chapter 1'
 },
 
-// ─── WAKE TURBULENCE ─────────────────────────────────────────
-
 {
   question: 'Under VFRG v8.3 and AIP, what is the primary source of wake turbulence hazard in the circuit at a non-controlled aerodrome?',
   options: [
@@ -1778,8 +1663,6 @@ export const clwaQuestions = [
   explanation: 'VFRG v8.3 Chapter 3: a hovering or slow air-taxiing helicopter creates rotor downwash that can be a hazard to nearby aircraft. In forward flight, helicopters produce vortices similar to those produced by fixed-wing aircraft. Pilots of small aircraft should avoid operating close to helicopters.',
   reference: 'VFRG v8.3 Chapter 3'
 },
-
-// ─── LAND AFTER NIGHT VFR ────────────────────────────────────
 
 {
   question: 'Under Part 91 MOS s.8.05(2) and VFRG, for a VFR flight by night, a destination alternate must be within what distance of the destination?',
@@ -1794,8 +1677,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.8.05(2) / VFRG v8.3 Chapter 2'
 },
 
-// ─── FLIGHT REVIEW ───────────────────────────────────────────
-
 {
   question: 'Under CASR Part 61 and Part 61 MOS Schedule 3 Unit 1.5.9, what does the CPL aeroplane air law syllabus require pilots to understand about general competency and flight reviews?',
   options: [
@@ -1809,8 +1690,6 @@ export const clwaQuestions = [
   reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 s.2.1.2'
 },
 
-// ─── FORMATION FLYING ────────────────────────────────────────
-
 {
   question: 'Under CASR 91.205, when may a pilot fly an aircraft in formation?',
   options: [
@@ -1823,8 +1702,6 @@ export const clwaQuestions = [
   explanation: 'CASR 91.205 / VFRG v8.3: a pilot may only fly in formation if the flight has been prearranged with the other pilots in the formation. Formation flying at night or in IMC requires a CASA approval. A flight activity endorsement is also required under CASR 61.380.',
   reference: 'CASR 91.205 / VFRG v8.3 Chapter 1'
 },
-
-// ─── ADDITIONAL HARD REGULATORY QUESTIONS ────────────────────
 
 {
   question: 'Under Part 91 MOS s.11.10(2)(a), after a radio failure in VFR Class G airspace, as soon as practicable, the pilot must descend below what height over land?',
@@ -1980,7 +1857,7 @@ export const clwaQuestions = [
   correct: 1,
   explanation: 'VFRG v8.3 Chapter 3: where the aerodrome layout or circuit direction cannot be ascertained prior to arrival, the pilot should overfly or circle the aerodrome at least 500 ft above circuit altitude (which may be 2,000 ft or more above elevation). Once the circuit direction is determined, position to the non-active side before descending.',
   reference: 'VFRG v8.3 Chapter 3 / AC 91-10'
-}
+},
 
 {
   question: 'Under AC 91-10 and VFRG v8.3, what is the correct sequence for a standard CTAF broadcast at a non-controlled aerodrome?',
@@ -2006,7 +1883,6 @@ export const clwaQuestions = [
   reference: 'VFRG v8.3 Chapter 5 / AC 91-10'
 },
 
-// ELT SPECIFICS
 {
   question: 'Under Part 91 MOS s.26.49 and VFRG v8.3, on which frequencies must an ELT transmit when activated?',
   options: ['A. 121.5 MHz only', 'B. 406 MHz only', 'C. Simultaneously on both 121.5 MHz and 406 MHz', 'D. 243 MHz and 406 MHz'],
@@ -2039,7 +1915,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.26.52 / VFRG v8.3 Chapter 7'
 },
 
-// DANGEROUS GOODS
 {
   question: 'Under CASR 91.680 and VFRG, if dangerous goods are carried and an emergency occurs, what must the pilot advise ATS?',
   options: ['A. Nothing specific — dangerous goods do not affect ATC procedures', 'B. The nature and state of the dangerous goods, in addition to advising of the emergency', 'C. Only that dangerous goods are on board, without specifying type', 'D. Dangerous goods information must be withheld for security reasons'],
@@ -2048,7 +1923,6 @@ export const clwaQuestions = [
   reference: 'CASR 91.680 / VFRG v8.3 Chapter 7'
 },
 
-// OVER-WATER
 {
   question: 'Under Part 91 MOS s.9.02(2)(b) and VFRG, when is flight notification required for a VFR over-water flight?',
   options: ['A. All over-water flights regardless of distance', 'B. When the flight is conducted at a distance from land greater than that which would allow the aircraft to reach land with an engine inoperative', 'C. Only for flights more than 50 NM offshore', 'D. Only for night over-water flights'],
@@ -2057,7 +1931,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.9.02(2)(b) / VFRG v8.3 Chapter 2'
 },
 
-// DESIGNATED REMOTE AREAS
 {
   question: 'Under Part 91 MOS s.9.02(2)(c), what flight notification requirement applies to VFR flights in designated remote areas?',
   options: ['A. No additional requirement beyond Class G airspace rules', 'B. The pilot must submit a flight plan or SARTIME before the flight', 'C. A flight plan must be filed with CASA headquarters', 'D. The pilot must carry an EPIRB in addition to an ELT'],
@@ -2066,7 +1939,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.9.02(2)(c) / VFRG v8.3 Chapter 2'
 },
 
-// DOCUMENTS
 {
   question: 'Under CASR 91.110 and VFRG, for a VFR flight tracking beyond 50 NM, what must be carried?',
   options: ['A. Only the flight plan', 'B. Applicable AIP information (charts and aeronautical information for the route and probable diversions) and either the aircraft technical log or maintenance release', 'C. Weather forecasts only', 'D. A copy of CASR Part 91'],
@@ -2083,7 +1955,6 @@ export const clwaQuestions = [
   reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 / CASR Part 91'
 },
 
-// NIGHT VFR
 {
   question: 'Under CASR Part 61, what is required for a CPL holder to conduct single-engine aeroplane night VFR operations?',
   options: ['A. No additional endorsement — CPL privileges include night operations', 'B. A single-engine aeroplane night VFR endorsement under CASR Part 61', 'C. An IFR rating is required for all night operations', 'D. A night VFR flight review only — no formal endorsement required'],
@@ -2100,7 +1971,6 @@ export const clwaQuestions = [
   reference: 'CASR Part 61 / VFRG v8.3 Chapter 3'
 },
 
-// SPECIAL VFR
 {
   question: 'Under Part 91 MOS s.2.01(3), what conditions must a pilot comply with to operate under Special VFR in a control zone?',
   options: ['A. Be authorised by ATC; operate by day; fly clear of cloud; maintain at least 1,500 m flight visibility', 'B. Be authorised by ATC; operate at night only; maintain 5 km visibility', 'C. ATC clearance is not required for SVFR — it is self-authorised', 'D. Maintain VMC as specified in Table 2.07(3) for Class C airspace'],
@@ -2109,7 +1979,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.2.01(3)'
 },
 
-// COMMUNICATION FAILURE — IFR
 {
   question: 'Under AIP ENR 1.1 and VFRG, if an IFR aircraft suffers communication failure and no clearance limit has been received, what initial action is taken?',
   options: ['A. Hold at the last cleared waypoint for 30 minutes', 'B. Proceed in accordance with the latest ATC route clearance acknowledged and climb to planned level', 'C. Land immediately at the nearest aerodrome', 'D. Squawk 7700 and descend to MSA'],
@@ -2126,7 +1995,6 @@ export const clwaQuestions = [
   reference: 'VFRG v8.3 Appendix / AIP ENR 1.1'
 },
 
-// CONTROLLED AERODROME PROCEDURES
 {
   question: 'Under AIP ENR 1.1 and VFRG v8.3, what specific clearance is required before landing at a controlled aerodrome?',
   options: ['A. Obtaining the ATIS code is sufficient authority to land', 'B. The specific ATC clearance "Cleared to land" (or "Cleared touch and go" or "Cleared for the option") must be received', 'C. Two-way communication with the tower constitutes landing clearance', 'D. Landing clearance is only required for IFR aircraft'],
@@ -2151,7 +2019,6 @@ export const clwaQuestions = [
   reference: 'AIP ENR 1.1 / VFRG v8.3 Chapter 3'
 },
 
-// AIRWAYS CLEARANCES
 {
   question: 'Under AIP ENR 1.1 and VFRG, what normally comprises an airways clearance?',
   options: ['A. Aircraft identification and squawk code only', 'B. Aircraft identification, destination or clearance limit, route of flight, assigned level, SSR code, and frequency requirements', 'C. Runway assignment and departure heading', 'D. Level allocation and transponder code only'],
@@ -2160,7 +2027,6 @@ export const clwaQuestions = [
   reference: 'AIP ENR 1.1 / VFRG v8.3 Chapter 5'
 },
 
-// LOADING SYSTEMS — RPL/PPL/CPL WORKBOOK
 {
   question: 'Under the RPL/PPL/CPL Aeroplane Workbook v3.0a, what specific gravity is used for AVGAS in all loading systems?',
   options: ['A. 0.71 kg/litre', 'B. 0.80 kg/litre', 'C. 0.72 kg/litre', 'D. 0.78 kg/litre'],
@@ -2217,7 +2083,6 @@ export const clwaQuestions = [
   reference: 'RPL/PPL/CPL Aeroplane Workbook v3.0a Significant Changes'
 },
 
-// PERFORMANCE CHARTS
 {
   question: 'Under RPL/PPL/CPL Workbook Figure 3, the gross weight at take-off shall not exceed which of the following?',
   options: ['A. BEW plus maximum payload only', 'B. The lesser of values (A) and (B) from the chart, with a maximum of 1,090 kg', 'C. MTOW and MLW', 'D. ZFW plus maximum fuel only'],
@@ -2234,7 +2099,6 @@ export const clwaQuestions = [
   reference: 'RPL/PPL/CPL Aeroplane Workbook v3.0a Figure 12'
 },
 
-// COMMUNICATION MONITORING
 {
   question: 'Under CASR 91.635 and VFRG v8.3, what communication monitoring requirement applies in controlled airspace?',
   options: ['A. Pilots must monitor the CTAF for traffic information', 'B. The pilot or another pilot in a pilot seat must continuously monitor the primary communications medium used by ATC', 'C. Monitoring is required only on final approach at controlled aerodromes', 'D. Monitoring is only required for IFR flights in Class A airspace'],
@@ -2243,7 +2107,6 @@ export const clwaQuestions = [
   reference: 'CASR 91.635 / VFRG v8.3 Chapter 5'
 },
 
-// MBA DETAIL
 {
   question: 'Under Part 91 MOS s.21.09 Table 21.09(1) Item 2, what broadcast must be made when joining a circuit in an MBA?',
   options: ['A. No broadcast is required when joining circuit in an MBA', 'B. A broadcast of the situation, indicating the circuit leg being joined and the runway', 'C. A broadcast of aircraft callsign and fuel state only', 'D. A broadcast identical to a controlled aerodrome downwind call'],
@@ -2252,7 +2115,6 @@ export const clwaQuestions = [
   reference: 'Part 91 MOS 2020 s.21.09 Table 21.09(1) Item 2'
 },
 
-// MINIMUM HEIGHT
 {
   question: 'Under CASR 91.265, what is the minimum height for an aeroplane over areas other than populous areas?',
   options: ['A. Not less than 1,000 ft AGL at all times', 'B. Not less than 500 ft above the highest obstacle within 150 m of the aircraft', 'C. Not less than 500 ft AGL over open country', 'D. Not less than 300 ft AGL at all times'],
@@ -2261,7 +2123,6 @@ export const clwaQuestions = [
   reference: 'CASR 91.265 / VFRG v8.3 Chapter 1'
 },
 
-// VFR INTO IMC / ICING
 {
   question: 'Under CASR 91.710, if an aircraft not certified for icing conditions inadvertently enters icing conditions, what must the pilot do?',
   options: ['A. Descend immediately to warmer air below the icing layer', 'B. Change the aircraft\'s flight path to avoid the icing conditions as soon as practicable', 'C. Continue to the nearest aerodrome at best speed', 'D. Activate the pitot heat and continue'],
@@ -2270,7 +2131,6 @@ export const clwaQuestions = [
   reference: 'CASR 91.710 / VFRG v8.3 Chapter 2'
 },
 
-// CLEARANCE REQUEST TIMING
 {
   question: 'Under AIP ENR 1.1 and VFRG, when must an airways clearance request be made?',
   options: ['A. At least 30 minutes before estimated departure time', 'B. On clearance delivery frequency immediately before starting engines; where none, before entering the departure runway; before entering controlled airspace', 'C. After engine start during taxi', 'D. When reaching the holding point of the runway'],
@@ -2279,7 +2139,6 @@ export const clwaQuestions = [
   reference: 'AIP ENR 1.1 / VFRG v8.3 Chapter 5'
 },
 
-// READBACK
 {
   question: 'Under Part 91 MOS s.11.12 and AIP ENR 1.1, when a taxi instruction includes a holding point, what phrase must specifically be read back?',
   options: ['A. The entire taxi clearance word for word', 'B. "Holding point (holding point designator)" must specifically be read back', 'C. The runway designation only', 'D. Readback is not required for taxi clearances'],
@@ -2288,7 +2147,6 @@ export const clwaQuestions = [
   reference: 'AIP ENR 1.1 / VFRG v8.3 Chapter 3'
 },
 
-// VFR CLASS A
 {
   question: 'Under CASR 91.285, may a VFR aircraft fly in Class A airspace without specific approval?',
   options: ['A. Yes — VFR is permitted in Class A provided the aircraft has Mode C', 'B. No — VFR flight in Class A airspace must be specifically approved', 'C. VFR is permitted in Class A at and above FL245 only', 'D. VFR is never permitted in Class A airspace under any circumstances'],
@@ -2297,7 +2155,6 @@ export const clwaQuestions = [
   reference: 'CASR 91.285 / VFRG v8.3 Chapter 3'
 },
 
-// DISTRESS AND URGENCY
 {
   question: 'Under ICAO Annex 2 and AIP, what is the correct distress message format?',
   options: ['A. "EMERGENCY EMERGENCY EMERGENCY — (callsign) — (nature of distress)"', 'B. "MAYDAY" repeated three times, followed by the callsign; and squawk 7700 on the transponder', 'C. "PAN PAN" repeated three times followed by callsign', 'D. "MAYDAY" transmitted once on 121.5 MHz only'],
@@ -2314,7 +2171,6 @@ export const clwaQuestions = [
   reference: 'CASR 91.700 / VFRG v8.3 Chapter 7'
 },
 
-// HARD SCENARIO QUESTIONS
 {
   question: 'A piston-engine aeroplane MTOW 1,200 kg is on a VFR day flight. Fuel check shows that on landing, fuel remaining will be less than the 30-minute final reserve. What are the pilot\'s obligations under Part 91 MOS?',
   options: ['A. Continue to destination — final reserve may be used as emergency fuel', 'B. Request ATS advise any likely delay; consider diverting to maintain compliance with s.19.04(3); declare "minimum fuel" if committed to an aerodrome and any ATC clearance change would result in landing below final reserve', 'C. Declare MAYDAY immediately', 'D. Land at the nearest aerodrome within 5 minutes without notifying ATS'],
@@ -2385,7 +2241,7 @@ export const clwaQuestions = [
   correct: 1,
   explanation: 'Part 91 MOS s.26.06(3) and s.26.08: VFR night flight requires all day VFR instruments plus turn and slip, attitude (with alternate power), vertical speed, stabilised heading, OAT, gyroscope power adequacy indicator, and GNSS or ADF or VOR navigation.',
   reference: 'Part 91 MOS 2020 s.26.06(3) / s.26.08'
-}
+},
 
 {
   question: 'Under CASR 91.635, what is the minimum height at which an aircraft may fly over a built-up area unless conducting a take-off or landing?',
@@ -3425,7 +3281,7 @@ export const clwaQuestions = [
   correct: 0,
   explanation: 'CAO 48.1: for a two-pilot crew in charter operations starting between 0800 and 1159 local, the maximum FDP is 14 hours. Single-pilot operations have reduced limits based on start time.',
   reference: 'CAO 48.1 Instrument 2019'
-}
+},
 
 {
   question: 'Under CASR 91.430, what visibility and cloud conditions are required to conduct Special VFR in a Class D CTR?',
@@ -4233,7 +4089,7 @@ export const clwaQuestions = [
   correct: 0,
   explanation: 'CASR Part 61: in ascending order of privilege, the licence/certificate grades are: Student (solo endorsement) → RPL → PPL → CPL → ATPL. A student pilot certificate has the most restricted privileges.',
   reference: 'CASR Part 61'
-}
+},
 
 {
   question: 'Under CASR 91.480, what is a "missed approach point" (MAPt) on a non-precision approach?',
@@ -4842,4 +4698,5 @@ export const clwaQuestions = [
   explanation: 'AIP ENR 1.4 and VFRG v8.3: CTAF enables pilots at non-controlled aerodromes to broadcast their position and intentions so other pilots can maintain situational awareness and apply see-and-avoid. No ATC separation is provided.',
   reference: 'AIP ENR 1.4 / VFRG v8.3'
 }
+
 ]
