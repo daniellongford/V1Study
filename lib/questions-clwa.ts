@@ -10,19 +10,7 @@
 
 export const clwaQuestions: {
   question: string
-  options: string[]
-  correct: number
-  explanation: string
-  reference: string
-}[] = [
-
-{
-  question: string;
-  options: string[];
-  correct: number;
-  explanation: string;
-  reference: string;
-}[] = [
+export const clwaQuestions = [
 
 // ─── FUEL REQUIREMENTS ───────────────────────────────────────
 
