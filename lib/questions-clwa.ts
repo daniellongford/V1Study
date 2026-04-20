@@ -9,8 +9,7 @@
 // ============================================================
 
 export const clwaQuestions: {
-  question: string
-export const clwaQuestions = [
+ 
 
 // ─── FUEL REQUIREMENTS ───────────────────────────────────────
 
