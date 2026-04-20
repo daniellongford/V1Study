@@ -2,14 +2,34 @@
 import { useState, useEffect, useRef, use } from 'react'
 import { supabase } from '../../../lib/supabase'
 import { freeQuestions } from '../../../lib/questions'
+import { clwaQuestions } from '../../../lib/questions-clwa'
 
-function findQuestions(subject: string) {
+// Map subject names to their full question banks
+const fullBanks: Record<string, typeof clwaQuestions> = {
+  'Air Law': clwaQuestions,
+  'Flight Rules and Air Law': clwaQuestions,
+  // Add more subjects here as banks are built:
+  // 'Human Factors': humanFactorsQuestions,
+  // 'Meteorology': meteorologyQuestions,
+}
+
+function getQuestionBank(subject: string, isPaid: boolean) {
+  if (isPaid) {
+    // Try exact match first
+    if (fullBanks[subject]) return fullBanks[subject]
+    // Try case-insensitive partial match
+    const lower = subject.toLowerCase()
+    for (const key of Object.keys(fullBanks)) {
+      if (key.toLowerCase() === lower || lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) {
+        return fullBanks[key]
+      }
+    }
+  }
+  // Fall back to free questions
   if (freeQuestions[subject]) return freeQuestions[subject]
   const lower = subject.toLowerCase().trim()
   for (const key of Object.keys(freeQuestions)) {
     if (key.toLowerCase().trim() === lower) return freeQuestions[key]
-  }
-  for (const key of Object.keys(freeQuestions)) {
     if (lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) return freeQuestions[key]
   }
   return []
@@ -32,14 +52,34 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const [finished, setFinished] = useState(false)
   const [scoreSaved, setScoreSaved] = useState(false)
   const [finalScore, setFinalScore] = useState(0)
+  const [isPaid, setIsPaid] = useState(false)
+  const [bankSize, setBankSize] = useState(0)
   const scoreRef = useRef(0)
 
   useEffect(() => {
     if (!subject) return
-    const bank = findQuestions(subject)
-    const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
-    setQuestions(shuffled)
-    scoreRef.current = 0
+    async function loadQuestions() {
+      // Check subscription status
+      const { data: { user } } = await supabase.auth.getUser()
+      let paid = false
+      if (user) {
+        const { data: sub } = await supabase
+          .from('subscriptions')
+          .select('status')
+          .eq('user_id', user.id)
+          .eq('status', 'active')
+          .maybeSingle()
+        paid = !!sub
+      }
+      setIsPaid(paid)
+
+      const bank = getQuestionBank(subject, paid)
+      setBankSize(bank.length)
+      const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
+      setQuestions(shuffled)
+      scoreRef.current = 0
+    }
+    loadQuestions()
   }, [subject])
 
   async function saveScore(s: number, total: number) {
@@ -85,7 +125,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   }
 
   function restart() {
-    const bank = findQuestions(subject)
+    const bank = getQuestionBank(subject, isPaid)
     setQuestions([...bank].sort(() => Math.random() - 0.5).slice(0, 10))
     setCurrentIdx(0)
     setFinalScore(0)
@@ -125,6 +165,11 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
               <div style={{ fontSize: '12px', color: '#64748b' }}>Incorrect</div>
             </div>
           </div>
+          {isPaid && bankSize > 20 && (
+            <div style={{ fontSize: '12px', color: '#64748b', marginBottom: '1rem' }}>
+              Drawing from {bankSize}-question bank — every session is unique
+            </div>
+          )}
           <div style={{ display: 'flex', gap: '8px' }}>
             <button onClick={restart} style={{ flex: 1, background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '11px', fontWeight: '600', cursor: 'pointer', fontSize: '14px' }}>Try Again</button>
             <a href="/dashboard" style={{ flex: 1, background: '#f8fafc', color: '#0a1628', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '11px', fontWeight: '600', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>Dashboard</a>
