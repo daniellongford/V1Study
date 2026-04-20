@@ -1,6 +1,4 @@
-import { Question } from '../types'
-
-export const chufQuestions: Question[] = [
+export const chufQuestions = [
 
 {
   question: 'What is the "sunk cost fallacy" in aviation decision-making?',
