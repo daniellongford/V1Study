@@ -17,11 +17,13 @@ Reference: ${context.reference}
 
 Your role is to help the student understand this topic more deeply. Be clear, concise and accurate. 
 Reference Australian aviation regulations and CASA documents where relevant.
-Keep responses under 200 words unless more detail is genuinely needed.`
+Keep responses under 200 words unless more detail is genuinely needed.
+IMPORTANT: Respond in plain text only. Do not use markdown, asterisks, pound signs, bullet points, headers or any special formatting. Write in clear plain sentences and paragraphs only.`
     : `You are a helpful support assistant for V1 Study, an Australian pilot exam preparation platform.
 Help students with questions about CASA exams, study tips, platform features, and aviation theory.
 Be friendly, professional and concise. Reference Australian aviation regulations where relevant.
-Keep responses under 200 words unless more detail is genuinely needed.`
+Keep responses under 200 words unless more detail is genuinely needed.
+IMPORTANT: Respond in plain text only. Do not use markdown, asterisks, pound signs, bullet points, headers or any special formatting. Write in clear plain sentences and paragraphs only.`
 
   try {
     const response = await fetch('https://api.anthropic.com/v1/messages', {
