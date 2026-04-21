@@ -1,0 +1,6006 @@
+// CPL Aerodynamics (CADA) — Full Question Bank
+// Auto-generated: 500 questions
+// DO NOT EDIT — regenerate from source parts
+
+export const cadaQuestions = [
+  {
+    question: 'At what height above the ground is ground effect most significant?',
+    options: [
+      'A. Less than one wingspan above the ground',
+    'B. Less than two wingspans above the ground',
+    'C. Ground effect extends to 1,000 ft AGL for large aircraft',
+    'D. Less than 500 ft AGL'
+    ],
+    correct: 0,
+    explanation: 'Ground effect is significant within one wingspan of the ground — and strongest within half a wingspan. A typical light aircraft with a 10 m wingspan enters significant ground effect below 10 m (approximately 33 ft). At one wingspan altitude, ground effect is negligible.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'A pilot notices the aircraft is becoming nose-heavy as fuel burns from a forward tank. To maintain level flight, the pilot will need to:',
+    options: [
+      'A. Land immediately — increasing nose-heaviness is a structural emergency',
+    'B. Increase power to overcome the added pitching moment',
+    'C. Apply increasing forward pressure on the controls',
+    'D. Apply increasing back pressure or re-trim nose-up to compensate for the forward CG shift'
+    ],
+    correct: 3,
+    explanation: 'As fuel burns from a forward tank, the CG moves aft toward the MAUW CG position (or remains forward — depends on tank position). If the CG moves forward with fuel burn, the aircraft becomes more nose-heavy — requiring increasing back pressure or nose-up trim. If forward tanks burn first and they are ahead of the CG, the aircraft trims more nose-down.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'When a pilot states the aircraft "mushed" through the turn, this describes:',
+    options: [
+      'A. Flying at too high an airspeed with insufficient bank angle',
+    'B. A semi-stalled condition — very high AoA with buffeting and poor climb/turn performance but not a full stall',
+    'C. The aircraft going through wake turbulence from a preceding aircraft',
+    'D. A fully developed spin entry'
+    ],
+    correct: 1,
+    explanation: '"Mush" is a semi-stalled condition: AoA is very high (near critical) — the wing produces high lift but with separated flow over much of the upper surface. Performance is degraded, controls are heavy or sluggish, the aircraft may sink despite full back pressure. It is a precursor to a full stall.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: '"Mass balancing" of control surfaces is done primarily to:',
+    options: [
+      'A. Prevent ice accumulation on control surfaces at high altitude',
+    'B. Reduce stick forces by adding weight to assist deflection',
+    'C. Ensure the control surface remains in the neutral (streamlined) position when no force is applied',
+    'D. Prevent flutter by moving the surface\'s CG forward to or ahead of the hinge line'
+    ],
+    correct: 3,
+    explanation: 'Mass balancing adds weight (a balance weight) forward of the hinge line. This moves the surface\'s CG to or ahead of the hinge, preventing the surface from lagging behind control inputs at high speed — preventing aeroelastic flutter.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The CASA CPL aerodynamics exam pass mark is:',
+    options: [
+      'A. 80% — 32 out of 40 questions',
+    'B. 60% — 24 out of 40 questions',
+    'C. 75% — 30 out of 40 questions',
+    'D. 70% — 28 out of 40 questions'
+    ],
+    correct: 3,
+    explanation: 'The CASA CPL Aerodynamics (CADA) examination requires a pass mark of 70%. With 40 questions, this means 28 correct answers are needed to pass. The examination duration is 90 minutes. All CPL theory examinations use the CASA cyber examination system.',
+    reference: 'CASA CPL Exam Syllabus'
+  },
+  {
+    question: 'The effect of "surface contamination" (bugs, dirt, rain) on aerofoil performance is to:',
+    options: [
+      'A. Only affect performance below 1,000 ft AGL where surface contamination accumulates',
+    'B. Increase the critical angle of attack by delaying boundary layer transition',
+    'C. Reduce CLmax and increase drag by disrupting boundary layer flow',
+    'D. Increase lift by making the surface rougher, which promotes turbulent flow'
+    ],
+    correct: 2,
+    explanation: 'Surface contamination disrupts the smooth boundary layer. This causes earlier separation, reducing CLmax and raising stall speed. Drag also increases. Even light contamination (frost, bugs) can significantly degrade performance — particularly on the leading edge.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The speed for maximum angle of climb (Vx) is located on the power curve at:',
+    options: [
+      'A. The minimum power required point',
+    'B. The point of maximum excess thrust — where the difference between thrust available and thrust required is greatest',
+    'C. The maximum power available speed',
+    'D. The intersection of the induced drag and parasite drag curves'
+    ],
+    correct: 1,
+    explanation: 'Vx = maximum excess thrust speed. Climb angle θ = arcsin((T-D)/W). Maximum climb angle occurs at maximum (T-D). For a piston aircraft with a relatively flat thrust curve, this is typically slightly below the minimum drag speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "pitot-static system" error that can mask an approaching stall is:',
+    options: [
+      'A. Ice blocking the pitot tube causing over-reading of airspeed',
+    'B. Static port blockage causing airspeed to read zero',
+    'C. Position error — the static port gives incorrect readings at high angle of attack',
+    'D. Altimeter errors at low altitude'
+    ],
+    correct: 2,
+    explanation: 'At high angles of attack, the static port may be in a disturbed airflow region, causing position (pressure) error in the altimeter and ASI. The ASI may over-read — masking the true low airspeed and proximity to stall. Position error is largest at high AoA.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'On a clean wing, the stall typically begins:',
+    options: [
+      'A. Simultaneously over the entire upper surface',
+    'B. At the leading edge only — the rest of the wing is unaffected',
+    'C. Near the trailing edge of the root section, progressing forward and outward',
+    'D. At the wingtip first, because the local velocity is highest there'
+    ],
+    correct: 2,
+    explanation: 'On a well-designed wing with washout, the stall begins near the trailing edge of the root section and progresses forward and toward the tip as AoA increases. This maintains aileron effectiveness until the stall is well developed, and causes the initial buffet that warns of the approaching stall.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'A "constant speed propeller" maintains constant RPM by:',
+    options: [
+      'A. Varying the gear ratio between engine and propeller',
+    'B. Using a governor to cut fuel flow if RPM exceeds the set value',
+    'C. Automatically varying blade pitch — increasing pitch when RPM tends to rise, decreasing pitch when RPM tends to fall',
+    'D. Reducing engine throttle when RPM increases'
+    ],
+    correct: 2,
+    explanation: 'A constant speed propeller uses a governor to maintain selected RPM by varying blade pitch. If RPM rises (e.g. in a dive), blade pitch increases — more resistance restores RPM. If RPM drops (e.g. climbing), pitch decreases — less resistance allows RPM to return to the set value.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'During a level coordinated turn, what keeps the aircraft in a circular path?',
+    options: [
+      'A. The weight component acts centripetally in a banked turn',
+    'B. The horizontal component of lift provides the centripetal force toward the centre of the turn',
+    'C. Thrust is directed toward the centre of the turn by propeller torque effects',
+    'D. The rudder provides the centripetal force by yawing the aircraft around the turn'
+    ],
+    correct: 1,
+    explanation: 'In a banked turn, the lift vector tilts. The vertical component supports weight; the horizontal component (centripetal force) accelerates the aircraft toward the centre of the circle — maintaining the circular path. The horizontal lift component = L × sin(bank angle).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'Ice or frost on the wings has what effect on stall characteristics?',
+    options: [
+      'A. Ice only affects the stall if it exceeds 5 mm thickness',
+    'B. Ice or frost disrupts the boundary layer, increasing drag, reducing CLmax, and raising the stall speed significantly',
+    'C. Ice has no effect on stall speed but increases the approach speed required',
+    'D. Ice reduces the stall speed by smoothing the wing surface'
+    ],
+    correct: 1,
+    explanation: 'Even a thin layer of frost or ice disrupts the smooth boundary layer, causing early flow separation. This reduces CLmax substantially — raising the stall speed. The stall may also be more abrupt with less warning. All ice/frost must be removed before flight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "total drag" on a complete aircraft at a specific flight condition is the sum of:',
+    options: [
+      'A. Induced drag and parasite drag from the wing only',
+    'B. Thrust and weight components in the drag direction',
+    'C. Induced drag (from all lifting surfaces) and parasite drag (from all components — wing, fuselage, tail, undercarriage, interference)',
+    'D. Only the profile drag — interference drag is negligible'
+    ],
+    correct: 2,
+    explanation: 'Total aircraft drag = induced drag (from wing and tail lift production) + parasite drag (skin friction, form drag, interference drag from all components). All parts of the aircraft contribute. Induced drag dominates at low speed; parasite drag dominates at high speed. Total drag minimum is where they are equal.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'A "spin-resistant" aircraft design includes which features?',
+    options: [
+      'A. Spin resistance is only achieved by pilot technique — no design features contribute',
+    'B. Wing washout, stall strips at the root, differential ailerons, and a design that ensures the root stalls well before the tip, maintaining roll authority',
+    'C. Only high-aspect-ratio wings — these prevent spin entry',
+    'D. A very large vertical fin that prevents yaw during stall'
+    ],
+    correct: 1,
+    explanation: 'Spin-resistant features: (1) Washout — root stalls before tip; (2) Stall strips — force root stall first; (3) Spanwise wing taper and aerofoil selection for progressive stall; (4) Benign stall characteristics with natural nose-drop. These features prevent one wing from stalling dramatically before the other, reducing autorotation tendency.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "elevator" effectiveness at the point of stall:',
+    options: [
+      'A. Is unaffected — the elevator operates in clean air behind the fin regardless of wing AoA',
+    'B. Doubles because the CG is furthest from the tail at high AoA',
+    'C. Is reduced — at the stall, the turbulent wing wake may impinge on the tail, and low dynamic pressure reduces control authority',
+    'D. Is maximum — the elevator is most powerful at high AoA'
+    ],
+    correct: 2,
+    explanation: 'At the stall, elevator effectiveness decreases: (1) dynamic pressure is low (slow speed) — less aerodynamic force on the surface; (2) the turbulent wake from the stalled wing may impinge on the horizontal tail, disrupting its effectiveness. This is why recovery requires prompt nose-down input before control is completely lost.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'An aircraft enters a "low-level wind shear microburst" on approach. The typical encounter sequence is:',
+    options: [
+      'A. Microbursts only occur at altitude — they dissipate before reaching the surface',
+    'B. Tailwind first → loss of airspeed → headwind increase → speed recovery',
+    'C. Turbulence only — microburst wind shear does not affect airspeed significantly',
+    'D. Headwind increase → lift gain → tailwind shear → sudden airspeed and lift loss below the burst'
+    ],
+    correct: 3,
+    explanation: 'Microburst encounter on approach: first, the aircraft enters the leading edge of the outflow (headwind) — speed and lift increase, pilot reduces power. Then the aircraft passes through the descending core — sudden tailwind causes IAS and lift to drop catastrophically. Without immediate full power, the aircraft may not recover before ground impact.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'In a coordinated turn, the rudder pedal forces required:',
+    options: [
+      'A. Are applied to overcome adverse yaw from the ailerons — opposite to the direction of aileron input',
+    'B. Are applied in the direction of the turn to maintain the yaw rate',
+    'C. Are zero — the aircraft turns with ailerons only in a coordinated turn',
+    'D. Are not required at all in level flight turns — only in climbing or descending turns'
+    ],
+    correct: 1,
+    explanation: 'In a coordinated turn, the rudder is applied in the direction of the turn — to overcome adverse yaw (which would yaw the nose away from the turn direction). The correct input is: ailerons in the direction of turn, rudder in the same direction to coordinate. This keeps the ball centred and maintains coordinated flight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "phugoid oscillation" is primarily an exchange between:',
+    options: [
+      'A. Roll and yaw — a lateral phugoid',
+    'B. Kinetic energy (speed) and potential energy (altitude) — speed and altitude oscillate out of phase',
+    'C. Engine power and drag — power oscillates as the throttle hunts for the trim condition',
+    'D. Pitch angle and angle of attack in short-period oscillations'
+    ],
+    correct: 1,
+    explanation: 'The phugoid is a long-period oscillation where speed and altitude exchange. When speed drops, lift drops and the nose drops — the aircraft descends, gaining speed. Excess speed causes the nose to rise — gaining altitude, losing speed. The cycle repeats with period ~20-100 s. AoA stays nearly constant; the flight path oscillates.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'In straight and level flight at constant IAS, increasing altitude will cause the true airspeed to:',
+    options: [
+      'A. Decrease — the thinner air reduces the aircraft\'s effective speed',
+    'B. Remain the same — IAS and TAS are always equal',
+    'C. Oscillate as the density changes with altitude',
+    'D. Increase — the same IAS represents a higher TAS at lower density'
+    ],
+    correct: 3,
+    explanation: 'IAS measures dynamic pressure (½ρV²). At altitude, density ρ is lower — for the same IAS (same dynamic pressure), V (TAS) must be higher. TAS = IAS × √(ρ₀/ρ). At 10,000 ft, TAS is approximately 13–15% higher than IAS. At 20,000 ft, approximately 25–30% higher.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "IAS for best glide" is essentially constant with altitude because:',
+    options: [
+      'A. Stall speed increases with altitude, raising the best glide IAS',
+    'B. Best glide IAS decreases at altitude to account for reduced density',
+    'C. The best glide AoA is the same at all altitudes, and at a fixed AoA the same IAS is required regardless of density',
+    'D. The AFM specifies different best glide speeds for different altitudes'
+    ],
+    correct: 2,
+    explanation: 'Best glide occurs at the best L/D AoA (angle of attack), which is a fixed value. At any given AoA, the required IAS (dynamic pressure) is constant regardless of altitude — just as the stall IAS is constant. The TAS increases with altitude, but the IAS for best glide remains the same.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'Why does Va decrease as aircraft weight decreases?',
+    options: [
+      'A. Va is independent of weight — it only changes with airspeed and altitude',
+    'B. Lighter aircraft have lower structural limits',
+    'C. Lighter aircraft have higher stall speeds',
+    'D. At lower weight, full deflection stalls the wing at a lower speed — reducing Va protects the structure'
+    ],
+    correct: 3,
+    explanation: 'Va is the speed at which full deflection produces exactly the limit load factor. At lower weight, the stall occurs at a lower speed (Vs ∝ √W). Full deflection at lower weight reaches the limit G at a lower speed — so Va is lower. Using the higher (MTOW) Va when lightly loaded is not conservative.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'During a steady coordinated level turn, to maintain constant altitude the pilot must:',
+    options: [
+      'A. Reduce power to prevent overspeeding in the turn',
+    'B. Apply forward pressure to prevent the nose from dropping in the turn',
+    'C. Apply and maintain back pressure to increase AoA (and therefore CL) to compensate for the tilted lift vector',
+    'D. No control input is required — a correctly trimmed aircraft maintains altitude in any turn'
+    ],
+    correct: 2,
+    explanation: 'In a level turn, the vertical component of lift (L × cosθ) must equal weight. Since total lift must increase (L = W/cosθ), the pilot must apply back pressure to increase AoA and CL. Without this back pressure, the vertical component is insufficient and the aircraft descends. Additional power is also needed to offset increased induced drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "centre of pressure" of a wing is:',
+    options: [
+      'A. The point where lift and drag vectors are equal',
+    'B. The geometric centre of the wing area',
+    'C. A fixed point at 25% of the chord from the leading edge',
+    'D. The point through which the resultant aerodynamic force acts'
+    ],
+    correct: 3,
+    explanation: 'The centre of pressure (CP) is the point on the aerofoil through which the total aerodynamic resultant force (lift + drag) acts. As angle of attack increases, the CP typically moves forward. This differs from the aerodynamic centre, which is a more stable reference point.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "trim" of an aircraft means:',
+    options: [
+      'A. The configuration for best cruise performance as set in the AFM',
+    'B. The rate of climb at maximum continuous power',
+    'C. The condition where all moments are balanced and the pilot can fly without holding a steady force on the controls',
+    'D. The minimum fuel state required before any flight'
+    ],
+    correct: 2,
+    explanation: 'An aircraft is "in trim" when all aerodynamic moments (pitch, roll, yaw) are balanced — the pilot can fly hands and feet off without the aircraft deviating from the current attitude and speed. Trim tabs are adjusted to achieve this condition.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "chord line" and the "mean camber line" of an aerofoil are the same when:',
+    options: [
+      'A. The aerofoil is at maximum lift coefficient',
+    'B. The chord and camber lines are never the same — they are always different',
+    'C. The aerofoil is at zero angle of attack',
+    'D. The aerofoil is symmetric — zero camber'
+    ],
+    correct: 3,
+    explanation: 'The chord line is a straight line from leading to trailing edge. The mean camber line is the line equidistant between upper and lower surfaces. For a symmetric aerofoil (zero camber), the upper and lower surfaces are mirror images — the mean camber line and chord line coincide.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'What is the "critical angle of attack"?',
+    options: [
+      'A. The angle of 45° at which all aircraft stall',
+    'B. The angle at which the aerofoil produces maximum lift coefficient before the stall',
+    'C. The angle at which lift equals weight',
+    'D. The angle at which lift equals drag'
+    ],
+    correct: 1,
+    explanation: 'The critical angle of attack is the angle at which the aerofoil produces its maximum lift coefficient (CLmax). Beyond this angle, airflow separates from the upper surface — the stall occurs and CL drops abruptly.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The effect of temperature on air density (and therefore aircraft performance) is:',
+    options: [
+      'A. Higher temperature reduces air density — performance decreases. ISA temperature decreases at 2°C per 1,000 ft',
+    'B. Temperature has no effect on air density — only altitude matters',
+    'C. Temperature only affects jet engines — piston engines are unaffected by OAT',
+    'D. Higher temperature increases air density, improving performance'
+    ],
+    correct: 0,
+    explanation: 'Air density decreases with increasing temperature (ideal gas law: ρ = P/RT). On a hot day, air is less dense — engine power, propeller thrust, and aerodynamic forces all decrease. This is why performance charts require temperature as an input — hot days degrade performance significantly.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "stick force gradient" with speed describes:',
+    options: [
+      'A. The structural load on the control column per knot of airspeed',
+    'B. The force needed to move the stick through its full range of travel',
+    'C. How much pull force is needed as speed decreases — a stable aircraft requires increasing back pressure at lower speeds, providing a natural warning',
+    'D. The change in elevator trim position needed as speed changes'
+    ],
+    correct: 2,
+    explanation: 'Stick force gradient with speed: a stable aircraft with correct trim requires increasing back pressure as speed decreases (and push force as speed increases). This natural feel gives the pilot a continuous tactile cue about deviation from trimmed speed — an important handling quality.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Thrust is produced when:',
+    options: [
+      'A. Engine power is converted directly to aircraft speed without any losses',
+    'B. A mass of air is accelerated rearward, and the reaction propels the aircraft forward',
+    'C. Lift exceeds drag in level flight',
+    'D. The propeller rotates faster than the relative airflow'
+    ],
+    correct: 1,
+    explanation: 'Thrust (Newton\'s Third Law): the propeller or jet engine accelerates a mass of air rearward. The equal and opposite reaction is a forward force on the aircraft. Thrust = mass flow rate × velocity increase of the air.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.6'
+  },
+  {
+    question: 'Which of Newton\'s laws states that an object at rest stays at rest, and an object in motion stays in motion unless acted upon by an external force?',
+    options: [
+      'A. Newton\'s Third Law',
+    'B. Newton\'s First Law',
+    'C. Bernoulli\'s principle',
+    'D. Newton\'s Second Law'
+    ],
+    correct: 1,
+    explanation: 'Newton\'s First Law (inertia): a body remains at rest or in uniform motion in a straight line unless acted upon by a net external force. This explains why an aircraft requires thrust to accelerate and drag causes deceleration.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.1'
+  },
+  {
+    question: 'What happens to the drag of an aircraft if the airspeed is doubled?',
+    options: [
+      'A. Drag is unaffected by airspeed changes',
+    'B. Drag increases by a factor of 4 for the parasite component (but induced drag decreases)',
+    'C. Drag doubles',
+    'D. Total drag increases by a factor of 4 at all speeds'
+    ],
+    correct: 1,
+    explanation: 'Parasite drag ∝ V². Doubling speed quadruples parasite drag. Induced drag ∝ 1/V² — doubling speed reduces induced drag by a factor of 4. Total drag at double speed depends on the mix — at high speed, parasite dominates and total drag increases significantly.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "TODA" (Take-Off Distance Available) is defined as:',
+    options: [
+      'A. The distance from the runway threshold to the first obstacle on the extended centreline',
+    'B. The length of the declared take-off run plus any stopway',
+    'C. The take-off run plus the clearway — the total distance available for an aircraft to reach the required screen height',
+    'D. The runway length only — stopway and clearway are not included'
+    ],
+    correct: 2,
+    explanation: 'TODA = TORA + clearway length. The clearway is an area beyond the runway over which the aircraft can pass during the climb-out (above a minimum height), but not suitable for rolling. TODA is the total distance available to achieve the screen height (35 ft) after lift-off.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'What effect does "altitude" have on the optimum cruise speed for maximum range?',
+    options: [
+      'A. Altitude has no effect on range optimisation — only the throttle setting matters',
+    'B. The optimum TAS for range increases with altitude — fly faster at altitude',
+    'C. The optimum cruise speed decreases with altitude as the engine becomes less efficient',
+    'D. The optimum IAS for range remains approximately constant — the same IAS gives best range at any altitude'
+    ],
+    correct: 3,
+    explanation: 'For a piston aircraft, the best range speed (minimum drag speed) is approximately constant in IAS. The same AoA (same IAS) gives the best L/D at any altitude. However, the TAS increases with altitude for the same IAS. Flying at altitude gives the same range speed in IAS terms with higher TAS.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'Which of the following correctly describes the force balance in a steady-state level turn?',
+    options: [
+      'A. The centrifugal force balances lift and weight acts downward independently',
+    'B. Lift equals weight multiplied by the cosine of the bank angle',
+    'C. Lift = Weight and Thrust = Drag',
+    'D. Total lift greater than weight, with the vertical component of lift equal to weight and the horizontal component providing centripetal force'
+    ],
+    correct: 3,
+    explanation: 'Steady level turn: total lift > weight. Vertical component of lift (L × cosθ) = Weight. Horizontal component of lift (L × sinθ) = centripetal force. This is why load factor increases with bank and altitude must be maintained with back pressure.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'An aircraft has a stall speed of 55 KIAS in the landing configuration. The correct approach speed is:',
+    options: [
+      'A. 72 KIAS — 1.3 × stall speed, the standard approach speed multiplier',
+    'B. 55 KIAS — fly at the stall speed for the most accurate approach',
+    'C. 66 KIAS — 1.2 × stall speed, providing a 20% margin',
+    'D. 82 KIAS — 1.5 × stall speed for maximum safety margin on approach'
+    ],
+    correct: 0,
+    explanation: 'Standard approach speed = 1.3 × Vso (stall speed in landing configuration). 1.3 × 55 = 71.5 KIAS ≈ 72 KIAS. This 30% margin above stall provides adequate safety to handle gusts, speed variations, and the flare manoeuvre without stalling.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: '"Wind shear" is dangerous on approach because:',
+    options: [
+      'A. It creates turbulence that oscillates aircraft heading',
+    'B. Wind shear only affects jet aircraft — piston aircraft are immune',
+    'C. A sudden headwind decrease or tailwind increase causes airspeed and lift to drop, requiring immediate power increase',
+    'D. It moves the aim point along the runway causing overshoot'
+    ],
+    correct: 2,
+    explanation: 'Wind shear on approach: a sudden decrease in headwind (or increase in tailwind) causes airspeed and therefore lift to drop suddenly. The aircraft sinks below the glidepath. Response: increase power immediately and fly through the shear. Failure to react can result in undershoot.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "continuity equation" in aerodynamics states that:',
+    options: [
+      'A. Drag and thrust are continuous forces unlike lift and weight',
+    'B. Lift must equal weight at all times',
+    'C. Mass flow rate is constant in a stream tube — if area decreases, velocity increases',
+    'D. The aircraft\'s momentum is conserved in steady flight'
+    ],
+    correct: 2,
+    explanation: 'The continuity equation: ρ × A × V = constant (for incompressible flow). If a stream tube narrows (area A decreases), velocity V must increase to maintain the same mass flow. This is the fundamental basis for explaining Bernoulli acceleration of airflow over an aerofoil upper surface.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.2'
+  },
+  {
+    question: 'Propeller "torque reaction" tends to roll the aircraft in which direction for a standard Australian piston aircraft?',
+    options: [
+      'A. Nose-down',
+    'B. To the left',
+    'C. To the right',
+    'D. Nose-up'
+    ],
+    correct: 1,
+    explanation: 'Standard Australian piston aircraft have propellers rotating clockwise (viewed from the front). The reaction to this rotation (Newton\'s Third Law) tends to roll the aircraft to the left (anti-clockwise). At high power this requires right aileron correction.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'When calculating take-off performance from a chart, if the actual weight is 10% below MTOW, the pilot should expect:',
+    options: [
+      'A. Exactly 10% less take-off distance',
+    'B. Somewhat shorter take-off distance — lower weight reduces stall speed and lift-off speed, reducing the required runway length, but not precisely by 10%',
+    'C. The same take-off distance — weight does not affect the required IAS for lift-off',
+    'D. Longer take-off distance — the lighter aircraft has less tyre traction for acceleration'
+    ],
+    correct: 1,
+    explanation: 'Lower weight → lower stall speed (Vs ∝ √W) → lower lift-off IAS → lower lift-off ground speed → shorter take-off roll. Also, excess thrust/power is higher relative to weight → better acceleration. The improvement is real but not linear with weight reduction.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "normal force" on a wing in a turn versus in level flight is:',
+    options: [
+      'A. The same — the wing always provides lift equal to weight',
+    'B. Less in a turn — the bank reduces the effective lift coefficient',
+    'C. The normal force is independent of bank angle for a rigid wing',
+    'D. Greater in a turn — the normal force equals weight divided by the cosine of bank angle'
+    ],
+    correct: 3,
+    explanation: 'In a level turn, the total lift (normal force on the wing) = W / cos θ, where θ is bank angle. This is greater than W. At 60° bank: L = W / cos60° = 2W. The wing\'s structural load equals 2 × the weight — twice the level-flight loading. This is why load factors must be considered in steep turns.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The primary effect of a tailwind on the landing distance is:',
+    options: [
+      'A. Landing distance decreases — the tailwind pushes the aircraft onto the ground sooner',
+    'B. Tailwind reduces the flare height, requiring a steeper approach angle',
+    'C. Landing distance increases — the aircraft approaches at a higher ground speed for the same IAS',
+    'D. Landing distance is unaffected — only IAS matters for landing distance'
+    ],
+    correct: 2,
+    explanation: 'Tailwind landing: for the same IAS on approach, the aircraft has a higher ground speed. The flare and touchdown occur at the same IAS but with a higher ground speed — the aircraft rolls further after touchdown. Landing distance increases significantly with tailwind.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'An aircraft stalls at 60 KIAS in straight and level flight. Its stall speed in a 45° banked level turn is approximately:',
+    options: [
+      'A. 60 KIAS',
+    'B. 78 KIAS',
+    'C. 71 KIAS',
+    'D. 85 KIAS'
+    ],
+    correct: 2,
+    explanation: 'n = 1/cos45° = 1.41. Vs(turn) = Vs × √n = 60 × √1.41 = 60 × 1.19 = 71 KIAS.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The aerodynamic "pitching moment" about the quarter-chord point of a cambered aerofoil is:',
+    options: [
+      'A. A nose-up pitching moment that increases with angle of attack',
+    'B. A nose-down (negative) pitching moment that is approximately constant with angle of attack',
+    'C. Always zero — the quarter-chord is the aerodynamic centre',
+    'D. The pitching moment about the quarter-chord varies significantly with angle of attack'
+    ],
+    correct: 1,
+    explanation: 'The aerodynamic centre (AC) of a subsonic aerofoil is at approximately the quarter-chord (25% chord). About the AC, the pitching moment is approximately constant with AoA. For a cambered aerofoil, this moment is nose-down (negative Cm). Symmetric aerofoils have zero pitching moment about the AC.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'Lowering the nose in a climb to increase airspeed will cause the angle of attack to:',
+    options: [
+      'A. Oscillate before settling at a new value',
+    'B. Decrease — the flight path angle increases toward the aircraft nose attitude',
+    'C. Remain constant — AoA is fixed by the aircraft\'s design',
+    'D. Increase — the lower nose attitude requires higher AoA to maintain lift'
+    ],
+    correct: 1,
+    explanation: 'AoA = nose attitude (pitch angle) − flight path angle. Lowering the nose in a climb: pitch angle decreases while the flight path angle initially lags. AoA decreases. Airspeed increases. The aircraft re-establishes equilibrium at a lower AoA and higher speed if power is unchanged.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "propeller acting as a gyroscope" is most significant in which flight operation?',
+    options: [
+      'A. Level cruise — the gyroscopic effect maintains heading stability',
+    'B. During approach at idle power — the low RPM minimises gyroscopic effects',
+    'C. Only significant on multi-engine aircraft where two gyroscopes interact',
+    'D. On take-off in a tail-dragger aircraft as the tail is raised — the change in propeller plane produces a yawing precession'
+    ],
+    correct: 3,
+    explanation: 'On a tail-dragger during take-off, raising the tail tilts the propeller plane forward. For a clockwise-rotating propeller, gyroscopic precession from this nose-pitch produces a yaw force (to the left for most Australian aircraft). Combined with slipstream effect, this demands right rudder during the take-off roll.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'Aspect ratio of a wing is defined as:',
+    options: [
+      'A. Span squared divided by wing area (or span divided by mean chord)',
+    'B. The ratio of wing thickness to wing chord',
+    'C. Wing area divided by wing chord',
+    'D. The ratio of upper surface camber to lower surface camber'
+    ],
+    correct: 0,
+    explanation: 'Aspect ratio = span² / area = span / mean chord. A high aspect ratio wing (long and narrow) has less induced drag because the tip vortices affect a smaller proportion of the wing. Gliders have very high aspect ratio wings for minimum induced drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "coefficient of lift" (CL) at the stall is called CLmax. For a given wing this value:',
+    options: [
+      'A. Decreases with altitude — thin air reduces the maximum achievable lift coefficient',
+    'B. Increases with aircraft speed — faster flight allows a higher peak CL',
+    'C. Is constant regardless of flap setting',
+    'D. Increases when flaps are extended — flaps increase the maximum lift the wing can generate'
+    ],
+    correct: 3,
+    explanation: 'CLmax is not fixed for a given wing — it depends on configuration. Extending flaps increases the wing camber (and sometimes area), raising CLmax. The stall speed decreases with flaps because: Vs = √(2W / ρ S CLmax) — higher CLmax in the denominator means lower stall speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'Which control surface primarily causes rotation about the longitudinal axis?',
+    options: [
+      'A. Flaps',
+    'B. Ailerons',
+    'C. Elevators',
+    'D. Rudder'
+    ],
+    correct: 1,
+    explanation: 'Ailerons cause rotation about the longitudinal axis — this is roll. One aileron deflects up and the other down, creating unequal lift and rolling the aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.1'
+  },
+  {
+    question: 'The reason that larger aircraft (heavier) with the same wing have a higher stall speed is:',
+    options: [
+      'A. More weight requires more lift — at CLmax, more dynamic pressure (higher speed) is needed to generate sufficient lift to equal the greater weight',
+    'B. Larger aircraft have longer wingspans that increase the stall speed',
+    'C. Larger aircraft have greater inertia and need more speed to rotate',
+    'D. Larger engines create more thrust, requiring higher speed to maintain control'
+    ],
+    correct: 0,
+    explanation: 'Vs = √(2W / ρ S CLmax). With the same wing (S, CLmax) and same density (ρ), heavier W means higher Vs. The wing can only produce a certain maximum lift (S × CLmax × ½ρV²) — for more weight, more speed is needed to produce that maximum lift.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "total energy" of an aircraft in flight consists of:',
+    options: [
+      'A. Fuel energy remaining plus engine power output',
+    'B. Kinetic energy (from speed) plus potential energy (from altitude) — together determining the aircraft\'s energy state',
+    'C. Gravitational energy plus aerodynamic energy stored in the wing',
+    'D. Lift energy plus thrust energy minus drag losses'
+    ],
+    correct: 1,
+    explanation: 'Aircraft total energy: KE + PE = ½mV² + mgh. The pilot can trade one for the other — trading speed for altitude (pull up) or altitude for speed (push over). Energy management is fundamental to understanding climbs, descents, and manoeuvres. A dive converts PE to KE; a zoom climb converts KE to PE.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The most dangerous type of stall for a student pilot is the:',
+    options: [
+      'A. Power-off stall in the landing configuration',
+    'B. Stall from a go-around with full power applied',
+    'C. High altitude cruise stall in smooth air',
+    'D. Turning stall at low altitude — particularly the base-to-final turn'
+    ],
+    correct: 3,
+    explanation: 'The base-to-final turn stall is particularly dangerous: it occurs at low altitude, often with bank steeper than intended, at high power. Stall speed is elevated (load factor). An impulsive rudder input to "help" the turn can provoke an incipient spin. There is insufficient altitude for recovery.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'Which of the following describes the condition for maximum endurance in level flight for a piston aircraft?',
+    options: [
+      'A. Flying at 1.3 × stall speed in level flight',
+    'B. Maximum throttle at sea level',
+    'C. The speed for best range — maximum nautical miles per unit of fuel',
+    'D. Minimum power required — the speed at which drag × airspeed is minimised'
+    ],
+    correct: 3,
+    explanation: 'Maximum endurance = minimum fuel flow = minimum power required. For a piston aircraft, fuel flow is proportional to power (approximately). Minimum power required occurs at a speed lower than minimum drag speed — the speed for best L^(3/2)/D ratio. This is where the aircraft stays airborne longest.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "best range" speed for a piston aircraft is:',
+    options: [
+      'A. Va divided by the square root of 2',
+    'B. The speed at which the ratio of TAS to fuel flow is maximised — approximately the minimum drag speed',
+    'C. The maximum continuous cruise speed',
+    'D. The speed for maximum endurance (minimum fuel flow)'
+    ],
+    correct: 1,
+    explanation: 'Best range for a piston aircraft: maximum nautical miles per litre. This occurs near the minimum drag speed (best L/D ratio). At this speed, the aircraft travels the furthest on available fuel. Range is about 25% higher than at the endurance speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "angle of incidence" of a wing is:',
+    options: [
+      'A. The fixed angle between the wing chord line and the aircraft\'s longitudinal axis — set by the manufacturer',
+    'B. The angle between the wing and the fuselage centreline measured from above',
+    'C. The angle between the wing and the horizon during level flight',
+    'D. The same as the angle of attack'
+    ],
+    correct: 0,
+    explanation: 'Angle of incidence is a fixed, built-in angle between the wing chord and the fuselage datum (longitudinal axis). It is set by the manufacturer so the fuselage is at a favourable (low drag) attitude during cruise while the wing is at an efficient AoA. The angle of attack changes during flight; the angle of incidence does not.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'In a standard atmosphere, the pressure decreases with altitude at approximately:',
+    options: [
+      'A. A constant rate — 1 hPa per 30 ft',
+    'B. 1 hPa per 1,000 ft at all altitudes',
+    'C. An increasing rate — pressure falls more quickly at high altitude',
+    'D. A decreasing rate — pressure falls quickly at low altitude and more slowly at high altitude (non-linear because density decreases)'
+    ],
+    correct: 3,
+    explanation: 'Pressure decreases with altitude at approximately 1 hPa per 30 ft near sea level but the rate decreases with altitude (as density decreases). At sea level: ≈1 hPa/30 ft. At 18,000 ft: approximately 1 hPa/50 ft. The atmosphere thins exponentially.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The rate of climb of an aircraft depends primarily on:',
+    options: [
+      'A. The angle of attack used during the climb',
+    'B. Lift available above that required to support weight',
+    'C. Excess power available (power available minus power required)',
+    'D. The ratio of thrust to drag in the climb'
+    ],
+    correct: 2,
+    explanation: 'Rate of climb (ROC) = Excess power / Weight = (PA − PR) / W. PA is power available from the engine/propeller; PR is power required to maintain level flight at that speed. The speed for best rate of climb (Vy) gives maximum excess power.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'In a "slipping turn", the ball moves to:',
+    options: [
+      'A. The inside of the turn',
+    'B. The centre — a slip is always coordinated',
+    'C. The slip indicator does not work correctly in slipping turns',
+    'D. The outside of the turn'
+    ],
+    correct: 0,
+    explanation: 'In a slipping turn, the bank is excessive for the amount of rudder — or opposite rudder is applied. The aircraft slides toward the inside of the turn. The ball displaces to the inside. To correct: apply rudder toward the ball (in the direction of the turn), or reduce bank.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "wash-out" in a wing reduces the tendency to tip-stall by:',
+    options: [
+      'A. Reducing the angle of incidence progressively from root to tip, so the root reaches the critical AoA before the tip',
+    'B. Wash-out refers to the removal of chemical contamination from the wing surface',
+    'C. Reducing the angle of incidence at the root, making it stall first',
+    'D. Increasing the chord at the tip to reduce the local lift coefficient'
+    ],
+    correct: 0,
+    explanation: 'Wash-out (geometric twist): the wing is twisted so the tip has a lower angle of incidence than the root. As overall AoA increases toward the stall, the root reaches the critical AoA first — stalling before the tip. The tips (and ailerons) remain unstalled, maintaining roll control and providing stall warning.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "sideslip" (cross-wind technique for landing) involves:',
+    options: [
+      'A. Using asymmetric power to maintain directional control in the crosswind',
+    'B. Crabbing the aircraft into wind then straightening just before touchdown',
+    'C. Banking into wind with opposite rudder to maintain the runway heading — the aircraft tracks along the runway centreline with the fuselage aligned with the runway',
+    'D. Increasing approach speed to maintain directional control in crosswind'
+    ],
+    correct: 2,
+    explanation: 'Sideslip (wing-down) cross-wind technique: bank toward the upwind side, apply opposite (downwind) rudder to align the fuselage with the runway. The horizontal component of lift counters the crosswind drift. The upwind wheel touches first, keeping the aircraft tracking along the centreline.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'Leading edge slats improve slow-speed performance by:',
+    options: [
+      'A. Re-energising the boundary layer to delay separation to a higher angle of attack',
+    'B. Increasing wing area at the leading edge',
+    'C. Reducing wing camber to lower the nose during approach',
+    'D. Directing thrust upward over the wing to augment lift'
+    ],
+    correct: 0,
+    explanation: 'Leading edge slats create a slot that directs high-energy air from below onto the upper surface. This re-energises the boundary layer, delaying flow separation to a higher angle of attack — increasing the critical angle and therefore CLmax.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "aerodynamic efficiency" of a complete aircraft configuration is best represented by:',
+    options: [
+      'A. The stall speed divided by the maximum speed',
+    'B. The maximum lift-to-drag ratio (L/D max) — representing how much lift is obtained for each unit of drag penalty',
+    'C. The climb gradient at maximum take-off weight',
+    'D. The ratio of engine horsepower to aircraft weight'
+    ],
+    correct: 1,
+    explanation: 'L/D max is the fundamental measure of aerodynamic efficiency. A higher L/D max means less drag for a given lift — better glide ratio, better range, less fuel burn for cruise, and better engine-out performance. It is determined by the aerofoil quality, aspect ratio, and parasitic drag of the complete aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'A "crossed-control stall" is dangerous because:',
+    options: [
+      'A. When the inside wing stalls while in a skidding turn, the aircraft rolls abruptly toward the stalled wing — often resulting in a spin',
+    'B. It occurs at higher speed than a normal stall, giving less warning',
+    'C. The stall is symmetrical but control inputs are delayed by crossed controls',
+    'D. Recovery requires opposite rudder which creates adverse yaw and delays recovery'
+    ],
+    correct: 0,
+    explanation: 'Crossed-control stall: outside aileron down (to prevent over-banking) while inside rudder is applied (to skid through the turn). The inside (lower) wing has a lower effective airspeed and stalls first. The aircraft rolls sharply toward the stalled wing — a powerful autorotation begins. Very little altitude for recovery.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "effect of flap on take-off performance" is:',
+    options: [
+      'A. Small flap settings reduce take-off distance (more lift at lower speed) but large settings increase it due to excessive drag',
+    'B. Flaps have no effect on take-off — they are only for landing',
+    'C. Flaps always improve take-off performance — more lift for the same speed',
+    'D. Full flap always gives the shortest take-off distance on any surface'
+    ],
+    correct: 0,
+    explanation: 'Flaps on take-off: partial flap (typically 10–20°) reduces take-off distance by allowing lift-off at a lower speed. However, the increased drag of large flap settings means climb-out performance suffers. Large flap settings also reduce the maximum CL before stall in some configurations. Manufacturers specify the optimal take-off flap setting.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The advantage of a "belly landing" (wheels-up landing) over a normal landing when the gear has failed is:',
+    options: [
+      'A. There is no advantage — a belly landing always causes more structural damage',
+    'B. Belly landings reduce fire risk because the hot brakes are not in contact with the fuel',
+    'C. On soft or unprepared surfaces, a belly landing may be preferable as the fuselage distributes the load and the aircraft skids to a stop without nosing over',
+    'D. Belly landings are never a deliberate choice — they always result from gear failure'
+    ],
+    correct: 2,
+    explanation: 'In certain situations (soft ground, gear-up emergency), a belly landing may be the safest option. The fuselage distributes the impact load over a large area. On a paved runway with a retractable-gear aircraft, a belly landing on a paved runway causes structural damage but is usually survivable at low speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "stability augmentation system" (SAS) on some aircraft is designed to:',
+    options: [
+      'A. Control the aircraft automatically during cruise — similar to an autopilot',
+    'B. Provide artificial damping of oscillations (Dutch roll, phugoid) that the basic airframe damping is insufficient to control adequately',
+    'C. Augment the pilot\'s physical strength when high control forces are required',
+    'D. Prevent the aircraft from exceeding its structural limits automatically'
+    ],
+    correct: 1,
+    explanation: 'SAS provides artificial damping to oscillatory modes that the basic airframe handles inadequately. Yaw dampers (to suppress Dutch roll on swept-wing jets) are a common SAS. The SAS senses the motion and applies small control inputs to damp it — invisible to the pilot as a steady input.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "elevator" effectiveness during the landing flare depends on:',
+    options: [
+      'A. The CG position only — forward CG always gives better elevator authority',
+    'B. Flap position has no bearing on elevator effectiveness',
+    'C. Engine power only — more power means more slipstream over the tail',
+    'D. Dynamic pressure (½ρV²) — at low airspeed near the stall, elevator effectiveness decreases'
+    ],
+    correct: 3,
+    explanation: 'Control surface effectiveness depends on dynamic pressure. At low speed near touchdown, dynamic pressure is low — elevator effectiveness is reduced. The pilot needs more deflection for the same pitch response. This is why approaches that are too slow have poor flare characteristics — insufficient elevator authority.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The best angle of climb speed (Vx) is different from the best rate of climb speed (Vy) because:',
+    options: [
+      'A. Vx gives maximum altitude gain per unit distance (maximum excess thrust), while Vy gives maximum altitude gain per unit time (maximum excess power)',
+    'B. Vx and Vy are identical except at high altitude',
+    'C. Vx gives the greatest rate of altitude gain and Vy clears obstacles over the shortest ground distance',
+    'D. Vx is always faster than Vy to clear obstacles more quickly'
+    ],
+    correct: 0,
+    explanation: 'Vx (best angle of climb) uses maximum excess thrust — maximum altitude gain per unit of horizontal distance, useful for obstacle clearance. Vy (best rate of climb) uses maximum excess power — maximum altitude gain per unit of time. Vx < Vy for most aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'A "high-speed stall" can occur when:',
+    options: [
+      'A. A sharp pull-up manoeuvre rapidly increases angle of attack beyond the critical angle at high speed',
+    'B. Turbulence at high speed disrupts the airflow in the same way as a stall',
+    'C. The aircraft exceeds Vne at altitude',
+    'D. High speed creates a pressure wave over the wing similar to a stall'
+    ],
+    correct: 0,
+    explanation: 'A high-speed stall occurs when a rapid, aggressive pull-up manoeuvre raises the angle of attack beyond the critical angle — even at high airspeed. This is an accelerated stall. The stall speed at load factor n is Vs × √n — at 4g, stall speed doubles.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'A "porpoising" tendency during a power-off glide indicates:',
+    options: [
+      'A. The aircraft is dynamically unstable in the phugoid mode',
+    'B. The aircraft is in an oscillating pitch mode driven by an imbalance between elevator trim and actual flight condition',
+    'C. Flutter in the elevator control system',
+    'D. Porpoising during a glide is a normal characteristic and does not require correction'
+    ],
+    correct: 1,
+    explanation: 'Porpoising (oscillating pitch) in a glide usually indicates an improperly trimmed aircraft or incorrect airspeed — the aircraft is not in its natural trim condition. The pilot must retrim for the actual glide speed. It can also indicate a light phugoid oscillation that needs minor corrections.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The drag coefficient of an aerofoil at low angles of attack is primarily due to:',
+    options: [
+      'A. Thrust required to maintain speed',
+    'B. Skin friction and form drag',
+    'C. Induced drag only',
+    'D. Weight component along the flight path'
+    ],
+    correct: 1,
+    explanation: 'At low angles of attack, aerofoil drag is mainly profile drag — comprising skin friction drag (air viscosity along the surface) and form drag (pressure difference between the leading and trailing edges). Induced drag is relatively small at low angles.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The aerodynamic explanation for the "nose-down pitch at the stall" in a properly designed stable aircraft is:',
+    options: [
+      'A. Loss of lift reduces downwash on the tailplane, changing the tail\'s effective AoA — the resulting change in tail load allows the CG-created nose-down moment to pitch the aircraft forward',
+    'B. Gravity acts on the nose-heavy aircraft to rotate the nose down when lift is lost',
+    'C. The elevator always moves down at the stall due to control spring action',
+    'D. The centre of pressure moves forward at the stall, creating a nose-down moment'
+    ],
+    correct: 0,
+    explanation: 'Natural stall pitch break: wing stalls → lift drops → downwash decreases → horizontal tail effective AoA changes → tail load changes → the inherent nose-down moment (CG forward of wing AC) is no longer fully balanced by the tail → nose pitches down. This self-recovery mechanism depends on the CG being forward of the neutral point.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'Vno is defined as the:',
+    options: [
+      'A. Maximum structural cruising speed — the top of the green arc and bottom of the yellow arc',
+    'B. Normal stall speed in clean configuration',
+    'C. Maximum speed at which flaps may be partially extended',
+    'D. Minimum control speed with one engine inoperative'
+    ],
+    correct: 0,
+    explanation: 'Vno (maximum structural cruising speed) is the maximum speed for normal operations. Above Vno, flight is limited to smooth air. It is the top of the green arc and the bottom of the yellow arc on the ASI.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'An aircraft "ballooning" during the landing flare is caused by:',
+    options: [
+      'A. The aircraft being too slow on approach — the low speed prevents settling onto the runway',
+    'B. A sudden headwind gust at the flare point increasing IAS',
+    'C. Excessive back pressure applied too abruptly — the rapid AoA increase causes a sudden lift increase that rises the aircraft above the intended flight path',
+    'D. Ground effect lifting the aircraft back into the air after touch-down'
+    ],
+    correct: 2,
+    explanation: 'Ballooning: the pilot applies too much back pressure too quickly during the flare — the rapid AoA increase generates a large, sudden lift increase that causes the aircraft to climb back up. If power is at idle, airspeed then decreases rapidly and a hard landing or stall may follow. Prevention: smooth, progressive flare inputs.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "kinetic energy" of an aircraft at touchdown is dissipated primarily by:',
+    options: [
+      'A. Aerodynamic lift during the landing roll',
+    'B. Engine reverse thrust only in modern aircraft',
+    'C. The undercarriage shock absorbers converting energy to heat',
+    'D. Wheel braking (friction between tyres and runway) and aerodynamic drag during rollout'
+    ],
+    correct: 3,
+    explanation: 'Landing roll energy dissipation: primarily wheel brakes (kinetic friction, energy converted to heat in brakes). Aerodynamic drag (from the airframe, deployed spoilers, and reverse thrust if available) also contributes. Shock absorbers manage vertical landing impact but do not significantly dissipate roll energy.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'An aircraft with a "power-off glide ratio of 10:1" can glide how far from 5,000 ft AGL in still air?',
+    options: [
+      'A. 8 NM',
+    'B. 5 NM',
+    'C. 10 NM',
+    'D. 15 NM'
+    ],
+    correct: 0,
+    explanation: 'Glide range = altitude × glide ratio. 5,000 ft × 10 = 50,000 ft horizontal. 50,000 ft ÷ 6,076 ft/NM ≈ 8.2 NM. Correct answer is approximately 8 NM.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "V-n diagram" (flight envelope) shows:',
+    options: [
+      'A. Range and endurance at different power settings',
+    'B. Engine power output versus propeller RPM',
+    'C. The structural and aerodynamic limits of the aircraft — permitted combinations of load factor and airspeed',
+    'D. Airspeed versus altitude for maximum cruise performance'
+    ],
+    correct: 2,
+    explanation: 'The V-n diagram (manoeuvre envelope) plots load factor (n) against airspeed (V). It defines the structural limits (maximum and minimum load factor) and aerodynamic limits (stall boundary). The pilot must keep all flight conditions within this envelope.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: '"Propeller feathering" on a multi-engine aircraft:',
+    options: [
+      'A. Locks the propeller in a fixed pitch position for maximum thrust',
+    'B. Feathering means shutting down the engine — it is not a propeller function',
+    'C. Reduces engine RPM to idle while keeping the propeller turning slowly',
+    'D. Rotates the propeller blades to the minimum drag position (edge-on to the airflow) to reduce drag from a failed engine'
+    ],
+    correct: 3,
+    explanation: 'Feathering rotates propeller blades to approximately 90° pitch — the blade leading edge facing forward, minimising drag. A windmilling (stopped but unfeathered) propeller creates enormous drag. Feathering reduces this drag to a minimum, greatly improving performance after engine failure.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The effect of a "headwind" on take-off distance is to:',
+    options: [
+      'A. Increase take-off distance — the aircraft must overcome the headwind force',
+    'B. Reduce take-off distance — lift-off IAS is reached at a lower ground speed, requiring a shorter ground roll',
+    'C. Only affect take-off distance if the headwind exceeds 15 knots',
+    'D. Have no effect — IAS for lift-off is the same regardless of wind'
+    ],
+    correct: 1,
+    explanation: 'Headwind reduces take-off distance: the aircraft starts with some initial airspeed (equal to the headwind). Lift-off IAS is reached at a lower ground speed — less runway is needed. Rule of thumb: a headwind component equal to 10% of lift-off speed reduces take-off distance by approximately 19%.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "service ceiling" decreases with increasing weight because:',
+    options: [
+      'A. Weight increases drag proportionally, which increases the ceiling paradoxically',
+    'B. Heavier aircraft have higher stall speeds — service ceiling is limited by stall speed',
+    'C. Heavier aircraft require more power to maintain level flight — excess power available for climb is reduced, lowering the altitude at which ROC = 100 ft/min',
+    'D. Heavier aircraft cannot fly as fast, reducing the ceiling'
+    ],
+    correct: 2,
+    explanation: 'Heavier aircraft require more power (and therefore more thrust) to maintain level flight. Power required = Drag × TAS, and drag increases with weight. Excess power (PA − PR) decreases — meaning the altitude at which this excess falls to the amount needed for 100 ft/min ROC is lower. Heavier → lower service ceiling.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "stick pusher" system on some aircraft:',
+    options: [
+      'A. Is used to trim the aircraft in level cruise to reduce pilot workload',
+    'B. Pushes the control column forward to maintain a constant pitch attitude',
+    'C. Automatically pushes the control column forward beyond the stick shaker to prevent a stall, overriding the pilot if necessary',
+    'D. Acts as a safety device preventing the pilot from applying back pressure above Va'
+    ],
+    correct: 2,
+    explanation: 'The stick pusher activates just beyond the stick shaker — it automatically pushes the nose down, reducing AoA below the critical angle. On aircraft prone to deep stall (T-tail types), the stick pusher may be mandatory — if the aircraft enters a deep stall, manual recovery may be impossible.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'A "deep stall" (super-stall) is a hazard on T-tail aircraft because:',
+    options: [
+      'A. The T-tail creates a nose-up pitching moment that increases the stall angle',
+    'B. At high angles of attack, the wing\'s turbulent wake blankets the T-tail elevator, making recovery impossible',
+    'C. T-tail elevators are more powerful and can override recovery inputs',
+    'D. T-tail aircraft have higher stall speeds than conventional tail aircraft'
+    ],
+    correct: 1,
+    explanation: 'On T-tail aircraft, the horizontal stabiliser is high on the fin. At very high angles of attack, the separated turbulent wake from the wings engulfs the T-tail — the elevator loses effectiveness and the aircraft cannot pitch nose-down to recover. The aircraft is "locked in" to the stall.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The danger of flying below Vmca after engine failure is:',
+    options: [
+      'A. Rudder authority is insufficient to maintain directional control — uncontrolled yaw and roll into the dead engine may result in loss of control',
+    'B. Vmca limits only apply on the ground — in the air any speed is safe',
+    'C. The aircraft will immediately stall on the dead engine side',
+    'D. The live engine cannot maintain altitude at speeds below Vmca'
+    ],
+    correct: 0,
+    explanation: 'Below Vmca, full rudder toward the live engine cannot overcome the asymmetric yaw from the failed engine. The aircraft yaws violently toward the dead engine — if bank is added incorrectly, it rolls into the dead engine and may enter an unrecoverable situation. The only recovery is to reduce power on the live engine.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "short-period oscillation" of an aircraft is:',
+    options: [
+      'A. A Dutch roll oscillation involving roll and yaw at a period of 5–10 seconds',
+    'B. A rapid pitch oscillation (1–3 seconds period) involving angle of attack change — usually well-damped',
+    'C. A slow 30-60 second pitch oscillation common at cruise speed',
+    'D. A vertical oscillation caused by turbulence hitting the aircraft'
+    ],
+    correct: 1,
+    explanation: 'Short-period oscillation: a rapid pitch mode (period 1–3 seconds) where AoA oscillates — the aircraft pitches rapidly about the CG. It is usually heavily damped and the pilot may barely notice it. If underdamped or excited by abrupt pitch inputs, it can be problematic.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "accelerated stall" during a steep turn occurs because:',
+    options: [
+      'A. Centrifugal force in the turn compresses the wing structure, reducing lift',
+    'B. The outer wing always stalls first in a steep turn, causing an uncontrolled roll',
+    'C. The propeller becomes less efficient at high speed in a turn',
+    'D. The elevated load factor requires greater lift, requiring higher angle of attack — which may reach the critical AoA at speeds well above the straight-level stall speed'
+    ],
+    correct: 3,
+    explanation: 'In a steep turn, the elevated load factor requires more lift. To produce more lift at the same speed, AoA must increase. If AoA reaches the critical angle, an accelerated stall occurs at a higher speed than the straight-and-level stall speed. The stall entry may be abrupt.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "angle of bank" required to produce a standard rate turn (3°/second) at 120 KIAS is approximately:',
+    options: [
+      'A. 15°',
+    'B. 19°',
+    'C. 27°',
+    'D. 23°'
+    ],
+    correct: 3,
+    explanation: 'Bank angle for standard rate: θ ≈ TAS/10 + 7. At 120 KIAS ≈ 120 kt TAS at low altitude: θ ≈ 120/10 + 7 = 12 + 7 = 19°. Actually, the formula gives approximately 23° at 120 kt using the more accurate formula: tan θ = ω × V/g where ω = 3°/s = 0.0524 rad/s; V = 120 kt = 61.7 m/s; tan θ = 0.0524 × 61.7 / 9.81 = 0.330; θ = arctan(0.33) = 18°. Closest is 19°.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'In a spiral dive recovery, the pilot should:',
+    options: [
+      'A. Retard the throttle and apply back pressure simultaneously',
+    'B. Apply full opposite rudder to stop the rotation before pulling out',
+    'C. First level the wings, then ease out of the dive to avoid exceeding the structural limit load',
+    'D. Apply full back pressure immediately to arrest the dive'
+    ],
+    correct: 2,
+    explanation: 'Spiral dive recovery: (1) Reduce power. (2) Level the wings (opposite aileron). (3) Gently raise the nose to climb attitude. If back pressure is applied before levelling the wings, the load factor increases dramatically — the aircraft follows a tightening spiral and may exceed structural limits.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'On a hot day at a high-elevation aerodrome (high density altitude), the take-off run will be:',
+    options: [
+      'A. Longer — reduced engine power, reduced propeller efficiency, and higher TAS required for lift-off all increase take-off distance',
+    'B. Longer only for jet aircraft — piston aircraft are unaffected by density altitude',
+    'C. Shorter — hot air is less dense, giving the wings more lift at a lower speed',
+    'D. The same as a standard day because IAS is the same'
+    ],
+    correct: 0,
+    explanation: 'High density altitude take-off: (1) engine produces less power — less thrust; (2) propeller produces less thrust from lower density air; (3) lift-off requires the same IAS but with lower density, a higher TAS is needed — more runway distance to accelerate to that TAS. All three factors extend the take-off run.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: '"Rudder reversal" (overswing) at high speed can occur because:',
+    options: [
+      'A. The rudder becomes more powerful at high speed and produces excessive yaw',
+    'B. At high IAS, structural flex in the fin and fuselage allows the tail to flex in the direction opposite to rudder deflection — producing yaw opposite to intended',
+    'C. The rudder trim tab automatically reverses at high speed',
+    'D. Rudder reversal is a theoretical phenomenon that does not occur in practice'
+    ],
+    correct: 1,
+    explanation: 'Rudder reversal: at high dynamic pressure, the aerodynamic load on the deflected rudder twists the fin in the same direction as the rudder. If fin torsional stiffness is insufficient, the fin can twist enough that the effective fin angle of attack produces yaw opposite to the rudder input. Aircraft are designed to prevent this within the operating envelope.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "drag polar" of an aircraft is a graph showing:',
+    options: [
+      'A. Drag force versus altitude for a given airspeed',
+    'B. Polar coordinates of the aircraft\'s position during a turn',
+    'C. Total drag versus airspeed',
+    'D. CL plotted against CD for various angles of attack — showing how lift and drag trade off across the operating range'
+    ],
+    correct: 3,
+    explanation: 'The drag polar is CL vs CD (or CD vs CL) — the fundamental aerodynamic characteristic of a wing or aircraft. Each point represents a different angle of attack. The line from the origin tangent to the polar identifies the best L/D ratio point (minimum drag angle of attack).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'Increased "camber" of an aerofoil generally results in:',
+    options: [
+      'A. Reduced CLmax — more camber reduces the critical angle of attack',
+    'B. Symmetric lift distribution — increased camber removes the lift differential between top and bottom surfaces',
+    'C. Improved high-speed performance with no effect on low-speed characteristics',
+    'D. Increased CLmax and a more negative pitching moment coefficient about the aerodynamic centre'
+    ],
+    correct: 3,
+    explanation: 'Increased camber: (1) higher CLmax (more lift at all AoA — important for slow flight and high-lift devices); (2) higher nose-down pitching moment about the AC (Cm is more negative) — requiring more tail download to balance; (3) lower minimum drag AoA (the aerofoil is more efficient at low angles). These trade-offs drive flap design.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'When an aircraft is flying at its maximum range speed and encounters a headwind, the pilot should:',
+    options: [
+      'A. Maintain maximum range speed — headwind does not affect the optimal range speed',
+    'B. Increase speed slightly above the calm-air maximum range speed to partially offset the headwind\'s effect on ground distance covered per unit of fuel',
+    'C. Reduce speed to maintain the same ground distance per unit of fuel',
+    'D. Fly at the maximum continuous power speed to overcome the headwind as quickly as possible'
+    ],
+    correct: 1,
+    explanation: 'In a headwind, the optimum range speed increases slightly. The headwind reduces ground speed relative to IAS — to maximise distance per fuel, the pilot should fly slightly faster. The tangent from the origin (adjusted for headwind by offsetting the velocity axis by the headwind speed) touches the drag curve at a slightly higher speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The radius of turn for a given bank angle:',
+    options: [
+      'A. Is inversely proportional to bank angle at any speed',
+    'B. Decreases as airspeed increases',
+    'C. Is independent of airspeed — only bank angle matters',
+    'D. Increases as airspeed increases'
+    ],
+    correct: 3,
+    explanation: 'Radius of turn r = V² / (g × tan θ). For a fixed bank angle, radius increases with the square of airspeed. At the same bank angle, faster aircraft have much larger turning radii.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "power-on" stall speed is lower than the "power-off" stall speed because:',
+    options: [
+      'A. Power-on conditions cool the wing surface, delaying boundary layer separation',
+    'B. The propeller slipstream increases lift over the wing and the thrust vector has an upward component that supplements lift',
+    'C. More power produces more drag, which helps prevent stall',
+    'D. Higher power reduces angle of attack, keeping the wing further from the stall'
+    ],
+    correct: 1,
+    explanation: 'Power-on stall speed is lower: (1) the propeller slipstream energises airflow over the wing, delaying separation; (2) engine thrust has an upward component at a nose-high attitude, partially supporting weight; (3) slipstream increases dynamic pressure locally. All these allow flight at a lower airspeed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'A spiral dive differs from a spin in that:',
+    options: [
+      'A. A spiral dive involves rotation about the normal axis only',
+    'B. A spiral dive has stalled wings; a spin has unstalled wings',
+    'C. In a spiral dive the wings are unstalled and the aircraft is accelerating; in a spin the wings are stalled',
+    'D. A spiral dive only occurs when power is at idle'
+    ],
+    correct: 2,
+    explanation: 'Spiral dive: wings are NOT stalled; the aircraft is in a steep, banked, nose-low attitude and airspeed is increasing rapidly. A spin: wings ARE stalled (at least the inner wing). Recovery from a spiral dive: level the wings first, then ease out of the dive. Attempting to pull out without levelling wings increases load factor and may overstress the aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "IAS for best angle of climb" (Vx) is located below the minimum drag speed because:',
+    options: [
+      'A. Vx is always above minimum drag speed on all aircraft',
+    'B. Best angle requires maximum thrust excess — for a piston aircraft with a flat thrust curve, this is at a speed below minimum drag',
+    'C. Vx equals minimum drag speed for piston aircraft',
+    'D. Best angle of climb requires maximum power excess — which occurs at speeds higher than minimum drag'
+    ],
+    correct: 1,
+    explanation: 'Vx (best angle) = maximum excess thrust speed. For a piston-propeller aircraft, thrust available is relatively flat — the excess thrust (T − D) is greatest near the bottom of the drag curve, typically slightly below minimum drag speed. Vy (best rate) uses maximum excess power, which is at a higher speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: '"Vmca" (minimum control speed, air) for a twin-engine aircraft is defined as:',
+    options: [
+      'A. The minimum speed for a two-engine approach to landing',
+    'B. The minimum speed at which a go-around can be safely initiated',
+    'C. The speed at which both engines must be at full power for take-off',
+    'D. The minimum airspeed at which directional control can be maintained with the critical engine failed, maximum thrust on the operating engine, and a bank angle not exceeding 5° toward the live engine'
+    ],
+    correct: 3,
+    explanation: 'Vmca (air minimum control speed): the minimum IAS at which directional control can be maintained after the critical engine suddenly fails, with maximum thrust on the remaining engine, gear up, flaps as specified, and bank ≤5° toward the live engine. Below Vmca, directional control is lost.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The aerodynamic effect of extending the undercarriage in cruise flight is to:',
+    options: [
+      'A. Significantly increase parasite drag, slowing the aircraft and requiring additional power to maintain airspeed',
+    'B. Increase lift by adding a lifting surface below the fuselage',
+    'C. Reduce the stall speed by lowering the centre of gravity',
+    'D. Extending gear in cruise increases stability by lowering the keel area'
+    ],
+    correct: 0,
+    explanation: 'Extended undercarriage creates large amounts of form, interference, and profile drag. Wheel bays exposed, gear legs, and tyres all create significant parasite drag. Aircraft speed immediately decreases. This is sometimes used deliberately as an aerodynamic brake (e.g., for rapid descent or speed control in final approach).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'Reduced "aileron effectiveness" at very low airspeed near the stall means:',
+    options: [
+      'A. The ailerons may be completely ineffective, and the pilot should use rudder as the primary roll-initiating control near the stall',
+    'B. Larger aileron deflections are needed for the same roll response',
+    'C. Aileron effectiveness is constant at all speeds — it only varies with altitude',
+    'D. Both larger deflections and rudder input are irrelevant — only power changes can control roll near the stall'
+    ],
+    correct: 1,
+    explanation: 'Near the stall, low dynamic pressure reduces aileron effectiveness (less aerodynamic force for the same deflection). Additionally, the aileron\'s down-going side may further approach or exceed the critical AoA — aggravating asymmetric stall. Pilots learn to coordinate with rudder near the stall, and avoid large aileron inputs.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "minimum control speed on the ground" (Vmcg) for a multi-engine aircraft is:',
+    options: [
+      'A. The maximum speed for directional control with asymmetric engine thrust on the ground',
+    'B. Vmcg is only applicable to jet aircraft with nose-wheel steering',
+    'C. The same as Vmca — both apply equally in the air and on the ground',
+    'D. The minimum speed on the ground at which directional control can be maintained with the critical engine failed using only rudder — without nose-wheel steering or differential braking'
+    ],
+    correct: 3,
+    explanation: 'Vmcg (ground minimum control speed): the minimum speed on the ground runway at which directional control can be maintained after the critical engine fails, using only aerodynamic controls (rudder). It is typically lower than Vmca because the ground gives additional lateral reaction forces. V1 must be ≥ Vmcg.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'In a level turn, the stall speed compared to straight and level flight is:',
+    options: [
+      'A. The same — stall speed does not change with bank angle',
+    'B. Only higher in turns exceeding 45° bank',
+    'C. Higher in a turn — increased load factor raises the stall speed',
+    'D. Lower in a turn — the bank reduces the effective weight'
+    ],
+    correct: 2,
+    explanation: 'Stall speed increases in a turn: Vs(turn) = Vs(level) × √n. At 60° bank (n = 2): Vs(turn) = Vs(level) × √2 = 1.41 × Vs. This is why steeply banked turns at low speed — such as the "base-to-final" turn — are particularly dangerous.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The stall speed increases when weight increases because:',
+    options: [
+      'A. Heavy aircraft have larger wings which create more drag, requiring higher minimum speeds',
+    'B. More weight means more inertia, requiring higher speed to achieve lift-off',
+    'C. More lift is needed to support the greater weight — requiring a higher speed at the same maximum lift coefficient',
+    'D. Weight increases the pitching moment, requiring a higher minimum speed for control'
+    ],
+    correct: 2,
+    explanation: 'Vs = √(2W / ρ S CLmax). Heavier aircraft (higher W) have a higher stall speed. With the same wing, same density, and same CLmax, only a higher airspeed can generate sufficient lift to equal the greater weight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "dihedral effect" of a swept wing (additional to geometric dihedral) is caused by:',
+    options: [
+      'A. The swept wing having less effective span than a straight wing',
+    'B. When sideslipping, the forward-swept panel of the lower wing presents a greater effective AoA than the swept-back upper wing panel — creating a roll restoring moment',
+    'C. Swept wings have no dihedral effect — they rely entirely on the fin for lateral stability',
+    'D. The sweepback increases the effective aspect ratio, which generates dihedral-like stability'
+    ],
+    correct: 1,
+    explanation: 'Sweep dihedral effect: when the aircraft sideslips, the leading (lower) wing is more perpendicular to the flow — its effective AoA increases. The trailing (upper) wing is more swept — its effective AoA decreases. This lift differential rolls the aircraft back to wings level — acting like geometric dihedral.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'A "servo tab" (also called a "flying tab") is a system where:',
+    options: [
+      'A. The tab is driven by a servo motor from the autopilot only',
+    'B. The tab automatically adjusts with speed to maintain constant control feel',
+    'C. The main surface is fixed and the tab provides all the control force',
+    'D. The pilot inputs directly move a large tab, and the aerodynamic force of the tab then moves the main surface'
+    ],
+    correct: 3,
+    explanation: 'A servo tab: the pilot\'s control input moves only the small tab. The aerodynamic load on the tab provides the force that deflects the large main surface. The pilot feels very light forces but may lack the direct control feel of a conventional system.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'In a steep gliding turn, the rate of descent is higher than in a wings-level glide because:',
+    options: [
+      'A. The bank angle reduces airspeed, causing a higher rate of descent',
+    'B. The banked aircraft has less effective lift and the load factor increases drag, resulting in a higher sink rate',
+    'C. Turns always reduce rate of descent — the centrifugal force partially supports the aircraft',
+    'D. The turn reduces the propeller slip angle'
+    ],
+    correct: 1,
+    explanation: 'In a gliding turn: (1) load factor increases, requiring more lift (higher AoA → more induced drag); (2) back pressure required to maintain altitude increases total drag further; (3) effective glide ratio decreases. The result is a higher rate of descent and shorter glide range than a wings-level glide at the same IAS.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "angle of bank" in a level turn required to maintain altitude at a given speed is determined by:',
+    options: [
+      'A. The maximum permitted bank angle in the AFM',
+    'B. The aircraft\'s stall speed only',
+    'C. The required centripetal force — which depends on both airspeed and the desired rate/radius of turn',
+    'D. The pilot\'s preference and comfort with G-loading'
+    ],
+    correct: 2,
+    explanation: 'In a level turn: bank angle θ where tan θ = V²/(r × g) = ω × V/g. For a standard rate turn (3°/s): θ ≈ TAS/10 + 7 (approximate formula). The required bank depends on both speed and the desired rate of turn — faster aircraft need more bank for the same rate of turn.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "overbanking tendency" in a steep turn refers to:',
+    options: [
+      'A. The structural risk of exceeding the bank angle limit of 60°',
+    'B. The tendency of the bank to increase automatically because the outer (faster) wing generates more lift than the inner (slower) wing',
+    'C. A propeller gyroscopic effect that rolls the aircraft into the turn',
+    'D. A tendency caused by the CG being outside the turn radius'
+    ],
+    correct: 1,
+    explanation: 'In a steep level turn, the outer wing travels faster (larger radius) than the inner wing. This generates more lift on the outer wing, tending to roll the aircraft toward a greater bank angle. The pilot must apply opposite aileron (into the turn) to maintain the bank, and back pressure to maintain altitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'A "climbing turn" is more demanding than a level turn because:',
+    options: [
+      'A. The stall speed is lower in a climbing turn, making stall less likely',
+    'B. Turning while climbing requires more fuel',
+    'C. Climb power is unavailable during turns',
+    'D. The bank reduces the vertical component of lift, requiring both increased AoA and bank management'
+    ],
+    correct: 3,
+    explanation: 'In a climbing turn the aircraft needs excess power for climb AND the bank reduces the vertical lift component. Total lift required increases (load factor effect) while power available for excess is already committed to climbing. The combination demands careful airspeed and attitude management.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'Flying into "wind shear" during a climb-out after take-off, a sudden tailwind increase causes:',
+    options: [
+      'A. Airspeed is unaffected — wind shear only affects horizontal position',
+    'B. Airspeed drops suddenly — the tailwind reduces the headwind component, lowering IAS and therefore lift',
+    'C. Rate of climb increases as the tailwind component adds to vertical velocity',
+    'D. Airspeed increases — the tailwind assists the aircraft'
+    ],
+    correct: 1,
+    explanation: 'Wind shear on climb-out: a sudden increase in tailwind component (or decrease in headwind) causes an immediate drop in IAS. Lift decreases and the aircraft may sink. With an engine close to power limits on a hot day, the sudden performance loss can be catastrophic. Immediate full power is the response.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'Retracting flaps suddenly at low altitude after a go-around is dangerous because:',
+    options: [
+      'A. Flap retraction at low altitude always causes a stall',
+    'B. The sudden loss of lift as CLmax decreases may cause the aircraft to sink back toward the ground before airspeed increases sufficiently',
+    'C. Rapid flap retraction causes a pitch-up and acceleration into a climb',
+    'D. Rapid retraction damages the flap mechanism, causing asymmetric extension'
+    ],
+    correct: 1,
+    explanation: 'Sudden flap retraction removes a large portion of the wing\'s CLmax. If the aircraft is flying near the flapped stall speed, sudden retraction may cause the now-unflapped wing to stall — the aircraft sinks. This is why flaps should be retracted incrementally during a go-around, and only after a safe climb speed and altitude are established.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'An aircraft\'s "wing loading" is defined as:',
+    options: [
+      'A. Total weight of the wings divided by fuselage weight',
+    'B. Maximum lift divided by wing span',
+    'C. Gross weight divided by total wing area',
+    'D. The load applied to the wing spars during manoeuvre'
+    ],
+    correct: 2,
+    explanation: 'Wing loading = W/S, where W is aircraft gross weight and S is wing area (m²). Higher wing loading means the wing must generate more lift per unit area. Higher wing loading aircraft have higher stall speeds and better performance in gusts.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The CASA CPL Aerodynamics exam covers which approximate number of questions?',
+    options: [
+      'A. 20 questions in 30 minutes',
+    'B. 40 questions in 90 minutes',
+    'C. 80 questions in 180 minutes',
+    'D. 60 questions in 120 minutes'
+    ],
+    correct: 1,
+    explanation: 'The CASA CPL Aerodynamics (CADA) cyber examination has 40 questions with a time limit of 90 minutes. The pass mark is 70% (28 correct). The exam covers all syllabus topics from basic aerodynamic principles through to advanced aircraft handling characteristics.',
+    reference: 'CASA CPL Exam Syllabus'
+  },
+  {
+    question: 'During the "rotation" phase of take-off, the aircraft nose is raised to:',
+    options: [
+      'A. Reduce the drag on the nose gear by lifting it off the runway',
+    'B. Prevent the aircraft from exceeding Vne during the take-off roll',
+    'C. Increase the wing\'s angle of attack, generating more lift until lift equals weight and the aircraft lifts off',
+    'D. Align the aircraft with the climb-out angle before the wheels leave the ground'
+    ],
+    correct: 2,
+    explanation: 'Rotation raises the nose, increasing the wing AoA and therefore CL. As the aircraft reaches Vr, raising the nose increases lift rapidly — once lift equals weight, the aircraft lifts off at Vlof. Rotation should be smooth and progressive to the target take-off pitch attitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "stick shaker" in transport aircraft activates when:',
+    options: [
+      'A. The autopilot disagrees with the pilot\'s input',
+    'B. The speed exceeds Vmo',
+    'C. The aircraft approaches a stall — the system vibrates the control column to warn of the approaching critical AoA',
+    'D. Flutter is detected in the airframe'
+    ],
+    correct: 2,
+    explanation: 'The stick shaker is an automatic stall warning system on transport aircraft. When an AoA sensor detects proximity to the critical AoA, the system vibrates (shakes) the control column — an unmistakable tactile warning to the crew. Recovery action must be taken immediately.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The rudder controls rotation about which axis?',
+    options: [
+      'A. Normal (vertical) axis',
+    'B. Lateral axis',
+    'C. Longitudinal axis',
+    'D. Transverse axis'
+    ],
+    correct: 0,
+    explanation: 'The rudder controls yaw — rotation about the normal (vertical) axis. Yaw swings the nose left or right. The rudder is on the vertical stabiliser (fin).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.1'
+  },
+  {
+    question: '"Vr" (rotation speed) during take-off is:',
+    options: [
+      'A. The maximum speed for tyre operation on the runway',
+    'B. The speed at which full flap should be set for take-off',
+    'C. The speed at which the aircraft first lifts off the runway',
+    'D. The speed at which the nose is raised to the take-off attitude'
+    ],
+    correct: 3,
+    explanation: 'Vr is the speed at which the pilot initiates rotation — applies back pressure to raise the nose to the take-off attitude. This is calculated so that the aircraft reaches Vlof (lift-off speed) shortly after. Rotating too early or too steeply can result in tail strike; too late delays lift-off unnecessarily.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'In a power-off descent at constant airspeed, the aircraft\'s pitch attitude will be:',
+    options: [
+      'A. Level — attitude does not change with power reduction',
+    'B. Depends entirely on CG position — there is no general rule',
+    'C. Nose-low — the component of weight along the flight path drives the aircraft forward against drag',
+    'D. Nose-high — the pilot holds back pressure to prevent accelerating'
+    ],
+    correct: 2,
+    explanation: 'In a power-off descent at constant speed, thrust = 0. The aircraft must be nose-low so that the weight component along the (descending) flight path provides the force to overcome drag. The pilot achieves this by reducing power and allowing the nose to lower, then stabilising at the target descent airspeed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The term "angle of climb" refers to:',
+    options: [
+      'A. The angle between the flight path and the horizontal — determined by the excess thrust available',
+    'B. The angle between the aircraft chord line and the horizon',
+    'C. The nose attitude relative to the horizon',
+    'D. The angle of the runway slope combined with the aircraft climb gradient'
+    ],
+    correct: 0,
+    explanation: 'The angle of climb is the angle between the actual flight path (not the nose attitude) and the horizontal. It is determined by excess thrust: sin(climb angle) = (T − D) / W. Vx gives the maximum climb angle — most altitude per unit of ground distance.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The flap type that increases wing area as well as camber is the:',
+    options: [
+      'A. Fowler flap',
+    'B. Slotted flap',
+    'C. Split flap',
+    'D. Plain flap'
+    ],
+    correct: 0,
+    explanation: 'The Fowler flap moves rearward along tracks before deflecting downward. This increases the wing chord (and area) as well as the camber. The slot between the flap and main wing element re-energises the boundary layer. Fowler flaps give the greatest CLmax increase.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "wing planform" that minimises induced drag for a given lift and span is:',
+    options: [
+      'A. Rectangular',
+    'B. Elliptical',
+    'C. Triangular (delta)',
+    'D. Tapered with 25% taper ratio'
+    ],
+    correct: 1,
+    explanation: 'An elliptical wing planform produces an elliptical lift distribution along the span — the theoretical ideal for minimum induced drag. The downwash is uniform across the span, minimising the vortex-induced drag. Practical wings approximate this with taper and twist.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "P-factor" (asymmetric blade effect) is greatest when the aircraft is:',
+    options: [
+      'A. Descending at idle power — P-factor reverses in a descent',
+    'B. At a high angle of attack — such as take-off rotation or a steep climb — where the descending blade has a much greater effective pitch than the ascending blade',
+    'C. Flying at high altitude where the air is less dense',
+    'D. Flying level at cruise speed with the fuselage horizontal'
+    ],
+    correct: 1,
+    explanation: 'P-factor is greatest at high AoA. The propeller disc is tilted relative to the flight path — the descending blade (advancing into the flow at a larger angle) has a greater effective AoA than the ascending blade. This produces more thrust on the descending blade side, yawing the aircraft. Maximum at take-off rotation and steep climb.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: '"Aerodynamic balancing" of control surfaces refers to:',
+    options: [
+      'A. Adding ballast to balance the control surface about its hinge line',
+    'B. Setting trim tabs to neutral before flight',
+    'C. Making both control surfaces the same size',
+    'D. Designing the surface so aerodynamic forces reduce the hinge moment, decreasing pilot stick forces'
+    ],
+    correct: 3,
+    explanation: 'Aerodynamic balancing places part of the control surface ahead of the hinge line. The aerodynamic force on this forward portion acts to assist deflection, reducing the hinge moment that the pilot must overcome — reducing control forces.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "cross-wind component" for a landing is calculated as:',
+    options: [
+      'A. Wind speed multiplied by the cosine of the angle between the wind and the runway',
+    'B. Wind speed multiplied by the sine of the angle between the wind and the runway',
+    'C. The difference between the wind direction and the runway heading',
+    'D. Wind speed divided by the runway heading'
+    ],
+    correct: 1,
+    explanation: 'Cross-wind component = wind speed × sin(angle between wind direction and runway heading). Head/tail wind component = wind speed × cos(angle). At 90° to the runway: full crosswind. At 0° (directly into wind): full headwind, zero crosswind.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "Bernoulli effect" explains the pressure on an aerofoil upper surface because:',
+    options: [
+      'A. Air molecules above the wing are spread further apart due to the wing\'s upward movement',
+    'B. The upper surface is farther from the engine, receiving less slipstream',
+    'C. Air flows faster over the curved upper surface, and by Bernoulli\'s principle higher velocity means lower pressure',
+    'D. Air is heavier above the wing than below it'
+    ],
+    correct: 2,
+    explanation: 'The upper surface of a cambered aerofoil is curved — air must travel a longer path. To maintain continuity (same mass flow), air speeds up. By Bernoulli\'s equation, higher speed means lower static pressure. The pressure difference between upper (lower pressure) and lower (higher pressure) surfaces creates the lift force.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.2'
+  },
+  {
+    question: 'The "slipstream effect" from a tractor propeller causes:',
+    options: [
+      'A. Increased airflow over the wings, raising the stall speed',
+    'B. A rotating airflow that strikes the left side of the fin (clockwise-rotating propeller), creating a yaw to the left in most Australian aircraft',
+    'C. Reduced airflow over the vertical stabiliser, decreasing directional stability',
+    'D. A rotating airflow that strikes the right side of the fin, creating a yaw to the right'
+    ],
+    correct: 1,
+    explanation: 'On most Australian piston aircraft with a clockwise-rotating propeller (viewed from front), the slipstream spirals to the right and rearward — striking the left side of the vertical fin. This produces a left-yawing tendency that must be corrected with right rudder at high power settings.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "rolling moment" produced by dihedral in a sideslip is caused by:',
+    options: [
+      'A. The upper wing is partially shielded from the wind by the fuselage, producing a rolling moment',
+    'B. The lower wing experiencing a higher effective angle of attack than the upper wing when the aircraft sideslips — generating more lift and rolling the aircraft back to wings level',
+    'C. The lower wing generating less lift due to reduced speed',
+    'D. Dihedral causes the lower wing to stall first, generating a rolling moment from the lift asymmetry'
+    ],
+    correct: 1,
+    explanation: 'Dihedral lateral stability mechanism: in a sideslip (aircraft slipping toward the lower wing), the geometry of the dihedral means the lower wing presents a higher AoA to the relative wind than the upper wing. More lift on the lower wing → rolling moment back to wings level. This is the dihedral restoring effect.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Extending flaps in flight at a speed above Vfe will likely result in:',
+    options: [
+      'A. Reduced stall speed only — no structural risk below Vno',
+    'B. Improved approach performance — faster flap extension shortens the approach',
+    'C. Structural damage to the flap mechanism or flap surfaces from excessive aerodynamic loads',
+    'D. Flaps automatically limit their extension speed to prevent damage'
+    ],
+    correct: 2,
+    explanation: 'Above Vfe, the aerodynamic load on extending flaps exceeds the design limit for the flap structure. The flap actuator, hinges, guide tracks, or flap panels can be damaged or fail — potentially causing asymmetric extension, jamming, or loss of the flap surface. Vfe must never be exceeded with flaps extending.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'Newton\'s Second Law states that force equals:',
+    options: [
+      'A. Mass multiplied by acceleration',
+    'B. Momentum divided by time',
+    'C. Weight multiplied by speed',
+    'D. Mass multiplied by velocity'
+    ],
+    correct: 0,
+    explanation: 'F = ma. Force equals mass multiplied by acceleration. This is the basis for understanding how thrust accelerates an aircraft and drag decelerates it.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.1'
+  },
+  {
+    question: 'The "static margin" of an aircraft is defined as:',
+    options: [
+      'A. The margin between the design dive speed and the maximum operating speed',
+    'B. The difference between the forward and aft CG limits',
+    'C. The distance between the main wheel contact point and the CG',
+    'D. The distance (as a percentage of chord) between the CG and the neutral point (aerodynamic centre of the whole aircraft)'
+    ],
+    correct: 3,
+    explanation: 'Static margin = (Neutral point − CG) / chord. A positive static margin means the CG is forward of the neutral point — the aircraft is longitudinally stable. A larger static margin means more stability (and higher stick forces). Zero static margin = neutral stability.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Bernoulli\'s principle states that in a streamline flow:',
+    options: [
+      'A. Pressure decreases as velocity increases',
+    'B. Velocity decreases as density increases',
+    'C. Pressure increases as velocity increases',
+    'D. Pressure and velocity are unrelated'
+    ],
+    correct: 0,
+    explanation: 'Bernoulli\'s principle: in a streamline flow, an increase in the speed of a fluid is accompanied by a decrease in pressure. This is fundamental to understanding how an aerofoil generates lift — air accelerates over the curved upper surface, reducing pressure above the wing.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.2'
+  },
+  {
+    question: 'In a head-on collision avoidance manoeuvre, a sudden pull-up generates load factor because:',
+    options: [
+      'A. The engine torque creates a load factor during rapid power changes',
+    'B. The centripetal acceleration of the curved pull-up path creates an inertial reaction force (load factor) proportional to the radius of curvature and speed',
+    'C. Load factor is only generated in turns — not in pull-up manoeuvres',
+    'D. The aircraft weight increases during rapid acceleration'
+    ],
+    correct: 1,
+    explanation: 'Any curved flight path creates centripetal acceleration = V²/r. The inertial reaction is the load factor. In a sudden pull-up at high speed, a small radius generates high centripetal acceleration → high load factor. At speed V and radius r: n = 1 + V²/(rg). This can easily exceed Va limits.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'A "balance tab" moves in the opposite direction to the main surface. Its purpose is to:',
+    options: [
+      'A. Reduce control hinge moment, lightening the pilot\'s stick forces',
+    'B. Increase control hinge moment at low speeds',
+    'C. Prevent flutter by adding aerodynamic damping',
+    'D. Maintain trim when the aircraft is loaded at the aft CG limit'
+    ],
+    correct: 0,
+    explanation: 'A balance tab moves opposite to the main surface. As the surface deflects, the balance tab deflects the other way — the aerodynamic force on the tab acts to assist the surface deflection, reducing hinge moment and therefore control stick forces.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "power available" curve for a piston-propeller aircraft is relatively flat because:',
+    options: [
+      'A. The pilot maintains constant manifold pressure regardless of airspeed',
+    'B. As airspeed increases, engine power (nearly constant in horsepower terms) multiplied by varying propeller efficiency produces a relatively flat useful power curve',
+    'C. Power available decreases with speed due to increasing parasite drag',
+    'D. Engine power output is constant at all airspeeds'
+    ],
+    correct: 1,
+    explanation: 'Shaft power from a piston engine is approximately constant at a given throttle and RPM. Propeller efficiency varies with airspeed but over the typical operating range this produces a relatively flat useful (propulsive) power available curve. This is unlike a jet engine, which has a more steeply sloped thrust available curve.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.6'
+  },
+  {
+    question: 'The "constant velocity joint" in some aircraft propeller installations:',
+    options: [
+      'A. Is only used in turboprop aircraft — not relevant to piston aircraft',
+    'B. Is the connection between the governor and the blade pitch mechanism',
+    'C. Allows the propeller to be offset from the engine axis at a small angle without causing vibration — used for pusher configurations',
+    'D. Maintains constant propeller RPM regardless of throttle setting'
+    ],
+    correct: 2,
+    explanation: 'Constant velocity (CV) joints allow the propeller shaft to be angled slightly relative to the engine crankshaft without introducing cyclic vibration — used in some pusher and unconventional configurations. The joint transmits constant rotational velocity even when the shafts are at an angle.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'What would be the approximate load factor experienced in a 75° banked level turn?',
+    options: [
+      'A. 3.2g',
+    'B. 2.6g',
+    'C. 4.5g',
+    'D. 3.9g'
+    ],
+    correct: 3,
+    explanation: 'n = 1/cos(75°) = 1/0.259 = 3.86g ≈ 3.9g. At 75° bank, the aircraft experiences nearly 4g. Stall speed increases to Vs × √3.86 = Vs × 1.96 — nearly double the straight-and-level stall speed. This is why very steep turns are rarely practical and must be performed well above stall speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The aircraft characteristic called "stick-free stability" means the aircraft is stable:',
+    options: [
+      'A. With the autopilot engaged — the pilot is free of the controls',
+    'B. Only when the trim tab is in the neutral position',
+    'C. Stick-free stability only applies to fly-by-wire aircraft systems',
+    'D. When the pilot releases the controls — the aircraft tends to return toward trimmed flight without any pilot input'
+    ],
+    correct: 3,
+    explanation: 'Stick-free stability: when the pilot releases the controls, the aircraft (if stable) tends to return toward its trimmed speed and attitude through its own aerodynamic characteristics. Stick-fixed stability refers to stability with the controls held fixed. Both are important handling qualities for certification.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'On a total drag vs airspeed graph, the minimum total drag point indicates:',
+    options: [
+      'A. The speed for best L/D ratio and best glide angle',
+    'B. The speed at which stall occurs',
+    'C. The speed for maximum rate of climb',
+    'D. The speed for maximum endurance'
+    ],
+    correct: 0,
+    explanation: 'Minimum total drag occurs where induced drag equals parasite drag. This is the speed of best L/D ratio — for a piston aircraft this is the best glide speed and best range speed. Below this speed induced drag dominates; above it parasite drag dominates.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "weathercock stability" of an aircraft refers to its tendency to:',
+    options: [
+      'A. Yaw into the relative wind — like a weathervane aligning with the wind',
+    'B. Align the fuselage parallel to any thermal or wind gradient encountered',
+    'C. Roll toward the upwind wing in a crosswind',
+    'D. Pitch nose-up in strong headwinds'
+    ],
+    correct: 0,
+    explanation: 'Weathercock stability is directional (yaw) stability — the aircraft\'s tendency to align itself with the relative wind when disturbed. It is provided primarily by the vertical fin. Named after the weather vane (rooster/cock) that always points into the wind, the fin acts identically.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The horizontal stabiliser is set at a slightly negative angle of incidence (nose-down relative to the fuselage datum) because:',
+    options: [
+      'A. The negative angle reduces drag on the tail surfaces, improving cruise efficiency',
+    'B. Australian regulations require negative tail incidence on all light aircraft',
+    'C. A downward tail load balances the nose-down pitching moment of the wing and CG — it is necessary to maintain equilibrium in cruise',
+    'D. A negative incidence tail generates downward force to counteract the nose-up CG offset'
+    ],
+    correct: 2,
+    explanation: 'Most aircraft are designed with the CG forward of the wing\'s aerodynamic centre, creating a nose-down pitching moment. A downward tail load (from a slight negative tail incidence) provides the moment to balance the aircraft in level flight. This "download" on the tail increases the effective weight the wings must support.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Which instrument directly measures the stagnation pressure of the airflow?',
+    options: [
+      'A. The static port',
+    'B. The vertical speed indicator (VSI)',
+    'C. The pitot tube',
+    'D. The altimeter'
+    ],
+    correct: 2,
+    explanation: 'The pitot tube is open facing forward — it brings the airflow to a stagnation point, measuring total (stagnation) pressure (static + dynamic). This pressure is fed to the ASI. The static port measures static pressure only. The ASI measures the difference: dynamic pressure.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "best range" condition for a piston aircraft can be improved by:',
+    options: [
+      'A. Using maximum flap to increase lift and reduce drag',
+    'B. Leaning the mixture to best economy, flying at the optimum altitude, and maintaining best range IAS',
+    'C. Flying at the maximum altitude where the engine still produces sea-level power',
+    'D. Flying at maximum continuous power at all times'
+    ],
+    correct: 1,
+    explanation: 'Piston aircraft range is maximised by: (1) best range airspeed (minimum drag speed); (2) mixture leaned to best economy (lean of peak EGT where permitted) to extract maximum miles per litre; (3) optimum altitude (best power per unit of fuel). All three together maximise nautical miles per litre.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'Which configuration gives the longest endurance in a glide with no engine?',
+    options: [
+      'A. Clean configuration (gear up, flaps up) at best glide speed',
+    'B. Maximum speed configuration with gear down',
+    'C. Full flap at a very low airspeed just above the stall',
+    'D. Partial flap at 1.5 × stall speed'
+    ],
+    correct: 0,
+    explanation: 'Longest endurance (time aloft) in a glide = minimum rate of descent. Minimum rate of descent occurs at a speed lower than best glide speed (minimum power required speed). However, for maximum range (distance), best glide speed (clean) is used. For a power-off emergency, clean at best glide speed maximises distance to a landing area.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'What is "induced drag"?',
+    options: [
+      'A. Drag from the skin friction of air over the wing surface',
+    'B. Drag from protruding antennas and undercarriage',
+    'C. Drag caused by the propeller disc in a nose-high attitude',
+    'D. Drag resulting from the production of lift — caused by wingtip vortices and downwash'
+    ],
+    correct: 3,
+    explanation: 'Induced drag is a by-product of lift production. High-pressure air below the wing spills around the wingtip to the lower-pressure upper surface, creating vortices. These vortices tilt the relative airflow rearward (downwash), which tilts the lift vector rearward — creating a rearward component called induced drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'Moving the centre of gravity rearward (toward the aft limit) has what effect on longitudinal stability?',
+    options: [
+      'A. Has no effect on stability, only on the pitch force required',
+    'B. Increases stability but reduces control effectiveness',
+    'C. Increases stability — the tail has more authority to restore pitch',
+    'D. Reduces stability — the restoring moment is smaller'
+    ],
+    correct: 3,
+    explanation: 'Moving the CG rearward reduces the distance between the CG and the neutral point (the "static margin"). This reduces the restoring moment for any given pitch disturbance — stability decreases. At the aft limit, stability is at minimum acceptable level.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "take-off safety speed" (V2) for a twin-engine aircraft is defined as:',
+    options: [
+      'A. The rotation speed — when the pilot applies back pressure',
+    'B. The minimum airspeed at which the aircraft is capable of continuing a climb after engine failure — typically at least Vmca + sufficient margin',
+    'C. The maximum speed during take-off with full flap',
+    'D. The speed at which the aircraft leaves ground effect'
+    ],
+    correct: 1,
+    explanation: 'V2 (take-off safety speed) is the target climb speed after engine failure for a twin. It must be at least 1.2 × Vs or Vmca + 10 kt (whichever is greater). At V2, the aircraft can maintain a required climb gradient with one engine failed. V2 is the speed flown in the second segment climb.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "best glide ratio" of an aircraft is equal to:',
+    options: [
+      'A. The maximum altitude divided by horizontal distance at stall speed',
+    'B. The maximum lift-to-drag ratio (L/D max)',
+    'C. The maximum CL divided by minimum CD',
+    'D. Wing span divided by wing chord at the root'
+    ],
+    correct: 1,
+    explanation: 'Best glide ratio = maximum L/D ratio. For every unit of altitude lost, the aircraft travels L/D units of horizontal distance. An aircraft with an L/D max of 12 will glide 12 NM for every 1 NM (6,076 ft) of altitude lost in still air.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'An aircraft in a steady glide with a glide ratio of 10:1 loses 100 ft of altitude for every:',
+    options: [
+      'A. 1 nautical mile of horizontal distance',
+    'B. 10 metres of horizontal distance',
+    'C. 1,000 ft of horizontal distance',
+    'D. 100 ft of horizontal distance'
+    ],
+    correct: 2,
+    explanation: 'Glide ratio 10:1 means 10 units horizontal distance for every 1 unit vertical. For 100 ft descent: 10 × 100 = 1,000 ft horizontal. An aircraft with a 10:1 glide ratio from 10,000 ft AGL can glide 100,000 ft ≈ 16 NM in still air.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'An aircraft is climbing at Vy. If the pilot maintains the same IAS but at a higher gross weight, the rate of climb will:',
+    options: [
+      'A. Remain the same — IAS determines climb rate, not weight',
+    'B. Increase — more weight means more energy in the climb',
+    'C. Decrease — the excess power per unit weight (PA − PR)/W decreases with increased weight',
+    'D. Remain the same if the pilot retrimmed for the new weight'
+    ],
+    correct: 2,
+    explanation: 'ROC = (PA − PR) / W. Heavier weight increases PR (more drag to overcome W) and reduces the ratio of excess power to weight. Even if the pilot maintains the same IAS (same PA for the engine/propeller), the higher W means less ROC. Vy also shifts to a slightly higher IAS at heavier weight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "angle of attack indicator" (AoA indicator) remains useful at all:',
+    options: [
+      'A. Speeds above Vno only',
+    'B. Standard atmosphere conditions only — it requires corrections above ISA +15°C',
+    'C. Weights up to MTOW only — above MTOW the calibration is invalid',
+    'D. Weights, altitudes, and bank angles — the stall always occurs at the same critical AoA regardless of these variables'
+    ],
+    correct: 3,
+    explanation: 'The critical AoA is constant regardless of weight, altitude, bank angle, or load factor. The AoA indicator always shows the same margin to stall under all these conditions — unlike the ASI, which gives a different stall speed for every weight and load factor combination. This universality makes AoA indicators very effective stall warning tools.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'An aerofoil with a "high camber" is best suited for:',
+    options: [
+      'A. Aerobatic aircraft that require symmetric positive and negative performance',
+    'B. High-speed flight — high camber reduces wave drag at transonic speeds',
+    'C. High-altitude operations where density is low',
+    'D. Low-speed, high-lift applications — such as slow training aircraft, sailplanes, and high-lift devices'
+    ],
+    correct: 3,
+    explanation: 'High-camber aerofoils produce high CLmax — useful for slow-speed, high-lift applications. Highly cambered sections generate significant lift at low speed (and even at zero AoA), suitable for training aircraft, gliders, and high-lift devices. The penalty is high drag at high speeds.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: '"Dutch roll" is a combined oscillation involving:',
+    options: [
+      'A. Coupled roll and yaw oscillations — the aircraft rolls and yaws alternately',
+    'B. A rolling motion caused by aileron flutter',
+    'C. Yaw oscillation only, with no roll component',
+    'D. Pitch and power oscillations in cruise'
+    ],
+    correct: 0,
+    explanation: 'Dutch roll is a coupled lateral-directional oscillation: the aircraft rolls one way as the nose yaws the other, then reverses. It is caused by strong dihedral effect with weak directional stability. Yaw dampers on jet aircraft suppress Dutch roll.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Torque reaction during take-off in a propeller aircraft tends to:',
+    options: [
+      'A. Reduce take-off roll distance by increasing propeller thrust',
+    'B. Roll the aircraft in the opposite direction to propeller rotation',
+    'C. Yaw the aircraft to the right as power is applied',
+    'D. Pitch the nose up suddenly as power is applied'
+    ],
+    correct: 1,
+    explanation: 'Torque reaction (Newton\'s Third Law): the engine/propeller rotates in one direction; the reaction tends to roll the airframe in the opposite direction. In most Australian aircraft (propeller turning clockwise viewed from the front), the aircraft tends to roll left.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'Dihedral angle is most effective at providing lateral stability when the aircraft:',
+    options: [
+      'A. Is in a sideslip — the upwind wing has a higher effective AoA and generates more lift',
+    'B. Dihedral is effective only at speeds below Va',
+    'C. Has the CG at the aft limit, which amplifies dihedral effects',
+    'D. Is in a nose-high attitude during climb'
+    ],
+    correct: 0,
+    explanation: 'Dihedral provides lateral stability through sideslip: when the aircraft rolls and sideslips, the lower wing presents a higher AoA to the relative wind than the upper wing (due to the dihedral angle). The lower wing generates more lift, rolling the aircraft back to level.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'During a sustained power-off glide at constant airspeed, the forces acting are:',
+    options: [
+      'A. Lift equals weight and drag equals thrust (which is zero)',
+    'B. The aircraft is in freefall and aerodynamic forces are irrelevant',
+    'C. Lift is less than weight — the weight component along the flight path balances drag, and the weight component perpendicular to the flight path is balanced by lift',
+    'D. Drag exceeds lift and the aircraft continually accelerates until it reaches terminal velocity'
+    ],
+    correct: 2,
+    explanation: 'In a steady glide at constant speed: Lift = W × cos(glide angle) [less than weight]. Drag = W × sin(glide angle) [weight component along the flight path provides the driving force, balanced by drag]. There is no thrust. The steeper the glide, the greater the component of weight along the flight path.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "boundary layer separation" on an aerofoil upper surface is first evident:',
+    options: [
+      'A. Simultaneously over the entire upper surface when the stall occurs',
+    'B. At the leading edge for all aerofoil types',
+    'C. Near the trailing edge at moderate AoA, moving progressively forward as AoA increases toward the stall',
+    'D. At the point of maximum thickness regardless of AoA'
+    ],
+    correct: 2,
+    explanation: 'Boundary layer separation begins near the trailing edge — where the adverse pressure gradient (pressure increasing toward the trailing edge) is strongest and the boundary layer most depleted of energy. As AoA increases, the separation point moves forward. At the stall, it has moved to the leading edge region.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "mass flow" of air through a propeller disc is proportional to:',
+    options: [
+      'A. Propeller blade pitch only',
+    'B. Aircraft TAS divided by propeller diameter',
+    'C. Air density × disc area × velocity through the disc',
+    'D. Engine RPM only'
+    ],
+    correct: 2,
+    explanation: 'Mass flow = ρ × A × V, where A is the propeller disc area and V is the velocity through the disc. Higher density (sea level), larger propeller (bigger disc area), and higher flow velocity all increase mass flow and therefore potential thrust. At altitude, lower ρ reduces mass flow and thrust.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'A "stall at altitude" versus a "stall at low altitude" differs in that:',
+    options: [
+      'A. The stall IAS is the same but the TAS is higher at altitude — the aircraft is moving faster at the same indicated stall speed, and altitude available for recovery is the key concern',
+    'B. Stall characteristics change significantly above 10,000 ft — aircraft become dangerously unstable',
+    'C. The stall AoA is higher at altitude due to lower air density',
+    'D. The stall is more abrupt at altitude because the thin air provides less aerodynamic damping'
+    ],
+    correct: 0,
+    explanation: 'Stall IAS is constant with altitude. But at altitude, TAS is higher for the same IAS — the aircraft is moving faster in absolute terms. Recovery from the stall will lose altitude. The fundamental difference is not in the stall itself but in the altitude available for recovery and the higher TAS at entry.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The term "relative airflow" (relative wind) is defined as:',
+    options: [
+      'A. The wind relative to the aircraft\'s position on the airfield',
+    'B. The direction of airflow approaching the wing — equal and opposite to the aircraft\'s flight path direction',
+    'C. The velocity of the propeller slipstream relative to ambient air',
+    'D. The wind speed relative to the aircraft altitude above mean sea level'
+    ],
+    correct: 1,
+    explanation: 'Relative airflow (relative wind) is the airflow direction as seen from the aircraft — opposite to the direction of motion. If the aircraft is flying north and climbing, the relative airflow comes from ahead and slightly below. The angle between the chord line and this relative airflow is the angle of attack.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The basic aerodynamic principle that explains why an aircraft can fly upside-down is:',
+    options: [
+      'A. Gravity reverses direction in inverted flight, supporting the aircraft',
+    'B. Inverted flight is impossible without a symmetrical aerofoil',
+    'C. The lift equation does not apply in inverted flight',
+    'D. At a sufficiently negative angle of attack, the inverted wing generates lift in the direction away from the earth (downward) — the pilot must push to maintain inverted level flight'
+    ],
+    correct: 3,
+    explanation: 'In inverted flight, the pilot pushes forward (negative AoA on the (now-inverted) wing). For a symmetric aerofoil, this generates equal lift at equal negative AoA. For a cambered aerofoil, a negative AoA is needed to produce zero lift — and further negative AoA produces "downward" lift (away from earth in inverted flight). Sustained inverted flight with cambered wings requires more negative AoA.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'Which of the following manoeuvres produces the highest structural load on the airframe?',
+    options: [
+      'A. A steep pull-up at Vne',
+    'B. A 60° banked level turn at Va',
+    'C. A symmetrical stall at Vs in level flight',
+    'D. A 30° banked level turn at Vno'
+    ],
+    correct: 0,
+    explanation: 'Structural load is highest during a sharp pull-up at or near Vne. At high speed (Vne), any pull-up generates enormous dynamic pressure — and therefore aerodynamic forces. A sharp pull at Vne can easily exceed the positive limit load factor. This is why Vne must not be exceeded and abrupt inputs are prohibited above Va.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'Which of the following correctly describes what happens when flap is partially retracted during a go-around at low altitude?',
+    options: [
+      'A. CLmax decreases and drag decreases — if airspeed is insufficient for the new (lower) CLmax, the aircraft may stall',
+    'B. Only drag changes — lift is unaffected by partial flap retraction',
+    'C. Lift and drag both increase — the go-around is improved',
+    'D. The aircraft immediately climbs as the reduced drag more than compensates for reduced lift'
+    ],
+    correct: 0,
+    explanation: 'Partial flap retraction during a go-around: CLmax decreases with each stage of flap retraction. If the aircraft is flying at or near the previous (flapped) stall speed, the new unflapped stall speed may be higher — causing a stall. This is why speed must be established and increasing before any flap retraction.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "never exceed speed" (Vne) is set primarily to:',
+    options: [
+      'A. Prevent engine damage from excessive RPM',
+    'B. Prevent structural damage from flutter, excessive aerodynamic loads, or compressibility effects',
+    'C. Ensure the aircraft stays below its certified service ceiling speed',
+    'D. Prevent the pilot from blacking out due to excessive speed-related G-force'
+    ],
+    correct: 1,
+    explanation: 'Vne is the maximum demonstrated safe speed for the aircraft design — above it, flutter, structural failure, or control reversal may occur. It is marked as a red line on the ASI. It is typically set at 90% of the speed at which structural or flutter divergence was demonstrated during testing.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'A cambered aerofoil produces lift at zero angle of attack because:',
+    options: [
+      'A. The thickness creates a pressure differential at zero AoA',
+    'B. The curved (cambered) shape accelerates airflow over the upper surface even at zero AoA, creating lower pressure above and higher pressure below',
+    'C. Cambered aerofoils do not produce lift at zero AoA — they require a positive AoA',
+    'D. Air strikes the flat lower surface and creates pressure at zero AoA'
+    ],
+    correct: 1,
+    explanation: 'A cambered aerofoil\'s curved upper surface causes airflow to accelerate (Bernoulli effect) even at zero AoA. The asymmetric shape means flow is faster over the top than the bottom at zero AoA, creating a pressure differential and therefore lift. The zero-lift AoA for a cambered aerofoil is slightly negative.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "indicated stall speed" in the AFM is typically given for:',
+    options: [
+      'A. Maximum take-off weight, wings level, power off, in the landing configuration',
+    'B. Minimum weight, wings level, power on, in the cruise configuration',
+    'C. Maximum take-off weight, 45° bank, power on, with flaps at first stage',
+    'D. Average weight, 30° bank, power off, in the clean configuration'
+    ],
+    correct: 0,
+    explanation: 'Published stall speeds in the AFM are typically: power off, wings level, at maximum take-off weight, in the specified configuration (Vso = landing config, Vs1 = clean). These are the most conservative (highest stall speed) conditions — actual stall speed may be lower at lighter weight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'A "density altitude" higher than pressure altitude means the actual air density is:',
+    options: [
+      'A. Greater than standard for that pressure altitude — temperature is colder than ISA',
+    'B. Less than standard for that pressure altitude — temperature is warmer than ISA',
+    'C. Equal to standard — density and pressure altitudes are always equal',
+    'D. Independent of temperature — density altitude only changes with actual altitude'
+    ],
+    correct: 1,
+    explanation: 'Density altitude = pressure altitude + correction for non-standard temperature. If temperature is higher than ISA, air is less dense — density altitude is higher than pressure altitude. High density altitude means worse aircraft performance. Hot, high, humid conditions maximise density altitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'At which point on the climb performance graph does "Vx" appear relative to "Vy"?',
+    options: [
+      'A. Vx is slower than Vy for most piston aircraft',
+    'B. Vx and Vy are identical speeds for all aircraft',
+    'C. Vx is always faster than Vy',
+    'D. Vx equals Vy only at sea level — Vx is faster at altitude'
+    ],
+    correct: 0,
+    explanation: 'For typical piston-propeller aircraft: Vx (best angle, maximum excess thrust) < Vy (best rate, maximum excess power). The excess thrust peaks at a lower speed than excess power. At the absolute ceiling these two speeds converge. Knowing Vx < Vy is a key exam point.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'An aircraft fuel imbalance (one tank heavier than the other) requires:',
+    options: [
+      'A. Using aileron trim (or continuous aileron pressure) to maintain wings level — the lateral CG offset creates a rolling moment',
+    'B. Lowering flap on the heavy side to compensate',
+    'C. Adjusting rudder trim to compensate for the lateral weight difference',
+    'D. Fuel imbalance has no aerodynamic effect — it only affects the weight and balance document'
+    ],
+    correct: 0,
+    explanation: 'Fuel imbalance shifts the lateral CG toward the heavier tank side. The aircraft tends to roll toward the heavy side. The pilot (or aileron trim) must apply opposite aileron to maintain wings level. This also slightly increases drag (induced drag from asymmetric lift). CASA specifies maximum lateral CG imbalance limits.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "stall speed" (Vs) relationship with wing loading (W/S) is:',
+    options: [
+      'A. Vs is inversely proportional to wing loading',
+    'B. Vs decreases as wing loading increases',
+    'C. Vs is independent of wing loading — it only depends on CLmax',
+    'D. Vs increases as wing loading increases — heavier loading requires a higher speed to generate sufficient lift'
+    ],
+    correct: 3,
+    explanation: 'Vs = √(2W/S ÷ ρ × CLmax) = √(2 × wing loading ÷ ρ × CLmax). Higher wing loading (more weight per unit area) requires higher speed to generate sufficient lift at CLmax. Aircraft with high wing loading (fast aircraft) have high stall speeds.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The drag of an aircraft at minimum total drag speed compared to twice that speed is approximately:',
+    options: [
+      'A. Less drag at double the speed — parasite drag decreases with speed',
+    'B. Slightly more — induced drag at minimum drag speed increases total drag above the parasite-only value',
+    'C. Much less — minimum total drag is significantly less than drag at double that speed',
+    'D. The same — drag is minimum at this speed'
+    ],
+    correct: 2,
+    explanation: 'At the minimum drag speed, induced drag = parasite drag. At double this speed, parasite drag = 4× its value at min drag speed. Induced drag = 1/4× its value. Total drag at double speed = 4×(Para) + 0.25×(Para) = 4.25× Para. Total drag at min drag speed = 2× Para. So total drag at double speed ≈ twice total drag at min speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "effective angle of attack" of a wing operating in the propeller slipstream is:',
+    options: [
+      'A. Always lower than geometric AoA due to turbulence in the slipstream',
+    'B. Increased by exactly the propeller pitch angle',
+    'C. Different from the geometric AoA because the accelerated slipstream changes the local velocity and direction of flow over the wing sections in the slipstream',
+    'D. The same as the geometric AoA'
+    ],
+    correct: 2,
+    explanation: 'Propeller slipstream increases local velocity (dynamic pressure) and also imparts a rotational component. Wing sections in the slipstream see a different local airflow direction and speed — their effective AoA changes. This affects both lift and drag in the slipstream area.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'A "conventional" tail configuration is more common than a T-tail because:',
+    options: [
+      'A. Conventional tails are lighter, operate in cleaner airflow, and avoid the deep-stall (super-stall) risk associated with T-tails',
+    'B. Conventional tails are cheaper to manufacture than T-tail configurations',
+    'C. T-tail aircraft are heavier due to the structural requirements of supporting the tailplane at the fin tip',
+    'D. CASA regulations prohibit T-tails on aircraft below 5,700 kg MTOW'
+    ],
+    correct: 0,
+    explanation: 'Conventional tail advantages: lighter (no heavy fin-top tailplane structure), the horizontal tail operates in the wing downwash (contributing to stability characteristics), and it avoids the deep-stall hazard where the wing wake engulfs the T-tail at very high AoA, locking the aircraft in the stall.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "induced drag" formula CDi = CL²/(π e AR) shows that induced drag:',
+    options: [
+      'A. Decreases as aspect ratio decreases',
+    'B. Is independent of the lift generated',
+    'C. Increases with the square of the lift coefficient — doubling CL quadruples induced drag',
+    'D. Is the same for all wings regardless of planform'
+    ],
+    correct: 2,
+    explanation: 'CDi = CL²/(π e AR). Since CDi ∝ CL², doubling CL (doubling AoA approximately) quadruples induced drag. This is why induced drag is enormous near the stall and small at high speed — and why steep turns generate so much additional drag (elevated CL required for the elevated load factor).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "critical angle of attack" for a typical light aircraft aerofoil is approximately:',
+    options: [
+      'A. 15–18 degrees',
+    'B. 45 degrees',
+    'C. 25–30 degrees',
+    'D. 5–8 degrees'
+    ],
+    correct: 0,
+    explanation: 'The critical angle of attack for most light aircraft aerofoils is approximately 15–18 degrees. This is where CLmax occurs and the stall begins. The exact value depends on the aerofoil design and surface condition.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The indicated stall speed (Vs) increases with altitude because:',
+    options: [
+      'A. The critical angle of attack changes with air density at altitude',
+    'B. It does not — IAS stall speed remains approximately constant with altitude',
+    'C. Air density is lower at altitude, requiring a higher IAS to generate the same lift',
+    'D. Engine power decreases at altitude, requiring higher speed to maintain flight'
+    ],
+    correct: 1,
+    explanation: 'IAS stall speed is approximately constant with altitude. This is because IAS is proportional to dynamic pressure (½ρV²), and the stall occurs at the same CL (same AoA) regardless of altitude. The aircraft stalls at the same IAS whether at sea level or 10,000 ft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'Reducing engine power in level flight causes the aircraft to:',
+    options: [
+      'A. Immediately enter a stall',
+    'B. Decelerate — drag now exceeds thrust — and the nose will pitch down unless the pilot maintains back pressure',
+    'C. Accelerate because less propeller slipstream creates less drag on the airframe',
+    'D. Maintain speed — drag automatically reduces to match lower thrust'
+    ],
+    correct: 1,
+    explanation: 'Power reduction: thrust decreases below drag — the aircraft decelerates. As speed decreases, the pilot must increase AoA (raise the nose) to maintain lift equal to weight. If no adjustment is made, the aircraft slows and descends. The nose-down pitch tendency from power reduction must also be managed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The primary function of the "fin" (vertical stabiliser) when no rudder input is applied is:',
+    options: [
+      'A. To provide thrust via propeller-wash interaction',
+    'B. To provide passive directional (yaw) stability — any yaw creates a sideways force that restores the aircraft to the original heading',
+    'C. To provide roll stability in crosswind conditions by increasing keel area',
+    'D. The fin provides no function unless the pilot deflects the rudder'
+    ],
+    correct: 1,
+    explanation: 'The fin provides passive weathercock (directional) stability at all times. When the aircraft yaws, the fin presents a side area to the airflow — generating a restoring force that yaws the nose back. No pilot input is required for this; it is an inherent aerodynamic design feature.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: '"Ground looping" tendency in conventional (tail-wheel) aircraft is caused by:',
+    options: [
+      'A. The tail wheel is forward of the CG causing instability',
+    'B. Ground loops only occur with cross-wind — they cannot happen in calm conditions',
+    'C. The main gear is aft of the CG — if the aircraft yaws, the main gear swings outward, amplifying the yaw uncontrollably',
+    'D. The propeller torque at low speed overpowers the rudder'
+    ],
+    correct: 2,
+    explanation: 'Ground loop: in a tail-wheel aircraft, the main gear is ahead of the CG. If the aircraft yaws, the CG (behind the main gear) tries to overtake the main gear — like a trailer swinging around a tow vehicle. This instability tends to amplify yaw into a ground loop. Requires active rudder control.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'A "stabilator" (all-flying tail) differs from a conventional horizontal stabiliser + elevator in that:',
+    options: [
+      'A. The stabilator provides both pitch and roll control, replacing ailerons',
+    'B. The stabilator only acts as a trim device — not a primary pitch control',
+    'C. The stabilator is only used at high speeds where conventional elevators are ineffective',
+    'D. The entire horizontal tail surface rotates as a single unit for pitch control'
+    ],
+    correct: 3,
+    explanation: 'A stabilator (all-moving tail or all-flying tail) is a single surface that rotates as a whole to control pitch, rather than having a fixed stabiliser with a separate moveable elevator. It is more powerful than a conventional elevator, particularly at high speeds.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "mean camber line" of an aerofoil is:',
+    options: [
+      'A. The line at which the airflow divides over the upper and lower surfaces',
+    'B. The line equidistant between the upper and lower surfaces — the line of maximum camber from leading to trailing edge',
+    'C. The line along the maximum thickness of the aerofoil',
+    'D. The straight line from leading edge to trailing edge'
+    ],
+    correct: 1,
+    explanation: 'The mean camber line is the locus of points halfway between the upper and lower surfaces of the aerofoil. A symmetric aerofoil has its mean camber line coinciding with the chord line. A cambered aerofoil has the mean camber line arched above the chord line — the maximum camber and its location characterise the aerofoil.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "hinge moment" of a control surface increases with:',
+    options: [
+      'A. Increased dynamic pressure and increased deflection angle — both contribute to higher control forces',
+    'B. Hinge moment is constant regardless of speed or deflection',
+    'C. Increased aircraft weight — heavier aircraft have higher hinge moments',
+    'D. Reduced airspeed — lower dynamic pressure makes it harder to move controls'
+    ],
+    correct: 0,
+    explanation: 'Hinge moment = Ch × q × S_control × c_control, where q is dynamic pressure. It increases with: (1) higher airspeed (higher q); (2) greater deflection angle (larger Ch). This is why controls feel heavier at high speed — the pilot must overcome larger aerodynamic hinge moments.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "separation point" on a wing surface moves rearward (toward the trailing edge) when:',
+    options: [
+      'A. Angle of attack decreases — lower AoA reduces the adverse pressure gradient on the upper surface',
+    'B. Airspeed increases at any AoA',
+    'C. Angle of attack increases',
+    'D. The boundary layer transitions from turbulent to laminar'
+    ],
+    correct: 0,
+    explanation: 'At lower angles of attack, the adverse pressure gradient on the wing upper surface is less severe. The boundary layer can remain attached further toward the trailing edge — the separation point is at or near the trailing edge. As AoA increases, the separation point moves forward — at the stall it is at or near the leading edge.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'Flaps increase lift primarily by:',
+    options: [
+      'A. Increasing wing camber and sometimes wing area, increasing CL at a given angle of attack',
+    'B. Increasing airspeed over the upper surface to generate more Bernoulli effect',
+    'C. Increasing wing span and therefore total wing area',
+    'D. Reducing angle of attack to prevent stalling during landing'
+    ],
+    correct: 0,
+    explanation: 'Flaps increase the camber (curvature) of the wing, and some types also increase wing area. This increases CL at any given angle of attack — allowing slower flight speeds while maintaining sufficient lift. They also increase drag, which is useful for approach and landing.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: '"Proverse roll" occurs when:',
+    options: [
+      'A. The aircraft rolls in the same direction as rudder input — caused by differential lift from differential drag on the two wings when rudder is applied',
+    'B. The aircraft rolls nose-up when power is increased',
+    'C. The aircraft rolls in the opposite direction to rudder input',
+    'D. Proverse roll is another name for adverse yaw'
+    ],
+    correct: 0,
+    explanation: 'Proverse roll: when rudder is applied, the fin generates a side force that tilts the lift vector to the side — this has a rolling component in the same direction as the yaw (proverse, not adverse). In conventional aircraft adverse yaw dominates; in some aircraft (especially with low aspect ratio) proverse roll from rudder can be significant.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "downwash" effect on the horizontal tail means that:',
+    options: [
+      'A. The tail must be set at a higher angle of incidence to overcome the downwash',
+    'B. Downwash increases the effective angle of attack of the tail, adding to pitch-up tendency',
+    'C. The tail is in faster airflow than the wing, generating more lift',
+    'D. Air deflected downward by the wing strikes the tail at a reduced angle of attack, affecting pitch stability'
+    ],
+    correct: 3,
+    explanation: 'The wing deflects air downward (downwash). This means the horizontal tail operates in airflow that is directed slightly downward — reducing the tail\'s effective angle of attack. Changes in wing lift (and therefore downwash) affect the tail loading, which has important stability implications.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "propeller slip" is defined as the difference between:',
+    options: [
+      'A. The propeller RPM and the engine crankshaft RPM',
+    'B. The angle of the propeller blade and the plane of rotation',
+    'C. The propeller tip speed and the aircraft true airspeed',
+    'D. The theoretical distance the propeller would advance per revolution (geometric pitch) and the actual distance advanced'
+    ],
+    correct: 3,
+    explanation: 'Propeller slip is the difference between geometric pitch (theoretical advance per revolution in a solid medium) and effective pitch (actual advance through air per revolution). Air is not a solid — it gives way, so the propeller does not advance as far as its pitch would suggest.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'Aircraft performance charts are based on ISA conditions. On an ISA +20°C day (20° above standard), performance will be:',
+    options: [
+      'A. Better than chart values',
+    'B. The same as chart values',
+    'C. Worse than chart values — reduced power and aerodynamic efficiency',
+    'D. Better at low altitude but worse above 5,000 ft'
+    ],
+    correct: 2,
+    explanation: 'ISA +20°C means it is 20°C hotter than standard. Higher temperature = lower air density = less engine power, less propeller thrust, higher TAS for same IAS. Performance (take-off distance, rate of climb, accelerate-stop) will be worse than the ISA chart values.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'An aircraft that is "riding" in ground effect during the landing flare may float further down the runway because:',
+    options: [
+      'A. Ground effect only occurs at very low altitudes and does not affect the landing flare significantly',
+    'B. The reduced drag in ground effect allows the aircraft to maintain speed longer before slowing to touchdown speed',
+    'C. Ground effect increases pitch stability, preventing the nose from dropping onto the runway',
+    'D. The pilot has applied too much power during the flare'
+    ],
+    correct: 1,
+    explanation: 'In ground effect, drag is reduced — the aircraft does not decelerate as quickly. The aircraft maintains flight speed longer than expected, causing it to float along the runway without settling. If the flare is initiated too high, floating can result in a long landing and possible runway overrun.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: '"Energy height" (specific energy) is a concept that:',
+    options: [
+      'A. Combines altitude and airspeed into a single value representing the total energy state of the aircraft',
+    'B. Replaces altitude as the primary reference for ATC separation',
+    'C. Is only relevant to high-performance military aircraft',
+    'D. Describes the height equivalent of the engine\'s remaining fuel energy'
+    ],
+    correct: 0,
+    explanation: 'Specific energy (energy height) = h + V²/2g. It expresses the aircraft\'s combined altitude and kinetic energy in metres (or feet) of equivalent altitude. This concept helps understand how changes in speed and altitude affect the total energy budget — useful for planning climbs, descents, and energy management.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "power required" curve for an aircraft has its minimum at a speed:',
+    options: [
+      'A. Equal to the best rate of climb speed (Vy)',
+    'B. Lower than the minimum drag speed — minimum power occurs at a lower speed than minimum drag',
+    'C. Equal to the minimum drag speed',
+    'D. Higher than the minimum drag speed'
+    ],
+    correct: 1,
+    explanation: 'Power required = Drag × TAS. The minimum of this product occurs at a speed lower than minimum drag speed. At minimum drag speed, increasing drag × decreasing speed product curve has not yet reached its minimum. Minimum power required is at approximately 76% of minimum drag speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.6'
+  },
+  {
+    question: 'The "load factor" of an aircraft in straight and level unaccelerated flight is:',
+    options: [
+      'A. 2g',
+    'B. Zero',
+    'C. 0.5g',
+    'D. 1g'
+    ],
+    correct: 3,
+    explanation: 'In straight and level unaccelerated flight, Lift = Weight. Load factor n = L/W = 1. The aircraft and its occupants experience 1g — normal weight. Load factor only changes during manoeuvres or gusts.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'Rate of turn for a given bank angle:',
+    options: [
+      'A. Decreases as airspeed increases',
+    'B. Is independent of airspeed — only bank angle matters',
+    'C. Is the same for all aircraft at the same bank angle and altitude',
+    'D. Increases as airspeed increases'
+    ],
+    correct: 0,
+    explanation: 'Rate of turn = g × tan θ / V. For fixed bank angle, rate of turn decreases as airspeed increases. A slow aircraft turns faster (greater degrees/second) than a fast aircraft at the same bank angle.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "international standard atmosphere" (ISA) assumes at sea level:',
+    options: [
+      'A. Temperature 15°C, pressure 1013.25 hPa, density 1.225 kg/m³',
+    'B. Temperature 20°C, pressure 1013.25 hPa, density 1.225 kg/m³',
+    'C. Temperature 15°C, pressure 1000 hPa, density 1.2 kg/m³',
+    'D. Temperature 20°C, pressure 1000 hPa, density 1.2 kg/m³'
+    ],
+    correct: 0,
+    explanation: 'ISA sea level conditions: temperature 15°C (288.15 K), pressure 1013.25 hPa (29.92 in Hg), density 1.225 kg/m³. Temperature decreases at 1.98°C/1,000 ft (6.5°C/1,000 m) in the troposphere up to the tropopause at ~36,000 ft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'When flying at an indicated airspeed above Vno in turbulence, the structural risk is:',
+    options: [
+      'A. The risk of compressibility is the primary concern above Vno',
+    'B. Turbulent gusts can add to the load factor and potentially exceed the structural limit — the aircraft is in the caution range',
+    'C. There is no structural risk above Vno — the aircraft is within limits',
+    'D. Engine failure risk increases above Vno due to vibration'
+    ],
+    correct: 1,
+    explanation: 'Above Vno (in the yellow arc), turbulent gusts can impose additional load factor — potentially exceeding the structural design limit. At Vno, a discrete gust of the certification standard can just be sustained. Above Vno, the same gust exceeds the limit. This is why the yellow arc is restricted to smooth air only.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "critical Mach number" is the free-stream Mach number at which:',
+    options: [
+      'A. The entire wing is operating at Mach 1',
+    'B. The maximum operating Mach number (Mmo) is reached',
+    'C. Local airflow somewhere on the wing first reaches Mach 1 (sonic speed)',
+    'D. The aircraft begins to experience severe buffeting from shock waves'
+    ],
+    correct: 2,
+    explanation: 'Critical Mach number (Mcrit): the aircraft free-stream Mach at which the local flow over the wing (faster due to acceleration over the curved surface) first reaches Mach 1. Above Mcrit, supersonic patches form and shock waves appear — the onset of compressibility effects.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'At 60° bank in a level turn, the load factor is:',
+    options: [
+      'A. 2g',
+    'B. 2.5g',
+    'C. 3g',
+    'D. 1.5g'
+    ],
+    correct: 0,
+    explanation: 'Load factor n = 1 / cos(bank angle) = 1 / cos(60°) = 1 / 0.5 = 2g. The aircraft structure (and occupants) experience twice their normal weight. The wing must generate twice the lift of straight and level flight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'Wing washout (geometric twist) means the:',
+    options: [
+      'A. Wing has a higher angle of incidence at the tip than at the root',
+    'B. Wing has a lower angle of incidence at the tip than at the root, making the root stall before the tip',
+    'C. Wing is designed to flex upward at the tips under load',
+    'D. Trailing edge of the wing is raised to reduce drag'
+    ],
+    correct: 1,
+    explanation: 'Wing washout: the tip section has a lower angle of incidence (is more negative) than the root. At high AoA the root reaches the critical angle first and stalls — the tips with their lower incidence angle remain unstalled. Roll control is maintained through the stall.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'When the engine of a single-engine aircraft fails in cruise, the aircraft\'s immediate response (before pilot action) is:',
+    options: [
+      'A. The aircraft maintains level flight for approximately 30 seconds before descending',
+    'B. The nose pitches down (loss of propeller slipstream reduces tail effectiveness and thrust line effect), yaw toward the engine (loss of slipstream-induced forces), and the aircraft begins to descend',
+    'C. The aircraft rolls opposite to propeller rotation due to loss of torque effect',
+    'D. The aircraft pitches nose-up and climbs briefly before descending'
+    ],
+    correct: 1,
+    explanation: 'Engine failure in cruise: (1) Thrust → 0, drag > thrust → deceleration; (2) Slipstream over tail disappears → pitch moment changes (usually nose down); (3) Loss of propeller thrust asymmetry causes a yaw; (4) Propeller may windmill — creating drag. Net effect: nose drops, slight yaw, aircraft descends.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The aerodynamic explanation for why a rectangular wing has a less desirable lift distribution than an elliptical wing is:',
+    options: [
+      'A. A rectangular wing has higher local lift coefficients near the tip, causing it to stall tip-first — reducing aileron effectiveness at the stall',
+    'B. Rectangular wings produce too much induced drag at the root, reducing overall efficiency',
+    'C. The rectangular wing stalls at the root only — giving no stall warning buffet',
+    'D. Rectangular wings produce less total lift than elliptical wings of the same span and area'
+    ],
+    correct: 0,
+    explanation: 'Rectangular wings have more lift (and therefore higher local CL) near the tip than an elliptical distribution. The tips approach the critical AoA before the root. This tip-first stall tendency reduces aileron effectiveness at the stall onset. Washout (geometric twist) is used to correct this in rectangular-wing designs.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The drag polar of a wing with flaps extended shows:',
+    options: [
+      'A. The same L/D ratio as the clean configuration but at lower speed',
+    'B. Reduced induced drag only — parasite drag is unchanged by flap extension',
+    'C. Lower CD at all CL values compared to the clean wing',
+    'D. Higher CL available at any given CD compared to the clean wing — the polar is shifted upward'
+    ],
+    correct: 3,
+    explanation: 'Flap extension shifts the drag polar upward — higher CL is available for the same CD (or more CD for the same CL). The maximum L/D ratio decreases with flap (the tangent from origin to the polar is less steep), but CLmax is higher. Flap improves slow-speed lift at the cost of aerodynamic efficiency.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The CL (lift coefficient) of a wing can be increased at a given AoA by:',
+    options: [
+      'A. Reducing wing area only',
+    'B. Increasing airspeed — higher speed always increases CL',
+    'C. Increasing wing camber, adding leading edge devices, or extending flaps',
+    'D. Reducing aspect ratio to increase tip vortex energy'
+    ],
+    correct: 2,
+    explanation: 'CL at a given AoA is increased by: increasing camber (flaps), adding leading-edge slats (which increase the effective leading edge radius and delay separation), or using variable-camber devices. These modify the pressure distribution to generate more lift at the same geometric AoA.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "tailplane incidence" is set so that in normal cruise:',
+    options: [
+      'A. The tailplane generates maximum positive lift to supplement the wing',
+    'B. The tailplane generates a small download to balance the nose-down pitching moment from the CG being forward of the wing\'s aerodynamic centre',
+    'C. The tailplane generates zero aerodynamic force — it is set to neutral in cruise',
+    'D. The tailplane incidence is irrelevant — the elevator provides all pitch control'
+    ],
+    correct: 1,
+    explanation: 'Most aircraft are designed with the CG forward of the wing\'s aerodynamic centre — creating a nose-down pitching moment. The horizontal tailplane is set at a small negative incidence (generating a download) to balance this moment. The download effectively increases the weight the wing must support but provides positive longitudinal stability.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Deployment of "spoilers" on a wing will:',
+    options: [
+      'A. Spoilers are only used in jet aircraft — light aircraft do not use spoilers',
+    'B. Increase lift by modifying the pressure distribution',
+    'C. Disrupt the upper wing surface airflow, reducing lift and increasing drag — used to steepen descent or assist roll control on large aircraft',
+    'D. Increase drag without reducing lift — useful for glide path control'
+    ],
+    correct: 2,
+    explanation: 'Spoilers rise from the upper wing surface, disrupting the upper surface boundary layer. Lift is reduced (spoiled) and drag is increased. Used for: descent rate control (speed brakes), roll control (roll spoilers supplement ailerons on large aircraft), and ground spoilers on landing (maximise braking by dumping lift).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "accelerate-go distance" considers the distance to:',
+    options: [
+      'A. Accelerate to V1 then stop on the remaining runway',
+    'B. Accelerate to Vr with all engines then climb to 500 ft AGL',
+    'C. Reach take-off speed and clear a 50 ft obstacle with all engines operating',
+    'D. Accelerate through V1, lose an engine, and continue the take-off to a screen height of 50 ft'
+    ],
+    correct: 3,
+    explanation: 'Accelerate-go distance: distance to accelerate to V1, experience engine failure, continue accelerating on remaining engine(s), lift off at Vlof, and climb to clear a 50 ft screen height. Balanced field length is when accelerate-stop = accelerate-go — V1 optimises between these.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "effective pitch" of a propeller is always less than its "geometric pitch" because:',
+    options: [
+      'A. Blade flex at high power reduces the effective pitch of the outer sections',
+    'B. The propeller rotates slower than the engine due to gear reduction',
+    'C. The propeller does not advance as far as its geometric pitch due to the elasticity of air — the difference is the slip',
+    'D. Mechanical losses in the engine reduce the thrust available'
+    ],
+    correct: 2,
+    explanation: 'Geometric pitch is the theoretical advance per revolution if the propeller were advancing through a solid medium. Effective pitch is the actual advance through air — always less than geometric pitch because air is elastic and "gives way" (slip). Propeller efficiency improves as the slip reduces at the design advance ratio.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "forces on a propeller blade" are analogous to those on:',
+    options: [
+      'A. A wing in level flight — each blade section is an aerofoil generating lift and drag',
+    'B. A fuselage — the blade primarily generates form drag',
+    'C. A control surface — the blade generates a moment about its pitch axis',
+    'D. A spoiler — the blade reduces lift from the main wing'
+    ],
+    correct: 0,
+    explanation: 'A propeller blade is an aerofoil. Each blade section generates aerodynamic lift (perpendicular to relative airflow) and drag (parallel to relative airflow). The "lift" of each section has a component in the thrust direction — producing net thrust. The "drag" of each section requires engine torque to overcome.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "best endurance" speed for a piston aircraft is:',
+    options: [
+      'A. The speed at which fuel flow (hence power required) is minimised — the minimum power required speed',
+    'B. The speed for best glide ratio',
+    'C. The same as the best range speed',
+    'D. The fastest speed that allows full throttle operation'
+    ],
+    correct: 0,
+    explanation: 'Best endurance for a piston aircraft: maximum time in the air on available fuel. This occurs at the minimum power required speed — where the engine uses least fuel per hour. This speed is slower than the best range speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The height lost in a 180° gliding turn to return to the field after engine failure is much more than people expect because:',
+    options: [
+      'A. In the turn, the load factor is zero, and the aircraft descends at the free-fall rate',
+    'B. The engine failure causes the aircraft to pitch nose-down violently, losing 200–300 ft immediately',
+    'C. The turn requires more altitude than most pilots estimate — at best glide speed with steepened glide path in the turn, the total height loss is typically 500–1,000 ft or more',
+    'D. The turn back is always completed at full speed to maintain control'
+    ],
+    correct: 2,
+    explanation: 'The 180° turn-back after EFATO: in the turn, glide angle steepens (induced drag increases), altitude is lost throughout the turn, and the final height at the end of the 180° turn (now facing the runway) may be insufficient. Studies show most aircraft lose 300–700 ft in a 180° gliding turn — often not leaving enough height to complete the landing.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "maximum range" of an aircraft at a given weight is the same regardless of altitude because:',
+    options: [
+      'A. For an ideal piston aircraft, range depends only on fuel weight fraction and L/D — both approximately constant with altitude if IAS is maintained',
+    'B. Altitude has no effect on the minimum drag speed or L/D ratio',
+    'C. This statement is false — range changes significantly with altitude',
+    'D. The engine burns the same amount of fuel per hour regardless of altitude'
+    ],
+    correct: 0,
+    explanation: 'Breguet range equation for piston aircraft: R = (η/SFC) × (L/D) × ln(W1/W2). This shows range depends on propulsive efficiency, specific fuel consumption, and L/D ratio. If these are approximately constant with altitude (and IAS is maintained), range is approximately altitude-independent. In practice, altitude usually improves range slightly.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The wing tip vortices create "wake turbulence" that is most dangerous to a following aircraft when:',
+    options: [
+      'A. The following aircraft is directly behind and at or slightly below the flight path of the preceding aircraft',
+    'B. The following aircraft is at the same altitude and offset to the side',
+    'C. The wake has dissipated, which takes approximately 30 seconds in calm conditions',
+    'D. The following aircraft is faster than the preceding aircraft'
+    ],
+    correct: 0,
+    explanation: 'Wake turbulence is most dangerous when the following aircraft is behind and at or below the preceding aircraft\'s flight path — directly in the descending, trailing vortex pattern. The vortices sink at 300–500 ft/min and drift downwind. They can impose roll rates exceeding the following aircraft\'s aileron authority.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "load factor" (n) experienced in a coordinated turn at 45° bank is approximately:',
+    options: [
+      'A. 2.0g',
+    'B. 1.73g',
+    'C. 1.2g',
+    'D. 1.41g'
+    ],
+    correct: 3,
+    explanation: 'n = 1/cos(45°) = 1/0.707 = 1.41g. At 45° bank, the aircraft structure and occupants experience 1.41 times normal weight. The wing must generate 1.41 times the lift required in level flight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The best technique for maintaining altitude in a steep level turn is to:',
+    options: [
+      'A. Apply back pressure to increase AoA and add power to overcome increased induced drag',
+    'B. Increase bank and reduce power',
+    'C. Extend flaps to generate more lift for the increased load factor',
+    'D. Reduce speed to reduce the centripetal force required'
+    ],
+    correct: 0,
+    explanation: 'Steep level turn: load factor increases, requiring more lift. Back pressure increases AoA and CL. Power must be added to overcome the greatly increased induced drag and maintain airspeed. Without additional power, airspeed decreases and altitude cannot be maintained.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'An aircraft trimmed for straight and level flight is then put into a glide by reducing power. To maintain the same airspeed as before, the pilot must:',
+    options: [
+      'A. Increase the pitch attitude — the glide requires a higher AoA',
+    'B. Apply full back pressure — the power reduction always causes the nose to rise',
+    'C. Lower the nose — the aircraft must descend at a pitch attitude that gives the required airspeed with zero thrust',
+    'D. Maintain the same pitch attitude — trim already provides the correct speed'
+    ],
+    correct: 2,
+    explanation: 'In a glide at the same airspeed as level cruise, the same dynamic pressure and AoA is needed. Without thrust, the flight path must tilt downward — the aircraft flies nose-low to allow the weight component to balance drag. The pilot lowers the nose to establish the required glide attitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "red line" on the ASI marks:',
+    options: [
+      'A. The never-exceed speed (Vne) — the maximum permitted airspeed',
+    'B. The stall speed in the landing configuration',
+    'C. The minimum control speed',
+    'D. The maximum undercarriage operating speed'
+    ],
+    correct: 0,
+    explanation: 'The red line on the ASI marks Vne — never exceed speed. This is the maximum safe airspeed for the aircraft under any circumstances. Exceeding Vne risks flutter, structural failure, or loss of control.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: '"Taper ratio" of a wing is the ratio of:',
+    options: [
+      'A. Wing area to wingspan',
+    'B. Thickness at the root to thickness at the tip',
+    'C. Sweep angle to aspect ratio',
+    'D. Tip chord to root chord — a taper ratio of 1 is a rectangular wing'
+    ],
+    correct: 3,
+    explanation: 'Taper ratio = tip chord / root chord. A rectangular wing (no taper) has a ratio of 1.0. An elliptical wing theoretically has a taper ratio that varies continuously. Taper improves the lift distribution and reduces induced drag compared to a rectangular wing while being easier to manufacture than an elliptical wing.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "pitch break" at the stall is aerodynamically caused by:',
+    options: [
+      'A. The pilot pushing forward on the controls to initiate recovery',
+    'B. The centre of pressure moving forward of the CG at the stall',
+    'C. A sudden reduction in downwash at the horizontal tail as the wing stalls — reducing tail download and allowing the inherent nose-down moment to pitch the nose forward',
+    'D. Elevator buffeting from the turbulent wing wake disrupting the tail surfaces'
+    ],
+    correct: 2,
+    explanation: 'Natural pitch break at the stall: the wing stalls → lift drops → downwash decreases. The horizontal tail (in reduced downwash) experiences a change in effective AoA → tail download changes → the nose-down moment from the CG-to-wing-AC offset is no longer fully balanced → nose drops. This is the natural stall recovery tendency of a stable aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The relationship between rate of climb and excess power is:',
+    options: [
+      'A. ROC = Thrust × Velocity / Drag',
+    'B. ROC = Excess power / Weight (Feet per minute = (PA − PR) / W)',
+    'C. ROC = Excess thrust / Weight',
+    'D. ROC = Weight / Excess power'
+    ],
+    correct: 1,
+    explanation: 'ROC (ft/min) = (PA − PR) / Weight × 33,000 (if using horsepower and pounds). Or simply: ROC = Excess power / Weight × conversion factor. Excess power = power available minus power required to maintain level flight at that speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'At the stall, the "washout" in a wing design means:',
+    options: [
+      'A. The root stalls before the tip — ensuring ailerons remain effective during the stall and providing buffet warning before the full stall',
+    'B. Washout causes the tip to stall before the root for maximum CL at the stall',
+    'C. The wing is washed clean of contamination during the stall buffet',
+    'D. Both root and tip stall simultaneously, providing a clear and definite stall break'
+    ],
+    correct: 0,
+    explanation: 'Wing washout (tip angle of incidence less than root): at the stall, the root reaches the critical AoA first (higher incidence = higher local AoA). Turbulent wake from the stalled root causes buffet on the tail — giving warning. The tips remain unstalled — ailerons remain effective. This is the designed stall progression.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'A laminar boundary layer differs from a turbulent boundary layer in that it:',
+    options: [
+      'A. Produces less skin friction drag but is more susceptible to separation',
+    'B. Produces more skin friction drag than a turbulent layer',
+    'C. Produces the same drag but separates at a lower angle of attack',
+    'D. Only exists at supersonic speeds above Mach 1.0'
+    ],
+    correct: 0,
+    explanation: 'Laminar flow has less skin friction drag than turbulent flow — the streamlines are smooth and parallel. However, laminar flow is less energetic and separates more easily from the surface under adverse pressure gradients. Turbulent flow has higher drag but better adhesion to the surface.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'What is the correct first action when recognising the onset of a spin?',
+    options: [
+      'A. Apply full opposite rudder to stop the rotation, then push forward on the elevator',
+    'B. Centralise the ailerons and apply back pressure to pull out',
+    'C. Apply full power to regain energy quickly',
+    'D. Apply rudder in the direction of rotation to assist entry into a controlled spin'
+    ],
+    correct: 0,
+    explanation: 'PARE spin recovery first step: reduce power (to idle), then neutralise ailerons. The primary recovery action is full opposite rudder to stop rotation, followed by forward elevator to reduce AoA below the critical angle. Once rotation stops, recover from the resultant dive.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "V1 speed" on a multi-engine aircraft represents:',
+    options: [
+      'A. The rotation speed — when the pilot applies back pressure',
+    'B. The decision speed — the maximum speed at which a rejected take-off can be completed within the available runway',
+    'C. The minimum control speed in the air with one engine failed',
+    'D. The speed at which the second engine failure is noticed and corrected'
+    ],
+    correct: 1,
+    explanation: 'V1 (take-off decision speed): the maximum speed at which a pilot can reject the take-off and stop within the available runway (ASDA). Above V1, the aircraft must continue the take-off even with engine failure — there is insufficient runway to stop. V1 is the "go/no-go" speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "angle of attack" of the aircraft depends on:',
+    options: [
+      'A. The elevator position in the cockpit',
+    'B. The angle between the longitudinal axis and the horizon',
+    'C. The pitch attitude of the aircraft relative to the flight path — the difference between nose attitude and climb/descent angle',
+    'D. Only the pitch attitude of the aircraft'
+    ],
+    correct: 2,
+    explanation: 'AoA is not just pitch attitude. AoA = pitch attitude − flight path angle. An aircraft climbing steeply in a nose-high attitude but climbing at a lower angle has a higher AoA than the nose attitude alone suggests. An aircraft descending steeply with a moderate nose-low attitude may also have a significant positive AoA.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "most rearward allowable CG position" is limited by:',
+    options: [
+      'A. The available elevator travel to maintain level flight',
+    'B. The structural strength of the rear fuselage',
+    'C. Longitudinal stability — too far aft and the aircraft approaches neutral or unstable stability, making it uncontrollable in pitch',
+    'D. Engine cooling requirements in the forward fuselage'
+    ],
+    correct: 2,
+    explanation: 'The aft CG limit is set to maintain adequate longitudinal stability. As the CG approaches the neutral point, the static margin decreases — stability reduces. At the aft limit, the aircraft still has acceptable (but minimum) stability and controllable pitch forces. Beyond the aft limit, the aircraft may become uncontrollable.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The speed for minimum power required (best endurance speed for a piston aircraft) is:',
+    options: [
+      'A. The same as the minimum drag speed',
+    'B. The same as the stall speed',
+    'C. Lower than the minimum drag speed',
+    'D. Higher than the minimum drag speed'
+    ],
+    correct: 2,
+    explanation: 'Minimum power required occurs at a lower airspeed than minimum drag speed. Power = drag × speed. The minimum of this product occurs at a speed lower than minimum drag. For piston aircraft, this is the speed for maximum endurance (minimum fuel flow).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.6'
+  },
+  {
+    question: 'The "service ceiling" of an aircraft is defined as the altitude at which:',
+    options: [
+      'A. The maximum rate of climb is 100 ft/min',
+    'B. Engine power is reduced to 65% for fuel efficiency',
+    'C. The aircraft reaches its maximum endurance',
+    'D. The aircraft can no longer maintain any positive rate of climb'
+    ],
+    correct: 0,
+    explanation: 'Service ceiling is the altitude at which the maximum rate of climb falls to 100 ft/min (for piston aircraft). The absolute ceiling is where ROC = 0. The service ceiling is operationally more useful as it is achievable in practice.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "coffin corner" refers to:',
+    options: [
+      'A. The area of a spin from which recovery is impossible',
+    'B. The dangerous zone directly behind a large aircraft\'s engines',
+    'C. The confined area behind the cockpit in small aircraft',
+    'D. A high-altitude condition where the low-speed stall and high-speed buffet speeds converge, leaving a very narrow safe operating speed range'
+    ],
+    correct: 3,
+    explanation: 'At very high altitudes, the stall speed (in TAS) increases due to lower density while the critical Mach number (in TAS) decreases. These two speeds converge — the "coffin corner" — leaving no safe margin. This is an ATPL-level concern but pilots should know the concept.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'An "angle of attack indicator" is more useful than airspeed for stall awareness because:',
+    options: [
+      'A. The stall always occurs at the same critical AoA regardless of weight, bank angle, or G-loading — the AoA indicator directly shows proximity to stall',
+    'B. AoA indicators work at high altitude where ASIs are inaccurate',
+    'C. AoA indicators are more accurate than ASIs at all altitudes',
+    'D. AoA indicators replace the need for a stall warning horn'
+    ],
+    correct: 0,
+    explanation: 'The stall occurs at a fixed critical AoA regardless of airspeed, altitude, weight, or load factor. An AoA indicator shows directly how close the wing is to the critical angle — unlike the ASI, which varies with weight, bank, and density. AoA provides a universal stall warning.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The propeller gyroscopic effect is most noticeable when:',
+    options: [
+      'A. Cruising at altitude in smooth air',
+    'B. At low RPM settings when the gyroscopic mass is small',
+    'C. The propeller is feathered in a multi-engine aircraft',
+    'D. During rapid attitude changes such as a sharp pitch-up during aerobatics or a rapid yaw on take-off'
+    ],
+    correct: 3,
+    explanation: 'Gyroscopic precession is proportional to the rate of change of the spin axis direction and to the angular momentum (RPM × mass). It is most noticeable during rapid attitude changes — sharp pitch manoeuvres produce yaw, and rapid yaw produces pitch. On take-off roll in a tail-dragger as the tail rises, gyroscopic effect produces a yawing tendency.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'After recovering from a spin into a dive, the pilot must:',
+    options: [
+      'A. Apply full power immediately to regain lost altitude',
+    'B. Lower the flaps to increase drag and slow the aircraft before pulling out',
+    'C. Apply full back pressure immediately — the faster the pull-out the less altitude is lost',
+    'D. Ease out of the dive gradually — the aircraft has high speed and load factor in the pull-out may approach the structural limit'
+    ],
+    correct: 3,
+    explanation: 'After spin recovery, the aircraft is in a steep dive. Apply smooth, progressive back pressure to pull out. At the speed reached in the dive, the load factor generated by a sharp pull-out can exceed the structural limit. A smooth pull-out minimises peak load factor while recovering altitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The effect of increased weight on glide range (glide angle) is:',
+    options: [
+      'A. Glide range decreases with weight unless power is added',
+    'B. Glide range increases with weight',
+    'C. Glide range decreases with weight',
+    'D. Glide range is unaffected by weight if the same airspeed is maintained'
+    ],
+    correct: 3,
+    explanation: 'A heavier aircraft has the same L/D ratio at the same angle of attack — therefore the same glide angle. However, the heavier aircraft flies faster at the best L/D angle, so glide range (horizontal distance/altitude) is the same. The heavier aircraft descends faster (higher sink rate) but covers the same distance.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "Vmcg" is always lower than "Vmca" because:',
+    options: [
+      'A. Vmcg and Vmca are the same speed — they are defined identically',
+    'B. Vmcg uses flaps extended which improves rudder effectiveness at lower speed',
+    'C. On the ground, main gear side forces provide additional directional control — less rudder authority is needed than in the air where only aerodynamic forces are available',
+    'D. Less directional control is needed on the ground than in the air'
+    ],
+    correct: 2,
+    explanation: 'Vmcg < Vmca: on the ground, the runway surface provides lateral reaction forces through the undercarriage (side force on the main gear) that supplement the rudder in maintaining directional control. In the air, only aerodynamic forces are available — more rudder authority is needed, requiring higher speed. Hence Vmcg < Vmca.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'During take-off roll, as aircraft speed increases, the lift force:',
+    options: [
+      'A. Remains constant until rotation',
+    'B. Remains zero until the pilot rotates the aircraft',
+    'C. Increases linearly with speed',
+    'D. Increases proportionally to V² — progressively reducing the effective weight on the main wheels'
+    ],
+    correct: 3,
+    explanation: 'L = CL × ½ρV² × S. At a fixed take-off AoA (the ground attitude), CL is approximately constant. As V increases during the take-off roll, dynamic pressure (½ρV²) increases with V². Lift grows with V² — progressively unloading the main wheels until lift equals weight at lift-off speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'A spin entry requires:',
+    options: [
+      'A. A stall combined with yaw — one wing stalls more deeply than the other',
+    'B. A stall in coordinated flight with no yaw present',
+    'C. A high airspeed combined with full aileron deflection',
+    'D. Rudder input only — aileron deflection is not required'
+    ],
+    correct: 0,
+    explanation: 'A spin requires a stall plus yaw (asymmetric lift). One wing stalls more deeply than the other due to the yaw — the more-stalled wing drops, producing more yaw, deepening the stall on that wing. The aircraft enters an autorotation.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The primary effect of "leading edge contamination" (frost, thin ice) is to:',
+    options: [
+      'A. Disrupt the smooth leading-edge flow — causing early separation, reduced CLmax, and unpredictable stall characteristics',
+    'B. Only affect aircraft with laminar flow aerofoils',
+    'C. Reduce airspeed by increasing skin friction drag at the leading edge only',
+    'D. Add weight that makes the aircraft nose-heavy'
+    ],
+    correct: 0,
+    explanation: 'Even a thin layer of frost on the leading edge significantly disrupts the boundary layer — causing early flow separation. CLmax can decrease by 20–30% and stall speed increases by 10–15%. The stall may be sharp and abrupt with little warning. CASA regulations prohibit take-off with any ice or frost on wings.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The standard spin recovery mnemonic "PARE" stands for:',
+    options: [
+      'A. Push Aileron Rudder Enter',
+    'B. Power off, Ailerons neutral, Rudder opposite to spin, Elevator forward to break stall',
+    'C. Pitch Attitude Reduce Engine',
+    'D. Power Ailerons Rudder Elevator'
+    ],
+    correct: 1,
+    explanation: 'PARE spin recovery: Power off (prevents asymmetric thrust deepening the spin), Ailerons neutral (aileron input can worsen spin), Rudder opposite to rotation direction (stops the yaw), Elevator forward to break the stall. Once rotation stops, recover from the dive.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'Power required for level flight is related to drag by:',
+    options: [
+      'A. Power required = Drag / Velocity',
+    'B. Power required = Drag only',
+    'C. Power required = Drag × Weight',
+    'D. Power required = Drag × Velocity'
+    ],
+    correct: 3,
+    explanation: 'Power = Force × Velocity. Therefore power required = Drag × True Airspeed (TAS). At minimum drag speed, thrust required is lowest — but power required is not minimum at this speed because power = drag × speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.6'
+  },
+  {
+    question: 'A heavy aircraft attempting to take off in ground effect, then climbing out of ground effect, may:',
+    options: [
+      'A. Accelerate rapidly as it leaves ground effect due to reduced lift coefficient required',
+    'B. Ground effect exit has no practical significance for take-off performance',
+    'C. Experience a sudden increase in drag and decrease in effective lift as it leaves ground effect, potentially settling back toward the ground',
+    'D. Climb at a steeper angle once clear of ground effect'
+    ],
+    correct: 2,
+    explanation: 'Leaving ground effect during take-off: induced drag increases, effective lift decreases (downwash returns). If the aircraft is at or near its maximum take-off weight and has climbed at too low a speed, it may be unable to maintain climb once clear of ground effect — it may settle back or fail to climb away.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "hydroplaning" speed at which a tyre lifts off a wet runway is approximately:',
+    options: [
+      'A. Hydroplaning only occurs in standing water — not on a merely wet runway',
+    'B. Hydroplaning speed is a fixed 50 kt for all aircraft',
+    'C. 9 × √tyre pressure (psi) in knots',
+    'D. 7.7 × √tyre pressure (psi) in knots'
+    ],
+    correct: 3,
+    explanation: 'Dynamic hydroplaning occurs when the tyre rides on a wedge of water — the water pressure supports the tyre rather than the runway. Hydroplaning speed ≈ 7.7 × √P (psi) knots, where P is tyre inflation pressure. At this speed, braking and steering are essentially lost.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'During take-off with high power and low airspeed, the dominant yawing tendency is caused by:',
+    options: [
+      'A. Gyroscopic effect only — other effects are negligible at low speed',
+    'B. A combination of torque reaction, slipstream effect, asymmetric blade effect, and gyroscopic precession',
+    'C. Crosswind effects that cannot be controlled with rudder',
+    'D. The asymmetric blade effect only'
+    ],
+    correct: 1,
+    explanation: 'At high power and low speed on take-off, multiple propeller effects combine: torque reaction (rolling tendency), slipstream (yaw), asymmetric blade effect (P-factor at high AoA), and gyroscopic precession (pitch-to-yaw coupling). The net result is a strong directional tendency requiring rudder correction.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "propeller efficiency" at zero airspeed (static thrust) compared to cruise is:',
+    options: [
+      'A. Maximum — propellers are most efficient when the aircraft is stationary',
+    'B. Zero — propellers cannot produce thrust at zero airspeed',
+    'C. The same — propeller efficiency is constant regardless of airspeed',
+    'D. Lower than cruise efficiency — the air is accelerated through a large velocity change at zero advance ratio, which is less efficient'
+    ],
+    correct: 3,
+    explanation: 'Propeller efficiency = useful power output / shaft power input = TV / P. At zero airspeed, V = 0, so efficiency = 0 even though maximum thrust is produced. Efficiency peaks at the design cruise advance ratio and falls at both low and high speed extremes.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The positive limit load factor for a normal category aircraft is typically:',
+    options: [
+      'A. 9g',
+    'B. 6g',
+    'C. 2.5g',
+    'D. 3.8g'
+    ],
+    correct: 3,
+    explanation: 'Normal category aircraft: positive limit load factor 3.8g. Utility category: 4.4g. Aerobatic category: 6g. These are the structural design limits — the aircraft is designed to sustain these loads with appropriate safety factors.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'In a steady climb at constant airspeed, the forces acting are:',
+    options: [
+      'A. Lift is less than weight because thrust provides an upward component',
+    'B. Thrust exceeds drag by the amount needed to overcome the weight component along the flight path',
+    'C. Lift equals weight and thrust equals drag',
+    'D. Lift exceeds weight to pull the aircraft upward along the climb path'
+    ],
+    correct: 1,
+    explanation: 'In a steady climb: Lift ≈ Weight × cos(climb angle) — slightly less than weight. The excess thrust (Thrust − Drag) overcomes the component of weight along the climb path. Rate of climb = (Thrust − Drag) × TAS / Weight = excess power / weight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The statement "IAS stall speed increases with altitude" is:',
+    options: [
+      'A. True for jet aircraft but false for piston aircraft',
+    'B. True only for aircraft above 10,000 ft MSL',
+    'C. False — IAS stall speed is approximately constant with altitude',
+    'D. True — lower density at altitude requires higher speed to generate the same lift'
+    ],
+    correct: 2,
+    explanation: 'IAS stall speed is approximately constant with altitude. IAS measures dynamic pressure (½ρV²) calibrated to sea-level density. The stall occurs at a fixed CL (fixed AoA) regardless of altitude. Same dynamic pressure (same IAS) produces the same lift at any altitude. TAS at the stall increases with altitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'Newton\'s Third Law is most relevant to aircraft propulsion because:',
+    options: [
+      'A. Thrust equals drag in level flight',
+    'B. Every action has an equal and opposite reaction — the propeller pushes air backward and the reaction pushes the aircraft forward',
+    'C. The propeller accelerates forward as air moves backward',
+    'D. A heavier aircraft requires more thrust to maintain speed'
+    ],
+    correct: 1,
+    explanation: 'Newton\'s Third Law: for every action there is an equal and opposite reaction. The propeller accelerates air rearward (action); the equal and opposite reaction is a forward force on the aircraft (thrust).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.1'
+  },
+  {
+    question: 'The "EFATO" (engine failure after take-off) procedure for a single-engine aircraft requires:',
+    options: [
+      'A. Immediately banking steeply to return to the runway',
+    'B. Full power restart attempt before committing to a landing',
+    'C. Climbing to gain altitude to enable a return-to-runway glide',
+    'D. Landing ahead or within 30° each side — maintaining best glide speed and accepting that a return to the runway is usually impossible'
+    ],
+    correct: 3,
+    explanation: 'Single-engine EFATO: at low altitude there is insufficient height to turn back. Attempting a tight turn to return risks the base-to-final stall/spin scenario. The correct action: maintain best glide speed, land ahead or within approximately 30° of the extended centreline. Accept an off-runway landing if necessary.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "kinetic energy" of an aircraft at a speed of V is proportional to:',
+    options: [
+      'A. V² (proportional to speed squared)',
+    'B. V³ (proportional to the cube of speed)',
+    'C. V (directly proportional)',
+    'D. √V (proportional to the square root of speed)'
+    ],
+    correct: 0,
+    explanation: 'KE = ½mV². Kinetic energy is proportional to the square of velocity. Doubling airspeed quadruples kinetic energy — this is why landing distance increases dramatically with speed (KE must be dissipated by braking), and why the take-off distance is sensitive to wind and density altitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "skin friction drag" of an aircraft can be reduced by:',
+    options: [
+      'A. Increasing wing thickness',
+    'B. Maintaining a smooth, clean surface and maximising the extent of laminar flow',
+    'C. Flying at lower altitudes where the boundary layer is thicker',
+    'D. Increasing the wing aspect ratio'
+    ],
+    correct: 1,
+    explanation: 'Skin friction drag depends on the surface finish and the character of the boundary layer. Laminar flow has much lower skin friction than turbulent flow. Maintaining a clean, smooth surface (no bugs, scratches, or waviness) and using laminar flow profiles where possible minimises skin friction drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: '"Aileron reversal" at high speed is caused by:',
+    options: [
+      'A. Differential aileron settings that reverse at high speed',
+    'B. High aerodynamic loading twisting the wing such that aileron deflection produces roll opposite to intended',
+    'C. The ailerons overriding the autopilot at high speed',
+    'D. Aileron trim tabs that become the primary control at high speed'
+    ],
+    correct: 1,
+    explanation: 'Aileron reversal: at very high dynamic pressure, the aileron creates a load that twists the wing. The wing twist changes the angle of attack of the wing more than the aileron changes the lift — the net effect produces roll opposite to aileron input. Aircraft flutter and structural requirements set minimum torsional stiffness to prevent this.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: '"Aileron drag" (adverse yaw) is caused by:',
+    options: [
+      'A. The up-going aileron creates excessive drag and reduces roll rate',
+    'B. The increased induced drag on the down-going (lower) aileron side',
+    'C. Aileron drag only occurs at high airspeeds where the deflected surfaces are inefficient',
+    'D. The down-going aileron increases drag on one wing, yawing the nose away from the direction of bank'
+    ],
+    correct: 3,
+    explanation: 'Adverse yaw: the down-going aileron (which increases lift and drag on the rising wing) creates more induced drag than the up-going aileron on the dropping wing. This yaws the nose AWAY from the intended turn direction. Corrected by rudder in the direction of turn.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The gyroscopic effect of a spinning propeller means that when the aircraft yaws to the right, the gyroscopic reaction produces:',
+    options: [
+      'A. A pitching moment nose-down',
+    'B. A pitching moment nose-up',
+    'C. No effect — gyroscopic precession only affects rotorcraft',
+    'D. A rolling moment to the right'
+    ],
+    correct: 1,
+    explanation: 'Gyroscopic precession: when a force is applied to a spinning disc, the reaction occurs 90° ahead in the direction of rotation. A clockwise-spinning propeller (viewed from front): if the aircraft yaws right, the gyroscopic precession produces a pitch-up moment. Yaw left → pitch down.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "coefficient of lift" (CL) is a dimensionless number that:',
+    options: [
+      'A. Depends only on aircraft speed and altitude',
+    'B. Only applies to wings with flaps extended',
+    'C. Represents the lifting efficiency of the wing at a given angle of attack — allowing comparison of different wings at different speeds and densities',
+    'D. Is constant for a given wing regardless of angle of attack'
+    ],
+    correct: 2,
+    explanation: 'CL is dimensionless and depends primarily on AoA (and aerofoil shape). It normalises lift by dynamic pressure and wing area: L = CL × ½ρV² × S. This allows the aerodynamic behaviour of a wing to be described independently of size, speed, and altitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The relationship between "indicated airspeed" (IAS) and "true airspeed" (TAS) is:',
+    options: [
+      'A. TAS increases above IAS as altitude increases due to lower air density',
+    'B. IAS is always greater than TAS',
+    'C. IAS and TAS are equal at sea level only in non-standard conditions',
+    'D. TAS is always less than IAS to account for instrument error'
+    ],
+    correct: 0,
+    explanation: 'TAS = IAS × (ρ₀/ρ)^0.5. At altitude, air density (ρ) is lower than sea-level (ρ₀) — TAS is greater than IAS. The ASI measures dynamic pressure (½ρV²) and is calibrated for sea-level density. At altitude, the aircraft moves faster (TAS) to create the same dynamic pressure that the ASI shows.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'Which flap type produces the most lift but also the highest drag increase?',
+    options: [
+      'A. Split flap',
+    'B. Slotted flap',
+    'C. Fowler flap',
+    'D. Plain flap'
+    ],
+    correct: 2,
+    explanation: 'The Fowler flap moves rearward (increasing wing area) and deflects downward (increasing camber). It produces the greatest CLmax increase and is most efficient, but also generates significant drag at large deflections. It is used on most transport aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "stall strip" at the wing root is most effective when:',
+    options: [
+      'A. Stall strips are only effective in icing conditions',
+    'B. The aircraft is in a steep turn at maximum bank angle',
+    'C. The aircraft approaches the stall at high angle of attack — the stall strip causes the root to stall first, generating buffet warning and maintaining aileron effectiveness',
+    'D. The aircraft is at high speed in level cruise'
+    ],
+    correct: 2,
+    explanation: 'Stall strips are passive devices — they only become effective at high AoA near the stall. At that AoA, the sharp leading-edge strip causes flow separation at the root first. This creates turbulent wake buffet on the tail (stall warning) while the tips remain unstalled (aileron effectiveness preserved).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "autorotation" in a spin is sustained because:',
+    options: [
+      'A. The inner wing is past the critical AoA (deeply stalled, high drag, low lift) while the outer wing is less stalled (generating more lift) — the differential creates a self-sustaining rolling and yawing moment',
+    'B. Engine torque keeps the aircraft rotating — switching off the engine stops the spin',
+    'C. Gravity acts on the nose, creating a continuous rolling moment around the spin axis',
+    'D. The control surfaces flutter at the spin frequency, adding energy to the rotation'
+    ],
+    correct: 0,
+    explanation: 'Autorotation mechanism: inner (lower) wing — beyond critical AoA, stalled, generating high drag and little lift. Outer (upper) wing — less stalled or unstalled, generating more lift. The lift differential creates a roll toward the inner wing; the drag differential creates yaw in the same direction. This self-reinforcing couple maintains the spin.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The safety benefit of the "30% margin" (1.3 × Vso) used for approach speed is primarily to:',
+    options: [
+      'A. Allow the pilot to extend more flap without stalling during the flare',
+    'B. Satisfy CASA regulations for airspeed accuracy requirements',
+    'C. Ensure the aircraft can climb if a go-around is needed',
+    'D. Provide a buffer against gusts, speed variations, and the speed reduction in the flare — ensuring the aircraft does not stall before touchdown'
+    ],
+    correct: 3,
+    explanation: 'The 1.3 × Vso approach speed provides margin for: (1) gusts — a sudden headwind loss reduces IAS; (2) speed bleed in the flare — aircraft decelerates to near stall speed at touchdown; (3) turns on approach — load factor slightly increases stall speed; (4) weight uncertainty. The 30% margin covers these real-world variations.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "torque effect" from a piston engine is most pronounced during:',
+    options: [
+      'A. Cruise at low power settings',
+    'B. High-altitude cruise where the engine is working hardest to maintain power',
+    'C. Descents — the reduced power creates asymmetric torque reversal',
+    'D. Full-power take-off and initial climb, where engine torque is highest and airspeed (and therefore control authority) is lowest'
+    ],
+    correct: 3,
+    explanation: 'Engine torque is maximum at full power — during take-off and initial climb. At the same time, airspeed is low, so control effectiveness is minimum. The combination of maximum torque demand and minimum control authority makes this the most critical phase for managing torque reaction effects.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "maximum endurance" in level flight for a piston aircraft is achieved at the speed of:',
+    options: [
+      'A. 1.3 × Vso in the clean configuration',
+    'B. Best rate of climb speed (Vy)',
+    'C. Maximum L/D (minimum drag speed)',
+    'D. Minimum power required — a lower speed than minimum drag'
+    ],
+    correct: 3,
+    explanation: 'Maximum endurance = minimum fuel burn per unit time = minimum power required. For a piston aircraft, fuel flow ≈ proportional to power. Minimum power occurs at a speed below minimum drag speed. Flying at this speed keeps the aircraft airborne the longest on a given fuel load.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "pitot tube" ices up when:',
+    options: [
+      'A. The aircraft flies in a thunderstorm at any temperature',
+    'B. The aircraft exceeds its maximum speed, compressing air at the tube',
+    'C. Flying in visible moisture (cloud, rain, freezing rain) at or near freezing temperatures — ice blocks the pitot tube opening',
+    'D. The outside temperature is below −15°C regardless of moisture'
+    ],
+    correct: 2,
+    explanation: 'Pitot icing occurs when flying through visible moisture (cloud, rain, freezing drizzle) near or below freezing. Ice accumulates in the pitot tube opening, blocking it. Pitot heat electrically heats the tube to prevent ice formation. If pitot heat is off and the tube ices, the ASI reading becomes unreliable.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The drag created by a "fixed tricycle undercarriage" is predominantly which type?',
+    options: [
+      'A. Wave drag — the gear creates shockwaves at normal operating speeds',
+    'B. Form drag and interference drag — from the bluff shapes of wheels, tyres, and gear legs',
+    'C. Induced drag — the gear creates downwash',
+    'D. Skin friction drag only — the gear legs have smooth surfaces'
+    ],
+    correct: 1,
+    explanation: 'Fixed undercarriage creates mainly form drag (high pressure ahead, low pressure wake behind the bluff wheel/tyre shape) and interference drag (at junctions between gear, fuselage, and wing). These are parasite drag components. The large wake behind round tyres and axles makes fixed gear a significant drag source.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The elevator is used to control:',
+    options: [
+      'A. Roll about the longitudinal axis',
+    'B. Yaw about the normal axis',
+    'C. Pitch about the lateral axis',
+    'D. Bank angle in turns'
+    ],
+    correct: 2,
+    explanation: 'The elevator (on the horizontal stabiliser) controls pitch — rotation about the lateral axis. Back pressure raises the nose; forward pressure lowers it. On a conventional aircraft, it is the primary pitch control surface.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'Lift is generated primarily by:',
+    options: [
+      'A. A combination of reduced pressure above the wing and increased pressure below',
+    'B. The weight of air above the wing pressing down less than below',
+    'C. Thrust from the propeller deflecting air downward',
+    'D. Air pressure pushing up on the flat lower surface only'
+    ],
+    correct: 0,
+    explanation: 'Lift results from a pressure differential: reduced pressure above the wing (Bernoulli — air accelerates over the curved upper surface) and increased pressure below (air is deflected downward — Newton\'s Third Law). The majority of lift comes from the low pressure above the wing.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "neutral point" of an aircraft is:',
+    options: [
+      'A. The point about which pitch changes produce no change in pitching moment — the aerodynamic centre of the whole aircraft including tail',
+    'B. The aft CG limit published in the AFM',
+    'C. The position where trim is zero at all speeds',
+    'D. The CG position for zero pitching moment coefficient'
+    ],
+    correct: 0,
+    explanation: 'The neutral point is the aerodynamic centre of the complete aircraft (wing + tail combination). If the CG is at the neutral point, pitch disturbances produce no restoring or diverging moment — neutral stability. For positive stability, CG must be forward of the neutral point.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "adverse yaw" from aileron deflection is most pronounced at:',
+    options: [
+      'A. Medium speed in the cruise range',
+    'B. High speed, where the ailerons are most powerful',
+    'C. Adverse yaw is constant regardless of airspeed',
+    'D. Low speed, where large aileron deflections are needed and induced drag differences are greatest'
+    ],
+    correct: 3,
+    explanation: 'Adverse yaw is greatest at low speed: large aileron deflections are needed for a given roll rate, and the high CL means the induced drag change from aileron deflection is large. Small rudder inputs are needed to coordinate the roll at high speed; more are needed at low speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "static pressure" acting on an aircraft in flight is:',
+    options: [
+      'A. The pressure inside the sealed cabin of a pressurised aircraft',
+    'B. The ambient atmospheric pressure at the aircraft\'s altitude — used by the altimeter and ASI static port',
+    'C. The pressure at the pitot tube opening',
+    'D. The pressure created by the aircraft\'s motion through the air'
+    ],
+    correct: 1,
+    explanation: 'Static pressure is the ambient atmospheric pressure at the aircraft\'s altitude — the pressure of still air at that level. It is sensed by the static ports and used by the altimeter, VSI, and airspeed indicator. The altimeter and VSI use static pressure only; the ASI uses the difference between pitot (dynamic) and static pressure.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The benefit of "turbulent boundary layer" flow over a laminar boundary layer in terms of stall behaviour is:',
+    options: [
+      'A. Turbulent flow produces lower drag and allows higher CLmax',
+    'B. Turbulent flow is more energetic and can remain attached to the surface at higher AoA before separating — increasing the stall AoA compared to a laminar layer',
+    'C. Turbulent flow stalls at a lower angle of attack — less risk of stall',
+    'D. There is no advantage to turbulent boundary layer flow — laminar is always preferable'
+    ],
+    correct: 1,
+    explanation: 'Turbulent boundary layers have higher momentum (more energetic) and can resist separation under adverse pressure gradients better than laminar layers. This allows turbulent flow to remain attached to the wing upper surface at higher AoA — increasing the stall AoA and CLmax. The trade-off is higher skin friction drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'A light aircraft flying very slowly just above the stall in level flight will have:',
+    options: [
+      'A. Equal induced and parasite drag — this is the minimum drag condition',
+    'B. Maximum parasite drag due to the high nose-up attitude',
+    'C. Low induced drag and high parasite drag',
+    'D. High induced drag (from high CL required) and low parasite drag'
+    ],
+    correct: 3,
+    explanation: 'Just above the stall, very low speed means: high AoA → high CL → high induced drag (CDi ∝ CL²). But low speed means low dynamic pressure → low parasite drag. The drag picture is dominated by induced drag. This is the back side of the drag curve.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The standard stall recovery procedure is:',
+    options: [
+      'A. Reduce power to idle then lower flaps to recover',
+    'B. Apply full back pressure and add full power immediately',
+    'C. Apply rudder to stop any wing drop then raise the nose',
+    'D. Reduce angle of attack (lower the nose) to reduce AoA below critical, then add power and recover altitude'
+    ],
+    correct: 3,
+    explanation: 'Stall recovery: (1) Reduce AoA — lower the nose to reduce angle of attack below critical; (2) Apply power — to minimise altitude loss; (3) Level wings with coordinated controls; (4) Recover altitude. The primary action is reducing angle of attack — not adding power.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The lift equation is L = CL × ½ρV² × S. What does "ρ" represent?',
+    options: [
+      'A. Air density',
+    'B. Wing loading',
+    'C. Pressure at altitude',
+    'D. Dynamic pressure'
+    ],
+    correct: 0,
+    explanation: 'In the lift equation, ρ (rho) is air density in kg/m³. The term ½ρV² is dynamic pressure — the kinetic energy per unit volume of the airflow. CL is lift coefficient, V is airspeed, S is wing area.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "transition point" on a wing surface is where:',
+    options: [
+      'A. The boundary layer transitions from laminar to turbulent flow',
+    'B. The airflow changes from attached to separated',
+    'C. The pressure on the upper surface transitions from above to below ambient',
+    'D. The airflow transitions from subsonic to supersonic in compressible flow'
+    ],
+    correct: 0,
+    explanation: 'The transition point is where the laminar boundary layer breaks down and becomes turbulent. On typical aerofoils, transition occurs somewhere on the upper surface — the exact location depends on the aerofoil shape, surface finish, Reynolds number, and pressure gradient.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The primary reason full aileron input is less effective at high speed than at low speed for a given roll rate is:',
+    options: [
+      'A. The increased aerodynamic moment from roll damping at high speed (the rolling wing generates opposing lift changes) resists the roll — a smaller deflection produces the same roll rate',
+    'B. At high speed, ailerons create too much adverse yaw to be effective',
+    'C. High speed reduces the propeller slipstream effect, limiting aileron authority',
+    'D. The ailerons are automatically limited in deflection at high speed by the control system'
+    ],
+    correct: 0,
+    explanation: 'Roll damping increases with speed. As the aircraft rolls, the descending wing sees increased AoA (and lift) while the rising wing sees decreased AoA (and lift) — this opposes the roll. At high speed, this damping moment is larger, so a smaller aileron deflection achieves the same roll rate as a large deflection at low speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'In straight and level unaccelerated flight, the relationship between the four forces is:',
+    options: [
+      'A. Lift equals drag and thrust equals weight',
+    'B. Lift equals thrust and weight equals drag',
+    'C. Lift equals weight and thrust equals drag',
+    'D. Lift exceeds weight and thrust exceeds drag'
+    ],
+    correct: 2,
+    explanation: 'In straight and level unaccelerated flight (equilibrium): Lift = Weight (no vertical acceleration) and Thrust = Drag (no horizontal acceleration). All four forces are in balance.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: '"Differential ailerons" reduce adverse yaw by:',
+    options: [
+      'A. Moving ailerons faster on one side to compensate for yaw',
+    'B. Adding a drag device to the down-going aileron side to balance',
+    'C. Deflecting the up-going aileron through a greater angle than the down-going aileron to equalise drag',
+    'D. Linking ailerons to rudder so they always move together'
+    ],
+    correct: 2,
+    explanation: 'Differential ailerons: the up-going aileron deflects through a larger angle than the down-going one. This increases the drag on the dropping-wing side to match the drag increase on the rising-wing side, reducing adverse yaw without eliminating roll effectiveness.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "stagnation point" on an aerofoil is where:',
+    options: [
+      'A. The boundary layer transitions from laminar to turbulent',
+    'B. The airflow velocity is zero — the streamline divides to flow over and under the wing',
+    'C. The pressure is lowest on the upper surface',
+    'D. The boundary layer first separates from the wing'
+    ],
+    correct: 1,
+    explanation: 'The stagnation point is the point on the aerofoil leading edge where the oncoming airflow splits — one stream goes over the wing, the other under. At this point velocity is zero and pressure is maximum (total pressure). As AoA increases, the stagnation point moves to the lower surface (more of the wing presents to the flow).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'What is the purpose of "rudder trim"?',
+    options: [
+      'A. To set maximum rudder deflection in gusty crosswind conditions',
+    'B. Rudder trim is only available on aircraft over 3,000 kg MTOW',
+    'C. To relieve constant rudder pedal pressure required — for example, to compensate for asymmetric thrust at cruise power',
+    'D. To provide directional control authority at low speed'
+    ],
+    correct: 2,
+    explanation: 'Rudder trim relieves steady rudder pedal forces. Common uses: compensate for propeller torque and P-factor requiring constant right rudder; compensate for asymmetric fuel loading; compensate for a slight skid tendency at cruise power. Adjusted for hands/feet-off coordinated flight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'A symmetric aerofoil (zero camber) produces:',
+    options: [
+      'A. Zero lift at zero angle of attack — lift is generated only when AoA is positive',
+    'B. Lift even at negative angles of attack due to its thickness',
+    'C. More lift than a cambered section at all angles of attack',
+    'D. The same lift as a cambered aerofoil at the same angle of attack'
+    ],
+    correct: 0,
+    explanation: 'A symmetric aerofoil has no camber — the upper and lower surfaces are mirror images. At zero AoA, the pressure distribution is symmetric — zero net lift. Lift is produced only when AoA is positive (or negative). Cambered aerofoils produce lift at zero AoA due to their asymmetric shape.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'During take-off, the aircraft lifts off when:',
+    options: [
+      'A. Lift equals the aircraft weight',
+    'B. Engine power reaches a preset level',
+    'C. The elevator is held fully back',
+    'D. Airspeed exceeds the stall speed by 30%'
+    ],
+    correct: 0,
+    explanation: 'Lift-off occurs when lift equals weight. As the aircraft accelerates along the runway, the pilot rotates (raises the nose), increasing the angle of attack and therefore CL, until lift equals the aircraft weight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'For a piston-propeller aircraft, thrust decreases with increasing airspeed because:',
+    options: [
+      'A. Engine RPM drops as speed increases',
+    'B. The propeller accelerates air by a smaller amount as the inflow velocity increases',
+    'C. Drag increases faster than thrust at higher speeds',
+    'D. Air density decreases with speed causing reduced propeller bite'
+    ],
+    correct: 1,
+    explanation: 'A propeller adds a velocity increment to the incoming air. As aircraft speed increases, the air already arrives at higher velocity — the propeller adds the same increment to a faster stream, but thrust (proportional to mass × velocity change) decreases. Static thrust (at zero airspeed) is maximum.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.6'
+  },
+  {
+    question: '"Ground effect" increases the effective lift because:',
+    options: [
+      'A. The ground reflects airflow upward, adding to the wing\'s lift',
+    'B. The ground restricts the downwash, reducing induced drag and allowing the same lift at a lower AoA or same AoA at more lift',
+    'C. The wing gains additional lift from the cushion of high-pressure air trapped between wing and ground',
+    'D. Air density is higher near the ground, producing more dynamic pressure'
+    ],
+    correct: 1,
+    explanation: 'Ground effect: the ground plane prevents the wing from forming the usual downwash and vortex pattern. With reduced downwash: induced drag decreases and the effective angle of attack of the wing increases for the same geometric AoA. Lift increases and drag decreases — the aircraft "floats" in ground effect.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'Wing sweepback increases the effective critical Mach number because:',
+    options: [
+      'A. The component of airflow perpendicular to the leading edge (which drives compressibility effects) is reduced by the sweep angle',
+    'B. Sweepback reduces aspect ratio, which reduces induced drag at high Mach',
+    'C. Swept wings have a thinner aerofoil section, reducing the local velocity peak',
+    'D. Sweepback reduces the wing\'s effective chord, allowing faster flow'
+    ],
+    correct: 0,
+    explanation: 'Wing sweep: the effective velocity component that drives the aerofoil lift and compressibility is the component perpendicular to the leading edge — V × cos(sweep angle). A 45° sweep reduces this component to V × cos45° = 0.707V. This allows a higher free-stream Mach before the critical velocity is reached on the wing.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "decalage" of a biplane (or canard aircraft) refers to:',
+    options: [
+      'A. The difference in angle of incidence between the two lifting surfaces',
+    'B. The vertical gap between the two wing surfaces',
+    'C. The decorative markings on the wing leading edge',
+    'D. The horizontal separation (stagger) between the front and rear wings'
+    ],
+    correct: 0,
+    explanation: 'Decalage is the difference in angle of incidence between the upper and lower wings (biplane) or between the wing and the canard (canard aircraft). Setting appropriate decalage ensures one surface stalls before the other — important for stability and handling.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "angle of zero lift" for a cambered aerofoil is:',
+    options: [
+      'A. Zero degrees — zero lift occurs at zero AoA for all aerofoils',
+    'B. The same as the stall angle — maximum lift and zero lift are the same AoA',
+    'C. Always equal to the critical angle of attack divided by 2',
+    'D. A small negative angle — the aerofoil must be tilted slightly nose-down to produce zero lift'
+    ],
+    correct: 3,
+    explanation: 'A cambered aerofoil produces lift at zero AoA (due to the camber). To reduce lift to zero, the AoA must be reduced to a small negative value. This is the zero-lift angle — typically −2° to −4° for a moderately cambered aerofoil. Symmetric aerofoils have zero lift angle = 0°.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'An aircraft in a steep descending spiral (not a spin) will have its airspeed:',
+    options: [
+      'A. Constant — the aerodynamic forces balance in a spiral',
+    'B. Decreasing — the descent reduces speed as in a normal descent',
+    'C. Increasing — the steep nose-down attitude converts potential energy to kinetic energy',
+    'D. Oscillating — the aircraft enters a phugoid in the spiral'
+    ],
+    correct: 2,
+    explanation: 'In a steep spiral (not a spin), the wings are not stalled — the aircraft is in a steep banked descent. Potential energy (altitude) converts to kinetic energy (speed). Airspeed increases as the aircraft descends. If uncorrected, airspeed can rapidly exceed Vne — causing structural risk.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "L/D ratio" of a wing in straight and level flight equals:',
+    options: [
+      'A. The lift coefficient divided by the drag coefficient, multiplied by wing area',
+    'B. Thrust divided by weight',
+    'C. Lift divided by drag — which in level flight also equals weight divided by total drag',
+    'D. The ratio of the wing area to the fuselage frontal area'
+    ],
+    correct: 2,
+    explanation: 'L/D = CL/CD. In level flight (L = W, T = D): L/D = W/D. The maximum L/D ratio is the most efficient operating condition — minimum drag for a given weight, best glide angle, and best range speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: '"Thin airfoil stall" occurs at:',
+    options: [
+      'A. Thin aerofoils do not stall — only thick aerofoils with separation bubbles stall',
+    'B. Thin aerofoils — separation starts near the leading edge at a relatively low AoA and gradually extends rearward, giving a gentle stall progression',
+    'C. All aerofoils at the same angle of attack regardless of thickness',
+    'D. Thin aerofoils stall more abruptly than thick aerofoils because the sharper leading edge causes sudden separation'
+    ],
+    correct: 3,
+    explanation: 'Thin aerofoil stall: the sharp leading edge causes the flow to separate immediately at the leading edge at lower angles of attack, forming a separation bubble that reattaches. As AoA increases, the reattachment point moves rearward — the stall is progressive but sharper than thick aerofoil behaviour.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: '"Trim tabs" are used to:',
+    options: [
+      'A. Relieve steady control forces so the pilot does not need to hold a constant load on the controls',
+    'B. Prevent the aircraft from exceeding the maximum angle of attack',
+    'C. Limit maximum control deflection at high speed',
+    'D. Increase control effectiveness at low airspeed'
+    ],
+    correct: 0,
+    explanation: 'Trim tabs are small surfaces on the trailing edge of primary control surfaces. They are set to deflect slightly in a direction that generates an aerodynamic force opposing the required control force — balancing the surface and allowing the pilot to fly hands-off at a desired attitude and speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'An elliptical wing planform (like the Spitfire) achieves the lowest induced drag because:',
+    options: [
+      'A. Elliptical wings stall uniformly from tip to root for maximum CLmax',
+    'B. Chord distribution creates a uniform downwash along the entire span — the ideal (most efficient) lift distribution',
+    'C. Elliptical wings have the lowest aspect ratio, minimising tip vortex size',
+    'D. The swept-back tip reduces the leading edge radius and thins the boundary layer'
+    ],
+    correct: 1,
+    explanation: 'An elliptical planform produces a uniform (elliptical) downwash distribution along the span — the theoretically ideal configuration for minimum induced drag (Oswald factor = 1.0). Prandtl\'s lifting line theory shows this minimises induced drag for a given lift and span.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The tailplane "stall" during approach with full flap can occur because:',
+    options: [
+      'A. The tail is too large relative to the elevator, causing excessive pitch authority',
+    'B. The tail is in the wake from the landing gear, disrupting its airflow',
+    'C. Tailplane stall is not a real phenomenon — it is prevented by design',
+    'D. Increased downwash from the flapped wing reduces the tailplane effective AoA — at large deflections the tailplane may stall with negative AoA'
+    ],
+    correct: 3,
+    explanation: 'Tailplane stall: full flap extension greatly increases downwash from the wing onto the tail. The downwash angle can reduce the tailplane\'s effective AoA to a large negative value — if the critical negative AoA is exceeded, the tail stalls with reduced elevator authority or a sudden nose-down pitch. More common in icing conditions.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "slip" manoeuvre (forward slip) is used to:',
+    options: [
+      'A. Increase the rate of descent without increasing airspeed — useful for losing excess height on approach',
+    'B. Maintain directional control during asymmetric engine failure',
+    'C. Reduce drag during a climb to improve rate of climb',
+    'D. Prevent the aircraft from overshooting the runway on short final'
+    ],
+    correct: 0,
+    explanation: 'A forward slip presents the fuselage broadside to the airflow, greatly increasing drag and therefore rate of descent — without changing airspeed. Useful when too high on approach with insufficient distance to lose height normally. Not to be confused with a cross-wind (side slip) used for cross-wind landings.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The minimum radius of turn for a given airspeed is achieved by:',
+    options: [
+      'A. Using a standard rate turn at any airspeed',
+    'B. Using maximum bank angle and minimum airspeed',
+    'C. Flying at the best glide speed in the turn',
+    'D. Using minimum bank angle and maximum airspeed'
+    ],
+    correct: 1,
+    explanation: 'Radius r = V²/(g × tan θ). To minimise radius: minimise V (fly as slow as possible) and maximise θ (maximum bank). The limit is the stall speed in the turn. Minimum turn radius = Vs(turn)² / (g × tan θmax) = typically achieved at Va or slightly above.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: '"Flutter" in an aircraft structure is:',
+    options: [
+      'A. A non-destructive vibration that activates the airframe vibration warning system',
+    'B. The normal vibration of control surfaces in turbulence',
+    'C. A potentially destructive self-sustaining oscillation of a structural element, where aerodynamic, inertial, and elastic forces interact and energy is added each cycle',
+    'D. Flutter only occurs in jet aircraft above Mach 0.8'
+    ],
+    correct: 2,
+    explanation: 'Flutter is an aeroelastic phenomenon — a structural oscillation where aerodynamic forces continuously add energy to the oscillation each cycle. Left unchecked, it is divergent and can rapidly destroy the structure. It is prevented by mass balancing, structural stiffness, and not exceeding Vne.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "lift/drag ratio" is highest at:',
+    options: [
+      'A. The maximum speed of the aircraft',
+    'B. Zero angle of attack — lift and drag are both at minimum',
+    'C. The angle of attack that produces maximum CL/CD — the minimum drag speed',
+    'D. The stall angle of attack — maximum lift is generated there'
+    ],
+    correct: 2,
+    explanation: 'Maximum L/D ratio occurs at the angle of attack where CL/CD is maximum — which corresponds to the minimum drag speed. At this AoA, the combination of induced drag (which decreases with speed) and parasite drag (which increases with speed) is minimised relative to lift.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "negative stall" (inverted stall) occurs when:',
+    options: [
+      'A. The elevator is deflected fully forward at high speed',
+    'B. Negative stall is a theoretical concept — it cannot occur in practice',
+    'C. The aircraft\'s weight exceeds its lift in level flight',
+    'D. The angle of attack becomes sufficiently negative that the upper surface (now acting as the lower surface) generates enough lift to stall'
+    ],
+    correct: 3,
+    explanation: 'A negative stall occurs when the AoA becomes sufficiently negative to exceed the critical negative AoA — the upper surface (acting as the lower surface) stalls. For a symmetric aerofoil, this occurs at the same magnitude of negative AoA as the positive stall. Relevant to aerobatics and inadvertent pushovers.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "rudder" is the primary control for correcting unwanted yaw and for:',
+    options: [
+      'A. All turns in light aircraft — ailerons are only used for attitude holds',
+    'B. Coordinating turns — maintaining zero sideslip by balancing the adverse yaw from ailerons',
+    'C. Pitch control in the event of elevator failure',
+    'D. Reducing airspeed on approach without using the throttle'
+    ],
+    correct: 1,
+    explanation: 'The rudder corrects adverse yaw during roll inputs, maintains coordinated flight (ball centred), provides directional control on the ground during take-off roll, and assists cross-wind corrections. In normal flight, turns are primarily made with ailerons — the rudder coordinates.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'During a stall in a turn, which wing tends to stall first?',
+    options: [
+      'A. The outer wing — it is moving faster and reaches CLmax first',
+    'B. Both wings stall simultaneously in a balanced turn',
+    'C. The wing on the power side of the engine stalls due to P-factor',
+    'D. The inner (lower) wing — it is moving slower and at higher angle of attack'
+    ],
+    correct: 3,
+    explanation: 'In a turn, the inner wing travels on a smaller radius and therefore moves more slowly than the outer wing. To maintain level flight, the inner wing operates at a higher AoA (more lift per unit of airspeed). It therefore approaches and reaches the critical AoA before the outer wing — the inner (lower) wing stalls first.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'After a power reduction at cruise altitude, the natural response of a well-trimmed stable aircraft is to:',
+    options: [
+      'A. Maintain altitude and decelerate at constant pitch attitude',
+    'B. Descend gradually as speed reduces and the natural pitch stability lowers the nose to maintain trim speed — the aircraft follows a gentle nose-down phugoid toward a new equilibrium',
+    'C. Roll toward the lower power side due to asymmetric torque',
+    'D. Pitch nose-up as the reduced propeller slipstream reduces tail download'
+    ],
+    correct: 1,
+    explanation: 'Power reduction on a trimmed stable aircraft: thrust drops below drag → aircraft decelerates. As speed drops below trim speed, static stability and speed stability cause the nose to lower — the aircraft descends to restore airspeed. The resulting motion follows the phugoid characteristics of the aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Compressibility effects on aircraft aerodynamics become significant as the aircraft approaches:',
+    options: [
+      'A. A bank angle of more than 45°',
+    'B. The critical Mach number — where local airflow over the wing first reaches Mach 1',
+    'C. 100 KIAS',
+    'D. The service ceiling altitude'
+    ],
+    correct: 1,
+    explanation: 'The critical Mach number is the free-stream Mach at which local airflow (over the wing upper surface, which is faster) first reaches Mach 1. Above this speed, shock waves form, causing wave drag, loss of lift, and potentially nose-down "Mach tuck".',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "interference drag" between the wing and fuselage is reduced by:',
+    options: [
+      'A. Increasing the wing-fuselage junction angle to 90°',
+    'B. Moving the wing to a low-wing configuration only',
+    'C. Reducing wing thickness at the root section near the fuselage',
+    'D. Adding a fillet (fairing) at the wing-fuselage junction to smooth the airflow transition'
+    ],
+    correct: 3,
+    explanation: 'Interference drag occurs where the boundary layers of two surfaces interact (wing-fuselage, wing-nacelle junctions). Smooth fillets (fairings) fill the corner, guiding airflow smoothly around the junction and reducing the separated wake that generates interference drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "control column" in a conventional aircraft simultaneously controls:',
+    options: [
+      'A. Only elevator — ailerons use separate hand levers on transport aircraft',
+    'B. Elevator and rudder only — ailerons are on a separate control wheel',
+    'C. Aileron (lateral movement) and elevator (fore-aft movement) — the two primary pitch and roll controls',
+    'D. All three axes — pitch, roll, and yaw simultaneously'
+    ],
+    correct: 2,
+    explanation: 'The conventional control column (or yoke/sidestick): fore-aft movement controls the elevator (pitch); lateral movement (left-right) controls the ailerons (roll). Rudder is controlled by the rudder pedals — the control column does not directly control yaw.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "Oswald efficiency factor" (e) represents:',
+    options: [
+      'A. The ratio of actual induced drag to the theoretical minimum (elliptical) induced drag distribution',
+    'B. The propeller efficiency at the design advance ratio',
+    'C. The ratio of actual lift to theoretical maximum lift for a given wing shape',
+    'D. The engine thermal efficiency at cruise power'
+    ],
+    correct: 0,
+    explanation: 'The Oswald efficiency factor (e, span efficiency) compares the actual induced drag distribution to the ideal elliptical distribution (e = 1.0). Real wings (e ≈ 0.7–0.95) have more induced drag than the elliptical ideal. An elliptical wing planform achieves e = 1.0.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "lift augmentation" provided by leading edge slats allows:',
+    options: [
+      'A. Flight at a higher angle of attack before stall — increasing CLmax and reducing minimum speed',
+    'B. Higher cruise speed by reducing drag',
+    'C. Slats provide drag only — their lift benefit is negligible',
+    'D. Reduced structural loads during manoeuvre'
+    ],
+    correct: 0,
+    explanation: 'Leading edge slats re-energise the boundary layer through a slot between the slat and the main wing element. This delays boundary layer separation to a higher AoA, significantly increasing CLmax and the stall angle of attack. Minimum speed (stall speed) decreases accordingly — allowing lower approach speeds.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'For a given weight, the minimum speed in straight and level flight is determined by:',
+    options: [
+      'A. The maximum lift coefficient (CLmax) of the wing at the critical angle of attack',
+    'B. The maximum available engine power',
+    'C. The drag-to-thrust ratio at low speed',
+    'D. The structural strength of the undercarriage'
+    ],
+    correct: 0,
+    explanation: 'Minimum level flight speed is the stall speed: Vs = √(2W / ρ S CLmax). It is determined by CLmax — how much lift the wing can generate per unit of dynamic pressure. Once CLmax is reached (critical AoA), no further increase in lift is possible, and the wing stalls.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'A high-wing aircraft has inherently more lateral stability than a low-wing aircraft primarily because of:',
+    options: [
+      'A. The pendulum effect — the CG hangs below the wing, and in a sideslip the resulting geometry creates a restoring roll moment',
+    'B. High-wing aircraft have larger fins providing better directional stability',
+    'C. The wing is mounted above the fuselage, increasing the aspect ratio',
+    'D. More dihedral is built into high-wing designs'
+    ],
+    correct: 0,
+    explanation: 'High-wing lateral stability: the CG is below the wing. In a roll, the CG\'s position relative to the centre of lift creates a restoring moment (pendulum effect). When sideslipping, the lift acts above the CG — the moment arm produces a stabilising roll. This gives high-wing aircraft strong inherent lateral stability.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "mean aerodynamic chord" (MAC) of a wing is:',
+    options: [
+      'A. A fixed dimension equal to the wingspan divided by aspect ratio',
+    'B. The chord of a hypothetical rectangular wing that would have the same pitching moment characteristics as the actual wing',
+    'C. The average chord measured at the midspan position',
+    'D. The maximum chord measured at the root of the wing'
+    ],
+    correct: 1,
+    explanation: 'MAC is the chord of a hypothetical rectangular wing that has the same total lift, drag, and pitching moment as the actual wing. It is used as the reference for CG positioning (e.g. CG at 25–30% MAC). On tapered wings, MAC is between the root and tip chord.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The effect of reducing the throttle setting (reducing power) while in a climb at constant IAS requires:',
+    options: [
+      'A. No pilot action — the aircraft automatically reduces the climb angle',
+    'B. Increasing IAS to compensate for the reduced power',
+    'C. Reducing pitch attitude to maintain IAS as the reduced thrust can no longer sustain the original climb angle',
+    'D. Applying full back pressure to prevent the nose from dropping below the horizon'
+    ],
+    correct: 2,
+    explanation: 'If power is reduced in a climb: Thrust decreases below Drag + weight component along path. The aircraft decelerates. To maintain IAS, the pilot must reduce pitch attitude (lower the nose) so less of the weight component opposes forward motion — the climb rate reduces.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The primary reason for pre-flight checking control surface freedom and correct movement is:',
+    options: [
+      'A. To confirm controls move freely through their full range, respond in the correct sense, and have no jamming or restriction that would impair control in flight',
+    'B. To check for contamination by insects that might block control cable runs',
+    'C. To verify correct autopilot coupling before flight',
+    'D. To ensure the trim tabs are in the neutral position'
+    ],
+    correct: 0,
+    explanation: 'Pre-flight control check: verify full and free movement, correct sense (push forward = nose down), and no binding or jamming. Incorrect rigging, cable damage, or foreign objects can cause flight control failure or reduced authority — a full pre-flight catch these before flight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'A "clean stall" (power off, wings level, no yaw) in a well-designed training aircraft is characterised by:',
+    options: [
+      'A. A spin entry that develops immediately after the stall',
+    'B. Airspeed suddenly dropping to zero as the stall occurs',
+    'C. An abrupt, violent wing drop with no warning',
+    'D. Buffet warning, progressive nose-drop, and a relatively benign roll — with natural pitch break allowing straightforward recovery'
+    ],
+    correct: 3,
+    explanation: 'A well-designed training aircraft should have a benign stall: pre-stall buffet (from the turbulent wing wake on the tail), decreasing control effectiveness, then a progressive nose-drop. Wing drop should be minimal. Recovery is straightforward — lower the nose to reduce AoA, add power, level wings.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "coefficient of drag" (CD) formula for total drag is approximately:',
+    options: [
+      'A. CD = CL / (L/D ratio)',
+    'B. CD = CDo + CL (total drag = zero-lift drag + lift coefficient)',
+    'C. CD = CDo + k × CL² (total drag = zero-lift drag + induced drag component proportional to CL squared)',
+    'D. CD is independent of CL at all angles of attack'
+    ],
+    correct: 2,
+    explanation: 'Total drag coefficient: CD = CDo + k × CL², where CDo is zero-lift drag coefficient (parasite) and k = 1/(π × e × AR). The induced drag component (k × CL²) increases rapidly with CL — explaining why drag increases rapidly at low speed (high CL).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "flap retraction speed" (Vfe) limitation exists to prevent:',
+    options: [
+      'A. The aircraft from overspeeding when flaps are deployed',
+    'B. Control flutter in the flap system at high speed',
+    'C. Aerodynamic loads on the extended flap surfaces from exceeding the structural design limit',
+    'D. The flap actuator from over-travelling'
+    ],
+    correct: 2,
+    explanation: 'Vfe is the maximum speed at which flaps may be extended. Above Vfe, the aerodynamic loads on the flap surfaces exceed the structural design limit — risking deformation, jamming, or failure of the flap structure. Exceeding Vfe is a structural concern, not merely a handling one.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'An aircraft accelerates from 60 KIAS to 120 KIAS in level flight. The parasite drag:',
+    options: [
+      'A. Increases by a factor of 8',
+    'B. Quadruples',
+    'C. Doubles',
+    'D. Remains unchanged'
+    ],
+    correct: 1,
+    explanation: 'Parasite drag ∝ V². Doubling speed from 60 to 120 KIAS: drag = k × 120² / k × 60² = 14400/3600 = 4. Parasite drag quadruples. This is why high-speed aircraft require so much more power per knot of speed increase, and why Vne and structural speed limits are so important.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: '"Thrust loading" is defined as:',
+    options: [
+      'A. Aircraft weight divided by maximum thrust',
+    'B. Thrust divided by aircraft weight — determines initial acceleration and climb gradient',
+    'C. Thrust available minus thrust required at a given speed',
+    'D. The load applied to the engine mounts under maximum thrust'
+    ],
+    correct: 1,
+    explanation: 'Thrust loading = T/W (thrust divided by weight). High thrust loading (T/W > 1) means the aircraft can accelerate vertically. For most light aircraft, T/W ≈ 0.2–0.3. This determines the aircraft\'s initial climb gradient and performance capability.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.6'
+  },
+  {
+    question: 'When comparing the stall speed of an aircraft with one passenger versus four passengers (all other conditions equal), the stall speed:',
+    options: [
+      'A. Is lower with four passengers — more weight increases wing loading, improving stall characteristics',
+    'B. Is the same — stall speed is not affected by payload weight',
+    'C. Is the same if the fuel load is reduced to compensate for the extra passengers',
+    'D. Is higher with four passengers — greater weight requires higher speed to generate the lift needed to equal weight at CLmax'
+    ],
+    correct: 3,
+    explanation: 'Vs = √(2W / ρ S CLmax). More passengers = more weight = higher Vs. Stall speed increases with weight. Four passengers will produce a meaningfully higher stall speed than one passenger — particularly relevant for approach speeds (which must be 1.3 × Vso) and take-off distances.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'An aircraft stalls cleanly and recovers through the complete CASA-recommended procedure. The minimum height loss during this recovery is primarily determined by:',
+    options: [
+      'A. Engine power — more power means zero height loss in stall recovery',
+    'B. The pilot\'s reaction time only',
+    'C. The time taken to recognise the stall, apply recovery inputs, and the altitude lost before the nose is lowered and flying speed is restored',
+    'D. The aircraft weight — heavier aircraft lose more height'
+    ],
+    correct: 2,
+    explanation: 'Stall recovery height loss depends on: (1) pilot recognition time; (2) time to apply inputs (reduce AoA, add power); (3) aircraft response time; (4) speed at stall entry; (5) power available. The minimum loss occurs with prompt recognition and immediate, correct recovery technique. At low altitude, insufficient height for recovery is a primary cause of fatal stall/spin accidents.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "propeller advance ratio" (J) is defined as:',
+    options: [
+      'A. Engine torque divided by propeller thrust',
+    'B. Forward speed divided by (RPM × diameter) — representing how far the aircraft advances per propeller revolution relative to blade diameter',
+    'C. Propeller RPM divided by engine RPM (the gear ratio)',
+    'D. Blade pitch angle divided by rotational velocity'
+    ],
+    correct: 1,
+    explanation: 'Advance ratio J = V / (n × D), where V is aircraft speed, n is revolutions per second, and D is propeller diameter. J represents how far the aircraft advances per revolution in terms of propeller diameters. Propeller efficiency peaks at the design J — deviating from this (too low J at take-off, too high J at high speed) reduces efficiency.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The primary purpose of the "vertical stabiliser" is different from the "rudder" in that:',
+    options: [
+      'A. They serve identical functions — the vertical stabiliser is the fixed portion and the rudder the moveable portion of the same surface',
+    'B. The vertical stabiliser provides active yaw control; the rudder provides passive stability',
+    'C. The vertical stabiliser prevents roll; the rudder prevents yaw',
+    'D. The vertical stabiliser provides passive directional stability; the rudder provides active yaw control when deflected'
+    ],
+    correct: 3,
+    explanation: 'The vertical stabiliser (fin) passively provides directional (weathercock) stability — no pilot input needed. The rudder is the moveable control surface attached to the fin that the pilot deflects to actively yaw the aircraft. Both are part of the vertical tail assembly but serve distinct functions.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "yellow arc" on the ASI represents:',
+    options: [
+      'A. The normal operating speed range in smooth air',
+    'B. The flap operating range',
+    'C. The range for maximum range cruise',
+    'D. The caution range — smooth air only, structural damage may occur in turbulence'
+    ],
+    correct: 3,
+    explanation: 'The yellow arc (caution range) is between Vno (maximum structural cruising speed) and Vne (never exceed speed). Flight in this range is permitted in smooth air only — in turbulence, gusts can add load factors that may exceed the structural limits.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'Which factor does NOT directly affect the stall speed of a clean-configuration aircraft?',
+    options: [
+      'A. Bank angle in a turn',
+    'B. Wing loading (weight/area)',
+    'C. Altitude (pressure altitude)',
+    'D. Aircraft weight'
+    ],
+    correct: 2,
+    explanation: 'IAS stall speed is not affected by altitude — it remains constant at all altitudes (same IAS). It IS affected by: weight (Vs ∝ √W), bank angle (Vs ∝ √n where n increases with bank), and wing loading. Altitude changes TAS at the stall but not IAS stall speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'On the "back side of the power curve" (behind the drag curve), speed is said to be unstable because:',
+    options: [
+      'A. The propeller is operating in a windmilling condition on the back side',
+    'B. Any speed decrease requires MORE power to recover rather than less — a power increase is needed to prevent further speed decay',
+    'C. Adding power reduces speed instead of increasing it',
+    'D. Control surfaces become reversed at very low speed'
+    ],
+    correct: 1,
+    explanation: 'Behind the drag curve (below minimum drag speed): if airspeed decreases, drag increases (induced drag dominates). To maintain level flight at the lower speed, MORE power is needed. If power is not increased, the aircraft decelerates further — an unstable situation. ATC calls this "slow flight" — it is tiring and dangerous.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "total pressure" at the pitot tube is:',
+    options: [
+      'A. Static pressure plus dynamic pressure — representing the full energy of the airflow when brought to rest',
+    'B. Dynamic pressure only — the pitot tube only measures the impact pressure',
+    'C. Total pressure is equal to dynamic pressure multiplied by the Mach number',
+    'D. The static pressure only'
+    ],
+    correct: 0,
+    explanation: 'Pitot tube measures total (stagnation) pressure = static pressure + dynamic pressure (½ρV²). The ASI subtracts static pressure (from the static port) to isolate dynamic pressure, which is proportional to airspeed squared. Total pressure = static + dynamic is Bernoulli\'s theorem applied at the stagnation point.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The advantage of a constant speed propeller over a fixed pitch propeller is:',
+    options: [
+      'A. The pilot can select an optimum blade pitch for each phase of flight, improving efficiency across a range of speeds',
+    'B. Constant speed propellers have less torque reaction than fixed pitch types',
+    'C. A constant speed propeller cannot overspeed, eliminating the risk of propeller damage',
+    'D. Lower cost and simpler maintenance'
+    ],
+    correct: 0,
+    explanation: 'A constant speed propeller allows the pilot to select the optimum blade pitch (via RPM selection) for each flight phase — fine pitch for take-off (high RPM, maximum power), coarser pitch for cruise (lower RPM, efficient blade angles). A fixed pitch propeller is a compromise for all conditions.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The purpose of the "anti-servo tab" (anti-balance tab) on an all-moving tail is:',
+    options: [
+      'A. To provide automatic pitch trim adjustment with speed changes',
+    'B. To increase the force needed to move the stabilator — preventing over-control and providing appropriate stick forces',
+    'C. To reduce the force needed to move the stabilator — like a conventional balance tab',
+    'D. Anti-servo tabs are used on elevators only — never on all-moving tails'
+    ],
+    correct: 1,
+    explanation: 'Anti-servo (anti-balance) tab: moves in the same direction as the stabilator, creating a force that opposes the deflection. This increases the hinge moment the pilot must overcome — making the stabilator harder to move. On a powerful all-moving tail, this prevents over-control and provides appropriate control feel.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The relationship between "CL" and "AoA" for a typical aerofoil in the normal operating range is:',
+    options: [
+      'A. Inversely proportional — higher AoA reduces CL in the normal range',
+    'B. Non-linear — CL increases exponentially with AoA',
+    'C. Constant — CL does not change significantly with AoA in the normal range',
+    'D. Approximately linear — CL increases almost proportionally with AoA up to the critical angle'
+    ],
+    correct: 3,
+    explanation: 'In the normal operating range (below the stall), CL increases approximately linearly with AoA. The slope of the CL-AoA curve (lift curve slope) is approximately 2π radians⁻¹ for a thin aerofoil (Prandtl-Glauert). This linear relationship makes aerodynamic analysis tractable for the normal flight envelope.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "angle of attack indicator" (alpha indicator) is most critical during:',
+    options: [
+      'A. Slow-speed operations such as approach, landing, and manoeuvring where the critical AoA may be approached',
+    'B. Take-off acceleration where propeller angle of attack must be monitored',
+    'C. High-speed cruise where the alpha is near the structural limit',
+    'D. Alpha indicators are only fitted to military aircraft'
+    ],
+    correct: 0,
+    explanation: 'AoA indicators are most useful during slow-speed operations — approach, landing, and manoeuvring at low altitude. The critical AoA is fixed and the indicator directly shows the proximity to stall — more reliably than airspeed alone, which varies with weight, density, and load factor.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The aerodynamic advantage of a "laminar flow" wing section in cruise is:',
+    options: [
+      'A. Laminar flow prevents flow separation at all angles of attack',
+    'B. Lower skin friction drag over the laminar portion — leading to improved cruise efficiency',
+    'C. Higher CLmax — laminar flow sections can produce more maximum lift',
+    'D. Laminar flow sections have better stall characteristics than turbulent sections'
+    ],
+    correct: 1,
+    explanation: 'Laminar flow has significantly lower skin friction drag than turbulent flow (typically 30–50% lower). Laminar flow wings (NACA 6-series, etc.) maintain laminar flow over a larger chord fraction at cruise angles of attack, reducing skin friction drag and improving range and cruise efficiency.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "power loading" of an aircraft is defined as:',
+    options: [
+      'A. Wing area divided by engine power in horsepower',
+    'B. Maximum thrust divided by maximum drag',
+    'C. Aircraft weight divided by engine power — lower power loading means better climb and acceleration',
+    'D. Engine power divided by aircraft weight'
+    ],
+    correct: 2,
+    explanation: 'Power loading = W/P (weight divided by engine power). Lower power loading (lighter aircraft per horsepower) means better climb performance, shorter take-off, and better acceleration. Higher power loading means less surplus power available for climb.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "four forces" in a steady climb act such that:',
+    options: [
+      'A. Lift is less than weight, and thrust exceeds drag by the amount needed to overcome the weight component along the climb path',
+    'B. Lift exceeds weight, providing the vertical force to climb',
+    'C. All four forces are equal to zero in a steady climb',
+    'D. Lift equals weight and thrust equals drag'
+    ],
+    correct: 0,
+    explanation: 'In a steady climb: Lift = W × cos γ (slightly less than weight). Thrust = D + W × sin γ (thrust must overcome both drag and the weight component along the climb path). The steeper the climb, the larger the weight component that thrust must overcome.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The maximum demonstrated crosswind component published in the AFM is:',
+    options: [
+      'A. A regulatory limit that cannot be exceeded under any circumstance',
+    'B. A suggested maximum with a 50% safety factor built in',
+    'C. The maximum crosswind used during certification flight testing — it is a guideline, and actual limits depend on pilot skill, aircraft condition, and runway surface',
+    'D. Valid only for dry runways — wet runway limits are half this value'
+    ],
+    correct: 2,
+    explanation: 'The maximum demonstrated crosswind is not a hard regulatory limit — it is the maximum value demonstrated during flight testing. Pilots may operate in higher crosswinds if conditions and skill permit, but exceeding it is not prohibited by regulation. Practical limits depend on runway surface, gusts, and pilot proficiency.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'An aircraft loaded with the CG near the aft limit will generally:',
+    options: [
+      'A. Require more fuel because the rear-heavy attitude increases drag',
+    'B. Require constant forward pressure on the controls to maintain level flight',
+    'C. Have an increased stall speed due to reduced tail download',
+    'D. Feel lighter on the controls, be more responsive in pitch, and have reduced pitch stability'
+    ],
+    correct: 3,
+    explanation: 'Aft CG: reduced static margin → reduced longitudinal stability → lighter, more sensitive pitch control. The aircraft recovers from pitch disturbances more slowly. At the aft CG limit, stability is at a minimum acceptable level. At the aft CG, the tail downloads less — reducing total lift required.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Induced drag is greatest at:',
+    options: [
+      'A. High speed and low angle of attack',
+    'B. Cruise speed in level flight',
+    'C. High speed with flaps extended',
+    'D. Low speed and high angle of attack'
+    ],
+    correct: 3,
+    explanation: 'Induced drag increases with angle of attack and is greatest at low speed (where high CL is required). CDi is proportional to CL². Flying slowly requires high CL, which generates strong wingtip vortices and high induced drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'A wing with an aspect ratio of 8 will have less induced drag than a wing with aspect ratio 4 of the same area because:',
+    options: [
+      'A. CDi ∝ 1/AR — doubling AR halves the induced drag coefficient at any given CL',
+    'B. Higher AR wings have lower CL at the same AoA',
+    'C. Higher AR reduces parasite drag as well as induced drag',
+    'D. Lower aspect ratio always gives more induced drag regardless of CL'
+    ],
+    correct: 0,
+    explanation: 'CDi = CL²/(π × e × AR). For the same CL, doubling AR (from 4 to 8) halves CDi. The high AR wing produces the same lift with half the induced drag penalty. This is why gliders and long-range aircraft use high AR wings — minimum induced drag for efficient cruise and glide.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The aerodynamic performance of an aerofoil at the same angle of attack varies with Reynolds number because:',
+    options: [
+      'A. The boundary layer character (laminar/turbulent ratio, transition point) changes with Reynolds number — affecting both CLmax and CD',
+    'B. Reynolds number changes only affect the drag coefficient — not the lift coefficient',
+    'C. Reynolds number only affects supersonic flight — subsonic performance is Reynolds-independent',
+    'D. Higher Reynolds number always improves performance — larger/faster is always better'
+    ],
+    correct: 0,
+    explanation: 'Reynolds number affects boundary layer behaviour. At low Re (small models, very slow flight), laminar flow may persist further but separate earlier — lower CLmax. At high Re, turbulent flow has better pressure recovery and higher CLmax but more skin friction drag. This is why model aircraft data cannot be directly scaled to full-size aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'When the throttle is suddenly reduced from high power to idle, the aircraft tends to:',
+    options: [
+      'A. Roll to the right as torque is removed',
+    'B. Yaw to the right due to loss of slipstream effect on the fin',
+    'C. Remain in trim — power changes do not affect pitch attitude',
+    'D. Pitch nose-down due to loss of downwash over the tail and slipstream effects'
+    ],
+    correct: 3,
+    explanation: 'Reducing power suddenly: the slipstream over the tail decreases, reducing the downwash on the horizontal tail. This often causes a nose-down pitch. Additionally, less thrust means less of the propeller\'s gyroscopic stabilisation. The pilot must anticipate the pitch change and apply back pressure.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'An aircraft is in a 30° banked level turn. What is the approximate stall speed increase compared to level flight?',
+    options: [
+      'A. 7%',
+    'B. 30%',
+    'C. 22%',
+    'D. 15%'
+    ],
+    correct: 0,
+    explanation: 'n = 1/cos(30°) = 1/0.866 = 1.155. Vs(turn) = Vs × √1.155 = Vs × 1.074. Stall speed increases by approximately 7% at 30° bank. This is a relatively small increase — the danger zone is above 45° where the increase becomes rapid.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'If airspeed is doubled in level flight, the dynamic pressure (and therefore lift for the same CL) changes by a factor of:',
+    options: [
+      'A. 8',
+    'B. 4',
+    'C. 3',
+    'D. 2'
+    ],
+    correct: 1,
+    explanation: 'Dynamic pressure = ½ρV². Doubling V means V² increases by 4. Therefore dynamic pressure and lift (for the same CL and wing area) increase by a factor of 4. This is why a small speed increase greatly changes lift.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The CPL candidate should understand that "angle of attack" and "pitch attitude" are different because:',
+    options: [
+      'A. Angle of attack only applies to the wing; pitch attitude applies to the whole aircraft',
+    'B. Pitch attitude is measured from the horizon; AoA is measured from the relative airflow — the flight path angle is the difference between them',
+    'C. They are effectively the same — the terms are interchangeable in CPL examinations',
+    'D. Pitch attitude is always greater than angle of attack'
+    ],
+    correct: 1,
+    explanation: 'AoA = pitch attitude − flight path angle. In a descent at 3°, even a 5° nose-up attitude gives AoA = 5° − (−3°) = 8°. A 5° nose-up attitude climbing at 5° gives AoA = 5° − 5° = 0°. Understanding this distinction is fundamental to stall awareness — the stall depends on AoA, not on pitch attitude alone.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The effect of flap on the "glide path" angle during approach is:',
+    options: [
+      'A. Flap reduces the glide path angle — the approach is flatter with flap',
+    'B. Flap steepens the glide path — the increased drag reduces the L/D ratio, requiring a steeper descent angle for the same airspeed',
+    'C. Flap has no effect on glide path angle — it only affects stall speed',
+    'D. Flap extends the glide by increasing lift, allowing a longer, shallower approach'
+    ],
+    correct: 1,
+    explanation: 'Flap increases drag significantly, reducing the L/D ratio. A lower L/D means the glide angle steepens — the aircraft descends more per unit of horizontal distance. This is useful for approach: flap allows a steeper approach angle, clearing obstacles while maintaining reasonable airspeed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: '"Dynamic stability" refers to:',
+    options: [
+      'A. The subsequent motion over time after a disturbance — whether oscillations increase, decrease, or remain constant',
+    'B. The ability of the aircraft to fly at high speed without flutter',
+    'C. The stability of engine power output during dynamic manoeuvres',
+    'D. The initial tendency to return toward original attitude after a disturbance'
+    ],
+    correct: 0,
+    explanation: 'Dynamic stability describes the time-history of the motion following a disturbance. Dynamically stable: oscillations damp out over time. Dynamically neutral: oscillations persist at constant amplitude. Dynamically unstable: oscillations grow over time (even if statically stable).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The primary cause of "Mach tuck" (nose-down pitching at high Mach) is:',
+    options: [
+      'A. Engine thrust reversal at high Mach number',
+    'B. Loss of elevator authority due to shock wave interference',
+    'C. Increased propeller drag at high Mach causing nose-down moment',
+    'D. Rearward shift of the aerodynamic centre and forward movement of shock waves causing an aft shift of the centre of pressure'
+    ],
+    correct: 3,
+    explanation: 'Mach tuck: at high Mach, the aerodynamic centre moves rearward (from ~25% chord toward 50% chord). This shifts the AC behind the CG, creating a nose-down pitching moment. Simultaneously, shock-induced separation may reduce tail effectiveness — making recovery more difficult.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The difference between "weight" and "mass" in aerodynamic calculations is:',
+    options: [
+      'A. Weight and mass are identical — they can be used interchangeably',
+    'B. Mass is measured in pounds; weight is measured in kilograms in Australian aviation',
+    'C. Mass is the quantity of matter (kg); weight is the gravitational force on that mass (N = kg × g). Lift must equal weight (force), not mass',
+    'D. Only mass matters for aerodynamics — weight is used only for structural loading'
+    ],
+    correct: 2,
+    explanation: 'Mass (kg) is the amount of matter. Weight (N) = mass × g (gravitational acceleration). In the lift equation, L must equal weight (a force in Newtons) for level flight. When using metric units, W = mg where g ≈ 9.81 m/s². In practice, "weight" in kg is commonly used informally to mean mass in aviation.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.1'
+  },
+  {
+    question: 'A "porpoise" oscillation during landing roll is caused by:',
+    options: [
+      'A. Overbraking causing the wheels to lock and skid',
+    'B. Incorrect flap setting causing alternate stall and recovery during the roll',
+    'C. The aircraft touching down with excessive airspeed and bouncing — each subsequent bounce is larger as the pilot tries to correct',
+    'D. The nosewheel hitting a bump on the runway'
+    ],
+    correct: 2,
+    explanation: 'Porpoising: if the aircraft touches down hard or at excessive speed, it bounces back into the air. If the pilot then pushes forward (to get back on the ground), the second bounce is often harder. Each oscillation grows. Correct action: go-around immediately — do not try to correct a significant bounce.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "critical engine" in a conventional twin-engine propeller aircraft (both engines rotating clockwise) is:',
+    options: [
+      'A. Both engines are equally critical in a twin-engine aircraft',
+    'B. The left engine — its failure creates a larger yawing moment because the right engine\'s thrust line is further from the aircraft centreline',
+    'C. The engine nearest the CG is the critical engine',
+    'D. The right engine — its failure causes more directional control difficulty'
+    ],
+    correct: 1,
+    explanation: 'Critical engine: both propellers rotate clockwise (right side down). The right engine\'s descending blade is further from the centreline — it has a longer moment arm. If the left engine fails, the right engine\'s thrust acts further from the centreline, creating a greater yawing moment — it is harder to control. The left engine is critical.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "manoeuvre speed" (Va) is the speed below which:',
+    options: [
+      'A. The pilot must not exceed 2g load factor',
+    'B. The aircraft cannot be flown in turbulence',
+    'C. All manoeuvres including aerobatics are prohibited',
+    'D. Full control deflection will not overstress the structure — the wing will stall before the structural limit load is reached'
+    ],
+    correct: 3,
+    explanation: 'Va (manoeuvre speed or design manoeuvre speed): at or below Va, full control deflection in a single axis will stall the wing before exceeding the structural design limit load. This protects the structure — the wing is the "fuse". Above Va, full deflection can overstress the aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "drag divergence Mach number" is:',
+    options: [
+      'A. The Mach number at which the aircraft exceeds Vne in a dive',
+    'B. The Mach number at which stall occurs at altitude',
+    'C. Drag divergence is a concept only relevant to jet aircraft above Mach 0.9',
+    'D. The Mach number slightly above Mcrit at which wave drag begins to increase dramatically'
+    ],
+    correct: 3,
+    explanation: 'Drag divergence Mach (Mdd): slightly above Mcrit, shock waves strengthen and wave drag rises sharply. Aircraft designed to operate at high subsonic Mach numbers are designed to have high Mdd — thin wings, swept leading edges, and supercritical aerofoils all increase Mdd.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'Vfe is the:',
+    options: [
+      'A. Speed for maximum endurance with flaps at the first notch',
+    'B. Minimum speed for flap extension',
+    'C. Speed for best fuel economy',
+    'D. Maximum speed with flaps extended — exceeding it may damage the flap structure'
+    ],
+    correct: 3,
+    explanation: 'Vfe (maximum flap extended speed) is the top of the white arc. Exceeding Vfe with flaps extended subjects the flap structure to aerodynamic loads that may cause structural damage or flap failure.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "manoeuvre envelope" boundaries on a V-n diagram are set by:',
+    options: [
+      'A. The aerodynamic limit (stall boundary, CLmax) and the structural limit (maximum positive and negative load factor)',
+    'B. Engine performance limits only',
+    'C. Pilot physical G-tolerance limits',
+    'D. Airspace regulations specifying maximum speeds for each airspace class'
+    ],
+    correct: 0,
+    explanation: 'V-n diagram boundaries: (1) Stall boundary (left side): the aircraft can only develop these load factors at airspeeds above the stall — CLmax limits the load factor at low speed; (2) Structural limits (horizontal lines): the maximum/minimum G the structure can sustain; (3) Vne (right): maximum speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'On a hot, high-elevation airfield, which combination correctly describes the effect on take-off:',
+    options: [
+      'A. Longer take-off roll and reduced climb gradient — both worsen with higher density altitude',
+    'B. Same take-off roll but reduced cruise speed at altitude',
+    'C. Longer take-off roll but improved climb gradient above 500 ft AGL',
+    'D. Shorter take-off roll and better climb performance'
+    ],
+    correct: 0,
+    explanation: 'High density altitude: lower engine power output, lower propeller thrust, and higher TAS required for lift-off (same IAS but higher TAS in lower density). Take-off roll is longer. Climb gradient is reduced (less excess power/thrust per unit weight). Both worsen with increasing density altitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "rate of descent" in a glide at best glide speed is related to:',
+    options: [
+      'A. Engine cooling requirements dictate the rate of descent in a glide',
+    'B. The aircraft\'s weight only — heavier aircraft descend faster',
+    'C. Altitude — rate of descent increases at altitude',
+    'D. Airspeed and glide angle: ROD = TAS × sin(glide angle). Higher glide angle or higher TAS increases ROD'
+    ],
+    correct: 3,
+    explanation: 'Rate of descent in a glide: ROD = TAS × sin(glide angle). For the same L/D ratio (same glide angle), a heavier aircraft flies faster (higher TAS at same AoA) — its ROD is higher even though the glide ratio (distance/altitude) is the same. A lighter aircraft glides to the same spot but descends more slowly.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: '"Static stability" of an aircraft refers to:',
+    options: [
+      'A. Stability when parked on the ground with no wind',
+    'B. Stability in straight and level unaccelerated flight only',
+    'C. The initial tendency of the aircraft to return toward its original attitude after a disturbance',
+    'D. The long-term oscillatory response after a disturbance is applied'
+    ],
+    correct: 2,
+    explanation: 'Static stability is the initial tendency — the first response after a disturbance. Statically stable: tends to return toward original position. Statically neutral: remains in disturbed position. Statically unstable: diverges further from original position.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "green arc" on the ASI represents:',
+    options: [
+      'A. The range where flaps may be extended',
+    'B. The normal operating range — from Vs1 (clean stall speed) to Vno (maximum structural cruising speed)',
+    'C. The range for maximum performance take-off and landing',
+    'D. The speed range for landing configuration'
+    ],
+    correct: 1,
+    explanation: 'The green arc is the normal operating range — from Vs1 (power-off stall speed in clean configuration) at the bottom to Vno (maximum structural cruising speed) at the top. The aircraft can be operated in this range in all conditions including turbulence.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "range factor" for a piston aircraft increases with:',
+    options: [
+      'A. Flying at maximum continuous power at all times',
+    'B. Optimum cruise altitude and leaning the mixture to best power or best economy as appropriate',
+    'C. Altitude — range always increases with altitude regardless of other factors',
+    'D. The range factor is a fixed constant for a given aircraft type'
+    ],
+    correct: 1,
+    explanation: 'Range for a piston aircraft is maximised by: (1) flying at the best range speed (≈ minimum drag speed); (2) optimum altitude (where power required is lowest relative to available power); (3) mixture leaned for best economy. Higher altitude generally benefits range as propulsive efficiency improves.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The effect of headwind on glide range is:',
+    options: [
+      'A. Headwind reduces glide range over the ground',
+    'B. Headwind increases glide range by reducing airspeed',
+    'C. Headwind only affects glide range if it exceeds best glide speed',
+    'D. Headwind has no effect on glide range'
+    ],
+    correct: 0,
+    explanation: 'A headwind reduces ground speed without changing the sink rate. The glide angle (rate of descent vs ground distance) steepens — the aircraft covers less ground distance per foot of altitude. To partially compensate, slightly increase glide speed into a headwind.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "speed stability" of an aircraft in level flight means:',
+    options: [
+      'A. If the aircraft slows below trim speed (for a stable aircraft), the nose drops, airspeed recovers; if it speeds up, the nose rises, speed reduces — the speed returns to trim',
+    'B. Speed stability is only tested during certification — it has no practical flight significance',
+    'C. The aircraft maintains speed in turbulence automatically',
+    'D. Speed stability means the aircraft cannot exceed Vne without pilot input'
+    ],
+    correct: 0,
+    explanation: 'Speed stability: for a well-trimmed stable aircraft, if speed decreases the nose drops (angle of attack effect causing nose-down moment as speed changes — phugoid), increasing speed back toward trim. This is a desirable handling quality — the aircraft tends to maintain its trimmed speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'An aircraft with a "full fuel load and no payload" compared to the same aircraft at maximum take-off weight will have:',
+    options: [
+      'A. The same stall speed and the same climb rate',
+    'B. A higher stall speed and lower climb rate',
+    'C. The same stall speed but different handling characteristics',
+    'D. A lower stall speed and a higher climb rate due to lower weight'
+    ],
+    correct: 3,
+    explanation: 'Lower weight (full fuel, no payload) → lower stall speed (Vs ∝ √W) and more excess power per unit weight → higher rate of climb. The lighter aircraft is below MTOW — both stall performance and climb performance improve.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "pressure altitude" used for performance calculations is:',
+    options: [
+      'A. The altitude used by ATC for radar separation in Class C airspace',
+    'B. The airport elevation above mean sea level',
+    'C. The altitude shown on the altimeter set to 1013.25 hPa (QNE)',
+    'D. The altitude shown on the altimeter set to the current QNH'
+    ],
+    correct: 2,
+    explanation: 'Pressure altitude is the altitude on the altimeter when the sub-scale is set to 1013.25 hPa (the standard atmosphere reference). It is used for performance calculations, flight levels, and density altitude computation. It removes the local QNH variation and refers everything to a standard datum.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'Stall warning devices typically activate at:',
+    options: [
+      'A. Exactly at the stall speed',
+    'B. When the aircraft is at 1.3 × stall speed',
+    'C. Slightly before the stall — typically 5–10 knots or 5–10% above the stall speed',
+    'D. When pitch angle exceeds 15 degrees nose-up'
+    ],
+    correct: 2,
+    explanation: 'Stall warning systems (reed, horn, or light activated by an angle-of-attack vane) are designed to warn slightly before the actual stall — typically 5–10% above stall speed. This gives the pilot time to take corrective action before the stall fully develops.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'During cruise flight, the CG moves aft as fuel is burned because:',
+    options: [
+      'A. Most aircraft have their fuel tanks located aft of the CG',
+    'B. Fuel tank position relative to the CG determines whether burning fuel moves the CG forward or aft — this depends on each specific aircraft design',
+    'C. Fuel always burns from the wing tanks first, and wing tanks are aft of the CG on all aircraft',
+    'D. CG movement due to fuel burn is so small it is aerodynamically irrelevant'
+    ],
+    correct: 1,
+    explanation: 'CG movement during fuel burn depends entirely on where the tanks are relative to the current CG. If the main tanks are aft of the CG, burning fuel moves the CG forward. If forward, it moves aft. Pilots must check the CG envelope for the full fuel-burn range to ensure it stays within limits throughout the flight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Wake turbulence generated by a preceding aircraft is proportional to:',
+    options: [
+      'A. The size of the preceding aircraft\'s engines only',
+    'B. The weight of the preceding aircraft and inversely proportional to its airspeed and wingspan',
+    'C. The speed of the preceding aircraft',
+    'D. Wake turbulence strength is the same for all aircraft types'
+    ],
+    correct: 1,
+    explanation: 'Vortex strength is proportional to weight and inversely proportional to airspeed and wingspan. A heavy, slow aircraft with a short wingspan generates the strongest wake. A light, fast aircraft with a long wingspan generates the weakest. This is why wake separation is greatest behind heavy aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'At the "minimum power required" speed, the ratio of CL to CD is:',
+    options: [
+      'A. Not at its maximum — minimum power occurs at a lower speed where CL^(3/2)/CD is maximised',
+    'B. At its maximum — this is the same as the minimum drag speed',
+    'C. Equal to zero — no induced drag at minimum power speed',
+    'D. Equal to 1 — lift equals drag at minimum power speed'
+    ],
+    correct: 0,
+    explanation: 'Minimum power required corresponds to minimum drag × TAS. This product is minimised at a speed where CL^(3/2)/CD is maximum — not where CL/CD (L/D) is maximum. The minimum power speed is lower than the minimum drag speed. This distinction is critical for endurance vs range optimisation.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.6'
+  },
+  {
+    question: 'The primary purpose of a "stall strip" on the leading edge is to:',
+    options: [
+      'A. Increase lift at high angle of attack near the wingtip',
+    'B. Prevent ice formation on the leading edge at altitude',
+    'C. Cause the root section of the wing to stall before the tip, ensuring aileron effectiveness is maintained at the stall',
+    'D. Reduce stall speed by increasing camber'
+    ],
+    correct: 2,
+    explanation: 'Stall strips are small, sharp devices on the leading edge near the wing root. They cause the root section to stall first at high AoA — the stall progresses from root toward tip. The tips (and ailerons) remain unstalled, maintaining roll control through the stall.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "effect of altitude on propeller efficiency" for a normally aspirated piston aircraft is:',
+    options: [
+      'A. Propeller efficiency is independent of altitude — only blade pitch affects it',
+    'B. Efficiency doubles at the service ceiling as the propeller enters an optimal operating regime',
+    'C. Efficiency increases with altitude — the propeller operates in thinner air with less resistance',
+    'D. Propeller efficiency in % terms may remain similar but the actual thrust and power decrease with altitude as air density decreases'
+    ],
+    correct: 3,
+    explanation: 'At altitude: propeller pitch efficiency (%) may not change dramatically at a given advance ratio, but the actual thrust (T = ΔP × mass flow × ΔV) decreases because air density and mass flow decrease. The engine also loses power. Net result: both thrust and power available decrease with altitude for normally aspirated engines.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "lift equation" shows that to maintain lift equal to weight at higher altitude, the pilot must:',
+    options: [
+      'A. Increase wing area by extending flaps at all altitudes above 5,000 ft',
+    'B. Accept reduced lift and descend to lower altitude where density is higher',
+    'C. Reduce AoA because TAS is higher at altitude for the same IAS',
+    'D. Fly at a higher TAS (same IAS) — the same angle of attack at lower density produces the same lift as at sea level at the same IAS'
+    ],
+    correct: 3,
+    explanation: 'IAS is proportional to √(dynamic pressure) = √(½ρV²). At altitude, lower ρ means higher V (TAS) for the same IAS. The lift equation: L = CL × ½ρV² × S. At the same IAS and same AoA (same CL), ½ρV² is constant — lift is unchanged. The pilot flies the same IAS regardless of altitude for the same performance.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "balance point" of a control surface refers to:',
+    options: [
+      'A. The CG of the control surface — relevant only for mass balancing against flutter',
+    'B. The midpoint of the control surface span',
+    'C. The hinge line location — a surface balanced about its hinge requires less force to deflect',
+    'D. The position of the trim tab on the surface'
+    ],
+    correct: 2,
+    explanation: 'A control surface is "balanced" when the hinge is located so that aerodynamic pressure ahead of the hinge assists deflection, reducing the hinge moment the pilot must overcome. This reduces stick forces. Aerodynamic balance (hinge offset forward) and mass balance (balance weights) both contribute.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'Parasite drag increases with airspeed according to which relationship?',
+    options: [
+      'A. Proportional to the square of airspeed',
+    'B. Inversely proportional to airspeed',
+    'C. Proportional to the cube of airspeed',
+    'D. Directly proportional to airspeed'
+    ],
+    correct: 0,
+    explanation: 'Parasite drag (profile drag — skin friction, form drag, interference drag) is proportional to V² — the square of airspeed. This is why parasite drag rises rapidly at higher speeds.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'An aircraft in a 30° bank coordinated level turn at 100 KIAS will stall at approximately:',
+    options: [
+      'A. 41% higher IAS than straight-and-level stall speed',
+    'B. The same IAS as straight-and-level flight',
+    'C. 7% higher IAS than straight-and-level stall speed',
+    'D. 19% higher IAS than straight-and-level stall speed'
+    ],
+    correct: 2,
+    explanation: 'n = 1/cos30° = 1.155. Stall speed increase = √1.155 − 1 = 1.074 − 1 = 7.4%. At 30° bank, stall speed rises approximately 7% above the wings-level stall speed. This is relatively modest — steep bank angles above 45° produce more dramatic increases.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "pressure altitude" effect on aircraft performance means:',
+    options: [
+      'A. At higher pressure altitudes, air is less dense — engine power, propeller thrust, and lift all decrease for the same IAS',
+    'B. Performance is the same at any pressure altitude if the same IAS is maintained',
+    'C. Pressure altitude only affects turbocharged engines — normally aspirated engines are unaffected',
+    'D. Aircraft performance improves at high pressure altitudes'
+    ],
+    correct: 0,
+    explanation: 'At high pressure altitude: air density is lower. Normally aspirated engine power decreases (less air mass per stroke). Propeller develops less thrust (less air mass accelerated). For the same IAS, TAS is higher — the aircraft covers more ground per minute but the engine and propeller work harder per unit of thrust produced.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'As angle of attack increases up to the critical angle, the lift coefficient:',
+    options: [
+      'A. Increases',
+    'B. Remains constant',
+    'C. First increases then stays constant',
+    'D. Decreases steadily'
+    ],
+    correct: 0,
+    explanation: 'As angle of attack increases from zero toward the critical (stalling) angle, the lift coefficient (CL) increases. Beyond the critical angle of attack, the airflow separates and CL drops sharply — the stall occurs.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "slip indicator" (ball in inclinometer) moves to the right when:',
+    options: [
+      'A. The aircraft rolls to the left — the ball always moves opposite to the roll',
+    'B. The aircraft is in a correctly banked turn to the right',
+    'C. The aircraft is slipping or skidding to the right — unbalanced lateral forces push the ball right',
+    'D. The aircraft yaws to the right in coordinated flight'
+    ],
+    correct: 2,
+    explanation: 'The slip indicator ball moves toward the low side (direction of sideslip/skid). If the aircraft is skidding right (too much right rudder), the ball moves right. Correct: "step on the ball" — apply rudder in the direction the ball is displaced to centre it. Ball right = apply right rudder is incorrect — ball right means already skidding right — reduce right rudder.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'A tailwind component during take-off will:',
+    options: [
+      'A. Reduce take-off distance because the aircraft reaches Vlof sooner',
+    'B. Have no effect on take-off distance if the same IAS is maintained',
+    'C. Increase take-off distance because the aircraft must accelerate to a higher ground speed to achieve the required IAS for lift-off',
+    'D. Reduce take-off distance only on runway slopes greater than 2%'
+    ],
+    correct: 2,
+    explanation: 'Tailwind take-off: the aircraft has a higher ground speed at any given IAS. To reach lift-off IAS, it must accelerate to a higher ground speed than in calm air. This takes more runway. Tailwind landing also increases ground roll. Even a small tailwind significantly degrades performance.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "overshoot" on a base-to-final turn is made more dangerous by:',
+    options: [
+      'A. Applying excessive rudder (skidding the turn) to tighten it — this can provoke a crossed-control stall at low altitude',
+    'B. Extending flaps to maximum — excess lift causes altitude gain',
+    'C. Adding power — power increases drag and makes the turn tighter',
+    'D. Reducing bank angle — less bank means the turn becomes too slow'
+    ],
+    correct: 0,
+    explanation: 'Overshooting final at low altitude: instinctively applying rudder toward the runway to tighten the turn (while maintaining or adding bank) creates a skidding, crossed-control condition. The inside (lower) wing has lower effective airspeed and stalls first — rolling the aircraft rapidly toward the ground at very low altitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "gust load factor" added by a vertical gust of velocity u at aircraft speed V is approximately proportional to:',
+    options: [
+      'A. u × V (gust velocity × aircraft speed)',
+    'B. Gust velocity squared — u²',
+    'C. u / V (gust velocity / aircraft speed)',
+    'D. Aircraft speed squared — V²'
+    ],
+    correct: 0,
+    explanation: 'Gust load factor increment ≈ ρ × V × u × a × S / (2 × W) where a is lift curve slope. The gust load is proportional to both aircraft speed V and gust velocity u. This means at higher speeds (Vno or yellow arc), the same gust produces a larger load factor increment — justifying the speed restriction in turbulence.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'When an aircraft is loaded at the forward CG limit compared to the aft CG limit, it will have:',
+    options: [
+      'A. Higher stall speed and lighter stick forces',
+    'B. Higher stall speed and heavier stick forces — the larger CG-to-AC moment requires more tail download and elevator force',
+    'C. The same handling regardless of CG position',
+    'D. Lower stall speed and lighter stick forces'
+    ],
+    correct: 1,
+    explanation: 'Forward CG: larger tail download required to balance the nose-down moment (CG well forward of wing AC). Higher effective weight (wing must lift aircraft weight plus tail download). Higher stall speed. More elevator force needed — heavier stick forces. More stable but less manoeuvrable.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The effect of extending flaps on the stall speed is:',
+    options: [
+      'A. Stall speed decreases — higher CL is achieved at a lower speed',
+    'B. Stall speed is unaffected — stall angle of attack does not change',
+    'C. Stall speed increases — more lift means faster stall',
+    'D. Stall speed changes only if the flap setting exceeds 30°'
+    ],
+    correct: 0,
+    explanation: 'Flaps increase CLmax — the maximum lift coefficient available. Since stall speed Vs = √(2W / ρ S CLmax), increasing CLmax reduces the stall speed. A fully flapped wing can fly more slowly before stalling.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'After trimming for level cruise, the pilot adds power. The expected pitch response is:',
+    options: [
+      'A. Nose-down — extra power reduces the required angle of attack',
+    'B. No change — trim holds attitude regardless of power changes',
+    'C. Nose-up — increased thrust and slipstream over the tail increases the nose-up pitching tendency',
+    'D. The response depends only on CG position and is unpredictable without weight and balance data'
+    ],
+    correct: 2,
+    explanation: 'Adding power typically produces a nose-up pitch tendency: (1) increased propeller slipstream over the tail increases tail effectiveness, tending to rotate the nose up; (2) thrust line (if above CG) creates a nose-up moment. The pilot must push forward or re-trim after power changes.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "Dutch roll" is most likely to be a problem on aircraft with:',
+    options: [
+      'A. High dihedral and strong directional stability',
+    'B. High dihedral effect (strong lateral stability) combined with weak directional stability',
+    'C. Dutch roll only occurs on swept-wing aircraft at high Mach number',
+    'D. Very little dihedral but a large, powerful fin'
+    ],
+    correct: 1,
+    explanation: 'Dutch roll: caused by a mismatch where lateral stability (dihedral effect) is strong but directional stability (fin) is relatively weak. The aircraft rolls to correct a yaw, which yaws the nose further, which rolls further — an oscillating coupled motion. Yaw dampers on swept-wing jets suppress Dutch roll.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "boundary layer" of an aerofoil is:',
+    options: [
+      'A. The layer of air between the upper and lower wing surfaces',
+    'B. The region of supersonic flow near the leading edge',
+    'C. The zone of turbulent air behind the trailing edge',
+    'D. The thin layer of air adjacent to the surface where viscosity effects are significant'
+    ],
+    correct: 3,
+    explanation: 'The boundary layer is the thin layer of air immediately adjacent to the wing surface, where viscous (friction) effects are dominant. Airflow transitions from zero velocity at the surface (no-slip condition) to the free-stream velocity at the boundary layer edge.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'A "spoileron" is:',
+    options: [
+      'A. A type of spoiler designed specifically for landing roll deceleration only',
+    'B. A spoileron is a theoretical device — not used in practice',
+    'C. A combined spoiler and aileron that uses spoilers differentially for roll control',
+    'D. The combination of spoilers and thrust reversers used on jet airliners'
+    ],
+    correct: 2,
+    explanation: 'Spoilerons combine spoiler and aileron function — roll control is achieved by raising one spoiler (reducing lift on that side) rather than deflecting an aileron. Used on some aircraft where conventional ailerons would cause aileron reversal at high speed. The spoileron on the rising wing dumps lift to roll that wing down.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The aerodynamic force called "profile drag" comprises:',
+    options: [
+      'A. Skin friction drag and form (pressure) drag — the two components of drag associated with the aerofoil section itself',
+    'B. The drag from the landing gear and external stores only',
+    'C. Only induced drag and wave drag',
+    'D. Only the drag from the fuselage profile — not including wing drag'
+    ],
+    correct: 0,
+    explanation: 'Profile drag = skin friction drag + form drag. Skin friction: viscous shear force along the surface. Form drag: pressure difference between the stagnation (high pressure) front and the turbulent wake (low pressure) rear. These are the two components of viscous drag on an aerofoil section.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "angle of attack" of a propeller blade is the angle between:',
+    options: [
+      'A. The blade pitch angle and the aircraft longitudinal axis',
+    'B. The blade chord and the plane of rotation',
+    'C. The blade chord and the relative airflow at that blade section',
+    'D. The plane of rotation and the aircraft flight path'
+    ],
+    correct: 2,
+    explanation: 'Propeller blade AoA is the angle between the blade chord line and the relative airflow at that section. The relative airflow is the resultant of the rotational velocity and the forward velocity of the aircraft. This is what determines thrust and efficiency.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "slotted flap" is more effective than a plain flap because:',
+    options: [
+      'A. The slot reduces drag by allowing smooth flow attachment around the flap',
+    'B. The slot allows high-energy air from the lower surface to re-energise the boundary layer on the upper flap surface — delaying separation at higher deflection angles',
+    'C. It also increases wing area, providing more lift surface',
+    'D. Slotted flaps increase the camber more than plain flaps at the same deflection'
+    ],
+    correct: 1,
+    explanation: 'Slotted flap: a slot between the main wing and the flap face allows high-energy air from below to flow over the upper surface of the flap, re-energising the boundary layer. This delays separation — the flap can be deflected to a higher angle before stalling, generating more lift than a plain flap.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "induced drag" of an aircraft flying at twice its minimum drag speed compared to minimum drag speed is:',
+    options: [
+      'A. Half as much',
+    'B. Twice as high',
+    'C. Four times as high',
+    'D. One quarter as much'
+    ],
+    correct: 3,
+    explanation: 'Induced drag ∝ 1/V² (or ∝ CL²). At double the minimum drag speed: CL is halved (same lift, four times the dynamic pressure). CDi ∝ CL² → CDi is (1/2)² = 1/4 of its value at minimum drag speed. Induced drag is one quarter as much at double the speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "propeller disc loading" relates to:',
+    options: [
+      'A. The bending stress at the propeller blade root per unit of engine power',
+    'B. The thrust produced divided by the disc area — higher disc loading means higher velocity addition to the airstream',
+    'C. The ratio of propeller diameter to engine displacement',
+    'D. The weight of the propeller assembly divided by the number of blades'
+    ],
+    correct: 1,
+    explanation: 'Propeller disc loading = thrust / disc area (N/m²). Low disc loading (large diameter propeller) is more efficient — a large mass of air accelerated by a small velocity increment is more efficient than a small mass accelerated a lot (by actuator disc theory). This is why efficient low-speed propellers have large diameters.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'A longer wing (greater span) at the same wing area has a higher aspect ratio and:',
+    options: [
+      'A. More induced drag due to the greater tip area',
+    'B. Lower maximum lift coefficient due to the reduced chord',
+    'C. Less induced drag because wingtip vortices affect a smaller fraction of the total span',
+    'D. Higher stall speed because the wing chord is reduced'
+    ],
+    correct: 2,
+    explanation: 'Higher aspect ratio = less induced drag. The wingtip vortex region is a fixed physical width — with a longer span, this width represents a smaller fraction of the total span. More of the wing produces lift efficiently in undisturbed flow.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "induced angle of attack" of a wing is:',
+    options: [
+      'A. The angle between the chord line and the angle of zero lift',
+    'B. The angle at which induced drag equals parasite drag',
+    'C. The reduction in effective AoA caused by downwash from the wingtip vortices — the wing "sees" a lower AoA than its geometric AoA',
+    'D. The angle of the relative wind upstream of the wing'
+    ],
+    correct: 2,
+    explanation: 'Induced AoA: the downwash from wingtip vortices tilts the relative airflow slightly downward at the wing. This means the wing\'s effective AoA is less than its geometric AoA by the induced angle. This tilted local flow also tilts the lift vector rearward — producing induced drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'What are the three axes of rotation of an aircraft?',
+    options: [
+      'A. Pitch, roll, and thrust axes',
+    'B. Horizontal, diagonal, and vertical',
+    'C. Fore-aft, port-starboard, and transverse',
+    'D. Longitudinal, lateral, and normal (vertical)'
+    ],
+    correct: 3,
+    explanation: 'An aircraft rotates about three axes: the longitudinal axis (nose to tail — controls roll), the lateral axis (wingtip to wingtip — controls pitch), and the normal/vertical axis (through the centre of gravity vertically — controls yaw).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.1'
+  },
+  {
+    question: 'The "form drag" of an aircraft component is reduced by:',
+    options: [
+      'A. Adding vortex generators to the surface',
+    'B. Streamlining the shape — elongating the body, fairing the trailing edge to allow smooth pressure recovery',
+    'C. Roughening the surface to promote turbulent flow',
+    'D. Increasing the frontal area to reduce the pressure differential'
+    ],
+    correct: 1,
+    explanation: 'Form drag arises from the pressure difference between the front and rear of a body (wake drag). Streamlining — elongating and fairing the shape — allows gradual pressure recovery at the trailing edge, reducing the size of the separated wake and therefore form drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'As bank angle increases in a level turn, the stall speed:',
+    options: [
+      'A. Stays constant — stall speed is fixed by weight and wing area',
+    'B. Increases — proportional to the square root of the load factor',
+    'C. Decreases — the reduced vertical lift means less lift is needed and stall occurs later',
+    'D. Doubles for every 30° increase in bank angle'
+    ],
+    correct: 1,
+    explanation: 'Stall speed in a turn: Vs(turn) = Vs(level) × √n where n = 1/cos(bank angle). At 30° bank: √1.15 = 1.07 (7% increase). At 45°: √1.41 = 1.19 (19% increase). At 60°: √2 = 1.41 (41% increase). The stall speed increases significantly at steep bank angles.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'An aircraft loaded with the CG forward of the forward limit will experience:',
+    options: [
+      'A. Reduced stall speed due to increased tail download',
+    'B. Insufficient longitudinal stability',
+    'C. Improved cruise performance due to lower drag',
+    'D. Excessive stick forces required to raise the nose, and may not achieve the rotation speed needed for take-off'
+    ],
+    correct: 3,
+    explanation: 'A very forward CG creates a large nose-down pitching moment. The pilot must hold considerable back pressure to maintain level flight, and the elevator may be unable to rotate the aircraft to the required take-off attitude — creating a dangerous situation.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "zero-lift drag" (CDo) of an aircraft can be reduced by:',
+    options: [
+      'A. Streamlining the fuselage, retracting undercarriage, reducing frontal area, and using smooth surface finishes',
+    'B. Increasing the angle of attack at cruise to generate more lift',
+    'C. Increasing wing area to reduce the required lift coefficient at cruise speed',
+    'D. CDo cannot be changed — it is a fixed aerodynamic constant for each aircraft type'
+    ],
+    correct: 0,
+    explanation: 'CDo (zero-lift drag) represents parasite drag. It is reduced by: aerodynamic streamlining (reducing form drag), smooth surfaces (reducing skin friction), retractable undercarriage, minimising frontal area, sealing gaps (reducing interference drag), and using laminar flow profiles where possible.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'When flaps are extended, the aircraft tends to pitch:',
+    options: [
+      'A. Nose-down because flaps increase camber and move the centre of pressure forward, increasing the nose-down pitching moment',
+    'B. Flaps have no effect on pitch attitude — only on lift and drag',
+    'C. Nose-up because the flaps increase lift at the tail',
+    'D. In a direction that depends solely on centre of gravity position'
+    ],
+    correct: 0,
+    explanation: 'Flap extension generally causes a nose-down pitching moment: the lift increase is mainly aft of the CG, adding a nose-down couple. There is also more downwash from the flaps onto the tail. However, the net pitch change depends on flap type, CG position, and tailplane design — many aircraft pitch nose-up with initial flap extension.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'Extending speed brakes (spoilers) during a descent primarily:',
+    options: [
+      'A. Increases airspeed by reducing lift and allowing the aircraft to accelerate in the descent',
+    'B. Speed brakes have no effect on descent rate — only on control feel',
+    'C. Increases descent rate and drag while maintaining airspeed — steepens the approach without increasing speed',
+    'D. Reduces airspeed without changing descent rate'
+    ],
+    correct: 2,
+    explanation: 'Speed brakes/spoilers: (1) increase drag significantly; (2) reduce lift partially. The aircraft must descend more steeply to maintain airspeed — descent rate increases. This allows the pilot to approach at a steeper angle without exceeding speed limits. Very useful for energy management.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The primary purpose of the "fin" (vertical stabiliser) is to provide:',
+    options: [
+      'A. Directional (yaw) stability — the fin creates a restoring yaw moment when the aircraft sideslips',
+    'B. Both directional and lateral stability simultaneously',
+    'C. Pitch stability in the longitudinal plane',
+    'D. Support for the horizontal tailplane and its associated control systems'
+    ],
+    correct: 0,
+    explanation: 'The vertical stabiliser (fin) provides directional (weathercock) stability. When the aircraft yaws or sideslips, the fin presents area to the relative wind — generating a force that yaws the nose back toward the flight path. The fin is the primary source of yaw stability.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "propeller blade twist" means:',
+    options: [
+      'A. The blade increases in pitch from root to tip for maximum thrust at the tip',
+    'B. The pitch angle decreases from root to tip — keeping the effective angle of attack approximately uniform along the blade despite the tip moving faster',
+    'C. Blade twist refers to the washout angle built into the blade for stall resistance',
+    'D. The blade is damaged and twisted by engine torque'
+    ],
+    correct: 1,
+    explanation: 'Propeller blades are twisted — higher pitch at the root (slower-moving part) and lower pitch at the tip (faster-moving part). This compensates for the varying rotational speed along the blade so each blade section operates at an approximately optimum angle of attack.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'What is the "chord line" of an aerofoil?',
+    options: [
+      'A. The curved line along the upper surface',
+    'B. The line of maximum thickness through the aerofoil',
+    'C. A straight line from the leading edge to the trailing edge',
+    'D. The line where airflow divides at the leading edge'
+    ],
+    correct: 2,
+    explanation: 'The chord line is a straight line joining the leading edge to the trailing edge of the aerofoil. It is the reference line from which angle of attack is measured.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'A "straight-wing" aircraft (no sweep) at normal flying speeds encounters no significant:',
+    options: [
+      'A. Compressibility effects — sweep is required for high-speed flight where compressibility becomes important',
+    'B. Induced drag — straight wings are immune to tip vortex effects',
+    'C. Ground effect — ground effect only applies to high swept-wing aircraft',
+    'D. Adverse yaw — only swept wings have adverse yaw'
+    ],
+    correct: 0,
+    explanation: 'Straight-wing aircraft operating at normal CPL airspeeds (well below Mach 0.7) experience negligible compressibility effects. Compressibility (wave drag, Mach tuck, critical Mach number concerns) becomes relevant at high subsonic speeds where swept wings are used to delay onset.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "T-O climb segment" analysis for a twin requires checking the aircraft can achieve:',
+    options: [
+      'A. A climb gradient of 10% — corresponding to approximately 600 ft/NM',
+    'B. At least 500 ft/min rate of climb with all engines operating',
+    'C. Full performance with all engines — one-engine-out climb is not required below 1,000 ft AGL',
+    'D. A positive rate of climb (in regulatory terms a specified gradient) with the critical engine failed'
+    ],
+    correct: 3,
+    explanation: 'Twin-engine aircraft must demonstrate a minimum climb gradient with the critical engine failed — first segment (gear down, power set), second segment (gear up, flap take-off), final segment (clean, en-route). The gradients are defined in CASR Part 21/AFM. This is the basis for the single-engine performance requirement.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'What is meant by the aircraft having "positive static stability" in all three axes?',
+    options: [
+      'A. After any small disturbance, the aircraft initially tends to return toward its original pitch, roll, and yaw attitude',
+    'B. The aircraft will remain in any attitude placed — neutral stability',
+    'C. Full positive g manoeuvres are possible without structural risk',
+    'D. The aircraft can be controlled without rudder pedals'
+    ],
+    correct: 0,
+    explanation: 'Positive static stability in all axes: any pitch disturbance → restoring pitch moment; roll disturbance → restoring roll moment (dihedral effect); yaw disturbance → restoring yaw moment (fin). The aircraft tends to return to its trimmed condition after small disturbances in all three axes.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The effect of "wing contamination" (insects, dirt) on the upper surface near the leading edge is to:',
+    options: [
+      'A. Wing contamination is only a concern on aerofoils designed for laminar flow',
+    'B. Reduce CLmax and increase stall speed by causing premature boundary layer transition and earlier separation',
+    'C. Increase CLmax by adding surface roughness that promotes turbulent boundary layer attachment',
+    'D. Only affect aircraft at speeds above Vno'
+    ],
+    correct: 1,
+    explanation: 'Upper surface contamination near the leading edge disrupts the boundary layer — even insects can cause premature turbulent transition and separation. This reduces CLmax (stall speed increases) and increases drag. On laminar flow aerofoils the effect is larger, but even conventional wings are affected.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'In straight and level flight, what happens to angle of attack as airspeed decreases?',
+    options: [
+      'A. Angle of attack decreases to maintain lift',
+    'B. Angle of attack increases to maintain lift equal to weight',
+    'C. Angle of attack stays constant — only power changes',
+    'D. Angle of attack increases but lift decreases'
+    ],
+    correct: 1,
+    explanation: 'In level flight, lift must equal weight (constant). L = CL × ½ρV² × S. As V decreases, ½ρV² decreases — so CL must increase to maintain lift. Increasing CL requires increasing the angle of attack. This is why the nose rises as speed reduces.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'An aircraft on approach at 1.3 × Vso encounters a sudden 15-kt loss of headwind. The immediate effect is:',
+    options: [
+      'A. IAS drops by approximately 15 kt — the aircraft may approach the stall speed unless power is added immediately',
+    'B. No significant effect — the 1.3 × Vso approach speed provides sufficient margin',
+    'C. Airspeed increases by 15 kt as the aircraft accelerates into the reduced headwind',
+    'D. The descent rate decreases as the headwind loss reduces drag'
+    ],
+    correct: 0,
+    explanation: 'Sudden 15-kt headwind loss: the IAS drops immediately by approximately 15 kt. If the approach was at 1.3 × Vso and Vso is typically 50 kt, the approach IAS might be 65 kt — a 15-kt drop brings it to 50 kt, which is Vso (the stall). This is a very dangerous situation. Full power must be applied immediately.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "standard atmosphere" lapse rate of temperature is approximately:',
+    options: [
+      'A. 2°C per 1,000 ft',
+    'B. 4°C per 1,000 ft',
+    'C. 3°C per 1,000 ft',
+    'D. 1°C per 1,000 ft'
+    ],
+    correct: 0,
+    explanation: 'ISA temperature lapse rate: 1.98°C per 1,000 ft (approximately 2°C/1,000 ft) up to the tropopause (~36,089 ft). Above the tropopause, temperature is constant at −56.5°C (isothermal layer). Actual atmospheric temperatures may differ significantly from ISA.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The benefit of "leading edge camber" or a rounded leading edge on an aerofoil is:',
+    options: [
+      'A. Leading edge camber only benefits the wing in icing conditions',
+    'B. A rounded leading edge reduces the critical angle of attack',
+    'C. It increases the maximum speed by reducing pressure drag at the leading edge',
+    'D. It allows attached airflow at higher angles of attack — the flow can turn smoothly around a rounded leading edge but separates at a sharp leading edge'
+    ],
+    correct: 3,
+    explanation: 'A rounded leading edge allows the flow to smoothly curve around it at higher AoA before separating. A sharp leading edge causes immediate separation at low AoA — limiting the maximum lift. Rounding the leading edge increases CLmax and the stall AoA.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'When the aircraft is flying at the "back of the power curve" (below minimum drag speed), to recover to normal speed, the pilot should:',
+    options: [
+      'A. Apply full flap to increase lift and reduce the stall speed margin',
+    'B. Raise the nose further to increase lift and gain airspeed',
+    'C. Increase power and lower the nose slightly to reduce AoA and accelerate',
+    'D. Reduce power — too much power is the cause of the low speed'
+    ],
+    correct: 2,
+    explanation: 'Recovery from behind the drag curve: increase power (to provide excess thrust over the elevated drag) and lower the nose slightly to reduce AoA. This allows the aircraft to accelerate through the minimum drag speed and onto the front of the curve where stable speed control is possible. Raising the nose further worsens the situation.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "phugoid" is:',
+    options: [
+      'A. A long-period pitch oscillation in which the aircraft exchanges speed and altitude — period is typically 20–100 seconds',
+    'B. A short-period pitch oscillation with a period of 1–2 seconds',
+    'C. A lateral oscillation coupling roll and yaw',
+    'D. An oscillation induced by turbulence at low altitude'
+    ],
+    correct: 0,
+    explanation: 'The phugoid is a long-period (20–100 second) pitch oscillation where the aircraft exchanges kinetic and potential energy — pitch attitude, altitude, and speed all oscillate slowly. It is generally lightly damped but can be controlled by the pilot easily. It is a dynamic stability characteristic.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Increasing aircraft weight has what effect on total drag at a given airspeed?',
+    options: [
+      'A. Has no effect on drag — drag depends only on speed and wing area',
+    'B. Reduces total drag — heavier aircraft penetrate air more efficiently',
+    'C. Increases induced drag — heavier aircraft need more lift, increasing wingtip vortices',
+    'D. Increases parasite drag only — weight compresses the airframe'
+    ],
+    correct: 2,
+    explanation: 'Heavier aircraft require more lift at any given speed, which requires a higher angle of attack. Higher angle of attack increases CL and therefore induced drag (CDi ∝ CL²). Parasite drag is unaffected by weight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The stall occurs when:',
+    options: [
+      'A. The critical angle of attack is exceeded and airflow separates from the upper wing surface',
+    'B. Lift becomes less than drag at low airspeeds',
+    'C. Airspeed falls below a fixed value printed in the AFM',
+    'D. Engine power is insufficient to maintain level flight'
+    ],
+    correct: 0,
+    explanation: 'A stall occurs when the critical (maximum) angle of attack is exceeded — not at a specific airspeed. The airflow separates from the upper wing surface, CL drops sharply, and lift is lost. The stall can occur at any speed if the critical AoA is exceeded.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'In a "skidding turn", the ball in the slip indicator moves:',
+    options: [
+      'A. Oscillates rapidly during a skid',
+    'B. Remains centred — a skidding turn is coordinated',
+    'C. Toward the inside of the turn',
+    'D. Toward the outside of the turn'
+    ],
+    correct: 3,
+    explanation: 'In a skidding turn, the tail is sliding outward (centrifugal effect) — the ball moves to the outside of the turn. Too much rudder in the direction of turn (or insufficient bank) causes a skid. In a slipping turn, the ball moves to the inside.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The tendency of an aircraft to return to its trimmed speed after a disturbance is called:',
+    options: [
+      'A. Speed stability — the speed tends to return after disturbance in level flight',
+    'B. Spiral stability — the bank returns to wings-level automatically',
+    'C. Directional stability — the nose returns to the original heading',
+    'D. Phugoid stability — the long-period pitch oscillation that follows a speed change'
+    ],
+    correct: 0,
+    explanation: 'Speed stability (also called speed or velocity stability) describes the tendency of an aircraft to return to its trimmed airspeed after a disturbance. A statically stable aircraft pitched nose-up will slow, and the nose will eventually drop back toward the trimmed attitude. Phugoid is the dynamic oscillation.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "service ceiling" is operationally more useful than the "absolute ceiling" because:',
+    options: [
+      'A. At the absolute ceiling the aircraft cannot maintain level flight, but at the service ceiling it has full manoeuvrability',
+    'B. The service ceiling is higher and provides more safety margin',
+    'C. The absolute ceiling takes hours to reach in practice, while the service ceiling (100 ft/min ROC) is practically reachable in a reasonable time',
+    'D. Service ceiling is certified by CASA while absolute ceiling is only theoretical'
+    ],
+    correct: 2,
+    explanation: 'The absolute ceiling is where ROC = 0 — it is approached asymptotically and would take an impractically long time to reach. The service ceiling (100 ft/min ROC remaining) is achievable in a reasonable time and represents the practical altitude limit for operations.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "ground roll" distance on landing is primarily influenced by:',
+    options: [
+      'A. The length of the flare only — once on the ground, all aircraft stop in the same distance',
+    'B. Thrust only — idle thrust creates minimal drag',
+    'C. Aircraft altitude at the threshold only',
+    'D. Touch-down speed (ground speed at touch-down), braking effectiveness, aerodynamic drag, and any uphill slope'
+    ],
+    correct: 3,
+    explanation: 'Landing ground roll factors: (1) touch-down speed (higher = more KE to dissipate = longer roll); (2) braking friction (dry vs wet vs contaminated runway); (3) aerodynamic drag (flaps, spoilers, reverse thrust); (4) runway slope (uphill aids deceleration); (5) weight (heavier = more KE but also more braking friction).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'In a balanced (coordinated) turn, the load factor on the aircraft structure is:',
+    options: [
+      'A. Equal to 1g regardless of bank angle',
+    'B. Greater than 1g — it increases with bank angle',
+    'C. Less than 1g as the vertical component of lift is reduced',
+    'D. Equal to 1g only in level turns; it decreases in climbing or descending turns'
+    ],
+    correct: 1,
+    explanation: 'In a turn, the lift vector tilts so only a component acts vertically to support weight. To maintain altitude, total lift must increase — load factor (n = L/W) = 1/cos(bank angle). At 60° bank: n = 1/cos60° = 2g.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "aspect ratio" has the greatest effect on which type of drag?',
+    options: [
+      'A. Wave drag',
+    'B. Induced drag',
+    'C. Form drag',
+    'D. Skin friction drag'
+    ],
+    correct: 1,
+    explanation: 'Aspect ratio primarily affects induced drag. CDi ∝ CL² / (π × e × AR), where AR is aspect ratio and e is the Oswald efficiency factor. Higher AR reduces induced drag for a given CL. Parasite drag (skin friction, form drag) is relatively unaffected by aspect ratio.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "angle of descent" in a power-off glide is determined by:',
+    options: [
+      'A. The aircraft weight — heavier aircraft glide at steeper angles',
+    'B. The altitude above the terrain at which the engine fails',
+    'C. The pilot\'s chosen pitch attitude only',
+    'D. The lift-to-drag ratio — a higher L/D gives a shallower (smaller) glide angle'
+    ],
+    correct: 3,
+    explanation: 'Glide angle γ = arctan(D/L) = arctan(1/(L/D)). Higher L/D → smaller glide angle → shallower descent. The L/D ratio is determined by the aerofoil and configuration — not by weight (which affects speed but not the glide angle). Best glide speed achieves maximum L/D and minimum glide angle.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'Which statement about the "drag coefficient" (CD) is correct?',
+    options: [
+      'A. CD decreases at high AoA as the wing becomes more efficient',
+    'B. CD initially increases slowly with AoA, then increases sharply at and above the stall angle',
+    'C. CD is constant regardless of angle of attack',
+    'D. CD increases linearly with angle of attack at all angles'
+    ],
+    correct: 1,
+    explanation: 'CD vs AoA: at low AoA (cruise), CD is relatively low and increases slowly. At the stall, the flow separates, causing a large form drag — CD rises sharply. The stall coincides with maximum CL and subsequent rapid CDincrease — the L/D ratio falls dramatically.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The effect of a "fixed undercarriage" on cruise performance compared to retractable gear is:',
+    options: [
+      'A. Fixed gear improves stability and therefore reduces the power required to maintain level flight',
+    'B. Fixed gear reduces stall speed by acting as a ground stabiliser',
+    'C. Fixed gear has no measurable effect on cruise speed at normal operating speeds',
+    'D. Fixed gear significantly increases parasite drag — reducing cruise speed and range compared to an equivalent retractable-gear aircraft'
+    ],
+    correct: 3,
+    explanation: 'Fixed undercarriage creates substantial form and interference drag — exposed wheels, tyres, axles, and fairings. The drag penalty compared to retractable gear can amount to a 15–25% increase in total drag, significantly reducing cruise speed. Retractable gear is standard on higher-performance aircraft for this reason.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The aircraft speed at which the maximum positive structural load factor can first be achieved is:',
+    options: [
+      'A. The minimum level flight speed (stall speed)',
+    'B. Vno — the maximum structural cruising speed',
+    'C. Vne — the never-exceed speed',
+    'D. Va (manoeuvre speed) — below Va, the wing stalls before the structural limit is reached'
+    ],
+    correct: 3,
+    explanation: 'Va is the speed at which full deflection produces exactly the positive limit load factor — the stall occurs at the same AoA as the structural limit. Below Va, full deflection stalls the wing before overloading the structure. Above Va, full deflection can overstress the aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: '"Spiral instability" is characterised by:',
+    options: [
+      'A. A slowly diverging bank angle — the aircraft gradually rolls and yaws into an increasing spiral dive if uncorrected',
+    'B. A spin that transitions to a steep spiral descent',
+    'C. Rapid pitch oscillations coupled with roll',
+    'D. The aircraft pitching nose down in a spiral dive that tightens over time'
+    ],
+    correct: 0,
+    explanation: 'Spiral instability: when disturbed to a slight bank, the aircraft yaws toward the lower wing (due to outer wing moving faster). This increases the bank slowly and the aircraft enters a tightening spiral. It is a slow, gentle instability — easily corrected by the pilot.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'In the stall, the nose drops because:',
+    options: [
+      'A. The loss of lift reduces the downwash on the tail, reducing the tail-down force and allowing the nose to drop',
+    'B. The wing\'s centre of pressure moves rearward as the stall occurs, increasing the nose-down moment',
+    'C. The elevator becomes ineffective and gravity pulls the nose down',
+    'D. Weight exceeds lift, rotating the aircraft about the wing leading edge'
+    ],
+    correct: 0,
+    explanation: 'At the stall, lift decreases and the downwash over the tailplane reduces. With less downwash, the tailplane angle of attack increases and it generates less download — the nose-down pitching moment predominates and the nose drops. This is the natural pitch break of a stable aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'When compared to a straight wing at the same AoA, a swept wing:',
+    options: [
+      'A. Has better low-speed performance because the sweep reduces induced drag',
+    'B. Has a tendency to stall at the tip first, leading to a pitch-up and roll departure',
+    'C. Stalls uniformly from root to tip, providing smooth stall characteristics',
+    'D. Stalls at a lower angle of attack due to reduced effective chord'
+    ],
+    correct: 1,
+    explanation: 'Swept wings tend to stall at the tip first because the spanwise flow moves the boundary layer toward the tip, causing early separation there. Tip stall removes aileron effectiveness and can cause a sharp pitch-up (if the aircraft is tail-heavy). Devices like washout and leading edge slats address this.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "angle of attack" is defined as the angle between:',
+    options: [
+      'A. The longitudinal axis and the flight path',
+    'B. The wing upper surface and the lower surface',
+    'C. The wing and the horizon',
+    'D. The chord line and the relative airflow'
+    ],
+    correct: 3,
+    explanation: 'Angle of attack (AoA) is the angle between the chord line of the aerofoil and the direction of the relative airflow (relative wind). It is not the same as pitch attitude — the two differ by the angle of climb or descent.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "gyroscopic effect" of a spinning propeller is relevant because:',
+    options: [
+      'A. The gyroscopic effect stabilises the aircraft in turbulence',
+    'B. When the aircraft yaws or pitches, a gyroscopic precession force acts at 90° to the applied force',
+    'C. It increases propeller efficiency at high altitude',
+    'D. It reduces propeller tip speed at high power settings'
+    ],
+    correct: 1,
+    explanation: 'A spinning propeller behaves as a gyroscope. Gyroscopic precession: when a force is applied to a spinning disc, the reaction occurs 90° ahead in the direction of rotation. This creates pitch or yaw forces when the aircraft\'s attitude changes rapidly.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'Rotation about the lateral axis is called:',
+    options: [
+      'A. Yaw',
+    'B. Slip',
+    'C. Pitch',
+    'D. Roll'
+    ],
+    correct: 2,
+    explanation: 'Pitch is rotation about the lateral axis (wingtip to wingtip). The elevator controls pitch — raising the nose or lowering it.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.1'
+  },
+  {
+    question: 'Compared to a low-altitude cruise, the same aircraft cruising at high altitude with the same IAS will have:',
+    options: [
+      'A. The same TAS and the same fuel efficiency',
+    'B. Higher TAS, higher induced drag (same AoA for same IAS), but improved range due to lower parasite drag',
+    'C. The same fuel consumption because IAS is the same',
+    'D. Lower TAS and significantly worse fuel consumption'
+    ],
+    correct: 1,
+    explanation: 'At the same IAS at higher altitude: TAS is higher (TAS > IAS at altitude). Induced drag is the same (same AoA/CL for same IAS/same lift). Parasite drag is similar (same IAS). Engine power is reduced. The net result: more miles per unit of fuel at altitude — range generally improves with altitude for piston aircraft up to the optimal altitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'In a normal landing, the aircraft should cross the threshold at:',
+    options: [
+      'A. The maximum structural speed to ensure sufficient energy for flare',
+    'B. The approach speed — typically 1.3 × Vso in the landing configuration, ensuring a margin above stall',
+    'C. The minimum speed — the slower the approach the better the landing',
+    'D. Vno divided by 2 for a safe margin above Vne'
+    ],
+    correct: 1,
+    explanation: 'Approach speed is typically 1.3 × Vso (1.3 × stall speed in landing configuration). This provides a 30% margin above stall — enough to manage gusts and small speed variations while maintaining control authority for the flare and landing. Lower speeds reduce the flare margin.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "accelerate-stop distance" for a twin-engine aircraft is:',
+    options: [
+      'A. The distance required to accelerate to decision speed (V1), recognise an engine failure, and stop on the runway',
+    'B. The take-off roll plus the initial climb to 50 ft with one engine failed',
+    'C. The take-off distance with all engines operating',
+    'D. The distance from brake release to Vmca'
+    ],
+    correct: 0,
+    explanation: 'Accelerate-stop distance: accelerate on all engines to V1 (decision speed), then apply maximum braking and stop. Used to ensure the available runway length (ASDA) is sufficient to safely abort a take-off at V1. V1 is the speed at or before which the decision to abort must be made.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'An aircraft is in straight and level flight at constant speed. The pilot raises the nose slightly and holds the new attitude. Initially:',
+    options: [
+      'A. Speed increases as the higher nose position generates more lift and reduces drag',
+    'B. The aircraft climbs and speed decreases — the new AoA produces more lift than weight (initially), then the aircraft decelerates as drag increases above thrust',
+    'C. Nothing changes — holding a constant attitude maintains constant speed',
+    'D. The aircraft enters a phugoid immediately and oscillates around the new trim'
+    ],
+    correct: 1,
+    explanation: 'Nose raised at constant power: AoA increases → lift momentarily exceeds weight → aircraft climbs. As it climbs, speed decreases (potential energy increases). As speed drops, less thrust is available relative to drag — the aircraft decelerates. It will settle at a lower speed in a (power-limited) climb, or eventually the nose drops back (stability).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "rudder authority" needed during a cross-wind take-off is greatest:',
+    options: [
+      'A. At low speed at the start of the roll — before sufficient airspeed generates adequate rudder effectiveness',
+    'B. Rudder authority is constant throughout the take-off roll',
+    'C. At exactly V1 for twin-engine aircraft',
+    'D. At high speed near rotation — dynamic pressure is highest'
+    ],
+    correct: 0,
+    explanation: 'Rudder effectiveness = Ch × q × S_rudder. At the start of the take-off roll, speed is very low — dynamic pressure (q) is minimal. Rudder effectiveness is least when the crosswind correction demand is constant. Differential braking and nose-wheel steering supplement rudder at low speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'For an aircraft to be longitudinally stable, the centre of gravity must be:',
+    options: [
+      'A. At the same position as the aerodynamic centre',
+    'B. At the most rearward position possible for best fuel efficiency',
+    'C. Aft of the aerodynamic centre',
+    'D. Forward of the aerodynamic centre (neutral point)'
+    ],
+    correct: 3,
+    explanation: 'For longitudinal stability, the CG must be forward of the aerodynamic centre (neutral point). If the CG is aft of the neutral point, the aircraft is longitudinally unstable — any pitch disturbance diverges. The further the CG is forward of the neutral point, the more stable (but less manoeuvrable) the aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'What is the effect of "sweepback" on the stall characteristics of a wing?',
+    options: [
+      'A. Swept wings stall progressively from root to tip — the same as straight wings',
+    'B. Swept wings never stall — the sweepback angle prevents boundary layer separation',
+    'C. Swept wings tend to stall at the tip first due to spanwise flow — this can cause a sharp pitch-up and aileron loss at the stall',
+    'D. Swept wings always stall in a controlled nose-down pitch, making them safer than straight wings'
+    ],
+    correct: 2,
+    explanation: 'Swept-wing tip stall: the spanwise component of flow over a swept wing moves the boundary layer outboard. The tips receive a thick, low-energy boundary layer and stall first. Tip stall at the stall removes aileron effectiveness and the lift loss forward (of the CG) causes a dangerous pitch-up.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The relationship between thrust and drag in a wings-level glide is:',
+    options: [
+      'A. There is no thrust (power off) — the weight component along the flight path replaces thrust',
+    'B. Thrust equals drag since the aircraft is not accelerating',
+    'C. Thrust equals lift divided by the glide ratio',
+    'D. Drag is greater than thrust, causing the aircraft to decelerate throughout the glide'
+    ],
+    correct: 0,
+    explanation: 'In a power-off glide, there is no thrust. The aircraft descends because the weight has a component along the flight path (rearward) — this component drives the aircraft forward against drag. The equation of forces: Drag = W × sin(glide angle). No thrust is needed once the glide is established at constant speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'When a pilot enters a turn from level flight without adding power, airspeed will:',
+    options: [
+      'A. Increase — the bank improves the L/D ratio',
+    'B. First increase then return to level-flight speed as the turn stabilises',
+    'C. Decrease — additional back pressure increases induced drag without additional thrust to compensate',
+    'D. Remain constant — the bank has no effect on airspeed'
+    ],
+    correct: 2,
+    explanation: 'Entering a turn without adding power: back pressure increases AoA and CL, but also greatly increases induced drag (CDi ∝ CL²). Without additional thrust, drag exceeds thrust — the aircraft decelerates. This is why altitude and airspeed are both maintained in a level turn only by adding power.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'In a power-off glide, increasing airspeed above the best glide speed will:',
+    options: [
+      'A. Increase rate of descent but also increase glide range due to higher TAS',
+    'B. Increase glide range because the aircraft is moving faster',
+    'C. Reduce glide range because parasite drag increases faster than induced drag decreases',
+    'D. Have no effect on range — only on rate of descent'
+    ],
+    correct: 2,
+    explanation: 'Above best glide speed, the total drag curve rises (parasite drag increasingly dominates). L/D ratio decreases — the glide angle steepens and range decreases. The aircraft descends at a higher rate AND covers less distance. Best glide is the minimum drag speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'An aircraft flying at a higher altitude where air density is lower must compensate by:',
+    options: [
+      'A. Reducing angle of attack to maintain the same lift',
+    'B. Flying at a lower airspeed to maintain the same lift',
+    'C. Increasing angle of attack or increasing airspeed to maintain the same lift',
+    'D. Increasing wing area to compensate for reduced density'
+    ],
+    correct: 2,
+    explanation: 'L = CL × ½ρV² × S. With lower ρ, to maintain the same lift (equal to weight), the pilot must increase CL (increase angle of attack) or increase V (airspeed) — or both. This is why TAS increases with altitude for the same IAS.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The maximum demonstrated cross-wind component for a light aircraft is listed in the AFM as 15 knots. A pilot operating in a 20-knot crosswind:',
+    options: [
+      'A. Must obtain a special permit from CASA for each such flight',
+    'B. Is prohibited by regulation from taking off',
+    'C. Is permitted if the runway is dry and the pilot has a CPL',
+    'D. Is operating beyond the flight-tested limit and accepts increased personal risk — no regulatory prohibition exists'
+    ],
+    correct: 3,
+    explanation: 'The maximum demonstrated crosswind is not a regulatory limit — it is the maximum value tested during certification. Operating beyond it is at the pilot\'s discretion and risk. A skilled pilot in a suitable aircraft on a dry runway may safely exceed it, but the manufacturer has not tested the aircraft at this value.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: '"Lateral stability" (roll stability) is primarily provided by:',
+    options: [
+      'A. Differential aileron design',
+    'B. The horizontal stabiliser',
+    'C. Wing dihedral',
+    'D. The vertical stabiliser'
+    ],
+    correct: 2,
+    explanation: 'Wing dihedral (wings angled upward from root to tip) provides lateral stability. When the aircraft rolls, the lower wing presents a higher angle of attack to the relative airflow and generates more lift — rolling the aircraft back to level. Dihedral provides the restoring moment.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'During a power-on climb at Vy, the wings produce:',
+    options: [
+      'A. Zero lift — the thrust provides all the upward force in a climb',
+    'B. Lift greater than weight to produce the upward acceleration into the climb',
+    'C. Lift slightly less than weight — the thrust has an upward component and the climb angle means weight component along the path is balanced by excess thrust',
+    'D. Lift exactly equal to aircraft weight'
+    ],
+    correct: 2,
+    explanation: 'In a steady climb: Lift = W × cos(climb angle) — slightly less than weight. The excess thrust (T − D) balances the weight component along the flight path. The steeper the climb, the more Lift < Weight. Lift never greatly exceeds weight in a normal climb (unlike in a pull-up manoeuvre).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "white arc" on the ASI represents:',
+    options: [
+      'A. The normal operating range for cruise flight',
+    'B. The range for gear extension and retraction',
+    'C. The speed range for use of the autopilot',
+    'D. The flap operating range — from Vso (full-flap stall speed) to Vfe (maximum flap extended speed)'
+    ],
+    correct: 3,
+    explanation: 'The white arc is the flap operating range — from Vso (stall speed with flaps extended) at the bottom to Vfe (maximum flap extension speed) at the top. Flaps must not be extended above Vfe.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The total aerodynamic force on a wing can be resolved into:',
+    options: [
+      'A. Thrust and drag — the two forces that determine flight speed',
+    'B. Lift and weight — these are the two main forces on any wing',
+    'C. A component perpendicular to the relative airflow (lift) and a component parallel to (and opposing) the relative airflow (drag)',
+    'D. Induced drag and parasite drag — the two components that must be overcome by thrust'
+    ],
+    correct: 2,
+    explanation: 'The total aerodynamic resultant force on a wing is resolved into: (1) Lift — perpendicular to the relative airflow; (2) Drag — parallel to and opposing the relative airflow. These are the conventional aerodynamic axes for resolving forces, and they simplify analysis of the four forces in flight.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "coefficient of drag" for an entire aircraft is different from that for the wing alone because:',
+    options: [
+      'A. Aircraft CD is always lower than wing CD because the fuselage shields part of the wing',
+    'B. The fuselage and tail contribute additional parasite drag (form drag, skin friction, interference)',
+    'C. The propeller drag is subtracted from the total aircraft CD',
+    'D. The aircraft body reduces the wing drag due to the interference boundary layer'
+    ],
+    correct: 1,
+    explanation: 'Total aircraft CD includes: wing drag (induced + profile), fuselage drag (form + skin friction), tail drag, undercarriage drag (if fixed), nacelle drag, antenna drag, and interference drag at junctions. Aircraft CD is significantly higher than wing-alone CD.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "type of stall" most likely to occur during the initial climb after take-off with full power is:',
+    options: [
+      'A. A turning stall from the initial turn toward the crosswind leg',
+    'B. A power-off stall — the engine is at full power so this cannot occur',
+    'C. A high-speed stall from the dynamic pressure of full power',
+    'D. A power-on stall — if the pilot over-rotates and holds excessive back pressure at low airspeed, a power-on stall occurs'
+    ],
+    correct: 3,
+    explanation: 'Power-on stall risk after take-off: if the pilot rotates aggressively and holds excessive back pressure at low airspeed while at full power, the AoA may exceed the critical angle despite high power. The power-on stall speed is lower than power-off, but it can still be reached if the nose is held too high at too low a speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'As altitude increases, the best rate of climb speed (Vy) and the maximum rate of climb:',
+    options: [
+      'A. Vy stays constant in IAS terms and ROC increases until the service ceiling',
+    'B. Vy increases (TAS) and ROC decreases with altitude',
+    'C. Both decrease until the aircraft cannot climb further at the absolute ceiling',
+    'D. Both increase with altitude as the air is less dense'
+    ],
+    correct: 1,
+    explanation: 'With increasing altitude, air density decreases, reducing engine power and propeller efficiency. Maximum ROC decreases. Vy in IAS terms decreases slightly; in TAS terms it increases (TAS > IAS at altitude). At the absolute ceiling, ROC reaches zero.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'Anhedral (negative dihedral — wings angled downward) is used on some high-wing aircraft because:',
+    options: [
+      'A. Anhedral reduces wingtip vortices and improves fuel efficiency',
+    'B. Anhedral is required on all military aircraft for recognition purposes',
+    'C. Anhedral increases the lift coefficient of high-wing configurations at low speed',
+    'D. High-wing aircraft have too much inherent lateral stability due to the pendulum effect, and anhedral reduces this'
+    ],
+    correct: 3,
+    explanation: 'High-wing aircraft derive significant lateral stability from the "pendulum effect" — the CG hangs below the wing, acting as a stabilising force. Combined with dihedral this would make the aircraft very stable and sluggish to roll. Anhedral reduces roll stiffness to provide acceptable handling.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The four forces acting on an aircraft in flight are:',
+    options: [
+      'A. Thrust, drag, weight, and friction',
+    'B. Lift, drag, thrust, and weight',
+    'C. Lift, drag, torque, and inertia',
+    'D. Lift, gravity, power, and resistance'
+    ],
+    correct: 1,
+    explanation: 'The four forces are: Lift (perpendicular to relative airflow, generated by wings), Drag (parallel to relative airflow, opposing motion), Thrust (propulsive force forward), Weight (gravitational force downward through the CG).',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'During a fully developed spin, the aircraft is in:',
+    options: [
+      'A. An unstable manoeuvre that always self-corrects within 3 turns',
+    'B. A manoeuvre that requires full power to maintain — otherwise it becomes a spiral dive',
+    'C. An accelerating rotation with increasing airspeed and pitch angle',
+    'D. A stable, unaccelerated rotation — rate of descent and rotation rate are constant'
+    ],
+    correct: 3,
+    explanation: 'In a fully developed (erect) spin: the aircraft is in a quasi-steady state — nearly constant rotation rate, pitch attitude, and rate of descent. The outside wing is spinning faster and generating more lift than the stalled inside wing, maintaining the rotation.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'In a crosswind landing using the "crab" method, at what point must the aircraft be aligned with the runway?',
+    options: [
+      'A. The aircraft can touch down in the crab — no alignment is required',
+    'B. On the base leg before turning final',
+    'C. Just before touchdown — the crab angle is removed with rudder to align the aircraft with the runway just prior to the main wheels touching',
+    'D. At the runway threshold'
+    ],
+    correct: 2,
+    explanation: 'The crab method: the aircraft tracks along the runway centreline by pointing the nose into wind (crab angle). Just before touchdown, the pilot straightens the aircraft with rudder to align with the runway — otherwise the undercarriage would experience a sideways load as the wheels touch down. The transition must be smooth and timely.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "asymmetric blade effect" (P-factor) occurs when:',
+    options: [
+      'A. One propeller blade is damaged, causing vibration and asymmetric thrust',
+    'B. In a high angle of attack flight, the descending blade has a higher effective angle of attack than the ascending blade, producing more thrust on one side',
+    'C. The aircraft is in a banked turn and blade pitch varies around the disc',
+    'D. The propeller rotates at a speed where tip Mach effects cause asymmetric thrust'
+    ],
+    correct: 1,
+    explanation: 'P-factor (asymmetric blade effect): at high angles of attack, the descending blade (on one side of the aircraft) moves through a larger arc and has a higher effective angle of attack than the ascending blade. This produces more thrust on the descending blade side, yawing the aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'Increasing the size of the horizontal tailplane (increasing tail volume) will:',
+    options: [
+      'A. Increase longitudinal stability by moving the neutral point rearward, increasing the static margin',
+    'B. Increase lateral stability by providing more surface area behind the CG',
+    'C. Have no effect on stability — only on pitch control authority',
+    'D. Reduce longitudinal stability by moving the neutral point forward'
+    ],
+    correct: 0,
+    explanation: 'A larger tailplane moves the aircraft\'s neutral point rearward (more tail contribution to total aerodynamic centre). This increases the static margin (CG to neutral point distance) — increasing longitudinal stability. The aircraft becomes more stable and less manoeuvrable in pitch.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "stick force per g" describes:',
+    options: [
+      'A. The maximum g achievable before the pilot can no longer hold the controls',
+    'B. The weight of the control stick divided by the number of g in manoeuvre',
+    'C. The force needed to trim the aircraft to a given attitude',
+    'D. The increase in control column force required to produce each additional g of load factor — related to longitudinal stability and handling qualities'
+    ],
+    correct: 3,
+    explanation: 'Stick force per g is a measure of handling quality — how much additional force the pilot must apply per unit of load factor increase. Too high: the aircraft is hard to manoeuvre. Too low (or negative): it may be too easy to exceed the structural limit. Regulations specify acceptable ranges.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'With the static port blocked and the pitot tube open, as the aircraft climbs:',
+    options: [
+      'A. The ASI reads correctly',
+    'B. The ASI reads zero',
+    'C. The ASI over-reads — pitot pressure decreases with altitude while trapped static stays constant',
+    'D. The altimeter also gives incorrect readings'
+    ],
+    correct: 3,
+    explanation: 'Static port blocked: the altimeter, VSI, and ASI are all affected. As the aircraft climbs with static blocked: static pressure sensed remains constant (trapped at the blocked altitude). Pitot pressure decreases. The ASI over-reads because it senses more dynamic pressure than actual (constant high static vs falling pitot = smaller difference, but actually the ASI reads the difference between pitot and static — with static trapped high, pitot falls less than static would normally fall, so ASI over-reads). The altimeter also reads the altitude at which the static port was blocked.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'Flying at the "minimum drag speed" in level flight means the pilot is operating at:',
+    options: [
+      'A. The most aerodynamically efficient condition — maximum L/D, minimum thrust required, and best glide ratio',
+    'B. The fastest possible level flight speed for the installed power',
+    'C. The most fuel-efficient condition for endurance',
+    'D. Minimum drag speed is the stall speed — the slowest possible level flight'
+    ],
+    correct: 0,
+    explanation: 'Minimum drag speed = maximum L/D = best aerodynamic efficiency. At this speed: thrust required is minimum, best glide ratio is achieved, and best range speed for a piston aircraft is approximately here. Both induced drag and parasite drag are equal at this point. Flying slower or faster both increase total drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The indicated airspeed at which an aircraft will stall is approximately the same regardless of altitude because:',
+    options: [
+      'A. The stall warning system is calibrated to activate at the same IAS regardless of altitude',
+    'B. The critical angle of attack changes with altitude to compensate for density changes',
+    'C. IAS is corrected for altitude automatically by the aircraft\'s flight computer',
+    'D. Both lift and the ASI measurement (½ρV²) use the same density and velocity terms — stall occurs at the same dynamic pressure (same IAS) at any altitude'
+    ],
+    correct: 3,
+    explanation: 'L = CL × ½ρV² × S = Weight at stall. The stall IAS is: Vs = √(2W / ρ₀ S CLmax) where ρ₀ is sea-level density. Because the ASI also reads ½ρV² calibrated to ρ₀, the indicated stall speed stays essentially constant with altitude. The stall TAS increases with altitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'Winglets on modern aircraft primarily serve to:',
+    options: [
+      'A. Reduce wingtip vortex strength and decrease induced drag',
+    'B. Improve lateral stability by acting as small vertical stabilisers',
+    'C. Increase wing area and therefore maximum lift',
+    'D. Provide additional fuel storage capacity in the wing'
+    ],
+    correct: 0,
+    explanation: 'Winglets reduce the strength of wingtip vortices by interrupting the high-to-low pressure airflow at the wingtip. This reduces induced drag — improving fuel efficiency — without the structural weight penalty of simply extending the wing span.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'The "plain flap" works by:',
+    options: [
+      'A. Rotating the trailing edge section of the wing downward, increasing camber without extending wing area',
+    'B. Creating a slot between the flap and wing to energise the boundary layer',
+    'C. Moving the entire wing lower surface rearward to increase area',
+    'D. Drooping the leading edge to increase camber and delay stall'
+    ],
+    correct: 0,
+    explanation: 'A plain flap is a hinged trailing edge section — the simplest type. When deflected, it increases wing camber (and slightly reduces the chord). It increases lift and drag. No slot is created — boundary layer energisation is absent. Less effective than slotted or Fowler flaps at large deflections.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "lift/drag ratio" of an aerofoil is significant because:',
+    options: [
+      'A. It is the same for all aerofoil shapes at all speeds',
+    'B. It is highest at the stalling angle of attack',
+    'C. It indicates the aerodynamic efficiency — higher ratio means more lift for a given drag penalty',
+    'D. It determines the maximum speed of the aircraft'
+    ],
+    correct: 2,
+    explanation: 'The lift/drag ratio indicates aerodynamic efficiency. Maximum L/D ratio occurs at a specific angle of attack — flying at this angle gives the best glide ratio (longest glide for altitude lost) and best range for propeller aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The effect of "rain" on lift and drag is:',
+    options: [
+      'A. Rain reduces drag by lubricating the surface boundary layer',
+    'B. Rain has no effect on aerodynamic performance',
+    'C. Heavy rain adds weight to the aircraft and disrupts boundary layer flow — reducing lift and increasing drag',
+    'D. Rain only affects aircraft performance below 3,000 ft AGL'
+    ],
+    correct: 2,
+    explanation: 'Heavy rain: (1) adds weight (water on surfaces); (2) disrupts the boundary layer — rough surface from water droplets causes premature turbulent transition, increasing skin friction drag; (3) may reduce CLmax. Studies show heavy rain can degrade lift by up to 30% and increase drag by 20–30%.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'Which of the following best describes how the pilot controls the airspeed in level flight?',
+    options: [
+      'A. Airspeed cannot be controlled independently of altitude in fixed-wing aircraft',
+    'B. The throttle controls both airspeed and altitude simultaneously',
+    'C. Airspeed is controlled by pitch attitude (elevator) — the throttle controls energy (power/thrust) which determines whether altitude, speed, or both change',
+    'D. Airspeed is controlled by throttle only — pitch controls altitude'
+    ],
+    correct: 2,
+    explanation: 'In the "pitch for speed, power for altitude" philosophy (used in many training environments): the elevator controls airspeed and the throttle controls altitude. In practice, both interact — but the primary control of airspeed is pitch attitude, which determines the angle of attack and therefore lift and drag balance.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'To double the lift generated at constant airspeed and density, the angle of attack must be approximately:',
+    options: [
+      'A. Halved',
+    'B. Doubled — CL is approximately proportional to AoA in the linear range',
+    'C. Quadrupled — lift varies with AoA squared',
+    'D. Increased by the square root of 2'
+    ],
+    correct: 1,
+    explanation: 'In the normal (linear) range, CL ≈ 2π × AoA (in radians) for thin aerofoils. Since L = CL × ½ρV² × S, and ½ρV² × S is constant, doubling CL requires approximately doubling AoA. This approximation holds up to about 10° for most aerofoils, after which the relationship becomes non-linear.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "slipstream" from a tractor propeller increases the dynamic pressure over which part of the aircraft?',
+    options: [
+      'A. The fuselage centreline, inner wing, and tail surfaces within the slipstream tube — increasing their aerodynamic effectiveness',
+    'B. The slipstream has no effect on aerodynamic surfaces — it only provides thrust',
+    'C. Only the wing — the slipstream is deflected upward by the wing',
+    'D. Only the tail — the wing is outside the slipstream diameter'
+    ],
+    correct: 0,
+    explanation: 'The propeller slipstream is a tube of accelerated, rotating air behind the propeller disc. It covers the fuselage, inner wing sections (increasing local dynamic pressure and lift), and the tail surfaces (increasing elevator and rudder effectiveness). This is particularly significant at high power settings and low airspeeds.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: '"Incipient spin" refers to:',
+    options: [
+      'A. The first 1–2 turns of a spin before it fully develops — recovery is relatively straightforward',
+    'B. A spin caused by flying into a thunderstorm',
+    'C. Any spin entry from altitude above 3,000 ft AGL',
+    'D. A spin that has fully developed with stable rotation'
+    ],
+    correct: 0,
+    explanation: 'Incipient spin: the first phase (approximately 1–2 turns) where the spin is developing but not yet established. The rotation rate, pitch attitude, and helix are still changing. Recovery using PARE during the incipient phase is easiest and most effective.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "aerodynamic centre" of an aerofoil is significant because:',
+    options: [
+      'A. It is the point of maximum camber of the aerofoil',
+    'B. The pitching moment about the aerodynamic centre remains constant regardless of angle of attack changes',
+    'C. It is always located at the leading edge of the wing',
+    'D. The aerodynamic centre moves forward as angle of attack increases'
+    ],
+    correct: 1,
+    explanation: 'The aerodynamic centre (AC) is the point about which the pitching moment coefficient remains constant with changing angle of attack. For subsonic aerofoils, the AC is at approximately 25% chord. It is the reference point used for stability analysis.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Vortex generators on a wing surface:',
+    options: [
+      'A. Create drag that slows the aircraft below Vno',
+    'B. Re-energise the boundary layer by mixing high-energy free-stream air down into the slower boundary layer — delaying separation',
+    'C. Generate wing vortices that cancel the wingtip vortices, reducing induced drag',
+    'D. Create vortices that increase lift by swirling air over the upper surface'
+    ],
+    correct: 1,
+    explanation: 'Vortex generators (small fins on the wing surface) create small vortices that mix high-energy air from outside the boundary layer into the sluggish boundary layer. This re-energises the boundary layer, allowing it to stay attached to the surface further under adverse pressure gradients — delaying separation and improving CLmax.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "stability" of an aircraft can be separated into which two characteristics?',
+    options: [
+      'A. Active stability and passive stability',
+    'B. Positive stability and negative stability',
+    'C. Static stability (initial tendency after disturbance) and dynamic stability (subsequent motion over time)',
+    'D. Longitudinal stability and lateral stability only'
+    ],
+    correct: 2,
+    explanation: 'Aircraft stability has two aspects: static stability (the initial tendency — does the aircraft start to move toward or away from its original position?) and dynamic stability (the time history of the motion — do oscillations damp out, remain constant, or grow?). An aircraft can be statically stable but dynamically unstable.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'Directional stability (yaw stability) is provided by:',
+    options: [
+      'A. Wing sweep',
+    'B. Wing dihedral',
+    'C. The vertical stabiliser (fin)',
+    'D. The horizontal tailplane'
+    ],
+    correct: 2,
+    explanation: 'The vertical stabiliser (fin) provides directional stability (weathercock stability). When the aircraft yaws, the fin presents a side area to the airflow, generating a force that yaws the nose back toward the relative wind — like the feathers on an arrow.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "roll rate" achieved with aileron deflection depends on:',
+    options: [
+      'A. Aileron effectiveness (deflection angle and span), dynamic pressure (½ρV²), and the roll damping of the aircraft',
+    'B. Engine power and propeller slipstream only',
+    'C. Bank angle achieved — roll rate increases as bank increases',
+    'D. Wing loading and aircraft weight only'
+    ],
+    correct: 0,
+    explanation: 'Roll rate depends on: (1) aileron moment — deflection angle, span position, and chord; (2) dynamic pressure — more speed means more aerodynamic force; (3) roll damping — the resistance to rolling. At low speed, dynamic pressure is low and ailerons are less effective — roll rate is lower for the same deflection.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "flare" manoeuvre during landing:',
+    options: [
+      'A. Increases airspeed to generate more lift for the landing',
+    'B. Gradually raises the nose to reduce the rate of descent and slow the aircraft to touchdown speed',
+    'C. Applies full power just before touchdown to ensure a soft landing',
+    'D. Is only used in cross-wind landings to align the aircraft with the runway'
+    ],
+    correct: 1,
+    explanation: 'The flare: as the aircraft approaches the runway in ground effect, the pilot progressively raises the nose. This increases AoA and CL, slowing the rate of descent. Simultaneously, airspeed decreases. The aircraft settles onto the runway at a speed near the stall speed in landing configuration.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'Increasing altitude decreases the rate of climb primarily because:',
+    options: [
+      'A. The propeller becomes less efficient at lower air temperatures at altitude',
+    'B. The stall speed increases so the climb can only be performed at higher speed',
+    'C. Engine power decreases with altitude as air density (and therefore air mass flow to the engine) decreases',
+    'D. Induced drag increases at altitude, requiring more thrust to maintain climb angle'
+    ],
+    correct: 2,
+    explanation: 'As altitude increases, air density decreases. A normally aspirated engine takes in less air mass per stroke — power output decreases proportionally. The excess power (PA − PR) decreases, so the rate of climb decreases. The absolute ceiling is where excess power reaches zero.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The term "drag coefficient" (CD) is useful because:',
+    options: [
+      'A. It directly gives the drag force in Newtons without further calculation',
+    'B. It is dimensionless and describes the drag characteristics of the shape independently of size, speed, and density — allowing comparison between different aircraft',
+    'C. CD is always greater than CL, defining the stall boundary',
+    'D. CD is only valid at sea level — it must be corrected for altitude'
+    ],
+    correct: 1,
+    explanation: 'CD is dimensionless: D = CD × ½ρV² × S. Like CL, it normalises drag by dynamic pressure and reference area — so the drag characteristics of any shape can be compared directly. A high CD shape is draggy regardless of its size or the speed at which it is tested.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'In a banked turn, the pilot experiences the sensation of being pressed into the seat because:',
+    options: [
+      'A. Centrifugal force pushes the pilot upward into the overhead panel',
+    'B. Gravity increases during a turn, creating the additional force felt by the pilot',
+    'C. The resultant inertial force (apparent weight) acts perpendicular to the seat in a balanced turn — the pilot feels heavier by the load factor, pressing into the seat',
+    'D. The seat provides a centripetal force toward the centre of the turn'
+    ],
+    correct: 2,
+    explanation: 'In a balanced (coordinated) turn, the sum of gravity and the inertial (centrifugal) force acts perpendicular to the aircraft floor — straight down through the pilot\'s seat. The pilot feels an apparent weight equal to n × body weight, pressing directly into the seat with no sideways sensation.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: '"Ground effect" when landing refers to:',
+    options: [
+      'A. Reduced engine performance due to hot air from the runway surface',
+    'B. Increased lift and reduced induced drag experienced when flying close to the ground',
+    'C. The braking effect of ground friction on the tyres during landing roll',
+    'D. The buffeting effect of runway surface irregularities on the undercarriage'
+    ],
+    correct: 1,
+    explanation: 'Ground effect occurs within approximately one wingspan above the ground. The ground interrupts the formation of wingtip vortices, reducing downwash and induced drag. The result is increased lift (the aircraft "floats") and reduced drag — the aircraft can fly at a lower angle of attack for the same lift.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'In a glide at best glide speed, extending the undercarriage will:',
+    options: [
+      'A. Reduce glide range by increasing drag, requiring a steeper glide angle',
+    'B. Increase glide range by reducing the aircraft\'s weight slightly',
+    'C. Have no effect — undercarriage has no aerodynamic significance at glide speed',
+    'D. Increase the descent rate only, with no change to glide range'
+    ],
+    correct: 0,
+    explanation: 'Extending the undercarriage increases parasite drag significantly. With more drag, the total drag at any given airspeed increases — the L/D ratio decreases, and the glide angle steepens. Glide range is reduced.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'Which of the following is NOT a characteristic of an approaching stall?',
+    options: [
+      'A. Reduced control effectiveness',
+    'B. Airframe buffet from turbulent wake striking the tail',
+    'C. Stall warning activation (horn or light)',
+    'D. Increased engine noise as the nose rises'
+    ],
+    correct: 3,
+    explanation: 'Approaching stall signs include: buffet (turbulent wake from the wing hitting the tail), reduced control response, high nose attitude, and stall warning activation. Increased engine noise is not a stall warning sign — engine noise depends on power setting, not proximity to stall.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The aerodynamic reason that flap extension causes a nose-up pitch on some aircraft is:',
+    options: [
+      'A. Flap extension increases downwash on the tail, reducing tail download and causing the nose to rise momentarily',
+    'B. The nose-up tendency from flap is caused by increased induced drag',
+    'C. The flap adds lift behind the CG, creating a nose-up moment',
+    'D. Flap extension always causes a nose-down pitch — nose-up is impossible'
+    ],
+    correct: 0,
+    explanation: 'Some aircraft pitch nose-up with initial flap extension: increased downwash from the flap strikes the horizontal tail at a larger downwash angle, reducing the tail\'s effective AoA and therefore its download. With less tail download, the nose rises. This is more pronounced with large-chord flaps and close tail-to-wing geometry.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: '"Keel effect" on lateral stability refers to:',
+    options: [
+      'A. The effect of the fixed undercarriage acting as a keel in side gusts',
+    'B. The keel surface of the fuselage and fin that provides directional stability',
+    'C. Keel effect is only relevant to seaplanes and amphibious aircraft',
+    'D. The lateral stabilising effect of the fuselage side area and fin when in a sideslip — the side force acts above the CG, providing a rolling restoring moment'
+    ],
+    correct: 3,
+    explanation: 'Keel effect: in a sideslip, the side area of the fuselage and fin generates a lateral force. If this side force acts above the CG (high-wing aircraft), it creates a rolling moment back toward wings level — contributing to lateral stability. Low-wing aircraft benefit less from keel effect.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The "maximum certified altitude" of an aircraft is determined by:',
+    options: [
+      'A. The altitude where TAS equals twice the IAS',
+    'B. The altitude at which the engine can no longer provide any thrust',
+    'C. The highest altitude at which the aircraft meets its certified handling, performance, and pressurisation requirements — the service ceiling for unpressurised aircraft',
+    'D. Where the IAS reaches Vne'
+    ],
+    correct: 2,
+    explanation: 'The maximum certified altitude is published in the AFM. For unpressurised piston aircraft, it is typically near the service ceiling where ROC = 100 ft/min. Above this, handling, performance, and safety margins become inadequate. Additional factors include oxygen requirements (above 10,000 ft) and system limitations.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "maximum glide range" from a given altitude is achieved by:',
+    options: [
+      'A. Flying at the best glide speed (minimum drag speed) in clean configuration — maximising the distance:altitude ratio',
+    'B. Flying at maximum speed to cover ground quickly before descending',
+    'C. Flying as slowly as possible to maximise time aloft',
+    'D. Using full flap to increase glide ratio by producing more lift'
+    ],
+    correct: 0,
+    explanation: 'Maximum glide range: fly at the speed for minimum total drag (best L/D) in the cleanest configuration (no unnecessary drag). This gives the flattest glide angle and maximum horizontal distance per unit of altitude. Any deviation from best glide speed reduces the glide ratio.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'In a glide at the best glide speed, the aircraft achieves:',
+    options: [
+      'A. Maximum time in the air',
+    'B. Minimum rate of descent in feet per minute',
+    'C. The steepest descent angle for the quickest landing',
+    'D. Maximum distance over the ground per unit of altitude lost'
+    ],
+    correct: 3,
+    explanation: 'Best glide speed (Vbg) = minimum drag speed = best L/D ratio. At this speed the aircraft travels the maximum horizontal distance for each foot of altitude lost. It is the speed for the flattest glide angle.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'Flap asymmetry (one flap extended, one retracted) is dangerous because:',
+    options: [
+      'A. The aircraft will climb on one side only',
+    'B. Only affects aircraft with automatic slat systems',
+    'C. The side with extended flap generates more lift and drag — causing an immediate rolling and yawing tendency that may be uncontrollable at low speed',
+    'D. Flap asymmetry only causes a trim change — easily corrected with aileron'
+    ],
+    correct: 2,
+    explanation: 'Flap asymmetry creates an immediate rolling moment (more lift on the flapped side) and yawing moment (more drag on the flapped side — adverse yaw toward the flapped side). At approach speed with partial or full asymmetry, the pilot may not have sufficient aileron authority to maintain control, particularly at low speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'With the pitot tube blocked and the static port open, as the aircraft descends:',
+    options: [
+      'A. The ASI is unaffected — it uses only the static pressure port',
+    'B. The ASI reads higher than actual airspeed — the trapped pitot pressure is higher than static pressure increases during descent',
+    'C. The ASI reads zero',
+    'D. The ASI reads lower than actual airspeed'
+    ],
+    correct: 1,
+    explanation: 'Pitot blocked, static open: ASI reads q = Ptotal(trapped) − P(current static). As the aircraft descends, static pressure increases. The trapped total pressure remains constant. The difference (trapped total − increasing static) decreases — the ASI under-reads. If climbing, static decreases — ASI over-reads.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The "drag penalty" of retracting and extending the undercarriage is relevant because:',
+    options: [
+      'A. Gear retraction is only beneficial above 10,000 ft where skin friction drag increases',
+    'B. A retractable undercarriage significantly reduces cruise drag and fuel consumption — offsetting the weight and complexity penalty compared to fixed gear',
+    'C. Extending the gear always improves glide ratio in emergencies',
+    'D. Retracting gear reduces weight — improving climb performance substantially'
+    ],
+    correct: 1,
+    explanation: 'Retractable gear vs fixed gear: the drag of fixed gear (exposed wheels, axles, and fairings) amounts to 15–25% additional total drag. Retracting the gear nearly eliminates this — dramatically improving cruise speed, range, and fuel efficiency. The weight and mechanical complexity of retractable gear is justified for higher-performance aircraft.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'A "wheelbarrowing" tendency during take-off occurs when:',
+    options: [
+      'A. Only the nosewheel is on the runway with the mains airborne — caused by excessive back pressure',
+    'B. The nosewheel remains on the ground after main wheel lift-off due to excessive forward stick',
+    'C. The aircraft rotates before reaching Vr due to a gust',
+    'D. The main wheels lift off before the nosewheel on a tricycle undercarriage aircraft'
+    ],
+    correct: 1,
+    explanation: 'Wheelbarrowing: the pilot holds excessive forward pressure, keeping the nosewheel firmly on the ground. All of the lift passes through the nosewheel contact point rather than through the main gear. This reduces effective braking, increases nosewheel loads, and reduces elevator authority. Correct by relaxing forward pressure.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The aerodynamic force produced by an aerofoil at zero angle of attack for a symmetric section is:',
+    options: [
+      'A. Lift equal to half the maximum value at the critical angle',
+    'B. Zero lift and small profile drag only',
+    'C. Only drag — lift cannot be produced without angle of attack on any section',
+    'D. Maximum lift — the symmetric section produces most lift at zero AoA'
+    ],
+    correct: 1,
+    explanation: 'A symmetric aerofoil at zero AoA: the flow is symmetric over upper and lower surfaces — no pressure differential, therefore zero lift. Profile drag (skin friction + form drag) still acts. This is why symmetric sections require a positive AoA to generate lift, unlike cambered sections.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'A high aspect ratio wing produces less induced drag because:',
+    options: [
+      'A. The wing chord is shorter, reducing skin friction drag',
+    'B. High aspect ratio reduces the wing loading',
+    'C. Wingtip vortices affect a smaller proportion of the total wingspan',
+    'D. The longer span means less air needs to be deflected per unit length'
+    ],
+    correct: 2,
+    explanation: 'In a high aspect ratio wing, the disturbed (vortex-affected) air near the wingtip represents a smaller fraction of the total span. More of the wing operates in clean, undisturbed flow, giving less induced drag overall.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: 'A negative load factor occurs when:',
+    options: [
+      'A. The aircraft is flying below its minimum airspeed',
+    'B. The aircraft is in a banked turn exceeding 60°',
+    'C. The lift force acts downward — for example in an outside loop or during a pushover',
+    'D. Negative load occurs only at negative AoA with flaps extended'
+    ],
+    correct: 2,
+    explanation: 'A negative load factor occurs when the resultant inertial force on the aircraft acts downward (occupants pushed against restraints). This happens during outside manoeuvres — outside loops, pushovers, or flying through severe downdraughts. The limit is typically −1.5g for normal category.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "loss of directional control" below Vmca in a twin-engine aircraft is caused by:',
+    options: [
+      'A. The loss of lift on the failed engine side makes the aircraft roll uncontrollably',
+    'B. The yawing moment from the operating engine\'s thrust exceeds the maximum available rudder restoring moment — the aircraft yaws uncontrollably toward the dead engine',
+    'C. Below Vmca the elevator becomes ineffective, causing a pitch-down into a dive',
+    'D. Propeller torque from the live engine overwhelms the ailerons below Vmca'
+    ],
+    correct: 1,
+    explanation: 'Below Vmca: the yawing moment from the live engine\'s thrust (acting at a moment arm from the centreline) exceeds the maximum corrective yaw moment the rudder can produce at that low dynamic pressure. Full rudder cannot overcome the asymmetric thrust — the aircraft yaws violently toward the dead engine.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'Longitudinal stability (pitch stability) is primarily provided by:',
+    options: [
+      'A. Dihedral of the wings',
+    'B. The horizontal stabiliser (tailplane)',
+    'C. The position of the undercarriage relative to the CG',
+    'D. The vertical stabiliser (fin)'
+    ],
+    correct: 1,
+    explanation: 'Longitudinal (pitch) stability is primarily provided by the horizontal stabiliser (tailplane). When the aircraft pitches nose-up, the tailplane angle of attack increases, generating a restoring downward force that pushes the tail down and nose up — wait, it generates a force that opposes the pitch. The tail acts as a lever arm to restore pitch attitude.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'A "symmetrical aerofoil" is preferred for aerobatic aircraft because:',
+    options: [
+      'A. It produces equal positive and negative lift at equal positive and negative AoA — giving symmetric performance in inverted flight',
+    'B. Symmetrical aerofoils have lower drag than cambered sections',
+    'C. It generates more lift per unit area than a cambered section',
+    'D. CASA regulations require symmetrical aerofoils for all aerobatic category aircraft'
+    ],
+    correct: 0,
+    explanation: 'Symmetrical aerofoils: zero lift at zero AoA, and equal CL for equal positive or negative AoA. This gives equal performance in upright and inverted flight — essential for aerobatics. The penalty: lower CLmax than a cambered section and no lift benefit at zero AoA.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The reason that "ailerons are interconnected" (both move simultaneously in opposite directions) is:',
+    options: [
+      'A. Opposite deflection creates differential lift between the two wings — one aileron increases lift on one wing while the other reduces lift on the opposite wing, creating a rolling moment',
+    'B. Both ailerons deflect in the same direction — one goes up and both provide increased drag',
+    'C. It ensures both ailerons produce the same amount of lift change for symmetry',
+    'D. Interconnection prevents the ailerons from jamming from turbulence'
+    ],
+    correct: 0,
+    explanation: 'Ailerons work in opposition — one deflects up (reducing lift/CL) on one wing while the other deflects down (increasing lift/CL) on the other. The differential lift creates a rolling moment. The magnitudes of up and down deflection may differ (differential ailerons) to minimise adverse yaw.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'What is the effect of "propeller wash" on the horizontal stabiliser?',
+    options: [
+      'A. The accelerated slipstream over the tail increases the effectiveness of the elevator and horizontal stabiliser',
+    'B. Propeller wash has no effect on the tail surfaces',
+    'C. Propeller wash only affects the vertical stabiliser, not the horizontal tail',
+    'D. The slipstream reduces tail effectiveness by creating turbulence over the surface'
+    ],
+    correct: 0,
+    explanation: 'The propeller slipstream accelerates air over the tail surfaces. This increases the dynamic pressure at the tail, making the elevator and horizontal stabiliser more effective — particularly at low airspeed. This is why pitch authority is good at high power even at low speed.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'As an aircraft\'s weight increases, the minimum drag speed:',
+    options: [
+      'A. Decreases — the heavier aircraft needs lower speed to stay at the critical AoA',
+    'B. Remains constant — minimum drag speed is independent of weight',
+    'C. Is unaffected by weight but changes with altitude',
+    'D. Increases — heavier aircraft must fly at a higher speed to maintain best L/D AoA'
+    ],
+    correct: 3,
+    explanation: 'Minimum drag speed (best glide speed) changes with weight: Vmd ∝ √W. A heavier aircraft must fly faster to maintain the same AoA (same CL). The best L/D ratio is the same, but it occurs at a higher airspeed. This is why heavier aircraft have higher best glide speeds.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.5'
+  },
+  {
+    question: '"Frise ailerons" reduce adverse yaw by:',
+    options: [
+      'A. Linking to the rudder pedals so they always deflect together',
+    'B. Reducing the range of aileron deflection to prevent overstress',
+    'C. Projecting the leading edge of the up-going aileron below the wing lower surface to increase drag on the dropping-wing side',
+    'D. Using a split aileron design that increases lift on the rising wing only'
+    ],
+    correct: 2,
+    explanation: 'Frise ailerons: when deflecting upward, the leading edge of the aileron protrudes below the wing lower surface, creating form drag on that side. This drag on the dropping wing side (where aileron goes up) balances the increased induced drag on the rising wing side, reducing adverse yaw.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.12'
+  },
+  {
+    question: 'The "split flap" differs from the plain flap in that:',
+    options: [
+      'A. The split flap only deflects the lower half of the trailing edge — the upper surface remains in the wing contour',
+    'B. The split flap creates a slot at large deflection angles',
+    'C. The split flap splits into two sections providing both lift and speed braking',
+    'D. The split flap is used only on the inner portion of the wing near the root'
+    ],
+    correct: 0,
+    explanation: 'A split flap deflects only the lower surface of the trailing edge. The upper surface remains flush with the wing. This creates a turbulent recirculation region, producing high drag — useful for steepening approaches. Lift increase is similar to a plain flap but drag increase is much greater.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The "neutral point" of an aircraft moves rearward if:',
+    options: [
+      'A. The tailplane area is increased or the tail moment arm is increased',
+    'B. Flaps are extended, increasing wing lift contribution',
+    'C. The CG is moved aft',
+    'D. The wing aspect ratio is reduced'
+    ],
+    correct: 0,
+    explanation: 'The neutral point is the aerodynamic centre of the entire aircraft (wing + tail). A larger tailplane or longer tail moment arm increases the tail\'s contribution to the total aerodynamic centre — moving the neutral point rearward. This increases the static margin (CG to neutral point) and therefore stability.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'In a balanced steep turn, the pilot\'s perception of weight is:',
+    options: [
+      'A. Increased — the load factor makes the pilot feel heavier than normal',
+    'B. Unchanged — the human body cannot detect load factor changes',
+    'C. Increased on the outer side only — the inner side feels lighter',
+    'D. Reduced — the bank reduces the felt weight'
+    ],
+    correct: 0,
+    explanation: 'In a balanced turn, the inertial force (apparent weight) acts straight down through the pilot\'s seat — the pilot feels heavier by the load factor. At 2g (60° bank), the pilot feels twice their body weight pressing into the seat. There is no sideways sensation in a balanced turn.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.9'
+  },
+  {
+    question: 'The "effective angle of attack" of the tailplane is affected by:',
+    options: [
+      'A. The aircraft pitch angle and the downwash angle from the wing at the tail position',
+    'B. The tail effective AoA is constant because the tail is a fixed surface',
+    'C. The tail incidence angle only — pitch angle is irrelevant',
+    'D. Only the aircraft pitch angle'
+    ],
+    correct: 0,
+    explanation: 'The tailplane\'s effective AoA depends on: (1) aircraft pitch angle (fuselage angle to the relative wind); (2) tail incidence angle; (3) downwash from the wing (which reduces the effective AoA of the tail by deflecting the approaching air downward). Changes in wing lift change downwash and therefore tail effective AoA.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.11'
+  },
+  {
+    question: 'The aerodynamic reason a stall warning reed activates slightly before the stall is:',
+    options: [
+      'A. The reed monitors engine RPM and activates when power drops',
+    'B. The reed is positioned on the leading edge where the airflow becomes reversed before the full stall — the reversed flow vibrates the reed',
+    'C. The reed activates on a timer when the aircraft pitch exceeds 15°',
+    'D. The reed is calibrated to activate at a fixed airspeed slightly above the stall speed'
+    ],
+    correct: 1,
+    explanation: 'The stall warning reed (used on some light aircraft) is mounted on the leading edge just below the stagnation point. As AoA increases toward the stall, the stagnation point moves below the leading edge — reversed flow over the leading edge upper surface vibrates the reed, giving an audible warning before the full stall.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'The "balked landing" (go-around) configuration that is most critical is when:',
+    options: [
+      'A. The aircraft is in ground effect and power is applied above Vref',
+    'B. Go-around with flaps at the first stage only — this is the most efficient',
+    'C. Flaps are fully up and undercarriage is up when power is applied',
+    'D. Full flap is extended and the undercarriage is down at the point of initiating a go-around at minimum airspeed'
+    ],
+    correct: 3,
+    explanation: 'A go-around with full flap and gear down at minimum speed is the most demanding: maximum drag, minimum performance, and the risk of sinking as flaps are retracted. The procedure must be done carefully: full power first, then incremental flap retraction as airspeed increases.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "stability of a spin" once established is maintained by:',
+    options: [
+      'A. Once established, a spin has no stabilising mechanism — it is always self-recovering',
+    'B. The engine torque maintaining the rotation rate against aerodynamic damping',
+    'C. Gyroscopic moments from the spinning airframe and the aerodynamic couple between the inboard (stalled) and outboard (more lightly stalled or unstalled) wing sections',
+    'D. Gravity pulling the aircraft earthward without any aerodynamic stabilisation'
+    ],
+    correct: 2,
+    explanation: 'In a developed spin, two primary mechanisms maintain rotation: (1) the inner wing is deeply stalled (high drag, low lift) while the outer wing is less stalled or unstalled (generating lift that drives the rotation); (2) gyroscopic moments from the spinning aircraft oppose changes in spin axis. PARE recovery breaks these mechanisms.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.10'
+  },
+  {
+    question: 'A windmilling propeller on a failed engine creates more drag than a feathered propeller because:',
+    options: [
+      'A. A windmilling propeller spins faster than a feathered propeller',
+    'B. The rotating blades present varying angles of attack to the airflow, creating large aerodynamic drag forces',
+    'C. A windmilling propeller produces reverse thrust that opposes forward motion',
+    'D. Windmilling creates slipstream that increases induced drag on the wing'
+    ],
+    correct: 1,
+    explanation: 'A windmilling propeller has blades at positive pitch, presenting a large disc area and generating significant aerodynamic drag (and negative thrust). A feathered propeller turns the blades edge-on to the airflow — effectively becoming a low-drag streamlined surface, greatly reducing drag.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'A high Reynolds number (large, fast aircraft) promotes:',
+    options: [
+      'A. Extended laminar boundary layer flow',
+    'B. Earlier transition to turbulent boundary layer flow',
+    'C. Reduced skin friction drag on all surfaces',
+    'D. Delayed separation from the upper wing surface'
+    ],
+    correct: 1,
+    explanation: 'Reynolds number Re = ρVL/μ. Higher Re (larger/faster aircraft) promotes earlier boundary layer transition from laminar to turbulent. Turbulent flow has higher skin friction drag but better pressure recovery — the transition point moves forward on the wing.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  },
+  {
+    question: 'The effect of increasing altitude on glide range in still air is:',
+    options: [
+      'A. Glide range is independent of starting altitude — the glide ratio (ratio of horizontal to vertical distance) is the same at any height',
+    'B. Glide range increases with altitude — more potential energy to convert',
+    'C. Glide range depends only on wind conditions, not on starting altitude',
+    'D. Glide range decreases with altitude because the aircraft is slower in TAS'
+    ],
+    correct: 1,
+    explanation: 'Glide range = starting altitude × glide ratio. From a higher altitude, the aircraft has more potential energy — it can glide further in absolute distance. The glide ratio (L/D ratio) is the same at any altitude — but starting higher gives a longer glide track.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.8'
+  },
+  {
+    question: 'The "lift coefficient" required in level flight at a given weight and altitude:',
+    options: [
+      'A. Increases as airspeed increases',
+    'B. Decreases as airspeed increases — less CL is needed because dynamic pressure is higher',
+    'C. Doubles every time airspeed is halved',
+    'D. Remains constant regardless of airspeed'
+    ],
+    correct: 1,
+    explanation: 'L = CL × ½ρV² × S = W (constant in level flight). So CL = W / (½ρV² × S). As V increases, the denominator grows — CL must decrease. At high speed, the pilot flies at a low angle of attack (low CL). At low speed, a high angle of attack (high CL) is required. The stall occurs when CLmax is reached.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.7'
+  },
+  {
+    question: 'The lift force always acts:',
+    options: [
+      'A. At 90° to the drag force only in level flight',
+    'B. Parallel to the aircraft\'s longitudinal axis',
+    'C. Perpendicular to the relative airflow (not perpendicular to the horizon)',
+    'D. Vertically upward regardless of aircraft attitude'
+    ],
+    correct: 2,
+    explanation: 'By definition, lift is perpendicular to the relative airflow (relative wind). In level flight, this is approximately vertical. In a banked turn, lift is tilted with the bank — the vertical component supports weight and the horizontal component provides centripetal force. In a dive, lift is not vertical.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.4'
+  },
+  {
+    question: 'The "dynamic pressure" is:',
+    options: [
+      'A. The difference in pressure between the upper and lower wing surface',
+    'B. The total atmospheric pressure at the aircraft\'s altitude',
+    'C. The pressure from propeller wash over the fuselage',
+    'D. The pressure created by the aircraft\'s motion — equal to ½ρV² — sensed by the pitot tube above the static pressure'
+    ],
+    correct: 3,
+    explanation: 'Dynamic pressure q = ½ρV². It is the additional pressure created by the aircraft\'s movement through the air — measured at the pitot tube as total pressure. The ASI uses (total pressure − static pressure) = dynamic pressure, which is proportional to V² at a given density.',
+    reference: 'Bob Tait CPL Aerodynamics Ch.3'
+  }
+];
