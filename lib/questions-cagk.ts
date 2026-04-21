@@ -1,9 +1,13 @@
 // CPL Aircraft General Knowledge — 500 Questions
 // Auto-assembled
 
-import { Question } from '../types'
-
-export const cagkQuestions: Question[] = [
+export const cagkQuestions: {
+  question: string;
+  options: string[];
+  correct: number;
+  explanation: string;
+  reference: string;
+}[] = [
   {
     question: 'Running a fuel tank dry in flight causes:',
     options: [
