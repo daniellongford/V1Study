@@ -6,6 +6,7 @@ import { clwaQuestions } from '../../../lib/questions-clwa'
 import { chufQuestions } from '../../../lib/questions-chuf'
 import { cmetQuestions } from '../../../lib/questions-cmet'
 import { cnavQuestions } from '../../../lib/questions-cnav'
+import { cadaQuestions } from '../../../lib/questions-cada'
 
 // Full question banks — keyed to match subject names used in the dashboard
 const fullBanks: Record<string, any[]> = {
@@ -13,6 +14,7 @@ const fullBanks: Record<string, any[]> = {
   'Human Factors':   chufQuestions,
   'Meteorology':     cmetQuestions,
   'Navigation':      cnavQuestions,
+  'Aerodynamics': cadaQuestions,
 }
 
 function findQuestions(subject: string) {
