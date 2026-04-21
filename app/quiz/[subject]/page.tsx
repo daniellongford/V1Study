@@ -8,6 +8,7 @@ import { cmetQuestions } from '../../../lib/questions-cmet'
 import { cnavQuestions } from '../../../lib/questions-cnav'
 import { cadaQuestions } from '../../../lib/questions-cada'
 import { cagkQuestions } from '../../../lib/questions-cagk'
+import { cfpaQuestions } from '../../../lib/questions-cfpa'
 
 // Full question banks — keyed to match subject names used in the dashboard
 const fullBanks: Record<string, any[]> = {
@@ -17,6 +18,7 @@ const fullBanks: Record<string, any[]> = {
   'Navigation':      cnavQuestions,
   'Aerodynamics': cadaQuestions,
   'Aircraft General Knowledge': cagkQuestions,
+  'Flight Planning & Performance': cfpaQuestions,
 }
 
 function findQuestions(subject: string) {
