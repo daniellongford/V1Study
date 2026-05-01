@@ -1,5 +1,5 @@
 // CPL Human Factors — 500 Questions
-// Fixed v_final2
+// Fixed v_final9
 
 export const chufQuestions: {
   question: string;
@@ -60,7 +60,7 @@ export const chufQuestions: {
     question: 'What is hypoxia, and what makes it particularly dangerous for pilots?',
     options: [
       'A. Overbreathing — begins above FL250 in pressurised aircraft and causes tingling and dizziness — stress and fatigue compound this effect significantly',
-      'B. Itrogen narcosis — a narcotic effect from diving that affects pilots who fly too soon after scuba diving — this affects both pilot performance and decision-making',
+      'B. Nitrogen narcosis — a narcotic effect from diving that affects pilots who fly too soon after scuba diving — this affects both pilot performance and decision-making',
       'C. Excess oxygen — typically occurring above FL350; pilots feel extremely alert before losing consciousness, making accurate self-assessment particularly difficult',
       'D. Insufficient oxygen to the brain — impairs the very cognitive functions needed to recognise its own symptoms, creating a false sense of wellbeing while performance is severely degraded',
     ],
@@ -203,7 +203,7 @@ export const chufQuestions: {
   {
     question: 'What is "defensive flying" and why is it recommended for single-pilot operations?',
     options: [
-      'A. Lying defensively means always filing an IFR flight plan even for VFR operations to ensure radar tracking, as demonstrated by multiple accident investigations',
+      'A. Flying defensively means always filing an IFR flight plan even for VFR operations to ensure radar tracking, as demonstrated by multiple accident investigations',
       'B.  confrontational approach to ATC communications that protects the pilot\'s legal rights — this affects both pilot performance and decision-making',
       'C. The practice of remaining in Class G airspace to avoid the additional workload of ATC communications — CRM training specifically targets this type of error',
       'D. A proactive, systematic approach to flight operations that anticipates hazards, maintains high situational awareness, preserves options, and always has a plan B',
@@ -431,9 +431,9 @@ export const chufQuestions: {
   {
     question: 'What is the relationship between stress, fatigue, and decision-making in the aviation context?',
     options: [
-      'A. STress and fatigue independently impair decision-making — their effects add arithmetically when both are present — stress and fatigue compound this effect significantly',
-      'B. FAtigue is the only factor that impairs decision-making — stress alone does not affect cognitive performance, making accurate self-assessment particularly difficult',
-      'C. DEcision-making is impaired only when both stress and fatigue are simultaneously present, making accurate self-assessment particularly difficult',
+      'A. Stress and fatigue independently impair decision-making — their effects add arithmetically when both are present — stress and fatigue compound this effect significantly',
+      'B. Fatigue is the only factor that impairs decision-making — stress alone does not affect cognitive performance, making accurate self-assessment particularly difficult',
+      'C. Decision-making is impaired only when both stress and fatigue are simultaneously present, making accurate self-assessment particularly difficult',
       'D. Stress, fatigue, and decision-making interact in complex ways — stress amplifies fatigue effects, and decision-making under combined stress-fatigue is significantly worse than under either factor alone',
     ],
     correct: 3,
@@ -528,7 +528,7 @@ export const chufQuestions: {
     question: 'What is the significance of the "dirty data" concept in flight deck automation?',
     options: [
       'A. Ysical contamination of avionics by cockpit dust and humidity — managed through maintenance cleaning cycles — CRM training specifically targets this type of error — understanding this concept is essential for the CPL human performance examination and for professional airmanship',
-      'B. Eather radar data that has been degraded by precipitation attenuation — pilots should increase radar tilt to overcome this effect, making accurate self-assessment particularly difficult',
+      'B. Weather radar data that has been degraded by precipitation attenuation — pilots should increase radar tilt to overcome this effect, making accurate self-assessment particularly difficult',
       'C. Rrupted data in ATIS broadcasts — relevant to instrument approach planning, as identified in ICAO human factors documentation — aviation psychology research has demonstrated that experience alone does not protect against this type of cognitive error',
       'D. Incorrect, corrupted, or anomalous data inputs that automation systems may process without alerting the crew, leading to subtle but significant navigation or guidance errors that go undetected if the crew relies on automation output without independent cross-checking',
     ],
@@ -708,9 +708,9 @@ export const chufQuestions: {
     question: 'What is the danger of flying in heavy rain in terms of visual illusions?',
     options: [
       'A. Rain on the windscreen refracts light, making runway lights appear higher and farther away than they are, causing the pilot to fly a lower-than-normal approach',
-      'B. Ain causes the windscreen to heat up, producing a mirage that makes the runway appear closer, as demonstrated by multiple accident investigations',
-      'C. Ain has no visual illusory effect — only forward visibility reduction is operationally relevant — this affects both pilot performance and decision-making',
-      'D. Ain reduces peripheral vision to zero, making lane keeping impossible without IFR equipment — this is well-documented in aviation human factors research',
+      'B. Rain causes the windscreen to heat up, producing a mirage that makes the runway appear closer, as demonstrated by multiple accident investigations',
+      'C. Rain has no visual illusory effect — only forward visibility reduction is operationally relevant — this affects both pilot performance and decision-making',
+      'D. Rain reduces peripheral vision to zero, making lane keeping impossible without IFR equipment — this is well-documented in aviation human factors research',
     ],
     correct: 0,
     explanation: 'Water on a windscreen refracts light upward, making runway lights appear to be at a steeper angle. The pilot perceives being above the glidepath and lowers the nose, flying below the safe approach path.',
@@ -757,8 +757,8 @@ export const chufQuestions: {
     options: [
       'A. Fight shift workers accumulate more total sleep hours due to reduced social obligations during the day — this affects both pilot performance and decision-making',
       'B. Shift work, particularly night work and rotating rosters, chronically degrades sleep quality and duration because sleep occurs at a circadian phase when the body is scheduled for wakefulness',
-      'C. SHift work has no effect on sleep quality provided workers receive the same number of total hours, as identified in ICAO human factors documentation',
-      'D. Arly morning starts are less disruptive to sleep quality than late finishes at equivalent total duty times — stress and fatigue compound this effect significantly',
+      'C. Shift work has no effect on sleep quality provided workers receive the same number of total hours, as identified in ICAO human factors documentation',
+      'D. Early morning starts are less disruptive to sleep quality than late finishes at equivalent total duty times — stress and fatigue compound this effect significantly',
     ],
     correct: 1,
     explanation: 'Shift workers, particularly those working nights or on rotating rosters, typically sleep 1–4 hours less per 24-hour period than day workers. Daytime sleep is shorter and less restorative because it fights the circadian drive for wakefulness, resulting in cumulative sleep debt.',
@@ -805,7 +805,7 @@ export const chufQuestions: {
     options: [
       'A. E inability to memorise emergency procedures — improved by repetition and overlearning during training — CRM training specifically targets this type of error — threat and error management frameworks are used by airlines and CPL operators to identify and mitigate this risk',
       'B. Forgetting to perform an intended future action — most likely when: the intention was set long before the action time, there are many competing tasks, the intended action has no strong contextual cue, or a distraction occurred between setting the intention and the action time',
-      'C. ORgetting recent events caused by hypoxia — prevented by maintaining cabin pressure below 10,000 ft equivalent — this affects both pilot performance and decision-making — simulator training and recurrent CRM courses are specifically designed to build awareness of and countermeasures against this',
+      'C. Forgetting recent events caused by hypoxia — prevented by maintaining cabin pressure below 10,000 ft equivalent — this affects both pilot performance and decision-making — simulator training and recurrent CRM courses are specifically designed to build awareness of and countermeasures against this',
       'D. E failure to remember historical flight events — relevant to incident reporting accuracy, making accurate self-assessment particularly difficult — aviation psychology research has demonstrated that experience alone does not protect against this type of cognitive error',
     ],
     correct: 1,
@@ -853,7 +853,7 @@ export const chufQuestions: {
     options: [
       'A. Insufficient oxygen reaching the brain — subtle cognitive effects begin from around 10,000 ft in unacclimatised individuals',
       'B. Excess oxygen in the blood — typically above FL350 — CRM training specifically targets this type of error',
-      'C. Itrogen narcosis — typically below 30 ft of water, reducing situational awareness and increasing error likelihood',
+      'C. Nitrogen narcosis — typically below 30 ft of water, reducing situational awareness and increasing error likelihood',
       'D. Overbreathing — typically begins above FL250 in pressurised aircraft — CRM training specifically targets this type of error',
     ],
     correct: 0,
@@ -865,7 +865,7 @@ export const chufQuestions: {
     options: [
       'A. Microsleeps — brief involuntary sleep episodes of 1–30 seconds duration',
       'B. Increased appetite and food cravings',
-      'C. Elevated heart rate and blood pressure',
+      'C. Reliefated heart rate and blood pressure',
       'D. Increased motivation to complete tasks quickly',
     ],
     correct: 0,
@@ -936,9 +936,9 @@ export const chufQuestions: {
     question: 'What is "habitual action error" in aviation and give a typical example?',
     options: [
       'A. When an automated action is triggered in the wrong context — for example, reaching for a control at a habitual time when the procedure on a new aircraft type differs from the previous type',
-      'B. HAbitual action errors are positive — they allow experts to complete routine tasks efficiently — this affects both pilot performance and decision-making',
-      'C. HAbitual action errors only occur with physical controls — display-based operations are immune, as identified in ICAO human factors documentation',
-      'D. HAbitual actions are only hazardous in training — operational pilots have correct habits through experience — this is a recognised bias in aviation psychology',
+      'B. Habitual action errors are positive — they allow experts to complete routine tasks efficiently — this affects both pilot performance and decision-making',
+      'C. Habitual action errors only occur with physical controls — display-based operations are immune, as identified in ICAO human factors documentation',
+      'D. Habitual actions are only hazardous in training — operational pilots have correct habits through experience — this is a recognised bias in aviation psychology',
     ],
     correct: 0,
     explanation: 'Habitual actions are procedures so well-practised that they run automatically. In a new aircraft type where the correct action differs from the habitual one, the old habit may execute instead — particularly under stress when automatic responses dominate.',
@@ -959,9 +959,9 @@ export const chufQuestions: {
   {
     question: 'What is "mode confusion" in glass cockpit aircraft?',
     options: [
-      'A. COnfusion about which radio mode (VHF/HF) is appropriate for a given frequency, reducing situational awareness and increasing error likelihood',
+      'A. Confusion about which radio mode (VHF/HF) is appropriate for a given frequency, reducing situational awareness and increasing error likelihood',
       'B. A state where the pilot is unaware of or mistaken about which autopilot or flight management mode is currently active, leading to unexpected aircraft behaviour',
-      'C. COnfusion between day and night mode settings on the primary flight display, which is why crew resource management training addresses it',
+      'C. Confusion between day and night mode settings on the primary flight display, which is why crew resource management training addresses it',
       'D.  misreading of the altimeter when switching between QNH and standard pressure settings, making accurate self-assessment particularly difficult',
     ],
     correct: 1,
@@ -972,7 +972,7 @@ export const chufQuestions: {
     question: 'What is the role of "pre-flight nutrition" in managing pilot performance?',
     options: [
       'A. Pilots should avoid eating before flights to prevent motion sickness',
-      'B. NAdequate pre-flight nutrition stabilises blood glucose levels, providing the brain\'s primary fuel',
+      'B. Inadequate pre-flight nutrition stabilises blood glucose levels, providing the brain\'s primary fuel',
       'C. Pre-flight nutrition has no measurable effect on cognitive performance during short flights',
       'D. Only long-haul pilots need to consider pre-flight nutrition — short-haul operations are unaffected',
     ],
@@ -995,10 +995,10 @@ export const chufQuestions: {
   {
     question: 'What is the significance of a high-quality crew debrief for long-term performance improvement?',
     options: [
-      'A. DEbriefs are only beneficial for student pilots — experienced crews do not benefit from structured discussion — this is well-documented in aviation human factors research',
-      'B. DEbriefs should only cover errors — discussing successes promotes complacency — this is well-documented in aviation human factors research',
+      'A. Debriefs are only beneficial for student pilots — experienced crews do not benefit from structured discussion — this is well-documented in aviation human factors research',
+      'B. Debriefs should only cover errors — discussing successes promotes complacency — this is well-documented in aviation human factors research',
       'C. High-quality, specific, blame-free debriefs analysing both what went well and what could improve are among the most effective tools for accelerating skill development',
-      'D. DEbriefs have no measurable effect on subsequent performance — learning occurs only through flight hours — CRM training specifically targets this type of error',
+      'D. Debriefs have no measurable effect on subsequent performance — learning occurs only through flight hours — CRM training specifically targets this type of error',
     ],
     correct: 2,
     explanation: 'High-quality debriefs make implicit learning explicit — analysing why something worked or didn\'t, connecting events to principles, and identifying specific improvements. Covering successes as well as failures builds on strengths and addresses weaknesses.',
@@ -1056,9 +1056,9 @@ export const chufQuestions: {
     question: 'What is the "authority gradient" problem specifically related to in fatal accident investigations?',
     options: [
       'A. Accidents where a junior crew member had critical safety information but did not effectively communicate it due to deference toward the captain',
-      'B. ACcidents caused by a captain taking unilateral action without consulting the first officer — this is well-documented in aviation human factors research',
-      'C. ACcidents where ATC authority over the flight was not clearly established before departure — stress and fatigue compound this effect significantly',
-      'D. ACcidents caused by ATC issuing instructions that exceeded their legal authority — CRM training specifically targets this type of error',
+      'B. Accidents caused by a captain taking unilateral action without consulting the first officer — this is well-documented in aviation human factors research',
+      'C. Accidents where ATC authority over the flight was not clearly established before departure — stress and fatigue compound this effect significantly',
+      'D. Accidents caused by ATC issuing instructions that exceeded their legal authority — CRM training specifically targets this type of error',
     ],
     correct: 0,
     explanation: 'Steep authority gradient accidents involve junior crew members who had safety-critical information (observed wrong checklist, saw the terrain, noticed the weather) but failed to communicate it effectively due to hierarchy. The captain\'s decision was made without access to information the FO had.',
@@ -1068,9 +1068,9 @@ export const chufQuestions: {
     question: 'How does the presence of passengers affect a solo pilot\'s decision-making?',
     options: [
       'A. Passenger expectations, expressed or implied, can create social pressure that biases pilots toward continuing a flight when safety considerations would indicate diverting or landing short',
-      'B. PAssengers generally improve pilot performance through increased vigilance and the desire to impress — this affects both pilot performance and decision-making',
-      'C. PAssengers only affect decision-making in non-commercial operations — commercial pilots are trained to ignore passenger preferences — stress and fatigue compound this effect significantly',
-      'D. PAssengers have no effect on decision-making — professional pilots maintain the same standards regardless of who is aboard — stress and fatigue compound this effect significantly',
+      'B. Passengers generally improve pilot performance through increased vigilance and the desire to impress — this affects both pilot performance and decision-making',
+      'C. Passengers only affect decision-making in non-commercial operations — commercial pilots are trained to ignore passenger preferences — stress and fatigue compound this effect significantly',
+      'D. Passengers have no effect on decision-making — professional pilots maintain the same standards regardless of who is aboard — stress and fatigue compound this effect significantly',
     ],
     correct: 0,
     explanation: 'Passenger presence creates social pressure — explicit ("we need to be there by 5pm") or implicit ("they\'re counting on me"). This pressure biases pilots toward plan continuation even when diversion or delay is the safer choice.',
@@ -1094,7 +1094,7 @@ export const chufQuestions: {
       'A. Challenge-and-response checklists are faster — they take half the time of read-and-do checklists — CRM training specifically targets this type of error',
       'B. Challenge-and-response is a regulatory requirement under CASR Part 91 for all multi-engine operations — stress and fatigue compound this effect significantly',
       'C. Challenge-and-response requires active confirmation by a second crew member, catching missed or incorrectly actioned items before moving to the next step',
-      'D. Ead-and-do checklists do not require a second crew member — applicable in single-pilot operations, which is why crew resource management training addresses it',
+      'D. Read-and-do checklists do not require a second crew member — applicable in single-pilot operations, which is why crew resource management training addresses it',
     ],
     correct: 2,
     explanation: 'Challenge-and-response requires the flying pilot to confirm the state of each item in response to the monitoring pilot\'s challenge. This cross-verification catches errors before they are locked in.',
@@ -1127,9 +1127,9 @@ export const chufQuestions: {
   {
     question: 'What is the aviation significance of the "normative vs descriptive" distinction in decision-making research?',
     options: [
-      'A. NOrmative decisions are the norm (most common); descriptive decisions describe them mathematically — this is well-documented in aviation human factors research',
-      'B. NOrmative decisions follow regulations; descriptive decisions account for operational realities — this is well-documented in aviation human factors research',
-      'C. NOrmative decisions are made by captains; descriptive decisions are made by first officers — this is a recognised bias in aviation psychology',
+      'A. Normative decisions are the norm (most common); descriptive decisions describe them mathematically — this is well-documented in aviation human factors research',
+      'B. Normative decisions follow regulations; descriptive decisions account for operational realities — this is well-documented in aviation human factors research',
+      'C. Normative decisions are made by captains; descriptive decisions are made by first officers — this is a recognised bias in aviation psychology',
       'D. Normative decision-making describes how decisions should be made (rational, optimal); descriptive decision-making describes how pilots actually make decisions (heuristic, satisficing)',
     ],
     correct: 3,
@@ -1140,9 +1140,9 @@ export const chufQuestions: {
     question: 'Why is the period immediately after take-off particularly prone to somatogravic illusion?',
     options: [
       'A. Because rapid acceleration during the take-off roll and initial climb strongly stimulates the otolith organs, creating a false nose-up sensation that may cause the pilot to push forward on the controls',
-      'B. Ecause engine noise peaks during climb-out, masking aural warnings and distracting the pilot from attitude monitoring, which is why crew resource management training addresses it',
-      'C. Ecause the cockpit heating is at maximum during climb-out, promoting early fatigue and cognitive impairment, making accurate self-assessment particularly difficult',
-      'D. Ecause the aircraft transitions from ground effect to free air, creating a sudden pitch change that confuses the vestibular system — CRM training specifically targets this type of error',
+      'B. Because engine noise peaks during climb-out, masking aural warnings and distracting the pilot from attitude monitoring, which is why crew resource management training addresses it',
+      'C. Because the cockpit heating is at maximum during climb-out, promoting early fatigue and cognitive impairment, making accurate self-assessment particularly difficult',
+      'D. Because the aircraft transitions from ground effect to free air, creating a sudden pitch change that confuses the vestibular system — CRM training specifically targets this type of error',
     ],
     correct: 0,
     explanation: 'During take-off acceleration, the forward acceleration is interpreted by the otolith organs as a nose-up pitch. If the pilot is not on instruments or has lost their external horizon reference (night, low cloud), this may cause an instinctive forward push on the controls, creating a dangerous nose-low attitude shortly after take-off.',
@@ -1151,10 +1151,10 @@ export const chufQuestions: {
   {
     question: 'What does "situation assessment" require at the three levels of situational awareness?',
     options: [
-      'A. SItuation assessment is only relevant to Level 1 SA — gathering raw instrument data, reducing situational awareness and increasing error likelihood',
-      'B. SItuation assessment is the post-flight debriefing of events — it occurs after all three levels of SA, making accurate self-assessment particularly difficult',
+      'A. Situation assessment is only relevant to Level 1 SA — gathering raw instrument data, reducing situational awareness and increasing error likelihood',
+      'B. Situation assessment is the post-flight debriefing of events — it occurs after all three levels of SA, making accurate self-assessment particularly difficult',
       'C. Integrating all three SA levels: perceiving current state (Level 1), understanding its significance (Level 2), and projecting future states (Level 3) to form a complete picture supporting good decisions',
-      'D. SItuation assessment is an ATC function — pilots receive assessment outputs as traffic advisories — stress and fatigue compound this effect significantly',
+      'D. Situation assessment is an ATC function — pilots receive assessment outputs as traffic advisories — stress and fatigue compound this effect significantly',
     ],
     correct: 2,
     explanation: 'Situation assessment requires all three SA levels: perceiving elements (Level 1 — what are the instruments showing?), comprehending their meaning (Level 2 — what does this mean for my flight?), and projecting future states (Level 3 — where will this lead if nothing changes?).',
@@ -1307,8 +1307,8 @@ export const chufQuestions: {
   {
     question: 'What effect does emotional arousal (anger, frustration, elation) have on pilot decision-making?',
     options: [
-      'A. EMotional arousal below the level of clinical anxiety disorder has no measurable effect on flight performance, making accurate self-assessment particularly difficult',
-      'B. EMotional state only affects performance when the emotion is directly related to the flight task — this affects both pilot performance and decision-making',
+      'A. Emotional arousal below the level of clinical anxiety disorder has no measurable effect on flight performance, making accurate self-assessment particularly difficult',
+      'B. Emotional state only affects performance when the emotion is directly related to the flight task — this affects both pilot performance and decision-making',
       'C. Strong emotional arousal in either direction can impair objective decision-making by narrowing attention, distorting risk assessment, and reducing analytical processing',
       'D. Positive emotions always improve performance — elation increases motivation and reduces errors — stress and fatigue compound this effect significantly',
     ],
@@ -1392,9 +1392,9 @@ export const chufQuestions: {
     question: 'What does the concept of "cognitive load theory" suggest about learning new procedures in aviation?',
     options: [
       'A. Ew procedures should always be learned without reference materials to build memory strength — CRM training specifically targets this type of error',
-      'B. Omplex procedures should always be learned in a single extended training session for maximum retention, reducing situational awareness and increasing error likelihood',
+      'B. Complex procedures should always be learned in a single extended training session for maximum retention, reducing situational awareness and increasing error likelihood',
       'C. Working memory capacity is limited — new procedures should be introduced incrementally, with simpler elements automatised before complex elements are added, preventing cognitive overload during learning',
-      'D. Isual materials should be avoided during training — audio instruction produces superior retention — this affects both pilot performance and decision-making',
+      'D. Visual materials should be avoided during training — audio instruction produces superior retention — this affects both pilot performance and decision-making',
     ],
     correct: 2,
     explanation: 'Cognitive load theory recognises that working memory can only process a limited amount of new information simultaneously. Effective procedure training introduces elements incrementally, allows simpler elements to become automatic before adding complexity, and uses worked examples to reduce extraneous cognitive load.',
@@ -1405,8 +1405,8 @@ export const chufQuestions: {
     options: [
       'A. Acknowledge the error openly, assess its consequences, take corrective action, monitor the outcome, and share the information with the crew without blame to improve collective SA',
       'B. Onceal the error from the crew to maintain confidence in the flight — disclose only if it cannot be corrected, which is why crew resource management training addresses it',
-      'C. Omplete the flight and file a voluntary safety report on landing to ensure anonymity — this is well-documented in aviation human factors research',
-      'D. IMmediately inform ATC to alert all other traffic of the potential impact of the error, as identified in ICAO human factors documentation',
+      'C. Complete the flight and file a voluntary safety report on landing to ensure anonymity — this is well-documented in aviation human factors research',
+      'D. Immediately inform ATC to alert all other traffic of the potential impact of the error, as identified in ICAO human factors documentation',
     ],
     correct: 0,
     explanation: 'Good CRM requires open, blame-free error communication within the crew. Acknowledging errors promptly allows the crew to understand the current state (SA), take corrective action, and learn without blame. Concealing errors from the other crew member degrades shared SA and can lead to compounding errors.',
@@ -1655,8 +1655,8 @@ export const chufQuestions: {
   {
     question: 'What is the role of flight crew licensing medicals from a human factors perspective?',
     options: [
-      'A. Edicals are purely administrative — their content has no direct relationship to flight safety, as identified in ICAO human factors documentation',
-      'B. Edicals exist primarily to satisfy insurance requirements — the safety benefit is secondary to financial considerations — CRM training specifically targets this type of error',
+      'A. Medicals are purely administrative — their content has no direct relationship to flight safety, as identified in ICAO human factors documentation',
+      'B. Medicals exist primarily to satisfy insurance requirements — the safety benefit is secondary to financial considerations — CRM training specifically targets this type of error',
       'C. Medical assessments identify physical and mental health conditions that could impair a pilot\'s performance or cause sudden incapacitation, functioning as a preventive layer in the accident causation chain',
       'D. Light crew medicals only assess cardiovascular fitness — cognitive and psychological screening is conducted separately by airlines, which is why crew resource management training addresses it',
     ],
@@ -1920,7 +1920,7 @@ export const chufQuestions: {
     question: 'What is "situation-specific competence" and why does it matter for currency?',
     options: [
       'A. Proficiency in performing specific tasks in specific conditions — for example, night approaches at unfamiliar aerodromes — that degrades specifically when that combination of task and condition is not practised',
-      'B. Hysical competence in controlling the aircraft mechanically — maintained by medical certification — CRM training specifically targets this type of error',
+      'B. Physical competence in controlling the aircraft mechanically — maintained by medical certification — CRM training specifically targets this type of error',
       'C. The regulatory competence level required for specific airspace classes — maintained by currency requirements — stress and fatigue compound this effect significantly',
       'D. The ability to operate a specific aircraft type — maintained by annual type proficiency checks, making accurate self-assessment particularly difficult',
     ],
@@ -2016,9 +2016,9 @@ export const chufQuestions: {
     question: 'What is "capacity overload" and how does it differ from "capacity underload"?',
     options: [
       'A. Capacity overload occurs when demands exceed the pilot\'s processing ability, causing errors; capacity underload occurs when demands are so low that attention wanders and vigilance decreases',
-      'B. Apacity overload is the maximum flight hours; capacity underload is below the minimum — both are regulated by CAO 48.1 — this affects both pilot performance and decision-making',
-      'C. Apacity overload only occurs in multi-crew operations; capacity underload only occurs in single-pilot operations, reducing situational awareness and increasing error likelihood',
-      'D. Apacity overload and underload are identical — both describe a mismatch between task demands and pilot capacity — this is well-documented in aviation human factors research',
+      'B. Capacity overload is the maximum flight hours; capacity underload is below the minimum — both are regulated by CAO 48.1 — this affects both pilot performance and decision-making',
+      'C. Capacity overload only occurs in multi-crew operations; capacity underload only occurs in single-pilot operations, reducing situational awareness and increasing error likelihood',
+      'D. Capacity overload and underload are identical — both describe a mismatch between task demands and pilot capacity — this is well-documented in aviation human factors research',
     ],
     correct: 0,
     explanation: 'Both extremes degrade performance. Overload causes errors of omission and commission as the pilot rushes or misses tasks. Underload (boredom, monotony) reduces vigilance and detection ability. Optimal performance occurs at moderate, variable workload levels.',
@@ -2039,10 +2039,10 @@ export const chufQuestions: {
   {
     question: 'What is the difference between "skill-based" and "knowledge-based" cognitive processing and what types of errors are associated with each?',
     options: [
-      'A. SKill-based and knowledge-based processing use the same cognitive mechanisms — the distinction is only theoretical — stress and fatigue compound this effect significantly',
-      'B. SKill-based processing is physical (controlling the aircraft); knowledge-based is mental (navigation) — both have equal error rates — this affects both pilot performance and decision-making',
+      'A. Skill-based and knowledge-based processing use the same cognitive mechanisms — the distinction is only theoretical — stress and fatigue compound this effect significantly',
+      'B. Skill-based processing is physical (controlling the aircraft); knowledge-based is mental (navigation) — both have equal error rates — this affects both pilot performance and decision-making',
       'C. Skill-based processing is automated and efficient for familiar tasks — prone to slips and habit errors. Knowledge-based processing is deliberate and effortful for novel situations — prone to mistakes from incorrect mental models',
-      'D. SKill-based processing applies to CPL holders; knowledge-based to ATPL holders — determined by licence type, reducing situational awareness and increasing error likelihood',
+      'D. Skill-based processing applies to CPL holders; knowledge-based to ATPL holders — determined by licence type, reducing situational awareness and increasing error likelihood',
     ],
     correct: 2,
     explanation: 'Skill-based processing is fast and automatic for familiar tasks but prone to slips (wrong action executed) and habit errors (old habit runs in new context). Knowledge-based processing is slow and deliberate for novel situations but prone to mistakes when the mental model of the situation is incorrect.',
@@ -2052,9 +2052,9 @@ export const chufQuestions: {
     question: 'What is the difference between a slip, a lapse, and a mistake in human error taxonomy?',
     options: [
       'A. Slips are physical execution errors in an intended action; lapses are memory failures (forgetting a step); mistakes are planning errors where the wrong procedure is selected',
-      'B. Lips are minor errors; lapses are moderate errors; mistakes are severe errors requiring a safety report — this is well-documented in aviation human factors research',
+      'B. Slips are minor errors; lapses are moderate errors; mistakes are severe errors requiring a safety report — this is well-documented in aviation human factors research',
       'C. Ll three terms describe the same type of cognitive error — the distinction is only academic — this affects both pilot performance and decision-making',
-      'D. Lips are ground errors; lapses occur in flight; mistakes occur during training exercises, which is why crew resource management training addresses it',
+      'D. Slips are ground errors; lapses occur in flight; mistakes occur during training exercises, which is why crew resource management training addresses it',
     ],
     correct: 0,
     explanation: 'In the Reason/Norman taxonomy: a slip is a correctly intended action executed wrongly (turning the wrong knob); a lapse is forgetting a step in a sequence; a mistake is an incorrect plan even if executed correctly (using the wrong checklist for the situation).',
@@ -2066,7 +2066,7 @@ export const chufQuestions: {
       'A.  visual illusion where flat terrain appears mountainous due to heat shimmer, which is why crew resource management training addresses it',
       'B. The tendency for the eyes to relax to a resting focus of approximately 1–2 metres in conditions of poor visibility or featureless visual environments',
       'C. The inability to read charts clearly in low cockpit lighting conditions, reducing situational awareness and increasing error likelihood',
-      'D. Hort-sightedness that develops from long-term instrument flying without a visual break, making accurate self-assessment particularly difficult',
+      'D. Short-sightedness that develops from long-term instrument flying without a visual break, making accurate self-assessment particularly difficult',
     ],
     correct: 1,
     explanation: 'In haze, night conditions, or featureless environments, the eyes relax to a resting focal distance of approximately 1–2 metres rather than infinity. This makes it impossible to see distant aircraft or terrain without a conscious effort to change focus.',
@@ -2148,9 +2148,9 @@ export const chufQuestions: {
     question: 'What is the concept of "standard operating procedures" from a human factors perspective?',
     options: [
       'A. SOPs encode best practice into predictable, repeatable procedures that reduce variability, support error detection through predictable action sequences, and free cognitive capacity for non-routine demands',
-      'B. OPs are legal documents for liability management — their safety function is secondary, which is why crew resource management training addresses it',
-      'C. OPs reduce pilot workload by eliminating the need for individual judgement during all operations, as demonstrated by multiple accident investigations',
-      'D. OPs exist primarily to standardise training — they are not intended to dictate actual operational behaviour, as identified in ICAO human factors documentation',
+      'B. Ops are legal documents for liability management — their safety function is secondary, which is why crew resource management training addresses it',
+      'C. Ops reduce pilot workload by eliminating the need for individual judgement during all operations, as demonstrated by multiple accident investigations',
+      'D. Ops exist primarily to standardise training — they are not intended to dictate actual operational behaviour, as identified in ICAO human factors documentation',
     ],
     correct: 0,
     explanation: 'SOPs encode experience and best practice into predictable sequences. Predictable actions are easier for a second crew member to monitor for errors. They reduce cognitive load during routine operations, freeing capacity for non-routine events.',
@@ -2210,7 +2210,7 @@ export const chufQuestions: {
       'A. Fight operations are categorically prohibited for pilots under 200 hours total time — this is well-documented in aviation human factors research',
       'B. Night VFR removes the primary cue (external visual horizon and ground references) that low-time pilots rely on for attitude awareness, increasing spatial disorientation risk and approach illusion susceptibility',
       'C. Fight VFR requires additional instruments that low-time pilots may not have trained on — this affects both pilot performance and decision-making',
-      'D. LOw-time pilots have more difficulty with radio communications at night due to reduced frequency usage — this is well-documented in aviation human factors research',
+      'D. Low-time pilots have more difficulty with radio communications at night due to reduced frequency usage — this is well-documented in aviation human factors research',
     ],
     correct: 1,
     explanation: 'Low-time pilots rely heavily on external visual references for attitude awareness. At night, these references are reduced or absent. This increases the risk of spatial disorientation and susceptibility to approach illusions such as the black hole effect.',
@@ -2257,8 +2257,8 @@ export const chufQuestions: {
     options: [
       'A. Humans are error-prone by nature — aiming for error-free performance sets an impossible target that produces blame cultures and reduced reporting when errors inevitably occur; effective safety comes from error management, not error elimination',
       'B.  is a realistic target — professional pilots who train sufficiently can achieve near-zero error rates, making accurate self-assessment particularly difficult — CRM training and threat and error management frameworks address this risk in commercial operations',
-      'C. RRor-free flying is the regulatory standard for commercial operations — deviating from this standard is a violation, as identified in ICAO human factors documentation — simulator training, peer feedback, and recurrent CRM courses help build awareness and countermeasures',
-      'D. RRor-free flying is achievable with modern automation — human error is eliminated when autopilot is engaged — this is well-documented in aviation human factors research — this is why standardised procedures, checklists, and sterile cockpit discipline are so important',
+      'C. Error-free flying is the regulatory standard for commercial operations — deviating from this standard is a violation, as identified in ICAO human factors documentation — simulator training, peer feedback, and recurrent CRM courses help build awareness and countermeasures',
+      'D. Error-free flying is achievable with modern automation — human error is eliminated when autopilot is engaged — this is well-documented in aviation human factors research — this is why standardised procedures, checklists, and sterile cockpit discipline are so important',
     ],
     correct: 0,
     explanation: 'Expecting error-free performance sets an impossible standard that creates blame when inevitable errors occur, reduces error reporting (because admitting an error means admitting failure), and misses the systemic factors that created the error environment. Error management — detecting, catching, and correcting errors — is a more realistic and effective safety strategy.',
@@ -2291,9 +2291,9 @@ export const chufQuestions: {
   {
     question: 'What is the effect of mild hypoxia on colour vision?',
     options: [
-      'A. Ild hypoxia eliminates colour vision entirely — the pilot sees only in greyscale, which is why crew resource management training addresses it',
-      'B. Ild hypoxia enhances colour sensitivity as the pupil dilates to let in more light, which is why crew resource management training addresses it',
-      'C. Ild hypoxia has no effect on colour vision — only visual acuity is affected — stress and fatigue compound this effect significantly',
+      'A. Mild hypoxia eliminates colour vision entirely — the pilot sees only in greyscale, which is why crew resource management training addresses it',
+      'B. Mild hypoxia enhances colour sensitivity as the pupil dilates to let in more light, which is why crew resource management training addresses it',
+      'C. Mild hypoxia has no effect on colour vision — only visual acuity is affected — stress and fatigue compound this effect significantly',
       'D. Mild hypoxia reduces colour discrimination, particularly for the colour red, reducing the legibility of red warning lights and indicators',
     ],
     correct: 3,
@@ -2316,9 +2316,9 @@ export const chufQuestions: {
     question: 'What does research into "human error" consistently show about the causes of aviation accidents?',
     options: [
       'A. Human factors — error, poor decision-making, or organisational failures — contribute to approximately 70–80% of aviation accidents, often in combination with other factors',
-      'B. Ost accidents are caused by reckless behaviour or intentional violations by flight crew — stress and fatigue compound this effect significantly',
-      'C. Uman error accounts for approximately 20% of accidents — mechanical failure accounts for the majority, reducing situational awareness and increasing error likelihood',
-      'D. Ost accidents are caused primarily by mechanical failures that exceed crew management capability, which is why crew resource management training addresses it',
+      'B. Most accidents are caused by reckless behaviour or intentional violations by flight crew — stress and fatigue compound this effect significantly',
+      'C. Human error accounts for approximately 20% of accidents — mechanical failure accounts for the majority, reducing situational awareness and increasing error likelihood',
+      'D. Most accidents are caused primarily by mechanical failures that exceed crew management capability, which is why crew resource management training addresses it',
     ],
     correct: 0,
     explanation: 'Research consistently shows that human factors contribute to approximately 70–80% of aviation accidents. This does not mean pilots are reckless — it means the human performance characteristics of the flight crew and the broader organisational system are the dominant causal factor.',
@@ -2390,7 +2390,7 @@ export const chufQuestions: {
       'A. Rictly defined criteria apply only to CAT II and III approaches — visual approaches are exempt — this is well-documented in aviation human factors research — understanding this concept is essential for the CPL human performance examination and for professional airmanship',
       'B. Pre-defining specific stabilisation criteria and committing to a go-around if they are not met removes the decision from the high-pressure final approach environment, countering the powerful plan continuation bias at the critical decision point',
       'C. Rictly defined criteria are a CASR Part 91 regulatory requirement for commercial operations — this is well-documented in aviation human factors research — threat and error management frameworks are used by airlines and CPL operators to identify and mitigate this risk',
-      'D. CRiteria are defined by the aircraft\'s AFM for each aircraft type — no additional crew definition is required, which is why crew resource management training addresses it',
+      'D. Criteria are defined by the aircraft\'s AFM for each aircraft type — no additional crew definition is required, which is why crew resource management training addresses it',
     ],
     correct: 1,
     explanation: 'Pre-defining stabilised approach criteria and committing to a go-around if they are not met converts the in-flight approach continuation decision into a pre-planned commitment. This counters the very powerful plan continuation bias that operates during final approach.',
@@ -2435,9 +2435,9 @@ export const chufQuestions: {
   {
     question: 'What is the relationship between "situational awareness" and "good decision-making"?',
     options: [
-      'A. Igh SA is the result of good decisions — making correct choices creates SA, making accurate self-assessment particularly difficult',
-      'B. GOod decision-making is the cause of high situational awareness — decisions create SA, as identified in ICAO human factors documentation',
-      'C. Hey are independent — a pilot can make good decisions even with poor SA, making accurate self-assessment particularly difficult',
+      'A. High SA is the result of good decisions — making correct choices creates SA, making accurate self-assessment particularly difficult',
+      'B. Good decision-making is the cause of high situational awareness — decisions create SA, as identified in ICAO human factors documentation',
+      'C. They are independent — a pilot can make good decisions even with poor SA, making accurate self-assessment particularly difficult',
       'D. SA is the input to decision-making — accurate, complete SA enables good decisions; degraded SA inevitably degrades decision quality even when decision processes are sound',
     ],
     correct: 3,
@@ -2509,7 +2509,7 @@ export const chufQuestions: {
     options: [
       'A. Excess carbon dioxide in the blood causing dizziness during cruise flight — this is a recognised bias in aviation psychology',
       'B. How blood oxygen caused by high altitude — corrected by supplemental oxygen, as demonstrated by multiple accident investigations',
-      'C. Igh blood sugar that causes lethargy — corrected by insulin injection, making accurate self-assessment particularly difficult',
+      'C. High blood sugar that causes lethargy — corrected by insulin injection, making accurate self-assessment particularly difficult',
       'D. Low blood sugar that impairs cognitive function, causing poor concentration, irritability, and potentially altered consciousness',
     ],
     correct: 3,
@@ -2532,9 +2532,9 @@ export const chufQuestions: {
     question: 'What physiological effect does adrenaline have on pilot performance during an emergency?',
     options: [
       'A. Adrenaline produces a short-term increase in alertness and physical performance but also narrows attention, can cause tremor, and may impair fine motor control and complex cognitive tasks',
-      'B. ADrenaline immediately impairs all aspects of cognitive performance and should be countered by deep breathing — this is a recognised bias in aviation psychology',
-      'C. ADrenaline produces a prolonged improvement in cognitive performance lasting several hours after the emergency, making accurate self-assessment particularly difficult',
-      'D. ADrenaline has no cognitive effects — its action is purely cardiovascular and irrelevant to flight performance — this is a recognised bias in aviation psychology',
+      'B. Adrenaline immediately impairs all aspects of cognitive performance and should be countered by deep breathing — this is a recognised bias in aviation psychology',
+      'C. Adrenaline produces a prolonged improvement in cognitive performance lasting several hours after the emergency, making accurate self-assessment particularly difficult',
+      'D. Adrenaline has no cognitive effects — its action is purely cardiovascular and irrelevant to flight performance — this is a recognised bias in aviation psychology',
     ],
     correct: 0,
     explanation: 'The adrenaline response mobilises energy for fight-or-flight but also narrows attention, increases heart rate, can cause tremor, and may impair fine motor control and complex analytical thinking. This is why trained, drilled emergency procedures outperform improvised responses during high-adrenaline emergencies.',
@@ -2555,9 +2555,9 @@ export const chufQuestions: {
   {
     question: 'What is the human factors significance of "role clarity" in multi-crew operations?',
     options: [
-      'A. Lear role definition reduces coordination efficiency — flexibility in role assignment produces better CRM outcomes — this is a recognised bias in aviation psychology',
-      'B. ROle clarity is a regulatory requirement specifying minimum qualifications for PF and PM roles, as demonstrated by multiple accident investigations',
-      'C. ROle clarity only matters during emergencies — during normal operations roles are interchangeable, making accurate self-assessment particularly difficult',
+      'A. Clear role definition reduces coordination efficiency — flexibility in role assignment produces better CRM outcomes — this is a recognised bias in aviation psychology',
+      'B. Role clarity is a regulatory requirement specifying minimum qualifications for PF and PM roles, as demonstrated by multiple accident investigations',
+      'C. Role clarity only matters during emergencies — during normal operations roles are interchangeable, making accurate self-assessment particularly difficult',
       'D. Clear definition of who is flying (PF) and who is monitoring (PM) prevents both pilots simultaneously manipulating controls, ensures monitoring tasks are completed, and reduces ambiguity during abnormal situations',
     ],
     correct: 3,
@@ -2640,9 +2640,9 @@ export const chufQuestions: {
     question: 'Why are trained emergency procedures executed from memory rather than reading a checklist for time-critical emergencies?',
     options: [
       'A. ASA regulations prohibit checklist use during actual emergencies — memory items are mandatory, as identified in ICAO human factors documentation',
-      'B. Eading a checklist during an emergency creates significant distraction that outweighs any benefit, as identified in ICAO human factors documentation',
+      'B. Reading a checklist during an emergency creates significant distraction that outweighs any benefit, as identified in ICAO human factors documentation',
       'C. Time-critical emergencies (engine fire on take-off, GPWS warning) require an immediate instinctive response because the time available is shorter than the time to read and execute a checklist',
-      'D. MEmory items are only applicable to single-pilot operations — multi-crew aircraft always use checklists — this affects both pilot performance and decision-making',
+      'D. Memory items are only applicable to single-pilot operations — multi-crew aircraft always use checklists — this affects both pilot performance and decision-making',
     ],
     correct: 2,
     explanation: 'Some emergencies (e.g. rejected take-off, engine fire) require immediate action in less time than it takes to locate and read a checklist. Memory items (immediate actions) are drilled to automaticity so they can be executed rapidly. The confirmation checklist follows once immediate actions are complete.',
@@ -2723,9 +2723,9 @@ export const chufQuestions: {
   {
     question: 'What is the concept of "spare capacity" and why is maintaining it important?',
     options: [
-      'A. Egulatory administrative capacity — spare capacity refers to the availability of CASA staff for licence processing — CRM training specifically targets this type of error',
+      'A. Regulatory administrative capacity — spare capacity refers to the availability of CASA staff for licence processing — CRM training specifically targets this type of error',
       'B. Unused cognitive capacity — maintaining a mental buffer above the minimum needed to handle current demands allows the pilot to absorb unexpected additional tasks without becoming saturated',
-      'C. Ircraft performance margin above the minimum required — maintained by operating at reduced all-up weight, as identified in ICAO human factors documentation',
+      'C. Aircraft performance margin above the minimum required — maintained by operating at reduced all-up weight, as identified in ICAO human factors documentation',
       'D. Nused fuel capacity — maintaining a reserve allows for weather diversions and holding, making accurate self-assessment particularly difficult',
     ],
     correct: 1,
@@ -2783,10 +2783,10 @@ export const chufQuestions: {
   {
     question: 'What is the function of a standard operating procedure (SOP) from a human factors perspective?',
     options: [
-      'A. OPs exist primarily to standardise training — they are not intended to dictate actual operational behaviour, as demonstrated by multiple accident investigations',
-      'B. OPs reduce pilot workload by eliminating the need for individual judgement during normal operations — this affects both pilot performance and decision-making',
+      'A. Ops exist primarily to standardise training — they are not intended to dictate actual operational behaviour, as demonstrated by multiple accident investigations',
+      'B. Ops reduce pilot workload by eliminating the need for individual judgement during normal operations — this affects both pilot performance and decision-making',
       'C. SOPs encode best practice into predictable, repeatable procedures that reduce variability, support error detection through predictable action sequences, and reduce the cognitive load of routine operations',
-      'D. OPs are legal documents that define minimum regulatory compliance — their primary function is liability management, as demonstrated by multiple accident investigations',
+      'D. Ops are legal documents that define minimum regulatory compliance — their primary function is liability management, as demonstrated by multiple accident investigations',
     ],
     correct: 2,
     explanation: 'SOPs encode experience and best practice into predictable sequences. Predictable actions are easier for a second crew member to monitor for errors. They reduce the cognitive load of routine operations, freeing mental capacity for non-routine events. Deviation from SOP is a significant safety indicator.',
@@ -2843,10 +2843,10 @@ export const chufQuestions: {
   {
     question: 'What does "startle and surprise" training aim to achieve?',
     options: [
-      'A. Educing the startle reflex entirely through habituation training — CRM training specifically targets this type of error',
+      'A. Reducing the startle reflex entirely through habituation training — CRM training specifically targets this type of error',
       'B. Training pilots to anticipate and mentally pre-rehearse abnormal events so that the startle response is shortened and the path to appropriate action is faster',
-      'C. Eaching pilots to ignore unusual events until they can be confirmed by a second crew member — this affects both pilot performance and decision-making',
-      'D. TRaining pilots to delay action after unexpected events to ensure a deliberate response, which is why crew resource management training addresses it',
+      'C. Reaching pilots to ignore unusual events until they can be confirmed by a second crew member — this affects both pilot performance and decision-making',
+      'D. Training pilots to delay action after unexpected events to ensure a deliberate response, which is why crew resource management training addresses it',
     ],
     correct: 1,
     explanation: 'Startle and surprise training aims to pre-expose pilots to unexpected abnormal events so that recognition is faster, the startle freeze phase is shortened, and trained recovery responses are more rapidly accessed. Pre-briefing threats also reduces startle by converting surprise into expectation.',
@@ -2987,10 +2987,10 @@ export const chufQuestions: {
   {
     question: 'What is the aviation significance of "sleep debt" and can it be fully repaid?',
     options: [
-      'A. LEep debt has no measurable cumulative effect — each night\'s sleep is independent — this affects both pilot performance and decision-making — this cognitive effect is amplified by fatigue, high workload, and time pressure — all common in commercial operations',
+      'A. Sleep debt has no measurable cumulative effect — each night\'s sleep is independent — this affects both pilot performance and decision-making — this cognitive effect is amplified by fatigue, high workload, and time pressure — all common in commercial operations',
       'B. Sleep debt is the cumulative deficit from inadequate sleep — while partial recovery occurs with extended sleep, some cognitive effects may persist for days after accumulation, and chronic debt is not easily cleared in a single sleep period',
-      'C. LEep debt accumulates but is fully repaid after a single night of adequate sleep, as identified in ICAO human factors documentation — aviation psychology research has demonstrated that experience alone does not protect against this type of cognitive error',
-      'D. SLeep debt only accumulates over 5+ consecutive nights of reduced sleep — shorter periods have no cumulative effect — this affects both pilot performance and decision-making',
+      'C. Sleep debt accumulates but is fully repaid after a single night of adequate sleep, as identified in ICAO human factors documentation — aviation psychology research has demonstrated that experience alone does not protect against this type of cognitive error',
+      'D. Sleep debt only accumulates over 5+ consecutive nights of reduced sleep — shorter periods have no cumulative effect — this affects both pilot performance and decision-making',
     ],
     correct: 1,
     explanation: 'Sleep debt accumulates when sleep is consistently insufficient. While some recovery occurs with extended sleep, research shows that the cognitive deficits from chronic sleep debt persist longer than subjective alertness suggests — a pilot may feel recovered while still being measurably impaired.',
@@ -3095,9 +3095,9 @@ export const chufQuestions: {
   {
     question: 'How does high ambient workload affect short-term memory capacity?',
     options: [
-      'A. HIgh workload has no effect on short-term memory capacity below the threshold of clinical stress, reducing situational awareness and increasing error likelihood',
-      'B. Hort-term memory capacity is fixed by biology and cannot be affected by workload conditions — stress and fatigue compound this effect significantly',
-      'C. HIgh workload expands short-term memory capacity through adrenaline-driven heightened alertness, as identified in ICAO human factors documentation',
+      'A. High workload has no effect on short-term memory capacity below the threshold of clinical stress, reducing situational awareness and increasing error likelihood',
+      'B. Short-term memory capacity is fixed by biology and cannot be affected by workload conditions — stress and fatigue compound this effect significantly',
+      'C. High workload expands short-term memory capacity through adrenaline-driven heightened alertness, as identified in ICAO human factors documentation',
       'D. High workload competes for the same limited cognitive resources as short-term memory, effectively reducing the number of items that can be actively maintained',
     ],
     correct: 3,
@@ -3119,9 +3119,9 @@ export const chufQuestions: {
   {
     question: 'How does a pilot\'s level of experience affect their workload perception?',
     options: [
-      'A. Ore experienced pilots have higher workload because they are assigned more complex flights — this is well-documented in aviation human factors research',
-      'B. Ess experienced pilots perceive lower workload because they do not recognise all the risks present — this is a recognised bias in aviation psychology',
-      'C. EXperience and workload perception are unrelated — it depends only on the number of instruments in the aircraft — this is a recognised bias in aviation psychology',
+      'A. More experienced pilots have higher workload because they are assigned more complex flights — this is well-documented in aviation human factors research',
+      'B. Less experienced pilots perceive lower workload because they do not recognise all the risks present — this is a recognised bias in aviation psychology',
+      'C. Experience and workload perception are unrelated — it depends only on the number of instruments in the aircraft — this is a recognised bias in aviation psychology',
       'D. As skills become automated, experienced pilots process routine tasks with less conscious effort, freeing mental capacity for monitoring, planning, and non-routine tasks',
     ],
     correct: 3,
@@ -3155,10 +3155,10 @@ export const chufQuestions: {
   {
     question: 'What is the primary difference between "error management" and "error elimination" as safety strategies?',
     options: [
-      'A. ERror elimination is the preferred CASA strategy; error management is an industry shortcut that compromises safety standards, as identified in ICAO human factors documentation',
+      'A. Error elimination is the preferred CASA strategy; error management is an industry shortcut that compromises safety standards, as identified in ICAO human factors documentation',
       'B. Error elimination attempts to prevent all errors from occurring; error management accepts that errors will occur and focuses on detecting them early and limiting their consequences',
-      'C. ERror management is used in maintenance; error elimination is used in flight operations — both aim for zero errors — this affects both pilot performance and decision-making',
-      'D. Oth strategies are equivalent — the choice between them depends only on the specific operation being managed, making accurate self-assessment particularly difficult',
+      'C. Error management is used in maintenance; error elimination is used in flight operations — both aim for zero errors — this affects both pilot performance and decision-making',
+      'D. Both strategies are equivalent — the choice between them depends only on the specific operation being managed, making accurate self-assessment particularly difficult',
     ],
     correct: 1,
     explanation: 'Error elimination aims to prevent errors but is only partially achievable in complex human systems. Error management accepts that errors will occur (a realistic position) and builds systems that: detect errors early, contain their consequences, and provide recovery opportunities. Most modern aviation safety systems use error management.',
@@ -3167,7 +3167,7 @@ export const chufQuestions: {
   {
     question: 'What does the human factors concept of "skill fade" describe and how is it managed?',
     options: [
-      'A. SKill fade only applies to emergency procedures — routine procedures are maintained by operational use, making accurate self-assessment particularly difficult',
+      'A. Skill fade only applies to emergency procedures — routine procedures are maintained by operational use, making accurate self-assessment particularly difficult',
       'B. The physical deterioration of fine motor control in pilots over 50 years of age — managed through annual medical examination — this affects both pilot performance and decision-making',
       'C. The progressive degradation of skills that are not regularly practised — managed through recurrent training, currency requirements, and deliberate practice of skills at risk of decay',
       'D. The fading of theoretical knowledge between initial training and first operational flight — corrected through line indoctrination — this affects both pilot performance and decision-making',
@@ -3311,10 +3311,10 @@ export const chufQuestions: {
   {
     question: 'What is the physiological effect of adrenaline during an aviation emergency and why does it affect performance?',
     options: [
-      'A. ADrenaline immediately impairs all cognitive performance and must be countered by deep breathing, as demonstrated by multiple accident investigations',
-      'B. ADrenaline produces a prolonged improvement in cognitive performance lasting several hours, making accurate self-assessment particularly difficult',
+      'A. Adrenaline immediately impairs all cognitive performance and must be countered by deep breathing, as demonstrated by multiple accident investigations',
+      'B. Adrenaline produces a prolonged improvement in cognitive performance lasting several hours, making accurate self-assessment particularly difficult',
       'C. Adrenaline produces short-term alertness but also narrows attention, can cause tremor, and may impair fine motor control and complex analytical thinking',
-      'D. ADrenaline has no cognitive effects — its action is purely cardiovascular — this affects both pilot performance and decision-making',
+      'D. Adrenaline has no cognitive effects — its action is purely cardiovascular — this affects both pilot performance and decision-making',
     ],
     correct: 2,
     explanation: 'The adrenaline response mobilises energy but also narrows attention, increases heart rate, and can impair fine motor control and complex analytical thinking. Drilled emergency procedures execute reliably because they were encoded before the adrenaline state, not improvised during it.',
@@ -3397,8 +3397,8 @@ export const chufQuestions: {
     options: [
       'A. Se anti-vertigo medication before any flight in marginal VMC, reducing situational awareness and increasing error likelihood',
       'B. Establish and maintain good instrument flying skills, trust instruments over bodily sensations, and avoid flight in IMC without appropriate ratings and currency',
-      'C. Ely on vestibular sensations to cross-check instrument readings when the two conflict, as identified in ICAO human factors documentation',
-      'D. Void any flight in conditions where spatial disorientation could occur — this affects both pilot performance and decision-making',
+      'C. Rely on vestibular sensations to cross-check instrument readings when the two conflict, as identified in ICAO human factors documentation',
+      'D. Avoid any flight in conditions where spatial disorientation could occur — this affects both pilot performance and decision-making',
     ],
     correct: 1,
     explanation: 'The most effective strategy is to develop reliable instrument flying skills, practise regularly to maintain currency, and strictly trust instruments over vestibular sensations when they conflict. Awareness of illusions is a precursor but not a substitute for instrument skill.',
@@ -3503,8 +3503,8 @@ export const chufQuestions: {
   {
     question: 'What is the significance of briefing contingencies before critical flight phases?',
     options: [
-      'A. COntingency briefings are only required for simulator training, as demonstrated by multiple accident investigations',
-      'B. BRiefing contingencies satisfies the pre-flight planning obligation under CASR 91.275 — CRM training specifically targets this type of error',
+      'A. Contingency briefings are only required for simulator training, as demonstrated by multiple accident investigations',
+      'B. Briefing contingencies satisfies the pre-flight planning obligation under CASR 91.275 — CRM training specifically targets this type of error',
       'C. Pre-briefing contingencies converts potential surprise events into anticipated scenarios, dramatically speeding recognition and response when the contingency occurs',
       'D. T allows the FO to take responsibility for emergency decisions, reducing the captain\'s load — this is a recognised bias in aviation psychology',
     ],
@@ -3530,7 +3530,7 @@ export const chufQuestions: {
       'A. Practising a procedure well beyond the point of initial proficiency so that it can be executed accurately under high stress, time pressure, and cognitive load without conscious attention',
       'B. The tendency for experienced pilots to remember training more vividly than actual operational experience, reducing situational awareness and increasing error likelihood',
       'C. Excessive practice that leads to boredom and reduced motivation — to be avoided in modern training programmes, which is why crew resource management training addresses it',
-      'D. LEarning additional optional procedures beyond the required training syllabus, as demonstrated by multiple accident investigations',
+      'D. Learning additional optional procedures beyond the required training syllabus, as demonstrated by multiple accident investigations',
     ],
     correct: 0,
     explanation: 'Overlearning encodes procedures into long-term procedural memory at a level that resists degradation under stress. Emergency memory items that are overlearned can be executed accurately even when the pilot is highly aroused, partially incapacitated, or operating under extreme time pressure.',
@@ -3552,9 +3552,9 @@ export const chufQuestions: {
     question: 'What is the human factors significance of maintaining "professional boundaries" in cockpit communications?',
     options: [
       'A. Maintaining professional focus on flight-related communication during critical phases while permitting relationship-building communication during low-workload phases optimises both CRM effectiveness and crew cohesion',
-      'B. PRofessional boundaries refer to legal liability limits — pilots should not discuss sensitive operational matters on CVR — CRM training specifically targets this type of error',
-      'C. PRofessional boundaries limit the range of topics crew members may raise with each other, reducing situational awareness and increasing error likelihood',
-      'D. PRofessional boundaries are regulatory limits on the duration of crew conversations during flight, as demonstrated by multiple accident investigations',
+      'B. Professional boundaries refer to legal liability limits — pilots should not discuss sensitive operational matters on CVR — CRM training specifically targets this type of error',
+      'C. Professional boundaries limit the range of topics crew members may raise with each other, reducing situational awareness and increasing error likelihood',
+      'D. Professional boundaries are regulatory limits on the duration of crew conversations during flight, as demonstrated by multiple accident investigations',
     ],
     correct: 0,
     explanation: 'Professional boundaries in the cockpit mean staying on-task during high-workload and critical phases (sterile cockpit) while allowing normal human interaction during low-demand cruise phases. This balance optimises task performance and crew cohesion.',
@@ -3623,7 +3623,7 @@ export const chufQuestions: {
   {
     question: 'What is "prospective memory failure" and what conditions increase its likelihood?',
     options: [
-      'A. FOrgetting caused by hypoxia — prevented by maintaining cabin pressure below 10,000 ft, as demonstrated by multiple accident investigations',
+      'A. Forgetting caused by hypoxia — prevented by maintaining cabin pressure below 10,000 ft, as demonstrated by multiple accident investigations',
       'B. The failure to remember historical flight events — relevant to incident reporting accuracy — CRM training specifically targets this type of error',
       'C. Forgetting an intended future action — most likely when the delay before the action is long, there are many competing tasks, or a distraction occurs between setting and executing the intention',
       'D. The inability to memorise emergency procedures — improved by repetition — this is well-documented in aviation human factors research',
@@ -3888,9 +3888,9 @@ export const chufQuestions: {
     question: 'What is the human factors significance of "sterile cockpit violations" during approach and landing?',
     options: [
       'A. Non-essential conversation and activities during the approach and landing phase contribute to distraction, missed callouts, delayed responses to abnormal indications, and reduced SA',
-      'B. VIolations only matter if they exceed 5 minutes in duration — brief interruptions have no measurable effect, reducing situational awareness and increasing error likelihood',
-      'C. STerile cockpit violations are minor regulatory infractions with minimal safety significance — this is well-documented in aviation human factors research',
-      'D. STerile cockpit rules apply only to RPT operations — charter and private operations are exempt — this is a recognised bias in aviation psychology',
+      'B. Violations only matter if they exceed 5 minutes in duration — brief interruptions have no measurable effect, reducing situational awareness and increasing error likelihood',
+      'C. Sterile cockpit violations are minor regulatory infractions with minimal safety significance — this is well-documented in aviation human factors research',
+      'D. Sterile cockpit rules apply only to RPT operations — charter and private operations are exempt — this is a recognised bias in aviation psychology',
     ],
     correct: 0,
     explanation: 'Sterile cockpit violations during approach and landing have been identified in accident investigations as contributing to missed callouts, delayed response to warnings, and reduced SA during the phase of flight where error consequences are most severe.',
@@ -3925,7 +3925,7 @@ export const chufQuestions: {
     options: [
       'A. A reduction in vigilance and manual skill that develops when automation reliably performs tasks, causing the pilot to stop actively monitoring the automated system',
       'B. N over-reliance on autopilot during take-off and landing — prevented by mandatory manual approaches, making accurate self-assessment particularly difficult',
-      'C. COmplacency caused by flying the same automated route repeatedly without variation — this affects both pilot performance and decision-making',
+      'C. Complacency caused by flying the same automated route repeatedly without variation — this affects both pilot performance and decision-making',
       'D.  tendency to over-manage automation by making unnecessary mode changes during normal operations, making accurate self-assessment particularly difficult',
     ],
     correct: 0,
@@ -4079,10 +4079,10 @@ export const chufQuestions: {
   {
     question: 'How does a pilot\'s personal minimum differ from a regulatory minimum?',
     options: [
-      'A. PErsonal minimums apply only to VFR operations — IFR operations are governed entirely by published minima — this is well-documented in aviation human factors research',
-      'B. REgulatory minimums must always be more conservative — personal minimums are legally invalid, reducing situational awareness and increasing error likelihood',
+      'A. Personal minimums apply only to VFR operations — IFR operations are governed entirely by published minima — this is well-documented in aviation human factors research',
+      'B. Regulatory minimums must always be more conservative — personal minimums are legally invalid, reducing situational awareness and increasing error likelihood',
       'C. Personal minimums are self-imposed limits stricter than regulatory minimums, accounting for individual currency, recency, aircraft capability, and personal experience',
-      'D. PErsonal minimums are identical to regulatory minimums for pilots with more than 500 hours total time, as demonstrated by multiple accident investigations',
+      'D. Personal minimums are identical to regulatory minimums for pilots with more than 500 hours total time, as demonstrated by multiple accident investigations',
     ],
     correct: 2,
     explanation: 'Personal minimums are stricter self-imposed limits that account for individual currency, recent experience, aircraft familiarity, and personal risk tolerance. A pilot who has not flown at night for 6 months should set their personal night minimums more conservatively than the regulatory floor.',
@@ -4103,7 +4103,7 @@ export const chufQuestions: {
   {
     question: 'What is the most effective personal strategy for managing fatigue risk over a multi-day trip?',
     options: [
-      'A. Eeping maximally on the first night of the trip to build a sleep reserve for subsequent nights, as demonstrated by multiple accident investigations — this is well-documented in aviation human factors research and accident investigation reports',
+      'A. Keeping maximally on the first night of the trip to build a sleep reserve for subsequent nights, as demonstrated by multiple accident investigations — this is well-documented in aviation human factors research and accident investigation reports',
       'B. Ducing flight time per day as the trip progresses to compensate for accumulating fatigue — this is well-documented in aviation human factors research — CRM training and threat and error management frameworks address this risk in commercial operations',
       'C. Nsuming caffeine before each duty period to maintain consistent alertness throughout the trip, reducing situational awareness and increasing error likelihood — aviation psychology research shows experience alone does not protect against this type of error',
       'D. Prioritising sleep during every available rest opportunity, maintaining consistent sleep schedules, minimising alcohol and caffeine use especially before sleep, and monitoring personal fatigue state throughout',
@@ -4163,9 +4163,9 @@ export const chufQuestions: {
   {
     question: 'A pilot is offered a medical certificate after treatment for a significant condition. What is the human factors responsibility they carry?',
     options: [
-      'A. Nce a valid medical certificate is issued, the pilot\'s self-monitoring obligations cease — the certificate is unconditional, as identified in ICAO human factors documentation',
+      'A. Once a valid medical certificate is issued, the pilot\'s self-monitoring obligations cease — the certificate is unconditional, as identified in ICAO human factors documentation',
       'B. The pilot should continue flying as long as no symptoms are present — certificates are based on objective measures only, as demonstrated by multiple accident investigations',
-      'C. SElf-monitoring obligations apply only during the initial 12-month probation period after treatment — this is well-documented in aviation human factors research',
+      'C. Self-monitoring obligations apply only during the initial 12-month probation period after treatment — this is well-documented in aviation human factors research',
       'D. The pilot remains responsible for ongoing self-assessment and must not exercise licence privileges if they know or believe their condition has changed in a way that affects their fitness, regardless of certificate validity',
     ],
     correct: 3,
@@ -4200,7 +4200,7 @@ export const chufQuestions: {
     question: 'What does "overlearning" mean in pilot training and what is its benefit during emergencies?',
     options: [
       'A. Practising a procedure well beyond initial proficiency so it can be executed accurately under high stress and cognitive load without conscious attention',
-      'B. LEarning additional optional procedures beyond the required syllabus — this is a recognised bias in aviation psychology',
+      'B. Learning additional optional procedures beyond the required syllabus — this is a recognised bias in aviation psychology',
       'C. Excessive practice that leads to boredom and reduced motivation — to be avoided in modern training — this affects both pilot performance and decision-making',
       'D. The tendency for experienced pilots to remember training more vividly than operational experience, as identified in ICAO human factors documentation',
     ],
@@ -4213,7 +4213,7 @@ export const chufQuestions: {
     options: [
       'A. TS is an acronym for non-transponder standard — relevant to aircraft in uncontrolled airspace, reducing situational awareness and increasing error likelihood',
       'B. TS refers to administrative competencies such as flight planning and documentation — this affects both pilot performance and decision-making',
-      'C. NOn-technical skills are assessed only in initial training — type ratings focus exclusively on technical proficiency, which is why crew resource management training addresses it',
+      'C. Non-technical skills are assessed only in initial training — type ratings focus exclusively on technical proficiency, which is why crew resource management training addresses it',
       'D. NTS are cognitive and social resource management skills — SA, decision-making, CRM, workload management — assessed alongside technical skills because most accidents involve NTS failures',
     ],
     correct: 3,
@@ -4283,9 +4283,9 @@ export const chufQuestions: {
   {
     question: 'What is "situation assessment" and how does it relate to the three levels of situational awareness?',
     options: [
-      'A. SItuation assessment is only relevant to Level 1 SA — it is the act of gathering raw instrument and sensory data — this is a recognised bias in aviation psychology',
-      'B. SItuation assessment is the post-flight debriefing of events — it occurs after the three levels of SA, as demonstrated by multiple accident investigations',
-      'C. SItuation assessment is an ATC function — pilots receive assessment outputs in the form of traffic advisories and weather reports, reducing situational awareness and increasing error likelihood',
+      'A. Situation assessment is only relevant to Level 1 SA — it is the act of gathering raw instrument and sensory data — this is a recognised bias in aviation psychology',
+      'B. Situation assessment is the post-flight debriefing of events — it occurs after the three levels of SA, as demonstrated by multiple accident investigations',
+      'C. Situation assessment is an ATC function — pilots receive assessment outputs in the form of traffic advisories and weather reports, reducing situational awareness and increasing error likelihood',
       'D. Situation assessment integrates all three levels of SA: perceiving the current state (Level 1), understanding its significance (Level 2), and projecting future states (Level 3) to form a complete picture for decision-making',
     ],
     correct: 3,
@@ -4511,9 +4511,9 @@ export const chufQuestions: {
   {
     question: 'What is "proactive safety management" and how does it differ from reactive safety management?',
     options: [
-      'A. Hey are equivalent — both are required by CASA SMS regulations for all AOC holders, which is why crew resource management training addresses it',
-      'B. PRoactive safety requires additional staffing for constant monitoring; reactive requires only auditors after incidents, as demonstrated by multiple accident investigations',
-      'C. PRoactive safety is regulatory compliance monitoring; reactive is post-accident investigation, reducing situational awareness and increasing error likelihood',
+      'A. They are equivalent — both are required by CASA SMS regulations for all AOC holders, which is why crew resource management training addresses it',
+      'B. Proactive safety requires additional staffing for constant monitoring; reactive requires only auditors after incidents, as demonstrated by multiple accident investigations',
+      'C. Proactive safety is regulatory compliance monitoring; reactive is post-accident investigation, reducing situational awareness and increasing error likelihood',
       'D. Proactive safety identifies and mitigates hazards before accidents occur using data from incidents, near-misses, and audits; reactive safety responds to accidents after they occur',
     ],
     correct: 3,
@@ -4536,7 +4536,7 @@ export const chufQuestions: {
     question: 'A pilot has a head cold and takes a decongestant before flight. What are the key risks?',
     options: [
       'A. The cold itself may cause ear and sinus barotrauma during altitude changes, and some decongestants cause drowsiness or cardiovascular effects that impair performance',
-      'B. DEcongestants are safe in flight as long as the dose is below the maximum daily recommendation — stress and fatigue compound this effect significantly',
+      'B. Decongestants are safe in flight as long as the dose is below the maximum daily recommendation — stress and fatigue compound this effect significantly',
       'C. O significant risks — decongestants are approved for use in flight by CASA, which is why crew resource management training addresses it',
       'D. The only risk is rebound congestion — the decongestant itself has no cognitive effects — this is well-documented in aviation human factors research',
     ],
@@ -4548,7 +4548,7 @@ export const chufQuestions: {
     question: 'What is the concept of "workload management" and what techniques help during high-workload phases?',
     options: [
       'A. Proactive distribution of tasks across time and crew — techniques include early completion of preparatory tasks, using automation, briefing expectations, and avoiding non-essential tasks during critical phases',
-      'B. ORkload management is a scheduling tool — pilots manage it by requesting shorter flights — stress and fatigue compound this effect significantly — stress, high workload, and time pressure all compound this effect, increasing error likelihood significantly',
+      'B. Workload management is a scheduling tool — pilots manage it by requesting shorter flights — stress and fatigue compound this effect significantly — stress, high workload, and time pressure all compound this effect, increasing error likelihood significantly',
       'C. E practice of always flying manually to maintain currency and avoid automation dependency — this affects both pilot performance and decision-making — aviation psychology research shows experience alone does not protect against this type of error',
       'D. E technique of assigning all non-flying tasks to the co-pilot and focusing exclusively on control — stress and fatigue compound this effect significantly — simulator training, peer feedback, and recurrent CRM courses help build awareness and countermeasures',
     ],
@@ -4560,7 +4560,7 @@ export const chufQuestions: {
     question: 'What is the most important single action a pilot can take if they recognise they are experiencing spatial disorientation?',
     options: [
       'A. Lose eyes momentarily to reset the visual system, then re-establish orientation, which is why crew resource management training addresses it',
-      'B. Eclare an emergency immediately and request radar vectors — this affects both pilot performance and decision-making',
+      'B. Declare an emergency immediately and request radar vectors — this affects both pilot performance and decision-making',
       'C. Trust the flight instruments completely and fly the aircraft by reference to instruments only, regardless of what the vestibular system is indicating',
       'D. Reduce speed immediately to provide more time to recover orientation — this is a recognised bias in aviation psychology',
     ],
@@ -4607,9 +4607,9 @@ export const chufQuestions: {
   {
     question: 'What physiological event occurs during a high-G manoeuvre that leads to grey-out and G-induced loss of consciousness (G-LOC)?',
     options: [
-      'A. Apid deceleration causes the inner ear fluid to press on the auditory nerve, causing temporary neurological disruption, making accurate self-assessment particularly difficult',
+      'A. Rapid deceleration causes the inner ear fluid to press on the auditory nerve, causing temporary neurological disruption, making accurate self-assessment particularly difficult',
       'B. Positive G-force pushes blood away from the head toward the lower body, reducing cerebral blood pressure and eventually causing visual grey-out, then blackout, and finally unconsciousness',
-      'C. Ncreased blood flow to the brain exceeds the vessels\' capacity, causing haemorrhaging, reducing situational awareness and increasing error likelihood',
+      'C. Increased blood flow to the brain exceeds the vessels\' capacity, causing haemorrhaging, reducing situational awareness and increasing error likelihood',
       'D. Negative pressure in the cockpit reduces inspired oxygen partial pressure, causing rapid hypoxia — this is a recognised bias in aviation psychology',
     ],
     correct: 1,
@@ -4619,10 +4619,10 @@ export const chufQuestions: {
   {
     question: 'How does trust between crew members affect CRM effectiveness?',
     options: [
-      'A. TRust is irrelevant to CRM — professional pilots maintain objective standards regardless of personal relationships, reducing situational awareness and increasing error likelihood',
-      'B. Rust only matters in long-haul operations — short-sector operations do not require established crew trust — this affects both pilot performance and decision-making',
+      'A. Trust is irrelevant to CRM — professional pilots maintain objective standards regardless of personal relationships, reducing situational awareness and increasing error likelihood',
+      'B. Trust only matters in long-haul operations — short-sector operations do not require established crew trust — this affects both pilot performance and decision-making',
       'C. Appropriate trust supports effective CRM — too little trust creates friction, but excessive trust reduces vigilance and reduces the willingness to challenge questionable actions',
-      'D. Igh trust always improves CRM by eliminating unnecessary cross-checking between crew members — this affects both pilot performance and decision-making',
+      'D. High trust always improves CRM by eliminating unnecessary cross-checking between crew members — this affects both pilot performance and decision-making',
     ],
     correct: 2,
     explanation: 'Trust is foundational to CRM — crews who trust each other communicate more openly and coordinate more effectively. However, excessive trust can reduce critical monitoring ("he\'ll catch it") and reduce assertiveness ("he knows what he\'s doing"). Calibrated trust supports both cooperation and vigilance.',
@@ -4703,9 +4703,9 @@ export const chufQuestions: {
   {
     question: 'What is "cognitive tunnelling" and how does it differ from normal focused attention?',
     options: [
-      'A. COgnitive tunnelling is physical narrowing of the visual field; focused attention is a mental state — this is a recognised bias in aviation psychology',
-      'B. COgnitive tunnelling improves performance by eliminating distracting information; focused attention degrades it, reducing situational awareness and increasing error likelihood',
-      'C. Hey are identical — cognitive tunnelling is simply another term for focused attention, which is why crew resource management training addresses it',
+      'A. Cognitive tunnelling is physical narrowing of the visual field; focused attention is a mental state — this is a recognised bias in aviation psychology',
+      'B. Cognitive tunnelling improves performance by eliminating distracting information; focused attention degrades it, reducing situational awareness and increasing error likelihood',
+      'C. They are identical — cognitive tunnelling is simply another term for focused attention, which is why crew resource management training addresses it',
       'D. Focused attention is useful and controllable; cognitive tunnelling is involuntary and uncontrolled narrowing of attention driven by high stress or workload that excludes relevant safety information',
     ],
     correct: 3,
@@ -4739,10 +4739,10 @@ export const chufQuestions: {
   {
     question: 'What is the primary human factors reason that aviation accidents often involve experienced, otherwise competent pilots?',
     options: [
-      'A. EXperienced pilots are required to fly in worse weather by their operators due to their certification level, as identified in ICAO human factors documentation',
+      'A. Experienced pilots are required to fly in worse weather by their operators due to their certification level, as identified in ICAO human factors documentation',
       'B. Dical conditions are more common in experienced pilots due to their older average age, as identified in ICAO human factors documentation — aviation psychology research has demonstrated that experience alone does not protect against this type of cognitive error',
       'C. Experience creates specific vulnerabilities — familiarity reduces vigilance, success history builds overconfidence, pattern recognition can misfire in truly novel situations, and hazardous attitudes like invulnerability develop over time',
-      'D. EXperienced pilots fly more difficult routes and aircraft types — increased exposure accounts for all the difference, as identified in ICAO human factors documentation',
+      'D. Experienced pilots fly more difficult routes and aircraft types — increased exposure accounts for all the difference, as identified in ICAO human factors documentation',
     ],
     correct: 2,
     explanation: 'Experience creates benefits and vulnerabilities. Familiarity reduces vigilance. Past success without incident builds overconfidence and invulnerability. Pattern recognition that has always worked can misfire in novel situations. Experience does not immunise against human factors failures — it changes their character.',
@@ -4753,7 +4753,7 @@ export const chufQuestions: {
     options: [
       'A. Sustained low-level stress impairs immune function, promotes cardiovascular disease, disrupts sleep, and progressively degrades performance through chronic fatigue and burnout',
       'B. Ow-level stress has no cumulative effect — only acute high-stress events affect performance or health — this affects both pilot performance and decision-making',
-      'C. SUstained low-level stress builds resilience — pilots who operate under consistent stress develop better coping mechanisms, making accurate self-assessment particularly difficult',
+      'C. Sustained low-level stress builds resilience — pilots who operate under consistent stress develop better coping mechanisms, making accurate self-assessment particularly difficult',
       'D. Ow-level stress only affects performance when combined with shift work — isolated stress has no cumulative health effects, which is why crew resource management training addresses it',
     ],
     correct: 0,
@@ -4764,9 +4764,9 @@ export const chufQuestions: {
     question: 'What is the human factors explanation for why "rushed" approaches are more likely to be unstabilised?',
     options: [
       'A. Time pressure and workload during a rushed approach promote task shedding, reduce monitoring quality, and leave less time for configuration and speed management',
-      'B. Ushing approaches causes engine anomalies that change the aircraft\'s performance characteristics — this is well-documented in aviation human factors research',
-      'C. RUshed approaches increase fuel consumption, causing fuel imbalance that destabilises the aircraft, making accurate self-assessment particularly difficult',
-      'D. RUshed approaches are only unstabilised due to wind changes — not human factors causes, making accurate self-assessment particularly difficult',
+      'B. Pushing approaches causes engine anomalies that change the aircraft\'s performance characteristics — this is well-documented in aviation human factors research',
+      'C. Rushed approaches increase fuel consumption, causing fuel imbalance that destabilises the aircraft, making accurate self-assessment particularly difficult',
+      'D. Rushed approaches are only unstabilised due to wind changes — not human factors causes, making accurate self-assessment particularly difficult',
     ],
     correct: 0,
     explanation: 'Rushed approaches combine high workload with inadequate time — a recipe for task shedding, reduced monitoring, and inadequate configuration/speed management. The resulting instability creates an approach from which continuation is high-risk.',
@@ -4860,7 +4860,7 @@ export const chufQuestions: {
     question: 'What is the human factors rationale for requiring two-crew operations in aircraft above a certain size or complexity?',
     options: [
       'A. Wo crew is required purely to comply with insurance obligations — the safety benefit is secondary, as identified in ICAO human factors documentation',
-      'B. Egulatory tradition — two-crew requirements predate human factors research and are maintained for historical reasons, making accurate self-assessment particularly difficult',
+      'B. Regulatory tradition — two-crew requirements predate human factors research and are maintained for historical reasons, making accurate self-assessment particularly difficult',
       'C. Two crew provides redundancy for cognitive tasks (shared SA, error detection, cross-checking) and physical tasks, significantly reducing the probability that undetected errors propagate to accidents',
       'D.  second crew member reduces the PIC\'s legal liability by sharing responsibility for safety decisions, reducing situational awareness and increasing error likelihood',
     ],
@@ -4931,10 +4931,10 @@ export const chufQuestions: {
   {
     question: 'What is the aviation human factors implication of operating in a "foreign" aircraft (unfamiliar type)?',
     options: [
-      'A. Ilots adapt immediately to unfamiliar types — type-specific training is only required to satisfy regulatory requirements, reducing situational awareness and increasing error likelihood',
-      'B. UNfamiliarity improves vigilance by ensuring the pilot does not rely on habit — it is safer to fly an unfamiliar type than a very familiar one, which is why crew resource management training addresses it',
+      'A. Pilots adapt immediately to unfamiliar types — type-specific training is only required to satisfy regulatory requirements, reducing situational awareness and increasing error likelihood',
+      'B. Unfamiliarity improves vigilance by ensuring the pilot does not rely on habit — it is safer to fly an unfamiliar type than a very familiar one, which is why crew resource management training addresses it',
       'C. Unfamiliarity increases all forms of workload, reduces pattern recognition efficiency, promotes negative transfer errors, and may cause the pilot to rely on inappropriate procedures from their previous aircraft type',
-      'D. OPerating an unfamiliar type is only relevant in emergency situations — normal operations are equally safe regardless of type familiarity, which is why crew resource management training addresses it',
+      'D. Operating an unfamiliar type is only relevant in emergency situations — normal operations are equally safe regardless of type familiarity, which is why crew resource management training addresses it',
     ],
     correct: 2,
     explanation: 'Operating in an unfamiliar aircraft type increases cognitive workload, reduces the benefit of automated procedural memory, introduces negative transfer risks, and reduces situation awareness. This is why type conversion training and familiarisation requirements exist.',
@@ -4943,7 +4943,7 @@ export const chufQuestions: {
   {
     question: 'What is workload management and what techniques can pilots use to reduce workload during critical phases?',
     options: [
-      'A. WOrkload management is a scheduling tool — pilots manage it by requesting shorter flights from their operator, making accurate self-assessment particularly difficult',
+      'A. Workload management is a scheduling tool — pilots manage it by requesting shorter flights from their operator, making accurate self-assessment particularly difficult',
       'B. The practice of always flying manually to maintain currency and avoid automation dependency, as demonstrated by multiple accident investigations',
       'C. The proactive distribution of tasks across time and crew members — techniques include early task completion, using automation, briefing expectations, and avoiding non-essential tasks during critical phases',
       'D.  technique where the pilot assigns all non-flying tasks to the co-pilot and focuses exclusively on aircraft control, as identified in ICAO human factors documentation',
@@ -4992,9 +4992,9 @@ export const chufQuestions: {
     question: 'What is the flicker vertigo effect and what causes it?',
     options: [
       'A. A disorienting or convulsive response triggered by light flickering at certain frequencies, typically caused by a rotating propeller or helicopter rotor in sunlight',
-      'B. Isual blur caused by prolonged focus on close instruments in a poorly lit cockpit — this is a recognised bias in aviation psychology',
+      'B. Visual blur caused by prolonged focus on close instruments in a poorly lit cockpit — this is a recognised bias in aviation psychology',
       'C.  form of motion sickness triggered by turbulence in cloud — CRM training specifically targets this type of error',
-      'D. Izziness caused by rapid altitude changes in unpressurised aircraft — this is a recognised bias in aviation psychology',
+      'D. Dizziness caused by rapid altitude changes in unpressurised aircraft — this is a recognised bias in aviation psychology',
     ],
     correct: 0,
     explanation: 'Flicker vertigo (photic driving) can be triggered when light flickers at 4–20 Hz, such as sunlight strobing through a propeller or rotor. It can cause nausea, disorientation, or in rare cases seizures in susceptible individuals.',
@@ -5171,10 +5171,10 @@ export const chufQuestions: {
   {
     question: 'What is "premature closure" in pilot decision-making?',
     options: [
-      'A. Losing the flight plan before the aircraft has landed at the destination, which is why crew resource management training addresses it',
+      'A. Closing the flight plan before the aircraft has landed at the destination, which is why crew resource management training addresses it',
       'B. Settling on the first plausible explanation for a situation and stopping the diagnostic process before fully verifying it or considering alternative explanations',
-      'C. Losing the aircraft door before all passengers are seated — a regulatory compliance issue, which is why crew resource management training addresses it',
-      'D. LAnding before reaching the destination because of weather — a sound safety decision — this affects both pilot performance and decision-making',
+      'C. Closing the aircraft door before all passengers are seated — a regulatory compliance issue, which is why crew resource management training addresses it',
+      'D. Landing before reaching the destination because of weather — a sound safety decision — this affects both pilot performance and decision-making',
     ],
     correct: 1,
     explanation: 'Premature closure occurs when a pilot settles on the first plausible explanation for an anomaly and stops investigating. For example, attributing an instrument vibration to turbulence rather than a bearing failure — stopping at the first explanation without verification.',
@@ -5496,9 +5496,9 @@ export const chufQuestions: {
     question: 'What is the correct CRM response when the pilot flying is about to select an incorrect navigation mode?',
     options: [
       'A. Calmly and clearly state the concern — "I think that\'s the wrong mode — confirm you want LNAV?" — giving the PF the opportunity to self-correct without confrontation',
-      'B. Llow the error to proceed and document it in the post-flight report — intervening may create distraction — this is a recognised bias in aviation psychology',
-      'C. IMmediately take control of the aircraft to prevent the error from being executed, as demonstrated by multiple accident investigations',
-      'D. Ait for the result of the mode selection before raising the concern — it may not cause a problem, reducing situational awareness and increasing error likelihood',
+      'B. Allow the error to proceed and document it in the post-flight report — intervening may create distraction — this is a recognised bias in aviation psychology',
+      'C. Immediately take control of the aircraft to prevent the error from being executed, as demonstrated by multiple accident investigations',
+      'D. Wait for the result of the mode selection before raising the concern — it may not cause a problem, reducing situational awareness and increasing error likelihood',
     ],
     correct: 0,
     explanation: 'CRM teaches assertive but constructive challenge — stating the concern and allowing the PF to self-correct. This preserves the PF\'s role while providing the cross-check that multi-crew operations are designed to deliver. Taking over prematurely or ignoring the error are both inappropriate responses.',
@@ -5651,8 +5651,8 @@ export const chufQuestions: {
   {
     question: 'What is the concept of "cognitive offloading" in aviation and how do tools like checklists and written plans support it?',
     options: [
-      'A. Educing mental workload by relying exclusively on experience rather than written procedures, which is why crew resource management training addresses it',
-      'B. Sing automation to remove all cognitive demands from the pilot during cruise flight, which is why crew resource management training addresses it',
+      'A. Reducing mental workload by relying exclusively on experience rather than written procedures, which is why crew resource management training addresses it',
+      'B. Using automation to remove all cognitive demands from the pilot during cruise flight, which is why crew resource management training addresses it',
       'C. Using external tools (checklists, charts, written plans, memory aids) to store and retrieve information that would otherwise overload working memory',
       'D. Elegating cognitive tasks to the co-pilot to reduce captain workload, as demonstrated by multiple accident investigations',
     ],
