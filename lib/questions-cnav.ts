@@ -1,5 +1,5 @@
 // CPL Navigation — 500 Questions
-// Auto-fixed v7
+// Fixed v_final
 
 export const cnavQuestions: {
   question: string;
@@ -36,9 +36,9 @@ export const cnavQuestions: {
     question: 'What is "composite navigation" specific advantage over relying on GPS alone?',
     options: [
       'A. Composite navigation provides redundancy: GPS failure or jamming can be detected and compensated by VOR/NDB/pilotage cross-checks. If GPS position disagrees with VOR radial or visual landmark, the pilot detects the error. Sole GPS reliance means a failure or spoofing goes undetected',
-      'B. mposite navigation is less accurate than GPS — it adds unnecessary steps — this technique is essential for accurate dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
-      'C. mposite navigation is slower than GPS navigation — it is only used as a backup, as shown on VNC/ERC charts with the appropriate symbology — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'D. mposite navigation is only used for training purposes — professional pilots rely solely on GPS, as defined in the Aeronautical Information Publication — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'B. Composite navigation is less accurate than GPS — it adds unnecessary steps — this technique is essential for accurate dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'C. Composite navigation is slower than GPS navigation — it is only used as a backup, as shown on VNC/ERC charts with the appropriate symbology — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'D. Composite navigation is only used for training purposes — professional pilots rely solely on GPS, as defined in the Aeronautical Information Publication — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
     ],
     correct: 0,
     explanation: 'Composite navigation redundancy: if GPS is the only source, GPS failure = lost navigation. With VOR, NDB, and visual cross-checks, any single failure is detectable. If GPS shows a position inconsistent with the VOR radial or visual landmark — an alert is generated. This redundancy is essential for safety.',
@@ -131,10 +131,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "fuel consumption" calculation for a planned flight?',
     options: [
-      'A. uel required = fuel flow rate × TAS; ground speed is not used — the navigation computer is used to perform this calculation',
-      'B. uel required = fuel flow rate × distance — the navigation computer is used to perform this calculation',
+      'A. Fuel required = fuel flow rate × TAS; ground speed is not used — the navigation computer is used to perform this calculation',
+      'B. Fuel required = fuel flow rate × distance — the navigation computer is used to perform this calculation',
       'C. Fuel required = fuel flow rate × flight time. Flight time = distance ÷ ground speed. Fuel flow is in litres/hour or kg/hour depending on the aircraft',
-      'D. uel required = endurance × cruising altitude; altitude affects fuel burn proportionally — this technique is essential for accurate dead reckoning',
+      'D. Fuel required = endurance × cruising altitude; altitude affects fuel burn proportionally — this technique is essential for accurate dead reckoning',
     ],
     correct: 2,
     explanation: 'Fuel required = fuel flow (L/hr or kg/hr) × flight time (hrs). Flight time = distance (NM) ÷ ground speed (kt). Example: 300 NM at GS 120 kt = 2.5 hr flight time. At 40 L/hr fuel flow = 100 L required (plus reserves).',
@@ -204,9 +204,9 @@ export const cnavQuestions: {
     question: 'What is "ILS category" classification and what minima correspond to each category?',
     options: [
       'A. ILS categories: CAT I — DA not lower than 200 ft and visibility ≥ 550 m (or RVR ≥ 550 m); CAT II — DA 100–200 ft, RVR ≥ 300 m; CAT III — DA below 100 ft or zero, RVR ≥ 75–200 m (IIIA) down to nil RVR (IIIC). Higher categories require additional aircraft/airborne systems and special approvals',
-      'B. stralian ILS only operates to CAT I — CAT II/III is only in Europe and USA — ATC may assign a different track for traffic management — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'B. Australian ILS only operates to CAT I — CAT II/III is only in Europe and USA — ATC may assign a different track for traffic management — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'C. S categories are based on aircraft weight — heavier aircraft use higher CAT — this technique is essential for accurate dead reckoning — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'D. l ILS approaches have the same minima — no categories exist in Australia, as defined in the Aeronautical Information Publication — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
+      'D. L ILS approaches have the same minima — no categories exist in Australia, as defined in the Aeronautical Information Publication — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
     ],
     correct: 0,
     explanation: 'ILS CAT I: DA ≥ 200 ft HAT, RVR ≥ 550 m. CAT II: DA 100–200 ft, RVR ≥ 300 m. CAT IIIA: DA < 100 ft, RVR ≥ 200 m. CAT IIIB: DA < 50 ft, RVR 75–200 m. CAT IIIC: no DA, no RVR limit (autoland). Higher categories require autoland, fail-passive/fail-operational systems, special certification.',
@@ -215,9 +215,9 @@ export const cnavQuestions: {
   {
     question: 'What is "NDB approach" timing table usage and what speed category applies to most CPL training aircraft?',
     options: [
-      'A. ming tables only apply to Category C and D aircraft, as shown on VNC/ERC charts with the appropriate symbology — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'B. l aircraft use Category B timing — Category A is only for very slow ultralight aircraft, as defined in the Aeronautical Information Publication — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
-      'C. ming tables are not published in Australian DAP charts — pilots calculate timing manually — pilots must apply this correction on all cross-country flights — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'A. Timing tables only apply to Category C and D aircraft, as shown on VNC/ERC charts with the appropriate symbology — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'B. All aircraft use Category B timing — Category A is only for very slow ultralight aircraft, as defined in the Aeronautical Information Publication — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'C. Timing tables are not published in Australian DAP charts — pilots calculate timing manually — pilots must apply this correction on all cross-country flights — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
       'D. NDB approach timing tables list FAF-to-MAP times in seconds for different approach speeds. Most CPL training aircraft (DA40, C172, PA-28) have Vat < 91 kt → Category A. Use the Category A column for final approach timing. Flying slower than the approach speed extends the time',
     ],
     correct: 3,
@@ -335,9 +335,9 @@ export const cnavQuestions: {
   {
     question: 'What is the "transition altitude" in Australian airspace and how is it notified?',
     options: [
-      'A. ansition altitude is determined by the pilot based on the current QNH — this technique is essential for accurate dead reckoning — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
-      'B. ansition altitude is FL180 everywhere in Australia — ATC may assign a different track for traffic management — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
-      'C. ansition altitude is always 5,000 ft — the same for all Australian aerodromes, as shown on VNC/ERC charts with the appropriate symbology — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'A. Ansition altitude is determined by the pilot based on the current QNH — this technique is essential for accurate dead reckoning — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'B. Ansition altitude is FL180 everywhere in Australia — ATC may assign a different track for traffic management — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'C. Ansition altitude is always 5,000 ft — the same for all Australian aerodromes, as shown on VNC/ERC charts with the appropriate symbology — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
       'D. Transition altitude is published for each aerodrome area in the AIP and broadcast on ATIS. Below it, QNH is used; above it, standard pressure (1013.25 hPa) is set. It varies between aerodromes',
     ],
     correct: 3,
@@ -395,10 +395,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "great circle track" advantage over a rhumb line for a 3,000 NM oceanic flight?',
     options: [
-      'A. eat circle and rhumb line are the same distance for all oceanic routes — pilots must apply this correction on all cross-country flights — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'A. Eat circle and rhumb line are the same distance for all oceanic routes — pilots must apply this correction on all cross-country flights — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
       'B. The great circle route is shorter than the rhumb line — the distance saving increases with route length and latitude. For a 3,000 NM trans-oceanic route at mid-latitudes, the great circle can save 50–200+ NM compared to a constant-heading rhumb line. This translates directly to fuel savings',
-      'C. e rhumb line is shorter than the great circle — constant heading reduces ground distance — pilots must apply this correction on all cross-country flights — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'D. eat circle advantage only applies above FL350 — at lower levels rhumb line is equivalent — this technique is essential for accurate dead reckoning — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
+      'C. E rhumb line is shorter than the great circle — constant heading reduces ground distance — pilots must apply this correction on all cross-country flights — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Eat circle advantage only applies above FL350 — at lower levels rhumb line is equivalent — this technique is essential for accurate dead reckoning — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
     ],
     correct: 1,
     explanation: 'Great circle = shortest path on a sphere. Rhumb line (constant heading) curves poleward on a globe — longer than great circle except on the equator and meridians. Distance saving on great circle increases with latitude and route length. For long trans-Pacific/Atlantic routes: 50–300 NM shorter, representing significant fuel savings.',
@@ -419,9 +419,9 @@ export const cnavQuestions: {
   {
     question: 'What is "Nav database currency" and what are the consequences of using an expired database?',
     options: [
-      'A. igation database currency is the manufacturer\'s concern — pilot has no responsibility — pilots must apply this correction on all cross-country flights — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
-      'B. ired databases only affect ILS approaches — GPS approaches are unaffected by database expiry — variation must be checked against the current isogonal chart — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
-      'C. igation database expiry has no practical effect — all data is stable and never changes, as defined in the Aeronautical Information Publication — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'A. Igation database currency is the manufacturer\'s concern — pilot has no responsibility — pilots must apply this correction on all cross-country flights — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
+      'B. Ired databases only affect ILS approaches — GPS approaches are unaffected by database expiry — variation must be checked against the current isogonal chart — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'C. Igation database expiry has no practical effect — all data is stable and never changes, as defined in the Aeronautical Information Publication — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
       'D. An expired FMS/GPS navigation database may contain outdated: approach procedures (changed minima, new obstacles), airspace boundaries, navaid frequencies/positions, and waypoints. Consequence: potentially flying an incorrect approach, entering prohibited airspace, or missing new obstacles. CASR requires GPS/FMS database to be current for IFR operations',
     ],
     correct: 3,
@@ -457,7 +457,7 @@ export const cnavQuestions: {
     options: [
       'A. S track is only displayed on glass cockpits; bearing to waypoint is on all GPS units, and the track must be verified against the planned flight path — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
       'B. GPS track is the current actual track the aircraft is making over the ground. Bearing to waypoint is the direction FROM the aircraft\'s current position TO the next waypoint. They only agree when the aircraft is exactly on the planned track. In crosswind, the bearing to waypoint changes as the aircraft drifts',
-      'C. ey are identical — GPS track and bearing to waypoint always agree, and the track must be verified against the planned flight path — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'C. Ey are identical — GPS track and bearing to waypoint always agree, and the track must be verified against the planned flight path — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'D. S bearing to waypoint is magnetic; GPS track is true — both are displayed in the same units, as shown on VNC/ERC charts with the appropriate symbology — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
     ],
     correct: 1,
@@ -480,9 +480,9 @@ export const cnavQuestions: {
     question: 'What is "wind effect on holding pattern" and how does it alter the timing?',
     options: [
       'A. Wind distorts the holding pattern — a headwind on the outbound leg requires a longer outbound time to achieve the 1-minute inbound leg; a tailwind outbound requires a shorter outbound time. The pilot adjusts outbound timing to achieve the target 1-minute inbound leg',
-      'B. nd has no effect on holding pattern shape or timing — the pilot maintains 1-minute legs regardless, with the result entered on the navigation log before departure — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
-      'C. nd in holding requires a bank angle change — not a timing change, as defined in the Aeronautical Information Publication — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
-      'D. nd effect is compensated automatically by the FMS — no pilot action required, with the result entered on the navigation log before departure — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'B. Nd has no effect on holding pattern shape or timing — the pilot maintains 1-minute legs regardless, with the result entered on the navigation log before departure — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'C. Nd in holding requires a bank angle change — not a timing change, as defined in the Aeronautical Information Publication — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'D. Nd effect is compensated automatically by the FMS — no pilot action required, with the result entered on the navigation log before departure — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
     ],
     correct: 0,
     explanation: 'Holding timing adjustment for wind: target 1-minute inbound leg. If headwind on outbound (= tailwind inbound → shorter inbound time if same outbound): increase outbound time. Observe first actual inbound time; adjust outbound leg on next circuit to achieve 1-minute inbound.',
@@ -492,9 +492,9 @@ export const cnavQuestions: {
     question: 'What is "en route diversion fuel calculation" and what is the method?',
     options: [
       'A. Steps: (1) Determine distance from current position to alternate; (2) Calculate GS to alternate (TAS ± wind component); (3) Calculate flight time (distance ÷ GS); (4) Calculate fuel required (time × fuel flow); (5) Compare with fuel remaining minus final reserve',
-      'B. version fuel is always assumed to be 45 minutes — a standard buffer is applied — ATC may assign a different track for traffic management — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
-      'C. version fuel uses planned fuel flow from the flight plan — actual conditions are not recalculated — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'D. version fuel = distance to alternate × fuel flow; no time conversion is needed — GPS position should be cross-checked against dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'B. Version fuel is always assumed to be 45 minutes — a standard buffer is applied — ATC may assign a different track for traffic management — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'C. Version fuel uses planned fuel flow from the flight plan — actual conditions are not recalculated — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Version fuel = distance to alternate × fuel flow; no time conversion is needed — GPS position should be cross-checked against dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
     ],
     correct: 0,
     explanation: 'Diversion fuel: (1) current position to alternate distance; (2) estimate GS (accounting for winds — use current wind or a conservative estimate); (3) flight time = distance ÷ GS; (4) fuel required = flight time × fuel flow; (5) check: fuel remaining − diversion fuel ≥ final reserve (45 min IFR, 30 min VFR).',
@@ -503,7 +503,7 @@ export const cnavQuestions: {
   {
     question: 'What is the "VOR cone of silence" effect and how long does the unreliable indication typically last?',
     options: [
-      'A. ern VOR receivers eliminate the cone of silence — it is only found on older equipment — variation must be checked against the current isogonal chart — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'A. Ern VOR receivers eliminate the cone of silence — it is only found on older equipment — variation must be checked against the current isogonal chart — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
       'B.  cone of silence lasts for up to 30 minutes — pilots should not use VOR near the station, as defined in the Aeronautical Information Publication — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'C. The VOR cone of silence overhead the station typically causes unreliable indications for a period of seconds to approximately 1–2 minutes depending on aircraft speed and altitude. The CDI and TO/FROM flag oscillate as the aircraft passes through. Normal indications resume once the aircraft is beyond the cone',
       'D.  cone of silence extends 10 NM from the station — plan to avoid it — variation must be checked against the current isogonal chart — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
@@ -539,10 +539,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "wind triangle" (triangle of velocities) and what three vectors does it comprise?',
     options: [
-      'A. he wind triangle is only used for oceanic navigation — domestic navigation uses GPS exclusively — GPS position should be cross-checked against dead reckoning',
-      'B. he wind triangle shows: true track, magnetic track, and compass track — the three heading corrections — GPS position should be cross-checked against dead reckoning',
+      'A. The wind triangle is only used for oceanic navigation — domestic navigation uses GPS exclusively — GPS position should be cross-checked against dead reckoning',
+      'B. The wind triangle shows: true track, magnetic track, and compass track — the three heading corrections — GPS position should be cross-checked against dead reckoning',
       'C. The wind triangle shows: heading/TAS vector (air vector), track/groundspeed vector (ground vector), and wind vector. These three vectors form a closed triangle, and knowing any two allows solving for the third',
-      'D. he wind triangle shows: aircraft weight, lift, and drag — used for performance calculations — variation must be checked against the current isogonal chart',
+      'D. The wind triangle shows: aircraft weight, lift, and drag — used for performance calculations — variation must be checked against the current isogonal chart',
     ],
     correct: 2,
     explanation: 'The triangle of velocities has three sides: (1) Air vector — the direction the aircraft points (heading) at TAS; (2) Ground vector — the actual path over the ground (track) at ground speed; (3) Wind vector — direction the wind blows at wind speed. Knowing two sides solves the third.',
@@ -551,10 +551,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "overhead join" at an uncontrolled aerodrome and what nav awareness is required?',
     options: [
-      'A. rhead join is only used by military aircraft — civilian pilots use a straight-in approach, as shown on VNC/ERC charts with the appropriate symbology — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'A. Rhead join is only used by military aircraft — civilian pilots use a straight-in approach, as shown on VNC/ERC charts with the appropriate symbology — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
       'B. Overhead join: fly overhead at circuit height + 500 ft, assess the circuit (wind, traffic), then descend on the non-traffic-side to join the crosswind or downwind leg. Navigation awareness: identify the runway, determine the circuit direction (left or right hand), assess wind for active runway, and monitor CTAF for conflicting traffic',
-      'C. rhead join requires ATC clearance — it is controlled, as defined in the Aeronautical Information Publication — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
-      'D. rhead join is prohibited — aircraft must join on long final only — variation must be checked against the current isogonal chart — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
+      'C. Rhead join requires ATC clearance — it is controlled, as defined in the Aeronautical Information Publication — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'D. Rhead join is prohibited — aircraft must join on long final only — variation must be checked against the current isogonal chart — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
     ],
     correct: 1,
     explanation: 'Overhead join at uncontrolled aerodrome: fly overhead at circuit height + 500 ft. Assess: active runway (windsock), circuit direction (left/right hand — check ERSA), other circuit traffic. Descend to circuit height on the non-traffic side. Transmit on CTAF throughout.',
@@ -575,9 +575,9 @@ export const cnavQuestions: {
   {
     question: 'What is "magnetic bearing" versus "true bearing" and how are they converted on a chart?',
     options: [
-      'A. ue bearing and magnetic bearing only differ in polar regions — at mid-latitudes they are the same — variation must be checked against the current isogonal chart — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'B. gnetic bearing is used for chart work; true bearing for cockpit instruments — the navigation computer is used to perform this calculation — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'C. gnetic and true bearings are identical in Australia — variation is zero — ATC may assign a different track for traffic management — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'A. Ue bearing and magnetic bearing only differ in polar regions — at mid-latitudes they are the same — variation must be checked against the current isogonal chart — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'B. Gnetic bearing is used for chart work; true bearing for cockpit instruments — the navigation computer is used to perform this calculation — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'C. Gnetic and true bearings are identical in Australia — variation is zero — ATC may assign a different track for traffic management — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
       'D. A true bearing is measured from true north; a magnetic bearing from magnetic north. Chart tracks measured with a protractor are true tracks. Applying variation (TVMDC) converts true bearing to magnetic bearing. Conversely: magnetic bearing ± variation = true bearing',
     ],
     correct: 3,
@@ -587,9 +587,9 @@ export const cnavQuestions: {
   {
     question: 'What is the purpose of "isbar" lines on aeronautical charts and what information do they show?',
     options: [
-      'A. sbar lines show magnetic variation — they are another name for isogonals — GPS position should be cross-checked against dead reckoning',
-      'B. sbar lines show atmospheric pressure — they are the same as isobars on weather charts — the navigation computer is used to perform this calculation',
-      'C. sbar lines show radio navigation coverage areas — inside the lines reception is guaranteed, and the track must be verified against the planned flight path',
+      'A. Sbar lines show magnetic variation — they are another name for isogonals — GPS position should be cross-checked against dead reckoning',
+      'B. Sbar lines show atmospheric pressure — they are the same as isobars on weather charts — the navigation computer is used to perform this calculation',
+      'C. Sbar lines show radio navigation coverage areas — inside the lines reception is guaranteed, and the track must be verified against the planned flight path',
       'D. Isohypse (isbar) lines show terrain elevation contours — connecting points of equal elevation above sea level, allowing pilots to visualise terrain shape and identify high ground',
     ],
     correct: 3,
@@ -685,7 +685,7 @@ export const cnavQuestions: {
     options: [
       'A. 0 ft AGL applies everywhere — the 1,000 ft rule is an aviation myth — pilots must apply this correction on all cross-country flights — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'B. 000 ft AGL applies over all areas in Australia — no lower minimum exists, and the track must be verified against the planned flight path — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
-      'C. e minimum altitude is 500 ft over all terrain types — congested areas have the same rule — ATC may assign a different track for traffic management — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'C. E minimum altitude is 500 ft over all terrain types — congested areas have the same rule — ATC may assign a different track for traffic management — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'D. CASR Part 91: minimum 500 ft AGL over sparsely settled areas and open water (unless take-off/landing or aerial work approval). 1,000 ft AGL over congested areas (cities, towns, settlements). These are minimums',
     ],
     correct: 3,
@@ -695,10 +695,10 @@ export const cnavQuestions: {
   {
     question: 'What is the effect of "flying lower than planned altitude" on a long cross-country flight?',
     options: [
-      'A. ing lower has no effect on fuel burn or navigation — altitude is irrelevant to planning, and the track must be verified against the planned flight path — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
-      'B. er altitude reduces fuel burn — descent allows the engine to operate more efficiently — this technique is essential for accurate dead reckoning — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'A. Ing lower has no effect on fuel burn or navigation — altitude is irrelevant to planning, and the track must be verified against the planned flight path — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'B. Er altitude reduces fuel burn — descent allows the engine to operate more efficiently — this technique is essential for accurate dead reckoning — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
       'C. Flying lower than planned: increased air density → higher fuel burn (for same TAS); possible terrain clearance issues if below LSALT; different wind (lower altitude winds may differ from forecast cruise winds); increased turbulence risk. Recalculate fuel state, verify terrain clearance, and check ETA at actual GS',
-      'D. er altitude always improves fuel efficiency — fly as low as possible — the navigation computer is used to perform this calculation — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'D. Er altitude always improves fuel efficiency — fly as low as possible — the navigation computer is used to perform this calculation — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
     ],
     correct: 2,
     explanation: 'Lower altitude consequences: higher air density → engine produces more power for same throttle setting but also more drag → net effect varies, but generally higher fuel burn at lower altitude for same TAS. Also: different wind speeds/directions; potential terrain/obstacle clearance issues if below safety altitude; more turbulence in boundary layer.',
@@ -815,10 +815,10 @@ export const cnavQuestions: {
   {
     question: 'What is the effect of a "cold front passage" on navigation planning?',
     options: [
-      'A. d fronts have no navigation implications — weather changes are gradual, with the result entered on the navigation log before departure — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'B. d fronts always improve weather — navigation is easier after frontal passage — pilots must apply this correction on all cross-country flights — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'A. D fronts have no navigation implications — weather changes are gradual, with the result entered on the navigation log before departure — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'B. D fronts always improve weather — navigation is easier after frontal passage — pilots must apply this correction on all cross-country flights — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'C. Cold front passage: pre-frontal — deteriorating visibility, cloud lowering, increasing wind; frontal — heavy rain, severe turbulence, wind shift (wind backs/veers), possible embedded CB; post-frontal — rapidly improving visibility, colder temperature, gusty unstable conditions. Navigation impact: updated weather required pre-flight, route avoidance if convection present, wind shift affects headings and ETAs',
-      'D. d front effects are limited to the surface — above 3,000 ft no weather impact occurs — pilots must apply this correction on all cross-country flights — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'D. D front effects are limited to the surface — above 3,000 ft no weather impact occurs — pilots must apply this correction on all cross-country flights — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
     ],
     correct: 2,
     explanation: 'Cold front navigation considerations: (1) Pre-frontal — worsening conditions, low cloud, reduced visibility; (2) Frontal zone — severe turbulence, heavy precipitation, embedded CB, wind shift; (3) Post-frontal — rapidly clearing, but gusty and turbulent initially. Update weather briefing, reassess routing, ensure alternates are clear.',
@@ -851,10 +851,10 @@ export const cnavQuestions: {
   {
     question: 'What is an aircraft\'s "Vat" and how is it used for approach category classification?',
     options: [
-      'A. t is identical to Vref — the two terms are used interchangeably on approach plates, with the result entered on the navigation log before departure — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'A. T is identical to Vref — the two terms are used interchangeably on approach plates, with the result entered on the navigation log before departure — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
       'B. Vat = 1.3 × Vso (stall speed in landing configuration at maximum landing weight). It defines the approach speed range and therefore the approach category (A/B/C/D). Higher Vat = higher category = potentially higher published minima due to wider protection areas',
-      'C. t is the maximum approach speed — higher Vat means lower minima — pilots must apply this correction on all cross-country flights — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'D. t is the best rate of climb speed — used only for departure planning — GPS position should be cross-checked against dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'C. T is the maximum approach speed — higher Vat means lower minima — pilots must apply this correction on all cross-country flights — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'D. T is the best rate of climb speed — used only for departure planning — GPS position should be cross-checked against dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
     ],
     correct: 1,
     explanation: 'Vat = 1.3 × Vso at max certified landing weight. Defines the threshold speed. Used to assign approach category: A (<91 kt), B (91–120 kt), C (121–140 kt), D (141–165 kt). Higher category requires wider obstacle protection areas → potentially higher minima.',
@@ -863,10 +863,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "safety altitude" calculation for an ad-hoc VFR route segment?',
     options: [
-      'A. fety altitude for VFR is always 1,500 ft AGL — terrain height is not considered — this technique is essential for accurate dead reckoning — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
-      'B. fety altitude = LSALT from the ERC — identical for VFR and IFR operations, and the track must be verified against the planned flight path — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'A. Fety altitude for VFR is always 1,500 ft AGL — terrain height is not considered — this technique is essential for accurate dead reckoning — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'B. Fety altitude = LSALT from the ERC — identical for VFR and IFR operations, and the track must be verified against the planned flight path — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'C. Safety altitude = highest terrain/obstacle within the planned navigation area (route width + 10 NM each side) + 1,000 ft (non-mountainous) or + 2,000 ft (mountainous). This is the minimum safe altitude for the segment',
-      'D. fety altitude = the highest elevation on the chart + 1,000 ft, within a 10 NM corridor each side of track, as shown on VNC/ERC charts with the appropriate symbology — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'D. Fety altitude = the highest elevation on the chart + 1,000 ft, within a 10 NM corridor each side of track, as shown on VNC/ERC charts with the appropriate symbology — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
     ],
     correct: 2,
     explanation: 'VFR safety altitude: highest obstacle/terrain within the corridor (route ± navigation accuracy margin) + 1,000 ft buffer (non-mountainous) or +2,000 ft (mountainous). LSALT from ERC can guide this but was designed for IFR — VFR pilots should verify it covers their planned corridor width.',
@@ -888,9 +888,9 @@ export const cnavQuestions: {
     question: 'What is "non-precision approach" equipment requirements for a CPL holder?',
     options: [
       'A. Non-precision approach equipment (NDB): ADF receiver, DI or HSI, altimeter, VSI, clock/timer, approach plates (current). For VOR approach: VOR receiver, OBS/CDI, altimeter, VSI, clock/timer. For RNAV (LNAV): GPS/FMS with current nav database, RAIM, approach plates',
-      'B. n-precision approaches require ILS equipment — the ILS is used as a backup glideslope reference — this technique is essential for accurate dead reckoning — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
-      'C. n-precision approaches require dual engine aircraft — single engine aircraft cannot fly non-precision approaches — variation must be checked against the current isogonal chart — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'D. n-precision approaches only require a magnetic compass and altimeter — the navigation computer is used to perform this calculation — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'B. N-precision approaches require ILS equipment — the ILS is used as a backup glideslope reference — this technique is essential for accurate dead reckoning — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'C. N-precision approaches require dual engine aircraft — single engine aircraft cannot fly non-precision approaches — variation must be checked against the current isogonal chart — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'D. N-precision approaches only require a magnetic compass and altimeter — the navigation computer is used to perform this calculation — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
     ],
     correct: 0,
     explanation: 'NDB approach: ADF + DI + altimeter + clock + approach plates. VOR approach: VOR/CDI + altimeter + clock + plates. RNAV LNAV: GPS/FMS + current database + RAIM + plates. All non-precision approaches require a clock for timing the final approach segment (FAF to MAP).',
@@ -926,7 +926,7 @@ export const cnavQuestions: {
       'A. OCA (Obstacle Clearance Altitude) is AMSL — directly comparable to the altimeter reading with QNH set. OCH (Obstacle Clearance Height) is above aerodrome elevation — must be added to aerodrome elevation to compare with QNH altimeter. Approach charts may publish either; pilots must know the reference to use correctly',
       'B.  is used with QNH altimeter; OCA is used with QFE (aerodrome pressure), as defined in the Aeronautical Information Publication — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
       'C.  and OCH are interchangeable — pilots use either without conversion, as shown on VNC/ERC charts with the appropriate symbology — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
-      'D. ays use OCA — it is the same reference as the altimeter, with the result entered on the navigation log before departure — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'D. Ays use OCA — it is the same reference as the altimeter, with the result entered on the navigation log before departure — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
     ],
     correct: 0,
     explanation: 'OCA (AMSL): compare directly with QNH altimeter reading. OCH (above aerodrome): OCH + aerodrome elevation = OCA. If the approach chart states "OCH 250 ft" and the aerodrome is 300 ft AMSL → OCA = 550 ft AMSL → set QNH and look for 550 ft on the altimeter.',
@@ -935,9 +935,9 @@ export const cnavQuestions: {
   {
     question: 'What is "latitude effect" on NDB bearing accuracy?',
     options: [
-      'A. titude has no effect on NDB accuracy — it is constant worldwide, and the track must be verified against the planned flight path — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
-      'B. gher latitudes improve NDB accuracy — the magnetic field is stronger — GPS position should be cross-checked against dead reckoning — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
-      'C. wer latitudes reduce NDB accuracy — the equatorial effect distorts bearings — ATC may assign a different track for traffic management — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
+      'A. Titude has no effect on NDB accuracy — it is constant worldwide, and the track must be verified against the planned flight path — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'B. Gher latitudes improve NDB accuracy — the magnetic field is stronger — GPS position should be cross-checked against dead reckoning — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'C. Wer latitudes reduce NDB accuracy — the equatorial effect distorts bearings — ATC may assign a different track for traffic management — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
       'D. At higher latitudes, magnetic dip increases, reducing the horizontal component of the Earth\'s magnetic field that drives the ADF. The ADF becomes less sensitive and less accurate at high latitudes',
     ],
     correct: 3,
@@ -1007,10 +1007,10 @@ export const cnavQuestions: {
   {
     question: 'What is "high terrain area" designation and what LSALT margin applies?',
     options: [
-      'A. igh terrain designation only affects VFR operations — IFR uses the same 1,000 ft margin everywhere — variation must be checked against the current isogonal chart',
-      'B. igh terrain areas require a 500 ft buffer — conservative slow flight is the mitigation — the navigation computer is used to perform this calculation',
+      'A. Igh terrain designation only affects VFR operations — IFR uses the same 1,000 ft margin everywhere — variation must be checked against the current isogonal chart',
+      'B. Igh terrain areas require a 500 ft buffer — conservative slow flight is the mitigation — the navigation computer is used to perform this calculation',
       'C. Designated mountainous/high terrain areas require a 2,000 ft obstacle clearance buffer above the highest terrain/obstacle when calculating LSALT and MEA',
-      'D. igh terrain areas use the same 1,000 ft LSALT buffer as flat terrain — the navigation computer is used to perform this calculation',
+      'D. Igh terrain areas use the same 1,000 ft LSALT buffer as flat terrain — the navigation computer is used to perform this calculation',
     ],
     correct: 2,
     explanation: 'Mountainous/high terrain: 2,000 ft obstacle clearance buffer (vs 1,000 ft non-mountainous). Rationale: mountain waves can produce significant altitude deviations; orographic turbulence increases; altimetry errors can be larger near steep terrain; and engine performance decreases at higher altitudes. LSALT and MEA values in mountainous areas reflect this higher buffer.',
@@ -1043,9 +1043,9 @@ export const cnavQuestions: {
   {
     question: 'What is the "holding pattern entry procedure" and what are the three standard entries?',
     options: [
-      'A. re are only two entries — direct and parallel. Teardrop is not a standard ICAO entry, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
-      'B. ries are always parallel — the direct and teardrop entries are only used by military aircraft, as shown on VNC/ERC charts with the appropriate symbology — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'C. ding entries are direct for all approaches — always fly direct to the fix and turn right — ATC may assign a different track for traffic management — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'A. Re are only two entries — direct and parallel. Teardrop is not a standard ICAO entry, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
+      'B. Ries are always parallel — the direct and teardrop entries are only used by military aircraft, as shown on VNC/ERC charts with the appropriate symbology — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'C. Ding entries are direct for all approaches — always fly direct to the fix and turn right — ATC may assign a different track for traffic management — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'D. The three standard entries: (1) Direct — when approaching from the holding side (within 70° of outbound track); (2) Teardrop — when approaching from the non-holding side within 110° of outbound; (3) Parallel — when approaching from the non-holding side greater than 110° from outbound. Entry depends on the aircraft\'s approach heading relative to the holding pattern',
     ],
     correct: 3,
@@ -1056,9 +1056,9 @@ export const cnavQuestions: {
     question: 'What is the correct response when VFR conditions deteriorate to IMC en route?',
     options: [
       'A. Execute a 180° turn immediately to return to VMC; if unable to maintain VMC, contact ATC, declare PAN PAN or MAYDAY as appropriate, climb above cloud if terrain permits, and follow ATC instructions. Do not continue VFR into IMC',
-      'B. scend to circuit height and follow a road to the nearest aerodrome — pilots must apply this correction on all cross-country flights — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
-      'C. educe speed and continue slowly — slow flight is safer in low visibility, and the track must be verified against the planned flight path',
-      'D. ntinue to destination — conditions may improve ahead, and the track must be verified against the planned flight path — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'B. Scend to circuit height and follow a road to the nearest aerodrome — pilots must apply this correction on all cross-country flights — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'C. Reduce speed and continue slowly — slow flight is safer in low visibility, and the track must be verified against the planned flight path',
+      'D. Ntinue to destination — conditions may improve ahead, and the track must be verified against the planned flight path — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
     ],
     correct: 0,
     explanation: 'VFR into IMC: the most dangerous scenario for non-instrument-rated pilots. Immediate actions: (1) 180° turn to exit IMC if possible; (2) If unable, contact ATC on 121.5 MHz or nearest ATC frequency; (3) Declare PAN PAN (urgency) or MAYDAY (distress); (4) Follow ATC guidance; (5) Do not attempt to continue — spatial disorientation rapidly follows.',
@@ -1067,9 +1067,9 @@ export const cnavQuestions: {
   {
     question: 'What is "circling area" in an instrument approach and how is its size determined?',
     options: [
-      'A. he circling area extends 10 NM from the aerodrome — the same for all aircraft types — ATC may assign a different track for traffic management',
-      'B. ircling area is not published — the pilot determines it based on local conditions — variation must be checked against the current isogonal chart',
-      'C. ircling area is a fixed 3 NM radius around the aerodrome for all aircraft categories — pilots must apply this correction on all cross-country flights',
+      'A. The circling area extends 10 NM from the aerodrome — the same for all aircraft types — ATC may assign a different track for traffic management',
+      'B. Ircling area is not published — the pilot determines it based on local conditions — variation must be checked against the current isogonal chart',
+      'C. Ircling area is a fixed 3 NM radius around the aerodrome for all aircraft categories — pilots must apply this correction on all cross-country flights',
       'D. The circling area is determined by aircraft approach category and is the area within which the pilot must manoeuvre visually after completing the instrument procedure. Radius: Cat A',
     ],
     correct: 3,
@@ -1079,10 +1079,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "fuel log" format and what should it contain per leg?',
     options: [
-      'A. uel logs are prepared by the engineer, not the pilot — ATC may assign a different track for traffic management',
-      'B. he fuel log only records total fuel at departure and arrival — ATC may assign a different track for traffic management',
+      'A. Fuel logs are prepared by the engineer, not the pilot — ATC may assign a different track for traffic management',
+      'B. The fuel log only records total fuel at departure and arrival — ATC may assign a different track for traffic management',
       'C. Per leg: planned fuel remaining at start of leg, planned fuel burn for leg, planned fuel remaining at end of leg, actual fuel remaining at checkpoint',
-      'D. uel logs are only required for IFR flights — VFR can rely on gauges, and the track must be verified against the planned flight path',
+      'D. Fuel logs are only required for IFR flights — VFR can rely on gauges, and the track must be verified against the planned flight path',
     ],
     correct: 2,
     explanation: 'Fuel log per leg: planned total remaining (start of leg); planned burn for leg; planned remaining (end of leg); actual remaining at checkpoint. Actual vs planned comparison: if consistently burning more than planned → revised fuel stop required. If less → better situation but verify gauges.',
@@ -1091,10 +1091,10 @@ export const cnavQuestions: {
   {
     question: 'What is "approach category speed" and how does a pilot determine it before filing an IFR flight plan?',
     options: [
-      'A. pproach category is determined by MTOW — consult the aircraft weight schedule, as defined in the Aeronautical Information Publication',
+      'A. Pproach category is determined by MTOW — consult the aircraft weight schedule, as defined in the Aeronautical Information Publication',
       'B. Approach category is based on Vat (1.3 × Vso at maximum certified landing weight). Check the AFM for Vso: Cat A <91 kt; Cat B 91–120 kt; Cat C 121–140 kt; Cat D 141–165 kt. Category is fixed for the aircraft type',
-      'C. pproach category is only needed for CAT II/III ILS approaches — CAT I and non-precision use the same minima for all aircraft — variation must be checked against the current isogonal chart',
-      'D. pproach category is selected by ATC based on the aircraft\'s performance — not the pilot\'s responsibility, as defined in the Aeronautical Information Publication',
+      'C. Pproach category is only needed for CAT II/III ILS approaches — CAT I and non-precision use the same minima for all aircraft — variation must be checked against the current isogonal chart',
+      'D. Pproach category is selected by ATC based on the aircraft\'s performance — not the pilot\'s responsibility, as defined in the Aeronautical Information Publication',
     ],
     correct: 1,
     explanation: 'Approach category determination: AFM → find Vso (power off, landing configuration, max landing weight) → Vat = 1.3 × Vso → compare with category speed ranges. For most piston GA (Vso ~50–70 kt): Vat ~65–91 kt → Category A. The category determines which row of minima to use on approach charts.',
@@ -1128,9 +1128,9 @@ export const cnavQuestions: {
     question: 'What is "track" and how does it differ from "heading"?',
     options: [
       'A. Track is the actual path of the aircraft over the ground (direction of movement); heading is the direction the aircraft nose is pointing. They differ by the wind correction angle when there is a crosswind',
-      'B. rack is the direction the aircraft is pointing; heading is the direction it is moving over the ground — the navigation computer is used to perform this calculation',
-      'C. rack is measured from magnetic north; heading is measured from true north — they differ by variation only, and the track must be verified against the planned flight path',
-      'D. rack and heading are always identical — the aircraft always moves in the direction it is pointing — pilots must apply this correction on all cross-country flights',
+      'B. Track is the direction the aircraft is pointing; heading is the direction it is moving over the ground — the navigation computer is used to perform this calculation',
+      'C. Track is measured from magnetic north; heading is measured from true north — they differ by variation only, and the track must be verified against the planned flight path',
+      'D. Track and heading are always identical — the aircraft always moves in the direction it is pointing — pilots must apply this correction on all cross-country flights',
     ],
     correct: 0,
     explanation: 'Track (also called course) is the actual path the aircraft makes over the ground — the direction of movement. Heading is the direction the aircraft nose points. When a crosswind exists, the aircraft must point into the wind (heading) to maintain the desired track. Track = Heading ± Wind Correction Angle.',
@@ -1139,10 +1139,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "radio failure" procedure for IFR flight?',
     options: [
-      'A. nd at the nearest aerodrome immediately — radio failure always requires immediate landing — GPS position should be cross-checked against dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'A. Nd at the nearest aerodrome immediately — radio failure always requires immediate landing — GPS position should be cross-checked against dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
       'B. For IFR radio failure: squawk 7600; comply with last ATC clearance (or expected clearance); if VMC exists, continue VMC and land; if IMC, proceed on last assigned route/altitude or as filed; at destination, join circuit at expected time, land at expected ETA',
-      'C. dio failure converts an IFR flight to VFR — descend to VMC and continue visually — pilots must apply this correction on all cross-country flights — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'D. dio failure requires turning back to departure aerodrome only — no other options exist — the navigation computer is used to perform this calculation — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'C. Dio failure converts an IFR flight to VFR — descend to VMC and continue visually — pilots must apply this correction on all cross-country flights — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'D. Dio failure requires turning back to departure aerodrome only — no other options exist — the navigation computer is used to perform this calculation — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
     ],
     correct: 1,
     explanation: 'IFR radio failure: (1) Squawk 7600; (2) If VMC available — maintain VMC, land as soon as practical; (3) If IMC — continue on last clearance (or filed route if no clearance), maintain last assigned altitude (or minimum safe), arrive at destination at expected ETA. ATC will clear airspace for expected arrival.',
@@ -1175,8 +1175,8 @@ export const cnavQuestions: {
   {
     question: 'How is a VOR radial interception flown?',
     options: [
-      'A. ly directly to the station first, then track outbound on the desired radial, and the track must be verified against the planned flight path',
-      'B. he intercept angle must always be 90° — no other angle is correct — variation must be checked against the current isogonal chart',
+      'A. Ly directly to the station first, then track outbound on the desired radial, and the track must be verified against the planned flight path',
+      'B. The intercept angle must always be 90° — no other angle is correct — variation must be checked against the current isogonal chart',
       'C. OR radial interception requires radar vectors from ATC — it cannot be self-initiated, as shown on VNC/ERC charts with the appropriate symbology',
       'D. Set the OBS to the desired course, determine which side of the radial you are on, turn to a 30–45° intercept angle toward the radial, and as the CDI centres turn to track the course',
     ],
@@ -1211,9 +1211,9 @@ export const cnavQuestions: {
   {
     question: 'What is the "International Date Line" (IDL) and what navigation consideration applies?',
     options: [
-      'A. he IDL is at the prime meridian (0° longitude) — aircraft crossing it must change date — pilots must apply this correction on all cross-country flights',
-      'B. he IDL follows the 180° meridian exactly — no deviations for political boundaries — this technique is essential for accurate dead reckoning',
-      'C. e IDL only affects ships — aircraft use UTC continuously and ignore the IDL — the navigation computer is used to perform this calculation — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'A. The IDL is at the prime meridian (0° longitude) — aircraft crossing it must change date — pilots must apply this correction on all cross-country flights',
+      'B. The IDL follows the 180° meridian exactly — no deviations for political boundaries — this technique is essential for accurate dead reckoning',
+      'C. E IDL only affects ships — aircraft use UTC continuously and ignore the IDL — the navigation computer is used to perform this calculation — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
       'D. The IDL is approximately at 180° longitude — aircraft crossing it eastbound subtract one day; westbound add one day. For navigation purposes, the date change must be correctly reflected in flight planning documents and ETAs',
     ],
     correct: 3,
@@ -1223,10 +1223,10 @@ export const cnavQuestions: {
   {
     question: 'What is the minimum fuel declaration and when does it require ATC priority handling?',
     options: [
-      'A. nimum fuel declarations are only for turbojet aircraft — piston aircraft declare "low fuel" — the navigation computer is used to perform this calculation — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'A. Nimum fuel declarations are only for turbojet aircraft — piston aircraft declare "low fuel" — the navigation computer is used to perform this calculation — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
       'B. "Minimum fuel" is declared when the fuel state means the aircraft cannot accept ATC delay without risk of a fuel emergency. ATC provides priority handling where possible. It is NOT an emergency declaration',
-      'C. nimum fuel is a MAYDAY — it requires immediate emergency services activation, as shown on VNC/ERC charts with the appropriate symbology — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'D. nimum fuel is declared when one tank is empty — it is a fuel imbalance warning, as defined in the Aeronautical Information Publication — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'C. Nimum fuel is a MAYDAY — it requires immediate emergency services activation, as shown on VNC/ERC charts with the appropriate symbology — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'D. Nimum fuel is declared when one tank is empty — it is a fuel imbalance warning, as defined in the Aeronautical Information Publication — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
     ],
     correct: 1,
     explanation: '"Minimum fuel" = ATC is informed delays are unacceptable. Not an emergency. ATC handles the aircraft as a priority within normal ATC procedures. If fuel reduces to the point where a safe landing cannot be assured, declare MAYDAY FUEL immediately.',
@@ -1283,10 +1283,10 @@ export const cnavQuestions: {
   {
     question: 'What is "Class G" airspace and what services are available?',
     options: [
-      'A. ass G airspace requires ATC clearance — it is the most complex airspace class — the navigation computer is used to perform this calculation — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'A. Ass G airspace requires ATC clearance — it is the most complex airspace class — the navigation computer is used to perform this calculation — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'B. Class G is uncontrolled airspace — no ATC clearance required, pilots are responsible for separation and collision avoidance. Flight Information Service (FIS) may be available if requested. VFR rules apply; IFR operations in Class G require pilot compliance with IFR rules but ATC does not provide separation',
       'C.  Class G, ATC provides radar separation for IFR aircraft but not VFR — GPS position should be cross-checked against dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'D. ass G airspace is only found below 1,000 ft AGL — all airspace above this is controlled — variation must be checked against the current isogonal chart — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'D. Ass G airspace is only found below 1,000 ft AGL — all airspace above this is controlled — variation must be checked against the current isogonal chart — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
     ],
     correct: 1,
     explanation: 'Class G is uncontrolled — no ATC clearance required for VFR. IFR operations in Class G require pilot compliance with IFR procedures but ATC does not provide IFR separation from other aircraft. FIS is available from ATC on request but is advisory only. Pilots are responsible for collision avoidance (see-and-avoid).',
@@ -1307,10 +1307,10 @@ export const cnavQuestions: {
   {
     question: 'What is a "special VFR" clearance and when is it issued?',
     options: [
-      'A. cial VFR is only used for helicopter operations in built-up areas — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
-      'B. cial VFR is an IFR rating — it allows flight in IMC without full instrument qualification, and the track must be verified against the planned flight path — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'A. Cial VFR is only used for helicopter operations in built-up areas — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
+      'B. Cial VFR is an IFR rating — it allows flight in IMC without full instrument qualification, and the track must be verified against the planned flight path — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'C. Special VFR (SVFR) clearance is issued by ATC to allow VFR aircraft to operate in a CTR when the weather is below normal VMC but above certain minimum conditions (1,500 m visibility, clear of cloud). The pilot must remain clear of cloud and in sight of the surface. Restrictions apply to aircraft type and time of day',
-      'D. cial VFR clearances are issued by CASA — not by local ATC controllers — ATC may assign a different track for traffic management — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'D. Cial VFR clearances are issued by CASA — not by local ATC controllers — ATC may assign a different track for traffic management — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
     ],
     correct: 2,
     explanation: 'SVFR clearance allows VFR aircraft to operate in a CTR below normal VMC but above a lower minimum (typically 1,500 m visibility, clear of cloud). ATC issues SVFR to aircraft with legitimate need to enter/exit a CTR when VMC is not met. Not permitted at night without specific approval.',
@@ -1331,10 +1331,10 @@ export const cnavQuestions: {
   {
     question: 'What is "ground speed" and how does it differ from "true airspeed"?',
     options: [
-      'A. round speed is measured by the ASI; true airspeed is measured by GPS — the navigation computer is used to perform this calculation',
+      'A. Round speed is measured by the ASI; true airspeed is measured by GPS — the navigation computer is used to perform this calculation',
       'B. Ground speed is the speed of the aircraft relative to the ground; true airspeed is the speed relative to the surrounding air mass. They differ by the wind component',
-      'C. round speed equals true airspeed — they are the same measurement, and the track must be verified against the planned flight path',
-      'D. round speed is always greater than true airspeed — the Earth\'s rotation adds to ground speed — ATC may assign a different track for traffic management',
+      'C. Round speed equals true airspeed — they are the same measurement, and the track must be verified against the planned flight path',
+      'D. Round speed is always greater than true airspeed — the Earth\'s rotation adds to ground speed — ATC may assign a different track for traffic management',
     ],
     correct: 1,
     explanation: 'TAS is speed relative to the air mass; GS is speed relative to the ground. GS = TAS ± wind component. Headwind: GS < TAS; tailwind: GS > TAS. GPS measures ground speed directly; ASI (corrected) measures TAS.',
@@ -1379,10 +1379,10 @@ export const cnavQuestions: {
   {
     question: 'What is the difference between "prohibited" and "restricted" airspace for a CPL pilot?',
     options: [
-      'A. ey are identical — both require ATC clearance to enter, with the result entered on the navigation log before departure — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'A. Ey are identical — both require ATC clearance to enter, with the result entered on the navigation log before departure — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
       'B. Prohibited areas may not be entered by civilian aircraft under any circumstances. Restricted areas restrict access but entry may be obtained from the controlling authority during inactive periods. Danger areas indicate hazardous activity but entry is not prohibited',
-      'C. e distinction only applies to commercial air transport — CPL students may enter both with instructor supervision — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'D. stricted areas are permanently closed; prohibited areas can be opened with ATC clearance, as shown on VNC/ERC charts with the appropriate symbology — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'C. E distinction only applies to commercial air transport — CPL students may enter both with instructor supervision — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Stricted areas are permanently closed; prohibited areas can be opened with ATC clearance, as shown on VNC/ERC charts with the appropriate symbology — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
     ],
     correct: 1,
     explanation: 'Prohibited (P): no civil entry — absolute prohibition. Restricted (R): hazardous activity, entry permitted with controlling authority approval. Danger (D): hazardous activity possible, entry not prohibited but caution required. Check NOTAMs for activation status of R and D areas.',
@@ -1392,9 +1392,9 @@ export const cnavQuestions: {
     question: 'What is "pressure altitude" calculation from QNH and aerodrome elevation?',
     options: [
       'A. Pressure altitude = aerodrome elevation + (1013.25 − QNH in hPa) × 30 ft/hPa. Example: aerodrome elevation 500 ft, QNH 1003 hPa → pressure altitude = 500 + (1013.25 − 1003) × 30 = 500 + 10.25 × 30 = 500 + 307 = 807 ft',
-      'B. ressure altitude always equals aerodrome elevation — QNH has no effect — variation must be checked against the current isogonal chart',
-      'C. essure altitude = aerodrome elevation + (1013 − QNH) × 30 — the navigation computer is used to perform this calculation — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
-      'D. essure altitude = aerodrome elevation − 1,000 ft per 10 hPa below 1013, as defined in the Aeronautical Information Publication — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'B. Ressure altitude always equals aerodrome elevation — QNH has no effect — variation must be checked against the current isogonal chart',
+      'C. Essure altitude = aerodrome elevation + (1013 − QNH) × 30 — the navigation computer is used to perform this calculation — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'D. Essure altitude = aerodrome elevation − 1,000 ft per 10 hPa below 1013, as defined in the Aeronautical Information Publication — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
     ],
     correct: 0,
     explanation: 'Pressure altitude = aerodrome elevation + (1013.25 − QNH) × 30 ft/hPa. QNH below 1013.25: positive correction (pressure altitude > aerodrome elevation). QNH above 1013.25: negative correction (pressure altitude < aerodrome elevation). Used for: density altitude calculation, performance planning, transponder encoding.',
@@ -1403,10 +1403,10 @@ export const cnavQuestions: {
   {
     question: 'What does an IFR pilot do when a GPS integrity alert activates during an RNAV approach?',
     options: [
-      'A. ntegrity alerts automatically switch to ILS — no pilot action is required, as shown on VNC/ERC charts with the appropriate symbology',
+      'A. Ntegrity alerts automatically switch to ILS — no pilot action is required, as shown on VNC/ERC charts with the appropriate symbology',
       'B. Cease using GPS for navigation, revert to an alternate navigation source (VOR, NDB), and if an alternate source is not available, execute the missed approach and advise ATC',
-      'C. ontinue the approach — integrity alerts are advisory only, and the track must be verified against the planned flight path',
-      'D. educe speed — GPS integrity improves at lower airspeeds — GPS position should be cross-checked against dead reckoning',
+      'C. Ontinue the approach — integrity alerts are advisory only, and the track must be verified against the planned flight path',
+      'D. Reduce speed — GPS integrity improves at lower airspeeds — GPS position should be cross-checked against dead reckoning',
     ],
     correct: 1,
     explanation: 'GPS integrity failure during approach: do not continue. Revert to alternate navigation or execute missed approach. Advise ATC. An integrity alert means the GPS position cannot be confirmed to the required accuracy — continuing the approach risks CFIT.',
@@ -1452,9 +1452,9 @@ export const cnavQuestions: {
     question: 'What is the "1 in 60" rule application to track error and what is the formula for heading correction?',
     options: [
       'A. Track Error Angle (TEA) = (off track distance × 60) ÷ distance flown. To return to track, alter heading by TEA toward the required track. To fly directly to destination: total heading change = TEA + Closing Angle (CA), where CA = (off track × 60) ÷ remaining distance',
-      'B. e 1 in 60 rule only works if the total distance is exactly 60 NM, and the track must be verified against the planned flight path — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
-      'C. rrection = off track distance ÷ remaining distance in degrees — the navigation computer is used to perform this calculation — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
-      'D. rrection = (off track ÷ 60) × distance flown, and the track must be verified against the planned flight path — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'B. E 1 in 60 rule only works if the total distance is exactly 60 NM, and the track must be verified against the planned flight path — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'C. Rrection = off track distance ÷ remaining distance in degrees — the navigation computer is used to perform this calculation — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
+      'D. Rrection = (off track ÷ 60) × distance flown, and the track must be verified against the planned flight path — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
     ],
     correct: 0,
     explanation: 'TEA = (off-track NM × 60) ÷ distance flown NM. Closing Angle (CA) = (off-track NM × 60) ÷ remaining distance NM. To return to track at a point: alter by TEA. To fly directly to destination: alter by (TEA + CA).',
@@ -1489,7 +1489,7 @@ export const cnavQuestions: {
     options: [
       'A. R pilots enter Class D without a clearance — a radio call is advisory only — pilots must apply this correction on all cross-country flights — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
       'B.  notification required — VFR aircraft may enter controlled airspace silently — ATC may assign a different track for traffic management — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'C. tification is only required for IFR aircraft — VFR pilots just listen on the frequency, as defined in the Aeronautical Information Publication — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'C. Tification is only required for IFR aircraft — VFR pilots just listen on the frequency, as defined in the Aeronautical Information Publication — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
       'D. Before entering controlled airspace (Class C or D), VFR pilots must establish two-way communication and obtain ATC clearance. Initial call: state aircraft type, callsign, position, altitude, intentions, and ATIS letter (or "negative ATIS" if not received). Do not enter until clearance is issued',
     ],
     correct: 3,
@@ -1513,7 +1513,7 @@ export const cnavQuestions: {
     options: [
       'A. SA is the same as MDA — it is the altitude at which go-around is initiated, as defined in the Aeronautical Information Publication',
       'B. SA shows the final approach course alignment — not an obstacle clearance altitude, with the result entered on the navigation log before departure',
-      'C. he approach protection area — the MSA circle defines the instrument procedure boundary, as defined in the Aeronautical Information Publication',
+      'C. The approach protection area — the MSA circle defines the instrument procedure boundary, as defined in the Aeronautical Information Publication',
       'D. The MSA (Minimum Sector Altitude) circle shows the lowest altitude providing 1,000 ft obstacle clearance within 25 NM of the designated reference fix',
     ],
     correct: 3,
@@ -1559,9 +1559,9 @@ export const cnavQuestions: {
   {
     question: 'What is "Mode S" transponder capability relevant to ADS-B?',
     options: [
-      'A. ode S is only for airline aircraft — GA aircraft use Mode C for ADS-B, as shown on VNC/ERC charts with the appropriate symbology',
-      'B. de S is incompatible with ADS-B — different systems, as shown on VNC/ERC charts with the appropriate symbology — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
-      'C. ode S only provides altitude — ADS-B requires a completely separate transponder, and the track must be verified against the planned flight path',
+      'A. Ode S is only for airline aircraft — GA aircraft use Mode C for ADS-B, as shown on VNC/ERC charts with the appropriate symbology',
+      'B. De S is incompatible with ADS-B — different systems, as shown on VNC/ERC charts with the appropriate symbology — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'C. Ode S only provides altitude — ADS-B requires a completely separate transponder, and the track must be verified against the planned flight path',
       'D. Mode S transponders with ADS-B Out capability broadcast the aircraft\'s GNSS position, altitude, velocity, and identity to ATC and other aircraft equipped with ADS-B In. Mode S is the foundation for ADS-B',
     ],
     correct: 3,
@@ -1583,10 +1583,10 @@ export const cnavQuestions: {
   {
     question: 'What is "position uncertainty" in the context of an instrument approach?',
     options: [
-      'A. osition uncertainty only matters for oceanic operations — variation must be checked against the current isogonal chart',
+      'A. Osition uncertainty only matters for oceanic operations — variation must be checked against the current isogonal chart',
       'B. Position uncertainty on an instrument approach means the navigation system cannot confirm the aircraft is at the expected position with sufficient accuracy',
-      'C. odern GPS eliminates position uncertainty on all approaches — this technique is essential for accurate dead reckoning',
-      'D. osition uncertainty is managed by ATC radar — the pilot has no role — GPS position should be cross-checked against dead reckoning',
+      'C. Odern GPS eliminates position uncertainty on all approaches — this technique is essential for accurate dead reckoning',
+      'D. Osition uncertainty is managed by ATC radar — the pilot has no role — GPS position should be cross-checked against dead reckoning',
     ],
     correct: 1,
     explanation: 'Position uncertainty on approach: if the FMS/GPS cannot confirm accurate position, the approach must not be continued. Cross-checks: DME distance vs expected, VOR radial intercept, FAF crossing altitude, ATC radar confirmation. Any significant positional ambiguity requires a go-around.',
@@ -1607,10 +1607,10 @@ export const cnavQuestions: {
   {
     question: 'What is "wind shear" relevance to navigation and aircraft performance?',
     options: [
-      'A. d shear only occurs during thunderstorms — calm weather flights are unaffected — variation must be checked against the current isogonal chart — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'A. D shear only occurs during thunderstorms — calm weather flights are unaffected — variation must be checked against the current isogonal chart — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
       'B. Wind shear (rapid change of wind speed or direction with altitude/horizontal distance) affects: ground speed and ETA calculations (if wind shifts are not anticipated), airspeed (sudden headwind increase = momentary airspeed increase; headwind decrease = airspeed decrease). On approach, a decreasing headwind (tailwind shear) reduces airspeed suddenly',
-      'C. d shear only affects weather — no relevance to aircraft navigation — the navigation computer is used to perform this calculation — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
-      'D. d shear improves navigation accuracy — sharp wind boundaries make groundspeed more predictable, as defined in the Aeronautical Information Publication — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'C. D shear only affects weather — no relevance to aircraft navigation — the navigation computer is used to perform this calculation — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'D. D shear improves navigation accuracy — sharp wind boundaries make groundspeed more predictable, as defined in the Aeronautical Information Publication — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
     ],
     correct: 1,
     explanation: 'Wind shear affects navigation: unexpected wind change alters GS and ETA. On approach: low-level wind shear (LLWS) can cause sudden airspeed loss — dangerous close to ground. Navigation implication: note forecast SIGMET/PIREP wind shear and plan for GS variability on approach. Use groundspeed trend monitoring to detect wind changes.',
@@ -1621,7 +1621,7 @@ export const cnavQuestions: {
     options: [
       'A.  track crawl requires a moving map display — standard GPS units cannot support this technique, as defined in the Aeronautical Information Publication — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
       'B.  track crawl is only valid for flights below 1,000 ft AGL — this technique is essential for accurate dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
-      'C. culated WCA is always superior to GPS track crawl and should always be used instead — the navigation computer is used to perform this calculation — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'C. Culated WCA is always superior to GPS track crawl and should always be used instead — the navigation computer is used to perform this calculation — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
       'D. GPS track crawl: with GPS showing actual track-made-good, adjust heading until GPS track equals desired track. Useful when actual winds are unknown or changing. Calculated WCA (from navigation computer + forecast winds) is more systematic and predictive. Best practice: use calculated WCA initially, then refine with GPS track if actual winds differ',
     ],
     correct: 3,
@@ -1655,10 +1655,10 @@ export const cnavQuestions: {
   {
     question: 'What is required by regulation when a VFR ETA changes by 3 minutes or more?',
     options: [
-      'A. he pilot must declare a PAN PAN for any ETA deviation exceeding 3 minutes, as shown on VNC/ERC charts with the appropriate symbology',
+      'A. The pilot must declare a PAN PAN for any ETA deviation exceeding 3 minutes, as shown on VNC/ERC charts with the appropriate symbology',
       'B. The pilot must advise the SARWATCH contact or ATC of the revised ETA to prevent premature SAR activation or sequencing errors',
-      'C. othing — ETA changes are not a regulatory requirement for VFR — this technique is essential for accurate dead reckoning',
-      'D. he pilot must file a new flight plan for any ETA change — pilots must apply this correction on all cross-country flights',
+      'C. Othing — ETA changes are not a regulatory requirement for VFR — this technique is essential for accurate dead reckoning',
+      'D. The pilot must file a new flight plan for any ETA change — pilots must apply this correction on all cross-country flights',
     ],
     correct: 1,
     explanation: 'ETA revision ≥3 min: notify the responsible ATS unit (IFR) or SARWATCH contact (VFR). This keeps SAR timers accurate and allows ATC to re-sequence traffic. Failure to notify can trigger unnecessary SAR or cause sequencing conflicts.',
@@ -1704,9 +1704,9 @@ export const cnavQuestions: {
     question: 'What is a "navigation hazard" report and who should receive it?',
     options: [
       'A. Navigation hazards (newly discovered obstacles, unlighted structures, incorrect chart data, navaid anomalies) should be reported to: CASA (airspace/obstacle issues), Airservices Australia (navaid issues), and/or AIP/ERSA publisher (chart discrepancies). Pilots can report via AVSIS (Aviation Safety Reporting System)',
-      'B. vigation hazard reports are only for military aviation — civilian pilots use different forms, as defined in the Aeronautical Information Publication — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'C. vigation hazard reports go directly to the State government transport department, with the result entered on the navigation log before departure — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'D. vigation hazard reports are optional — reporting is at the pilot\'s discretion with no obligation, and the track must be verified against the planned flight path — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'B. Vigation hazard reports are only for military aviation — civilian pilots use different forms, as defined in the Aeronautical Information Publication — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'C. Vigation hazard reports go directly to the State government transport department, with the result entered on the navigation log before departure — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'D. Vigation hazard reports are optional — reporting is at the pilot\'s discretion with no obligation, and the track must be verified against the planned flight path — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
     ],
     correct: 0,
     explanation: 'Navigation hazard reporting: AVSIS (Airservices Australia) for ATC/FIS issues; CASA for chart/regulatory issues. Reports of unlighted obstacles, incorrect chart information, or navaid anomalies improve safety for all users. Pilots are obligated under CASR to report safety occurrences.',
@@ -1715,10 +1715,10 @@ export const cnavQuestions: {
   {
     question: 'What is "ATC separation minima" in radar-controlled airspace and how does it differ from procedural separation?',
     options: [
-      'A. paration minima are not published — ATC applies judgment in each situation, with the result entered on the navigation log before departure — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'A. Paration minima are not published — ATC applies judgment in each situation, with the result entered on the navigation log before departure — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
       'B. Radar separation: typically 3 NM horizontal or 1,000 ft vertical (varies by class and phase of flight). Procedural separation (non-radar): based on time intervals (typically 10–15 min for same track) and position reports',
-      'C. dar and procedural separation are identical — 5 NM horizontal in all cases — this technique is essential for accurate dead reckoning — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
-      'D. dar separation is 5 NM horizontal or 1,000 ft vertical; procedural separation is 10 min in time or 15 NM — variation must be checked against the current isogonal chart — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'C. Dar and procedural separation are identical — 5 NM horizontal in all cases — this technique is essential for accurate dead reckoning — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'D. Dar separation is 5 NM horizontal or 1,000 ft vertical; procedural separation is 10 min in time or 15 NM — variation must be checked against the current isogonal chart — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
     ],
     correct: 1,
     explanation: 'Radar separation: 3 NM (or 5 NM in certain cases) horizontal, or 1,000 ft vertical. Procedural (non-radar): time-based — typically 10 min same track same level, larger between crossing tracks. Procedural separation requires larger buffers to account for position uncertainty without real-time radar confirmation.',
@@ -1752,9 +1752,9 @@ export const cnavQuestions: {
     question: 'What is the primary use of the latitude scale on a WAC chart for measuring distance?',
     options: [
       'A. 1 minute of latitude = 1 NM — the latitude scale (left or right edge of chart) provides a direct NM ruler. Place dividers between two points, then transfer to the latitude scale at the same latitude as the route to read distance in NM',
-      'B. stance is measured from the longitude scale — latitude scale is for track only — GPS position should be cross-checked against dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
-      'C. titude scale is used for measuring magnetic track — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'D. e latitude scale only provides degrees — NM conversion requires a separate formula, as defined in the Aeronautical Information Publication — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'B. Stance is measured from the longitude scale — latitude scale is for track only — GPS position should be cross-checked against dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'C. Titude scale is used for measuring magnetic track — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. E latitude scale only provides degrees — NM conversion requires a separate formula, as defined in the Aeronautical Information Publication — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
     ],
     correct: 0,
     explanation: '1 minute of latitude = 1 NM — the definition of the nautical mile. On WAC/ERC charts, the vertical latitude scale is the primary distance scale. Measure the route with dividers, transfer to the latitude scale at the midlatitude of the route for accurate distance. Do not use the longitude scale — 1° of longitude ≠ 60 NM except at the equator.',
@@ -1763,10 +1763,10 @@ export const cnavQuestions: {
   {
     question: 'What is the purpose of the "5 Cs" lost procedure and what does each C represent?',
     options: [
-      'A. ircle, Contact, Confirm, Correct, Continue, with the result entered on the navigation log before departure',
+      'A. Ircle, Contact, Confirm, Correct, Continue, with the result entered on the navigation log before departure',
       'B. Climb (increase radio/navaid range), Communicate (contact ATC/UNICOM), Confess (admit position uncertainty), Comply (follow ATC instructions), Conserve (fuel',
-      'C. limb, Check, Calculate, Communicate, Continue — GPS position should be cross-checked against dead reckoning',
-      'D. heck, Climb, Call, Correct, Cancel, as shown on VNC/ERC charts with the appropriate symbology',
+      'C. Limb, Check, Calculate, Communicate, Continue — GPS position should be cross-checked against dead reckoning',
+      'D. Heck, Climb, Call, Correct, Cancel, as shown on VNC/ERC charts with the appropriate symbology',
     ],
     correct: 1,
     explanation: '5Cs: (1) Climb — increases VHF range, navaid reception, and visual range; (2) Communicate — contact ATC for radar assistance; (3) Confess — tell ATC you are uncertain of position; (4) Comply — follow ATC assistance; (5) Conserve — manage fuel while resolving situation. Systematic approach to the lost procedure.',
@@ -1823,10 +1823,10 @@ export const cnavQuestions: {
   {
     question: 'What is "terrain avoidance" planning and how does ERSA assist with it?',
     options: [
-      'A. rain avoidance planning is ATC\'s responsibility — pilots only follow ATC instructions — the navigation computer is used to perform this calculation — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'A. Rain avoidance planning is ATC\'s responsibility — pilots only follow ATC instructions — the navigation computer is used to perform this calculation — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
       'B. Terrain avoidance planning uses: WAC chart terrain contours and spot heights to identify high terrain; ERSA aerodrome elevation data; ERC LSALT for IFR routes; and NOTAM/ERSA for new obstacle warnings (towers, cranes). For VFR routes: calculate safety altitude from highest terrain within navigation accuracy corridor + buffer',
       'C. A has no terrain information — it only covers aerodrome facilities — pilots must apply this correction on all cross-country flights — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
-      'D. rain avoidance is only needed in mountainous areas — flat terrain has no obstacles — ATC may assign a different track for traffic management — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'D. Rain avoidance is only needed in mountainous areas — flat terrain has no obstacles — ATC may assign a different track for traffic management — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
     ],
     correct: 1,
     explanation: 'Terrain avoidance: pre-flight, identify highest terrain/obstacles along the route (WAC contours, spot heights, ERSA aerodrome data, NOTAM). Calculate safety altitude for each segment. Check LSALT on ERC as a cross-reference. Be particularly aware of obstacles near aerodromes and in climb/descent profiles.',
@@ -1835,10 +1835,10 @@ export const cnavQuestions: {
   {
     question: 'What minimum weather is required to commence an IFR approach under the Australian approach ban?',
     options: [
-      'A. y weather — the approach ban only activates below 200 ft AGL — ATC may assign a different track for traffic management — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'A. Y weather — the approach ban only activates below 200 ft AGL — ATC may assign a different track for traffic management — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
       'B. The latest available weather must be at or above the published approach minima (ceiling and visibility) for that aircraft category. If weather is reported below minima, the approach must not be continued beyond the applicable point (FAF for straight-in, circling minimum for circling)',
       'C. R approaches may always be commenced — weather minima only apply to landing — ATC may assign a different track for traffic management — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'D. e approach ban is advisory — pilots may continue at their discretion — this technique is essential for accurate dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'D. E approach ban is advisory — pilots may continue at their discretion — this technique is essential for accurate dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
     ],
     correct: 1,
     explanation: 'CASR Part 91: approach must not continue if latest weather is below published minima. For straight-in: not below MDA/DA if weather is below straight-in minima. For circling: not below circling minima. This is the "approach ban" — a regulatory prohibition, not a recommendation.',
@@ -1956,9 +1956,9 @@ export const cnavQuestions: {
     question: 'What is "altimetry error from temperature" and how is it calculated in cold conditions?',
     options: [
       'A. In cold air, true altitude is lower than indicated: the aircraft is closer to terrain than the altimeter shows. ICAO correction table: multiply the height above airport elevation by a temperature correction factor. Significant correction needed when OAT is well below ISA (common in winter)',
-      'B. mperature only affects altimetry above the tropopause — no correction needed below FL200, with the result entered on the navigation log before departure — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'C. mperature error = (ISA deviation × altitude) ÷ 273. No tables are needed — the formula applies universally — variation must be checked against the current isogonal chart — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'D. ld temperature makes the altimeter read too high — the aircraft is higher than indicated, which is conservative, and the track must be verified against the planned flight path — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'B. Temperature only affects altimetry above the tropopause — no correction needed below FL200, with the result entered on the navigation log before departure — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'C. Temperature error = (ISA deviation × altitude) ÷ 273. No tables are needed — the formula applies universally — variation must be checked against the current isogonal chart — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Ld temperature makes the altimeter read too high — the aircraft is higher than indicated, which is conservative, and the track must be verified against the planned flight path — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
     ],
     correct: 0,
     explanation: 'In cold air, the atmosphere is denser — pressure levels are lower than standard. The altimeter over-reads; true altitude is LOWER than indicated. ICAO cold temperature correction tables provide factors for different temperatures. Critical for terrain clearance on approach: if OAT is very cold, add the calculated correction to all published altitudes.',
@@ -1967,10 +1967,10 @@ export const cnavQuestions: {
   {
     question: 'What is "VOR reverse sensing" and how is it avoided?',
     options: [
-      'A. everse sensing is not a real phenomenon — VOR CDI always deflects in the correct direction — variation must be checked against the current isogonal chart',
+      'A. Everse sensing is not a real phenomenon — VOR CDI always deflects in the correct direction — variation must be checked against the current isogonal chart',
       'B. Reverse sensing: when flying away from a station with an incorrect TO/FROM selection (or when tracking a FROM indication as if it were TO), the CDI deflects in the opposite direction from what the pilot expects',
-      'C. everse sensing occurs on all westerly headings — a known VOR limitation — the navigation computer is used to perform this calculation',
-      'D. everse sensing only occurs with older VOR equipment — modern receivers correct for this automatically, and the track must be verified against the planned flight path',
+      'C. Everse sensing occurs on all westerly headings — a known VOR limitation — the navigation computer is used to perform this calculation',
+      'D. Everse sensing only occurs with older VOR equipment — modern receivers correct for this automatically, and the track must be verified against the planned flight path',
     ],
     correct: 1,
     explanation: 'Reverse sensing: flying FROM the station with TO indication (or vice versa) makes the CDI appear to indicate the wrong direction. Flying "toward the needle" increases deviation. Prevention: always check the TO/FROM flag before tracking. TO flag = tracking toward the station; FROM flag = tracking away.',
@@ -1991,10 +1991,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "aerodrome circuit direction" and where is it published?',
     options: [
-      'A. l Australian aerodromes use left-hand circuits — there are no right-hand circuits — variation must be checked against the current isogonal chart — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
-      'B. ircuit direction is only relevant for training aerodromes — busy aerodromes use radar vectors instead — variation must be checked against the current isogonal chart',
+      'A. L Australian aerodromes use left-hand circuits — there are no right-hand circuits — variation must be checked against the current isogonal chart — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'B. Ircuit direction is only relevant for training aerodromes — busy aerodromes use radar vectors instead — variation must be checked against the current isogonal chart',
       'C. Standard circuit direction is left-hand (pilot turns left in the circuit). Some aerodromes publish non-standard right-hand circuits due to terrain, obstacles, noise, or other aircraft. Published in ERSA under the aerodrome entry',
-      'D. ircuit direction is determined by wind — always circuit into wind regardless of published direction, as defined in the Aeronautical Information Publication',
+      'D. Ircuit direction is determined by wind — always circuit into wind regardless of published direction, as defined in the Aeronautical Information Publication',
     ],
     correct: 2,
     explanation: 'Circuit direction: standard is left-hand (PIC on the inside of the turn looking across the runway). Non-standard right-hand circuits are published in ERSA for specific runways/aerodromes — terrain avoidance, noise abatement, or special operations. Always check ERSA for the aerodrome before arrival.',
@@ -2099,10 +2099,10 @@ export const cnavQuestions: {
   {
     question: 'What is the difference between "true north" and "magnetic north"?',
     options: [
-      'A. agnetic north is used for aviation; true north is only used for astronomical observations — GPS position should be cross-checked against dead reckoning',
-      'B. rue north changes daily; magnetic north is fixed at the geographic pole, as shown on VNC/ERC charts with the appropriate symbology',
+      'A. Agnetic north is used for aviation; true north is only used for astronomical observations — GPS position should be cross-checked against dead reckoning',
+      'B. Rue north changes daily; magnetic north is fixed at the geographic pole, as shown on VNC/ERC charts with the appropriate symbology',
       'C. True north points to the geographic North Pole (Earth\'s rotational axis); magnetic north points to the magnetic pole, which is offset from the geographic pole by the magnetic variation',
-      'D. rue north and magnetic north are identical — they converge at all points on the Earth\'s surface, as shown on VNC/ERC charts with the appropriate symbology',
+      'D. Rue north and magnetic north are identical — they converge at all points on the Earth\'s surface, as shown on VNC/ERC charts with the appropriate symbology',
     ],
     correct: 2,
     explanation: 'True north points to the geographic North Pole (Earth\'s axis of rotation). Magnetic north points to the magnetic pole, which is geographically displaced from true north. The angular difference between them at any location is the magnetic variation (or declination).',
@@ -2111,10 +2111,10 @@ export const cnavQuestions: {
   {
     question: 'What is "track crawling" and when is it an appropriate navigation technique?',
     options: [
-      'A. rack crawling is only used in mountainous terrain — not applicable to flat country navigation — this technique is essential for accurate dead reckoning',
-      'B. rack crawling uses only the magnetic compass — it does not use GPS track information — this technique is essential for accurate dead reckoning',
+      'A. Track crawling is only used in mountainous terrain — not applicable to flat country navigation — this technique is essential for accurate dead reckoning',
+      'B. Track crawling uses only the magnetic compass — it does not use GPS track information — this technique is essential for accurate dead reckoning',
       'C. Track crawling is the technique of adjusting heading progressively to keep the GPS track (TMG) aligned with the desired track, rather than calculating a precise WCA',
-      'D. rack crawling is prohibited in IFR operations — only calculated headings are acceptable — variation must be checked against the current isogonal chart',
+      'D. Track crawling is prohibited in IFR operations — only calculated headings are acceptable — variation must be checked against the current isogonal chart',
     ],
     correct: 2,
     explanation: 'Track crawling: with GPS showing actual TMG, adjust heading incrementally until TMG matches desired track. Simple, intuitive technique for maintaining track when winds are uncertain or varying. Fully valid in VFR operations and useful as a supplement to calculated WCA. Less systematic than wind triangle solution but responsive to actual conditions.',
@@ -2123,10 +2123,10 @@ export const cnavQuestions: {
   {
     question: 'What is "inbound track" on an NDB approach and how is it flown?',
     options: [
-      'A. ound track on NDB is irrelevant — only the ADF needle direction matters — this technique is essential for accurate dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'A. Ound track on NDB is irrelevant — only the ADF needle direction matters — this technique is essential for accurate dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'B. The inbound track is the published magnetic track from the procedure fix to the runway. Flown by: (1) Maintaining the published inbound track heading (adjusted for wind correction); (2) Monitoring the ADF needle for track deviation (needle right of tail = aircraft left of track, adjust right); (3) Timing from FAF to MAP at published groundspeed',
       'C.  inbound track is flown by keeping the ADF needle straight ahead at all times — this technique is essential for accurate dead reckoning — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
-      'D. ound track on NDB is always the runway heading — no wind correction is applied on final, as shown on VNC/ERC charts with the appropriate symbology — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'D. Ound track on NDB is always the runway heading — no wind correction is applied on final, as shown on VNC/ERC charts with the appropriate symbology — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
     ],
     correct: 1,
     explanation: 'NDB inbound track: set DI to inbound track heading (applying WCA for wind). Monitor ADF — needle slightly ahead (0°-10° relative bearing) = on track. Needle behind = past the station. If ADF needle drifts from the tail, apply tracking correction. Time FAF to MAP at published groundspeed.',
@@ -2135,10 +2135,10 @@ export const cnavQuestions: {
   {
     question: 'What is "IFR clearance on departure" and what should the pilot do if clearance is not received before entering controlled airspace?',
     options: [
-      'A. ter controlled airspace and request clearance after entry — pilots must apply this correction on all cross-country flights — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
-      'B. earance can be obtained after takeoff — no pre-clearance is needed for VFR flights, with the result entered on the navigation log before departure — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'A. Ter controlled airspace and request clearance after entry — pilots must apply this correction on all cross-country flights — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'B. Earance can be obtained after takeoff — no pre-clearance is needed for VFR flights, with the result entered on the navigation log before departure — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
       'C. Do not enter controlled airspace until the clearance is received. If unable to obtain clearance before reaching the boundary: hold outside the CTA, continue attempting contact (try different frequencies, ATC unit), and advise SARWATCH if significant delay. Emergency entry is only justified by genuine emergency conditions',
-      'D. ter on your flight plan route — ATC provides clearance automatically when radar identifies the aircraft — the navigation computer is used to perform this calculation — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Ter on your flight plan route — ATC provides clearance automatically when radar identifies the aircraft — the navigation computer is used to perform this calculation — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
     ],
     correct: 2,
     explanation: 'IFR clearance must be obtained BEFORE entering controlled airspace. If delayed: hold outside the CTA boundary. Attempt contact on all available frequencies. Consider calling FLIGHTWATCH. Do not enter uncleared — a controlled airspace penetration is a serious event.',
@@ -2183,9 +2183,9 @@ export const cnavQuestions: {
   {
     question: 'What is "wake turbulence avoidance" strategy for a light aircraft departing behind a heavy jet?',
     options: [
-      'A. epart before the jet — wake turbulence only forms after the aircraft passes — this technique is essential for accurate dead reckoning',
-      'B. ly at a higher speed than normal — speed prevents wake turbulence ingestion, with the result entered on the navigation log before departure',
-      'C. equest IFR clearance — wake turbulence only affects VFR aircraft — ATC may assign a different track for traffic management',
+      'A. Epart before the jet — wake turbulence only forms after the aircraft passes — this technique is essential for accurate dead reckoning',
+      'B. Only at a higher speed than normal — speed prevents wake turbulence ingestion, with the result entered on the navigation log before departure',
+      'C. Equest IFR clearance — wake turbulence only affects VFR aircraft — ATC may assign a different track for traffic management',
       'D. Stay upwind of the heavy\'s flightpath; lift off before the heavy\'s rotation point or land beyond its touchdown; the wake sinks and drifts downwind',
     ],
     correct: 3,
@@ -2208,9 +2208,9 @@ export const cnavQuestions: {
     question: 'What is a "non-precision approach" and what defines it versus a precision approach?',
     options: [
       'A. A non-precision approach provides lateral guidance only — no electronic vertical guidance. The pilot uses a calculated descent rate or step-down altitudes to reach MDA. Types: NDB, VOR, LNAV GPS. A precision approach provides both lateral and vertical electronic guidance — types: ILS, PAR, LPV/GLS',
-      'B. n-precision approaches provide lower minima than precision approaches — ATC may assign a different track for traffic management — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'C. n-precision approaches are less safe — they are only used when precision approaches fail, as shown on VNC/ERC charts with the appropriate symbology — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'D. n-precision and precision approaches have identical crew procedures — only the equipment differs — the navigation computer is used to perform this calculation — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'B. N-precision approaches provide lower minima than precision approaches — ATC may assign a different track for traffic management — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'C. N-precision approaches are less safe — they are only used when precision approaches fail, as shown on VNC/ERC charts with the appropriate symbology — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. N-precision and precision approaches have identical crew procedures — only the equipment differs — the navigation computer is used to perform this calculation — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
     ],
     correct: 0,
     explanation: 'Non-precision approach: lateral guidance only (NDB, VOR, LNAV). Pilot manages vertical profile using step-down fixes and timed descent. Descends to MDA, then level flight to MAP. Higher minima than precision. Precision approach: ILS, GLS, LPV provide lateral AND vertical guidance. Descends to DA. Lower minima possible.',
@@ -2231,10 +2231,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "holding pattern protection area" and how does it affect the approach?',
     options: [
-      'A. e protection area is determined by ATC — pilots have no responsibility for staying within it — this technique is essential for accurate dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'A. E protection area is determined by ATC — pilots have no responsibility for staying within it — this technique is essential for accurate dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'B. The holding pattern has a defined protected airspace — maximum holding speeds (typically 230 kt below FL140, 240 kt above) ensure the aircraft remains within the protected area. Exceeding maximum holding speed causes the aircraft to exceed the protected area, potentially conflicting with obstacles or other traffic',
-      'C. lding pattern protection areas are only relevant for jet aircraft — piston aircraft are exempt — variation must be checked against the current isogonal chart — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
-      'D. e holding pattern can be flown at any speed — there is no protection area constraint, with the result entered on the navigation log before departure — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'C. Lding pattern protection areas are only relevant for jet aircraft — piston aircraft are exempt — variation must be checked against the current isogonal chart — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'D. E holding pattern can be flown at any speed — there is no protection area constraint, with the result entered on the navigation log before departure — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
     ],
     correct: 1,
     explanation: 'Holding pattern obstacle protection is designed for specific maximum airspeeds. At ICAO-standard holding areas: below FL14 = 230 kt IAS maximum; FL14-FL20 = 240 kt; above FL20 = 265 kt. Exceeding these speeds takes the aircraft outside the protected area — potentially into terrain or obstacle-threatened airspace.',
@@ -2327,8 +2327,8 @@ export const cnavQuestions: {
   {
     question: 'What is the "RNAV transition" from oceanic to domestic operations and what checks are required?',
     options: [
-      'A. eanic to domestic transition requires no special checks — GPS is continuous — GPS position should be cross-checked against dead reckoning — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'B. eanic operations always use the same procedures as domestic — no transition required, as shown on VNC/ERC charts with the appropriate symbology — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'A. Eanic to domestic transition requires no special checks — GPS is continuous — GPS position should be cross-checked against dead reckoning — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'B. Eanic operations always use the same procedures as domestic — no transition required, as shown on VNC/ERC charts with the appropriate symbology — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'C. S updates are only done at the destination gate — mid-flight database changes are prohibited — pilots must apply this correction on all cross-country flights — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
       'D. Transition from oceanic to domestic: (1) Update FMS with domestic route (new waypoints/airways); (2) Confirm GPS/GNSS integrity (RAIM); (3) Obtain new ATC clearance (domestic ATC format); (4) Change communication frequencies (HF to VHF); (5) Set QNH (from area QNH/ATIS) replacing standard pressure at transition altitude',
     ],
@@ -2567,9 +2567,9 @@ export const cnavQuestions: {
   {
     question: 'What does the ADF needle indication represent?',
     options: [
-      'A. e ADF needle points in the direction of the aircraft\'s magnetic heading, as shown on VNC/ERC charts with the appropriate symbology — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
-      'B. he ADF needle shows the magnetic bearing FROM the NDB to the aircraft — equivalent to a VOR radial — pilots must apply this correction on all cross-country flights',
-      'C. e ADF needle shows the reciprocal of the track to fly to reach the NDB — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'A. E ADF needle points in the direction of the aircraft\'s magnetic heading, as shown on VNC/ERC charts with the appropriate symbology — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'B. The ADF needle shows the magnetic bearing FROM the NDB to the aircraft — equivalent to a VOR radial — pilots must apply this correction on all cross-country flights',
+      'C. E ADF needle shows the reciprocal of the track to fly to reach the NDB — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
       'D. The ADF needle points toward the NDB station — the angle between the nose of the aircraft (top of the instrument) and the needle is the relative bearing to the station. Adding relative bearing to magnetic heading gives QDM (magnetic bearing to station)',
     ],
     correct: 3,
@@ -2591,10 +2591,10 @@ export const cnavQuestions: {
   {
     question: 'What is a "fix by bearing and distance" (rho-theta) and when is it most useful?',
     options: [
-      'A. ho-theta fixes are only used for oceanic navigation, as defined in the Aeronautical Information Publication',
+      'A. Ho-theta fixes are only used for oceanic navigation, as defined in the Aeronautical Information Publication',
       'B. A rho-theta fix uses a VOR radial (theta = bearing from station) and a DME distance (rho = range from station) from the same co-located VOR/DME',
-      'C. ho-theta fixes are less accurate than VOR-only cross bearings — pilots must apply this correction on all cross-country flights',
-      'D. ho-theta fixes require two VOR stations simultaneously — ATC may assign a different track for traffic management',
+      'C. Ho-theta fixes are less accurate than VOR-only cross bearings — pilots must apply this correction on all cross-country flights',
+      'D. Ho-theta fixes require two VOR stations simultaneously — ATC may assign a different track for traffic management',
     ],
     correct: 1,
     explanation: 'Rho-theta fix from VOR/DME: VOR provides the radial (bearing from station = theta); DME provides the distance (range = rho). Together they uniquely define the aircraft position in polar coordinates centred on the navaid. Single-station fix — no second navaid required.',
@@ -2628,9 +2628,9 @@ export const cnavQuestions: {
     question: 'What is a "waypoint fly-by" vs "waypoint fly-over" in RNAV operations?',
     options: [
       'A. Fly-by (the default): the FMS begins turning before the waypoint to smoothly transition to the next leg (anticipates the turn). Fly-over: the aircraft must physically pass over the waypoint before beginning the turn',
-      'B. y-over is the default; fly-by is only used at high-speed operations, with the result entered on the navigation log before departure — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
-      'C. ly-by and fly-over are identical — the turn timing is the same in both — ATC may assign a different track for traffic management',
-      'D. ll RNAV waypoints are fly-over — the aircraft must cross overhead each waypoint — pilots must apply this correction on all cross-country flights',
+      'B. Y-over is the default; fly-by is only used at high-speed operations, with the result entered on the navigation log before departure — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'C. Ly-by and fly-over are identical — the turn timing is the same in both — ATC may assign a different track for traffic management',
+      'D. Ll RNAV waypoints are fly-over — the aircraft must cross overhead each waypoint — pilots must apply this correction on all cross-country flights',
     ],
     correct: 0,
     explanation: 'Fly-by waypoints: the FMS anticipates the turn and begins rolling before the waypoint, resulting in a smooth path. Fly-over waypoints: the aircraft must overfly the waypoint then initiate the turn — critical for course reversals, holding entries, and specific procedural requirements. Fly-by is depicted with a regular symbol; fly-over has a circle around the symbol.',
@@ -2676,7 +2676,7 @@ export const cnavQuestions: {
     question: 'What is an "IFR clearance" and what elements does it typically contain?',
     options: [
       'A. FR clearances are only issued for international flights — domestic IFR flights use standard routes without specific clearances — variation must be checked against the current isogonal chart',
-      'B. n IFR clearance only contains the cleared altitude — all other information is in the flight plan — GPS position should be cross-checked against dead reckoning',
+      'B. N IFR clearance only contains the cleared altitude — all other information is in the flight plan — GPS position should be cross-checked against dead reckoning',
       'C. An IFR departure clearance typically contains: CRAFT — Clearance limit, Route, Altitude (initial), Frequency (transponder code or departure control), Transponder code — confirming the ATC-approved route and initial cleared altitude for departure',
       'D.  IFR clearance is a weather report — it confirms the weather is above IFR minima, with the result entered on the navigation log before departure — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
     ],
@@ -2688,7 +2688,7 @@ export const cnavQuestions: {
     question: 'What is "VHF frequency management" during a cross-country IFR flight?',
     options: [
       'A. IFR cross-country frequency management: departure — ground/tower; initial climb — departure control; enroute — sector frequencies from ATC (centre); terminal — approach/terminal control; arrival — tower and ground. Monitor 121.5 MHz on a second radio if available. Frequencies obtained from ERC, ERSA, and ATC instructions',
-      'B. quency management is ATC\'s responsibility — pilots only respond when called — ATC may assign a different track for traffic management — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'B. Quency management is ATC\'s responsibility — pilots only respond when called — ATC may assign a different track for traffic management — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
       'C.  only 121.5 MHz (guard) for all en-route communications — the navigation computer is used to perform this calculation — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
       'D.  a single frequency for the entire flight — frequency changes are only for approach — the navigation computer is used to perform this calculation — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
     ],
@@ -2712,9 +2712,9 @@ export const cnavQuestions: {
     question: 'What is "partial panel" flying and which instruments are used?',
     options: [
       'A. Partial panel (AI unserviceable): bank inferred from turn coordinator; pitch inferred from altimeter, ASI, and VSI together; heading from DI. More demanding than full panel',
-      'B. hen the AI fails in IMC, the pilot must land immediately — partial panel flight is not authorised, as shown on VNC/ERC charts with the appropriate symbology',
-      'C. artial panel uses only the turn coordinator and magnetic compass — pilots must apply this correction on all cross-country flights',
-      'D. artial panel is not covered in CPL training — it is an ATPL-only skill — the navigation computer is used to perform this calculation',
+      'B. Hen the AI fails in IMC, the pilot must land immediately — partial panel flight is not authorised, as shown on VNC/ERC charts with the appropriate symbology',
+      'C. Artial panel uses only the turn coordinator and magnetic compass — pilots must apply this correction on all cross-country flights',
+      'D. Artial panel is not covered in CPL training — it is an ATPL-only skill — the navigation computer is used to perform this calculation',
     ],
     correct: 0,
     explanation: 'Partial panel: bank reference = turn coordinator (rate of turn); pitch reference = altimeter, ASI, VSI used together; heading = DI. Magnetic compass is available for long-term heading but has turning/acceleration errors. More workload than full panel — requires practice to maintain proficiency.',
@@ -2736,9 +2736,9 @@ export const cnavQuestions: {
     question: 'What is a "navigation computer" (flight computer/E6B) and what calculations can it perform?',
     options: [
       'A. A navigation computer (circular slide rule / E6B) can calculate: TAS from CAS and altitude, wind triangle (heading and ground speed), fuel burn, time-distance calculations, unit conversions, and pressure/density altitude. The rotating wind side solves the triangle of velocities',
-      'B. vigation computers are only used by airline pilots — CPL students are exempt from manual calculation, and the track must be verified against the planned flight path — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'C. navigation computer can only perform unit conversions — wind and TAS calculations require a different tool — the navigation computer is used to perform this calculation — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'D. navigation computer is a digital GPS unit — it replaces manual calculation, with the result entered on the navigation log before departure — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'B. Vigation computers are only used by airline pilots — CPL students are exempt from manual calculation, and the track must be verified against the planned flight path — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'C. Navigation computer can only perform unit conversions — wind and TAS calculations require a different tool — the navigation computer is used to perform this calculation — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'D. Navigation computer is a digital GPS unit — it replaces manual calculation, with the result entered on the navigation log before departure — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
     ],
     correct: 0,
     explanation: 'The flight computer (E6B or equivalent) has two sides: (1) Circular slide rule — TAS, fuel, time/distance, conversions; (2) Wind side — solves the wind triangle to find heading and ground speed from track, TAS, and wind. Essential tool for CPL navigation calculations.',
@@ -2759,10 +2759,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "transition level" and how is it managed at busy controlled aerodromes?',
     options: [
-      'A. ransition level is a fixed altitude — it never changes regardless of QNH, and the track must be verified against the planned flight path',
+      'A. Ransition level is a fixed altitude — it never changes regardless of QNH, and the track must be verified against the planned flight path',
       'B. The transition level is the lowest flight level for cruising (STD pressure) above the transition altitude (where QNH is used). In Australia, ATC sets the transition level based on current QNH',
-      'C. ransition level applies only to arriving aircraft — departures always use QNH to cruise altitude — GPS position should be cross-checked against dead reckoning',
-      'D. ransition level is always FL180 in Australia — no variation by aerodrome, as defined in the Aeronautical Information Publication',
+      'C. Ransition level applies only to arriving aircraft — departures always use QNH to cruise altitude — GPS position should be cross-checked against dead reckoning',
+      'D. Ransition level is always FL180 in Australia — no variation by aerodrome, as defined in the Aeronautical Information Publication',
     ],
     correct: 1,
     explanation: 'The transition layer (between transition altitude and transition level) must never be used as a cruising level. As QNH varies, the transition level changes. At aerodromes with high QNH, the transition level is lower; with low QNH, higher. Current transition level is broadcast on ATIS and by ATC when issuing clearances.',
@@ -2774,7 +2774,7 @@ export const cnavQuestions: {
       'A. IS letters are random — they have no sequential meaning — this technique is essential for accurate dead reckoning — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
       'B. IS letter identifies the runway — each runway has a permanent letter designation — variation must be checked against the current isogonal chart — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
       'C. Each ATIS broadcast is assigned a sequential phonetic letter (Alpha, Bravo, Charlie...). When weather or operational conditions change significantly, a new ATIS is recorded with the next letter. Pilots reporting the letter confirm they have current information. ATC does not need to relay weather',
-      'D. e ATIS letter identifies which controller recorded the broadcast — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'D. E ATIS letter identifies which controller recorded the broadcast — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
     ],
     correct: 2,
     explanation: 'ATIS sequential letters: Alpha through Zulu, then repeating. Each broadcast update gets the next letter. New ATIS issued when: weather changes significantly, QNH updates, runway changes, or each hour in some jurisdictions. "Information Golf" tells ATC the pilot has the correct QNH and active runway.',
@@ -2784,9 +2784,9 @@ export const cnavQuestions: {
     question: 'What is "holding" in instrument flying and when is it used?',
     options: [
       'A. Holding is a prescribed manoeuvre (racetrack pattern) used to keep aircraft in a defined airspace while awaiting a clearance, for sequencing, or for weather to improve',
-      'B. olding is only used for fuel emergencies — ATC does not instruct holding for sequencing, and the track must be verified against the planned flight path',
-      'C. he holding pattern is always flown at a constant 180° reciprocal heading — terrain considerations are secondary — the navigation computer is used to perform this calculation',
-      'D. olding is maintaining a fixed altitude — it does not involve a specific flight pattern, as shown on VNC/ERC charts with the appropriate symbology',
+      'B. Olding is only used for fuel emergencies — ATC does not instruct holding for sequencing, and the track must be verified against the planned flight path',
+      'C. The holding pattern is always flown at a constant 180° reciprocal heading — terrain considerations are secondary — the navigation computer is used to perform this calculation',
+      'D. Olding is maintaining a fixed altitude — it does not involve a specific flight pattern, as shown on VNC/ERC charts with the appropriate symbology',
     ],
     correct: 0,
     explanation: 'Holding is a racetrack-pattern manoeuvre: inbound leg to the fix, right-turn (standard), outbound leg (1 minute below 14,000 ft, 1.5 min above), right-turn back to fix. The fix may be a VOR, NDB, or GPS waypoint. Used for: traffic sequencing, weather delays, fuel endurance management, and procedure transitions.',
@@ -2808,9 +2808,9 @@ export const cnavQuestions: {
     question: 'What is "position reporting" in IFR flight and at what points is it required?',
     options: [
       'A. IFR position reports are required at compulsory reporting points (solid triangles on ERC), and when entering/leaving controlled airspace. A position report includes: aircraft callsign, position, time, flight level/altitude, next reporting point with ETA',
-      'B. sition reports are only required when the aircraft is out of radar contact — the navigation computer is used to perform this calculation — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'C. sition reports are only required when ATC requests them — not at fixed points, as defined in the Aeronautical Information Publication — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'D. sition reports are submitted electronically — pilots do not need to make radio position reports — the navigation computer is used to perform this calculation — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'B. Sition reports are only required when the aircraft is out of radar contact — the navigation computer is used to perform this calculation — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'C. Sition reports are only required when ATC requests them — not at fixed points, as defined in the Aeronautical Information Publication — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Sition reports are submitted electronically — pilots do not need to make radio position reports — the navigation computer is used to perform this calculation — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
     ],
     correct: 0,
     explanation: 'IFR position reports are required at compulsory reporting points. Standard position report: callsign, position, time, level, next fix + ETA. In radar-controlled airspace, position reports may be omitted except when requested. Outside radar coverage (remote areas, oceanic), position reports are essential for ATC to maintain traffic separation.',
@@ -2831,10 +2831,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "diversion fuel calculation" method from current position to a new alternate?',
     options: [
-      'A. version fuel is always 30 minutes at cruise — a standard buffer applies regardless of distance — this technique is essential for accurate dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
-      'B. version fuel is estimated by the captain and does not require calculation — variation must be checked against the current isogonal chart — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
+      'A. Version fuel is always 30 minutes at cruise — a standard buffer applies regardless of distance — this technique is essential for accurate dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'B. Version fuel is estimated by the captain and does not require calculation — variation must be checked against the current isogonal chart — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
       'C. Step 1: identify current position. Step 2: measure direct distance to alternate. Step 3: estimate GS (current TAS ± estimated wind). Step 4: calculate time = distance ÷ GS. Step 5: calculate fuel = time × fuel flow. Step 6: compare fuel available (remaining − final reserve) vs diversion fuel required',
-      'D. e the flight plan fuel figures — no recalculation is needed for diversions — GPS position should be cross-checked against dead reckoning — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
+      'D. E the flight plan fuel figures — no recalculation is needed for diversions — GPS position should be cross-checked against dead reckoning — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
     ],
     correct: 2,
     explanation: 'In-flight diversion fuel calculation: (1) current position; (2) distance to alternate (from map or GPS); (3) estimate GS; (4) flight time = dist ÷ GS; (5) fuel needed = time × fuel flow; (6) verify: fuel remaining − final reserve ≥ fuel needed. If insufficient, select a closer alternate.',
@@ -2856,9 +2856,9 @@ export const cnavQuestions: {
     question: 'What is the difference between "approach ban" and "decision altitude" in Australian IFR operations?',
     options: [
       'A. Approach ban applies when the reported weather is below the applicable approach minima — under CASR, a pilot may not commence or continue an approach (past the FAF) if the reported weather is below the relevant minima',
-      'B. n Australia, there is no "approach ban" concept — pilots may commence any approach regardless of weather. DA/MDA is where the go-around decision is made, as defined in the Aeronautical Information Publication',
-      'C. pproach ban is the same as MDA — it is a different name for the minimum descent altitude, with the result entered on the navigation log before departure',
-      'D. pproach ban is a military restriction — civilian operations use DA/MDA without an approach ban — GPS position should be cross-checked against dead reckoning',
+      'B. N Australia, there is no "approach ban" concept — pilots may commence any approach regardless of weather. DA/MDA is where the go-around decision is made, as defined in the Aeronautical Information Publication',
+      'C. Pproach ban is the same as MDA — it is a different name for the minimum descent altitude, with the result entered on the navigation log before departure',
+      'D. Pproach ban is a military restriction — civilian operations use DA/MDA without an approach ban — GPS position should be cross-checked against dead reckoning',
     ],
     correct: 0,
     explanation: 'Under CASR Part 91, an instrument approach must not be commenced or continued past the FAF if the latest available weather is below the applicable minima (ceiling and/or visibility). This is the "approach ban" — the pilot must not descend below the circling/straight-in minima if the weather does not meet them.',
@@ -2879,8 +2879,8 @@ export const cnavQuestions: {
   {
     question: 'What is the standard IFR position report format for a compulsory reporting point?',
     options: [
-      'A. sition reports include weather observations at the reporting point — the navigation computer is used to perform this calculation — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
-      'B. llsign and position only — time and level are optional — pilots must apply this correction on all cross-country flights — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'A. Sition reports include weather observations at the reporting point — the navigation computer is used to perform this calculation — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'B. Llsign and position only — time and level are optional — pilots must apply this correction on all cross-country flights — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'C. R position reports are only required over water — mainland operations are radar-only, as defined in the Aeronautical Information Publication — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
       'D. Aircraft callsign; position; time (UTC); flight level; next reporting point with ETA; and any remarks. Example: "Melbourne Centre, VH-ABC, overhead Albury, 0215, FL120, estimating Canberra 0305"',
     ],
@@ -2891,10 +2891,10 @@ export const cnavQuestions: {
   {
     question: 'What is "time keeping" in navigation and what role does it play?',
     options: [
-      'A. me is only needed for fuel — GPS provides distance directly without timing calculations, as defined in the Aeronautical Information Publication — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
-      'B. dern GPS replaces the need for time in navigation — timing is obsolete — ATC may assign a different track for traffic management — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'A. Me is only needed for fuel — GPS provides distance directly without timing calculations, as defined in the Aeronautical Information Publication — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'B. Dern GPS replaces the need for time in navigation — timing is obsolete — ATC may assign a different track for traffic management — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
       'C. Accurate time keeping is fundamental to DR navigation — time × speed = distance flown. Waypoint ETAs allow the pilot to assess whether the wind estimate is accurate (early/late). Timing on NDB approaches determines the MAP. ETA management ensures correct SAR/ATC sequencing',
-      'D. me keeping is only needed for fuel calculations — it has no navigation function — this technique is essential for accurate dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'D. Me keeping is only needed for fuel calculations — it has no navigation function — this technique is essential for accurate dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
     ],
     correct: 2,
     explanation: 'Time is fundamental to navigation: distance = GS × time. ETA checks verify GS (and therefore wind estimates). Being early or late at a checkpoint reveals errors in wind assessment, enabling correction. NDB approach timing (from FAF to MAP) determines when to execute go-around. Time management drives SAR, ATC, and fuel calculations.',
@@ -2903,10 +2903,10 @@ export const cnavQuestions: {
   {
     question: 'What is "cold temperature altimetry correction" and when is it critical?',
     options: [
-      'A. ld temperature makes the altimeter read too low — the aircraft is higher than indicated, which is safe — this technique is essential for accurate dead reckoning — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'A. Ld temperature makes the altimeter read too low — the aircraft is higher than indicated, which is safe — this technique is essential for accurate dead reckoning — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
       'B. In cold air the atmosphere is denser — pressure levels are lower than ISA. The altimeter over-reads; the aircraft is actually LOWER than indicated. Critical on approaches: if OAT is substantially below ISA, add the ICAO cold temperature correction to all published altitudes to ensure obstacle clearance',
-      'C. ld temperature correction is only needed above the tropopause — variation must be checked against the current isogonal chart — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
-      'D. ld temperature makes the altimeter read too low — add a correction to descend further, and the track must be verified against the planned flight path — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'C. Ld temperature correction is only needed above the tropopause — variation must be checked against the current isogonal chart — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
+      'D. Ld temperature makes the altimeter read too low — add a correction to descend further, and the track must be verified against the planned flight path — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
     ],
     correct: 1,
     explanation: 'Cold temperature: true altitude < indicated altitude. The colder the air, the greater the error. ICAO correction table provides a multiplication factor applied to height above aerodrome. Critical on approaches where obstacle clearance depends on accuracy — in very cold conditions add the correction to MDA/DA and all step-down fixes.',
@@ -2916,9 +2916,9 @@ export const cnavQuestions: {
     question: 'What is "Vso" and why is it used to determine approach category?',
     options: [
       'A. Vso is the stall speed in the landing configuration (gear down, full flap, at maximum certified landing weight). Vat = 1.3 × Vso is the reference approach speed, which determines approach category (A through D). Higher Vso → higher Vat → higher approach category → potentially higher published minima',
-      'B. o is only relevant for performance calculations — it has no connection to instrument approach categories — the navigation computer is used to perform this calculation — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
-      'C. o is the stall speed clean — it does not include landing configuration, as shown on VNC/ERC charts with the appropriate symbology — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'D. o is cruise speed — used for determining approach category at altitude, with the result entered on the navigation log before departure — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'B. O is only relevant for performance calculations — it has no connection to instrument approach categories — the navigation computer is used to perform this calculation — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'C. O is the stall speed clean — it does not include landing configuration, as shown on VNC/ERC charts with the appropriate symbology — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'D. O is cruise speed — used for determining approach category at altitude, with the result entered on the navigation log before departure — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
     ],
     correct: 0,
     explanation: 'Vso = stall speed in landing configuration at max landing weight. Vat (threshold speed) = 1.3 × Vso. Vat determines category: A (<91 kt), B (91–120), C (121–140), D (141–165 kt). The category drives which minima line on the approach chart the pilot uses.',
@@ -3095,9 +3095,9 @@ export const cnavQuestions: {
   {
     question: 'What happens to the ADF needle as an aircraft passes directly overhead an NDB?',
     options: [
-      'A. tation passage cannot be determined from the ADF — DME is required, as defined in the Aeronautical Information Publication',
-      'B. he needle freezes at 090° during station passage — this technique is essential for accurate dead reckoning',
-      'C. he needle points to 180° from well before the station — station passage cannot be detected, with the result entered on the navigation log before departure',
+      'A. Tation passage cannot be determined from the ADF — DME is required, as defined in the Aeronautical Information Publication',
+      'B. The needle freezes at 090° during station passage — this technique is essential for accurate dead reckoning',
+      'C. The needle points to 180° from well before the station — station passage cannot be detected, with the result entered on the navigation log before departure',
       'D. As the aircraft approaches the NDB, the needle points ahead. As it passes overhead, the needle rapidly swings to point rearward (toward the station now behind)',
     ],
     correct: 3,
@@ -3156,9 +3156,9 @@ export const cnavQuestions: {
     question: 'What is the "IFR fuel requirement" for a flight without a nominated alternate?',
     options: [
       'A. Trip fuel + 45 minutes final reserve. An alternate may not be required if destination weather is forecast at or above prescribed minima for a defined period around the ETA',
-      'B. rip fuel + 30 minutes reserve, and the track must be verified against the planned flight path',
-      'C. rip fuel only — reserves are discretionary when no alternate is needed — the navigation computer is used to perform this calculation',
-      'D. n alternate is always required for IFR — there is no provision to fly without one — pilots must apply this correction on all cross-country flights',
+      'B. Rip fuel + 30 minutes reserve, and the track must be verified against the planned flight path',
+      'C. Rip fuel only — reserves are discretionary when no alternate is needed — the navigation computer is used to perform this calculation',
+      'D. N alternate is always required for IFR — there is no provision to fly without one — pilots must apply this correction on all cross-country flights',
     ],
     correct: 0,
     explanation: 'Under CASR, an alternate is not required if the destination is forecast at or above prescribed minima (ceiling 1,500 ft, visibility 8 km or as specified) for 1 hour before and after ETA. In that case: trip fuel + 45-minute final reserve. When an alternate IS required: trip fuel + alternate fuel + 45-minute final reserve.',
@@ -3179,9 +3179,9 @@ export const cnavQuestions: {
   {
     question: 'What is "fuel exhaustion" versus "fuel starvation" as engine failure causes?',
     options: [
-      'A. el exhaustion is recoverable; fuel starvation always leads to engine failure — GPS position should be cross-checked against dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
-      'B. ey are identical — fuel supply failure causes engine failure in both cases — GPS position should be cross-checked against dead reckoning — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'C. el starvation is only possible in multi-engine aircraft — pilots must apply this correction on all cross-country flights — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
+      'A. El exhaustion is recoverable; fuel starvation always leads to engine failure — GPS position should be cross-checked against dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'B. Ey are identical — fuel supply failure causes engine failure in both cases — GPS position should be cross-checked against dead reckoning — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'C. El starvation is only possible in multi-engine aircraft — pilots must apply this correction on all cross-country flights — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
       'D. Fuel exhaustion: all usable fuel has been consumed. Fuel starvation: fuel is present in the tanks but is not reaching the engine (incorrect tank selection, fuel valve closed, blocked fuel line). Different causes require different responses',
     ],
     correct: 3,
@@ -3228,9 +3228,9 @@ export const cnavQuestions: {
     question: 'What is the significance of "aerodrome elevation" in instrument approach planning?',
     options: [
       'A. Aerodrome elevation is used to: (1) verify altimeter accuracy on the ground; (2) convert OCH to OCA (DA AMSL); (3) calculate density altitude for performance; and (4) determine the transition level from QNH',
-      'B. rodrome elevation is only needed when the runway is above 5,000 ft AMSL — this technique is essential for accurate dead reckoning — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
-      'C. rodrome elevation is only used for take-off performance calculations, as shown on VNC/ERC charts with the appropriate symbology — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'D. rodrome elevation is not published — pilots estimate it from chart contours, as defined in the Aeronautical Information Publication — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'B. Rodrome elevation is only needed when the runway is above 5,000 ft AMSL — this technique is essential for accurate dead reckoning — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'C. Rodrome elevation is only used for take-off performance calculations, as shown on VNC/ERC charts with the appropriate symbology — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'D. Rodrome elevation is not published — pilots estimate it from chart contours, as defined in the Aeronautical Information Publication — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
     ],
     correct: 0,
     explanation: 'Aerodrome elevation (from ERSA): (1) Ground check — with QNH set, altimeter should read aerodrome elevation ±75 ft; (2) OCH + aerodrome elevation = OCA/DA AMSL; (3) Density altitude = pressure altitude ± temperature correction; (4) Transition level derivation from QNH.',
@@ -3263,10 +3263,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "NAIPS weather brief" and what should a CPL pilot include in every pre-flight brief?',
     options: [
-      'A. ather brief is only required for flights over 2 hours — shorter flights are exempt — GPS position should be cross-checked against dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'B. ather brief is only required for commercial operations — private CPL flights are self-briefed optionally, with the result entered on the navigation log before departure — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'A. Ather brief is only required for flights over 2 hours — shorter flights are exempt — GPS position should be cross-checked against dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'B. Ather brief is only required for commercial operations — private CPL flights are self-briefed optionally, with the result entered on the navigation log before departure — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
       'C. Comprehensive weather brief via NAIPS: METAR and TAF for departure, destination, and alternates; ARFOR for the route area; SIGMETs affecting the route; SIGWX chart; winds aloft forecast; ATIS if available; and PIREPs for recent significant observations. IFR: additionally check NOTAM for navaid outages',
-      'D. ather brief only requires the destination TAF — other products are optional, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Ather brief only requires the destination TAF — other products are optional, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
     ],
     correct: 2,
     explanation: 'Pre-flight weather brief (via NAIPS or 1800 805 150): METAR/TAF (departure, destination, alternates), ARFOR (route area), SIGMETs, winds-aloft charts, SIGWX (significant weather chart), PIREPs, and relevant NOTAMs. For IFR: also check alternate minima, GPS RAIM, and navaid NOTAM serviceability.',
@@ -3408,9 +3408,9 @@ export const cnavQuestions: {
     question: 'What is "approach timing" on a non-precision NDB approach and how is it managed?',
     options: [
       'A. From the FAF, the pilot starts a clock. The published time from FAF to MAP (at the approach speed) is used to determine when the MAP has been reached if no visual reference is obtained. At the MAP time, if no visual reference → execute missed approach',
-      'B. ming on NDB approaches only applies at night — daytime approaches use distance only — ATC may assign a different track for traffic management — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'C. e MAP is always at the NDB itself — timing is irrelevant because the ADF marks the MAP — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'D. proach timing is not required — the aircraft descends to MDA regardless of time elapsed, as defined in the Aeronautical Information Publication — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'B. Timing on NDB approaches only applies at night — daytime approaches use distance only — ATC may assign a different track for traffic management — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'C. E MAP is always at the NDB itself — timing is irrelevant because the ADF marks the MAP — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Proach timing is not required — the aircraft descends to MDA regardless of time elapsed, as defined in the Aeronautical Information Publication — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
     ],
     correct: 0,
     explanation: 'NDB approach timing: start clock at FAF. FAF-to-MAP time is published for each approach speed category. If at MAP time the runway environment is not in sight and at MDA → execute missed approach. The MAP may be the NDB itself (overhead passage) or a timed point beyond it.',
@@ -3420,9 +3420,9 @@ export const cnavQuestions: {
     question: 'What is "Class A" airspace and what rules apply within it?',
     options: [
       'A. Class A is the most restrictive class — IFR only (no VFR), ATC clearance required for all flights, all traffic is separated by ATC. Above FL180 in Australia is Class A airspace',
-      'B. lass A permits both IFR and VFR with appropriate clearances, as defined in the Aeronautical Information Publication',
-      'C. lass A airspace applies from the surface to 10,000 ft around major aerodromes, as defined in the Aeronautical Information Publication',
-      'D. lass A is the lowest class — basic VFR rules apply, as shown on VNC/ERC charts with the appropriate symbology',
+      'B. Lass A permits both IFR and VFR with appropriate clearances, as defined in the Aeronautical Information Publication',
+      'C. Lass A airspace applies from the surface to 10,000 ft around major aerodromes, as defined in the Aeronautical Information Publication',
+      'D. Lass A is the lowest class — basic VFR rules apply, as shown on VNC/ERC charts with the appropriate symbology',
     ],
     correct: 0,
     explanation: 'Class A airspace (above FL180 in Australia): IFR only, all aircraft require ATC clearance, ATC provides separation for all traffic. VFR flight is not permitted. Pilots must be instrument rated and aircraft must be IFR equipped.',
@@ -3468,8 +3468,8 @@ export const cnavQuestions: {
     question: 'What is "sunrise" and "sunset" calculation and why is it relevant to VFR flight planning?',
     options: [
       'A. R operations can continue 30 minutes after official sunset — no specific calculation is needed — ATC may assign a different track for traffic management — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
-      'B. nrise and sunset calculations are only needed for remote area operations, as shown on VNC/ERC charts with the appropriate symbology — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'C. nrise and sunset are irrelevant — VFR minima apply 24 hours a day — ATC may assign a different track for traffic management — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'B. Nrise and sunset calculations are only needed for remote area operations, as shown on VNC/ERC charts with the appropriate symbology — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'C. Nrise and sunset are irrelevant — VFR minima apply 24 hours a day — ATC may assign a different track for traffic management — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
       'D. VFR day flight may only commence from official sunrise and continue until official sunset (civil twilight applies in some regulations). Pilots must know the applicable sunrise/sunset times for their route to avoid night VFR or inadvertent IMC in low light. Sunrise/sunset tables are in ERSA',
     ],
     correct: 3,
@@ -3479,10 +3479,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "closing angle" formula in the 1-in-60 navigation technique?',
     options: [
-      'A. losing angle is the same as track error angle — variation must be checked against the current isogonal chart',
-      'B. losing angle = off-track NM × distance flown ÷ 60 — ATC may assign a different track for traffic management',
+      'A. Losing angle is the same as track error angle — variation must be checked against the current isogonal chart',
+      'B. Losing angle = off-track NM × distance flown ÷ 60 — ATC may assign a different track for traffic management',
       'C. Closing Angle = (off-track NM × 60) ÷ remaining distance to destination. Combined with TEA, it gives the total heading change needed to fly directly to the destination',
-      'D. losing angle can only be calculated if the aircraft is exactly halfway to the destination, as defined in the Aeronautical Information Publication',
+      'D. Losing angle can only be calculated if the aircraft is exactly halfway to the destination, as defined in the Aeronautical Information Publication',
     ],
     correct: 2,
     explanation: 'Closing Angle (CA) = (off-track NM × 60) ÷ remaining NM. To fly direct to destination: alter heading by (TEA + CA). TEA corrects for accumulated error; CA closes the gap to destination without returning to the original track first.',
@@ -3528,7 +3528,7 @@ export const cnavQuestions: {
     question: 'What is "ATC radar identification" and what transponder action supports it?',
     options: [
       'A. TC radar identification is only possible in Class C airspace — Class G has no radar identification, with the result entered on the navigation log before departure',
-      'B. adar identification requires the aircraft to be within 5 NM of the radar site, with the result entered on the navigation log before departure',
+      'B. Adar identification requires the aircraft to be within 5 NM of the radar site, with the result entered on the navigation log before departure',
       'C. ATC identifies an aircraft on radar by correlating the SSR transponder return (squawk code and Mode C altitude) with the flight plan. The pilot may be asked to "squawk ident" (press the IDENT button)',
       'D. TC radar identification requires the pilot to fly a specific pattern, with the result entered on the navigation log before departure',
     ],
@@ -3551,10 +3551,10 @@ export const cnavQuestions: {
   {
     question: 'What is the formula for "ground distance using DME slant range"?',
     options: [
-      'A. round distance and slant range are identical — altitude has no effect beyond 5 NM — this technique is essential for accurate dead reckoning',
-      'B. ound distance = slant range × cos(altitude angle) — ATC may assign a different track for traffic management — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'A. Round distance and slant range are identical — altitude has no effect beyond 5 NM — this technique is essential for accurate dead reckoning',
+      'B. Ound distance = slant range × cos(altitude angle) — ATC may assign a different track for traffic management — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
       'C. Ground distance = √(slant range² − altitude²). In NM: altitude in NM (altitude ft ÷ 6,076). At close range or high altitude, the correction is significant; at long range (>10 NM) the difference is minimal',
-      'D. ound distance = slant range − altitude, as shown on VNC/ERC charts with the appropriate symbology — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'D. Ound distance = slant range − altitude, as shown on VNC/ERC charts with the appropriate symbology — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
     ],
     correct: 2,
     explanation: 'Slant range to ground distance: ground distance = √(slant range² − altitude²). Altitude in NM = altitude ft ÷ 6,076. Example: overhead station at 18,000 ft (≈3 NM): DME reads 3 NM; ground distance = 0 NM. At 1,000 ft (0.16 NM altitude), 10 NM slant: ground ≈ √(100 − 0.026) ≈ 9.99 NM — negligible error at range.',
@@ -3576,9 +3576,9 @@ export const cnavQuestions: {
     question: 'What is the "VFR weather minima" for entering Class D airspace?',
     options: [
       'A. Class D VMC (day): visibility 5 km, 1,000 ft below cloud, 1,500 m horizontal cloud clearance, ceiling at or above circuit height. VFR aircraft entering Class D must be maintaining VMC',
-      'B. o specific minima — pilots may enter Class D in any conditions with ATC clearance, with the result entered on the navigation log before departure',
-      'C. lass D VFR requires instrument rating — VFR pilots may not enter Class D without IR — pilots must apply this correction on all cross-country flights',
-      'D. lass D requires 10 km visibility — same as CAVOK, as defined in the Aeronautical Information Publication',
+      'B. O specific minima — pilots may enter Class D in any conditions with ATC clearance, with the result entered on the navigation log before departure',
+      'C. Lass D VFR requires instrument rating — VFR pilots may not enter Class D without IR — pilots must apply this correction on all cross-country flights',
+      'D. Lass D requires 10 km visibility — same as CAVOK, as defined in the Aeronautical Information Publication',
     ],
     correct: 0,
     explanation: 'Class D VMC: 5 km visibility, 1,000 ft below cloud (vertical), 1,500 m horizontal cloud separation. ATC clearance required to enter. Pilot responsible for maintaining VMC — if IMC conditions develop, advise ATC and request SVFR or IFR clearance.',
@@ -3684,9 +3684,9 @@ export const cnavQuestions: {
     question: 'What is the IFR fuel requirement for a flight with a nominated alternate?',
     options: [
       'A. Trip fuel (departure to destination) + alternate fuel (destination to alternate) + final reserve (45 minutes) + taxi + contingency allowances',
-      'B. rip fuel + 45 minutes final reserve only — ATC may assign a different track for traffic management',
-      'C. rip fuel + 30 minutes reserve — same as VFR day operations, with the result entered on the navigation log before departure',
-      'D. wice the trip fuel — a 100% fuel reserve is required for all IFR operations — pilots must apply this correction on all cross-country flights',
+      'B. Rip fuel + 45 minutes final reserve only — ATC may assign a different track for traffic management',
+      'C. Rip fuel + 30 minutes reserve — same as VFR day operations, with the result entered on the navigation log before departure',
+      'D. Wice the trip fuel — a 100% fuel reserve is required for all IFR operations — pilots must apply this correction on all cross-country flights',
     ],
     correct: 0,
     explanation: 'IFR fuel requirement with alternate: (1) Taxi/engine start; (2) Trip fuel (dep to dest); (3) Alternate fuel (dest to alternate at cruise); (4) Final reserve = 45 min at normal cruise; (5) Contingency (typically 10% of trip). Sum = minimum required fuel uplift.',
@@ -3781,8 +3781,8 @@ export const cnavQuestions: {
     options: [
       'A.  the Southern Hemisphere, the midday sun is due south, as shown on VNC/ERC charts with the appropriate symbology — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
       'B. In the Southern Hemisphere, at midday the sun is approximately due north. In the morning it is in the NE quadrant; afternoon, NW. A pilot can use sun position to confirm general heading direction',
-      'C. n position is only valid near the equator — at Australian latitudes it is unreliable — this technique is essential for accurate dead reckoning — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
-      'D. n position cannot be used for navigation — it is too imprecise — pilots must apply this correction on all cross-country flights — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'C. N position is only valid near the equator — at Australian latitudes it is unreliable — this technique is essential for accurate dead reckoning — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'D. N position cannot be used for navigation — it is too imprecise — pilots must apply this correction on all cross-country flights — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
     ],
     correct: 1,
     explanation: 'Southern Hemisphere sun: rises in the SE, transits (highest point) due north at midday, sets in the SW. At 0900 sun is roughly NE; 1200 due north; 1500 roughly NW. A gross error check: if heading 270° (west) with the sun ahead in late morning, something is wrong — sun should be behind (to the east).',
@@ -3815,9 +3815,9 @@ export const cnavQuestions: {
   {
     question: 'What is "IFR continuation" and when should the pilot divert?',
     options: [
-      'A. ntinue if the pilot believes conditions will improve — official forecasts are advisory only — pilots must apply this correction on all cross-country flights — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'B. ntinue to destination regardless of weather — the IFR system provides safety nets, as defined in the Aeronautical Information Publication — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'C. vert only after an ATC instruction to do so, as defined in the Aeronautical Information Publication — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'A. Ntinue if the pilot believes conditions will improve — official forecasts are advisory only — pilots must apply this correction on all cross-country flights — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'B. Ntinue to destination regardless of weather — the IFR system provides safety nets, as defined in the Aeronautical Information Publication — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'C. Vert only after an ATC instruction to do so, as defined in the Aeronautical Information Publication — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
       'D. If the destination is reported below applicable minima and no improvement is expected, the pilot should divert to the alternate before fuel commitment. Continuing to a destination known to be below minima with inadequate fuel for diversion is unacceptable airmanship',
     ],
     correct: 3,
@@ -3863,9 +3863,9 @@ export const cnavQuestions: {
   {
     question: 'What is a "rhumb line" and how does it differ from a great circle?',
     options: [
-      'A. rhumb line is the shortest distance between two points — it is another name for a great circle — pilots must apply this correction on all cross-country flights — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
-      'B. rhumb line and a great circle are identical on a Lambert Conformal chart — the navigation computer is used to perform this calculation — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
-      'C. rhumb line only exists on Mercator charts — other chart projections do not support rhumb line navigation — variation must be checked against the current isogonal chart — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'A. Rhumb line is the shortest distance between two points — it is another name for a great circle — pilots must apply this correction on all cross-country flights — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'B. Rhumb line and a great circle are identical on a Lambert Conformal chart — the navigation computer is used to perform this calculation — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
+      'C. Rhumb line only exists on Mercator charts — other chart projections do not support rhumb line navigation — variation must be checked against the current isogonal chart — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
       'D. A rhumb line is a line of constant magnetic heading — it crosses all meridians at the same angle. It is longer than the corresponding great circle between the same two points (except along the equator and meridians), but easier to fly as heading remains constant',
     ],
     correct: 3,
@@ -3923,9 +3923,9 @@ export const cnavQuestions: {
   {
     question: 'What is the "decision altitude" (DA) vs "minimum descent altitude" (MDA)?',
     options: [
-      'A. and MDA are identical — both are the lowest altitude for an approach — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'A. And MDA are identical — both are the lowest altitude for an approach — this technique is essential for accurate dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
       'B.  is higher than DA — non-precision approaches have more obstacle clearance built in, and the track must be verified against the planned flight path — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
-      'C. is for night operations; MDA is for day operations — the same approach has both values, and the track must be verified against the planned flight path — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'C. Is for night operations; MDA is for day operations — the same approach has both values, and the track must be verified against the planned flight path — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
       'D. DA (used for precision approaches — ILS, PAR) is the altitude at which the pilot must decide to land or go around — if visual reference is not established at DA, immediate go-around commences. MDA (used for non-precision approaches) is the altitude below which the aircraft must not descend until the pilot has the required visual reference',
     ],
     correct: 3,
@@ -3935,9 +3935,9 @@ export const cnavQuestions: {
   {
     question: 'What is the effect of a "higher-than-forecast headwind" on an IFR flight?',
     options: [
-      'A. gher headwind increases ground speed — the aircraft arrives early — variation must be checked against the current isogonal chart — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'B. gher headwind reduces fuel consumption — the aircraft flies more efficiently into wind, with the result entered on the navigation log before departure — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
-      'C. gher headwind has no effect on an IFR flight — ATC manages all timing — GPS position should be cross-checked against dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'A. Gher headwind increases ground speed — the aircraft arrives early — variation must be checked against the current isogonal chart — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'B. Gher headwind reduces fuel consumption — the aircraft flies more efficiently into wind, with the result entered on the navigation log before departure — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'C. Gher headwind has no effect on an IFR flight — ATC manages all timing — GPS position should be cross-checked against dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'D. Higher headwind reduces ground speed — the aircraft: arrives later than planned ETA (advise ATC), burns more fuel than planned (may affect alternate options), and may require a fuel stop if the discrepancy is significant. Revise ETA and fuel state calculations',
     ],
     correct: 3,
@@ -3947,10 +3947,10 @@ export const cnavQuestions: {
   {
     question: 'What is "visual segment" in an RNAV approach and what visibility is required?',
     options: [
-      'A. e visual segment begins at the IAF — the pilot must be visual from the start of the approach, and the track must be verified against the planned flight path — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
-      'B. e visual segment requires no specific visibility — any VMC is sufficient — GPS position should be cross-checked against dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'A. E visual segment begins at the IAF — the pilot must be visual from the start of the approach, and the track must be verified against the planned flight path — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'B. E visual segment requires no specific visibility — any VMC is sufficient — GPS position should be cross-checked against dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
       'C. The visual segment extends from DA/MDA to the runway — the pilot must have the required visual references (runway environment, approach lights, threshold markings, PAPI) to continue and land. The published visibility minimum for the approach must be met to legally commence and complete the approach',
-      'D. e visual segment only applies to ILS approaches — RNAV approaches land on instruments throughout — variation must be checked against the current isogonal chart — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'D. E visual segment only applies to ILS approaches — RNAV approaches land on instruments throughout — variation must be checked against the current isogonal chart — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
     ],
     correct: 2,
     explanation: 'Visual segment: from DA/MDA, the pilot must have the required visual references to continue to landing. The approach plate publishes minimum visibility (RVR or flight visibility). This visibility must exist at the approach ban check point — if not, the approach must not continue below the applicable minimum.',
@@ -3960,8 +3960,8 @@ export const cnavQuestions: {
     question: 'What is the "1 in 60 rule" and how is it used in navigation?',
     options: [
       'A. At any speed, for every 60 NM travelled, 1° of track error results in approximately 1 NM off track. Used to calculate track error, closing angle, and required heading corrections without a navigation computer',
-      'B. e 1 in 60 rule applies only to NDB approaches — not to general navigation — pilots must apply this correction on all cross-country flights — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
-      'C. e 1 in 60 rule states that 1° of bank produces 60 ft/min rate of descent, as shown on VNC/ERC charts with the appropriate symbology — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'B. E 1 in 60 rule applies only to NDB approaches — not to general navigation — pilots must apply this correction on all cross-country flights — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'C. E 1 in 60 rule states that 1° of bank produces 60 ft/min rate of descent, as shown on VNC/ERC charts with the appropriate symbology — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
       'D.  60 kt TAS, 1° of track error equals 1 NM off track per minute of flight — GPS position should be cross-checked against dead reckoning — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
     ],
     correct: 0,
@@ -4055,10 +4055,10 @@ export const cnavQuestions: {
   {
     question: 'What is "parallel track search" spacing and how is it determined?',
     options: [
-      'A. allel track spacing is always half the aircraft\'s visibility range — a fixed formula — GPS position should be cross-checked against dead reckoning — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'B. ck spacing is determined by the pilot — the SAR coordinator has no role — GPS position should be cross-checked against dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
+      'A. Allel track spacing is always half the aircraft\'s visibility range — a fixed formula — GPS position should be cross-checked against dead reckoning — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'B. Ck spacing is determined by the pilot — the SAR coordinator has no role — GPS position should be cross-checked against dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
       'C. Parallel track spacing depends on: search object size, detectability, terrain visibility, weather (visibility), aircraft speed, and desired probability of detection. Wider spacing covers more area faster but reduces probability of detection per pass; tighter spacing increases detection probability but takes longer. SAR coordinators specify the track spacing',
-      'D. ck spacing is always 1 NM — a fixed SAR standard, with the result entered on the navigation log before departure — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'D. Ck spacing is always 1 NM — a fixed SAR standard, with the result entered on the navigation log before departure — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
     ],
     correct: 2,
     explanation: 'Parallel track spacing (S) is selected by the SAR mission coordinator based on desired coverage factor, probability of detection per pass, object detectability (size, contrast), and search conditions. Common spacings: 0.5–2 NM for missing aircraft. Tighter spacing = more certain detection but slower area coverage.',
@@ -4140,9 +4140,9 @@ export const cnavQuestions: {
     question: 'What is "contour flying" and what are its risks?',
     options: [
       'A. Contour flying (low-level map reading) risks: controlled flight into terrain (CFIT) if distracted, inadvertent flight into cloud or reduced visibility, exceeding Low Flying regulations, and reduced reaction time for obstacle avoidance. Safe low-level navigation requires prior route planning and continuous alertness',
-      'B. ntour flying is only permitted under a military clearance — CPL pilots cannot fly low level — the navigation computer is used to perform this calculation — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'C. ntour flying is highly accurate navigation — it eliminates all chart reading errors — variation must be checked against the current isogonal chart — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'D. ntour flying has no specific risks — it is safer than high-altitude navigation because terrain is visible, with the result entered on the navigation log before departure — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'B. Ntour flying is only permitted under a military clearance — CPL pilots cannot fly low level — the navigation computer is used to perform this calculation — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'C. Ntour flying is highly accurate navigation — it eliminates all chart reading errors — variation must be checked against the current isogonal chart — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'D. Ntour flying has no specific risks — it is safer than high-altitude navigation because terrain is visible, with the result entered on the navigation log before departure — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
     ],
     correct: 0,
     explanation: 'Low-level navigation (contour flying) risks: CFIT from terrain surprise or distraction; inadvertent IMC; Low Flying area and altitude violations; bird strike; power line and antenna hazards; and reduced time to react to obstacles. Requires thorough pre-flight planning, continuous visual vigilance, and appropriate minimum altitudes.',
@@ -4163,10 +4163,10 @@ export const cnavQuestions: {
   {
     question: 'What is the correct action when an IFR aircraft experiences radio failure in IMC?',
     options: [
-      'A. and immediately at the nearest aerodrome regardless of weather, and the track must be verified against the planned flight path',
-      'B. limb to FL200 and await radar identification, and the track must be verified against the planned flight path',
+      'A. And immediately at the nearest aerodrome regardless of weather, and the track must be verified against the planned flight path',
+      'B. Limb to FL200 and await radar identification, and the track must be verified against the planned flight path',
       'C. Squawk 7600; if VMC available continue VMC and land; if IMC continue on last clearance or filed route; arrive at destination at the expected ETA',
-      'D. eclare MAYDAY and request radar vectors on 121.5 MHz — pilots must apply this correction on all cross-country flights',
+      'D. Eclare MAYDAY and request radar vectors on 121.5 MHz — pilots must apply this correction on all cross-country flights',
     ],
     correct: 2,
     explanation: 'IFR radio failure: (1) Squawk 7600; (2) VMC → maintain VMC, land as soon as practicable; (3) IMC → continue last clearance (or filed route), last assigned altitude (or minimum safe), proceed to destination, arrive at expected ETA. ATC knows about the failure from 7600 and clears the airspace.',
@@ -4187,10 +4187,10 @@ export const cnavQuestions: {
   {
     question: 'What is the ICAO "wake turbulence category" classification and how does it affect separation?',
     options: [
-      'A. ake turbulence categories are: Light, Medium, Heavy, Super — based on MTOW — pilots must apply this correction on all cross-country flights',
-      'B. ake turbulence separation only applies on departure — approach separation is at pilot discretion — GPS position should be cross-checked against dead reckoning',
+      'A. Ake turbulence categories are: Light, Medium, Heavy, Super — based on MTOW — pilots must apply this correction on all cross-country flights',
+      'B. Ake turbulence separation only applies on departure — approach separation is at pilot discretion — GPS position should be cross-checked against dead reckoning',
       'C. ICAO categories: LIGHT (< 7,000 kg), MEDIUM (7,000 – 136,000 kg), HEAVY (> 136,000 kg), SUPER (A380/AN-225). ATC applies longitudinal separation minima between categories',
-      'D. ake turbulence categories are based on aircraft speed — not weight, with the result entered on the navigation log before departure',
+      'D. Ake turbulence categories are based on aircraft speed — not weight, with the result entered on the navigation log before departure',
     ],
     correct: 2,
     explanation: 'ICAO wake turbulence categories based on MTOW: SUPER (special designation), HEAVY (>136,000 kg), MEDIUM (7,000-136,000 kg), LIGHT (<7,000 kg). ATC longitudinal separation on approach: HEAVY behind HEAVY — 4 NM; MEDIUM behind HEAVY — 5 NM; LIGHT behind HEAVY — 6 NM. The vortices are most hazardous in the sink zone below the preceding aircraft\'s flight path.',
@@ -4199,9 +4199,9 @@ export const cnavQuestions: {
   {
     question: 'What is the correct answer selection when no definitive information is available in a navigation scenario?',
     options: [
-      'A. ss randomly — navigation questions have no logical elimination process — variation must be checked against the current isogonal chart — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
-      'B. ays select the most conservative option — highest altitude, most fuel, longest time, with the result entered on the navigation log before departure — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'C. ect the longest answer — exam writers tend to make the correct answer more detailed, as shown on VNC/ERC charts with the appropriate symbology — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
+      'A. Ss randomly — navigation questions have no logical elimination process — variation must be checked against the current isogonal chart — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'B. Ays select the most conservative option — highest altitude, most fuel, longest time, with the result entered on the navigation log before departure — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'C. Ect the longest answer — exam writers tend to make the correct answer more detailed, as shown on VNC/ERC charts with the appropriate symbology — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
       'D. Apply the relevant formula or regulation systematically: identify what is known, what is being asked, apply the correct formula/rule, check the answer is physically reasonable, and select the closest match. In exam questions, eliminate clearly wrong options and apply principle-based reasoning to the remaining choices',
     ],
     correct: 3,
@@ -4248,9 +4248,9 @@ export const cnavQuestions: {
     question: 'What is "track" versus "course" in aviation navigation terminology?',
     options: [
       'A. The terms are sometimes used interchangeably: "course" often refers to the intended direction of flight (planned track); "track" often refers to the actual path over the ground. In precise usage: track = actual path made good; course/planned track = intended direction. Context determines the meaning',
-      'B. urse is measured from true north; track from magnetic north — never interchangeable, and the track must be verified against the planned flight path — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
-      'C. ack and course are always different — course is planned, track is actual, as defined in the Aeronautical Information Publication — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
-      'D. ack applies to VFR; course applies to IFR — the same value has different names — variation must be checked against the current isogonal chart — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'B. Urse is measured from true north; track from magnetic north — never interchangeable, and the track must be verified against the planned flight path — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
+      'C. Ack and course are always different — course is planned, track is actual, as defined in the Aeronautical Information Publication — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'D. Ack applies to VFR; course applies to IFR — the same value has different names — variation must be checked against the current isogonal chart — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
     ],
     correct: 0,
     explanation: 'Track vs course: both terms appear in Australian aviation. In CASA exams, "track" typically means the planned direction of travel (or actual path); "course" may mean the same. The most important distinction is planned vs actual — ensure the correct term is used in context. ICAO defines "track" as the actual ground path.',
@@ -4331,10 +4331,10 @@ export const cnavQuestions: {
   {
     question: 'What is "track-keeping accuracy" and what standard should a CPL pilot achieve?',
     options: [
-      'A. ack-keeping accuracy of ±20° is acceptable for CPL — GPS makes precision unnecessary — variation must be checked against the current isogonal chart — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'A. Ack-keeping accuracy of ±20° is acceptable for CPL — GPS makes precision unnecessary — variation must be checked against the current isogonal chart — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
       'B. L track-keeping must be within ±1° — military precision is required — variation must be checked against the current isogonal chart — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'C. CPL track-keeping standard: maintain within approximately ±5° of the planned track (approximately ±5 NM per 60 NM flown). Consistent deviation from track indicates systematic wind correction error. Regular checkpoint comparisons (every 10–15 min) ensure deviation is caught early',
-      'D. ack-keeping accuracy is not assessed for CPL — only departure and arrival procedures matter — this technique is essential for accurate dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'D. Ack-keeping accuracy is not assessed for CPL — only departure and arrival procedures matter — this technique is essential for accurate dead reckoning — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
     ],
     correct: 2,
     explanation: 'CPL VFR track-keeping: aim for within ±5° or approximately within 5 NM for the segment length. Spot checks at each checkpoint confirm track. If deviating, apply 1-in-60 correction. The standard demonstrates the pilot\'s ability to apply wind correction and monitor track systematically.',
@@ -4343,10 +4343,10 @@ export const cnavQuestions: {
   {
     question: 'What is "track error" versus "position error" in navigation?',
     options: [
-      'A. ack error is measured in NM; position error in degrees — they use opposite units, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'B. ack error and position error are identical — both describe how far the aircraft is from the planned route — GPS position should be cross-checked against dead reckoning — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'A. Ack error is measured in NM; position error in degrees — they use opposite units, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'B. Ack error and position error are identical — both describe how far the aircraft is from the planned route — GPS position should be cross-checked against dead reckoning — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
       'C. Track error is the angular difference between the actual track and planned track (degrees). Position error is the linear distance from the planned route (NM). They are related by the 1-in-60 rule: at 60 NM, 1° track error = 1 NM position error. Position error grows with distance flown',
-      'D. sition error is always greater than track error — they cannot be equal — ATC may assign a different track for traffic management — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Sition error is always greater than track error — they cannot be equal — ATC may assign a different track for traffic management — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
     ],
     correct: 2,
     explanation: 'Track error (angle, degrees) vs position error (distance, NM): related by 1-in-60. At 60 NM: 1° = 1 NM. At 120 NM: 1° = 2 NM. Position error accumulates with distance — the same track error angle produces a larger position error the further the aircraft has flown.',
@@ -4355,10 +4355,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "ETA calculation" when ground speed changes midway through a leg?',
     options: [
-      'A. e the average of the old and new GS to calculate ETA, as defined in the Aeronautical Information Publication — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'A. E the average of the old and new GS to calculate ETA, as defined in the Aeronautical Information Publication — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'B. Recalculate from the point of GS change: note distance remaining to destination; calculate new time = distance remaining ÷ new GS; ETA = current time + new time remaining. Advise ATC if revised ETA differs by 3+ minutes from the last reported estimate',
       'C. A cannot be recalculated after a GS change — original ETA stands — GPS position should be cross-checked against dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'D. quest ATC to calculate the revised ETA — pilots do not revise ETAs in flight — pilots must apply this correction on all cross-country flights — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Quest ATC to calculate the revised ETA — pilots do not revise ETAs in flight — pilots must apply this correction on all cross-country flights — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
     ],
     correct: 1,
     explanation: 'Revised ETA after GS change: (1) note current time and distance remaining; (2) new time remaining = distance remaining ÷ new GS; (3) new ETA = current time + new time remaining. If change ≥ 3 min from last reported ETA, advise ATC or SARWATCH contact.',
@@ -4475,10 +4475,10 @@ export const cnavQuestions: {
   {
     question: 'What is "alternating course" technique in compass heading correction and when is it used?',
     options: [
-      'A. ternating course means changing heading every 15 minutes — a standard IFR procedure — variation must be checked against the current isogonal chart — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'A. Ternating course means changing heading every 15 minutes — a standard IFR procedure — variation must be checked against the current isogonal chart — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'B. Alternating course (or "double the angle") technique: when lost, maintain heading for a set time to establish a known DR line; turn to a radically different heading; use the position information from subsequent radio contact to fix position. Less common',
-      'C. ternating course is a celestial navigation technique — not applicable to instrument-equipped aircraft, as shown on VNC/ERC charts with the appropriate symbology — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
-      'D. lternating course is the technique for flying around thunderstorms — alternate headings navigate around the cell, with the result entered on the navigation log before departure',
+      'C. Ternating course is a celestial navigation technique — not applicable to instrument-equipped aircraft, as shown on VNC/ERC charts with the appropriate symbology — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'D. Lternating course is the technique for flying around thunderstorms — alternate headings navigate around the cell, with the result entered on the navigation log before departure',
     ],
     correct: 1,
     explanation: 'The "alternating course" concept is less formally used in modern aviation — the 5Cs (Climb, Communicate, Confess, Comply, Conserve) address the lost procedure more systematically. Maintaining heading establishes a track line; radio/radar contact provides a position fix.',
@@ -4487,10 +4487,10 @@ export const cnavQuestions: {
   {
     question: 'What is "terrain following" versus "terrain clearance" in low-level navigation?',
     options: [
-      'A. ey are identical — both describe the same altitude management technique — GPS position should be cross-checked against dead reckoning — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
-      'B. errain following requires specialised equipment; terrain clearance uses any altimeter — GPS position should be cross-checked against dead reckoning',
+      'A. Ey are identical — both describe the same altitude management technique — GPS position should be cross-checked against dead reckoning — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
+      'B. Errain following requires specialised equipment; terrain clearance uses any altimeter — GPS position should be cross-checked against dead reckoning',
       'C. Terrain following means maintaining a constant AGL height by following the terrain contour; terrain clearance means maintaining sufficient altitude above terrain using chart LSALT or equivalent. CPL pilots use terrain clearance',
-      'D. rrain following is an IFR technique; terrain clearance is a VFR technique, and the track must be verified against the planned flight path — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'D. Rrain following is an IFR technique; terrain clearance is a VFR technique, and the track must be verified against the planned flight path — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
     ],
     correct: 2,
     explanation: 'Terrain following maintains constant AGL by climbing and descending with the terrain — used by military aircraft. Terrain clearance (used in civil aviation) means maintaining a safe altitude above all obstacles within a defined area. CPL pilots use LSALT or calculated minimum safe altitudes for terrain clearance.',
@@ -4607,9 +4607,9 @@ export const cnavQuestions: {
   {
     question: 'What is "HF radio" and when is it used for navigation-related communication?',
     options: [
-      'A. radio is used for all ATC communication in Australia — VHF is only for local operations — pilots must apply this correction on all cross-country flights — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'B. radio is used only for weather broadcasts — navigation communication uses VHF exclusively — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
-      'C. radio is obsolete — SATCOM has replaced it on all routes including remote Australia — pilots must apply this correction on all cross-country flights — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'A. Radio is used for all ATC communication in Australia — VHF is only for local operations — pilots must apply this correction on all cross-country flights — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'B. Radio is used only for weather broadcasts — navigation communication uses VHF exclusively — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'C. Radio is obsolete — SATCOM has replaced it on all routes including remote Australia — pilots must apply this correction on all cross-country flights — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'D. HF (High Frequency, 3–30 MHz) uses sky-wave propagation — used for long-range communication where VHF line-of-sight is insufficient: oceanic operations, remote inland areas of Australia (particularly northern and central), and international operations. HF radio required for flight plan handling and position reports in remote areas',
     ],
     correct: 3,
@@ -4643,10 +4643,10 @@ export const cnavQuestions: {
   {
     question: 'What is "course reversal" and what are the common methods?',
     options: [
-      'A. rse reversal is automatically performed by the FMS — pilots do not need to know manual techniques — GPS position should be cross-checked against dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'B. rse reversal always uses a 360° orbit — all other methods are non-standard — GPS position should be cross-checked against dead reckoning — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'A. Rse reversal is automatically performed by the FMS — pilots do not need to know manual techniques — GPS position should be cross-checked against dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'B. Rse reversal always uses a 360° orbit — all other methods are non-standard — GPS position should be cross-checked against dead reckoning — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'C. Course reversal methods: (1) Procedure turn (45/180°); (2) Teardrop (into non-holding side, then 180° back); (3) Holding pattern (fly full holding pattern); (4) Straight to FAF via radar vector (if available). Published approach plates show which method is required. "No PT" on the plate means procedure turn is not authorised/necessary',
-      'D. rse reversal is only used when ATC instructs a 180° turn — pilots do not initiate it, and the track must be verified against the planned flight path — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'D. Rse reversal is only used when ATC instructs a 180° turn — pilots do not initiate it, and the track must be verified against the planned flight path — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
     ],
     correct: 2,
     explanation: 'Course reversal aligns the aircraft with the inbound approach track. Methods: (1) 45/180 procedure turn — fly 45° off track, 180° turn, intercept inbound; (2) Teardrop — offset into non-holding side, 180° to intercept; (3) Full holding — fly the pattern once; (4) Vectors — no reversal needed. "NoPT" means skip the procedure turn.',
@@ -4655,10 +4655,10 @@ export const cnavQuestions: {
   {
     question: 'What is a "TWY" (taxiway) and its navigation significance during ground operations?',
     options: [
-      'A. axiways are only navigated by following painted lines — charts are not needed — ATC may assign a different track for traffic management',
-      'B. axiway navigation requires a specific endorsement beyond the CPL rating — this technique is essential for accurate dead reckoning',
+      'A. Axiways are only navigated by following painted lines — charts are not needed — ATC may assign a different track for traffic management',
+      'B. Axiway navigation requires a specific endorsement beyond the CPL rating — this technique is essential for accurate dead reckoning',
       'C. Taxiway navigation involves: reading aerodrome chart, following ATC taxi clearance, identifying hold-short points, avoiding runway incursion, interpreting taxiway signs (mandatory instruction',
-      'D. axiway navigation is not a CPL navigation topic — it is ground operations only — pilots must apply this correction on all cross-country flights',
+      'D. Axiway navigation is not a CPL navigation topic — it is ground operations only — pilots must apply this correction on all cross-country flights',
     ],
     correct: 2,
     explanation: 'Aerodrome ground navigation: use the aerodrome chart (from ERSA/Jeppesen), comply with ATC taxi clearance, identify hold short lines (runway guard lights, ILS critical area markings), read mandatory signs (red = runway entry/restriction), and maintain orientation particularly at complex airports in low visibility.',
@@ -4679,10 +4679,10 @@ export const cnavQuestions: {
   {
     question: 'What is "enroute weather diversion" decision-making and what factors determine the diversion point?',
     options: [
-      'A. ather diversion is only required when both engines fail in IMC — variation must be checked against the current isogonal chart — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'A. Ather diversion is only required when both engines fail in IMC — variation must be checked against the current isogonal chart — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
       'B. Enroute weather diversion factors: (1) Existing and forecast weather at destination vs minima; (2) Fuel state and endurance; (3) Alternative aerodromes along or near track with suitable weather; (4) Aircraft performance in icing/turbulence; (5) ATC assistance availability. Decision: divert early while fuel options remain',
-      'C. version is only required when ATC instructs it — pilots do not initiate diversions independently, and the track must be verified against the planned flight path — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
-      'D. route diversion requires CASA approval — the pilot must request permission before diverting — ATC may assign a different track for traffic management — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'C. Version is only required when ATC instructs it — pilots do not initiate diversions independently, and the track must be verified against the planned flight path — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'D. Route diversion requires CASA approval — the pilot must request permission before diverting — ATC may assign a different track for traffic management — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
     ],
     correct: 1,
     explanation: 'Diversion decision: continuously assess weather against minima and fuel state. Early diversion preserves options — late diversion may leave no acceptable alternate. Key: make the diversion decision while still at the CP or before it, not after. "Get-there-itis" is a contributing factor in many weather-related accidents.',
@@ -4753,7 +4753,7 @@ export const cnavQuestions: {
     options: [
       'A. On landing, the pilot contacts the nominated SARWATCH unit (Airservices Australia, ATC, or the person responsible for the SARWATCH) and provides: aircraft callsign, departure aerodrome, destination aerodrome, and actual arrival time. This cancels the SAR trigger and prevents an unnecessary search',
       'B. RWATCH is cancelled automatically by the GPS recording the landing — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
-      'C. e pilot emails Airservices Australia after landing — phone calls are not accepted — the navigation computer is used to perform this calculation — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'C. E pilot emails Airservices Australia after landing — phone calls are not accepted — the navigation computer is used to perform this calculation — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
       'D. RWATCH cancellation is only required for IFR flights — ATC may assign a different track for traffic management — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
     ],
     correct: 0,
@@ -4775,10 +4775,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "IFR alternate fuel" calculation for a flight where destination may be below minima?',
     options: [
-      'A. ternate fuel is only required if the alternate is more than 50 NM from the destination — the navigation computer is used to perform this calculation — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'A. Ternate fuel is only required if the alternate is more than 50 NM from the destination — the navigation computer is used to perform this calculation — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'B. Alternate fuel = fuel to fly from the destination to the nominated alternate aerodrome at cruise power + normal fuel flow. Combined with final reserve (45 min), this ensures arrival at the alternate with legal minimum fuel. Calculate using the actual distance and estimated GS on the destination-to-alternate leg',
-      'C. ternate fuel = 45 minutes at cruise — a fixed allowance regardless of distance — the navigation computer is used to perform this calculation — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'D. ternate fuel equals trip fuel — the alternate is assumed to be as far as the destination, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'C. Ternate fuel = 45 minutes at cruise — a fixed allowance regardless of distance — the navigation computer is used to perform this calculation — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'D. Ternate fuel equals trip fuel — the alternate is assumed to be as far as the destination, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
     ],
     correct: 1,
     explanation: 'Alternate fuel: fuel from destination to alternate = (distance dest to alternate ÷ GS) × fuel flow. Add to: trip fuel + final reserve (45 min) + contingency. The alternate fuel ensures the aircraft can reach the alternate from the destination with legal reserves if the destination approach fails.',
@@ -4799,9 +4799,9 @@ export const cnavQuestions: {
   {
     question: 'What is a "diversion" and what are the key calculations required?',
     options: [
-      'A. diversion is only required when an engine fails — all other diversions are at pilot discretion — the navigation computer is used to perform this calculation — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
-      'B. version calculations use TAS only — wind is not considered as it cannot be accurately assessed in-flight — ATC may assign a different track for traffic management — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'C. diversion requires filing a new flight plan before commencing — no other calculations are needed, and the track must be verified against the planned flight path — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'A. Diversion is only required when an engine fails — all other diversions are at pilot discretion — the navigation computer is used to perform this calculation — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'B. Version calculations use TAS only — wind is not considered as it cannot be accurately assessed in-flight — ATC may assign a different track for traffic management — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'C. Diversion requires filing a new flight plan before commencing — no other calculations are needed, and the track must be verified against the planned flight path — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
       'D. A diversion requires: selecting an appropriate alternate aerodrome, calculating new heading and distance from current position, estimating ground speed to the alternate (accounting for wind), calculating fuel required vs fuel remaining, and assessing weather at the alternate',
     ],
     correct: 3,
@@ -4811,10 +4811,10 @@ export const cnavQuestions: {
   {
     question: 'What is "wake turbulence sink rate" and how does it affect an aircraft approaching behind a heavy jet?',
     options: [
-      'A. ke turbulence dissipates within 30 seconds regardless of atmospheric conditions — variation must be checked against the current isogonal chart — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'B. ake turbulence only sinks in windy conditions — in calm air it remains at the same altitude — pilots must apply this correction on all cross-country flights',
+      'A. Ke turbulence dissipates within 30 seconds regardless of atmospheric conditions — variation must be checked against the current isogonal chart — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'B. Ake turbulence only sinks in windy conditions — in calm air it remains at the same altitude — pilots must apply this correction on all cross-country flights',
       'C. Wake vortices sink at approximately 300–500 ft/min after generation and level off at approximately 900 ft below the generating aircraft\'s flight path. They then drift downwind. A following aircraft below and behind is in the highest-risk zone',
-      'D. ke turbulence rises behind a heavy jet — aircraft below are not at risk — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'D. Ke turbulence rises behind a heavy jet — aircraft below are not at risk — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
     ],
     correct: 2,
     explanation: 'Wake vortices: generated at wing tips, sink at 300–500 ft/min, level off ~900 ft below flight path, drift downwind at 5 kt. In calm conditions, they can remain for several minutes. Following aircraft must remain above the preceding aircraft\'s flight path — especially on approach where the sink zone is directly over the approach corridor.',
@@ -4895,9 +4895,9 @@ export const cnavQuestions: {
   {
     question: 'What is "ATIS letter" and why is it important to report it to ATC?',
     options: [
-      'A. he ATIS letter identifies the ground controller — different controllers use different letters — ATC may assign a different track for traffic management',
+      'A. The ATIS letter identifies the ground controller — different controllers use different letters — ATC may assign a different track for traffic management',
       'B. TIS letter identifies which runway is active — pilots report it to confirm runway selection — GPS position should be cross-checked against dead reckoning',
-      'C. he ATIS letter is optional — ATC does not require pilots to report it — the navigation computer is used to perform this calculation',
+      'C. The ATIS letter is optional — ATC does not require pilots to report it — the navigation computer is used to perform this calculation',
       'D. Each ATIS broadcast is identified by a sequential letter (Alpha, Bravo, Charlie...). Reporting the ATIS letter to ATC confirms the pilot has received the current weather, QNH, and operational information',
     ],
     correct: 3,
@@ -5015,10 +5015,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "track guide" technique for systematic VFR cross-country navigation?',
     options: [
-      'A. ack guide is only used for the first hour of flight — GPS takes over beyond that, and the track must be verified against the planned flight path — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'A. Ack guide is only used for the first hour of flight — GPS takes over beyond that, and the track must be verified against the planned flight path — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
       'B. Track guide: prepare a flight log with planned headings, ETAs, GS, and expected features per leg. In-flight, check features against the chart as they appear, log actual over-times, and calculate revised ETAs. This combination of pilotage, dead reckoning, and timing is the classical CPL navigation method',
-      'C. ack guide requires continuous GPS monitoring — it cannot be done on paper alone, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'D. ack guide is an IFR-only procedure — the navigation computer is used to perform this calculation — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'C. Ack guide requires continuous GPS monitoring — it cannot be done on paper alone, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'D. Ack guide is an IFR-only procedure — the navigation computer is used to perform this calculation — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
     ],
     correct: 1,
     explanation: 'Track guide (systematic VFR): prepared log + active checkpoint identification + ETA monitoring. The pilot knows what should appear at what time and actively confirms it. Any discrepancy is an early warning of track error or wind error, allowing correction before significant deviation.',
@@ -5051,10 +5051,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "Low Flying" area and altitude restriction in Australia?',
     options: [
-      'A. he minimum altitude is 300 ft AGL for all operations — there is no 1,000 ft restriction — the navigation computer is used to perform this calculation',
-      'B. w flying restrictions only apply within 25 NM of a controlled aerodrome — this technique is essential for accurate dead reckoning — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'A. The minimum altitude is 300 ft AGL for all operations — there is no 1,000 ft restriction — the navigation computer is used to perform this calculation',
+      'B. W flying restrictions only apply within 25 NM of a controlled aerodrome — this technique is essential for accurate dead reckoning — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
       'C. CASR Part 91 requires aircraft to fly at not less than 500 ft AGL over sparsely settled areas and 1,000 ft AGL over populated areas, except during take-off, landing, or with CASA approval for specific operations (aerial work, training)',
-      'D. w flying below 500 ft AGL is unrestricted everywhere in Australia — ATC may assign a different track for traffic management — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
+      'D. W flying below 500 ft AGL is unrestricted everywhere in Australia — ATC may assign a different track for traffic management — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam',
     ],
     correct: 2,
     explanation: 'CASR Part 91 minimum safe altitudes: 1,000 ft AGL over populated areas; 500 ft AGL over other areas; within 500 ft of persons, vessels, or structures. Exceptions: take-off, landing, aerial work authorisation. Not for low-level aerobatics unless specifically authorised.',
@@ -5088,9 +5088,9 @@ export const cnavQuestions: {
     question: 'What is "dead reckoning position" confidence and when should a pilot request a fix?',
     options: [
       'A. DR position confidence decreases with time elapsed since last fix and with uncertainty in wind/heading/speed estimates. A pilot should request or obtain a fix (visual, VOR, GPS) when: the DR position is more than 30 minutes old; track error has been identified and corrected; approaching terrain; or fuel/alternate decisions depend on accurate position',
-      'B. positions are always reliable — request a fix only in an emergency, as shown on VNC/ERC charts with the appropriate symbology — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
-      'C. positions are only reliable for 10 minutes — all subsequent positions require radar confirmation — pilots must apply this correction on all cross-country flights — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
-      'D. ix is only needed for IFR operations — VFR DR does not require external confirmation — GPS position should be cross-checked against dead reckoning — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'B. Positions are always reliable — request a fix only in an emergency, as shown on VNC/ERC charts with the appropriate symbology — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'C. Positions are only reliable for 10 minutes — all subsequent positions require radar confirmation — pilots must apply this correction on all cross-country flights — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'D. Ix is only needed for IFR operations — VFR DR does not require external confirmation — GPS position should be cross-checked against dead reckoning — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
     ],
     correct: 0,
     explanation: 'DR confidence: degrades with time and accumulated errors. Obtain a fix: when approaching terrain requiring accurate clearance; at major waypoints; when in doubt about position; before making fuel/diversion decisions. Regular fixes reset DR errors and restore position confidence.',
@@ -5160,9 +5160,9 @@ export const cnavQuestions: {
     question: 'What is "radio failure IFR procedure" after reaching the destination and what does the aircraft do?',
     options: [
       'A. Arrive at the destination at the last notified ETA (or the ETA from the flight plan if no update was given). Join the circuit/approach procedure. ATC will observe the aircraft on radar or visually and clear the airspace. Squawk 7600 throughout. Land as soon as possible. Contact ATC or aerodrome ops immediately after landing',
-      'B. ert to the alternate — radio failure means the destination cannot be used — GPS position should be cross-checked against dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
-      'C. cute a continuous descent approach from cruise altitude — no circuit is required, as shown on VNC/ERC charts with the appropriate symbology — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'D. cle overhead indefinitely until fuel is exhausted then declare MAYDAY — variation must be checked against the current isogonal chart — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
+      'B. Ert to the alternate — radio failure means the destination cannot be used — GPS position should be cross-checked against dead reckoning — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2 — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'C. Cute a continuous descent approach from cruise altitude — no circuit is required, as shown on VNC/ERC charts with the appropriate symbology — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'D. Cle overhead indefinitely until fuel is exhausted then declare MAYDAY — variation must be checked against the current isogonal chart — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
     ],
     correct: 0,
     explanation: 'Radio failure IFR arrival: arrive at destination at expected ETA. Squawk 7600. ATC will have cleared the airspace anticipating the arrival. Fly the approach procedure. ATC may use light signals or clear the runway by other means. After landing: contact ATC immediately to debrief the incident.',
@@ -5195,9 +5195,9 @@ export const cnavQuestions: {
   {
     question: 'What is "search altitude" in a lost procedure and why should a pilot climb?',
     options: [
-      'A. imbing reduces fuel consumption — the primary reason to climb when lost — variation must be checked against the current isogonal chart — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
-      'B. imbing when lost is prohibited — it may cause conflict with IFR traffic at higher levels — variation must be checked against the current isogonal chart — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
-      'C. arch altitude is the altitude at which SAR aircraft will look — not relevant to the lost aircraft — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'A. Imbing reduces fuel consumption — the primary reason to climb when lost — variation must be checked against the current isogonal chart — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'B. Imbing when lost is prohibited — it may cause conflict with IFR traffic at higher levels — variation must be checked against the current isogonal chart — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'C. Arch altitude is the altitude at which SAR aircraft will look — not relevant to the lost aircraft — ATC may assign a different track for traffic management — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
       'D. Climbing increases: (1) Radio range for communication with ATC; (2) Visual range for landmark identification; (3) Navigation aid (VOR/NDB) reception range; (4) Radar coverage area for ATC. The increased radio/navaid range may allow contact with ATC who can provide vectors or direction',
     ],
     correct: 3,
@@ -5219,10 +5219,10 @@ export const cnavQuestions: {
   {
     question: 'What is the correct altimeter check before departure and what tolerance applies?',
     options: [
-      'A. timeter tolerance for IFR is ±200 ft — ±75 ft applies to VFR only, as defined in the Aeronautical Information Publication — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
-      'B. timeter is correct if it reads approximately sea level — exact check is not required, as defined in the Aeronautical Information Publication — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'A. Timeter tolerance for IFR is ±200 ft — ±75 ft applies to VFR only, as defined in the Aeronautical Information Publication — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'B. Timeter is correct if it reads approximately sea level — exact check is not required, as defined in the Aeronautical Information Publication — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
       'C. With QNH set, the altimeter should read the published aerodrome elevation within ±75 ft. If the error exceeds 75 ft, the altimeter is unserviceable for IFR. Record the altimeter error if within tolerance',
-      'D. e altimeter check requires the aircraft to be on the runway threshold only, as shown on VNC/ERC charts with the appropriate symbology — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'D. E altimeter check requires the aircraft to be on the runway threshold only, as shown on VNC/ERC charts with the appropriate symbology — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
     ],
     correct: 2,
     explanation: 'Pre-flight altimeter check: set QNH, compare reading with published aerodrome elevation. Tolerance: ±75 ft for IFR serviceability. If outside ±75 ft, the altimeter must not be used for IFR. Note any error within tolerance — this systematic error can be applied as a correction during flight.',
@@ -5231,10 +5231,10 @@ export const cnavQuestions: {
   {
     question: 'What is "ditching" and what navigation considerations apply when preparing to ditch?',
     options: [
-      'A. tching requires ATC authorisation — unauthorized ditching is a regulatory violation, with the result entered on the navigation log before departure — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'A. Tching requires ATC authorisation — unauthorized ditching is a regulatory violation, with the result entered on the navigation log before departure — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
       'B. Ditching is an emergency water landing — navigation considerations: broadcast MAYDAY with position; note position to assist rescuers; assess sea state for landing direction (into wind/swell); activate ELT; aim for ship traffic lanes if possible; ensure life vests/raft preparation before impact',
-      'C. vigation during ditching only requires the aircraft heading — position is irrelevant for rescue — ATC may assign a different track for traffic management — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
-      'D. tching is landing on a runway with flooded surface — no special navigation considerations, as shown on VNC/ERC charts with the appropriate symbology — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'C. Vigation during ditching only requires the aircraft heading — position is irrelevant for rescue — ATC may assign a different track for traffic management — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'D. Tching is landing on a runway with flooded surface — no special navigation considerations, as shown on VNC/ERC charts with the appropriate symbology — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
     ],
     correct: 1,
     explanation: 'Before ditching: (1) MAYDAY with position and details; (2) Squawk 7700; (3) Navigate toward shipping lanes or coastline if fuel permits; (4) Assess sea state — ditch into wind if sea is moderate, into/parallel to swell if sea is rough; (5) Activate ELT on 406 MHz; (6) Prepare passengers/crew. Accurate position broadcast is critical for SAR.',
@@ -5255,9 +5255,9 @@ export const cnavQuestions: {
   {
     question: 'What is "magnetic variation" in western Australia versus eastern Australia?',
     options: [
-      'A. riation is identical across Australia — approximately 12°E everywhere, as shown on VNC/ERC charts with the appropriate symbology — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
-      'B. riation does not affect CPL navigation — it is only relevant for oceanic operations, as defined in the Aeronautical Information Publication — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'C. riation in Australia is always easterly — there is no westerly variation anywhere in the country — this technique is essential for accurate dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'A. Riation is identical across Australia — approximately 12°E everywhere, as shown on VNC/ERC charts with the appropriate symbology — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'B. Riation does not affect CPL navigation — it is only relevant for oceanic operations, as defined in the Aeronautical Information Publication — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'C. Riation in Australia is always easterly — there is no westerly variation anywhere in the country — this technique is essential for accurate dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
       'D. Variation varies significantly across Australia. Eastern Australia: approximately 10–13°E. Western Australia (western coast): closer to 0° or slightly west in some areas. The variation gradient means pilots flying across Australia must use the correct variation for each portion of the route',
     ],
     correct: 3,
@@ -5291,8 +5291,8 @@ export const cnavQuestions: {
   {
     question: 'What is the "VFR night" additional qualification requirement?',
     options: [
-      'A. ght VFR is an ATPL privilege only — CPL holders may not conduct night VFR — the navigation computer is used to perform this calculation — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
-      'B. ght VFR requires an instrument rating — there is no intermediate night VFR rating — variation must be checked against the current isogonal chart — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
+      'A. Ght VFR is an ATPL privilege only — CPL holders may not conduct night VFR — the navigation computer is used to perform this calculation — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'B. Ght VFR requires an instrument rating — there is no intermediate night VFR rating — variation must be checked against the current isogonal chart — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
       'C. Night VFR operations require a night VFR rating — additional training in: night visual navigation, night circuit operations, night cross-country, and night emergency procedures. Minimum hours specified by CASR Part 61. Night VFR pilots must also meet additional currency requirements',
       'D. R night is covered by the standard CPL — no additional training is required — ATC may assign a different track for traffic management — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
     ],
@@ -5317,7 +5317,7 @@ export const cnavQuestions: {
     options: [
       'A. BZ is a controlled zone requiring ATC clearance — it surrounds all aerodromes, with the result entered on the navigation log before departure',
       'B. An MBZ is a designated airspace around a non-towered aerodrome (or in areas of high-density non-radio traffic) where pilots must broadcast position and intentions on the designated MBZ frequency',
-      'C. n MBZ requires continuous two-way communication with UNICOM — broadcasts alone are insufficient — variation must be checked against the current isogonal chart',
+      'C. N MBZ requires continuous two-way communication with UNICOM — broadcasts alone are insufficient — variation must be checked against the current isogonal chart',
       'D. BZ communications are only required for IFR flights — VFR aircraft are exempt, with the result entered on the navigation log before departure',
     ],
     correct: 1,
@@ -5352,9 +5352,9 @@ export const cnavQuestions: {
     question: 'What is "compass course" after applying both variation and deviation to a true track?',
     options: [
       'A. Compass course is found by applying TVMDC sequentially: True track → (apply Variation) → Magnetic track → (apply Deviation) → Compass heading. For easterly variation/deviation: subtract each. For westerly: add each',
-      'B. ompass course = true track − variation − deviation regardless of direction — the navigation computer is used to perform this calculation',
-      'C. mpass course = true track + variation east + deviation east — ATC may assign a different track for traffic management — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
-      'D. mpass course = true track × (variation + deviation), as defined in the Aeronautical Information Publication — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'B. Ompass course = true track − variation − deviation regardless of direction — the navigation computer is used to perform this calculation',
+      'C. Mpass course = true track + variation east + deviation east — ATC may assign a different track for traffic management — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
+      'D. Mpass course = true track × (variation + deviation), as defined in the Aeronautical Information Publication — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
     ],
     correct: 0,
     explanation: 'TVMDC: True → Variation (E subtract, W add) → Magnetic → Deviation (E subtract, W add) → Compass. Example: True 090°, Var 12°E, Dev 2°W → Magnetic = 090 − 12 = 078°; Compass = 078 + 2 = 080°.',
@@ -5399,10 +5399,10 @@ export const cnavQuestions: {
   {
     question: 'What is the "International Date Line" effect when flying westbound from Sydney to Los Angeles?',
     options: [
-      'A. stbound crossing of the IDL loses a day — travellers arriving west of the IDL arrive one day earlier, as shown on VNC/ERC charts with the appropriate symbology — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'B. e IDL has no effect on flight planning — UTC time is used exclusively — GPS position should be cross-checked against dead reckoning — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
+      'A. Stbound crossing of the IDL loses a day — travellers arriving west of the IDL arrive one day earlier, as shown on VNC/ERC charts with the appropriate symbology — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'B. E IDL has no effect on flight planning — UTC time is used exclusively — GPS position should be cross-checked against dead reckoning — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
       'C. The IDL is west of Sydney (180° E/W). Flying eastbound (Sydney to LA) crosses the IDL eastbound → subtract a day. Flying westbound (Sydney to LA via the Pacific eastward track) crosses the IDL westbound → add a day. Pilots and dispatchers must account for the date in ETAs and weather products',
-      'D. stbound: cross IDL, gain a day — arrive on a later calendar date than expected, as shown on VNC/ERC charts with the appropriate symbology — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'D. Stbound: cross IDL, gain a day — arrive on a later calendar date than expected, as shown on VNC/ERC charts with the appropriate symbology — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
     ],
     correct: 2,
     explanation: 'Sydney to Los Angeles (eastward across the Pacific): crosses the IDL heading eastbound → subtract 1 day (date goes back). Westbound from Sydney (if routing westward) → cross IDL westbound → add 1 day. Standard trans-Pacific routes go eastbound — the date change must be accounted for in ETA documents.',
@@ -5447,10 +5447,10 @@ export const cnavQuestions: {
   {
     question: 'What is the significance of "ERSA aerodrome remarks" section for navigation planning?',
     options: [
-      'A. arks are only for helicopter operations — fixed-wing pilots can ignore them, as shown on VNC/ERC charts with the appropriate symbology — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
+      'A. Arks are only for helicopter operations — fixed-wing pilots can ignore them, as shown on VNC/ERC charts with the appropriate symbology — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — this topic appears regularly in CASA CPL navigation exams and requires thorough understanding of both the theoretical concept and its practical application during cross-country flight planning',
       'B. ERSA remarks contain operationally important information not elsewhere categorised: fuel pump hours, caretaker contact, special circuit requirements, obstacles near the aerodrome, noise abatement procedures, local operating rules, and any special hazards. Must be read before first visit to an unfamiliar aerodrome',
       'C. A remarks are optional to read — only charts are required for legal compliance, as shown on VNC/ERC charts with the appropriate symbology — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'D. arks section only contains historical data — not relevant to current planning, as shown on VNC/ERC charts with the appropriate symbology — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'D. Arks section only contains historical data — not relevant to current planning, as shown on VNC/ERC charts with the appropriate symbology — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
     ],
     correct: 1,
     explanation: 'ERSA remarks: include fuel availability hours, special circuit rules, noise restrictions, local hazards (animals on runway, glider operations, parachuting), and unlocking/caretaker arrangements for remote aerodromes. Essential reading for unfamiliar aerodromes — can prevent fuel surprises, circuit conflicts, and safety incidents.',
@@ -5484,7 +5484,7 @@ export const cnavQuestions: {
     question: 'What is the "agonic line" position relative to Australia and what does it mean for navigation?',
     options: [
       'A.  agonic line divides day and night — it is a solar not magnetic phenomenon, and the track must be verified against the planned flight path — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'B. tralia has no agonic line — variation is always easterly throughout the country, as shown on VNC/ERC charts with the appropriate symbology — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'B. Tralia has no agonic line — variation is always easterly throughout the country, as shown on VNC/ERC charts with the appropriate symbology — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
       'C.  agonic line passes through the centre of Australia — variation is zero nationwide — GPS position should be cross-checked against dead reckoning — the non-electronic navigation computer (E6-B) is used to perform this calculation as required in the CASA CPL exam — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'D. The agonic line (zero variation) passes through approximately the WA coast / inland WA region. East of the agonic line: easterly variation (magnetic north is east of true north). West: westerly or near-zero variation. Navigators in eastern Australia apply approximately 10–13°E variation; those in WA apply much less',
     ],
@@ -5532,9 +5532,9 @@ export const cnavQuestions: {
     question: 'When may an IFR aircraft conduct a visual approach?',
     options: [
       'A. When ATC authorises it, the aerodrome is in sight, and the pilot can maintain visual reference with the aerodrome throughout the approach. The aircraft need not fly the full instrument procedure, but the pilot is responsible for obstacle clearance',
-      'B. sual approaches are prohibited for IFR aircraft — the full procedure must always be flown, with the result entered on the navigation log before departure — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'C. en the pilot abandons all instruments and navigates visually from the outset — the navigation computer is used to perform this calculation — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
-      'D. visual approach in IMC is permitted if the pilot has GPS guidance — this technique is essential for accurate dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'B. Sual approaches are prohibited for IFR aircraft — the full procedure must always be flown, with the result entered on the navigation log before departure — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'C. En the pilot abandons all instruments and navigates visually from the outset — the navigation computer is used to perform this calculation — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'D. Visual approach in IMC is permitted if the pilot has GPS guidance — this technique is essential for accurate dead reckoning — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
     ],
     correct: 0,
     explanation: 'Visual approach clearance: issued by ATC when weather is suitable and the aerodrome is in sight. The pilot discontinues the instrument procedure and proceeds visually. Terrain clearance becomes the pilot\'s responsibility on a visual approach.',
@@ -5557,7 +5557,7 @@ export const cnavQuestions: {
     options: [
       'A. R flight plans are filed with Airservices Australia only for flights over 500 NM — the navigation computer is used to perform this calculation — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'B. R flight notifications are optional for day flights — required only at night, with the result entered on the navigation log before departure — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure',
-      'C. ly aircraft registration and destination — no other details are required — GPS position should be cross-checked against dead reckoning — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'C. Ly aircraft registration and destination — no other details are required — GPS position should be cross-checked against dead reckoning — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
       'D. A VFR flight notification includes: aircraft registration, aircraft type, departure point, destination, route, ETD, ETA/SARTIME, number of persons on board, fuel endurance, and emergency equipment. Submitted to ATS or as a SARWATCH with a responsible person',
     ],
     correct: 3,
@@ -5570,7 +5570,7 @@ export const cnavQuestions: {
       'A. R range decreases at altitude; ADF range increases — opposite characteristics, as defined in the Aeronautical Information Publication — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
       'B. VOR (VHF) range is line-of-sight — typically 200 NM at high altitude, limited by terrain. ADF (LF/MF) range is up to 200+ NM depending on transmitter power — not line-of-sight but subject to night effect, precipitation static, and coastal refraction errors',
       'C. R range is unlimited; ADF range is limited to 25 NM, as defined in the Aeronautical Information Publication — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
-      'D. th VOR and ADF have identical range of exactly 100 NM regardless of altitude, as shown on VNC/ERC charts with the appropriate symbology — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
+      'D. Th VOR and ADF have identical range of exactly 100 NM regardless of altitude, as shown on VNC/ERC charts with the appropriate symbology — VNC and ERC charts display the relevant information using ICAO standard symbology as described in AIP GEN 3.2',
     ],
     correct: 1,
     explanation: 'VOR operates VHF — line-of-sight limited. Range increases with altitude: approx. 1.25 × √altitude (ft) NM. ADF operates LF/MF — not strictly line-of-sight, ground wave propagation allows longer range. ADF suffers from: night effect (sky wave interference at night), coastal effect (refraction at coastlines), precipitation static.',
@@ -5615,8 +5615,8 @@ export const cnavQuestions: {
   {
     question: 'What is "standard pressure" and when is it set on the altimeter?',
     options: [
-      'A. andard pressure is set on departure and left there for the entire flight, as defined in the Aeronautical Information Publication — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
-      'B. andard pressure is only used for aircraft performance calculations — not for altimetry, as shown on VNC/ERC charts with the appropriate symbology — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'A. Andard pressure is set on departure and left there for the entire flight, as defined in the Aeronautical Information Publication — GPS position should always be cross-checked against dead reckoning position at regular intervals throughout the flight',
+      'B. Andard pressure is only used for aircraft performance calculations — not for altimetry, as shown on VNC/ERC charts with the appropriate symbology — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
       'C. 13 hPa — set below the transition altitude for terrain clearance — GPS position should be cross-checked against dead reckoning — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice',
       'D. 1013.25 hPa — set above the transition altitude, placing the aircraft in the standard pressure region (flight levels). Ensures all aircraft reference the same pressure datum and eliminates altimetry errors from QNH variations across geographic areas',
     ],
@@ -5699,9 +5699,9 @@ export const cnavQuestions: {
   {
     question: 'What is the "missed approach" procedure and when is it initiated?',
     options: [
-      'A. ssed approach is only required at night — day approaches can continue below minima if the pilot is visual — pilots must apply this correction on all cross-country flights — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
-      'B. ssed approach is initiated only when the runway lights cannot be seen, as defined in the Aeronautical Information Publication — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
-      'C. ssed approach is always initiated at 200 ft AGL — regardless of approach type, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'A. Ssed approach is only required at night — day approaches can continue below minima if the pilot is visual — pilots must apply this correction on all cross-country flights — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
+      'B. Ssed approach is initiated only when the runway lights cannot be seen, as defined in the Aeronautical Information Publication — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam',
+      'C. Ssed approach is always initiated at 200 ft AGL — regardless of approach type, and the track must be verified against the planned flight path — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition',
       'D. Missed approach is initiated when: at DA (precision) — visual reference is not established; or at MAP (non-precision) — having descended to MDA and not established required visual reference. The published missed approach procedure specifies the climb, track, and holding instructions',
     ],
     correct: 3,
@@ -5735,10 +5735,10 @@ export const cnavQuestions: {
   {
     question: 'What is "compass deviation" and how does it differ from magnetic variation?',
     options: [
-      'A. eviation only affects the ADF compass — directional gyros are unaffected by deviation — ATC may assign a different track for traffic management',
-      'B. eviation is a fixed value printed on charts — identical to variation for any given location — variation must be checked against the current isogonal chart',
+      'A. Eviation only affects the ADF compass — directional gyros are unaffected by deviation — ATC may assign a different track for traffic management',
+      'B. Eviation is a fixed value printed on charts — identical to variation for any given location — variation must be checked against the current isogonal chart',
       'C. Deviation is the angular error between magnetic north and compass north caused by the aircraft\'s own magnetic fields (engines, electrical systems, ferrous structure)',
-      'D. eviation is caused by the Earth\'s magnetic field — it is the same as variation — variation must be checked against the current isogonal chart',
+      'D. Eviation is caused by the Earth\'s magnetic field — it is the same as variation — variation must be checked against the current isogonal chart',
     ],
     correct: 2,
     explanation: 'Compass deviation is the error between magnetic north and the compass reading caused by local magnetic influences within the aircraft (engine, avionics, structure). It varies with aircraft heading and is recorded on the compass deviation card in the aircraft. Variation is an Earth property; deviation is an aircraft property.',
@@ -5879,10 +5879,10 @@ export const cnavQuestions: {
   {
     question: 'What is "maximum endurance" speed and how does it differ from "long-range cruise"?',
     options: [
-      'A. imum endurance speed is higher than cruise speed — more power = more endurance, with the result entered on the navigation log before departure — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'A. Imum endurance speed is higher than cruise speed — more power = more endurance, with the result entered on the navigation log before departure — this technique is covered in the CPL navigation syllabus and requires practice on the flight computer before the exam — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
       'B. Maximum endurance speed minimises fuel flow — keeping the aircraft airborne as long as possible (NM/hour is not optimised). Long-range cruise maximises NM per litre — flying further per unit of fuel. Maximum endurance speed is lower than long-range cruise. Used when time airborne matters more than distance covered (SAR, waiting for weather)',
-      'C. imum endurance and long-range cruise are identical speeds, with the result entered on the navigation log before departure — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
-      'D. g-range cruise is always slower than maximum endurance — ATC may assign a different track for traffic management — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
+      'C. Imum endurance and long-range cruise are identical speeds, with the result entered on the navigation log before departure — understanding this concept is essential for both the CPL theory exam and for safe cross-country navigation in practice — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'D. G-range cruise is always slower than maximum endurance — ATC may assign a different track for traffic management — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — in practice, pilots must cross-check multiple information sources including chart data, ERSA entries, and ATC instructions to correctly apply this knowledge on cross-country and charter operations',
     ],
     correct: 1,
     explanation: 'Max endurance: minimum fuel flow → maximum time aloft. Lower speed (typically near best L/D speed for piston). Long-range cruise: maximum NM per litre → fly furthest on available fuel. For most piston aircraft, long-range cruise > max endurance speed. Use max endurance: fuel emergency, holding, waiting for weather. Use long-range cruise: maximising range on available fuel.',
@@ -5939,10 +5939,10 @@ export const cnavQuestions: {
   {
     question: 'What is "ILS capture" and what is the correct sequence for intercepting the glideslope?',
     options: [
-      'A. ercept glideslope first, then localizer — vertical then lateral — GPS position should be cross-checked against dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
-      'B. ercept glideslope first at the outer marker — localizer is irrelevant until inside the marker — variation must be checked against the current isogonal chart — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
+      'A. Ercept glideslope first, then localizer — vertical then lateral — GPS position should be cross-checked against dead reckoning — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — the navigation computer and current charts are required to perform these calculations accurately, and the results must be verified on the navigation log before committing to a heading in flight',
+      'B. Ercept glideslope first at the outer marker — localizer is irrelevant until inside the marker — variation must be checked against the current isogonal chart — the navigation log must reflect this calculation, and the result cross-checked against the chart before departure — VNC chart reading, dead reckoning techniques, and ATC procedures all connect to this concept, making it central to both the theory examination and the CPL flight test skill requirements',
       'C. Standard ILS capture: establish on localizer first (lateral guidance); then intercept glideslope from below (fly level at FAF altitude until glideslope needle comes down and centres from above); then begin descent tracking the glideslope. Intercepting glideslope from above risks a false glideslope capture or excessively steep approach',
-      'D. ultaneously capture both localizer and glideslope — sequence does not matter, as defined in the Aeronautical Information Publication — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
+      'D. Ultaneously capture both localizer and glideslope — sequence does not matter, as defined in the Aeronautical Information Publication — magnetic variation must be applied correctly, using the current isogonal value from the most recent chart edition — the AIP ENR and DAP publications contain the definitive Australian information on this topic, and candidates must be familiar with the relevant sections before the CASA CPL navigation examination',
     ],
     correct: 2,
     explanation: 'ILS capture sequence: (1) Establish on the localizer (CDI centres, TO flag, tracking inbound course); (2) At FAF altitude, fly level waiting for the glideslope to descend to you (intercept from below); (3) As glideslope needle centres, begin descent on the GS. Never intercept glideslope from above — risk of false glideslope or destabilised approach.',
@@ -5963,7 +5963,7 @@ export const cnavQuestions: {
   {
     question: 'What is "position plot" accuracy and what are the main sources of DR error?',
     options: [
-      'A. e only source of DR error is wind — heading and speed are always accurate — pilots must apply this correction on all cross-country flights — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
+      'A. E only source of DR error is wind — heading and speed are always accurate — pilots must apply this correction on all cross-country flights — this procedure is specified in the AIP and must be followed by all pilots operating in Australian airspace',
       'B.  accuracy is constant — errors do not accumulate over time, and the track must be verified against the planned flight path — DME, VOR, and NDB position fixing techniques supplement GPS and provide redundancy in cross-country navigation',
       'C.  accuracy only degrades above FL200 — below this altitude errors are negligible — ATC may assign a different track for traffic management — the AIP and ERSA contain the specific values applicable to each aerodrome and controlled airspace area in Australia',
       'D. DR accuracy degrades with time due to: wind estimation errors (actual vs forecast), heading errors (DI precession, compass deviation), TAS errors (altimeter, ASI calibration), and timing errors. Error accumulates as DR time extends',
