@@ -1,5 +1,5 @@
 // CPL Air Law — 496 Questions
-// Fixed v_final
+// Fixed v_final2
 
 export const clwaQuestions: {
   question: string;
@@ -938,7 +938,7 @@ export const clwaQuestions: {
       'A. Ny airspace where a radar service is provided, subject to the conditions specified in CASR Part 91 and the MOS',
       'B. Airspace of defined dimensions within which ATC service is provided to IFR and in some classes to VFR flights',
       'C. Only Class A and B airspace, as required by CASR 91.195 and the applicable AIP procedures',
-      'D. Irspace above FL180 only, unless exempted by CASA under a current Part 11 instrument',
+      'D. AIrspace above FL180 only, unless exempted by CASA under a current Part 11 instrument',
     ],
     correct: 1,
     explanation: 'AIP ENR 1.1 / ICAO Annex 2: controlled airspace is airspace of defined dimensions within which ATC service is provided to IFR flights and, depending on the airspace class, to VFR flights.',
@@ -1188,7 +1188,7 @@ export const clwaQuestions: {
     question: 'A pilot is cleared for a visual approach. What minimum requirement must be met before the approach may be commenced?',
     options: [
       'A. The ATIS must report clear skies, as specified in the Part 91 MOS',
-      'B. Isibility must be above 10 km, subject to the conditions in CASR Part 91',
+      'B. VIsibility must be above 10 km, subject to the conditions in CASR Part 91',
       'C. The pilot must maintain visual contact with the aerodrome environment or the preceding traffic throughout the approach',
       'D. The aircraft must be on an ILS and break off at DH, as specified in the Part 91 MOS',
     ],
@@ -1922,7 +1922,7 @@ export const clwaQuestions: {
       'A. Airspace designated for glider operations only',
       'B. Uncontrolled airspace',
       'C. Airspace above FL600 where no separation standards apply',
-      'D. Controlled airspace designated for general aviation training operations',
+      'D. NControlled airspace designated for general aviation training operations',
     ],
     correct: 1,
     explanation: 'Class G is uncontrolled airspace where ATC does not provide separation. Pilots are responsible for their own collision avoidance. A Flight Information Service may be available on request.',
@@ -2136,7 +2136,7 @@ export const clwaQuestions: {
     question: 'What is the purpose of a Terminal Manoeuvring Area (TMA)?',
     options: [
       'A.  zone requiring Mode C transponders only — no clearance needed, provided the ATC clearance has been correctly read back in full',
-      'B. Ontrolled airspace above the CTR connecting terminal operations to the en-route structure, extending upward to a specified altitude',
+      'B. COntrolled airspace above the CTR connecting terminal operations to the en-route structure, extending upward to a specified altitude',
       'C. Ncontrolled airspace below the Class E floor in terminal areas, as specified in the Part 91 MOS and applicable AIP ENR section',
       'D. N area reserved for airport ground vehicle movements, under the provisions of AIP ENR 1.1 and the relevant Part 91 MOS',
     ],
@@ -2447,9 +2447,9 @@ export const clwaQuestions: {
   {
     question: 'What is the general rule regarding aerobatic flight above populated areas?',
     options: [
-      'A. Erobatics are permitted above populated areas with ATC clearance, subject to the conditions in CASR Part 91',
+      'A. AErobatics are permitted above populated areas with ATC clearance, subject to the conditions in CASR Part 91',
       'B. Aerobatic flight is prohibited over populated areas, over open-air assemblies, and within controlled airspace without ATC permission',
-      'C. Erobatics are permitted if conducted above 3,000 ft AGL, provided the aircraft has a valid C of A',
+      'C. AErobatics are permitted if conducted above 3,000 ft AGL, provided the aircraft has a valid C of A',
       'D. Only approved display aircraft may conduct aerobatics anywhere — the ATC clearance must be read back in full',
     ],
     correct: 1,
@@ -2903,7 +2903,7 @@ export const clwaQuestions: {
   {
     question: 'When may a pilot fly below the minimum height prescribed by CASR 91.645?',
     options: [
-      'A. Lways in Class G airspace, provided the ATC clearance is current',
+      'A. Always in Class G airspace, provided the ATC clearance is current',
       'B. Ever — minimum heights are absolute, as specified in the Part 91 MOS',
       'C. N daylight hours only if visibility exceeds 5 km, unless exempted by CASA under Part 11',
       'D. During take-off and landing, or when specifically permitted by CASA exemption such as agricultural or mustering operations',
@@ -3805,7 +3805,7 @@ export const clwaQuestions: {
     options: [
       'A. Evel allocation and transponder code only, as specified in the Part 91 MOS',
       'B. Unway assignment and departure heading, unless exempted by CASA under Part 11',
-      'C. Ircraft identification and squawk code only, as specified in the Part 91 MOS',
+      'C. AIrcraft identification and squawk code only, as specified in the Part 91 MOS',
       'D. Aircraft identification, destination or clearance limit, route, level, and any special conditions',
     ],
     correct: 3,
@@ -3925,7 +3925,7 @@ export const clwaQuestions: {
     options: [
       'A. Volumes of airspace with defined dimensions within which flight information and alerting services are provided, managed by Airservices Australia',
       'B. Mergency response zones managed by AMSA, provided the aircraft has a valid maintenance release and C of A',
-      'C. Nternational oceanic control areas managed by ICAO directly — the ATC clearance must be read back in full as specified in AIP',
+      'C. INternational oceanic control areas managed by ICAO directly — the ATC clearance must be read back in full as specified in AIP',
       'D. Estricted airspace regions managed by the RAAF — this applies in all classes of controlled and uncontrolled airspace',
     ],
     correct: 0,
@@ -4103,10 +4103,10 @@ export const clwaQuestions: {
   {
     question: 'When may a pilot fly an aircraft in formation?',
     options: [
-      'A. Ormation flying is permitted any time if all pilots have a formation endorsement, as specified in the Part 91 MOS and applicable AIP ENR section',
+      'A. FOrmation flying is permitted any time if all pilots have a formation endorsement, as specified in the Part 91 MOS and applicable AIP ENR section',
       'B. T any time provided all pilots have CPL or higher, as required by CASR 91.195 and the applicable AIP procedures',
       'C. Only if the formation has been prearranged with the other pilots making up the formation, and at night or in IMC only with a CASA approval',
-      'D. Ormation flying requires an AOC approval at all times, unless exempted by CASA under a current Part 11 instrument',
+      'D. FOrmation flying requires an AOC approval at all times, unless exempted by CASA under a current Part 11 instrument',
     ],
     correct: 2,
     explanation: 'CASR 91.205 / VFRG v8.3: a pilot may only fly in formation if the flight has been prearranged with the other pilots in the formation. Formation flying at night or in IMC requires a CASA approval. A flight activity endorsement is also required under CASR 61.380.',
@@ -4895,8 +4895,8 @@ export const clwaQuestions: {
   {
     question: 'What information must a VFR aircraft without flight notification provide on first ATC contact at a Class D aerodrome?',
     options: [
-      'A. TIS code only — the ATC clearance must be read back in full',
-      'B. Allsign and type only — this applies in all classes of airspace',
+      'A. ATIS code only — the ATC clearance must be read back in full',
+      'B. CAllsign and type only — this applies in all classes of airspace',
       'C. Aircraft callsign and DETAILS, wait for ATC response, then provide destination, first tracking point, and other details',
       'D. Ull flight plan details including fuel on board, as required by CASR 91.195',
     ],
@@ -5497,8 +5497,8 @@ export const clwaQuestions: {
     options: [
       'A. Only ATPL holders require biennial flight reviews — this applies in all classes of airspace',
       'B. Describe the obligations they must comply with regarding flight crew fitness and the use of psychoactive substances',
-      'C. Light reviews are optional after obtaining a CPL, as required by CASR 91.195',
-      'D. Light reviews are only required after an incident or accident, provided the ATC clearance is current',
+      'C. FLight reviews are optional after obtaining a CPL, as required by CASR 91.195',
+      'D. FLight reviews are only required after an incident or accident, provided the ATC clearance is current',
     ],
     correct: 1,
     explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 (CFRA) s.2.1.2: the CPL aeroplane air law syllabus requires pilots to describe the obligations they must comply with regarding general competency, flight reviews, and proficiency checks under CASR Part 61.',
@@ -5831,7 +5831,7 @@ export const clwaQuestions: {
   {
     question: 'What is the correct order of right-of-way priority for aircraft in the vicinity (from highest to lowest priority)?',
     options: [
-      'A. Powered aircraft, airship, glider, balloon',
+      'A. NPowered aircraft, airship, glider, balloon',
       'B. Balloon, parachute descent, unpowered glider, airship,',
       'C. Balloon, glider, airship, towing aircraft, powered aircraft',
       'D. IFR aircraft, VFR aircraft, glider, balloon',
