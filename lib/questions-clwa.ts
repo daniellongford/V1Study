@@ -1,5 +1,4 @@
 // CPL Air Law — 496 Questions
-// Fixed v_final9
 
 export const clwaQuestions: {
   question: string;
@@ -325,7 +324,7 @@ export const clwaQuestions: {
     options: [
       'A. A $500 on-the-spot fine for a first offence',
       'B. The pilot must complete an approved alcohol awareness course before flying again',
-      'C. Operating under the influence of alcohol or drugs is a criminal offence under',
+      'C. Operating under the influence of alcohol or drugs is a criminal offence under the Civil Aviation Act 1988 — the pilot\'s licence may be suspended or cancelled and criminal penalties apply',
       'D. A 30-day licence suspension applies automatically',
     ],
     correct: 2,
@@ -467,7 +466,7 @@ export const clwaQuestions: {
   {
     question: 'What is the minimum height at which an aircraft may fly over a built-up area unless conducting a take-off or landing?',
     options: [
-      'A. 1,000 ft above the highest obstacle within',
+      'A. 1,000 ft above the highest obstacle within 600 m of the aircraft, and at a height that would allow a safe forced landing if the engine fails',
       'B. 300 m above the highest obstacle within 300 m',
       'C. 500 ft AGL',
       'D. 1,500 ft AGL',
@@ -863,7 +862,7 @@ export const clwaQuestions: {
   {
     question: 'What class of airspace is used at major Australian capital city airports from the surface upward?',
     options: [
-      'A. Class C CTR from the surface, with Class C TMA above',
+      'A. Class C CTR from the surface, with Class C TMA above — this applies at Sydney, Melbourne, Brisbane, Adelaide, and Perth',
       'B. Class A from the surface to FL245',
       'C. Class G below 1,500 ft, Class C above',
       'D. Class D from the surface, transitioning to Class E above',
@@ -950,7 +949,7 @@ export const clwaQuestions: {
       'A. The aircraft at the lower altitude gives way',
       'B. The slower aircraft gives way to the faster',
       'C. The lighter aircraft gives way to the heavier',
-      'D. The aircraft that has the other aircraft on',
+      'D. The aircraft that has the other aircraft on its right must give way — the aircraft on the right has right of way',
     ],
     correct: 3,
     explanation: 'CASR 91.330 right-of-way table Item 6: when two aircraft are on converging headings at approximately the same altitude, the aircraft that has the other aircraft on its right must give way.',
@@ -1034,7 +1033,7 @@ export const clwaQuestions: {
       'A. Same as day: 1,500 m visibility, clear of cloud',
       'B. 1,500 m visibility; 500 ft vertical and 600 m horizontal cloud clearance',
       'C. 5,000 m visibility; clear of cloud',
-      'D. 3,000 m visibility; 1,000 ft above, 500 ft below',
+      'D. 3,000 m visibility; 1,000 ft above, 500 ft below, and 1,500 m horizontally from cloud',
     ],
     correct: 3,
     explanation: 'CASR 91.615 Table 91.615: night VFR in Class G below 3,000 ft AMSL requires 3,000 m visibility and cloud clearance of 1,000 ft above, 500 ft below, and 600 m horizontal.',
@@ -1056,7 +1055,7 @@ export const clwaQuestions: {
     question: 'What is the lower limit of Class E airspace in remote Australia?',
     options: [
       'A. 1,500 ft AMSL in all remote areas',
-      'B. Varies by location and is depicted on',
+      'B. Varies by location and is depicted on aeronautical charts — commonly 8,500 ft AMSL in remote Australia',
       'C. FL245 — Class E starts where Class A ends',
       'D. Always 10,000 ft AMSL',
     ],
@@ -1140,7 +1139,7 @@ export const clwaQuestions: {
     question: 'What radiocommunication capability must an aircraft have for flight in Australian airspace?',
     options: [
       'A. Only a receive-only capability is required',
-      'B. Equipment enabling 2-way voice communications and communication on',
+      'B. Equipment enabling 2-way voice communications and communication on the emergency frequency 121.5 MHz',
       'C. HF radio for all flights beyond 100 NM from the departure aerodrome',
       'D. A Mode S transponder with ADSB capability',
     ],
@@ -1202,7 +1201,7 @@ export const clwaQuestions: {
       'A. ATC cancels it automatically when the aircraft lands at a controlled aerodrome',
       'B. AMSA tracks all aircraft via ADS-B and cancels SARTIMEs automatically',
       'C. The aircraft operator cancels it on receipt of the landing report',
-      'D. The PIC or nominated responsible person must cancel with JRCC or ATS on',
+      'D. The PIC or nominated responsible person must cancel with JRCC or ATS on completion of the flight — failure to cancel triggers a search and rescue response',
     ],
     correct: 3,
     explanation: 'The PIC or their nominated responsible person must cancel the SARTIME with JRCC/ATS on completion of the flight. Failure to cancel triggers activation of SAR resources.',
@@ -1212,7 +1211,7 @@ export const clwaQuestions: {
     question: 'A VFR flight operating at or below 2,000 ft AGL is approaching Class D airspace. What is required before entry?',
     options: [
       'A. No clearance is needed below 2,000 ft',
-      'B. Two-way radio communication must be',
+      'B. Two-way radio communication must be established before entering Class D airspace — ATC clearance is also required',
       'C. Pilot need only broadcast intentions on CTAF',
       'D. Pilot must obtain an IFR clearance',
     ],
@@ -1584,7 +1583,7 @@ export const clwaQuestions: {
     question: 'On which frequencies must an ELT transmit when activated?',
     options: [
       'A. 406 MHz only',
-      'B. Simultaneously on',
+      'B. Simultaneously on 121.5 MHz and 406 MHz — the 406 MHz signal is processed by COSPAS-SARSAT for position determination',
       'C. 121.5 MHz only',
       'D. 243 MHz and 406 MHz',
     ],
@@ -2234,7 +2233,7 @@ export const clwaQuestions: {
       'A. 3,000 m and 500 ft vertical/600 m horizontal cloud clearance',
       'B. Clear of cloud and 1,500 m visibility',
       'C. 8,000 m visibility; 1,000 ft vertical and 1 NM horizontal',
-      'D. 5,000 m visibility; 1,000 ft above, 500 ft below',
+      'D. 5,000 m visibility; 1,000 ft above, 500 ft below, and 1,500 m horizontally from cloud in Class E airspace',
     ],
     correct: 3,
     explanation: 'AIP ENR 1.2 Table ENR 1.2-1: in Class E airspace at or below FL200, VFR requires 5,000 m visibility and cloud clearance of 1,000 ft above, 500 ft below, and 1 NM horizontal.',
@@ -2342,7 +2341,7 @@ export const clwaQuestions: {
       'A. Class C',
       'B. Class B',
       'C. Class E',
-      'D. Class A',
+      'D. Class A — the Upper Control Area (UCA) above FL245 is Class A airspace in Australia',
     ],
     correct: 3,
     explanation: 'Class A airspace (the Upper Control Area) exists above FL245 in Australia. Only IFR flight is permitted and all aircraft receive ATC separation.',
@@ -2735,7 +2734,7 @@ export const clwaQuestions: {
   {
     question: 'May the operator of an aircraft override a PIC\'s safety decision?',
     options: [
-      'A. No — the PIC has final authority over the safety of the flight and may not be',
+      'A. No — the PIC has final authority over the safety of the flight and may refuse any instruction that would endanger the aircraft',
       'B. Yes — operators have full authority over all operational decisions',
       'C. Only for RPT operations where the operator holds an AOC',
       'D. Operators may override PICs on commercial matters; safety decisions are shared',
@@ -3121,7 +3120,7 @@ export const clwaQuestions: {
     options: [
       'A. Exactly at the transition altitude',
       'B. When receiving clearance to climb above the transition altitude',
-      'C. After passing 10,000 ft and before levelling off at or above',
+      'C. After passing 10,000 ft and before levelling off at or above, change from 1,013.2 hPa to QNH before entering the transition layer.',
       'D. At FL100 only',
     ],
     correct: 2,
@@ -3290,7 +3289,7 @@ export const clwaQuestions: {
       'A. The pressure setting that causes the altimeter to read the aerodrome elevation on the ground',
       'B. The pressure altitude corrected for non-standard temperature',
       'C. The standard pressure setting of 1013.25 hPa used above the transition altitude',
-      'D. The altimeter sub-scale pressure setting that causes the altimeter to read altitude above',
+      'D. The altimeter sub-scale pressure setting that causes the altimeter to display altitude above mean sea level at the current location',
     ],
     correct: 3,
     explanation: 'QNH is the altimeter sub-scale setting that causes the altimeter to display altitude above mean sea level. It is the standard setting used below the transition altitude in Australia.',
@@ -3362,7 +3361,7 @@ export const clwaQuestions: {
       'A. Class E',
       'B. Class C',
       'C. Class B',
-      'D. Class A',
+      'D. Class A — all Australian airspace above FL245 is Class A, in which only IFR operations are permitted',
     ],
     correct: 3,
     explanation: 'AIP ENR 1.1: Australian upper airspace above FL245 is Class A airspace, in which only IFR flight is permitted and all aircraft are subject to ATC separation.',
@@ -3371,7 +3370,7 @@ export const clwaQuestions: {
   {
     question: 'A CPL holder wants to fly a friend on a private, non-commercial flight. Is a CPL sufficient?',
     options: [
-      'A. Yes — a CPL includes all PPL privileges including',
+      'A. Yes — a CPL includes all PPL privileges including the right to carry passengers for private purposes',
       'B. Only in Class G airspace on a day VFR flight plan',
       'C. Only in aircraft under 1,000 kg MTOW without an AOC',
       'D. No — a CPL requires an AOC for all passenger operations',
@@ -3396,7 +3395,7 @@ export const clwaQuestions: {
     question: 'ATC says "STOP SQUAWK CHARLIE." What must the pilot do?',
     options: [
       'A. Select squawk 7600 to indicate equipment fault',
-      'B. Disable Mode C altitude reporting while',
+      'B. Disable Mode C altitude reporting while maintaining the primary transponder squawk code',
       'C. Turn off the entire transponder',
       'D. Select squawk code 7000',
     ],
@@ -3506,7 +3505,7 @@ export const clwaQuestions: {
       'A. Whenever fuel is below the planned figure',
       'B. When fuel is below 30 minutes remaining',
       'C. Fuel emergencies are not a recognised category; only MINIMUM FUEL exists',
-      'D. When the calculated fuel remaining indicates the aircraft may not be',
+      'D. When the calculated fuel remaining indicates the aircraft may not be able to reach its destination with final reserve fuel intact',
     ],
     correct: 3,
     explanation: 'AIP ENR 6.1: a MAYDAY fuel emergency is declared when the fuel state has deteriorated to the point where the aircraft cannot land safely with the required reserve — requiring immediate ATC assistance. This is distinct from "MINIMUM FUEL" which is advisory.',
@@ -3877,7 +3876,7 @@ export const clwaQuestions: {
     options: [
       'A. It sets the transponder mandatory zone boundary',
       'B. It replaces the CTR for non-turbine aircraft',
-      'C. It defines the lower limit of controlled airspace above',
+      'C. It defines the lower limit of controlled airspace above which ATC separation services apply',
       'D. It defines the minimum safe altitude for jet aircraft only',
     ],
     correct: 2,
@@ -3935,7 +3934,7 @@ export const clwaQuestions: {
   {
     question: 'What is the correct procedure when a pilot cannot raise ATC on the assigned frequency?',
     options: [
-      'A. Try alternative frequencies, transmit blind on',
+      'A. Try alternative frequencies, transmit blind on 121.5 MHz, squawk 7600, and follow the lost communications procedures in the AIP',
       'B. Squawk 7700 and continue as cleared',
       'C. Disable the transponder to attract radar attention',
       'D. Land immediately at the nearest aerodrome',
@@ -4082,7 +4081,7 @@ export const clwaQuestions: {
       'A. Any aircraft damage exceeding $1,000',
       'B. Any flight requiring emergency services attendance',
       'C. Any engine failure during flight',
-      'D. An occurrence involving circumstances indicating',
+      'D. An occurrence involving circumstances indicating there was a high probability of an accident associated with the operation of an aircraft',
     ],
     correct: 3,
     explanation: 'Transport Safety Investigation Act 2003 s.3: a serious incident is an occurrence other than an accident that involves circumstances indicating there was a high probability of an accident and that is associated with the operation of an aircraft.',
@@ -4237,7 +4236,7 @@ export const clwaQuestions: {
     options: [
       'A. 1,000 ft vertically and 1 NM horizontally',
       'B. Clear of cloud',
-      'C. 1,000 ft above, 500 ft below',
+      'C. 1,000 ft above, 500 ft below, and 1,500 m horizontally from cloud, with 5,000 m flight visibility in Class G at or above 3,000 ft AMSL',
       'D. 500 ft vertically and 600 m horizontally',
     ],
     correct: 2,
@@ -4406,7 +4405,7 @@ export const clwaQuestions: {
       'A. Confirm fuel state with ATC before entering the CTR',
       'B. File an arrival report with NAIPS',
       'C. Obtain a transponder code from approach control',
-      'D. Obtain the ATIS and advise the ATIS code letter on',
+      'D. Obtain the ATIS and advise the ATIS code letter on first contact with ATC',
     ],
     correct: 3,
     explanation: 'AIP ENR 1.1 and VFRG v8.3: if landing or taking off at an aerodrome where ATIS is provided, the pilot should obtain the ATIS before first contact on the approach or tower frequency. On first contact, the pilot must advise receipt of the ATIS code letter, for example "Received information Echo."',
@@ -4873,7 +4872,7 @@ export const clwaQuestions: {
     options: [
       'A. Clear of cloud',
       'B. 1,000 ft vertically and 1,500 m horizontally',
-      'C. 1,000 ft above, 500 ft below',
+      'C. 1,000 ft above, 500 ft below, and 1,500 m horizontally from cloud, with 5,000 m visibility in Class C airspace',
       'D. 500 ft vertical, 500 m horizontal',
     ],
     correct: 2,
@@ -4958,7 +4957,7 @@ export const clwaQuestions: {
       'A. PAN-PAN is the radio call; MAYDAY is the transponder code',
       'B. PAN-PAN is used for weather; MAYDAY for mechanical failure',
       'C. MAYDAY is used IFR; PAN-PAN is used VFR',
-      'D. MAYDAY indicates grave and imminent danger requiring',
+      'D. MAYDAY indicates grave and imminent danger requiring immediate assistance — use it for engine failure, fire, or medical emergency',
     ],
     correct: 3,
     explanation: 'AIP ENR 6.1 / ICAO Doc 4444: MAYDAY is the distress call for grave and imminent danger. PAN-PAN is the urgency call for an urgent situation concerning the safety of an aircraft or occupant, but not requiring immediate assistance.',
@@ -4968,7 +4967,7 @@ export const clwaQuestions: {
     question: 'What is the purpose of a Special Flight Permit (SFP)?',
     options: [
       'A. It replaces the maintenance release',
-      'B. It authorises a specific flight that would',
+      'B. It authorises a specific flight that would otherwise not comply with the CASRs — issued by CASA for exceptional circumstances',
       'C. It is required for all flights above FL250',
       'D. It allows flight for revenue purposes without a CPL',
     ],
@@ -5101,7 +5100,7 @@ export const clwaQuestions: {
     options: [
       'A. Class C requires an IFR flight plan only for turbine aircraft',
       'B. VFR flight is not permitted in Class C',
-      'C. Two-way radio communication and an ATC clearance must be',
+      'C. Two-way radio communication and an ATC clearance must beer IFR or VFR.',
       'D. Only a radio call on approach frequency is needed',
     ],
     correct: 2,
@@ -5269,7 +5268,7 @@ export const clwaQuestions: {
     options: [
       'A. Only a paper original is acceptable',
       'B. A photograph on a mobile phone always satisfies the requirement',
-      'C. An approved electronic copy may be acceptable if CASA has',
+      'C. An approved electronic copy may be acceptable if CASA has approved the electronic format for that document type',
       'D. Electronic documents are never acceptable for ramp checks',
     ],
     correct: 2,
