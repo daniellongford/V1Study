@@ -11,7 +11,6 @@ import { cagkQuestions } from '../../../lib/questions-cagk'
 import { cadaQuestions } from '../../../lib/questions-cada'
 import { cfpaQuestions } from '../../../lib/questions-cfpa'
 
-// Full question banks keyed by dashboard subject name
 const fullBanks: Record<string, any[]> = {
   'PPL Theory': pplaQuestions,
   'Flight Rules and Air Law': clwaQuestions,
@@ -27,7 +26,6 @@ function getBank(subject: string, hasPlan: boolean): any[] {
   if (hasPlan && fullBanks[subject] && fullBanks[subject].length > 0) {
     return fullBanks[subject]
   }
-  // Fall back to trial questions
   if (freeQuestions[subject]) return freeQuestions[subject]
   const lower = subject.toLowerCase().trim()
   for (const key of Object.keys(freeQuestions)) {
@@ -37,6 +35,60 @@ function getBank(subject: string, hasPlan: boolean): any[] {
     if (lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) return freeQuestions[key]
   }
   return []
+}
+
+// --- Seen-question tracking via localStorage ---
+function getSeenKey(subject: string) {
+  return `v1study_seen_${subject.replace(/\s+/g, '_')}`
+}
+
+function getSeenIndices(subject: string): number[] {
+  try {
+    const raw = localStorage.getItem(getSeenKey(subject))
+    return raw ? JSON.parse(raw) : []
+  } catch { return [] }
+}
+
+function saveSeenIndices(subject: string, indices: number[]) {
+  try {
+    localStorage.setItem(getSeenKey(subject), JSON.stringify(indices))
+  } catch {}
+}
+
+function clearSeenIndices(subject: string) {
+  try {
+    localStorage.removeItem(getSeenKey(subject))
+  } catch {}
+}
+
+function pickQuestions(bank: any[], subject: string, count: number): { questions: any[], newSeen: number[] } {
+  if (bank.length === 0) return { questions: [], newSeen: [] }
+
+  const seen = getSeenIndices(subject)
+  const allIndices = bank.map((_, i) => i)
+
+  // Unseen indices = all indices not yet seen
+  let unseen = allIndices.filter(i => !seen.includes(i))
+
+  // If we don't have enough unseen questions, reset and start fresh
+  if (unseen.length < count) {
+    clearSeenIndices(subject)
+    unseen = allIndices
+  }
+
+  // Shuffle unseen and pick `count`
+  const shuffled = [...unseen].sort(() => Math.random() - 0.5)
+  const picked = shuffled.slice(0, count)
+
+  // Update seen list (add newly picked, cap at bank size to prevent unbounded growth)
+  const updatedSeen = [...seen, ...picked]
+  const cappedSeen = updatedSeen.slice(-bank.length)
+  saveSeenIndices(subject, cappedSeen)
+
+  return {
+    questions: picked.map(i => bank[i]),
+    newSeen: cappedSeen,
+  }
 }
 
 function getLicence(subject: string): string {
@@ -58,6 +110,8 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const [finalScore, setFinalScore] = useState(0)
   const [hasPlan, setHasPlan] = useState(false)
   const [planLoaded, setPlanLoaded] = useState(false)
+  const [seenCount, setSeenCount] = useState(0)
+  const [bankSize, setBankSize] = useState(0)
   const scoreRef = useRef(0)
 
   useEffect(() => {
@@ -69,8 +123,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         .eq('user_id', data.user.id)
         .eq('status', 'active')
         .single()
-      const active = !!(sub?.plan)
-      setHasPlan(active)
+      setHasPlan(!!(sub?.plan))
       setPlanLoaded(true)
     })
   }, [])
@@ -78,8 +131,10 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   useEffect(() => {
     if (!subject || !planLoaded) return
     const bank = getBank(subject, hasPlan)
-    const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
-    setQuestions(shuffled)
+    setBankSize(bank.length)
+    const { questions: picked } = pickQuestions(bank, subject, 10)
+    setQuestions(picked)
+    setSeenCount(getSeenIndices(subject).length)
     scoreRef.current = 0
   }, [subject, hasPlan, planLoaded])
 
@@ -88,15 +143,12 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
       const { data: { user } } = await supabase.auth.getUser()
       if (!user) return
       const pct = Math.round(s / total * 100)
-      const { error } = await supabase.from('scores').insert({
-        user_id: user.id,
-        subject,
+      await supabase.from('scores').insert({
+        user_id: user.id, subject,
         licence: getLicence(subject),
-        score: s,
-        total,
-        percentage: pct
+        score: s, total, percentage: pct
       })
-      if (!error) setScoreSaved(true)
+      setScoreSaved(true)
     } catch (e) {
       console.error('Score save error:', e)
     }
@@ -126,8 +178,11 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   }
 
   function restart() {
+    if (!subject || !planLoaded) return
     const bank = getBank(subject, hasPlan)
-    setQuestions([...bank].sort(() => Math.random() - 0.5).slice(0, 10))
+    const { questions: picked } = pickQuestions(bank, subject, 10)
+    setQuestions(picked)
+    setSeenCount(getSeenIndices(subject).length)
     setCurrentIdx(0)
     setFinalScore(0)
     setFinished(false)
@@ -135,6 +190,11 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
     setSelectedAnswer(null)
     setScoreSaved(false)
     scoreRef.current = 0
+  }
+
+  function resetProgress() {
+    clearSeenIndices(subject)
+    restart()
   }
 
   if (!subject || !planLoaded || questions.length === 0) return (
@@ -152,11 +212,12 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
           <div style={{ fontSize: '13px', color: '#94a3b8', fontFamily: 'monospace', marginBottom: '8px' }}>{subject}</div>
           <div style={{ fontSize: '56px', fontWeight: '800', color: '#1e3a6e', fontFamily: 'monospace' }}>{pct}</div>
           <div style={{ fontSize: '16px', color: '#64748b', marginBottom: '8px' }}>percent</div>
-          <div style={{ fontSize: '16px', fontWeight: '600', color: pct >= 70 ? '#16a34a' : '#dc2626', marginBottom: '0.5rem' }}>
+          <div style={{ fontSize: '16px', fontWeight: '600', color: pct >= 70 ? '#16a34a' : '#dc2626', marginBottom: '1rem' }}>
             {pct >= 70 ? 'Pass — well done!' : 'Below pass mark — keep studying'}
           </div>
-          {scoreSaved && <div style={{ fontSize: '12px', color: '#10b981', marginBottom: '1.5rem' }}>Score saved to your progress</div>}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '2rem' }}>
+          {scoreSaved && <div style={{ fontSize: '12px', color: '#10b981', marginBottom: '1rem' }}>Score saved to your progress</div>}
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '1.5rem' }}>
             <div style={{ background: '#f0fdf4', borderRadius: '8px', padding: '12px' }}>
               <div style={{ fontSize: '24px', fontWeight: '600', color: '#16a34a' }}>{finalScore}</div>
               <div style={{ fontSize: '12px', color: '#64748b' }}>Correct</div>
@@ -166,11 +227,16 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
               <div style={{ fontSize: '12px', color: '#64748b' }}>Incorrect</div>
             </div>
           </div>
+
+
+
           <div style={{ display: 'flex', gap: '8px' }}>
             <button onClick={restart} style={{ flex: 1, background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '11px', fontWeight: '600', cursor: 'pointer', fontSize: '14px' }}>Try Again</button>
             <a href="/dashboard" style={{ flex: 1, background: '#f8fafc', color: '#0a1628', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '11px', fontWeight: '600', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>Dashboard</a>
           </div>
-          <a href="/progress" style={{ display: 'block', marginTop: '12px', fontSize: '13px', color: '#2563eb', textDecoration: 'none' }}>View all progress →</a>
+          <a href="/progress" style={{ display: 'block', marginTop: '8px', fontSize: '13px', color: '#2563eb', textDecoration: 'none' }}>
+            View all progress →
+          </a>
         </div>
       </main>
     )
@@ -188,11 +254,20 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         </div>
         <a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Back to dashboard</a>
       </nav>
+
       <div style={{ maxWidth: '700px', margin: '0 auto', padding: '2rem' }}>
-        <div style={{ marginBottom: '6px', fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>Question {currentIdx + 1} of {questions.length}</div>
+        {/* Session progress */}
+        <div style={{ marginBottom: '4px' }}>
+          <div style={{ fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>
+            Question {currentIdx + 1} of {questions.length}
+          </div>
+        </div>
+
+        {/* Session bar */}
         <div style={{ background: '#e2e8f0', borderRadius: '99px', height: '4px', marginBottom: '1.5rem', overflow: 'hidden' }}>
           <div style={{ height: '100%', background: '#2563eb', borderRadius: '99px', width: `${(currentIdx / questions.length) * 100}%`, transition: 'width 0.4s' }}></div>
         </div>
+
         <div style={{ background: 'white', borderRadius: '12px', padding: '1.5rem', border: '1px solid #e2e8f0', marginBottom: '1rem' }}>
           <div style={{ fontSize: '11px', fontWeight: '600', color: '#2563eb', marginBottom: '10px', fontFamily: 'monospace' }}>{subject}</div>
           <div style={{ fontSize: '16px', fontWeight: '600', color: '#0a1628', lineHeight: 1.55, marginBottom: '1.25rem' }}>{q.question}</div>
@@ -207,7 +282,12 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
                 else { col = '#94a3b8' }
               }
               return (
-                <button key={i} onClick={() => selectAnswer(i)} disabled={answered} style={{ background: bg, border, borderRadius: '8px', padding: '11px 14px', textAlign: 'left', cursor: answered ? 'default' : 'pointer', fontSize: '14px', color: col, display: 'flex', alignItems: 'flex-start', gap: '10px', width: '100%' }}>
+                <button
+                  key={i}
+                  onClick={() => selectAnswer(i)}
+                  disabled={answered}
+                  style={{ background: bg, border, borderRadius: '8px', padding: '11px 14px', textAlign: 'left', cursor: answered ? 'default' : 'pointer', fontSize: '14px', color: col, display: 'flex', alignItems: 'flex-start', gap: '10px', width: '100%' }}
+                >
                   <span style={{ fontFamily: 'monospace', fontSize: '12px', background: answered && i === q.correct ? '#dcfce7' : answered && i === selectedAnswer ? '#ffe4e6' : '#f1f5f9', borderRadius: '4px', padding: '1px 6px', minWidth: '22px', textAlign: 'center', flexShrink: 0, marginTop: '1px' }}>
                     {answered && i === q.correct ? '✓' : answered && i === selectedAnswer ? '✗' : letters[i]}
                   </span>
@@ -217,6 +297,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
             })}
           </div>
         </div>
+
         {answered && (
           <div style={{ background: '#f0f7ff', border: '1px solid #bfdbfe', borderRadius: '12px', padding: '1.25rem', marginBottom: '1rem' }}>
             <div style={{ fontSize: '13px', fontWeight: '600', color: '#1d4ed8', marginBottom: '8px' }}>Explanation</div>
@@ -228,8 +309,12 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
             <AiHelpPanel question={q} subject={subject} />
           </div>
         )}
+
         {answered && (
-          <button onClick={nextQuestion} style={{ width: '100%', background: '#1e3a6e', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontSize: '15px', fontWeight: '600', cursor: 'pointer' }}>
+          <button
+            onClick={nextQuestion}
+            style={{ width: '100%', background: '#1e3a6e', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontSize: '15px', fontWeight: '600', cursor: 'pointer' }}
+          >
             {currentIdx < questions.length - 1 ? 'Next question →' : 'See results →'}
           </button>
         )}
@@ -266,7 +351,7 @@ function AiHelpPanel({ question, subject }: { question: any; subject: string }) 
       })
       const data = await res.json()
       setResponse(data.response || 'Sorry, something went wrong.')
-    } catch (e) {
+    } catch {
       setResponse('Sorry, something went wrong. Please try again.')
     }
     setLoading(false)
@@ -285,7 +370,7 @@ function AiHelpPanel({ question, subject }: { question: any; subject: string }) 
         <div>
           <div style={{ fontSize: '12px', fontWeight: '700', color: '#1d4ed8', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Ask a follow-up question</div>
           <textarea
-            placeholder={`Ask anything about this question — e.g. "Can you explain why option A is wrong?" or "Give me a real world example"`}
+            placeholder={'Ask anything about this question — e.g. "Can you explain why option A is wrong?"'}
             value={userMessage}
             onChange={e => setUserMessage(e.target.value)}
             rows={3}
