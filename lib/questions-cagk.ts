@@ -1,5 +1,5 @@
 // CPL Aircraft General Knowledge — 500 Questions
-// Auto-fixed v6
+// Fixed v_final
 
 export const cagkQuestions: {
   question: string;
@@ -12,9 +12,9 @@ export const cagkQuestions: {
     question: '"Valve timing" refers to:',
     options: [
       'A. The precise crankshaft angles at which the inlet and exhaust valves open and close relative to piston position',
-      'B. ow quickly the valves open and close in milliseconds — the maintenance schedule specifies the required inspection interval',
-      'C. he spring tension required to seat the valves at high RPM — CASR Part 43 specifies who may perform this maintenance',
-      'D. he maintenance interval for valve adjustment — this is covered in the aircraft\'s approved flight manual',
+      'B. How quickly the valves open and close in milliseconds — the maintenance schedule specifies the required inspection interval',
+      'C. The spring tension required to seat the valves at high RPM — CASR Part 43 specifies who may perform this maintenance',
+      'D. The maintenance interval for valve adjustment — this is covered in the aircraft\'s approved flight manual',
     ],
     correct: 0,
     explanation: 'Valve timing specifies exactly when (in terms of crankshaft angle) each valve opens and closes. The inlet valve opens slightly BTDC on the exhaust stroke and closes slightly after BDC on the compression stroke. This timing is set by the camshaft and is critical for engine power and efficiency.',
@@ -23,10 +23,10 @@ export const cagkQuestions: {
   {
     question: '"Gyroscopic precession" describes:',
     options: [
-      'A. he gradual drift of the directional gyro from the compass heading — CASR Part 43 specifies who may perform this maintenance',
-      'B. he tendency of a gyro to topple when the aircraft banks beyond 60° — CASR Part 43 specifies who may perform this maintenance',
+      'A. The gradual drift of the directional gyro from the compass heading — CASR Part 43 specifies who may perform this maintenance',
+      'B. The tendency of a gyro to topple when the aircraft banks beyond 60° — CASR Part 43 specifies who may perform this maintenance',
       'C. When a force is applied to a spinning gyroscope, the effect appears 90° ahead in the direction of rotation rather than in the direction of the applied force',
-      'D. he rotation of the Earth causing the gyro to appear to drift — CASR Part 43 specifies who may perform this maintenance',
+      'D. The rotation of the Earth causing the gyro to appear to drift — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 2,
     explanation: 'Precession: when a force is applied to a spinning gyro, the resultant movement occurs 90° further around in the direction of rotation (not at the point of applied force). This is used in turn coordinators to indicate rate of turn, and must be understood when interpreting aircraft attitude changes and their effect on gyroscopic instruments.',
@@ -95,10 +95,10 @@ export const cagkQuestions: {
   {
     question: 'The "aircraft logbook entry" following a maintenance action must include:',
     options: [
-      'A. nly the LAME signature — no description is required for minor work — an LAME must certify all maintenance beyond pilot authority',
-      'B. nly the date and aircraft registration, and any defect must be recorded in the aircraft technical log',
+      'A. Only the LAME signature — no description is required for minor work — an LAME must certify all maintenance beyond pilot authority',
+      'B. Only the date and aircraft registration, and any defect must be recorded in the aircraft technical log',
       'C. Date, aircraft registration, work performed (description, part numbers, ADs complied with), total time in service, and signature and authorisation number of the certifying LAME',
-      'D. ntry is only required for major repairs — minor adjustments need no logbook entry — this differs between Lycoming and Continental engine types',
+      'D. Entry is only required for major repairs — minor adjustments need no logbook entry — this differs between Lycoming and Continental engine types',
     ],
     correct: 2,
     explanation: 'Maintenance logbook entries (CASR requirements): (1) Date; (2) Description of work done (sufficiently detailed to show what was done, parts replaced, and ADs complied with); (3) Total time in service at the time; (4) Reference to work order or maintenance data used; (5) LAME name, signature, and licence number. Incomplete entries are a regulatory deficiency.',
@@ -131,9 +131,9 @@ export const cagkQuestions: {
   {
     question: 'The "time between overhaul" (TBO) for a piston engine:',
     options: [
-      'A. s a legal requirement — the engine must be overhauled exactly at TBO — an LAME must certify all maintenance beyond pilot authority',
+      'A. Is a legal requirement — the engine must be overhauled exactly at TBO — an LAME must certify all maintenance beyond pilot authority',
       'B. BO is 2,000 hours for all piston aircraft engines regardless of type, and must be checked during the pre-flight inspection',
-      'C. pplies only to turbine engines — piston engines do not have TBO intervals — this is covered in the aircraft\'s approved flight manual',
+      'C. Pplies only to turbine engines — piston engines do not have TBO intervals — this is covered in the aircraft\'s approved flight manual',
       'D. Is a manufacturer recommendation — the engine should be overhauled at or before TBO to maintain airworthiness, though extensions may be approved based on condition monitoring',
     ],
     correct: 3,
@@ -144,9 +144,9 @@ export const cagkQuestions: {
     question: 'When "priming" an engine for a cold start, the purpose is to:',
     options: [
       'A. Introduce raw fuel directly into the intake ports or cylinders to create a rich, easily ignitable mixture that the engine can fire on before the carburettor delivers adequate fuel at low cranking speed',
-      'B. ubricate the cylinder walls before the engine starts — the manufacturer\'s data provides the specific values',
-      'C. dvance the ignition timing for easier starting, and any defect must be recorded in the aircraft technical log',
-      'D. ressurise the fuel system to eliminate air locks, as defined in the type certificate and airworthiness standards',
+      'B. Ubricate the cylinder walls before the engine starts — the manufacturer\'s data provides the specific values',
+      'C. Dvance the ignition timing for easier starting, and any defect must be recorded in the aircraft technical log',
+      'D. Ressurise the fuel system to eliminate air locks, as defined in the type certificate and airworthiness standards',
     ],
     correct: 0,
     explanation: 'Cold engine priming: at low cranking speed the carburettor venturi velocity is insufficient to draw fuel. The primer injects raw fuel into intake ports — this vaporises and mixes with air. On the first compression stroke(s), this rich mixture ignites and starts the engine. Over-priming floods the cylinders — wash down of oil from cylinder walls and potential hydraulic lock.',
@@ -155,10 +155,10 @@ export const cagkQuestions: {
   {
     question: 'The "magneto impulse coupling" benefits are limited to:',
     options: [
-      'A. ll power settings — it continuously improves ignition quality — this system is common to most piston-engine light aircraft',
+      'A. Ll power settings — it continuously improves ignition quality — this system is common to most piston-engine light aircraft',
       'B. Engine starting only — it provides retarded timing and a strong spark at low cranking RPM, then disengages centrifugally at normal engine speed',
-      'C. ruise operations only — it disengages at high RPM — this is covered in the aircraft\'s approved flight manual',
-      'D. ake-off operations only — it prevents over-advance at full power — CASR Part 43 specifies who may perform this maintenance',
+      'C. Ruise operations only — it disengages at high RPM — this is covered in the aircraft\'s approved flight manual',
+      'D. Ake-off operations only — it prevents over-advance at full power — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 1,
     explanation: 'Impulse coupling (on the starter magneto): (1) Retards timing during slow cranking to prevent kickback; (2) Momentarily spins the magneto faster for a stronger spark. Centrifugal flyweights in the coupling disengage it once engine speed reaches approximately 800 RPM — the magneto then operates normally without the retard or speed-up function. Not needed at normal engine speeds.',
@@ -215,10 +215,10 @@ export const cagkQuestions: {
   {
     question: '"Detonation" in a piston engine occurs when:',
     options: [
-      'A. he mixture is too lean and burns slowly causing overheating — the manufacturer\'s data provides the specific values',
-      'B. he fuel/air mixture fails to ignite from the spark plug, as defined in the type certificate and airworthiness standards',
+      'A. The mixture is too lean and burns slowly causing overheating — the manufacturer\'s data provides the specific values',
+      'B. The fuel/air mixture fails to ignite from the spark plug, as defined in the type certificate and airworthiness standards',
       'C. The unburnt portion of the fuel/air mixture ahead of the flame front spontaneously ignites from heat and pressure, causing a rapid pressure spike',
-      'D. he exhaust valve opens too early, releasing unburnt fuel — an LAME must certify all maintenance beyond pilot authority',
+      'D. The exhaust valve opens too early, releasing unburnt fuel — an LAME must certify all maintenance beyond pilot authority',
     ],
     correct: 2,
     explanation: 'Detonation (knock): after the spark plug fires and the flame front begins propagating, the unburnt end-gas ahead of the flame front reaches a critical temperature and pressure and spontaneously ignites. This sudden pressure spike produces a knocking noise, high peak pressures, and can rapidly damage pistons, bearings, and cylinder heads.',
@@ -252,9 +252,9 @@ export const cagkQuestions: {
     question: 'The "maximum gear extension speed" (Vle) differs from the "maximum gear operating speed" (Vlo) in that:',
     options: [
       'A. Vlo is the maximum speed for operating (moving) the gear; Vle is the maximum speed for flying with the gear extended',
-      'B. lo is higher than Vle in all aircraft — this is covered in the aircraft\'s approved flight manual',
-      'C. hey are identical — both refer to the same limitation — this differs between Lycoming and Continental engine types',
-      'D. le only applies to nose gear; Vlo applies to main gear — the maintenance schedule specifies the required inspection interval',
+      'B. Lo is higher than Vle in all aircraft — this is covered in the aircraft\'s approved flight manual',
+      'C. Hey are identical — both refer to the same limitation — this differs between Lycoming and Continental engine types',
+      'D. Le only applies to nose gear; Vlo applies to main gear — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 0,
     explanation: 'Vlo (gear operating speed): maximum speed at which the gear may be extended or retracted — mechanical loads during gear movement. Vle (gear extended speed): maximum speed while the gear is extended — the structural limit for the extended gear in the airstream. On some aircraft Vle > Vlo (gear can be flown extended at a higher speed than the extension/retraction speed). Check the AFM for each specific aircraft.',
@@ -287,9 +287,9 @@ export const cagkQuestions: {
   {
     question: 'The "fuel nozzle" in a fuel-injected aircraft engine may become partially blocked, causing:',
     options: [
-      'A. he fuel flow gauge to show zero for that cylinder — the maintenance schedule specifies the required inspection interval',
+      'A. The fuel flow gauge to show zero for that cylinder — the maintenance schedule specifies the required inspection interval',
       'B.  blocked nozzle is self-clearing — no maintenance is needed, and must be checked during the pre-flight inspection',
-      'C. ll cylinders to run lean simultaneously, and must be checked during the pre-flight inspection',
+      'C. Ll cylinders to run lean simultaneously, and must be checked during the pre-flight inspection',
       'D. The affected cylinder to run lean (less fuel than intended), showing higher EGT and potentially causing local detonation',
     ],
     correct: 3,
@@ -395,9 +395,9 @@ export const cagkQuestions: {
   {
     question: 'The "engine shutdown" procedure using idle cut-off prevents:',
     options: [
-      'A. he magnetos from back-firing on the residual impulse — the manufacturer\'s data provides the specific values',
-      'B. he engine from over-cooling during shutdown — this system is common to most piston-engine light aircraft',
-      'C. il from draining from the engine while stopped — the maintenance schedule specifies the required inspection interval',
+      'A. The magnetos from back-firing on the residual impulse — the manufacturer\'s data provides the specific values',
+      'B. The engine from over-cooling during shutdown — this system is common to most piston-engine light aircraft',
+      'C. Il from draining from the engine while stopped — the maintenance schedule specifies the required inspection interval',
       'D. "Afterfiring" — combustible mixture remaining in the exhaust system igniting after the magnetos are switched off, causing loud bangs from the exhaust',
     ],
     correct: 3,
@@ -407,10 +407,10 @@ export const cagkQuestions: {
   {
     question: 'The correct response to "engine roughness" during climb-out after take-off is:',
     options: [
-      'A. mmediately shut down the engine and declare an emergency, as defined in the type certificate and airworthiness standards',
+      'A. Mmediately shut down the engine and declare an emergency, as defined in the type certificate and airworthiness standards',
       'B. Apply carburettor heat (if fitted), check mixture is set correctly, check fuel selector is on a tank with fuel, and prepare for a precautionary landing if roughness does not resolve',
-      'C. ncrease power to full throttle to clear the engine — this system is common to most piston-engine light aircraft',
-      'D. ontinue climbing — engine roughness often resolves after the engine warms up — the manufacturer\'s data provides the specific values',
+      'C. Ncrease power to full throttle to clear the engine — this system is common to most piston-engine light aircraft',
+      'D. Ontinue climbing — engine roughness often resolves after the engine warms up — the manufacturer\'s data provides the specific values',
     ],
     correct: 1,
     explanation: 'Engine roughness during climb: immediate systematic diagnosis is required. Check: (1) Carb heat — apply if conditions suggest icing; (2) Mixture — ensure correct setting for the altitude; (3) Fuel selector — confirm on a tank with fuel; (4) Magneto check if safe to do so. If roughness persists or engine power is clearly inadequate, prepare for precautionary or forced landing — do not allow the engine to fail at low altitude without a plan.',
@@ -503,9 +503,9 @@ export const cagkQuestions: {
   {
     question: 'The "aircraft type certificate data sheet" (TCDS) is important because:',
     options: [
-      'A. t lists the names of all pilots approved to fly the type — the maintenance schedule specifies the required inspection interval',
-      'B. t specifies the maintenance intervals for the type — this system is common to most piston-engine light aircraft',
-      'C. t contains the recommended cruise power settings — CASR Part 43 specifies who may perform this maintenance',
+      'A. T lists the names of all pilots approved to fly the type — the maintenance schedule specifies the required inspection interval',
+      'B. T specifies the maintenance intervals for the type — this system is common to most piston-engine light aircraft',
+      'C. T contains the recommended cruise power settings — CASR Part 43 specifies who may perform this maintenance',
       'D. It defines the certification basis, approved engine and propeller models, operating limits, equipment requirements, and CG range',
     ],
     correct: 3,
@@ -515,10 +515,10 @@ export const cagkQuestions: {
   {
     question: 'The "airframe and powerplant" logbooks are required to contain a record of:',
     options: [
-      'A. nly entries made by the aircraft owner — the manufacturer\'s data provides the specific values',
-      'B. nly the annual inspection entries — the manufacturer\'s data provides the specific values',
+      'A. Only entries made by the aircraft owner — the manufacturer\'s data provides the specific values',
+      'B. Only the annual inspection entries — the manufacturer\'s data provides the specific values',
       'C. All maintenance performed, including description of work, parts used or replaced, total time, and certifying LAME signature',
-      'D. he logbook only needs recording at 100-hour intervals — this differs between Lycoming and Continental engine types',
+      'D. The logbook only needs recording at 100-hour intervals — this differs between Lycoming and Continental engine types',
     ],
     correct: 2,
     explanation: 'Logbook content requirements (CASR Part 47): all maintenance must be recorded — routine servicing, defect rectification, part replacements, AD compliance, modifications, and inspections. Each entry: date, description (specific enough to show what was done), total time, reference to data used, and LAME name, signature, and licence number. Complete records are essential for airworthiness demonstration and aircraft resale.',
@@ -599,10 +599,10 @@ export const cagkQuestions: {
   {
     question: 'The "altimeter" works by:',
     options: [
-      'A. omparing GPS position to a stored terrain database — an LAME must certify all maintenance beyond pilot authority',
+      'A. Omparing GPS position to a stored terrain database — an LAME must certify all maintenance beyond pilot authority',
       'B. Sensing static pressure — as altitude increases, static pressure decreases, and the aneroid capsule expands, moving the altitude pointer',
-      'C. easuring the time for a radar pulse to reflect from the ground — the manufacturer\'s data provides the specific values',
-      'D. easuring the temperature lapse rate and calculating altitude from the temperature — an LAME must certify all maintenance beyond pilot authority',
+      'C. Easuring the time for a radar pulse to reflect from the ground — the manufacturer\'s data provides the specific values',
+      'D. Easuring the temperature lapse rate and calculating altitude from the temperature — an LAME must certify all maintenance beyond pilot authority',
     ],
     correct: 1,
     explanation: 'The pressure altimeter contains sealed aneroid (evacuated) capsules connected to the static pressure port. As aircraft altitude increases, static pressure decreases — the capsules expand. This expansion is amplified mechanically and displayed as altitude. The subscale (Kollsman window) allows the pilot to set local QNH or standard pressure (1013.25 hPa).',
@@ -623,9 +623,9 @@ export const cagkQuestions: {
   {
     question: 'An "engine-driven alternator" produces electrical power proportional to:',
     options: [
-      'A. ngine manifold pressure only, as defined in the type certificate and airworthiness standards',
-      'B. attery state of charge — the alternator only charges when the battery is depleted — CASR Part 43 specifies who may perform this maintenance',
-      'C. hrottle position — full throttle produces maximum electrical output — the maintenance schedule specifies the required inspection interval',
+      'A. Engine manifold pressure only, as defined in the type certificate and airworthiness standards',
+      'B. Attery state of charge — the alternator only charges when the battery is depleted — CASR Part 43 specifies who may perform this maintenance',
+      'C. Hrottle position — full throttle produces maximum electrical output — the maintenance schedule specifies the required inspection interval',
       'D. Engine RPM and field current — the output voltage is regulated by adjusting field current, while the maximum available current increases with RPM',
     ],
     correct: 3,
@@ -647,10 +647,10 @@ export const cagkQuestions: {
   {
     question: 'The "reduction gearbox" between engine and propeller on large engines is used to:',
     options: [
-      'A. llow the propeller to reverse direction for reverse thrust — CASR Part 43 specifies who may perform this maintenance',
+      'A. Llow the propeller to reverse direction for reverse thrust — CASR Part 43 specifies who may perform this maintenance',
       'B. Reduce propeller RPM below engine RPM — allowing the engine to turn fast (for power) while keeping propeller tip speed subsonic',
-      'C. ncrease propeller RPM above engine RPM for better performance — an LAME must certify all maintenance beyond pilot authority',
-      'D. rovide a free-wheeling mechanism for autorotation — the maintenance schedule specifies the required inspection interval',
+      'C. Ncrease propeller RPM above engine RPM for better performance — an LAME must certify all maintenance beyond pilot authority',
+      'D. Rovide a free-wheeling mechanism for autorotation — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 1,
     explanation: 'Reduction gearbox: larger engines (and turboprops) need to spin at high RPM for power (5,000–30,000 RPM for turbines) but propellers must turn slowly (1,500–2,500 RPM max) to keep tip speeds subsonic. The reduction gearbox reduces the propeller shaft speed by a fixed ratio. In direct-drive engines (most light aircraft), the propeller turns at the same RPM as the crankshaft.',
@@ -671,10 +671,10 @@ export const cagkQuestions: {
   {
     question: 'The "aircraft battery electrolyte" in a lead-acid battery:',
     options: [
-      'A. s a gel that never needs replacement or checking — the maintenance schedule specifies the required inspection interval',
-      'B. s plain water that must be topped up monthly — CASR Part 43 specifies who may perform this maintenance',
+      'A. S a gel that never needs replacement or checking — the maintenance schedule specifies the required inspection interval',
+      'B. S plain water that must be topped up monthly — CASR Part 43 specifies who may perform this maintenance',
       'C. Is a dilute sulphuric acid solution — the specific gravity of this solution indicates the state of charge of the battery',
-      'D. s a potassium hydroxide solution used in nickel-cadmium batteries, and must be checked during the pre-flight inspection',
+      'D. S a potassium hydroxide solution used in nickel-cadmium batteries, and must be checked during the pre-flight inspection',
     ],
     correct: 2,
     explanation: 'Lead-acid battery electrolyte: dilute sulphuric acid (H₂SO₄). During discharge, the acid concentration decreases as sulfate is deposited on the plates. Specific gravity (measured with a hydrometer) indicates charge state: fully charged ≈ 1.265–1.280, discharged ≈ 1.130. Water is consumed during charging (electrolysis) — distilled water may need to be added to maintain the correct level.',
@@ -683,9 +683,9 @@ export const cagkQuestions: {
   {
     question: 'Setting the altimeter sub-scale to "QNH" will cause the altimeter to read:',
     options: [
-      'A. ressure altitude — altitude above the standard pressure datum — this system is common to most piston-engine light aircraft',
-      'B. ensity altitude corrected for temperature, and any defect must be recorded in the aircraft technical log',
-      'C. eight above aerodrome elevation (AGL) — this differs between Lycoming and Continental engine types',
+      'A. Ressure altitude — altitude above the standard pressure datum — this system is common to most piston-engine light aircraft',
+      'B. Ensity altitude corrected for temperature, and any defect must be recorded in the aircraft technical log',
+      'C. Eight above aerodrome elevation (AGL) — this differs between Lycoming and Continental engine types',
       'D. Altitude above mean sea level (AMSL) — the altitude the aircraft would be at if the local sea-level pressure were 1013.25 hPa',
     ],
     correct: 3,
@@ -695,10 +695,10 @@ export const cagkQuestions: {
   {
     question: 'When "carburettor heat" is applied as carb ice is melting, the initial effect is:',
     options: [
-      'A. o change in RPM until all ice has fully melted — the manufacturer\'s data provides the specific values',
+      'A. O change in RPM until all ice has fully melted — the manufacturer\'s data provides the specific values',
       'B. A further temporary drop in RPM as the heated (less dense) air and meltwater enter the engine before RPM recovers as ice clears',
-      'C. n increase in manifold pressure followed by an RPM drop — this is covered in the aircraft\'s approved flight manual',
-      'D. mmediate RPM increase as the ice melts and full power is restored — the manufacturer\'s data provides the specific values',
+      'C. N increase in manifold pressure followed by an RPM drop — this is covered in the aircraft\'s approved flight manual',
+      'D. Mmediate RPM increase as the ice melts and full power is restored — the manufacturer\'s data provides the specific values',
     ],
     correct: 1,
     explanation: 'When carb heat is applied to melt ice: (1) Hot air is less dense — momentary power/RPM drop; (2) As ice melts, water passes through the engine causing a temporary rough running and RPM fluctuation; (3) Once all ice is cleared, the RPM rises above the pre-ice value as normal airflow is restored. A final RPM higher than the pre-ice value confirms ice was present.',
@@ -721,7 +721,7 @@ export const cagkQuestions: {
     options: [
       'A. The battery must be replaced when it has reached its expiry date, or after the ELT has transmitted for more than 1 cumulative hour',
       'B. LT batteries are self-recharging and never require replacement — this is covered in the aircraft\'s approved flight manual',
-      'C. attery replacement is only required after the ELT activates in an accident — an LAME must certify all maintenance beyond pilot authority',
+      'C. Attery replacement is only required after the ELT activates in an accident — an LAME must certify all maintenance beyond pilot authority',
       'D. LT batteries only last 1 year regardless of use, as defined in the type certificate and airworthiness standards',
     ],
     correct: 0,
@@ -755,9 +755,9 @@ export const cagkQuestions: {
   {
     question: 'The "Rotax 912" series engine common in light sport aircraft uses:',
     options: [
-      'A. ingle ignition with direct fuel injection and no carburettor, and must be checked during the pre-flight inspection',
-      'B. urbocharging as standard equipment on all variants — this system is common to most piston-engine light aircraft',
-      'C. raditional aircraft-style air cooling identical to Lycoming/Continental — the manufacturer\'s data provides the specific values',
+      'A. Ingle ignition with direct fuel injection and no carburettor, and must be checked during the pre-flight inspection',
+      'B. Urbocharging as standard equipment on all variants — this system is common to most piston-engine light aircraft',
+      'C. Raditional aircraft-style air cooling identical to Lycoming/Continental — the manufacturer\'s data provides the specific values',
       'D. A combination of liquid cooling (cylinder heads) and air cooling (cylinder barrels), with a reduction gearbox, and a dual ignition system using solid-state electronic modules rather than magnetos',
     ],
     correct: 3,
@@ -960,9 +960,9 @@ export const cagkQuestions: {
     question: 'The "navigation lights" (position lights) on an aircraft are:',
     options: [
       'A. Required for night operations — red on the left (port) wing, green on the right (starboard) wing, and white at the tail',
-      'B. ptional equipment — only required for IFR operations — CASR Part 43 specifies who may perform this maintenance',
-      'C. hite lights on both wingtips and a red flashing beacon at the tail — this is covered in the aircraft\'s approved flight manual',
-      'D. nly required on aircraft over 5,700 kg MTOW — CASR Part 43 specifies who may perform this maintenance',
+      'B. Ptional equipment — only required for IFR operations — CASR Part 43 specifies who may perform this maintenance',
+      'C. Hite lights on both wingtips and a red flashing beacon at the tail — this is covered in the aircraft\'s approved flight manual',
+      'D. Only required on aircraft over 5,700 kg MTOW — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 0,
     explanation: 'Navigation (position) lights: international standard — red port (left) wingtip, green starboard (right) wingtip, white taillight. They allow other pilots to determine the direction and relative position of the aircraft at night. Required for all night operations. Memory aid: red wine (red/left/port), green starboard. The colours allow determination of whether an aircraft is approaching or receding.',
@@ -995,9 +995,9 @@ export const cagkQuestions: {
   {
     question: 'The "advantages of fuel injection" over a carburettor include:',
     options: [
-      'A. uel injected engines can use lower octane fuel than carburetted engines, and must be checked during the pre-flight inspection',
-      'B. uel injection systems are lighter and simpler than carburettors — this is covered in the aircraft\'s approved flight manual',
-      'C. uel injection eliminates all possibility of engine failure in flight, and must be checked during the pre-flight inspection',
+      'A. Fuel injected engines can use lower octane fuel than carburetted engines, and must be checked during the pre-flight inspection',
+      'B. Fuel injection systems are lighter and simpler than carburettors — this is covered in the aircraft\'s approved flight manual',
+      'C. Fuel injection eliminates all possibility of engine failure in flight, and must be checked during the pre-flight inspection',
       'D. Immunity to carburettor icing in the induction system, more precise fuel metering, better fuel distribution across cylinders, and improved power output',
     ],
     correct: 3,
@@ -1019,10 +1019,10 @@ export const cagkQuestions: {
   {
     question: '"Carburettor icing" occurs when:',
     options: [
-      'A. nly if rain or hail is ingested by the engine air intake — this is covered in the aircraft\'s approved flight manual',
-      'B. nly in aircraft operating above 10,000 ft in winter months — this is covered in the aircraft\'s approved flight manual',
+      'A. Only if rain or hail is ingested by the engine air intake — this is covered in the aircraft\'s approved flight manual',
+      'B. Only in aircraft operating above 10,000 ft in winter months — this is covered in the aircraft\'s approved flight manual',
       'C. Water vapour in the induction air freezes in the venturi area due to the temperature drop caused by fuel vaporisation and the venturi effect',
-      'D. he outside air temperature is below −20°C and visible moisture is present, and must be checked during the pre-flight inspection',
+      'D. The outside air temperature is below −20°C and visible moisture is present, and must be checked during the pre-flight inspection',
     ],
     correct: 2,
     explanation: 'Carburettor ice forms due to two cooling effects: (1) Fuel vaporisation absorbs heat; (2) The venturi creates a temperature drop as air accelerates. Together these can reduce local temperature by 20–30°C. Moisture in the air freezes, restricting or blocking the carburettor throat. Ice can form at ambient temperatures of +30°C with high humidity.',
@@ -1151,9 +1151,9 @@ export const cagkQuestions: {
   {
     question: '"Pre-ignition" differs from detonation in that:',
     options: [
-      'A. oth are identical phenomena — the terms are interchangeable — this is covered in the aircraft\'s approved flight manual',
-      'B. re-ignition is harmless; detonation always causes immediate engine failure — this differs between Lycoming and Continental engine types',
-      'C. re-ignition occurs after the spark fires; detonation occurs before, and must be checked during the pre-flight inspection',
+      'A. Oth are identical phenomena — the terms are interchangeable — this is covered in the aircraft\'s approved flight manual',
+      'B. Re-ignition is harmless; detonation always causes immediate engine failure — this differs between Lycoming and Continental engine types',
+      'C. Re-ignition occurs after the spark fires; detonation occurs before, and must be checked during the pre-flight inspection',
       'D. Pre-ignition is ignition of the mixture by a hot spot before the spark fires; detonation is spontaneous ignition of end-gas after the spark fires',
     ],
     correct: 3,
@@ -1214,7 +1214,7 @@ export const cagkQuestions: {
       'A. -factor is caused by the propeller governor seeking a new pitch equilibrium — an LAME must certify all maintenance beyond pilot authority',
       'B. At high pitch attitude, the descending blade (right side on clockwise rotation) has a greater angle of attack than the ascending blade',
       'C. -factor only occurs in multi-engine aircraft with counter-rotating propellers — this is covered in the aircraft\'s approved flight manual',
-      'D. he propeller is heavier on one side due to manufacturing tolerances, as defined in the type certificate and airworthiness standards',
+      'D. The propeller is heavier on one side due to manufacturing tolerances, as defined in the type certificate and airworthiness standards',
     ],
     correct: 1,
     explanation: 'P-factor (propeller asymmetric disc effect): in a climb, the aircraft pitch attitude is nose-up. The descending blade (right side) meets the air at a greater angle of attack than the ascending blade (left side). The right blade generates more thrust — the effective thrust is offset to the right of centre. This yaws the nose to the left. Corrected with right rudder in the climb.',
@@ -1248,8 +1248,8 @@ export const cagkQuestions: {
     question: 'A "normally aspirated" engine differs from a "supercharged" engine in that:',
     options: [
       'A.  normally aspirated engine uses fuel injection; a supercharged engine uses a carburettor, and must be checked during the pre-flight inspection',
-      'B. upercharged engines are less powerful — the supercharger restricts maximum power — an LAME must certify all maintenance beyond pilot authority',
-      'C. ormally aspirated engines cannot operate above 5,000 ft, as defined in the type certificate and airworthiness standards',
+      'B. Upercharged engines are less powerful — the supercharger restricts maximum power — an LAME must certify all maintenance beyond pilot authority',
+      'C. Ormally aspirated engines cannot operate above 5,000 ft, as defined in the type certificate and airworthiness standards',
       'D. A normally aspirated engine relies on atmospheric pressure alone for induction; a supercharger compresses the induction air above ambient pressure',
     ],
     correct: 3,
@@ -1296,9 +1296,9 @@ export const cagkQuestions: {
     question: 'The "aircraft weight and balance" must be checked before each flight because:',
     options: [
       'A. Operating outside the CG envelope reduces longitudinal stability, may make the aircraft uncontrollable, and stresses the structure',
-      'B. nly the total weight matters — balance is not relevant to flight safety, and any defect must be recorded in the aircraft technical log',
-      'C. eight and balance only matters for instrument flight rules operations — this is covered in the aircraft\'s approved flight manual',
-      'D. he CASA regulations require this for twin-engine aircraft only — the maintenance schedule specifies the required inspection interval',
+      'B. Only the total weight matters — balance is not relevant to flight safety, and any defect must be recorded in the aircraft technical log',
+      'C. Eight and balance only matters for instrument flight rules operations — this is covered in the aircraft\'s approved flight manual',
+      'D. The CASA regulations require this for twin-engine aircraft only — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 0,
     explanation: 'Weight and balance is safety-critical for every flight: exceeding MTOW stresses the structure and degrades all performance. CG outside forward limit: heavy stick forces, may not rotate for take-off. CG aft of limit: reduced or negative pitch stability — potentially uncontrollable. Every configuration change (fuel, passengers, cargo) may change the CG.',
@@ -1331,10 +1331,10 @@ export const cagkQuestions: {
   {
     question: 'The "oil pressure" may read high during initial engine start in cold weather because:',
     options: [
-      'A. he oil pressure gauge is inaccurate below 0°C ambient — CASR Part 43 specifies who may perform this maintenance',
+      'A. The oil pressure gauge is inaccurate below 0°C ambient — CASR Part 43 specifies who may perform this maintenance',
       'B. Cold oil is more viscous — the pump must develop higher pressure to push the thick oil through the narrow galleries to the bearings',
-      'C. old engines run at higher RPM, generating more pressure — the maintenance schedule specifies the required inspection interval',
-      'D. old weather increases engine wear, requiring higher pressure to maintain film — this system is common to most piston-engine light aircraft',
+      'C. Old engines run at higher RPM, generating more pressure — the maintenance schedule specifies the required inspection interval',
+      'D. Old weather increases engine wear, requiring higher pressure to maintain film — this system is common to most piston-engine light aircraft',
     ],
     correct: 1,
     explanation: 'Cold weather high oil pressure: at low temperatures, engine oil viscosity increases significantly — it becomes much thicker. The oil pump must generate higher pressure to force viscous oil through fine oil galleries. This high pressure is normal on cold start and decreases as the engine warms and oil viscosity decreases. If pressure remains abnormally high after warm-up, suspect a stuck pressure relief valve.',
@@ -1355,9 +1355,9 @@ export const cagkQuestions: {
   {
     question: 'The "aircraft fire extinguisher" should be:',
     options: [
-      'A. tored in the baggage compartment to avoid obstruction — this is covered in the aircraft\'s approved flight manual',
-      'B. tored in the engine bay for immediate access in an engine fire — the maintenance schedule specifies the required inspection interval',
-      'C. nly required on commercial aircraft — not on private operations — an LAME must certify all maintenance beyond pilot authority',
+      'A. Tored in the baggage compartment to avoid obstruction — this is covered in the aircraft\'s approved flight manual',
+      'B. Tored in the engine bay for immediate access in an engine fire — the maintenance schedule specifies the required inspection interval',
+      'C. Only required on commercial aircraft — not on private operations — an LAME must certify all maintenance beyond pilot authority',
       'D. Readily accessible in the cockpit and checked during pre-flight for correct charge (pressure gauge in green) and safety pin in place',
     ],
     correct: 3,
@@ -1379,10 +1379,10 @@ export const cagkQuestions: {
   {
     question: 'Routine "spark plug cleaning and gapping" is performed to:',
     options: [
-      'A. mprove fuel economy at cruise power settings, and must be checked during the pre-flight inspection',
+      'A. Mprove fuel economy at cruise power settings, and must be checked during the pre-flight inspection',
       'B. Remove carbon and lead deposits that accumulate on electrodes (causing misfires), and restore the gap to specification for consistent ignition',
-      'C. his is an optional maintenance task with no safety significance — the maintenance schedule specifies the required inspection interval',
-      'D. alibrate the ignition timing to manufacturer specification, as defined in the type certificate and airworthiness standards',
+      'C. This is an optional maintenance task with no safety significance — the maintenance schedule specifies the required inspection interval',
+      'D. Alibrate the ignition timing to manufacturer specification, as defined in the type certificate and airworthiness standards',
     ],
     correct: 1,
     explanation: 'Spark plug maintenance: lead and carbon deposits accumulate on electrodes — particularly from rich mixture operation. These deposits reduce the spark energy and can cause misfires (detected as excessive magneto drop during run-up). Cleaning removes deposits; gapping restores the correct electrode gap. This is typically done at the 100-hour inspection.',
@@ -1392,9 +1392,9 @@ export const cagkQuestions: {
     question: 'The "aircraft C of A" (Certificate of Airworthiness) is valid when:',
     options: [
       'A. The aircraft has been maintained in accordance with the applicable maintenance requirements and no defects affecting airworthiness are outstanding',
-      'B. he C of A is renewed every 5 years regardless of maintenance status — the maintenance schedule specifies the required inspection interval',
-      'C. he annual renewal fee has been paid, as defined in the type certificate and airworthiness standards',
-      'D. he aircraft is registered and within its TBO interval — this differs between Lycoming and Continental engine types',
+      'B. The C of A is renewed every 5 years regardless of maintenance status — the maintenance schedule specifies the required inspection interval',
+      'C. The annual renewal fee has been paid, as defined in the type certificate and airworthiness standards',
+      'D. The aircraft is registered and within its TBO interval — this differs between Lycoming and Continental engine types',
     ],
     correct: 0,
     explanation: 'The Certificate of Airworthiness remains valid as long as the aircraft is maintained in accordance with CASR and manufacturer requirements, all ADs are complied with, and no unresolved airworthiness defects exist. The C of A is not a time-limited certificate by itself — it is invalidated by maintenance non-compliance or known defects.',
@@ -1416,9 +1416,9 @@ export const cagkQuestions: {
     question: 'The "nickel-cadmium (NiCad) battery" found on some aircraft differs from lead-acid in that:',
     options: [
       'A. NiCad batteries have lower internal resistance (can deliver more current), maintain voltage better under heavy load, and suffer from "thermal runaway" risk if overcharged',
-      'B. iCad batteries use the same electrolyte as lead-acid batteries — the maintenance schedule specifies the required inspection interval',
-      'C. iCad batteries cannot be used with DC electrical systems — an LAME must certify all maintenance beyond pilot authority',
-      'D. iCad batteries weigh more but hold charge longer — the maintenance schedule specifies the required inspection interval',
+      'B. ICad batteries use the same electrolyte as lead-acid batteries — the maintenance schedule specifies the required inspection interval',
+      'C. ICad batteries cannot be used with DC electrical systems — an LAME must certify all maintenance beyond pilot authority',
+      'D. ICad batteries weigh more but hold charge longer — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 0,
     explanation: 'NiCad vs lead-acid: NiCad advantages — lower internal resistance, better high-current delivery (faster starts), more stable voltage under load, more charge/discharge cycles. Disadvantages — can experience thermal runaway if overcharged (temperature rises, reducing internal resistance, allowing more current, causing more heating — runaway). NiCad batteries require careful charging and regular capacity checks.',
@@ -1463,9 +1463,9 @@ export const cagkQuestions: {
   {
     question: 'The "weight and balance" calculation must verify that:',
     options: [
-      'A. eight and balance only needs checking with full fuel and maximum passengers — this system is common to most piston-engine light aircraft',
-      'B. he CG is always at the forward limit for maximum stability, and any defect must be recorded in the aircraft technical log',
-      'C. nly the total weight is within MTOW — CASR Part 43 specifies who may perform this maintenance',
+      'A. Eight and balance only needs checking with full fuel and maximum passengers — this system is common to most piston-engine light aircraft',
+      'B. The CG is always at the forward limit for maximum stability, and any defect must be recorded in the aircraft technical log',
+      'C. Only the total weight is within MTOW — CASR Part 43 specifies who may perform this maintenance',
       'D. Both the total weight is at or below MTOW AND the CG is within the certified envelope for all phases of the flight (including as fuel burns)',
     ],
     correct: 3,
@@ -1631,10 +1631,10 @@ export const cagkQuestions: {
   {
     question: 'The "fuel-air ratio" for maximum power (best power mixture) is:',
     options: [
-      'A. ean of stoichiometric — approximately 18:1 for best combustion efficiency — the manufacturer\'s data provides the specific values',
-      'B. toichiometric — exactly 15:1 air to fuel by mass — this is covered in the aircraft\'s approved flight manual',
+      'A. Ean of stoichiometric — approximately 18:1 for best combustion efficiency — the manufacturer\'s data provides the specific values',
+      'B. Toichiometric — exactly 15:1 air to fuel by mass — this is covered in the aircraft\'s approved flight manual',
       'C. Slightly rich of stoichiometric — approximately 12:1 air to fuel — excess fuel provides cooling and ensures all available oxygen is used',
-      'D. ull rich which is always 10:1 air to fuel regardless of altitude, and any defect must be recorded in the aircraft technical log',
+      'D. Ull rich which is always 10:1 air to fuel regardless of altitude, and any defect must be recorded in the aircraft technical log',
     ],
     correct: 2,
     explanation: 'Best power mixture: approximately 12:1 air/fuel ratio (slightly rich of stoichiometric 15:1). The slight excess of fuel: (1) Provides evaporative cooling of the intake charge; (2) Ensures all available oxygen reacts (no oxygen wasted); (3) Gives maximum energy release per cycle. EGT is slightly below peak at best power — "rich of peak".',
@@ -1679,10 +1679,10 @@ export const cagkQuestions: {
   {
     question: 'The "oil temperature" takes longer to reach operating range than the oil pressure because:',
     options: [
-      'A. il temperature gauges have a longer time constant than pressure gauges — this is covered in the aircraft\'s approved flight manual',
+      'A. Il temperature gauges have a longer time constant than pressure gauges — this is covered in the aircraft\'s approved flight manual',
       'B. Oil pressure responds immediately to pump operation; oil temperature only rises as the engine components heat up and transfer that heat to the oil over several minutes',
-      'C. he oil thermostat keeps temperature low for longer than the pressure relief valve keeps pressure high, and any defect must be recorded in the aircraft technical log',
-      'D. il temperature is measured at the tank which is farther from the engine — the maintenance schedule specifies the required inspection interval',
+      'C. The oil thermostat keeps temperature low for longer than the pressure relief valve keeps pressure high, and any defect must be recorded in the aircraft technical log',
+      'D. Il temperature is measured at the tank which is farther from the engine — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 1,
     explanation: 'Oil pressure responds immediately once the pump starts circulating oil. Temperature is a thermal response — the oil absorbs heat from engine components (cylinder walls, bearings, camshaft) which takes several minutes to warm up. This is why there is a warm-up period before applying full power — both oil and metal components must reach operating temperature.',
@@ -1691,10 +1691,10 @@ export const cagkQuestions: {
   {
     question: 'For take-off, the mixture should typically be set to:',
     options: [
-      'A. est economy at all aerodromes for fuel efficiency — an LAME must certify all maintenance beyond pilot authority',
-      'B. est power mixture (slightly lean of peak EGT) at all aerodromes — an LAME must certify all maintenance beyond pilot authority',
+      'A. Est economy at all aerodromes for fuel efficiency — an LAME must certify all maintenance beyond pilot authority',
+      'B. Est power mixture (slightly lean of peak EGT) at all aerodromes — an LAME must certify all maintenance beyond pilot authority',
       'C. Full rich at low-elevation aerodromes — for maximum cooling and safety margin; leaned as required at high-elevation aerodromes',
-      'D. ull lean — to maximise power output — this is covered in the aircraft\'s approved flight manual',
+      'D. Ull lean — to maximise power output — this is covered in the aircraft\'s approved flight manual',
     ],
     correct: 2,
     explanation: 'At sea-level and low-elevation aerodromes: full rich for take-off — excess fuel provides evaporative cooling of cylinders and a rich safety margin against accidental over-lean conditions during the critical take-off and initial climb phase. At high-elevation aerodromes, full rich produces an excessively rich mixture — leaning to maximum power or as specified is required.',
@@ -1703,9 +1703,9 @@ export const cagkQuestions: {
   {
     question: 'An "engine power check" before take-off verifies:',
     options: [
-      'A. he maximum altitude the aircraft can achieve on take-off — an LAME must certify all maintenance beyond pilot authority',
-      'B. hat the propeller is correctly balanced by vibration assessment, as defined in the type certificate and airworthiness standards',
-      'C. uel quantity remaining in each tank — this differs between Lycoming and Continental engine types',
+      'A. The maximum altitude the aircraft can achieve on take-off — an LAME must certify all maintenance beyond pilot authority',
+      'B. Hat the propeller is correctly balanced by vibration assessment, as defined in the type certificate and airworthiness standards',
+      'C. Fuel quantity remaining in each tank — this differs between Lycoming and Continental engine types',
       'D. At the run-up RPM, that the engine develops the expected manifold pressure (or RPM), magneto drop is within limits, and carb heat drop is as expected',
     ],
     correct: 3,
@@ -1715,9 +1715,9 @@ export const cagkQuestions: {
   {
     question: 'The "sensitive altimeter" differs from a standard altimeter in that:',
     options: [
-      'A. t automatically corrects for temperature errors — this is covered in the aircraft\'s approved flight manual',
-      'B. t uses GPS data to supplement the pressure reading — CASR Part 43 specifies who may perform this maintenance',
-      'C. t only works below 10,000 ft — standard altimeters are used above — this differs between Lycoming and Continental engine types',
+      'A. T automatically corrects for temperature errors — this is covered in the aircraft\'s approved flight manual',
+      'B. T uses GPS data to supplement the pressure reading — CASR Part 43 specifies who may perform this maintenance',
+      'C. T only works below 10,000 ft — standard altimeters are used above — this differs between Lycoming and Continental engine types',
       'D. It has multiple aneroid capsules for greater sensitivity and accuracy, and a three-pointer display or digital readout to reduce misreading',
     ],
     correct: 3,
@@ -1859,10 +1859,10 @@ export const cagkQuestions: {
   {
     question: 'When flying from an area of "high pressure to low pressure" at constant indicated altitude:',
     options: [
-      'A. he aircraft climbs — the lower pressure area is at higher altitude — this system is common to most piston-engine light aircraft',
+      'A. The aircraft climbs — the lower pressure area is at higher altitude — this system is common to most piston-engine light aircraft',
       'B. The aircraft descends — the same pressure level (and therefore the altimeter reading) is found at a lower physical altitude in the low pressure area',
-      'C. he altitude remains the same — QNH compensates for pressure changes, and must be checked during the pre-flight inspection',
-      'D. his is only relevant when QNH is not updated — with current QNH there is no error — CASR Part 43 specifies who may perform this maintenance',
+      'C. The altitude remains the same — QNH compensates for pressure changes, and must be checked during the pre-flight inspection',
+      'D. This is only relevant when QNH is not updated — with current QNH there is no error — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 1,
     explanation: 'Flying from high to low pressure (without updating QNH): the same pressure level is lower (closer to ground) in the low pressure area. The altimeter reading stays the same but the aircraft is physically lower — terrain clearance is reduced. "From high to low, look out below." This is why ATC provides current QNH along the route and pilots must update it regularly.',
@@ -1883,9 +1883,9 @@ export const cagkQuestions: {
   {
     question: 'The "maximum operating altitude" for a normally aspirated piston aircraft is determined by:',
     options: [
-      'A. he altitude at which the aircraft can no longer maintain a positive rate of climb, as defined in the type certificate and airworthiness standards',
+      'A. The altitude at which the aircraft can no longer maintain a positive rate of climb, as defined in the type certificate and airworthiness standards',
       'B.  fixed altitude of 14,000 ft for all non-pressurised aircraft, and must be checked during the pre-flight inspection',
-      'C. he altitude at which oxygen becomes mandatory for the pilot — CASR Part 43 specifies who may perform this maintenance',
+      'C. The altitude at which oxygen becomes mandatory for the pilot — CASR Part 43 specifies who may perform this maintenance',
       'D. The lower of: the structural ceiling (if specified), the altitude where minimum controllable IAS can be maintained, or the service ceiling (ROC = 100 ft/min)',
     ],
     correct: 3,
@@ -1931,10 +1931,10 @@ export const cagkQuestions: {
   {
     question: 'The purpose of "piston rings" in an aircraft engine is to:',
     options: [
-      'A. rovide the bearing surface between piston and crankshaft — this is covered in the aircraft\'s approved flight manual',
-      'B. nly prevent oil consumption — compression sealing is done by the cylinder bore alone, as defined in the type certificate and airworthiness standards',
+      'A. Rovide the bearing surface between piston and crankshaft — this is covered in the aircraft\'s approved flight manual',
+      'B. Only prevent oil consumption — compression sealing is done by the cylinder bore alone, as defined in the type certificate and airworthiness standards',
       'C. Seal the combustion chamber (compression rings), prevent oil entering the combustion chamber (oil control rings), and transfer heat from piston to cylinder wall',
-      'D. onnect the piston to the connecting rod — this is covered in the aircraft\'s approved flight manual',
+      'D. Onnect the piston to the connecting rod — this is covered in the aircraft\'s approved flight manual',
     ],
     correct: 2,
     explanation: 'Piston rings serve three roles: (1) Compression rings — seal combustion gases above the piston, preventing blow-by to the crankcase; (2) Oil control rings — scrape excess oil from the cylinder wall to prevent it entering the combustion chamber; (3) Heat transfer — conduct heat from the hot piston crown to the cylinder walls for removal by the air cooling system.',
@@ -1943,9 +1943,9 @@ export const cagkQuestions: {
   {
     question: 'The "exhaust valve" in an aircraft engine runs hotter than the inlet valve because:',
     options: [
-      'A. oth valves run at identical temperatures — they operate in the same combustion environment, and must be checked during the pre-flight inspection',
-      'B. he exhaust valve is made of a more heat-absorbing alloy, and must be checked during the pre-flight inspection',
-      'C. he exhaust valve is smaller and absorbs more heat per unit area — this is covered in the aircraft\'s approved flight manual',
+      'A. Oth valves run at identical temperatures — they operate in the same combustion environment, and must be checked during the pre-flight inspection',
+      'B. The exhaust valve is made of a more heat-absorbing alloy, and must be checked during the pre-flight inspection',
+      'C. The exhaust valve is smaller and absorbs more heat per unit area — this is covered in the aircraft\'s approved flight manual',
       'D. The exhaust valve is exposed to hot combustion gases during both the power and exhaust strokes, while the inlet valve is cooled by incoming fuel/air mixture',
     ],
     correct: 3,
@@ -1956,9 +1956,9 @@ export const cagkQuestions: {
     question: 'The "Vmca" (minimum control speed, air) for a twin-engine aircraft is:',
     options: [
       'A. The minimum airspeed at which directional control can be maintained with the critical engine inoperative, the other at maximum power, and maximum 5° bank toward the live engine',
-      'B. he minimum speed for flap retraction after take-off — this system is common to most piston-engine light aircraft',
-      'C. he speed below which the aircraft cannot be controlled in any attitude — this system is common to most piston-engine light aircraft',
-      'D. he speed below which the autopilot cannot maintain heading — this system is common to most piston-engine light aircraft',
+      'B. The minimum speed for flap retraction after take-off — this system is common to most piston-engine light aircraft',
+      'C. The speed below which the aircraft cannot be controlled in any attitude — this system is common to most piston-engine light aircraft',
+      'D. The speed below which the autopilot cannot maintain heading — this system is common to most piston-engine light aircraft',
     ],
     correct: 0,
     explanation: 'Vmca: the minimum airspeed in the air where directional control can be maintained with the critical engine failed and windmilling, the other at take-off power, with maximum 5° bank into the live engine, gear up, flaps in take-off position, MTOW. Below Vmca, rudder authority is insufficient to counteract the asymmetric thrust — the aircraft yaws and rolls uncontrollably. Vmca increases at higher power and lower altitude/density.',
@@ -1967,9 +1967,9 @@ export const cagkQuestions: {
   {
     question: 'The "boost pump" in a low-wing aircraft fuel system is typically switched ON for:',
     options: [
-      'A. he boost pump runs continuously — it is never switched off in flight — this system is common to most piston-engine light aircraft',
-      'B. ruise only — to maintain fuel pressure at altitude — this is covered in the aircraft\'s approved flight manual',
-      'C. escents only — to maintain fuel pressure during power reduction — the maintenance schedule specifies the required inspection interval',
+      'A. The boost pump runs continuously — it is never switched off in flight — this system is common to most piston-engine light aircraft',
+      'B. Ruise only — to maintain fuel pressure at altitude — this is covered in the aircraft\'s approved flight manual',
+      'C. Escents only — to maintain fuel pressure during power reduction — the maintenance schedule specifies the required inspection interval',
       'D. Take-off, landing, and engine start — to ensure fuel pressure if the engine-driven pump fails at a critical time, and for priming',
     ],
     correct: 3,
@@ -1980,9 +1980,9 @@ export const cagkQuestions: {
     question: 'The "Vsse" speed for twin-engine training is:',
     options: [
       'A. The safe single-engine speed — the minimum speed for intentional engine failures during training, providing a margin above Vmca',
-      'B. peed for single-engine go-around with full flap, and any defect must be recorded in the aircraft technical log',
-      'C. aximum speed for single-engine approaches — this differs between Lycoming and Continental engine types',
-      'D. inimum control speed on the ground — the manufacturer\'s data provides the specific values',
+      'B. Peed for single-engine go-around with full flap, and any defect must be recorded in the aircraft technical log',
+      'C. Aximum speed for single-engine approaches — this differs between Lycoming and Continental engine types',
+      'D. Inimum control speed on the ground — the manufacturer\'s data provides the specific values',
     ],
     correct: 0,
     explanation: 'Vsse (safe single-engine speed): published in some AFMs as the minimum speed for simulated engine failures during training. It provides a safety margin above Vmca — ensuring the aircraft can be controlled even if the trainee\'s reaction is slow. Never simulate engine failure below Vsse. This is a training safety concept — the aircraft may be controllable below Vsse but with less margin for error.',
@@ -2077,8 +2077,8 @@ export const cagkQuestions: {
     options: [
       'A. Solid-state sensors — accelerometers and rate gyros (MEMS technology) combined with GPS and magnetometers to compute attitude, heading, and air data',
       'B.  combination of GPS and radar altimeter only, as defined in the type certificate and airworthiness standards',
-      'C. raditional gyroscopes — the same as older AI and DI instruments — an LAME must certify all maintenance beyond pilot authority',
-      'D. nly GPS data for all attitude and heading information, and any defect must be recorded in the aircraft technical log',
+      'C. Raditional gyroscopes — the same as older AI and DI instruments — an LAME must certify all maintenance beyond pilot authority',
+      'D. Only GPS data for all attitude and heading information, and any defect must be recorded in the aircraft technical log',
     ],
     correct: 0,
     explanation: 'ADAHRS: uses solid-state MEMS (micro-electromechanical systems) gyros and accelerometers, combined with magnetometers (magnetic heading) and air data (pitot/static). These feed algorithms that compute attitude, heading, and airspeed. No moving mechanical parts — lighter, more reliable, faster response, no gyro drift/erection problems. GPS can supplement for position and velocity cross-checks.',
@@ -2111,9 +2111,9 @@ export const cagkQuestions: {
   {
     question: 'The "aircraft static system check" (pitot-static test) is required:',
     options: [
-      'A. nly for aircraft operating above FL180 — this is covered in the aircraft\'s approved flight manual',
-      'B. nly when the static port is physically damaged — this is covered in the aircraft\'s approved flight manual',
-      'C. efore every flight in IMC, and must be checked during the pre-flight inspection',
+      'A. Only for aircraft operating above FL180 — this is covered in the aircraft\'s approved flight manual',
+      'B. Only when the static port is physically damaged — this is covered in the aircraft\'s approved flight manual',
+      'C. Efore every flight in IMC, and must be checked during the pre-flight inspection',
       'D. At specified intervals (typically 24 months for IFR operations) to verify system integrity and instrument accuracy',
     ],
     correct: 3,
@@ -2195,9 +2195,9 @@ export const cagkQuestions: {
   {
     question: 'The "gyroscopic precession" from the propeller acts on the aircraft when:',
     options: [
-      'A. nly during aerobatics — gyroscopic effects are negligible in normal flight, as defined in the type certificate and airworthiness standards',
-      'B. he throttle is suddenly advanced to full power — this is covered in the aircraft\'s approved flight manual',
-      'C. he effect is symmetric and cancels out — no net effect on aircraft control, as defined in the type certificate and airworthiness standards',
+      'A. Only during aerobatics — gyroscopic effects are negligible in normal flight, as defined in the type certificate and airworthiness standards',
+      'B. The throttle is suddenly advanced to full power — this is covered in the aircraft\'s approved flight manual',
+      'C. The effect is symmetric and cancels out — no net effect on aircraft control, as defined in the type certificate and airworthiness standards',
       'D. The aircraft pitch or yaw attitude changes — the spinning propeller mass acts as a gyroscope and precessional forces are applied 90° ahead in the direction of rotation',
     ],
     correct: 3,
@@ -2207,10 +2207,10 @@ export const cagkQuestions: {
   {
     question: 'The "air cycle machine" (ACM) found on pressurised aircraft is part of:',
     options: [
-      'A. he hydraulic system — it uses air pressure to supplement hydraulic pressure — this differs between Lycoming and Continental engine types',
+      'A. The hydraulic system — it uses air pressure to supplement hydraulic pressure — this differs between Lycoming and Continental engine types',
       'B. The environmental control system — it uses engine bleed air and expansion cooling to provide conditioned (cooled and humidified) air to the pressurised cabin',
-      'C. his is ATPL content only — CPL candidates are not required to know about ACMs — the maintenance schedule specifies the required inspection interval',
-      'D. he engine lubrication system, and any defect must be recorded in the aircraft technical log',
+      'C. This is ATPL content only — CPL candidates are not required to know about ACMs — the maintenance schedule specifies the required inspection interval',
+      'D. The engine lubrication system, and any defect must be recorded in the aircraft technical log',
     ],
     correct: 1,
     explanation: 'The ACM is the core of turbine aircraft air conditioning: high-pressure engine bleed air is cooled in a heat exchanger, then expanded through a turbine (which does work, lowering temperature further). The cooled air is conditioned and supplied to the cabin. Not directly relevant to basic CPL piston aircraft but understanding the concept is useful general aviation knowledge.',
@@ -2244,8 +2244,8 @@ export const cagkQuestions: {
     question: '"Dry powder" fire extinguishers are generally NOT preferred in aircraft because:',
     options: [
       'A. ASA does not allow dry powder in aircraft under any circumstance, and must be checked during the pre-flight inspection',
-      'B. ry powder is ineffective against fuel fires — this system is common to most piston-engine light aircraft',
-      'C. ry powder extinguishers are too heavy for aircraft use — an LAME must certify all maintenance beyond pilot authority',
+      'B. Ry powder is ineffective against fuel fires — this system is common to most piston-engine light aircraft',
+      'C. Ry powder extinguishers are too heavy for aircraft use — an LAME must certify all maintenance beyond pilot authority',
       'D. Dry powder leaves corrosive residue on avionics and airframe components that causes severe damage requiring extensive cleaning or replacement',
     ],
     correct: 3,
@@ -2315,10 +2315,10 @@ export const cagkQuestions: {
   {
     question: 'The "fuel system" schematic in the aircraft POH shows:',
     options: [
-      'A. nly the fuel tank capacities — an LAME must certify all maintenance beyond pilot authority',
+      'A. Only the fuel tank capacities — an LAME must certify all maintenance beyond pilot authority',
       'B. The complete fuel system layout — tanks, selector valves, pumps, filters, lines, vents, and drains — essential for understanding fuel management and troubleshooting',
-      'C. nly the boost pump electrical circuit — this is covered in the aircraft\'s approved flight manual',
-      'D. he fuel burn rates at different power settings only — the manufacturer\'s data provides the specific values',
+      'C. Only the boost pump electrical circuit — this is covered in the aircraft\'s approved flight manual',
+      'D. The fuel burn rates at different power settings only — the manufacturer\'s data provides the specific values',
     ],
     correct: 1,
     explanation: 'Fuel system schematic in the POH: provides the pilot with a complete picture of how the fuel system works. Understanding this is essential for: (1) Correct tank selection and cross-feed procedures; (2) Identifying and responding to fuel system malfunctions; (3) Understanding fuel imbalance management; (4) Knowing which boost pump feeds which engine. CPL candidates should understand their aircraft\'s fuel system completely.',
@@ -2327,10 +2327,10 @@ export const cagkQuestions: {
   {
     question: 'The "aircraft life raft" or survival equipment requirement depends on:',
     options: [
-      'A. urvival equipment is optional for all GA operations — an LAME must certify all maintenance beyond pilot authority',
+      'A. Urvival equipment is optional for all GA operations — an LAME must certify all maintenance beyond pilot authority',
       'B. The type of operation and route — overwater flights beyond gliding distance from shore, or flights over remote terrain, may require survival equipment as specified in CASR and operator approvals',
-      'C. he number of passengers only — not the route flown — an LAME must certify all maintenance beyond pilot authority',
-      'D. nly jet aircraft are required to carry survival equipment — this system is common to most piston-engine light aircraft',
+      'C. The number of passengers only — not the route flown — an LAME must certify all maintenance beyond pilot authority',
+      'D. Only jet aircraft are required to carry survival equipment — this system is common to most piston-engine light aircraft',
     ],
     correct: 1,
     explanation: 'Survival equipment requirements: CASR Part 91 and Part 135 specify equipment requirements based on the nature of operation. Overwater flights beyond a certain distance from shore require approved life jackets and/or life rafts. Flights over remote areas may require survival equipment (food, water, signalling). Check the applicable regulations and operator approvals for each specific operation.',
@@ -2354,7 +2354,7 @@ export const cagkQuestions: {
       'A.  dedicated battery that is isolated from the main electrical system — CASR Part 43 specifies who may perform this maintenance',
       'B. The main aircraft electrical bus — it is a high-current load that should be used judiciously to avoid excessive battery discharge',
       'C.  solar panel on the upper fuselage, and must be checked during the pre-flight inspection',
-      'D. he magneto system for independence from the main electrical system — the manufacturer\'s data provides the specific values',
+      'D. The magneto system for independence from the main electrical system — the manufacturer\'s data provides the specific values',
     ],
     correct: 1,
     explanation: 'Landing lights draw significant current (typically 4–10 amps for incandescent, less for LED types). They are powered from the main bus. Excessive use on the ground (before the engine/alternator is running) can discharge the battery. During flight, the alternator powers all loads including the landing light — current draw from the battery is minimal when the alternator is operating correctly.',
@@ -2435,10 +2435,10 @@ export const cagkQuestions: {
   {
     question: 'The "attitude indicator" will show a false bank after:',
     options: [
-      'A. ny flight above 10,000 ft where vacuum pressure is reduced, as defined in the type certificate and airworthiness standards',
+      'A. Ny flight above 10,000 ft where vacuum pressure is reduced, as defined in the type certificate and airworthiness standards',
       'B. A prolonged turn — the erection mechanism may precess the gyro slightly toward the sustained turn attitude, causing a small false reading after rolling out',
-      'C. ormal coordinated turns — the AI always reads zero bank in level flight — this is covered in the aircraft\'s approved flight manual',
-      'D. he AI never shows false readings unless the gyro has toppled — this differs between Lycoming and Continental engine types',
+      'C. Ormal coordinated turns — the AI always reads zero bank in level flight — this is covered in the aircraft\'s approved flight manual',
+      'D. The AI never shows false readings unless the gyro has toppled — this differs between Lycoming and Continental engine types',
     ],
     correct: 1,
     explanation: 'Attitude indicator turn error: the erection mechanism uses gravity-sensing pendulous vanes to keep the gyro vertical. During a prolonged constant-rate turn, the pendulous vanes experience a centrifugal force component — this can cause the gyro to precess slightly away from the vertical. After rolling out of the turn, the AI may show a small false bank that slowly erects back to zero.',
@@ -2460,9 +2460,9 @@ export const cagkQuestions: {
     question: 'The "AVTUR" or Jet A-1 fuel used in turbine engines differs from avgas in that:',
     options: [
       'A. Avtur is a kerosene-based fuel with much higher flash point, lower volatility, and lower octane than avgas',
-      'B. vtur can be used in piston engines in emergencies — the manufacturer\'s data provides the specific values',
-      'C. vtur has a higher octane rating than avgas — the manufacturer\'s data provides the specific values',
-      'D. vtur is dyed blue for identification like avgas 100LL — this system is common to most piston-engine light aircraft',
+      'B. Vtur can be used in piston engines in emergencies — the manufacturer\'s data provides the specific values',
+      'C. Vtur has a higher octane rating than avgas — the manufacturer\'s data provides the specific values',
+      'D. Vtur is dyed blue for identification like avgas 100LL — this system is common to most piston-engine light aircraft',
     ],
     correct: 0,
     explanation: 'Jet A-1 (AVTUR): kerosene-based, flash point approximately 38°C (much safer to handle than avgas which can flash at −40°C), clear to straw coloured. Very low octane number — would immediately cause severe detonation in a spark-ignition piston engine. Used in turbines because their combustion is continuous-flame (not knock-sensitive). Misfuelling piston aircraft with Jet A-1 has caused fatal accidents.',
@@ -2532,9 +2532,9 @@ export const cagkQuestions: {
     question: 'The "turn coordinator" (or turn-and-slip indicator) uses which type of gyro?',
     options: [
       'A. Rate gyro — tilted axis that precesses in response to the rate of turn (yaw rate), giving turn rate information',
-      'B. arth gyro — spin axis vertical, sensitive to bank angle — this is covered in the aircraft\'s approved flight manual',
-      'C. ree gyro — no restrictions on movement in any plane — this is covered in the aircraft\'s approved flight manual',
-      'D. pace gyro — aligned with the Earth\'s magnetic poles — this system is common to most piston-engine light aircraft',
+      'B. Arth gyro — spin axis vertical, sensitive to bank angle — this is covered in the aircraft\'s approved flight manual',
+      'C. Ree gyro — no restrictions on movement in any plane — this is covered in the aircraft\'s approved flight manual',
+      'D. Pace gyro — aligned with the Earth\'s magnetic poles — this system is common to most piston-engine light aircraft',
     ],
     correct: 0,
     explanation: 'The turn coordinator uses a rate gyro — the spin axis is tilted approximately 30° from the horizontal. When the aircraft yaws (turns), the gyro precesses and moves a miniature aircraft display to indicate the rate of turn. It is more responsive than the older needle-type turn-and-bank indicator, as it also responds to roll.',
@@ -2592,9 +2592,9 @@ export const cagkQuestions: {
     question: 'A mixture that is "too rich" will cause:',
     options: [
       'A. Reduced power, increased fuel consumption, rough running, black exhaust smoke, and potential fouling of spark plugs with carbon deposits',
-      'B. ver-cooling — the excess fuel absorbs heat and reduces CHT excessively — this system is common to most piston-engine light aircraft',
-      'C. ean misfire — the engine will not fire on some cylinders — an LAME must certify all maintenance beyond pilot authority',
-      'D. etonation — excess fuel causes the mixture to ignite prematurely — this system is common to most piston-engine light aircraft',
+      'B. Ver-cooling — the excess fuel absorbs heat and reduces CHT excessively — this system is common to most piston-engine light aircraft',
+      'C. Ean misfire — the engine will not fire on some cylinders — an LAME must certify all maintenance beyond pilot authority',
+      'D. Etonation — excess fuel causes the mixture to ignite prematurely — this system is common to most piston-engine light aircraft',
     ],
     correct: 0,
     explanation: 'An over-rich mixture has excess fuel that cannot fully combust. Results: reduced power (incomplete combustion), high fuel consumption, rough running, black smoke in the exhaust, carbon fouling of spark plugs and exhaust valves, and high EGT variability. At sea level for take-off, full rich is used for cooling and safety margin.',
@@ -2651,10 +2651,10 @@ export const cagkQuestions: {
   {
     question: 'The "acceleration error" of a magnetic compass occurs when:',
     options: [
-      'A. he aircraft turns rapidly and the compass overshoots the new heading — this system is common to most piston-engine light aircraft',
+      'A. The aircraft turns rapidly and the compass overshoots the new heading — this system is common to most piston-engine light aircraft',
       'B. On east or west headings, accelerating causes the compass to indicate a turn toward north; decelerating indicates a turn toward south (in the southern hemisphere)',
-      'C. cceleration error only affects the DI, not the magnetic compass — this system is common to most piston-engine light aircraft',
-      'D. igh G manoeuvres cause the compass card to spin — this system is common to most piston-engine light aircraft',
+      'C. Cceleration error only affects the DI, not the magnetic compass — this system is common to most piston-engine light aircraft',
+      'D. Igh G manoeuvres cause the compass card to spin — this system is common to most piston-engine light aircraft',
     ],
     correct: 1,
     explanation: 'Acceleration error (ANDS — Accelerate North, Decelerate South — in southern hemisphere, reversed from northern): when on an east or west heading and the aircraft accelerates, the compass card (weighted at the south-seeking end in southern hemisphere) swings and shows a false turn toward north. Decelerating shows a false turn toward south. On N/S headings, errors are minimal.',
@@ -2675,9 +2675,9 @@ export const cagkQuestions: {
   {
     question: 'The "retractable gear warning horn" is typically connected to:',
     options: [
-      'A. he flap selector — horn activates when full flap is selected without gear down — the maintenance schedule specifies the required inspection interval',
+      'A. The flap selector — horn activates when full flap is selected without gear down — the maintenance schedule specifies the required inspection interval',
       'B. The throttle position — when throttle is reduced below approximately 12 in Hg MAP (approach power) with gear not down and locked, the horn activates',
-      'C. he autopilot — the horn activates when the autopilot disconnects — CASR Part 43 specifies who may perform this maintenance',
+      'C. The autopilot — the horn activates when the autopilot disconnects — CASR Part 43 specifies who may perform this maintenance',
       'D.  timer — the horn activates 2 minutes after throttle reduction regardless of gear position, and any defect must be recorded in the aircraft technical log',
     ],
     correct: 1,
@@ -2711,9 +2711,9 @@ export const cagkQuestions: {
   {
     question: 'When using an autopilot, the pilot is responsible for:',
     options: [
-      'A. nly monitoring the fuel state — the autopilot handles navigation and separation — CASR Part 43 specifies who may perform this maintenance',
-      'B. anaging communication and navigation only — autopilot handles all flying, and any defect must be recorded in the aircraft technical log',
-      'C. othing — the autopilot manages all aspects of flight, and must be checked during the pre-flight inspection',
+      'A. Only monitoring the fuel state — the autopilot handles navigation and separation — CASR Part 43 specifies who may perform this maintenance',
+      'B. Anaging communication and navigation only — autopilot handles all flying, and any defect must be recorded in the aircraft technical log',
+      'C. Othing — the autopilot manages all aspects of flight, and must be checked during the pre-flight inspection',
       'D. Monitoring the autopilot operation, maintaining vigilance, retaining authority to disconnect at any time, and monitoring all aircraft systems',
     ],
     correct: 3,
@@ -2772,9 +2772,9 @@ export const cagkQuestions: {
     question: 'The "service ceiling" of an aircraft with a normally aspirated engine decreases as weight increases because:',
     options: [
       'A. Heavier aircraft require more power to maintain level flight — less excess power is available for climb, so the altitude at which ROC = 100 ft/min is lower',
-      'B. eavier aircraft have more drag, which reduces the service ceiling by increasing the stall speed only — CASR Part 43 specifies who may perform this maintenance',
-      'C. eavier aircraft use more fuel, reaching the fuel exhaustion ceiling sooner — an LAME must certify all maintenance beyond pilot authority',
-      'D. ervice ceiling is independent of weight — it only depends on engine power — the maintenance schedule specifies the required inspection interval',
+      'B. Eavier aircraft have more drag, which reduces the service ceiling by increasing the stall speed only — CASR Part 43 specifies who may perform this maintenance',
+      'C. Eavier aircraft use more fuel, reaching the fuel exhaustion ceiling sooner — an LAME must certify all maintenance beyond pilot authority',
+      'D. Ervice ceiling is independent of weight — it only depends on engine power — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 0,
     explanation: 'Service ceiling and weight: Power required for level flight increases with weight (more drag requires more thrust which requires more power). The excess power available for climbing decreases. The altitude at which excess power equals only 100 ft/min ROC (the service ceiling) is lower for heavier aircraft.',
@@ -2783,10 +2783,10 @@ export const cagkQuestions: {
   {
     question: 'The "aircraft pre-flight" inspection of the propeller checks for:',
     options: [
-      'A. nly propeller balance — other defects are inspection items only, as defined in the type certificate and airworthiness standards',
+      'A. Only propeller balance — other defects are inspection items only, as defined in the type certificate and airworthiness standards',
       'B. Leading edge nicks and erosion, cracks, gouges, delamination on composite blades, oil or grease leaks from the hub, and correct blade tracking',
-      'C. lade pitch angle using a pitch gauge — CASR Part 43 specifies who may perform this maintenance',
-      'D. orrect RPM by hand-rotating the propeller, as defined in the type certificate and airworthiness standards',
+      'C. Lade pitch angle using a pitch gauge — CASR Part 43 specifies who may perform this maintenance',
+      'D. Orrect RPM by hand-rotating the propeller, as defined in the type certificate and airworthiness standards',
     ],
     correct: 1,
     explanation: 'Propeller pre-flight: (1) Inspect each blade for nicks, gouges, or erosion on leading edges — these are stress concentrators that can lead to fatigue cracks; (2) Check for delamination on composite propellers; (3) Check hub area for oil or grease leaks (indicating seal failure); (4) Check blade tracking; (5) Inspect for impact damage (gravel pitting). Never hand-swing a propeller without explicit training and confirmation the ignition is off.',
@@ -2855,10 +2855,10 @@ export const cagkQuestions: {
   {
     question: 'The "engine oil system" "bypass valve" opens when:',
     options: [
-      'A. he oil temperature falls below the minimum operating value — this differs between Lycoming and Continental engine types',
+      'A. The oil temperature falls below the minimum operating value — this differs between Lycoming and Continental engine types',
       'B. The oil filter becomes blocked — the bypass valve allows unfiltered oil to continue circulating rather than starving the engine of lubrication',
-      'C. he oil pressure exceeds the maximum operating limit — this is covered in the aircraft\'s approved flight manual',
-      'D. he engine reaches maximum continuous power for more than 5 minutes — an LAME must certify all maintenance beyond pilot authority',
+      'C. The oil pressure exceeds the maximum operating limit — this is covered in the aircraft\'s approved flight manual',
+      'D. The engine reaches maximum continuous power for more than 5 minutes — an LAME must certify all maintenance beyond pilot authority',
     ],
     correct: 1,
     explanation: 'Oil filter bypass valve: opens when the pressure drop across the filter exceeds a set value (indicating the filter is becoming blocked with contaminants). Unfiltered oil bypasses the filter and continues to lubricate the engine — preventing engine seizure from oil starvation. Metal particles in the oil after a bypass event will reach the engine bearings — a filter bypass is a warning that the filter needs urgent inspection.',
@@ -2927,10 +2927,10 @@ export const cagkQuestions: {
   {
     question: '"Apparent drift" of the directional gyro is caused by:',
     options: [
-      'A. emperature changes in the instrument bay affecting the gyro — CASR Part 43 specifies who may perform this maintenance',
-      'B. ompass deviation errors being transferred to the DI during alignment, as defined in the type certificate and airworthiness standards',
+      'A. Emperature changes in the instrument bay affecting the gyro — CASR Part 43 specifies who may perform this maintenance',
+      'B. Ompass deviation errors being transferred to the DI during alignment, as defined in the type certificate and airworthiness standards',
       'C. The Earth\'s rotation — the DI maintains a fixed orientation in space while the Earth rotates beneath it, making the heading appear to change',
-      'D. ircraft vibration disturbing the gyro balance, as defined in the type certificate and airworthiness standards',
+      'D. Ircraft vibration disturbing the gyro balance, as defined in the type certificate and airworthiness standards',
     ],
     correct: 2,
     explanation: 'Apparent drift: the DI maintains a truly fixed orientation in space (inertial reference). But Earth rotates approximately 15° per hour. At the equator, this full rotation rate causes 15°/hour apparent drift. At higher latitudes the drift rate varies with sin(latitude). The DI appears to drift simply because the Earth (and the observer) rotates.',
@@ -2939,9 +2939,9 @@ export const cagkQuestions: {
   {
     question: 'A "gyroscope" precesses when a force is applied because:',
     options: [
-      'A. he gyro bearings create friction that redirects the applied force — the manufacturer\'s data provides the specific values',
-      'B. ravity always acts on the gyro mass perpendicular to its rotation — CASR Part 43 specifies who may perform this maintenance',
-      'C. he gyro structure is flexible and deflects under load — the maintenance schedule specifies the required inspection interval',
+      'A. The gyro bearings create friction that redirects the applied force — the manufacturer\'s data provides the specific values',
+      'B. Ravity always acts on the gyro mass perpendicular to its rotation — CASR Part 43 specifies who may perform this maintenance',
+      'C. The gyro structure is flexible and deflects under load — the maintenance schedule specifies the required inspection interval',
       'D. Angular momentum conservation requires the spin axis to change direction 90° ahead of the applied torque in the direction of rotation',
     ],
     correct: 3,
@@ -2988,9 +2988,9 @@ export const cagkQuestions: {
     question: 'The "engine mount" structure:',
     options: [
       'A. Transmits all engine forces and moments (thrust, torque, gyroscopic) to the aircraft structure, and must absorb vibration to protect the airframe',
-      'B. s a flexible rubber mount that prevents thrust from reaching the airframe, and any defect must be recorded in the aircraft technical log',
-      'C. nly supports the engine weight when on the ground — the maintenance schedule specifies the required inspection interval',
-      'D. nly connects the magnetos to the firewall — the maintenance schedule specifies the required inspection interval',
+      'B. S a flexible rubber mount that prevents thrust from reaching the airframe, and any defect must be recorded in the aircraft technical log',
+      'C. Only supports the engine weight when on the ground — the maintenance schedule specifies the required inspection interval',
+      'D. Only connects the magnetos to the firewall — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 0,
     explanation: 'The engine mount is a critical structural component. It transmits: (1) Thrust (forward force to the airframe); (2) Reaction torque; (3) Engine weight; (4) Gyroscopic forces during attitude changes. Anti-vibration mounts (rubber bushings) reduce transmission of high-frequency vibration to the airframe and avionics. Cracks in the engine mount are a serious airworthiness concern.',
@@ -3011,9 +3011,9 @@ export const cagkQuestions: {
   {
     question: 'A gyroscope maintains its orientation in space because of:',
     options: [
-      'A. agnetic attraction to the Earth\'s poles — this is covered in the aircraft\'s approved flight manual',
-      'B. he Earth\'s gravitational field acting on the spinning mass — the maintenance schedule specifies the required inspection interval',
-      'C. lectrical currents that sense attitude and correct any deviation — CASR Part 43 specifies who may perform this maintenance',
+      'A. Agnetic attraction to the Earth\'s poles — this is covered in the aircraft\'s approved flight manual',
+      'B. The Earth\'s gravitational field acting on the spinning mass — the maintenance schedule specifies the required inspection interval',
+      'C. Lectrical currents that sense attitude and correct any deviation — CASR Part 43 specifies who may perform this maintenance',
       'D. Rigidity in space — the spinning gyro rotor resists any force trying to change its axis of rotation, maintaining its original orientation',
     ],
     correct: 3,
@@ -3048,9 +3048,9 @@ export const cagkQuestions: {
     question: 'On an aircraft with a constant speed propeller, reducing the RPM control setting:',
     options: [
       'A. Reduces the governor set point — the flyweights overcome the reduced spring force, oil is directed to increase blade pitch (coarser) which adds load and reduces RPM to the new set value',
-      'B. irectly decreases fuel flow to reduce engine power — the maintenance schedule specifies the required inspection interval',
-      'C. educes manifold pressure — the RPM control is linked to the throttle, and must be checked during the pre-flight inspection',
-      'D. eathers the propeller blades to minimum drag — this differs between Lycoming and Continental engine types',
+      'B. Irectly decreases fuel flow to reduce engine power — the maintenance schedule specifies the required inspection interval',
+      'C. Educes manifold pressure — the RPM control is linked to the throttle, and must be checked during the pre-flight inspection',
+      'D. Eathers the propeller blades to minimum drag — this differs between Lycoming and Continental engine types',
     ],
     correct: 0,
     explanation: 'Reducing RPM: the RPM lever reduces speeder spring tension in the governor. The flyweights (now rotating faster than the new set RPM) overcome the lighter spring and open the oil port to increase blade pitch (coarser). The coarser pitch adds aerodynamic load on the propeller — RPM falls to the new set point. This sequence takes a few seconds.',
@@ -3071,10 +3071,10 @@ export const cagkQuestions: {
   {
     question: 'The "external power receptacle" on some aircraft allows:',
     options: [
-      'A. onnecting to airport power for overnight battery maintenance charging — the maintenance schedule specifies the required inspection interval',
-      'B. harging the battery with a standard automotive battery charger — this system is common to most piston-engine light aircraft',
+      'A. Onnecting to airport power for overnight battery maintenance charging — the maintenance schedule specifies the required inspection interval',
+      'B. Harging the battery with a standard automotive battery charger — this system is common to most piston-engine light aircraft',
       'C. Connection of a GPU (ground power unit) to provide electrical power for engine start and avionics testing without discharging the aircraft battery',
-      'D. echarging the battery through the pitot tube heating element — CASR Part 43 specifies who may perform this maintenance',
+      'D. Echarging the battery through the pitot tube heating element — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 2,
     explanation: 'External power receptacle: allows a GPU (ground power unit) to supply the aircraft bus for engine starting and ground operations. This preserves the aircraft battery and ensures adequate starting current is available. The external power is disconnected before take-off — it typically cannot be connected in flight. The aircraft must have appropriate protection against reverse polarity or incorrect voltage from the GPU.',
@@ -3143,9 +3143,9 @@ export const cagkQuestions: {
   {
     question: 'If the "gear warning horn" sounds during approach to land, it indicates:',
     options: [
-      'A. he gear is down and locked — the horn confirms a safe configuration — an LAME must certify all maintenance beyond pilot authority',
-      'B. he gear hydraulic pressure is below minimum — the maintenance schedule specifies the required inspection interval',
-      'C. irspeed is too high for gear extension — an LAME must certify all maintenance beyond pilot authority',
+      'A. The gear is down and locked — the horn confirms a safe configuration — an LAME must certify all maintenance beyond pilot authority',
+      'B. The gear hydraulic pressure is below minimum — the maintenance schedule specifies the required inspection interval',
+      'C. Irspeed is too high for gear extension — an LAME must certify all maintenance beyond pilot authority',
       'D. The gear is not down and locked — typically triggered when throttle is reduced below a set position and the gear is not in the down and locked position',
     ],
     correct: 3,
@@ -3299,10 +3299,10 @@ export const cagkQuestions: {
   {
     question: 'The "stall speed" published in the AFM is measured at:',
     options: [
-      'A. verage weight with half fuel — this is covered in the aircraft\'s approved flight manual',
-      'B. ypical cruise weight at 75% power — this is covered in the aircraft\'s approved flight manual',
+      'A. Verage weight with half fuel — this is covered in the aircraft\'s approved flight manual',
+      'B. Ypical cruise weight at 75% power — this is covered in the aircraft\'s approved flight manual',
       'C. Maximum certificated gross weight, wings level, power off, at the most adverse CG position',
-      'D. mpty weight with no fuel or passengers — the manufacturer\'s data provides the specific values',
+      'D. Mpty weight with no fuel or passengers — the manufacturer\'s data provides the specific values',
     ],
     correct: 2,
     explanation: 'Published stall speeds are conservative: measured at maximum certificated gross weight (heaviest = highest stall speed), wings level (no bank = no additional load factor), power off (no slipstream assistance), and typically with the CG at the position giving the highest stall speed. Any weight below MTOW means the actual stall speed is lower than the published value.',
@@ -3311,10 +3311,10 @@ export const cagkQuestions: {
   {
     question: 'The difference between "avgas 80" and "avgas 100LL" is:',
     options: [
-      'A. vgas 80 contains no lead; avgas 100LL contains lead — the manufacturer\'s data provides the specific values',
-      'B. nly the grade designation — both can be used interchangeably in all engines, and any defect must be recorded in the aircraft technical log',
+      'A. Vgas 80 contains no lead; avgas 100LL contains lead — the manufacturer\'s data provides the specific values',
+      'B. Only the grade designation — both can be used interchangeably in all engines, and any defect must be recorded in the aircraft technical log',
       'C. Different octane ratings — avgas 80 (octane 80/87) for lower compression engines; avgas 100LL (octane 100/130) for higher compression engines',
-      'D. nly the colour — both are chemically identical — this differs between Lycoming and Continental engine types',
+      'D. Only the colour — both are chemically identical — this differs between Lycoming and Continental engine types',
     ],
     correct: 2,
     explanation: 'Avgas 80: lean mixture octane rating of 80, rich mixture 87 — red colour. Suitable for low compression engines. Avgas 100LL: lean 100, rich 130 (100/130 in old notation) — blue colour — "LL" means lower lead than original 100/130 grade. Higher compression engines require higher octane to prevent detonation. Using avgas 80 in an engine requiring 100LL causes detonation.',
@@ -3359,10 +3359,10 @@ export const cagkQuestions: {
   {
     question: 'The "gyroscopic rigidity" that makes the artificial horizon work means the gyro:',
     options: [
-      'A. oints toward magnetic north and provides heading information — this system is common to most piston-engine light aircraft',
-      'B. pins around the aircraft\'s yaw axis providing turn information, and any defect must be recorded in the aircraft technical log',
+      'A. Oints toward magnetic north and provides heading information — this system is common to most piston-engine light aircraft',
+      'B. Pins around the aircraft\'s yaw axis providing turn information, and any defect must be recorded in the aircraft technical log',
       'C. Maintains its orientation in space — as the aircraft pitches and rolls, the miniature aircraft symbol moves relative to the stable horizon bar',
-      'D. eturns to vertical whenever disturbed, like a pendulum — CASR Part 43 specifies who may perform this maintenance',
+      'D. Eturns to vertical whenever disturbed, like a pendulum — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 2,
     explanation: 'The AI gyro spin axis is maintained vertical. When the aircraft pitches nose-up, the gyro (with its fixed vertical orientation) stays put — but the aircraft frame (and the miniature aircraft symbol) tilts upward relative to the gyro. The horizon bar stays horizontal because it is attached to the stable gyro. Pilots read the miniature aircraft\'s position relative to the horizon bar.',
@@ -3372,9 +3372,9 @@ export const cagkQuestions: {
     question: 'The "spark plug" gap must be maintained within specified limits because:',
     options: [
       'A.  gap that is too small causes the magneto to over-speed — CASR Part 43 specifies who may perform this maintenance',
-      'B. he gap only matters during cold starts — at operating temperature all gaps are equal — an LAME must certify all maintenance beyond pilot authority',
+      'B. The gap only matters during cold starts — at operating temperature all gaps are equal — an LAME must certify all maintenance beyond pilot authority',
       'C. Too wide a gap requires higher voltage to fire — may misfire; too narrow a gap causes premature shorting and reduced spark energy — both degrade ignition reliability',
-      'D. he gap determines the ignition timing — wider gap = more advanced timing, and any defect must be recorded in the aircraft technical log',
+      'D. The gap determines the ignition timing — wider gap = more advanced timing, and any defect must be recorded in the aircraft technical log',
     ],
     correct: 2,
     explanation: 'Spark plug gap: too wide — the voltage required to jump the gap exceeds what the magneto can produce, especially at high cylinder pressure (high compression) — misfire results. Too narrow — the electrodes may short (carbon bridging), or produce a weak spark. Correct gap (e.g., 0.016–0.022 inch) ensures reliable ignition across all operating conditions.',
@@ -3395,9 +3395,9 @@ export const cagkQuestions: {
   {
     question: 'The "ignition timing" advance is set so that:',
     options: [
-      'A. he spark fires after TDC to prevent detonation at high power — CASR Part 43 specifies who may perform this maintenance',
-      'B. he spark occurs exactly at top dead centre for maximum compression — this is covered in the aircraft\'s approved flight manual',
-      'C. oth magnetos fire at different times to smooth out the power pulses — an LAME must certify all maintenance beyond pilot authority',
+      'A. The spark fires after TDC to prevent detonation at high power — CASR Part 43 specifies who may perform this maintenance',
+      'B. The spark occurs exactly at top dead centre for maximum compression — this is covered in the aircraft\'s approved flight manual',
+      'C. Oth magnetos fire at different times to smooth out the power pulses — an LAME must certify all maintenance beyond pilot authority',
       'D. The spark fires before TDC, allowing the flame front to fully develop so peak pressure acts on the piston just after TDC during the power stroke',
     ],
     correct: 3,
@@ -3407,9 +3407,9 @@ export const cagkQuestions: {
   {
     question: 'A "nose-wheel steering" system on a tricycle undercarriage aircraft is typically operated by:',
     options: [
-      'A. ileron inputs — banking the aircraft steers on the ground — this differs between Lycoming and Continental engine types',
+      'A. Ileron inputs — banking the aircraft steers on the ground — this differs between Lycoming and Continental engine types',
       'B. Differential braking and/or the rudder pedals (connected to the nose wheel by a mechanical or hydraulic linkage)',
-      'C. oving the control column fore and aft — this is covered in the aircraft\'s approved flight manual',
+      'C. Oving the control column fore and aft — this is covered in the aircraft\'s approved flight manual',
       'D.  separate steering wheel on the left side of the cockpit — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 1,
@@ -3491,10 +3491,10 @@ export const cagkQuestions: {
   {
     question: 'The "crankshaft vibration damper" reduces:',
     options: [
-      'A. ngine torque reaction felt in the airframe, as defined in the type certificate and airworthiness standards',
-      'B. he gyroscopic effect of the propeller during attitude changes — this is covered in the aircraft\'s approved flight manual',
+      'A. Engine torque reaction felt in the airframe, as defined in the type certificate and airworthiness standards',
+      'B. The gyroscopic effect of the propeller during attitude changes — this is covered in the aircraft\'s approved flight manual',
       'C. Torsional vibration in the crankshaft — pulsating power strokes create twisting forces that can cause crankshaft resonance and fatigue cracking',
-      'D. ropeller tip speed to below the speed of sound — this system is common to most piston-engine light aircraft',
+      'D. Ropeller tip speed to below the speed of sound — this system is common to most piston-engine light aircraft',
     ],
     correct: 2,
     explanation: 'Crankshaft vibration damper (dynamic counterweights): piston power strokes create pulsating torque — the crankshaft flexes and twists at specific frequencies. Dynamic counterweights attached to the crankshaft crank-pins are tuned to absorb these resonant frequencies — reducing crankshaft fatigue and vibration transmitted to the airframe. Damaged dampers cause severe vibration and are an airworthiness issue.',
@@ -3539,8 +3539,8 @@ export const cagkQuestions: {
   {
     question: 'An aircraft engine "cylinder" assembly typically consists of:',
     options: [
-      'A. nly the cylinder head — the barrel is part of the crankcase — this is covered in the aircraft\'s approved flight manual',
-      'B. he piston, rings, and connecting rod only — this is covered in the aircraft\'s approved flight manual',
+      'A. Only the cylinder head — the barrel is part of the crankcase — this is covered in the aircraft\'s approved flight manual',
+      'B. The piston, rings, and connecting rod only — this is covered in the aircraft\'s approved flight manual',
       'C. A steel barrel (cylinder wall) and aluminium head with inlet and exhaust ports, cooling fins, valve seats, and spark plug bosses',
       'D.  cylinder, piston, and crankshaft section as a single unit — this system is common to most piston-engine light aircraft',
     ],
@@ -3576,9 +3576,9 @@ export const cagkQuestions: {
     question: 'When the "fuel selector" is moved to a different tank in flight, there may be a brief:',
     options: [
       'A. Momentary engine roughness or hesitation as air in the newly selected line clears and fuel pressure stabilises in the carburettor or injector',
-      'B. mmediate change in aircraft balance requiring trim adjustment — CASR Part 43 specifies who may perform this maintenance',
-      'C. he fuel selector should never be changed in flight — only on the ground — an LAME must certify all maintenance beyond pilot authority',
-      'D. ngine power increase as the new tank pressure is higher — this system is common to most piston-engine light aircraft',
+      'B. Mmediate change in aircraft balance requiring trim adjustment — CASR Part 43 specifies who may perform this maintenance',
+      'C. The fuel selector should never be changed in flight — only on the ground — an LAME must certify all maintenance beyond pilot authority',
+      'D. Engine power increase as the new tank pressure is higher — this system is common to most piston-engine light aircraft',
     ],
     correct: 0,
     explanation: 'Fuel selector change in flight: the fuel line from the newly selected tank may contain a small air pocket (particularly if that tank was not recently used). As the fuel supply transitions, a brief lean condition (less fuel than expected) may occur. The aircraft may run slightly rough for a few seconds as the new supply is established. The boost pump (if fitted) should be ON during tank changes.',
@@ -3635,9 +3635,9 @@ export const cagkQuestions: {
   {
     question: 'The "corrosion" of aluminium aircraft structure is most likely in:',
     options: [
-      'A. nly in unpainted surfaces — paint provides complete corrosion protection — this is covered in the aircraft\'s approved flight manual',
-      'B. ry inland areas at high altitude where humidity is low — the manufacturer\'s data provides the specific values',
-      'C. orrosion only affects steel components — aluminium does not corrode — this system is common to most piston-engine light aircraft',
+      'A. Only in unpainted surfaces — paint provides complete corrosion protection — this is covered in the aircraft\'s approved flight manual',
+      'B. Ry inland areas at high altitude where humidity is low — the manufacturer\'s data provides the specific values',
+      'C. Orrosion only affects steel components — aluminium does not corrode — this system is common to most piston-engine light aircraft',
       'D. Coastal and tropical environments with high humidity, salt air, and standing moisture in bilge areas, lap joints, and under floor panels',
     ],
     correct: 3,
@@ -3659,9 +3659,9 @@ export const cagkQuestions: {
   {
     question: 'The "CHT" indication for a specific cylinder that is consistently higher than others suggests:',
     options: [
-      'A. hat cylinder is producing more power — a desirable condition — the maintenance schedule specifies the required inspection interval',
-      'B. igher CHT in one cylinder is always normal and requires no investigation, as defined in the type certificate and airworthiness standards',
-      'C. he CHT gauge for that cylinder has failed high and should be ignored — this system is common to most piston-engine light aircraft',
+      'A. Hat cylinder is producing more power — a desirable condition — the maintenance schedule specifies the required inspection interval',
+      'B. Igher CHT in one cylinder is always normal and requires no investigation, as defined in the type certificate and airworthiness standards',
+      'C. The CHT gauge for that cylinder has failed high and should be ignored — this system is common to most piston-engine light aircraft',
       'D. That cylinder may have a lean fuel/air distribution, a failing exhaust valve, damaged baffles directing cooling air away from it, or a detonation condition',
     ],
     correct: 3,
@@ -3684,9 +3684,9 @@ export const cagkQuestions: {
     question: 'The "attitude indicator" during prolonged coordinated turns may develop an error called:',
     options: [
       'A. Pendulous vane turn error — the erection mechanism processes centrifugal force as gravity and tilts the gyro slightly in the direction of the turn, causing a slight bank indication after rollout',
-      'B. he "graveyard spiral" — the AI shows level flight while the aircraft is in a descending turn — an LAME must certify all maintenance beyond pilot authority',
-      'C. urning error — the AI reads 5° more bank than actual during constant turns, and must be checked during the pre-flight inspection',
-      'D. he AI has no errors in coordinated turns — only in skids and slips — CASR Part 43 specifies who may perform this maintenance',
+      'B. The "graveyard spiral" — the AI shows level flight while the aircraft is in a descending turn — an LAME must certify all maintenance beyond pilot authority',
+      'C. Urning error — the AI reads 5° more bank than actual during constant turns, and must be checked during the pre-flight inspection',
+      'D. The AI has no errors in coordinated turns — only in skids and slips — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 0,
     explanation: 'AI turn error: in a sustained coordinated turn, the pendulous vanes sense the combination of gravity AND centrifugal force (the resultant acts slightly outward from vertical). The erection system processes this resultant as "down" and slowly precesses the gyro toward this false vertical. After a prolonged turn and rollout, the AI may show a small residual bank. The error erects out within a few minutes.',
@@ -3719,9 +3719,9 @@ export const cagkQuestions: {
   {
     question: '"Volumetric efficiency" of an engine is:',
     options: [
-      'A. he ratio of actual power output to theoretical maximum power — this system is common to most piston-engine light aircraft',
-      'B. he ratio of engine displacement to total airframe volume, and any defect must be recorded in the aircraft technical log',
-      'C. he percentage of fuel energy converted to useful work — this is covered in the aircraft\'s approved flight manual',
+      'A. The ratio of actual power output to theoretical maximum power — this system is common to most piston-engine light aircraft',
+      'B. The ratio of engine displacement to total airframe volume, and any defect must be recorded in the aircraft technical log',
+      'C. The percentage of fuel energy converted to useful work — this is covered in the aircraft\'s approved flight manual',
       'D. The ratio of the actual mass of charge drawn into the cylinder to the mass that would fill it at ambient conditions',
     ],
     correct: 3,
@@ -3743,10 +3743,10 @@ export const cagkQuestions: {
   {
     question: 'The "single-axis autopilot" controls:',
     options: [
-      'A. he yaw axis only — maintaining directional stability, and must be checked during the pre-flight inspection',
+      'A. The yaw axis only — maintaining directional stability, and must be checked during the pre-flight inspection',
       'B. One axis only — typically the roll (aileron) axis, maintaining wings level or tracking a selected heading',
-      'C. ll three axes — pitch, roll, and yaw — this is covered in the aircraft\'s approved flight manual',
-      'D. he pitch axis only — maintaining a selected altitude — the manufacturer\'s data provides the specific values',
+      'C. Ll three axes — pitch, roll, and yaw — this is covered in the aircraft\'s approved flight manual',
+      'D. The pitch axis only — maintaining a selected altitude — the manufacturer\'s data provides the specific values',
     ],
     correct: 1,
     explanation: 'A single-axis (wing leveller) autopilot controls the aileron axis only. It senses bank angle from the attitude indicator or rate gyro and applies aileron corrections to maintain wings level or follow a heading bug. The pilot still controls pitch and power manually.',
@@ -3757,8 +3757,8 @@ export const cagkQuestions: {
     options: [
       'A. The fuel tanks are below the engine — gravity alone cannot deliver adequate fuel pressure, so an engine-driven pump (and electric boost pump) are required',
       'B. ASA regulations require pressure systems on all aircraft above 3,000 ft AGL — this is covered in the aircraft\'s approved flight manual',
-      'C. ressure systems provide better fuel atomisation in the carburettor — an LAME must certify all maintenance beyond pilot authority',
-      'D. ressure systems prevent fuel vaporisation at all altitudes — the manufacturer\'s data provides the specific values',
+      'C. Ressure systems provide better fuel atomisation in the carburettor — an LAME must certify all maintenance beyond pilot authority',
+      'D. Ressure systems prevent fuel vaporisation at all altitudes — the manufacturer\'s data provides the specific values',
     ],
     correct: 0,
     explanation: 'On low-wing aircraft, fuel tanks are level with or below the engine. Gravity cannot push fuel upward to the carburettor. An engine-driven fuel pump provides the required pressure. An electric boost pump serves as backup (used for take-off, landing, and engine start). The boost pump is also used to prime the system and prevent fuel starvation if the engine-driven pump fails.',
@@ -3887,9 +3887,9 @@ export const cagkQuestions: {
   {
     question: 'Running a fuel tank dry in flight causes:',
     options: [
-      'A. nly an administrative issue — the engine restarts immediately on the other tank — the manufacturer\'s data provides the specific values',
+      'A. Only an administrative issue — the engine restarts immediately on the other tank — the manufacturer\'s data provides the specific values',
       'B.  gentle power reduction followed by smooth restart on the other tank, and must be checked during the pre-flight inspection',
-      'C. utomatic fuel selector switching to the other tank — this differs between Lycoming and Continental engine types',
+      'C. Utomatic fuel selector switching to the other tank — this differs between Lycoming and Continental engine types',
       'D. Engine fuel starvation — potentially engine failure, ingestion of air into fuel lines, and difficulty restarting even after switching to a full tank due to vapour lock or air in the system',
     ],
     correct: 3,
@@ -3899,10 +3899,10 @@ export const cagkQuestions: {
   {
     question: 'The "pressure regulator" in a hydraulic system:',
     options: [
-      'A. eters fluid flow to each brake independently for anti-lock braking — an LAME must certify all maintenance beyond pilot authority',
+      'A. Eters fluid flow to each brake independently for anti-lock braking — an LAME must certify all maintenance beyond pilot authority',
       'B. Limits maximum system pressure — preventing over-pressurisation of lines, actuators, and components when the hydraulic pump is running',
-      'C. ontrols the rate of undercarriage extension and retraction — an LAME must certify all maintenance beyond pilot authority',
-      'D. aintains hydraulic fluid at a constant temperature during operation — this differs between Lycoming and Continental engine types',
+      'C. Ontrols the rate of undercarriage extension and retraction — an LAME must certify all maintenance beyond pilot authority',
+      'D. Aintains hydraulic fluid at a constant temperature during operation — this differs between Lycoming and Continental engine types',
     ],
     correct: 1,
     explanation: 'The pressure regulator (or relief valve) is a spring-loaded valve set to open at maximum system pressure. If the hydraulic pump produces more pressure than required, the regulator bypasses excess fluid back to the reservoir. This protects hydraulic lines, actuators, and seals from over-pressure damage.',
@@ -3947,7 +3947,7 @@ export const cagkQuestions: {
   {
     question: 'The "100-hour inspection" for aircraft operated for hire and reward requires:',
     options: [
-      'A. nly a pre-flight style check performed by the pilot, as defined in the type certificate and airworthiness standards',
+      'A. Only a pre-flight style check performed by the pilot, as defined in the type certificate and airworthiness standards',
       'B. 00-hour inspections are not required in Australia — only annual inspections, and must be checked during the pre-flight inspection',
       'C.  full engine overhaul at every 100-hour interval — CASR Part 43 specifies who may perform this maintenance',
       'D. A detailed inspection by a licensed aircraft maintenance engineer (LAME) of all aircraft systems, structures, and components at 100-hour intervals of operation',
@@ -3959,10 +3959,10 @@ export const cagkQuestions: {
   {
     question: 'The "aircraft battery location" affects the CG because:',
     options: [
-      'A. attery location is a fire safety requirement only — not related to weight and balance — this differs between Lycoming and Continental engine types',
+      'A. Attery location is a fire safety requirement only — not related to weight and balance — this differs between Lycoming and Continental engine types',
       'B. The battery is one of the heavier single items in a light aircraft (4-20 kg) and its position (typically forward in the engine bay or aft in the tail cone) directly affects the CG calculation',
-      'C. atteries must always be located at the CG for balance — this differs between Lycoming and Continental engine types',
-      'D. attery location has no effect on CG — batteries are too light to matter — this system is common to most piston-engine light aircraft',
+      'C. Atteries must always be located at the CG for balance — this differs between Lycoming and Continental engine types',
+      'D. Attery location has no effect on CG — batteries are too light to matter — this system is common to most piston-engine light aircraft',
     ],
     correct: 1,
     explanation: 'Battery weight and CG: aircraft batteries weigh 4–20 kg — a significant contribution to the CG calculation. Aircraft designers position the battery strategically: forward battery if the CG needs to be moved forward (tail-heavy configuration); aft battery if CG needs to move aft. On some aircraft, moving a heavy battery to a different location requires weight and balance recalculation and logbook entry.',
@@ -3995,10 +3995,10 @@ export const cagkQuestions: {
   {
     question: 'During a power reduction from cruise to approach, carburettor icing risk:',
     options: [
-      'A. emains constant — icing risk does not change with power setting, and must be checked during the pre-flight inspection',
-      'B. s only relevant during full-power operations — this is covered in the aircraft\'s approved flight manual',
+      'A. Emains constant — icing risk does not change with power setting, and must be checked during the pre-flight inspection',
+      'B. S only relevant during full-power operations — this is covered in the aircraft\'s approved flight manual',
       'C. Increases — reduced manifold pressure creates higher vacuum in the venturi, increasing evaporative cooling and ice formation potential',
-      'D. ecreases — less power means less heat in the engine and carburettor — the manufacturer\'s data provides the specific values',
+      'D. Ecreases — less power means less heat in the engine and carburettor — the manufacturer\'s data provides the specific values',
     ],
     correct: 2,
     explanation: 'At reduced power (approach, descent), the throttle butterfly is partially closed — manifold vacuum increases. Higher vacuum → more suction at the venturi → more evaporative cooling. Combined with reduced engine heat (lower power), the carburettor is in conditions most favourable for ice formation. APPLY CARBURETTOR HEAT before reducing power in conditions conducive to icing.',
@@ -4031,10 +4031,10 @@ export const cagkQuestions: {
   {
     question: 'The "diode" in an aircraft alternator circuit prevents:',
     options: [
-      'A. vervoltage by limiting the maximum output — this system is common to most piston-engine light aircraft',
-      'B. he magnetos from interfering with the avionics, and must be checked during the pre-flight inspection',
+      'A. Vervoltage by limiting the maximum output — this system is common to most piston-engine light aircraft',
+      'B. The magnetos from interfering with the avionics, and must be checked during the pre-flight inspection',
       'C. Reverse current flow from the battery back into the alternator when the alternator is not producing adequate voltage',
-      'D. tatic discharge from the airframe into the electrical system — the maintenance schedule specifies the required inspection interval',
+      'D. Tatic discharge from the airframe into the electrical system — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 2,
     explanation: 'Diodes (rectifier and isolation diodes) in the alternator circuit: (1) Rectify AC to DC; (2) Isolation diode prevents battery current from flowing backward into the alternator when alternator voltage is lower than battery voltage (e.g., at low RPM or on alternator failure). Without isolation, the battery would drive current through the alternator windings, potentially damaging it.',
@@ -4043,10 +4043,10 @@ export const cagkQuestions: {
   {
     question: 'Straight mineral oil is sometimes used in new or overhauled engines because:',
     options: [
-      'A. traight mineral oil prevents corrosion better than AD oil during the run-in period, and must be checked during the pre-flight inspection',
-      'B. ew engines require the ash deposits from mineral oil for initial break-in, as defined in the type certificate and airworthiness standards',
+      'A. Traight mineral oil prevents corrosion better than AD oil during the run-in period, and must be checked during the pre-flight inspection',
+      'B. Ew engines require the ash deposits from mineral oil for initial break-in, as defined in the type certificate and airworthiness standards',
       'C. Its lower detergency allows new piston rings to seat properly against cylinder walls without the lubricating film that AD oil provides being too effective',
-      'D. t is more compatible with new engine components and cheaper than AD oil — this is covered in the aircraft\'s approved flight manual',
+      'D. T is more compatible with new engine components and cheaper than AD oil — this is covered in the aircraft\'s approved flight manual',
     ],
     correct: 2,
     explanation: 'New or newly overhauled engines are often run on straight mineral oil during the break-in period. The reduced detergency allows the piston rings to bed in (seat) against the cylinder wall micro-roughness. Once seated (typically 25–50 hours), the engine is changed to ashless dispersant oil for normal operation.',
@@ -4092,9 +4092,9 @@ export const cagkQuestions: {
     question: 'The aircraft "master switch" typically incorporates:',
     options: [
       'A. A split switch — one side for the battery and one for the alternator — allowing either to be switched independently',
-      'B. nly the battery connection — the manufacturer\'s data provides the specific values',
-      'C. nly the alternator connection — the battery is always connected, and any defect must be recorded in the aircraft technical log',
-      'D. ll electrical systems in one combined switch — the maintenance schedule specifies the required inspection interval',
+      'B. Only the battery connection — the manufacturer\'s data provides the specific values',
+      'C. Only the alternator connection — the battery is always connected, and any defect must be recorded in the aircraft technical log',
+      'D. Ll electrical systems in one combined switch — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 0,
     explanation: 'Split master switch: the left half (BAT) connects/disconnects the battery. The right half (ALT) connects/disconnects the alternator (via the field circuit). This allows: (1) Battery only during start (prevents avionics damage); (2) Battery off with alternator on if battery must be disconnected; (3) Alternator field off to check for electrical faults. Both sides are normally on together in flight.',
@@ -4127,10 +4127,10 @@ export const cagkQuestions: {
   {
     question: 'The "valve clearance" (tappet clearance) in an engine is set to:',
     options: [
-      'A. aximum — wider gaps allow faster valve opening and better breathing — CASR Part 43 specifies who may perform this maintenance',
-      'B. alve clearance is set at overhaul only — it cannot change during normal operation — the manufacturer\'s data provides the specific values',
+      'A. Aximum — wider gaps allow faster valve opening and better breathing — CASR Part 43 specifies who may perform this maintenance',
+      'B. Alve clearance is set at overhaul only — it cannot change during normal operation — the manufacturer\'s data provides the specific values',
       'C. The manufacturer\'s specified gap — too tight causes valves to stay open (burning); too loose causes noise and late/incomplete opening',
-      'D. ero — no clearance provides the best valve timing accuracy, and must be checked during the pre-flight inspection',
+      'D. Ero — no clearance provides the best valve timing accuracy, and must be checked during the pre-flight inspection',
     ],
     correct: 2,
     explanation: 'Valve clearance: a small gap between the rocker arm and valve stem tip when the valve is fully closed (cold). This allows for thermal expansion — valves and pushrods grow longer when hot. Too tight: the valve may not fully close when hot (leaks and burning). Too loose: late opening, incomplete lift, noise (valve knock), and power loss. Valve clearances are adjusted at scheduled maintenance intervals.',
@@ -4139,10 +4139,10 @@ export const cagkQuestions: {
   {
     question: 'The "impulse coupling" on a magneto is used to:',
     options: [
-      'A. rotect the magneto from voltage spikes during high-power operations — the manufacturer\'s data provides the specific values',
-      'B. onnect the magneto to the starter motor circuit for simultaneous operation — this differs between Lycoming and Continental engine types',
+      'A. Rotect the magneto from voltage spikes during high-power operations — the manufacturer\'s data provides the specific values',
+      'B. Onnect the magneto to the starter motor circuit for simultaneous operation — this differs between Lycoming and Continental engine types',
       'C. Retard the ignition timing at start-up and momentarily spin the magneto faster to produce a stronger spark for easier engine starting',
-      'D. llow the magneto to operate at reduced voltage during normal flight — this system is common to most piston-engine light aircraft',
+      'D. Llow the magneto to operate at reduced voltage during normal flight — this system is common to most piston-engine light aircraft',
     ],
     correct: 2,
     explanation: 'The impulse coupling on the starter magneto: (1) Retards ignition timing during cranking to prevent engine kickback; (2) Stores rotational energy in a spring then releases it suddenly as the engine turns slowly — the magneto briefly spins faster, producing a stronger, properly-timed spark. It disengages at normal engine speeds once started.',
@@ -4175,10 +4175,10 @@ export const cagkQuestions: {
   {
     question: 'The "Northern Hemisphere turning error" compared to the Southern Hemisphere:',
     options: [
-      'A. urning errors only occur in the Northern Hemisphere — an LAME must certify all maintenance beyond pilot authority',
+      'A. Urning errors only occur in the Northern Hemisphere — an LAME must certify all maintenance beyond pilot authority',
       'B. In the Northern Hemisphere turning through north: compass lags; Southern Hemisphere turning through north: compass initially swings in the opposite direction to the turn',
-      'C. oth hemispheres show identical turning errors — the maintenance schedule specifies the required inspection interval',
-      'D. outhern Hemisphere turning errors are double those of Northern Hemisphere — CASR Part 43 specifies who may perform this maintenance',
+      'C. Oth hemispheres show identical turning errors — the maintenance schedule specifies the required inspection interval',
+      'D. Outhern Hemisphere turning errors are double those of Northern Hemisphere — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 1,
     explanation: 'Southern Hemisphere turning through north: the north-seeking end of the compass (weighted to counteract dip) swings toward the inside of the turn initially — the opposite of Northern Hemisphere behaviour. When turning left through north, the compass initially moves right. Through south, the compass leads the turn. The DI should be used for all turns — check against the compass when wings level.',
@@ -4247,10 +4247,10 @@ export const cagkQuestions: {
   {
     question: 'The "oil filler cap" on an aircraft engine must be:',
     options: [
-      'A. hecked by the LAME only — pilots are not permitted to remove or replace oil caps — CASR Part 43 specifies who may perform this maintenance',
+      'A. Hecked by the LAME only — pilots are not permitted to remove or replace oil caps — CASR Part 43 specifies who may perform this maintenance',
       'B. Securely fastened before every flight — an open or loose oil filler cap results in oil loss from the system and potential engine damage',
-      'C. nly checked at each 100-hour inspection — this system is common to most piston-engine light aircraft',
-      'D. eft slightly open to allow the oil to breathe during flight, and any defect must be recorded in the aircraft technical log',
+      'C. Only checked at each 100-hour inspection — this system is common to most piston-engine light aircraft',
+      'D. Eft slightly open to allow the oil to breathe during flight, and any defect must be recorded in the aircraft technical log',
     ],
     correct: 1,
     explanation: 'Oil filler cap security: after checking oil level (pilots are permitted to add oil in flight operations as pilot-authority maintenance), the cap must be firmly seated and locked. An unsecured cap can be blown off by engine vibration or airflow — resulting in rapid oil loss, engine damage from oil starvation, and oil contaminating the windscreen or engine compartment (fire risk). Always double-check the cap is fully closed.',
@@ -4319,10 +4319,10 @@ export const cagkQuestions: {
   {
     question: 'The "aircraft technical log" entry after each flight should record:',
     options: [
-      'A. echnical log entries are only required for commercial operations — this is covered in the aircraft\'s approved flight manual',
+      'A. Echnical log entries are only required for commercial operations — this is covered in the aircraft\'s approved flight manual',
       'B. Flight date, aircraft registration, total time, pilot\'s signature, and any defects found or the notation that the aircraft is serviceable',
-      'C. nly defects found — no entry is required if the flight was defect-free — this is covered in the aircraft\'s approved flight manual',
-      'D. nly the fuel quantity added before the flight, and must be checked during the pre-flight inspection',
+      'C. Only defects found — no entry is required if the flight was defect-free — this is covered in the aircraft\'s approved flight manual',
+      'D. Only the fuel quantity added before the flight, and must be checked during the pre-flight inspection',
     ],
     correct: 1,
     explanation: 'Technical log / daily inspection record: after each flight the PIC records: (1) Date; (2) Aircraft registration; (3) Running total time; (4) Any defects noted during or after the flight; (5) If no defects — a nil defect entry is made. This creates a continuous maintenance record. For aircraft on maintenance programs, the certifying LAME reviews the log and clears defects.',
@@ -4331,10 +4331,10 @@ export const cagkQuestions: {
   {
     question: 'The "magnetic particle inspection" (MPI) technique used in aircraft maintenance:',
     options: [
-      'A. easures the magnetic compass deviation of the aircraft structure — this is covered in the aircraft\'s approved flight manual',
+      'A. Easures the magnetic compass deviation of the aircraft structure — this is covered in the aircraft\'s approved flight manual',
       'B. Detects surface and near-surface cracks in ferromagnetic (iron/steel) components by magnetising the part and applying iron particles that gather at crack locations',
-      'C. etects cracks in non-magnetic (aluminium) components using iron powder — an LAME must certify all maintenance beyond pilot authority',
-      'D. ests for internal voids in composite structure — the manufacturer\'s data provides the specific values',
+      'C. Etects cracks in non-magnetic (aluminium) components using iron powder — an LAME must certify all maintenance beyond pilot authority',
+      'D. Ests for internal voids in composite structure — the manufacturer\'s data provides the specific values',
     ],
     correct: 1,
     explanation: 'Magnetic particle inspection (MPI): the component is magnetised by passing current through it or placing it in a magnetic field. Magnetic flux leaks at surface cracks, attracting fine iron particles (dry powder or fluorescent slurry). Under UV light (wet fluorescent method), cracks appear as bright lines. Only works on ferromagnetic materials (steel, not aluminium). Common for engine components, landing gear.',
@@ -4343,10 +4343,10 @@ export const cagkQuestions: {
   {
     question: 'The "propeller diameter" affects engine performance because:',
     options: [
-      'A. arger diameter propellers always produce more thrust regardless of RPM — an LAME must certify all maintenance beyond pilot authority',
+      'A. Arger diameter propellers always produce more thrust regardless of RPM — an LAME must certify all maintenance beyond pilot authority',
       'B. A larger diameter propeller moves more air mass per revolution at any given RPM, but blade tip speed must stay below the speed of sound to avoid compressibility losses',
-      'C. maller diameter propellers are always more efficient due to lower induced drag — CASR Part 43 specifies who may perform this maintenance',
-      'D. ropeller diameter only affects the aircraft\'s ground clearance — not engine or thrust performance — this is covered in the aircraft\'s approved flight manual',
+      'C. Maller diameter propellers are always more efficient due to lower induced drag — CASR Part 43 specifies who may perform this maintenance',
+      'D. Ropeller diameter only affects the aircraft\'s ground clearance — not engine or thrust performance — this is covered in the aircraft\'s approved flight manual',
     ],
     correct: 1,
     explanation: 'Propeller diameter is a critical design parameter. Larger diameter moves more air (lower disc loading, higher efficiency). But at high RPM, the blade tips approach the speed of sound — compressibility effects cause efficiency loss, noise, and vibration. This is why large propellers (e.g., on large piston engines) turn at lower RPM (via reduction gearbox) to keep tip speed subsonic.',
@@ -4380,9 +4380,9 @@ export const cagkQuestions: {
     question: 'A high oil temperature indication during flight indicates:',
     options: [
       'A. Possible causes include low oil quantity, blocked oil cooler, excessively rich mixture, or operating at high power in hot conditions',
-      'B. nly significant if the oil pressure also drops below limits — this is covered in the aircraft\'s approved flight manual',
-      'C. he oil pressure will automatically compensate by increasing — this differs between Lycoming and Continental engine types',
-      'D. ormal operation — oil temperature rises with ambient temperature — this differs between Lycoming and Continental engine types',
+      'B. Only significant if the oil pressure also drops below limits — this is covered in the aircraft\'s approved flight manual',
+      'C. The oil pressure will automatically compensate by increasing — this differs between Lycoming and Continental engine types',
+      'D. Ormal operation — oil temperature rises with ambient temperature — this differs between Lycoming and Continental engine types',
     ],
     correct: 0,
     explanation: 'High oil temperature requires attention: possible causes are low oil level (less oil to absorb heat), blocked or bypassed oil cooler, high power in hot ambient conditions, or a developing engine problem. Prolonged high oil temperature degrades oil viscosity and accelerates oxidation — reduce power, open cowl flaps, and check oil pressure.',
@@ -4427,9 +4427,9 @@ export const cagkQuestions: {
   {
     question: 'The reason an engine should not be operated at "idle" for extended periods on the ground is:',
     options: [
-      'A. dle operation wears the engine faster than high-power operation, and must be checked during the pre-flight inspection',
-      'B. xtended idle is only a problem with carburetted engines — fuel-injected engines are designed for idle operation — CASR Part 43 specifies who may perform this maintenance',
-      'C. dle operation causes the magnetos to overheat — this is covered in the aircraft\'s approved flight manual',
+      'A. Dle operation wears the engine faster than high-power operation, and must be checked during the pre-flight inspection',
+      'B. Xtended idle is only a problem with carburetted engines — fuel-injected engines are designed for idle operation — CASR Part 43 specifies who may perform this maintenance',
+      'C. Dle operation causes the magnetos to overheat — this is covered in the aircraft\'s approved flight manual',
       'D. Extended idle with rich mixture causes spark plug lead fouling, carbon deposit buildup in cylinders, inadequate oil circulation at low pressure, and engine cooling below minimum operating temperature',
     ],
     correct: 3,
@@ -4523,10 +4523,10 @@ export const cagkQuestions: {
   {
     question: 'The "rated power" of an aircraft engine is:',
     options: [
-      'A. he minimum power the engine produces at any altitude, as defined in the type certificate and airworthiness standards',
+      'A. The minimum power the engine produces at any altitude, as defined in the type certificate and airworthiness standards',
       'B. The maximum approved power output, expressed in horsepower or kilowatts, at specified conditions (typically sea level, standard atmosphere, full throttle)',
-      'C. he power required to maintain straight and level flight at MTOW — an LAME must certify all maintenance beyond pilot authority',
-      'D. he power at 75% throttle — the normal cruise setting — an LAME must certify all maintenance beyond pilot authority',
+      'C. The power required to maintain straight and level flight at MTOW — an LAME must certify all maintenance beyond pilot authority',
+      'D. The power at 75% throttle — the normal cruise setting — an LAME must certify all maintenance beyond pilot authority',
     ],
     correct: 1,
     explanation: 'Rated (or maximum) power is the manufacturer\'s approved maximum output at specified conditions — full throttle at sea level in standard atmosphere. For example, a 180 HP engine produces 180 HP under these conditions. At altitude, power decreases as air density falls (for normally aspirated engines).',
@@ -4548,9 +4548,9 @@ export const cagkQuestions: {
     question: 'The correct action on detecting an engine fire in flight is:',
     options: [
       'A. Follow the engine fire drill — shut down the engine, activate the fire suppression system if fitted, declare emergency, and land as soon as possible',
-      'B. aintain normal flight — engine fires always extinguish naturally within 2 minutes — CASR Part 43 specifies who may perform this maintenance',
-      'C. pen the cowl flaps fully to allow the fire to burn itself out — this is covered in the aircraft\'s approved flight manual',
-      'D. ncrease power to blow out the fire with increased airflow — the manufacturer\'s data provides the specific values',
+      'B. Aintain normal flight — engine fires always extinguish naturally within 2 minutes — CASR Part 43 specifies who may perform this maintenance',
+      'C. Pen the cowl flaps fully to allow the fire to burn itself out — this is covered in the aircraft\'s approved flight manual',
+      'D. Ncrease power to blow out the fire with increased airflow — the manufacturer\'s data provides the specific values',
     ],
     correct: 0,
     explanation: 'Engine fire checklist (general): reduce throttle to idle, turn off mixture (cut fuel), close fuel selectors, shut off the magnetos (engine shutdown), activate fire suppression if fitted, declare MAYDAY, and land as soon as possible. Do not attempt to restart the engine after a fire. The exact procedure is in the aircraft AFM.',
@@ -4572,7 +4572,7 @@ export const cagkQuestions: {
     question: 'An "aircraft with a modified engine" has the modification documented by:',
     options: [
       'A. A CASA-approved Supplemental Type Certificate (STC) or equivalent approval, with the modification recorded in the aircraft logbook and weight and balance report updated if required',
-      'B. he modification is automatically approved if the engine produces more power than the original — this differs between Lycoming and Continental engine types',
+      'B. The modification is automatically approved if the engine produces more power than the original — this differs between Lycoming and Continental engine types',
       'C.  note in the pilot\'s licence logbook, and must be checked during the pre-flight inspection',
       'D.  verbal agreement between the owner and their local LAME, and must be checked during the pre-flight inspection',
     ],
@@ -4583,10 +4583,10 @@ export const cagkQuestions: {
   {
     question: 'The "engine pre-flight" walk-around inspection of the oil system checks:',
     options: [
-      'A. il temperature only — measured with an external thermometer, and any defect must be recorded in the aircraft technical log',
-      'B. nly the oil filter — other oil system components do not require pre-flight inspection — CASR Part 43 specifies who may perform this maintenance',
+      'A. Il temperature only — measured with an external thermometer, and any defect must be recorded in the aircraft technical log',
+      'B. Only the oil filter — other oil system components do not require pre-flight inspection — CASR Part 43 specifies who may perform this maintenance',
       'C. Oil quantity on the dipstick, oil filler cap security, visible oil leaks on the engine belly and cowl, and the general oil system condition',
-      'D. il pressure by running the engine at idle before shutdown — an LAME must certify all maintenance beyond pilot authority',
+      'D. Il pressure by running the engine at idle before shutdown — an LAME must certify all maintenance beyond pilot authority',
     ],
     correct: 2,
     explanation: 'Engine oil pre-flight: (1) Dipstick — quantity within acceptable range; (2) Filler cap — firmly secured after checking; (3) Visual inspection under the engine/cowl for oil stains indicating a leak; (4) Oil cooler hoses for condition; (5) Breather tube clear. Any new oil staining compared to previous flights should be investigated — a sudden increase in oil consumption or new leaks need maintenance attention.',
@@ -4645,8 +4645,8 @@ export const cagkQuestions: {
     options: [
       'A. The ammeter showing a discharge (negative, or reduced to zero output) combined with a low voltage warning light or voltmeter drop',
       'B.  rise in battery voltage as the alternator stops charging, and any defect must be recorded in the aircraft technical log',
-      'C. he battery master switch popping to OFF position, as defined in the type certificate and airworthiness standards',
-      'D. n immediate loss of all electrical power including avionics and lights — CASR Part 43 specifies who may perform this maintenance',
+      'C. The battery master switch popping to OFF position, as defined in the type certificate and airworthiness standards',
+      'D. N immediate loss of all electrical power including avionics and lights — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 0,
     explanation: 'Alternator failure: the ammeter will show the battery discharging (centre-zero type: left deflection) or zero output (load type). A low-voltage warning light activates when battery voltage drops below approximately 13.5V (on a 14V system). The battery continues to power systems but will be exhausted — shed non-essential loads and land as soon as practical.',
@@ -4799,9 +4799,9 @@ export const cagkQuestions: {
   {
     question: 'A "detonation-resistant" fuel has a high octane rating because:',
     options: [
-      'A. igh octane fuels burn faster, consuming all the charge before detonation can occur — this differs between Lycoming and Continental engine types',
-      'B. igh octane fuels are less volatile, reducing the risk of pre-ignition — this system is common to most piston-engine light aircraft',
-      'C. ctane rating measures fuel density — denser fuels resist detonation, as defined in the type certificate and airworthiness standards',
+      'A. Igh octane fuels burn faster, consuming all the charge before detonation can occur — this differs between Lycoming and Continental engine types',
+      'B. Igh octane fuels are less volatile, reducing the risk of pre-ignition — this system is common to most piston-engine light aircraft',
+      'C. Ctane rating measures fuel density — denser fuels resist detonation, as defined in the type certificate and airworthiness standards',
       'D. High octane fuels have anti-knock additives (historically tetraethyl lead, now alternatives) that inhibit the spontaneous ignition of the end-gas ahead of the flame front',
     ],
     correct: 3,
@@ -4847,9 +4847,9 @@ export const cagkQuestions: {
   {
     question: 'The "engine ground run" at the holding point before take-off serves to:',
     options: [
-      'A. arm the cabin for passenger comfort — this is covered in the aircraft\'s approved flight manual',
-      'B. llow the alternator to fully charge the battery, as defined in the type certificate and airworthiness standards',
-      'C. est the nose-wheel steering at full deflection — an LAME must certify all maintenance beyond pilot authority',
+      'A. Arm the cabin for passenger comfort — this is covered in the aircraft\'s approved flight manual',
+      'B. Llow the alternator to fully charge the battery, as defined in the type certificate and airworthiness standards',
+      'C. Est the nose-wheel steering at full deflection — an LAME must certify all maintenance beyond pilot authority',
       'D. Bring engine oil and CHT to operating temperature, perform the magneto check, test carburettor heat, and verify all engine instruments are in the normal operating range before committing to take-off',
     ],
     correct: 3,
@@ -4859,9 +4859,9 @@ export const cagkQuestions: {
   {
     question: 'The most likely cause of detonation in a piston engine is:',
     options: [
-      'A. unning the engine too cold by using excessive cowl flap opening — the maintenance schedule specifies the required inspection interval',
-      'B. sing a fuel with too high an octane rating — an LAME must certify all maintenance beyond pilot authority',
-      'C. perating at idle power for extended periods — this system is common to most piston-engine light aircraft',
+      'A. Unning the engine too cold by using excessive cowl flap opening — the maintenance schedule specifies the required inspection interval',
+      'B. Sing a fuel with too high an octane rating — an LAME must certify all maintenance beyond pilot authority',
+      'C. Perating at idle power for extended periods — this system is common to most piston-engine light aircraft',
       'D. Using fuel with too low an octane rating for the engine compression ratio, or operating with excessive manifold pressure',
     ],
     correct: 3,
@@ -4907,9 +4907,9 @@ export const cagkQuestions: {
   {
     question: 'The "tachometer" on an aircraft with a constant speed propeller primarily indicates:',
     options: [
-      'A. ngine power output in horsepower — this is covered in the aircraft\'s approved flight manual',
-      'B. ropeller blade angle in degrees — this differs between Lycoming and Continental engine types',
-      'C. ropeller efficiency as a percentage — this differs between Lycoming and Continental engine types',
+      'A. Engine power output in horsepower — this is covered in the aircraft\'s approved flight manual',
+      'B. Ropeller blade angle in degrees — this differs between Lycoming and Continental engine types',
+      'C. Ropeller efficiency as a percentage — this differs between Lycoming and Continental engine types',
       'D. Engine RPM — the pilot sets RPM with the propeller control and monitors it with the tachometer to confirm the governor is maintaining the selected RPM',
     ],
     correct: 3,
@@ -4919,10 +4919,10 @@ export const cagkQuestions: {
   {
     question: 'The "exhaust valve" in an aircraft engine opens:',
     options: [
-      'A. imultaneously with the inlet valve at all times, and any defect must be recorded in the aircraft technical log',
+      'A. Imultaneously with the inlet valve at all times, and any defect must be recorded in the aircraft technical log',
       'B. Shortly before bottom dead centre on the power stroke and remains open through the exhaust stroke until shortly after TDC',
-      'C. t the beginning of the compression stroke — the manufacturer\'s data provides the specific values',
-      'D. nly during the induction stroke to assist scavenging — the manufacturer\'s data provides the specific values',
+      'C. T the beginning of the compression stroke — the manufacturer\'s data provides the specific values',
+      'D. Only during the induction stroke to assist scavenging — the manufacturer\'s data provides the specific values',
     ],
     correct: 1,
     explanation: 'Exhaust valve timing: opens slightly BBDC (before bottom dead centre) on the power stroke — when combustion pressure has dropped significantly. The early opening allows the remaining high-pressure exhaust gas to begin escaping before the piston starts pushing. The valve remains open through the full exhaust stroke and closes slightly ATDC on the induction stroke (valve overlap period).',
@@ -5063,10 +5063,10 @@ export const cagkQuestions: {
   {
     question: 'The correct sequence for checking oil quantity before flight is:',
     options: [
-      'A. il quantity is only checked during scheduled maintenance — not before every flight, as defined in the type certificate and airworthiness standards',
-      'B. heck oil level with the engine running at idle for accurate pressure reading, and must be checked during the pre-flight inspection',
+      'A. Il quantity is only checked during scheduled maintenance — not before every flight, as defined in the type certificate and airworthiness standards',
+      'B. Heck oil level with the engine running at idle for accurate pressure reading, and must be checked during the pre-flight inspection',
       'C. Wait several minutes after shutdown for oil to drain back to the sump, park on level ground, remove the dipstick, wipe clean, reinsert fully, then withdraw to read',
-      'D. ip the stick immediately after shutdown for the most accurate reading, as defined in the type certificate and airworthiness standards',
+      'D. Ip the stick immediately after shutdown for the most accurate reading, as defined in the type certificate and airworthiness standards',
     ],
     correct: 2,
     explanation: 'Oil check procedure: (1) Ensure aircraft is on level ground (unlevel ground causes false readings); (2) Wait several minutes after shutdown for oil to drain from the engine to the sump; (3) Remove the dipstick; (4) Wipe clean on a lint-free cloth; (5) Reinsert fully and seat properly; (6) Withdraw and read the level. The oil level must be within the operating range specified in the AFM.',
@@ -5123,9 +5123,9 @@ export const cagkQuestions: {
   {
     question: 'The oil "viscosity" required for a given engine and climate means:',
     options: [
-      'A. he oil must be as thin as possible for maximum cooling efficiency, and any defect must be recorded in the aircraft technical log',
-      'B. iscosity only matters in cold weather — in Australia any grade is acceptable — this system is common to most piston-engine light aircraft',
-      'C. ll oils have the same viscosity — only the grade label differs, as defined in the type certificate and airworthiness standards',
+      'A. The oil must be as thin as possible for maximum cooling efficiency, and any defect must be recorded in the aircraft technical log',
+      'B. Iscosity only matters in cold weather — in Australia any grade is acceptable — this system is common to most piston-engine light aircraft',
+      'C. Ll oils have the same viscosity — only the grade label differs, as defined in the type certificate and airworthiness standards',
       'D. The oil must be thick enough to maintain a film between moving parts at operating temperature, but not so thick it causes starting difficulties in cold weather',
     ],
     correct: 3,
@@ -5135,10 +5135,10 @@ export const cagkQuestions: {
   {
     question: 'When is it permissible to depart with a known unserviceability on the aircraft?',
     options: [
-      'A. henever the pilot in command determines it is safe — CASR Part 43 specifies who may perform this maintenance',
-      'B. ever — all systems must be 100% serviceable before every flight — the manufacturer\'s data provides the specific values',
+      'A. Henever the pilot in command determines it is safe — CASR Part 43 specifies who may perform this maintenance',
+      'B. Ever — all systems must be 100% serviceable before every flight — the manufacturer\'s data provides the specific values',
       'C. Only when the unserviceability is covered by an approved MEL or MMEL that specifically permits the item to be inoperative under defined conditions',
-      'D. or training flights only — commercial operations require all systems to be serviceable — CASR Part 43 specifies who may perform this maintenance',
+      'D. For training flights only — commercial operations require all systems to be serviceable — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 2,
     explanation: 'Operating with unserviceabilities: CASR requires all equipment required by the type design and operating regulations to be serviceable. However, an approved MEL (Minimum Equipment List) or MMEL (Master MEL) may permit specific items to be inoperative under specific conditions (with restrictions, procedures, or placards). Without an approved MEL, unserviceabilities must be rectified before flight.',
@@ -5171,10 +5171,10 @@ export const cagkQuestions: {
   {
     question: 'The "density altitude" affects aircraft performance because:',
     options: [
-      'A. igh density altitude improves aircraft performance by reducing air resistance — CASR Part 43 specifies who may perform this maintenance',
+      'A. Igh density altitude improves aircraft performance by reducing air resistance — CASR Part 43 specifies who may perform this maintenance',
       'B. High density altitude means low air density — engine power, propeller efficiency, and aerodynamic lift all decrease — take-off and climb performance degrades significantly',
-      'C. t only affects ceiling — take-off and climb are unaffected, and any defect must be recorded in the aircraft technical log',
-      'D. ensity altitude only affects jet engines — piston aircraft are immune — the manufacturer\'s data provides the specific values',
+      'C. T only affects ceiling — take-off and climb are unaffected, and any defect must be recorded in the aircraft technical log',
+      'D. Ensity altitude only affects jet engines — piston aircraft are immune — the manufacturer\'s data provides the specific values',
     ],
     correct: 1,
     explanation: 'Density altitude effect: low density = (1) Less air mass per engine induction stroke — less power; (2) Less propeller thrust per RPM; (3) Higher TAS needed for the same IAS/lift — longer take-off roll; (4) Less lift per unit of IAS. On hot, high, humid days, density altitude can be 3,000–5,000 ft above the actual elevation — dramatically degrading performance.',
@@ -5219,9 +5219,9 @@ export const cagkQuestions: {
   {
     question: 'The "critical engine" on a twin-engine aircraft with both engines rotating clockwise (from pilot view) is:',
     options: [
-      'A. he critical engine depends on the aircraft weight only — the maintenance schedule specifies the required inspection interval',
-      'B. either engine is more critical — both failures are equally severe — this differs between Lycoming and Continental engine types',
-      'C. he right engine — its failure is more critical — this system is common to most piston-engine light aircraft',
+      'A. The critical engine depends on the aircraft weight only — the maintenance schedule specifies the required inspection interval',
+      'B. Either engine is more critical — both failures are equally severe — this differs between Lycoming and Continental engine types',
+      'C. The right engine — its failure is more critical — this system is common to most piston-engine light aircraft',
       'D. The left engine — its failure produces more adverse yaw and the P-factor/spiralling slipstream creates greater asymmetric effect',
     ],
     correct: 3,
@@ -5232,9 +5232,9 @@ export const cagkQuestions: {
     question: 'Over-boosting a supercharged or turbocharged engine causes:',
     options: [
       'A. Excessively high cylinder pressures leading to detonation, structural damage to pistons and connecting rods, and potentially catastrophic engine failure',
-      'B. nly reduced fuel economy — no structural damage — the manufacturer\'s data provides the specific values',
-      'C. he turbocharger to overspeed but no engine damage — the maintenance schedule specifies the required inspection interval',
-      'D. he mixture to automatically lean, preventing any damage — this is covered in the aircraft\'s approved flight manual',
+      'B. Only reduced fuel economy — no structural damage — the manufacturer\'s data provides the specific values',
+      'C. The turbocharger to overspeed but no engine damage — the maintenance schedule specifies the required inspection interval',
+      'D. The mixture to automatically lean, preventing any damage — this is covered in the aircraft\'s approved flight manual',
     ],
     correct: 0,
     explanation: 'Over-boost creates dangerously high cylinder pressures and temperatures. This causes detonation (self-ignition of end-gas), which subjects pistons, rings, bearings, and connecting rods to severe mechanical shock loading. Even brief over-boost can cause detonation damage that accumulates — long-term over-boost causes catastrophic structural failure.',
@@ -5267,9 +5267,9 @@ export const cagkQuestions: {
   {
     question: 'The "engine oil check" interval during a multi-day flying operation requires:',
     options: [
-      'A. il quantity is monitored by the cockpit gauge and does not require physical checking — the manufacturer\'s data provides the specific values',
-      'B. il to be checked only after 5 hours of operation — an LAME must certify all maintenance beyond pilot authority',
-      'C. il to be checked only at the start of each day regardless of hours flown, and must be checked during the pre-flight inspection',
+      'A. Il quantity is monitored by the cockpit gauge and does not require physical checking — the manufacturer\'s data provides the specific values',
+      'B. Il to be checked only after 5 hours of operation — an LAME must certify all maintenance beyond pilot authority',
+      'C. Il to be checked only at the start of each day regardless of hours flown, and must be checked during the pre-flight inspection',
       'D. Oil to be checked before each flight — consumption accumulates through the day and multiple short flights may significantly reduce oil level',
     ],
     correct: 3,
@@ -5339,9 +5339,9 @@ export const cagkQuestions: {
   {
     question: 'The "aircraft compass" should be swung when:',
     options: [
-      'A. nly when first installed in a new aircraft — this system is common to most piston-engine light aircraft',
-      'B. t each annual inspection regardless of compass performance, and must be checked during the pre-flight inspection',
-      'C. ompass swings are only required in the Northern Hemisphere — the manufacturer\'s data provides the specific values',
+      'A. Only when first installed in a new aircraft — this system is common to most piston-engine light aircraft',
+      'B. T each annual inspection regardless of compass performance, and must be checked during the pre-flight inspection',
+      'C. Ompass swings are only required in the Northern Hemisphere — the manufacturer\'s data provides the specific values',
       'D. After any structural repair near the compass, installation of new avionics or electrical equipment, or whenever deviation appears excessive during flight',
     ],
     correct: 3,
@@ -5351,10 +5351,10 @@ export const cagkQuestions: {
   {
     question: 'Using Jet A-1 in a piston engine designed for avgas will cause:',
     options: [
-      'A. etter fuel efficiency due to the higher energy density of jet fuel, and must be checked during the pre-flight inspection',
+      'A. Etter fuel efficiency due to the higher energy density of jet fuel, and must be checked during the pre-flight inspection',
       'B. Potential engine damage — Jet A-1 has a much lower octane rating and different combustion characteristics, causing detonation and engine damage in petrol engines',
-      'C. o problem below 5,000 ft — Jet A-1 is only unsuitable at high altitude — an LAME must certify all maintenance beyond pilot authority',
-      'D. he engine to run richer, requiring additional leaning — this differs between Lycoming and Continental engine types',
+      'C. O problem below 5,000 ft — Jet A-1 is only unsuitable at high altitude — an LAME must certify all maintenance beyond pilot authority',
+      'D. The engine to run richer, requiring additional leaning — this differs between Lycoming and Continental engine types',
     ],
     correct: 1,
     explanation: 'Jet A-1 is a kerosene-based turbine fuel with a very low octane rating — totally unsuitable for spark-ignited piston engines designed for avgas. It would cause immediate severe detonation, pre-ignition, and engine damage. Jet A-1 misfuelling is a serious risk; avgas is dyed blue and Jet A-1 is clear/straw coloured for identification.',
@@ -5435,10 +5435,10 @@ export const cagkQuestions: {
   {
     question: 'If the CSU governor oil pressure drops to zero, the propeller will:',
     options: [
-      'A. eather automatically to minimise drag — this differs between Lycoming and Continental engine types',
+      'A. Eather automatically to minimise drag — this differs between Lycoming and Continental engine types',
       'B. Move to full coarse pitch — most designs use counterweights or springs that drive the blade toward coarse when oil pressure is lost',
-      'C. ove to the full fine pitch position — this is covered in the aircraft\'s approved flight manual',
-      'D. tay in the last commanded position indefinitely — the maintenance schedule specifies the required inspection interval',
+      'C. Ove to the full fine pitch position — this is covered in the aircraft\'s approved flight manual',
+      'D. Tay in the last commanded position indefinitely — the maintenance schedule specifies the required inspection interval',
     ],
     correct: 1,
     explanation: 'Most aircraft propellers are designed to move toward coarse pitch if oil pressure is lost (counterweight-assisted or spring-loaded). This is a failsafe: coarse pitch creates high drag but allows some thrust. Fine pitch (where engine could over-rev) is the more dangerous failure mode, so designs favour going coarse on pressure loss.',
@@ -5472,9 +5472,9 @@ export const cagkQuestions: {
     question: 'The "vertical speed indicator" (VSI) works by:',
     options: [
       'A. Comparing static pressure in a sealed capsule (which lags behind actual static pressure through a calibrated leak) to the current static pressure',
-      'B. ifferentiating the altimeter reading electronically — CASR Part 43 specifies who may perform this maintenance',
-      'C. easuring the change in GPS altitude per unit of time — CASR Part 43 specifies who may perform this maintenance',
-      'D. sing an accelerometer to measure vertical acceleration and integrating to find rate of change — CASR Part 43 specifies who may perform this maintenance',
+      'B. Ifferentiating the altimeter reading electronically — CASR Part 43 specifies who may perform this maintenance',
+      'C. Easuring the change in GPS altitude per unit of time — CASR Part 43 specifies who may perform this maintenance',
+      'D. Sing an accelerometer to measure vertical acceleration and integrating to find rate of change — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 0,
     explanation: 'The VSI has an aneroid capsule connected directly to the static port (instantaneous pressure). The capsule case is connected to the static port through a calibrated restricted orifice (metered leak). During a climb, capsule pressure drops immediately; case pressure lags. The pressure difference drives the needle — up for climb, down for descent. Zero difference in level flight.',
@@ -5484,9 +5484,9 @@ export const cagkQuestions: {
     question: 'The "suction gauge" in the cockpit monitors:',
     options: [
       'A. Vacuum system pressure — confirming the vacuum pump is providing adequate suction to spin the gyroscopic instruments',
-      'B. uel suction pressure at the engine-driven fuel pump, and must be checked during the pre-flight inspection',
-      'C. arburettor inlet pressure to detect icing, as defined in the type certificate and airworthiness standards',
-      'D. il suction at the oil pump inlet, and must be checked during the pre-flight inspection',
+      'B. Fuel suction pressure at the engine-driven fuel pump, and must be checked during the pre-flight inspection',
+      'C. Arburettor inlet pressure to detect icing, as defined in the type certificate and airworthiness standards',
+      'D. Il suction at the oil pump inlet, and must be checked during the pre-flight inspection',
     ],
     correct: 0,
     explanation: 'The suction gauge monitors the vacuum in the gyro instrument lines — typically 4.5–5.5 in Hg (depending on aircraft). If vacuum drops below minimum, the gyros are not being spun fast enough — the AI and DI will gradually become unreliable. A low suction indication requires checking the vacuum pump and landing before gyros topple.',
@@ -5507,10 +5507,10 @@ export const cagkQuestions: {
   {
     question: 'The "P-lead" on a magneto connects:',
     options: [
-      'A. he magneto to the aircraft battery for starting purposes, and any defect must be recorded in the aircraft technical log',
+      'A. The magneto to the aircraft battery for starting purposes, and any defect must be recorded in the aircraft technical log',
       'B. The magneto to the ignition switch — when the switch is BOTH or ON, the P-lead is open; when at OFF, it grounds the magneto and prevents it from firing',
-      'C. he magneto to the spark plugs via the ignition harness — this differs between Lycoming and Continental engine types',
-      'D. he primary winding to the secondary winding in the magneto transformer, and any defect must be recorded in the aircraft technical log',
+      'C. The magneto to the spark plugs via the ignition harness — this differs between Lycoming and Continental engine types',
+      'D. The primary winding to the secondary winding in the magneto transformer, and any defect must be recorded in the aircraft technical log',
     ],
     correct: 1,
     explanation: 'The P-lead (primary lead) connects the magneto primary circuit to the ignition switch. Magnetos produce sparks by default — to stop firing, the primary must be grounded (short-circuited). When the ignition switch is ON or BOTH, the P-lead is open-circuit (magneto fires normally). When switched OFF, the P-lead grounds the primary, preventing the magneto from producing high voltage. A broken P-lead leaves the magneto "live" even with the switch OFF — a serious safety hazard.',
@@ -5543,10 +5543,10 @@ export const cagkQuestions: {
   {
     question: '"Air in the brake hydraulic system" will cause:',
     options: [
-      'A. ncreased braking efficiency — air compresses and provides a cushioning effect — an LAME must certify all maintenance beyond pilot authority',
+      'A. Ncreased braking efficiency — air compresses and provides a cushioning effect — an LAME must certify all maintenance beyond pilot authority',
       'B. Spongy or ineffective brakes — air is compressible unlike hydraulic fluid, so pedal movement compresses air rather than transmitting force to the brake callipers',
-      'C. ydraulic fluid to leak from the brake lines — CASR Part 43 specifies who may perform this maintenance',
-      'D. verheating of the brake callipers — CASR Part 43 specifies who may perform this maintenance',
+      'C. Ydraulic fluid to leak from the brake lines — CASR Part 43 specifies who may perform this maintenance',
+      'D. Verheating of the brake callipers — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 1,
     explanation: 'Hydraulic fluid is incompressible — brake pedal force is transmitted directly to the callipers. Air is compressible — if air enters the brake lines, pedal movement compresses the air bubble rather than actuating the brakes. The pedal feels spongy and braking force is greatly reduced or absent. Bleeding the system removes air.',
@@ -5555,9 +5555,9 @@ export const cagkQuestions: {
   {
     question: 'The "tyre pressure" on an aircraft undercarriage is checked because:',
     options: [
-      'A. yre pressure is only relevant for high-performance aircraft, and must be checked during the pre-flight inspection',
-      'B. yre pressure has no effect on aircraft safety — only on comfort — this differs between Lycoming and Continental engine types',
-      'C. verinflated tyres improve landing performance — an LAME must certify all maintenance beyond pilot authority',
+      'A. Yre pressure is only relevant for high-performance aircraft, and must be checked during the pre-flight inspection',
+      'B. Yre pressure has no effect on aircraft safety — only on comfort — this differs between Lycoming and Continental engine types',
+      'C. Verinflated tyres improve landing performance — an LAME must certify all maintenance beyond pilot authority',
       'D. Underinflated tyres cause excessive sidewall flexing (heat buildup, potential blowout), reduced ground steering effectiveness, and abnormal wear',
     ],
     correct: 3,
@@ -5688,9 +5688,9 @@ export const cagkQuestions: {
     question: 'The "engine induction system air filter" is inspected before flight to ensure:',
     options: [
       'A. The filter is clean and unobstructed — a blocked filter reduces engine performance and can cause rich mixture and rough running',
-      'B. he filter is generating maximum restriction for best fuel metering — an LAME must certify all maintenance beyond pilot authority',
-      'C. ilters only need checking at the 50-hour inspection, as defined in the type certificate and airworthiness standards',
-      'D. he filter is completely removed for maximum airflow during warm-up — the manufacturer\'s data provides the specific values',
+      'B. The filter is generating maximum restriction for best fuel metering — an LAME must certify all maintenance beyond pilot authority',
+      'C. Ilters only need checking at the 50-hour inspection, as defined in the type certificate and airworthiness standards',
+      'D. The filter is completely removed for maximum airflow during warm-up — the manufacturer\'s data provides the specific values',
     ],
     correct: 0,
     explanation: 'Induction air filter pre-flight check: visually inspect for: (1) Physical damage (tears, holes); (2) Excessive contamination (dust, insects, debris) that restricts airflow; (3) Correct seating in the air box. A partially blocked filter richens the mixture and reduces power. A damaged filter allows unfiltered air (and abrasive particles) to enter the engine — accelerating cylinder and piston wear.',
@@ -5747,9 +5747,9 @@ export const cagkQuestions: {
   {
     question: 'The "induction system ice" can be of two types:',
     options: [
-      'A. nduction ice and exhaust ice — both form at the same temperature, and must be checked during the pre-flight inspection',
-      'B. arburation ice and impact ice only, as defined in the type certificate and airworthiness standards',
-      'C. nly one type exists — all induction ice is carburettor ice regardless of location — this differs between Lycoming and Continental engine types',
+      'A. Nduction ice and exhaust ice — both form at the same temperature, and must be checked during the pre-flight inspection',
+      'B. Arburation ice and impact ice only, as defined in the type certificate and airworthiness standards',
+      'C. Only one type exists — all induction ice is carburettor ice regardless of location — this differs between Lycoming and Continental engine types',
       'D. Carburettor (throttling) ice from fuel vaporisation/venturi cooling, throttle ice at the butterfly plate, and impact ice at the air intake',
     ],
     correct: 3,
@@ -5772,9 +5772,9 @@ export const cagkQuestions: {
     question: 'At altitude, the mixture must be leaned because:',
     options: [
       'A. Air density decreases with altitude — the same carburettor fuel flow delivers too much fuel for the reduced mass of air, causing an over-rich mixture',
-      'B. he lower temperature at altitude makes the fuel burn more slowly, requiring less fuel — the maintenance schedule specifies the required inspection interval',
-      'C. ltitude has no effect on mixture — leaning is only done for range and economy at all altitudes — this is covered in the aircraft\'s approved flight manual',
-      'D. he higher TAS at altitude means the engine consumes more fuel and requires enrichment — CASR Part 43 specifies who may perform this maintenance',
+      'B. The lower temperature at altitude makes the fuel burn more slowly, requiring less fuel — the maintenance schedule specifies the required inspection interval',
+      'C. Ltitude has no effect on mixture — leaning is only done for range and economy at all altitudes — this is covered in the aircraft\'s approved flight manual',
+      'D. The higher TAS at altitude means the engine consumes more fuel and requires enrichment — CASR Part 43 specifies who may perform this maintenance',
     ],
     correct: 0,
     explanation: 'As altitude increases, air density decreases — less air mass enters the engine per stroke. But the carburettor, calibrated to sea-level density, continues to meter the same volume of fuel. The mixture becomes progressively richer as altitude increases. Leaning restores the correct fuel/air ratio for efficient combustion.',
@@ -5963,9 +5963,9 @@ export const cagkQuestions: {
   {
     question: 'The "engine cowling" on a light aircraft serves primarily to:',
     options: [
-      'A. nly reduce noise from the engine for passenger comfort, and any defect must be recorded in the aircraft technical log',
-      'B. rovide structural support for the engine mount — this system is common to most piston-engine light aircraft',
-      'C. rotect the engine from rain damage during flight — the manufacturer\'s data provides the specific values',
+      'A. Only reduce noise from the engine for passenger comfort, and any defect must be recorded in the aircraft technical log',
+      'B. Rovide structural support for the engine mount — this system is common to most piston-engine light aircraft',
+      'C. Rotect the engine from rain damage during flight — the manufacturer\'s data provides the specific values',
       'D. Streamline the engine installation to reduce drag, direct cooling airflow, and contain the engine in the event of a failure',
     ],
     correct: 3,
@@ -5975,10 +5975,10 @@ export const cagkQuestions: {
   {
     question: 'The "fuel strainer" (gascolator) in the aircraft fuel system:',
     options: [
-      'A. easures the fuel flow rate to the carburettor — the manufacturer\'s data provides the specific values',
-      'B. nly filters large particles — has no effect on water — the maintenance schedule specifies the required inspection interval',
+      'A. Easures the fuel flow rate to the carburettor — the manufacturer\'s data provides the specific values',
+      'B. Only filters large particles — has no effect on water — the maintenance schedule specifies the required inspection interval',
       'C. Filters particulate contaminants and provides a water collection bowl that pilots drain during pre-flight to remove accumulated water and sediment',
-      'D. s only found in gravity-feed fuel systems — this differs between Lycoming and Continental engine types',
+      'D. S only found in gravity-feed fuel systems — this differs between Lycoming and Continental engine types',
     ],
     correct: 2,
     explanation: 'The gascolator (fuel strainer/sediment bowl): positioned downstream of the fuel tanks and upstream of the fuel pump/carburettor. A fine mesh filter traps particles; the bowl collects water and sediment that settles. A drain valve allows the pilot to sump the gascolator during pre-flight — checking for and removing water and debris. This is a mandatory pre-flight check.',
@@ -5987,10 +5987,10 @@ export const cagkQuestions: {
   {
     question: 'The conditions most conducive to carburettor icing are:',
     options: [
-      'A. ot, dry conditions typical of Australian summer at sea level — CASR Part 43 specifies who may perform this maintenance',
+      'A. Ot, dry conditions typical of Australian summer at sea level — CASR Part 43 specifies who may perform this maintenance',
       'B. Warm, humid air — temperatures between 0°C and 25°C with high relative humidity, especially at reduced power (descent)',
-      'C. old, dry air at altitude in winter — the manufacturer\'s data provides the specific values',
-      'D. nly in instrument meteorological conditions inside cloud — this differs between Lycoming and Continental engine types',
+      'C. Old, dry air at altitude in winter — the manufacturer\'s data provides the specific values',
+      'D. Only in instrument meteorological conditions inside cloud — this differs between Lycoming and Continental engine types',
     ],
     correct: 1,
     explanation: 'Carburettor ice risk is highest in warm, moist air — typically 10–25°C with high humidity (hazy, muggy days). At low power settings (descent, approach), the reduced airflow and longer transit time in the carburettor maximises the cooling and ice formation. Australia\'s coastal humidity makes carb ice a year-round concern.',
@@ -5999,10 +5999,10 @@ export const cagkQuestions: {
   {
     question: 'The "engine roughness" experienced immediately after applying carburettor heat is:',
     options: [
-      'A. aused by over-leaning from the hot induction air, as defined in the type certificate and airworthiness standards',
+      'A. Aused by over-leaning from the hot induction air, as defined in the type certificate and airworthiness standards',
       'B. Normal — the rough running indicates ice is melting and water passing through the engine; it clears as the ice is expelled',
-      'C. bnormal — the carburettor heat system has malfunctioned, and any defect must be recorded in the aircraft technical log',
-      'D. n indication that the carburettor heat air intake has blocked — this system is common to most piston-engine light aircraft',
+      'C. Bnormal — the carburettor heat system has malfunctioned, and any defect must be recorded in the aircraft technical log',
+      'D. N indication that the carburettor heat air intake has blocked — this system is common to most piston-engine light aircraft',
     ],
     correct: 1,
     explanation: 'Rough running during carburettor heat application: expected when ice is present. The heated air melts the ice — meltwater passes through the carburettor venturi and cylinders. This disrupts the fuel/air mixture momentarily — the engine runs rough. This is actually confirmation that ice was present. The roughness clears as the ice is eliminated and RPM recovers above the pre-ice value.',
