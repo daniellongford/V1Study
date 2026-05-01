@@ -1,5 +1,5 @@
 // CPL Air Law — 496 Questions
-// Auto-fixed v8
+// Fixed v_final
 
 export const clwaQuestions: {
   question: string;
@@ -444,9 +444,9 @@ export const clwaQuestions: {
     question: 'What is the pilot-in-command\'s authority in matters of flight safety?',
     options: [
       'A. ASA retains final authority — the PIC executes instructions, under the provisions of AIP ENR 1.1 and the relevant Part 91 MOS',
-      'B. he PIC has final authority and responsibility for safe operation — no operator, owner, or other person may override the PIC\'s safety decisions',
-      'C. he operator\'s operations manual takes precedence over all PIC decisions, unless exempted by CASA under a current Part 11 instrument',
-      'D. afety authority is shared equally between the PIC and the senior cabin crew member, provided the ATC clearance has been correctly read back in full',
+      'B. The PIC has final authority and responsibility for safe operation — no operator, owner, or other person may override the PIC\'s safety decisions',
+      'C. The operator\'s operations manual takes precedence over all PIC decisions, unless exempted by CASA under a current Part 11 instrument',
+      'D. Afety authority is shared equally between the PIC and the senior cabin crew member, provided the ATC clearance has been correctly read back in full',
     ],
     correct: 1,
     explanation: 'The PIC has final authority and responsibility for the safe conduct of the flight. No operator, owner, or other person may override the PIC\'s decision on safety matters.',
@@ -504,7 +504,7 @@ export const clwaQuestions: {
     question: 'What is the purpose of the "GUARD" frequency 121.5 MHz?',
     options: [
       'A.  CTAF frequency used at uncontrolled aerodromes, provided the ATC clearance has been correctly read back in full',
-      'B. he ADS-B datalink frequency, subject to the conditions specified in CASR Part 91 and the MOS',
+      'B. The ADS-B datalink frequency, subject to the conditions specified in CASR Part 91 and the MOS',
       'C. The international aeronautical emergency and distress frequency, monitored by all aircraft and ATC units',
       'D.  military-only discrete frequency, unless exempted by CASA under a current Part 11 instrument',
     ],
@@ -539,10 +539,10 @@ export const clwaQuestions: {
   {
     question: 'When is a journey log required to be maintained?',
     options: [
-      'A. nly for Part 121 RPT operations, as required by CASR 91.195',
-      'B. nly for IFR flights above FL245, unless the pilot has a current YFTS endorsement',
+      'A. Only for Part 121 RPT operations, as required by CASR 91.195',
+      'B. Only for IFR flights above FL245, unless the pilot has a current YFTS endorsement',
       'C. For flights that begin or end at an aerodrome outside Australia, or as otherwise required by the operator',
-      'D. or all flights in Australian airspace — the ATC clearance must be read back in full',
+      'D. For all flights in Australian airspace — the ATC clearance must be read back in full',
     ],
     correct: 2,
     explanation: 'Part 91 MOS Chapter 5 (s.5.01): the requirement to maintain a journey log under CASR s.91.120(2)(a) applies to flights that begin or end at an aerodrome outside Australian territory — international flights.',
@@ -659,9 +659,9 @@ export const clwaQuestions: {
   {
     question: 'What does "track" mean as distinct from "heading" in navigation?',
     options: [
-      'A. rack and heading are interchangeable terms, unless the pilot has a current YFTS endorsement',
-      'B. rack applies only to IFR operations, provided the aircraft has a valid C of A',
-      'C. rack is the magnetic heading corrected for variation, as specified in the Part 91 MOS',
+      'A. Track and heading are interchangeable terms, unless the pilot has a current YFTS endorsement',
+      'B. Track applies only to IFR operations, provided the aircraft has a valid C of A',
+      'C. Track is the magnetic heading corrected for variation, as specified in the Part 91 MOS',
       'D. Track is the actual path made good over the ground; heading is the direction the aircraft nose is pointing',
     ],
     correct: 3,
@@ -673,7 +673,7 @@ export const clwaQuestions: {
     options: [
       'A. A multi-engine instrument rating is always required',
       'B. A type rating for every specific twin-engine type',
-      'C. n ATPL only, provided the ATC clearance has been correctly read back in full',
+      'C. In ATPL only, provided the ATC clearance has been correctly read back in full',
       'D. A multi-engine class rating endorsed on the pilot\'s licence, plus appropriate recent experience',
     ],
     correct: 3,
@@ -925,8 +925,8 @@ export const clwaQuestions: {
     options: [
       'A. An atmospheric pressure adjusted to sea level, representative within ±5 hPa of any actual QNH at any location in the area',
       'B.  military QNH used for classified operations only, as required by CASR 91.195',
-      'C. he QNH set in the altimeter for the destination aerodrome, unless exempted by CASA under Part 11',
-      'D. he QNH measured at the departure aerodrome only, as required by CASR 91.195',
+      'C. The QNH set in the altimeter for the destination aerodrome, unless exempted by CASA under Part 11',
+      'D. The QNH measured at the departure aerodrome only, as required by CASR 91.195',
     ],
     correct: 0,
     explanation: 'VFRG v8.3 / Part 91 MOS: area QNH is an altimeter setting forecast by the Bureau of Meteorology and representative, within ±5 hPa, of any actual QNH at any location within the QNH geographical area published in the AIP.',
@@ -935,10 +935,10 @@ export const clwaQuestions: {
   {
     question: 'What is the definition of "controlled airspace"?',
     options: [
-      'A. ny airspace where a radar service is provided, subject to the conditions specified in CASR Part 91 and the MOS',
+      'A. Ny airspace where a radar service is provided, subject to the conditions specified in CASR Part 91 and the MOS',
       'B. Airspace of defined dimensions within which ATC service is provided to IFR and in some classes to VFR flights',
-      'C. nly Class A and B airspace, as required by CASR 91.195 and the applicable AIP procedures',
-      'D. irspace above FL180 only, unless exempted by CASA under a current Part 11 instrument',
+      'C. Only Class A and B airspace, as required by CASR 91.195 and the applicable AIP procedures',
+      'D. Irspace above FL180 only, unless exempted by CASA under a current Part 11 instrument',
     ],
     correct: 1,
     explanation: 'AIP ENR 1.1 / ICAO Annex 2: controlled airspace is airspace of defined dimensions within which ATC service is provided to IFR flights and, depending on the airspace class, to VFR flights.',
@@ -959,9 +959,9 @@ export const clwaQuestions: {
   {
     question: 'At what point during a flight must a pilot in command declare a "minimum fuel" state to ATS under Part 91 MOS?',
     options: [
-      'A. hen fuel remaining equals the final reserve fuel, unless exempted by CASA under Part 11',
-      'B. hen fuel remaining falls below 30 minutes, unless the pilot has a current YFTS endorsement',
-      'C. s soon as the aircraft diverts from the planned route — the ATC clearance must be read back in full',
+      'A. Hen fuel remaining equals the final reserve fuel, unless exempted by CASA under Part 11',
+      'B. Hen fuel remaining falls below 30 minutes, unless the pilot has a current YFTS endorsement',
+      'C. S soon as the aircraft diverts from the planned route — the ATC clearance must be read back in full',
       'D. When committed to land and any change to the existing ATC clearance or flight plan may result in landing with less than final reserve fuel',
     ],
     correct: 3,
@@ -1187,10 +1187,10 @@ export const clwaQuestions: {
   {
     question: 'A pilot is cleared for a visual approach. What minimum requirement must be met before the approach may be commenced?',
     options: [
-      'A. he ATIS must report clear skies, as specified in the Part 91 MOS',
-      'B. isibility must be above 10 km, subject to the conditions in CASR Part 91',
+      'A. The ATIS must report clear skies, as specified in the Part 91 MOS',
+      'B. Isibility must be above 10 km, subject to the conditions in CASR Part 91',
       'C. The pilot must maintain visual contact with the aerodrome environment or the preceding traffic throughout the approach',
-      'D. he aircraft must be on an ILS and break off at DH, as specified in the Part 91 MOS',
+      'D. The aircraft must be on an ILS and break off at DH, as specified in the Part 91 MOS',
     ],
     correct: 2,
     explanation: 'CASR 91.450: a visual approach clearance requires the pilot to maintain visual contact with the aerodrome environment or the preceding traffic throughout the approach to landing.',
@@ -1656,8 +1656,8 @@ export const clwaQuestions: {
     question: 'Which multi-engine turbine aeroplanes must be fitted with a CVR regardless of MTOW?',
     options: [
       'A. VRs are only required if an FDR is also required — this applies in all classes of airspace',
-      'B. ll multi-engine turbine aeroplanes — the ATC clearance must be read back in full',
-      'C. nly aeroplanes with MTOW above 10,000 kg, provided the ATC clearance is current',
+      'B. Ll multi-engine turbine aeroplanes — the ATC clearance must be read back in full',
+      'C. Only aeroplanes with MTOW above 10,000 kg, provided the ATC clearance is current',
       'D. Multi-engine turbine aeroplanes with a MOPSC greater than 9 that are pressurised and type-certificated for above FL250',
     ],
     correct: 3,
@@ -1691,9 +1691,9 @@ export const clwaQuestions: {
   {
     question: 'What does a controller mean when they say "CONFIRM SQUAWK"?',
     options: [
-      'A. ransmit ident — the ATC clearance must be read back in full as specified in AIP',
-      'B. urn off the transponder, unless exempted by CASA under a current Part 11 instrument',
-      'C. elect a new transponder code, unless exempted by CASA under a current Part 11 instrument',
+      'A. Ransmit ident — the ATC clearance must be read back in full as specified in AIP',
+      'B. Urn off the transponder, unless exempted by CASA under a current Part 11 instrument',
+      'C. Elect a new transponder code, unless exempted by CASA under a current Part 11 instrument',
       'D. The controller is asking the pilot to confirm what transponder code is currently selected',
     ],
     correct: 3,
@@ -1763,9 +1763,9 @@ export const clwaQuestions: {
   {
     question: 'What is a Special Flight Permit (authority to fly) used for?',
     options: [
-      'A. t authorises revenue operations by a pilot without an AOC, under the provisions of AIP ENR 1.1',
-      'B. t replaces the maintenance release for aircraft over 30 years old, unless the pilot has a current YFTS endorsement',
-      'C. t allows an unlicensed student to fly solo, unless exempted by CASA under Part 11',
+      'A. T authorises revenue operations by a pilot without an AOC, under the provisions of AIP ENR 1.1',
+      'B. T replaces the maintenance release for aircraft over 30 years old, unless the pilot has a current YFTS endorsement',
+      'C. T allows an unlicensed student to fly solo, unless exempted by CASA under Part 11',
       'D. It authorises specific flights by aircraft that do not fully meet standard airworthiness requirements, for a specified purpose',
     ],
     correct: 3,
@@ -1872,9 +1872,9 @@ export const clwaQuestions: {
     question: 'Can a pilot taxi across a runway without receiving a specific crossing clearance if the tower has issued a "taxi to" instruction that routes across that runway?',
     options: [
       'A. No — explicit runway crossing clearances must be obtained for every runway, regardless of the taxi instruction',
-      'B. es — the taxi instruction covers all crossings — this applies in all classes of controlled and uncontrolled airspace',
-      'C. es if visibility is greater than 5 km — CASA may issue a direction or exemption under CASR Part 11',
-      'D. es if the runway is not active — this applies in all classes of controlled and uncontrolled airspace',
+      'B. Es — the taxi instruction covers all crossings — this applies in all classes of controlled and uncontrolled airspace',
+      'C. Es if visibility is greater than 5 km — CASA may issue a direction or exemption under CASR Part 11',
+      'D. Es if the runway is not active — this applies in all classes of controlled and uncontrolled airspace',
     ],
     correct: 0,
     explanation: 'AIP ENR 6.1 and CASR 91.495: a taxi instruction NEVER implicitly authorises crossing a runway. Every runway crossing requires a specific, explicit clearance from ATC. This is a critical runway incursion prevention requirement.',
@@ -1907,10 +1907,10 @@ export const clwaQuestions: {
   {
     question: 'What is the primary purpose of ATC separation in controlled airspace?',
     options: [
-      'A. o ensure pilots stay on their filed routes only, provided the ATC clearance is current',
-      'B. o prevent bird strikes, unless the pilot has a current YFTS endorsement',
+      'A. O ensure pilots stay on their filed routes only, provided the ATC clearance is current',
+      'B. O prevent bird strikes, unless the pilot has a current YFTS endorsement',
       'C. To prevent collisions between aircraft by maintaining prescribed minimum separation standards between IFR flights',
-      'D. o manage fuel efficiency across the network — this applies in all classes of airspace',
+      'D. O manage fuel efficiency across the network — this applies in all classes of airspace',
     ],
     correct: 2,
     explanation: 'AIP ENR 1.1 / ICAO Annex 2: the purpose of ATC separation is to prevent collisions between aircraft by maintaining prescribed minimum separation standards (horizontal and/or vertical) between aircraft under ATC control.',
@@ -2136,9 +2136,9 @@ export const clwaQuestions: {
     question: 'What is the purpose of a Terminal Manoeuvring Area (TMA)?',
     options: [
       'A.  zone requiring Mode C transponders only — no clearance needed, provided the ATC clearance has been correctly read back in full',
-      'B. ontrolled airspace above the CTR connecting terminal operations to the en-route structure, extending upward to a specified altitude',
-      'C. ncontrolled airspace below the Class E floor in terminal areas, as specified in the Part 91 MOS and applicable AIP ENR section',
-      'D. n area reserved for airport ground vehicle movements, under the provisions of AIP ENR 1.1 and the relevant Part 91 MOS',
+      'B. Ontrolled airspace above the CTR connecting terminal operations to the en-route structure, extending upward to a specified altitude',
+      'C. Ncontrolled airspace below the Class E floor in terminal areas, as specified in the Part 91 MOS and applicable AIP ENR section',
+      'D. N area reserved for airport ground vehicle movements, under the provisions of AIP ENR 1.1 and the relevant Part 91 MOS',
     ],
     correct: 1,
     explanation: 'A TMA (formerly TCA) is controlled airspace above the CTR that connects terminal operations to the en-route structure. Unlike a CTR, it does not extend to the surface.',
@@ -2221,7 +2221,7 @@ export const clwaQuestions: {
     options: [
       'A. The pilot-in-command (or a responsible person nominated by the pilot) must cancel the SARTIME upon landing or initiate SAR action at the nominated time',
       'B. MSA automatically tracks all aircraft and no action is required, under the provisions of AIP ENR 1.1 and the relevant Part 91 MOS',
-      'C. he aircraft operator is solely responsible, unless exempted by CASA under a current Part 11 instrument',
+      'C. The aircraft operator is solely responsible, unless exempted by CASA under a current Part 11 instrument',
       'D. TC activates the SARTIME automatically, provided the aircraft has a valid maintenance release and C of A',
     ],
     correct: 0,
@@ -2280,8 +2280,8 @@ export const clwaQuestions: {
     question: 'What information would normally be included in an ATIS broadcast at a major controlled aerodrome?',
     options: [
       'A. Information identifier, observation time, wind, visibility, significant weather, cloud, temperature, dew point, and QNH',
-      'B. unway in use and wind only — the ATC clearance must be read back in full',
-      'C. eather and departure clearances combined, as required by CASR 91.195',
+      'B. Unway in use and wind only — the ATC clearance must be read back in full',
+      'C. Eather and departure clearances combined, as required by CASR 91.195',
       'D. NH only, as specified in the Part 91 MOS',
     ],
     correct: 0,
@@ -2447,10 +2447,10 @@ export const clwaQuestions: {
   {
     question: 'What is the general rule regarding aerobatic flight above populated areas?',
     options: [
-      'A. erobatics are permitted above populated areas with ATC clearance, subject to the conditions in CASR Part 91',
+      'A. Erobatics are permitted above populated areas with ATC clearance, subject to the conditions in CASR Part 91',
       'B. Aerobatic flight is prohibited over populated areas, over open-air assemblies, and within controlled airspace without ATC permission',
-      'C. erobatics are permitted if conducted above 3,000 ft AGL, provided the aircraft has a valid C of A',
-      'D. nly approved display aircraft may conduct aerobatics anywhere — the ATC clearance must be read back in full',
+      'C. Erobatics are permitted if conducted above 3,000 ft AGL, provided the aircraft has a valid C of A',
+      'D. Only approved display aircraft may conduct aerobatics anywhere — the ATC clearance must be read back in full',
     ],
     correct: 1,
     explanation: 'CASR 91.640: aerobatic flight is prohibited over populated areas, over an open-air assembly of persons, within controlled airspace without ATC permission, or below the minimum height prescribed for the area.',
@@ -2784,9 +2784,9 @@ export const clwaQuestions: {
     question: 'When must a pilot report "downwind" in the traffic circuit at a controlled aerodrome?',
     options: [
       'A. When starting or entering the downwind leg — or "mid-downwind" or "late-downwind" if frequency congestion prevented the initial call',
-      'B. nly when directed by ATC, provided the aircraft has a valid maintenance release and C of A',
-      'C. hen reaching circuit height — CASA may issue a direction or exemption under CASR Part 11',
-      'D. t 2 NM from the runway threshold, as required by CASR 91.195 and the applicable AIP procedures',
+      'B. Only when directed by ATC, provided the aircraft has a valid maintenance release and C of A',
+      'C. Hen reaching circuit height — CASA may issue a direction or exemption under CASR Part 11',
+      'D. T 2 NM from the runway threshold, as required by CASR 91.195 and the applicable AIP procedures',
     ],
     correct: 0,
     explanation: 'AIP ENR 1.1 / VFRG v8.3: the pilot must report "downwind" when starting or entering the downwind leg. If frequency congestion prevents this, the pilot must report "mid-downwind" or "late-downwind."',
@@ -2903,9 +2903,9 @@ export const clwaQuestions: {
   {
     question: 'When may a pilot fly below the minimum height prescribed by CASR 91.645?',
     options: [
-      'A. lways in Class G airspace, provided the ATC clearance is current',
-      'B. ever — minimum heights are absolute, as specified in the Part 91 MOS',
-      'C. n daylight hours only if visibility exceeds 5 km, unless exempted by CASA under Part 11',
+      'A. Lways in Class G airspace, provided the ATC clearance is current',
+      'B. Ever — minimum heights are absolute, as specified in the Part 91 MOS',
+      'C. N daylight hours only if visibility exceeds 5 km, unless exempted by CASA under Part 11',
       'D. During take-off and landing, or when specifically permitted by CASA exemption such as agricultural or mustering operations',
     ],
     correct: 3,
@@ -3156,8 +3156,8 @@ export const clwaQuestions: {
     question: 'When must a Mode S transponder with Extended Squitter (ADS-B Out) be operated in Australian airspace?',
     options: [
       'A. In designated ADS-B mandatory airspace as specified in AIP ENR 1.6, including Class A and specified Class C and E airspace',
-      'B. nly above FL290 in RVSM airspace — the ATC clearance must be read back in full',
-      'C. nly for commercial aircraft above 5,700 kg, unless exempted by CASA under Part 11',
+      'B. Only above FL290 in RVSM airspace — the ATC clearance must be read back in full',
+      'C. Only for commercial aircraft above 5,700 kg, unless exempted by CASA under Part 11',
       'D. DS-B is not yet mandatory in Australia, as specified in the Part 91 MOS',
     ],
     correct: 0,
@@ -3335,9 +3335,9 @@ export const clwaQuestions: {
   {
     question: 'What is the meaning of SARTIME as defined in Part 91 MOS?',
     options: [
-      'A. he time a flight plan becomes active, provided the aircraft has a valid maintenance release and C of A',
+      'A. The time a flight plan becomes active, provided the aircraft has a valid maintenance release and C of A',
       'B. The time nominated by a pilot for the initiation of SAR action if a report has not been received by the nominated unit',
-      'C. he time a flight is expected to arrive at its destination, subject to the conditions specified in CASR Part 91 and the MOS',
+      'C. The time a flight is expected to arrive at its destination, subject to the conditions specified in CASR Part 91 and the MOS',
       'D. The scheduled departure time for the purposes of air traffic services',
     ],
     correct: 1,
@@ -3479,10 +3479,10 @@ export const clwaQuestions: {
   {
     question: 'What is a "sector safe altitude" (SSA) and how is it used?',
     options: [
-      'A. he highest altitude in Class G airspace, unless exempted by CASA under Part 11',
-      'B. he minimum altitude for radar vectoring in a TMA, unless the pilot has a current YFTS endorsement',
+      'A. The highest altitude in Class G airspace, unless exempted by CASA under Part 11',
+      'B. The minimum altitude for radar vectoring in a TMA, unless the pilot has a current YFTS endorsement',
       'C. The lowest altitude within a defined sector (typically 25 NM from the aid) that provides 300 ft obstacle clearance',
-      'D. n en-route minimum off-route altitude (MORA), as required by CASR 91.195',
+      'D. N en-route minimum off-route altitude (MORA), as required by CASR 91.195',
     ],
     correct: 2,
     explanation: 'AIP ENR 4.5: the Sector Safe Altitude (SSA) for an instrument approach is the minimum altitude within a defined sector (usually a 25 NM radius from the aerodrome) that provides at least 1,000 ft clearance above all obstacles. It is used in emergencies and for situational awareness.',
@@ -3515,9 +3515,9 @@ export const clwaQuestions: {
   {
     question: 'A pilot is cleared "SQUAWK 4521." When should the pilot select this code?',
     options: [
-      'A. fter leaving the circuit area — the ATC clearance must be read back in full',
-      'B. nly after contacting en-route ATC, subject to the conditions in CASR Part 91',
-      'C. fter becoming airborne only, unless the pilot has a current YFTS endorsement',
+      'A. Fter leaving the circuit area — the ATC clearance must be read back in full',
+      'B. Only after contacting en-route ATC, subject to the conditions in CASR Part 91',
+      'C. Fter becoming airborne only, unless the pilot has a current YFTS endorsement',
       'D. Immediately upon receiving the instruction, whether on the ground or airborne, unless otherwise directed by ATC',
     ],
     correct: 3,
@@ -3539,9 +3539,9 @@ export const clwaQuestions: {
   {
     question: 'What defines a "non-controlled aerodrome"?',
     options: [
-      'A. n aerodrome with no instrument approaches, subject to the conditions specified in CASR Part 91 and the MOS',
+      'A. N aerodrome with no instrument approaches, subject to the conditions specified in CASR Part 91 and the MOS',
       'B. An aerodrome where air traffic control is not currently operating — this can be an aerodrome always in Class G, a tower aerodrome with ATC temporarily unavailable, or one where ATC service is temporarily inactive',
-      'C. ny aerodrome below 1,000 ft AMSL, provided the aircraft has a valid maintenance release and C of A',
+      'C. Ny aerodrome below 1,000 ft AMSL, provided the aircraft has a valid maintenance release and C of A',
       'D.  private strip not listed in ERSA, as required by CASR 91.195 and the applicable AIP procedures',
     ],
     correct: 1,
@@ -3647,9 +3647,9 @@ export const clwaQuestions: {
   {
     question: 'How is Class E airspace floor designated in Australia where it meets Class G?',
     options: [
-      'A. lass E begins at FL180 in all cases, as specified in the Part 91 MOS and applicable AIP ENR section',
-      'B. lass E always starts at 8,500 ft AMSL, subject to the conditions specified in CASR Part 91 and the MOS',
-      'C. lass E and G never coexist; one always terminates where the other begins, under the provisions of AIP ENR 1.1 and the relevant Part 91 MOS',
+      'A. Lass E begins at FL180 in all cases, as specified in the Part 91 MOS and applicable AIP ENR section',
+      'B. Lass E always starts at 8,500 ft AMSL, subject to the conditions specified in CASR Part 91 and the MOS',
+      'C. Lass E and G never coexist; one always terminates where the other begins, under the provisions of AIP ENR 1.1 and the relevant Part 91 MOS',
       'D. The Class E floor is published on aeronautical charts and varies by location; it may be 8,500 ft AMSL or lower in some areas',
     ],
     correct: 3,
@@ -3803,9 +3803,9 @@ export const clwaQuestions: {
   {
     question: 'What normally comprises an airways clearance?',
     options: [
-      'A. evel allocation and transponder code only, as specified in the Part 91 MOS',
-      'B. unway assignment and departure heading, unless exempted by CASA under Part 11',
-      'C. ircraft identification and squawk code only, as specified in the Part 91 MOS',
+      'A. Evel allocation and transponder code only, as specified in the Part 91 MOS',
+      'B. Unway assignment and departure heading, unless exempted by CASA under Part 11',
+      'C. Ircraft identification and squawk code only, as specified in the Part 91 MOS',
       'D. Aircraft identification, destination or clearance limit, route, level, and any special conditions',
     ],
     correct: 3,
@@ -3851,10 +3851,10 @@ export const clwaQuestions: {
   {
     question: 'What is the definition of an "accident" for the purposes of mandatory reporting to ATSB?',
     options: [
-      'A. ny occurrence where the aircraft sustains more than $10,000 in damage, as specified in the Part 91 MOS',
+      'A. Ny occurrence where the aircraft sustains more than $10,000 in damage, as specified in the Part 91 MOS',
       'B. An occurrence associated with aircraft operation where a person suffers fatal or serious injury, or the aircraft is damaged',
-      'C. ny flight outside approved limits, as required by CASR 91.195',
-      'D. ny hard landing requiring inspection, subject to the conditions in CASR Part 91',
+      'C. Ny flight outside approved limits, as required by CASR 91.195',
+      'D. Ny hard landing requiring inspection, subject to the conditions in CASR Part 91',
     ],
     correct: 1,
     explanation: 'AIP GEN 3.3 and Transport Safety Investigation Act 2003: an accident is defined as an occurrence associated with the operation of an aircraft in which a person is fatally or seriously injured, the aircraft sustains substantial damage, or the aircraft goes missing.',
@@ -3863,10 +3863,10 @@ export const clwaQuestions: {
   {
     question: 'When must a pilot declare "MAYDAY MAYDAY MAYDAY FUEL" under Part 91 MOS?',
     options: [
-      'A. hen fuel remaining equals the final reserve fuel, provided the aircraft has a valid C of A',
+      'A. Hen fuel remaining equals the final reserve fuel, provided the aircraft has a valid C of A',
       'B. When usable fuel remaining on landing at the nearest suitable aerodrome would be less than final reserve fuel',
-      'C. ny time the aircraft diverts due to weather, provided the ATC clearance is current',
-      'D. hen fuel remaining is less than 45 minutes, unless the pilot has a current YFTS endorsement',
+      'C. Ny time the aircraft diverts due to weather, provided the ATC clearance is current',
+      'D. Hen fuel remaining is less than 45 minutes, unless the pilot has a current YFTS endorsement',
     ],
     correct: 1,
     explanation: 'Part 91 MOS s.19.06(4): the pilot must declare "MAYDAY MAYDAY MAYDAY FUEL" when the usable fuel remaining on landing at the nearest aerodrome where a safe landing can be made will be, or is likely to be, less than the final reserve fuel. This is a distress message.',
@@ -3899,9 +3899,9 @@ export const clwaQuestions: {
   {
     question: 'An ATC clearance reads "MAINTAIN FLIGHT PLANNED ROUTE." What does this authorise?',
     options: [
-      'A. he clearance only applies above FL180, under the provisions of AIP ENR 1.1',
-      'B. he pilot is authorised to deviate for weather, subject to the conditions in CASR Part 91',
-      'C. he pilot may fly any route at their discretion, subject to the conditions in CASR Part 91',
+      'A. The clearance only applies above FL180, under the provisions of AIP ENR 1.1',
+      'B. The pilot is authorised to deviate for weather, subject to the conditions in CASR Part 91',
+      'C. The pilot may fly any route at their discretion, subject to the conditions in CASR Part 91',
       'D. The pilot must follow the route filed in the current flight plan — any deviation requires a new clearance',
     ],
     correct: 3,
@@ -3924,9 +3924,9 @@ export const clwaQuestions: {
     question: 'What is a flight information region (FIR) in Australia, and who manages them?',
     options: [
       'A. Volumes of airspace with defined dimensions within which flight information and alerting services are provided, managed by Airservices Australia',
-      'B. mergency response zones managed by AMSA, provided the aircraft has a valid maintenance release and C of A',
-      'C. nternational oceanic control areas managed by ICAO directly — the ATC clearance must be read back in full as specified in AIP',
-      'D. estricted airspace regions managed by the RAAF — this applies in all classes of controlled and uncontrolled airspace',
+      'B. Mergency response zones managed by AMSA, provided the aircraft has a valid maintenance release and C of A',
+      'C. Nternational oceanic control areas managed by ICAO directly — the ATC clearance must be read back in full as specified in AIP',
+      'D. Estricted airspace regions managed by the RAAF — this applies in all classes of controlled and uncontrolled airspace',
     ],
     correct: 0,
     explanation: 'Australia is divided into the Melbourne and Brisbane FIRs, both managed by Airservices Australia. Within FIRs, flight information and alerting services are provided to all aircraft.',
@@ -3983,10 +3983,10 @@ export const clwaQuestions: {
   {
     question: 'What is the meaning of "in the vicinity" of a non-controlled aerodrome under CASR 91.360?',
     options: [
-      'A. ithin 5 NM at any altitude, under the provisions of AIP ENR 1.1',
+      'A. Ithin 5 NM at any altitude, under the provisions of AIP ENR 1.1',
       'B. In uncontrolled airspace, within 10 NM of the aerodrome, and at or below the area ceiling in the ERSA entry',
-      'C. ithin the aerodrome traffic zone as published in ERSA, subject to the conditions in CASR Part 91',
-      'D. ithin 50 NM at or above circuit height, as required by CASR 91.195',
+      'C. Ithin the aerodrome traffic zone as published in ERSA, subject to the conditions in CASR Part 91',
+      'D. Ithin 50 NM at or above circuit height, as required by CASR 91.195',
     ],
     correct: 1,
     explanation: 'CASR 91.360: an aircraft is in the vicinity of a non-controlled aerodrome if it is (a) in uncontrolled airspace; (b) within 10 NM of the aerodrome; and (c) at a height above the aerodrome that could result in conflict with operations at the aerodrome.',
@@ -4103,10 +4103,10 @@ export const clwaQuestions: {
   {
     question: 'When may a pilot fly an aircraft in formation?',
     options: [
-      'A. ormation flying is permitted any time if all pilots have a formation endorsement, as specified in the Part 91 MOS and applicable AIP ENR section',
-      'B. t any time provided all pilots have CPL or higher, as required by CASR 91.195 and the applicable AIP procedures',
+      'A. Ormation flying is permitted any time if all pilots have a formation endorsement, as specified in the Part 91 MOS and applicable AIP ENR section',
+      'B. T any time provided all pilots have CPL or higher, as required by CASR 91.195 and the applicable AIP procedures',
       'C. Only if the formation has been prearranged with the other pilots making up the formation, and at night or in IMC only with a CASA approval',
-      'D. ormation flying requires an AOC approval at all times, unless exempted by CASA under a current Part 11 instrument',
+      'D. Ormation flying requires an AOC approval at all times, unless exempted by CASA under a current Part 11 instrument',
     ],
     correct: 2,
     explanation: 'CASR 91.205 / VFRG v8.3: a pilot may only fly in formation if the flight has been prearranged with the other pilots in the formation. Formation flying at night or in IMC requires a CASA approval. A flight activity endorsement is also required under CASR 61.380.',
@@ -4163,10 +4163,10 @@ export const clwaQuestions: {
   {
     question: 'What does a Danger Area indicate to a pilot?',
     options: [
-      'A. light is absolutely prohibited, provided the ATC clearance is current',
-      'B. he area is restricted to military aircraft only — the ATC clearance must be read back in full',
+      'A. Light is absolutely prohibited, provided the ATC clearance is current',
+      'B. The area is restricted to military aircraft only — the ATC clearance must be read back in full',
       'C. The area may contain activities hazardous to flight, but transit is not prohibited unless a NOTAM restricts access',
-      'D. ntry requires a specific CASA approval — the ATC clearance must be read back in full',
+      'D. Ntry requires a specific CASA approval — the ATC clearance must be read back in full',
     ],
     correct: 2,
     explanation: 'CASR Part 91 and AIP ENR 2.2: Danger Areas (prefix D) indicate potentially hazardous activities (such as military exercises, weapons firing) but do not prohibit entry. Pilots enter at their own risk and should contact the controlling authority or check activation times via NAIPS NOTAMs.',
@@ -4379,10 +4379,10 @@ export const clwaQuestions: {
   {
     question: 'What triggers an ATIS update?',
     options: [
-      'A. nly between 0600 and 2200 local time, under the provisions of AIP ENR 1.1',
+      'A. Only between 0600 and 2200 local time, under the provisions of AIP ENR 1.1',
       'B. Whenever significant changes occur to weather, QNH, runway-in-use, or relevant NOTAMs, and at each new hourly observation',
-      'C. very 30 minutes at all hours, as required by CASR 91.195',
-      'D. nly when the active runway changes, unless exempted by CASA under Part 11',
+      'C. Very 30 minutes at all hours, as required by CASR 91.195',
+      'D. Only when the active runway changes, unless exempted by CASA under Part 11',
     ],
     correct: 1,
     explanation: 'ATIS is updated whenever significant changes occur to weather, QNH, runway-in-use, or relevant NOTAMs, and at each new hourly weather observation. Each update receives a new alphabetical identifier.',
@@ -4631,10 +4631,10 @@ export const clwaQuestions: {
   {
     question: 'An aircraft is landing. Which other aircraft must give way to the landing aircraft?',
     options: [
-      'A. nly IFR aircraft in controlled airspace — the ATC clearance must be read back in full',
-      'B. nly aircraft on the ground, subject to the conditions in CASR Part 91',
+      'A. Only IFR aircraft in controlled airspace — the ATC clearance must be read back in full',
+      'B. Only aircraft on the ground, subject to the conditions in CASR Part 91',
       'C. Any other aircraft — whether in flight, on the ground, or on water — must give way to the landing aircraft',
-      'D. nly other VFR aircraft — the ATC clearance must be read back in full',
+      'D. Only other VFR aircraft — the ATC clearance must be read back in full',
     ],
     correct: 2,
     explanation: 'CASR 91.330 right-of-way table Item 2: any other aircraft — whether in flight or operating on the ground or water — must give way to a landing aircraft.',
@@ -4703,7 +4703,7 @@ export const clwaQuestions: {
   {
     question: 'When a pressurised aircraft operates above FL250, what additional oxygen requirement applies?',
     options: [
-      'A. o additional requirement above the FL140 rules, subject to the conditions specified in CASR Part 91 and the MOS',
+      'A. O additional requirement above the FL140 rules, subject to the conditions specified in CASR Part 91 and the MOS',
       'B. All passengers must also be provided with supplemental oxygen',
       'C. At least 10 minutes supply must be available even if the entire period above FL250 is less than 10 minutes',
       'D.  second oxygen system must be fitted — this applies in all classes of controlled and uncontrolled airspace',
@@ -4799,10 +4799,10 @@ export const clwaQuestions: {
   {
     question: 'How often is an ATIS broadcast updated?',
     options: [
-      'A. very 30 minutes at major airports only, provided the aircraft has a valid C of A',
-      'B. nly when the runway changes, unless exempted by CASA under Part 11',
+      'A. Very 30 minutes at major airports only, provided the aircraft has a valid C of A',
+      'B. Only when the runway changes, unless exempted by CASA under Part 11',
       'C. Whenever there is a significant change in weather, runway, or QNH, or when a new hourly weather observation becomes available',
-      'D. very hour, on the hour, as required by CASR 91.195',
+      'D. Very hour, on the hour, as required by CASR 91.195',
     ],
     correct: 2,
     explanation: 'AIP ENR 1.7: ATIS is updated whenever there is a significant change in the information (weather, runway, QNH, etc.) or when a new hourly weather observation becomes available. Each update receives a new sequential alphabetical identifier.',
@@ -4859,7 +4859,7 @@ export const clwaQuestions: {
   {
     question: 'When must a Mode C (altitude-reporting) transponder be operated in controlled airspace?',
     options: [
-      'A. nly above FL100, subject to the conditions specified in CASR Part 91 and the MOS',
+      'A. Only above FL100, subject to the conditions specified in CASR Part 91 and the MOS',
       'B. Only in Class C and D airspace — not required in Class E',
       'C. Continuously in all controlled airspace where a transponder is required',
       'D. Only when ATC specifically requests altitude readout',
@@ -4896,9 +4896,9 @@ export const clwaQuestions: {
     question: 'What information must a VFR aircraft without flight notification provide on first ATC contact at a Class D aerodrome?',
     options: [
       'A. TIS code only — the ATC clearance must be read back in full',
-      'B. allsign and type only — this applies in all classes of airspace',
+      'B. Allsign and type only — this applies in all classes of airspace',
       'C. Aircraft callsign and DETAILS, wait for ATC response, then provide destination, first tracking point, and other details',
-      'D. ull flight plan details including fuel on board, as required by CASR 91.195',
+      'D. Ull flight plan details including fuel on board, as required by CASR 91.195',
     ],
     correct: 2,
     explanation: 'AIP ENR 1.1 / VFRG v8.3: VFR aircraft without flight notification must provide: callsign and "DETAILS" (wait for ATC response), then destination and first tracking point, preferred level, and ATIS code received.',
@@ -5222,7 +5222,7 @@ export const clwaQuestions: {
       'A.  military exclusion zone, unless the pilot has a current YFTS endorsement',
       'B.  zone where ATC instructions are mandatory for all aircraft, unless exempted by CASA under Part 11',
       'C. Airspace around non-controlled aerodromes where radio broadcasts on the specified frequency are mandatory for all aircraft',
-      'D. n area where Mode C transponder use is compulsory, unless the pilot has a current YFTS endorsement',
+      'D. N area where Mode C transponder use is compulsory, unless the pilot has a current YFTS endorsement',
     ],
     correct: 2,
     explanation: 'AIP ENR 1.4 and ERSA: a Mandatory Broadcast Zone (MBZ) is airspace around a non-controlled aerodrome where radio broadcasts on the specified frequency are mandatory for all aircraft. It replaces the need for the CTAF call at some lower-traffic aerodromes.',
@@ -5315,10 +5315,10 @@ export const clwaQuestions: {
   {
     question: 'What does an ATC clearance "CLEARED TO [fix] VIA [route]" authorise the pilot to do?',
     options: [
-      'A. ly directly to the fix by the shortest route, as required by CASR 91.195 and the applicable AIP procedures',
-      'B. ly the IFR departure procedure then proceed direct, as specified in the Part 91 MOS and applicable AIP ENR section',
+      'A. Ly directly to the fix by the shortest route, as required by CASR 91.195 and the applicable AIP procedures',
+      'B. Ly the IFR departure procedure then proceed direct, as specified in the Part 91 MOS and applicable AIP ENR section',
       'C. Fly to the specified fix via the specified route only; no deviation from the route is authorised without a new clearance',
-      'D. ly to the fix via any route at the pilot\'s discretion — this applies in all classes of controlled and uncontrolled airspace',
+      'D. Ly to the fix via any route at the pilot\'s discretion — this applies in all classes of controlled and uncontrolled airspace',
     ],
     correct: 2,
     explanation: 'CASR 91.155 and AIP ENR 6.1: an ATC route clearance specifying a fix and route authorises the pilot to fly only the stated route to the fix. Deviations require an amended clearance from ATC.',
@@ -5387,10 +5387,10 @@ export const clwaQuestions: {
   {
     question: 'What is the purpose of a Certificate of Airworthiness (C of A)?',
     options: [
-      'A. t authorises the pilot to operate the aircraft on specific routes, provided the ATC clearance is current',
+      'A. T authorises the pilot to operate the aircraft on specific routes, provided the ATC clearance is current',
       'B. It certifies the aircraft design and construction conforms to approved type design and is in a condition for safe flight',
-      'C. t authorises the aircraft to be used for commercial operations only, unless exempted by CASA under Part 11',
-      'D. t replaces the maintenance release for low-risk operations, under the provisions of AIP ENR 1.1',
+      'C. T authorises the aircraft to be used for commercial operations only, unless exempted by CASA under Part 11',
+      'D. T replaces the maintenance release for low-risk operations, under the provisions of AIP ENR 1.1',
     ],
     correct: 1,
     explanation: 'Under CASR Part 21: a Certificate of Airworthiness certifies that the aircraft design and construction conforms to approved type design and is in a condition for safe operation. It is a design and construction certification, distinct from the maintenance release (which certifies the aircraft is maintained in an airworthy condition).',
@@ -5495,10 +5495,10 @@ export const clwaQuestions: {
   {
     question: 'What does the CPL aeroplane air law syllabus require pilots to understand about general competency and flight reviews?',
     options: [
-      'A. nly ATPL holders require biennial flight reviews — this applies in all classes of airspace',
+      'A. Only ATPL holders require biennial flight reviews — this applies in all classes of airspace',
       'B. Describe the obligations they must comply with regarding flight crew fitness and the use of psychoactive substances',
-      'C. light reviews are optional after obtaining a CPL, as required by CASR 91.195',
-      'D. light reviews are only required after an incident or accident, provided the ATC clearance is current',
+      'C. Light reviews are optional after obtaining a CPL, as required by CASR 91.195',
+      'D. Light reviews are only required after an incident or accident, provided the ATC clearance is current',
     ],
     correct: 1,
     explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 (CFRA) s.2.1.2: the CPL aeroplane air law syllabus requires pilots to describe the obligations they must comply with regarding general competency, flight reviews, and proficiency checks under CASR Part 61.',
@@ -5639,10 +5639,10 @@ export const clwaQuestions: {
   {
     question: 'What is a "flight information region" (FIR) and who manages the Melbourne and Brisbane FIRs?',
     options: [
-      'A. n FIR is a restricted airspace — Airservices Australia manages Melbourne; RAAF manages Brisbane, unless exempted by CASA under a current Part 11 instrument',
+      'A. N FIR is a restricted airspace — Airservices Australia manages Melbourne; RAAF manages Brisbane, unless exempted by CASA under a current Part 11 instrument',
       'B. IRs are ICAO-defined regions managed by individual airlines for their operations, unless exempted by CASA under a current Part 11 instrument',
       'C. An FIR is a volume of airspace within which flight information and alerting services are provided; both the Melbourne and Brisbane FIRs are managed by Airservices Australia',
-      'D. he Melbourne FIR is managed by CASA; Brisbane by Airservices, subject to the conditions specified in CASR Part 91 and the MOS',
+      'D. The Melbourne FIR is managed by CASA; Brisbane by Airservices, subject to the conditions specified in CASR Part 91 and the MOS',
     ],
     correct: 2,
     explanation: 'AIP GEN 2.1 and ICAO: Australia is divided into the Melbourne and Brisbane FIRs. Both are managed by Airservices Australia, which provides flight information, alerting, and ATC services within them.',
@@ -5819,9 +5819,9 @@ export const clwaQuestions: {
   {
     question: 'What is a "daily inspection" and who may perform it?',
     options: [
-      'A. n inspection required only for turbine-engine aircraft, unless the pilot has a current YFTS endorsement',
+      'A. N inspection required only for turbine-engine aircraft, unless the pilot has a current YFTS endorsement',
       'B.  full maintenance check performed by a LAME once a day, under the provisions of AIP ENR 1.1',
-      'C. n avionics check performed by licensed personnel only, under the provisions of AIP ENR 1.1',
+      'C. N avionics check performed by licensed personnel only, under the provisions of AIP ENR 1.1',
       'D. A pre-flight check conducted by the pilot-in-command before the first flight of the day, using the aircraft checklist',
     ],
     correct: 3,
@@ -5951,10 +5951,10 @@ export const clwaQuestions: {
   {
     question: 'When must the two intersection points on the CG envelope be within limits?',
     options: [
-      'A. nly at zero fuel weight, unless exempted by CASA under Part 11',
-      'B. nly at take-off weight, provided the aircraft has a valid C of A',
+      'A. Only at zero fuel weight, unless exempted by CASA under Part 11',
+      'B. Only at take-off weight, provided the aircraft has a valid C of A',
       'C. Both at Zero Fuel Weight and at Take-Off Weight — both intersection points must lie within the CG envelope',
-      'D. nly at maximum take-off weight, unless exempted by CASA under Part 11',
+      'D. Only at maximum take-off weight, unless exempted by CASA under Part 11',
     ],
     correct: 2,
     explanation: 'RPL/PPL/CPL Workbook Loading System Alpha instruction 8: both the Zero Fuel Weight intersection point and the Take-Off Weight intersection point must lie within the CG envelope.',
