@@ -2,35 +2,34 @@
 import { useState, useEffect, useRef, use } from 'react'
 import { supabase } from '../../../lib/supabase'
 import { freeQuestions } from '../../../lib/questions'
+import { pplaQuestions } from '../../../lib/questions-ppla'
 import { clwaQuestions } from '../../../lib/questions-clwa'
 import { chufQuestions } from '../../../lib/questions-chuf'
 import { cmetQuestions } from '../../../lib/questions-cmet'
 import { cnavQuestions } from '../../../lib/questions-cnav'
-import { cadaQuestions } from '../../../lib/questions-cada'
 import { cagkQuestions } from '../../../lib/questions-cagk'
+import { cadaQuestions } from '../../../lib/questions-cada'
 import { cfpaQuestions } from '../../../lib/questions-cfpa'
 
-// Full question banks — keyed to match subject names used in the dashboard
+// Full question banks keyed by dashboard subject name
 const fullBanks: Record<string, any[]> = {
-  'Air Law':         clwaQuestions,
-  'Human Factors':   chufQuestions,
-  'Meteorology':     cmetQuestions,
-  'Navigation':      cnavQuestions,
-  'Aerodynamics': cadaQuestions,
+  'PPL Theory': pplaQuestions,
+  'Flight Rules and Air Law': clwaQuestions,
+  'Human Factors': chufQuestions,
+  'Meteorology': cmetQuestions,
+  'Navigation': cnavQuestions,
   'Aircraft General Knowledge': cagkQuestions,
-  'Flight Planning & Performance': cfpaQuestions,
+  'Aerodynamics': cadaQuestions,
+  'Operations Performance Planning': cfpaQuestions,
 }
 
-function findQuestions(subject: string) {
-  // Prefer full bank if available
-  if (fullBanks[subject]) return fullBanks[subject]
-  const lower = subject.toLowerCase().trim()
-  for (const key of Object.keys(fullBanks)) {
-    if (key.toLowerCase().trim() === lower) return fullBanks[key]
-    if (lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) return fullBanks[key]
+function getBank(subject: string, hasPlan: boolean): any[] {
+  if (hasPlan && fullBanks[subject] && fullBanks[subject].length > 0) {
+    return fullBanks[subject]
   }
-  // Fall back to free questions (covers PPL, IREX, ATPL subjects not yet written)
+  // Fall back to trial questions
   if (freeQuestions[subject]) return freeQuestions[subject]
+  const lower = subject.toLowerCase().trim()
   for (const key of Object.keys(freeQuestions)) {
     if (key.toLowerCase().trim() === lower) return freeQuestions[key]
   }
@@ -57,15 +56,32 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const [finished, setFinished] = useState(false)
   const [scoreSaved, setScoreSaved] = useState(false)
   const [finalScore, setFinalScore] = useState(0)
+  const [hasPlan, setHasPlan] = useState(false)
+  const [planLoaded, setPlanLoaded] = useState(false)
   const scoreRef = useRef(0)
 
   useEffect(() => {
-    if (!subject) return
-    const bank = findQuestions(subject)
+    supabase.auth.getUser().then(async ({ data }) => {
+      if (!data.user) return
+      const { data: sub } = await supabase
+        .from('subscriptions')
+        .select('plan, status')
+        .eq('user_id', data.user.id)
+        .eq('status', 'active')
+        .single()
+      const active = !!(sub?.plan)
+      setHasPlan(active)
+      setPlanLoaded(true)
+    })
+  }, [])
+
+  useEffect(() => {
+    if (!subject || !planLoaded) return
+    const bank = getBank(subject, hasPlan)
     const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
     setQuestions(shuffled)
     scoreRef.current = 0
-  }, [subject])
+  }, [subject, hasPlan, planLoaded])
 
   async function saveScore(s: number, total: number) {
     try {
@@ -110,7 +126,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   }
 
   function restart() {
-    const bank = findQuestions(subject)
+    const bank = getBank(subject, hasPlan)
     setQuestions([...bank].sort(() => Math.random() - 0.5).slice(0, 10))
     setCurrentIdx(0)
     setFinalScore(0)
@@ -121,7 +137,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
     scoreRef.current = 0
   }
 
-  if (!subject || questions.length === 0) return (
+  if (!subject || !planLoaded || questions.length === 0) return (
     <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif', flexDirection: 'column', gap: '1rem' }}>
       <p style={{ color: '#64748b', fontSize: '16px' }}>Loading questions...</p>
       <a href="/dashboard" style={{ color: '#2563eb', textDecoration: 'none' }}>Back to dashboard</a>
