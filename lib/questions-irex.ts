@@ -217,13 +217,10 @@ export const irexQuestions: {
 {
   question: 'The pilot\\\'s obligation for cancellation of SAR (search and rescue) on an IFR flight is:',
   options: [
-    'A. SAR cancellation is ATC\\',
-    'B. ,
-    ',
-    'C. ,
-    ',
-    'D. ,
-    '
+    'A. SAR cancellation is ATC\'s responsibility — pilots have no obligation',
+    'B. The pilot must cancel SAR within 1 hour of landing regardless of conditions',
+    'C. SAR is automatically cancelled when the aircraft lands at the destination',
+    'D. The pilot must close the IFR flight plan on arrival by advising ATC — failure to do so will result in SAR action commencing at the overdue time'
   ],
   correct: 3,
   explanation: 'On IFR flights, ATC acts as the SAR monitoring agency. The pilot must close the IFR flight plan on arrival (by advising ATC or closing the flight plan with JRCC/FSS). If the aircraft does not arrive and the plan is not closed, SAR action commences at the overdue time. This is a pilot legal obligation.',
@@ -324,12 +321,10 @@ export const irexQuestions: {
 {
   question: 'The holding pattern entry procedure depends on:',
   options: [
-    'A. The aircraft\\',
-    'B. Aircraft performance category only',
-    'C. ,
-    ',
-    'D. ,
-    '
+    'A. The aircraft\'s heading relative to the holding fix on arrival — determining whether to use direct, teardrop, or parallel entry to remain within the protected holding airspace',
+    'B. Aircraft performance category only — entry type varies by aircraft size',
+    'C. The pilot\'s preference for the most comfortable turn direction',
+    'D. ATC instruction issued individually for each holding entry'
   ],
   correct: 0,
   explanation: 'ICAO standard holding entries depend on the aircraft heading on arrival at the holding fix relative to the holding pattern protected airspace: Direct entry (sector 1): fly straight to the fix and turn onto outbound; Parallel entry (sector 2): fly outbound parallel, then turn back to the fix; Offset/teardrop entry (sector 3): turn 30° towards the inbound track, fly for approximately 1 minute, then turn to intercept inbound. The sectors are defined relative to the inbound track.',
@@ -417,12 +412,10 @@ export const irexQuestions: {
 {
   question: 'The "noise abatement procedure" at an aerodrome:',
   options: [
-    'A. Is optional — pilot may use any departure track for safety',
-    'B. Must be followed as published unless safety requires deviation — obstacle clearance is the pilot\',
-    'C. ,
-     provided weather is above published minima',
-    'D. ,
-     provided weather is above published minima'
+    'A. Is optional — pilot may use any departure track for safety reasons at any time',
+    'B. Must be followed as published unless safety requires deviation — the pilot\'s primary obligation is always safety, but noise abatement procedures should otherwise be complied with',
+    'C. Applies only to commercial aircraft — general aviation is exempt from noise abatement procedures',
+    'D. Is an ATC instruction that overrides all other departure and safety requirements'
   ],
   correct: 1,
   explanation: 'Noise abatement procedures must be followed as published. However, safety always takes precedence — if following the noise procedure would compromise safety (e.g., engine failure, severe turbulence), the pilot may deviate. When deviating, the pilot assumes responsibility for obstacle clearance and must advise ATC. Published procedures are designed with appropriate safety margins.',
@@ -562,12 +555,10 @@ export const irexQuestions: {
 {
   question: 'The "PEC" (Pilot Equipment Correction) when applied to a DA gives:',
   options: [
-    'A. A higher DA to account for instrument error only if the destination TAF covers the arrival window',
-    'B. The "AOM" (Aircraft Operations Minimum) — the actual altitude the pilot must fly to meet the approach criteria, accounting for',
-    'C. ,
-     only if the destination TAF covers the arrival window',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. A higher DA to account for instrument error only',
+    'B. The actual operational minimum — the DA adjusted for specific aircraft instrument errors, giving the altitude the crew uses rather than the published procedure DA',
+    'C. A lower DA to account for more accurate avionics equipment on board',
+    'D. An additional safety margin added by the operator above the published procedure DA'
   ],
   correct: 1,
   explanation: 'PEC (Pilot Equipment Correction) accounts for the difference between the pilot\\\'s altimeter reading and the approach chart datum. When applied to the published DA, it gives the AOM (Aircraft Operations Minimum) — what the pilot actually flies. PEC may be zero, positive, or negative depending on the altimeter calibration. AOM = DA + PEC. This ensures the correct obstacle clearance is maintained.',
@@ -863,12 +854,10 @@ export const irexQuestions: {
 {
   question: 'A SIGMET covering your planned route indicates severe icing. The appropriate action is:',
   options: [
-    'A. Assess the aircraft\\',
-    'B. Proceed — SIGMETs are advisory only',
-    'C. ,
-    ',
-    'D. ,
-    '
+    'A. Assess the aircraft\'s ice protection capability, reroute or select an alternate altitude to avoid the severe icing area, and if avoidance is not possible consider diverting to an alternate route',
+    'B. Proceed — SIGMETs are advisory only and require no pilot action',
+    'C. Continue and activate ice protection equipment only when ice accumulation is observed',
+    'D. Descend below the freezing level immediately and continue on the planned track'
   ],
   correct: 0,
   explanation: 'A severe icing SIGMET requires a careful go/no-go assessment: review the aircraft\\\'s ice protection system (none, de-ice, anti-ice, FIKI certified); obtain PIREPs for pilot reports of actual conditions; consider altitude or route changes to avoid the area; if the aircraft is not equipped for the forecast icing intensity, do not depart or divert. Operating in conditions beyond the aircraft\\\'s certification is illegal and potentially fatal.',
@@ -1048,11 +1037,9 @@ export const irexQuestions: {
   question: 'The NDB (Non-Directional Beacon) transmits:',
   options: [
     'A. Directional signals on 360 radials from the station',
-    'B. An omnidirectional signal in the LF/MF band — the aircraft\',
-    'C. ,
-     and all required documents are carried',
-    'D. ,
-     and all required documents are carried'
+    'B. An omnidirectional signal in the LF/MF band — the aircraft's ADF receiver determines the bearing to the station by measuring the signal arrival direction',
+    'C. A highly directional beam similar to a VOR but on lower frequencies',
+    'D. Signals only on the published NDB frequency during daylight hours'
   ],
   correct: 1,
   explanation: 'NDB transmits a non-directional (omnidirectional) signal in the LF/MF band (190–1750 kHz). The aircraft\\\'s Automatic Direction Finder (ADF) receiver detects the direction from which the signal arrives and displays it on the ADF indicator as a relative bearing. Unlike VOR, the NDB does not transmit directional information — the aircraft receiver determines the bearing.',
@@ -1805,12 +1792,10 @@ export const irexQuestions: {
 {
   question: 'Alternate aerodrome requirements in terms of navigation aids or approach procedures require:',
   options: [
-    'A. The alternate must have an ILS approach',
-    'B. ,
-     and all required documents are carried',
-    'C. The alternate must have an instrument approach procedure compatible with the aircraft\',
-    'D. ,
-     and all required documents are carried'
+    'A. The alternate must have an ILS approach procedure',
+    'B. The alternate must have a published instrument approach and forecast weather above alternate minima for the planned arrival window',
+    'C. The alternate must have an instrument approach compatible with the aircraft's avionics and weather above alternate minima',
+    'D. Any aerodrome with a published approach is acceptable regardless of forecast weather'
   ],
   correct: 2,
   explanation: 'Alternate approach procedure requirements: the alternate must have an instrument approach procedure that the aircraft can fly using its installed navigation equipment. If the aircraft has only NDB equipment, the alternate must have an NDB approach. The forecast weather at the alternate at ETA must meet the alternate meteorological minima for that approach (published minima + 300 ft and 1,500 m).',
@@ -1950,12 +1935,10 @@ export const irexQuestions: {
 {
   question: 'After take-off under IFR, establishing the aircraft on track requires:',
   options: [
-    'A. The aircraft may fly any heading until reaching cruise altitude only if the destination TAF covers the arrival window',
-    'B. ,
-     only if the destination TAF covers the arrival window',
-    'C. The aircraft must comply with the published SID, or if no SID is published or applicable, it must establish itself on the cleared route before passing the',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. The aircraft may fly any heading until reaching cruise altitude',
+    'B. The aircraft must follow the published SID or departure instruction exactly — deviating from the cleared departure route without ATC clearance violates IFR separation',
+    'C. Only the final cruise heading matters — departure track is at pilot discretion',
+    'D. The aircraft follows the SID only if ATC specifically requests it'
   ],
   correct: 2,
   explanation: 'IFR track establishment after take-off: the pilot must follow the SID if published and cleared. If no SID applies, establish on the cleared route before the specified point. Obstacle clearance during the SID is based on following the published procedure — deviating from the SID without authorisation removes the obstacle protection. ATC may provide radar vectors to the first waypoint.',
@@ -2186,12 +2169,10 @@ export const irexQuestions: {
 {
   question: 'The directional indicator (DI) or heading indicator must be aligned with the magnetic compass:',
   options: [
-    'A. Only before flight — DIs are accurate throughout the flight',
-    'B. Every 10–15 minutes during cruise — DIs precess (drift) due to bearing friction and Earth\',
-    'C. ,
-     and all required documents are carried',
-    'D. ,
-     and all required documents are carried'
+    'A. Only before flight — DIs are accurate throughout the flight without adjustment',
+    'B. Every 10-15 minutes during cruise — DIs precess due to bearing friction and Earth rotation, and must be realigned with the magnetic compass on a straight level unaccelerated heading',
+    'C. Only when entering controlled airspace',
+    'D. DI alignment is automatic — no pilot action required'
   ],
   correct: 1,
   explanation: 'DI precession: the directional gyro drifts from the set heading due to: (1) Bearing friction (mechanical precession); (2) Earth\\\'s rotation (apparent precession — more significant at high latitudes); (3) Aircraft manoeuvres. Rate: typically 2–3° per 10 minutes. Must be aligned with the magnetic compass in straight and level flight (not in a turn) every 10–15 minutes. Failure to align results in accumulating heading error.',
@@ -2319,11 +2300,9 @@ export const irexQuestions: {
   question: 'The visual circling manoeuvre must remain within:',
   options: [
     'A. 5 nm of the aerodrome',
-    'B. ,
-    ',
-    'C. ,
-    ',
-    'D. The published circling radius for the aircraft\\'
+    'B. 3 nm of the runway threshold for all approach categories',
+    'C. 10 nm of the aerodrome reference point at all times during circling',
+    'D. The published circling radius for the aircraft\'s approach category — Cat A 1.68 nm, Cat B 2.66 nm, Cat C 4.20 nm, Cat D 5.28 nm'
   ],
   correct: 3,
   explanation: 'Circling radius limits by category: Cat A 1.68 nm, Cat B 2.66 nm, Cat C 4.20 nm, Cat D 5.28 nm. The published MCA provides obstacle clearance within these radii. Manoeuvring outside the published radius removes obstacle protection — even if the runway is in sight. The circling procedure must be flown at the minimum safe altitude and within the category radius.',
@@ -2816,11 +2795,9 @@ export const irexQuestions: {
   question: 'GNSS "integrity" differs from "accuracy" in that:',
   options: [
     'A. Accuracy is about speed; integrity is about position',
-    'B. ,
-     and all required documents are carried',
-    'C. ,
-     and all required documents are carried',
-    'D. Accuracy describes how close the position is to truth; integrity describes the system\'
+    'B. Integrity is the ability of the system to provide timely warnings when the navigation solution should not be trusted — accuracy measures how close the position is to truth; integrity monitors whether that accuracy is within required limits',
+    'C. Integrity applies to ILS only; accuracy applies to GNSS',
+    'D. They are synonymous terms used interchangeably in GNSS documentation'
   ],
   correct: 3,
   explanation: 'Accuracy vs integrity: Accuracy is the statistical measure of position error. Integrity is the system\\\'s ability to detect and warn the pilot when accuracy has degraded below required levels within a specified time (Time to Alert). For IFR approaches, high integrity is more critical than raw accuracy — the system must warn the pilot of degraded performance before they can fly into terrain. RAIM provides integrity monitoring.',
@@ -3155,12 +3132,10 @@ export const irexQuestions: {
 {
   question: 'The altimeter error in cold temperatures affects IFR approaches by:',
   options: [
-    'A. When temperatures are significantly below ISA, the altimeter reads higher than the aircraft\',
-    'B. The altimeter reads higher than actual altitude in cold temperatures — the aircraft is actually lower than indicated',
-    'C. ,
-     and all required documents are carried',
-    'D. ,
-     and all required documents are carried'
+    'A. In cold temperatures the altimeter reads higher than actual altitude — the aircraft is lower than indicated, reducing obstacle clearance margins on approach',
+    'B. Cold temperatures cause the altimeter to read lower than actual — the aircraft is higher than indicated so no correction is required',
+    'C. Cold temperature errors only affect altimeters above FL200',
+    'D. Modern altimeters automatically compensate for temperature'
   ],
   correct: 0,
   explanation: 'Cold temperature altimeter error: the altimeter is calibrated for ISA. When temperature is below ISA, air is denser — the pressure levels are lower than standard. Result: the altimeter OVER-reads — actual altitude is LESS than indicated. This means the aircraft is LOWER than the altimeter shows. In very cold conditions (-30°C or below), the error can be hundreds of feet. Cold temperature corrections must be applied to minimum altitudes.',
@@ -3509,11 +3484,9 @@ export const irexQuestions: {
   question: '"Quadrantal error" in ADF/NDB systems is caused by:',
   options: [
     'A. The pilot setting the wrong frequency',
-    'B. ,
-    ',
-    'C. ,
-    ',
-    'D. The aircraft\\'
+    'B. Night-time ionospheric refraction affecting the NDB ground wave signal accuracy',
+    'C. Coastal refraction when the NDB signal crosses a coastline at an oblique angle',
+    'D. The aircraft\'s metallic fuselage re-radiating the NDB signal and distorting the directional reading — error is maximum when the NDB is approximately 45° from the aircraft heading'
   ],
   correct: 3,
   explanation: 'Quadrantal error: the aircraft fuselage acts as a secondary antenna, distorting the directional properties of the loop antenna. Error is maximum (up to ±5°) when the NDB is approximately 45° from the aircraft heading, and minimum when beam-on (0°/180°) or directly ahead/behind (90°/270°). Corrected by ADF compensator coils. Some error typically remains — treat NDB bearings as approximate.',
@@ -3824,13 +3797,10 @@ export const irexQuestions: {
 {
   question: 'The "approach plate" (instrument approach chart) legend for "CAT" refers to:',
   options: [
-    'A. The aircraft\\',
-    'B. ,
-    ',
-    'C. ,
-    ',
-    'D. ,
-    '
+    'A. The aircraft\'s maximum certified landing weight category assigned by CASA',
+    'B. The approach category for weather minimums — CAT I, II, or III for precision approaches',
+    'C. The aircraft\'s approach category based on Vat (1.3 × Vso) — determining circling radii and applicable minima: Cat A <91 kt, Cat B 91–120 kt, Cat C 121–140 kt, Cat D 141–165 kt',
+    'D. The category of IFR certification required — basic, intermediate, or advanced'
   ],
   correct: 2,
   explanation: 'Aircraft approach category (Cat A–E): based on Vat = 1.3 × Vso (stall speed in landing configuration). Cat A: Vat <91 kt; Cat B: 91–120 kt; Cat C: 121–140 kt; Cat D: 141–165 kt; Cat E: >165 kt. Different categories have different circling radii and may have different minima. Most light aircraft (PA-28, C172, DA40) are Cat A.',
@@ -3905,12 +3875,10 @@ export const irexQuestions: {
 {
   question: 'When an approach requires "DME required" and DME is unserviceable, the pilot must:',
   options: [
-    'A. Not conduct the approach — if the chart specifies DME as required for the procedure and the aircraft\',
+    'A. Not conduct the approach — if the chart specifies DME as required and the aircraft DME is unserviceable, the approach cannot be safely flown and an alternative procedure or diversion is required',
     'B. Continue the approach at a higher altitude as a precaution',
-    'C. ,
-     as approved by CASA under current regulations',
-    'D. ,
-     as approved by CASA under current regulations'
+    'C. Use GPS distance to substitute for DME without specific approval',
+    'D. Conduct the approach at pilot discretion if familiar with the aerodrome'
   ],
   correct: 0,
   explanation: '"DME required": the procedure cannot be safely conducted without DME (for fix identification, MAP location, or step-down fix crossing). If the aircraft DME is unserviceable, the pilot must select an approach that does not require DME (if available) or divert. ATC radar can provide position advisory information but this does not substitute for a required DME in the approach design.',
@@ -4232,11 +4200,10 @@ export const irexQuestions: {
 {
   question: 'The importance of checking the "effective date" of an approach chart before an IFR flight:',
   options: [
-    'A. Charts do not expire — all charts are permanently valid only if the destination TAF covers the arrival window',
-    'B. Charts expire but it is the airport\ only if the destination TAF covers the arrival window',
-    'C. ,
-     only if the destination TAF covers the arrival window',
-    'D. Approach procedures change regularly — using an out-of-date chart could result in flying incorrect altitudes, courses, or missing new obstacles or navaid changes'
+    'A. Charts do not expire — all charts are permanently valid',
+    'B. Procedure changes take effect on the AIRAC date — using an out-of-date chart risks flying a superseded procedure with incorrect minima, waypoints or course. Always verify the chart effective date matches the current AIRAC cycle',
+    'C. Charts only need checking if a NOTAM has been issued for that aerodrome',
+    'D. Chart dates are advisory only — procedures rarely change'
   ],
   correct: 3,
   explanation: 'AIRAC (Aeronautical Information Regulation And Control): standardised 28-day cycle for publishing aeronautical information changes. Approach procedures change frequently — new obstacles found, navaid changes, course amendments, new procedures published. Using an outdated chart on an IFR approach is potentially dangerous. Always verify chart currency before flight — check the effective date against today\\\'s date.',
@@ -4428,12 +4395,10 @@ export const irexQuestions: {
 {
   question: 'Class G airspace IFR operations require:',
   options: [
-    'A. ATC clearance — Class G is fully controlled only if the destination TAF covers the arrival window',
-    'B. No ATC clearance (uncontrolled airspace), but the pilot must file an IFR flight plan, maintain instrument currency',
-    'C. ,
-     only if the destination TAF covers the arrival window',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. ATC clearance — Class G is fully controlled airspace',
+    'B. No ATC clearance since Class G is uncontrolled, but the pilot must file an IFR flight plan, maintain LSALT, self-announce on the appropriate frequency, and take full responsibility for terrain clearance and traffic separation',
+    'C. A special uncontrolled IFR endorsement beyond the standard instrument rating',
+    'D. VFR conditions at all times — IFR is not permitted in Class G'
   ],
   correct: 1,
   explanation: 'Class G IFR: uncontrolled airspace — no ATC clearance required. Pilot responsibilities: file flight plan (activates SAR), maintain IFR currency, use IFR-equipped aircraft, broadcast on CTAF, maintain self-separation from other traffic. There is no ATC separation guarantee in Class G. The IFR instrument approach to an uncontrolled aerodrome in Class G is entirely the pilot\\\'s responsibility.',
@@ -4456,13 +4421,10 @@ export const irexQuestions: {
 {
   question: 'Mode C transponder altitude reporting is required in Australian controlled airspace because:',
   options: [
-    'A. ,
-    ',
-    'B. It provides the aircraft\\',
-    'C. ,
-    ',
-    'D. ,
-    '
+    'A. It provides ATC with the aircraft\'s pressure altitude encoded from the static system, allowing radar displays to show altitude alongside the transponder return — essential for IFR separation and surveillance',
+    'B. It provides the aircraft with real-time traffic information from other transponders',
+    'C. It allows the aircraft to communicate with TCAS-equipped aircraft automatically',
+    'D. Mode C is required only above FL290 in RVSM airspace for separation purposes'
   ],
   correct: 0,
   explanation: 'Mode C (altitude encoding transponder): the aircraft\\\'s static pressure altitude is encoded and transmitted with each transponder reply. ATC radar displays show the aircraft identification and altitude. Essential for: IFR separation in Class C, D, E; TCAS in equipped aircraft; Airservices TAAATS radar surveillance. Required in most controlled airspace and is mandated for IFR flight.',
@@ -4473,11 +4435,9 @@ export const irexQuestions: {
   question: 'ADS-B (Automatic Dependent Surveillance — Broadcast) differs from Mode C because:',
   options: [
     'A. ADS-B requires radar interrogation to respond',
-    'B. ,
-    ',
-    'C. ADS-B broadcasts the aircraft\\',
-    'D. ,
-    '
+    'B. ADS-B uses HF radio frequencies and has longer range than Mode C radar',
+    'C. ADS-B continuously broadcasts the aircraft\'s GNSS-derived position, altitude, groundspeed, and identity without requiring radar interrogation — functioning beyond radar range and providing other aircraft with traffic information',
+    'D. ADS-B only works in Class A airspace and cannot be received by other aircraft'
   ],
   correct: 2,
   explanation: 'ADS-B (out): aircraft GNSS receiver continuously broadcasts position, altitude, groundspeed, track, and identification. ATC ground stations receive the broadcast without radar interrogation — works beyond radar range. Traffic displays (TCAS, EFB apps) in other aircraft can show surrounding ADS-B traffic. Australia mandated ADS-B in controlled airspace above certain altitudes.',
@@ -4539,12 +4499,10 @@ export const irexQuestions: {
 {
   question: 'The requirement for IFR pilots to report "operations normal" when overdue refers to:',
   options: [
-    'A. If an IFR aircraft has not arrived at destination within 30 minutes of ETA (or the time specified), SAR action is triggered — the pilot\',
-    'B. A report required every 15 minutes provided the pilot holds a current medical certificate',
-    'C. ,
-     only if the destination TAF covers the arrival window',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. If an IFR aircraft has not arrived or cancelled its flight plan within 30 minutes of ETA, SAR action is triggered — the pilot must cancel on arrival to prevent unnecessary SAR mobilisation',
+    'B. A report required every 15 minutes in non-radar airspace',
+    'C. An optional report to advise ATC that the aircraft is proceeding normally',
+    'D. A military requirement that does not apply to civil IFR operations'
   ],
   correct: 0,
   explanation: 'SARTIME/SAR action: an IFR flight plan activates SAR coverage. If the aircraft does not arrive within the specified time and has not cancelled, SAR is initiated. The pilot MUST cancel: on landing (call ATC/JRCC or designated point) or cancel before ETA if proceeding to alternate. Failure to cancel can trigger costly and unnecessary searches.',
@@ -4788,12 +4746,10 @@ export const irexQuestions: {
 {
   question: 'The instrument rating "recency" requirement differs from "currency" in that:',
   options: [
-    'A. They are the same — recency and currency mean the same thing only if the destination TAF covers the arrival window',
-    'B. B: Currency is the short-term requirement (3 approaches in 90 days); recency may include a periodic flight test or proficiency check with an examiner',
-    'C. ,
-     only if the destination TAF covers the arrival window',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. They are the same — recency and currency mean the same thing',
+    'B. Currency is the short-term recent flight experience requirement; recency is the broader concept of maintaining skills through regular practice',
+    'C. Recency refers to medical certificate validity; currency refers to flight hours',
+    'D. Currency applies to VFR; recency applies to IFR only'
   ],
   correct: 1,
   explanation: 'IFR currency (CASR Part 61): 3 approaches in 90 days maintains the currency. Recency/proficiency checks: operators (CASR Part 121, 135) require periodic proficiency checks (typically 6-monthly); private IR holders may not have this requirement but should consider periodic proficiency training. CASA also requires a BFR (Biennial Flight Review) at 2-year intervals for all licence holders.',
@@ -4959,12 +4915,10 @@ export const irexQuestions: {
 {
   question: '"Crew resource management" (CRM) in single-pilot IFR means:',
   options: [
-    'A. CRM only applies to multi-crew aircraft and all required documents are carried',
-    'B. Managing all available resources effectively — passengers, ATC, weather services, automation (autopilot, FMS), and the pilot\',
-    'C. ,
-     only if the destination TAF covers the arrival window',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. CRM only applies to multi-crew aircraft',
+    'B. Managing all available resources effectively — ATC, weather services, automation and checklists — to safely manage single-pilot workload in IFR operations',
+    'C. Single-pilot IFR does not require CRM training',
+    'D. CRM in single-pilot operations means flying with a safety pilot at all times'
   ],
   correct: 1,
   explanation: 'Single-pilot CRM: the pilot is the sole crew member — must manage: avionics (FMS, autopilot); communications (ATC, weather); navigation (position awareness); checklist compliance; weather monitoring; and decision making simultaneously. CRM principles: workload management (prioritise tasks); situation awareness (what is happening, what will happen); decision making (DECIDE model); use all available resources (ATC vectors, wx services).',
@@ -5026,12 +4980,10 @@ export const irexQuestions: {
 {
   question: 'The importance of "sterile cockpit discipline" at 1,000 ft AAL during an IFR approach:',
   options: [
-    'A. Only relevant for commercial aircraft and all required documents are carried',
-    'B. ,
-     only if the destination TAF covers the arrival window',
-    'C. Below 1,000 ft AAL (or outer marker equivalent), ALL non-essential communications and activities cease — the pilot\',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. Only relevant for commercial aircraft',
+    'B. Relevant to all IFR operations — below 1,000 ft AAL is the highest risk phase where pilot workload and attentional demands peak',
+    'C. Below 1,000 ft AAL, non-essential tasks and communications are minimised — full attention on aircraft control, approach execution, and runway environment acquisition',
+    'D. Sterile cockpit only applies during take-off, not approach'
   ],
   correct: 2,
   explanation: 'Sterile cockpit (1,000 ft AAL in IMC): the approach phase is statistically the highest risk phase of IFR flight — CFIT and approach accidents are disproportionately common. Complete focus is required. Non-essential activities distract from the critical task of monitoring instruments, visual transition, and making the go-around decision. Exception: safety-critical communications (ATC clearance changes, emergency) must still be handled.',
@@ -5236,12 +5188,10 @@ export const irexQuestions: {
 {
   question: 'The "sterile cockpit" principle for IFR below 10,000 ft means:',
   options: [
-    'A. The cockpit must be clean before each flight and all required documents are carried',
-    'B. ,
-     only if the destination TAF covers the arrival window',
-    'C. During critical phases (below 10,000 ft, approach, landing), non-essential tasks and communications should be minimised — the pilot\',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. The cockpit must be physically clean and tidy before each flight',
+    'B. During critical phases below 10,000 ft, non-essential tasks and communications should be avoided — the pilot's full attention should be on aircraft control and safety',
+    'C. During critical phases below 10,000 ft including approach and landing, non-essential tasks and communications should be minimised so the pilot's full attention remains on aircraft control',
+    'D. Only the captain may communicate below 10,000 ft — the co-pilot must remain silent'
   ],
   correct: 2,
   explanation: 'Sterile cockpit: below 10,000 ft, avoid non-essential tasks — unnecessary radio chat, non-essential passenger interaction, paperwork, or complex FMS reprogramming. These activities divert attention during the highest-risk phases. If an urgent task arises: level off first, complete the task, then continue the profile.',
@@ -5395,11 +5345,9 @@ export const irexQuestions: {
   question: 'The required visual reference that allows continuation below MDA/H must be:',
   options: [
     'A. Any light visible ahead of the aircraft',
-    'B. ,
-    ',
-    'C. ,
-    ',
-    'D. Sufficient to determine the aircraft\\'
+    'B. Only the runway centreline markings visible through the forward windscreen',
+    'C. Any airport light visible in the general direction of the runway environment',
+    'D. Sufficient to determine the aircraft\'s position and rate of descent relative to the runway — typically approach lights, threshold lights, runway markings, PAPI/VASI, or touchdown zone'
   ],
   correct: 3,
   explanation: 'Required visual reference below MDA/H: must allow the pilot to assess position and flight path to the runway. CASR specifies what constitutes required visual reference — approach lighting systems (within 300 m), threshold lights, threshold markings, PAPI/VASI, touchdown zone. If none of these is visible, go around.',
@@ -5487,11 +5435,10 @@ export const irexQuestions: {
 {
   question: 'Radio failure (NORDO) in IFR flight requires the pilot to:',
   options: [
-    'A. Squawk 7600, maintain last assigned altitude or MEA (whichever is higher), proceed on the filed route, execute the published approach at the ETA from the flight plan, land',
-    'B. Descend immediately to VMC and continue VFR only if the destination TAF covers the arrival window',
-    'C. After radio failure, altitude maintenance is pilot\ only if the destination TAF covers the arrival window',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. Squawk 7600, maintain last assigned altitude or MEA whichever is higher, proceed on the filed route, execute the published approach at the ETA, land and notify ATC immediately',
+    'B. Descend immediately to VMC and continue VFR',
+    'C. Fly in circles until another aircraft establishes visual contact',
+    'D. Declare an emergency and land at the nearest aerodrome regardless of clearance'
   ],
   correct: 0,
   explanation: 'NORDO IFR: (1) Squawk 7600; (2) Maintain last assigned altitude or MEA; (3) Proceed on last cleared route or filed flight plan; (4) At destination ETA, execute the published approach; (5) Land and notify ATC immediately. ATC will clear the airspace around the expected NORDO aircraft route.',
@@ -5683,12 +5630,10 @@ export const irexQuestions: {
 {
   question: 'Wind shear on approach is most hazardous because:',
   options: [
-    'A. A sudden change in wind speed and/or direction alters the aircraft\',
-    'B. It only affects large aircraft',
-    'C. ,
-     and all required documents are carried',
-    'D. ,
-     and all required documents are carried'
+    'A. A sudden change in wind speed or direction alters the aircraft lift instantaneously — headwind-to-tailwind shear causes sudden airspeed and lift loss leaving little time for recovery below 500 ft AGL',
+    'B. It only affects large aircraft — light aircraft are immune to wind shear effects',
+    'C. Wind shear increases approach airspeed making landings more difficult to control',
+    'D. Wind shear only occurs above 5,000 ft and is not significant on final approach'
   ],
   correct: 0,
   explanation: 'Wind shear on approach: headwind-to-tailwind = sudden airspeed loss = undershoot risk. Microburst sequence: headwind (airspeed up), downdraft, then tailwind (airspeed loss) — extremely dangerous. Pirep-advised shear: add 10–15 kt to approach speed, or delay/divert.',
@@ -6140,12 +6085,10 @@ export const irexQuestions: {
 {
   question: 'On an IFR approach chart, the note "Procedure not authorised when XYZ NDB unserviceable" means:',
   options: [
-    'A. The NDB is optional for the approach only if the destination TAF covers the arrival window',
-    'B. ,
-     only if the destination TAF covers the arrival window',
-    'C. The XYZ NDB is essential for identifying a critical fix (FAF, step-down, or MAP)',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. The NDB is optional for the approach — it improves accuracy but is not required',
+    'B. The approach minima are raised when the NDB is unserviceable but the procedure may still be conducted',
+    'C. The XYZ NDB is essential for identifying a critical fix — without it the approach cannot be safely conducted and must not be commenced',
+    'D. The restriction only applies to aircraft without GPS equipment on board'
   ],
   correct: 2,
   explanation: 'Navaid required: when an approach chart states the procedure requires a specific navaid, that navaid is critical for the procedure\\\'s obstacle clearance — typically defining a fix that has no other means of identification. Check NOTAM before flight. If the navaid becomes unserviceable during flight: divert to an aerodrome with a serviceable approach.',
@@ -6298,13 +6241,10 @@ export const irexQuestions: {
 {
   question: 'A "speed restriction" on an approach chart of "210 kt maximum" before the FAF applies to:',
   options: [
-    'A. ,
-    ',
-    'B. The aircraft\\',
-    'C. ,
-    ',
-    'D. ,
-    '
+    'A. The published maximum indicated airspeed the aircraft must not exceed in that approach segment — mandatory unless ATC explicitly advises otherwise, ensuring the aircraft remains within the obstacle clearance protected area',
+    'B. The aircraft\'s maximum certified manoeuvring speed and applies only to turbulent conditions',
+    'C. Only to jet aircraft — piston and turboprop aircraft are exempt from published speed restrictions',
+    'D. An advisory target speed only — pilots may exceed it at their discretion'
   ],
   correct: 0,
   explanation: 'Approach speed restrictions: mandatory unless ATC advises otherwise. Published to ensure the aircraft remains within the designed obstacle clearance area for its category and to allow ATC sequencing. Exceeding published speeds may take the aircraft outside the protected area. At the FAF: reduce to final approach speed. If unable to comply: advise ATC.',
@@ -6509,12 +6449,10 @@ export const irexQuestions: {
 {
   question: 'A "contact approach" may be requested by the pilot when:',
   options: [
-    'A. The pilot can remain clear of cloud with at least 1 SM flight visibility and reasonably expects to continue to the aerodrome',
-    'B. Weather is below VFR minima only if the destination TAF covers the arrival window',
-    'C. ,
-     only if the destination TAF covers the arrival window',
-    'D. ,
-     only if the destination TAF covers the arrival window'
+    'A. The pilot can remain clear of cloud with at least 1 SM flight visibility and reasonably expects to continue to the aerodrome — it is an alternative to the IFR procedure at pilot request with ATC approval',
+    'B. Weather is below VFR minima and the pilot needs special authorisation to land',
+    'C. Only when the published instrument approach is unserviceable or not available',
+    'D. ATC assigns a contact approach when radar coverage is unavailable'
   ],
   correct: 0,
   explanation: 'Contact approach: pilot-initiated when clear of cloud with ≥1 SM visibility and expects to continue. ATC separates the aircraft from other IFR traffic. Pilot is responsible for terrain and obstacle clearance. Advantage: may allow lower and more direct approach than published procedure.',
