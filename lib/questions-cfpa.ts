@@ -1,5 +1,4 @@
 // CPL Flight Planning & Performance — 499 Questions
-// Fixed v_final
 
 export const cfpaQuestions: {
   question: string;
@@ -143,7 +142,7 @@ export const cfpaQuestions: {
   {
     question: 'An aircraft\'s rate of climb decreases with increasing altitude because:',
     options: [
-      'A. Emperature decreases with altitude, making the engine produce more power than needed, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'A. Temperature decreases with altitude, making the engine produce more power than needed, as required by CAO 20.7.4.7.1 for registration in Australia',
       'B. The pilot becomes less efficient at higher altitudes, and the result must be compared against the available TODA',
       'C. Fuel consumption increases with altitude, reducing available power, which must not exceed the aircraft\'s structural MTOW',
       'D. As altitude increases, air density decreases, reducing engine power and propeller thrust so less excess thrust is available for climbing',
@@ -288,9 +287,9 @@ export const cfpaQuestions: {
     question: 'The minimum fuel required at start-up for a flight includes:',
     options: [
       'A. Start-up/taxi allowance, flight fuel, fixed reserve, and any variable reserve (alternate fuel, holding fuel)',
-      'B. Light fuel only, and the result must be compared against the available TODA',
+      'B. Flight fuel only, and the result must be compared against the available TODA',
       'C. Start-up allowance and fixed reserve only — density altitude directly affects the chart result',
-      'D. Light fuel and fixed reserve only — the correct answer must be verified against the CG envelope',
+      'D. Flight fuel and fixed reserve only — the correct answer must be verified against the CG envelope',
     ],
     correct: 0,
     explanation: 'Minimum fuel at start-up = start-up and taxi allowance + flight fuel (to destination) + fixed reserve + any variable reserve required (alternate fuel or holding fuel). All components must be summed for the total fuel required at start. Fuel remaining after landing = fixed reserve.',
@@ -360,9 +359,9 @@ export const cfpaQuestions: {
     question: 'The "airworthiness" of an aircraft relates to performance planning because:',
     options: [
       'A. Only airworthy aircraft have valid performance data',
-      'B. Airworthiness is only relevant to IFR operations',
+      'B. Airworthinessness is only relevant to IFR operations',
       'C. An unairworthy aircraft (missing equipment, expired documents, overdue maintenance) must not be flown',
-      'D. Airworthiness has no connection to performance planning',
+      'D. Airworthinessness has no connection to performance planning',
     ],
     correct: 2,
     explanation: 'Performance charts are only valid for the aircraft in its certified configuration. Missing required equipment, unresolved defects, or modified aircraft (without approval) may invalidate the performance data. An unairworthy aircraft must not be flown regardless of performance calculations.',
@@ -554,7 +553,7 @@ export const cfpaQuestions: {
       'A. Operating in Class A or Class E airspace above FL200, or when required by the type of operation (IFR, SARTIME, crossing international FIR)',
       'B. Ny flight exceeds 30 minutes — the flight computer is used to perform this conversion',
       'C. Only for IFR operations at all times, which must not exceed the aircraft\'s structural MTOW',
-      'D. Henever more than 2 passengers are on board, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'D. Whenever more than 2 passengers are on board, as required by CAO 20.7.4.7.1 for registration in Australia',
     ],
     correct: 0,
     explanation: 'A flight plan (or SARTIME) is required for: IFR operations, flights in Class A, flights crossing international FIR boundaries, and flights that qualify for SAR activation. A SARTIME (search and rescue time) can be filed for VFR flights to ensure SAR is activated if the aircraft doesn\'t report.',
@@ -613,7 +612,7 @@ export const cfpaQuestions: {
     options: [
       'A. Weight multiplied by arm — the product represents the rotational tendency of that mass about the datum',
       'B. The weight at a given location, and the result must be compared against the available TODA',
-      'C. Otal weight multiplied by CG position — this value must be entered in the take-off performance chart',
+      'C. Total weight multiplied by CG position — this value must be entered in the take-off performance chart',
       'D. Rm divided by weight — the flight computer is used to perform this conversion',
     ],
     correct: 0,
@@ -767,7 +766,7 @@ export const cfpaQuestions: {
   {
     question: 'The "climb weight limit box" on a take-off chart is checked:',
     options: [
-      'A. Efore completing the main chart as a first step, which must not exceed the aircraft\'s structural MTOW',
+      'A. Before completing the main chart as a first step, which must not exceed the aircraft\'s structural MTOW',
       'B. The climb weight limit is automatically included in the main chart result — this value must be entered in the take-off performance chart',
       'C. Only for aircraft with MTOW above 5700 kg — this value must be entered in the take-off performance chart',
       'D. After completing the main chart — by moving vertically from the pressure height line to the climb weight limit line and reading the limiting weight',
@@ -875,8 +874,8 @@ export const cfpaQuestions: {
   {
     question: 'The purpose of "ballast" in aircraft weight and balance is to:',
     options: [
-      'A. Allast is prohibited on certified aircraft — this value must be entered in the take-off performance chart',
-      'B. Allast is only used to increase fuel capacity — the correct answer must be verified against the CG envelope',
+      'A. Ballast is prohibited on certified aircraft — this value must be entered in the take-off performance chart',
+      'B. Ballast is only used to increase fuel capacity — the correct answer must be verified against the CG envelope',
       'C. Dd weight to reach MTOW for optimum performance — this value must be entered in the take-off performance chart',
       'D. Correct a CG that is outside limits by adding weight at a specific location to shift the CG into the certified range',
     ],
@@ -959,10 +958,10 @@ export const cfpaQuestions: {
   {
     question: 'Climb gradient is expressed as:',
     options: [
-      'A. Autical miles per 1000 ft gained — this value must be entered in the take-off performance chart',
+      'A. Nautical miles per 1000 ft gained — this value must be entered in the take-off performance chart',
       'B. A percentage — the ratio of vertical speed to horizontal speed (or TAS), multiplied by 100',
-      'C. Egrees from horizontal — the flight computer is used to perform this conversion',
-      'D. Eet per minute of altitude gain — this value must be entered in the take-off performance chart',
+      'C. Degrees from horizontal — the flight computer is used to perform this conversion',
+      'D. Feet per minute of altitude gain — this value must be entered in the take-off performance chart',
     ],
     correct: 1,
     explanation: 'Climb gradient (%) = (Rate of Climb ÷ TAS) × 100. It represents the vertical distance gained per unit of horizontal distance — expressed as a percentage. For example: ROC 700 ft/min, TAS 100 kt (= 6080 ft/min): gradient = 700 ÷ 6080 × 100 = 11.5%.',
@@ -1008,7 +1007,7 @@ export const cfpaQuestions: {
     question: 'When is the CG envelope check most likely to be critical (most likely to be outside limits)?',
     options: [
       'A. When the aircraft has maximum rear pax and minimum fuel (taking off), or maximum front pax and minimum rear weight',
-      'B. Hen all passengers are in the front seats — the correct answer must be verified against the CG envelope',
+      'B. When all passengers are in the front seats — the correct answer must be verified against the CG envelope',
       'C. Only when the aircraft is at MTOW — density altitude directly affects the chart result',
       'D. The CG is always within limits when weight is within MTOW — the correct answer must be verified against the CG envelope',
     ],
@@ -1152,9 +1151,9 @@ export const cfpaQuestions: {
     question: 'The "variable reserve" component of fuel planning covers:',
     options: [
       'A. Fuel for the return flight — the flight computer is used to perform this conversion',
-      'B. Xtra fuel to compensate for potential fuel gauge inaccuracy — this value must be entered in the take-off performance chart',
+      'B. Extra fuel to compensate for potential fuel gauge inaccuracy — this value must be entered in the take-off performance chart',
       'C. Fuel required to fly to an alternate aerodrome, or holding fuel if weather at the destination requires holding before landing',
-      'D. Xtra fuel for passengers — this value must be entered in the take-off performance chart',
+      'D. Extra fuel for passengers — this value must be entered in the take-off performance chart',
     ],
     correct: 2,
     explanation: 'Variable reserve is fuel required for contingencies that may arise during the specific flight: alternate aerodrome fuel (if an alternate is required due to weather), holding fuel (if weather at destination may require a hold), or other operational requirements. It varies with each specific flight plan.',
@@ -1250,7 +1249,7 @@ export const cfpaQuestions: {
       'A. The index is more accurate than the full moment calculation — the flight computer is used to perform this conversion',
       'B. The index includes temperature correction automatically — the correct answer must be verified against the CG envelope',
       'C. Dividing moments by a constant factor reduces the large numbers involved, making the graph scales more manageable and reducing arithmetic errors',
-      'D. Ndex is required by CASA regulations for all aircraft — the ERSA provides the required aerodrome data for this calculation',
+      'D. Index is required by CASA regulations for all aircraft — the ERSA provides the required aerodrome data for this calculation',
     ],
     correct: 2,
     explanation: 'Moment index = moment ÷ constant (e.g., divide all moments by 100 or 1000). This reduces unwieldy large numbers (e.g., 2,400 kg·m becomes 24.0 index units) and makes graphing easier. The constant is defined in the aircraft POH — any calculation using the index must use the same constant consistently.',
@@ -1271,7 +1270,7 @@ export const cfpaQuestions: {
   {
     question: 'The meteorological forecast required for CPL flight planning includes:',
     options: [
-      'A. Eather forecasts are optional for day VFR flights — the flight computer is used to perform this conversion',
+      'A. Weather forecasts are optional for day VFR flights — the flight computer is used to perform this conversion',
       'B. Only a METAR from the departure aerodrome, and the result must be compared against the available TODA',
       'C. Only a pilot report (PIREP) is required — the ERSA provides the required aerodrome data for this calculation',
       'D. Area forecast (ARFOR or SIGMET), TAF for destination and alternates if required, and any relevant SIGMET or AIRMET',
@@ -1475,7 +1474,7 @@ export const cfpaQuestions: {
   {
     question: 'The "maximum fuel load" for a given flight may be limited by:',
     options: [
-      'A. TOW minus the minimum required crew weight — this calculation is part of the standard pre-flight process',
+      'A. MTOW minus the minimum required crew weight — this calculation is part of the standard pre-flight process',
       'B. The available fuel tank capacity, MTOW constraint (cannot carry more fuel than MTOW allows), and the CG effect of fuel',
       'C. Fuel quantity limits apply only to turbine aircraft — this value must be entered in the take-off performance chart',
       'D. The maximum fuel load equals the useful load minus the payload — CAAP 92-1 specifies the recommended values for this parameter',
@@ -1560,9 +1559,9 @@ export const cfpaQuestions: {
     question: 'The "NOTAM" system provides pilots with:',
     options: [
       'A. Temporary changes and hazards — runway closures, nav aid outages, airspace activations, obstacle notifications, and other time-sensitive operational information',
-      'B. Ong-term permanent changes to aeronautical information — this value must be entered in the take-off performance chart',
+      'B. Long-term permanent changes to aeronautical information — this value must be entered in the take-off performance chart',
       'C. TC procedural changes published 12 months in advance — the flight computer is used to perform this conversion',
-      'D. Eather forecasts updated every hour — this calculation is part of the standard pre-flight process',
+      'D. Weather forecasts updated every hour — this calculation is part of the standard pre-flight process',
     ],
     correct: 0,
     explanation: 'NOTAMs (Notices to Airmen/Crew) advise of temporary conditions affecting flight safety: runway or taxiway closures, navigation aid unserviceability, temporary danger or restricted areas, parachute operations, laser displays, and other short-notice changes. Checking NOTAMs is mandatory pre-flight preparation.',
@@ -1824,7 +1823,7 @@ export const cfpaQuestions: {
     question: 'A Mode C transponder is required for:',
     options: [
       'A. Only IFR flights, as required by CAO 20.7.4.7.1 for registration in Australia',
-      'B. Ircraft over 5700 kg MTOW only, which must not exceed the aircraft\'s structural MTOW',
+      'B. Aircraft over 5700 kg MTOW only, which must not exceed the aircraft\'s structural MTOW',
       'C. Ll VFR flights at any altitude, and the result must be compared against the available TODA',
       'D. Flight in Class A, Class C above a specified altitude, and certain other designated transponder mandatory areas',
     ],
@@ -1897,8 +1896,8 @@ export const cfpaQuestions: {
     options: [
       'A. Entering the item\'s weight on its specific graph and reading off the corresponding moment or moment index',
       'B. Ultiplying BEW by a loading factor — the ERSA provides the required aerodrome data for this calculation',
-      'C. Alculating moment = weight × arm using a table, and the result must be compared against the available TODA',
-      'D. Sing a fixed standard moment for each seat position — the correct answer must be verified against the CG envelope',
+      'C. Calculating moment = weight × arm using a table, and the result must be compared against the available TODA',
+      'D. Using a fixed standard moment for each seat position — the correct answer must be verified against the CG envelope',
     ],
     correct: 0,
     explanation: 'Loading graph method: each item (crew station, passenger station, baggage bay, fuel) has its own small graph. Enter the weight of that item on the graph and read off the moment or moment index. These are summed progressively and plotted on the CG envelope to verify the loading is within limits.',
@@ -1919,9 +1918,9 @@ export const cfpaQuestions: {
   {
     question: 'A tailwind during take-off has what effect on the required ground roll?',
     options: [
-      'A. Educes the ground roll by 5% for every 5 knots of tailwind — density altitude directly affects the chart result',
+      'A. Reduces the ground roll by 5% for every 5 knots of tailwind — density altitude directly affects the chart result',
       'B. Increases the required ground roll because a higher groundspeed is needed before the wing generates sufficient lift for take-off',
-      'C. Educes the ground roll because the tailwind adds to thrust, which must not exceed the aircraft\'s structural MTOW',
+      'C. Reduces the ground roll because the tailwind adds to thrust, which must not exceed the aircraft\'s structural MTOW',
       'D. O effect — tailwinds only affect cruise performance — density altitude directly affects the chart result',
     ],
     correct: 1,
@@ -2063,9 +2062,9 @@ export const cfpaQuestions: {
   {
     question: 'When calculating total fuel for an exam question, the order of components is:',
     options: [
-      'A. Ixed reserve first, then flight fuel, then taxi — this value must be entered in the take-off performance chart',
-      'B. Light fuel + 10% margin only — CAAP 92-1 specifies the recommended values for this parameter',
-      'C. Ixed reserve + variable reserve only, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'A. Fixed reserve first, then flight fuel, then taxi — this value must be entered in the take-off performance chart',
+      'B. Flight fuel + 10% margin only — CAAP 92-1 specifies the recommended values for this parameter',
+      'C. Fixed reserve + variable reserve only, as required by CAO 20.7.4.7.1 for registration in Australia',
       'D. Start-up/taxi allowance + flight fuel + holding (if required) + alternate (if required) + fixed reserve',
     ],
     correct: 3,
@@ -2112,7 +2111,7 @@ export const cfpaQuestions: {
     question: 'When checking the ERSA for destination runway information, the pilot needs to verify:',
     options: [
       'A. Fuel prices only — this calculation is part of the standard pre-flight process',
-      'B. Ircraft noise complaints for the area, and the result must be compared against the available TODA',
+      'B. Aircraft noise complaints for the area, and the result must be compared against the available TODA',
       'C. TC frequencies only — the ERSA provides the required aerodrome data for this calculation',
       'D. Runway length (TODA/LDA), surface type, elevation, and any operational restrictions or notices',
     ],
@@ -2123,7 +2122,7 @@ export const cfpaQuestions: {
   {
     question: 'The effect of increasing temperature from ISA to ISA+20 on the climb weight limit is:',
     options: [
-      'A. Ncreases the climb weight limit, which must not exceed the aircraft\'s structural MTOW',
+      'A. Increases the climb weight limit, which must not exceed the aircraft\'s structural MTOW',
       'B. Reduces the climb weight limit — higher density altitude reduces engine power and propeller thrust, making it harder to achieve 6% gradient',
       'C. The climb weight limit is always MTOW regardless of conditions — the correct answer must be verified against the CG envelope',
       'D. O change — climb weight limit only depends on runway length — the flight computer is used to perform this conversion',
@@ -2136,7 +2135,7 @@ export const cfpaQuestions: {
     question: 'The "CAAP 234-1" (fuel requirements for private and charter) specifies that for private VFR flights, fuel planning must include:',
     options: [
       'A. 0% contingency fuel plus 30 minutes reserve — this value must be entered in the take-off performance chart',
-      'B. Ouble the calculated flight fuel for all day VFR flights — the ERSA provides the required aerodrome data for this calculation',
+      'B. Double the calculated flight fuel for all day VFR flights — the ERSA provides the required aerodrome data for this calculation',
       'C. Only enough fuel to reach the destination — density altitude directly affects the chart result',
       'D. Flight fuel plus taxi allowance plus the required fixed reserve of 45 minutes, and any variable reserve required for the specific flight',
     ],
@@ -2256,9 +2255,9 @@ export const cfpaQuestions: {
     question: 'A complete and valid pre-flight planning process for a CPL charter flight includes ALL of the following:',
     options: [
       'A. Weather (forecasts and actuals), NOTAMs, ERSA destination checks, take-off and landing performance calculations, weight and balance, fuel calculations, and flight plan or SARTIME',
-      'B. Eather check only — density altitude directly affects the chart result',
-      'C. Re-flight planning is not required for flights under 2 hours — this value must be entered in the take-off performance chart',
-      'D. Erformance calculations and fuel only — the correct answer must be verified against the CG envelope',
+      'B. Weather check only — density altitude directly affects the chart result',
+      'C. Pre-flight planning is not required for flights under 2 hours — this value must be entered in the take-off performance chart',
+      'D. Performance calculations and fuel only — the correct answer must be verified against the CG envelope',
     ],
     correct: 0,
     explanation: 'Complete CPL pre-flight planning: (1) Weather — ARFOR, destination TAF, NOTAMs; (2) ERSA — destination and alternate runway data; (3) Take-off chart for departure conditions; (4) Landing chart for destination conditions; (5) Weight and balance; (6) Fuel requirements — trip fuel + reserves; (7) File flight plan or SARTIME. All elements are mandatory for safe commercial operations.',
@@ -2363,7 +2362,7 @@ export const cfpaQuestions: {
   {
     question: 'The CFPA exam result gives the candidate:',
     options: [
-      'A. Heir CPL immediately upon passing — CAAP 92-1 specifies the recommended values for this parameter',
+      'A. Their CPL immediately upon passing — CAAP 92-1 specifies the recommended values for this parameter',
       'B. A result indicating pass or fail — a pass contributes toward meeting the CPL theory requirements; the candidate must also complete remaining theory subjects and flying training',
       'C.  licence endorsement for charter operations — this calculation is part of the standard pre-flight process',
       'D. N exemption from performance calculations on the practical test — the ERSA provides the required aerodrome data for this calculation',
@@ -2663,7 +2662,7 @@ export const cfpaQuestions: {
   {
     question: 'In the CPL Performance exam, the "workbook supplement" provides:',
     options: [
-      'A. Avigation charts for route planning — density altitude directly affects the chart result',
+      'A. Navigation charts for route planning — density altitude directly affects the chart result',
       'B. Lank flight plan forms only — CAAP 92-1 specifies the recommended values for this parameter',
       'C. Ll weather forecasts for the day of the exam — this calculation is part of the standard pre-flight process',
       'D. Aircraft performance charts (take-off, landing, climb), weight and balance data, and ERSA extracts used for questions',
@@ -2891,8 +2890,8 @@ export const cfpaQuestions: {
   {
     question: 'An aircraft takes off at the maximum permitted take-off weight from the performance chart. This weight accounts for:',
     options: [
-      'A. Unway length only — this value must be entered in the take-off performance chart',
-      'B. Tructural MTOW only — the flight computer is used to perform this conversion',
+      'A. Runway length only — this value must be entered in the take-off performance chart',
+      'B. Structural MTOW only — the flight computer is used to perform this conversion',
       'C. The climb weight limit only, as required by CAO 20.7.4.7.1 for registration in Australia',
       'D. The most restrictive of runway length, climb weight limit (6%), and structural MTOW',
     ],
@@ -3083,9 +3082,9 @@ export const cfpaQuestions: {
   {
     question: 'When a take-off chart shows "long wet grass" as the most degraded surface, what is the main reason for the extra performance penalty?',
     options: [
-      'A. Ong wet grass obstructs the pilot\'s forward vision — this calculation is part of the standard pre-flight process',
+      'A. Long wet grass obstructs the pilot\'s forward vision — this calculation is part of the standard pre-flight process',
       'B. Et grass causes the aircraft to aquaplane during take-off — the flight computer is used to perform this conversion',
-      'C. Ong wet grass increases lift due to the ground cushion effect — the correct answer must be verified against the CG envelope',
+      'C. Long wet grass increases lift due to the ground cushion effect — the correct answer must be verified against the CG envelope',
       'D. Long wet grass creates significantly more rolling resistance and may mask soft ground beneath, increasing ground roll and reducing acceleration compared to short dry grass or sealed surfaces',
     ],
     correct: 3,
@@ -3252,8 +3251,8 @@ export const cfpaQuestions: {
     question: 'An aircraft take-off chart uses pressure height and shade temperature as entries. This combination effectively calculates:',
     options: [
       'A. NH altitude — this value must be entered in the take-off performance chart',
-      'B. Ndicated altitude, as required by CAO 20.7.4.7.1 for registration in Australia',
-      'C. Rue altitude — density altitude directly affects the chart result',
+      'B. Indicated altitude, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'C. True altitude — density altitude directly affects the chart result',
       'D. Density altitude — the combined effect of pressure altitude and temperature on air density',
     ],
     correct: 3,
@@ -3263,8 +3262,8 @@ export const cfpaQuestions: {
   {
     question: 'An aircraft must comply with CAO 20.7.4.7.1 for registration in Australia. The key requirement is:',
     options: [
-      'A. Inimum take-off distance of less than 500 m — this calculation is part of the standard pre-flight process',
-      'B. Limb rate exceeding 300 ft/min at sea level — density altitude directly affects the chart result',
+      'A. Minimum take-off distance of less than 500 m — this calculation is part of the standard pre-flight process',
+      'B. Climb rate exceeding 300 ft/min at sea level — density altitude directly affects the chart result',
       'C. Ability to achieve at least 6% climb gradient after take-off in take-off configuration at take-off power',
       'D. TOW below 5700 kg — CAAP 92-1 specifies the recommended values for this parameter',
     ],
@@ -3287,7 +3286,7 @@ export const cfpaQuestions: {
   {
     question: 'The "daily inspection" is primarily the responsibility of:',
     options: [
-      'A. Round crew at major aerodromes, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'A. Ground crew at major aerodromes, as required by CAO 20.7.4.7.1 for registration in Australia',
       'B. The pilot-in-command for the first flight of the day, performed in accordance with the aircraft maintenance schedule',
       'C. The LAME at the aircraft\'s home base, which must not exceed the aircraft\'s structural MTOW',
       'D. The aircraft owner — not the hired pilot, as required by CAO 20.7.4.7.1 for registration in Australia',
@@ -3299,10 +3298,10 @@ export const cfpaQuestions: {
   {
     question: 'Higher aircraft weight increases landing distance because:',
     options: [
-      'A. Eight has no effect if braking is correctly applied — this calculation is part of the standard pre-flight process',
+      'A. Weight has no effect if braking is correctly applied — this calculation is part of the standard pre-flight process',
       'B. Heavier aircraft need more runway to slow from the same approach IAS due to more kinetic energy at touchdown',
-      'C. Eavier aircraft have better braking coefficient — this calculation is part of the standard pre-flight process',
-      'D. Eavy aircraft land at lower speed — this calculation is part of the standard pre-flight process',
+      'C. Heavier aircraft have better braking coefficient — this calculation is part of the standard pre-flight process',
+      'D. Heavy aircraft land at lower speed — this calculation is part of the standard pre-flight process',
     ],
     correct: 1,
     explanation: 'Higher weight increases approach speed (Vref increases proportionally to √weight). Higher approach speed means higher touchdown groundspeed and more kinetic energy (KE = ½mv²). More energy must be dissipated by braking, increasing stopping distance.',
@@ -3409,7 +3408,7 @@ export const cfpaQuestions: {
     options: [
       'A. The pilot must consider whether the aircraft can safely conduct the flight within its turbulence penetration speed limits and structural limitations',
       'B. O effect — SIGMETs are only for turbine aircraft, and the result must be compared against the available TODA',
-      'C. IGMETs are advisory only — no operational impact — the correct answer must be verified against the CG envelope',
+      'C. SIGMETs are advisory only — no operational impact — the correct answer must be verified against the CG envelope',
       'D. The pilot must file an IFR flight plan — CAAP 92-1 specifies the recommended values for this parameter',
     ],
     correct: 0,
@@ -3479,9 +3478,9 @@ export const cfpaQuestions: {
   {
     question: 'On a "round-the-houses" take-off chart, the standard entry procedure is to:',
     options: [
-      'A. Nter with TODA and work backwards to find weight, as required by CAO 20.7.4.7.1 for registration in Australia',
-      'B. Nter the wind scale first, then proceed to the temperature scale — this value must be entered in the take-off performance chart',
-      'C. Nter with aircraft gross weight and read the required TODA — the correct answer must be verified against the CG envelope',
+      'A. Enter with TODA and work backwards to find weight, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'B. Enter the wind scale first, then proceed to the temperature scale — this value must be entered in the take-off performance chart',
+      'C. Enter with aircraft gross weight and read the required TODA — the correct answer must be verified against the CG envelope',
       'D. Enter the shade temperature scale, move vertically to pressure height, horizontally to the surface reference line, adjust for slope and wind, then read the weight from the take-off weight scale',
     ],
     correct: 3,
@@ -3551,9 +3550,9 @@ export const cfpaQuestions: {
   {
     question: 'The "Class E" airspace in Australia exists:',
     options: [
-      'A. Bove FL600 only — density altitude directly affects the chart result',
+      'A. Above FL600 only — density altitude directly affects the chart result',
       'B. As controlled airspace where IFR aircraft receive ATC service but VFR aircraft may operate without clearance',
-      'C. Lass E does not exist in Australia, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'C. Class E does not exist in Australia, as required by CAO 20.7.4.7.1 for registration in Australia',
       'D. Only over major aerodromes above 5000 ft, as required by CAO 20.7.4.7.1 for registration in Australia',
     ],
     correct: 1,
@@ -3767,10 +3766,10 @@ export const cfpaQuestions: {
   {
     question: 'An aircraft has forward CG limit 2.00 m and aft limit 2.40 m. BEW CG is 2.18 m. The pilot loads the aircraft with heavy pax in the rear seats only (arm 2.75 m) and full fuel (arm 2.55 m). The CG will likely:',
     options: [
-      'A. Tay at 2.18 m since weight is added equally, and the result must be compared against the available TODA',
-      'B. Ove forward — rear seats bring the CG toward the front — the flight computer is used to perform this conversion',
+      'A. Stay at 2.18 m since weight is added equally, and the result must be compared against the available TODA',
+      'B. Move forward — rear seats bring the CG toward the front — the flight computer is used to perform this conversion',
       'C. Move aft — both rear seats and fuel (arm 2.55 m) are aft of the BEW CG (2.18 m), shifting the loaded CG aft',
-      'D. Ove forward because fuel is forward of BEW CG — the correct answer must be verified against the CG envelope',
+      'D. Move forward because fuel is forward of BEW CG — the correct answer must be verified against the CG envelope',
     ],
     correct: 2,
     explanation: 'Rear passenger seats at 2.75 m and fuel at 2.55 m are both aft of the BEW CG at 2.18 m. Adding weight aft of the current CG always moves the CG aft. With heavy rear passengers and full fuel, the CG may shift aft of the 2.40 m limit — a W&B calculation is essential.',
@@ -3996,7 +3995,7 @@ export const cfpaQuestions: {
     question: 'The difference between ETP and PNR is:',
     options: [
       'A. ETP = equal time point (determined by ground speeds only); PNR = furthest point from which return is possible (determined by ground speeds AND available endurance)',
-      'B. Hey are identical when fuel is unlimited — the flight computer is used to perform this conversion',
+      'B. They are identical when fuel is unlimited — the flight computer is used to perform this conversion',
       'C. NR is always further than ETP from the departure point — density altitude directly affects the chart result',
       'D. TP is for multi-engine aircraft; PNR is for single-engine — the flight computer is used to perform this conversion',
     ],
@@ -4164,9 +4163,9 @@ export const cfpaQuestions: {
     question: 'An aerodrome has TODA 18 = 1100 m and TODA 36 = 950 m. With a 10 kt wind from 360°T (north), which runway should be used for take-off?',
     options: [
       'A. Runway 36 — into-wind take-off is preferable; headwind shortens take-off distance, and 950 m is still substantial',
-      'B. Unway 18 — longer TODA is always better — CAAP 92-1 specifies the recommended values for this parameter',
+      'B. Runway 18 — longer TODA is always better — CAAP 92-1 specifies the recommended values for this parameter',
       'C. The choice depends only on TODA, which must not exceed the aircraft\'s structural MTOW',
-      'D. Ither runway — there is no wind effect below 15 kt — this value must be entered in the take-off performance chart',
+      'D. Either runway — there is no wind effect below 15 kt — this value must be entered in the take-off performance chart',
     ],
     correct: 0,
     explanation: 'Runway 36 faces north (360°) — a 10 kt northerly wind gives a 10 kt headwind for runway 36. A headwind shortens take-off distance significantly. Runway 18 (facing south, 180°) would have a 10 kt tailwind — increasing take-off distance and reducing maximum take-off weight. Generally: use the into-wind runway despite shorter TODA.',
@@ -4189,7 +4188,7 @@ export const cfpaQuestions: {
     options: [
       'A. Only weather at the departure aerodrome, and the result must be compared against the available TODA',
       'B. Fuel prices at the departure aerodrome, which must not exceed the aircraft\'s structural MTOW',
-      'C. Ockpit seating arrangement only, which must not exceed the aircraft\'s structural MTOW',
+      'C. Cockpit seating arrangement only, which must not exceed the aircraft\'s structural MTOW',
       'D. TODA and surface at the departure strip (take-off), LDA at destination, fuel requirements for the entire trip including reserves, and CG/weight compliance',
     ],
     correct: 3,
@@ -4211,10 +4210,10 @@ export const cfpaQuestions: {
   {
     question: 'After entering temperature and moving vertically to pressure height on the take-off chart, the next step is to:',
     options: [
-      'A. Nter runway slope, as required by CAO 20.7.4.7.1 for registration in Australia',
-      'B. Nter the TODA on the right axis, and the result must be compared against the available TODA',
+      'A. Enter runway slope, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'B. Enter the TODA on the right axis, and the result must be compared against the available TODA',
       'C. Move horizontally to the surface reference line (passing through or adjusting for climb weight limit)',
-      'D. Nter the wind component, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'D. Enter the wind component, as required by CAO 20.7.4.7.1 for registration in Australia',
     ],
     correct: 2,
     explanation: 'After reaching the pressure height line, the cursor moves horizontally to the right — first crossing the climb weight limit box (note the limiting weight), then continuing to the surface reference line where surface type correction is applied.',
@@ -4260,8 +4259,8 @@ export const cfpaQuestions: {
     question: 'Before departure with payload already loaded, a pilot cannot achieve the required climb gradient at the planned TOW. Suitable action:',
     options: [
       'A. Reduce take-off weight below the climb weight limit by offloading fuel, baggage, or rearranging to depart at a cooler time of day',
-      'B. Epart and accept the marginal climb performance, which must not exceed the aircraft\'s structural MTOW',
-      'C. Ncrease throttle to maximum for take-off, which must not exceed the aircraft\'s structural MTOW',
+      'B. Depart and accept the marginal climb performance, which must not exceed the aircraft\'s structural MTOW',
+      'C. Increase throttle to maximum for take-off, which must not exceed the aircraft\'s structural MTOW',
       'D. Se a shorter flap setting to improve climb — CAAP 92-1 specifies the recommended values for this parameter',
     ],
     correct: 0,
@@ -4284,9 +4283,9 @@ export const cfpaQuestions: {
     question: 'For the CFPA exam, the student uses a non-electronic navigation computer to:',
     options: [
       'A. Convert IAS to TAS, calculate flight times, fuel burn, and perform ETP/PNR time calculations',
-      'B. Ccess weather data — CAAP 92-1 specifies the recommended values for this parameter',
-      'C. Repare the flight plan form — the flight computer is used to perform this conversion',
-      'D. Alculate IAS only — the flight computer is used to perform this conversion',
+      'B. Access weather data — CAAP 92-1 specifies the recommended values for this parameter',
+      'C. Prepare the flight plan form — the flight computer is used to perform this conversion',
+      'D. Calculate IAS only — the flight computer is used to perform this conversion',
     ],
     correct: 0,
     explanation: 'The E6-B or equivalent non-electronic circular slide rule computer is used in the CFPA exam for: IAS to TAS conversion (using density height window), time-speed-distance calculations, fuel burn, and arithmetic for ETP/PNR problems. Electronic calculators are also provided for arithmetic.',
@@ -4332,9 +4331,9 @@ export const cfpaQuestions: {
     question: 'What information is found in the GEN section of the ERSA?',
     options: [
       'A. General operational information including aerodrome signals, lighting standards, and fuel grade colour codes',
-      'B. Ndividual aerodrome entries with runway data — CAAP 92-1 specifies the recommended values for this parameter',
-      'C. Mergency procedures for aircraft accidents, which must not exceed the aircraft\'s structural MTOW',
-      'D. Avigation aid frequencies and positions, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'B. Individual aerodrome entries with runway data — CAAP 92-1 specifies the recommended values for this parameter',
+      'C. Emergency procedures for aircraft accidents, which must not exceed the aircraft\'s structural MTOW',
+      'D. Navigation aid frequencies and positions, as required by CAO 20.7.4.7.1 for registration in Australia',
     ],
     correct: 0,
     explanation: 'GEN (General Information) section of the ERSA contains non-aerodrome-specific reference material: aerodrome signals (light gun, ground markings), lighting standards, CTAF procedures, fuel grade colour codes, and other general operational information applicable across all aerodromes.',
@@ -4368,9 +4367,9 @@ export const cfpaQuestions: {
     question: 'If a tailwind is forecast, the pilot planning a take-off from a short strip should:',
     options: [
       'A. Dd a fixed 50-metre margin to the standard distance for any tailwind — CAAP 92-1 specifies the recommended values for this parameter',
-      'B. Ailwinds are not permitted for take-off under Australian regulations — CAAP 92-1 specifies the recommended values for this parameter',
+      'B. Tailwinds are not permitted for take-off under Australian regulations — CAAP 92-1 specifies the recommended values for this parameter',
       'C. Ensure the performance chart calculations include the tailwind component, which will increase required distance and may reduce maximum take-off weight significantly',
-      'D. Roceed — tailwinds are only 10% as harmful as headwinds — this calculation is part of the standard pre-flight process',
+      'D. Proceed — tailwinds are only 10% as harmful as headwinds — this calculation is part of the standard pre-flight process',
     ],
     correct: 2,
     explanation: 'Tailwinds significantly increase take-off distance and reduce maximum permissible take-off weight. The chart must be entered with the tailwind component to obtain the valid result. Failing to account for a tailwind can lead to departing at excessive weight or insufficient runway — a potentially fatal error at short strips.',
@@ -4464,9 +4463,9 @@ export const cfpaQuestions: {
     question: 'A pilot checks NAIPS and notes the destination TAF shows VFR conditions. Upon arrival, the pilot finds conditions below VFR minima. The pilot should:',
     options: [
       'A. Divert to the alternate aerodrome (if one was nominated) or hold if fuel permits while conditions improve, or return to departure',
-      'B. Ile an IFR flight plan in the air — this value must be entered in the take-off performance chart',
-      'C. Escend below cloud to maintain VFR — density altitude directly affects the chart result',
-      'D. Ontinue the approach — the TAF indicated VFR — the correct answer must be verified against the CG envelope',
+      'B. Mile an IFR flight plan in the air — this value must be entered in the take-off performance chart',
+      'C. Descend below cloud to maintain VFR — density altitude directly affects the chart result',
+      'D. Continue the approach — the TAF indicated VFR — the correct answer must be verified against the CG envelope',
     ],
     correct: 0,
     explanation: 'Weather can deteriorate below forecast conditions. If the destination is below VFR minima on arrival: (1) Divert to nominated alternate if fuel permits; (2) Hold if conditions are expected to improve quickly and fuel (including fixed reserve) allows; (3) Return to departure aerodrome if nearest suitable. The pilot must not attempt a VFR approach in IMC.',
@@ -4511,7 +4510,7 @@ export const cfpaQuestions: {
   {
     question: 'The "performance section" of the aircraft AFM contains data that was obtained through:',
     options: [
-      'A. Ata from similar aircraft types already certified — the ERSA provides the required aerodrome data for this calculation',
+      'A. Data from similar aircraft types already certified — the ERSA provides the required aerodrome data for this calculation',
       'B. Stimates from the designer — this value must be entered in the take-off performance chart',
       'C. Athematical modelling only, as required by CAO 20.7.4.7.1 for registration in Australia',
       'D. Actual flight testing of the aircraft type under controlled conditions, with results corrected to standard performance conditions',
@@ -4620,9 +4619,9 @@ export const cfpaQuestions: {
     question: 'The "alternate aerodrome fuel" requirement applies when:',
     options: [
       'A. Ll IFR flights must carry alternate fuel regardless of forecast, which must not exceed the aircraft\'s structural MTOW',
-      'B. Lternate fuel is included in the fixed reserve for all flights — this calculation is part of the standard pre-flight process',
+      'B. Alternate fuel is included in the fixed reserve for all flights — this calculation is part of the standard pre-flight process',
       'C. The destination weather forecast is below the required VFR minima or IFR decision criteria, requiring a designated alternate with fuel to reach it',
-      'D. Lternate fuel is only required if the destination has no ATIS — this calculation is part of the standard pre-flight process',
+      'D. Alternate fuel is only required if the destination has no ATIS — this calculation is part of the standard pre-flight process',
     ],
     correct: 2,
     explanation: 'Alternate fuel is the variable reserve component: required when a nominated alternate aerodrome is necessary (weather forecast at destination is poor, or regulations require a filed alternate for IFR). The alternate fuel is the amount needed to fly from the destination to the alternate aerodrome.',
@@ -4895,10 +4894,10 @@ export const cfpaQuestions: {
   {
     question: 'For a charter flight over a remote area, what additional consideration is relevant to flight planning?',
     options: [
-      'A. Dditional fuel is not required for charter operations, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'A. Additional fuel is not required for charter operations, as required by CAO 20.7.4.7.1 for registration in Australia',
       'B. The requirement to carry appropriate survival equipment, ELT, and possibly increased fuel reserves for diversion to a remote alternate',
-      'C. Harter flights have no additional planning requirements — the correct answer must be verified against the CG envelope',
-      'D. Harter flights can only operate with sealed runway aerodromes — the correct answer must be verified against the CG envelope',
+      'C. Charter flights have no additional planning requirements — the correct answer must be verified against the CG envelope',
+      'D. Charter flights can only operate with sealed runway aerodromes — the correct answer must be verified against the CG envelope',
     ],
     correct: 1,
     explanation: 'Remote area operations require additional planning: survival equipment appropriate to terrain and climate, a serviceable ELT, consideration of suitable alternates (which may be further away than metropolitan operations), and possible increased fuel reserves. CASR Part 91 and operator approvals specify requirements.',
@@ -5004,9 +5003,9 @@ export const cfpaQuestions: {
     question: 'An ALA strip used for a charter flight must have the owner\'s permission because:',
     options: [
       'A. Ll aerodromes require CASA approval regardless of ownership — CAAP 92-1 specifies the recommended values for this parameter',
-      'B. Ermission is not required if the strip is on agricultural land — this calculation is part of the standard pre-flight process',
+      'B. Permission is not required if the strip is on agricultural land — this calculation is part of the standard pre-flight process',
       'C. The land is private property — operating without permission constitutes trespass and the owner may have safety knowledge about the strip\'s condition',
-      'D. Wner permission is only needed for the first use, and the result must be compared against the available TODA',
+      'D. Owner permission is only needed for the first use, and the result must be compared against the available TODA',
     ],
     correct: 2,
     explanation: 'CAR 92 assessment includes ensuring the pilot has permission to use the land. The landowner\'s permission is required — the strip is private property. Additionally, the landowner may know about hazards (soft areas, recent rain softening the surface, stock on the strip) that the pilot would not detect from the air.',
@@ -5077,8 +5076,8 @@ export const cfpaQuestions: {
     options: [
       'A. NOTAMs, AIP supplements, TFRs (Temporary Flight Restrictions), aerodrome operating times, and ERSA checks for destination and alternates',
       'B. Only the ATIS for the destination aerodrome — this calculation is part of the standard pre-flight process',
-      'C. Perational information is only required for IFR operations — CAAP 92-1 specifies the recommended values for this parameter',
-      'D. Eather forecasts only — CAAP 92-1 specifies the recommended values for this parameter',
+      'C. Operational information is only required for IFR operations — CAAP 92-1 specifies the recommended values for this parameter',
+      'D. Weather forecasts only — CAAP 92-1 specifies the recommended values for this parameter',
     ],
     correct: 0,
     explanation: 'Operational pre-flight information includes: NOTAMs (runway/taxiway closures, nav aid outages, airspace restrictions), AIP supplements, Temporary Flight Restrictions, aerodrome operating hours, ERSA data for the destination and alternates, and any CASA NOTAM or advisory affecting the route.',
@@ -5245,7 +5244,7 @@ export const cfpaQuestions: {
     options: [
       'A. Location, physical dimensions, surface, slope, obstacles, and the aircraft\'s performance requirements for the current conditions',
       'B. The owner\'s verbal assurance that the strip has been used before — density altitude directly affects the chart result',
-      'C. Ength of strip only — density altitude directly affects the chart result',
+      'C. Length of strip only — density altitude directly affects the chart result',
       'D. Only whether the surface is grass or sealed — the correct answer must be verified against the CG envelope',
     ],
     correct: 0,
@@ -5436,7 +5435,7 @@ export const cfpaQuestions: {
     question: 'For the CPL Performance exam, the candidate must bring:',
     options: [
       'A. FM for a specific aircraft type, and the result must be compared against the available TODA',
-      'B. Lectronic calculator and GPS device, and the result must be compared against the available TODA',
+      'B. Electronic calculator and GPS device, and the result must be compared against the available TODA',
       'C. ERSA Complete (including RDS), navigation computer (non-electronic circular slide rule type), CAAP 92-1 and CAAP 234-1',
       'D. Only a calculator — all other data is provided by the exam centre — this calculation is part of the standard pre-flight process',
     ],
@@ -5495,10 +5494,10 @@ export const cfpaQuestions: {
   {
     question: 'In the CPL Performance exam, if two different methods (e.g., time-based and SGR-based) give slightly different answers due to rounding, the candidate should:',
     options: [
-      'A. Lways use the time-based method — SGR is invalid in the exam — this value must be entered in the take-off performance chart',
+      'A. Always use the time-based method — SGR is invalid in the exam — this value must be entered in the take-off performance chart',
       'B. Ecalculate until both methods agree exactly — this calculation is part of the standard pre-flight process',
       'C. Select the answer option that most closely matches the calculated result, acknowledging minor rounding differences',
-      'D. Verage the two results, as required by CAO 20.7.4.7.1 for registration in Australia',
+      'D. Average the two results, as required by CAO 20.7.4.7.1 for registration in Australia',
     ],
     correct: 2,
     explanation: 'Minor rounding differences between methods are normal in calculations. The correct answer is the option closest to the calculated result. Both time-based and SGR-based methods are valid — they should give the same answer apart from rounding. The exam allows for small variations in the answer choices.',
@@ -5651,9 +5650,9 @@ export const cfpaQuestions: {
   {
     question: 'For a student using the round-the-houses take-off chart for the first time, which error is most commonly made?',
     options: [
-      'A. Sing the wrong temperature scale, which must not exceed the aircraft\'s structural MTOW',
-      'B. Orgetting to correct for pressure height — the flight computer is used to perform this conversion',
-      'C. Ntering TODA on the left instead of right scale — the flight computer is used to perform this conversion',
+      'A. Using the wrong temperature scale, which must not exceed the aircraft\'s structural MTOW',
+      'B. Forgetting to correct for pressure height — the flight computer is used to perform this conversion',
+      'C. Entering TODA on the left instead of right scale — the flight computer is used to perform this conversion',
       'D. Failing to check and record the climb weight limit before continuing with the main chart, leading to an incorrect final answer',
     ],
     correct: 3,
@@ -5795,7 +5794,7 @@ export const cfpaQuestions: {
   {
     question: 'The "maximum landing weight" (MLW) is sometimes less than MTOW because:',
     options: [
-      'A. Anding weight limits only apply to turbine aircraft — density altitude directly affects the chart result',
+      'A. Landing weight limits only apply to turbine aircraft — density altitude directly affects the chart result',
       'B. LW is set by the runway strength, not aircraft structure, as required by CAO 20.7.4.7.1 for registration in Australia',
       'C. LW is always equal to MTOW for piston aircraft — this value must be entered in the take-off performance chart',
       'D. Structural limits on landing gear and wings are lower for the landing impact loads than for the static take-off condition',
@@ -5819,8 +5818,8 @@ export const cfpaQuestions: {
   {
     question: 'To summarise: the CPL Flight Planning and Aircraft Performance exam tests the candidate\'s ability to:',
     options: [
-      'A. Avigate using GPS only — density altitude directly affects the chart result',
-      'B. Erform maintenance on the aircraft engine, and the result must be compared against the available TODA',
+      'A. Navigate using GPS only — density altitude directly affects the chart result',
+      'B. Perform maintenance on the aircraft engine, and the result must be compared against the available TODA',
       'C. Only read performance charts without calculations — this calculation is part of the standard pre-flight process',
       'D. Correctly apply ISA and density altitude concepts, read take-off and landing charts, calculate fuel requirements including ETP and PNR, perform weight and balance, and apply ERSA and ALA knowledge to real operational scenarios',
     ],
