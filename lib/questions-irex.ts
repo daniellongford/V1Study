@@ -1,6 +1,10 @@
-import { Question } from './types'
-
-export const irexQuestions: Question[] = [
+export const irexQuestions: {
+  question: string;
+  options: string[];
+  correct: number;
+  explanation: string;
+  reference?: string;
+}[] = [
 
 {
   question: 'An instrument rating allows the holder to:',
