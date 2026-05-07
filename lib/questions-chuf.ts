@@ -1,5 +1,4 @@
 // CPL Human Factors — 500 Questions
-// Fixed v_final9
 
 export const chufQuestions: {
   question: string;
@@ -218,7 +217,7 @@ export const chufQuestions: {
       'A. It prevents radio frequency errors by requiring confirmation of the frequency before switching',
       'B. It prevents frequency congestion by limiting the length of pilot transmissions',
       'C. It prevents callsign confusion by requiring full callsigns on every transmission',
-      'D. It prevents undetected communication errors — the readback (and confirmation) loop ensures misunderstandings are caught before being acted upon',
+      'D. It prevents undetected communication errors — the readback and confirmation loop ensures both parties have the same understanding',
     ],
     correct: 3,
     explanation: 'Open-loop communication (transmit only, no feedback) allows errors to go undetected. Closed-loop communication (transmit → readback → confirmation) creates an error-correction cycle. In aviation, missed readbacks or incorrect readbacks caught by controllers have prevented numerous accidents.',
@@ -4561,7 +4560,7 @@ export const chufQuestions: {
     options: [
       'A. Lose eyes momentarily to reset the visual system, then re-establish orientation, which is why crew resource management training addresses it',
       'B. Declare an emergency immediately and request radar vectors — this affects both pilot performance and decision-making',
-      'C. Trust the flight instruments completely and fly the aircraft by reference to instruments only, regardless of what the vestibular system is indicating',
+      'C. Trust the flight instruments completely and fly the aircraft by reference to instruments — do not follow physical sensations',
       'D. Reduce speed immediately to provide more time to recover orientation — this is a recognised bias in aviation psychology',
     ],
     correct: 2,
@@ -5531,7 +5530,7 @@ export const chufQuestions: {
   {
     question: 'What does "closed-loop communication" prevent that open-loop communication cannot?',
     options: [
-      'A. It prevents undetected communication errors — the readback and confirmation loop ensures misunderstandings are caught before being acted upon',
+      'A. It prevents undetected communication errors — the readback and confirmation loop closes the communication loop and catches misunderstandings',
       'B. T prevents frequency congestion by limiting the length of pilot transmissions, as identified in ICAO human factors documentation',
       'C. T prevents callsign confusion by requiring full callsigns on every transmission — this affects both pilot performance and decision-making',
       'D. T prevents radio frequency errors by requiring frequency confirmation before switching — CRM training specifically targets this type of error',
@@ -5723,7 +5722,7 @@ export const chufQuestions: {
   {
     question: 'The "halo effect" in crew interactions means:',
     options: [
-      'A. The tendency to assume a person who is competent in one area is competent in all areas — a co-pilot may not challenge a highly experienced captain because they assume everything the captain does is correct, even when it is not',
+      'A. The tendency to assume a person who is competent in one area is competent in all areas — known as the halo effect',
       'B. The glow of aircraft navigation lights visible at night that helps crew identify each other\'s position',
       'C. The effect of strong sunlight creating visual illusions on approach to landing',
       'D. A positive morale effect when all crew members work harmoniously together',
