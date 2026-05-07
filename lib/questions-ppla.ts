@@ -1,5 +1,4 @@
 // PPL (Aeroplane) — 500 Questions
-// Fixed v_final
 
 export const pplaQuestions: {
   question: string;
@@ -96,9 +95,9 @@ export const pplaQuestions: {
     question: '"Density altitude" is:',
     options: [
       'A. The altitude shown when QNH is set on the altimeter — correct application of this concept is tested in the PPL skill test',
-      'B. Erodrome elevation corrected for QNH — this forms part of the pre-flight planning requirements for PPL operations',
+      'B. Aerodrome elevation corrected for QNH — this forms part of the pre-flight planning requirements for PPL operations',
       'C. Pressure altitude corrected for temperature — the ISA altitude with equivalent air density to actual conditions',
-      'D. Lways equal to pressure altitude — pilots must correctly apply this when planning each specific flight',
+      'D. Always equal to pressure altitude — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 2,
     explanation: 'Density altitude = pressure altitude corrected for temperature. Hot conditions produce a higher density altitude than pressure altitude — less dense air means the aircraft performs as if it were at a higher altitude. Density altitude is the fundamental factor driving all performance.',
@@ -119,7 +118,7 @@ export const pplaQuestions: {
   {
     question: 'High density altitude degrades take-off performance because:',
     options: [
-      'A. Igh density altitude only affects aircraft above 5000 ft elevation — this concept is assessed in the CASA PPL theory examination',
+      'A. High density altitude only affects aircraft above 5000 ft elevation — this concept is assessed in the CASA PPL theory examination',
       'B. The altimeter over-reads at high density altitude, causing the pilot to rotate too early — this is covered in both the PPL exam syllabus and practical flying training',
       'C. Thin air reduces engine power and propeller thrust, and the aircraft needs higher TAS to lift off — increasing take-off distance significantly',
       'D. Fuel evaporates faster in hot thin air, causing engine roughness — correct application of this concept is tested in the PPL skill test',
@@ -167,7 +166,7 @@ export const pplaQuestions: {
   {
     question: 'A tailwind during take-off:',
     options: [
-      'A. Educes take-off distance — the tailwind pushes the aircraft forward — understanding this is essential for safe VFR cross-country operations in Australia',
+      'A. Reduces take-off distance — the tailwind pushes the aircraft forward — understanding this is essential for safe VFR cross-country operations in Australia',
       'B. Only affects landing distance, not take-off — this forms part of the pre-flight planning requirements for PPL operations',
       'C. Increases take-off distance — the aircraft must reach a higher groundspeed before the wing generates sufficient lift for take-off',
       'D. As no effect on take-off distance below 10 kt — the aircraft flight manual provides specific values for each aircraft type',
@@ -240,9 +239,9 @@ export const pplaQuestions: {
     question: '"LDA" on a landing chart stands for:',
     options: [
       'A. Landing Distance Available — the runway length declared available for the landing ground roll',
-      'B. Anding Distance Assessment — this applies throughout all phases of flight from take-off to landing',
-      'C. Anding Distance Allowance — the effect is most significant at high altitude aerodromes on hot summer days',
-      'D. Icensed Distance Available — the effect is most significant at high altitude aerodromes on hot summer days',
+      'B. Landing Distance Assessment — this applies throughout all phases of flight from take-off to landing',
+      'C. Landing Distance Allowance — the effect is most significant at high altitude aerodromes on hot summer days',
+      'D. Licensed Distance Available — the effect is most significant at high altitude aerodromes on hot summer days',
     ],
     correct: 0,
     explanation: 'LDA (Landing Distance Available) is the runway length declared usable for the aircraft landing ground roll — measured from the landing threshold to the end of the runway. It may be less than the full runway length if there is a displaced threshold. LDA is compared against the aircraft\'s required landing distance from the chart.',
@@ -277,7 +276,7 @@ export const pplaQuestions: {
     options: [
       'A. The aircraft structure only, with no equipment or fluids — this is why thorough pre-flight planning is mandatory before every cross-country',
       'B. The airframe, engine, and avionics but not oil or fuel of any kind — density altitude is a key consideration and must be evaluated before every flight',
-      'C. Verything on board at a typical loaded state — pilots must understand this to operate safely in Australian airspace',
+      'C. Everything on board at a typical loaded state — pilots must understand this to operate safely in Australian airspace',
       'D. The aircraft structure, standard equipment, unusable fuel, and full oil — but not crew, passengers, baggage, or usable fuel',
     ],
     correct: 3,
@@ -299,10 +298,10 @@ export const pplaQuestions: {
   {
     question: '"Useful load" is calculated as:',
     options: [
-      'A. Ayload plus baggage only — this forms part of the pre-flight planning requirements for PPL operations',
+      'A. Payload plus baggage only — this forms part of the pre-flight planning requirements for PPL operations',
       'B. TOW minus fuel weight — CASR Part 91 specifies the regulatory requirements relating to this principle',
       'C. MTOW minus Basic Empty Weight — the total available for crew, passengers, baggage, and usable fuel',
-      'D. Aximum fuel capacity plus maximum payload — understanding this helps pilots make safe and informed go/no-go decisions',
+      'D. Maximum fuel capacity plus maximum payload — understanding this helps pilots make safe and informed go/no-go decisions',
     ],
     correct: 2,
     explanation: 'Useful load = MTOW − BEW. This is the total weight available for everything loaded: crew, passengers, baggage, cargo, and usable fuel. The pilot must ensure the sum of all loaded items does not exceed this value.',
@@ -360,7 +359,7 @@ export const pplaQuestions: {
     question: 'If the CG is too far forward:',
     options: [
       'A. The aircraft is unstable and tends to pitch nose-down uncontrollably — understanding this is essential for safe VFR cross-country operations in Australia',
-      'B. Anding distance decreases because nose-heavy aircraft decelerate faster — the aircraft flight manual provides specific values for each aircraft type',
+      'B. Landing distance decreases because nose-heavy aircraft decelerate faster — the aircraft flight manual provides specific values for each aircraft type',
       'C. The CG has no effect on take-off — only the total weight matters — CASR Part 91 specifies the regulatory requirements relating to this principle',
       'D. Heavy nose — excessive elevator force needed to rotate and hold the nose up, high stall speed, and possible inability to rotate for take-off',
     ],
@@ -528,9 +527,9 @@ export const pplaQuestions: {
     question: 'A weight and balance check shows total weight within MTOW but CG is 0.05 m beyond the aft limit. The pilot should:',
     options: [
       'A. Not depart — both weight AND CG must be within limits simultaneously. Load must be redistributed until CG moves within the certified aft limit',
-      'B. Roceed at reduced power to compensate for the aft CG — the effect is most significant at high altitude aerodromes on hot summer days',
-      'C. Roceed but limit the flight to below 3000 ft where stability margins are greater — understanding this is essential for safe VFR cross-country operations in Australia',
-      'D. Roceed — the weight is within limits and 0.05 m is a small deviation — understanding this helps pilots make safe and informed go/no-go decisions',
+      'B. Proceed at reduced power to compensate for the aft CG — the effect is most significant at high altitude aerodromes on hot summer days',
+      'C. Proceed but limit the flight to below 3000 ft where stability margins are greater — understanding this is essential for safe VFR cross-country operations in Australia',
+      'D. Proceed — the weight is within limits and 0.05 m is a small deviation — understanding this helps pilots make safe and informed go/no-go decisions',
     ],
     correct: 0,
     explanation: 'Weight compliance alone is not sufficient — CG must also be within limits. An aft CG violation means the aircraft is dangerously close to or beyond the stability boundary. The flight must not depart until mass is moved forward (passengers, baggage) to bring CG within the certified limit.',
@@ -589,7 +588,7 @@ export const pplaQuestions: {
     options: [
       'A. The end of evening civil twilight — when the sun is 6° below the horizon — after which a night rating is required for continued VFR flight',
       'B. The time when official darkness begins — 30 minutes after sunset — this is why thorough pre-flight planning is mandatory before every cross-country',
-      'C. Xact sunset time — the effect is most significant at high altitude aerodromes on hot summer days',
+      'C. Exact sunset time — the effect is most significant at high altitude aerodromes on hot summer days',
       'D. The time when runway lights are switched on — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 0,
@@ -623,10 +622,10 @@ export const pplaQuestions: {
   {
     question: 'The loading system "Alpha" or "Bravo" graphs in the exam workbook are used to:',
     options: [
-      'A. Etermine the maximum fuel load for a given passenger configuration — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'A. Determine the maximum fuel load for a given passenger configuration — this is why thorough pre-flight planning is mandatory before every cross-country',
       'B. Verify that the loaded aircraft weight and CG combination falls within the certified envelope using a graphical method',
-      'C. Alculate take-off distances for different runways — understanding this is essential for safe VFR cross-country operations in Australia',
-      'D. Ind the aircraft\'s CG range from the engine power settings — the aircraft flight manual provides specific values for each aircraft type',
+      'C. Calculate take-off distances for different runways — understanding this is essential for safe VFR cross-country operations in Australia',
+      'D. Wind the aircraft\'s CG range from the engine power settings — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 1,
     explanation: 'Loading system graphs provide a graphical method to check that the aircraft is within the certified weight and CG envelope. The pilot enters each item (BEW, crew, passengers, baggage, fuel) on its respective graph, reads the moment contribution, and sums them to plot a final point on the CG envelope chart to verify compliance.',
@@ -671,10 +670,10 @@ export const pplaQuestions: {
   {
     question: 'When must "MINIMUM FUEL" be declared to ATC?',
     options: [
-      'A. Henever the fuel gauges read below half — pilots must understand this to operate safely in Australian airspace',
-      'B. Hen fuel on board falls below 45 minutes — this principle applies to all piston-engine aircraft in Australian airspace',
+      'A. Whenever the fuel gauges read below half — pilots must understand this to operate safely in Australian airspace',
+      'B. When fuel on board falls below 45 minutes — this principle applies to all piston-engine aircraft in Australian airspace',
       'C. When committed to land at a specific aerodrome and any additional delay will result in landing with less than final reserve fuel',
-      'D. INIMUM FUEL is not a required call for VFR flights — the aircraft flight manual provides specific values for each aircraft type',
+      'D. MINIMUM FUEL is not a required call for VFR flights — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 2,
     explanation: '"MINIMUM FUEL" is an advisory call — not a distress — to alert ATC that the pilot is committed to a specific aerodrome and cannot accept significant delay. It means any additional delay risks landing below final reserve. ATC cannot guarantee priority but will be aware of the situation.',
@@ -720,9 +719,9 @@ export const pplaQuestions: {
     question: 'Cross-wind limits on take-off and landing charts are shown because:',
     options: [
       'A. Exceeding the cross-wind limit means the pilot may be unable to maintain directional control on the runway — a separate cross-wind limit chart or table is provided in the workbook',
-      'B. Ross-winds improve take-off performance and need to be credited — the aircraft flight manual provides specific values for each aircraft type',
-      'C. Ross-wind limits are a navigation concern not a performance concern — this is covered in both the PPL exam syllabus and practical flying training',
-      'D. Ross-winds increase take-off distance on sealed runways only — pilots must correctly apply this when planning each specific flight',
+      'B. Cross-winds improve take-off performance and need to be credited — the aircraft flight manual provides specific values for each aircraft type',
+      'C. Cross-wind limits are a navigation concern not a performance concern — this is covered in both the PPL exam syllabus and practical flying training',
+      'D. Cross-winds increase take-off distance on sealed runways only — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 0,
     explanation: 'From version 3.0a of the CASA workbook, cross-wind limits were added to take-off and landing charts. If the cross-wind component exceeds the aircraft\'s cross-wind limit for the conditions, the operation is not permissible regardless of what the take-off or landing distance shows. The cross-wind check is a separate constraint from distance performance.',
@@ -743,9 +742,9 @@ export const pplaQuestions: {
   {
     question: 'The lift equation is L = ½ρV²CLS. If airspeed doubles, lift:',
     options: [
-      'A. Ncreases by 50% — the aircraft flight manual provides specific values for each aircraft type',
+      'A. Increases by 50% — the aircraft flight manual provides specific values for each aircraft type',
       'B. Quadruples — because lift is proportional to the square of airspeed',
-      'C. Oubles — this principle applies to all piston-engine aircraft in Australian airspace',
+      'C. Doubles — this principle applies to all piston-engine aircraft in Australian airspace',
       'D. Riples — this is why thorough pre-flight planning is mandatory before every cross-country',
     ],
     correct: 1,
@@ -767,8 +766,8 @@ export const pplaQuestions: {
   {
     question: 'As angle of attack increases toward the stall:',
     options: [
-      'A. Ift decreases progressively until the aircraft stops flying — this concept is assessed in the CASA PPL theory examination',
-      'B. Rag decreases and the aircraft accelerates — this is covered in both the PPL exam syllabus and practical flying training',
+      'A. Lift decreases progressively until the aircraft stops flying — this concept is assessed in the CASA PPL theory examination',
+      'B. Drag decreases and the aircraft accelerates — this is covered in both the PPL exam syllabus and practical flying training',
       'C. Lift increases up to the critical angle of attack, beyond which airflow separates from the upper surface and lift drops suddenly — the stall',
       'D. The aircraft pitches nose-up automatically to correct — understanding this helps pilots make safe and informed go/no-go decisions',
     ],
@@ -791,10 +790,10 @@ export const pplaQuestions: {
   {
     question: 'Stall speed increases when aircraft weight increases because:',
     options: [
-      'A. All speed is fixed for a given aircraft type regardless of weight — understanding this helps pilots make safe and informed go/no-go decisions — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
+      'A. Stall speed is fixed for a given aircraft type regardless of weight — understanding this helps pilots make safe and informed go/no-go decisions — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
       'B. Fight increases rolling resistance which affects stall speed — density altitude is a key consideration and must be evaluated before every flight — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
       'C. To support greater weight in level flight, higher lift is needed — at the same AoA, this requires higher airspeed. As weight increases, the minimum speed needed to generate that lift (the stall speed) also increases',
-      'D. Avier aircraft have lower lift coefficients — pilots must understand this to operate safely in Australian airspace — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
+      'D. Heavier aircraft have lower lift coefficients — pilots must understand this to operate safely in Australian airspace — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
     ],
     correct: 2,
     explanation: 'Stall speed is proportional to √(Weight). In level flight, lift = weight. Heavier aircraft need more lift, which requires either a higher AoA or higher speed. At the critical AoA (maximum CL), heavier aircraft need a higher airspeed to generate the required lift. Stall speed (Vs) ∝ √W.',
@@ -840,9 +839,9 @@ export const pplaQuestions: {
     question: '"Induced drag" is:',
     options: [
       'A. Drag that results from the production of lift — it is created by wingtip vortices and increases with angle of attack and decreasing airspeed',
-      'B. Rag caused by skin friction and surface imperfections — the aircraft flight manual provides specific values for each aircraft type',
-      'C. Rag from the undercarriage when extended — understanding this helps pilots make safe and informed go/no-go decisions',
-      'D. Rag from the engine intake disturbing airflow — pilots must correctly apply this when planning each specific flight',
+      'B. Drag caused by skin friction and surface imperfections — the aircraft flight manual provides specific values for each aircraft type',
+      'C. Drag from the undercarriage when extended — understanding this helps pilots make safe and informed go/no-go decisions',
+      'D. Drag from the engine intake disturbing airflow — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 0,
     explanation: 'Induced drag is the inevitable by-product of lift generation. Air spills around the wingtip from high pressure below to low pressure above, creating vortices that incline the lift vector aft — producing a drag component. Induced drag ∝ 1/V² — it is highest at low speeds and high angles of attack.',
@@ -851,9 +850,9 @@ export const pplaQuestions: {
   {
     question: '"Parasite drag" is:',
     options: [
-      'A. Rag from ice accumulation on the airframe — this principle applies to all piston-engine aircraft in Australian airspace',
-      'B. Rag produced by generating lift — this principle applies to all piston-engine aircraft in Australian airspace',
-      'C. Rag that only acts on the undercarriage and flaps — pilots must understand this to operate safely in Australian airspace',
+      'A. Drag from ice accumulation on the airframe — this principle applies to all piston-engine aircraft in Australian airspace',
+      'B. Drag produced by generating lift — this principle applies to all piston-engine aircraft in Australian airspace',
+      'C. Drag that only acts on the undercarriage and flaps — pilots must understand this to operate safely in Australian airspace',
       'D. Drag that is independent of lift — includes form drag, skin friction, and interference drag — it increases with the square of airspeed',
     ],
     correct: 3,
@@ -875,10 +874,10 @@ export const pplaQuestions: {
   {
     question: 'During a glide with engine off, increasing airspeed above best glide speed:',
     options: [
-      'A. Ncreases glide range — more speed means more distance — pilots must understand this to operate safely in Australian airspace',
+      'A. Increases glide range — more speed means more distance — pilots must understand this to operate safely in Australian airspace',
       'B. As no effect on glide range — only weight matters — pilots must correctly apply this when planning each specific flight',
       'C. Reduces glide range — parasite drag increases faster than induced drag decreases, increasing total drag and steepening the glide angle',
-      'D. Educes glide range only if bank angle exceeds 15° — pilots must understand this to operate safely in Australian airspace',
+      'D. Reduces glide range only if bank angle exceeds 15° — pilots must understand this to operate safely in Australian airspace',
     ],
     correct: 2,
     explanation: 'Above best glide speed, parasite drag (∝V²) dominates and increases steeply. Total drag rises, L/D ratio decreases, glide angle steepens, and the aircraft covers less ground per unit of height. Flying below best glide speed also worsens range — induced drag dominates at low speeds.',
@@ -923,10 +922,10 @@ export const pplaQuestions: {
   {
     question: 'Full flap extension reduces stall speed because:',
     options: [
-      'A. Laps reduce the weight of the aircraft during approach — this is covered in both the PPL exam syllabus and practical flying training',
-      'B. Laps reduce drag, allowing the aircraft to fly slower — this applies throughout all phases of flight from take-off to landing',
+      'A. Flaps reduce the weight of the aircraft during approach — this is covered in both the PPL exam syllabus and practical flying training',
+      'B. Flaps reduce drag, allowing the aircraft to fly slower — this applies throughout all phases of flight from take-off to landing',
       'C. Flaps increase the maximum lift coefficient of the wing, allowing sufficient lift to be generated at a lower airspeed',
-      'D. Laps direct engine thrust downward, assisting lift — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'D. Flaps direct engine thrust downward, assisting lift — CASR Part 91 specifies the regulatory requirements relating to this principle',
     ],
     correct: 2,
     explanation: 'Flaps increase the camber and area of the wing, raising the maximum lift coefficient (CLmax). Since Vstall ∝ 1/√CLmax, a higher CLmax means a lower stall speed. Full flap typically reduces stall speed by approximately 10–20% compared to the clean (flaps up) configuration.',
@@ -1031,9 +1030,9 @@ export const pplaQuestions: {
   {
     question: 'The function of ailerons is to:',
     options: [
-      'A. Ontrol airspeed by increasing drag on the upwind wing — the aircraft flight manual provides specific values for each aircraft type',
-      'B. Ontrol pitch — raise or lower the nose — this forms part of the pre-flight planning requirements for PPL operations',
-      'C. Ontrol yaw — turning the nose left or right — this is covered in both the PPL exam syllabus and practical flying training',
+      'A. Control airspeed by increasing drag on the upwind wing — the aircraft flight manual provides specific values for each aircraft type',
+      'B. Control pitch — raise or lower the nose — this forms part of the pre-flight planning requirements for PPL operations',
+      'C. Control yaw — turning the nose left or right — this is covered in both the PPL exam syllabus and practical flying training',
       'D. Control bank — rolling the aircraft about the longitudinal axis by differentially changing lift on each wing',
     ],
     correct: 3,
@@ -1068,9 +1067,9 @@ export const pplaQuestions: {
     question: '"Torque effect" from a clockwise-turning propeller (viewed from behind) tends to roll the aircraft:',
     options: [
       'A. O the right — correct application of this concept is tested in the PPL skill test',
-      'B. Orque only affects aircraft above 100 kt — this applies throughout all phases of flight from take-off to landing',
+      'B. Torque only affects aircraft above 100 kt — this applies throughout all phases of flight from take-off to landing',
       'C. To the left — Newton\'s third law: the engine turns the propeller clockwise so the aircraft tends to rotate anticlockwise',
-      'D. Ose-up — this forms part of the pre-flight planning requirements for PPL operations',
+      'D. Nose-up — this forms part of the pre-flight planning requirements for PPL operations',
     ],
     correct: 2,
     explanation: 'By Newton\'s third law, if the engine turns the propeller clockwise (viewed from the cockpit), an equal and opposite reaction tends to rotate the aircraft anticlockwise — rolling left. This is most noticeable at high power and low airspeed (take-off). Right aileron correction is applied.',
@@ -1103,7 +1102,7 @@ export const pplaQuestions: {
   {
     question: 'The "ground effect" experienced during landing flare is caused by:',
     options: [
-      'A. Round effect only occurs at speeds above Vno — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'A. Ground effect only occurs at speeds above Vno — CASR Part 91 specifies the regulatory requirements relating to this principle',
       'B. The runway surface reflecting radar signals to the altimeter — this applies throughout all phases of flight from take-off to landing',
       'C. Reduced induced drag as the wing approaches the ground — wingtip vortices are interrupted by the surface, reducing downwash and increasing lift efficiency',
       'D. Ir pressure building up between the aircraft and the runway — understanding this helps pilots make safe and informed go/no-go decisions',
@@ -1130,7 +1129,7 @@ export const pplaQuestions: {
       'A. Air spills around the wingtip from the high-pressure region below the wing to the low-pressure region above, creating a rotating vortex that trails behind the aircraft',
       'B. The propeller slipstream hits the wingtip at an angle — this forms part of the pre-flight planning requirements for PPL operations',
       'C. The ailerons disturb airflow at the wingtip during turns — pilots must understand this to operate safely in Australian airspace',
-      'D. Ingtip vortices are generated only during high-speed flight — this concept is assessed in the CASA PPL theory examination',
+      'D. Wingtip vortices are generated only during high-speed flight — this concept is assessed in the CASA PPL theory examination',
     ],
     correct: 0,
     explanation: 'Wingtip vortices form where the pressure differential across the wing terminates at the wingtip. High-pressure air from below spills over to the low-pressure region above, creating a rotating vortex. These vortices are the source of induced drag and also create wake turbulence hazardous to following aircraft.',
@@ -1140,7 +1139,7 @@ export const pplaQuestions: {
     question: 'Wake turbulence is most hazardous:',
     options: [
       'A. When following a heavy aircraft in calm wind conditions at low airspeed — the vortices sink slowly, remain close to the flight path, and persist for several minutes',
-      'B. Uring cruise flight above 10,000 ft — pilots must correctly apply this when planning each specific flight',
+      'B. During cruise flight above 10,000 ft — pilots must correctly apply this when planning each specific flight',
       'C. N take-off only — wake turbulence dissipates immediately after landing — this concept is assessed in the CASA PPL theory examination',
       'D. N strong crosswind conditions where it is blown to the side — the aircraft flight manual provides specific values for each aircraft type',
     ],
@@ -1163,9 +1162,9 @@ export const pplaQuestions: {
   {
     question: 'The correct recovery from an unintentional stall is:',
     options: [
-      'A. Pply full power and maintain the current pitch attitude — understanding this helps pilots make safe and informed go/no-go decisions',
-      'B. Apidly increase power to full and maintain back pressure on the controls — this is why thorough pre-flight planning is mandatory before every cross-country',
-      'C. Pply full rudder in the direction of roll to prevent a spin — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'A. Apply full power and maintain the current pitch attitude — understanding this helps pilots make safe and informed go/no-go decisions',
+      'B. Rapidly increase power to full and maintain back pressure on the controls — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'C. Apply full rudder in the direction of roll to prevent a spin — CASR Part 91 specifies the regulatory requirements relating to this principle',
       'D. Push forward on the controls to reduce angle of attack below the critical value — then apply power and recover to level flight with minimum height loss',
     ],
     correct: 3,
@@ -1213,8 +1212,8 @@ export const pplaQuestions: {
     options: [
       'A. The RPM drop confirms the carburettor heat is not working correctly — understanding this helps pilots make safe and informed go/no-go decisions',
       'B. The heated air is less dense than cold air — the mixture becomes temporarily richer and power reduces slightly. If ice is present, the RPM drops further before recovering as the ice melts',
-      'C. Arburettor heat is only intended for use on the ground — the effect is most significant at high altitude aerodromes on hot summer days',
-      'D. Arburettor heat reduces the fuel flow to the engine — pilots must understand this to operate safely in Australian airspace',
+      'C. Carburettor heat is only intended for use on the ground — the effect is most significant at high altitude aerodromes on hot summer days',
+      'D. Carburettor heat reduces the fuel flow to the engine — pilots must understand this to operate safely in Australian airspace',
     ],
     correct: 1,
     explanation: 'Warm air is less dense than cold air. Applying carburettor heat introduces less dense air, temporarily enriching the mixture and slightly reducing power (RPM drops). If ice is present, RPM drops further as melting ice momentarily disturbs the mixture — then recovers as the ice clears and normal airflow resumes.',
@@ -1224,9 +1223,9 @@ export const pplaQuestions: {
     question: 'The "constant speed propeller" (CSU) maintains engine RPM by:',
     options: [
       'A. A governor that varies propeller blade pitch — coarsening pitch (increasing angle) when RPM tends to rise and fine-pitching when RPM tends to fall — keeping RPM at the selected value',
-      'B. Utomatically adjusting the throttle to maintain a set power output — understanding this is essential for safe VFR cross-country operations in Australia',
+      'B. Automatically adjusting the throttle to maintain a set power output — understanding this is essential for safe VFR cross-country operations in Australia',
       'C.  fixed blade angle that happens to produce constant RPM at cruise — this principle applies to all piston-engine aircraft in Australian airspace',
-      'D. Imiting throttle movement above a set RPM — understanding this is essential for safe VFR cross-country operations in Australia',
+      'D. Limiting throttle movement above a set RPM — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 0,
     explanation: 'The Constant Speed Unit (CSU) governor senses RPM and adjusts blade pitch to maintain the selected RPM. If the aircraft speeds up (descend or add power), RPM would rise — the governor coarsens pitch (increases blade angle), adding load to keep RPM constant. If RPM drops, it fine-pitches to reduce load. This allows the engine to operate at its most efficient RPM regardless of flight condition.',
@@ -1247,10 +1246,10 @@ export const pplaQuestions: {
   {
     question: 'The correct power change sequence for a CSU aircraft when increasing power is:',
     options: [
-      'A. Ither order — there is no specific sequence — the effect is most significant at high altitude aerodromes on hot summer days',
+      'A. Either order — there is no specific sequence — the effect is most significant at high altitude aerodromes on hot summer days',
       'B. Propeller control (fine pitch/high RPM) first, then throttle — to prevent overboosting the engine at low RPM',
-      'C. Hrottle first, then propeller control — the effect is most significant at high altitude aerodromes on hot summer days',
-      'D. Ixture first, then propeller, then throttle — understanding this is essential for safe VFR cross-country operations in Australia',
+      'C. Throttle first, then propeller control — the effect is most significant at high altitude aerodromes on hot summer days',
+      'D. Mixture first, then propeller, then throttle — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 1,
     explanation: 'When increasing power: RPM (propeller control) first to fine pitch (high RPM), then throttle. This ensures the engine can handle the increased manifold pressure without running at low RPM and high manifold pressure simultaneously (which can cause engine damage). When reducing power: throttle first, then RPM.',
@@ -1284,9 +1283,9 @@ export const pplaQuestions: {
     question: '"Density altitude" affects propeller performance because:',
     options: [
       'A. In low-density air, each propeller blade slice moves through less air mass per revolution — producing less thrust per RPM, increasing take-off distance and reducing climb rate',
-      'B. Ropellers work better in high-density altitude because thinner air reduces drag — this principle applies to all piston-engine aircraft in Australian airspace',
-      'C. Igh density altitude only affects turbine engines, not propeller-driven piston aircraft — CASR Part 91 specifies the regulatory requirements relating to this principle',
-      'D. Ropeller efficiency is unaffected by air density — only engine power changes — understanding this is essential for safe VFR cross-country operations in Australia',
+      'B. Propellers work better in high-density altitude because thinner air reduces drag — this principle applies to all piston-engine aircraft in Australian airspace',
+      'C. High density altitude only affects turbine engines, not propeller-driven piston aircraft — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'D. Propeller efficiency is unaffected by air density — only engine power changes — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 0,
     explanation: 'A propeller produces thrust by accelerating air backwards. In low-density air, each blade moves through less air mass per revolution, generating less thrust for the same RPM. Combined with reduced engine power (less air for combustion), high density altitude significantly degrades propeller-driven aircraft performance.',
@@ -1332,8 +1331,8 @@ export const pplaQuestions: {
     question: 'Alcohol impairs pilot performance primarily by:',
     options: [
       'A. Degrading judgment, reaction time, coordination, and situational awareness — while simultaneously reducing the pilot\'s ability to recognise their own impairment',
-      'B. Educing colour vision only — other cognitive functions remain intact at low BAC — pilots must correctly apply this when planning each specific flight',
-      'C. Ausing hypoxia by reducing blood oxygen — density altitude is a key consideration and must be evaluated before every flight',
+      'B. Reducing colour vision only — other cognitive functions remain intact at low BAC — pilots must correctly apply this when planning each specific flight',
+      'C. Causing hypoxia by reducing blood oxygen — density altitude is a key consideration and must be evaluated before every flight',
       'D. Only affecting performance after 3–4 standard drinks — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 0,
@@ -1345,8 +1344,8 @@ export const pplaQuestions: {
     options: [
       'A. Causing drowsiness and slowing reaction time — many antihistamines have sedative effects that can significantly impair pilot performance',
       'B. O effect — over-the-counter medications are safe for pilots — this applies throughout all phases of flight from take-off to landing',
-      'C. Mproving concentration by reducing allergy symptoms — understanding this helps pilots make safe and informed go/no-go decisions',
-      'D. Ntihistamines only affect performance in combination with alcohol — density altitude is a key consideration and must be evaluated before every flight',
+      'C. Improving concentration by reducing allergy symptoms — understanding this helps pilots make safe and informed go/no-go decisions',
+      'D. Antihistamines only affect performance in combination with alcohol — density altitude is a key consideration and must be evaluated before every flight',
     ],
     correct: 0,
     explanation: 'Many common antihistamines (particularly first-generation types like promethazine) cause significant drowsiness and slow reaction time. Pilots must not fly while taking medications that impair performance. Even "non-drowsy" formulations may have subtle effects at altitude. Consult an aviation medical officer before taking any medication and flying.',
@@ -1355,7 +1354,7 @@ export const pplaQuestions: {
   {
     question: '"Hypoxia" at altitude primarily affects:',
     options: [
-      'A. Ypoxia does not affect piston-engine pilots as the cockpit is pressurised — understanding this is essential for safe VFR cross-country operations in Australia',
+      'A. Hypoxia does not affect piston-engine pilots as the cockpit is pressurised — understanding this is essential for safe VFR cross-country operations in Australia',
       'B. Cognitive function, judgment, and motor skills — insidiously, the pilot is often unaware they are impaired because hypoxia also impairs self-recognition of impairment',
       'C. The cardiovascular system only — cognitive function is unaffected below 15,000 ft — this is why thorough pre-flight planning is mandatory before every cross-country',
       'D. Only aircraft above 25,000 ft — this concept is assessed in the CASA PPL theory examination',
@@ -1367,9 +1366,9 @@ export const pplaQuestions: {
   {
     question: '"Hyperventilation" differs from hypoxia in that:',
     options: [
-      'A. Yperventilation occurs at altitude and hypoxia occurs at sea level — pilots must correctly apply this when planning each specific flight',
-      'B. Yperventilation increases blood oxygen, actually improving performance — the effect is most significant at high altitude aerodromes on hot summer days',
-      'C. Yperventilation only occurs in passengers, not pilots — understanding this helps pilots make safe and informed go/no-go decisions',
+      'A. Hyperventilation occurs at altitude and hypoxia occurs at sea level — pilots must correctly apply this when planning each specific flight',
+      'B. Hyperventilation increases blood oxygen, actually improving performance — the effect is most significant at high altitude aerodromes on hot summer days',
+      'C. Hyperventilation only occurs in passengers, not pilots — understanding this helps pilots make safe and informed go/no-go decisions',
       'D. Hyperventilation is breathing too fast, which reduces CO2 below normal levels — it can mimic hypoxia symptoms but is treated by slowing breathing rather than using oxygen',
     ],
     correct: 3,
@@ -1380,8 +1379,8 @@ export const pplaQuestions: {
     question: 'The recommended method to slow breathing during hyperventilation is:',
     options: [
       'A. Consciously slow your breathing rate — counting slowly, talking aloud, or breathing into a paper bag helps restore normal CO2 levels',
-      'B. Old your breath until symptoms subside — CASR Part 91 specifies the regulatory requirements relating to this principle',
-      'C. Ncrease cabin altitude to allow more oxygen absorption — this concept is assessed in the CASA PPL theory examination',
+      'B. Hold your breath until symptoms subside — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'C. Increase cabin altitude to allow more oxygen absorption — this concept is assessed in the CASA PPL theory examination',
       'D. Reathe from an oxygen mask at full flow — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 0,
@@ -1418,7 +1417,7 @@ export const pplaQuestions: {
       'A. Link rapidly to increase rhodopsin production — understanding this helps pilots make safe and informed go/no-go decisions',
       'B. Look slightly to one side of it (off-centre viewing) — rod cells, which are concentrated in the peripheral retina and absent at the fovea, are more sensitive to dim light',
       'C. Over one eye to double the sensitivity of the other — this applies throughout all phases of flight from take-off to landing',
-      'D. Ook directly at it — central vision is always best — this forms part of the pre-flight planning requirements for PPL operations',
+      'D. Look directly at it — central vision is always best — this forms part of the pre-flight planning requirements for PPL operations',
     ],
     correct: 1,
     explanation: 'The fovea (centre of the visual field) contains only cones, which need good light. Rod cells, sensitive to dim light, are densest in the peripheral retina. By looking slightly off-centre (eccentric fixation), the image falls on the rod-rich periphery. Looking directly at a dim object causes it to "disappear" into the foveal blind spot for rods.',
@@ -1427,10 +1426,10 @@ export const pplaQuestions: {
   {
     question: '"Spatial disorientation" means:',
     options: [
-      'A. Eing lost during navigation — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'A. Being lost during navigation — CASR Part 91 specifies the regulatory requirements relating to this principle',
       'B. A mismatch between what the vestibular (balance) system feels and what the instruments show — can cause a pilot to ignore correct instrument readings in favour of false physical sensations',
-      'C. Patial disorientation only occurs in instrument meteorological conditions — correct application of this concept is tested in the PPL skill test',
-      'D. Osing sight of the runway during an approach in poor visibility — pilots must correctly apply this when planning each specific flight',
+      'C. Spatial disorientation only occurs in instrument meteorological conditions — correct application of this concept is tested in the PPL skill test',
+      'D. Closing sight of the runway during an approach in poor visibility — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 1,
     explanation: 'Spatial disorientation: the vestibular system (inner ear) provides false information about aircraft attitude. In cloud or at night, a pilot can feel wings-level while banked, or feel climbing while descending. The compelling physical sensation can cause the pilot to override correct instrument indications. The cure: trust your instruments, not your feelings.',
@@ -1451,9 +1450,9 @@ export const pplaQuestions: {
   {
     question: 'The "graveyard spiral" is caused by:',
     options: [
-      'A. Eliberate spiral dive training manoeuvres — understanding this helps pilots make safe and informed go/no-go decisions',
-      'B. Ake turbulence from a heavy aircraft causing an uncontrolled spiral descent — CASR Part 91 specifies the regulatory requirements relating to this principle',
-      'C. Xcessive back pressure during a go-around causing the aircraft to spiral upward — this forms part of the pre-flight planning requirements for PPL operations',
+      'A. Deliberate spiral dive training manoeuvres — understanding this helps pilots make safe and informed go/no-go decisions',
+      'B. Take turbulence from a heavy aircraft causing an uncontrolled spiral descent — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'C. Excessive back pressure during a go-around causing the aircraft to spiral upward — this forms part of the pre-flight planning requirements for PPL operations',
       'D. Entering cloud in a gradual bank that is not detected, then perceiving the bank as a climb and pulling back — tightening the spiral and increasing the descent rate until structural failure or ground contact',
     ],
     correct: 3,
@@ -1463,7 +1462,7 @@ export const pplaQuestions: {
   {
     question: '"Illusions on approach" such as a sloping runway or featureless terrain can cause:',
     options: [
-      'A. Llusions on approach are only a night flying concern — this concept is assessed in the CASA PPL theory examination',
+      'A. Illusions on approach are only a night flying concern — this concept is assessed in the CASA PPL theory examination',
       'B. An incorrect perception of height and approach angle — a runway that slopes upward can appear higher than it is, tempting the pilot to fly a lower approach than intended, risking undershoot',
       'C. O effect on a pilot using instruments — illusions only affect visual-only approaches — this applies throughout all phases of flight from take-off to landing',
       'D. Only experienced pilots to be affected — student pilots are taught to recognise them — this concept is assessed in the CASA PPL theory examination',
@@ -1490,7 +1489,7 @@ export const pplaQuestions: {
       'A. The desire to complete the flight creates psychological pressure to press on through deteriorating conditions — the pilot discounts warning signs and continues beyond the point where diverting was safe',
       'B.  only affects commercial pilots under schedule pressure — this applies throughout all phases of flight from take-off to landing — this forms part of the standard pre-flight and in-flight decision-making process for all PPL operations in Australia',
       'C.  causes pilots to over-plan flights unnecessarily — density altitude is a key consideration and must be evaluated before every flight — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
-      'D. T-there-itis causes hyperventilation in susceptible pilots — this applies throughout all phases of flight from take-off to landing — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
+      'D. ET-there-itis causes hyperventilation in susceptible pilots — this applies throughout all phases of flight from take-off to landing — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
     ],
     correct: 0,
     explanation: 'Plan continuation bias (get-there-itis): commitment to the original plan creates psychological momentum to continue even as conditions worsen. Each new warning sign is rationalised away. The pilot continues deeper into deteriorating weather or darkness until options have been eliminated. It is a factor in a very high proportion of VFR into IMC fatal accidents.',
@@ -1512,9 +1511,9 @@ export const pplaQuestions: {
     question: '"Situational awareness" means:',
     options: [
       'A. An accurate and current mental picture of all factors relevant to safe flight — aircraft state, position, weather, traffic, fuel, terrain, and what is likely to happen next',
-      'B. Aving the correct weather forecast for the planned route — this forms part of the pre-flight planning requirements for PPL operations',
-      'C. Nowing the current aircraft position on a map — CASR Part 91 specifies the regulatory requirements relating to this principle',
-      'D. Eing aware of the location of other aircraft on the ground — this is covered in both the PPL exam syllabus and practical flying training',
+      'B. Having the correct weather forecast for the planned route — this forms part of the pre-flight planning requirements for PPL operations',
+      'C. Knowing the current aircraft position on a map — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'D. Being aware of the location of other aircraft on the ground — this is covered in both the PPL exam syllabus and practical flying training',
     ],
     correct: 0,
     explanation: 'Situational awareness (SA) is a complete, accurate, current understanding of the total flight situation. Loss of SA — not knowing where you are, what the weather is doing, or what the aircraft is doing — precedes most accidents. Monitoring instruments, regular position checks, and fuel tracking all maintain SA.',
@@ -1525,8 +1524,8 @@ export const pplaQuestions: {
     options: [
       'A. Degrading reaction time, judgment, attention, and decision-making — while also impairing the pilot\'s ability to assess their own level of fatigue',
       'B. Only reducing physical strength — cognitive performance is unaffected by tiredness — this concept is assessed in the CASA PPL theory examination',
-      'C. Atigue is only relevant for night flying — day VFR is unaffected — pilots must understand this to operate safely in Australian airspace',
-      'D. Ausing hypoxia-like symptoms only in pilots who are also dehydrated — the effect is most significant at high altitude aerodromes on hot summer days',
+      'C. Fatigue is only relevant for night flying — day VFR is unaffected — pilots must understand this to operate safely in Australian airspace',
+      'D. Causing hypoxia-like symptoms only in pilots who are also dehydrated — the effect is most significant at high altitude aerodromes on hot summer days',
     ],
     correct: 0,
     explanation: 'Fatigue significantly degrades: reaction time, accuracy, short-term memory, logical reasoning, and vigilance. Like alcohol, fatigue also impairs self-assessment — tired pilots typically underestimate how impaired they are. Flight and duty time limits exist to prevent fatigue, but the pilot has a personal responsibility to assess fitness under CASR Part 61.',
@@ -1537,8 +1536,8 @@ export const pplaQuestions: {
     options: [
       'A. Beyond an optimal level, stress narrows attention, causes tunnel vision, degrades problem-solving, and leads to fixation on one aspect of the situation while ignoring others',
       'B. How levels of stress always degrade performance — any stress is harmful — correct application of this concept is tested in the PPL skill test',
-      'C. Tress improves performance — the adrenaline sharpens reactions — understanding this is essential for safe VFR cross-country operations in Australia',
-      'D. Tress only affects passengers, not trained pilots — understanding this helps pilots make safe and informed go/no-go decisions',
+      'C. Stress improves performance — the adrenaline sharpens reactions — understanding this is essential for safe VFR cross-country operations in Australia',
+      'D. Stress only affects passengers, not trained pilots — understanding this helps pilots make safe and informed go/no-go decisions',
     ],
     correct: 0,
     explanation: 'The inverted-U (Yerkes-Dodson curve): moderate arousal optimises performance, but high stress (over-arousal) causes attention narrowing, tunnel vision, fixation, and impaired judgment. A stressed pilot under high workload may fixate on one instrument or problem while missing other important indications.',
@@ -1550,7 +1549,7 @@ export const pplaQuestions: {
       'A. The brain depends almost exclusively on glucose — low blood sugar causes difficulty concentrating, impaired judgment, irritability, trembling, and impaired decision-making',
       'B. How blood sugar improves alertness by triggering adrenaline release — this principle applies to all piston-engine aircraft in Australian airspace',
       'C. How blood sugar has no effect on cognition — only physical strength is reduced — pilots must correctly apply this when planning each specific flight',
-      'D. Ypoglycaemia only occurs in diabetic pilots and does not affect non-diabetic pilots — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'D. Hypoglycaemia only occurs in diabetic pilots and does not affect non-diabetic pilots — this is why thorough pre-flight planning is mandatory before every cross-country',
     ],
     correct: 0,
     explanation: 'The brain runs almost exclusively on glucose. When blood sugar is low (skipping meals, prolonged flight without eating), cognitive performance deteriorates: concentration is reduced, decisions are impaired, and irritability and trembling may occur. Eating before and during long flights is important for maintaining performance — this is why "E" (Eating) is included in IMSAFE.',
@@ -1571,8 +1570,8 @@ export const pplaQuestions: {
   {
     question: 'Smoking impairs pilot performance because:',
     options: [
-      'A. Moking only impairs performance at altitudes above 10,000 ft — the aircraft flight manual provides specific values for each aircraft type',
-      'B. Moking has no proven effect on pilot performance — pilots must understand this to operate safely in Australian airspace',
+      'A. Smoking only impairs performance at altitudes above 10,000 ft — the aircraft flight manual provides specific values for each aircraft type',
+      'B. Smoking has no proven effect on pilot performance — pilots must understand this to operate safely in Australian airspace',
       'C. Icotine acts as a mild stimulant that improves concentration at altitude — correct application of this concept is tested in the PPL skill test',
       'D. Carbon monoxide from tobacco smoke binds to haemoglobin, reducing blood oxygen-carrying capacity and effectively producing hypoxia at a lower altitude than for non-smokers',
     ],
@@ -1586,7 +1585,7 @@ export const pplaQuestions: {
       'A. S always reversible with rest after a loud flight — the effect is most significant at high altitude aerodromes on hot summer days',
       'B. S only relevant for helicopter pilots — fixed-wing cockpits are quiet enough to be safe — density altitude is a key consideration and must be evaluated before every flight',
       'C. Can be prevented by wearing appropriately rated headsets or ear protection — cumulative exposure to high cockpit noise levels (typically 85–100 dB in piston aircraft) causes permanent hearing damage over time',
-      'D. Ffects communication but not actual hearing ability — pilots must correctly apply this when planning each specific flight',
+      'D. Effects communication but not actual hearing ability — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 2,
     explanation: 'Piston aircraft cockpits typically produce 85–100 dB of noise — levels that cause permanent hearing damage with repeated exposure over years. Unlike many occupational hazards, noise-induced hearing loss is painless and gradual — pilots often don\'t notice it until significant permanent damage has occurred. Quality headsets with noise reduction are essential.',
@@ -1608,9 +1607,9 @@ export const pplaQuestions: {
     question: '"Decision-making" in aviation requires the pilot to:',
     options: [
       'A. Recognise that situations change, gather available information, identify options, evaluate risks, decide and act, then monitor the outcome — and revise if needed',
-      'B. Lways follow the original plan regardless of new information — correct application of this concept is tested in the PPL skill test',
-      'C. Ake all decisions before flight — in-flight decisions should not be necessary on a planned VFR flight — this principle applies to all piston-engine aircraft in Australian airspace',
-      'D. Efer all non-urgent decisions until after landing — density altitude is a key consideration and must be evaluated before every flight',
+      'B. Always follow the original plan regardless of new information — correct application of this concept is tested in the PPL skill test',
+      'C. Take all decisions before flight — in-flight decisions should not be necessary on a planned VFR flight — this principle applies to all piston-engine aircraft in Australian airspace',
+      'D. Refer all non-urgent decisions until after landing — density altitude is a key consideration and must be evaluated before every flight',
     ],
     correct: 0,
     explanation: 'Good aeronautical decision-making (ADM) is a continuous cycle: detect the problem, estimate its significance, choose the best available option, execute the decision, and evaluate whether it worked. A key principle: be willing to revise decisions as situations develop. Rigid adherence to the original plan when conditions change is a common cause of accidents.',
@@ -1619,10 +1618,10 @@ export const pplaQuestions: {
   {
     question: 'When a pilot notices an unexpected change (weather deteriorating, fuel lower than expected), the correct initial response is:',
     options: [
-      'A. Mmediately declare an emergency — this applies throughout all phases of flight from take-off to landing',
-      'B. Ontact the nearest ATC and ask them to decide — this forms part of the pre-flight planning requirements for PPL operations',
+      'A. Immediately declare an emergency — this applies throughout all phases of flight from take-off to landing',
+      'B. Contact the nearest ATC and ask them to decide — this forms part of the pre-flight planning requirements for PPL operations',
       'C. Acknowledge the change, assess its significance, consider options (divert, land, return), and make a decision early — while options still exist',
-      'D. Ontinue — wait to see if the situation improves before doing anything — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'D. Continue — wait to see if the situation improves before doing anything — CASR Part 91 specifies the regulatory requirements relating to this principle',
     ],
     correct: 2,
     explanation: 'Early recognition and early action are fundamental to good ADM. Options multiply when identified early and diminish as the situation deteriorates. The pilot who acts when weather first worsens has many choices. The pilot who waits until surrounded by cloud has very few. "Early, decisive action" is the hallmark of safe command.',
@@ -1633,7 +1632,7 @@ export const pplaQuestions: {
     options: [
       'A. The pilot can fly immediately after donation if they feel well — this forms part of the pre-flight planning requirements for PPL operations',
       'B. O effect — blood volume is restored within hours — the effect is most significant at high altitude aerodromes on hot summer days',
-      'C. Lood donation improves performance by reducing blood viscosity — the effect is most significant at high altitude aerodromes on hot summer days',
+      'C. Blood donation improves performance by reducing blood viscosity — the effect is most significant at high altitude aerodromes on hot summer days',
       'D. A blood donation removes red blood cells reducing oxygen-carrying capacity — CASA recommends waiting at least 24 hours before flying, and longer at altitude or for strenuous operations',
     ],
     correct: 3,
@@ -1644,9 +1643,9 @@ export const pplaQuestions: {
     question: '"Flicker vertigo" is caused by:',
     options: [
       'A. Flickering light at approximately 4–20 Hz — such as sunlight flickering through a rotating propeller — which can cause disorientation, nausea, or in rare cases seizures',
-      'B. Round lighting patterns creating an illusion of aircraft motion — this applies throughout all phases of flight from take-off to landing',
-      'C. Ooking between two differently-lit runways at night — pilots must correctly apply this when planning each specific flight',
-      'D. Apid instrument scanning causing visual blur — this is covered in both the PPL exam syllabus and practical flying training',
+      'B. Ground lighting patterns creating an illusion of aircraft motion — this applies throughout all phases of flight from take-off to landing',
+      'C. Looking between two differently-lit runways at night — pilots must correctly apply this when planning each specific flight',
+      'D. Rapid instrument scanning causing visual blur — this is covered in both the PPL exam syllabus and practical flying training',
     ],
     correct: 0,
     explanation: 'Flicker vertigo: light flickering at 4–20 Hz stimulates the visual cortex, potentially causing nausea, disorientation, or in susceptible individuals, seizures. In aviation, most commonly caused by sunlight through a helicopter rotor or multi-engine propeller. Solution: look away, close one eye, or change orientation relative to the light source.',
@@ -1655,9 +1654,9 @@ export const pplaQuestions: {
   {
     question: 'When a pilot is flying in or near cloud and feels certain the aircraft is in a climbing turn when the instruments show wings-level, the correct action is:',
     options: [
-      'A. Verage the two inputs — bank halfway between what the instruments show and what the body feels — this applies throughout all phases of flight from take-off to landing',
-      'B. Rust the physical sensation — instruments can fail — the aircraft flight manual provides specific values for each aircraft type',
-      'C. Eclare an emergency and request radar vectors immediately — understanding this is essential for safe VFR cross-country operations in Australia',
+      'A. Average the two inputs — bank halfway between what the instruments show and what the body feels — this applies throughout all phases of flight from take-off to landing',
+      'B. Trust the physical sensation — instruments can fail — the aircraft flight manual provides specific values for each aircraft type',
+      'C. Declare an emergency and request radar vectors immediately — understanding this is essential for safe VFR cross-country operations in Australia',
       'D. Trust the attitude indicator and other flight instruments — the vestibular system provides unreliable attitude information in the absence of outside visual references',
     ],
     correct: 3,
@@ -1691,10 +1690,10 @@ export const pplaQuestions: {
   {
     question: 'A pilot who is unwell but decides to fly because "it\'s only a short flight" is demonstrating:',
     options: [
-      'A. Ood airmanship — short flights pose minimal risk — this is why thorough pre-flight planning is mandatory before every cross-country',
-      'B. Orrect risk management — duration is the primary factor in illness risk — this applies throughout all phases of flight from take-off to landing',
+      'A. Good airmanship — short flights pose minimal risk — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'B. Correct risk management — duration is the primary factor in illness risk — this applies throughout all phases of flight from take-off to landing',
       'C. Invulnerability bias — the belief that accidents happen to other people, not to them — a hazardous attitude that removes the objectivity needed for safe risk assessment',
-      'D. Ppropriate use of IMSAFE — short flights are exempt — density altitude is a key consideration and must be evaluated before every flight',
+      'D. Appropriate use of IMSAFE — short flights are exempt — density altitude is a key consideration and must be evaluated before every flight',
     ],
     correct: 2,
     explanation: 'Invulnerability bias (or the related "macho" attitude) is one of five hazardous attitudes identified in aviation human factors: anti-authority, impulsivity, invulnerability, macho, and resignation. "It won\'t happen to me" removes proper risk assessment. Many fatal accident pilots were on short, routine flights they had done dozens of times before.',
@@ -1775,7 +1774,7 @@ export const pplaQuestions: {
   {
     question: 'Temperature typically decreases with altitude in the troposphere because:',
     options: [
-      'A. Old air sinks and warm air rises automatically sorting temperatures — this applies throughout all phases of flight from take-off to landing',
+      'A. Cold air sinks and warm air rises automatically sorting temperatures — this applies throughout all phases of flight from take-off to landing',
       'B. The Earth\'s surface absorbs solar radiation and heats the air above it — higher altitudes receive less of this surface heating and are therefore cooler',
       'C. Ir is farther from the sun at higher altitudes — this is why thorough pre-flight planning is mandatory before every cross-country',
       'D. The weight of air above compresses lower layers, which makes them warmer and upper layers cooler — density altitude is a key consideration and must be evaluated before every flight',
@@ -1799,7 +1798,7 @@ export const pplaQuestions: {
   {
     question: 'Air pressure decreases with altitude because:',
     options: [
-      'A. There is less weight of atmosphere above — each layer must support less total air mass than the layer below',
+      'A. There is less weight of atmosphere above — each layer must support less total air mass than the layer below, so pressure decreases with altitude',
       'B. Air molecules move faster at altitude, spreading apart and reducing pressure',
       'C. Temperature decreases with altitude, reducing pressure',
       'D. Pressure decreases only in low-pressure systems',
@@ -1811,7 +1810,7 @@ export const pplaQuestions: {
   {
     question: 'Wind flows around a low-pressure system (in the southern hemisphere) in a:',
     options: [
-      'A. Clockwise direction',
+      'A. Anticlockwise direction',
       'B. Straight inward toward the centre',
       'C. Anticlockwise direction',
       'D. Straight outward from the centre',
@@ -1825,7 +1824,7 @@ export const pplaQuestions: {
     options: [
       'A. Anticlockwise direction',
       'B. Straight inward to the centre',
-      'C. Clockwise direction',
+      'C. Anticlockwise direction',
       'D. Straight outward from the centre',
     ],
     correct: 0,
@@ -1850,7 +1849,7 @@ export const pplaQuestions: {
       'A. The sea is always at higher pressure than the land — CASR Part 91 specifies the regulatory requirements relating to this principle',
       'B. During the day, land heats faster than the sea — air rises over the hot land, and cooler denser marine air flows in from the sea to replace it',
       'C. Sea breezes only occur in tropical regions — this concept is assessed in the CASA PPL theory examination',
-      'D. Ind always blows from sea to land at all times of day — this applies throughout all phases of flight from take-off to landing',
+      'D. Wind always blows from sea to land at all times of day — this applies throughout all phases of flight from take-off to landing',
     ],
     correct: 1,
     explanation: 'Sea breeze: during daylight hours, land heats faster than the sea. Warm air over the land rises, reducing surface pressure. Cooler, denser sea air flows in to replace it — creating the sea breeze. It typically develops mid-morning, strengthens through the afternoon, and dies at sunset. Coastal Australian pilots experience strong afternoon sea breezes.',
@@ -1861,8 +1860,8 @@ export const pplaQuestions: {
     options: [
       'A. At night when the land cools faster than the sea — air over the sea is now warmer and rises, and cooler land air flows seaward',
       'B. Only in the tropics — this applies throughout all phases of flight from take-off to landing',
-      'C. And breezes only occur in winter — understanding this helps pilots make safe and informed go/no-go decisions',
-      'D. Uring the day when the land is hot — correct application of this concept is tested in the PPL skill test',
+      'C. Land breezes only occur in winter — understanding this helps pilots make safe and informed go/no-go decisions',
+      'D. During the day when the land is hot — correct application of this concept is tested in the PPL skill test',
     ],
     correct: 0,
     explanation: 'Land breeze: at night, land cools faster than the sea (sea retains heat well). The sea surface becomes relatively warmer than the land. Air rises over the sea, reducing sea-level pressure, and cooler land air flows outward to the sea — a land breeze. Weaker than sea breezes, typically occurring in the late evening and early morning.',
@@ -1897,7 +1896,7 @@ export const pplaQuestions: {
     options: [
       'A. Arm air rises over a cold air mass — this forms part of the pre-flight planning requirements for PPL operations',
       'B. Moist air is forced to ascend over a mountain range — cooling, condensing, and producing cloud and precipitation on the windward side',
-      'C. Rographic lifting only produces fog, not cloud — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'C. Orographic lifting only produces fog, not cloud — this is why thorough pre-flight planning is mandatory before every cross-country',
       'D. N area of low pressure forces air upward from the surface — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 1,
@@ -1934,7 +1933,7 @@ export const pplaQuestions: {
       'A.  causes engine failure by ingesting hail — the effect is most significant at high altitude aerodromes on hot summer days — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
       'B.  reduces visibility to zero for several hours — CASR Part 91 specifies the regulatory requirements relating to this principle — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
       'C. It creates a brief intense downburst — an aircraft flying through a microburst encounters a headwind (IAS increase), then a strong downdraft, then a tailwind (IAS decrease) — causing a rapid loss of airspeed and altitude during approach or departure',
-      'D. Crobursts only affect aircraft above 10,000 ft — pilots must correctly apply this when planning each specific flight — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
+      'D. Microbursts only affect aircraft above 10,000 ft — pilots must correctly apply this when planning each specific flight — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
     ],
     correct: 2,
     explanation: 'Microburst: a concentrated downburst from a convective cell, typically 1–4 km across and lasting 2–5 minutes. Aircraft penetrating a microburst experience: initial headwind (airspeed increases, pilot reduces power), then a downburst (aircraft forced down), then a tailwind (airspeed drops sharply). The combination of performance loss during approach is potentially fatal and has caused several major accidents.',
@@ -1943,9 +1942,9 @@ export const pplaQuestions: {
   {
     question: '"Windshear" is defined as:',
     options: [
-      'A. Urbulence in the upper atmosphere near the jet stream — pilots must understand this to operate safely in Australian airspace',
+      'A. Turbulence in the upper atmosphere near the jet stream — pilots must understand this to operate safely in Australian airspace',
       'B. A sudden change in wind direction or speed over a short distance or time — either horizontal or vertical — that can cause sudden changes in aircraft performance',
-      'C. Ind blowing perpendicular to the runway — cross-wind — understanding this is essential for safe VFR cross-country operations in Australia',
+      'C. Wind blowing perpendicular to the runway — cross-wind — understanding this is essential for safe VFR cross-country operations in Australia',
       'D.  strong sustained wind above 30 kt at surface level — this principle applies to all piston-engine aircraft in Australian airspace',
     ],
     correct: 1,
@@ -1955,7 +1954,7 @@ export const pplaQuestions: {
   {
     question: 'A "cold front" is:',
     options: [
-      'A. Old fronts only produce rain — never thunderstorms — density altitude is a key consideration and must be evaluated before every flight',
+      'A. Cold fronts only produce rain — never thunderstorms — density altitude is a key consideration and must be evaluated before every flight',
       'B.  slow-moving weather system with minimal cloud — understanding this helps pilots make safe and informed go/no-go decisions',
       'C.  boundary where cold air retreats and warm air advances at the surface — this principle applies to all piston-engine aircraft in Australian airspace',
       'D. The leading edge of an advancing cold air mass — dense cold air wedges under warmer air, forcing it to rise rapidly, producing cloud and precipitation along and ahead of the front',
@@ -1979,9 +1978,9 @@ export const pplaQuestions: {
   {
     question: '"Thunderstorms" require which three conditions?',
     options: [
-      'A. Igh humidity, low pressure, and wind speed above 20 kt — density altitude is a key consideration and must be evaluated before every flight',
-      'B. Emperature above +30°C, humidity above 90%, and light winds — this forms part of the pre-flight planning requirements for PPL operations',
-      'C. Hunderstorms require cold fronts only — they cannot form in other conditions — understanding this helps pilots make safe and informed go/no-go decisions',
+      'A. High humidity, low pressure, and wind speed above 20 kt — density altitude is a key consideration and must be evaluated before every flight',
+      'B. Temperature above +30°C, humidity above 90%, and light winds — this forms part of the pre-flight planning requirements for PPL operations',
+      'C. Thunderstorms require cold fronts only — they cannot form in other conditions — understanding this helps pilots make safe and informed go/no-go decisions',
       'D. A lifting mechanism (front, orographic, surface heating), a conditionally unstable atmosphere, and sufficient moisture — all three must be present',
     ],
     correct: 3,
@@ -1992,9 +1991,9 @@ export const pplaQuestions: {
     question: 'The most hazardous phase of a thunderstorm for light aircraft is the:',
     options: [
       'A. Ll stages are equally hazardous — this applies throughout all phases of flight from take-off to landing',
-      'B. Issipating stage — when the storm collapses inward — density altitude is a key consideration and must be evaluated before every flight',
+      'B. Dissipating stage — when the storm collapses inward — density altitude is a key consideration and must be evaluated before every flight',
       'C. Mature stage — severe turbulence throughout, icing at all levels, lightning, hail, microbursts, and rapid pressure changes all occur simultaneously',
-      'D. Umulus (developing) stage — when the storm is building upward — the aircraft flight manual provides specific values for each aircraft type',
+      'D. Cumulus (developing) stage — when the storm is building upward — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 2,
     explanation: 'The mature thunderstorm stage is the most hazardous: strong updrafts (60 kt+) and downdrafts exist simultaneously, severe turbulence, icing from cloud base to well above the top, hail, lightning, microbursts, and surface wind gusts. Aircraft penetration of a mature thunderstorm can cause structural failure. The rule: stay well clear.',
@@ -2040,8 +2039,8 @@ export const pplaQuestions: {
     question: '"Advection fog" forms when:',
     options: [
       'A. Warm moist air moves horizontally over a cooler surface — the air is cooled from below to its dew point',
-      'B. Old fronts pass through moist air masses — correct application of this concept is tested in the PPL skill test',
-      'C. Dvection fog only forms over ocean surfaces — this concept is assessed in the CASA PPL theory examination',
+      'B. Cold fronts pass through moist air masses — correct application of this concept is tested in the PPL skill test',
+      'C. Advection fog only forms over ocean surfaces — this concept is assessed in the CASA PPL theory examination',
       'D. The ground cools rapidly on clear nights — this forms part of the pre-flight planning requirements for PPL operations',
     ],
     correct: 0,
@@ -2076,9 +2075,9 @@ export const pplaQuestions: {
     question: '"Cumulonimbus" cloud (Cb) is recognised by pilots because it:',
     options: [
       'A. Has a flat, anvil-shaped top caused by the tropopause halting vertical development, associated with severe turbulence, hail, lightning, heavy rain, and strong wind gusts',
-      'B. Lways produces light, steady rain — CASR Part 91 specifies the regulatory requirements relating to this principle',
-      'C. Umulonimbus is only hazardous to aircraft in its interior — near the cloud is safe — understanding this is essential for safe VFR cross-country operations in Australia',
-      'D. Orms only at night and dissipates by sunrise — correct application of this concept is tested in the PPL skill test',
+      'B. Always produces light, steady rain — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'C. Cumulonimbus is only hazardous to aircraft in its interior — near the cloud is safe — understanding this is essential for safe VFR cross-country operations in Australia',
+      'D. Forms only at night and dissipates by sunrise — correct application of this concept is tested in the PPL skill test',
     ],
     correct: 0,
     explanation: 'Cumulonimbus (Cb): when strong convection reaches the tropopause, the top spreads into the characteristic anvil shape (cirrus anvil). The Cb is associated with: severe turbulence, strong up and downdrafts, heavy rain, hail, icing, lightning, and surface wind gusts. Hazards extend well beyond the visible cloud. VFR pilots must avoid cumulonimbus.',
@@ -2111,8 +2110,8 @@ export const pplaQuestions: {
   {
     question: 'The symbol "CB" after a cloud layer in a METAR (e.g., FEW020CB) indicates:',
     options: [
-      'A. Loud base 2000 ft with wind direction from the coast — understanding this helps pilots make safe and informed go/no-go decisions',
-      'B. Old and breezy conditions at 2000 ft — this is covered in both the PPL exam syllabus and practical flying training',
+      'A. Cloud base 2000 ft with wind direction from the coast — understanding this helps pilots make safe and informed go/no-go decisions',
+      'B. Cold and breezy conditions at 2000 ft — this is covered in both the PPL exam syllabus and practical flying training',
       'C.  cloud building (developing) condition — correct application of this concept is tested in the PPL skill test',
       'D. Cumulonimbus cloud — a significant weather indicator requiring pilot attention regardless of the reported cloud amount',
     ],
@@ -2159,10 +2158,10 @@ export const pplaQuestions: {
   {
     question: 'A "SIGMET" provides information about:',
     options: [
-      'A. Ind and temperature forecasts at cruise altitude — understanding this helps pilots make safe and informed go/no-go decisions',
-      'B. Outine aerodrome weather observations — this principle applies to all piston-engine aircraft in Australian airspace',
+      'A. Wind and temperature forecasts at cruise altitude — understanding this helps pilots make safe and informed go/no-go decisions',
+      'B. Routine aerodrome weather observations — this principle applies to all piston-engine aircraft in Australian airspace',
       'C. Significant meteorological conditions hazardous to all aircraft — severe turbulence, severe icing, tropical cyclones, volcanic ash, and widespread dust storms',
-      'D. IGMETs are only issued for military operations — the aircraft flight manual provides specific values for each aircraft type',
+      'D. SIGMETs are only issued for military operations — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 2,
     explanation: 'SIGMET (Significant Meteorological Information): issued for conditions hazardous to all aircraft — severe or extreme turbulence, severe icing, dust/sandstorm, tropical cyclone, or volcanic ash. Pilots must check for SIGMETs affecting their route during pre-flight planning via NAIPS.',
@@ -2232,9 +2231,9 @@ export const pplaQuestions: {
     question: '"Clear ice" (glaze ice) is more hazardous than "rime ice" because:',
     options: [
       'A. Clear ice is harder and denser, conforms to the aerofoil shape making it harder to detect, and is very difficult to remove — it severely disrupts the aerodynamic profile',
-      'B. Lear ice forms faster and at higher temperatures — the effect is most significant at high altitude aerodromes on hot summer days',
-      'C. Lear ice causes engine failure while rime ice only affects the airframe — understanding this is essential for safe VFR cross-country operations in Australia',
-      'D. Oth types are equally hazardous — the distinction is only academic — the effect is most significant at high altitude aerodromes on hot summer days',
+      'B. Clear ice forms faster and at higher temperatures — the effect is most significant at high altitude aerodromes on hot summer days',
+      'C. Clear ice causes engine failure while rime ice only affects the airframe — understanding this is essential for safe VFR cross-country operations in Australia',
+      'D. Both types are equally hazardous — the distinction is only academic — the effect is most significant at high altitude aerodromes on hot summer days',
     ],
     correct: 0,
     explanation: 'Clear (glaze) ice: formed from large supercooled water droplets (freezing rain or heavy cloud). Hard, clear, difficult to detect, and conforms closely to the aircraft surface — making it particularly insidious. Rime ice: formed from small droplets, white and brittle, easier to see but can build quickly. Clear ice causes the greatest aerodynamic disruption.',
@@ -2255,9 +2254,9 @@ export const pplaQuestions: {
   {
     question: 'The "QNH" set on an altimeter provides:',
     options: [
-      'A. Eight above the aerodrome surface — this is covered in both the PPL exam syllabus and practical flying training',
-      'B. Ressure height (altimeter reads equivalent ISA altitude) — correct application of this concept is tested in the PPL skill test',
-      'C. Eight above the highest terrain within 50 nm — this principle applies to all piston-engine aircraft in Australian airspace',
+      'A. Weight above the aerodrome surface — this is covered in both the PPL exam syllabus and practical flying training',
+      'B. Pressure height (altimeter reads equivalent ISA altitude) — correct application of this concept is tested in the PPL skill test',
+      'C. Weight above the highest terrain within 50 nm — this principle applies to all piston-engine aircraft in Australian airspace',
       'D. Altitude above mean sea level — when QNH is set correctly, the altimeter reads the aircraft\'s altitude above mean sea level',
     ],
     correct: 3,
@@ -2292,9 +2291,9 @@ export const pplaQuestions: {
     question: 'The "INTER" group in a TAF means:',
     options: [
       'A. Intermittent — brief fluctuations expected, each lasting less than 30 minutes, frequently recurring during the stated period',
-      'B. Onditions will improve between the stated times — this forms part of the pre-flight planning requirements for PPL operations',
-      'C. Nternational aerodrome operations only — this applies throughout all phases of flight from take-off to landing',
-      'D. Nternational conditions apply — correct application of this concept is tested in the PPL skill test',
+      'B. Conditions will improve between the stated times — this forms part of the pre-flight planning requirements for PPL operations',
+      'C. International aerodrome operations only — this applies throughout all phases of flight from take-off to landing',
+      'D. International conditions apply — correct application of this concept is tested in the PPL skill test',
     ],
     correct: 0,
     explanation: 'INTER (intermittent): frequent brief fluctuations in conditions, each expected to last less than 30 minutes but occurring repeatedly. Similar to TEMPO but shorter duration per occurrence. Both TEMPO and INTER represent the worst-case conditions during the relevant period for planning purposes.',
@@ -2305,7 +2304,7 @@ export const pplaQuestions: {
     options: [
       'A. Only the METAR at the departure aerodrome — this forms part of the pre-flight planning requirements for PPL operations',
       'B. Only the internet weather app on their phone — density altitude is a key consideration and must be evaluated before every flight',
-      'C. Eather planning is only required for IFR flights — this concept is assessed in the CASA PPL theory examination',
+      'C. Weather planning is only required for IFR flights — this concept is assessed in the CASA PPL theory examination',
       'D. NAIPS for TAF, ARFOR, METAR, and NOTAMs for the departure aerodrome, destination, and alternates — plus any SIGMETs or AIRMET affecting the route',
     ],
     correct: 3,
@@ -2315,9 +2314,9 @@ export const pplaQuestions: {
   {
     question: '"True north" differs from "magnetic north" because:',
     options: [
-      'A. Rue north moves seasonally while magnetic north is fixed — correct application of this concept is tested in the PPL skill test',
-      'B. Hey are identical — the terms are interchangeable in Australian aviation — CASR Part 91 specifies the regulatory requirements relating to this principle',
-      'C. Rue north is used for GPS while magnetic north is used for VOR navigation only — the effect is most significant at high altitude aerodromes on hot summer days',
+      'A. True north moves seasonally while magnetic north is fixed — correct application of this concept is tested in the PPL skill test',
+      'B. They are identical — the terms are interchangeable in Australian aviation — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'C. True north is used for GPS while magnetic north is used for VOR navigation only — the effect is most significant at high altitude aerodromes on hot summer days',
       'D. True north is the geographic North Pole — the axis about which the Earth rotates. Magnetic north is where the Earth\'s magnetic field points, located some distance from the geographic pole',
     ],
     correct: 3,
@@ -2339,10 +2338,10 @@ export const pplaQuestions: {
   {
     question: '"Compass deviation" differs from magnetic variation because:',
     options: [
-      'A. Viation only affects digital compasses, not traditional magnetic compasses — this concept is assessed in the CASA PPL theory examination — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
+      'A. Deviation only affects digital compasses, not traditional magnetic compasses — this concept is assessed in the CASA PPL theory examination — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
       'B. Deviation is caused by the magnetic influence of the aircraft itself — metals, electrical wiring, and equipment create local magnetic disturbances that deflect the compass needle from magnetic north',
-      'C. Viation is the same as variation — both terms describe the same error — this applies throughout all phases of flight from take-off to landing — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
-      'D. Viation changes with latitude while variation is constant — this is why thorough pre-flight planning is mandatory before every cross-country — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
+      'C. Deviation is the same as variation — both terms describe the same error — this applies throughout all phases of flight from take-off to landing — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
+      'D. Deviation changes with latitude while variation is constant — this is why thorough pre-flight planning is mandatory before every cross-country — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
     ],
     correct: 1,
     explanation: 'Compass deviation is caused by the aircraft — ferrous metals, electrical systems, and instruments create local magnetic fields that deflect the compass from the magnetic meridian. Deviation changes with aircraft heading (it is different on north, south, east, and west) and is calibrated on a compass swing. Deviation corrections are recorded on the compass deviation card.',
@@ -2351,9 +2350,9 @@ export const pplaQuestions: {
   {
     question: 'The compass deviation card:',
     options: [
-      'A. Hows the local magnetic variation for each month of the year — this concept is assessed in the CASA PPL theory examination',
+      'A. Shows the local magnetic variation for each month of the year — this concept is assessed in the CASA PPL theory examination',
       'B. Records the deviation corrections for various compass headings — the pilot uses it to find the true compass heading to fly to achieve the desired magnetic heading',
-      'C. Hows the difference between indicated altitude and true altitude — the aircraft flight manual provides specific values for each aircraft type',
+      'C. Shows the difference between indicated altitude and true altitude — the aircraft flight manual provides specific values for each aircraft type',
       'D. S only required for IFR aircraft — understanding this helps pilots make safe and informed go/no-go decisions',
     ],
     correct: 1,
@@ -2388,9 +2387,9 @@ export const pplaQuestions: {
     question: '"Wind correction angle" (WCA) is applied to:',
     options: [
       'A. Angle the aircraft into the wind so the track made good equals the desired track — compensating for the tendency of wind to drift the aircraft sideways',
-      'B. Orrect for the coriolis effect on the flight path — pilots must correctly apply this when planning each specific flight',
-      'C. Orrect for compass deviation — this forms part of the pre-flight planning requirements for PPL operations',
-      'D. Orrect for magnetic variation — the aircraft flight manual provides specific values for each aircraft type',
+      'B. Correct for the coriolis effect on the flight path — pilots must correctly apply this when planning each specific flight',
+      'C. Correct for compass deviation — this forms part of the pre-flight planning requirements for PPL operations',
+      'D. Correct for magnetic variation — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 0,
     explanation: 'WCA is the angle between the desired track (where you want to go) and the required heading (where you point the nose) to compensate for crosswind drift. If wind is from the right, you head into the wind (right of track). WCA is calculated using the navigation computer from TAS, track, and wind velocity.',
@@ -2399,10 +2398,10 @@ export const pplaQuestions: {
   {
     question: 'The navigation computer (E6-B or circular slide rule) is used to calculate:',
     options: [
-      'A. Adio frequency settings and transponder codes — understanding this helps pilots make safe and informed go/no-go decisions',
-      'B. Istance to destination only — understanding this is essential for safe VFR cross-country operations in Australia',
+      'A. Radio frequency settings and transponder codes — understanding this helps pilots make safe and informed go/no-go decisions',
+      'B. Distance to destination only — understanding this is essential for safe VFR cross-country operations in Australia',
       'C. True airspeed from IAS and density height, wind correction angle, drift, groundspeed, flight time, and fuel burn',
-      'D. Loud base height and dew point spread — this is covered in both the PPL exam syllabus and practical flying training',
+      'D. Cloud base height and dew point spread — this is covered in both the PPL exam syllabus and practical flying training',
     ],
     correct: 2,
     explanation: 'The circular navigation computer performs: IAS to TAS conversion (using density altitude), wind correction angle and drift calculation, groundspeed calculation, flight time from distance and GS, fuel burn from time and consumption rate, and unit conversions. The PPL exam requires its use.',
@@ -2414,7 +2413,7 @@ export const pplaQuestions: {
       'A. O correction — southerly wind is a crosswind on any easterly track — this forms part of the pre-flight planning requirements for PPL operations',
       'B. The aircraft must head right of track (toward the south) to compensate for the southerly wind pushing the aircraft north of track',
       'C. The southerly wind only affects north-south tracks, not east-west tracks — pilots must correctly apply this when planning each specific flight',
-      'D. Eft (starboard correction needed) — understanding this is essential for safe VFR cross-country operations in Australia',
+      'D. Left (starboard correction needed) — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 1,
     explanation: 'On track 090°T (heading east), a southerly wind (from 180°, blowing northward) will push the aircraft north of the intended track. To maintain track, the aircraft must head south of track — into the wind. The WCA is to the right (south). The exact angle is calculated on the flight computer.',
@@ -2473,8 +2472,8 @@ export const pplaQuestions: {
     options: [
       'A. The grid is only accurate near the equator — the aircraft flight manual provides specific values for each aircraft type',
       'B. Latitude lines (parallels) run east-west and longitude lines (meridians) run north-south — they intersect at right angles, creating a grid that uniquely identifies every point on Earth\'s surface',
-      'C. Atitude and longitude are only used for flight plans — not for navigating with a chart — this principle applies to all piston-engine aircraft in Australian airspace',
-      'D. Hey are drawn parallel to the equator and magnetic north respectively — pilots must correctly apply this when planning each specific flight',
+      'C. Latitude and longitude are only used for flight plans — not for navigating with a chart — this principle applies to all piston-engine aircraft in Australian airspace',
+      'D. They are drawn parallel to the equator and magnetic north respectively — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 1,
     explanation: 'Latitude (parallels) are east-west lines measured 0–90° from the equator. Longitude (meridians) are north-south lines measured 0–180° from the prime meridian (Greenwich). Together they provide a unique address for any point. Pilots use latitude and longitude to describe waypoints and file flight plans.',
@@ -2496,9 +2495,9 @@ export const pplaQuestions: {
     question: 'Measuring distance on a VNC chart using the latitude scale:',
     options: [
       'A. Dividers are used to measure the distance and then applied to the latitude scale on the side of the chart — since 1 minute of latitude = 1 nautical mile',
-      'B. Istance must be calculated from the map\'s kilometre scale only — the effect is most significant at high altitude aerodromes on hot summer days',
-      'C. Istance is measured by counting the longitude lines — understanding this is essential for safe VFR cross-country operations in Australia',
-      'D. Ividers are placed across the equator to measure distance — understanding this helps pilots make safe and informed go/no-go decisions',
+      'B. Distance must be calculated from the map\'s kilometre scale only — the effect is most significant at high altitude aerodromes on hot summer days',
+      'C. Distance is measured by counting the longitude lines — understanding this is essential for safe VFR cross-country operations in Australia',
+      'D. Dividers are placed across the equator to measure distance — understanding this helps pilots make safe and informed go/no-go decisions',
     ],
     correct: 0,
     explanation: 'Using the latitude scale for distance measurement: open dividers to the desired distance on the chart, then place them against the latitude scale at the latitude of the route (because the scale varies with latitude on some projections). 1 minute of latitude = 1 nm. This is the standard VFR chart distance measurement method.',
@@ -2543,10 +2542,10 @@ export const pplaQuestions: {
   {
     question: '"Beginning of daylight" (BOD) and "end of daylight" (EOD) are based on:',
     options: [
-      'A. Autical twilight — when the sun is 12° below the horizon — this is why thorough pre-flight planning is mandatory before every cross-country',
-      'B. Egal daylight defined as exactly 30 minutes before sunrise to 30 minutes after sunset — the aircraft flight manual provides specific values for each aircraft type',
+      'A. Nautical twilight — when the sun is 12° below the horizon — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'B. Legal daylight defined as exactly 30 minutes before sunrise to 30 minutes after sunset — the aircraft flight manual provides specific values for each aircraft type',
       'C. Civil twilight — BOD is the start of morning civil twilight and EOD is the end of evening civil twilight, when the sun is 6° below the horizon',
-      'D. Unrise and sunset times — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'D. Sunrise and sunset times — CASR Part 91 specifies the regulatory requirements relating to this principle',
     ],
     correct: 2,
     explanation: 'BOD and EOD are defined by civil twilight — when the sun is 6° below the horizon. Civil twilight provides adequate natural lighting for VFR flight. BOD = start of morning civil twilight (before sunrise); EOD = end of evening civil twilight (after sunset). BOD and EOD are published daily in the CASA AIP and vary with latitude and season.',
@@ -2579,9 +2578,9 @@ export const pplaQuestions: {
   {
     question: '"Dead reckoning" navigation means:',
     options: [
-      'A. Vigation using radio aids with the GPS turned off — pilots must correctly apply this when planning each specific flight — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
+      'A. Navigation using radio aids with the GPS turned off — pilots must correctly apply this when planning each specific flight — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
       'B. Technique used only when lost — this concept is assessed in the CASA PPL theory examination — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
-      'C. Ing the compass alone with no corrections applied — pilots must understand this to operate safely in Australian airspace — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
+      'C. Wing the compass alone with no corrections applied — pilots must understand this to operate safely in Australian airspace — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
       'D. Calculating the aircraft\'s position by projecting forward from a known position using heading, groundspeed, and elapsed time — without reference to outside position information',
     ],
     correct: 3,
@@ -2592,8 +2591,8 @@ export const pplaQuestions: {
     question: 'A "CTAF" (Common Traffic Advisory Frequency) is used at non-controlled aerodromes for:',
     options: [
       'A. Pilots to make self-announcement broadcasts of their position and intentions — allowing traffic information exchange without ATC involvement',
-      'B. Iling flight plans directly with Airservices — this applies throughout all phases of flight from take-off to landing',
-      'C. Eather broadcasts only — the effect is most significant at high altitude aerodromes on hot summer days',
+      'B. Filing flight plans directly with Airservices — this applies throughout all phases of flight from take-off to landing',
+      'C. Weather broadcasts only — the effect is most significant at high altitude aerodromes on hot summer days',
       'D. TC clearance requests — density altitude is a key consideration and must be evaluated before every flight',
     ],
     correct: 0,
@@ -2629,8 +2628,8 @@ export const pplaQuestions: {
     options: [
       'A. The pilot selects circuit direction based on wind conditions — the aircraft flight manual provides specific values for each aircraft type',
       'B. Left-hand (anticlockwise) unless otherwise published — the ERSA specifies the circuit direction for each runway',
-      'C. Lways left-hand (anticlockwise when viewed from above) — this forms part of the pre-flight planning requirements for PPL operations',
-      'D. Lways right-hand (clockwise when viewed from above) — this concept is assessed in the CASA PPL theory examination',
+      'C. Always left-hand (anticlockwise when viewed from above) — this forms part of the pre-flight planning requirements for PPL operations',
+      'D. Always right-hand (clockwise when viewed from above) — this concept is assessed in the CASA PPL theory examination',
     ],
     correct: 1,
     explanation: 'Standard circuit direction is left-hand (the pilot turns left in the circuit). Right-hand circuits are published in the ERSA when terrain, noise, or other aircraft operations require it. Always check the ERSA entry for the specific aerodrome and runway before joining the circuit.',
@@ -2639,10 +2638,10 @@ export const pplaQuestions: {
   {
     question: 'A "VOR" (VHF Omnidirectional Range) is used for:',
     options: [
-      'A. Easuring height above terrain — density altitude is a key consideration and must be evaluated before every flight',
-      'B. Ommunication with ATC in remote areas — this principle applies to all piston-engine aircraft in Australian airspace',
+      'A. Measuring height above terrain — density altitude is a key consideration and must be evaluated before every flight',
+      'B. Communication with ATC in remote areas — this principle applies to all piston-engine aircraft in Australian airspace',
       'C. Determining the aircraft\'s bearing FROM or TO the VOR station — the aircraft\'s CDI (course deviation indicator) shows the angular difference from the selected radial',
-      'D. Eather radar — forecasting thunderstorm locations — correct application of this concept is tested in the PPL skill test',
+      'D. Weather radar — forecasting thunderstorm locations — correct application of this concept is tested in the PPL skill test',
     ],
     correct: 2,
     explanation: 'A VOR transmits 360 radials from the station, each identified by the magnetic bearing FROM the station. The aircraft\'s VOR receiver and CDI (or HSI) display whether the aircraft is on, right of, or left of the selected radial. VOR provides course guidance for airways and approaches. Range is typically 100–150 nm for high-altitude VORs.',
@@ -2687,7 +2686,7 @@ export const pplaQuestions: {
   {
     question: '"DME" (Distance Measuring Equipment) indicates:',
     options: [
-      'A. Rue airspeed derived from ground speed — pilots must understand this to operate safely in Australian airspace',
+      'A. True airspeed derived from ground speed — pilots must understand this to operate safely in Australian airspace',
       'B. The aircraft\'s altitude above the DME station — the aircraft flight manual provides specific values for each aircraft type',
       'C. The slant range distance from the aircraft to the ground DME transponder — nearly equal to ground distance at normal cruise altitudes',
       'D. The time remaining to the selected station at current groundspeed — understanding this is essential for safe VFR cross-country operations in Australia',
@@ -2761,7 +2760,7 @@ export const pplaQuestions: {
     options: [
       'A. The altitude at which VFR flight must transition to IFR — density altitude is a key consideration and must be evaluated before every flight',
       'B. The altitude below which QNH is set and above which 1013 hPa (standard pressure) is set — flight levels are used above the transition layer',
-      'C. Lways 10,000 ft AMSL regardless of QNH — correct application of this concept is tested in the PPL skill test',
+      'C. Always 10,000 ft AMSL regardless of QNH — correct application of this concept is tested in the PPL skill test',
       'D. The altitude at which oxygen must be used — this forms part of the pre-flight planning requirements for PPL operations',
     ],
     correct: 1,
@@ -2819,10 +2818,10 @@ export const pplaQuestions: {
   {
     question: '"NOTAM" stands for:',
     options: [
-      'A. Ational Operations Technical Airspace Management — pilots must correctly apply this when planning each specific flight',
+      'A. National Operations Technical Airspace Management — pilots must correctly apply this when planning each specific flight',
       'B. Notice to Airmen (or Notice to Air Missions) — temporary changes and hazards affecting aeronautical information',
-      'C. Otice to Air Movements — this forms part of the pre-flight planning requirements for PPL operations',
-      'D. Avigation Operations Technical Advisory Message — the aircraft flight manual provides specific values for each aircraft type',
+      'C. Notice to Air Movements — this forms part of the pre-flight planning requirements for PPL operations',
+      'D. Navigation Operations Technical Advisory Message — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 1,
     explanation: 'NOTAMs (Notices to Airmen/Air Missions) provide temporary changes to aeronautical information: runway closures, navigation aid outages, temporary restricted areas, parachute operations, bird hazards, and equipment outages. Checking NOTAMs via NAIPS before every flight is mandatory for safe operations.',
@@ -2834,7 +2833,7 @@ export const pplaQuestions: {
       'A. Rcraft performance charts — understanding this is essential for safe VFR cross-country operations in Australia — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
       'B. E AIP only covers IFR operations — this is covered in both the PPL exam syllabus and practical flying training — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
       'C. Permanent aeronautical information — airspace structure, procedures, aerodromes, navigation aids, and regulations — kept current by AIRAC amendments issued every 28 days',
-      'D. Ather forecasts updated every 6 hours — pilots must correctly apply this when planning each specific flight — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
+      'D. Rather forecasts updated every 6 hours — pilots must correctly apply this when planning each specific flight — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
     ],
     correct: 2,
     explanation: 'The Australian AIP contains permanent aeronautical information: airspace classification and dimensions, aerodrome procedures, approach charts, communication frequencies, navigation aid data, and general operating rules. Updated through AIRAC (Aeronautical Information Regulation and Control) cycle every 28 days.',
@@ -2855,10 +2854,10 @@ export const pplaQuestions: {
   {
     question: 'A "MBZ" (Mandatory Broadcast Zone) requires all pilots to:',
     options: [
-      'A. Ile a flight plan before entry — this concept is assessed in the CASA PPL theory examination',
+      'A. Mile a flight plan before entry — this concept is assessed in the CASA PPL theory examination',
       'B. Ly below 1500 ft AGL throughout the MBZ — this is why thorough pre-flight planning is mandatory before every cross-country',
       'C. Make broadcasts on the published MBZ frequency and listen on that frequency throughout the MBZ — the same as CTAF but with a mandatory requirement',
-      'D. Btain ATC clearance before entry — the aircraft flight manual provides specific values for each aircraft type',
+      'D. Obtain ATC clearance before entry — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 2,
     explanation: 'A Mandatory Broadcast Zone (MBZ) is similar to a CTAF but the broadcasts are mandatory rather than recommended. All aircraft must broadcast their intentions on entering, during operations, and departing the MBZ. MBZ areas are shown on VNC charts. Specific procedures are published in the ERSA.',
@@ -2879,7 +2878,7 @@ export const pplaQuestions: {
   {
     question: 'The en-route VFR cruising levels below 5000 ft AMSL follow which rule?',
     options: [
-      'A. Emispherical rules only apply above 5000 ft — this is covered in both the PPL exam syllabus and practical flying training',
+      'A. Hemispherical rules only apply above 5000 ft — this is covered in both the PPL exam syllabus and practical flying training',
       'B. O specific cruising level requirement below 5000 ft — this concept is assessed in the CASA PPL theory examination',
       'C. FR aircraft always cruise at 500 ft intervals regardless of track — pilots must understand this to operate safely in Australian airspace',
       'D. ODD thousands of feet (1000, 3000, 5000) for tracks 000–179°, EVEN thousands (2000, 4000) for tracks 180–359° — plus 500 ft for VFR',
@@ -2963,10 +2962,10 @@ export const pplaQuestions: {
   {
     question: 'Before commencing a flight, the pilot must be satisfied that the aircraft is:',
     options: [
-      'A. Oaded to at least minimum weight for stability — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'A. Loaded to at least minimum weight for stability — CASR Part 91 specifies the regulatory requirements relating to this principle',
       'B. Uelled to capacity regardless of planned flight duration — this applies throughout all phases of flight from take-off to landing',
       'C. Serviceable and airworthy — a daily inspection has been performed, all required documents are on board, and the aircraft is fit for the intended operation',
-      'D. Irworthy only if the aircraft has been flown in the last 7 days — the aircraft flight manual provides specific values for each aircraft type',
+      'D. Airworthy only if the aircraft has been flown in the last 7 days — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 2,
     explanation: 'Before flight, the pilot must ensure: daily inspection completed and aircraft serviceable; maintenance release current; weight and balance within limits; fuel and oil adequate; required documents on board (registration, C of A, maintenance release, radio licence); and the aircraft is fit for the planned operation.',
@@ -2988,9 +2987,9 @@ export const pplaQuestions: {
     question: 'The "right of way" rules — which aircraft has priority?',
     options: [
       'A. Balloons have right of way over gliders, gliders over airships, airships over powered aircraft, and all give way to aircraft in distress',
-      'B. Arger aircraft always have priority over smaller aircraft — this principle applies to all piston-engine aircraft in Australian airspace',
-      'C. Ircraft higher and faster have right of way — the effect is most significant at high altitude aerodromes on hot summer days',
-      'D. Owered aircraft always give way to other powered aircraft — this is covered in both the PPL exam syllabus and practical flying training',
+      'B. Larger aircraft always have priority over smaller aircraft — this principle applies to all piston-engine aircraft in Australian airspace',
+      'C. Aircraft higher and faster have right of way — the effect is most significant at high altitude aerodromes on hot summer days',
+      'D. Powered aircraft always give way to other powered aircraft — this is covered in both the PPL exam syllabus and practical flying training',
     ],
     correct: 0,
     explanation: 'CASR Part 91 right of way rules: aircraft in distress have absolute priority. Then: balloons > gliders > airships > engine-powered aircraft. Within the same category: aircraft being overtaken has right of way (overtaking aircraft passes to the right). Head-on: both turn right. Converging: aircraft on the right has right of way.',
@@ -3011,7 +3010,7 @@ export const pplaQuestions: {
   {
     question: 'Two aircraft are converging at the same altitude. The right of way rule is:',
     options: [
-      'A. Oth must alter course — this principle applies to all piston-engine aircraft in Australian airspace',
+      'A. Both must alter course — this principle applies to all piston-engine aircraft in Australian airspace',
       'B. The aircraft on the right has right of way — the aircraft seeing the other aircraft on its right must give way',
       'C. The faster aircraft gives way — this applies throughout all phases of flight from take-off to landing',
       'D. The aircraft on the left must give way — this is why thorough pre-flight planning is mandatory before every cross-country',
@@ -3072,8 +3071,8 @@ export const pplaQuestions: {
     question: 'A VFR pilot must not enter cloud because:',
     options: [
       'A. FR pilots may enter cloud if the flight is below 3000 ft — this principle applies to all piston-engine aircraft in Australian airspace',
-      'B. Loud causes engine damage from moisture ingestion — understanding this helps pilots make safe and informed go/no-go decisions',
-      'C. Ntering cloud is only prohibited above 10,000 ft — correct application of this concept is tested in the PPL skill test',
+      'B. Cloud causes engine damage from moisture ingestion — understanding this helps pilots make safe and informed go/no-go decisions',
+      'C. Entering cloud is only prohibited above 10,000 ft — correct application of this concept is tested in the PPL skill test',
       'D. Without instruments and instrument training, a VFR pilot entering cloud rapidly loses attitude reference — spatial disorientation and loss of control typically follow within 3 minutes',
     ],
     correct: 3,
@@ -3108,7 +3107,7 @@ export const pplaQuestions: {
     question: 'An aircraft\'s "Certificate of Airworthiness" (C of A):',
     options: [
       'A. Is issued by CASA and certifies the aircraft type meets airworthiness standards — it remains valid as long as the aircraft is maintained in accordance with the approved maintenance schedule',
-      'B. Ust be renewed annually by an LAME — correct application of this concept is tested in the PPL skill test',
+      'B. Must be renewed annually by an LAME — correct application of this concept is tested in the PPL skill test',
       'C. S issued by the manufacturer and never expires — this is covered in both the PPL exam syllabus and practical flying training',
       'D. Only applies to commercial aircraft — light aircraft use a flight permit — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
@@ -3122,7 +3121,7 @@ export const pplaQuestions: {
       'A. The aircraft is released for the next period of operation — signed by an LAME after maintenance confirming the aircraft is airworthy and fit for flight',
       'B. The aircraft fuel has been verified as the correct type — this is why thorough pre-flight planning is mandatory before every cross-country',
       'C. The aircraft has been released for sale — understanding this helps pilots make safe and informed go/no-go decisions',
-      'D. Assengers have been briefed on safety procedures — the effect is most significant at high altitude aerodromes on hot summer days',
+      'D. Passengers have been briefed on safety procedures — the effect is most significant at high altitude aerodromes on hot summer days',
     ],
     correct: 0,
     explanation: 'The maintenance release (formerly known as the "flight authority") is the legal authority for the aircraft to fly. It is signed by an LAME certifying the aircraft has been maintained to airworthy standard and is fit for flight. It must be on board for every flight. If defects are found that affect airworthiness, the maintenance release is invalid until the defect is rectified.',
@@ -3133,8 +3132,8 @@ export const pplaQuestions: {
     options: [
       'A. Ly to the nearest maintenance facility to have it assessed in the air — pilots must correctly apply this when planning each specific flight',
       'B. Not fly until the defect is assessed and either cleared as acceptable for flight or rectified by an LAME — and the maintenance release is updated accordingly',
-      'C. Roceed if the defect is minor and unlikely to affect the flight — density altitude is a key consideration and must be evaluated before every flight',
-      'D. Ote the defect in the tech log and fly, advising the next maintenance engineer — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'C. Proceed if the defect is minor and unlikely to affect the flight — density altitude is a key consideration and must be evaluated before every flight',
+      'D. Note the defect in the tech log and fly, advising the next maintenance engineer — CASR Part 91 specifies the regulatory requirements relating to this principle',
     ],
     correct: 1,
     explanation: 'Any defect discovered pre-flight must be assessed by a person with appropriate technical authority before flight. The pilot must not fly with a known defect affecting airworthiness. Some defects (like a broken cockpit light) may be cleared as MEL (minimum equipment list) items for a specific operation; others require rectification before flight.',
@@ -3157,8 +3156,8 @@ export const pplaQuestions: {
     options: [
       'A. Independently investigating transport accidents and incidents — including aviation — to improve safety, not to assign blame or prosecution',
       'B. TSB provides ATC services in remote Australia — the effect is most significant at high altitude aerodromes on hot summer days',
-      'C. Perating air traffic control services — this is why thorough pre-flight planning is mandatory before every cross-country',
-      'D. Ssuing pilot licences and aircraft registrations — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'C. Operating air traffic control services — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'D. Issuing pilot licences and aircraft registrations — CASR Part 91 specifies the regulatory requirements relating to this principle',
     ],
     correct: 0,
     explanation: 'ATSB investigates aviation accidents and serious incidents independently of CASA. Its purpose is safety improvement, not enforcement — findings cannot be used in legal proceedings to establish liability. Pilots must report accidents, serious incidents, and occurrences to ATSB (and CASA where required).',
@@ -3169,7 +3168,7 @@ export const pplaQuestions: {
     options: [
       'A. Only for commercial aircraft operations — understanding this is essential for safe VFR cross-country operations in Australia',
       'B. When anyone is killed or seriously injured, or when the aircraft sustains substantial damage — including propeller ground strikes, belly landings, or retractable gear-up landings',
-      'C. Eports are voluntary — the pilot decides if the accident warrants reporting — understanding this is essential for safe VFR cross-country operations in Australia',
+      'C. Reports are voluntary — the pilot decides if the accident warrants reporting — understanding this is essential for safe VFR cross-country operations in Australia',
       'D. Only when the aircraft is destroyed — the effect is most significant at high altitude aerodromes on hot summer days',
     ],
     correct: 1,
@@ -3227,7 +3226,7 @@ export const pplaQuestions: {
   {
     question: 'The "minimum fuel" call is made when:',
     options: [
-      'A. Inimum fuel is the same as declaring an emergency — pilots must understand this to operate safely in Australian airspace',
+      'A. Minimum fuel is the same as declaring an emergency — pilots must understand this to operate safely in Australian airspace',
       'B. Committed to a specific aerodrome and any delay means landing with less than the required final reserve fuel',
       'C. Fuel falls below 45 minutes at any time — understanding this helps pilots make safe and informed go/no-go decisions',
       'D. The aircraft has less than 30 minutes fuel remaining — this is covered in both the PPL exam syllabus and practical flying training',
@@ -3239,7 +3238,7 @@ export const pplaQuestions: {
   {
     question: 'Restricted areas on a chart (shown as "R") indicate:',
     options: [
-      'A. Stricted areas only apply to military aircraft — the effect is most significant at high altitude aerodromes on hot summer days — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
+      'A. Restricted areas only apply to military aircraft — the effect is most significant at high altitude aerodromes on hot summer days — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
       'B. Eas where VFR flight is permanently prohibited — the aircraft flight manual provides specific values for each aircraft type — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
       'C. Eas where aircraft must maintain 5000 ft or higher — correct application of this concept is tested in the PPL skill test — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
       'D. Areas where flight is subject to conditions — typically requiring ATC or CASA permission. When active, flight within the area must comply with the published conditions; when inactive, transit is normally permitted',
@@ -3265,7 +3264,7 @@ export const pplaQuestions: {
     options: [
       'A. Fight VFR operations without a night rating — CASR Part 91 specifies the regulatory requirements relating to this principle',
       'B. FR flight above clouds in controlled airspace — this is why thorough pre-flight planning is mandatory before every cross-country',
-      'C. Pecial VFR is the same as an IFR clearance — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'C. Special VFR is the same as an IFR clearance — this is why thorough pre-flight planning is mandatory before every cross-country',
       'D. A VFR aircraft to operate within a CTR (control zone) in conditions below standard VMC minimums — in visibility not less than 1600 m and clear of cloud',
     ],
     correct: 3,
@@ -3277,8 +3276,8 @@ export const pplaQuestions: {
     options: [
       'A. Egulating aviation safety and enforcing CASRs — this principle applies to all piston-engine aircraft in Australian airspace',
       'B. Providing air traffic services, aeronautical information (AIP, NOTAMs, NAIPS), and aviation rescue and firefighting services',
-      'C. Nvestigating accidents and incidents — this forms part of the pre-flight planning requirements for PPL operations',
-      'D. Ssuing pilot licences and aircraft registrations — understanding this is essential for safe VFR cross-country operations in Australia',
+      'C. Investigating accidents and incidents — this forms part of the pre-flight planning requirements for PPL operations',
+      'D. Issuing pilot licences and aircraft registrations — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 1,
     explanation: 'Airservices Australia (AsA) provides: air traffic control services, area control, approach control, and tower services; aeronautical information (AIP, NOTAMs, NAIPS, weather products); aviation rescue and firefighting (ARFF) at major airports. It is a government-owned corporation, separate from CASA (regulator) and ATSB (investigation).',
@@ -3289,7 +3288,7 @@ export const pplaQuestions: {
     options: [
       'A. Ly over residential areas — aerobatics above industrial areas are unrestricted — pilots must understand this to operate safely in Australian airspace — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
       'B. Low 2000 ft AGL at all times — understanding this helps pilots make safe and informed go/no-go decisions — this forms part of the standard pre-flight and in-flight decision-making process for all PPL operations in Australia',
-      'C. Thout a specific aerobatic endorsement at any altitude — this is covered in both the PPL exam syllabus and practical flying training — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
+      'C. Without a specific aerobatic endorsement at any altitude — this is covered in both the PPL exam syllabus and practical flying training — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
       'D. Over populated areas, over open-air assemblies, and within controlled airspace without ATC permission — and must be conducted above 3000 ft AGL unless the aircraft is fitted with a parachute for all occupants below that height',
     ],
     correct: 3,
@@ -3300,8 +3299,8 @@ export const pplaQuestions: {
     question: 'The "transition layer" in Australia is the airspace:',
     options: [
       'A. The transition layer is the same as the traffic pattern area — this is why thorough pre-flight planning is mandatory before every cross-country',
-      'B. Elow 5000 ft where transitions to and from IFR are made — the effect is most significant at high altitude aerodromes on hot summer days',
-      'C. Here the approach controller hands off to tower control — this is covered in both the PPL exam syllabus and practical flying training',
+      'B. Below 5000 ft where transitions to and from IFR are made — the effect is most significant at high altitude aerodromes on hot summer days',
+      'C. Where the approach controller hands off to tower control — this is covered in both the PPL exam syllabus and practical flying training',
       'D. Between the transition altitude (10,000 ft in most areas) and the transition level — the buffer zone where neither QNH altitude nor flight level altitudes are used simultaneously',
     ],
     correct: 3,
@@ -3323,8 +3322,8 @@ export const pplaQuestions: {
   {
     question: 'Operations in Class D airspace require:',
     options: [
-      'A. Iling an IFR flight plan before entry — understanding this helps pilots make safe and informed go/no-go decisions',
-      'B. Lass D only applies to helicopter operations — understanding this is essential for safe VFR cross-country operations in Australia',
+      'A. Filing an IFR flight plan before entry — understanding this helps pilots make safe and informed go/no-go decisions',
+      'B. Class D only applies to helicopter operations — understanding this is essential for safe VFR cross-country operations in Australia',
       'C. ATC clearance, maintaining radio communications, and complying with ATC instructions — VFR aircraft receive traffic information and ATC provides separation from IFR aircraft',
       'D. O requirements beyond basic VFR weather — the aircraft flight manual provides specific values for each aircraft type',
     ],
@@ -3360,9 +3359,9 @@ export const pplaQuestions: {
     question: 'The "ELT" (Emergency Locator Transmitter) requirements for VFR aircraft in Australia include:',
     options: [
       'A. A serviceable 406 MHz ELT that is registered with AMSA must be carried — the switch must be in ARMED position (not accidentally activated or switched off)',
-      'B. LTs are only required for aircraft over 5700 kg MTOW — pilots must understand this to operate safely in Australian airspace',
+      'B. ELTs are only required for aircraft over 5700 kg MTOW — pilots must understand this to operate safely in Australian airspace',
       'C.  121.5 MHz ELT is acceptable as the sole ELT equipment — correct application of this concept is tested in the PPL skill test',
-      'D. LTs are optional for day VFR flights — the aircraft flight manual provides specific values for each aircraft type',
+      'D. ELTs are optional for day VFR flights — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 0,
     explanation: 'Australian regulations require a serviceable 406 MHz ELT to be carried and it must be registered with AMSA (Australian Maritime Safety Authority). The switch must be in ARM — not ON (inadvertent activation) or OFF (unavailable in emergency). The ELT transmits the aircraft\'s identity and position to SAR satellites. 121.5 MHz only ELTs are being phased out.',
@@ -3371,10 +3370,10 @@ export const pplaQuestions: {
   {
     question: 'A pilot who discovers they are flying in IMC (cloud or visibility below VFR minimum) when not IFR rated should:',
     options: [
-      'A. Ontinue — the conditions may improve shortly — understanding this helps pilots make safe and informed go/no-go decisions',
-      'B. Limb above the cloud to regain visual conditions — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'A. Continue — the conditions may improve shortly — understanding this helps pilots make safe and informed go/no-go decisions',
+      'B. Climb above the cloud to regain visual conditions — CASR Part 91 specifies the regulatory requirements relating to this principle',
       'C. Immediately turn 180° to return to VFR conditions (if fuel and terrain allow), squawk 7700, and contact ATC — do not continue into worsening conditions',
-      'D. Escend to below the cloud base to maintain visual contact — this principle applies to all piston-engine aircraft in Australian airspace',
+      'D. Descend to below the cloud base to maintain visual contact — this principle applies to all piston-engine aircraft in Australian airspace',
     ],
     correct: 2,
     explanation: 'VFR into IMC: the most important action is to turn around immediately (180° turn) to return to VFR conditions. Squawk 7700 to alert ATC. Contact ATC on 121.5 or area frequency for assistance if unsure of position or if turn-around is not immediately possible. Do NOT continue into worsening conditions. Climbing into cloud or descending below cloud typically makes the situation worse.',
@@ -3384,8 +3383,8 @@ export const pplaQuestions: {
     question: 'Passengers must be briefed before flight on:',
     options: [
       'A. Only commercial operators must conduct passenger briefings — this concept is assessed in the CASA PPL theory examination',
-      'B. Oute planning and weather conditions — pilots must correctly apply this when planning each specific flight',
-      'C. Riefings are the responsibility of the operator, not the PIC — the effect is most significant at high altitude aerodromes on hot summer days',
+      'B. Route planning and weather conditions — pilots must correctly apply this when planning each specific flight',
+      'C. Briefings are the responsibility of the operator, not the PIC — the effect is most significant at high altitude aerodromes on hot summer days',
       'D. Seat belts, emergency exits, no smoking, portable electronic devices policy, and emergency procedures — how to exit, location of first aid, and what to do in an emergency',
     ],
     correct: 3,
@@ -3431,9 +3430,9 @@ export const pplaQuestions: {
   {
     question: 'The magneto "dead cut" check during runup verifies that:',
     options: [
-      'A. Ach magneto is producing maximum voltage — the effect is most significant at high altitude aerodromes on hot summer days',
+      'A. Each magneto is producing maximum voltage — the effect is most significant at high altitude aerodromes on hot summer days',
       'B. The ignition switch is functional on all positions — the effect is most significant at high altitude aerodromes on hot summer days',
-      'C. Oth magnetos fail together in an emergency — this principle applies to all piston-engine aircraft in Australian airspace',
+      'C. Both magnetos fail together in an emergency — this principle applies to all piston-engine aircraft in Australian airspace',
       'D. Switching each magneto OFF briefly confirms the engine speed drops (verifying the magneto is actually connected to the engine) and the drop is within limits for each magneto',
     ],
     correct: 3,
@@ -3446,7 +3445,7 @@ export const pplaQuestions: {
       'A. The P-lead monitors magneto output voltage for the engine instruments — density altitude is a key consideration and must be evaluated before every flight',
       'B. Elivers high voltage to the spark plugs — this forms part of the pre-flight planning requirements for PPL operations',
       'C. Grounds the magneto to stop it firing when the ignition switch is OFF — if the P-lead is broken, the magneto is "hot" (always firing) and the propeller is dangerous even with the ignition off',
-      'D. Onnects the magneto to the aircraft battery — understanding this is essential for safe VFR cross-country operations in Australia',
+      'D. Connects the magneto to the aircraft battery — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 2,
     explanation: 'The P-lead (primary lead) connects the magneto to the ignition switch. When the switch is OFF (or to the other magneto), the P-lead grounds the magneto — preventing it from producing spark. A broken P-lead means the magneto is permanently live. This is extremely dangerous — moving the propeller by hand with the switch OFF can fire the engine.',
@@ -3467,10 +3466,10 @@ export const pplaQuestions: {
   {
     question: 'The "mixture" control in a piston aircraft is used to:',
     options: [
-      'A. Elect between avgas and mogas fuel types — density altitude is a key consideration and must be evaluated before every flight',
+      'A. Select between avgas and mogas fuel types — density altitude is a key consideration and must be evaluated before every flight',
       'B. Lean (reduce fuel flow) at altitude to compensate for reduced air density — maintaining the correct air-fuel ratio for efficient combustion and engine health',
-      'C. Ixture is only used for engine shutdown — no adjustment is made during normal flight — this principle applies to all piston-engine aircraft in Australian airspace',
-      'D. Djust the fuel-to-oil ratio during flight — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'C. Mixture is only used for engine shutdown — no adjustment is made during normal flight — this principle applies to all piston-engine aircraft in Australian airspace',
+      'D. Adjust the fuel-to-oil ratio during flight — this is why thorough pre-flight planning is mandatory before every cross-country',
     ],
     correct: 1,
     explanation: 'At altitude, air density decreases — the engine receives less air mass per stroke. Without adjusting the mixture, the fuel-air ratio becomes too rich (excess fuel). Leaning the mixture (reducing fuel flow) restores the correct ratio, improving fuel efficiency, reducing engine temperatures, and preventing fouled spark plugs. At high altitude with rich mixture, excessive temperatures and detonation risk increase.',
@@ -3481,7 +3480,7 @@ export const pplaQuestions: {
     options: [
       'A. Abnormal, uncontrolled, spontaneous ignition of the air-fuel mixture — producing an explosive pressure wave that can damage pistons, valves, and the engine structure',
       'B. The firing of the magnetos during engine start — this principle applies to all piston-engine aircraft in Australian airspace',
-      'C. Etonation is the process of combustion in the exhaust stroke — this is covered in both the PPL exam syllabus and practical flying training',
+      'C. Detonation is the process of combustion in the exhaust stroke — this is covered in both the PPL exam syllabus and practical flying training',
       'D. The normal ignition of the air-fuel mixture by the spark plug — density altitude is a key consideration and must be evaluated before every flight',
     ],
     correct: 0,
@@ -3494,7 +3493,7 @@ export const pplaQuestions: {
       'A. Nition that occurs too late in the compression stroke — density altitude is a key consideration and must be evaluated before every flight — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
       'B. Ignition of the air-fuel mixture by a hot spot in the combustion chamber before the spark plug fires — a glowing carbon deposit, valve, or overheated plug can cause pre-ignition at any power setting',
       'C. Other term for detonation — this forms part of the pre-flight planning requirements for PPL operations — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
-      'D. E-ignition only occurs with low-octane fuel — pilots must understand this to operate safely in Australian airspace — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
+      'D. RE-ignition only occurs with low-octane fuel — pilots must understand this to operate safely in Australian airspace — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
     ],
     correct: 1,
     explanation: 'Pre-ignition: the mixture ignites before the spark plug fires due to a hot spot (carbon deposit, overheated plug, hot valve). Unlike detonation, pre-ignition can occur at any power setting and is particularly damaging — the piston is still moving upward on compression when ignition occurs, creating severe opposing forces. Can lead to rapid engine failure.',
@@ -3504,8 +3503,8 @@ export const pplaQuestions: {
     question: 'The "oil system" in an aircraft piston engine serves to:',
     options: [
       'A. L is used only in the propeller governor — not for engine lubrication — this concept is assessed in the CASA PPL theory examination — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
-      'B. Bricate the aircraft\'s control cables and hinges — the aircraft flight manual provides specific values for each aircraft type — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
-      'C. Bricate moving parts only — pilots must understand this to operate safely in Australian airspace — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
+      'B. Lubricate the aircraft\'s control cables and hinges — the aircraft flight manual provides specific values for each aircraft type — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
+      'C. Lubricate moving parts only — pilots must understand this to operate safely in Australian airspace — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
       'D. Lubricate and cool engine components, clean the engine by suspending contaminants, seal piston rings against blow-by, and in many aircraft act as a hydraulic medium for the variable pitch propeller',
     ],
     correct: 3,
@@ -3515,9 +3514,9 @@ export const pplaQuestions: {
   {
     question: 'If the oil pressure falls below the minimum limit in flight:',
     options: [
-      'A. Ncrease power to circulate oil more quickly and restore pressure — the aircraft flight manual provides specific values for each aircraft type',
+      'A. Increase power to circulate oil more quickly and restore pressure — the aircraft flight manual provides specific values for each aircraft type',
       'B. Land as soon as practicable — low oil pressure indicates imminent engine failure risk. Reduce power, land at the nearest suitable aerodrome, do not attempt to continue',
-      'C. Ontinue to the destination at reduced power if it is close — pilots must correctly apply this when planning each specific flight',
+      'C. Continue to the destination at reduced power if it is close — pilots must correctly apply this when planning each specific flight',
       'D. How oil pressure is only a concern if accompanied by rising oil temperature — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 1,
@@ -3575,10 +3574,10 @@ export const pplaQuestions: {
   {
     question: 'The "directional gyro" (DI or HSI) is subject to:',
     options: [
-      'A. Agnetic variation errors that increase with latitude — this concept is assessed in the CASA PPL theory examination',
+      'A. Magnetic variation errors that increase with latitude — this concept is assessed in the CASA PPL theory examination',
       'B. The DI is not subject to any error — it is always accurate — understanding this helps pilots make safe and informed go/no-go decisions',
       'C. Precession — a slow drift from the set heading caused by friction, bearing imperfections, and the Earth\'s rotation — requiring realignment with the compass every 10–15 minutes in cruise',
-      'D. Cceleration and turning errors like the magnetic compass — the effect is most significant at high altitude aerodromes on hot summer days',
+      'D. Acceleration and turning errors like the magnetic compass — the effect is most significant at high altitude aerodromes on hot summer days',
     ],
     correct: 2,
     explanation: 'The directional indicator (DI) or heading indicator is a gyroscopic instrument free from compass errors (no magnetic effect, no acceleration or turning error). However, it suffers from precession — a slow drift from the set heading. The DI must be regularly aligned with the magnetic compass (every 10–15 minutes in smooth air, after each turn).',
@@ -3600,9 +3599,9 @@ export const pplaQuestions: {
     question: 'The "pitot tube" measures:',
     options: [
       'A. Total pressure — the sum of static pressure and dynamic (ram air) pressure — used by the airspeed indicator to calculate airspeed',
-      'B. Utside air temperature for the aircraft thermometer — this forms part of the pre-flight planning requirements for PPL operations',
+      'B. Outside air temperature for the aircraft thermometer — this forms part of the pre-flight planning requirements for PPL operations',
       'C. Ir density for altitude calculations — this concept is assessed in the CASA PPL theory examination',
-      'D. Tatic pressure only — pilots must correctly apply this when planning each specific flight',
+      'D. Static pressure only — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 0,
     explanation: 'The pitot tube faces forward into the airflow and measures total pressure (static + dynamic). The airspeed indicator compares total pressure (from pitot) to static pressure (from static port) — the difference is dynamic pressure, which is proportional to the square of airspeed. If the pitot is blocked (ice, insect), the ASI reads incorrectly.',
@@ -3624,8 +3623,8 @@ export const pplaQuestions: {
     question: 'If the static port is blocked, the altimeter will:',
     options: [
       'A. Freeze at the altitude where the blockage occurred — static pressure is trapped and cannot change as the aircraft climbs or descends',
-      'B. Ead the correct altitude at all times — this applies throughout all phases of flight from take-off to landing',
-      'C. Ver-read in a climb and under-read in a descent — the aircraft flight manual provides specific values for each aircraft type',
+      'B. Read the correct altitude at all times — this applies throughout all phases of flight from take-off to landing',
+      'C. Over-read in a climb and under-read in a descent — the aircraft flight manual provides specific values for each aircraft type',
       'D. The altimeter is unaffected by static port blockages — CASR Part 91 specifies the regulatory requirements relating to this principle',
     ],
     correct: 0,
@@ -3648,7 +3647,7 @@ export const pplaQuestions: {
     question: 'The "fuel primer" on a cold engine start:',
     options: [
       'A. Injects raw fuel directly into the cylinder intake ports or induction system to provide a rich mixture for starting a cold engine — it must be locked in after starting to prevent fuel flooding',
-      'B. Dds extra oil to lubricate the engine during start — this is covered in both the PPL exam syllabus and practical flying training',
+      'B. Adds extra oil to lubricate the engine during start — this is covered in both the PPL exam syllabus and practical flying training',
       'C. Re-heats the fuel to improve atomisation in cold weather — this is why thorough pre-flight planning is mandatory before every cross-country',
       'D. The primer enriches the mixture automatically — no manual input is needed — pilots must correctly apply this when planning each specific flight',
     ],
@@ -3661,7 +3660,7 @@ export const pplaQuestions: {
     options: [
       'A. Clear (colourless)',
       'B. Blue',
-      'C. Red',
+      'C. Ured',
       'D. Green',
     ],
     correct: 1,
@@ -3672,9 +3671,9 @@ export const pplaQuestions: {
     question: 'Before flight, you must "sump" the fuel tanks to check for:',
     options: [
       'A. Water contamination and sediment — water is denser than avgas and sinks to the lowest point of the tank; a water-contaminated engine will stop shortly after take-off',
-      'B. Orrect fuel grade by checking the colour label — this forms part of the pre-flight planning requirements for PPL operations',
+      'B. Correct fuel grade by checking the colour label — this forms part of the pre-flight planning requirements for PPL operations',
       'C. Fuel temperature and pressure — density altitude is a key consideration and must be evaluated before every flight',
-      'D. Orrect fuel quantity — this forms part of the pre-flight planning requirements for PPL operations',
+      'D. Correct fuel quantity — this forms part of the pre-flight planning requirements for PPL operations',
     ],
     correct: 0,
     explanation: 'Sumping (draining a fuel sample from each sump point): checks for water and sediment contamination. Water in avgas appears as clear bubbles or a separate lower layer in the sample container. Even small amounts of water can cause engine stoppage. Sump all drain points — including the fuel strainer — before every flight.',
@@ -3684,7 +3683,7 @@ export const pplaQuestions: {
     question: 'The "fuel strainer" or gascolator serves to:',
     options: [
       'A. Filter fuel to remove water and sediment before it reaches the engine — it has a bowl that accumulates contaminants and must be drained during the daily inspection',
-      'B. Aporise liquid fuel to improve combustion efficiency — understanding this helps pilots make safe and informed go/no-go decisions',
+      'B. Vaporise liquid fuel to improve combustion efficiency — understanding this helps pilots make safe and informed go/no-go decisions',
       'C. Egulate fuel pressure to the carburettor or fuel injection system — this forms part of the pre-flight planning requirements for PPL operations',
       'D. Ix fuel from different tanks before delivery to the engine — the effect is most significant at high altitude aerodromes on hot summer days',
     ],
@@ -3707,8 +3706,8 @@ export const pplaQuestions: {
   {
     question: 'When a CSU-equipped aircraft climbs (airspeed decreasing at constant throttle), the governor:',
     options: [
-      'A. Oarsens the blade pitch to maintain RPM — correct application of this concept is tested in the PPL skill test',
-      'B. Utomatically opens the throttle to maintain RPM — this applies throughout all phases of flight from take-off to landing',
+      'A. Coarsens the blade pitch to maintain RPM — correct application of this concept is tested in the PPL skill test',
+      'B. Automatically opens the throttle to maintain RPM — this applies throughout all phases of flight from take-off to landing',
       'C. Fine-pitches the blades (reduces blade angle) to maintain the selected RPM as the decreasing airspeed would otherwise cause RPM to fall',
       'D. As no effect during a climb — RPM changes naturally with airspeed — pilots must correctly apply this when planning each specific flight',
     ],
@@ -3746,7 +3745,7 @@ export const pplaQuestions: {
       'A. Oil accumulates in the lower cylinders of a radial engine during shutdown — liquid cannot be compressed, and attempting to start the engine can bend a connecting rod. The prop must be hand-turned to clear oil before starting',
       'B. E hydraulic brakes are over-pressurised — density altitude is a key consideration and must be evaluated before every flight — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
       'C. Ter enters the fuel system freezing the fuel valves — understanding this is essential for safe VFR cross-country operations in Australia — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
-      'D. Draulic lock only affects turbine engines, not piston engines — CASR Part 91 specifies the regulatory requirements relating to this principle — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
+      'D. Hydraulic lock only affects turbine engines, not piston engines — CASR Part 91 specifies the regulatory requirements relating to this principle — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
     ],
     correct: 0,
     explanation: 'Hydraulic lock: in engines where cylinders may point downward (radial engines, and some horizontals after prolonged shutdown), oil or unburned fuel can drain into the combustion chamber. Liquid cannot be compressed. If the starter attempts to compress it, the connecting rod bends. Hand-turning the propeller before starting allows any accumulation to be blown out through the exhaust valve.',
@@ -3756,8 +3755,8 @@ export const pplaQuestions: {
     question: 'The "tachometer" in an aircraft with a fixed-pitch propeller indicates:',
     options: [
       'A. Engine temperature — pilots must correctly apply this when planning each specific flight',
-      'B. Anifold pressure in inches of mercury — the aircraft flight manual provides specific values for each aircraft type',
-      'C. Ropeller blade pitch angle — this principle applies to all piston-engine aircraft in Australian airspace',
+      'B. Manifold pressure in inches of mercury — the aircraft flight manual provides specific values for each aircraft type',
+      'C. Propeller blade pitch angle — this principle applies to all piston-engine aircraft in Australian airspace',
       'D. Engine RPM (revolutions per minute) — which is directly proportional to power output for a fixed-pitch propeller at a given altitude',
     ],
     correct: 3,
@@ -3768,7 +3767,7 @@ export const pplaQuestions: {
     question: 'The "ATIS" broadcast at a controlled aerodrome provides:',
     options: [
       'A. IS is only used for IFR aircraft — this applies throughout all phases of flight from take-off to landing — this forms part of the standard pre-flight and in-flight decision-making process for all PPL operations in Australia',
-      'B. Ather forecasts for the next 24 hours at the aerodrome — correct application of this concept is tested in the PPL skill test — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
+      'B. Rather forecasts for the next 24 hours at the aerodrome — correct application of this concept is tested in the PPL skill test — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
       'C. Ve ATC communications between tower and aircraft — pilots must correctly apply this when planning each specific flight — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
       'D. A recorded broadcast of aerodrome information — wind direction and speed, QNH, temperature, dew point, cloud, visibility, active runway, and NOTAM information — updated regularly and identified by a phonetic letter (Alpha, Bravo, etc.)',
     ],
@@ -3780,7 +3779,7 @@ export const pplaQuestions: {
     question: 'Engine cooling on an air-cooled aircraft engine is primarily achieved by:',
     options: [
       'A. Il cooling only — air cooling is a secondary effect — this concept is assessed in the CASA PPL theory examination',
-      'B. Ater injection systems on all modern certified engines — density altitude is a key consideration and must be evaluated before every flight',
+      'B. Water injection systems on all modern certified engines — density altitude is a key consideration and must be evaluated before every flight',
       'C. Airflow over and between cooling fins on the cylinder barrels and heads — controlled by baffles directing airflow and cowl flaps regulating the rate',
       'D.  radiator system similar to a car engine — pilots must understand this to operate safely in Australian airspace',
     ],
@@ -3791,10 +3790,10 @@ export const pplaQuestions: {
   {
     question: 'Cylinder head temperature (CHT) is monitored to prevent:',
     options: [
-      'A. Ylinder head temperature is monitored for maintenance records only — this principle applies to all piston-engine aircraft in Australian airspace',
+      'A. Cylinder head temperature is monitored for maintenance records only — this principle applies to all piston-engine aircraft in Australian airspace',
       'B. Overheating that causes detonation, pre-ignition, burned valves, and cylinder head warping — and excessive cooling that can cause thermal shock or oil congealing',
       'C. HT only needs monitoring in hot climate operations — pilots must understand this to operate safely in Australian airspace',
-      'D. Xcessive cooling that reduces engine efficiency — pilots must correctly apply this when planning each specific flight',
+      'D. Excessive cooling that reduces engine efficiency — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 1,
     explanation: 'CHT must stay within limits: too hot causes pre-ignition, detonation, and component damage. Too cold (especially during rapid descent at low power) can thermally shock cylinders. The pilot controls CHT via: power setting, mixture (leaning raises CHT, rich lowers it), airspeed (more airflow = more cooling), and cowl flap position.',
@@ -3839,9 +3838,9 @@ export const pplaQuestions: {
   {
     question: 'The "compass swing" procedure corrects for:',
     options: [
-      'A. Ompass swings are only required for aircraft with metal propellers — the aircraft flight manual provides specific values for each aircraft type',
-      'B. Yroscopic precession in the directional indicator — this is covered in both the PPL exam syllabus and practical flying training',
-      'C. Agnetic variation at the aerodrome — this concept is assessed in the CASA PPL theory examination',
+      'A. Compass swings are only required for aircraft with metal propellers — the aircraft flight manual provides specific values for each aircraft type',
+      'B. Gyroscopic precession in the directional indicator — this is covered in both the PPL exam syllabus and practical flying training',
+      'C. Magnetic variation at the aerodrome — this concept is assessed in the CASA PPL theory examination',
       'D. Compass deviation caused by the aircraft\'s own magnetic field — the aircraft is turned to known headings and the deviation on each is recorded on the compass deviation card',
     ],
     correct: 3,
@@ -4043,10 +4042,10 @@ export const pplaQuestions: {
   {
     question: '"Angle of incidence" differs from "angle of attack" because:',
     options: [
-      'A. Gle of incidence is measured from the ground during pre-flight inspection — this concept is assessed in the CASA PPL theory examination — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
+      'A. Angle of incidence is measured from the ground during pre-flight inspection — this concept is assessed in the CASA PPL theory examination — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
       'B. Angle of incidence is the fixed angle between the wing chord line and the aircraft\'s longitudinal axis — set by the manufacturer. Angle of attack is the variable angle between the chord and the actual relative airflow, changed by the pilot through pitch',
       'C. Ey are the same thing — both describe the wing angle to the airflow — this concept is assessed in the CASA PPL theory examination — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
-      'D. Gle of incidence only applies to the horizontal tailplane — this is covered in both the PPL exam syllabus and practical flying training — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
+      'D. Angle of incidence only applies to the horizontal tailplane — this is covered in both the PPL exam syllabus and practical flying training — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
     ],
     correct: 1,
     explanation: 'Angle of incidence: the fixed angle at which the wing is set into the fuselage — determined by the designer, cannot be changed by the pilot. Angle of attack (AoA): the variable angle between the chord line and the relative airflow — controlled by the pilot through elevator input. Changing pitch changes AoA, not angle of incidence.',
@@ -4069,7 +4068,7 @@ export const pplaQuestions: {
     options: [
       'A. Induced drag equals parasite drag — this is also the speed giving maximum L/D ratio (best glide speed)',
       'B. The aircraft is at MTOW — density altitude is a key consideration and must be evaluated before every flight',
-      'C. Irspeed is at its maximum — pilots must correctly apply this when planning each specific flight',
+      'C. Airspeed is at its maximum — pilots must correctly apply this when planning each specific flight',
       'D. The angle of attack is zero — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 0,
@@ -4092,8 +4091,8 @@ export const pplaQuestions: {
     question: '"Dihedral" on a wing contributes to:',
     options: [
       'A. Lateral stability — when a wing drops, the lower wing generates more lift (higher AoA due to the sideslip) and the aircraft self-corrects to wings-level',
-      'B. Ihedral reduces induced drag at high angles of attack — this forms part of the pre-flight planning requirements for PPL operations',
-      'C. Irectional stability (yaw) — this applies throughout all phases of flight from take-off to landing',
+      'B. Dihedral reduces induced drag at high angles of attack — this forms part of the pre-flight planning requirements for PPL operations',
+      'C. Directional stability (yaw) — this applies throughout all phases of flight from take-off to landing',
       'D. Longitudinal stability (pitch) — understanding this is essential for safe VFR cross-country operations in Australia',
     ],
     correct: 0,
@@ -4104,9 +4103,9 @@ export const pplaQuestions: {
     question: 'Flaps in the "take-off" setting (partial flap) compared to no flap:',
     options: [
       'A. Reduce lift and increase drag equally — this forms part of the pre-flight planning requirements for PPL operations',
-      'B. Ave no effect on take-off performance — this applies throughout all phases of flight from take-off to landing',
+      'B. Have no effect on take-off performance — this applies throughout all phases of flight from take-off to landing',
       'C. Increase lift significantly with minimal drag increase — allowing lift-off at a lower speed with only a modest increase in required distance',
-      'D. Lways reduce take-off distance regardless of conditions — the aircraft flight manual provides specific values for each aircraft type',
+      'D. Always reduce take-off distance regardless of conditions — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 2,
     explanation: 'Partial (take-off) flap extension increases CLmax, lowering the lift-off speed. This can reduce take-off distance (lower lift-off speed means shorter ground roll). However, the drag increase at full flap can increase take-off distance — each aircraft has an optimum flap setting for take-off, specified in the AFM.',
@@ -4115,10 +4114,10 @@ export const pplaQuestions: {
   {
     question: 'At the critical angle of attack, the pilot can lower the nose and restore lift by:',
     options: [
-      'A. Pplying rudder opposite to the roll direction — this principle applies to all piston-engine aircraft in Australian airspace',
-      'B. Dding full power — power alone recovers a stall — the effect is most significant at high altitude aerodromes on hot summer days',
+      'A. Applying rudder opposite to the roll direction — this principle applies to all piston-engine aircraft in Australian airspace',
+      'B. Adding full power — power alone recovers a stall — the effect is most significant at high altitude aerodromes on hot summer days',
       'C. Reducing back pressure to reduce angle of attack below the critical angle — the wing then generates lift again',
-      'D. Pplying aileron to level the wings — this principle applies to all piston-engine aircraft in Australian airspace',
+      'D. Applying aileron to level the wings — this principle applies to all piston-engine aircraft in Australian airspace',
     ],
     correct: 2,
     explanation: 'Stall recovery: push forward (reduce back pressure) to reduce AoA below the critical angle. The wing then generates lift again. Add power to minimise height loss. Level wings with rudder (not aileron — aileron at stall can worsen the situation by increasing AoA on the down-going wing).',
@@ -4127,9 +4126,9 @@ export const pplaQuestions: {
   {
     question: '"Propeller wash" (slipstream) benefits aircraft performance by:',
     options: [
-      'A. Educing induced drag at high angles of attack — correct application of this concept is tested in the PPL skill test',
-      'B. Ropeller wash has no aerodynamic benefit — correct application of this concept is tested in the PPL skill test',
-      'C. Educing turbulence ahead of the wing — understanding this is essential for safe VFR cross-country operations in Australia',
+      'A. Reducing induced drag at high angles of attack — correct application of this concept is tested in the PPL skill test',
+      'B. Propeller wash has no aerodynamic benefit — correct application of this concept is tested in the PPL skill test',
+      'C. Reducing turbulence ahead of the wing — understanding this is essential for safe VFR cross-country operations in Australia',
       'D. Increasing effective IAS over the inboard wing section, improving lift and control effectiveness at low airspeed — particularly during take-off and climb',
     ],
     correct: 3,
@@ -4164,8 +4163,8 @@ export const pplaQuestions: {
     question: '"Complacency" is a hazard in aviation because:',
     options: [
       'A. Mplacent pilots are always overconfident and take risks — this principle applies to all piston-engine aircraft in Australian airspace — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
-      'B. Mplacency only affects pilots with more than 5000 hours — density altitude is a key consideration and must be evaluated before every flight — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
-      'C. Mplacency is not classified as a hazardous attitude in aviation human factors — this principle applies to all piston-engine aircraft in Australian airspace — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
+      'B. Complacency only affects pilots with more than 5000 hours — density altitude is a key consideration and must be evaluated before every flight — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
+      'C. Complacency is not classified as a hazardous attitude in aviation human factors — this principle applies to all piston-engine aircraft in Australian airspace — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
       'D. Complacency — false security from routine and familiarity — reduces vigilance and causes pilots to stop actively monitoring the situation, missing developing problems that would have been caught by an alert pilot',
     ],
     correct: 3,
@@ -4188,9 +4187,9 @@ export const pplaQuestions: {
     question: '"Motion sickness" affects pilot performance by:',
     options: [
       'A. Only affecting passengers — pilots are immune through training — this concept is assessed in the CASA PPL theory examination',
-      'B. Otion sickness only occurs in helicopters — this is covered in both the PPL exam syllabus and practical flying training',
+      'B. Motion sickness only occurs in helicopters — this is covered in both the PPL exam syllabus and practical flying training',
       'C. Causing nausea, discomfort, and distraction that degrades cognitive performance and may incapacitate a pilot — particularly in turbulence or unusual attitudes',
-      'D. Otion sickness improves spatial awareness by activating the vestibular system — this principle applies to all piston-engine aircraft in Australian airspace',
+      'D. Motion sickness improves spatial awareness by activating the vestibular system — this principle applies to all piston-engine aircraft in Australian airspace',
     ],
     correct: 2,
     explanation: 'Motion sickness results from conflicting inputs between visual and vestibular systems. It causes nausea, sweating, pallor, and vomiting — all of which degrade pilot performance. In severe cases, the pilot may be unable to function. Remedies: look at the horizon, fly the aircraft smoothly, fresh air, and specific anti-sickness medications (with no aviation side effects).',
@@ -4201,8 +4200,8 @@ export const pplaQuestions: {
     options: [
       'A. The air is saturated — OAT equals the dew point. Further cooling or addition of moisture causes condensation (cloud, fog, or rain formation)',
       'B. The air contains maximum possible water vapour — pilots must understand this to operate safely in Australian airspace',
-      'C. Elative humidity 100% is impossible in the atmosphere — this is covered in both the PPL exam syllabus and practical flying training',
-      'D. Here is heavy rain occurring — pilots must understand this to operate safely in Australian airspace',
+      'C. Relative humidity 100% is impossible in the atmosphere — this is covered in both the PPL exam syllabus and practical flying training',
+      'D. Where is heavy rain occurring — pilots must understand this to operate safely in Australian airspace',
     ],
     correct: 0,
     explanation: 'Relative humidity = (actual water vapour ÷ saturation water vapour) × 100%. At 100% RH, the air is saturated — it cannot hold any more water vapour at the current temperature. Any further cooling (or addition of moisture) causes condensation: cloud, fog, dew, or precipitation.',
@@ -4223,9 +4222,9 @@ export const pplaQuestions: {
   {
     question: '"Lenticular" clouds associated with mountain waves indicate:',
     options: [
-      'A. Table, smooth conditions at that altitude — this principle applies to all piston-engine aircraft in Australian airspace',
-      'B. Eavy precipitation on the windward side of ranges — density altitude is a key consideration and must be evaluated before every flight',
-      'C. Enticular clouds are only found in the tropics — correct application of this concept is tested in the PPL skill test',
+      'A. Stable, smooth conditions at that altitude — this principle applies to all piston-engine aircraft in Australian airspace',
+      'B. Heavy precipitation on the windward side of ranges — density altitude is a key consideration and must be evaluated before every flight',
+      'C. Lenticular clouds are only found in the tropics — correct application of this concept is tested in the PPL skill test',
       'D. The wave crest of a mountain wave — smooth outside but potentially severe turbulence in the rotor zone below, and strong wave lift above',
     ],
     correct: 3,
@@ -4261,7 +4260,7 @@ export const pplaQuestions: {
     options: [
       'A. PECI is a supplementary TAF only — understanding this is essential for safe VFR cross-country operations in Australia',
       'B.  special weather event affects the entire forecast region — pilots must correctly apply this when planning each specific flight',
-      'C. Pecial flight operations require a specific weather report — the effect is most significant at high altitude aerodromes on hot summer days',
+      'C. Special flight operations require a specific weather report — the effect is most significant at high altitude aerodromes on hot summer days',
       'D. Weather conditions at an aerodrome have deteriorated or changed significantly between routine METAR observations — visibility drops, cloud base lowers, or significant weather changes occur',
     ],
     correct: 3,
@@ -4295,9 +4294,9 @@ export const pplaQuestions: {
   {
     question: 'On a standard VFR navigation chart, airspace above 8500 ft AMSL to FL180 is classified as:',
     options: [
-      'A. Lass D requiring ATC clearance for all aircraft — pilots must understand this to operate safely in Australian airspace',
-      'B. Lass A — IFR only — understanding this is essential for safe VFR cross-country operations in Australia',
-      'C. Lass G throughout — this principle applies to all piston-engine aircraft in Australian airspace',
+      'A. Class D requiring ATC clearance for all aircraft — pilots must understand this to operate safely in Australian airspace',
+      'B. Class A — IFR only — understanding this is essential for safe VFR cross-country operations in Australia',
+      'C. Class G throughout — this principle applies to all piston-engine aircraft in Australian airspace',
       'D. Class E — controlled airspace where IFR aircraft receive ATC service but VFR aircraft may operate without clearance (but must meet VMC)',
     ],
     correct: 3,
@@ -4357,8 +4356,8 @@ export const pplaQuestions: {
     options: [
       'A. S the same as the maintenance release — the aircraft flight manual provides specific values for each aircraft type',
       'B. Confirms the aircraft is registered on the Australian civil register and identifies the registered owner — it must be carried on board',
-      'C. Ertifies the aircraft is airworthy and fit for flight — this is why thorough pre-flight planning is mandatory before every cross-country',
-      'D. Ists the maintenance requirements for the aircraft type — this principle applies to all piston-engine aircraft in Australian airspace',
+      'C. Certifies the aircraft is airworthy and fit for flight — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'D. Lists the maintenance requirements for the aircraft type — this principle applies to all piston-engine aircraft in Australian airspace',
     ],
     correct: 1,
     explanation: 'The Certificate of Registration identifies the aircraft (VH-registration) and its registered owner. It does not certify airworthiness — the Certificate of Airworthiness (C of A) does that. The Certificate of Registration must be carried on board. If ownership changes, the registration must be transferred.',
@@ -4392,7 +4391,7 @@ export const pplaQuestions: {
     question: 'Radio communications on approach to a controlled aerodrome should be established:',
     options: [
       'A. Ly when on final approach — this applies throughout all phases of flight from take-off to landing — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
-      'B. Mmunications are not required for VFR flights — correct application of this concept is tested in the PPL skill test — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
+      'B. Communications are not required for VFR flights — correct application of this concept is tested in the PPL skill test — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
       'C.  10 nm or 1500 ft AGL, whichever comes first — this applies throughout all phases of flight from take-off to landing — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
       'D. Before entering the CTA/CTR or at the prescribed reporting point for that aerodrome, whichever is earlier — and the current ATIS must be obtained before contacting approach or tower',
     ],
@@ -4404,8 +4403,8 @@ export const pplaQuestions: {
     question: 'What is the purpose of readback of ATC clearances?',
     options: [
       'A. O record the transmission for legal purposes — the effect is most significant at high altitude aerodromes on hot summer days',
-      'B. Eadback is only required for runway crossing clearances — understanding this is essential for safe VFR cross-country operations in Australia',
-      'C. Eadback ensures the frequency is not blocked by another transmission — this is covered in both the PPL exam syllabus and practical flying training',
+      'B. Readback is only required for runway crossing clearances — understanding this is essential for safe VFR cross-country operations in Australia',
+      'C. Readback ensures the frequency is not blocked by another transmission — this is covered in both the PPL exam syllabus and practical flying training',
       'D. To confirm to ATC that the instruction has been correctly received and understood — allowing ATC to immediately correct any misunderstanding before it leads to a dangerous situation',
     ],
     correct: 3,
@@ -4428,9 +4427,9 @@ export const pplaQuestions: {
     question: 'Flight in Class C airspace requires a transponder because:',
     options: [
       'A. ATC requires Mode C altitude information to provide separation between aircraft and to identify the aircraft on radar',
-      'B. Ransponders are optional in Class C — radio only is sufficient — understanding this helps pilots make safe and informed go/no-go decisions',
-      'C. Ransponders are required in all airspace above 1000 ft AGL — understanding this helps pilots make safe and informed go/no-go decisions',
-      'D. Ransponders are only required above FL100 — this concept is assessed in the CASA PPL theory examination',
+      'B. Transponders are optional in Class C — radio only is sufficient — understanding this helps pilots make safe and informed go/no-go decisions',
+      'C. Transponders are required in all airspace above 1000 ft AGL — understanding this helps pilots make safe and informed go/no-go decisions',
+      'D. Transponders are only required above FL100 — this concept is assessed in the CASA PPL theory examination',
     ],
     correct: 0,
     explanation: 'Class C airspace requires an operating transponder with Mode C (altitude reporting). ATC uses the transponder return to identify the aircraft and verify its altitude — essential for providing separation services. Mode S (with extended squitter) is required in some airspace for ADS-B capability.',
@@ -4442,7 +4441,7 @@ export const pplaQuestions: {
       'A. EFT only for the entire flight — alternating tanks causes vapour lock — this forms part of the pre-flight planning requirements for PPL operations',
       'B. As specified in the AFM — some aircraft use BOTH, others require switching between tanks at specified intervals to maintain CG balance',
       'C. OTH — to use fuel equally from both tanks and maintain balance — this is why thorough pre-flight planning is mandatory before every cross-country',
-      'D. Hichever tank is fuller at any given time — this principle applies to all piston-engine aircraft in Australian airspace',
+      'D. Whichever tank is fuller at any given time — this principle applies to all piston-engine aircraft in Australian airspace',
     ],
     correct: 1,
     explanation: 'Fuel management procedure varies by aircraft type and must follow the AFM. Some aircraft (with interconnected vented tanks) use BOTH. Others require alternating tanks to maintain fuel balance and CG. Using only one tank until empty in a fuel-selector aircraft can cause fuel imbalance (lateral CG) and fuel exhaustion on one side.',
@@ -4463,9 +4462,9 @@ export const pplaQuestions: {
   {
     question: 'The "vertical speed indicator" (VSI) shows:',
     options: [
-      'A. Bsolute altitude above sea level — pilots must understand this to operate safely in Australian airspace',
-      'B. Ate of change of airspeed — this is covered in both the PPL exam syllabus and practical flying training',
-      'C. Itch angle relative to the horizon — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'A. Absolute altitude above sea level — pilots must understand this to operate safely in Australian airspace',
+      'B. Rate of change of airspeed — this is covered in both the PPL exam syllabus and practical flying training',
+      'C. Pitch angle relative to the horizon — CASR Part 91 specifies the regulatory requirements relating to this principle',
       'D. Rate of climb or descent in feet per minute — derived from the rate of change of static pressure',
     ],
     correct: 3,
@@ -4476,7 +4475,7 @@ export const pplaQuestions: {
     question: '"Carburetor heat" should be applied:',
     options: [
       'A. Ly on the ground during warm-up — this forms part of the pre-flight planning requirements for PPL operations — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
-      'B. Rburettor heat is never used on fuel-injected engines — this is covered in both the PPL exam syllabus and practical flying training — this forms part of the standard pre-flight and in-flight decision-making process for all PPL operations in Australia',
+      'B. Carburettor heat is never used on fuel-injected engines — this is covered in both the PPL exam syllabus and practical flying training — this forms part of the standard pre-flight and in-flight decision-making process for all PPL operations in Australia',
       'C. Ly when engine roughness is heard — pilots must correctly apply this when planning each specific flight — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
       'D. Whenever there is a risk of carburettor ice — typically in humid conditions between −10°C and +30°C OAT — and during power reductions (descent, approach) as reduced airflow through the engine increases icing risk',
     ],
@@ -4490,7 +4489,7 @@ export const pplaQuestions: {
       'A. Only before the first flight after an oil change — this concept is assessed in the CASA PPL theory examination',
       'B. Il level does not need checking for flights under 1 hour — pilots must understand this to operate safely in Australian airspace',
       'C. Before every flight as part of the daily inspection — both level and condition. Low level or milky appearance (water contamination) must be addressed before flight',
-      'D. Nce a week during regular maintenance — pilots must correctly apply this when planning each specific flight',
+      'D. Once a week during regular maintenance — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 2,
     explanation: 'Engine oil is checked before every flight: level (ensure within limits), appearance (clear golden/amber = OK; milky = water contamination from a blown head gasket; black = overdue for change), and for metal particles on the dipstick (indicates internal wear). Never fly with oil below the minimum marked level.',
@@ -4669,7 +4668,7 @@ export const pplaQuestions: {
     options: [
       'A. Reduce fuel consumption at cruise speed — the aircraft flight manual provides specific values for each aircraft type',
       'B. Ensure the root section stalls before the tip, maintaining aileron effectiveness at the stall and providing gentler stall characteristics',
-      'C. Mprove stability by increasing the angle of incidence at the tip — this is covered in both the PPL exam syllabus and practical flying training',
+      'C. Improve stability by increasing the angle of incidence at the tip — this is covered in both the PPL exam syllabus and practical flying training',
       'D. Reduce induced drag by equalising lift along the span — the effect is most significant at high altitude aerodromes on hot summer days',
     ],
     correct: 1,
@@ -4681,8 +4680,8 @@ export const pplaQuestions: {
     options: [
       'A. Vno is maximum structural cruising speed — above this in rough air or gusts, loads may exceed structural limits. Operations above Vno should only occur in smooth air',
       'B. No is the maximum landing gear extension speed — CASR Part 91 specifies the regulatory requirements relating to this principle',
-      'C. Bove Vno the aircraft cannot be controlled — pilots must correctly apply this when planning each specific flight',
-      'D. Bove Vno the flaps must be retracted — this applies throughout all phases of flight from take-off to landing',
+      'C. Above Vno the aircraft cannot be controlled — pilots must correctly apply this when planning each specific flight',
+      'D. Above Vno the flaps must be retracted — this applies throughout all phases of flight from take-off to landing',
     ],
     correct: 0,
     explanation: 'Vno (maximum structural cruising speed) is the top of the green arc. Below Vno, the aircraft can handle gusts and turbulence within its load factor limits. In the yellow arc (Vno to Vne), operations should only be in smooth air — gusts could exceed structural limits. Above Vne, structural failure risk exists.',
@@ -4715,7 +4714,7 @@ export const pplaQuestions: {
   {
     question: '"Effect of ice" on a wing aerofoil:',
     options: [
-      'A. Dds weight only — aerodynamics are unaffected by thin ice — pilots must correctly apply this when planning each specific flight',
+      'A. Adds weight only — aerodynamics are unaffected by thin ice — pilots must correctly apply this when planning each specific flight',
       'B. Ce only affects drag — lift is unchanged — pilots must understand this to operate safely in Australian airspace',
       'C. Even thin ice on the leading edge disrupts airflow and significantly reduces CLmax, dramatically increasing stall speed and stall angle — a very hazardous effect',
       'D. Ce on the upper surface improves laminar flow — this applies throughout all phases of flight from take-off to landing',
@@ -4727,10 +4726,10 @@ export const pplaQuestions: {
   {
     question: 'A pilot who says "I must get there today — people are counting on me" is demonstrating which hazardous attitude?',
     options: [
-      'A. Mpulsivity — this applies throughout all phases of flight from take-off to landing',
-      'B. Nti-authority — this principle applies to all piston-engine aircraft in Australian airspace',
+      'A. Impulsivity — this applies throughout all phases of flight from take-off to landing',
+      'B. Anti-authority — this principle applies to all piston-engine aircraft in Australian airspace',
       'C. External pressure — allowing schedule or social pressure to override sound judgment',
-      'D. Esignation — this principle applies to all piston-engine aircraft in Australian airspace',
+      'D. Designation — this principle applies to all piston-engine aircraft in Australian airspace',
     ],
     correct: 2,
     explanation: 'External pressure (a form of get-there-itis): allowing pressure from others (schedule, passengers, employer) to override safety judgment. This is distinct from the five CASA hazardous attitudes but equally dangerous. The correct antidote: "The passengers would rather arrive late than not at all. Safety is always my first priority."',
@@ -4764,9 +4763,9 @@ export const pplaQuestions: {
     question: '"Channelled attention" (tunnel vision) under high stress means:',
     options: [
       'A. Narrowing of attention to one aspect of the situation — critical information from other sources is missed, compounding the problem',
-      'B. Ncreased ability to process multiple tasks simultaneously — the aircraft flight manual provides specific values for each aircraft type',
-      'C. Etter focus on the most important instrument — the aircraft flight manual provides specific values for each aircraft type',
-      'D. Hannelled attention is a technique used in instrument flying — correct application of this concept is tested in the PPL skill test',
+      'B. Increased ability to process multiple tasks simultaneously — the aircraft flight manual provides specific values for each aircraft type',
+      'C. Better focus on the most important instrument — the aircraft flight manual provides specific values for each aircraft type',
+      'D. Channelled attention is a technique used in instrument flying — correct application of this concept is tested in the PPL skill test',
     ],
     correct: 0,
     explanation: 'Under high stress or high workload, attention narrows to the most salient stimulus — often the one that triggered the stress. While fixated on that one element, other critical information (fuel, altitude, traffic) is not processed. This is why structured emergency procedures and callouts exist — they force systematic attention across all relevant parameters.',
@@ -4813,8 +4812,8 @@ export const pplaQuestions: {
     options: [
       'A. Ew clouds at 2000 ft — tower controller unaware of type — correct application of this concept is tested in the PPL skill test',
       'B. Few towering cumulus at 2000 ft AGL — significant vertical development indicating potential thunderstorm activity',
-      'C. Ull extent of cloud unknown at 2000 ft — pilots must correctly apply this when planning each specific flight',
-      'D. Urbulent cloud at 2000 ft in the circuit area — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'C. Full extent of cloud unknown at 2000 ft — pilots must correctly apply this when planning each specific flight',
+      'D. Turbulent cloud at 2000 ft in the circuit area — CASR Part 91 specifies the regulatory requirements relating to this principle',
     ],
     correct: 1,
     explanation: 'TCU = towering cumulus (cumulus congestus). FEW020TCU = 1–2 oktas of towering cumulus with base at 2000 ft AGL. TCU indicates strong convective activity — the cloud may develop into cumulonimbus. Like CB, TCU is always reported regardless of amount because it indicates significant weather hazard.',
@@ -4824,9 +4823,9 @@ export const pplaQuestions: {
     question: 'High pressure systems (anticyclones) are generally associated with:',
     options: [
       'A. Nsettled weather with cloud and rain — this is covered in both the PPL exam syllabus and practical flying training',
-      'B. Igh pressure always produces IFR conditions — this forms part of the pre-flight planning requirements for PPL operations',
+      'B. High pressure always produces IFR conditions — this forms part of the pre-flight planning requirements for PPL operations',
       'C. Settled, fine weather — stable descending air, clear skies, and light winds (though fog and low cloud can form at night in high-pressure systems with moisture)',
-      'D. Hunderstorms and strong winds — this concept is assessed in the CASA PPL theory examination',
+      'D. Thunderstorms and strong winds — this concept is assessed in the CASA PPL theory examination',
     ],
     correct: 2,
     explanation: 'High-pressure systems: subsiding air is stable and generally cloud-free. Associated with fine weather, good visibility, and light winds. However, the stable air traps moisture and smoke near the surface — radiation fog is common in high-pressure systems at night, and haze can reduce visibility during the day.',
@@ -4836,9 +4835,9 @@ export const pplaQuestions: {
     question: 'Wind at 2000 ft is typically faster and more westerly than at the surface because:',
     options: [
       'A. Only sea breezes are affected by surface friction — the aircraft flight manual provides specific values for each aircraft type',
-      'B. Igher altitude air is warmer and therefore moves faster — this principle applies to all piston-engine aircraft in Australian airspace',
+      'B. Higher altitude air is warmer and therefore moves faster — this principle applies to all piston-engine aircraft in Australian airspace',
       'C. Surface friction slows and veers wind at low levels — above the friction layer the gradient wind flows parallel to isobars at higher speed',
-      'D. Ind speed is always slower at higher altitudes — this concept is assessed in the CASA PPL theory examination',
+      'D. Wind speed is always slower at higher altitudes — this concept is assessed in the CASA PPL theory examination',
     ],
     correct: 2,
     explanation: 'Surface friction from terrain slows wind and causes it to back (in the southern hemisphere, back = anticlockwise = more northerly). Above approximately 2000–3000 ft, friction reduces and wind approaches the gradient wind — faster and more westerly in the southern hemisphere. This backing near the surface is significant for cross-wind calculations.',
@@ -4848,8 +4847,8 @@ export const pplaQuestions: {
     question: 'A "PRE-FLIGHT WEATHER BRIEFING" for a cross-country should include:',
     options: [
       'A. A TAF for the destination, ARFOR for the route, current METARs for departure and destination, SIGMETs affecting the route, and NOTAMs — obtained through NAIPS before the flight',
-      'B. Eather briefings are only required for IFR flights — density altitude is a key consideration and must be evaluated before every flight',
-      'C. Urrent METAR at departure aerodrome only — this is covered in both the PPL exam syllabus and practical flying training',
+      'B. Weather briefings are only required for IFR flights — density altitude is a key consideration and must be evaluated before every flight',
+      'C. Current METAR at departure aerodrome only — this is covered in both the PPL exam syllabus and practical flying training',
       'D. Only the cloud height and visibility at the departure aerodrome — the aircraft flight manual provides specific values for each aircraft type',
     ],
     correct: 0,
@@ -4862,7 +4861,7 @@ export const pplaQuestions: {
       'A. Ll cloud types produce equal icing rates — correct application of this concept is tested in the PPL skill test',
       'B. Fight drizzle at temperatures just below freezing — this is covered in both the PPL exam syllabus and practical flying training',
       'C. Supercooled large droplets (SLD) — freezing rain or freezing drizzle produces the most rapid and severe icing due to the large water mass',
-      'D. Irrus cloud (ice crystals at high altitude) — pilots must correctly apply this when planning each specific flight',
+      'D. Cirrus cloud (ice crystals at high altitude) — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 2,
     explanation: 'Supercooled large droplets (SLD) — freezing rain and freezing drizzle — produce the most rapid and dangerous icing. Large droplets contain much more water mass and spread across more of the aerofoil surface after impact. Even a few minutes exposure can accumulate life-threatening ice loads. SLD is explicitly avoided in all aircraft without SLD certification.',
@@ -4897,7 +4896,7 @@ export const pplaQuestions: {
     options: [
       'A. Use runway 36 — shorter runways are preferred',
       'B. Use either runway — both exceed 880 m',
-      'C. Use runway 18 only — TODA 900 m meets the required 880 m; runway 36 TODA (850 m) does not',
+      'C. Use runway 18 only — TODA 900 m meets the required 880 m; runway 36 TODA (850 m) does not meet the 880 m requirement',
       'D. The flight cannot proceed — neither runway meets requirements',
     ],
     correct: 2,
@@ -4931,10 +4930,10 @@ export const pplaQuestions: {
   {
     question: '"Class G" airspace below 10,000 ft has which ATC service?',
     options: [
-      'A. Adar identification and traffic information service — pilots must understand this to operate safely in Australian airspace',
+      'A. Radar identification and traffic information service — pilots must understand this to operate safely in Australian airspace',
       'B. No ATC service — pilots are responsible for their own separation using see and avoid and CTAF broadcasts',
-      'C. Raffic information service only — no separation — this concept is assessed in the CASA PPL theory examination',
-      'D. Ull ATC separation service for all aircraft — pilots must correctly apply this when planning each specific flight',
+      'C. Traffic information service only — no separation — this concept is assessed in the CASA PPL theory examination',
+      'D. Full ATC separation service for all aircraft — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 1,
     explanation: 'Class G airspace is uncontrolled. There is no ATC separation service. Pilots must maintain their own separation using visual scanning (see and avoid), standard CTAF broadcasts, and correct cruising levels. ATC has no authority in Class G — no clearance is required or issued.',
@@ -4979,8 +4978,8 @@ export const pplaQuestions: {
   {
     question: 'A "PRD" area on a chart stands for:',
     options: [
-      'A. Riority Route Designation — the effect is most significant at high altitude aerodromes on hot summer days',
-      'B. Ermanent Restricted Danger area — this applies throughout all phases of flight from take-off to landing',
+      'A. Priority Route Designation — the effect is most significant at high altitude aerodromes on hot summer days',
+      'B. Permanent Restricted Danger area — this applies throughout all phases of flight from take-off to landing',
       'C. Rovisional Radar Detection area — this is why thorough pre-flight planning is mandatory before every cross-country',
       'D. Prohibited, Restricted, or Danger area — the general category covering areas where special flight restrictions or hazards exist',
     ],
@@ -5017,7 +5016,7 @@ export const pplaQuestions: {
     options: [
       'A. Only complete blindness or paralysis would prevent flying — this concept is assessed in the CASA PPL theory examination',
       'B. Any illness, injury, or incapacity that could endanger the aircraft or its occupants — the pilot has a legal and moral obligation to assess personal fitness before every flight',
-      'C. Llness only prevents flying if the pilot has declared it to CASA — this principle applies to all piston-engine aircraft in Australian airspace',
+      'C. Illness only prevents flying if the pilot has declared it to CASA — this principle applies to all piston-engine aircraft in Australian airspace',
       'D. Only conditions listed specifically in CASR medical standards — CASR Part 91 specifies the regulatory requirements relating to this principle',
     ],
     correct: 1,
@@ -5042,7 +5041,7 @@ export const pplaQuestions: {
       'A. Is principle only applies to commercial operations — the effect is most significant at high altitude aerodromes on hot summer days — this is a core concept in the PPL syllabus and is tested in both the theory exam and practical skill test',
       'B. The fundamental duty of care in CASR — the pilot in command bears legal responsibility to operate the aircraft in a manner that does not create an unnecessary hazard to persons or property',
       'C. E see-and-avoid concept only — this applies throughout all phases of flight from take-off to landing — this forms part of the standard pre-flight and in-flight decision-making process for all PPL operations in Australia',
-      'D. Sponsibility only applies above 1000 ft AGL — this is why thorough pre-flight planning is mandatory before every cross-country — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
+      'D. Responsibility only applies above 1000 ft AGL — this is why thorough pre-flight planning is mandatory before every cross-country — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
     ],
     correct: 1,
     explanation: 'The fundamental duty of care permeates all aviation regulations. CASR Part 91 specifically prohibits negligent or reckless operation of aircraft that endangers persons or property. The PIC has legal and ethical responsibility to fly in a manner that protects all persons — occupants, overflown persons, and persons on the ground.',
@@ -5052,7 +5051,7 @@ export const pplaQuestions: {
     question: 'The "ATIS" phonetic letter (e.g., "Information Alpha") changes:',
     options: [
       'A. Whenever the ATIS is updated — updated after each new meteorological observation or when operationally significant changes occur, progressing through the phonetic alphabet',
-      'B. Ery hour regardless of weather changes — pilots must correctly apply this when planning each specific flight — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
+      'B. Very hour regardless of weather changes — pilots must correctly apply this when planning each specific flight — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
       'C. Ly when the QNH changes by more than 5 hPa — pilots must correctly apply this when planning each specific flight — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
       'D.  0000, 0600, 1200, and 1800 UTC — this concept is assessed in the CASA PPL theory examination — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
     ],
@@ -5064,9 +5063,9 @@ export const pplaQuestions: {
     question: 'The aircraft "pitot heat" switch should be used when:',
     options: [
       'A. Whenever there is a risk of icing — in visible moisture (cloud, rain, drizzle) with OAT below +10°C — to prevent ice blocking the pitot tube and rendering the ASI inaccurate',
-      'B. Itot heat is only for turbine-engine aircraft — pilots must understand this to operate safely in Australian airspace',
+      'B. Pitot heat is only for turbine-engine aircraft — pilots must understand this to operate safely in Australian airspace',
       'C. Only during instrument flight in cloud — density altitude is a key consideration and must be evaluated before every flight',
-      'D. Itot heat should always be on regardless of conditions — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'D. Pitot heat should always be on regardless of conditions — CASR Part 91 specifies the regulatory requirements relating to this principle',
     ],
     correct: 0,
     explanation: 'Pitot heat prevents ice formation in the pitot tube. Use whenever flying in visible moisture with temperatures at or near freezing. A blocked pitot renders the airspeed indicator unreliable (either frozen at last reading or acting as an altimeter). Most POHs recommend turning pitot heat on before entering cloud or precipitation.',
@@ -5075,7 +5074,7 @@ export const pplaQuestions: {
   {
     question: 'A "fuel injection" aircraft (as opposed to carburettor) has what icing characteristic?',
     options: [
-      'A. Ore susceptible to induction icing than carburettor aircraft — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'A. More susceptible to induction icing than carburettor aircraft — this is why thorough pre-flight planning is mandatory before every cross-country',
       'B. Not susceptible to carburettor icing (no venturi or fuel evaporation in an air-fuel chamber) but may experience induction (impact) icing on the air filter in freezing conditions',
       'C. Fuel injection requires more carburettor heat than carburettor engines — correct application of this concept is tested in the PPL skill test',
       'D. Fuel injection is immune to all forms of icing — this principle applies to all piston-engine aircraft in Australian airspace',
@@ -5100,7 +5099,7 @@ export const pplaQuestions: {
     question: 'The "ammeter" or "loadmeter" in the cockpit shows:',
     options: [
       'A. Whether the battery is charging (positive reading) or discharging (negative), or total electrical load on the alternator',
-      'B. Attery voltage — pilots must understand this to operate safely in Australian airspace',
+      'B. Battery voltage — pilots must understand this to operate safely in Australian airspace',
       'C. Fuel flow rate to the engine — this applies throughout all phases of flight from take-off to landing',
       'D. Il pressure in the lubrication system — this applies throughout all phases of flight from take-off to landing',
     ],
@@ -5124,8 +5123,8 @@ export const pplaQuestions: {
     question: 'The "density altitude" effect on a normally aspirated engine is that power:',
     options: [
       'A. Decreases approximately 3% per 1000 ft of density altitude — at 8000 ft density altitude, approximately 76% of sea-level power is available',
-      'B. Ncreases with density altitude — the engine works harder in thin air — pilots must correctly apply this when planning each specific flight',
-      'C. Emains constant — mixture control maintains power at all altitudes — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'B. Increases with density altitude — the engine works harder in thin air — pilots must correctly apply this when planning each specific flight',
+      'C. Remains constant — mixture control maintains power at all altitudes — this is why thorough pre-flight planning is mandatory before every cross-country',
       'D. S unaffected below 8000 ft density altitude — CASR Part 91 specifies the regulatory requirements relating to this principle',
     ],
     correct: 0,
@@ -5162,7 +5161,7 @@ export const pplaQuestions: {
       'A. 013 hPa should never be set — QNH is always used — pilots must understand this to operate safely in Australian airspace',
       'B. T the start of the cruising phase — pilots must correctly apply this when planning each specific flight',
       'C. When climbing through the transition altitude — the flight level system above the transition layer uses 1013 hPa',
-      'D. Hen above 5000 ft AMSL — this concept is assessed in the CASA PPL theory examination',
+      'D. When above 5000 ft AMSL — this concept is assessed in the CASA PPL theory examination',
     ],
     correct: 2,
     explanation: 'In Australia, 1013 hPa is set when climbing through the transition altitude (10,000 ft AMSL in most areas). Above the transition layer, flight levels are used — all aircraft have 1013 set, providing a common altitude reference for separation. On descent, revert to QNH when passing through the transition level.',
@@ -5171,9 +5170,9 @@ export const pplaQuestions: {
   {
     question: 'The "static vent" on an aircraft must be checked pre-flight for:',
     options: [
-      'A. Tatic vents are sealed and do not require pre-flight inspection — pilots must understand this to operate safely in Australian airspace',
-      'B. Orrect installation angle — density altitude is a key consideration and must be evaluated before every flight',
-      'C. Ompass deviation interference — this is covered in both the PPL exam syllabus and practical flying training',
+      'A. Static vents are sealed and do not require pre-flight inspection — pilots must understand this to operate safely in Australian airspace',
+      'B. Correct installation angle — density altitude is a key consideration and must be evaluated before every flight',
+      'C. Compass deviation interference — this is covered in both the PPL exam syllabus and practical flying training',
       'D. Blockage — a blocked static vent freezes the altimeter, VSI, and ASI indications, creating false readings that can be fatal in IMC',
     ],
     correct: 3,
@@ -5195,9 +5194,9 @@ export const pplaQuestions: {
   {
     question: 'A "compass rose" at an aerodrome is used for:',
     options: [
-      'A. Ligning the aircraft for magnetic north when filing a flight plan — pilots must correctly apply this when planning each specific flight',
-      'B. Ndicating wind direction to taxiing aircraft — understanding this is essential for safe VFR cross-country operations in Australia',
-      'C. Ligning aircraft for engine run-up — this principle applies to all piston-engine aircraft in Australian airspace',
+      'A. Aligning the aircraft for magnetic north when filing a flight plan — pilots must correctly apply this when planning each specific flight',
+      'B. Indicating wind direction to taxiing aircraft — understanding this is essential for safe VFR cross-country operations in Australia',
+      'C. Aligning aircraft for engine run-up — this principle applies to all piston-engine aircraft in Australian airspace',
       'D. A compass swing — providing a magnetically surveyed reference to accurately calibrate the magnetic compass and determine deviation',
     ],
     correct: 3,
@@ -5330,7 +5329,7 @@ export const pplaQuestions: {
       'A. Automatic telephone or radio broadcast of wind, QNH, temperature, and sometimes cloud and visibility at an aerodrome — updated continuously from automatic sensors',
       'B. TC clearances for IFR arrivals only — this forms part of the pre-flight planning requirements for PPL operations',
       'C. WIS is the same as ATIS — this is why thorough pre-flight planning is mandatory before every cross-country',
-      'D. Ull weather forecast for the aerodrome — correct application of this concept is tested in the PPL skill test',
+      'D. Full weather forecast for the aerodrome — correct application of this concept is tested in the PPL skill test',
     ],
     correct: 0,
     explanation: 'AWIS (Aerodrome Weather Information Service) provides automatic weather data from an unattended aerodrome via telephone or radio broadcast. It gives current wind, QNH, temperature, and sometimes visibility and cloud. Not the same as ATIS (which includes runway in use and NOTAM information at controlled aerodromes).',
@@ -5363,8 +5362,8 @@ export const pplaQuestions: {
   {
     question: 'The "Beaufort scale" is used in aviation for:',
     options: [
-      'A. Ating turbulence intensity from 1 to 12 — CASR Part 91 specifies the regulatory requirements relating to this principle',
-      'B. Escribing earthquake intensity near aerodromes — density altitude is a key consideration and must be evaluated before every flight',
+      'A. Rating turbulence intensity from 1 to 12 — CASR Part 91 specifies the regulatory requirements relating to this principle',
+      'B. Describing earthquake intensity near aerodromes — density altitude is a key consideration and must be evaluated before every flight',
       'C. Describing sea state for maritime rescue coordination — occasionally referenced in aviation weather products for offshore operations',
       'D. The Beaufort scale has no aviation application — understanding this helps pilots make safe and informed go/no-go decisions',
     ],
@@ -5376,8 +5375,8 @@ export const pplaQuestions: {
     question: '"Gyroscopic precession" in a propeller-driven aircraft affects handling when:',
     options: [
       'A. During rapid pitch or yaw inputs — the gyroscopic effect of the rotating propeller disc causes a force perpendicular to the applied force, creating yaw when pitching and pitch when yawing',
-      'B. Yroscopic precession only affects helicopters — this principle applies to all piston-engine aircraft in Australian airspace',
-      'C. Uring cruise at constant power — precession is constant and does not affect handling — density altitude is a key consideration and must be evaluated before every flight',
+      'B. Gyroscopic precession only affects helicopters — this principle applies to all piston-engine aircraft in Australian airspace',
+      'C. During cruise at constant power — precession is constant and does not affect handling — density altitude is a key consideration and must be evaluated before every flight',
       'D. Only when RPM exceeds 2500 — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 0,
@@ -5471,10 +5470,10 @@ export const pplaQuestions: {
   {
     question: 'The recommended scan pattern for VFR see-and-avoid is:',
     options: [
-      'A. Lternate looking inside and outside every 30 seconds — this concept is assessed in the CASA PPL theory examination',
+      'A. Alternate looking inside and outside every 30 seconds — this concept is assessed in the CASA PPL theory examination',
       'B. Taring straight ahead for maximum forward visibility — this forms part of the pre-flight planning requirements for PPL operations',
       'C. Brief focused fixations across the visual field in segments of approximately 10–15° — pausing at each segment to allow the eye to focus and detect movement',
-      'D. Ontinuous sweep from left to right without stopping — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'D. Continuous sweep from left to right without stopping — this is why thorough pre-flight planning is mandatory before every cross-country',
     ],
     correct: 2,
     explanation: 'Effective visual scanning: the eye detects movement best when allowed to focus briefly on each area rather than sweeping continuously. Scan in 10–15° segments, pause 1–2 seconds at each. Cover the full field systematically. The central (foveal) area is most acute — bring traffic into this zone for detailed assessment.',
@@ -5484,9 +5483,9 @@ export const pplaQuestions: {
     question: 'A "Danger Area" (D) on a chart indicates:',
     options: [
       'A. Airspace where hazardous activities may occur — transit is at the pilot\'s own risk, typically not prohibited but potentially dangerous when active',
-      'B. Ilitary airspace requiring clearance — the effect is most significant at high altitude aerodromes on hot summer days',
-      'C. Irspace where VFR is permanently prohibited — correct application of this concept is tested in the PPL skill test',
-      'D. Irspace permanently closed to all aircraft — pilots must correctly apply this when planning each specific flight',
+      'B. Military airspace requiring clearance — the effect is most significant at high altitude aerodromes on hot summer days',
+      'C. Airspace where VFR is permanently prohibited — correct application of this concept is tested in the PPL skill test',
+      'D. Airspace permanently closed to all aircraft — pilots must correctly apply this when planning each specific flight',
     ],
     correct: 0,
     explanation: 'Danger Areas (D): activities dangerous to aircraft may occur (weapons testing, artillery ranges, aerial refuelling). Transit is generally not prohibited but is at pilot\'s own risk. Check NOTAMs for active periods. Distinguish from Restricted (R) — conditions apply; Prohibited (P) — never enter.',
@@ -5556,7 +5555,7 @@ export const pplaQuestions: {
     question: 'Fuel contamination with water is most likely in an aircraft that:',
     options: [
       'A. As recently had a full fuel check by an LAME — pilots must correctly apply this when planning each specific flight',
-      'B. Ses Avgas 100LL which naturally repels water — pilots must correctly apply this when planning each specific flight',
+      'B. Uses Avgas 100LL which naturally repels water — pilots must correctly apply this when planning each specific flight',
       'C. Has been parked outside with partially-filled tanks in humid or rainy conditions — condensation forms on the inside of tank walls and water collects at the bottom',
       'D. As been stored in a heated hangar — understanding this helps pilots make safe and informed go/no-go decisions',
     ],
@@ -5581,7 +5580,7 @@ export const pplaQuestions: {
     options: [
       'A. The aircraft experiences a sudden deceleration consistent with a crash impact — a G-switch inside the ELT triggers automatic activation',
       'B. The pilot presses the activation button — this concept is assessed in the CASA PPL theory examination',
-      'C. Adio communications fail — this applies throughout all phases of flight from take-off to landing',
+      'C. Radio communications fail — this applies throughout all phases of flight from take-off to landing',
       'D. The aircraft descends below 500 ft AGL — the effect is most significant at high altitude aerodromes on hot summer days',
     ],
     correct: 0,
@@ -5591,8 +5590,8 @@ export const pplaQuestions: {
   {
     question: 'The minimum equipment required for a VFR day flight under CASR Part 91 includes:',
     options: [
-      'A. Ull IFR suite for all aircraft regardless of operation — the effect is most significant at high altitude aerodromes on hot summer days',
-      'B. Ttitude indicator, heading indicator, and altimeter — this principle applies to all piston-engine aircraft in Australian airspace',
+      'A. Full IFR suite for all aircraft regardless of operation — the effect is most significant at high altitude aerodromes on hot summer days',
+      'B. Attitude indicator, heading indicator, and altimeter — this principle applies to all piston-engine aircraft in Australian airspace',
       'C. Only a magnetic compass is required for day VFR — the effect is most significant at high altitude aerodromes on hot summer days',
       'D. Airspeed indicator, altimeter, magnetic compass — plus any equipment required by the aircraft\'s type certificate',
     ],
@@ -5627,9 +5626,9 @@ export const pplaQuestions: {
   {
     question: 'The "circuit" at a non-controlled aerodrome consists of:',
     options: [
-      'A. Pwind, crosswind, base, final — pilots must understand this to operate safely in Australian airspace',
-      'B. Verhead join directly to final — correct application of this concept is tested in the PPL skill test',
-      'C. Ownwind, base, final only — the aircraft flight manual provides specific values for each aircraft type',
+      'A. Upwind, crosswind, base, final — pilots must understand this to operate safely in Australian airspace',
+      'B. Overhead join directly to final — correct application of this concept is tested in the PPL skill test',
+      'C. Downwind, base, final only — the aircraft flight manual provides specific values for each aircraft type',
       'D. Upwind leg, crosswind leg, downwind leg, base leg, and final approach — five legs forming a rectangular pattern around the runway',
     ],
     correct: 3,
@@ -5639,8 +5638,8 @@ export const pplaQuestions: {
   {
     question: '"Density altitude" is highest (worst performance) when:',
     options: [
-      'A. Igh QNH, hot temperature, high elevation — this concept is assessed in the CASA PPL theory examination',
-      'B. Tandard ISA conditions at high elevation — understanding this is essential for safe VFR cross-country operations in Australia',
+      'A. High QNH, hot temperature, high elevation — this concept is assessed in the CASA PPL theory examination',
+      'B. Standard ISA conditions at high elevation — understanding this is essential for safe VFR cross-country operations in Australia',
       'C. How QNH, cold temperature, high elevation — this principle applies to all piston-engine aircraft in Australian airspace',
       'D. Low QNH, hot temperature, high elevation — all three factors combine to maximise density altitude',
     ],
@@ -5675,9 +5674,9 @@ export const pplaQuestions: {
   {
     question: 'The "CASA Visual Flight Rules Guide" (VFR Guide) is a useful reference for:',
     options: [
-      'A. Ircraft maintenance procedures — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'A. Aircraft maintenance procedures — this is why thorough pre-flight planning is mandatory before every cross-country',
       'B. FR approach plate interpretation — density altitude is a key consideration and must be evaluated before every flight',
-      'C. Erformance chart calculations only — pilots must correctly apply this when planning each specific flight',
+      'C. Performance chart calculations only — pilots must correctly apply this when planning each specific flight',
       'D. Overview of airspace, altimetry, communication procedures, and weather minimums for VFR pilots operating in Australian airspace',
     ],
     correct: 3,
@@ -5855,9 +5854,9 @@ export const pplaQuestions: {
   {
     question: 'To enter Class D airspace at a regional controlled aerodrome, the pilot must:',
     options: [
-      'A. Btain a formal clearance using the word "cleared" — the effect is most significant at high altitude aerodromes on hot summer days',
+      'A. Obtain a formal clearance using the word "cleared" — the effect is most significant at high altitude aerodromes on hot summer days',
       'B. Establish two-way radio communication with ATC and receive an acknowledgement — the acknowledgement itself (even without explicit clearance words) constitutes permission to enter',
-      'C. Ave filed a flight plan only — this is why thorough pre-flight planning is mandatory before every cross-country',
+      'C. Have filed a flight plan only — this is why thorough pre-flight planning is mandatory before every cross-country',
       'D. O requirement — Class D is uncontrolled — this principle applies to all piston-engine aircraft in Australian airspace',
     ],
     correct: 1,
@@ -5891,8 +5890,8 @@ export const pplaQuestions: {
   {
     question: 'What does the mnemonic "HASELL" check cover before aerobatics?',
     options: [
-      'A. Ading, Altitude, Speed, Equipment, Lights, Location — density altitude is a key consideration and must be evaluated before every flight — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
-      'B. Ight, Airspeed, Security, Engine, Location, Lookout — correct application of this concept is tested in the PPL skill test — this forms part of the standard pre-flight and in-flight decision-making process for all PPL operations in Australia',
+      'A. Heading, Altitude, Speed, Equipment, Lights, Location — density altitude is a key consideration and must be evaluated before every flight — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
+      'B. Tight, Airspeed, Security, Engine, Location, Lookout — correct application of this concept is tested in the PPL skill test — this forms part of the standard pre-flight and in-flight decision-making process for all PPL operations in Australia',
       'C. Height (minimum safe), Airframe (configuration), Security (harnesses locked), Engine (mags, fuel, temperatures), Location (clear of built-up areas, controlled airspace), Lookout (all clear)',
       'D. SELL is not an Australian procedure — pilots must understand this to operate safely in Australian airspace — pilots operating in Australia must understand this when planning and conducting VFR cross-country flights',
     ],
@@ -5929,8 +5928,8 @@ export const pplaQuestions: {
     options: [
       'A. AAP no longer exists — replaced by Class D in 2020 — this applies throughout all phases of flight from take-off to landing',
       'B. General Aviation Aerodrome Procedures — non-controlled aerodromes with relatively high traffic where additional procedures (two-way radio, transponder) apply to improve safety',
-      'C. Eneral Aviation Approach Procedures — IFR aerodromes only — this applies throughout all phases of flight from take-off to landing',
-      'D. Overnment-Approved Aerodrome Programs — this forms part of the pre-flight planning requirements for PPL operations',
+      'C. General Aviation Approach Procedures — IFR aerodromes only — this applies throughout all phases of flight from take-off to landing',
+      'D. Government-Approved Aerodrome Programs — this forms part of the pre-flight planning requirements for PPL operations',
     ],
     correct: 1,
     explanation: 'GAAP (General Aviation Aerodrome Procedures) aerodromes require two-way radio and transponder for all operations due to high traffic volumes. They are non-controlled but have mandatory procedures that exceed standard non-controlled requirements. Examples include Moorabbin (YMMB) and Bankstown (YSBK).',
@@ -5939,10 +5938,10 @@ export const pplaQuestions: {
   {
     question: 'Wing loading (W/S) affects stall speed because:',
     options: [
-      'A. Ing loading has no effect on stall speed — the aircraft flight manual provides specific values for each aircraft type',
+      'A. Wing loading has no effect on stall speed — the aircraft flight manual provides specific values for each aircraft type',
       'B. Higher wing loading increases stall speed — more weight per unit of wing area means higher dynamic pressure (speed) is needed to generate sufficient lift',
-      'C. Ower wing loading increases stall speed — this principle applies to all piston-engine aircraft in Australian airspace',
-      'D. Igher wing loading reduces stall speed — this applies throughout all phases of flight from take-off to landing',
+      'C. Power wing loading increases stall speed — this principle applies to all piston-engine aircraft in Australian airspace',
+      'D. Higher wing loading reduces stall speed — this applies throughout all phases of flight from take-off to landing',
     ],
     correct: 1,
     explanation: 'Wing loading = weight ÷ wing area. Higher wing loading means more lift must be generated per unit of wing area. Since lift = ½ρV²CLmaxS, higher W/S requires higher V (airspeed) at CLmax — a higher stall speed. High-performance aircraft have high wing loading and fast stall speeds.',
@@ -5952,7 +5951,7 @@ export const pplaQuestions: {
     question: 'A TAF issue time of "1109Z" and validity "1112/1212" means the forecast:',
     options: [
       'A. S valid for 12 hours from time of issue — pilots must correctly apply this when planning each specific flight',
-      'B. Xpires at noon local time — the aircraft flight manual provides specific values for each aircraft type',
+      'B. Expires at noon local time — the aircraft flight manual provides specific values for each aircraft type',
       'C. S only valid between 11:00 and 12:00 UTC — the aircraft flight manual provides specific values for each aircraft type',
       'D. Was issued at 09 minutes past 11:00Z and is valid from 12:00Z on the 11th to 12:00Z on the 12th',
     ],
@@ -5987,9 +5986,9 @@ export const pplaQuestions: {
   {
     question: 'Ground effect assists an aircraft during take-off and landing because:',
     options: [
-      'A. Ound effect only occurs during landing, not take-off — this principle applies to all piston-engine aircraft in Australian airspace — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
+      'A. Ground effect only occurs during landing, not take-off — this principle applies to all piston-engine aircraft in Australian airspace — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
       'B. R pressure builds between the wing and ground, increasing lift — the aircraft flight manual provides specific values for each aircraft type — understanding and applying this concept correctly is essential for safe operations under CASR Part 91 in Australian airspace',
-      'C. Ound effect reduces stall speed permanently once entered — this applies throughout all phases of flight from take-off to landing — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
+      'C. Ground effect reduces stall speed permanently once entered — this applies throughout all phases of flight from take-off to landing — the CASA PPL examination specifically tests this knowledge as part of the aeronautical knowledge requirements',
       'D. The proximity of the ground reduces the wingtip vortex downwash, decreasing induced drag and increasing lift efficiency — allowing the aircraft to fly at a lower speed than out-of-ground-effect conditions would permit',
     ],
     correct: 3,
