@@ -10,6 +10,7 @@ import { cnavQuestions } from '../../../lib/questions-cnav'
 import { cagkQuestions } from '../../../lib/questions-cagk'
 import { cadaQuestions } from '../../../lib/questions-cada'
 import { cfpaQuestions } from '../../../lib/questions-cfpa'
+import { irexQuestions } from '../../../lib/questions-irex'
 
 const fullBanks: Record<string, any[]> = {
   'PPL Theory': pplaQuestions,
