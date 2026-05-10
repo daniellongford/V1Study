@@ -74,13 +74,13 @@ export const aalwQuestions: {
 {
   question: 'For multi-crew operations, the minimum flight crew composition required is determined by:',
   options: [
-    'A. The operator\\\'s Operations Manual regardless of the aircraft flight manual',
+    'A. The operator\'s Operations Manual regardless of the aircraft flight manual',
     'B. The number of passengers carried — one crew member per 50 passengers',
     'C. CASA approval on a case by case basis for each operation, subject to written approval from the operator\'s chief pilot',
-    'D. The aircraft\\\'s type certificate and flight manual — the minimum crew specified in the AFM must be carried'
+    'D. The aircraft\'s type certificate and flight manual — the minimum crew specified in the AFM must be carried'
   ],
   correct: 3,
-  explanation: 'Minimum flight crew is determined by the aircraft\\\'s Type Certificate and Flight Manual (AFM). The minimum crew specified in the AFM is the legal minimum. An operator\\\'s Operations Manual may specify additional crew but cannot reduce below the AFM minimum. CASR Part 91 and Part 121 also specify requirements that may be more stringent.',
+  explanation: 'Minimum flight crew is determined by the aircraft\'s Type Certificate and Flight Manual (AFM). The minimum crew specified in the AFM is the legal minimum. An operator\'s Operations Manual may specify additional crew but cannot reduce below the AFM minimum. CASR Part 91 and Part 121 also specify requirements that may be more stringent.',
   reference: 'CASR Part 91 / CAO 82.0'
 },
 
@@ -98,7 +98,7 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'An airline\\\'s Operations Manual requires 4 flight crew on an ultra-long range operation, but the aircraft AFM specifies a minimum crew of 2. The legal minimum crew for the operation is:',
+  question: 'An airline\'s Operations Manual requires 4 flight crew on an ultra-long range operation, but the aircraft AFM specifies a minimum crew of 2. The legal minimum crew for the operation is:',
   options: [
     'A. 2 — the AFM minimum is the legal requirement and the Operations Manual cannot increase it',
     'B. 3 — a compromise between the AFM minimum and the operator requirement',
@@ -106,7 +106,7 @@ export const aalwQuestions: {
     'D. 4 — the Operations Manual is binding on the operator and crew and establishes the legal requirement for that operation'
   ],
   correct: 3,
-  explanation: 'The operator\\\'s Operations Manual is binding on the operator and crew. While the AFM establishes the absolute minimum (2), the operator can and must specify more crew where required for safety. On an ultra-long range operation the Operations Manual minimum of 4 becomes the legal minimum for that operator\\\'s operations. The crew cannot operate below the Operations Manual requirement.',
+  explanation: 'The operator\'s Operations Manual is binding on the operator and crew. While the AFM establishes the absolute minimum (2), the operator can and must specify more crew where required for safety. On an ultra-long range operation the Operations Manual minimum of 4 becomes the legal minimum for that operator\'s operations. The crew cannot operate below the Operations Manual requirement.',
   reference: 'CASR Part 121 / CAO 82.0'
 },
 
@@ -114,7 +114,7 @@ export const aalwQuestions: {
   question: 'The flight and duty time limitations for multi-crew airline operations are primarily contained in:',
   options: [
     'A. CASR Part 61 which specifies all duty limits for all licence holders',
-    'B. The individual operator\\\'s Award agreement which takes precedence over CAO 48.1',
+    'B. The individual operator\'s Award agreement which takes precedence over CAO 48.1',
     'C. AIP GEN 2.1 which lists all flight time limitations for Australian operations',
     'D. CAO 48.1 which specifies flight and duty time limitations for multi-crew air transport operations'
   ],
@@ -163,7 +163,7 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'An ATPL holder\\\'s licence expires if not renewed. Under CASR Part 61, the ATPL must be renewed:',
+  question: 'An ATPL holder\'s licence expires if not renewed. Under CASR Part 61, the ATPL must be renewed:',
   options: [
     'A. Every 2 years by passing a written examination, subject to the operator\'s approved exposition authorising such operations',
     'B. Every 5 years with a CASA-approved licence renewal course',
@@ -231,12 +231,12 @@ export const aalwQuestions: {
   question: 'The "line check" required for RPT airline operations is:',
   options: [
     'A. An annual theoretical examination on the aircraft type and company procedures, provided a current instrument rating is held for the relevant aircraft category',
-    'B. A periodic check conducted by an authorised check captain during a normal line operation to assess the pilot\\\'s performance to the required standard',
+    'B. A periodic check conducted by an authorised check captain during a normal line operation to assess the pilot\'s performance to the required standard',
     'C. A simulator check focusing on emergency procedures and abnormal operations, subject to the operator\'s approved exposition authorising such operations',
     'D. A check conducted by CASA on a random basis to ensure operational standards, subject to the operator\'s approved exposition authorising such operations'
   ],
   correct: 1,
-  explanation: 'A line check is conducted during normal line operations (not a simulator) by an authorised check captain (line captain), typically annually. It assesses the pilot\\\'s overall performance in normal line operations — crew management, use of procedures, communication, and airmanship — rather than specifically targeting emergency procedures (which are the focus of simulator proficiency checks).',
+  explanation: 'A line check is conducted during normal line operations (not a simulator) by an authorised check captain (line captain), typically annually. It assesses the pilot\'s overall performance in normal line operations — crew management, use of procedures, communication, and airmanship — rather than specifically targeting emergency procedures (which are the focus of simulator proficiency checks).',
   reference: 'CASR Part 121 / CAO 82.3'
 },
 
@@ -262,7 +262,7 @@ export const aalwQuestions: {
     'D. Permitted only if the leave period does not exceed 28 days, except when the operation involves more than 9 passenger seats, subject to the pilot complet'
   ],
   correct: 0,
-  explanation: 'Type ratings in Australia attach to the individual pilot\\\'s licence, not to a specific operator. An ATPL holder with a current type rating may exercise those privileges with any operator. The pilot must hold a current medical, meet recency requirements, and comply with the new operator\\\'s Operations Manual requirements (such as company indoctrination).',
+  explanation: 'Type ratings in Australia attach to the individual pilot\'s licence, not to a specific operator. An ATPL holder with a current type rating may exercise those privileges with any operator. The pilot must hold a current medical, meet recency requirements, and comply with the new operator\'s Operations Manual requirements (such as company indoctrination).',
   reference: 'CASR Part 61'
 },
 
@@ -340,7 +340,7 @@ export const aalwQuestions: {
     'D. An appropriate examining authority or flight examiner rating, or be authorised by the operator under CASA approval, to conduct formal checks and examinations'
   ],
   correct: 3,
-  explanation: 'To conduct formal checks and examinations (proficiency checks, type rating tests), a pilot must hold an appropriate examining authority (flight examiner rating or be authorised under the operator\\\'s CASA-approved system). An ATPL alone does not authorise the holder to conduct formal assessments. Check captains must be authorised under the operator\\\'s exposition and applicable regulations.',
+  explanation: 'To conduct formal checks and examinations (proficiency checks, type rating tests), a pilot must hold an appropriate examining authority (flight examiner rating or be authorised under the operator\'s CASA-approved system). An ATPL alone does not authorise the holder to conduct formal assessments. Check captains must be authorised under the operator\'s exposition and applicable regulations.',
   reference: 'CASR Part 61 / CASR Part 121'
 },
 
@@ -374,12 +374,12 @@ export const aalwQuestions: {
   question: 'During a multi-crew flight, if the PIC becomes incapacitated, the co-pilot must:',
   options: [
     'A. Declare an emergency and land at the nearest aerodrome regardless of fuel state, provided a current instrument rating is held for the relevant aircraft category',
-    'B. Assume control of the aircraft, declare an emergency with ATC, and complete the flight safely in accordance with the operator\\\'s procedures for pilot incapacitation',
+    'B. Assume control of the aircraft, declare an emergency with ATC, and complete the flight safely in accordance with the operator\'s procedures for pilot incapacitation',
     'C. Contact company operations before taking any action to change the flight plan, provided a current instrument rating is held for the relevant aircraft category',
     'D. Transfer PIC responsibilities to the senior cabin crew member while contacting company, provided the relevant aerodrome has a certified RFFS capability for the aircraft'
   ],
   correct: 1,
-  explanation: 'Pilot incapacitation is a drill practised by all multi-crew operators. The co-pilot takes control immediately, advises ATC (declaring emergency if appropriate), and follows the operator\\\'s incapacitation procedures. Immediate action is: take control, maintain aircraft safety. Then: communicate, seek medical assistance for the incapacitated pilot, plan for landing at a suitable airport.',
+  explanation: 'Pilot incapacitation is a drill practised by all multi-crew operators. The co-pilot takes control immediately, advises ATC (declaring emergency if appropriate), and follows the operator\'s incapacitation procedures. Immediate action is: take control, maintain aircraft safety. Then: communicate, seek medical assistance for the incapacitated pilot, plan for landing at a suitable airport.',
   reference: 'CASR Part 121 / Operator SOPs'
 },
 
@@ -388,7 +388,7 @@ export const aalwQuestions: {
   options: [
     'A. Occupy a pilot seat and perform pilot duties in cruise only — they may not be the handling pilot during take-off or landing',
     'B. Act as pilot in command during any phase of flight when the captain is resting',
-    'C. Perform any flight crew duty at any time at the captain\\\'s discretion, provided a current instrument rating is held for the relevant aircraft category',
+    'C. Perform any flight crew duty at any time at the captain\'s discretion, provided a current instrument rating is held for the relevant aircraft category',
     'D. Only monitor systems from the observer seat — they may not touch flight controls'
   ],
   correct: 0,
@@ -439,12 +439,12 @@ export const aalwQuestions: {
   question: 'An ATPL holder conducting a ferry flight of a new aircraft from the manufacturer requires:',
   options: [
     'A. The standard documents plus a ferry permit if the CofA is not yet issued, subject to the requirements of the applicable Civil Aviation Order',
-    'B. Only a manufacturer\\\'s authorisation letter — no CASA documentation is required for delivery flights',
+    'B. Only a manufacturer\'s authorisation letter — no CASA documentation is required for delivery flights',
     'C. An experimental aircraft certificate issued by CASA for each delivery flight, provided CASA has been notified of the operation at least 24 hours in advance',
     'D. A ferry permit issued by CASA authorising the flight under specific conditions, in addition to normal crew licensing requirements'
   ],
   correct: 3,
-  explanation: 'If an aircraft\\\'s Certificate of Airworthiness has not yet been issued (e.g. during delivery or after maintenance), CASA may issue a special flight permit (ferry permit) authorising the flight under specified conditions and route. The pilot must hold appropriate ratings and comply with the permit conditions. This is distinct from a standard CofA operation.',
+  explanation: 'If an aircraft\'s Certificate of Airworthiness has not yet been issued (e.g. during delivery or after maintenance), CASA may issue a special flight permit (ferry permit) authorising the flight under specified conditions and route. The pilot must hold appropriate ratings and comply with the permit conditions. This is distinct from a standard CofA operation.',
   reference: 'CASR Part 21 / CAR'
 },
 
@@ -454,10 +454,10 @@ export const aalwQuestions: {
     'A. The deviation is authorised in advance by CASA Operations, provided a current instrument rating is held for the relevant aircraft category',
     'B. Weather conditions make strict compliance impossible, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'C. An emergency requires immediate action — the PIC may deviate from any rule as necessary in an emergency and must report the deviation to CASA as soon as practicable',
-    'D. The operator\\\'s Operations Manual authorises such deviation, provided a current instrument rating is held for the relevant aircraft category'
+    'D. The operator\'s Operations Manual authorises such deviation, provided a current instrument rating is held for the relevant aircraft category'
   ],
   correct: 2,
-  explanation: 'Under CASR Part 91, in an emergency the PIC may deviate from any CASR rule to the extent necessary to meet the emergency. The deviation must be reported to CASA as soon as practicable. This emergency authority is absolute — no prior approval is needed. The PIC\\\'s primary obligation is safety of the aircraft and its occupants.',
+  explanation: 'Under CASR Part 91, in an emergency the PIC may deviate from any CASR rule to the extent necessary to meet the emergency. The deviation must be reported to CASA as soon as practicable. This emergency authority is absolute — no prior approval is needed. The PIC\'s primary obligation is safety of the aircraft and its occupants.',
   reference: 'CASR Part 91.025'
 },
 
@@ -470,7 +470,7 @@ export const aalwQuestions: {
     'D. 90 hours — the pilot has already exceeded the monthly limit'
   ],
   correct: 0,
-  explanation: 'Under CAO 48.1, the maximum flight time in any calendar month is 100 hours. Accepting a flight that would take the total to 105 hours would breach this limit. The pilot must decline the flight or ensure the total for the calendar month does not exceed 100 hours. This is the pilot\\\'s personal responsibility as well as the operator\\\'s scheduling responsibility.',
+  explanation: 'Under CAO 48.1, the maximum flight time in any calendar month is 100 hours. Accepting a flight that would take the total to 105 hours would breach this limit. The pilot must decline the flight or ensure the total for the calendar month does not exceed 100 hours. This is the pilot\'s personal responsibility as well as the operator\'s scheduling responsibility.',
   reference: 'CAO 48.1'
 },
 
@@ -491,12 +491,12 @@ export const aalwQuestions: {
   question: 'An ATPL holder operating under CAO 82.3 (RPT operations) must complete a route and aerodrome qualification before acting as PIC to a new destination. This qualification requires:',
   options: [
     'A. Familiarity with the route, terrain, weather patterns, and aerodrome including approach procedures, either by prior flight on the route with a qualified pilot or through approved self-study with an examination',
-    'B. A theoretical examination on the aerodrome\\\'s procedures and NOTAMs only, only if the operator holds a specific approval under their Air Operator Certificate',
+    'B. A theoretical examination on the aerodrome\'s procedures and NOTAMs only, only if the operator holds a specific approval under their Air Operator Certificate',
     'C. Only the operator to confirm familiarity through its documentation system — no physical visit or flight is required, only when operating in Class C or Class D controlled airspace',
     'D. A minimum of 3 flights on the route as co-pilot before assuming PIC duties, only if the operator holds a specific approval under their Air Operator Certificate'
   ],
   correct: 0,
-  explanation: 'Route and aerodrome qualification (RAQ) under CAO 82.3 requires the PIC to be familiar with the route, terrain, significant meteorological hazards, instrument procedures, and aerodrome layout. This is typically achieved through a combination of study of the operator\\\'s route documentation, approach charts, and either a qualifying flight or an approved computer-based system. The specific requirements are specified in the operator\\\'s exposition.',
+  explanation: 'Route and aerodrome qualification (RAQ) under CAO 82.3 requires the PIC to be familiar with the route, terrain, significant meteorological hazards, instrument procedures, and aerodrome layout. This is typically achieved through a combination of study of the operator\'s route documentation, approach charts, and either a qualifying flight or an approved computer-based system. The specific requirements are specified in the operator\'s exposition.',
   reference: 'CAO 82.3 / CASR Part 121'
 },
 
@@ -531,7 +531,7 @@ export const aalwQuestions: {
   options: [
     'A. They are responsible only for events occurring after engine start, provided the aircraft holds a valid maintenance release and is within weight limits, provided a current instrumen',
     'B. They share equal responsibility with the operator for regulatory compliance, subject to the operator\'s approved exposition authorising such operations, provided a current instrumen',
-    'C. Their responsibility is limited to in-flight decisions — pre-flight planning is the operator\\\'s responsibility, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
+    'C. Their responsibility is limited to in-flight decisions — pre-flight planning is the operator\'s responsibility, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'D. They bear ultimate responsibility for the safe conduct of the flight from acceptance of the aircraft to termination of the flight, and may be held personally accountable for breaches of the regulations'
   ],
   correct: 3,
@@ -553,15 +553,15 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'An ATPL holder who is the designated PIC on a flight refuses to continue the flight after observing that the first officer appears to be significantly fatigued. The PIC\\\'s authority in this situation is:',
+  question: 'An ATPL holder who is the designated PIC on a flight refuses to continue the flight after observing that the first officer appears to be significantly fatigued. The PIC\'s authority in this situation is:',
   options: [
     'A. Limited — the company must be consulted before removing a crew member from duty, provided the aircraft holds a valid maintenance release and is within weight limits, subject to the requirements ',
     'B. Only exercisable if the first officer is formally declared medically unfit, except when the operation involves more than 9 passenger seats, only when operating in Class',
-    'C. Absolute — the PIC may refuse to operate or remove a crew member from flight duties if satisfied that the crew member is not fit to perform their duties, and the PIC\\\'s decision cannot be overridden by the company',
+    'C. Absolute — the PIC may refuse to operate or remove a crew member from flight duties if satisfied that the crew member is not fit to perform their duties, and the PIC\'s decision cannot be overridden by the company',
     'D. Not applicable — fatigue is a self-declaration matter for the first officer alone, except during the period of any declared low visibility procedures at the aerodrome'
   ],
   correct: 2,
-  explanation: 'The PIC has absolute authority over the operation and safety of the aircraft. Under CASR Part 91 and the Civil Aviation Act, the PIC may remove from duty any crew member they consider unfit. This authority cannot be overridden by company pressure. The decision to ground a crew member for fitness concerns is the PIC\\\'s sole responsibility and authority.',
+  explanation: 'The PIC has absolute authority over the operation and safety of the aircraft. Under CASR Part 91 and the Civil Aviation Act, the PIC may remove from duty any crew member they consider unfit. This authority cannot be overridden by company pressure. The decision to ground a crew member for fitness concerns is the PIC\'s sole responsibility and authority.',
   reference: 'CASR Part 91 / Civil Aviation Act 1988'
 },
 
@@ -571,7 +571,7 @@ export const aalwQuestions: {
     'A. Any ATPL holder with more than 5,000 hours total time, only when operating in Class C or Class D controlled airspace',
     'B. A Grade 1 Flight Instructor with a current type rating on the aircraft',
     'C. A CASA-authorised flight examiner holding an appropriate examiner rating for the aircraft category and type',
-    'D. Any check captain approved by the airline operator\\\'s chief pilot'
+    'D. Any check captain approved by the airline operator\'s chief pilot'
   ],
   correct: 2,
   explanation: 'An ATPL skill test must be conducted by a CASA-authorised flight examiner (FE) holding an appropriate examiner rating for the aircraft category and type. Not all ATPL holders or instructors are authorised to conduct licence skill tests — it requires a specific examiner rating granted by CASA. This ensures standardisation and independence of assessment.',
@@ -579,7 +579,7 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'An ATPL holder operating under AOC provisions is required to ensure they are familiar with the company\\\'s Operations Manual. If the Operations Manual specifies a requirement more restrictive than CASR, the pilot must:',
+  question: 'An ATPL holder operating under AOC provisions is required to ensure they are familiar with the company\'s Operations Manual. If the Operations Manual specifies a requirement more restrictive than CASR, the pilot must:',
   options: [
     'A. Follow the more restrictive Operations Manual requirement — the manual is binding on the crew and typically imposes additional restrictions for safety',
     'B. Follow the CASR requirement — regulations always take precedence over company manuals, only when operating in Class C or Class D controlled airspace',
@@ -613,7 +613,7 @@ export const aalwQuestions: {
     'D. Advise ATC that the clearance is not acceptable and request an alternative routing or altitude that avoids the hazard'
   ],
   correct: 3,
-  explanation: 'The PIC is responsible for the safety of the aircraft and may refuse any ATC clearance that would take the aircraft into conditions that compromise safety. ATC separation responsibility does not override the PIC\\\'s responsibility for aircraft safety. The correct response is to advise ATC that the clearance is not acceptable and request an alternative. There is no need to declare an emergency simply to exercise this right.',
+  explanation: 'The PIC is responsible for the safety of the aircraft and may refuse any ATC clearance that would take the aircraft into conditions that compromise safety. ATC separation responsibility does not override the PIC\'s responsibility for aircraft safety. The correct response is to advise ATC that the clearance is not acceptable and request an alternative. There is no need to declare an emergency simply to exercise this right.',
   reference: 'CASR Part 91 / AIP ENR 1.1'
 },
 
@@ -631,7 +631,7 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'An ATPL holder\\\'s Class 1 medical certificate can be issued with an operational multi-pilot limitation (OML). This means:',
+  question: 'An ATPL holder\'s Class 1 medical certificate can be issued with an operational multi-pilot limitation (OML). This means:',
   options: [
     'A. The pilot can only fly multi-engine aircraft, except when the operation involves more than 9 passenger seats',
     'B. The pilot is limited to operations within 100 nm of their home base, except when the operation involves more than 9 passenger seats',
@@ -649,7 +649,7 @@ export const aalwQuestions: {
     'A. Comply with the schedule and file a report after the flight, only if the operator holds a specific approval under their Air Operator Certificate, except when the operation in',
     'B. Discuss the matter with the union and await a policy decision before taking any action, except during the period of any declared low visibility procedures at the aerodrome',
     'C. Ask the first officer to monitor more carefully to compensate for any fatigue effects, provided CASA has been notified of the operation at least 24 hours in advance',
-    'D. Decline to fly if subjectively fatigued, report the concern to the operator\\\'s safety management system, and if necessary to CASA directly — a pilot cannot be compelled to operate in breach of safety requirements'
+    'D. Decline to fly if subjectively fatigued, report the concern to the operator\'s safety management system, and if necessary to CASA directly — a pilot cannot be compelled to operate in breach of safety requirements'
   ],
   correct: 3,
   explanation: 'Fatigue is a serious safety issue. A pilot who considers themselves unfit to fly due to fatigue must decline the flight. They cannot be compelled to operate in breach of safety. Reporting through the SMS and directly to CASA if the operator is non-responsive is the appropriate escalation. CASR and CAO 48.1 place a personal obligation on the pilot — not just the operator — for fatigue management.',
@@ -696,9 +696,9 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'The PIC\\\'s responsibility with respect to the maintenance release before flight is to:',
+  question: 'The PIC\'s responsibility with respect to the maintenance release before flight is to:',
   options: [
-    'A. Ensure maintenance has been carried out — the actual review of the release is the operator\\\'s responsibility, except when the operation involves more than 9 passenger seats',
+    'A. Ensure maintenance has been carried out — the actual review of the release is the operator\'s responsibility, except when the operation involves more than 9 passenger seats',
     'B. Sign the maintenance release to acknowledge they have accepted the aircraft, only when operating in Class C or Class D controlled airspace, subject to written approval ',
     'C. Only check the fuel and oil quantities listed in the maintenance release, subject to the operator\'s approved exposition authorising such operations, subject to written approval ',
     'D. Check that the maintenance release is current, determine its validity period has not expired, identify any outstanding defects or endorsements, and determine whether these affect the airworthiness for the planned flight'
@@ -712,9 +712,9 @@ export const aalwQuestions: {
   question: 'A maintenance release for a turbine-powered transport category aircraft may be signed off by:',
   options: [
     'A. The PIC if the aircraft is operated under an AOC and a licensed engineer is unavailable, only when operating in Class C or Class D controlled airspace',
-    'B. A CASA-licensed aircraft maintenance engineer (LAME) holding an appropriate endorsement, or an appropriately authorised person under the operator\\\'s maintenance organisation approval',
+    'B. A CASA-licensed aircraft maintenance engineer (LAME) holding an appropriate endorsement, or an appropriately authorised person under the operator\'s maintenance organisation approval',
     'C. Any person holding a CASR Part 66 category B1 or B2 licence regardless of type rating, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
-    'D. The airline\\\'s chief engineer by remote authorisation via maintenance data link, provided the aircraft holds a valid maintenance release and is within weight limits'
+    'D. The airline\'s chief engineer by remote authorisation via maintenance data link, provided the aircraft holds a valid maintenance release and is within weight limits'
   ],
   correct: 1,
   explanation: 'Under CASR Part 66 and Part 145, certifying maintenance and releasing an aircraft to service (signing the maintenance release) requires a Licensed Aircraft Maintenance Engineer (LAME) with appropriate endorsements, or an authorised person under an approved maintenance organisation. For transport category aircraft, the LAME must hold Part 66 Category B1 (airframe/engines) or B2 (avionics) with appropriate type training.',
@@ -726,7 +726,7 @@ export const aalwQuestions: {
   options: [
     'A. The captain approves the dispatch in writing before departure, provided a current instrument rating is held for the relevant aircraft category, subject to the operator\'s ap',
     'B. The defect is minor and will be rectified within 10 flight hours, only if the operator holds a specific approval under their Air Operator Certificate',
-    'C. The MEL item has been deferred by the operator\\\'s chief engineer, subject to the pilot completing the required recurrent training within 12 months, only when operating in Class',
+    'C. The MEL item has been deferred by the operator\'s chief engineer, subject to the pilot completing the required recurrent training within 12 months, only when operating in Class',
     'D. The MEL entry confirms the defective item is on the MEL, the specified conditions and operational procedures for dispatch are met, and the required maintenance and placard actions have been completed'
   ],
   correct: 3,
@@ -769,14 +769,14 @@ export const aalwQuestions: {
     'D. Is a mandatory requirement that must be complied with by the specified compliance date — failure to comply renders the aircraft unairworthy'
   ],
   correct: 3,
-  explanation: 'Airworthiness Directives are mandatory. They are issued by CASA (and must be adopted from the country of manufacture\\\'s airworthiness authority) to correct unsafe conditions in aircraft. Non-compliance by the due date renders the aircraft unairworthy, and operating an aircraft not in compliance with applicable ADs is an offence. There are no general exemptions for private or non-commercial operations.',
+  explanation: 'Airworthiness Directives are mandatory. They are issued by CASA (and must be adopted from the country of manufacture\'s airworthiness authority) to correct unsafe conditions in aircraft. Non-compliance by the due date renders the aircraft unairworthy, and operating an aircraft not in compliance with applicable ADs is an offence. There are no general exemptions for private or non-commercial operations.',
   reference: 'CASR Part 39 / Civil Aviation Act 1988'
 },
 
 {
   question: 'The PIC discovers during pre-flight inspection that an AD compliance date passed 2 days ago and the required modification has not been performed. The PIC must:',
   options: [
-    'A. Contact the operator\\\'s maintenance control for guidance while proceeding with the flight',
+    'A. Contact the operator\'s maintenance control for guidance while proceeding with the flight',
     'B. Proceed if the AD is for a non-structural item and file a defect report after landing',
     'C. Not commence the flight — the aircraft is not airworthy. The AD must be complied with before the aircraft is returned to service',
     'D. Check if the AD has been superseded by a newer version before making a decision'
@@ -795,7 +795,7 @@ export const aalwQuestions: {
     'D. Jointly shared between CASA and the operator with neither having primary responsibility, except during the period of any declared low visibility procedures at the aerodrome'
   ],
   correct: 0,
-  explanation: 'Continuing airworthiness responsibility lies with the registered operator. Under CASR Part 42 and Part 145, the operator must manage the aircraft\\\'s maintenance programme, ensure ADs are complied with on time, and maintain accurate records. The PIC\\\'s pre-flight responsibility is to check that the maintenance release is current — the ongoing airworthiness management is the operator\\\'s obligation.',
+  explanation: 'Continuing airworthiness responsibility lies with the registered operator. Under CASR Part 42 and Part 145, the operator must manage the aircraft\'s maintenance programme, ensure ADs are complied with on time, and maintain accurate records. The PIC\'s pre-flight responsibility is to check that the maintenance release is current — the ongoing airworthiness management is the operator\'s obligation.',
   reference: 'CASR Part 42 / CASR Part 145'
 },
 
@@ -829,12 +829,12 @@ export const aalwQuestions: {
   question: 'After landing, the PIC notices damage to the aircraft that was not present at the start of the flight. The PIC must:',
   options: [
     'A. Report the damage only if it appears structurally significant, only if the operator holds a specific approval under their Air Operator Certificate, provided the relevant aerodr',
-    'B. Make an entry in the aircraft\\\'s technical log describing the damage, ensure the aircraft is not operated until a LAME has assessed whether the aircraft is airworthy, and report the occurrence as required',
+    'B. Make an entry in the aircraft\'s technical log describing the damage, ensure the aircraft is not operated until a LAME has assessed whether the aircraft is airworthy, and report the occurrence as required',
     'C. Leave a note for the maintenance crew and proceed to the next duty period, only if the operator holds a specific approval under their Air Operator Certificate',
     'D. Complete a CASA incident report but the aircraft may continue to operate if no structural damage is visible, provided the relevant aerodrome has a certified RFFS capability for the aircraft'
   ],
   correct: 1,
-  explanation: 'Any damage to the aircraft must be entered in the technical log. The aircraft must not be operated further until a LAME has assessed the damage and certified the aircraft as airworthy. Even apparently minor damage may affect airworthiness in ways not visible to the flight crew. The PIC\\\'s obligation is to record the defect and ground the aircraft pending assessment.',
+  explanation: 'Any damage to the aircraft must be entered in the technical log. The aircraft must not be operated further until a LAME has assessed the damage and certified the aircraft as airworthy. Even apparently minor damage may affect airworthiness in ways not visible to the flight crew. The PIC\'s obligation is to record the defect and ground the aircraft pending assessment.',
   reference: 'CASR Part 43 / CASR Part 91'
 },
 
@@ -860,7 +860,7 @@ export const aalwQuestions: {
     'D. Apply speed tape over the dent and enter it in the technical log for repair within 10 days, provided CASA has been notified of the operation at least 24 hours in advance'
   ],
   correct: 0,
-  explanation: 'Structural damage (dents, dings, delamination, cracks) requires assessment by a LAME against applicable damage tolerances in the structural repair manual (SRM) or aircraft manufacturer\\\'s documents. The PIC cannot make this determination — only an appropriately endorsed LAME can assess whether structural damage is within allowable limits. The aircraft must not depart until a LAME has assessed and certified the damage.',
+  explanation: 'Structural damage (dents, dings, delamination, cracks) requires assessment by a LAME against applicable damage tolerances in the structural repair manual (SRM) or aircraft manufacturer\'s documents. The PIC cannot make this determination — only an appropriately endorsed LAME can assess whether structural damage is within allowable limits. The aircraft must not depart until a LAME has assessed and certified the damage.',
   reference: 'CASR Part 43 / Aircraft SRM'
 },
 
@@ -906,7 +906,7 @@ export const aalwQuestions: {
 {
   question: 'The maintenance release for a multi-engine turbojet aircraft operating under an AOC must be:',
   options: [
-    'A. Accessible to the operator and PIC — it may be carried on board or held at a nominated base accessible to the crew, depending on the operator\\\'s approved system',
+    'A. Accessible to the operator and PIC — it may be carried on board or held at a nominated base accessible to the crew, depending on the operator\'s approved system',
     'B. Carried on board the aircraft during all flights, provided a current instrument rating is held for the relevant aircraft category',
     'C. Submitted to CASA before each flight departure, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'D. Retained at the maintenance base and not required to be accessible to the flight crew, provided the relevant aerodrome has a certified RFFS capability for the aircraft'
@@ -930,12 +930,12 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'For an aircraft operated under an Air Operator\\\'s Certificate, who is responsible for the continuing airworthiness of the aircraft?',
+  question: 'For an aircraft operated under an Air Operator\'s Certificate, who is responsible for the continuing airworthiness of the aircraft?',
   options: [
-    'A. CASA, through its ongoing audit of the operator\\\'s maintenance activities, except when the operation involves more than 9 passenger seats',
+    'A. CASA, through its ongoing audit of the operator\'s maintenance activities, except when the operation involves more than 9 passenger seats',
     'B. The aircraft manufacturer, through mandatory service bulletins, subject to the pilot completing the required recurrent training within 12 months',
     'C. Jointly the AOC holder and the LAME who last released the aircraft to service, provided a current instrument rating is held for the relevant aircraft category',
-    'D. The AOC holder, who must have a CASA-approved maintenance management system ensuring airworthiness is continuously maintained throughout the aircraft\\\'s operation'
+    'D. The AOC holder, who must have a CASA-approved maintenance management system ensuring airworthiness is continuously maintained throughout the aircraft\'s operation'
   ],
   correct: 3,
   explanation: 'Under CASR Part 42, the registered operator (AOC holder) is responsible for the continuing airworthiness of the aircraft. This includes ensuring maintenance is carried out on schedule, ADs are complied with, modifications are approved, and airworthiness records are maintained. The operator must have an approved maintenance management system. While the LAME certifies individual maintenance tasks, the overall management responsibility rests with the operator.',
@@ -964,7 +964,7 @@ export const aalwQuestions: {
     'D. Not be returned to service until the crack is repaired in accordance with the approved repair scheme and the aircraft re-certified airworthy by a LAME'
   ],
   correct: 3,
-  explanation: 'A structural defect exceeding allowable limits renders the aircraft unairworthy — it must not operate further. The crack must be repaired in accordance with an approved repair scheme (SRM, manufacturer\\\'s instructions, or a CASA-approved repair design). Only after repair, inspection, and certification by an appropriately licensed engineer can the aircraft be returned to service.',
+  explanation: 'A structural defect exceeding allowable limits renders the aircraft unairworthy — it must not operate further. The crack must be repaired in accordance with an approved repair scheme (SRM, manufacturer\'s instructions, or a CASA-approved repair design). Only after repair, inspection, and certification by an appropriately licensed engineer can the aircraft be returned to service.',
   reference: 'CASR Part 43 / Aircraft SRM / CASR Part 21'
 },
 
@@ -984,7 +984,7 @@ export const aalwQuestions: {
 {
   question: 'An aircraft operator who operates under an AOC must maintain which of the following airworthiness records for each aircraft?',
   options: [
-    'A. Flight times and landings only — detailed records are the manufacturer\\\'s responsibility',
+    'A. Flight times and landings only — detailed records are the manufacturer\'s responsibility',
     'B. Records only for the current 12-month period — older records may be disposed of',
     'C. Records specified by the aircraft manufacturer only — CASR does not specify record keeping requirements',
     'D. Total airframe time, component times, AD status, modification history, maintenance release status, and all technical log entries'
@@ -1047,11 +1047,11 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'The recording of flight time in the aircraft\\\'s journey log is the responsibility of:',
+  question: 'The recording of flight time in the aircraft\'s journey log is the responsibility of:',
   options: [
     'A. The pilot in command, who must ensure the journey log is completed accurately after each flight',
     'B. The co-pilot on multi-crew aircraft, only if the operator holds a specific approval under their Air Operator Certificate',
-    'C. The operator\\\'s operations department — the crew is not responsible for the journey log',
+    'C. The operator\'s operations department — the crew is not responsible for the journey log',
     'D. The ground engineer who releases the aircraft for the next flight'
   ],
   correct: 0,
@@ -1064,7 +1064,7 @@ export const aalwQuestions: {
   options: [
     'A. Remains valid provided the damage is less than the MEL minimum damage limits, only when operating in Class C or Class D controlled airspace',
     'B. Is rendered invalid only if both engines are damaged, subject to the requirements of the applicable Civil Aviation Order',
-    'C. Remains valid for ferry flight purposes at the PIC\\\'s discretion, subject to written approval from the operator\'s chief pilot',
+    'C. Remains valid for ferry flight purposes at the PIC\'s discretion, subject to written approval from the operator\'s chief pilot',
     'D. Is rendered invalid — the aircraft must not be operated until assessed and re-released by a LAME following repair and inspection'
   ],
   correct: 3,
@@ -1076,9 +1076,9 @@ export const aalwQuestions: {
   question: 'For a turboprop commuter aircraft (5,700–15,000 kg MTOW) operating under an AOC, the maintenance must be carried out by:',
   options: [
     'A. Any person holding a private pilot licence or higher, provided a current instrument rating is held for the relevant aircraft category',
-    'B. Only the manufacturer\\\'s authorised service centres, only when operating in Class C or Class D controlled airspace, provided the aircraft holds ',
+    'B. Only the manufacturer\'s authorised service centres, only when operating in Class C or Class D controlled airspace, provided the aircraft holds ',
     'C. A person approved under an organisation approved under CASR Part 145, or by a LAME holding appropriate endorsements, in accordance with the approved maintenance programme',
-    'D. The operator\\\'s own staff regardless of their engineering qualifications, subject to the operator\'s approved exposition authorising such operations'
+    'D. The operator\'s own staff regardless of their engineering qualifications, subject to the operator\'s approved exposition authorising such operations'
   ],
   correct: 2,
   explanation: 'Maintenance on aircraft above 5,700 kg MTOW must be performed and certified by organisations approved under CASR Part 145 (Approved Maintenance Organisations) or by LAMEs with appropriate endorsements. The maintenance must be carried out in accordance with the approved maintenance programme. Operators may have their own in-house approved maintenance organisation or use contracted external AMOs.',
@@ -1086,15 +1086,15 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'The aircraft\\\'s Flight Manual (AFM) or Pilot Operating Handbook (POH) is considered part of the aircraft\\\'s:',
+  question: 'The aircraft\'s Flight Manual (AFM) or Pilot Operating Handbook (POH) is considered part of the aircraft\'s:',
   options: [
-    'A. Operator\\\'s Operations Manual and may be modified by the operator, subject to written approval from the operator\'s chief pilot',
-    'B. Manufacturer\\\'s proprietary documents with no regulatory standing, subject to the operator\'s approved exposition authorising such operations',
+    'A. Operator\'s Operations Manual and may be modified by the operator, subject to written approval from the operator\'s chief pilot',
+    'B. Manufacturer\'s proprietary documents with no regulatory standing, subject to the operator\'s approved exposition authorising such operations',
     'C. Advisory material only — pilots may deviate from AFM procedures at their discretion, only if the operator holds a specific approval under their Air Operator Certificate',
     'D. Type certificate documentation — it is an approved document and the limitations section must be complied with; it may not be modified without CASA approval'
   ],
   correct: 3,
-  explanation: 'The AFM/POH is approved documentation forming part of the aircraft\\\'s type certificate. The limitations section contains mandatory operating limits — they cannot be exceeded without exceeding the aircraft\\\'s type certificate, which renders the aircraft unairworthy. Normal and emergency procedures are the manufacturer\\\'s approved methods. The AFM may only be revised under CASA approval (via amended type certificate or supplemental type certificate).',
+  explanation: 'The AFM/POH is approved documentation forming part of the aircraft\'s type certificate. The limitations section contains mandatory operating limits — they cannot be exceeded without exceeding the aircraft\'s type certificate, which renders the aircraft unairworthy. Normal and emergency procedures are the manufacturer\'s approved methods. The AFM may only be revised under CASA approval (via amended type certificate or supplemental type certificate).',
   reference: 'CASR Part 21 / CASR Part 91'
 },
 
@@ -1102,7 +1102,7 @@ export const aalwQuestions: {
   question: 'The "class of operations" in a maintenance release for an Australian aircraft specifies:',
   options: [
     'A. The maximum altitude at which the aircraft may operate, provided a current instrument rating is held for the relevant aircraft category, subject to the pilot complet',
-    'B. The aircraft\\\'s registration category (experimental, certified, restricted), subject to the requirements of the applicable Civil Aviation Order, provided a current instrumen',
+    'B. The aircraft\'s registration category (experimental, certified, restricted), subject to the requirements of the applicable Civil Aviation Order, provided a current instrumen',
     'C. The types of operations (such as regular public transport, charter, aerial work, private) for which the aircraft is authorised — the aircraft cannot be operated outside the endorsed class without appropriate approvals',
     'D. The maintenance schedule category applicable to the aircraft, provided CASA has been notified of the operation at least 24 hours in advance, except during the period of '
   ],
@@ -1117,7 +1117,7 @@ export const aalwQuestions: {
     'A. Consult the co-pilot — if both agree the condition is acceptable, depart, except during the period of any declared low visibility procedures at the aerodrome',
     'B. Not accept the aircraft for flight — contact maintenance for assessment. The aircraft must not depart with a known unsatisfactory condition that is not covered by an approved MEL or PUS entry',
     'C. Photograph the condition, enter it in the log, and accept the aircraft with a note that the defect is under review, except when the operation involves more than 9 passenger seats',
-    'D. Apply the "captain\\\'s discretion" authority to accept the aircraft with verbal notification to the operator, subject to the requirements of the applicable Civil Aviation Order'
+    'D. Apply the "captain\'s discretion" authority to accept the aircraft with verbal notification to the operator, subject to the requirements of the applicable Civil Aviation Order'
   ],
   correct: 1,
   explanation: 'If a defect or unsatisfactory condition is found that is not covered by an MEL or PUS entry, the aircraft must not depart. A LAME must assess the condition to determine whether it affects airworthiness and either certify the aircraft as airworthy, apply an MEL deferral if applicable, or ground the aircraft for repair. The PIC cannot self-authorise dispatch of an aircraft with an uncovered defect.',
@@ -1128,7 +1128,7 @@ export const aalwQuestions: {
   question: 'An aircraft operating on an AOC is involved in an accident that causes substantial damage to the aircraft. Before the accident aircraft is moved, the operator must:',
   options: [
     'A. Obtain CASA permission before moving the aircraft, provided CASA has been notified of the operation at least 24 hours in advance, except during the period of ',
-    'B. Secure the aircraft and await instructions from the AOC holder\\\'s maintenance department, provided the aircraft holds a valid maintenance release and is within weight limits',
+    'B. Secure the aircraft and await instructions from the AOC holder\'s maintenance department, provided the aircraft holds a valid maintenance release and is within weight limits',
     'C. Notify the ATSB and CASA as soon as practicable, and not move the aircraft unless required to ensure safety of persons or to prevent further damage — the accident site is an investigation site',
     'D. Remove the aircraft to a maintenance facility within 24 hours to facilitate repairs, provided CASA has been notified of the operation at least 24 hours in advance'
   ],
@@ -1147,7 +1147,7 @@ export const aalwQuestions: {
   ],
   correct: 0,
   explanation: 'Engine health monitoring (power assurance checks, ETMS/ACARS trend monitoring) is used to detect gradual deterioration in engine performance. By tracking parameters like EGT margin, fuel flow, N1/N2 speeds at standardised conditions, engineers can identify developing faults and schedule maintenance proactively, before the deterioration causes an in-service failure. This is fundamental to on-condition maintenance in commercial aviation.',
-  reference: 'CAO 82.3 / Engine manufacturer\\\'s maintenance manuals'
+  reference: 'CAO 82.3 / Engine manufacturer\'s maintenance manuals'
 },
 
 {
@@ -1185,7 +1185,7 @@ export const aalwQuestions: {
     'D. The engineer confirms in the technical log that the detector produces false alerts but is otherwise serviceable, subject to the requirements of the applicable Civil Aviation Order'
   ],
   correct: 2,
-  explanation: 'Fire detection systems in cargo bays are critical safety items. Their MEL provisions (if any) are typically very restrictive. If the MEL provides for dispatch with the system deactivated, specific conditions must be met. If no MEL provision exists for the specific fault mode, the aircraft cannot be dispatched — fire detection is too safety-critical to allow informal deferred operation. The engineer\\\'s note about false alerts does not authorise dispatch.',
+  explanation: 'Fire detection systems in cargo bays are critical safety items. Their MEL provisions (if any) are typically very restrictive. If the MEL provides for dispatch with the system deactivated, specific conditions must be met. If no MEL provision exists for the specific fault mode, the aircraft cannot be dispatched — fire detection is too safety-critical to allow informal deferred operation. The engineer\'s note about false alerts does not authorise dispatch.',
   reference: 'CASR Part 91 / MEL / MMEL'
 },
 
@@ -1193,7 +1193,7 @@ export const aalwQuestions: {
   question: 'An ATPL holder flying a privately-owned aircraft discovers a defect during flight that requires entry in the technical log. If a maintenance release is not carried on board the flight, the PIC must:',
   options: [
     'A. Continue to the destination and report the defect verbally to the owner, provided a current instrument rating is held for the relevant aircraft category, subject to the operator\'s ap',
-    'B. Record the defect on the flight by making a note, and ensure it is entered in the aircraft\\\'s technical log and assessed by a LAME before the next flight — the aircraft must not fly again until the defect is dealt with',
+    'B. Record the defect on the flight by making a note, and ensure it is entered in the aircraft\'s technical log and assessed by a LAME before the next flight — the aircraft must not fly again until the defect is dealt with',
     'C. Declare an emergency and land at the nearest aerodrome, subject to the operator\'s approved exposition authorising such operations, provided a current instrumen',
     'D. The defect only needs to be recorded if it affected safe operation of the flight, only when operating in Class C or Class D controlled airspace, subject to written approval '
   ],
@@ -1205,13 +1205,13 @@ export const aalwQuestions: {
 {
   question: 'Under CASR, when is an aircraft required to carry emergency equipment including life jackets?',
   options: [
-    'A. Only when operating in remote area operations as defined in the operator\\\'s AOC, only if the operator holds a specific approval under their Air Operator Certificate',
+    'A. Only when operating in remote area operations as defined in the operator\'s AOC, only if the operator holds a specific approval under their Air Operator Certificate',
     'B. Only on international overwater flights, provided CASA has been notified of the operation at least 24 hours in advance, subject to the operator\'s ap',
     'C. On all flights regardless of route — life jackets must always be carried, only if the operator holds a specific approval under their Air Operator Certificate',
-    'D. When flying over water at a distance from land greater than the aircraft\\\'s gliding range or as prescribed by CASR Part 91 and applicable CAOs for the operation type and aircraft category'
+    'D. When flying over water at a distance from land greater than the aircraft\'s gliding range or as prescribed by CASR Part 91 and applicable CAOs for the operation type and aircraft category'
   ],
   correct: 3,
-  explanation: 'Life jacket requirements under CAO 20.11 and CASR Part 91 depend on the distance from land relative to the aircraft\\\'s gliding performance. Generally, life jackets are required when operating over water at distances that cannot be reached by gliding in event of engine failure. Specific requirements vary by aircraft category and operation type — always check the applicable CAO for the operation.',
+  explanation: 'Life jacket requirements under CAO 20.11 and CASR Part 91 depend on the distance from land relative to the aircraft\'s gliding performance. Generally, life jackets are required when operating over water at distances that cannot be reached by gliding in event of engine failure. Specific requirements vary by aircraft category and operation type — always check the applicable CAO for the operation.',
   reference: 'CAO 20.11 / CASR Part 91'
 },
 
@@ -1242,11 +1242,11 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'When an aircraft is modified by the installation of new avionics under a Supplemental Type Certificate (STC), the aircraft\\\'s:',
+  question: 'When an aircraft is modified by the installation of new avionics under a Supplemental Type Certificate (STC), the aircraft\'s:',
   options: [
     'A. Certificate of Airworthiness is automatically cancelled and must be reissued, subject to written approval from the operator\'s chief pilot, only when operating in Class',
     'B. Maintenance programme remains unchanged — STCs do not affect airworthiness requirements, provided a current instrument rating is held for the relevant aircraft category, provided CASA has been notif',
-    'C. Type certificate is supplemented by the STC, and the aircraft\\\'s airworthiness is maintained provided the modification was carried out in accordance with the approved STC data and certified by an appropriately authorised person',
+    'C. Type certificate is supplemented by the STC, and the aircraft\'s airworthiness is maintained provided the modification was carried out in accordance with the approved STC data and certified by an appropriately authorised person',
     'D. AFM does not need updating — the STC is self-contained documentation, subject to the operator\'s approved exposition authorising such operations, provided the aircraft holds '
   ],
   correct: 2,
@@ -1271,7 +1271,7 @@ export const aalwQuestions: {
   question: 'The authority that issues an Australian Certificate of Airworthiness is:',
   options: [
     'A. CASA (Civil Aviation Safety Authority) — the authority having jurisdiction in Australia',
-    'B. The aircraft manufacturer — CASA only endorses the manufacturer\\\'s certificate',
+    'B. The aircraft manufacturer — CASA only endorses the manufacturer\'s certificate',
     'C. The operator under their approved maintenance organisation authority',
     'D. The Australian Transport Safety Bureau following accident investigation clearance'
   ],
@@ -1286,7 +1286,7 @@ export const aalwQuestions: {
     'A. Accept the entry as informational only and clear it without action since normal performance was restored, except during the period of any declared low visibility procedures at the aerodrome',
     'B. Investigate and rectify the cause of the unusual operation before the next flight — an "NIL defect found" closure is only acceptable after thorough investigation confirms no fault',
     'C. Close the defect if the same crew operates the next flight and monitors the system, subject to the pilot completing the required recurrent training within 12 months',
-    'D. Seek the PIC\\\'s further approval before deciding whether investigation is required, only if the operator holds a specific approval under their Air Operator Certificate'
+    'D. Seek the PIC\'s further approval before deciding whether investigation is required, only if the operator holds a specific approval under their Air Operator Certificate'
   ],
   correct: 1,
   explanation: 'Intermittent defects that self-clear are among the most dangerous — they may indicate an underlying fault that will manifest at a critical moment. Technical log entries of unusual system behaviour must be investigated thoroughly. A cursory "NIL defect found" closure without investigation is not acceptable practice. Maintenance must attempt to reproduce and identify the cause, which may require test flights or detailed systems checks.',
@@ -1338,10 +1338,10 @@ export const aalwQuestions: {
     'A. Every flight regardless of any previously completed inspection, subject to completing a flight review within the preceding 12 months',
     'B. Each flight that carries passengers under an AOC, except when the flight exceeds 4 hours and additional crew are required',
     'C. The first flight of each day for that aircraft — subsequent flights on the same day do not require a fresh daily inspection unless specified otherwise',
-    'D. Only before the first flight of the operator\\\'s rostered duty period, subject to completing a flight review within the preceding 12 months'
+    'D. Only before the first flight of the operator\'s rostered duty period, subject to completing a flight review within the preceding 12 months'
   ],
   correct: 2,
-  explanation: 'Under CASR Part 43 and the aircraft\\\'s maintenance programme, a daily inspection is required before the first flight of each calendar day. This typically involves a visual check of the aircraft and fluid levels. After the daily inspection, subsequent flights do not require a full repeat of the daily inspection, but a crew pre-flight check is performed before each flight to identify any damage or changes since the last landing.',
+  explanation: 'Under CASR Part 43 and the aircraft\'s maintenance programme, a daily inspection is required before the first flight of each calendar day. This typically involves a visual check of the aircraft and fluid levels. After the daily inspection, subsequent flights do not require a full repeat of the daily inspection, but a crew pre-flight check is performed before each flight to identify any damage or changes since the last landing.',
   reference: 'CASR Part 43 / Aircraft maintenance programme'
 },
 
@@ -1350,7 +1350,7 @@ export const aalwQuestions: {
   options: [
     'A. Advise ATC and await further instructions before responding, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'B. Respond only if the conflicting traffic is confirmed on radar, subject to the pilot completing the required recurrent training within 12 months',
-    'C. Cross-check with ATC\\\'s traffic advisories before manoeuvring, only when operating in Class C or Class D controlled airspace',
+    'C. Cross-check with ATC\'s traffic advisories before manoeuvring, only when operating in Class C or Class D controlled airspace',
     'D. Respond immediately to the RA — fly the commanded manoeuvre without waiting for ATC instructions. Advise ATC after commencing the manoeuvre'
   ],
   correct: 3,
@@ -1359,7 +1359,7 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'The pilot in command must not commence a flight if the aircraft\\\'s mass and balance is calculated to result in:',
+  question: 'The pilot in command must not commence a flight if the aircraft\'s mass and balance is calculated to result in:',
   options: [
     'A. The aircraft exceeding its certified structural limits (maximum take-off weight) or the centre of gravity being outside the approved limits at any point during the flight',
     'B. A total weight within 5% above the maximum take-off weight, on multi-engine aircraft exceeding 5,700 kg MTOW only, subject to the operator\'s ap',
@@ -1416,7 +1416,7 @@ export const aalwQuestions: {
     'A. No later than 30 minutes before the requested departure time, provided the pilot has logged at least 3 hours on type in the preceding 90 days, subject to the requirements ',
     'B. At least 2 hours before departure for all IFR flights, except when the flight exceeds 4 hours and additional crew are required, subject to written approval ',
     'C. Only when operating in Class A or Class C airspace, provided the currency requirement is met within the preceding 6 months, provided a current instrumen',
-    'D. As specified in the AIP — for domestic IFR flights typically at least 30 minutes before departure, or as per the operator\\\'s approval. For international flights, 3 hours before departure or as specified'
+    'D. As specified in the AIP — for domestic IFR flights typically at least 30 minutes before departure, or as per the operator\'s approval. For international flights, 3 hours before departure or as specified'
   ],
   correct: 3,
   explanation: 'Flight plan filing requirements are specified in the AIP ENR 1.10. For domestic IFR, the flight plan should be filed at least 30 minutes before departure (earlier for complex operations). For international flights, the requirement is typically 3 hours prior or per bilateral agreements. The flight plan is required to activate ATC services, SAR coverage, and slot reservations.',
@@ -1466,7 +1466,7 @@ export const aalwQuestions: {
   question: 'Under Australian rules of the air, the "see and avoid" principle places responsibility on:',
   options: [
     'A. Only VFR pilots — IFR pilots are provided full separation by ATC, subject to written approval from the operator\'s chief pilot',
-    'B. Only the pilot in command — the co-pilot\\\'s sole duty is aircraft monitoring, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
+    'B. Only the pilot in command — the co-pilot\'s sole duty is aircraft monitoring, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'C. All pilots to maintain a visual lookout for other aircraft and take avoiding action if necessary — even IFR pilots in VMC have a see-and-avoid responsibility',
     'D. ATC for aircraft it has identified on radar, provided the aircraft holds a valid maintenance release and is within weight limits'
   ],
@@ -1491,7 +1491,7 @@ export const aalwQuestions: {
 {
   question: 'In Class G airspace, which of the following statements is correct?',
   options: [
-    'A. Class G is uncontrolled airspace — no ATC clearance is required, no ATC separation is provided. IFR flights in Class G are the pilot\\\'s own responsibility for separation and terrain clearance',
+    'A. Class G is uncontrolled airspace — no ATC clearance is required, no ATC separation is provided. IFR flights in Class G are the pilot\'s own responsibility for separation and terrain clearance',
     'B. ATC provides separation to all IFR flights in Class G, provided the aircraft holds a valid maintenance release and is within weight limits, provided the relevant aerodr',
     'C. VFR operations are not permitted in Class G airspace, subject to the pilot completing the required recurrent training within 12 months, provided CASA has been notif',
     'D. All flights in Class G require a transponder with Mode C, except when the operation involves more than 9 passenger seats, subject to the pilot complet'
@@ -1556,7 +1556,7 @@ export const aalwQuestions: {
 {
   question: 'An IFR aircraft is given an ATC clearance to "descend to reach 10,000 ft by PADME". The pilot must:',
   options: [
-    'A. Descend at the pilot\\\'s chosen rate and ensure the aircraft is at or below 10,000 ft when crossing PADME — the "by" constraint requires the altitude at the fix',
+    'A. Descend at the pilot\'s chosen rate and ensure the aircraft is at or below 10,000 ft when crossing PADME — the "by" constraint requires the altitude at the fix',
     'B. Descend at the standard 3° descent rate immediately upon receiving the clearance',
     'C. Commence descent immediately and be at 10,000 ft when crossing PADME',
     'D. Request clarification — "by" constraints are not used in Australian ATC clearances'
@@ -1601,7 +1601,7 @@ export const aalwQuestions: {
     'D. QNE — the standard pressure setting of 1013.25 hPa — altimeters read flight levels above the transition altitude'
   ],
   correct: 3,
-  explanation: 'Above the transition altitude in Australia (10,000 ft), all aircraft use QNE — standard pressure (1013.25 hPa or 29.92 inHg) — and report altitude as flight levels. This standardises altimeter readings between aircraft and eliminates the need for ATC to know each aircraft\\\'s individual QNH setting when applying vertical separation. All aircraft on the same pressure reference simplifies separation.',
+  explanation: 'Above the transition altitude in Australia (10,000 ft), all aircraft use QNE — standard pressure (1013.25 hPa or 29.92 inHg) — and report altitude as flight levels. This standardises altimeter readings between aircraft and eliminates the need for ATC to know each aircraft\'s individual QNH setting when applying vertical separation. All aircraft on the same pressure reference simplifies separation.',
   reference: 'AIP ENR 1.7'
 },
 
@@ -1648,7 +1648,7 @@ export const aalwQuestions: {
   question: 'An ATC clearance specifying "MAINTAIN FL120" requires the pilot to:',
   options: [
     'A. Fly at FL120 immediately — any deviation from FL120 is a clearance violation unless authorised by ATC or required for safety',
-    'B. Achieve FL120 at the pilot\\\'s discretion and then maintain it, except when the operation involves more than 9 passenger seats',
+    'B. Achieve FL120 at the pilot\'s discretion and then maintain it, except when the operation involves more than 9 passenger seats',
     'C. Maintain FL120 only while in the current ATC sector — change when contacting the next sector',
     'D. Not descend below FL120 but may climb above it without further clearance, subject to the operator\'s approved exposition authorising such operations'
   ],
@@ -1700,7 +1700,7 @@ export const aalwQuestions: {
   question: 'An aircraft transmits a distress signal on 121.5 MHz. The correct initial response for an ATC unit receiving the transmission is to:',
   options: [
     'A. Acknowledge the distress call and immediately transfer the aircraft to the nearest aerodrome tower, only if the operator holds a specific approval under their Air Operator Certificate',
-    'B. Acknowledge the distress, attempt to obtain the aircraft\\\'s callsign, position, and nature of distress, advise the Rescue Coordination Centre (JRCC), and provide all assistance possible',
+    'B. Acknowledge the distress, attempt to obtain the aircraft\'s callsign, position, and nature of distress, advise the Rescue Coordination Centre (JRCC), and provide all assistance possible',
     'C. Sound the crash alarm at the nearest aerodrome only if the aircraft has declared fuel emergency, provided CASA has been notified of the operation at least 24 hours in advance',
     'D. Monitor the frequency and wait for the aircraft to identify its position before taking action, only when operating in Class C or Class D controlled airspace'
   ],
@@ -1766,11 +1766,11 @@ export const aalwQuestions: {
   options: [
     'A. Pass to the left of the aircraft being overtaken, only if the operator holds a specific approval under their Air Operator Certificate',
     'B. Pass above the aircraft being overtaken, only if the operator holds a specific approval under their Air Operator Certificate',
-    'C. Pass to the right of the aircraft being overtaken, keeping the aircraft being overtaken on the pilot\\\'s left',
+    'C. Pass to the right of the aircraft being overtaken, keeping the aircraft being overtaken on the pilot\'s left',
     'D. Slow down and maintain formation behind until traffic conflict clears'
   ],
   correct: 2,
-  explanation: 'The overtaking rule: an aircraft overtaking shall pass to the right of the aircraft being overtaken, keeping the aircraft being overtaken on the overtaking aircraft\\\'s left side. This applies to all aircraft including aircraft on the water and, to the extent practical, aircraft on the ground.',
+  explanation: 'The overtaking rule: an aircraft overtaking shall pass to the right of the aircraft being overtaken, keeping the aircraft being overtaken on the overtaking aircraft\'s left side. This applies to all aircraft including aircraft on the water and, to the extent practical, aircraft on the ground.',
   reference: 'CASR Part 91 / AIP ENR 1.1 / ICAO Annex 2'
 },
 
@@ -1778,7 +1778,7 @@ export const aalwQuestions: {
   question: 'The minimum fuel required to be on board an aircraft before commencing an IFR flight (the "legal minimum") is defined in:',
   options: [
     'A. The aircraft AFM only — no separate regulatory fuel minimum exists, provided a current instrument rating is held for the relevant aircraft category, provided CASA has been notif',
-    'B. The operator\\\'s Operations Manual only — CASR does not specify fuel requirements, subject to the operator\'s approved exposition authorising such operations',
+    'B. The operator\'s Operations Manual only — CASR does not specify fuel requirements, subject to the operator\'s approved exposition authorising such operations',
     'C. CASR Part 91 and applicable CAOs — for multi-engine turbine aircraft, sufficient fuel to reach destination, execute a missed approach, proceed to alternate, and land with specified final reserve fuel',
     'D. AIP ENR 1.1 which specifies minimum fuel as 30 minutes at cruise power for all aircraft, provided CASA has been notified of the operation at least 24 hours in advance'
   ],
@@ -1835,7 +1835,7 @@ export const aalwQuestions: {
     'D. IFR aircraft to cancel IFR and proceed VFR in the terminal area, except when the operation involves more than 9 passenger seats, provided CASA has been notif'
   ],
   correct: 1,
-  explanation: 'Special VFR (SVFR): allows VFR aircraft to operate within a control zone in weather conditions below standard VMC (but not necessarily IMC) under specific ATC clearance conditions. The aircraft must remain clear of cloud, in sight of ground or water, at the pilot\\\'s discretion. SVFR is not available in Class A airspace. It is used by helicopter operations in urban areas and for slow-moving aircraft.',
+  explanation: 'Special VFR (SVFR): allows VFR aircraft to operate within a control zone in weather conditions below standard VMC (but not necessarily IMC) under specific ATC clearance conditions. The aircraft must remain clear of cloud, in sight of ground or water, at the pilot\'s discretion. SVFR is not available in Class A airspace. It is used by helicopter operations in urban areas and for slow-moving aircraft.',
   reference: 'AIP ENR 1.4 / CASR Part 91'
 },
 
@@ -1861,7 +1861,7 @@ export const aalwQuestions: {
     'D. Essential traffic information is never provided — ATC provides separation without informing the pilot, provided the aircraft holds a valid maintenance release and is within weight limits'
   ],
   correct: 2,
-  explanation: 'Essential traffic: when ATC cannot apply or maintain standard separation between aircraft, and the aircraft may come into conflict, ATC advises the PIC of the conflicting traffic. In VMC the pilot may accept responsibility to maintain their own separation. The information includes the other aircraft\\\'s position, level, and direction. This is standard in both radar and procedural environments.',
+  explanation: 'Essential traffic: when ATC cannot apply or maintain standard separation between aircraft, and the aircraft may come into conflict, ATC advises the PIC of the conflicting traffic. In VMC the pilot may accept responsibility to maintain their own separation. The information includes the other aircraft\'s position, level, and direction. This is standard in both radar and procedural environments.',
   reference: 'AIP ENR 1.1 / ICAO PANS-ATM'
 },
 
@@ -1907,7 +1907,7 @@ export const aalwQuestions: {
 {
   question: 'A pilot wishing to deviate from their IFR flight plan due to weather avoidance should:',
   options: [
-    'A. Deviate without communicating with ATC — weather avoidance is at the PIC\\\'s absolute discretion, except when the operation involves more than 9 passenger seats',
+    'A. Deviate without communicating with ATC — weather avoidance is at the PIC\'s absolute discretion, except when the operation involves more than 9 passenger seats',
     'B. Advise ATC as soon as practicable, state the nature of the deviation and estimated return to track, and obtain an amended clearance — maintain position reports throughout',
     'C. Squawk 7700 before deviating to alert ATC to the weather deviation, except when the operation involves more than 9 passenger seats',
     'D. Only advise ATC after the deviation is complete and the aircraft is back on track, provided the aircraft holds a valid maintenance release and is within weight limits'
@@ -1922,11 +1922,11 @@ export const aalwQuestions: {
   options: [
     'A. Asking the pilot to confirm their altitude only, provided CASA has been notified of the operation at least 24 hours in advance',
     'B. Only through direct visual observation of the aircraft from the tower, subject to the requirements of the applicable Civil Aviation Order',
-    'C. Correlating the aircraft\\\'s SSR transponder return with the flight plan, observing a squawk or ident, or positively correlating a primary radar return with a known position',
+    'C. Correlating the aircraft\'s SSR transponder return with the flight plan, observing a squawk or ident, or positively correlating a primary radar return with a known position',
     'D. The aircraft simply being in the radar coverage area, provided the aircraft holds a valid maintenance release and is within weight limits'
   ],
   correct: 2,
-  explanation: 'Radar identification methods: (1) observing the SSR return when the pilot selects the assigned transponder code; (2) observing the IDENT response when the pilot activates ident; (3) correlating an observed change in position with the pilot\\\'s position report; (4) identifying a specific pattern of primary radar returns. Once identified, ATC advises "radar identified" and the full radar service begins.',
+  explanation: 'Radar identification methods: (1) observing the SSR return when the pilot selects the assigned transponder code; (2) observing the IDENT response when the pilot activates ident; (3) correlating an observed change in position with the pilot\'s position report; (4) identifying a specific pattern of primary radar returns. Once identified, ATC advises "radar identified" and the full radar service begins.',
   reference: 'AIP ENR 1.6 / ICAO PANS-ATM'
 },
 
@@ -1935,8 +1935,8 @@ export const aalwQuestions: {
   options: [
     'A. Applied immediately at the time of receipt, subject to written approval from the operator\'s chief pilot, provided a current instrumen',
     'B. Implemented only after passing the next reporting point, except when the operation involves more than 9 passenger seats, provided the relevant aerodr',
-    'C. Subject to the PIC\\\'s approval before implementation, provided the aircraft holds a valid maintenance release and is within weight limits, subject to written approval ',
-    'D. Acknowledged and applied as soon as practicable — the speed adjustment is typically achieved within the aircraft\\\'s performance capability and the instruction must be complied with unless the pilot advises ATC that compliance is not possible for safety reasons'
+    'C. Subject to the PIC\'s approval before implementation, provided the aircraft holds a valid maintenance release and is within weight limits, subject to written approval ',
+    'D. Acknowledged and applied as soon as practicable — the speed adjustment is typically achieved within the aircraft\'s performance capability and the instruction must be complied with unless the pilot advises ATC that compliance is not possible for safety reasons'
   ],
   correct: 3,
   explanation: 'ATC speed instructions must be complied with as soon as practicable. The pilot should acknowledge the instruction and advise ATC if the commanded speed cannot be achieved (e.g. due to icing or performance restrictions), or if compliance would compromise safety. Speed control is used for sequencing and separation purposes — non-compliance disrupts the traffic sequence.',
@@ -2012,7 +2012,7 @@ export const aalwQuestions: {
   question: 'An aircraft has been intercepted by a military aircraft. The signal "rocking wings" by the intercepting aircraft means:',
   options: [
     'A. The intercepting aircraft is experiencing an emergency, provided a current instrument rating is held for the relevant aircraft category',
-    'B. The intercepting aircraft is acknowledging the intercepted aircraft\\\'s distress signal',
+    'B. The intercepting aircraft is acknowledging the intercepted aircraft\'s distress signal',
     'C. The intercepted aircraft should follow the intercepting aircraft — typically to a specified landing location',
     'D. The intercepted aircraft may proceed on its original track'
   ],
@@ -2065,16 +2065,16 @@ export const aalwQuestions: {
   options: [
     'A. CASR Part 92 and the Civil Aviation Order governing dangerous goods — these specify which goods may be carried, packing requirements, documentation, and quantity limits',
     'B. IATA Dangerous Goods Regulations (DGR) — which override Australian law for international flights, subject to written approval from the operator\'s chief pilot',
-    'C. The operator\\\'s cargo manifest procedures only, only when operating in Class C or Class D controlled airspace, subject to the operator\'s ap',
+    'C. The operator\'s cargo manifest procedures only, only when operating in Class C or Class D controlled airspace, subject to the operator\'s ap',
     'D. The customs regulations for each country of destination, except when the operation involves more than 9 passenger seats'
   ],
   correct: 0,
-  explanation: 'Dangerous goods carriage in Australian aviation is governed by CASR Part 92 (incorporating ICAO Technical Instructions for Safe Transport of Dangerous Goods by Air). IATA DGR is a practical industry guide but the legal basis is CASR Part 92. The ATPL Air Law syllabus requires knowledge of the categories of dangerous goods and the pilot\\\'s responsibilities.',
+  explanation: 'Dangerous goods carriage in Australian aviation is governed by CASR Part 92 (incorporating ICAO Technical Instructions for Safe Transport of Dangerous Goods by Air). IATA DGR is a practical industry guide but the legal basis is CASR Part 92. The ATPL Air Law syllabus requires knowledge of the categories of dangerous goods and the pilot\'s responsibilities.',
   reference: 'CASR Part 92 / ICAO Annex 18'
 },
 
 {
-  question: 'The pilot in command is advised by a passenger that they are carrying undeclared dangerous goods (lithium batteries in carry-on luggage). The PIC\\\'s responsibility is to:',
+  question: 'The pilot in command is advised by a passenger that they are carrying undeclared dangerous goods (lithium batteries in carry-on luggage). The PIC\'s responsibility is to:',
   options: [
     'A. Allow them onboard if the quantity is small, subject to the operator\'s approved exposition authorising such operations, except when the operation in',
     'B. Assess whether the goods may be legally carried, require them to be stowed appropriately or removed from the aircraft, and report the occurrence as required by regulations',
@@ -2082,7 +2082,7 @@ export const aalwQuestions: {
     'D. Ignore the report if the batteries are consumer electronics, provided CASA has been notified of the operation at least 24 hours in advance'
   ],
   correct: 1,
-  explanation: 'The PIC is the final authority on what is carried on the aircraft. Passengers must declare dangerous goods. The PIC must assess whether the item may be carried legally (CASR Part 92 provisions for consumer electronics and lithium batteries apply). If not legal, the item must be removed. The occurrence should be reported to the operator\\\'s safety management system. Note: most consumer lithium battery quantities are permitted but must comply with restrictions.',
+  explanation: 'The PIC is the final authority on what is carried on the aircraft. Passengers must declare dangerous goods. The PIC must assess whether the item may be carried legally (CASR Part 92 provisions for consumer electronics and lithium batteries apply). If not legal, the item must be removed. The occurrence should be reported to the operator\'s safety management system. Note: most consumer lithium battery quantities are permitted but must comply with restrictions.',
   reference: 'CASR Part 92 / CAO 29.7'
 },
 
@@ -2091,21 +2091,21 @@ export const aalwQuestions: {
   options: [
     'A. Unlimited — the captain may invite anyone to the flight deck, provided the relevant aerodrome has a certified RFFS capability for the aircraft, only if the operator holds a',
     'B. Limited to the operating flight crew only — no additional persons are permitted, subject to the pilot completing the required recurrent training within 12 months, except during the period of ',
-    'C. Restricted to persons authorised by the operator — typically flight crew, authorised maintenance, and certain others (CASA inspectors, jump seat riders with approval) who must be approved in the operator\\\'s exposition',
+    'C. Restricted to persons authorised by the operator — typically flight crew, authorised maintenance, and certain others (CASA inspectors, jump seat riders with approval) who must be approved in the operator\'s exposition',
     'D. Subject to passenger vote for privately-chartered flights, subject to the operator\'s approved exposition authorising such operations, except during the period of '
   ],
   correct: 2,
-  explanation: 'Under CAO 82.0, admission to the crew compartment is restricted. Authorised persons include: operating crew, jump seat riders approved by the operator, authorised maintenance and training personnel, CASA inspectors, and certain other CASA-approved categories. The operator\\\'s exposition lists the approved categories. Unauthorised persons must not be admitted to the flight deck at any time during flight.',
+  explanation: 'Under CAO 82.0, admission to the crew compartment is restricted. Authorised persons include: operating crew, jump seat riders approved by the operator, authorised maintenance and training personnel, CASA inspectors, and certain other CASA-approved categories. The operator\'s exposition lists the approved categories. Unauthorised persons must not be admitted to the flight deck at any time during flight.',
   reference: 'CAO 82.0 / CASR Part 121'
 },
 
 {
-  question: 'A first officer on an RPT operation who disagrees with the captain\\\'s decision to continue a flight into deteriorating weather should:',
+  question: 'A first officer on an RPT operation who disagrees with the captain\'s decision to continue a flight into deteriorating weather should:',
   options: [
-    'A. Accept the captain\\\'s decision without comment — the captain is the final authority, except during the period of any declared low visibility procedures at the aerodrome, provided the relevant aerodr',
+    'A. Accept the captain\'s decision without comment — the captain is the final authority, except during the period of any declared low visibility procedures at the aerodrome, provided the relevant aerodr',
     'B. Refuse to continue the flight if they believe safety is compromised — the first officer has an independent authority to cease operations, subject to written approval from the operator\'s chief pilot, except during the period of ',
     'C. Voice their concern clearly and professionally to the captain using assertive CRM techniques — if the captain overrides the concern, the first officer should continue to monitor and advocate if the situation warrants, and report the event through the safety system',
-    'D. Contact company operations directly to override the captain\\\'s decision, subject to the pilot completing the required recurrent training within 12 months, only when operating in Class'
+    'D. Contact company operations directly to override the captain\'s decision, subject to the pilot completing the required recurrent training within 12 months, only when operating in Class'
   ],
   correct: 2,
   explanation: 'CRM requires all crew members to speak up about safety concerns. The first officer should use assertive communication (advocacy) to raise concerns. The captain remains PIC and has final decision authority, but the first officer has an obligation to make safety concerns known clearly. If the safety concern is serious, the first officer may consider available reporting and escalation mechanisms. This is fundamental to CRM and accident prevention.',
@@ -2144,7 +2144,7 @@ export const aalwQuestions: {
     'A. Operations Manual (also called Operations Exposition), maintenance management system, and safety management system, all of which must be CASA-approved and current',
     'B. Operations Manual only — no other documents are required, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'C. Operations Manual and insurance certificate — the safety management system is optional for operators with fewer than 5 aircraft',
-    'D. Crew training manual only — all other documentation is at the operator\\\'s discretion, subject to written approval from the operator\'s chief pilot'
+    'D. Crew training manual only — all other documentation is at the operator\'s discretion, subject to written approval from the operator\'s chief pilot'
   ],
   correct: 0,
   explanation: 'AOC holders operating RPT under CASR Part 119 and Part 121 must maintain and operate under a CASA-approved Operations Manual (exposition), which encompasses operational procedures, maintenance management, safety management system (SMS), and training programmes. The SMS is mandatory for all AOC holders. These documents must be current and complied with at all times.',
@@ -2180,8 +2180,8 @@ export const aalwQuestions: {
 {
   question: 'Under Australian law, the responsibilities of a "Part 119" Air Operator Certificate holder include:',
   options: [
-    'A. Only the aircraft\\\'s direct operational activities — ground handling and catering are excluded, only when operating in Class C or Class D controlled airspace, provided the aircraft holds ',
-    'B. Only the flight operations — maintenance is the aircraft owner\\\'s responsibility, provided a current instrument rating is held for the relevant aircraft category, provided the aircraft holds ',
+    'A. Only the aircraft\'s direct operational activities — ground handling and catering are excluded, only when operating in Class C or Class D controlled airspace, provided the aircraft holds ',
+    'B. Only the flight operations — maintenance is the aircraft owner\'s responsibility, provided a current instrument rating is held for the relevant aircraft category, provided the aircraft holds ',
     'C. Ensuring compliance only during scheduled operations — ad hoc charter flights are exempt, only when operating in Class C or Class D controlled airspace, except when the operation in',
     'D. Ensuring the operations comply with the Civil Aviation Act, CASR, relevant CAOs, and their approved Operations Manual at all times — the AOC holder bears corporate responsibility for all aspects of their aviation operation'
   ],
@@ -2221,11 +2221,11 @@ export const aalwQuestions: {
   options: [
     'A. CASA only — the ATSB only investigates accidents, not incidents, provided a current instrument rating is held for the relevant aircraft category',
     'B. Only to their insurance company — regulatory notification is voluntary, only if the operator holds a specific approval under their Air Operator Certificate',
-    'C. Only the operator\\\'s chief pilot — external notification is not required for incidents, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
+    'C. Only the operator\'s chief pilot — external notification is not required for incidents, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'D. Both the ATSB (as soon as practicable) and CASA as required under their approved Safety Management System — the ATSB has jurisdiction over serious incidents as defined in the TSI Act'
   ],
   correct: 3,
-  explanation: 'Serious incidents (as defined in the TSI Act) must be reported to the ATSB as soon as practicable. The operator\\\'s SMS will also specify internal reporting requirements and timeframes. CASA may also require notification under CASR. "Serious incident" has a specific definition including events such as near-collisions, terrain proximity warnings with response, fuel emergencies, and significant technical failures.',
+  explanation: 'Serious incidents (as defined in the TSI Act) must be reported to the ATSB as soon as practicable. The operator\'s SMS will also specify internal reporting requirements and timeframes. CASA may also require notification under CASR. "Serious incident" has a specific definition including events such as near-collisions, terrain proximity warnings with response, fuel emergencies, and significant technical failures.',
   reference: 'Transport Safety Investigation Act 2003 / CASR Part 119'
 },
 
@@ -2234,7 +2234,7 @@ export const aalwQuestions: {
   options: [
     'A. Only on initial boarding — repeat briefings are not required on subsequent sectors, only when operating in Class C or Class D controlled airspace',
     'B. Only when the aircraft will be operating over water, subject to the pilot completing the required recurrent training within 12 months',
-    'C. Only if requested by passengers — the briefing is at the crew\\\'s discretion, only when operating in Class C or Class D controlled airspace',
+    'C. Only if requested by passengers — the briefing is at the crew\'s discretion, only when operating in Class C or Class D controlled airspace',
     'D. Before each flight — the safety demonstration (or video) must be conducted before departure covering seatbelts, emergency exits, oxygen masks, and flotation devices as applicable'
   ],
   correct: 3,
@@ -2337,7 +2337,7 @@ export const aalwQuestions: {
   question: 'Under Australian regulations, the carriage of survival equipment on remote area flights is governed by:',
   options: [
     'A. CAO 20.11 and CASR Part 91 which specify survival equipment requirements based on the nature of the terrain over which the flight is conducted and the distance from populated areas',
-    'B. The PIC\\\'s discretion only, provided the aircraft holds a valid maintenance release and is within weight limits, except when the operation in',
+    'B. The PIC\'s discretion only, provided the aircraft holds a valid maintenance release and is within weight limits, except when the operation in',
     'C. Only for international flights — domestic remote area flights have no mandatory survival equipment requirements, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'D. Only AOC operators — private flights in remote areas have no regulatory requirement for survival equipment, only when operating in Class C or Class D controlled airspace'
   ],
@@ -2349,13 +2349,13 @@ export const aalwQuestions: {
 {
   question: 'When taxiing on an aerodrome, the captain of an airliner is required to:',
   options: [
-    'A. Only comply with the taxi clearance — responsibility for collision avoidance is ATC\\\'s on the ground, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
+    'A. Only comply with the taxi clearance — responsibility for collision avoidance is ATC\'s on the ground, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'B. Comply with the ATC taxi clearance, maintain vigilance against runway incursion, stop and query ATC if there is any doubt about the cleared taxi route, and follow all applicable aerodrome ground movement rules',
     'C. Follow the instructions of the marshaller at all times regardless of ATC clearance, subject to the pilot completing the required recurrent training within 12 months',
-    'D. Use the aircraft\\\'s ground proximity system as the primary collision avoidance tool, provided the aircraft holds a valid maintenance release and is within weight limits'
+    'D. Use the aircraft\'s ground proximity system as the primary collision avoidance tool, provided the aircraft holds a valid maintenance release and is within weight limits'
   ],
   correct: 1,
-  explanation: 'During taxiing: comply with ATC taxi clearance; maintain vigilance for other traffic, vehicles, and obstacles; if in doubt STOP and query ATC. Runway incursion is the leading cause of ground collisions. The pilot must not enter any runway without an explicit crossing or takeoff clearance. "When in doubt, don\\\'t" — stopping and requesting clarification prevents runway incursions.',
+  explanation: 'During taxiing: comply with ATC taxi clearance; maintain vigilance for other traffic, vehicles, and obstacles; if in doubt STOP and query ATC. Runway incursion is the leading cause of ground collisions. The pilot must not enter any runway without an explicit crossing or takeoff clearance. "When in doubt, don\'t" — stopping and requesting clarification prevents runway incursions.',
   reference: 'AIP ENR 1.5 / ICAO Annex 2'
 },
 
@@ -2375,7 +2375,7 @@ export const aalwQuestions: {
 {
   question: 'Under Australian regulations, the requirement to carry an ELT on board an aircraft is specified in:',
   options: [
-    'A. The aircraft\\\'s AFM — ELT requirements vary by aircraft design, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
+    'A. The aircraft\'s AFM — ELT requirements vary by aircraft design, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'B. CAO 20.11 which specifies ELT type (406 MHz), fitment requirements, and operation — 406 MHz ELTs are required that transmit position to satellites',
     'C. Only the AIP — ELTs have no regulatory basis in Australian law, except when the operation involves more than 9 passenger seats',
     'D. CASR Part 65 (ATC) — the requirement is specified by ATC services, provided the relevant aerodrome has a certified RFFS capability for the aircraft'
@@ -2537,7 +2537,7 @@ export const aalwQuestions: {
     'D. 5.28 nm for all aircraft categories, except when the operation involves more than 9 passenger seats'
   ],
   correct: 0,
-  explanation: 'ICAO circling protection areas: Cat A (<91 kt) 1.68 nm; Cat B (91–120 kt) 2.66 nm; Cat C (121–140 kt) 4.20 nm; Cat D (141–165 kt) 5.28 nm. The radius is measured from the runway ends (not the ARP). The circling MDA ensures at least 300 ft clearance over all obstacles within the circling area for the aircraft\\\'s category.',
+  explanation: 'ICAO circling protection areas: Cat A (<91 kt) 1.68 nm; Cat B (91–120 kt) 2.66 nm; Cat C (121–140 kt) 4.20 nm; Cat D (141–165 kt) 5.28 nm. The radius is measured from the runway ends (not the ARP). The circling MDA ensures at least 300 ft clearance over all obstacles within the circling area for the aircraft\'s category.',
   reference: 'ICAO Doc 8168 / AIP ENR 1.5'
 },
 
@@ -2625,7 +2625,7 @@ export const aalwQuestions: {
     'A. Always 5 nm radius from the aerodrome reference point, provided the aircraft holds a valid maintenance release and is within weight limits',
     'B. The airspace dimensions required to contain the instrument approach and departure procedures at the aerodrome — CTR dimensions are published in the AIP ENR and vary by aerodrome',
     'C. A fixed 10 nm radius from the aerodrome — this is standardised across Australia, subject to the operator\'s approved exposition authorising such operations',
-    'D. The radar coverage range of the aerodrome\\\'s approach radar system, except when the operation involves more than 9 passenger seats'
+    'D. The radar coverage range of the aerodrome\'s approach radar system, except when the operation involves more than 9 passenger seats'
   ],
   correct: 1,
   explanation: 'A CTR (Control Zone) extends from the surface upward and is dimensioned to contain the terminal instrument procedures at the aerodrome. Its lateral extent is tailored to the specific procedures — it is not a fixed radius. CTR dimensions (typically 5–15 nm) are published in the AIP ENR charts. All aircraft (IFR and VFR) require ATC clearance to enter a CTR.',
@@ -2732,7 +2732,7 @@ export const aalwQuestions: {
     'D. AUS'
   ],
   correct: 1,
-  explanation: 'Australian-registered aircraft carry the nationality mark VH followed by a three-letter individual registration (e.g. VH-ABC). The VH prefix is Australia\\\'s ICAO-assigned nationality mark. New Zealand uses ZK; Papua New Guinea uses P2; United Kingdom uses G. The nationality mark identifies the state of registry and determines which state\\\'s aviation authority has regulatory responsibility.',
+  explanation: 'Australian-registered aircraft carry the nationality mark VH followed by a three-letter individual registration (e.g. VH-ABC). The VH prefix is Australia\'s ICAO-assigned nationality mark. New Zealand uses ZK; Papua New Guinea uses P2; United Kingdom uses G. The nationality mark identifies the state of registry and determines which state\'s aviation authority has regulatory responsibility.',
   reference: 'ICAO Annex 7 / CASR Part 47'
 },
 
@@ -2781,7 +2781,7 @@ export const aalwQuestions: {
     'A. Only the published instrument approach procedure — no additional requirements apply at non-controlled aerodromes, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'B. The published instrument approach procedure, CTAF/MBZ broadcast requirements, visual circuit integration procedures, and self-separation from other traffic by broadcasting intentions and maintaining awareness',
     'C. VFR separation rules — IFR procedures do not apply at non-controlled aerodromes, provided CASA has been notified of the operation at least 24 hours in advance',
-    'D. The operator\\\'s approval letter from CASA for each non-controlled aerodrome, subject to the pilot completing the required recurrent training within 12 months'
+    'D. The operator\'s approval letter from CASA for each non-controlled aerodrome, subject to the pilot completing the required recurrent training within 12 months'
   ],
   correct: 1,
   explanation: 'IFR at non-controlled aerodromes: follow the published instrument procedure; broadcast on CTAF/CTAF-R at specified points (10 nm out, joining, final, go-around, landing, vacated); integrate with any VFR traffic; self-separate. There is no ATC providing separation — the pilot is responsible for collision avoidance using radio broadcasts and visual lookout in VMC. This is a common scenario for charter and corporate ATPL operations.',
@@ -2789,7 +2789,7 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'A GNSS/RNAV approach requires the aircraft\\\'s navigation database to be:',
+  question: 'A GNSS/RNAV approach requires the aircraft\'s navigation database to be:',
   options: [
     'A. Updated within the last 6 months, subject to the pilot completing the required recurrent training within 12 months',
     'B. Current for the applicable AIRAC cycle — using an expired database on an instrument approach is not authorised as procedures may have changed',
@@ -2901,7 +2901,7 @@ export const aalwQuestions: {
     'D. Air Defence identification procedures are mandatory, only when operating in Class C or Class D controlled airspace, subject to the operator\'s ap'
   ],
   correct: 2,
-  explanation: 'A Flight Information Region (FIR) is an airspace of defined dimensions within which flight information service and alerting service are provided. In Australia, the Melbourne FIR covers the majority of Australian airspace. The FIR does not imply full ATC services — within the FIR, specific classes of airspace (A, C, D, E, G) define the level of service. Australia\\\'s FIRs are: Melbourne (Brisbane Oceanic, Melbourne Domestic).',
+  explanation: 'A Flight Information Region (FIR) is an airspace of defined dimensions within which flight information service and alerting service are provided. In Australia, the Melbourne FIR covers the majority of Australian airspace. The FIR does not imply full ATC services — within the FIR, specific classes of airspace (A, C, D, E, G) define the level of service. Australia\'s FIRs are: Melbourne (Brisbane Oceanic, Melbourne Domestic).',
   reference: 'AIP ENR 1.4 / ICAO Annex 11'
 },
 
@@ -3065,12 +3065,12 @@ export const aalwQuestions: {
   question: 'To avoid wake turbulence when landing behind a heavy jet on the same runway, the correct technique is to:',
   options: [
     'A. Land as soon as possible to minimise exposure time, only if the operator holds a specific approval under their Air Operator Certificate',
-    'B. Approach at or above the heavy jet\\\'s approach path, touch down before the heavy jet\\\'s touchdown point, and if necessary request increased separation from ATC',
+    'B. Approach at or above the heavy jet\'s approach path, touch down before the heavy jet\'s touchdown point, and if necessary request increased separation from ATC',
     'C. Approach at a higher speed to penetrate through the vortex quickly, only if the operator holds a specific approval under their Air Operator Certificate',
-    'D. Land on a runway intersection beyond the heavy jet\\\'s touchdown point, subject to the pilot completing the required recurrent training within 12 months'
+    'D. Land on a runway intersection beyond the heavy jet\'s touchdown point, subject to the pilot completing the required recurrent training within 12 months'
   ],
   correct: 1,
-  explanation: 'Wake turbulence avoidance when landing behind a heavy: maintain at or above the preceding aircraft\\\'s approach path (vortices sink below the path); aim to touch down prior to the point where the heavy touched down (vortices are at or beyond the touchdown point, not before it); and request ATC apply wake turbulence separation. "At or above, before" is the rule.',
+  explanation: 'Wake turbulence avoidance when landing behind a heavy: maintain at or above the preceding aircraft\'s approach path (vortices sink below the path); aim to touch down prior to the point where the heavy touched down (vortices are at or beyond the touchdown point, not before it); and request ATC apply wake turbulence separation. "At or above, before" is the rule.',
   reference: 'AIP ENR 1.1 / ICAO Doc 9426'
 },
 
@@ -3130,12 +3130,12 @@ export const aalwQuestions: {
   question: 'Under CAR, the pilot must not begin the take-off roll unless:',
   options: [
     'A. ATC has issued a specific take-off clearance only, provided a current instrument rating is held for the relevant aircraft category, subject to the pilot complet',
-    'B. Full power checks have been completed to the manufacturer\\\'s specifications, provided the aircraft holds a valid maintenance release and is within weight limits, except when the operation in',
+    'B. Full power checks have been completed to the manufacturer\'s specifications, provided the aircraft holds a valid maintenance release and is within weight limits, except when the operation in',
     'C. The pilot is satisfied that: the runway to be used is clear of obstructions, the aircraft is correctly configured for take-off, appropriate performance calculations have been completed, and (if at a controlled aerodrome) a take-off clearance has been issued',
     'D. All passengers and crew are seated and seatbelts fastened, only if the operator holds a specific approval under their Air Operator Certificate, provided a current instrumen'
   ],
   correct: 2,
-  explanation: 'Before commencing the take-off roll, the PIC must be satisfied that: the runway is clear; the aircraft is correctly configured and serviceable; take-off performance has been calculated (WAT limits, runway length, obstacle clearance); required clearances have been obtained. At a controlled aerodrome, a take-off clearance must be obtained. The PIC\\\'s failure to complete these checks is a serious safety breach.',
+  explanation: 'Before commencing the take-off roll, the PIC must be satisfied that: the runway is clear; the aircraft is correctly configured and serviceable; take-off performance has been calculated (WAT limits, runway length, obstacle clearance); required clearances have been obtained. At a controlled aerodrome, a take-off clearance must be obtained. The PIC\'s failure to complete these checks is a serious safety breach.',
   reference: 'CASR Part 91 / CAR Part XI'
 },
 
@@ -3200,7 +3200,7 @@ export const aalwQuestions: {
     'D. Notify CASA within 24 hours of taking the medication, provided the aircraft holds a valid maintenance release and is within weight limits, only if the operator holds a'
   ],
   correct: 2,
-  explanation: 'The pilot is personally responsible for assessing fitness to fly. Many prescription medications (sedatives, antihistamines, pain medications, antibiotics) can impair cognitive or physical performance. The "I\\\'M SAFE" checklist includes medication assessment. If in doubt, consult an aviation medical officer. Self-certifying fitness while impaired by medication is a dangerous and illegal act.',
+  explanation: 'The pilot is personally responsible for assessing fitness to fly. Many prescription medications (sedatives, antihistamines, pain medications, antibiotics) can impair cognitive or physical performance. The "I\'M SAFE" checklist includes medication assessment. If in doubt, consult an aviation medical officer. Self-certifying fitness while impaired by medication is a dangerous and illegal act.',
   reference: 'CASR Part 67 / CASR Part 91 / Civil Aviation Act'
 },
 
@@ -3221,7 +3221,7 @@ export const aalwQuestions: {
   question: 'The "sterile cockpit" rule applies to flight crew during:',
   options: [
     'A. All phases of flight, only if the operator holds a specific approval under their Air Operator Certificate, provided the aircraft holds ',
-    'B. Critical phases of flight — typically below 10,000 ft (or as specified in the operator\\\'s SOPs) — prohibiting non-essential conversation, activities, and crew communication not related to the safe operation of the aircraft',
+    'B. Critical phases of flight — typically below 10,000 ft (or as specified in the operator\'s SOPs) — prohibiting non-essential conversation, activities, and crew communication not related to the safe operation of the aircraft',
     'C. Only during approach and landing phases, only when operating in Class C or Class D controlled airspace, subject to the operator\'s ap',
     'D. Only when the aircraft is within Class A airspace, provided a current instrument rating is held for the relevant aircraft category, provided the aircraft holds '
   ],
@@ -3273,7 +3273,7 @@ export const aalwQuestions: {
   question: 'Under Australian regulations, the carriage of oxygen for supplemental use by passengers must comply with which of the following?',
   options: [
     'A. Oxygen may be carried freely by any passenger without restriction, subject to the operator\'s approved exposition authorising such operations, only when operating in Class',
-    'B. Therapeutic oxygen carried by or for passengers must comply with CASR Part 92 dangerous goods provisions and the operator\\\'s approval — portably-carried medical oxygen cylinders on board aircraft require specific approval',
+    'B. Therapeutic oxygen carried by or for passengers must comply with CASR Part 92 dangerous goods provisions and the operator\'s approval — portably-carried medical oxygen cylinders on board aircraft require specific approval',
     'C. Passenger-use oxygen is only permitted on pressurised aircraft, provided the aircraft holds a valid maintenance release and is within weight limits, only when operating in Class',
     'D. No oxygen may be carried in the passenger cabin under any circumstances, provided the aircraft holds a valid maintenance release and is within weight limits, only if the operator holds a'
   ],
@@ -3285,7 +3285,7 @@ export const aalwQuestions: {
 {
   question: 'The maximum certified structural weight at which an aircraft can take off is the MTOW. If an aircraft is dispatched at MTOW in a high altitude, high temperature environment, the take-off:',
   options: [
-    'A. May be structurally legal but operationally unsafe — while the structural limits are not exceeded, the aircraft\\\'s performance (accelerate-stop distance, climb gradient, obstacle clearance) is degraded by the high density altitude and may be insufficient',
+    'A. May be structurally legal but operationally unsafe — while the structural limits are not exceeded, the aircraft\'s performance (accelerate-stop distance, climb gradient, obstacle clearance) is degraded by the high density altitude and may be insufficient',
     'B. Is legal — structural limits are not affected by density altitude, subject to the pilot completing the required recurrent training within 12 months, provided the aircraft holds ',
     'C. Is automatically restricted by the FMS, provided CASA has been notified of the operation at least 24 hours in advance, subject to written approval ',
     'D. Requires a CASA waiver for hot and high operations, provided CASA has been notified of the operation at least 24 hours in advance, subject to the operator\'s ap'
@@ -3395,7 +3395,7 @@ export const aalwQuestions: {
     'D. Pressure altitude corrected for non-standard temperature, subject to the pilot completing the required recurrent training within 12 months'
   ],
   correct: 1,
-  explanation: 'QNH is the altimeter setting that causes the altimeter to read the aerodrome\\\'s published elevation when the aircraft is on the ground. In flight, it gives altitude AMSL. QNH varies with the actual atmospheric pressure at the location. ATC issues QNH to arriving aircraft for use during approaches and departures below the transition altitude.',
+  explanation: 'QNH is the altimeter setting that causes the altimeter to read the aerodrome\'s published elevation when the aircraft is on the ground. In flight, it gives altitude AMSL. QNH varies with the actual atmospheric pressure at the location. ATC issues QNH to arriving aircraft for use during approaches and departures below the transition altitude.',
   reference: 'AIP ENR 1.7 / ICAO Doc 8168'
 },
 
@@ -3417,7 +3417,7 @@ export const aalwQuestions: {
   options: [
     'A. Fly the heading but may deviate up to ±5° for turbulence avoidance, provided CASA has been notified of the operation at least 24 hours in advance',
     'B. Advise ATC if wind causes drift from the assigned heading, provided CASA has been notified of the operation at least 24 hours in advance',
-    'C. Maintain the magnetic heading for ±15° of the assigned heading at the pilot\\\'s discretion, only when operating in Class C or Class D controlled airspace',
+    'C. Maintain the magnetic heading for ±15° of the assigned heading at the pilot\'s discretion, only when operating in Class C or Class D controlled airspace',
     'D. Maintain the assigned heading until instructed otherwise, except when safety requires immediate deviation, in which case ATC must be notified immediately'
   ],
   correct: 3,
@@ -3430,7 +3430,7 @@ export const aalwQuestions: {
   options: [
     'A. May commence the approach — conditions may improve by the time the aircraft reaches decision height',
     'B. May commence if they have alternate fuel and the approach is commenced within 5 minutes of the report',
-    'C. May commence with captain\\\'s discretion as conditions may be better at lower altitude, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
+    'C. May commence with captain\'s discretion as conditions may be better at lower altitude, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'D. Must not commence the approach if the reported RVR is below the published minimum — the approach ban applies when reported RVR is below minimums'
   ],
   correct: 3,
@@ -3520,7 +3520,7 @@ export const aalwQuestions: {
   question: 'Under Australian regulations, a pilot must not act as PIC or co-pilot of an aircraft while suffering from any illness or condition that:',
   options: [
     'A. Requires any form of medication, provided CASA has been notified of the operation at least 24 hours in advance, subject to the pilot complet',
-    'B. Impairs or is likely to impair the person\\\'s capacity to act as PIC or co-pilot — including physical illness, mental condition, fatigue, or any other state affecting performance',
+    'B. Impairs or is likely to impair the person\'s capacity to act as PIC or co-pilot — including physical illness, mental condition, fatigue, or any other state affecting performance',
     'C. Has caused them to visit a doctor in the preceding 30 days, except during the period of any declared low visibility procedures at the aerodrome',
     'D. Would require them to have a medical certificate renewed early, subject to the operator\'s approved exposition authorising such operations'
   ],
@@ -3538,7 +3538,7 @@ export const aalwQuestions: {
     'D. When entering the ILS final approach course, subject to the pilot completing the required recurrent training within 12 months, only if the operator holds a'
   ],
   correct: 0,
-  explanation: 'IDENT causes the transponder to transmit an additional coded signal that makes the aircraft\\\'s radar return bloom (Special Position Identification — SPI) on the ATC radar display for approximately 15-20 seconds. It is only activated when ATC requests "SQUAWK IDENT." Pressing IDENT without instruction is poor practice and can confuse ATC.',
+  explanation: 'IDENT causes the transponder to transmit an additional coded signal that makes the aircraft\'s radar return bloom (Special Position Identification — SPI) on the ATC radar display for approximately 15-20 seconds. It is only activated when ATC requests "SQUAWK IDENT." Pressing IDENT without instruction is poor practice and can confuse ATC.',
   reference: 'AIP ENR 1.6 / ICAO PANS-ATM'
 },
 
@@ -3694,7 +3694,7 @@ export const aalwQuestions: {
     'D. Decline the clearance, advise ATC that the clearance is not acceptable due to the icing hazard, and request an alternative clearance that avoids the icing area'
   ],
   correct: 3,
-  explanation: 'The PIC may refuse any ATC clearance that would compromise safety. Severe icing exceeding the aircraft\\\'s certification is a valid safety reason to refuse a clearance. The pilot must advise ATC ("Unable due icing — request amended routing") and state what alternative is required. There is no requirement to declare an emergency simply to refuse a hazardous clearance.',
+  explanation: 'The PIC may refuse any ATC clearance that would compromise safety. Severe icing exceeding the aircraft\'s certification is a valid safety reason to refuse a clearance. The pilot must advise ATC ("Unable due icing — request amended routing") and state what alternative is required. There is no requirement to declare an emergency simply to refuse a hazardous clearance.',
   reference: 'CASR Part 91 / AIP ENR 1.1'
 },
 
@@ -3779,7 +3779,7 @@ export const aalwQuestions: {
 {
   question: 'Under Australian regulations, an RPT operator conducting turnaround operations at a remote airport where no maintenance engineer is available must:',
   options: [
-    'A. Have the flight crew trained in and authorised to conduct specified pre-departure checks and minor serviceability assessments as approved in the operator\\\'s maintenance programme, with clear authority limits',
+    'A. Have the flight crew trained in and authorised to conduct specified pre-departure checks and minor serviceability assessments as approved in the operator\'s maintenance programme, with clear authority limits',
     'B. Leave the aircraft and return for maintenance, subject to written approval from the operator\'s chief pilot, subject to the operator\'s ap',
     'C. Fly the aircraft back to base immediately regardless of defects found, provided the aircraft holds a valid maintenance release and is within weight limits, subject to the pilot complet',
     'D. The remote aerodrome operations are prohibited without on-site engineering support, provided the aircraft holds a valid maintenance release and is within weight limits'
@@ -3806,12 +3806,12 @@ export const aalwQuestions: {
   question: 'An RPT operator uses a "Pilot Not Flying" (PNF/PM) concept. The primary responsibilities of the PNF during approach include:',
   options: [
     'A. Monitoring the passengers through the cabin camera, provided a current instrument rating is held for the relevant aircraft category, provided CASA has been notif',
-    'B. Only managing the radios — flight instruments are the PF\\\'s responsibility, subject to the operator\'s approved exposition authorising such operations',
+    'B. Only managing the radios — flight instruments are the PF\'s responsibility, subject to the operator\'s approved exposition authorising such operations',
     'C. Monitoring all aircraft systems, calling out deviations from standard profiles, managing communications, completing checklists, and being prepared to take control immediately if required',
     'D. The PNF has no defined responsibilities — they simply observe, except when the operation involves more than 9 passenger seats, except during the period of '
   ],
   correct: 2,
-  explanation: 'Pilot Monitoring (PM/PNF) responsibilities during approach: monitor all flight instruments; call out deviations ("100 above," "10 knots fast," "localiser alive"); manage ATC communications; complete approach checklists; call approaching minimums; call "STABLE/UNSTABLE" at gates; and be prepared to take control if the PF is incapacitated. The PM\\\'s active monitoring is a critical defence against approach errors.',
+  explanation: 'Pilot Monitoring (PM/PNF) responsibilities during approach: monitor all flight instruments; call out deviations ("100 above," "10 knots fast," "localiser alive"); manage ATC communications; complete approach checklists; call approaching minimums; call "STABLE/UNSTABLE" at gates; and be prepared to take control if the PF is incapacitated. The PM\'s active monitoring is a critical defence against approach errors.',
   reference: 'CASR Part 121 / Operator SOPs / ICAO Human Factors'
 },
 
@@ -3833,11 +3833,11 @@ export const aalwQuestions: {
   options: [
     'A. A person who holds or has held an appropriate licence and has sufficient operational experience to effectively supervise and control flight operations — typically an ATPL holder with operational experience',
     'B. A person with airline management experience only — no pilot qualification is required, subject to written approval from the operator\'s chief pilot, except during the period of ',
-    'C. Appointed by the airline\\\'s Board — CASA has no role in their appointment, provided the aircraft holds a valid maintenance release and is within weight limits',
+    'C. Appointed by the airline\'s Board — CASA has no role in their appointment, provided the aircraft holds a valid maintenance release and is within weight limits',
     'D. A CASA-employed inspector seconded to the operator, only if the operator holds a specific approval under their Air Operator Certificate, subject to the pilot complet'
   ],
   correct: 0,
-  explanation: 'Under CAO 82.3, the head of operations (Chief Pilot) must be acceptable to CASA and hold appropriate qualifications and experience. CASA must be satisfied that the Chief Pilot is competent to exercise supervision over the operator\\\'s flight operations. This position is a "key person" position under the AOC — changes require CASA notification and assessment.',
+  explanation: 'Under CAO 82.3, the head of operations (Chief Pilot) must be acceptable to CASA and hold appropriate qualifications and experience. CASA must be satisfied that the Chief Pilot is competent to exercise supervision over the operator\'s flight operations. This position is a "key person" position under the AOC — changes require CASA notification and assessment.',
   reference: 'CAO 82.3 / CASR Part 119'
 },
 
@@ -3923,7 +3923,7 @@ export const aalwQuestions: {
   question: 'Under Australian regulations, the "WAT limit" (Weight, Altitude, Temperature) determines:',
   options: [
     'A. The maximum take-off weight based solely on structural limits, subject to the operator\'s approved exposition authorising such operations, except when the operation in',
-    'B. The weight at which the aircraft\\\'s landing performance becomes critical, but only for aircraft not exceeding 15,000 kg MTOW, except when the operation in',
+    'B. The weight at which the aircraft\'s landing performance becomes critical, but only for aircraft not exceeding 15,000 kg MTOW, except when the operation in',
     'C. Fuel required for the flight — WAT limits define minimum fuel not maximum weight, provided the aircraft holds a valid maintenance release and is within weight limits, only if the operator holds a',
     'D. The maximum take-off weight for a given pressure altitude and OAT, ensuring the aircraft can meet minimum climb performance requirements with one engine inoperative — the maximum weight may be less than MTOW at high/hot conditions'
   ],
@@ -3954,7 +3954,7 @@ export const aalwQuestions: {
     'D. Use assertive communication to clearly state the concern, using "I" statements and specific observable facts — if the concern is not acknowledged, escalate appropriately using a graduated advocacy approach'
   ],
   correct: 3,
-  explanation: 'CRM advocacy: crew members must speak up about safety concerns. The recommended approach: (1) State the concern clearly ("I\\\'m concerned about..."); (2) Suggest an alternative ("What if we..."); (3) Escalate if not acknowledged ("Captain, I need you to reconsider this"). The final safety net if the captain is clearly making a dangerous decision is for the PM to be prepared to take control. A culture of non-advocacy is a contributing factor in numerous accidents.',
+  explanation: 'CRM advocacy: crew members must speak up about safety concerns. The recommended approach: (1) State the concern clearly ("I\'m concerned about..."); (2) Suggest an alternative ("What if we..."); (3) Escalate if not acknowledged ("Captain, I need you to reconsider this"). The final safety net if the captain is clearly making a dangerous decision is for the PM to be prepared to take control. A culture of non-advocacy is a contributing factor in numerous accidents.',
   reference: 'ICAO Human Factors / CASR Part 121 / CRM training'
 },
 
@@ -4032,7 +4032,7 @@ export const aalwQuestions: {
     'D. Intervene and document nothing, provided CASA has been notified of the operation at least 24 hours in advance'
   ],
   correct: 1,
-  explanation: 'Check captains observe and document performance — they intervene only if safety is at risk. Minor procedural errors are noted for the debrief where they can be discussed constructively. Interrupting for every minor error prevents the check captain from observing the crew\\\'s ability to self-identify and correct errors, and it makes the assessment unrealistic. Post-flight debrief is where corrective action is addressed.',
+  explanation: 'Check captains observe and document performance — they intervene only if safety is at risk. Minor procedural errors are noted for the debrief where they can be discussed constructively. Interrupting for every minor error prevents the check captain from observing the crew\'s ability to self-identify and correct errors, and it makes the assessment unrealistic. Post-flight debrief is where corrective action is addressed.',
   reference: 'CASR Part 121 / CAO 82.3 / Check captain training'
 },
 
@@ -4071,7 +4071,7 @@ export const aalwQuestions: {
     'D. Neither pilot logs PIC time — PICUS is logged only'
   ],
   correct: 1,
-  explanation: 'When a co-pilot is formally designated as PIC for a sector (under a cruise captain or first officer PIC programme approved in the operator\\\'s exposition), the co-pilot acting as PIC logs that sector as PIC time. The other pilot (cruise captain) typically logs PICUS (if applicable) or co-pilot time. This type of programme is used to build co-pilot PIC experience towards ATPL requirements.',
+  explanation: 'When a co-pilot is formally designated as PIC for a sector (under a cruise captain or first officer PIC programme approved in the operator\'s exposition), the co-pilot acting as PIC logs that sector as PIC time. The other pilot (cruise captain) typically logs PICUS (if applicable) or co-pilot time. This type of programme is used to build co-pilot PIC experience towards ATPL requirements.',
   reference: 'CASR Part 61 / ICAO Doc 9868'
 },
 
@@ -4104,13 +4104,13 @@ export const aalwQuestions: {
 {
   question: 'Under CAO 82.3, the minimum experience requirement for a first officer on a multi-crew RPT operation is:',
   options: [
-    'A. As specified in the operator\\\'s approved training and qualification programme — typically a CPL, instrument rating, and sufficient experience to meet the operator\\\'s minimum hiring standards, all approved by CASA',
+    'A. As specified in the operator\'s approved training and qualification programme — typically a CPL, instrument rating, and sufficient experience to meet the operator\'s minimum hiring standards, all approved by CASA',
     'B. A CPL with 200 hours total time, provided the aircraft holds a valid maintenance release and is within weight limits, subject to the requirements ',
     'C. An ATPL with 500 hours on the type, subject to the pilot completing the required recurrent training within 12 months, subject to the requirements ',
     'D. No minimum is specified — the operator determines requirements, provided a current instrument rating is held for the relevant aircraft category, subject to written approval '
   ],
   correct: 0,
-  explanation: 'First officer minimum requirements for RPT operations are specified in the operator\\\'s CASA-approved training programme. At minimum: CPL(A), instrument rating, type rating, and any operator-specific experience requirements. CAO 82.3 sets standards that operators must meet or exceed. Many operators require 1,500 hours total time minimum — higher than the regulatory floor.',
+  explanation: 'First officer minimum requirements for RPT operations are specified in the operator\'s CASA-approved training programme. At minimum: CPL(A), instrument rating, type rating, and any operator-specific experience requirements. CAO 82.3 sets standards that operators must meet or exceed. Many operators require 1,500 hours total time minimum — higher than the regulatory floor.',
   reference: 'CAO 82.3 / CASR Part 121'
 },
 
@@ -4193,7 +4193,7 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'An RPT aircraft makes an unplanned landing at a non-scheduled aerodrome due to weather. The PIC\\\'s responsibilities include:',
+  question: 'An RPT aircraft makes an unplanned landing at a non-scheduled aerodrome due to weather. The PIC\'s responsibilities include:',
   options: [
     'A. Fuel the aircraft and depart as soon as the weather clears without further action, provided CASA has been notified of the operation at least 24 hours in advance, subject to the pilot complet',
     'B. Calling CASA to notify the diversion, except during the period of any declared low visibility procedures at the aerodrome, provided a current instrumen',
@@ -4219,15 +4219,15 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'An airline\\\'s "operations specifications" (Ops Specs) are:',
+  question: 'An airline\'s "operations specifications" (Ops Specs) are:',
   options: [
-    'A. The airline\\\'s marketing specifications for each route, subject to the pilot completing the required recurrent training within 12 months, provided the aircraft holds ',
+    'A. The airline\'s marketing specifications for each route, subject to the pilot completing the required recurrent training within 12 months, provided the aircraft holds ',
     'B. The technical specifications for each aircraft in the fleet, only if the operator holds a specific approval under their Air Operator Certificate, except when the operation in',
     'C. CASA-issued authorisations specifying the specific operations and limitations applicable to an AOC holder — including approved aircraft types, routes, operation types, and special approvals (ETOPS, CAT II, RVSM, etc.)',
     'D. Internal company documents with no regulatory significance, subject to the requirements of the applicable Civil Aviation Order, except during the period of '
   ],
   correct: 2,
-  explanation: 'Operations Specifications are CASA-issued documents forming part of the AOC holder\\\'s operational approval. They specify: approved aircraft types; types of operations; geographic areas; special operation approvals (ETOPS, CAT II/III, RVSM, low visibility operations); and conditions and limitations. The Ops Specs cannot exceed the operator\\\'s approved exposition. Any new capability (new aircraft type, ETOPS approval) requires Ops Spec amendment.',
+  explanation: 'Operations Specifications are CASA-issued documents forming part of the AOC holder\'s operational approval. They specify: approved aircraft types; types of operations; geographic areas; special operation approvals (ETOPS, CAT II/III, RVSM, low visibility operations); and conditions and limitations. The Ops Specs cannot exceed the operator\'s approved exposition. Any new capability (new aircraft type, ETOPS approval) requires Ops Spec amendment.',
   reference: 'CASR Part 119 / CASR Part 121'
 },
 
@@ -4301,7 +4301,7 @@ export const aalwQuestions: {
   options: [
     'A. The critical performance requirement — typically the accelerate-stop distance for a rejected take-off at V1 (if longer than take-off distance) or the landing distance required with appropriate factoring',
     'B. Only the aircraft MTOW, except during the period of any declared low visibility procedures at the aerodrome, subject to the requirements ',
-    'C. ATC\\\'s assessment of the runway length at the specific aerodrome, subject to written approval from the operator\'s chief pilot, except during the period of ',
+    'C. ATC\'s assessment of the runway length at the specific aerodrome, subject to written approval from the operator\'s chief pilot, except during the period of ',
     'D. Only the landing roll distance at MTOW, provided CASA has been notified of the operation at least 24 hours in advance, only if the operator holds a'
   ],
   correct: 0,
@@ -4340,12 +4340,12 @@ export const aalwQuestions: {
   options: [
     'A. Only the aircraft hull, except during the period of any declared low visibility procedures at the aerodrome, provided a current instrumen',
     'B. All aviation insurance is voluntary — no minimum is specified by law, subject to the requirements of the applicable Civil Aviation Order, provided the aircraft holds ',
-    'C. Third party liability insurance as a minimum — passenger liability insurance is also required for operations carrying passengers for reward, as specified under CASR and the Civil Aviation (Carriers\\\' Liability) Act',
+    'C. Third party liability insurance as a minimum — passenger liability insurance is also required for operations carrying passengers for reward, as specified under CASR and the Civil Aviation (Carriers\' Liability) Act',
     'D. Only international flights require insurance — domestic operations are unregulated, only when operating in Class C or Class D controlled airspace, only if the operator holds a'
   ],
   correct: 2,
-  explanation: 'Under Australian law, third party liability insurance is required for operating aircraft. For passenger-carrying commercial operations, the Civil Aviation (Carriers\\\' Liability) Act 1959 imposes strict liability and minimum coverage requirements for passenger injury and death. The insurance requirements are separate from CASR — they are enforced through civil law and AOC conditions.',
-  reference: 'Civil Aviation (Carriers\\\' Liability) Act 1959 / CASR'
+  explanation: 'Under Australian law, third party liability insurance is required for operating aircraft. For passenger-carrying commercial operations, the Civil Aviation (Carriers\' Liability) Act 1959 imposes strict liability and minimum coverage requirements for passenger injury and death. The insurance requirements are separate from CASR — they are enforced through civil law and AOC conditions.',
+  reference: 'Civil Aviation (Carriers\' Liability) Act 1959 / CASR'
 },
 
 {
@@ -4487,7 +4487,7 @@ export const aalwQuestions: {
     'D. Is the lowest QNH in the relevant FIR sector during the period — using area QNH ensures the aircraft has the most conservative altimeter setting when operating in the lower airspace of that sector'
   ],
   correct: 3,
-  explanation: 'Area QNH is the lowest reported or forecast QNH for a specific area during the period of use. Using the lowest value is conservative — it ensures the aircraft\\\'s actual altitude is always at or above what the altimeter indicates. Area QNH is used in IFR en-route operations away from aerodromes. It is broadcast by the relevant ATC sector.',
+  explanation: 'Area QNH is the lowest reported or forecast QNH for a specific area during the period of use. Using the lowest value is conservative — it ensures the aircraft\'s actual altitude is always at or above what the altimeter indicates. Area QNH is used in IFR en-route operations away from aerodromes. It is broadcast by the relevant ATC sector.',
   reference: 'AIP ENR 1.7'
 },
 
@@ -4559,9 +4559,9 @@ export const aalwQuestions: {
 {
   question: 'Under Australian aviation law, the "responsible person" for a flight is:',
   options: [
-    'A. The operator\\\'s accountable manager, subject to the operator\'s approved exposition authorising such operations',
+    'A. The operator\'s accountable manager, subject to the operator\'s approved exposition authorising such operations',
     'B. The pilot in command of the aircraft — the PIC bears personal legal responsibility for the safe conduct of the flight and compliance with applicable regulations',
-    'C. The airline\\\'s Director of Flight Operations, subject to the requirements of the applicable Civil Aviation Order',
+    'C. The airline\'s Director of Flight Operations, subject to the requirements of the applicable Civil Aviation Order',
     'D. CASA — as the regulatory authority, only if the operator holds a specific approval under their Air Operator Certificate'
   ],
   correct: 1,
@@ -4591,7 +4591,7 @@ export const aalwQuestions: {
     'D. Advise the pilot immediately of the low altitude alert and issue a climb instruction — the pilot must respond immediately'
   ],
   correct: 3,
-  explanation: 'Minimum Safe Altitude Warning (MSAW): when the MSAW system alerts a controller that an aircraft is at risk of terrain or obstacle contact, the controller must immediately advise the pilot and issue a climb instruction. The pilot must respond immediately to a low altitude alert. MSAW is a safety net — it supplements but does not replace the pilot\\\'s terrain awareness responsibilities.',
+  explanation: 'Minimum Safe Altitude Warning (MSAW): when the MSAW system alerts a controller that an aircraft is at risk of terrain or obstacle contact, the controller must immediately advise the pilot and issue a climb instruction. The pilot must respond immediately to a low altitude alert. MSAW is a safety net — it supplements but does not replace the pilot\'s terrain awareness responsibilities.',
   reference: 'AIP ENR 1.6 / ICAO PANS-ATM'
 },
 
@@ -4630,7 +4630,7 @@ export const aalwQuestions: {
     'D. The alternate aerodrome tower must be staffed at the estimated arrival time, provided a current instrument rating is held for the relevant aircraft category, subject to the requirements '
   ],
   correct: 2,
-  explanation: 'Alternate validity depends on: the approach procedure being available and serviceable (NOTAMs checked); forecast conditions meeting alternate minima; and the aerodrome being open at the ETA. If the ILS at the alternate is NOTAMed unserviceable, the alternate may still be valid if a VOR or NDB approach is available and conditions meet that approach\\\'s alternate minima — which are higher.',
+  explanation: 'Alternate validity depends on: the approach procedure being available and serviceable (NOTAMs checked); forecast conditions meeting alternate minima; and the aerodrome being open at the ETA. If the ILS at the alternate is NOTAMed unserviceable, the alternate may still be valid if a VOR or NDB approach is available and conditions meet that approach\'s alternate minima — which are higher.',
   reference: 'AIP ENR 1.1 / CASR Part 91'
 },
 
@@ -4669,7 +4669,7 @@ export const aalwQuestions: {
     'D. Prevent multiple simultaneous approaches at the same aerodrome, only when operating in Class C or Class D controlled airspace, only if the operator holds a'
   ],
   correct: 2,
-  explanation: 'The approach ban protects against CFIT (Controlled Flight Into Terrain) by prohibiting continuation of an approach when reported conditions are below the published minimums. At or after the Final Approach Fix (FAF), if the reported RVR/visibility is below minimums, the approach must not continue below DA/H or MDA/H. The approach ban applies regardless of the crew\\\'s subjective assessment of conditions.',
+  explanation: 'The approach ban protects against CFIT (Controlled Flight Into Terrain) by prohibiting continuation of an approach when reported conditions are below the published minimums. At or after the Final Approach Fix (FAF), if the reported RVR/visibility is below minimums, the approach must not continue below DA/H or MDA/H. The approach ban applies regardless of the crew\'s subjective assessment of conditions.',
   reference: 'AIP ENR 1.5 / CASR Part 91'
 },
 
@@ -4682,7 +4682,7 @@ export const aalwQuestions: {
     'D. Accept if the extra weight does not affect the CG limits, but only for aircraft not exceeding 15,000 kg MTOW'
   ],
   correct: 0,
-  explanation: 'MTOW is a structural and performance limit that cannot be exceeded regardless of commercial pressure or passenger requests. An ATPL holder who operates above MTOW is in breach of CASR Part 91, the Civil Aviation Act, and the aircraft\\\'s type certificate. The excess payload must be offloaded. This is a non-negotiable regulatory and safety requirement.',
+  explanation: 'MTOW is a structural and performance limit that cannot be exceeded regardless of commercial pressure or passenger requests. An ATPL holder who operates above MTOW is in breach of CASR Part 91, the Civil Aviation Act, and the aircraft\'s type certificate. The excess payload must be offloaded. This is a non-negotiable regulatory and safety requirement.',
   reference: 'CASR Part 91 / CASR Part 21'
 },
 
@@ -4708,7 +4708,7 @@ export const aalwQuestions: {
     'D. During any phase at night, subject to the pilot completing the required recurrent training within 12 months, subject to the requirements '
   ],
   correct: 0,
-  explanation: 'Relief (augmenting) crew authorised for cruise duties only: may perform pilot duties only during cruise flight. Take-off, departure, descent below a specified altitude, approach, and landing must be conducted by the minimum required qualified crew. This restriction is published in the operator\\\'s Operations Manual and is based on the relief crew\\\'s qualification level.',
+  explanation: 'Relief (augmenting) crew authorised for cruise duties only: may perform pilot duties only during cruise flight. Take-off, departure, descent below a specified altitude, approach, and landing must be conducted by the minimum required qualified crew. This restriction is published in the operator\'s Operations Manual and is based on the relief crew\'s qualification level.',
   reference: 'CAO 48.1 / CASR Part 121 / CAO 82.0'
 },
 
@@ -4821,7 +4821,7 @@ export const aalwQuestions: {
   options: [
     'A. The time at which ATC expects the aircraft to commence its approach from the holding fix — the crew uses this to manage fuel and decide whether to hold or divert',
     'B. The time by which the aircraft must have landed, provided CASA has been notified of the operation at least 24 hours in advance',
-    'C. ATC\\\'s best estimate of the arrival time at the gate, provided CASA has been notified of the operation at least 24 hours in advance',
+    'C. ATC\'s best estimate of the arrival time at the gate, provided CASA has been notified of the operation at least 24 hours in advance',
     'D. The time the ILS will be switched on for the approach, provided the aircraft holds a valid maintenance release and is within weight limits'
   ],
   correct: 0,
@@ -4886,7 +4886,7 @@ export const aalwQuestions: {
   options: [
     'A. The aircraft is over 5,700 kg MTOW only, provided the relevant aerodrome has a certified RFFS capability for the aircraft, subject to written approval ',
     'B. Only on international flights, provided the aircraft holds a valid maintenance release and is within weight limits, provided CASA has been notif',
-    'C. The AFM is not required to be carried — it only needs to be available at the operator\\\'s base, provided a current instrument rating is held for the relevant aircraft category',
+    'C. The AFM is not required to be carried — it only needs to be available at the operator\'s base, provided a current instrument rating is held for the relevant aircraft category',
     'D. The aircraft type requires it (type-certificated aircraft generally require the AFM to be on board during flight) — the AFM contains performance data, limitations, and procedures that the crew must have access to'
   ],
   correct: 3,
@@ -4929,7 +4929,7 @@ export const aalwQuestions: {
     'D. ±300 ft'
   ],
   correct: 0,
-  explanation: 'RVSM altimetry accuracy requirement: the aircraft must be capable of maintaining assigned altitude within ±65 ft, 95% of the time, in the absence of turbulence and pilot-induced changes. This requires a high-accuracy altimetry system with automatic altitude keeping (autopilot). Annual RVSM monitoring of operators\\\' fleet performance ensures continued compliance with this requirement.',
+  explanation: 'RVSM altimetry accuracy requirement: the aircraft must be capable of maintaining assigned altitude within ±65 ft, 95% of the time, in the absence of turbulence and pilot-induced changes. This requires a high-accuracy altimetry system with automatic altitude keeping (autopilot). Annual RVSM monitoring of operators\' fleet performance ensures continued compliance with this requirement.',
   reference: 'ICAO Doc 9574 / AIP ENR 1.1'
 },
 
@@ -4955,7 +4955,7 @@ export const aalwQuestions: {
     'D. En-route Traffic Advisory, subject to written approval from the operator\'s chief pilot, only if the operator holds a'
   ],
   correct: 2,
-  explanation: 'ETA (Estimated Time of Arrival): the crew\\\'s best estimate of when the aircraft will arrive at a specified position. ETAs are included in position reports, flight plans, and communications with ATC. ETA accuracy is important for procedural separation in non-radar environments and for SAR coverage. ETA is expressed in UTC (Coordinated Universal Time) in Australian aviation.',
+  explanation: 'ETA (Estimated Time of Arrival): the crew\'s best estimate of when the aircraft will arrive at a specified position. ETAs are included in position reports, flight plans, and communications with ATC. ETA accuracy is important for procedural separation in non-radar environments and for SAR coverage. ETA is expressed in UTC (Coordinated Universal Time) in Australian aviation.',
   reference: 'AIP ENR 1.1'
 },
 
@@ -5108,10 +5108,10 @@ export const aalwQuestions: {
     'A. Always 800 m RVR, subject to the operator\'s approved exposition authorising such operations, provided a current instrumen',
     'B. Zero — take-off minimums do not exist in Australian regulations, subject to the requirements of the applicable Civil Aviation Order, provided a current instrumen',
     'C. Always the same as the published approach minimums for the aerodrome, except when the operation involves more than 9 passenger seats, subject to the operator\'s ap',
-    'D. As published for the specific aerodrome and aircraft — take-off minimums may be different from approach minimums and are specified in the operator\\\'s Operations Manual or the published aerodrome departure procedures'
+    'D. As published for the specific aerodrome and aircraft — take-off minimums may be different from approach minimums and are specified in the operator\'s Operations Manual or the published aerodrome departure procedures'
   ],
   correct: 3,
-  explanation: 'Take-off minimums are separate from approach minimums. Under CAO 82.0 and the operator\\\'s approved procedures, take-off minimum visibility/RVR is specified. The minimum may be 150 m RVR for Category III-capable aircraft, or higher for less-capable aircraft or aerodromes with obstacles. The AIP and operator\\\'s Operations Manual specify take-off minimums. Zero-zero take-offs are not generally authorised.',
+  explanation: 'Take-off minimums are separate from approach minimums. Under CAO 82.0 and the operator\'s approved procedures, take-off minimum visibility/RVR is specified. The minimum may be 150 m RVR for Category III-capable aircraft, or higher for less-capable aircraft or aerodromes with obstacles. The AIP and operator\'s Operations Manual specify take-off minimums. Zero-zero take-offs are not generally authorised.',
   reference: 'CAO 82.0 / AIP ENR 1.5'
 },
 
@@ -5160,7 +5160,7 @@ export const aalwQuestions: {
     'A. Retains their licence provided they were not impaired during flight operations, subject to the operator\'s approved exposition authorising such operations',
     'B. Only loses their licence if the offence involved aviation activities, only when operating in Class C or Class D controlled airspace, except during the period of ',
     'C. Is automatically granted amnesty under the voluntary disclosure scheme, only if the operator holds a specific approval under their Air Operator Certificate',
-    'D. Is required to notify CASA — CASA may cancel, suspend, or impose conditions on the licence depending on the nature of the offence and the pilot\\\'s suitability to hold aviation documents'
+    'D. Is required to notify CASA — CASA may cancel, suspend, or impose conditions on the licence depending on the nature of the offence and the pilot\'s suitability to hold aviation documents'
   ],
   correct: 3,
   explanation: 'Under the Civil Aviation Act, CASA may cancel or suspend aviation documents when the holder is convicted of certain offences, including drug-related offences, that affect their suitability. The holder must notify CASA of relevant convictions. The "fit and proper person" assessment applies to all aviation document holders — character and fitness are relevant to the right to hold aviation documents.',
@@ -5176,7 +5176,7 @@ export const aalwQuestions: {
     'D. CASA through its continuous oversight of all commercial operations, provided the aircraft holds a valid maintenance release and is within weight limits, except during the period of '
   ],
   correct: 2,
-  explanation: 'Operational control in civil aviation: the AOC holder exercises operational control (scheduling, routing, dispatch, crew assignment), and the PIC exercises in-flight command authority. The operator cannot override the PIC\\\'s safety decisions. The PIC cannot operate outside the operator\\\'s approved procedures without safety justification. ICAO defines operational control as "the exercise of authority over the initiation, continuation, diversion, or termination of a flight."',
+  explanation: 'Operational control in civil aviation: the AOC holder exercises operational control (scheduling, routing, dispatch, crew assignment), and the PIC exercises in-flight command authority. The operator cannot override the PIC\'s safety decisions. The PIC cannot operate outside the operator\'s approved procedures without safety justification. ICAO defines operational control as "the exercise of authority over the initiation, continuation, diversion, or termination of a flight."',
   reference: 'CASR Part 119 / ICAO Annex 6'
 },
 
@@ -5185,7 +5185,7 @@ export const aalwQuestions: {
   options: [
     'A. Assault or intimidate the crew, endanger the safety of the aircraft or persons on board, or disobey a lawful instruction of the pilot in command',
     'B. Use personal electronic devices during flight, provided a current instrument rating is held for the relevant aircraft category',
-    'C. Carry food on board without the airline\\\'s permission, except when the operation involves more than 9 passenger seats',
+    'C. Carry food on board without the airline\'s permission, except when the operation involves more than 9 passenger seats',
     'D. Smoke in any area of the aircraft regardless of airline policy, subject to written approval from the operator\'s chief pilot'
   ],
   correct: 0,
@@ -5198,11 +5198,11 @@ export const aalwQuestions: {
   options: [
     'A. The number of passengers on board, except during the period of any declared low visibility procedures at the aerodrome, subject to written approval ',
     'B. The aircraft MTOW only, only when operating in Class C or Class D controlled airspace, subject to the operator\'s ap',
-    'C. The operator\\\'s risk assessment for each specific operation, only if the operator holds a specific approval under their Air Operator Certificate',
-    'D. The aircraft\\\'s overall length and maximum fuselage width — these two dimensions determine the minimum RFFS category as published in the ICAO and CASR Part 139 standards'
+    'C. The operator\'s risk assessment for each specific operation, only if the operator holds a specific approval under their Air Operator Certificate',
+    'D. The aircraft\'s overall length and maximum fuselage width — these two dimensions determine the minimum RFFS category as published in the ICAO and CASR Part 139 standards'
   ],
   correct: 3,
-  explanation: 'RFFS category is determined by the aircraft\\\'s overall length AND maximum fuselage width. Both dimensions must be checked — the higher category of the two applies. ICAO Annex 14 Table 9-1 lists the RFFS categories based on these aircraft dimensions. An aerodrome with insufficient RFFS category may not permit operations by larger aircraft during normal hours.',
+  explanation: 'RFFS category is determined by the aircraft\'s overall length AND maximum fuselage width. Both dimensions must be checked — the higher category of the two applies. ICAO Annex 14 Table 9-1 lists the RFFS categories based on these aircraft dimensions. An aerodrome with insufficient RFFS category may not permit operations by larger aircraft during normal hours.',
   reference: 'CASR Part 139 / ICAO Annex 14 Table 9-1'
 },
 
@@ -5290,15 +5290,15 @@ export const aalwQuestions: {
     'A. Mode A transponder only, subject to the requirements of the applicable Civil Aviation Order, except when the operation in',
     'B. Any transponder regardless of mode, subject to written approval from the operator\'s chief pilot, subject to the requirements ',
     'C. Mode C transponder (altitude encoding) — required in most Australian controlled airspace above the specified altitudes; Mode S may be required in specific airspace',
-    'D. Transponder is optional in controlled airspace — it only improves ATC\\\'s picture, provided the relevant aerodrome has a certified RFFS capability for the aircraft'
+    'D. Transponder is optional in controlled airspace — it only improves ATC\'s picture, provided the relevant aerodrome has a certified RFFS capability for the aircraft'
   ],
   correct: 2,
-  explanation: 'Mode C (altitude encoding) transponder is required in Australian controlled airspace at and above prescribed altitudes — currently above 10,000 ft AMSL and in designated transponder mandatory airspace. ADS-B (which integrates with transponders) is additionally required above FL290. Mode C gives ATC the aircraft\\\'s altitude on the radar display, essential for vertical separation.',
+  explanation: 'Mode C (altitude encoding) transponder is required in Australian controlled airspace at and above prescribed altitudes — currently above 10,000 ft AMSL and in designated transponder mandatory airspace. ADS-B (which integrates with transponders) is additionally required above FL290. Mode C gives ATC the aircraft\'s altitude on the radar display, essential for vertical separation.',
   reference: 'AIP ENR 1.6 / CASR Part 91 / CAO 20.18'
 },
 
 {
-  question: 'Under Australian regulations, a pilot\\\'s flight logbook must be preserved for:',
+  question: 'Under Australian regulations, a pilot\'s flight logbook must be preserved for:',
   options: [
     'A. 5 years from the last entry, only if the operator holds a specific approval under their Air Operator Certificate',
     'B. 7 years from the last entry in the logbook — logbook records are legal documents and are used to verify licence applications, recency, and experience claims',
@@ -5337,10 +5337,10 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'Under the Civil Aviation Act, the position of CASA\\\'s "Director of Aviation Safety" has the power to:',
+  question: 'Under the Civil Aviation Act, the position of CASA\'s "Director of Aviation Safety" has the power to:',
   options: [
     'A. Issue flight clearances for individual flights, provided the aircraft holds a valid maintenance release and is within weight limits',
-    'B. Investigate aircraft accidents — this is the ATSB\\\'s role, only if the operator holds a specific approval under their Air Operator Certificate',
+    'B. Investigate aircraft accidents — this is the ATSB\'s role, only if the operator holds a specific approval under their Air Operator Certificate',
     'C. Issue, vary, cancel, or suspend aviation documents (licences, certificates, approvals); make legislative instruments; and exercise regulatory powers delegated to CASA under the Act',
     'D. Set airport charges and landing fees, except when the operation involves more than 9 passenger seats, only if the operator holds a'
   ],
@@ -5358,7 +5358,7 @@ export const aalwQuestions: {
     'D. Willing and able to perform exit opening duties — they must be physically capable, at least 15 years old, not seated with a child, and willing to assist in an emergency. Cabin crew must brief exit row passengers before departure'
   ],
   correct: 3,
-  explanation: 'Exit row passengers under CASR Part 121: must be willing and physically able to operate the emergency exit; aged at least 15 years; not seated with a child; not physically incapacitated; able to understand the crew\\\'s briefing. The crew must specifically brief exit row passengers on their responsibilities. Exit row assignment must be reconsidered if a passenger is unwilling or unable to assist.',
+  explanation: 'Exit row passengers under CASR Part 121: must be willing and physically able to operate the emergency exit; aged at least 15 years; not seated with a child; not physically incapacitated; able to understand the crew\'s briefing. The crew must specifically brief exit row passengers on their responsibilities. Exit row assignment must be reconsidered if a passenger is unwilling or unable to assist.',
   reference: 'CAO 20.7 / CASR Part 121'
 },
 
@@ -5406,11 +5406,11 @@ export const aalwQuestions: {
   options: [
     'A. The crew is required to operate the autopilot, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'B. The aircraft has been identified on radar and ATC is now providing a radar service — separation, vectors, and traffic information are based on radar tracking of the aircraft',
-    'C. The aircraft\\\'s weather radar is being monitored by ATC, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
+    'C. The aircraft\'s weather radar is being monitored by ATC, provided the relevant aerodrome has a certified RFFS capability for the aircraft',
     'D. ATC will issue specific headings for the entire flight, subject to the pilot completing the required recurrent training within 12 months'
   ],
   correct: 1,
-  explanation: '"Radar control" or "radar service": ATC has identified the aircraft on radar and is providing a radar-based service. This enables: radar separation (instead of procedural); vectors for traffic avoidance; and a more comprehensive ATC service. The pilot may be asked for position reports or these may be waived. ATC\\\'s separation decisions are based on the radar picture rather than reported positions.',
+  explanation: '"Radar control" or "radar service": ATC has identified the aircraft on radar and is providing a radar-based service. This enables: radar separation (instead of procedural); vectors for traffic avoidance; and a more comprehensive ATC service. The pilot may be asked for position reports or these may be waived. ATC\'s separation decisions are based on the radar picture rather than reported positions.',
   reference: 'AIP ENR 1.6 / AIP ENR 1.1'
 },
 
@@ -5436,7 +5436,7 @@ export const aalwQuestions: {
     'D. Determined by ATC based on the primary pilot identification in the flight plan, except when the operation involves more than 9 passenger seats, subject to the requirements '
   ],
   correct: 0,
-  explanation: 'PIC designation: the operator formally designates the PIC for each flight. The PIC may fly from either seat depending on operational requirements and the operator\\\'s procedures. On many modern aircraft, both pilots are qualified for either seat. The PIC designation is recorded in flight and operational documents. The designated PIC bears the legal responsibility for that flight.',
+  explanation: 'PIC designation: the operator formally designates the PIC for each flight. The PIC may fly from either seat depending on operational requirements and the operator\'s procedures. On many modern aircraft, both pilots are qualified for either seat. The PIC designation is recorded in flight and operational documents. The designated PIC bears the legal responsibility for that flight.',
   reference: 'CASR Part 91 / Civil Aviation Act 1988'
 },
 
@@ -5470,7 +5470,7 @@ export const aalwQuestions: {
   question: 'Under Australian ATC, "CONTACT INFORMATION" passed to an aircraft means:',
   options: [
     'A. The aircraft should contact ATIS, subject to the pilot completing the required recurrent training within 12 months, only when operating in Class',
-    'B. The aircraft should contact the operator\\\'s dispatch, except during the period of any declared low visibility procedures at the aerodrome, provided CASA has been notif',
+    'B. The aircraft should contact the operator\'s dispatch, except during the period of any declared low visibility procedures at the aerodrome, provided CASA has been notif',
     'C. The aircraft should tune to the emergency frequency 121.5 MHz, subject to written approval from the operator\'s chief pilot, only if the operator holds a',
     'D. The aircraft should contact the flight information service (FIS) on the specified frequency — transitioning from ATC control to FIS advisory service (typically when leaving controlled airspace into Class G)'
   ],
@@ -5483,12 +5483,12 @@ export const aalwQuestions: {
   question: 'An aircraft takes off from runway 16 (magnetic bearing 160°). The initial departure track to the north-east requires a right turn. Under standard departure procedures, the crew should:',
   options: [
     'A. Turn immediately after rotation to the north-east heading, provided CASA has been notified of the operation at least 24 hours in advance, only when operating in Class',
-    'B. Turn at 50 ft AGL in any direction at the crew\\\'s discretion, except when the operation involves more than 9 passenger seats, provided a current instrumen',
+    'B. Turn at 50 ft AGL in any direction at the crew\'s discretion, except when the operation involves more than 9 passenger seats, provided a current instrumen',
     'C. Level at 500 ft before commencing any turn after take-off, provided the relevant aerodrome has a certified RFFS capability for the aircraft, only when operating in Class',
     'D. Follow the published SID or ATC instructions — if no SID applies, climb straight ahead on runway track until reaching the appropriate height/distance before commencing the turn, to ensure obstacle clearance'
   ],
   correct: 3,
-  explanation: 'Standard departure procedure when no SID is published or no specific ATC instruction: climb straight ahead on the runway track until at a safe height before commencing manoeuvring. Many operators specify minimum altitudes for initial turns (e.g. 400 ft AAL) and specific heights for SID commencement. Obstacle clearance on departure is critical — early turns can compromise the departing aircraft\\\'s obstacle clearance.',
+  explanation: 'Standard departure procedure when no SID is published or no specific ATC instruction: climb straight ahead on the runway track until at a safe height before commencing manoeuvring. Many operators specify minimum altitudes for initial turns (e.g. 400 ft AAL) and specific heights for SID commencement. Obstacle clearance on departure is critical — early turns can compromise the departing aircraft\'s obstacle clearance.',
   reference: 'AIP ENR 1.5 / Operator SOPs'
 },
 
@@ -5571,12 +5571,12 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'For an ATPL holder to act as examiner and conduct a flight test for another pilot\\\'s licence, the ATPL holder must hold:',
+  question: 'For an ATPL holder to act as examiner and conduct a flight test for another pilot\'s licence, the ATPL holder must hold:',
   options: [
     'A. A flight examiner (FE) rating appropriate to the test being conducted, granted by CASA — ATPs alone do not authorise conducting formal flight tests',
     'B. Only a current ATPL with more than 5,000 total hours, except when the operation involves more than 9 passenger seats',
     'C. A Grade 1 Flight Instructor Rating at minimum, provided CASA has been notified of the operation at least 24 hours in advance',
-    'D. Only the operator\\\'s check captain authority — no CASA authorisation is required, subject to written approval from the operator\'s chief pilot'
+    'D. Only the operator\'s check captain authority — no CASA authorisation is required, subject to written approval from the operator\'s chief pilot'
   ],
   correct: 0,
   explanation: 'Flight examiner ratings are separate from pilot licences. To conduct formal flight tests (licence skill tests, instrument rating tests, proficiency checks), a pilot must hold a CASA-issued flight examiner rating appropriate to the test category and aircraft type. The FE rating is granted after specific examiner training and assessment. Without an FE rating, an ATPL holder cannot legally conduct formal examinations.',
@@ -5597,7 +5597,7 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'Under CASR, when does an IFR aircraft\\\'s PIC need to notify CASA after deviating from an ATC clearance for safety reasons?',
+  question: 'Under CASR, when does an IFR aircraft\'s PIC need to notify CASA after deviating from an ATC clearance for safety reasons?',
   options: [
     'A. Before the next flight, subject to written approval from the operator\'s chief pilot, except during the period of ',
     'B. Within 48 hours by written report only, provided the aircraft holds a valid maintenance release and is within weight limits, subject to the pilot complet',
@@ -5605,7 +5605,7 @@ export const aalwQuestions: {
     'D. As soon as practicable after the deviation — if the deviation was necessary for safety, report to ATC during the flight and complete any required occurrence reports after landing'
   ],
   correct: 3,
-  explanation: 'Emergency deviation from ATC clearance: advise ATC during the flight ("Unable, safety requires..."). After landing, if the deviation involved a serious occurrence or regulatory breach (even safety-justified), report through the operator\\\'s SMS and to CASA/ATSB as required by the MOR scheme. The safety justification is a defence — but the deviation must still be reported.',
+  explanation: 'Emergency deviation from ATC clearance: advise ATC during the flight ("Unable, safety requires..."). After landing, if the deviation involved a serious occurrence or regulatory breach (even safety-justified), report through the operator\'s SMS and to CASA/ATSB as required by the MOR scheme. The safety justification is a defence — but the deviation must still be reported.',
   reference: 'CASR Part 91 / Transport Safety Investigation Act'
 },
 
@@ -5623,15 +5623,15 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'Under Australian regulations, an aircraft\\\'s weight and balance must be calculated:',
+  question: 'Under Australian regulations, an aircraft\'s weight and balance must be calculated:',
   options: [
     'A. Only when carrying maximum payload, provided CASA has been notified of the operation at least 24 hours in advance',
-    'B. Before every flight — the loading must be confirmed to be within the aircraft\\\'s certified weight and CG envelope for all phases of the intended flight',
+    'B. Before every flight — the loading must be confirmed to be within the aircraft\'s certified weight and CG envelope for all phases of the intended flight',
     'C. Only for flights above 5,700 kg MTOW, provided the aircraft does not exceed 5,700 kg maximum certificated weight',
     'D. Monthly — a monthly weight and balance check is sufficient, subject to written approval from the operator\'s chief pilot'
   ],
   correct: 1,
-  explanation: 'Weight and balance must be calculated for every flight. The loading changes between flights (passengers, cargo, fuel quantities) and must be verified to be within limits. The CG envelope must be checked at take-off and estimated at landing — some aircraft experience CG shift during flight as fuel burns from various tanks. The calculation is the PIC\\\'s responsibility or the operator\\\'s designee, but the PIC must accept the loading.',
+  explanation: 'Weight and balance must be calculated for every flight. The loading changes between flights (passengers, cargo, fuel quantities) and must be verified to be within limits. The CG envelope must be checked at take-off and estimated at landing — some aircraft experience CG shift during flight as fuel burns from various tanks. The calculation is the PIC\'s responsibility or the operator\'s designee, but the PIC must accept the loading.',
   reference: 'CASR Part 91 / CAO 82.0'
 },
 
@@ -5792,7 +5792,7 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'Under the ATSB\\\'s investigation framework, the purpose of safety investigations is to:',
+  question: 'Under the ATSB\'s investigation framework, the purpose of safety investigations is to:',
   options: [
     'A. Determine blame and assign penalties for regulatory breaches, subject to written approval from the operator\'s chief pilot',
     'B. Support insurance claims and legal proceedings, subject to the operator\'s approved exposition authorising such operations',
@@ -5813,7 +5813,7 @@ export const aalwQuestions: {
     'D. 180 KIAS, subject to written approval from the operator\'s chief pilot'
   ],
   correct: 1,
-  explanation: 'Maximum circling approach speeds: Cat A <91 kt → 100 KIAS max; Cat B 91-120 kt → 135 KIAS max; Cat C 121-140 kt → 180 KIAS max; Cat D 141-165 kt → 185 KIAS max. The circling speed must stay within the category\\\'s maximum to remain within the protected circling area. Exceeding the speed takes the aircraft outside the obstacle-cleared area.',
+  explanation: 'Maximum circling approach speeds: Cat A <91 kt → 100 KIAS max; Cat B 91-120 kt → 135 KIAS max; Cat C 121-140 kt → 180 KIAS max; Cat D 141-165 kt → 185 KIAS max. The circling speed must stay within the category\'s maximum to remain within the protected circling area. Exceeding the speed takes the aircraft outside the obstacle-cleared area.',
   reference: 'ICAO Doc 8168 / AIP ENR 1.5'
 },
 
@@ -5826,7 +5826,7 @@ export const aalwQuestions: {
     'D. The PIC is responsible only for the aircraft, not the passengers, subject to the operator\'s approved exposition authorising such operations'
   ],
   correct: 0,
-  explanation: 'The PIC as "responsible person" under the Civil Aviation Act bears direct personal legal responsibility for the safe conduct of the flight. This responsibility cannot be fully transferred to the operator. If the operator provides incorrect instructions, the PIC has an overriding obligation to comply with safety requirements. The PIC\\\'s authority to deviate from any instruction for safety reasons is absolute.',
+  explanation: 'The PIC as "responsible person" under the Civil Aviation Act bears direct personal legal responsibility for the safe conduct of the flight. This responsibility cannot be fully transferred to the operator. If the operator provides incorrect instructions, the PIC has an overriding obligation to comply with safety requirements. The PIC\'s authority to deviate from any instruction for safety reasons is absolute.',
   reference: 'Civil Aviation Act 1988 / CASR Part 91'
 },
 
@@ -6060,7 +6060,7 @@ export const aalwQuestions: {
     'D. Cancel all ATC services until the aircraft re-establishes contact, provided the aircraft holds a valid maintenance release and is within weight limits, subject to the operator\'s ap'
   ],
   correct: 2,
-  explanation: 'ATC NORDO procedures: ATC will try all frequencies and methods to contact the aircraft; protect the aircraft\\\'s expected route; expect the aircraft at the destination at filed ETA; coordinate clearance of conflicting traffic. At the aerodrome, light signals (red/green gun) guide the aircraft for landing. The NORDO aircraft squawks 7600 and follows published NORDO procedures.',
+  explanation: 'ATC NORDO procedures: ATC will try all frequencies and methods to contact the aircraft; protect the aircraft\'s expected route; expect the aircraft at the destination at filed ETA; coordinate clearance of conflicting traffic. At the aerodrome, light signals (red/green gun) guide the aircraft for landing. The NORDO aircraft squawks 7600 and follows published NORDO procedures.',
   reference: 'AIP ENR 1.1 / ICAO PANS-ATM'
 },
 
@@ -6073,20 +6073,20 @@ export const aalwQuestions: {
     'D. Remains valid indefinitely unless cancelled or suspended — it is not time-limited like the maintenance release or medical certificate'
   ],
   correct: 3,
-  explanation: 'The Certificate of Registration does not expire — it remains valid unless the aircraft is deregistered, the registration is transferred (requiring a new CofR for the new owner), or the CofR is cancelled or suspended by CASA. The CofR identifies the aircraft\\\'s nationality and registration marks. When ownership changes, the new owner must apply to transfer the registration.',
+  explanation: 'The Certificate of Registration does not expire — it remains valid unless the aircraft is deregistered, the registration is transferred (requiring a new CofR for the new owner), or the CofR is cancelled or suspended by CASA. The CofR identifies the aircraft\'s nationality and registration marks. When ownership changes, the new owner must apply to transfer the registration.',
   reference: 'CASR Part 47 / Civil Aviation Act 1988'
 },
 
 {
   question: 'An ATPL holder who disagrees with a CASA decision to suspend their licence has the right to:',
   options: [
-    'A. Only appeal through CASA\\\'s internal review process, except when the operation involves more than 9 passenger seats',
+    'A. Only appeal through CASA\'s internal review process, except when the operation involves more than 9 passenger seats',
     'B. Apply to the Administrative Appeals Tribunal (AAT) for a merits review of the decision, or seek judicial review in the Federal Court on questions of law',
     'C. No right of appeal exists once a suspension is imposed, provided a current instrument rating is held for the relevant aircraft category',
     'D. Appeal only after the suspension period has expired, except during the period of any declared low visibility procedures at the aerodrome'
   ],
   correct: 1,
-  explanation: 'Under the Civil Aviation Act and Administrative Appeals Tribunal Act, CASA decisions (licence suspensions, cancellations, refusals) may be reviewed by the AAT on the merits — the AAT can affirm, vary, or set aside CASA\\\'s decision. Further appeal to the Federal Court is available on questions of law. This provides judicial oversight of CASA\\\'s regulatory decisions.',
+  explanation: 'Under the Civil Aviation Act and Administrative Appeals Tribunal Act, CASA decisions (licence suspensions, cancellations, refusals) may be reviewed by the AAT on the merits — the AAT can affirm, vary, or set aside CASA\'s decision. Further appeal to the Federal Court is available on questions of law. This provides judicial oversight of CASA\'s regulatory decisions.',
   reference: 'Civil Aviation Act 1988 / Administrative Appeals Tribunal Act 1975'
 },
 
@@ -6106,13 +6106,13 @@ export const aalwQuestions: {
 {
   question: 'For an RPT airline operation, the "Minimum Equipment List" (MEL) is approved by:',
   options: [
-    'A. The operator\\\'s chief pilot, except when the operation involves more than 9 passenger seats, only if the operator holds a',
-    'B. CASA — the MEL is a CASA-approved document derived from the manufacturer\\\'s Master MEL (MMEL). The operator may not make it more permissive than the MMEL',
+    'A. The operator\'s chief pilot, except when the operation involves more than 9 passenger seats, only if the operator holds a',
+    'B. CASA — the MEL is a CASA-approved document derived from the manufacturer\'s Master MEL (MMEL). The operator may not make it more permissive than the MMEL',
     'C. The aircraft manufacturer only, except when the operation involves more than 9 passenger seats, only if the operator holds a',
     'D. IATA on behalf of all member airlines, only when operating in Class C or Class D controlled airspace, except when the operation in'
   ],
   correct: 1,
-  explanation: 'The MEL is a CASA-approved document specific to each operator and aircraft type. It is derived from the MMEL (Master MEL) published by the aircraft type certificate holder (manufacturer) and approved by the state of design (e.g. FAA, EASA). The operator\\\'s MEL cannot be more permissive than the MMEL. CASA must approve the MEL before it may be used for dispatch.',
+  explanation: 'The MEL is a CASA-approved document specific to each operator and aircraft type. It is derived from the MMEL (Master MEL) published by the aircraft type certificate holder (manufacturer) and approved by the state of design (e.g. FAA, EASA). The operator\'s MEL cannot be more permissive than the MMEL. CASA must approve the MEL before it may be used for dispatch.',
   reference: 'CASR Part 91 / CASR Part 119'
 },
 
@@ -6148,7 +6148,7 @@ export const aalwQuestions: {
     'A. Permitted in designated smoking areas, subject to written approval from the operator\'s chief pilot, only when operating in Class',
     'B. Only prohibited during take-off and landing, provided CASA has been notified of the operation at least 24 hours in advance',
     'C. Permitted if the aircraft was manufactured before the smoking ban, provided a current instrument rating is held for the relevant aircraft category',
-    'D. Prohibited on all Australian commercial aircraft — this is enforced under the Civil Aviation Regulations and the operator\\\'s conditions of carriage'
+    'D. Prohibited on all Australian commercial aircraft — this is enforced under the Civil Aviation Regulations and the operator\'s conditions of carriage'
   ],
   correct: 3,
   explanation: 'Smoking is prohibited on all Australian commercial aircraft under CAR Part XI and operator conditions of carriage. The PIC may take action against passengers who smoke on board. Tampering with smoke detectors is a criminal offence. This applies to all classes of service, all routes, and all aircraft types operating under Australian commercial aviation regulations.',
@@ -6190,12 +6190,12 @@ export const aalwQuestions: {
     'D. Reduce to minimum approach speed immediately, subject to written approval from the operator\'s chief pilot, subject to the requirements '
   ],
   correct: 2,
-  explanation: '"Minimum clean speed" — the minimum speed at which the aircraft can be flown with gear up and flaps at the clean position, used for terminal area sequencing. It allows ATC to slow aircraft down without requiring premature gear and flap extension. The crew must know the type\\\'s minimum clean speed (typically related to Vfs or the minimum manoeuvring speed in clean configuration).',
+  explanation: '"Minimum clean speed" — the minimum speed at which the aircraft can be flown with gear up and flaps at the clean position, used for terminal area sequencing. It allows ATC to slow aircraft down without requiring premature gear and flap extension. The crew must know the type\'s minimum clean speed (typically related to Vfs or the minimum manoeuvring speed in clean configuration).',
   reference: 'AIP ENR 1.1 / ICAO PANS-ATM'
 },
 
 {
-  question: 'Under Australian regulations, an aircraft\\\'s radio licence is issued by:',
+  question: 'Under Australian regulations, an aircraft\'s radio licence is issued by:',
   options: [
     'A. CASA under the CASR framework, only if the operator holds a specific approval under their Air Operator Certificate, except when the operation in',
     'B. Airservices Australia as part of the AIP subscription, subject to the operator\'s approved exposition authorising such operations, only when operating in Class',
@@ -6314,10 +6314,10 @@ export const aalwQuestions: {
 {
   question: 'For an ATPL holder acting as PIC on a Part 121 RPT operation, which statement about their authority is correct?',
   options: [
-    'A. The PIC\\\'s authority is subordinate to the operator\\\'s operations centre at all times, except when the operation involves more than 9 passenger seats, only if the operator holds a',
+    'A. The PIC\'s authority is subordinate to the operator\'s operations centre at all times, except when the operation involves more than 9 passenger seats, only if the operator holds a',
     'B. The PIC must consult the company before making any emergency decisions, except during the period of any declared low visibility procedures at the aerodrome, only when operating in Class',
     'C. The PIC has absolute in-flight authority — their decisions regarding the safety of the aircraft and its occupants cannot be overridden by the operator, ATC, or any other authority during flight, except by law enforcement with appropriate authority',
-    'D. The PIC\\\'s authority applies only to the aircraft — cabin and ground operations are outside their authority, provided a current instrument rating is held for the relevant aircraft category, only if the operator holds a'
+    'D. The PIC\'s authority applies only to the aircraft — cabin and ground operations are outside their authority, provided a current instrument rating is held for the relevant aircraft category, only if the operator holds a'
   ],
   correct: 2,
   explanation: 'Under the Civil Aviation Act and CASR Part 91, the PIC has absolute command authority during flight. No operator instruction can override a PIC safety decision. This authority is fundamental to the safety of aviation — the PIC, having full situational awareness, must have the authority to act without delay. The PIC may deviate from any rule as necessary in a genuine emergency.',
@@ -6372,7 +6372,7 @@ export const aalwQuestions: {
     'D. Contact the operator for instructions before assuming command, subject to the pilot completing the required recurrent training within 12 months'
   ],
   correct: 1,
-  explanation: 'In a PIC incapacitation emergency, the co-pilot must immediately take control. The co-pilot\\\'s CPL and instrument rating authorise them to act as PIC in an emergency even if they are not rostered or rated for PIC on that type in normal operations. Declare emergency to ATC (MAYDAY), get medical assistance for the incapacitated PIC, and complete the flight safely. Inaction is never the correct response to incapacitation.',
+  explanation: 'In a PIC incapacitation emergency, the co-pilot must immediately take control. The co-pilot\'s CPL and instrument rating authorise them to act as PIC in an emergency even if they are not rostered or rated for PIC on that type in normal operations. Declare emergency to ATC (MAYDAY), get medical assistance for the incapacitated PIC, and complete the flight safely. Inaction is never the correct response to incapacitation.',
   reference: 'CASR Part 91 / Civil Aviation Act / Operator SOPs'
 },
 
@@ -6393,7 +6393,7 @@ export const aalwQuestions: {
   question: 'Under Australian regulations, the holder of a Part 119 AOC must maintain a current and CASA-approved Operations Manual that:',
   options: [
     'A. Only needs to be updated annually, provided the relevant aerodrome has a certified RFFS capability for the aircraft, provided CASA has been notif',
-    'B. May be kept only at the operator\\\'s principal place of business, only when operating in Class C or Class D controlled airspace, subject to written approval ',
+    'B. May be kept only at the operator\'s principal place of business, only when operating in Class C or Class D controlled airspace, subject to written approval ',
     'C. Is only required for international operations, only when operating in Class C or Class D controlled airspace, provided the aircraft holds ',
     'D. Is kept current, distributed to relevant personnel, and must be amended whenever procedures, equipment, or operations change in ways that affect the document — crews must have access to the current version'
   ],
@@ -6416,7 +6416,7 @@ export const aalwQuestions: {
 },
 
 {
-  question: 'Under the ICAO language proficiency framework, what does Level 4 (Operational) proficiency mean for an ATPL holder\\\'s licence endorsement?',
+  question: 'Under the ICAO language proficiency framework, what does Level 4 (Operational) proficiency mean for an ATPL holder\'s licence endorsement?',
   options: [
     'A. The endorsement is permanent and never expires, subject to written approval from the operator\'s chief pilot',
     'B. The endorsement is valid for 3 years — Level 4 is the minimum for unrestricted international operations and must be re-demonstrated every 3 years',
@@ -6431,13 +6431,13 @@ export const aalwQuestions: {
 {
   question: 'Under Australian regulations, an aircraft operator must ensure the pilot in command has been briefed on or has access to which of the following before a flight?',
   options: [
-    'A. Current meteorological information, NOTAMs affecting the route and destination, fuel requirements, aircraft serviceability, any special procedures applicable to the route, and the operator\\\'s current operational instructions',
+    'A. Current meteorological information, NOTAMs affecting the route and destination, fuel requirements, aircraft serviceability, any special procedures applicable to the route, and the operator\'s current operational instructions',
     'B. Only the aircraft performance data, provided a current instrument rating is held for the relevant aircraft category, provided CASA has been notif',
     'C. Only the ATIS for the destination, provided CASA has been notified of the operation at least 24 hours in advance, subject to the pilot complet',
     'D. A briefing from CASA for each flight, provided CASA has been notified of the operation at least 24 hours in advance, subject to written approval '
   ],
   correct: 0,
-  explanation: 'Pre-flight information required (CASR Part 91 / CAO 82.0): meteorological information (TAF, METAR, SIGMET, area forecasts); NOTAMs for route and aerodromes; fuel requirements for the planned operation; aircraft serviceability; and operator\\\'s operational instructions. The PIC must have access to all relevant information before commencing flight.',
+  explanation: 'Pre-flight information required (CASR Part 91 / CAO 82.0): meteorological information (TAF, METAR, SIGMET, area forecasts); NOTAMs for route and aerodromes; fuel requirements for the planned operation; aircraft serviceability; and operator\'s operational instructions. The PIC must have access to all relevant information before commencing flight.',
   reference: 'CASR Part 91 / CAO 82.0'
 },
 
@@ -6447,10 +6447,10 @@ export const aalwQuestions: {
     'A. Is familiar with the aerodrome layout, taxi procedures, and any relevant instructions from ATC or published in the ERSA — including holding point positions and runway crossing procedures',
     'B. Has at least 500 hours total time, except when the operation involves more than 9 passenger seats, only when operating in Class',
     'C. Holds a ground movement endorsement on their licence, only if the operator holds a specific approval under their Air Operator Certificate',
-    'D. Is authorised by the aircraft\\\'s owner for ground operations, except during the period of any declared low visibility procedures at the aerodrome'
+    'D. Is authorised by the aircraft\'s owner for ground operations, except during the period of any declared low visibility procedures at the aerodrome'
   ],
   correct: 0,
-  explanation: 'Taxiing requirements: the pilot must be familiar with the aerodrome\\\'s ground movement procedures, layout, and any current special instructions. At complex international airports, this may require specific training (airport qualification). Unfamiliarity with taxiway layouts has been a significant factor in runway incursions. Study the aerodrome chart before taxiing at an unfamiliar aerodrome.',
+  explanation: 'Taxiing requirements: the pilot must be familiar with the aerodrome\'s ground movement procedures, layout, and any current special instructions. At complex international airports, this may require specific training (airport qualification). Unfamiliarity with taxiway layouts has been a significant factor in runway incursions. Study the aerodrome chart before taxiing at an unfamiliar aerodrome.',
   reference: 'CASR Part 91 / AIP ENR 1.5'
 },
 
@@ -6463,7 +6463,7 @@ export const aalwQuestions: {
     'D. Operations may continue normally — Mode C is optional at all times, except during the period of any declared low visibility procedures at the aerodrome, subject to the pilot complet'
   ],
   correct: 2,
-  explanation: 'Mode C failure (altitude encoding): advise ATC who will annotate the radar display. ATC cannot display the aircraft\\\'s altitude automatically — they must confirm by pilot report. For airspace requiring Mode C (above 10,000 ft and in some terminal areas), the aircraft may not be permitted to enter. An MEL provision may permit continued operation in some airspace; check the applicable requirements.',
+  explanation: 'Mode C failure (altitude encoding): advise ATC who will annotate the radar display. ATC cannot display the aircraft\'s altitude automatically — they must confirm by pilot report. For airspace requiring Mode C (above 10,000 ft and in some terminal areas), the aircraft may not be permitted to enter. An MEL provision may permit continued operation in some airspace; check the applicable requirements.',
   reference: 'CASR Part 91 / CAO 20.18'
 },
 
@@ -6489,7 +6489,7 @@ export const aalwQuestions: {
     'D. Helicopter time counts if the flights were conducted under IFR, subject to the requirements of the applicable Civil Aviation Order, except when the operation in'
   ],
   correct: 1,
-  explanation: 'Aircraft categories (aeroplane, helicopter, powered-lift) are separate for licensing purposes. An ATPL(A) holder\\\'s helicopter flying does not count toward ATPL(A) recency or experience requirements. Conversely, if they hold an ATPL(H), helicopter time does not satisfy aeroplane recency. Each category\\\'s currency must be maintained independently.',
+  explanation: 'Aircraft categories (aeroplane, helicopter, powered-lift) are separate for licensing purposes. An ATPL(A) holder\'s helicopter flying does not count toward ATPL(A) recency or experience requirements. Conversely, if they hold an ATPL(H), helicopter time does not satisfy aeroplane recency. Each category\'s currency must be maintained independently.',
   reference: 'CASR Part 61'
 },
 
