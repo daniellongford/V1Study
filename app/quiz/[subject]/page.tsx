@@ -3,53 +3,52 @@ import { useState, useEffect, useRef, use } from 'react'
 import { supabase } from '../../../lib/supabase'
 import { freeQuestions } from '../../../lib/questions'
 
-// Full question banks — resolved at build time via try/require
-// Falls back to [] if the file isn't in lib/ yet
-let cplAirLaw: any[] = []
+// ── Full question banks ──────────────────────────────────────────────────────
+let cplAirLaw: any[]      = []
 let cplHumanFactors: any[] = []
-let cplMet: any[] = []
-let cplNav: any[] = []
-let cplAgk: any[] = []
-let cplAero: any[] = []
-let cplFpa: any[] = []
-let pplBank: any[] = []
-let irexBank: any[] = []
+let cplMet: any[]         = []
+let cplNav: any[]         = []
+let cplAgk: any[]         = []
+let cplAero: any[]        = []
+let cplFpa: any[]         = []
+let pplBank: any[]        = []
+let irexBank: any[]       = []
+let airLawAtpl: any[]     = []
 
-try { cplAirLaw     = require('../../../lib/questions-clwa').clwaQuestions } catch {}
+try { cplAirLaw       = require('../../../lib/questions-clwa').clwaQuestions } catch {}
 try { cplHumanFactors = require('../../../lib/questions-chuf').chufQuestions } catch {}
-try { cplMet        = require('../../../lib/questions-cmet').cmetQuestions } catch {}
-try { cplNav        = require('../../../lib/questions-cnav').cnavQuestions } catch {}
-try { cplAgk        = require('../../../lib/questions-cagk').cagkQuestions } catch {}
-try { cplAero       = require('../../../lib/questions-cada').cadaQuestions } catch {}
-try { cplFpa        = require('../../../lib/questions-cfpa').cfpaQuestions } catch {}
-try { pplBank       = require('../../../lib/questions-ppla').pplaQuestions } catch {}
-try { irexBank      = require('../../../lib/questions-irex').irexQuestions } catch {}
-try { airLawAtpl = require('../../../lib/questions-aalw').aalwQuestions } catch {}
+try { cplMet          = require('../../../lib/questions-cmet').cmetQuestions } catch {}
+try { cplNav          = require('../../../lib/questions-cnav').cnavQuestions } catch {}
+try { cplAgk          = require('../../../lib/questions-cagk').cagkQuestions } catch {}
+try { cplAero         = require('../../../lib/questions-cada').cadaQuestions } catch {}
+try { cplFpa          = require('../../../lib/questions-cfpa').cfpaQuestions } catch {}
+try { pplBank         = require('../../../lib/questions-ppla').pplaQuestions } catch {}
+try { irexBank        = require('../../../lib/questions-irex').irexQuestions } catch {}
+try { airLawAtpl      = require('../../../lib/questions-aalw').aalwQuestions } catch {}
 
 const FULL_BANKS: Record<string, any[]> = {
-  'Flight Rules and Air Law':         cplAirLaw,
-  'Human Factors':                    cplHumanFactors,
-  'Meteorology':                      cplMet,
-  'Navigation':                       cplNav,
-  'Aircraft General Knowledge':       cplAgk,
-  'Aerodynamics':                     cplAero,
-  'Operations Performance Planning':  cplFpa,
-  'PPL Theory':                       pplBank,
-  'Instrument Rating':                irexBank,
-  // ATPL subjects reuse CPL banks
-  'Aerodynamics and Systems':         cplAero,
-  'Meteorology Advanced':             cplMet,
-  'Flight Planning':                  cplFpa,
-  'Air Law':                          cplAirLaw,
-  'Performance and Loading':          cplFpa,
+  'Flight Rules and Air Law':        cplAirLaw,
+  'Human Factors':                   cplHumanFactors,
+  'Meteorology':                     cplMet,
+  'Navigation':                      cplNav,
+  'Aircraft General Knowledge':      cplAgk,
+  'Aerodynamics':                    cplAero,
+  'Operations Performance Planning': cplFpa,
+  'PPL Theory':                      pplBank,
+  'Instrument Rating':               irexBank,
+  'Air Law':                         airLawAtpl,
+  'Aerodynamics and Systems':        cplAero,
+  'Meteorology Advanced':            cplMet,
+  'Flight Planning':                 cplFpa,
+  'Performance and Loading':         cplFpa,
 }
 
 const PLAN_ACCESS: Record<string, string[]> = {
   PPL:  ['PPL Theory'],
   CPL:  ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law'],
-  ATPL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced', 'Flight Planning', 'Air Law'],
+  ATPL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Air Law', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced', 'Flight Planning'],
   IREX: ['Instrument Rating'],
-  FULL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced', 'Flight Planning', 'Air Law', 'Instrument Rating'],
+  FULL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Air Law', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced', 'Flight Planning', 'Instrument Rating'],
 }
 
 const SESSION_SIZE = 10
@@ -57,7 +56,7 @@ const SESSION_SIZE = 10
 function getLicence(subject: string) {
   if (subject === 'PPL Theory') return 'PPL'
   if (subject === 'Instrument Rating') return 'IREX'
-  if (['Human Factors','Aerodynamics and Systems','Performance and Loading','Meteorology Advanced','Navigation','Flight Planning','Air Law'].includes(subject)) return 'ATPL'
+  if (['Air Law', 'Human Factors', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced', 'Flight Planning'].includes(subject)) return 'ATPL'
   return 'CPL'
 }
 
@@ -85,7 +84,6 @@ function pickFromBank(bank: any[], subject: string): any[] {
   const seen = getSeenSet(subject)
   let pool = bank.filter((_, i) => !seen.has(i))
   if (pool.length < SESSION_SIZE) {
-    // Wrap: clear seen and use full bank
     try { localStorage.removeItem(seenKey(subject)) } catch {}
     pool = bank
   }
@@ -106,14 +104,14 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const resolvedParams = use(params)
   const subject = decodeURIComponent(resolvedParams.subject || '')
 
-  const [plan, setPlan]           = useState<string | null>(null)
+  const [plan, setPlan]             = useState<string | null>(null)
   const [planLoaded, setPlanLoaded] = useState(false)
-  const [questions, setQuestions] = useState<any[]>([])
-  const [idx, setIdx]             = useState(0)
-  const [answered, setAnswered]   = useState(false)
-  const [selected, setSelected]   = useState<number | null>(null)
-  const [finished, setFinished]   = useState(false)
-  const [saved, setSaved]         = useState(false)
+  const [questions, setQuestions]   = useState<any[]>([])
+  const [idx, setIdx]               = useState(0)
+  const [answered, setAnswered]     = useState(false)
+  const [selected, setSelected]     = useState<number | null>(null)
+  const [finished, setFinished]     = useState(false)
+  const [saved, setSaved]           = useState(false)
   const [finalScore, setFinalScore] = useState(0)
   const scoreRef   = useRef(0)
   const sessionIdx = useRef<number[]>([])
@@ -121,7 +119,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   useEffect(() => {
     supabase.auth.getUser().then(({ data: { user } }) => {
       if (!user) { setPlanLoaded(true); return }
-      supabase.from('subscriptions').select('plan, status')
+      supabase.from('subscriptions').select('plan,status')
         .eq('user_id', user.id).eq('status', 'active').maybeSingle()
         .then(({ data }) => { setPlan(data?.plan ?? null); setPlanLoaded(true) })
     })
@@ -254,9 +252,9 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
             {q.options.map((opt: string, i: number) => {
               let bg = 'white', border = '1px solid #e2e8f0', col = '#0a1628'
               if (answered) {
-                if (i === q.correct)       { bg = '#f0fdf4'; border = '1px solid #16a34a'; col = '#15803d' }
-                else if (i === selected)   { bg = '#fff1f2'; border = '1px solid #dc2626'; col = '#b91c1c' }
-                else                       { col = '#94a3b8' }
+                if (i === q.correct)     { bg = '#f0fdf4'; border = '1px solid #16a34a'; col = '#15803d' }
+                else if (i === selected) { bg = '#fff1f2'; border = '1px solid #dc2626'; col = '#b91c1c' }
+                else                     { col = '#94a3b8' }
               }
               return (
                 <button key={i} onClick={() => selectAnswer(i)} disabled={answered}
