@@ -360,7 +360,7 @@ export const ahufQuestions: {
     'A. The physical symptoms of hyperventilation are not noticeable so the condition worsens undetected and this response is identical in all healthy individuals regardless of age or fitness level',
     'B. Alkalosis from hyperventilation stimulates the respiratory centre to maintain the elevated breathing rate and can be fully mitigated by adherence to standard operating procedures',
     'C. Hyperventilation reduces blood oxygen causing hypoxia which stimulates further breathing provided the relevant physiological thresholds are not exceeded during normal commercial operations',
-    'D. The symptoms of hyperventilation (tingling, dizziness, visual changes) increase the pilot\\'s anxiety, which further drives the hyperventilation in a positive feedback cycle'
+    'D. The symptoms of hyperventilation (tingling, dizziness, visual changes) increase the pilot\'s anxiety, which further drives the hyperventilation in a positive feedback cycle'
   ],
   correct: 3,
   explanation: 'Hyperventilation is self-perpetuating through anxiety feedback: anxiety causes hyperventilation; hyperventilation symptoms (tingling, dizziness, chest tightness) increase anxiety; increased anxiety drives more hyperventilation. Breaking the cycle requires conscious breathing control and recognition that the symptoms are not dangerous.',
@@ -465,7 +465,7 @@ export const ahufQuestions: {
 {
   question: 'Flicker vertigo in aviation can occur when:',
   options: [
-    'A. The aircraft\\'s strobe lighting malfunctions and flashes at an irregular rate and does not require any change to standard operating procedures under current regulations,with no measurable effect on flight deck performance or situational awareness',
+    'A. The aircraft\'s strobe lighting malfunctions and flashes at an irregular rate and does not require any change to standard operating procedures under current regulations,with no measurable effect on flight deck performance or situational awareness',
     'B. Fluorescent cabin lighting causes visual fatigue during extended night operations although the mechanism involves complex physiological interactions requiring further investigation,and can be fully mitigated by adherence to standard operating procedures',
     'C. The cockpit instruments flicker during a power failure confusing the pilot as the effect is fully compensated by the pressurisation system at normal cruise altitudes,and is of no operational significance below flight level 250 in modern pressurised aircraft',
     'D. Flickering light at 4 to 20 Hz, such as from sunlight through a rotating propeller or helicopter rotor shadow, can trigger disorientation, headache, nausea, or in susceptible individuals seizure-like activity'
@@ -480,7 +480,7 @@ export const ahufQuestions: {
     'A. No significant effect as the gut is not sensitive to gas expansion which only occurs in extreme physiological conditions not encountered in normal operations',
     'B. Reduced digestive efficiency requiring pilots to consume more calories on high-altitude flights provided the pilot has completed the required recurrency training within the preceding 90 days',
     'C. Increased gastric acid production causing heartburn at altitude which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
-    'D. Abdominal discomfort, bloating, or pain as intestinal gas expands with decreasing ambient pressure, in accordance with Boyle\\'s law'
+    'D. Abdominal discomfort, bloating, or pain as intestinal gas expands with decreasing ambient pressure, in accordance with Boyle\'s law'
   ],
   correct: 3,
   explanation: 'Intestinal gas (approximately 0.5 to 1 litre at sea level) expands at altitude in accordance with Boyle\'s law — gas volume doubles at 18,000 ft. This can cause significant abdominal discomfort and distension. Avoid gas-producing foods (carbonated drinks, legumes, cruciferous vegetables) before high-altitude flight, particularly in unpressurised aircraft.',
@@ -768,7 +768,7 @@ export const ahufQuestions: {
     'A. A nose-high pitch attitude — linear acceleration forces are interpreted by the otolith organs as a pitch-up, creating the compelling illusion of climbing steeply when the aircraft may be level or climbing normally',
     'B. A false impression of banking to the left and is of no operational significance below flight level 250 in modern pressurised aircraft,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
     'C. A nose-low attitude as forces press the pilot into the seat although the mechanism involves complex physiological interactions requiring further investigation,and can be fully mitigated by adherence to standard operating procedures',
-    'D. A sensation of turning to the right from the aircraft\\'s acceleration vector and does not require any change to standard operating procedures under current regulations,provided the pilot has completed the required recurrency training within the preceding 90 days'
+    'D. A sensation of turning to the right from the aircraft\'s acceleration vector and does not require any change to standard operating procedures under current regulations,provided the pilot has completed the required recurrency training within the preceding 90 days'
   ],
   correct: 0,
   explanation: 'Somatogravic illusion: during rapid forward acceleration (take-off, go-around), the combined gravity and acceleration vector is interpreted by the otolith organs as a pitch-up tilt. The pilot perceives a nose-high attitude when the aircraft may be level or climbing normally. The instinctive forward push on the controls has caused accidents.',
@@ -924,7 +924,7 @@ export const ahufQuestions: {
     'A. The maximum number of radio frequencies an aircraft can simultaneously monitor provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'B. The bandwidth of the digital datalink system used for ACARS which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,and does not require any change to standard operating procedures under current regulations',
     'C. The maximum number of passengers safely accommodated in an aircraft cabin and is therefore not a factor in the majority of aviation incidents and accidents,although the mechanism involves complex physiological interactions requiring further investigation',
-    'D. The human cognitive system\\'s limit on the amount of information that can be processed simultaneously — exceeding it leads to errors, missed information, or decision degradation'
+    'D. The human cognitive system\'s limit on the amount of information that can be processed simultaneously — exceeding it leads to errors, missed information, or decision degradation'
   ],
   correct: 3,
   explanation: 'Channel capacity is the information processing limit of the human cognitive system. When input exceeds capacity (task saturation, high workload), processing becomes serial rather than parallel, attention is divided unequally, and errors increase. Aviation workload management aims to keep mental processing load within channel capacity.',
@@ -972,7 +972,7 @@ export const ahufQuestions: {
     'A. There is too much information in manuals for a pilot to read and is of no operational significance below flight level 250 in modern pressurised aircraft',
     'B. The FMS is loaded with too many waypoints provided the pilot has completed the required recurrency training within the preceding 90 days,and is therefore not a factor in the majority of aviation incidents and accidents',
     'C. Two pilots receive the same ATC clearance simultaneously which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
-    'D. The rate of incoming information exceeds the pilot\\'s processing capacity, resulting in selective prioritisation, missed inputs, and decision degradation'
+    'D. The rate of incoming information exceeds the pilot\'s processing capacity, resulting in selective prioritisation, missed inputs, and decision degradation'
   ],
   correct: 3,
   explanation: 'Information overload: incoming information volume or complexity exceeds processing capacity. Effects: saturation of working memory; selective attention leading to missed inputs; degraded decision quality; increased error rate. A malfunctioning ECAM with multiple simultaneous alerts combined with ATC communication and manual flying is a classic information overload scenario.',
@@ -1055,7 +1055,7 @@ export const ahufQuestions: {
   options: [
     'A. Excessive deference to ATC and unwillingness to deviate even in an emergency provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'B. Resentment of rules and regulations — believing they do not apply to the individual and dismissing checklists, ATC instructions, or safety procedures as unnecessary bureaucracy',
-    'C. Overconfidence in one\\'s own abilities leading to deliberate risk-taking as the effect is fully compensated by the pressurisation system at normal cruise altitudes,as demonstrated by multiple controlled studies of professional flight crew performance',
+    'C. Overconfidence in one\'s own abilities leading to deliberate risk-taking as the effect is fully compensated by the pressurisation system at normal cruise altitudes,as demonstrated by multiple controlled studies of professional flight crew performance',
     'D. Anxiety about flying that leads to avoidance of challenging conditions provided the pilot has completed the required recurrency training within the preceding 90 days,although the mechanism involves complex physiological interactions requiring further investigation'
   ],
   correct: 1,
@@ -1079,7 +1079,7 @@ export const ahufQuestions: {
   options: [
     'A. The belief that safety equipment makes the pilot immune from any accident which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'B. The belief that one is so experienced that no training or recurrency is necessary and this mechanism has no clinically significant effect on aviation performance',
-    'C. The belief that accidents happen to other people — \\'It won\\'t happen to me\\' — leading to underestimation of risk and reduced precautionary behaviour',
+    'C. The belief that accidents happen to other people — \'It won\'t happen to me\' — leading to underestimation of risk and reduced precautionary behaviour',
     'D. The tendency to fly only in conditions well within personal minimums although the mechanism involves complex physiological interactions requiring further investigation'
   ],
   correct: 2,
@@ -1090,7 +1090,7 @@ export const ahufQuestions: {
   question: 'The macho hazardous attitude involves:',
   options: [
     'A. An excessive focus on conservative flying that restricts safe and efficient operations and can be fully mitigated by adherence to standard operating procedures',
-    'B. Proving one\\'s courage or skill by taking unnecessary risks, showing off, or pressing on into deteriorating conditions to demonstrate toughness',
+    'B. Proving one\'s courage or skill by taking unnecessary risks, showing off, or pressing on into deteriorating conditions to demonstrate toughness',
     'C. Deferring all decisions to the most senior pilot on board regardless of the situation which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'D. Over-reliance on instruments rather than using visual cues and experience as demonstrated by multiple controlled studies of professional flight crew performance'
   ],
@@ -1101,7 +1101,7 @@ export const ahufQuestions: {
 {
   question: 'The resignation hazardous attitude is characterised by:',
   options: [
-    'A. Believing that the pilot has no real effect on outcomes — \\'What\\'s the use?\\' — leading to passivity and failure to take corrective action when it matters',
+    'A. Believing that the pilot has no real effect on outcomes — \'What\'s the use?\' — leading to passivity and failure to take corrective action when it matters',
     'B. Accepting that all risks have been mitigated and no further precautions are needed which only occurs in extreme physiological conditions not encountered in normal operations',
     'C. Refusing to accept a new assignment or flight duty when fatigued with no measurable effect on flight deck performance or situational awareness,and this response is identical in all healthy individuals regardless of age or fitness level',
     'D. Excessive self-criticism after making errors that impairs future performance provided the pilot has completed the required recurrency training within the preceding 90 days'
@@ -1116,7 +1116,7 @@ export const ahufQuestions: {
     'A. Two crew members disagree about the correct course of action in an emergency which only occurs in extreme physiological conditions not encountered in normal operations,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'B. The flight instruments disagree due to a system malfunction with no measurable effect on flight deck performance or situational awareness,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
     'C. A pilot holds two conflicting beliefs simultaneously — knowing fuel is insufficient but continuing because turning back would inconvenience passengers — and resolves tension by rationalising the risky choice',
-    'D. A pilot\\'s training conflicts with company operational procedures and this mechanism has no clinically significant effect on aviation performance,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope'
+    'D. A pilot\'s training conflicts with company operational procedures and this mechanism has no clinically significant effect on aviation performance,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope'
   ],
   correct: 2,
   explanation: 'Cognitive dissonance is the mental discomfort from holding two conflicting beliefs. In aviation: knowing that continuing is unsafe (belief 1) while wanting to complete the task (belief 2). Dissonance is reduced by rationalising the risky choice (\'the weather will improve\'). Get-there-itis and continuation bias are manifestations of cognitive dissonance resolution.',
@@ -1139,7 +1139,7 @@ export const ahufQuestions: {
   options: [
     'A. An incorrect execution of a correctly planned action provided the pilot has completed the required recurrency training within the preceding 90 days',
     'B. A deliberate violation of a known safety rule which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
-    'C. A planning failure — the pilot\\'s plan was wrong from the start, either from incorrect knowledge or misidentifying the situation',
+    'C. A planning failure — the pilot\'s plan was wrong from the start, either from incorrect knowledge or misidentifying the situation',
     'D. A memory failure causing the pilot to forget a critical checklist step and does not require any change to standard operating procedures under current regulations'
   ],
   correct: 2,
@@ -1199,7 +1199,7 @@ export const ahufQuestions: {
   options: [
     'A. Determines who can legally exercise PIC authority in an emergency although the mechanism involves complex physiological interactions requiring further investigation',
     'B. Specifies the order of priority in multi-crew systems management and is therefore not a factor in the majority of aviation incidents and accidents,and can be fully mitigated by adherence to standard operating procedures',
-    'C. Determines the captain\\'s legal liability for crew decisions as demonstrated by multiple controlled studies of professional flight crew performance,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
+    'C. Determines the captain\'s legal liability for crew decisions as demonstrated by multiple controlled studies of professional flight crew performance,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'D. If too steep prevents first officers from challenging incorrect captain decisions; if too flat creates unclear authority — both extremes compromise safety'
   ],
   correct: 3,
@@ -1211,7 +1211,7 @@ export const ahufQuestions: {
   options: [
     'A. Any crew member may challenge an ATC instruction twice before complying which cannot be modified by experience or training and affects all pilots equally,although the mechanism involves complex physiological interactions requiring further investigation',
     'B. Two separate crew members must challenge a decision before it can be overridden which only occurs in extreme physiological conditions not encountered in normal operations',
-    'C. If a crew member\\'s safety concern is raised twice and still not acknowledged, the challenging crew member has the authority to take control or direct protective action',
+    'C. If a crew member\'s safety concern is raised twice and still not acknowledged, the challenging crew member has the authority to take control or direct protective action',
     'D. A captain may be challenged a maximum of twice per flight by the co-pilot and this response is identical in all healthy individuals regardless of age or fitness level'
   ],
   correct: 2,
@@ -1233,7 +1233,7 @@ export const ahufQuestions: {
 {
   question: 'Effective two-way communication in the cockpit requires:',
   options: [
-    'A. The speaker to deliver all information clearly — the listener\\'s understanding is their own responsibility which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
+    'A. The speaker to deliver all information clearly — the listener\'s understanding is their own responsibility which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'B. Both sender and receiver to actively participate — the sender verifies the message was received and understood correctly; the receiver demonstrates understanding through appropriate feedback',
     'C. All communication to be in formal standardised format at all times and this mechanism has no clinically significant effect on aviation performance,with no measurable effect on flight deck performance or situational awareness',
     'D. Communication to be minimised to reduce cognitive load during high-workload phases as the effect is fully compensated by the pressurisation system at normal cruise altitudes,which cannot be modified by experience or training and affects all pilots equally'
@@ -1305,7 +1305,7 @@ export const ahufQuestions: {
 {
   question: 'Mode confusion in automated flight occurs when:',
   options: [
-    'A. The aircraft\\'s autopilot fails to maintain the correct mode due to a software error which cannot be modified by experience or training and affects all pilots equally',
+    'A. The aircraft\'s autopilot fails to maintain the correct mode due to a software error which cannot be modified by experience or training and affects all pilots equally',
     'B. The pilot does not know or incorrectly assumes what mode the automated flight system is in, leading to unexpected aircraft behaviour',
     'C. Two pilots disagree about the appropriate automation mode for the current flight phase provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'D. ATC assigns a clearance that conflicts with the FMS programmed route as the effect is fully compensated by the pressurisation system at normal cruise altitudes'
@@ -1331,7 +1331,7 @@ export const ahufQuestions: {
   options: [
     'A. Written notes passed between crew members during high-workload phases with no measurable effect on flight deck performance or situational awareness,provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'B. Radio communication procedures using standardised non-verbal shorthand as demonstrated by multiple controlled studies of professional flight crew performance,and is of no operational significance below flight level 250 in modern pressurised aircraft',
-    'C. Body language, facial expressions, gestures, and physical behaviour that communicate information or attitude — e.g. a co-pilot\\'s tense posture indicating concern without verbalising it',
+    'C. Body language, facial expressions, gestures, and physical behaviour that communicate information or attitude — e.g. a co-pilot\'s tense posture indicating concern without verbalising it',
     'D. Automated ACARS messages that do not require verbal transmission although the mechanism involves complex physiological interactions requiring further investigation,and this mechanism has no clinically significant effect on aviation performance'
   ],
   correct: 2,
@@ -1355,7 +1355,7 @@ export const ahufQuestions: {
   options: [
     'A. It allows individual technical flying skills to be assessed on specific manoeuvres although the mechanism involves complex physiological interactions requiring further investigation,and this response is identical in all healthy individuals regardless of age or fitness level',
     'B. It practises CRM skills — communication, decision-making, crew coordination, and threat and error management — in a realistic full-mission scenario simulating normal line operations with multiple concurrent demands',
-    'C. It evaluates the aircraft\\'s systems in non-normal configurations and is of no operational significance below flight level 250 in modern pressurised aircraft,provided the relevant physiological thresholds are not exceeded during normal commercial operations',
+    'C. It evaluates the aircraft\'s systems in non-normal configurations and is of no operational significance below flight level 250 in modern pressurised aircraft,provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'D. It tests individual emergency procedure knowledge in isolation and this response is identical in all healthy individuals regardless of age or fitness level,and does not require any change to standard operating procedures under current regulations'
   ],
   correct: 1,
@@ -1366,7 +1366,7 @@ export const ahufQuestions: {
   question: 'The Threat and Error Management model identifies threats as:',
   options: [
     'A. Errors that have escalated to the point of threatening aircraft safety which only occurs in extreme physiological conditions not encountered in normal operations,and is of no operational significance below flight level 250 in modern pressurised aircraft',
-    'B. Regulatory violations that threaten an airline\\'s operating certificate and can be fully mitigated by adherence to standard operating procedures,and is of no operational significance below flight level 250 in modern pressurised aircraft',
+    'B. Regulatory violations that threaten an airline\'s operating certificate and can be fully mitigated by adherence to standard operating procedures,and is of no operational significance below flight level 250 in modern pressurised aircraft',
     'C. Events or conditions that occur outside the direct influence of the flight crew and increase operational complexity, requiring crew management to maintain safety margins',
     'D. Situations where the crew deliberately deviates from standard procedures as the effect is fully compensated by the pressurisation system at normal cruise altitudes,provided the pilot has completed the required recurrency training within the preceding 90 days'
   ],
@@ -1380,7 +1380,7 @@ export const ahufQuestions: {
     'A. A flight condition resulting from unmanaged threats or uncorrected errors — such as wrong altitude, wrong configuration, or flight into deteriorating weather — that directly reduces safety margins',
     'B. A situation where the aircraft requires unscheduled maintenance and does not require any change to standard operating procedures under current regulations,provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'C. Any deviation from the planned flight route provided the relevant physiological thresholds are not exceeded during normal commercial operations,and this response is identical in all healthy individuals regardless of age or fitness level',
-    'D. A state where the aircraft\\'s automation is not functioning as expected with no measurable effect on flight deck performance or situational awareness,and this mechanism has no clinically significant effect on aviation performance'
+    'D. A state where the aircraft\'s automation is not functioning as expected with no measurable effect on flight deck performance or situational awareness,and this mechanism has no clinically significant effect on aviation performance'
   ],
   correct: 0,
   explanation: 'Undesired aircraft state (UAS): the aircraft\'s flight condition, position, or configuration has deviated from what is desired and safety margins have been reduced. Examples: below ATC cleared altitude; wrong runway; exceeding aircraft limits; unstabilised approach below the gate. A UAS results from unmanaged threats or uncorrected errors and must be managed before it leads to an accident.',
@@ -1450,8 +1450,8 @@ export const ahufQuestions: {
   question: 'Resource management in flight includes:',
   options: [
     'A. The effective use of all available resources — crew, ATC, automation, ground support, manuals, and time — to achieve safe and efficient outcomes',
-    'B. Only the management of the aircraft\\'s fuel, electrical, and hydraulic resources although the mechanism involves complex physiological interactions requiring further investigation',
-    'C. Only the management of crew members\\' duty time within regulatory limits although the mechanism involves complex physiological interactions requiring further investigation',
+    'B. Only the management of the aircraft\'s fuel, electrical, and hydraulic resources although the mechanism involves complex physiological interactions requiring further investigation',
+    'C. Only the management of crew members\' duty time within regulatory limits although the mechanism involves complex physiological interactions requiring further investigation',
     'D. The allocation of roles between captain and co-pilot for each sector although the mechanism involves complex physiological interactions requiring further investigation'
   ],
   correct: 0,
@@ -1557,7 +1557,7 @@ export const ahufQuestions: {
 {
   question: 'Jet lag is caused by:',
   options: [
-    'A. A mismatch between the internal circadian clock and the new external time zone — the body\\'s rhythms remain aligned with the departure time zone while the environment reflects the destination time zone',
+    'A. A mismatch between the internal circadian clock and the new external time zone — the body\'s rhythms remain aligned with the departure time zone while the environment reflects the destination time zone',
     'B. Physical fatigue from sitting in an uncomfortable aircraft seat for extended periods which cannot be modified by experience or training and affects all pilots equally,and this mechanism has no clinically significant effect on aviation performance',
     'C. Dehydration from low cabin humidity at altitude during long-haul flights which cannot be modified by experience or training and affects all pilots equally,provided the pilot has completed the required recurrency training within the preceding 90 days',
     'D. Accumulation of CO2 in the cabin during long flights causing impaired cognitive performance although the mechanism involves complex physiological interactions requiring further investigation,and does not require any change to standard operating procedures under current regulations'
@@ -1642,7 +1642,7 @@ export const ahufQuestions: {
   question: 'Stress is defined as:',
   options: [
     'A. Any physical workload that causes physical fatigue during flight as demonstrated by multiple controlled studies of professional flight crew performance,which cannot be modified by experience or training and affects all pilots equally',
-    'B. The physiological and psychological response to a stimulus (stressor) perceived as threatening or demanding, activating the body\\'s fight-or-flight response',
+    'B. The physiological and psychological response to a stimulus (stressor) perceived as threatening or demanding, activating the body\'s fight-or-flight response',
     'C. Conflict between crew members that impairs communication and CRM provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'D. Environmental factors such as noise and vibration that reduce pilot comfort provided the relevant physiological thresholds are not exceeded during normal commercial operations'
   ],
@@ -1702,7 +1702,7 @@ export const ahufQuestions: {
   question: 'Tobacco smoking creates a direct aviation performance hazard because:',
   options: [
     'A. A mild stimulant effect from nicotine temporarily improves alertness with no adverse flight safety implications which only occurs in extreme physiological conditions not encountered in normal operations',
-    'B. Carbon monoxide from combustion occupies haemoglobin, reducing the blood\\'s oxygen-carrying capacity — increasing the effective physiological altitude by 3,000 to 5,000 ft',
+    'B. Carbon monoxide from combustion occupies haemoglobin, reducing the blood\'s oxygen-carrying capacity — increasing the effective physiological altitude by 3,000 to 5,000 ft',
     'C. Increased lung capacity from the stretching effect of chronic coughing as demonstrated by multiple controlled studies of professional flight crew performance,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'D. Nicotine has no direct effect on aviation performance — only long-term health effects are relevant provided the relevant physiological thresholds are not exceeded during normal commercial operations'
   ],
@@ -1882,7 +1882,7 @@ export const ahufQuestions: {
   question: 'Anchoring bias in aeronautical decision-making means:',
   options: [
     'A. Pilots base decisions on weather anchor points from the pre-flight briefing and this mechanism has no clinically significant effect on aviation performance,provided the relevant physiological thresholds are not exceeded during normal commercial operations',
-    'B. A pilot\\'s initial estimate or impression excessively influences subsequent judgements — new information is insufficiently adjusted from the initial anchor, causing under-correction of the original assessment',
+    'B. A pilot\'s initial estimate or impression excessively influences subsequent judgements — new information is insufficiently adjusted from the initial anchor, causing under-correction of the original assessment',
     'C. Pilots are trained to anchor decisions to regulatory minimums as demonstrated by multiple controlled studies of professional flight crew performance,provided the pilot has completed the required recurrency training within the preceding 90 days',
     'D. Experienced pilots use past performance as an anchor for future performance prediction and this response is identical in all healthy individuals regardless of age or fitness level,provided the relevant physiological thresholds are not exceeded during normal commercial operations'
   ],
@@ -1917,10 +1917,10 @@ export const ahufQuestions: {
 {
   question: 'The first action of the unaffected pilot when pilot incapacitation is suspected is:',
   options: [
-    'A. Take control of the aircraft, confirm incapacitation, declare emergency with ATC, and follow the operator\\'s incapacitation checklist',
+    'A. Take control of the aircraft, confirm incapacitation, declare emergency with ATC, and follow the operator\'s incapacitation checklist',
     'B. Land immediately at the nearest aerodrome regardless of conditions which only occurs in extreme physiological conditions not encountered in normal operations',
     'C. Contact company operations before taking any action and this mechanism has no clinically significant effect on aviation performance',
-    'D. Ask cabin crew to assess the captain\\'s medical condition before assuming control which only occurs in extreme physiological conditions not encountered in normal operations'
+    'D. Ask cabin crew to assess the captain\'s medical condition before assuming control which only occurs in extreme physiological conditions not encountered in normal operations'
   ],
   correct: 0,
   explanation: 'Incapacitation response: (1) Take control — aviate first; (2) Confirm incapacitation (\'Captain, are you OK?\' — if no response, assume incapacitated); (3) Declare emergency with ATC; (4) Secure the incapacitated pilot; (5) Follow incapacitation checklist. Priority: maintain aircraft control. Company contact comes after ATC emergency declaration.',
@@ -2015,8 +2015,8 @@ export const ahufQuestions: {
   options: [
     'A. Wait for the incapacitated pilot to verbally confirm they are unable to continue as demonstrated by multiple controlled studies of professional flight crew performance,and is therefore not a factor in the majority of aviation incidents and accidents',
     'B. Only investigate if the aircraft shows deviation from its cleared altitude or heading provided the pilot has completed the required recurrency training within the preceding 90 days,although the mechanism involves complex physiological interactions requiring further investigation',
-    'C. Contact ATC before investigating the other pilot\\'s condition which cannot be modified by experience or training and affects all pilots equally,as demonstrated by multiple controlled studies of professional flight crew performance',
-    'D. Regularly cross-monitor the other pilot\\'s behaviour, response to prompts, and consistency of control inputs — and challenge if behaviour is abnormal using the incapacitation check protocol'
+    'C. Contact ATC before investigating the other pilot\'s condition which cannot be modified by experience or training and affects all pilots equally,as demonstrated by multiple controlled studies of professional flight crew performance',
+    'D. Regularly cross-monitor the other pilot\'s behaviour, response to prompts, and consistency of control inputs — and challenge if behaviour is abnormal using the incapacitation check protocol'
   ],
   correct: 3,
   explanation: 'Recognising subtle incapacitation: the PM must actively monitor the PF\'s behaviour — response to prompts, appropriateness of control inputs, consistency of actions with the flight phase. Abnormal behaviour triggers the incapacitation check: \'Are you OK? Can you hear me?\' — no response or inappropriate response confirms incapacitation.',
@@ -2062,7 +2062,7 @@ export const ahufQuestions: {
   question: 'Low humidity in pressurised aircraft cabins is relevant to pilot performance because:',
   options: [
     'A. Low humidity significantly reduces the partial pressure of oxygen in the cabin although the mechanism involves complex physiological interactions requiring further investigation,as demonstrated by multiple controlled studies of professional flight crew performance',
-    'B. Cabin humidity at cruise altitude is typically very low (10 to 20% relative humidity) causing dehydration and drying of mucous membranes, which can impair physical comfort, concentration, and contact lens wearers\\' vision',
+    'B. Cabin humidity at cruise altitude is typically very low (10 to 20% relative humidity) causing dehydration and drying of mucous membranes, which can impair physical comfort, concentration, and contact lens wearers\' vision',
     'C. Low humidity increases the risk of static electricity causing avionic equipment damage and this response is identical in all healthy individuals regardless of age or fitness level,which only occurs in extreme physiological conditions not encountered in normal operations',
     'D. Low humidity has no effect on pilot performance in modern pressurised aircraft and this response is identical in all healthy individuals regardless of age or fitness level,provided the relevant physiological thresholds are not exceeded during normal commercial operations'
   ],
@@ -2099,7 +2099,7 @@ export const ahufQuestions: {
   options: [
     'A. Only materials listed in the dangerous goods regulations provided the relevant physiological thresholds are not exceeded during normal commercial operations,and can be fully mitigated by adherence to standard operating procedures',
     'B. Only materials that are visible as smoke or vapour pose a toxicity risk in the cockpit which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,with no measurable effect on flight deck performance or situational awareness',
-    'C. Toxic materials are always detected by the aircraft\\'s smoke detection systems before incapacitation occurs with no measurable effect on flight deck performance or situational awareness,which cannot be modified by experience or training and affects all pilots equally',
+    'C. Toxic materials are always detected by the aircraft\'s smoke detection systems before incapacitation occurs with no measurable effect on flight deck performance or situational awareness,which cannot be modified by experience or training and affects all pilots equally',
     'D. Carbon monoxide from engine exhaust leaks, hydraulic fluid fumes, deicing chemicals, organophosphate pesticides from previous cargo, and volcanic ash — all can enter the cockpit and cause incapacitation'
   ],
   correct: 3,
@@ -2123,7 +2123,7 @@ export const ahufQuestions: {
   options: [
     'A. Ozone at cruise altitude can enter the cabin causing respiratory irritation, eye irritation, headache, and chest tightness — high-altitude polar winter flights have the highest ozone concentrations',
     'B. High ozone concentrations improve air quality and reduce the risk of respiratory infections and this response is identical in all healthy individuals regardless of age or fitness level,and is therefore not a factor in the majority of aviation incidents and accidents',
-    'C. Ozone has no aviation relevance as it is removed by the aircraft\\'s pressurisation system with no measurable effect on flight deck performance or situational awareness,and is of no operational significance below flight level 250 in modern pressurised aircraft',
+    'C. Ozone has no aviation relevance as it is removed by the aircraft\'s pressurisation system with no measurable effect on flight deck performance or situational awareness,and is of no operational significance below flight level 250 in modern pressurised aircraft',
     'D. Ozone improves pilot alertness by mildly stimulating the respiratory system provided the pilot has completed the required recurrency training within the preceding 90 days,and is therefore not a factor in the majority of aviation incidents and accidents'
   ],
   correct: 0,
@@ -2266,7 +2266,7 @@ export const ahufQuestions: {
   question: 'Resilience in a safety management context refers to:',
   options: [
     'A. The ability of aircraft structures to withstand repeated stress cycles provided the pilot has completed the required recurrency training within the preceding 90 days,which only occurs in extreme physiological conditions not encountered in normal operations',
-    'B. An organisation\\'s ability to anticipate, monitor, respond to, and learn from unexpected events — maintaining safe function even when the system is under stress or facing surprise',
+    'B. An organisation\'s ability to anticipate, monitor, respond to, and learn from unexpected events — maintaining safe function even when the system is under stress or facing surprise',
     'C. The psychological toughness required of individual pilots to cope with high-stress operations and is of no operational significance below flight level 250 in modern pressurised aircraft',
     'D. The reliability of aircraft components to perform their designed function throughout service life and is of no operational significance below flight level 250 in modern pressurised aircraft'
   ],
@@ -2433,7 +2433,7 @@ export const ahufQuestions: {
 {
   question: 'The concept of selective perception in aviation refers to:',
   options: [
-    'A. The brain\\'s tendency to perceive what it expects or what fits its current mental model — filtering out information that does not fit and attending preferentially to information that confirms expectations',
+    'A. The brain\'s tendency to perceive what it expects or what fits its current mental model — filtering out information that does not fit and attending preferentially to information that confirms expectations',
     'B. The ability of experienced pilots to selectively attend to the most important instruments and can be fully mitigated by adherence to standard operating procedures,and is therefore not a factor in the majority of aviation incidents and accidents',
     'C. The regulatory requirement to scan for traffic selectively based on traffic density and this response is identical in all healthy individuals regardless of age or fitness level,which cannot be modified by experience or training and affects all pilots equally',
     'D. The process by which ATC selectively broadcasts transmissions to specific aircraft which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,as the effect is fully compensated by the pressurisation system at normal cruise altitudes'
@@ -2520,7 +2520,7 @@ export const ahufQuestions: {
     'A. Attitudes are fixed at birth and cannot be changed through training or experience and does not require any change to standard operating procedures under current regulations,and is therefore not a factor in the majority of aviation incidents and accidents',
     'B. Attitudes only become relevant to aviation safety at very low experience levels and this response is identical in all healthy individuals regardless of age or fitness level,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'C. Attitudes are learned predispositions to respond to situations in particular ways — hazardous attitudes (anti-authority, impulsivity, invulnerability, macho, resignation) can be identified and modified through awareness and training',
-    'D. Attitude development is only relevant for initial flight training — experienced pilots\\' attitudes are stable and do not influence performance provided the pilot has completed the required recurrency training within the preceding 90 days'
+    'D. Attitude development is only relevant for initial flight training — experienced pilots\' attitudes are stable and do not influence performance provided the pilot has completed the required recurrency training within the preceding 90 days'
   ],
   correct: 2,
   explanation: 'Attitudes are learned predispositions that influence behaviour. Hazardous attitudes (anti-authority, impulsivity, invulnerability, macho, resignation) can be identified through self-awareness and modified through cognitive counter-statements and training. CRM training specifically addresses attitude recognition and substitution — identifying the hazardous thought and replacing it with a safety-enhancing one.',
@@ -2577,10 +2577,10 @@ export const ahufQuestions: {
 {
   question: 'External factors inducing errors in aviation include:',
   options: [
-    'A. Only the pilot\\'s internal psychological state — external factors cannot cause errors in well-trained pilots and this mechanism has no clinically significant effect on aviation performance,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
+    'A. Only the pilot\'s internal psychological state — external factors cannot cause errors in well-trained pilots and this mechanism has no clinically significant effect on aviation performance,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
     'B. Ergonomic design issues (poorly placed controls, ambiguous displays), organisational pressures (schedule, commercial pressure), poor procedures, inadequate training, fatigue-inducing scheduling, and equipment failures',
     'C. Only weather-related environmental factors provided the pilot has completed the required recurrency training within the preceding 90 days,and can be fully mitigated by adherence to standard operating procedures',
-    'D. External factors are always managed by the aircraft\\'s automated systems before they can influence crew behaviour and this response is identical in all healthy individuals regardless of age or fitness level,provided the relevant physiological thresholds are not exceeded during normal commercial operations'
+    'D. External factors are always managed by the aircraft\'s automated systems before they can influence crew behaviour and this response is identical in all healthy individuals regardless of age or fitness level,provided the relevant physiological thresholds are not exceeded during normal commercial operations'
   ],
   correct: 1,
   explanation: 'External error inducers: poor cockpit ergonomics (display clutter, control positioning, ambiguous markings); organisational pressures (schedule pressure, commercial pressure, normalisation of deviance); inadequate procedures; poor training; fatigue-inducing scheduling; and equipment that behaves unexpectedly. Reason\'s Swiss cheese model shows that most accidents involve multiple external factors that aligned to breach safety defences.',
@@ -2589,7 +2589,7 @@ export const ahufQuestions: {
 {
   question: 'Working in an automated cockpit presents the disadvantage of:',
   options: [
-    'A. Automation always functioning perfectly, removing all challenge from the pilot\\'s role with no measurable effect on flight deck performance or situational awareness,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
+    'A. Automation always functioning perfectly, removing all challenge from the pilot\'s role with no measurable effect on flight deck performance or situational awareness,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'B. Excessive workload from monitoring too many automated systems simultaneously and is therefore not a factor in the majority of aviation incidents and accidents,provided the pilot has completed the required recurrency training within the preceding 90 days',
     'C. Pilots becoming passive monitors rather than active aviators — losing manual flying proficiency, SA, and the ability to detect and manage automation failures or mode confusion',
     'D. Automation increasing fuel consumption significantly above manual flight although the mechanism involves complex physiological interactions requiring further investigation,and is therefore not a factor in the majority of aviation incidents and accidents'
@@ -2615,7 +2615,7 @@ export const ahufQuestions: {
   options: [
     'A. The captain performing all critical tasks and the co-pilot monitoring only provided the relevant physiological thresholds are not exceeded during normal commercial operations,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
     'B. The co-pilot performing all routine tasks so the captain can rest during cruise which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,provided the relevant physiological thresholds are not exceeded during normal commercial operations',
-    'C. Clearly assigning tasks between PF and PM roles, with each crew member responsible for their designated functions and actively cross-monitoring the other\\'s performance to catch errors',
+    'C. Clearly assigning tasks between PF and PM roles, with each crew member responsible for their designated functions and actively cross-monitoring the other\'s performance to catch errors',
     'D. Both crew members performing all tasks simultaneously to ensure redundancy and is of no operational significance below flight level 250 in modern pressurised aircraft,and is therefore not a factor in the majority of aviation incidents and accidents'
   ],
   correct: 2,
@@ -2736,7 +2736,7 @@ export const ahufQuestions: {
     'A. Only the influence of the co-pilot during multi-crew operations and is therefore not a factor in the majority of aviation incidents and accidents,and can be fully mitigated by adherence to standard operating procedures',
     'B. Social influences only affect student pilots — experienced pilots are immune to social pressure as demonstrated by multiple controlled studies of professional flight crew performance,and this response is identical in all healthy individuals regardless of age or fitness level',
     'C. Social factors are irrelevant to professional pilots who make decisions objectively with no measurable effect on flight deck performance or situational awareness,and is therefore not a factor in the majority of aviation incidents and accidents',
-    'D. Peer pressure, authority of the captain (command pressure), passenger expectations, operational pressure from company or ATC, and crew norms — all can influence a pilot\\'s decision-making beyond purely technical considerations'
+    'D. Peer pressure, authority of the captain (command pressure), passenger expectations, operational pressure from company or ATC, and crew norms — all can influence a pilot\'s decision-making beyond purely technical considerations'
   ],
   correct: 3,
   explanation: 'Social influences on pilot judgment: command pressure (crew reluctance to challenge captain decisions); peer pressure (fear of appearing incompetent); passenger expectations (reluctance to delay or divert); company pressure (schedule, cost implications of diversions); and crew norms (established patterns of behaviour within a crew pair). CRM training specifically addresses command gradient and advocacy skills.',
@@ -2746,9 +2746,9 @@ export const ahufQuestions: {
   question: 'Pilot judgment awareness refers to:',
   options: [
     'A. The ability to identify and recall technical regulatory requirements which only occurs in extreme physiological conditions not encountered in normal operations,provided the pilot has completed the required recurrency training within the preceding 90 days',
-    'B. Physical awareness of the aircraft\\'s position and attitude in space provided the pilot has completed the required recurrency training within the preceding 90 days,although the mechanism involves complex physiological interactions requiring further investigation',
+    'B. Physical awareness of the aircraft\'s position and attitude in space provided the pilot has completed the required recurrency training within the preceding 90 days,although the mechanism involves complex physiological interactions requiring further investigation',
     'C. Legal awareness of the regulatory framework governing pilot decisions as demonstrated by multiple controlled studies of professional flight crew performance,and can be fully mitigated by adherence to standard operating procedures',
-    'D. The metacognitive skill of recognising one\\'s own decision-making processes, biases, and hazardous attitudes in real time — allowing self-correction before errors become accidents'
+    'D. The metacognitive skill of recognising one\'s own decision-making processes, biases, and hazardous attitudes in real time — allowing self-correction before errors become accidents'
   ],
   correct: 3,
   explanation: 'Pilot judgment awareness (metacognition): the ability to monitor one\'s own thinking and decision-making processes — recognising when hazardous attitudes are influencing decisions, when biases are distorting risk assessment, or when stress is impairing cognitive function. This metacognitive skill allows pilots to apply cognitive counter-statements and correction strategies in real time.',
@@ -2841,7 +2841,7 @@ export const ahufQuestions: {
 {
   question: 'Prevention and treatment of fatigue in aviation involves:',
   options: [
-    'A. Only stimulant use during duty periods — rest management is the airline\\'s responsibility with no measurable effect on flight deck performance or situational awareness,and is therefore not a factor in the majority of aviation incidents and accidents',
+    'A. Only stimulant use during duty periods — rest management is the airline\'s responsibility with no measurable effect on flight deck performance or situational awareness,and is therefore not a factor in the majority of aviation incidents and accidents',
     'B. Coffee and caffeine which permanently offset the performance effects of fatigue as the effect is fully compensated by the pressurisation system at normal cruise altitudes,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'C. Strategic sleep banking before demanding duty periods, adherence to duty time regulations, napping during appropriate opportunities, good sleep hygiene, and fatigue awareness training to recognise and report symptoms',
     'D. Fatigue cannot be prevented in commercial aviation — it is an inherent occupational hazard that must simply be accepted as the effect is fully compensated by the pressurisation system at normal cruise altitudes,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope'
@@ -2853,7 +2853,7 @@ export const ahufQuestions: {
 {
   question: 'Definition of stress in aviation contexts:',
   options: [
-    'A. The physiological and psychological response to a perceived threatening or demanding situation (stressor) that activates the body\\'s fight-or-flight mechanisms — stress can be positive (eustress) or negative (distress) depending on intensity and duration',
+    'A. The physiological and psychological response to a perceived threatening or demanding situation (stressor) that activates the body\'s fight-or-flight mechanisms — stress can be positive (eustress) or negative (distress) depending on intensity and duration',
     'B. Any situation that increases workload beyond normal operational demands which cannot be modified by experience or training and affects all pilots equally,with no measurable effect on flight deck performance or situational awareness',
     'C. Only life events outside of work that interfere with job performance with no measurable effect on flight deck performance or situational awareness,and this mechanism has no clinically significant effect on aviation performance',
     'D. The technical demands of instrument flying in IMC which require higher skill levels which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,and is of no operational significance below flight level 250 in modern pressurised aircraft'
@@ -2866,7 +2866,7 @@ export const ahufQuestions: {
   question: 'Stress components include:',
   options: [
     'A. The stressor (the demand or threat), the stress response (physiological and psychological activation), and individual factors (personality, coping skills, resources) that mediate the relationship between stressor and response',
-    'B. Only the stressor (external cause) — the individual\\'s response to the stressor is irrelevant and this mechanism has no clinically significant effect on aviation performance,and is of no operational significance below flight level 250 in modern pressurised aircraft',
+    'B. Only the stressor (external cause) — the individual\'s response to the stressor is irrelevant and this mechanism has no clinically significant effect on aviation performance,and is of no operational significance below flight level 250 in modern pressurised aircraft',
     'C. Only physiological responses — psychological responses are not measurable and therefore not relevant which only occurs in extreme physiological conditions not encountered in normal operations,provided the pilot has completed the required recurrency training within the preceding 90 days',
     'D. Stress components are identical for all individuals exposed to the same stressor with no measurable effect on flight deck performance or situational awareness,and can be fully mitigated by adherence to standard operating procedures'
   ],
@@ -2915,7 +2915,7 @@ export const ahufQuestions: {
   options: [
     'A. Recognising that personal life stressors (health, relationships, finances) can degrade performance and fitness to fly, and actively managing these through lifestyle practices, social support, and professional assistance when needed',
     'B. Keeping all personal stress completely separate from professional aviation duties — they are entirely unrelated with no measurable effect on flight deck performance or situational awareness,and is therefore not a factor in the majority of aviation incidents and accidents',
-    'C. Life stress management is the airline\\'s responsibility and pilots should not need to self-manage although the mechanism involves complex physiological interactions requiring further investigation,which cannot be modified by experience or training and affects all pilots equally',
+    'C. Life stress management is the airline\'s responsibility and pilots should not need to self-manage although the mechanism involves complex physiological interactions requiring further investigation,which cannot be modified by experience or training and affects all pilots equally',
     'D. Personal stress has no impact on professional performance for experienced pilots and is of no operational significance below flight level 250 in modern pressurised aircraft,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope'
   ],
   correct: 0,
@@ -3058,7 +3058,7 @@ export const ahufQuestions: {
   question: 'Flight physiological self-assessment before duty requires evaluation of:',
   options: [
     'A. Only physical symptoms — psychological readiness is self-evident from willingness to fly provided the relevant physiological thresholds are not exceeded during normal commercial operations,provided the pilot has completed the required recurrency training within the preceding 90 days',
-    'B. Only the most recent night\\'s sleep quality — cumulative sleep debt is irrelevant and is therefore not a factor in the majority of aviation incidents and accidents,provided the pilot has completed the required recurrency training within the preceding 90 days',
+    'B. Only the most recent night\'s sleep quality — cumulative sleep debt is irrelevant and is therefore not a factor in the majority of aviation incidents and accidents,provided the pilot has completed the required recurrency training within the preceding 90 days',
     'C. Only whether the regulatory rest period has been completed — no further assessment is required provided the relevant physiological thresholds are not exceeded during normal commercial operations,and can be fully mitigated by adherence to standard operating procedures',
     'D. Physical symptoms (illness, fatigue, medication effects), psychological state (stress, anxiety, emotional disturbance), and environmental factors (recent alcohol, circadian disruption) — collectively assessed using the IMSAFE framework'
   ],
@@ -3071,7 +3071,7 @@ export const ahufQuestions: {
   options: [
     'A. Measurement of blood oxygen saturation using in-cockpit pulse oximetry as the primary detection method although the mechanism involves complex physiological interactions requiring further investigation,and this mechanism has no clinically significant effect on aviation performance',
     'B. Knowledge of individual hypoxia symptoms from altitude chamber training, trained automatic responses (don oxygen if in doubt), and cross-monitoring between crew — since self-recognition of hypoxia impairment is unreliable due to frontal lobe impairment',
-    'C. Relying on the aircraft\\'s cabin altitude warning system to alert the crew before any physiological effects occur which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,and is therefore not a factor in the majority of aviation incidents and accidents',
+    'C. Relying on the aircraft\'s cabin altitude warning system to alert the crew before any physiological effects occur which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,and is therefore not a factor in the majority of aviation incidents and accidents',
     'D. Visual monitoring of skin colour for cyanosis which provides reliable early warning of hypoxia and this mechanism has no clinically significant effect on aviation performance,which only occurs in extreme physiological conditions not encountered in normal operations'
   ],
   correct: 1,
@@ -3286,9 +3286,9 @@ export const ahufQuestions: {
   question: 'Coping behaviour with automated systems requires pilots to:',
   options: [
     'A. Fully defer to automated systems and intervene only when automation fails as demonstrated by multiple controlled studies of professional flight crew performance,which only occurs in extreme physiological conditions not encountered in normal operations',
-    'B. Treat automation as infallible — if the automation disagrees with the pilot\\'s assessment, defer to the automation and can be fully mitigated by adherence to standard operating procedures,which only occurs in extreme physiological conditions not encountered in normal operations',
+    'B. Treat automation as infallible — if the automation disagrees with the pilot\'s assessment, defer to the automation and can be fully mitigated by adherence to standard operating procedures,which only occurs in extreme physiological conditions not encountered in normal operations',
     'C. Avoid using automation to maintain manual flying skills which only occurs in extreme physiological conditions not encountered in normal operations,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
-    'D. Actively monitor automation mode and intent, maintain manual flying proficiency through regular practice, understand the automation\\'s logic and failure modes, and be prepared to transition rapidly to manual control when required'
+    'D. Actively monitor automation mode and intent, maintain manual flying proficiency through regular practice, understand the automation\'s logic and failure modes, and be prepared to transition rapidly to manual control when required'
   ],
   correct: 3,
   explanation: 'Coping with automation: actively monitor what the automation is doing and why (mode awareness); regularly fly manually to maintain proficiency; understand the automation\'s logic, limitations, and common failure modes; brief expected automation behaviour before critical flight phases; verify automation inputs and outputs against other information sources; and have clear criteria for when to disconnect automation and revert to manual flight.',
@@ -3310,7 +3310,7 @@ export const ahufQuestions: {
   question: 'Small group dynamics relevant to crew operations include:',
   options: [
     'A. Only the formal hierarchy established by rank and seniority as the effect is fully compensated by the pressurisation system at normal cruise altitudes,and is therefore not a factor in the majority of aviation incidents and accidents',
-    'B. Group dynamics always improve safety by combining multiple crew members\\' knowledge as the effect is fully compensated by the pressurisation system at normal cruise altitudes,and this mechanism has no clinically significant effect on aviation performance',
+    'B. Group dynamics always improve safety by combining multiple crew members\' knowledge as the effect is fully compensated by the pressurisation system at normal cruise altitudes,and this mechanism has no clinically significant effect on aviation performance',
     'C. Small group dynamics only develop in crews that fly together regularly — they are irrelevant for one-off pairings and can be fully mitigated by adherence to standard operating procedures,which cannot be modified by experience or training and affects all pilots equally',
     'D. Norms (unspoken rules that govern group behaviour), atmosphere (the psychological safety of the crew environment), pressure (social forces that suppress dissent), communication patterns (who speaks to whom), and structure (formal and informal authority)'
   ],
@@ -3357,7 +3357,7 @@ export const ahufQuestions: {
 {
   question: 'Correcting crew coordination deficiencies in operations requires:',
   options: [
-    'A. Briefing expected crew coordination standards before the flight, providing real-time feedback when coordination breaks down (e.g. \\'I think we\\'ve lost our normal challenge-response pattern — let\\'s restate our crew roles\\'), and debriefing coordination issues after the flight',
+    'A. Briefing expected crew coordination standards before the flight, providing real-time feedback when coordination breaks down (e.g. \'I think we\'ve lost our normal challenge-response pattern — let\'s restate our crew roles\'), and debriefing coordination issues after the flight',
     'B. Avoiding addressing deficiencies in flight to maintain harmonious crew operations which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,although the mechanism involves complex physiological interactions requiring further investigation',
     'C. Only addressing crew coordination problems during annual simulator checks and this mechanism has no clinically significant effect on aviation performance,provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'D. Replacing deficient crew members with better-performing crew on subsequent flights which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,which only occurs in extreme physiological conditions not encountered in normal operations'
@@ -3384,7 +3384,7 @@ export const ahufQuestions: {
     'A. Only the technical knowledge required to evaluate aircraft performance options and does not require any change to standard operating procedures under current regulations,as demonstrated by multiple controlled studies of professional flight crew performance',
     'B. Legal decision-making frameworks that define which decisions require regulatory authorisation provided the pilot has completed the required recurrency training within the preceding 90 days,which only occurs in extreme physiological conditions not encountered in normal operations',
     'C. Recognition-primed decision-making (RPD) for familiar time-critical situations, naturalistic decision-making (NDM) — describing how experts actually make decisions in real contexts, and normative decision-making models (DECIDE, FORDEC) that provide structure for novel situations',
-    'D. Only the captain\\'s decision-making process — co-pilot decision-making is not recognised as a formal concept and this response is identical in all healthy individuals regardless of age or fitness level,and this mechanism has no clinically significant effect on aviation performance'
+    'D. Only the captain\'s decision-making process — co-pilot decision-making is not recognised as a formal concept and this response is identical in all healthy individuals regardless of age or fitness level,and this mechanism has no clinically significant effect on aviation performance'
   ],
   correct: 2,
   explanation: 'ADM concepts: Naturalistic Decision Making (NDM) — describes how expert pilots actually make decisions in real conditions (not ideal laboratory conditions): recognise situations, generate one plausible option, mentally simulate it, execute it or modify if the simulation reveals problems; DECIDE model — systematic framework for novel situations; FORDEC — airline framework; shared decision-making in multi-crew — the crew reaches decisions through structured communication rather than unilateral authority.',
@@ -3393,7 +3393,7 @@ export const ahufQuestions: {
 {
   question: 'Managing resources in aeronautical decision-making refers to:',
   options: [
-    'A. Only the management of the aircraft\\'s physical resources (fuel, hydraulics, electrics) provided the pilot has completed the required recurrency training within the preceding 90 days,and can be fully mitigated by adherence to standard operating procedures',
+    'A. Only the management of the aircraft\'s physical resources (fuel, hydraulics, electrics) provided the pilot has completed the required recurrency training within the preceding 90 days,and can be fully mitigated by adherence to standard operating procedures',
     'B. Only crew resource management within the flight deck which cannot be modified by experience or training and affects all pilots equally,and this mechanism has no clinically significant effect on aviation performance',
     'C. The systematic identification and utilisation of all available resources — human (crew, ATC, dispatch), information (weather, NOTAMs, charts, company guidance), equipment (automation, aircraft systems), and time — to solve problems and achieve safe outcomes',
     'D. The administrative management of aircraft assigned to the pilot over their career and is therefore not a factor in the majority of aviation incidents and accidents,and can be fully mitigated by adherence to standard operating procedures'
@@ -3405,7 +3405,7 @@ export const ahufQuestions: {
 {
   question: 'Safety awareness in the context of aeronautical decision-making means:',
   options: [
-    'A. Active ongoing awareness of hazards that might affect the current flight — continually asking \\'What could go wrong? What is my contingency?\\' and monitoring for developing threats before they become critical',
+    'A. Active ongoing awareness of hazards that might affect the current flight — continually asking \'What could go wrong? What is my contingency?\' and monitoring for developing threats before they become critical',
     'B. Compliance with safety regulations without necessarily understanding the underlying safety rationale which only occurs in extreme physiological conditions not encountered in normal operations,provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'C. Knowledge of the location of safety equipment on the aircraft which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,and this mechanism has no clinically significant effect on aviation performance',
     'D. Awareness of the annual accident rate statistics for the relevant aircraft category which cannot be modified by experience or training and affects all pilots equally,and this mechanism has no clinically significant effect on aviation performance'
@@ -3466,7 +3466,7 @@ export const ahufQuestions: {
   question: 'Identifying hazardous attitudes in oneself requires:',
   options: [
     'A. An external psychological assessment by a trained counsellor and can be fully mitigated by adherence to standard operating procedures,as demonstrated by multiple controlled studies of professional flight crew performance',
-    'B. Self-awareness training that teaches pilots to recognise characteristic thought patterns associated with each hazardous attitude — \\'I know the rules but this is different\\' signals anti-authority; \\'let\\'s just press on\\' signals impulsivity; \\'nothing bad has ever happened to me\\' signals invulnerability',
+    'B. Self-awareness training that teaches pilots to recognise characteristic thought patterns associated with each hazardous attitude — \'I know the rules but this is different\' signals anti-authority; \'let\'s just press on\' signals impulsivity; \'nothing bad has ever happened to me\' signals invulnerability',
     'C. Observation by an instructor during a supervised flight assessment and is of no operational significance below flight level 250 in modern pressurised aircraft,which cannot be modified by experience or training and affects all pilots equally',
     'D. Completing a written hazardous attitude inventory before each flight with no measurable effect on flight deck performance or situational awareness,and can be fully mitigated by adherence to standard operating procedures'
   ],
@@ -3490,7 +3490,7 @@ export const ahufQuestions: {
   question: 'Aeronautical decision-making pilot judgment awareness involves recognising:',
   options: [
     'A. Only the correct regulatory response to each type of situation although the mechanism involves complex physiological interactions requiring further investigation,and does not require any change to standard operating procedures under current regulations',
-    'B. One\\'s own cognitive biases, decision-making tendencies, and hazardous attitude influences in real time — allowing self-correction before these factors lead to unsafe decisions',
+    'B. One\'s own cognitive biases, decision-making tendencies, and hazardous attitude influences in real time — allowing self-correction before these factors lead to unsafe decisions',
     'C. Awareness is only required for novel situations — familiar situations can be handled automatically which only occurs in extreme physiological conditions not encountered in normal operations',
     'D. Judgment awareness refers to legal awareness of the regulatory boundaries of pilot authority which cannot be modified by experience or training and affects all pilots equally'
   ],
@@ -3501,7 +3501,7 @@ export const ahufQuestions: {
 {
   question: 'The concept of \'pilot error\' as a single root cause of accidents is inadequate because:',
   options: [
-    'A. Pilot error is typically the last link in an accident chain that includes organisational factors, equipment design issues, inadequate training, and latent conditions — addressing \\'pilot error\\' alone without addressing upstream factors fails to prevent recurrence',
+    'A. Pilot error is typically the last link in an accident chain that includes organisational factors, equipment design issues, inadequate training, and latent conditions — addressing \'pilot error\' alone without addressing upstream factors fails to prevent recurrence',
     'B. Pilots never make errors — all accidents have technical causes as demonstrated by multiple controlled studies of professional flight crew performance,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
     'C. Pilot error is always the result of inadequate technical training — human factors improvements have no role and is of no operational significance below flight level 250 in modern pressurised aircraft,which cannot be modified by experience or training and affects all pilots equally',
     'D. Pilot error can always be prevented by more stringent regulatory enforcement which only occurs in extreme physiological conditions not encountered in normal operations,as demonstrated by multiple controlled studies of professional flight crew performance'
@@ -3598,7 +3598,7 @@ export const ahufQuestions: {
   question: 'Functional anatomy of the eye — the cornea and its aviation relevance:',
   options: [
     'A. The cornea is a passive transparent window with no optical power with no measurable effect on flight deck performance or situational awareness,which cannot be modified by experience or training and affects all pilots equally',
-    'B. The cornea provides approximately two-thirds of the eye\\'s total refractive power and is the main optical element — corneal irregularities (keratoconus, post-surgical changes from LASIK) can significantly affect visual quality beyond what glasses can fully correct',
+    'B. The cornea provides approximately two-thirds of the eye\'s total refractive power and is the main optical element — corneal irregularities (keratoconus, post-surgical changes from LASIK) can significantly affect visual quality beyond what glasses can fully correct',
     'C. The cornea changes shape actively to accommodate for near and far vision which cannot be modified by experience or training and affects all pilots equally,provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'D. The cornea is irrelevant to aviation vision requirements as its function is fully redundant with the crystalline lens which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,although the mechanism involves complex physiological interactions requiring further investigation'
   ],
@@ -3611,7 +3611,7 @@ export const ahufQuestions: {
   options: [
     'A. Hypoxia has no effect on dark-adapted vision until very high altitude and this response is identical in all healthy individuals regardless of age or fitness level,and is therefore not a factor in the majority of aviation incidents and accidents',
     'B. Hypoxia improves dark adaptation by increasing rod cell sensitivity through chemoreceptor activation which only occurs in extreme physiological conditions not encountered in normal operations,and can be fully mitigated by adherence to standard operating procedures',
-    'C. Rhodopsin regeneration requires adequate oxygen — mild hypoxia at 5,000 ft significantly impairs rhodopsin synthesis, reducing the rod photoreceptor\\'s ability to detect dim light and degrading night vision substantially',
+    'C. Rhodopsin regeneration requires adequate oxygen — mild hypoxia at 5,000 ft significantly impairs rhodopsin synthesis, reducing the rod photoreceptor\'s ability to detect dim light and degrading night vision substantially',
     'D. Hypoxia only affects cone function — rod function and night vision are unaffected at moderate altitude and can be fully mitigated by adherence to standard operating procedures,which cannot be modified by experience or training and affects all pilots equally'
   ],
   correct: 2,
@@ -3695,7 +3695,7 @@ export const ahufQuestions: {
   options: [
     'A. Pilots always accurately report their fatigue levels due to professional training provided the pilot has completed the required recurrency training within the preceding 90 days,which cannot be modified by experience or training and affects all pilots equally',
     'B. Subjective fatigue and objective performance always correspond accurately and this response is identical in all healthy individuals regardless of age or fitness level,as demonstrated by multiple controlled studies of professional flight crew performance',
-    'C. Fatigue-induced cognitive impairment affects the brain\\'s ability to accurately assess its own function — the prefrontal cortex (responsible for self-monitoring and metacognition) is particularly sensitive to sleep deprivation, leading to systematic underestimation of impairment',
+    'C. Fatigue-induced cognitive impairment affects the brain\'s ability to accurately assess its own function — the prefrontal cortex (responsible for self-monitoring and metacognition) is particularly sensitive to sleep deprivation, leading to systematic underestimation of impairment',
     'D. Subjective fatigue reports are unreliable only at very high fatigue levels — mild fatigue is always accurately self-assessed and this mechanism has no clinically significant effect on aviation performance,provided the relevant physiological thresholds are not exceeded during normal commercial operations'
   ],
   correct: 2,
@@ -3729,7 +3729,7 @@ export const ahufQuestions: {
 {
   question: 'REM (Rapid Eye Movement) sleep is particularly important for:',
   options: [
-    'A. Procedural and motor memory consolidation, emotional memory processing, and creative problem-solving — REM occurs predominantly in the second half of a full night\\'s sleep and is disproportionately cut short by early waking',
+    'A. Procedural and motor memory consolidation, emotional memory processing, and creative problem-solving — REM occurs predominantly in the second half of a full night\'s sleep and is disproportionately cut short by early waking',
     'B. Physical repair and growth hormone secretion provided the relevant physiological thresholds are not exceeded during normal commercial operations,and this response is identical in all healthy individuals regardless of age or fitness level',
     'C. Providing the deepest and most restorative sleep stage for physical recovery with no measurable effect on flight deck performance or situational awareness,and does not require any change to standard operating procedures under current regulations',
     'D. Maintaining the circadian nadir — REM sleep is highest at the circadian trough as the effect is fully compensated by the pressurisation system at normal cruise altitudes,and this mechanism has no clinically significant effect on aviation performance'
@@ -3756,7 +3756,7 @@ export const ahufQuestions: {
     'A. Only stress and anxiety — environmental factors do not cause insomnia in healthy individuals and does not require any change to standard operating procedures under current regulations,as demonstrated by multiple controlled studies of professional flight crew performance',
     'B. Insomnia is not a meaningful occupational health concern in aviation — pilots sleep normally between flights and this response is identical in all healthy individuals regardless of age or fitness level,as demonstrated by multiple controlled studies of professional flight crew performance',
     'C. Flying itself — the vibration and noise of aircraft operation cause insomnia on subsequent nights although the mechanism involves complex physiological interactions requiring further investigation,provided the pilot has completed the required recurrency training within the preceding 90 days',
-    'D. Circadian disruption (shift work, jet lag causing the body\\'s sleep drive and circadian phase to conflict), sleeping in unfamiliar environments during layovers, noise, irregular schedules, and stress from occupational pressures'
+    'D. Circadian disruption (shift work, jet lag causing the body\'s sleep drive and circadian phase to conflict), sleeping in unfamiliar environments during layovers, noise, irregular schedules, and stress from occupational pressures'
   ],
   correct: 3,
   explanation: 'Aviation crew insomnia causes: circadian desynchrony (the circadian clock signals wakefulness when rest period occurs and sleepiness during duty); layover sleeping environments (unfamiliar, noisy, wrongly timed light-dark cycle); irregular scheduling (prevents establishment of consistent sleep-wake schedule); occupational stress; and hyperarousal from operational demands. Chronic insomnia leads to cumulative sleep debt and long-term health consequences.',
@@ -3779,7 +3779,7 @@ export const ahufQuestions: {
   options: [
     'A. Only in the context of food handling — flight crew are not at elevated risk for infectious disease although the mechanism involves complex physiological interactions requiring further investigation,and is therefore not a factor in the majority of aviation incidents and accidents',
     'B. Crew travel across multiple time zones and international destinations, encounter diverse populations, and work in close proximity in recirculated-air aircraft — all increasing infection exposure; illness impairs performance and may be contagious to other crew and passengers',
-    'C. Infection control is the airline\\'s responsibility and pilots have no personal obligation with no measurable effect on flight deck performance or situational awareness,and this mechanism has no clinically significant effect on aviation performance',
+    'C. Infection control is the airline\'s responsibility and pilots have no personal obligation with no measurable effect on flight deck performance or situational awareness,and this mechanism has no clinically significant effect on aviation performance',
     'D. Modern aircraft filtration systems eliminate all infection transmission risk in the cabin which only occurs in extreme physiological conditions not encountered in normal operations,with no measurable effect on flight deck performance or situational awareness'
   ],
   correct: 1,
@@ -3801,7 +3801,7 @@ export const ahufQuestions: {
 {
   question: 'The concept of human factors in aviation maintenance is relevant to flight safety because:',
   options: [
-    'A. Only the pilot\\'s human factors affect flight safety — maintenance is a purely technical function provided the relevant physiological thresholds are not exceeded during normal commercial operations,and is therefore not a factor in the majority of aviation incidents and accidents',
+    'A. Only the pilot\'s human factors affect flight safety — maintenance is a purely technical function provided the relevant physiological thresholds are not exceeded during normal commercial operations,and is therefore not a factor in the majority of aviation incidents and accidents',
     'B. Maintenance human factors are only relevant for complex transport category aircraft — general aviation maintenance is not subject to human factors risks and is therefore not a factor in the majority of aviation incidents and accidents,and can be fully mitigated by adherence to standard operating procedures',
     'C. Maintenance human factors are fully addressed by quality assurance inspections and have no residual safety impact provided the relevant physiological thresholds are not exceeded during normal commercial operations,which only occurs in extreme physiological conditions not encountered in normal operations',
     'D. Maintenance errors (including incorrect assembly, failure to complete tasks, incorrect diagnosis, and documentation errors) can introduce latent failures that only manifest during flight, potentially causing accidents remote in time and place from the maintenance event'
@@ -4018,7 +4018,7 @@ export const ahufQuestions: {
   question: 'The hazardous attitude of invulnerability is most effectively countered by:',
   options: [
     'A. Statistical information showing the accident rate for similar operations although the mechanism involves complex physiological interactions requiring further investigation,which only occurs in extreme physiological conditions not encountered in normal operations',
-    'B. The cognitive counter-statement \\'It could happen to me\\' paired with specific recall of accidents that happened to experienced, competent pilots in similar circumstances — making the risk concrete and personal rather than abstract',
+    'B. The cognitive counter-statement \'It could happen to me\' paired with specific recall of accidents that happened to experienced, competent pilots in similar circumstances — making the risk concrete and personal rather than abstract',
     'C. Regulatory threats of licence suspension for risk-taking behaviour although the mechanism involves complex physiological interactions requiring further investigation,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
     'D. Peer pressure from other crew members who adopt more conservative attitudes and is therefore not a factor in the majority of aviation incidents and accidents,and is of no operational significance below flight level 250 in modern pressurised aircraft'
   ],
@@ -4055,7 +4055,7 @@ export const ahufQuestions: {
   options: [
     'A. Highly skilled individual pilots who do not make errors that require trapping and is of no operational significance below flight level 250 in modern pressurised aircraft,and this mechanism has no clinically significant effect on aviation performance',
     'B. Automated flight systems that detect and correct all crew errors without crew involvement which cannot be modified by experience or training and affects all pilots equally,and this mechanism has no clinically significant effect on aviation performance',
-    'C. Closed-loop challenge-and-response checklists, active cross-monitoring between crew members, callouts for phase changes and critical events, and crew communication that verifies each other\\'s actions before critical phases — creating multiple opportunities to catch errors before consequences',
+    'C. Closed-loop challenge-and-response checklists, active cross-monitoring between crew members, callouts for phase changes and critical events, and crew communication that verifies each other\'s actions before critical phases — creating multiple opportunities to catch errors before consequences',
     'D. Post-flight debrief that identifies errors that occurred — trapping occurs retrospectively rather than in real time provided the relevant physiological thresholds are not exceeded during normal commercial operations,and is therefore not a factor in the majority of aviation incidents and accidents'
   ],
   correct: 2,
@@ -4090,7 +4090,7 @@ export const ahufQuestions: {
   question: 'Motivation for safety compliance in aviation is best described as:',
   options: [
     'A. Purely extrinsic — pilots comply with safety requirements only to avoid regulatory sanctions and is of no operational significance below flight level 250 in modern pressurised aircraft,and does not require any change to standard operating procedures under current regulations',
-    'B. Motivation is the airline\\'s responsibility and is determined entirely by organisational culture — individual pilots have no personal motivation for safety as the effect is fully compensated by the pressurisation system at normal cruise altitudes,although the mechanism involves complex physiological interactions requiring further investigation',
+    'B. Motivation is the airline\'s responsibility and is determined entirely by organisational culture — individual pilots have no personal motivation for safety as the effect is fully compensated by the pressurisation system at normal cruise altitudes,although the mechanism involves complex physiological interactions requiring further investigation',
     'C. Safety compliance motivation is irrelevant — all pilots comply equally with all safety requirements with no measurable effect on flight deck performance or situational awareness,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'D. Optimally a combination of intrinsic motivation (genuine professional commitment to safety as a personal value) and appropriate extrinsic incentives (just culture that rewards reporting, equitable regulatory enforcement) — intrinsic motivation produces more thorough and proactive safety behaviour'
   ],
@@ -4271,7 +4271,7 @@ export const ahufQuestions: {
   options: [
     'A. The number of radio frequencies a pilot can legally monitor simultaneously and does not require any change to standard operating procedures under current regulations,and can be fully mitigated by adherence to standard operating procedures',
     'B. A technical characteristic of aviation communication equipment that limits transmission bandwidth although the mechanism involves complex physiological interactions requiring further investigation,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
-    'C. The pilot\\'s ability to switch between tasks without any performance degradation which only occurs in extreme physiological conditions not encountered in normal operations,although the mechanism involves complex physiological interactions requiring further investigation',
+    'C. The pilot\'s ability to switch between tasks without any performance degradation which only occurs in extreme physiological conditions not encountered in normal operations,although the mechanism involves complex physiological interactions requiring further investigation',
     'D. The fundamental cognitive limit on parallel information processing — when multiple simultaneous inputs exceed channel capacity, the cognitive system filters (selects some for processing and discards others) — filtered information is effectively missed regardless of its importance'
   ],
   correct: 3,
@@ -4367,7 +4367,7 @@ export const ahufQuestions: {
   options: [
     'A. The subjective vertical always remains aligned with true gravitational vertical which cannot be modified by experience or training and affects all pilots equally,although the mechanism involves complex physiological interactions requiring further investigation',
     'B. The subjective vertical is only relevant in instrument meteorological conditions although the mechanism involves complex physiological interactions requiring further investigation,and is therefore not a factor in the majority of aviation incidents and accidents',
-    'C. During a banked coordinated turn, the resultant of gravity and centrifugal force acts perpendicular to the aircraft floor — the pilot feels pressed straight down into their seat, the otolith organs signal \\'wings-level\\', and the subjective vertical aligns with the resultant force rather than true gravity',
+    'C. During a banked coordinated turn, the resultant of gravity and centrifugal force acts perpendicular to the aircraft floor — the pilot feels pressed straight down into their seat, the otolith organs signal \'wings-level\', and the subjective vertical aligns with the resultant force rather than true gravity',
     'D. The subjective vertical cannot be displaced by any aviation manoeuvre — it is determined solely by visual cues as demonstrated by multiple controlled studies of professional flight crew performance,which only occurs in extreme physiological conditions not encountered in normal operations'
   ],
   correct: 2,
@@ -4439,7 +4439,7 @@ export const ahufQuestions: {
   options: [
     'A. Positive transfer — prior learning is helping with the new task as demonstrated by multiple controlled studies of professional flight crew performance,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
     'B. Memory interference — the pilot has forgotten the type B procedure provided the relevant physiological thresholds are not exceeded during normal commercial operations,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
-    'C. Negative transfer — an automated motor pattern from aircraft type A is interfering with the correct response required for aircraft type B, causing the wrong motor programme to be executed despite the pilot\\'s intention to do otherwise',
+    'C. Negative transfer — an automated motor pattern from aircraft type A is interfering with the correct response required for aircraft type B, causing the wrong motor programme to be executed despite the pilot\'s intention to do otherwise',
     'D. Cognitive overload — the pilot is unable to process the new information required for the type B aircraft provided the pilot has completed the required recurrency training within the preceding 90 days,as the effect is fully compensated by the pressurisation system at normal cruise altitudes'
   ],
   correct: 2,
@@ -4462,9 +4462,9 @@ export const ahufQuestions: {
   question: 'The locus of control concept relevant to aviation safety describes:',
   options: [
     'A. The legal authority structure that controls who can make what decisions in the cockpit although the mechanism involves complex physiological interactions requiring further investigation,and this mechanism has no clinically significant effect on aviation performance',
-    'B. The regulator\\'s control over pilot behaviour through licensing requirements which only occurs in extreme physiological conditions not encountered in normal operations,and does not require any change to standard operating procedures under current regulations',
-    'C. The automation system\\'s control of aircraft systems in highly automated aircraft as demonstrated by multiple controlled studies of professional flight crew performance,and does not require any change to standard operating procedures under current regulations',
-    'D. An individual\\'s belief about the degree to which they can control outcomes in their environment — internal locus (belief that personal actions determine outcomes) is associated with better safety behaviours; external locus (outcomes are determined by fate or external factors) is associated with passive risk acceptance'
+    'B. The regulator\'s control over pilot behaviour through licensing requirements which only occurs in extreme physiological conditions not encountered in normal operations,and does not require any change to standard operating procedures under current regulations',
+    'C. The automation system\'s control of aircraft systems in highly automated aircraft as demonstrated by multiple controlled studies of professional flight crew performance,and does not require any change to standard operating procedures under current regulations',
+    'D. An individual\'s belief about the degree to which they can control outcomes in their environment — internal locus (belief that personal actions determine outcomes) is associated with better safety behaviours; external locus (outcomes are determined by fate or external factors) is associated with passive risk acceptance'
   ],
   correct: 3,
   explanation: 'Locus of control in aviation: internal locus of control (belief that personal actions meaningfully affect outcomes) is associated with: more thorough pre-flight planning; proactive fatigue management; assertive CRM behaviours; and more conservative risk assessment. External locus (belief that outcomes are determined by fate or external factors) is associated with: passive risk acceptance (\'if something goes wrong it\'s just bad luck\'); reduced pre-flight preparation; and weaker advocacy in CRM situations.',
@@ -4473,9 +4473,9 @@ export const ahufQuestions: {
 {
   question: 'Self-concept and its relevance to aviation safety involves:',
   options: [
-    'A. A pilot\\'s self-concept as a competent, professional aviator provides intrinsic motivation for thorough preparation and standards maintenance; however, an inflated self-concept (excessive self-confidence) can produce the invulnerability attitude and reduce willingness to acknowledge limitations or seek assistance',
+    'A. A pilot\'s self-concept as a competent, professional aviator provides intrinsic motivation for thorough preparation and standards maintenance; however, an inflated self-concept (excessive self-confidence) can produce the invulnerability attitude and reduce willingness to acknowledge limitations or seek assistance',
     'B. Self-concept has no relationship to aviation safety — only technical skills matter and this mechanism has no clinically significant effect on aviation performance,as demonstrated by multiple controlled studies of professional flight crew performance',
-    'C. Self-concept is only relevant during initial flight training — experienced pilots\\' self-concept has no aviation safety impact and can be fully mitigated by adherence to standard operating procedures,and does not require any change to standard operating procedures under current regulations',
+    'C. Self-concept is only relevant during initial flight training — experienced pilots\' self-concept has no aviation safety impact and can be fully mitigated by adherence to standard operating procedures,and does not require any change to standard operating procedures under current regulations',
     'D. All self-concepts are equally beneficial to aviation safety — negative self-assessment is the only concerning self-concept which cannot be modified by experience or training and affects all pilots equally,and is therefore not a factor in the majority of aviation incidents and accidents'
   ],
   correct: 0,
@@ -4511,7 +4511,7 @@ export const ahufQuestions: {
   options: [
     'A. The pilot choosing the safer of the two conflicting options in most cases and is therefore not a factor in the majority of aviation incidents and accidents,and this response is identical in all healthy individuals regardless of age or fitness level',
     'B. A period of inaction while the pilot resolves the dissonance through deliberate analysis which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,and this response is identical in all healthy individuals regardless of age or fitness level',
-    'C. Rationalisation of the riskier option — the pilot\\'s stronger drive (desire to complete the task, commercial pressure, social expectation) leads to dismissing evidence supporting the safer option and amplifying evidence supporting continuation',
+    'C. Rationalisation of the riskier option — the pilot\'s stronger drive (desire to complete the task, commercial pressure, social expectation) leads to dismissing evidence supporting the safer option and amplifying evidence supporting continuation',
     'D. Equal likelihood of choosing the safer or riskier option — cognitive dissonance has no directional bias and is of no operational significance below flight level 250 in modern pressurised aircraft,although the mechanism involves complex physiological interactions requiring further investigation'
   ],
   correct: 2,
@@ -4629,7 +4629,7 @@ export const ahufQuestions: {
 {
   question: 'Effective delegation in flight operations requires:',
   options: [
-    'A. The captain to delegate all tasks to the co-pilot to minimise the captain\\'s workload provided the relevant physiological thresholds are not exceeded during normal commercial operations',
+    'A. The captain to delegate all tasks to the co-pilot to minimise the captain\'s workload provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'B. Delegation only of physical tasks — cognitive tasks must always be performed by the captain as demonstrated by multiple controlled studies of professional flight crew performance,and does not require any change to standard operating procedures under current regulations',
     'C. Matching tasks to the crew member best placed to perform them, clearly communicating the delegation, confirming understanding, and monitoring completion — not delegating and forgetting',
     'D. The co-pilot to request permission before performing any delegated task which cannot be modified by experience or training and affects all pilots equally,and this mechanism has no clinically significant effect on aviation performance'
@@ -4653,7 +4653,7 @@ export const ahufQuestions: {
 {
   question: 'Situational awareness loss in high-workload situations is characterised by:',
   options: [
-    'A. Complete loss of all sensory information about the aircraft\\'s state and this mechanism has no clinically significant effect on aviation performance,and is therefore not a factor in the majority of aviation incidents and accidents',
+    'A. Complete loss of all sensory information about the aircraft\'s state and this mechanism has no clinically significant effect on aviation performance,and is therefore not a factor in the majority of aviation incidents and accidents',
     'B. Failure to update the mental model of the situation as conditions change — the pilot is still operating from an outdated understanding (for example, believing the aircraft is at its cleared altitude when it has already deviated) while focusing entirely on an immediate task',
     'C. SA loss only occurs during emergencies — normal operations never result in SA degradation with no measurable effect on flight deck performance or situational awareness,and is of no operational significance below flight level 250 in modern pressurised aircraft',
     'D. SA loss always results in immediate aircraft accident or incident provided the relevant physiological thresholds are not exceeded during normal commercial operations,and does not require any change to standard operating procedures under current regulations'
@@ -4774,7 +4774,7 @@ export const ahufQuestions: {
   question: 'The impact of personal and organisational stress on flight crew performance can be mitigated by:',
   options: [
     'A. Keeping all personal problems completely separate from work — no cross-contamination should occur as demonstrated by multiple controlled studies of professional flight crew performance,which only occurs in extreme physiological conditions not encountered in normal operations',
-    'B. Stress mitigation is entirely the individual\\'s responsibility — airlines have no role in crew stress management which only occurs in extreme physiological conditions not encountered in normal operations,and is therefore not a factor in the majority of aviation incidents and accidents',
+    'B. Stress mitigation is entirely the individual\'s responsibility — airlines have no role in crew stress management which only occurs in extreme physiological conditions not encountered in normal operations,and is therefore not a factor in the majority of aviation incidents and accidents',
     'C. Increasing flying hours when stressed to maintain currency and improve confidence and can be fully mitigated by adherence to standard operating procedures,with no measurable effect on flight deck performance or situational awareness',
     'D. IMSAFE self-assessment before each flight, honest declaration of significant personal stressors that may affect performance, employee assistance programmes, peer support programmes, and an organisational culture that does not penalise honest disclosure of fitness concerns'
   ],
@@ -4787,7 +4787,7 @@ export const ahufQuestions: {
   options: [
     'A. Only through physical strength requirements for aircraft control — no other connection exists and can be fully mitigated by adherence to standard operating procedures,which only occurs in extreme physiological conditions not encountered in normal operations',
     'B. Aviation medical standards ensure all certificated pilots maintain equivalent physical fitness regardless of their lifestyle and is of no operational significance below flight level 250 in modern pressurised aircraft,provided the pilot has completed the required recurrency training within the preceding 90 days',
-    'C. Physical fitness only affects the initial phase of a pilot\\'s career — it becomes irrelevant with experience and is therefore not a factor in the majority of aviation incidents and accidents,and this mechanism has no clinically significant effect on aviation performance',
+    'C. Physical fitness only affects the initial phase of a pilot\'s career — it becomes irrelevant with experience and is therefore not a factor in the majority of aviation incidents and accidents,and this mechanism has no clinically significant effect on aviation performance',
     'D. Physical fitness improves cardiovascular reserve (better G tolerance, hypoxia resistance from higher VO2max), reduces the rate of fatigue accumulation, improves sleep quality, improves stress resilience, and reduces long-term cardiovascular disease risk — all directly relevant to sustained aviation performance'
   ],
   correct: 3,
@@ -4823,7 +4823,7 @@ export const ahufQuestions: {
   options: [
     'A. A pilot flying from sea level to 18,000 ft in an unpressurised aircraft will have trapped body gases contract to half their sea-level volume which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,with no measurable effect on flight deck performance or situational awareness',
     'B. Gas volume changes at altitude are negligible below 30,000 ft and have no practical aviation relevance and this mechanism has no clinically significant effect on aviation performance,and can be fully mitigated by adherence to standard operating procedures',
-    'C. Boyle\\'s law only applies to gases in sealed containers — body gases are not subject to Boyle\\'s law because they are in soft tissue environments which only occurs in extreme physiological conditions not encountered in normal operations,and is therefore not a factor in the majority of aviation incidents and accidents',
+    'C. Boyle\'s law only applies to gases in sealed containers — body gases are not subject to Boyle\'s law because they are in soft tissue environments which only occurs in extreme physiological conditions not encountered in normal operations,and is therefore not a factor in the majority of aviation incidents and accidents',
     'D. At 18,000 ft (pressure approximately half sea-level), trapped body gases double in volume compared to sea level — causing middle ear barotrauma if equalisation fails, intestinal discomfort, and expansion of any gas trapped in tooth cavities or under fillings'
   ],
   correct: 3,
@@ -4846,9 +4846,9 @@ export const ahufQuestions: {
   question: 'Henry\'s law explains why aviators must observe a surface interval before flying after scuba diving because:',
   options: [
     'A. The elevated oxygen dissolved during diving creates an oxidative hazard if the diver then breathes high-altitude air and is of no operational significance below flight level 250 in modern pressurised aircraft',
-    'B. Henry\\'s law only applies to commercial diving and has no relevance to recreational diving before flight and can be fully mitigated by adherence to standard operating procedures,which cannot be modified by experience or training and affects all pilots equally',
+    'B. Henry\'s law only applies to commercial diving and has no relevance to recreational diving before flight and can be fully mitigated by adherence to standard operating procedures,which cannot be modified by experience or training and affects all pilots equally',
     'C. The elevated nitrogen dissolved in body tissues during diving must be allowed to off-gas to reduce the risk of bubble formation when ambient pressure is subsequently reduced at altitude',
-    'D. Henry\\'s law requires a 2-hour interval after any water activity before flying which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,although the mechanism involves complex physiological interactions requiring further investigation'
+    'D. Henry\'s law requires a 2-hour interval after any water activity before flying which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,although the mechanism involves complex physiological interactions requiring further investigation'
   ],
   correct: 2,
   explanation: 'Henry\'s law: gas solubility in liquid is proportional to its partial pressure. During scuba diving, breathing compressed air at depth (high pressure) dissolves increased nitrogen in body tissues. On surfacing, this nitrogen must off-gas slowly via the lungs. If pressure is further reduced by flying to altitude before adequate off-gassing, the supersaturated nitrogen forms gas bubbles in tissues and blood — decompression sickness. The required surface interval allows sufficient off-gassing.',
@@ -4860,7 +4860,7 @@ export const ahufQuestions: {
     'A. The rapid forward acceleration during the application of go-around thrust causes the resultant of thrust and gravity to produce a combined force that acts backward and downward on the pilot — the otolith organs interpret this as a pitch-up attitude, creating a compelling illusion of climbing too steeply',
     'B. The sudden pitch-up attitude of the aircraft causes the pilot to feel weightless which cannot be modified by experience or training and affects all pilots equally,provided the pilot has completed the required recurrency training within the preceding 90 days',
     'C. Visual cues from the runway disappear rapidly during the go-around, eliminating visual references and does not require any change to standard operating procedures under current regulations,which only occurs in extreme physiological conditions not encountered in normal operations',
-    'D. The landing gear retraction causes a change in the aircraft\\'s aerodynamic pitching moment that the pilot perceives as a pitch-up attitude and this mechanism has no clinically significant effect on aviation performance,which cannot be modified by experience or training and affects all pilots equally'
+    'D. The landing gear retraction causes a change in the aircraft\'s aerodynamic pitching moment that the pilot perceives as a pitch-up attitude and this mechanism has no clinically significant effect on aviation performance,which cannot be modified by experience or training and affects all pilots equally'
   ],
   correct: 0,
   explanation: 'Somatogravic illusion during go-around: as TOGA thrust is applied, the aircraft accelerates rapidly forward. The combined resultant of this forward acceleration force and gravity creates a force vector directed backward and downward relative to the pilot. The otolith organs sense this resultant as a tilt (pitch-up). The pilot perceives they are pitching nose-up steeply, creates an instinct to push forward on the controls. This has caused aircraft to contact the ground during go-arounds. Instrument reference during all power applications is essential.',
@@ -4990,7 +4990,7 @@ export const ahufQuestions: {
   question: 'Sensory illusions in general — their classification in aviation includes:',
   options: [
     'A. Only visual illusions — vestibular illusions are not classified as sensory illusions although the mechanism involves complex physiological interactions requiring further investigation,and does not require any change to standard operating procedures under current regulations',
-    'B. Sensory illusions can always be overcome by the pilot\\'s knowledge that they are illusory — awareness eliminates the effect with no measurable effect on flight deck performance or situational awareness,provided the pilot has completed the required recurrency training within the preceding 90 days',
+    'B. Sensory illusions can always be overcome by the pilot\'s knowledge that they are illusory — awareness eliminates the effect with no measurable effect on flight deck performance or situational awareness,provided the pilot has completed the required recurrency training within the preceding 90 days',
     'C. Illusions in aviation only occur in IMC and have no relevance to VMC operations which cannot be modified by experience or training and affects all pilots equally,and can be fully mitigated by adherence to standard operating procedures',
     'D. Visual illusions (runway slope, width, black hole approach, terrain slope, rain refraction); vestibular/spatial disorientation illusions (leans, graveyard spiral, Coriolis, somatogravic, somatogyral); and pressure illusions (alternobaric vertigo, flicker vertigo) — all potentially affecting aviation performance'
   ],
@@ -5338,7 +5338,7 @@ export const ahufQuestions: {
   question: 'The concept of \'workload\' in aviation human factors encompasses both:',
   options: [
     'A. Only objective task demands — pilot perception of workload is irrelevant and this response is identical in all healthy individuals regardless of age or fitness level,which only occurs in extreme physiological conditions not encountered in normal operations',
-    'B. Objective task demands (the amount of work the task requires) and subjective mental workload (the pilot\\'s perceived effort to meet those demands) — both must be considered since high objective demand with low subjective workload (expert performing familiar task) differs fundamentally from low objective demand with high subjective workload (novice performing simple task)',
+    'B. Objective task demands (the amount of work the task requires) and subjective mental workload (the pilot\'s perceived effort to meet those demands) — both must be considered since high objective demand with low subjective workload (expert performing familiar task) differs fundamentally from low objective demand with high subjective workload (novice performing simple task)',
     'C. Only subjective workload — objective task demands cannot be measured although the mechanism involves complex physiological interactions requiring further investigation,with no measurable effect on flight deck performance or situational awareness',
     'D. Physical workload only — cognitive workload is not a measurable construct in aviation provided the relevant physiological thresholds are not exceeded during normal commercial operations,provided the pilot has completed the required recurrency training within the preceding 90 days'
   ],
@@ -5495,7 +5495,7 @@ export const ahufQuestions: {
   options: [
     'A. Visual acuity improves with age as the optical system becomes optimised through use and is of no operational significance below flight level 250 in modern pressurised aircraft,although the mechanism involves complex physiological interactions requiring further investigation',
     'B. Progressive loss of accommodation (presbyopia — from approximately age 40); reduced pupil size (reduced light gathering, particularly affecting low-light performance); increased lens yellowing (reduced blue light transmission affecting scotopic vision); reduced contrast sensitivity; increased susceptibility to glare; and slower dark adaptation',
-    'C. Only far visual acuity is affected by ageing — near vision and contrast sensitivity are maintained throughout the pilot\\'s career which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
+    'C. Only far visual acuity is affected by ageing — near vision and contrast sensitivity are maintained throughout the pilot\'s career which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
     'D. Visual changes from ageing are fully compensated by prescription glasses with no residual impact on aviation performance which cannot be modified by experience or training and affects all pilots equally,provided the pilot has completed the required recurrency training within the preceding 90 days'
   ],
   correct: 1,
@@ -5554,7 +5554,7 @@ export const ahufQuestions: {
   question: 'Vigilance tasks in aviation — the fundamental reason vigilance degrades over time is:',
   options: [
     'A. Fatigue accumulates rapidly during all types of monitoring tasks with no measurable effect on flight deck performance or situational awareness,although the mechanism involves complex physiological interactions requiring further investigation',
-    'B. Signal detection theory shows that in low-event-rate environments, the criterion for what counts as a \\'signal\\' shifts over time — the observer becomes less willing to commit to a detection response, missing weaker signals, because the cumulative non-events reduce the expectation of a real signal',
+    'B. Signal detection theory shows that in low-event-rate environments, the criterion for what counts as a \'signal\' shifts over time — the observer becomes less willing to commit to a detection response, missing weaker signals, because the cumulative non-events reduce the expectation of a real signal',
     'C. Vigilance is only limited by attention span — with sufficient motivation, vigilance can be maintained indefinitely as demonstrated by multiple controlled studies of professional flight crew performance,and this response is identical in all healthy individuals regardless of age or fitness level',
     'D. The human visual system bleaches photoreceptors during sustained monitoring causing physical visual fatigue and this mechanism has no clinically significant effect on aviation performance,which only occurs in extreme physiological conditions not encountered in normal operations'
   ],
@@ -5590,7 +5590,7 @@ export const ahufQuestions: {
   question: 'Human factors training that focuses on changing pilot attitudes rather than just knowledge includes:',
   options: [
     'A. Only written examinations of regulatory requirements with no measurable effect on flight deck performance or situational awareness,which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope',
-    'B. Case study analysis of accident reports to personalise risk (\\'this could have been me\\'); structured debriefs after LOFT identifying attitude-driven decisions; roleplay and scenario exercises that reveal personal attitude tendencies; and cognitive counter-statement practice that builds habit of applying counter-thoughts to recognised hazardous thoughts',
+    'B. Case study analysis of accident reports to personalise risk (\'this could have been me\'); structured debriefs after LOFT identifying attitude-driven decisions; roleplay and scenario exercises that reveal personal attitude tendencies; and cognitive counter-statement practice that builds habit of applying counter-thoughts to recognised hazardous thoughts',
     'C. Attitude change is not a goal of aviation human factors training — only knowledge and skill are targeted with no measurable effect on flight deck performance or situational awareness,which only occurs in extreme physiological conditions not encountered in normal operations',
     'D. Attitude training is always counterproductive as it undermines pilot confidence and this mechanism has no clinically significant effect on aviation performance,with no measurable effect on flight deck performance or situational awareness'
   ],
@@ -5627,7 +5627,7 @@ export const ahufQuestions: {
   options: [
     'A. Cultural factors have no influence on aviation safety — all pilots behave identically regardless of cultural background provided the relevant physiological thresholds are not exceeded during normal commercial operations,and is of no operational significance below flight level 250 in modern pressurised aircraft',
     'B. Culture only affects international operations — domestic aviation is not influenced by cultural factors although the mechanism involves complex physiological interactions requiring further investigation,and this response is identical in all healthy individuals regardless of age or fitness level',
-    'C. National culture (particularly power distance — the degree to which less powerful members defer to authority), organisational culture (the airline\\'s safety culture), professional culture (the norms of the pilot community), and cockpit culture (specific crew pair norms) all influence safety-relevant behaviours including advocacy, rule compliance, and reporting',
+    'C. National culture (particularly power distance — the degree to which less powerful members defer to authority), organisational culture (the airline\'s safety culture), professional culture (the norms of the pilot community), and cockpit culture (specific crew pair norms) all influence safety-relevant behaviours including advocacy, rule compliance, and reporting',
     'D. Aviation training has fully standardised behaviour across all cultural backgrounds — cultural differences no longer affect aviation safety which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,and is therefore not a factor in the majority of aviation incidents and accidents'
   ],
   correct: 2,
@@ -5663,7 +5663,7 @@ export const ahufQuestions: {
   options: [
     'A. Actively self-regulate against their own professional standards (personal minimums based on current currency and experience); maintain recurrency (simulator, instrument approaches, night operations); seek and accept feedback from colleagues and check captains; and honestly self-assess fitness for each duty period',
     'B. Comply with regulatory minimums only — exceeding minimums is overly conservative provided the relevant physiological thresholds are not exceeded during normal commercial operations,and this response is identical in all healthy individuals regardless of age or fitness level',
-    'C. Allow the airline\\'s rostering system to determine whether they are fit for duty — self-assessment is not required provided the relevant physiological thresholds are not exceeded during normal commercial operations,and is of no operational significance below flight level 250 in modern pressurised aircraft',
+    'C. Allow the airline\'s rostering system to determine whether they are fit for duty — self-assessment is not required provided the relevant physiological thresholds are not exceeded during normal commercial operations,and is of no operational significance below flight level 250 in modern pressurised aircraft',
     'D. Wait for formal assessment failures before identifying and addressing performance deficiencies and does not require any change to standard operating procedures under current regulations,as demonstrated by multiple controlled studies of professional flight crew performance'
   ],
   correct: 0,
@@ -5686,7 +5686,7 @@ export const ahufQuestions: {
   question: 'The final barrier in the Swiss cheese accident model — the last line of defence before an accident — is often:',
   options: [
     'A. Regulatory enforcement and can be fully mitigated by adherence to standard operating procedures,with no measurable effect on flight deck performance or situational awareness',
-    'B. The flight crew themselves — when all upstream defences (organisational, design, supervisory, procedural) have failed to prevent a hazard from reaching the operational level, the crew\\'s last-moment recognition and correction is the final barrier between an incident and an accident',
+    'B. The flight crew themselves — when all upstream defences (organisational, design, supervisory, procedural) have failed to prevent a hazard from reaching the operational level, the crew\'s last-moment recognition and correction is the final barrier between an incident and an accident',
     'C. ATC radar monitoring and can be fully mitigated by adherence to standard operating procedures,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
     'D. Automated flight control systems that prevent all controlled flight accidents although the mechanism involves complex physiological interactions requiring further investigation,and does not require any change to standard operating procedures under current regulations'
   ],
@@ -5784,7 +5784,7 @@ export const ahufQuestions: {
     'A. Disconnecting all automation whenever unexpected behaviour occurs and this response is identical in all healthy individuals regardless of age or fitness level,provided the relevant physiological thresholds are not exceeded during normal commercial operations',
     'B. Only experienced pilots on type can manage automation surprise — inexperienced pilots should not operate automated aircraft with no measurable effect on flight deck performance or situational awareness,which cannot be modified by experience or training and affects all pilots equally',
     'C. Automation surprise is eliminated in modern aircraft — all automation actions are fully predictable provided the relevant physiological thresholds are not exceeded during normal commercial operations,as the effect is fully compensated by the pressurisation system at normal cruise altitudes',
-    'D. Mode awareness discipline — verbalising mode changes, monitoring FMA (Flight Mode Annunciator) indications, briefing expected automation behaviour before critical phases, and understanding the automation\\'s logic and flight envelope protection modes so that automation actions are anticipated rather than surprising'
+    'D. Mode awareness discipline — verbalising mode changes, monitoring FMA (Flight Mode Annunciator) indications, briefing expected automation behaviour before critical phases, and understanding the automation\'s logic and flight envelope protection modes so that automation actions are anticipated rather than surprising'
   ],
   correct: 3,
   explanation: 'Managing automation surprise: mode awareness discipline is the primary tool — both crew members verbalise any mode change (\'VNAV engaged, target altitude flight level 360\'); monitor FMA for unexpected mode changes; brief expected automation behaviour before descent and approach (\'I expect LNAV/VNAV to the FAF, then ILS capture\'); understand envelope protection behaviour (why the aircraft might resist a control input); and when surprised — \'Why is the aircraft doing this?\' is the cue to check the FMA and automation mode.',
@@ -5891,7 +5891,7 @@ export const ahufQuestions: {
   options: [
     'A. Alcohol metabolism proceeds at a fixed rate of approximately 10 to 15 mL per hour — significant consumption (6 or more standard drinks) takes 6 to 9 hours for BAC to return to zero, after which hangover effects persist for an additional 12 to 24 hours. The combined elimination and hangover period can extend well into the following morning',
     'B. Alcohol is fully metabolised within 4 hours regardless of quantity consumed which does not affect the pilot\'s ability to maintain aircraft control within normal flight envelope,although the mechanism involves complex physiological interactions requiring further investigation',
-    'C. The \\'8 hours from bottle to throttle\\' rule ensures that no residual alcohol effect is present by report time which only occurs in extreme physiological conditions not encountered in normal operations,and this response is identical in all healthy individuals regardless of age or fitness level',
+    'C. The \'8 hours from bottle to throttle\' rule ensures that no residual alcohol effect is present by report time which only occurs in extreme physiological conditions not encountered in normal operations,and this response is identical in all healthy individuals regardless of age or fitness level',
     'D. Only individuals with liver disease retain alcohol long enough for morning-after effects and does not require any change to standard operating procedures under current regulations,provided the relevant physiological thresholds are not exceeded during normal commercial operations'
   ],
   correct: 0,
@@ -5986,7 +5986,7 @@ export const ahufQuestions: {
   question: 'The physiological basis of fatigue-induced microsleeps explains why:',
   options: [
     'A. Microsleeps are immediately recognisable by the pilot who can then take corrective action as demonstrated by multiple controlled studies of professional flight crew performance,which only occurs in extreme physiological conditions not encountered in normal operations',
-    'B. Fatigue-induced microsleeps (3 to 30 second episodes of sleep onset) occur without warning and without the pilot\\'s awareness — during the microsleep, the pilot is unresponsive to the environment but typically has no subjective experience of having been asleep, making them particularly insidious',
+    'B. Fatigue-induced microsleeps (3 to 30 second episodes of sleep onset) occur without warning and without the pilot\'s awareness — during the microsleep, the pilot is unresponsive to the environment but typically has no subjective experience of having been asleep, making them particularly insidious',
     'C. Microsleeps only occur after complete sleep deprivation exceeding 36 hours and this response is identical in all healthy individuals regardless of age or fitness level,and this mechanism has no clinically significant effect on aviation performance',
     'D. Modern aircraft autopilot systems can detect microsleeps and alert the crew and is therefore not a factor in the majority of aviation incidents and accidents,and can be fully mitigated by adherence to standard operating procedures'
   ],
