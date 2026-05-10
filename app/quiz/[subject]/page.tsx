@@ -24,6 +24,7 @@ try { cplAero       = require('../../../lib/questions-cada').cadaQuestions } cat
 try { cplFpa        = require('../../../lib/questions-cfpa').cfpaQuestions } catch {}
 try { pplBank       = require('../../../lib/questions-ppla').pplaQuestions } catch {}
 try { irexBank      = require('../../../lib/questions-irex').irexQuestions } catch {}
+try { airLawAtpl = require('../../../lib/questions-aalw').aalwQuestions } catch {}
 
 const FULL_BANKS: Record<string, any[]> = {
   'Flight Rules and Air Law':         cplAirLaw,
