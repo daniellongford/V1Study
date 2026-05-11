@@ -131,7 +131,7 @@ export default function ProgressPage() {
                     </div>
                   </div>
                   <div style={{ background: '#f1f5f9', borderRadius: '99px', height: '6px', overflow: 'hidden', marginBottom: '8px' }}>
-                    <div style={{ height: '100%', background: color(s.best), borderRadius: '99px', width: Math.min(s.best, 100) + '%' }}></div>
+                    <div style={{ height: '100%', background: color(s.avg), borderRadius: '99px', width: Math.min(s.avg, 100) + '%' }}></div>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span style={{ fontSize: '12px', color: s.best >= 70 ? '#16a34a' : '#dc2626', fontWeight: '600' }}>{s.best >= 70 ? '✓ Pass achieved' : '✗ Not yet passing'}</span>
