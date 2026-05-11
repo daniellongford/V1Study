@@ -1,182 +1,184 @@
 'use client'
-import { useState, useEffect } from 'react'
-import { supabase } from '../../lib/supabase'
+import { useEffect, useState } from 'react'
 
-const plans = [
-  {
-    name: 'PPL Pack',
-    price: '$9.99',
-    period: 'per month',
-    priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz',
-    color: '#10b981',
-    description: 'Perfect for student pilots taking their PPL theory exam',
-    features: ['PPL Theory exam', 'Unlimited AI questions', 'Full explanations', 'CASA references', 'Progress tracking'],
-  },
-  {
-    name: 'CPL Pack',
-    price: '$19.99',
-    period: 'per month',
-    priceId: 'price_1TIP6XCbt27bkqBv9CypW42J',
-    color: '#2563eb',
-    popular: true,
-    description: 'Everything you need for your Commercial Pilot Licence',
-    features: ['All 7 CPL exams', 'Unlimited AI questions', 'Progress tracking', 'Weak area analysis', 'CASA syllabus aligned'],
-  },
-  {
-    name: 'ATPL Pack',
-    price: '$29.99',
-    period: 'per month',
-    priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn',
-    color: '#7c3aed',
-    description: 'For pilots heading to the flight deck',
-    features: ['All 7 CPL + 7 ATPL exams', 'Unlimited AI questions', 'Progress tracking', 'Weak area analysis', 'CASA MOS aligned'],
-  },
-  {
-    name: 'IREX Standalone',
-    price: '$14.99',
-    period: 'per month',
-    priceId: 'price_1TIPDdCbt27bkqBvZzwkYthb',
-    color: '#f59e0b',
-    description: 'Already have your CPL? Add the Instrument Rating',
-    features: ['IREX exam only', 'Unlimited AI questions', 'Full explanations', 'CASA references', 'Progress tracking'],
-  },
-  {
-    name: 'Full Access',
-    price: '$34.99',
-    period: 'per month',
-    priceId: 'price_1TIPBvCbt27bkqBvv4fUShu3',
-    color: '#0a1628',
-    description: 'Every exam covered — the complete V1 Study experience',
-    features: ['All 16 exams included', 'PPL + CPL + ATPL + IREX', 'Unlimited AI questions', 'Priority support', 'CASA MOS aligned'],
-  },
-]
-
-export default function PricingPage() {
-  const [user, setUser] = useState<any>(null)
-  const [loading, setLoading] = useState<string | null>(null)
-  const [userLoaded, setUserLoaded] = useState(false)
+function IntroAnimation({ onComplete }: { onComplete: () => void }) {
+  const [phase, setPhase] = useState(0)
 
   useEffect(() => {
-    supabase.auth.getUser().then(({ data }) => {
-      setUser(data.user)
-      setUserLoaded(true)
-    })
-  }, [])
+    const t1 = setTimeout(() => setPhase(1), 300)
+    const t2 = setTimeout(() => setPhase(2), 900)
+    const t3 = setTimeout(() => setPhase(3), 1500)
+    const t4 = setTimeout(() => setPhase(4), 2800)
+    const t5 = setTimeout(onComplete, 3600)
+    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5) }
+  }, [onComplete])
 
-  async function handleCheckout(priceId: string) {
-    if (!user) {
-      window.location.href = '/signup'
-      return
-    }
-    setLoading(priceId)
-    try {
-      const res = await fetch('/api/checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ priceId, email: user.email })
-      })
-      const data = await res.json()
-      if (data.url) {
-        window.location.href = data.url
-      } else {
-        alert('Something went wrong. Please try again.')
-      }
-    } catch (e) {
-      alert('Something went wrong. Please try again.')
-    }
-    setLoading(null)
-  }
+  return (
+    <div style={{ position: 'fixed', inset: 0, zIndex: 9999, background: '#060e1c', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: phase === 4 ? 0 : 1, transition: phase === 4 ? 'opacity 0.8s ease' : 'none' }}>
+      <div style={{ display: 'flex', alignItems: 'flex-end', gap: '0px', lineHeight: 1 }}>
+        <span style={{ fontSize: 'clamp(80px, 18vw, 160px)', fontWeight: '800', color: '#2563eb', fontFamily: 'system-ui, -apple-system, sans-serif', letterSpacing: '-4px', opacity: phase >= 1 ? 1 : 0, transform: phase >= 1 ? 'translateY(0px)' : 'translateY(30px)', transition: 'opacity 0.6s ease, transform 0.6s ease', lineHeight: 1 }}>
+          V1
+        </span>
+        <span style={{ fontSize: 'clamp(80px, 18vw, 160px)', fontWeight: '800', color: 'white', fontFamily: 'system-ui, -apple-system, sans-serif', letterSpacing: '-4px', opacity: phase >= 2 ? 1 : 0, transform: phase >= 2 ? 'translateY(0px)' : 'translateY(30px)', transition: 'opacity 0.6s ease, transform 0.6s ease', lineHeight: 1, marginLeft: '12px' }}>
+          Study
+        </span>
+      </div>
+      <div style={{ marginTop: '20px', fontSize: 'clamp(13px, 2vw, 18px)', fontWeight: '400', color: 'rgba(255,255,255,0.35)', fontFamily: 'system-ui, -apple-system, sans-serif', letterSpacing: '0.25em', textTransform: 'uppercase', opacity: phase >= 3 ? 1 : 0, transform: phase >= 3 ? 'translateY(0px)' : 'translateY(10px)', transition: 'opacity 0.5s ease, transform 0.5s ease' }}>
+        V1. Rotate. Pass.
+      </div>
+    </div>
+  )
+}
 
-  function buttonText(priceId: string) {
-    if (loading === priceId) return 'Loading...'
-    if (!userLoaded) return 'Get started'
-    if (!user) return 'Sign up and subscribe'
-    return 'Subscribe now'
+export default function Home() {
+  const [showIntro, setShowIntro] = useState(true)
+  const [contentVisible, setContentVisible] = useState(false)
+
+  function handleIntroComplete() {
+    setShowIntro(false)
+    setContentVisible(true)
   }
 
   return (
-    <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
-      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <a href="/" style={{ textDecoration: 'none' }}>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
-        </a>
-        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-          {user ? (
-            <a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Dashboard</a>
-          ) : (
-            <>
-              <a href="/login" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Login</a>
-              <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '8px 16px', textDecoration: 'none', fontWeight: '600', fontSize: '14px' }}>Sign up free</a>
-            </>
-          )}
-        </div>
-      </nav>
+    <>
+      {showIntro && <IntroAnimation onComplete={handleIntroComplete} />}
+      <main style={{ minHeight: '100vh', background: '#ffffff', fontFamily: 'system-ui,sans-serif', opacity: contentVisible ? 1 : 0, transition: 'opacity 0.6s ease' }}>
+        <nav style={{ padding: '1rem 2rem', borderBottom: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: '#ffffff' }}>
+          <div>
+            <span style={{ fontSize: '24px', fontWeight: '800', color: '#2563eb' }}>V1</span>
+            <span style={{ fontSize: '24px', fontWeight: '800', color: '#0a1628' }}> Study</span>
+            <div style={{ fontSize: '12px', color: '#64748b', fontStyle: 'italic' }}>V1. Rotate. Pass.</div>
+          </div>
+          <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+            <a href="#features" style={{ color: '#64748b', textDecoration: 'none' }}>Features</a>
+            <a href="#pricing" style={{ color: '#64748b', textDecoration: 'none' }}>Pricing</a>
+            <a href="/login" style={{ color: '#64748b', textDecoration: 'none' }}>Login</a>
+            <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '8px 20px', textDecoration: 'none', fontWeight: '600', fontSize: '14px' }}>Start Free Trial</a>
+          </div>
+        </nav>
 
-      <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '3rem 2rem' }}>
-        <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <h1 style={{ fontSize: '40px', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>Simple, transparent pricing</h1>
-          <p style={{ fontSize: '18px', color: '#64748b', maxWidth: '600px', margin: '0 auto' }}>
-            {user
-              ? 'Subscribe to unlock unlimited AI-generated questions based on the full CASA MOS syllabus.'
-              : 'Start with a free trial. Cancel anytime. No lock-in contracts.'}
+        <section style={{ padding: '6rem 2rem', textAlign: 'center', background: 'linear-gradient(180deg,#eff6ff 0%,#ffffff 100%)' }}>
+          <p style={{ fontSize: '13px', letterSpacing: '0.2em', color: '#2563eb', marginBottom: '1rem', fontWeight: '600' }}>AUSTRALIA&apos;S PILOT EXAM PREP PLATFORM</p>
+          <h1 style={{ fontSize: '56px', fontWeight: '800', color: '#0a1628', marginBottom: '1rem', lineHeight: 1.1 }}>
+            Your Journey to the<br />
+            <span style={{ color: '#2563eb' }}>Flight Deck</span> Starts Here
+          </h1>
+          <p style={{ fontSize: '18px', color: '#64748b', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
+            Australia&apos;s most advanced CPL, ATPL, PPL and IREX exam preparation platform. Expert-reviewed questions aligned to real CASA references. Unlimited practice.
           </p>
-        </div>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1rem' }}>
+            <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '14px 32px', fontSize: '16px', fontWeight: '600', textDecoration: 'none', display: 'inline-block' }}>Start Free Trial</a>
+            <a href="#pricing" style={{ background: 'transparent', color: '#0a1628', border: '2px solid #e2e8f0', borderRadius: '8px', padding: '14px 32px', fontSize: '16px', fontWeight: '600', textDecoration: 'none', display: 'inline-block' }}>See Pricing</a>
+          </div>
+        </section>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(200px,1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-          {plans.map((plan) => (
-            <div key={plan.name} style={{ background: 'white', borderRadius: '16px', padding: '1.5rem', border: plan.popular ? '2px solid #2563eb' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
-              {plan.popular && (
-                <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#2563eb', color: 'white', fontSize: '11px', fontWeight: '700', padding: '3px 12px', borderRadius: '99px', whiteSpace: 'nowrap' }}>
-                  MOST POPULAR
+        <section id="features" style={{ padding: '4rem 2rem', maxWidth: '1000px', margin: '0 auto' }}>
+          <h2 style={{ textAlign: 'center', fontSize: '36px', fontWeight: '700', color: '#0a1628', marginBottom: '0.5rem' }}>Every Australian Pilot Exam Covered</h2>
+          <p style={{ textAlign: 'center', color: '#64748b', marginBottom: '3rem', fontSize: '16px' }}>From your first PPL theory to your ATPL we have every exam covered</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1.5rem' }}>
+            {[
+              { title: 'PPL', full: 'Private Pilot Licence', exams: '1 combined exam', color: '#10b981', desc: 'The foundation of flight. Master the core theory required to earn your Private Pilot Licence.' },
+              { title: 'CPL', full: 'Commercial Pilot Licence', exams: '7 exams', color: '#2563eb', desc: 'All 7 CASA subjects. Built for pilots serious about going professional.' },
+              { title: 'ATPL', full: 'Airline Transport Pilot', exams: '7 exams', color: '#7c3aed', desc: 'The highest standard in Australian pilot licensing. All 7 subjects for pilots bound for the airlines.' },
+              { title: 'IREX', full: 'Instrument Rating Exam', exams: '1 exam', color: '#f59e0b', desc: 'Cleared for the clouds. Everything you need to pass the CASA Instrument Rating Exam.' },
+            ].map(function (item) {
+              return (
+                <div key={item.title} style={{ background: '#f8fafc', borderRadius: '12px', padding: '1.5rem', border: '1px solid #e2e8f0' }}>
+                  <div style={{ fontSize: '13px', fontWeight: '700', color: item.color, marginBottom: '4px', letterSpacing: '0.1em' }}>{item.title}</div>
+                  <div style={{ fontSize: '16px', fontWeight: '700', color: '#0a1628', marginBottom: '4px' }}>{item.full}</div>
+                  <div style={{ fontSize: '12px', color: item.color, fontWeight: '600', marginBottom: '8px' }}>{item.exams}</div>
+                  <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.5 }}>{item.desc}</div>
                 </div>
-              )}
-              <div style={{ fontSize: '13px', fontWeight: '700', color: plan.color, marginBottom: '4px' }}>{plan.name}</div>
-              <div style={{ fontSize: '32px', fontWeight: '800', color: '#0a1628', lineHeight: 1 }}>{plan.price}</div>
-              <div style={{ fontSize: '12px', color: '#94a3b8', marginBottom: '12px' }}>{plan.period}</div>
-              <p style={{ fontSize: '13px', color: '#64748b', marginBottom: '16px', lineHeight: 1.5, flex: 1 }}>{plan.description}</p>
-              <div style={{ marginBottom: '1.5rem' }}>
-                {plan.features.map((f) => (
-                  <div key={f} style={{ fontSize: '13px', color: '#475569', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <span style={{ color: '#16a34a', fontWeight: '700' }}>✓</span> {f}
+              )
+            })}
+          </div>
+        </section>
+
+        <section id="pricing" style={{ padding: '4rem 2rem', background: '#f8fafc' }}>
+          <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+            <h2 style={{ textAlign: 'center', fontSize: '36px', fontWeight: '700', color: '#0a1628', marginBottom: '0.5rem' }}>Simple Pricing</h2>
+            <p style={{ textAlign: 'center', color: '#64748b', marginBottom: '0.5rem' }}>Every plan includes a 7 day free trial. Full access from day one.</p>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.25rem', marginBottom: '1.25rem' }}>
+              {[
+                { plan: 'PPL Pack', price: '$9.99', period: 'per month', priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz', features: ['PPL exam prep', 'Unlimited practice questions', 'Full explanations', 'CASA references'], color: '#10b981', popular: false },
+                { plan: 'CPL Pack', price: '$19.99', period: 'per month', priceId: 'price_1TIP6XCbt27bkqBv9CypW42J', features: ['PPL + all 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], color: '#2563eb', popular: true },
+                { plan: 'ATPL Pack', price: '$29.99', period: 'per month', priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn', features: ['CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], color: '#7c3aed', popular: false },
+              ].map(function (item) {
+                return (
+                  <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '1.5rem', border: item.popular ? '2px solid #2563eb' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+                    {item.popular && (
+                      <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#2563eb', color: 'white', fontSize: '11px', fontWeight: '700', padding: '3px 12px', borderRadius: '99px', whiteSpace: 'nowrap' }}>MOST POPULAR</div>
+                    )}
+                    <div style={{ fontSize: '13px', fontWeight: '700', color: item.color, marginBottom: '4px' }}>{item.plan}</div>
+                    <div style={{ fontSize: '30px', fontWeight: '800', color: '#0a1628', lineHeight: 1 }}>{item.price}</div>
+                    <div style={{ fontSize: '12px', color: '#94a3b8', marginBottom: '1rem' }}>{item.period}</div>
+                    <div style={{ flex: 1 }}>
+                      {item.features.map(function (f) {
+                        return (
+                          <div key={f} style={{ fontSize: '12px', color: '#475569', marginBottom: '6px', display: 'flex', alignItems: 'flex-start', gap: '6px' }}>
+                            <span style={{ color: '#16a34a', fontWeight: '700', flexShrink: 0 }}>✓</span>
+                            <span>{f}</span>
+                          </div>
+                        )
+                      })}
+                    </div>
+                    <a href={`/signup?plan=${item.priceId}`} style={{ display: 'block', width: '100%', marginTop: '1.25rem', background: item.popular ? '#2563eb' : 'transparent', color: item.popular ? 'white' : item.color, border: `2px solid ${item.popular ? '#2563eb' : item.color}`, borderRadius: '8px', padding: '10px', fontWeight: '600', textDecoration: 'none', textAlign: 'center', boxSizing: 'border-box', fontSize: '13px' }}>
+                      Start free trial
+                    </a>
                   </div>
-                ))}
-              </div>
-              <button
-                onClick={() => handleCheckout(plan.priceId)}
-                disabled={loading === plan.priceId}
-                style={{ width: '100%', background: plan.popular ? '#2563eb' : loading === plan.priceId ? '#94a3b8' : 'transparent', color: plan.popular ? 'white' : loading === plan.priceId ? 'white' : plan.color, border: `2px solid ${plan.popular ? '#2563eb' : plan.color}`, borderRadius: '8px', padding: '10px', fontWeight: '600', cursor: loading === plan.priceId ? 'not-allowed' : 'pointer', fontSize: '14px' }}
-              >
-                {buttonText(plan.priceId)}
-              </button>
+                )
+              })}
             </div>
-          ))}
-        </div>
 
-        <div style={{ background: 'white', borderRadius: '12px', padding: '2rem', border: '1px solid #e2e8f0', textAlign: 'center' }}>
-          {user ? (
-            <>
-              <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Not sure which plan is right for you?</h3>
-              <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1rem' }}>Continue using the free trial to explore the platform, then subscribe when you are ready.</p>
-              <a href="/dashboard" style={{ background: '#0a1628', color: 'white', borderRadius: '8px', padding: '12px 32px', textDecoration: 'none', fontWeight: '600', fontSize: '15px', display: 'inline-block' }}>Back to dashboard →</a>
-            </>
-          ) : (
-            <>
-              <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Not sure which plan is right for you?</h3>
-              <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1rem' }}>Create a free account and explore the platform before subscribing.</p>
-              <a href="/signup" style={{ background: '#0a1628', color: 'white', borderRadius: '8px', padding: '12px 32px', textDecoration: 'none', fontWeight: '600', fontSize: '15px', display: 'inline-block' }}>Create free account →</a>
-            </>
-          )}
-        </div>
-      </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '1.25rem', maxWidth: '600px', margin: '0 auto' }}>
+              {[
+                { plan: 'IREX Standalone', price: '$14.99', period: 'per month', priceId: 'price_1TIPDdCbt27bkqBvZzwkYthb', features: ['IREX exam only', 'Unlimited practice questions', 'Full explanations', 'CASA references'], color: '#f59e0b' },
+                { plan: 'Full Access', price: '$34.99', period: 'per month', priceId: 'price_1TIPBvCbt27bkqBvv4fUShu3', features: ['Every exam included', 'PPL CPL ATPL IREX', 'Unlimited practice questions', 'Priority support'], color: '#0a1628' },
+              ].map(function (item) {
+                return (
+                  <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '1.5rem', border: '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ fontSize: '13px', fontWeight: '700', color: item.color, marginBottom: '4px' }}>{item.plan}</div>
+                    <div style={{ fontSize: '30px', fontWeight: '800', color: '#0a1628', lineHeight: 1 }}>{item.price}</div>
+                    <div style={{ fontSize: '12px', color: '#94a3b8', marginBottom: '1rem' }}>{item.period}</div>
+                    <div style={{ flex: 1 }}>
+                      {item.features.map(function (f) {
+                        return (
+                          <div key={f} style={{ fontSize: '12px', color: '#475569', marginBottom: '6px', display: 'flex', alignItems: 'flex-start', gap: '6px' }}>
+                            <span style={{ color: '#16a34a', fontWeight: '700', flexShrink: 0 }}>✓</span>
+                            <span>{f}</span>
+                          </div>
+                        )
+                      })}
+                    </div>
+                    <a href={`/signup?plan=${item.priceId}`} style={{ display: 'block', width: '100%', marginTop: '1.25rem', background: 'transparent', color: item.color, border: `2px solid ${item.color}`, borderRadius: '8px', padding: '10px', fontWeight: '600', textDecoration: 'none', textAlign: 'center', boxSizing: 'border-box', fontSize: '13px' }}>
+                      Start free trial
+                    </a>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
 
-      <footer style={{ padding: '2rem', textAlign: 'center', borderTop: '1px solid #e2e8f0', background: 'white' }}>
-        <div style={{ marginBottom: '0.5rem' }}>
-          <span style={{ fontWeight: '800', color: '#2563eb' }}>V1</span>
-          <span style={{ fontWeight: '800', color: '#0a1628' }}> Study</span>
-        </div>
-        <p style={{ fontSize: '13px', color: '#94a3b8' }}>© V1 Study · Built for Australian pilots.</p>
-      </footer>
-    </main>
+        <section style={{ padding: '4rem 2rem', background: 'white', borderTop: '1px solid #e2e8f0' }}>
+          <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
+            <h2 style={{ fontSize: '32px', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>Get in touch</h2>
+            <p style={{ fontSize: '16px', color: '#64748b', marginBottom: '2rem' }}>Questions about V1 Study or need help choosing a plan? We&apos;re here to help.</p>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a href="/contact" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 32px', textDecoration: 'none', fontWeight: '600', fontSize: '15px' }}>Get in touch</a>
+            </div>
+          </div>
+        </section>
+
+        <footer style={{ padding: '2rem', textAlign: 'center', borderTop: '1px solid #e2e8f0' }}>
+          <div style={{ marginBottom: '0.5rem' }}>
+            <span style={{ fontWeight: '800', color: '#2563eb' }}>V1</span>
+            <span style={{ fontWeight: '800', color: '#0a1628' }}> Study</span>
+          </div>
+          <p style={{ fontSize: '13px', color: '#94a3b8' }}>© V1 Study · Built for Australian pilots.</p>
+        </footer>
+      </main>
+    </>
   )
 }
