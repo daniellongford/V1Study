@@ -2,83 +2,14 @@
 import { useState, useEffect, useRef, use } from 'react'
 import { supabase } from '../../../lib/supabase'
 import { freeQuestions } from '../../../lib/questions'
+import { FULL_BANKS, PLAN_ACCESS, getLicence } from '../../../lib/question-banks'
 
-// ── Full question banks ──────────────────────────────────────────────────────
-let cplAirLaw: any[]         = []
-let cplHumanFactors: any[]   = []
-let cplMet: any[]            = []
-let cplNav: any[]            = []
-let cplAgk: any[]            = []
-let cplAero: any[]           = []
-let cplFpa: any[]            = []
-let pplBank: any[]           = []
-let irexBank: any[]          = []
-let airLawAtpl: any[]        = []
-let atplHumanFactors: any[]  = []
-
-try { cplAirLaw        = require('../../../lib/questions-clwa').clwaQuestions } catch {}
-try { cplHumanFactors  = require('../../../lib/questions-chuf').chufQuestions } catch {}
-try { cplMet           = require('../../../lib/questions-cmet').cmetQuestions } catch {}
-try { cplNav           = require('../../../lib/questions-cnav').cnavQuestions } catch {}
-try { cplAgk           = require('../../../lib/questions-cagk').cagkQuestions } catch {}
-try { cplAero          = require('../../../lib/questions-cada').cadaQuestions } catch {}
-try { cplFpa           = require('../../../lib/questions-cfpa').cfpaQuestions } catch {}
-try { pplBank          = require('../../../lib/questions-ppla').pplaQuestions } catch {}
-try { irexBank         = require('../../../lib/questions-irex').irexQuestions } catch {}
-try { airLawAtpl       = require('../../../lib/questions-aalw').aalwQuestions } catch {}
-try { atplHumanFactors = require('../../../lib/questions-ahuf').ahufQuestions } catch {}
-
-const FULL_BANKS: Record<string, any[]> = {
-  'Flight Rules and Air Law':        cplAirLaw,
-  'Human Factors':                   cplHumanFactors,
-  'Meteorology':                     cplMet,
-  'Navigation':                      cplNav,
-  'Aircraft General Knowledge':      cplAgk,
-  'Aerodynamics':                    cplAero,
-  'Operations Performance Planning': cplFpa,
-  'PPL Theory':                      pplBank,
-  'Instrument Rating':               irexBank,
-  'Air Law':                         airLawAtpl,
-  'Aerodynamics and Systems':        cplAero,
-  'Meteorology Advanced':            cplMet,
-  'Flight Planning':                 cplFpa,
-  'Performance and Loading':         cplFpa,
-  'Human Factors ATPL':              atplHumanFactors,
-}
-
-const PLAN_ACCESS: Record<string, string[]> = {
-  PPL:  ['PPL Theory'],
-  CPL:  [
-    'PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge',
-    'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law',
-  ],
-  ATPL: [
-    'PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge',
-    'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law',
-    'Air Law', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced',
-    'Flight Planning', 'Human Factors ATPL',
-  ],
-  IREX: ['Instrument Rating'],
-  FULL: [
-    'PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge',
-    'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law',
-    'Air Law', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology Advanced',
-    'Flight Planning', 'Instrument Rating', 'Human Factors ATPL',
-  ],
-}
+// ─────────────────────────────────────────────────────────────────────────────
+// This file is infrastructure — do not edit it to add question banks.
+// Add banks to lib/question-banks.ts instead.
+// ─────────────────────────────────────────────────────────────────────────────
 
 const SESSION_SIZE = 10
-
-function getLicence(subject: string) {
-  if (subject === 'PPL Theory') return 'PPL'
-  if (subject === 'Instrument Rating') return 'IREX'
-  if (subject === 'Human Factors ATPL') return 'ATPL'
-  if ([
-    'Air Law', 'Human Factors', 'Aerodynamics and Systems',
-    'Performance and Loading', 'Meteorology Advanced', 'Flight Planning',
-  ].includes(subject)) return 'ATPL'
-  return 'CPL'
-}
 
 function seenKey(subject: string) {
   return 'v1_seen_' + subject.replace(/\s+/g, '_').toLowerCase()
