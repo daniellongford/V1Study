@@ -12,7 +12,6 @@ export default function ProgressPage() {
       if (!data.user) { window.location.href = '/login'; return }
       supabase.from('scores').select('*').eq('user_id', data.user.id).order('created_at', { ascending: false }).then(({ data: rows }) => {
         if (rows) {
-          // Ensure all numeric fields are numbers not strings
           const cleaned = rows.map(r => ({
             ...r,
             score: Number(r.score),
@@ -47,6 +46,9 @@ export default function ProgressPage() {
   const totalAttempts = scores.length
   const avg = scores.length > 0 ? Math.round(scores.reduce((a, s) => a + Number(s.percentage), 0) / scores.length) : 0
   const passRate = scores.length > 0 ? Math.round(scores.filter((s) => Number(s.percentage) >= 70).length / scores.length * 100) : 0
+
+  // Average of filtered scores
+  const filteredAvg = filtered.length > 0 ? Math.round(filtered.reduce((a, s) => a + Number(s.percentage), 0) / filtered.length) : 0
 
   function color(pct: number) {
     if (pct >= 80) return '#16a34a'
@@ -137,6 +139,27 @@ export default function ProgressPage() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* OVERALL AVERAGE BAR */}
+            <div style={{ background: 'white', borderRadius: '12px', padding: '1.25rem 1.5rem', border: '1px solid #e2e8f0', marginBottom: '1.5rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+                <div>
+                  <div style={{ fontSize: '13px', fontWeight: '700', color: '#0a1628' }}>
+                    {filter === 'All' ? 'Overall average' : `${filter} average`}
+                  </div>
+                  <div style={{ fontSize: '11px', color: '#94a3b8' }}>Across all {filtered.length} attempt{filtered.length !== 1 ? 's' : ''}</div>
+                </div>
+                <div style={{ fontSize: '28px', fontWeight: '800', color: color(filteredAvg), fontFamily: 'monospace' }}>{filteredAvg}%</div>
+              </div>
+              <div style={{ background: '#f1f5f9', borderRadius: '99px', height: '8px', overflow: 'hidden' }}>
+                <div style={{ height: '100%', background: color(filteredAvg), borderRadius: '99px', width: Math.min(filteredAvg, 100) + '%', transition: 'width 0.6s ease' }}></div>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '6px' }}>
+                <span style={{ fontSize: '11px', color: '#94a3b8' }}>0%</span>
+                <span style={{ fontSize: '11px', color: '#f59e0b' }}>Pass mark 70%</span>
+                <span style={{ fontSize: '11px', color: '#94a3b8' }}>100%</span>
+              </div>
             </div>
 
             <div style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0' }}>
