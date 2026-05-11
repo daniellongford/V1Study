@@ -20,8 +20,8 @@ let pplaQuestions: any[] = []
 let irexQuestions: any[] = []
 let aalwQuestions: any[] = []
 let ahufQuestions: any[] = []
+let ametQuestions: any[] = []
 // ── Add new bank variables here ──────────────────────────────────────────────
-// let ametQuestions: any[] = []
 // let anavQuestions: any[] = []
 // let aadaQuestions: any[] = []
 // let aasyQuestions: any[] = []
@@ -38,16 +38,14 @@ try { pplaQuestions = require('./questions-ppla').pplaQuestions } catch {}
 try { irexQuestions = require('./questions-irex').irexQuestions } catch {}
 try { aalwQuestions = require('./questions-aalw').aalwQuestions } catch {}
 try { ahufQuestions = require('./questions-ahuf').ahufQuestions } catch {}
+try { ametQuestions = require('./questions-amet').ametQuestions } catch {}
 // ── Add new bank requires here ────────────────────────────────────────────────
-// try { ametQuestions = require('./questions-amet').ametQuestions } catch {}
 // try { anavQuestions = require('./questions-anav').anavQuestions } catch {}
 // try { aadaQuestions = require('./questions-aada').aadaQuestions } catch {}
 // try { aasyQuestions = require('./questions-aasy').aasyQuestions } catch {}
 // try { aafpQuestions = require('./questions-aafp').aafpQuestions } catch {}
 
 // ── Bank registry ─────────────────────────────────────────────────────────────
-// Keys are the subject display names used throughout the app.
-// Multiple keys can point to the same array (e.g. shared banks).
 export const FULL_BANKS: Record<string, any[]> = {
   // CPL subjects
   'Flight Rules and Air Law':        clwaQuestions,
@@ -65,16 +63,13 @@ export const FULL_BANKS: Record<string, any[]> = {
   'Air Law':                         aalwQuestions,
   'Human Factors ATPL':              ahufQuestions,
   'Aerodynamics and Systems':        cadaQuestions,  // replace with aadaQuestions when ready
-  'Meteorology Advanced':            cmetQuestions,  // replace with ametQuestions when ready
+  'Meteorology Advanced':            ametQuestions,
   'Navigation Advanced':             cnavQuestions,  // replace with anavQuestions when ready
   'Flight Planning':                 cfpaQuestions,  // replace with aafpQuestions when ready
   'Performance and Loading':         cfpaQuestions,  // replace with aasyQuestions when ready
-  // ── Add new subjects here ──────────────────────────────────────────────────
 }
 
 // ── Plan access control ───────────────────────────────────────────────────────
-// Lists which subject names each plan can access.
-// Must match keys in FULL_BANKS exactly.
 export const PLAN_ACCESS: Record<string, string[]> = {
   PPL: [
     'PPL Theory',
@@ -105,7 +100,6 @@ export const PLAN_ACCESS: Record<string, string[]> = {
     'Navigation Advanced',
     'Flight Planning',
     'Performance and Loading',
-    // ── Add new ATPL subjects here ───────────────────────────────────────────
   ],
   IREX: [
     'Instrument Rating',
@@ -127,12 +121,10 @@ export const PLAN_ACCESS: Record<string, string[]> = {
     'Flight Planning',
     'Performance and Loading',
     'Instrument Rating',
-    // ── Add new subjects here ────────────────────────────────────────────────
   ],
 }
 
 // ── Licence mapping ───────────────────────────────────────────────────────────
-// Used when saving scores — maps subject name to the licence it belongs to.
 export function getLicence(subject: string): string {
   if (PLAN_ACCESS.PPL.includes(subject) && !PLAN_ACCESS.CPL.includes(subject)) return 'PPL'
   if (subject === 'Instrument Rating') return 'IREX'
