@@ -32,7 +32,6 @@ export default function ContactPage() {
           <p style={{ fontSize: '16px', color: '#64748b' }}>Have a question about V1 Study? We're here to help.</p>
         </div>
 
-        {/* CONTACT CARDS */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '2.5rem' }}>
           <div style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0', textAlign: 'center' }}>
             <div style={{ fontSize: '24px', marginBottom: '8px' }}>✉️</div>
@@ -46,45 +45,22 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* CONTACT FORM */}
         {!sent ? (
           <div style={{ background: 'white', borderRadius: '16px', padding: '2rem', border: '1px solid #e2e8f0' }}>
             <h2 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', marginBottom: '1.5rem' }}>Send a message</h2>
             <div style={{ marginBottom: '1rem' }}>
               <label style={{ fontSize: '13px', fontWeight: '600', color: '#374151', display: 'block', marginBottom: '6px' }}>Your name</label>
-              <input
-                type="text"
-                placeholder="John Smith"
-                value={name}
-                onChange={e => setName(e.target.value)}
-                style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none', boxSizing: 'border-box' }}
-              />
+              <input type="text" placeholder="John Smith" value={name} onChange={e => setName(e.target.value)} style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none', boxSizing: 'border-box' }} />
             </div>
             <div style={{ marginBottom: '1rem' }}>
               <label style={{ fontSize: '13px', fontWeight: '600', color: '#374151', display: 'block', marginBottom: '6px' }}>Email address</label>
-              <input
-                type="email"
-                placeholder="john@example.com"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none', boxSizing: 'border-box' }}
-              />
+              <input type="email" placeholder="john@example.com" value={email} onChange={e => setEmail(e.target.value)} style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none', boxSizing: 'border-box' }} />
             </div>
             <div style={{ marginBottom: '1.5rem' }}>
               <label style={{ fontSize: '13px', fontWeight: '600', color: '#374151', display: 'block', marginBottom: '6px' }}>Message</label>
-              <textarea
-                placeholder="How can we help?"
-                value={message}
-                onChange={e => setMessage(e.target.value)}
-                rows={5}
-                style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none', resize: 'vertical', boxSizing: 'border-box', fontFamily: 'system-ui,sans-serif' }}
-              />
+              <textarea placeholder="How can we help?" value={message} onChange={e => setMessage(e.target.value)} rows={5} style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none', resize: 'vertical', boxSizing: 'border-box', fontFamily: 'system-ui,sans-serif' }} />
             </div>
-            <button
-              onClick={handleSubmit}
-              disabled={!name || !email || !message}
-              style={{ width: '100%', background: !name || !email || !message ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontSize: '15px', fontWeight: '600', cursor: !name || !email || !message ? 'not-allowed' : 'pointer' }}
-            >
+            <button onClick={handleSubmit} disabled={!name || !email || !message} style={{ width: '100%', background: !name || !email || !message ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontSize: '15px', fontWeight: '600', cursor: !name || !email || !message ? 'not-allowed' : 'pointer' }}>
               Send message
             </button>
           </div>
@@ -102,7 +78,7 @@ export default function ContactPage() {
           <span style={{ fontWeight: '800', color: '#2563eb' }}>V1</span>
           <span style={{ fontWeight: '800', color: '#0a1628' }}> Study</span>
         </div>
-        <p style={{ fontSize: '13px', color: '#94a3b8' }}>© 2026 V1 Study. ABN 67 533 972 478. Built for Australian pilots.</p>
+        <p style={{ fontSize: '13px', color: '#94a3b8' }}>© V1 Study · Built for Australian pilots.</p>
       </footer>
     </main>
   )
