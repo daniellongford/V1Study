@@ -21,6 +21,7 @@ let irexQuestions: any[] = []
 let aalwQuestions: any[] = []
 let ahufQuestions: any[] = []
 let ametQuestions: any[] = []
+let anavQuestions: any[] = []
 // ── Add new bank variables here ──────────────────────────────────────────────
 // let anavQuestions: any[] = []
 // let aadaQuestions: any[] = []
@@ -39,6 +40,7 @@ try { irexQuestions = require('./questions-irex').irexQuestions } catch {}
 try { aalwQuestions = require('./questions-aalw').aalwQuestions } catch {}
 try { ahufQuestions = require('./questions-ahuf').ahufQuestions } catch {}
 try { ametQuestions = require('./questions-amet').ametQuestions } catch {}
+try { anavQuestions = require('./questions-anav').anavQuestions } catch {}
 // ── Add new bank requires here ────────────────────────────────────────────────
 // try { anavQuestions = require('./questions-anav').anavQuestions } catch {}
 // try { aadaQuestions = require('./questions-aada').aadaQuestions } catch {}
