@@ -176,7 +176,7 @@ export default function Home() {
             <span style={{ fontWeight: '800', color: '#2563eb' }}>V1</span>
             <span style={{ fontWeight: '800', color: '#0a1628' }}> Study</span>
           </div>
-          <p style={{ fontSize: '13px', color: '#94a3b8' }}>© V1 Study · Built for Australian pilots.</p>
+          <p style={{ fontSize: '13px', color: '#94a3b8' }}>© V1 Study · Built for Australian pilots. · <a href="/terms" style={{ color: '#94a3b8', textDecoration: 'none' }}>Terms &amp; Conditions</a></p>
         </footer>
       </main>
     </>
