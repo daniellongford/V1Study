@@ -71,7 +71,7 @@ export default function TermsPage() {
 
       <div style={{ maxWidth: '760px', margin: '0 auto', padding: '4rem 2rem' }}>
         <h1 style={{ fontSize: '36px', fontWeight: '800', color: '#0a1628', marginBottom: '0.5rem' }}>Terms and Conditions</h1>
-        <p style={{ fontSize: '13px', color: '#94a3b8', marginBottom: '3rem' }}>Last updated May 2026 · V1 Study</p>
+        <p style={{ fontSize: '13px', color: '#94a3b8', marginBottom: '3rem' }}>V1 Study</p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           {sections.map((s) => (
