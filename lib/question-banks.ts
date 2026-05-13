@@ -8,7 +8,6 @@
 //   3. Add one line to FULL_BANKS
 //   4. Add the subject name to the relevant PLAN_ACCESS arrays
 // ─────────────────────────────────────────────────────────────────────────────
-
 let clwaQuestions: any[] = []
 let chufQuestions: any[] = []
 let cmetQuestions: any[] = []
@@ -22,12 +21,11 @@ let aalwQuestions: any[] = []
 let ahufQuestions: any[] = []
 let ametQuestions: any[] = []
 let anavQuestions: any[] = []
+let aasaQuestions: any[] = []
 // ── Add new bank variables here ──────────────────────────────────────────────
-// let anavQuestions: any[] = []
 // let aadaQuestions: any[] = []
 // let aasyQuestions: any[] = []
 // let aafpQuestions: any[] = []
-
 try { clwaQuestions = require('./questions-clwa').clwaQuestions } catch {}
 try { chufQuestions = require('./questions-chuf').chufQuestions } catch {}
 try { cmetQuestions = require('./questions-cmet').cmetQuestions } catch {}
@@ -41,12 +39,11 @@ try { aalwQuestions = require('./questions-aalw').aalwQuestions } catch {}
 try { ahufQuestions = require('./questions-ahuf').ahufQuestions } catch {}
 try { ametQuestions = require('./questions-amet').ametQuestions } catch {}
 try { anavQuestions = require('./questions-anav').anavQuestions } catch {}
+try { aasaQuestions = require('./questions-aasa').aasaQuestions } catch {}
 // ── Add new bank requires here ────────────────────────────────────────────────
-// try { anavQuestions = require('./questions-anav').anavQuestions } catch {}
 // try { aadaQuestions = require('./questions-aada').aadaQuestions } catch {}
 // try { aasyQuestions = require('./questions-aasy').aasyQuestions } catch {}
 // try { aafpQuestions = require('./questions-aafp').aafpQuestions } catch {}
-
 // ── Bank registry ─────────────────────────────────────────────────────────────
 export const FULL_BANKS: Record<string, any[]> = {
   // CPL subjects
@@ -64,13 +61,12 @@ export const FULL_BANKS: Record<string, any[]> = {
   // ATPL subjects
   'Air Law':                         aalwQuestions,
   'Human Factors ATPL':              ahufQuestions,
-  'Aerodynamics and Systems':        cadaQuestions,  // replace with aadaQuestions when ready
+  'Aerodynamics and Systems':        aasaQuestions,
   'Meteorology Advanced':            ametQuestions,
-  'Navigation Advanced':             cnavQuestions,  // replace with anavQuestions when ready
+  'Navigation Advanced':             anavQuestions,
   'Flight Planning':                 cfpaQuestions,  // replace with aafpQuestions when ready
   'Performance and Loading':         cfpaQuestions,  // replace with aasyQuestions when ready
 }
-
 // ── Plan access control ───────────────────────────────────────────────────────
 export const PLAN_ACCESS: Record<string, string[]> = {
   PPL: [
@@ -125,7 +121,6 @@ export const PLAN_ACCESS: Record<string, string[]> = {
     'Instrument Rating',
   ],
 }
-
 // ── Licence mapping ───────────────────────────────────────────────────────────
 export function getLicence(subject: string): string {
   if (PLAN_ACCESS.PPL.includes(subject) && !PLAN_ACCESS.CPL.includes(subject)) return 'PPL'
