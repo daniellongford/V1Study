@@ -29,7 +29,7 @@ export const aasaQuestions = [
     `A. The torsional stress in the propeller shaft`,
     `B. The rotational speed of the propeller`,
     `C. The pressure differential across the turbine stages`,
-    `D. The shaft power being transmitted from the engine to the propeller/gearbox — expressed as torque (Nm or ft-lb) or as percentage torque; the primary power-setting parameter for turboprop aircraft`
+    `D. The shaft power being transmitted from the engine to the propeller/gearbox`
     ],
     correct: 3,
     explanation: `Torque meter (AASA MOS 5.2): measures the torsional force (torque) in the engine output shaft. For turboprops, shaft power = torque × angular velocity. The torque meter is the primary thrust/power setting parameter — the crew sets power by targeting a specific torque value from the performance charts, rather than N1 or EPR. Expressed as Nm, ft-lb, or as percentage of maximum rated torque. Answer B.`,
@@ -39,7 +39,7 @@ export const aasaQuestions = [
     question: `Fly-by-wire (FBW) 'direct law' differs from 'normal law' in that:`,
     options: [
     `A. Direct law engages the autopilot automatically to compensate for lost protections`,
-    `B. In direct law, pilot sidestick or column inputs are transmitted directly to control surfaces as surface deflection commands — all flight envelope protections are removed and the pilot is solely responsible for staying within certified limits`,
+    `B. In direct law, pilot sidestick or column inputs are transmitted directly to control surfaces as surface deflection commands`,
     `C. Direct law provides enhanced turbulence protection by dampening rapid inputs`,
     `D. Direct law is the normal operating mode — normal law is only used in specific configurations`
     ],
@@ -64,7 +64,7 @@ export const aasaQuestions = [
     options: [
     `A. The aircraft must never exceed 2.5g in any manoeuvre`,
     `B. The aircraft can pull 2.5g indefinitely without any structural concern`,
-    `C. The aircraft structure is designed to sustain up to 2.5g without permanent deformation — this is the limit load factor; the ultimate load factor is 1.5 × 2.5 = 3.75g above which structural failure may occur`,
+    `C. The aircraft structure is designed to sustain up to 2.5g without permanent deformation`,
     `D. 2.5g is the minimum load factor required for certification testing`
     ],
     correct: 2,
@@ -76,7 +76,7 @@ export const aasaQuestions = [
     options: [
     `A. Has full autopilot control with direct manual override`,
     `B. Has no computer assistance whatsoever`,
-    `C. Has direct manual authority with inputs transmitted directly to surfaces — but all envelope protections are removed; the pilot must manually respect speed and structural limits`,
+    `C. Has direct manual authority with inputs transmitted directly to surfaces — but all envelope protections are removed`,
     `D. Has only direct mechanical cable backup with no hydraulic power`
     ],
     correct: 2,
@@ -86,7 +86,7 @@ export const aasaQuestions = [
   {
     question: `The windshield anti-icing system on a transport aircraft uses:`,
     options: [
-    `A. Electrical heating elements embedded within the laminated windshield — resistance heating keeps the glass surface above 0°C preventing ice formation; also provides rain dispersal and demisting`,
+    `A. Electrical heating elements embedded within the laminated windshield — resistance heating keeps the glass surface above 0°C preventing ice formation`,
     `B. Engine bleed air directed across the outer glass surface`,
     `C. A chemical alcohol spray from nozzles at the base of the windshield`,
     `D. Compressed air jets from the cockpit roof directed at the windshield`
@@ -112,7 +112,7 @@ export const aasaQuestions = [
     options: [
     `A. Immediately taxi back for another takeoff attempt — the RTO was successful`,
     `B. Apply the parking brake and shut down immediately — the brakes must cool overnight`,
-    `C. Remain stationary on the runway for the required brake cooling period per the brake cooling chart; do not taxi until brakes are confirmed cool (by temperature monitoring or elapsed time); coordinate with ATC and emergency services as required`,
+    `C. Remain stationary on the runway for the required brake cooling period per the brake cooling chart`,
     `D. Taxi off the runway at normal taxi speed to clear for other traffic`
     ],
     correct: 2,
@@ -124,7 +124,7 @@ export const aasaQuestions = [
     options: [
     `A. At low altitude and high weight — the aerodynamic forces in this configuration do not produce this effect`,
     `B. At low weight and low altitude`,
-    `C. At very high altitude, high weight, and in a high-temperature environment (ISA+) — the combination of high weight (higher stall speed), high altitude (lower Mach buffet onset IAS), and high temperature (lower LSS and lower Mach buffet IAS) gives the smallest operating speed margin`,
+    `C. At very high altitude, high weight, and in a high-temperature environment — the combination compresses the speed range between stall buffet and Mach buffet to a minimum`,
     `D. Below the transition altitude in instrument meteorological conditions`
     ],
     correct: 2,
@@ -136,7 +136,7 @@ export const aasaQuestions = [
     options: [
     `A. Only VMO/MMO and VS — all other aircraft limitations such as gear speed and flap speed are advisory only and not part of the certified envelope — the aerodynamic forces in this configuration do not produce this effect`,
     `B. The pilot's physical reaction time and crew certification limits only — the structural envelope is defined by human performance constraints rather than aerodynamic or structural limits`,
-    `C. Multiple intersecting limits: minimum speed (stall/buffet onset), maximum speed (VMO/MMO), maximum altitude (service ceiling/pressurisation limit), maximum load factor (positive and negative), and structural limits — the operational envelope is the region where all limits are simultaneously satisfied`,
+    `C. Multiple intersecting limits: minimum speed (stall/buffet onset), maximum speed (VMO/MMO), maximum altitude (service ceiling/pressurisation limit)`,
     `D. ATC-assigned speed and altitude constraints for each phase of flight — the operational envelope is defined entirely by the ATC clearance and cannot be exceeded regardless of aircraft capability`
     ],
     correct: 2,
@@ -149,7 +149,7 @@ export const aasaQuestions = [
     `A. EGT is always lower than TIT, making it easier to measure accurately`,
     `B. EGT sensors are lighter than TIT sensors reducing empty weight`,
     `C. CASA regulations prohibit direct turbine inlet temperature measurement`,
-    `D. TIT can reach 1500-1700°C — beyond conventional thermocouple range; EGT is measured downstream at lower temperatures where chromel-alumel thermocouples operate accurately`
+    `D. TIT can reach 1500-1700°C — beyond conventional thermocouple range`
     ],
     correct: 3,
     explanation: `Modern TIT reaches 1500-1700°C (above nickel alloy melting point of ≈1300°C — blades survive only with internal cooling). Direct measurement is impossible with conventional sensors. EGT thermocouples are located downstream (between HP and LP turbines, or at LP turbine exit) where temperatures are 600-900°C — within thermocouple capability. EGT is calibrated against known TIT for limit purposes. Some engines use ITT (inter-turbine temperature) or TGT (total gas temperature). Answer B.`,
@@ -159,7 +159,7 @@ export const aasaQuestions = [
     question: `Load shedding during an electrical emergency involves:`,
     options: [
     `A. Physically removing heavy avionics from the cockpit`,
-    `B. Automatically or manually disconnecting non-essential electrical loads (galleys, in-flight entertainment, cargo heating) to preserve remaining power capacity for flight-critical systems`,
+    `B. Automatically or manually disconnecting non-essential electrical loads (galleys`,
     `C. Reducing fuel flow to all engines simultaneously`,
     `D. Transferring all loads to the battery bus immediately`
     ],
@@ -170,7 +170,7 @@ export const aasaQuestions = [
   {
     question: `The reason transport aircraft have variable incidence tailplanes (trimmable horizontal stabilisers) rather than simple fixed tailplanes with only elevators is:`,
     options: [
-    `A. Large trim changes (flap extension, CG movement, speed changes) require substantial, sustained tail force changes — continuously deflecting the elevator to provide this force creates significant trim drag; the THS repositions to the neutral-trim position, removing the sustained elevator deflection and its associated drag`,
+    `A. Large trim changes (flap extension, CG movement, speed changes) require substantial, sustained tail force changes`,
     `B. Fixed tailplanes are too heavy for large aircraft`,
     `C. Variable incidence allows the tailplane to be used as an additional control surface during approach only`,
     `D. Fixed tailplanes cannot provide sufficient authority for autopilot pitch control`
@@ -197,7 +197,7 @@ export const aasaQuestions = [
     `A. The aircraft must immediately declare an emergency and descend`,
     `B. The aircraft must divert immediately — engine-out cruise above 10,000 ft is prohibited`,
     `C. The failed engine must be restarted or the aircraft lands immediately`,
-    `D. Available thrust from remaining engines equals the drag at the optimum engine-out cruise speed — above this altitude level flight cannot be maintained and the aircraft must descend`
+    `D. Available thrust from remaining engines equals the drag at the optimum engine-out cruise speed`
     ],
     correct: 3,
     explanation: `Engine-out ceiling: with one engine failed, available thrust is roughly halved. At normal cruise altitude this may be insufficient to maintain level flight — the aircraft must drift down to the ceiling where thrust equals drag. The optimum engine-out cruise speed is flown to maximise the ceiling altitude achievable. The crew must verify the drift-down altitude provides terrain clearance on the route and coordinate a diversion. Answer B.`,
@@ -218,7 +218,7 @@ export const aasaQuestions = [
   {
     question: `The landing gear squat switch (WOW) is critical for the landing ground spoiler system because:`,
     options: [
-    `A. The WOW switch provides the air/ground logic signal — ground spoilers only deploy when WOW indicates weight is on the wheels; prevents inadvertent deployment in flight which would cause dangerous loss of lift on final approach`,
+    `A. The WOW switch provides the air/ground logic signal — ground spoilers only deploy when WOW indicates weight is on the wheels`,
     `B. The squat switch determines tyre inflation pressure automatically`,
     `C. The squat switch activates the landing lights automatically on touchdown`,
     `D. The WOW switch enables the reverse thrust systems by direct mechanical linkage`
@@ -232,7 +232,7 @@ export const aasaQuestions = [
     options: [
     `A. Create aerodynamic drag to slow the aircraft`,
     `B. Reduce runway required by acting as aerodynamic brakes`,
-    `C. Dump wing lift immediately — transferring full aircraft weight to the wheels at high speed, enabling the anti-skid system to operate at maximum effectiveness as soon as the wheels are on the runway`,
+    `C. Dump wing lift immediately — transferring full aircraft weight to the wheels at high speed`,
     `D. Prevent the aircraft from bouncing back into the air after touchdown`
     ],
     correct: 2,
@@ -244,7 +244,7 @@ export const aasaQuestions = [
     options: [
     `A. Anti-icing is used on wings; de-icing on engines only`,
     `B. Anti-icing uses hot air; de-icing always uses fluid`,
-    `C. Anti-icing prevents ice formation (continuously heating the surface); de-icing removes ice that has already formed (cyclic systems that crack and shed accumulated ice)`,
+    `C. Anti-icing prevents ice formation (continuously heating the surface)`,
     `D. Anti-icing is CASA-required; de-icing is optional`
     ],
     correct: 2,
@@ -256,7 +256,7 @@ export const aasaQuestions = [
     options: [
     `A. Roll control only — cannot be used as speedbrakes`,
     `B. Ground spoilers for lift dumping only — no in-flight function`,
-    `C. Roll control (differential), speedbrake (symmetric in-flight), and ground spoilers (all panels fully deployed after touchdown to dump lift and maximise braking)`,
+    `C. Roll control (differential), speedbrake (symmetric in-flight), and ground spoilers`,
     `D. Speed control only — ailerons provide all roll authority`
     ],
     correct: 2,
@@ -268,7 +268,7 @@ export const aasaQuestions = [
     options: [
     `A. VMD (minimum drag speed) — because minimum drag means minimum thrust required, which directly gives maximum excess thrust and therefore best rate of climb`,
     `B. VR (rotation speed) — because initiating rotation at this speed produces the maximum pitch rate and therefore fastest climb away from the ground`,
-    `C. The speed at which the excess power (power available − power required) is maximum — for a jet, this is typically above VMD; because power = thrust × TAS, and jet thrust is approximately constant with speed, maximum excess power occurs at a higher speed than maximum excess thrust`,
+    `C. The speed at which the excess power (power available − power required) is maximum — for a jet, this is typically above VMD`,
     `D. 1.5 × VS (1.5 times stall speed) — because this provides the optimal margin above stall for sustained climb performance`
     ],
     correct: 2,
@@ -290,7 +290,7 @@ export const aasaQuestions = [
   {
     question: `An aircraft at FL350, weight 210,000 kg, span-wise lift distribution is nearly elliptical. The induced drag at M0.82 increases if the crew selects a higher altitude (FL370) at the same Mach because:`,
     options: [
-    `A. At FL370, air density is lower; for the same lift (= weight), the wing must increase CL — and induced drag is proportional to CL squared — so induced drag increases`,
+    `A. At FL370, air density is lower`,
     `B. At FL370 the higher TAS increases induced drag for the same weight`,
     `C. Induced drag is independent of altitude — only weight affects it`,
     `D. The higher altitude reduces the effective aspect ratio of the wing`
@@ -327,7 +327,7 @@ export const aasaQuestions = [
     question: `The function of the speed trim system (STS) on a twin-engine narrowbody jet is to:`,
     options: [
     `A. Limit the speed to VMO at all times`,
-    `B. Automatically adjust the stabiliser trim to maintain a stable stick force gradient with speed — preventing the aircraft from becoming speed unstable (where pulling back increases rather than decreases airspeed), particularly at low speed and high thrust`,
+    `B. Automatically adjust the stabiliser trim to maintain a stable stick force gradient with speed`,
     `C. Provide speed information to the autothrottle system`,
     `D. Trim the speedbrakes for optimal drag in descent`
     ],
@@ -351,7 +351,7 @@ export const aasaQuestions = [
     question: `During a glide at idle power, the maximum glide distance is achieved at:`,
     options: [
     `A. Maximum speed — more ground covered before descent`,
-    `B. VMD — speed for maximum L/D; the glide ratio equals L/D, so maximum L/D gives maximum distance per unit altitude lost`,
+    `B. VMD — speed for maximum L/D`,
     `C. Minimum speed — slowest descent rate`,
     `D. The speed for minimum rate of descent`
     ],
@@ -365,7 +365,7 @@ export const aasaQuestions = [
     `A. Turbine overtemperature from idle fuel flow maintaining high EGT`,
     `B. Compressor stall at idle due to low airflow velocity`,
     `C. Turbine blade erosion from unburned fuel at idle fuel flow rates`,
-    `D. Thermal shock on the subsequent application of high thrust — the turbine is very cool at idle; rapid advancement to TOGA creates a sudden large temperature increase causing high thermal gradient stresses in the turbine disc and blade roots`
+    `D. Thermal shock on the subsequent application of high thrust — the turbine is very cool at idle`
     ],
     correct: 3,
     explanation: `Extended idle descent followed by TOGA (go-around) thermal shock: turbine metal cools significantly during long idle descent. When TOGA is selected, combustion temperature rises rapidly. The temperature gradient between the hot gas and the cool turbine metal produces high thermal stresses — thermal shock and fatigue. To reduce this risk: some operators require a 'warm-up' manoeuvre (brief thrust increase) during long descents; others specify a minimum descent thrust (not flight idle below certain altitude) to maintain turbine temperature. Answer B.`,
@@ -377,7 +377,7 @@ export const aasaQuestions = [
     `A. Immediately disconnects all autopilot channels — the crew must take over manually`,
     `B. Increases the decision height to 100 ft automatically`,
     `C. Activates the go-around mode automatically`,
-    `D. Switches the landing to another channel (fail-operational) — the standby channel takes over the master function and the autoland continues within the required accuracy; the crew is alerted but does not need to take over`
+    `D. Switches the landing to another channel (fail-operational)`
     ],
     correct: 3,
     explanation: `CAT IIIB fail-operational (Land 3) system: when one autopilot channel fails at any point during the approach, the system degrades by one level but remains operational. A Land 3 system has fail-operational, fail-operational capability — two successive failures still allow a safe autoland. At 200 ft RA: a master channel failure → standby channel takes over seamlessly → autoland continues. Crew is alerted (EICAS caution) but need not intervene unless the autoland alert panel shows a degradation below minimum required status. Answer B.`,
@@ -387,7 +387,7 @@ export const aasaQuestions = [
     question: `Chemical oxygen generators are used for passenger oxygen rather than compressed gas bottles because:`,
     options: [
     `A. Chemical generators are safer than compressed gas bottles in a pressurised aircraft`,
-    `B. They are lighter, simpler, require no pressurised gas storage or cabin pipework, and provide approximately 12-22 minutes — sufficient for crew to descend below 10,000 ft`,
+    `B. They are lighter, simpler, require no pressurised gas storage or cabin pipework, and provide approximately 12-22 minutes`,
     `C. Compressed gas bottles cannot function at the pressure altitudes encountered in flight`,
     `D. CASA regulations require chemical generators exclusively for passenger oxygen`
     ],
@@ -413,7 +413,7 @@ export const aasaQuestions = [
     `A. The aircraft has exceeded VMO/MMO by more than 10 kt — a minor exceedance triggers only a visual warning`,
     `B. The warning activates only when the autopilot is disconnected at high speed`,
     `C. Overspeed warnings are only active below FL250`,
-    `D. The aircraft is at or approaching VMO or MMO — an immediate response is required; the aural warning (clacker or chime) plus visual indication ensures the crew cannot miss it and must act immediately`
+    `D. The aircraft is at or approaching VMO or MMO — an immediate response is required`
     ],
     correct: 3,
     explanation: `Overspeed warning (AASA MOS 7.1): activates when IAS approaches or exceeds VMO or when Mach approaches or exceeds MMO. Aural (clacker/continuous tone) + visual (barber pole flashing). Crew action: retard thrust levers to idle, deploy speedbrakes (carefully — not at max deflection at near-VMO speeds), gently pitch up to reduce speed. Log confirmed exceedances for maintenance inspection. Answer B.`,
@@ -423,7 +423,7 @@ export const aasaQuestions = [
     question: `Fuel CG movement during a transoceanic flight depends on:`,
     options: [
     `A. CG always moves aft as fuel burns on all aircraft`,
-    `B. The relative position of each tank's CG versus the aircraft overall CG — the fuel management sequence is designed to keep CG within the certified envelope throughout flight`,
+    `B. The relative position of each tank's CG versus the aircraft overall CG`,
     `C. All transport fuel tanks are located at the aircraft CG so fuel burn has no effect`,
     `D. Forward CG movement with fuel burn is universal for all transport designs`
     ],
@@ -437,7 +437,7 @@ export const aasaQuestions = [
     `A. Higher force output per unit weight — pneumatics are more powerful than hydraulics`,
     `B. Immunity to temperature effects — compressed air behaves identically at all temperatures`,
     `C. Higher precision — compressed air gives more accurate actuator positioning than hydraulic oil`,
-    `D. Lower force available, slower response due to gas compressibility, but a self-replenishing supply from engine bleed — pneumatics are used for lower-force applications like boot de-icing and some door operations rather than primary flight control actuation`
+    `D. Lower force available, slower response due to gas compressibility, but a self-replenishing supply from engine bleed`
     ],
     correct: 3,
     explanation: `Pneumatic vs hydraulic comparison (AASA MOS 3.3): pneumatic systems use compressible gas — this compressibility causes slower response (the gas must compress before force is transmitted) and limits precise positioning. Force available is lower than equivalent hydraulic systems (limited by structural pressure capacity). Advantages: self-replenishing from bleed air (no reservoir needed for primary supply), simpler for applications not requiring high force or precision. Used for: boot de-icing, door seals, some emergency systems. Not used for primary flight controls (hydraulic is required). Answer B.`,
@@ -449,7 +449,7 @@ export const aasaQuestions = [
     `A. The gas temperature at the turbine inlet is actually below the melting point — this is a common misconception`,
     `B. Turbine blades rotate at such high speed that centrifugal force hardens the alloy beyond its normal melting point`,
     `C. Special platinum-alloy blades are used that have melting points above 2,000°C`,
-    `D. Turbine blades are made of single-crystal nickel superalloys with no grain boundaries, thermal barrier ceramic coatings on the external surface, and internal convective cooling channels — the blade metal temperature is maintained 300-400°C below the gas temperature`
+    `D. Turbine blades are made of single-crystal nickel superalloys with no grain boundaries, thermal barrier ceramic coatings on the external surface`
     ],
     correct: 3,
     explanation: `Enabling TIT > alloy melting point: (1) Single-crystal (SC) nickel superalloy — eliminates grain boundaries, improving creep and fatigue resistance; (2) Internal convective cooling — compressor bleed air through complex internal passages cools the blade; (3) Film cooling — hundreds of micro-holes on blade surface create a cool air film on the external surface; (4) Thermal barrier coating (TBC) — ceramic ZrO₂ layer insulates blade from hottest gas; (5) Effusion cooling. Combined effect: TIT 1,600-1,800°C, blade metal temperature approximately 1,050-1,150°C (below alloy melting point of approximately 1,300°C). Answer B.`,
@@ -458,7 +458,7 @@ export const aasaQuestions = [
   {
     question: `Control surface flutter is prevented primarily by:`,
     options: [
-    `A. Mass balancing control surfaces — adding weight forward of the hinge line moves the surface CG to or forward of the hinge, preventing the inertial coupling that drives self-sustaining flutter oscillations`,
+    `A. Mass balancing control surfaces — adding weight forward of the hinge line moves the surface CG to or forward of the hinge`,
     `B. Using hydraulic actuators that resist oscillation by their inherent stiffness`,
     `C. Flying below a maximum speed set by the flutter analysis`,
     `D. Using composite materials that absorb vibrational energy in the structure`
@@ -473,7 +473,7 @@ export const aasaQuestions = [
     `A. Evaporating liquid refrigerant in an expansion valve — the same principle as a domestic refrigerator`,
     `B. Mixing hot bleed air with cold ram air through a simple heat exchanger only`,
     `C. Pumping air through desiccant material that absorbs heat during the adsorption process`,
-    `D. Expanding hot compressed bleed air through a turbine — the expanding air does work against the turbine blades, removing energy from the airflow and cooling it; the turbine drives a fan and compressor on the same shaft`
+    `D. Expanding hot compressed bleed air through a turbine — the expanding air does work against the turbine blades, removing energy from the airflow and cooling it`
     ],
     correct: 3,
     explanation: `Air cycle machine (AASA MOS 3.4.2): hot engine bleed air is pre-cooled in a primary heat exchanger (using ram air), then compressed in the ACM compressor (raising temperature further), then cooled again in a secondary heat exchanger, then expanded through the ACM turbine. The expansion does thermodynamic work — air cools to near 0°C. The turbine shaft drives both the compressor and a ram air fan. No refrigerant is used. The ACM pack is the primary ECS cooling system on most transport jets. Answer B.`,
@@ -483,7 +483,7 @@ export const aasaQuestions = [
     question: `Electrical load shedding during emergency is performed to:`,
     options: [
     `A. Increase electrical frequency for better avionics performance`,
-    `B. Disconnect non-essential loads (galley, entertainment, cargo heating) — preserving available power for flight-critical systems and extending remaining generation capacity`,
+    `B. Disconnect non-essential loads (galley, entertainment, cargo heating)`,
     `C. Reduce aircraft weight`,
     `D. Prevent thermal damage to busbars by reducing current`
     ],
@@ -495,7 +495,7 @@ export const aasaQuestions = [
     question: `The electrical busbar (bus bar) system on a transport aircraft distributes power through a hierarchy. In a typical twin-engine aircraft, the essential bus is powered by:`,
     options: [
     `A. Only the left engine generator — the right engine generator powers only non-essential loads`,
-    `B. Multiple sources with automatic switching — normally from a TRU via the main AC bus; if main AC fails, automatically transferred to battery bus via the essential tie bus; ensures essential avionics always have power from the last available source`,
+    `B. Multiple sources with automatic switching — normally from a TRU via the main AC bus`,
     `C. The battery only — the essential bus is never connected to AC sources`,
     `D. A dedicated standby generator that only activates in emergency`
     ],
@@ -509,7 +509,7 @@ export const aasaQuestions = [
     `A. Fuel in wings increases the bending moment at the wing root by adding weight outboard`,
     `B. Wing fuel tanks provide structural rigidity through pressurisation of skin panels`,
     `C. Wing fuel moves laterally in turbulence to provide roll damping`,
-    `D. Wing fuel weight acts downward, opposing the upward aerodynamic lift force along the span, reducing the net bending moment at the wing root — allowing lighter structure or increased MTOW`
+    `D. Wing fuel weight acts downward, opposing the upward aerodynamic lift force along the span, reducing the net bending moment at the wing root`
     ],
     correct: 3,
     explanation: `Wing bending relief: lift is distributed along the wingspan, trying to bend the wing upward (maximum bending moment at root). Wing fuel weight acts downward — opposing and partially cancelling the upward lift moment. This reduces structural load at the wing root, allowing: lighter wing root structure; higher MTOW for the same structure; reduced fatigue. This is why ZFW is a structural limit — empty tanks = maximum bending moment. Answer B.`,
@@ -519,7 +519,7 @@ export const aasaQuestions = [
     question: `The FMS performance initialisation requires entry of weight and CG data because:`,
     options: [
     `A. The FMC only needs route and altitude data — weight and CG are not required`,
-    `B. Aircraft weight determines the required CL and therefore drag for accurate fuel burn prediction; CG position affects the trim requirement and pitch performance; without this data the FMC's speed, altitude, and fuel predictions will be inaccurate`,
+    `B. Aircraft weight determines the required CL and therefore drag for accurate fuel burn prediction`,
     `C. Weight data is only used for calculating takeoff V-speeds — not cruise performance`,
     `D. The FMC uses weight and CG only to set the stabiliser trim automatically`
     ],
@@ -532,7 +532,7 @@ export const aasaQuestions = [
     options: [
     `A. Above 10,000 ft ambient temperature drops below 0°C in the cabin`,
     `B. 10,000 ft is the maximum structural differential pressure limit`,
-    `C. Regulatory requirement — above 10,000 ft supplemental oxygen is required for crew; the warning alerts crew to developing hypoxia risk before incapacitation`,
+    `C. Regulatory requirement — above 10,000 ft supplemental oxygen is required for crew`,
     `D. The warning system activates at the cruising altitude only`
     ],
     correct: 2,
@@ -543,7 +543,7 @@ export const aasaQuestions = [
     question: `The turbine temperature indicator is calibrated in EGT (exhaust gas temperature) rather than actual turbine inlet temperature because:`,
     options: [
     `A. EGT is always lower than TIT, making it easier to measure`,
-    `B. TIT at the HP turbine entry reaches 1,500-1,700°C — beyond the capability of conventional thermocouples; EGT is measured downstream where temperatures are within thermocouple range (600-900°C) while still correlating with TIT for limit purposes`,
+    `B. TIT at the HP turbine entry reaches 1,500-1,700°C — beyond the capability of conventional thermocouples`,
     `C. EGT sensors are lighter than TIT sensors`,
     `D. Regulations prohibit direct measurement of turbine inlet temperature`
     ],
@@ -557,7 +557,7 @@ export const aasaQuestions = [
     `A. Before any turbine — at the combustor exit (TIT is measured here)`,
     `B. At the fan exit — mixing fan and core temperatures`,
     `C. In the inlet before the compressor — providing a reference temperature`,
-    `D. After the last turbine stage or between turbine stages — at a location where gas temperatures are within the range of thermocouple measurement (600-900°C) but still representative of engine performance`
+    `D. After the last turbine stage or between turbine stages`
     ],
     correct: 3,
     explanation: `EGT measurement location: varies by engine type. Common positions: (1) Between HP and LP turbines (inter-turbine temperature, ITT); (2) After the LP turbine (exhaust gas temperature, EGT); (3) After the first turbine stage (T₄.₅). The location is chosen to: be within thermocouple capability (~600-900°C range); provide a temperature that correlates reliably with TIT for limit monitoring; and be accessible for sensor installation. The exact location and terminology (EGT, TGT, ITT, TOT) varies by manufacturer. Answer B.`,
@@ -569,7 +569,7 @@ export const aasaQuestions = [
     `A. Fuel from sloshing in turbulence and creating noise`,
     `B. Fuel from transferring between tanks without crew selection`,
     `C. Over-pressurisation of tanks during refuelling`,
-    `D. Total fuel depletion — fuel below the standpipe level cannot be drawn by the normal suction feed pumps, ensuring a guaranteed minimum fuel reserve for unusual attitudes and fuel system cooling`
+    `D. Total fuel depletion — fuel below the standpipe level cannot be drawn by the normal suction feed pumps`
     ],
     correct: 3,
     explanation: `Fuel standpipes: vertical tubes inside fuel tanks with their inlet at a height above the tank floor. Normal suction/boost pump feed can only draw fuel above the standpipe height — fuel below is inaccessible by normal means. This provides: (1) a guaranteed minimum fuel volume; (2) fuel for unusual attitudes (e.g., missed approach); (3) cooling for submerged pumps; (4) structural wing bending relief. Fuel below the standpipe is only accessible via dedicated jettison systems or gravity in unusual attitudes. Answer B.`,
@@ -579,7 +579,7 @@ export const aasaQuestions = [
     question: `Common types of leading edge devices found on transport aircraft include:`,
     options: [
     `A. Fixed slats and spoilers — no other types are used`,
-    `B. Leading edge slats (translating and rotating forward), Krueger flaps (folding from the lower leading edge surface), and leading edge droop noses — each increases CLmax by different mechanisms suited to different wing geometries`,
+    `B. Leading edge slats (translating and rotating forward), Krueger flaps (folding from the lower leading edge surface)`,
     `C. Trailing edge flaps extended to the leading edge position`,
     `D. Drooping ailerons that serve as both leading edge devices and roll control`
     ],
@@ -590,7 +590,7 @@ export const aasaQuestions = [
   {
     question: `The critical engine on a conventional twin with both propellers rotating the same direction is:`,
     options: [
-    `A. The left engine — due to P-factor, its descending blade thrust line is offset further from the aircraft centreline, creating a greater yawing moment when it fails`,
+    `A. The left engine — due to P-factor, its descending blade thrust line is offset further from the aircraft centreline`,
     `B. The most powerful engine — losing the highest-thrust engine is most critical`,
     `C. The most outboard engine — greater moment arm creates the largest yaw`,
     `D. The engine closest to the fuel tanks — fire risk makes it critical`
@@ -604,7 +604,7 @@ export const aasaQuestions = [
     options: [
     `A. Moves to more nose-up — an aft CG creates a nose-down tendency requiring more up trim`,
     `B. Stays the same — only speed changes require trim adjustment`,
-    `C. Moves toward a more nose-down (or less nose-up) position — an aft CG reduces the nose-heavy tendency, requiring less tail downforce and less nose-up trim to maintain trimmed flight`,
+    `C. Moves toward a more nose-down (or less nose-up) position`,
     `D. Moves to maximum nose-up to prevent the aft CG from causing instability`
     ],
     correct: 2,
@@ -614,7 +614,7 @@ export const aasaQuestions = [
   {
     question: `The recommended technique for hand-flying a transport aircraft through moderate turbulence is:`,
     options: [
-    `A. Maintain attitude and accept altitude deviations — make smooth corrections to attitude; avoid chasing altitude aggressively; maintain turbulence penetration speed; do not over-control; let the aircraft ride through the disturbances`,
+    `A. Maintain attitude and accept altitude deviations — make smooth corrections to attitude`,
     `B. Maintain altitude precisely — apply continuous elevator corrections for every altitude deviation — the aerodynamic forces in this configuration do not produce this effect`,
     `C. Apply full rudder deflections to counteract each lateral disturbance`,
     `D. Reduce thrust to idle to minimize structural loads from aerodynamic forces`
@@ -627,7 +627,7 @@ export const aasaQuestions = [
     question: `The nosewheel steering tiller provides greater angular authority than rudder pedal steering because:`,
     options: [
     `A. The tiller is hydraulically powered; rudder pedals are mechanical only`,
-    `B. The tiller allows large nosewheel deflections (typically up to 75-80°) for slow-speed taxiway turns; rudder pedal nosewheel steering provides only approximately ±5-10° for directional control at runway speeds during takeoff and landing roll`,
+    `B. The tiller allows large nosewheel deflections for slow-speed taxiway turns`,
     `C. The tiller directly controls main gear steering; rudder pedals control nose gear only`,
     `D. The tiller provides automatic differential braking; rudder pedals do not`
     ],
@@ -641,7 +641,7 @@ export const aasaQuestions = [
     `A. 30°C above fleet average is normal cruise variation — no concern`,
     `B. The EGT sensor is faulty — physical sensors always read 30°C high`,
     `C. High EGT in cruise means the engine is producing extra thrust — beneficial for performance`,
-    `D. The higher EGT indicates reduced EGT margin — the engine is likely deteriorating (compressor fouling, HPT erosion, cooling degradation); 30°C above fleet average means only 30°C remains before reaching the limit; the engine may need early removal or compressor wash`
+    `D. The higher EGT indicates reduced EGT margin — the engine is likely deteriorating (compressor fouling, HPT erosion, cooling degradation)`
     ],
     correct: 3,
     explanation: `EGT margin: the difference between the maximum allowable EGT (limit) and the current operating EGT. New engine: large margin. Deteriorated engine: reduced margin. Fleet average at cruise might be EGT 780°C with limit 900°C (margin 120°C). Engine 30°C above fleet average: EGT 810°C, margin only 90°C. Smaller margin: less safety buffer before limit exceedance in high-thrust operations (takeoff, go-around). Engine health monitoring tracks EGT trends to predict when removal for overhaul will be needed before the margin is exhausted. Answer B.`,
@@ -651,7 +651,7 @@ export const aasaQuestions = [
     question: `Engine inlet anti-icing is required in visible moisture near 0°C because:`,
     options: [
     `A. Ice on the inlet increases airflow velocity helping the compressor`,
-    `B. Ice forming on the inlet lip and inner surface can break off and be ingested — large fragments striking rotating compressor blades can cause blade failure, compressor stall, or engine damage`,
+    `B. Ice forming on the inlet lip and inner surface can break off and be ingested`,
     `C. Inlet icing reduces EGT protecting the turbine from overtemperature`,
     `D. Inlet icing has no effect on engine performance — only runway contamination from shedding`
     ],
@@ -663,7 +663,7 @@ export const aasaQuestions = [
     question: `Fatigue damage in aircraft structure accumulates because:`,
     options: [
     `A. Aircraft metals corrode over time regardless of loading cycles`,
-    `B. Repeated stress cycles (even well below the ultimate stress limit) can initiate and propagate micro-cracks — each pressurisation cycle, landing, gust load, or control deflection adds to the cumulative damage; once a crack reaches critical length, rapid fracture can occur`,
+    `B. Repeated stress cycles (even well below the ultimate stress limit) can initiate and propagate micro-cracks`,
     `C. Aircraft metals work-harden with each loading cycle until they become too brittle`,
     `D. Fatigue only affects older aircraft — modern composites and alloys are fatigue-immune`
     ],
@@ -689,7 +689,7 @@ export const aasaQuestions = [
     `A. Maximum thrust, maximum speed profile`,
     `B. A fixed Mach 0.78 for all aircraft types`,
     `C. Minimum altitude and maximum speed profile`,
-    `D. Maximum range (minimum fuel) speed — CI=0 weights fuel cost at 100% and time cost at 0%; the FMS computes the Mach that minimises fuel burn regardless of flight time`
+    `D. Maximum range (minimum fuel) speed — CI=0 weights fuel cost at 100% and time cost at 0%`
     ],
     correct: 3,
     explanation: `Cost Index (CI) = time cost / fuel cost (units: kg/min or similar). CI=0: time cost = 0; optimise for minimum fuel → fly at maximum range Mach (MRC). CI = max (e.g. 999): fuel cost irrelevant; fly at maximum speed (Mmo minus small margin). Typical airline CI: 15-80 (balancing fuel cost vs schedule value). At CI=0: ECON Mach is typically M0.77-0.80 depending on weight and wind. The FMS computes the ECON Mach for the given CI, weight, altitude, and wind, updating throughout the flight. Answer B.`,
@@ -701,7 +701,7 @@ export const aasaQuestions = [
     `A. The most forward CG position and minimum weight — the aerodynamic forces in this configuration do not produce this effect`,
     `B. One engine at idle thrust and the other at maximum`,
     `C. All engines operating at takeoff thrust`,
-    `D. The most critical (aft) CG, maximum takeoff thrust on the live engine, gear up or down depending on which is critical, and bank angle not exceeding 5° toward the live engine — the most unfavourable combination for directional control`
+    `D. The most critical (aft) CG, maximum takeoff thrust on the live engine, gear up or down depending on which is critical`
     ],
     correct: 3,
     explanation: `VMCA determination: most critical conditions per FAR/CASR Part 25: (1) Critical engine failed and windmilling (or propeller feathered for turboprops); (2) Maximum continuous (or takeoff) thrust on remaining engines; (3) Most aft CG (reduces pitch stability assistance with rudder); (4) Bank angle ≤ 5° toward the live engine; (5) Most critical flap position. VMCA is the minimum speed at which directional control can be maintained with these conditions. Published in the Approved Flight Manual as the worst-case sea-level value. Answer B.`,
@@ -713,7 +713,7 @@ export const aasaQuestions = [
     `A. Swept wings have less surface area exposed to the oncoming airflow`,
     `B. Swept wings have a lower lift coefficient so they fly at smaller angles of attack`,
     `C. Sweepback reduces wing chord, decreasing Reynolds number and delaying transition`,
-    `D. Only the velocity component perpendicular to the wing leading edge governs compressibility — sweepback reduces this component by cos(Λ), raising the effective Mcrit`
+    `D. Only the velocity component perpendicular to the wing leading edge governs compressibility`
     ],
     correct: 3,
     explanation: `Aerodynamic effect of sweep: the compressibility-significant velocity component = V×cos(Λ). At 35° sweep: effective local Mach = M×cos(35°) = M×0.819. This delays shock wave formation to a higher free-stream Mach, raising Mcrit and MCDR. Transport aircraft swept at 25-35° cruise at M0.78-0.85 without significant wave drag. Answer B.`,
@@ -734,7 +734,7 @@ export const aasaQuestions = [
   {
     question: `The crew oxygen system on a transport aircraft uses:`,
     options: [
-    `A. Gaseous oxygen stored in high-pressure cylinders — providing a continuous flow of oxygen to the crew via quick-don masks; the system provides oxygen for extended periods (typically 15-30 minutes or more depending on cylinder capacity and flow rate)`,
+    `A. Gaseous oxygen stored in high-pressure cylinders`,
     `B. Chemical oxygen generators identical to passenger systems`,
     `C. Liquid oxygen (LOX) stored at cryogenic temperatures`,
     `D. A molecular sieve oxygen concentrating system (MSOC) drawing from ambient air`
@@ -748,7 +748,7 @@ export const aasaQuestions = [
     options: [
     `A. The time from fluid application to aircraft departure — the time to complete the de-icing/anti-icing process`,
     `B. The time the fluid remains on the aircraft after landing before it must be washed off`,
-    `C. The maximum time after anti-icing fluid application during which the fluid is expected to prevent ice formation — depending on fluid type (I, II, III, IV), concentration, ambient temperature, and precipitation intensity; the crew must take off before the holdover time expires`,
+    `C. The maximum time after anti-icing fluid application during which the fluid is expected to prevent ice formation`,
     `D. The minimum time between de-icing applications on the same aircraft`
     ],
     correct: 2,
@@ -773,7 +773,7 @@ export const aasaQuestions = [
     `A. Only to the captain — the copilot doesn't need this information`,
     `B. Only in the passenger cabin for self-evacuation guidance`,
     `C. Only on a centralised electronic maintenance system not visible in flight`,
-    `D. To both flight crew members at their respective crew stations — independent indication of cabin altitude (for immediate mask donning decision) and differential pressure (for structural awareness); critical for coordination of emergency descent decision`
+    `D. To both flight crew members at their respective crew stations`
     ],
     correct: 3,
     explanation: `Cabin pressurisation warnings (regulatory requirement): cabin altitude warning and differential pressure indication must be visible to and monitored by both flight crew. Reason: (1) cabin altitude warning → both crew must immediately don O2 masks; if only visible to captain who is incapacitated, copilot cannot initiate action; (2) Coordination of emergency descent requires both crew to be aware of the cabin altitude. CASR Part 25 specifies that warning systems for critical conditions (including cabin pressure) must alert flight crew appropriately. Answer B.`,
@@ -807,7 +807,7 @@ export const aasaQuestions = [
     question: `The yaw damper is required for flight on swept-wing transports because:`,
     options: [
     `A. The rudder alone cannot provide directional stability in turbulence`,
-    `B. Swept wings have naturally light aerodynamic yaw damping — the yaw damper provides artificial yaw damping by detecting yaw rate and applying opposing rudder inputs at the Dutch roll frequency, suppressing the lightly damped lateral-directional oscillation`,
+    `B. Swept wings have naturally light aerodynamic yaw damping`,
     `C. The yaw damper coordinates turns by applying rudder proportional to bank angle`,
     `D. Without the yaw damper, the rudder floats to full deflection in turbulence`
     ],
@@ -818,7 +818,7 @@ export const aasaQuestions = [
   {
     question: `The anti-skid braking system monitors individual wheel deceleration and:`,
     options: [
-    `A. Reduces hydraulic pressure to any wheel decelerating too rapidly (approaching skid), allowing it to spin up and regain traction, then rapidly reapplies pressure — maintaining optimum slip ratio for maximum deceleration`,
+    `A. Reduces hydraulic pressure to any wheel decelerating too rapidly (approaching skid)`,
     `B. Applies maximum brake pressure continuously to all wheels`,
     `C. Limits total braking to 50% of maximum to prevent skidding`,
     `D. Uses brake parachutes when wheel braking is insufficient`
@@ -832,7 +832,7 @@ export const aasaQuestions = [
     options: [
     `A. Increase the pump outlet pressure beyond the normal 3,000 PSI system pressure`,
     `B. Maintain fluid temperature below 80°C`,
-    `C. Prevent pump cavitation by ensuring positive inlet pressure at the pump suction port — without pressurisation, low ambient pressure at altitude could allow dissolved gases to form bubbles in the fluid, damaging the pump`,
+    `C. Prevent pump cavitation by ensuring positive inlet pressure at the pump suction port`,
     `D. Provide an emergency pressure reserve when the engine-driven pump fails`
     ],
     correct: 2,
@@ -843,7 +843,7 @@ export const aasaQuestions = [
     question: `Automatic pitch trim in an AFCS continuously adjusts stabiliser trim to:`,
     options: [
     `A. Set stabiliser trim for takeoff automatically`,
-    `B. Minimise sustained elevator deflection — as the autopilot holds attitude/altitude, the pitch trim system slowly moves the stabiliser to unload the elevator toward neutral, maintaining maximum elevator authority`,
+    `B. Minimise sustained elevator deflection — as the autopilot holds attitude/altitude`,
     `C. Prevent the stabiliser from moving during autopilot operation`,
     `D. Compensate for changes in airspeed without pilot input`
     ],
@@ -855,7 +855,7 @@ export const aasaQuestions = [
     question: `Skydrol (phosphate ester) hydraulic fluid is used on transport aircraft because:`,
     options: [
     `A. Skydrol is more compressible, providing cushioning for brake applications`,
-    `B. It has a significantly higher fire point than mineral oil — mineral hydraulic oil is flammable near hot engine and brake components; Skydrol is fire-resistant`,
+    `B. It has a significantly higher fire point than mineral oil — mineral hydraulic oil is flammable near hot engine and brake components`,
     `C. Skydrol provides better lubrication below −40°C`,
     `D. Skydrol is lighter than mineral oil, reducing empty weight`
     ],
@@ -868,7 +868,7 @@ export const aasaQuestions = [
     options: [
     `A. Below VMCL the aircraft cannot maintain level flight on one engine — the aerodynamic forces in this configuration do not produce this effect`,
     `B. VMCL equals Vref minus 5 kt on all transport aircraft`,
-    `C. Below VMCL the pilot cannot maintain directional control with one engine failed during the approach configuration (approach flaps, gear down) — the approach must be flown above VMCL to ensure go-around capability is maintained on the remaining engine(s)`,
+    `C. Below VMCL the pilot cannot maintain directional control with one engine failed during the approach configuration (approach flaps, gear down)`,
     `D. VMCL is only relevant for certification and has no operational significance`
     ],
     correct: 2,
@@ -879,7 +879,7 @@ export const aasaQuestions = [
     question: `The speed trim system (STS) adjusts stabiliser trim to:`,
     options: [
     `A. Maintain a fixed stabiliser position during autopilot operation`,
-    `B. Maintain a stable speed-stick force relationship at low speed with high thrust — preventing the aircraft from becoming speed-unstable at low speed where pulling back could increase rather than decrease speed`,
+    `B. Maintain a stable speed-stick force relationship at low speed with high thrust`,
     `C. Trim the aircraft for maximum range in cruise`,
     `D. Compensate for CG movement due to fuel burn only`
     ],
@@ -891,7 +891,7 @@ export const aasaQuestions = [
     question: `Engine fire detection on a transport aircraft uses:`,
     options: [
     `A. A visual camera in the engine nacelle monitored by the crew`,
-    `B. A fire detector loop (continuous element detector) running around the engine nacelle/pylon area — a temperature rise along the loop creates a measurable resistance change, triggering the fire warning; dual loops (A and B) provide redundancy and fault detection capability`,
+    `B. A fire detector loop (continuous element detector) running around the engine nacelle/pylon area`,
     `C. Smoke detectors in the engine exhaust path`,
     `D. Infrared sensors on the fuselage monitoring engine nacelle temperature from outside`
     ],
@@ -917,7 +917,7 @@ export const aasaQuestions = [
     `A. It allows the autopilot to detect pilot inputs`,
     `B. It provides structural damping to the control surface`,
     `C. Feel is required by CASA for all transport category aircraft without exception`,
-    `D. Without feel, the hydraulically powered controls offer no resistance to pilot input at any speed — the pilot could apply full deflection at any speed with no natural feedback, risking structural overload or loss of control`
+    `D. Without feel, the hydraulically powered controls offer no resistance to pilot input at any speed`
     ],
     correct: 3,
     explanation: `Artificial feel necessity: in a conventional cable-operated control, the pilot directly feels the aerodynamic hinge moment (stick force increases with speed and deflection — natural feedback). In a hydraulic PCU system, the hydraulic pressure does the work — the pilot only positions a valve, feeling no aerodynamic resistance. Without artificial feel: pilot could apply full elevator at Vmo with the same force as at Vapp — massively overstressing the aircraft. The q-feel (dynamic pressure feel) system generates a resistance proportional to dynamic pressure: light at low speed, heavy at high speed — natural analog of aerodynamic feel. Answer B.`,
@@ -929,7 +929,7 @@ export const aasaQuestions = [
     `A. Maintain approach speed — retract flaps immediately to clean configuration`,
     `B. Reduce pitch to regain airspeed before applying go-around thrust`,
     `C. Declare emergency and advise ATC — no other action required until established in climb`,
-    `D. Apply maximum rated thrust immediately and maintain a pitch attitude that prevents flight path decay — accept speed below Vref if necessary; do not retract flaps or gear until safely climbing`
+    `D. Apply maximum rated thrust immediately and maintain a pitch attitude that prevents flight path decay — accept speed below Vref if necessary`
     ],
     correct: 3,
     explanation: `Windshear recovery (headwind loss/microburst): priority is arresting flight path decay (preventing terrain contact). Technique: TOGA thrust immediately, rotate to go-around pitch attitude (typically 15° or flight manual value), maintain attitude even as speed decreases — attitude sustains lift and limits terrain closure. Do not retract flaps/gear while below Vref — would reduce lift at a critical moment. Speed recovers once clear of shear. ICAO and CASA windshear recovery guidance: pitch for climb, not for speed. Answer B.`,
@@ -938,7 +938,7 @@ export const aasaQuestions = [
   {
     question: `The primary function of the outflow valve in a pressurisation system is:`,
     options: [
-    `A. To regulate the rate at which air escapes from the cabin — its modulation (open/close position) controls cabin altitude and rate of pressure change, with bleed air continuously supplied to the cabin and the outflow valve controlling the escape rate`,
+    `A. To regulate the rate at which air escapes from the cabin`,
     `B. To prevent the cabin from becoming over-pressurised during climbs`,
     `C. To allow fresh air into the cabin during ground operations`,
     `D. To equalise pressure before door opening`
@@ -953,7 +953,7 @@ export const aasaQuestions = [
     `A. Swept wings have high roll damping which suppresses spiral tendency, allowing Dutch roll to dominate`,
     `B. Swept wings have reduced aileron authority at low speed, making Dutch roll uncontrollable`,
     `C. Sweepback reduces static directional stability (Cnβ) below the minimum for stability`,
-    `D. In a yaw, the advancing wing has less effective sweep and generates more lift; the retreating wing has more effective sweep and less lift — the resulting coupled roll-yaw oscillation is lightly damped`
+    `D. In a yaw, the advancing wing has less effective sweep and generates more lift`
     ],
     correct: 3,
     explanation: `Dutch roll in swept-wing aircraft: when the aircraft yaws, the advancing wing has its effective sweep angle reduced, generating more lift. The retreating wing has more effective sweep and less lift. This creates a rolling moment away from the yaw direction — coupling roll and yaw. The oscillation is lightly damped in swept-wing designs. Yaw dampers are fitted specifically to suppress Dutch roll. Answer B.`,
@@ -965,7 +965,7 @@ export const aasaQuestions = [
     `A. ATC requires fuel quantities to be reported digitally on every flight`,
     `B. The FQIS is used for weight and balance calculations — accuracy is not critical`,
     `C. Cross-checking is optional — the FQIS is fully certified and always accurate`,
-    `D. Fuel gauges can be subject to errors (sensor failures, trapped air bubbles, attitude errors, temperature effects) — cross-checking fuel indication against fuel uplifted records and flight plan fuel burns verifies the gauges are accurate; discrepancies must be investigated before flight`
+    `D. Fuel gauges can be subject to errors (sensor failures, trapped air bubbles, attitude errors, temperature effects)`
     ],
     correct: 3,
     explanation: `Fuel quantity accuracy: FQIS (capacitance or resistance sensors in tanks) can have errors from: sensor contamination, thermal effects, attitude-induced readings (full tanks on sloped ramp), trapped water. Cross-checking: uplift records show fuel added; FQIS shows total; the difference should reconcile. Several accidents have occurred from undetected fuel quantity discrepancies (e.g. Gimli Glider — unit conversion error led to fuel exhaustion). Cross-checking is a critical preflight item. Discrepancy > allowable tolerance = maintenance investigation before flight. Answer B.`,
@@ -976,7 +976,7 @@ export const aasaQuestions = [
     options: [
     `A. Full reverse thrust is applied before touchdown — the aerodynamic forces in this configuration do not produce this effect`,
     `B. The gear is extended and spoilers are deployed pre-touchdown`,
-    `C. The pilot progressively reduces the rate of descent to achieve a gentle touchdown — typically by gradually pulling back on the controls (increasing pitch, reducing descent rate) while retarding thrust; the flare uses ground effect to extend the flare and control the touchdown point`,
+    `C. The pilot progressively reduces the rate of descent to achieve a gentle touchdown — typically by gradually pulling back on the controls (increasing pitch, reducing descent rate) while retarding thrust`,
     `D. The autopilot hands off to manual control at decision height`
     ],
     correct: 2,
@@ -1011,7 +1011,7 @@ export const aasaQuestions = [
     question: `Fuel standpipes prevent:`,
     options: [
     `A. Over-pressurisation of fuel tanks during refuelling`,
-    `B. Total unintended defuelling — standpipes of defined height inside the tank allow only fuel above the standpipe to be delivered; fuel below is trapped as a guaranteed minimum reserve`,
+    `B. Total unintended defuelling — standpipes of defined height inside the tank allow only fuel above the standpipe to be delivered`,
     `C. Fuel from flowing to the wrong engine during crossfeed`,
     `D. Fuel vapour from accumulating in the tank ullage`
     ],
@@ -1025,7 +1025,7 @@ export const aasaQuestions = [
     `A. Over-pressurisation of tanks during refuelling`,
     `B. Fuel flowing to the wrong engine during crossfeed`,
     `C. Fuel vapour accumulating in the tank ullage`,
-    `D. Total unintended defuelling — fuel below the standpipe height is inaccessible by normal suction/gravity feed, providing a guaranteed minimum reserve`
+    `D. Total unintended defuelling — fuel below the standpipe height is inaccessible`
     ],
     correct: 3,
     explanation: `Standpipes inside wing/centre tanks: normal gravity or suction feed can only access fuel above the standpipe top. Fuel below is trapped as: (1) structural bending relief; (2) guaranteed minimum fuel for unusual attitudes; (3) reserve that cannot be accidentally pumped to low states. During jettison, standpipes establish minimum post-jettison fuel. Answer B.`,
@@ -1036,7 +1036,7 @@ export const aasaQuestions = [
     options: [
     `A. The tank is below 10% of maximum capacity`,
     `B. The fuel pump inlet is uncovered (standpipe level) — requiring immediate diversion`,
-    `C. The fuel quantity falls below a specified low-level value — typically representing approximately 30-45 minutes of fuel flow at current consumption — alerting the crew to a time-critical fuel state requiring immediate planning`,
+    `C. The fuel quantity falls below a specified low-level value — typically representing approximately 30-45 minutes of fuel flow at current consumption`,
     `D. Any fuel imbalance exceeds 200 kg between tanks`
     ],
     correct: 2,
@@ -1047,7 +1047,7 @@ export const aasaQuestions = [
     question: `A transport aircraft's primary AC electrical system uses 115V, 400 Hz because:`,
     options: [
     `A. 400 Hz is required by international regulations for all commercial aircraft`,
-    `B. 400 Hz allows electrical components (transformers, motors) to be significantly smaller and lighter than at 50/60 Hz — a major weight saving critical in aircraft`,
+    `B. 400 Hz allows electrical components (transformers, motors) to be significantly smaller and lighter than at 50/60 Hz`,
     `C. 400 Hz provides better interference rejection for avionics`,
     `D. 400 Hz allows direct connection to commercial ground power at any airport`
     ],
@@ -1073,7 +1073,7 @@ export const aasaQuestions = [
     `A. The hot core exhaust jet`,
     `B. The afterburner combining fan and core flows`,
     `C. Boundary layer energisation on the nacelle`,
-    `D. The fan — it accelerates a large mass of air at low velocity; high propulsive efficiency results from large mass flow at low velocity change rather than small mass at high velocity`
+    `D. The fan — it accelerates a large mass of air at low velocity`
     ],
     correct: 3,
     explanation: `Thrust = mass flow × velocity change. High BPR engines: the fan moves approximately 10 kg of air for every 1 kg through the core — large mass at modest velocity increase. Propulsive efficiency = 2V0/(V0+Vj). Low jet velocity (fan) gives higher efficiency than high jet velocity (core) for the same thrust. At cruise BPR 10: approximately 75-80% of thrust from the fan. High-BPR turbofans are 20-30% more fuel-efficient than low-BPR engines at subsonic cruise. Answer B.`,
@@ -1084,7 +1084,7 @@ export const aasaQuestions = [
     options: [
     `A. The autopilot from engaging at speeds below VMO`,
     `B. The engines from producing more than maximum rated thrust`,
-    `C. Crew inputs that would exceed certified structural and aerodynamic limits — the flight control computers intercept inputs that would exceed bank, pitch, load factor, AoA, or speed limits and cap the actual control surface movement`,
+    `C. Crew inputs that would exceed certified structural and aerodynamic limits`,
     `D. The aircraft from flying above the certified service ceiling`
     ],
     correct: 2,
@@ -1096,7 +1096,7 @@ export const aasaQuestions = [
     options: [
     `A. Riveted longeron and stringer construction in compression`,
     `B. The pressurised floor beams which carry the differential load`,
-    `C. Hoop stress in the circular fuselage skin — the curved skin resists internal pressure like a pressure vessel, with tensile (not compressive) stress in the circumferential direction; stringers and frames provide additional structural support`,
+    `C. Hoop stress in the circular fuselage skin`,
     `D. External fuselage doublers that prevent outward bulging`
     ],
     correct: 2,
@@ -1109,7 +1109,7 @@ export const aasaQuestions = [
     `A. It applies maximum possible braking force at all times`,
     `B. It reduces brake temperature by cycling the brake pressure`,
     `C. It prevents all tyre wear by never allowing the wheel to slow below 90% of ground speed`,
-    `D. It maintains the wheel speed at approximately 10-15% slip ratio — the point of maximum friction between tyre and pavement (the peak of the friction-slip curve); full lock-up (100% slip) produces significantly less braking force`
+    `D. It maintains the wheel speed at approximately 10-15% slip ratio — the point of maximum friction between tyre and pavement (the peak of the friction-slip curve)`
     ],
     correct: 3,
     explanation: `Optimal slip ratio: the relationship between tyre-pavement friction and wheel slip is a curve. At zero slip (free rolling): low friction (rolling resistance only). At 10-15% slip: maximum friction coefficient (μ) — this is the optimum for braking. At 100% slip (locked wheel): friction reduces to the sliding coefficient — approximately 25-35% less than peak. Anti-skid maintains the wheel at the optimum slip ratio by modulating brake pressure, keeping the wheel spinning at 85-90% of ground speed. Without anti-skid: wheels lock → flat spots, tyre burst, loss of direction control. Answer B.`,
@@ -1119,7 +1119,7 @@ export const aasaQuestions = [
     question: `The role of the inboard leading edge slats (Krueger flaps) compared to the outboard leading edge slats on a four-engine widebody jet is:`,
     options: [
     `A. Krueger flaps are used for takeoff only; outboard slats are for landing only — the aerodynamic forces in this configuration do not produce this effect`,
-    `B. Krueger flaps extend from the underside of the wing leading edge (hinged at the leading edge lower surface, swinging down and forward); outboard slats slide forward and down along tracks; both devices increase CLmax but by different mechanisms`,
+    `B. Krueger flaps extend from the underside of the wing leading edge (hinged at the leading edge lower surface, swinging down and forward)`,
     `C. Krueger flaps provide structural support for the outboard slats`,
     `D. There is no functional difference — they are identical devices by different names`
     ],
@@ -1133,7 +1133,7 @@ export const aasaQuestions = [
     `A. A hydraulic line burst — pressure drops to zero in a burst`,
     `B. The IDG has disconnected, removing power to the electric hydraulic pump`,
     `C. The bleed air pressure loss has affected the hydraulic pump drive`,
-    `D. Normal demand variation — during simultaneous high-demand events, transient pressure drops are normal; a drop to 1,800 PSI during combined operations may be within normal parameters if it recovers`
+    `D. Normal demand variation — during simultaneous high-demand events, transient pressure drops are normal`
     ],
     correct: 3,
     explanation: `Hydraulic pressure transients: simultaneous multiple actuator demands (gear extension, spoilers, turns) can cause transient pressure drops as the pump momentarily cannot meet the combined flow demand. The pressure recovers when demand reduces. A drop to 1,800 PSI during combined operations is potentially a normal transient. Action: monitor for sustained low pressure or fluid quantity decrease (which would indicate a leak). A catastrophic burst would result in rapid pressure drop to zero and sustained low pressure with fluid quantity decrease. Answer B.`,
@@ -1145,7 +1145,7 @@ export const aasaQuestions = [
     `A. Brakes automatically applying maximum pressure`,
     `B. The wheel locking solid to prevent aircraft movement`,
     `C. A warning light in the cockpit alerting the crew to tyre overheat`,
-    `D. Intentional controlled tyre deflation — the plug melts at a set temperature, releasing tyre pressure through the plug hole; a deflated tyre is safer than an explosive tyre burst from heat-induced pressure increase`
+    `D. Intentional controlled tyre deflation — the plug melts at a set temperature, releasing tyre pressure through the plug hole`
     ],
     correct: 3,
     explanation: `Thermal plug: a low-melting-point alloy (approximately 160-200°C) in the wheel rim. After a maximum-energy RTO or heavy braking, residual brake heat continues heating the wheel. If temperature reaches the plug melting point: alloy melts, plug drops out, tyre deflates through the hole. Controlled deflation is far preferable to a violent tyre burst. After any maximum-energy RTO: remain stationary per the brake cooling chart before taxiing. Answer B.`,
@@ -1156,7 +1156,7 @@ export const aasaQuestions = [
     options: [
     `A. Release fuel overboard if the tanks are overfilled during refuelling`,
     `B. Provide a route for fuel vapour to flow to the engines`,
-    `C. Maintain atmospheric pressure in the fuel tanks — as fuel is burned or transferred, air must enter the tanks to replace the volume; and during climb/descent, the vent prevents differential pressure between tank interior and exterior from causing structural damage to the tank`,
+    `C. Maintain atmospheric pressure in the fuel tanks — as fuel is burned or transferred, air must enter the tanks to replace the volume`,
     `D. Allow the flight crew to vent fuel for weight reduction during approach`
     ],
     correct: 2,
@@ -1166,7 +1166,7 @@ export const aasaQuestions = [
   {
     question: `The forces on an aircraft in a steady climbing turn at 30° bank are:`,
     options: [
-    `A. Lift exceeds the weight component in the vertical plane — vertical component of lift equals weight AND thrust must equal drag plus the climb component of weight`,
+    `A. Lift exceeds the weight component in the vertical plane`,
     `B. Lift = Weight, Thrust = Drag — same as level flight`,
     `C. Thrust = Lift, Drag = Weight — forces exchange roles in a climb`,
     `D. Lift = Weight × cos(30°), Thrust = Drag only`
@@ -1193,7 +1193,7 @@ export const aasaQuestions = [
     `A. Hydraulic pressure is maintained by pumps — fluid quantity has no effect on pressure`,
     `B. The system will automatically top up from the water separator`,
     `C. Low fluid only affects landing gear — flight controls use a separate sealed system`,
-    `D. Possible system leak — insufficient fluid risks pump cavitation, insufficient pressure under high demand, and air entrainment causing spongy actuator response; maintenance investigation required before flight`
+    `D. Possible system leak — insufficient fluid risks pump cavitation, insufficient pressure under high demand, and air entrainment causing spongy actuator response`
     ],
     correct: 3,
     explanation: `Low hydraulic fluid: (1) Pump cavitation — air drawn into pump causes cavitation damage; (2) Pressure drop under simultaneous high demand — multiple actuators extending simultaneously may starve the circuit; (3) Air entrainment — compressible air in fluid causes sluggish control response; (4) Seal damage from running dry. Low quantity suggests a leak — ground inspection for fluid evidence required before dispatch. Do not add fluid without identifying the source. Answer B.`,
@@ -1204,7 +1204,7 @@ export const aasaQuestions = [
     options: [
     `A. The undercarriage would collapse at MTOW during landing`,
     `B. The brakes cannot stop a heavier aircraft within the certified landing distance`,
-    `C. Landing imposes higher structural loads on the landing gear and wing attachment than normal cruise — the gear and airframe are designed to absorb a specific kinetic energy at MLW; landing above MLW requires a structural inspection before next flight or fuel burn/dump to MLW`,
+    `C. Landing imposes higher structural loads on the landing gear and wing attachment than normal cruise`,
     `D. MLW equals MTOW minus the fuel used in the minimum flight from departure to destination`
     ],
     correct: 2,
@@ -1217,7 +1217,7 @@ export const aasaQuestions = [
     `A. Maintain cabin altitude at a safe maximum during descent`,
     `B. Allow ram air into the cabin if pressurisation fails`,
     `C. Reduce cabin altitude during emergency descent procedures`,
-    `D. Limit the maximum positive pressure differential — it opens (dumps air overboard) if differential exceeds the structural certified limit, protecting the fuselage from excessive hoop stress`
+    `D. Limit the maximum positive pressure differential`
     ],
     correct: 3,
     explanation: `The PPRV (safety valve) is a last-resort safety component: if the pressurisation controller malfunctions and over-pressurises the cabin (outflow valve fails closed), the PPRV opens at the maximum certified positive differential. This prevents fuselage structural failure from excessive hoop stress. Two PPRVs typically fitted for redundancy. Primary control is the outflow valve; PPRV is emergency-only. Answer B.`,
@@ -1262,7 +1262,7 @@ export const aasaQuestions = [
   {
     question: `Compressor bleed air valves open at low engine RPM to:`,
     options: [
-    `A. Prevent compressor stall — at low RPM, rear compressor stages over-compress relative to front stages; bleed valves release this excess, reducing pressure ratio across early stages and preventing blade stall`,
+    `A. Prevent compressor stall — at low RPM, rear compressor stages over-compress relative to front stages`,
     `B. Increase mass airflow through the combustion chamber for better combustion`,
     `C. Direct additional cooling air to turbine blades at low power`,
     `D. Supply bleed air for airconditioning only`
@@ -1275,7 +1275,7 @@ export const aasaQuestions = [
     question: `A transport aircraft at cruise loses an engine. The crew's immediate priority for maintaining directional control is:`,
     options: [
     `A. Increase altitude immediately to avoid terrain`,
-    `B. Apply rudder toward the live engine to counter the asymmetric yaw — simultaneously disengage autopilot yaw damper if it masks the required rudder input, and reference the abnormal checklist`,
+    `B. Apply rudder toward the live engine to counter the asymmetric yaw`,
     `C. Reduce thrust on the live engine to eliminate asymmetry`,
     `D. Declare emergency before taking any control action`
     ],
@@ -1288,7 +1288,7 @@ export const aasaQuestions = [
     options: [
     `A. No effect — bleed air is surplus to engine requirements`,
     `B. Thrust increases slightly as the engine compensates for bleed extraction`,
-    `C. Thrust decreases and fuel flow increases — extracting bleed air reduces compressor mass flow in the thermodynamic cycle; the fuel control increases fuel flow to maintain thrust, increasing SFC`,
+    `C. Thrust decreases and fuel flow increases — extracting bleed air reduces compressor mass flow in the thermodynamic cycle`,
     `D. WAI only affects wing lift coefficient, not engine SFC`
     ],
     correct: 2,
@@ -1300,7 +1300,7 @@ export const aasaQuestions = [
     options: [
     `A. Declare an emergency and land immediately`,
     `B. Reduce speed to VMO − 50 kt for reduced structural loads`,
-    `C. Transfer fuel forward (if possible) to move the CG forward within limits; if fuel transfer is not available: fly the aircraft conservatively; plan for a potentially abnormal landing and brief accordingly; advise the company/ATC`,
+    `C. Transfer fuel forward (if possible) to move the CG forward within limits`,
     `D. No action needed — 1% beyond the aft limit is within the structural margin`
     ],
     correct: 2,
@@ -1312,7 +1312,7 @@ export const aasaQuestions = [
     options: [
     `A. The cabin altitude drops automatically following the aircraft below 8,000 ft`,
     `B. The outflow valve closes completely trapping the 8,000 ft cabin altitude permanently`,
-    `C. The pressurisation controller schedules the outflow valve to reduce cabin altitude at approximately 300-500 ft/min toward the destination aerodrome elevation — passengers equalise ear pressure comfortably`,
+    `C. The pressurisation controller schedules the outflow valve to reduce cabin altitude at approximately 300-500 ft/min`,
     `D. The system is switched manually by the crew — automatic control unavailable below 8,000 ft`
     ],
     correct: 2,
@@ -1324,7 +1324,7 @@ export const aasaQuestions = [
     options: [
     `A. When the aircraft exceeds VMO by 10 kt — the aerodynamic forces in this configuration do not produce this effect`,
     `B. When the autopilot disengages at high altitude`,
-    `C. At an angle of attack approximately 5-10° before the deep stall AoA — the system forcefully pushes the control column forward (nose-down) to prevent the aircraft from reaching the irrecoverable deep stall regime`,
+    `C. At an angle of attack approximately 5-10° before the deep stall AoA`,
     `D. When the fuel quantity falls below minimum reserve`
     ],
     correct: 2,
@@ -1335,7 +1335,7 @@ export const aasaQuestions = [
     question: `The autobrake system allows the crew to preselect:`,
     options: [
     `A. A maximum brake temperature limit`,
-    `B. A deceleration rate — the system modulates brake pressure after touchdown to maintain the selected rate, regardless of runway contamination or aircraft weight`,
+    `B. A deceleration rate — the system modulates brake pressure after touchdown to maintain the selected rate`,
     `C. The number of brake applications per landing`,
     `D. The wheel slip percentage to avoid anti-skid activation`
     ],
@@ -1347,7 +1347,7 @@ export const aasaQuestions = [
     question: `The 'clean' configuration stall speed of a transport aircraft is approximately:`,
     options: [
     `A. The actual stall speed used for approach and landing — the aerodynamic forces in this configuration do not produce this effect`,
-    `B. The highest stall speed (VS1G) — without any high-lift devices (flaps, slats retracted), the wing is at its minimum CLmax; all other configurations (slats extended, partial flaps, full flaps) give progressively lower stall speeds`,
+    `B. The highest stall speed (VS1G) — without any high-lift devices (flaps, slats retracted), the wing is at its minimum CLmax`,
     `C. The same as VMO — clean configuration is the cruise configuration`,
     `D. The speed at which autopilot must be disengaged during descent`
     ],
@@ -1359,7 +1359,7 @@ export const aasaQuestions = [
     question: `On turboprop aircraft, the propeller should be feathered following engine failure because:`,
     options: [
     `A. Feathering allows the propeller to windmill freely, reducing engine drag`,
-    `B. A windmilling propeller creates significant drag — equivalent to another engine at low power — which severely degrades aircraft performance; feathering rotates the blades edge-on to the airflow, minimising drag and stopping propeller rotation`,
+    `B. A windmilling propeller creates significant drag — equivalent to another engine at low power — which severely degrades aircraft performance`,
     `C. Feathering increases thrust from the failed engine's propeller`,
     `D. Feathering is required by regulation to prevent propeller blade flutter at cruise speed`
     ],
@@ -1370,7 +1370,7 @@ export const aasaQuestions = [
   {
     question: `The 'coffin corner' can be most effectively avoided by:`,
     options: [
-    `A. Maintaining appropriate step climbs as fuel burns — never allowing the aircraft to climb to its coffin corner altitude at its current weight; operating the aircraft within the certified altitude limitations; and using the crew O2 and emergency descent procedures if inadvertently entered`,
+    `A. Maintaining appropriate step climbs as fuel burns — never allowing the aircraft to climb to its coffin corner altitude at its current weight`,
     `B. Flying at maximum speed — the coffin corner only affects slow aircraft — the aerodynamic forces in this configuration do not produce this effect`,
     `C. Flying at minimum speed — the coffin corner is a high-speed phenomenon only`,
     `D. Using weather radar to detect and avoid coffin corner conditions`
@@ -1383,7 +1383,7 @@ export const aasaQuestions = [
     question: `The outflow valve in the pressurisation system controls cabin pressure by:`,
     options: [
     `A. Regulating bleed air supply to the cabin — opening allows more bleed in, closing reduces supply`,
-    `B. Modulating how much pressurised air escapes from the cabin — opening increases the escape rate (cabin altitude rises); closing reduces the escape rate (cabin altitude falls); bleed air supply is continuous and the outflow valve controls the equilibrium pressure`,
+    `B. Modulating how much pressurised air escapes from the cabin — opening increases the escape rate (cabin altitude rises)`,
     `C. Connecting the cabin directly to ambient pressure for equalisation before landing`,
     `D. Acting as the primary fire damper for the cabin air recirculation system`
     ],
@@ -1408,7 +1408,7 @@ export const aasaQuestions = [
     options: [
     `A. 500 PSI — sufficient for light actuator loads`,
     `B. 5,000 PSI for flight controls, 1,000 PSI for brakes — two separate pressures`,
-    `C. 3,000 PSI (210 bar) — industry standard for large transport aircraft, providing sufficient force for flight controls, landing gear, and brakes while keeping system weight acceptable`,
+    `C. 3,000 PSI (210 bar) — industry standard for large transport aircraft, providing sufficient force for flight controls`,
     `D. 300 PSI matching pneumatic system pressure for cross-feeding`
     ],
     correct: 2,
@@ -1421,7 +1421,7 @@ export const aasaQuestions = [
     `A. Regulatory requirement only — the systems are not actually needed — the aerodynamic forces in this configuration do not produce this effect`,
     `B. The redundancy is for passenger reassurance — modern transport aircraft cannot stall`,
     `C. Multiple systems are required because each one alone is unreliable and frequently gives false warnings`,
-    `D. A stall at low altitude during approach or go-around can be unrecoverable — multiple independent warning layers ensure the crew cannot inadvertently approach a stall without clear, unambiguous warning; each layer activates at progressively higher AoA before the actual stall`
+    `D. A stall at low altitude during approach or go-around can be unrecoverable — multiple independent warning layers ensure the crew cannot inadvertently approach a stall without clear, unambiguous warning`
     ],
     correct: 3,
     explanation: `Multi-layer stall protection: (1) Stick shaker — tactile, activates at approximately 1.05-1.10 VS; (2) Stick pusher (T-tail only) — activates at deep stall AoA; (3) Oral warning — 'STALL, STALL'; (4) FBW alpha protection (a twin-engine narrowbody jet) — limits AoA at Alpha max; (5) Alpha floor (a twin-engine narrowbody jet) — automatically commands TOGA thrust when AoA excessive. Each layer provides redundancy. A stall during approach to land is often fatal — multiple warnings ensure the crew receives at least one of the alerts before reaching the stall AoA. Answer B.`,
@@ -1443,7 +1443,7 @@ export const aasaQuestions = [
     question: `The negative pressure relief valve (NPRV) prevents:`,
     options: [
     `A. Cabin pressure from becoming higher than ambient during rapid descent`,
-    `B. Cabin pressure from falling significantly below ambient — which would put the fuselage skin in compression rather than tension, a load reversal it is not designed to accept`,
+    `B. Cabin pressure from falling significantly below ambient`,
     `C. Passenger hypoxia by maintaining minimum cabin pressure`,
     `D. Pressurisation over-cooling by releasing hot bleed air`
     ],
@@ -1457,7 +1457,7 @@ export const aasaQuestions = [
     `A. Increase the stall margin — higher speed means more lift available`,
     `B. Have no effect — stall margin depends only on AoA, not Mach`,
     `C. Improve the stall margin by delaying flow separation over the swept wing`,
-    `D. Reduce the stall margin — shock-induced flow separation at Mach buffet onset effectively limits the usable lift, and a turn or gust that would normally be safe at low altitude can trigger buffet or stall at high altitude near the coffin corner`
+    `D. Reduce the stall margin — shock-induced flow separation at Mach buffet onset effectively limits the usable lift`
     ],
     correct: 3,
     explanation: `At high altitude near Mcrit, shock-induced flow separation reduces the usable lift coefficient. The gap between the current CL and the buffet-onset CL (buffet margin) shrinks. A manoeuvre that increases load factor (turn, gust) increases the required CL — it can be driven into the buffet region with a much smaller load factor than at low altitude. This is why maximum bank angle and load factor are limited near the service ceiling. Answer B.`,
@@ -1466,7 +1466,7 @@ export const aasaQuestions = [
   {
     question: `A transport aircraft's maximum range Mach number decreases with increasing altitude in the stratosphere because:`,
     options: [
-    `A. In the isothermal stratosphere, LSS is constant; but the optimum CL for maximum range decreases (lighter aircraft as fuel burns); the Mach for optimum CL decreases; therefore best range Mach decreases as the aircraft burns fuel at constant altitude`,
+    `A. In the isothermal stratosphere, LSS is constant`,
     `B. LSS decreases with altitude in the stratosphere — the aerodynamic forces in this configuration do not produce this effect`,
     `C. Jet stream winds at high altitude always oppose the aircraft increasing fuel consumption`,
     `D. The FADEC reduces allowable Mach above FL360 for turbine protection`
@@ -1480,7 +1480,7 @@ export const aasaQuestions = [
     options: [
     `A. Wingtip section — furthest from the centre of pressure`,
     `B. Wing mid-span section — where the average bending moment is highest`,
-    `C. Wing root section — where the bending moment from distributed lift across the span is greatest (cantilever beam with maximum moment at the fixed end)`,
+    `C. Wing root section — where the bending moment from distributed lift across the span is greatest`,
     `D. Leading edge spar — as it carries the highest aerodynamic pressure`
     ],
     correct: 2,
@@ -1492,7 +1492,7 @@ export const aasaQuestions = [
     options: [
     `A. Feathering increases propeller RPM for better engine restart prospects`,
     `B. Feathering locks the propeller shaft to allow reverse thrust`,
-    `C. A windmilling propeller at cruise speeds creates enormous drag — feathering rotates the blades to edge-on to the airflow, minimising drag and preventing further engine rotation (which could cause mechanical damage)`,
+    `C. A windmilling propeller at cruise speeds creates enormous drag`,
     `D. Feathered propellers are required by CASA above FL150`
     ],
     correct: 2,
@@ -1517,7 +1517,7 @@ export const aasaQuestions = [
     `A. Composites are immune to all forms of corrosion and fatigue failure`,
     `B. Composites are cheaper to manufacture than aluminium`,
     `C. Composites can withstand higher operating temperatures than aluminium — suitable for engine compartments`,
-    `D. Carbon fibre reinforced polymer (CFRP) has a significantly higher specific strength and stiffness (strength/weight ratio) than aluminium — allowing lighter structures for the same strength, or stronger structures for the same weight; typically 20-25% weight reduction versus equivalent aluminium`
+    `D. Carbon fibre reinforced polymer (CFRP) has a significantly higher specific strength and stiffness (strength/weight ratio) than aluminium`
     ],
     correct: 3,
     explanation: `CFRP advantages: (1) Specific strength (strength/density): CFRP ≈ 5× aluminium alloy; (2) Specific stiffness: CFRP ≈ 5× aluminium; (3) No corrosion (does not oxidise); (4) Good fatigue resistance (no crack propagation on microcracks — but delamination is the failure mode). Weight reduction: a modern twin-engine widebody jet approximately 50% composites by weight; approximately 20% weight saving vs equivalent aluminium structure. Disadvantages: expensive (materials and manufacturing); difficult to inspect internal damage (requires NDT); galvanic corrosion when in contact with aluminium (isolation needed); cannot be repaired with simple patches. Answer B.`,
@@ -1528,7 +1528,7 @@ export const aasaQuestions = [
     options: [
     `A. The turbine shaft rotates at low speed and the propeller needs higher RPM`,
     `B. The gearbox provides a mechanical power takeoff for electrical generators`,
-    `C. The gas generator turbine shaft rotates at 15,000-35,000 RPM — far too fast for an efficient propeller (1,000-1,500 RPM optimal); the gearbox reduces speed typically 10:1 to 20:1`,
+    `C. The gas generator turbine shaft rotates at 15,000-35,000 RPM — far too fast for an efficient propeller (1,000-1,500 RPM optimal)`,
     `D. Direct-drive turboprops are standard — gearboxes are only used on reciprocating engines`
     ],
     correct: 2,
@@ -1541,7 +1541,7 @@ export const aasaQuestions = [
     `A. NiCd batteries are incompatible with 28V DC systems`,
     `B. NiCd cells must be replaced every 100 flight hours as a mandatory maintenance interval`,
     `C. NiCd batteries require continuous charging current to prevent capacity loss`,
-    `D. NiCd batteries can experience thermal runaway — a defective cell heats up, increasing current draw, heating adjacent cells, potentially causing fire; cell voltage and temperature monitoring is essential`
+    `D. NiCd batteries can experience thermal runaway — a defective cell heats up, increasing current draw, heating adjacent cells, potentially causing fire`
     ],
     correct: 3,
     explanation: `NiCd battery hazards: (1) Thermal runaway — defective cell overheats → increased current → heats adjacent cells → propagates. At high temperatures: electrolyte (potassium hydroxide) can boil, causing fire/explosion. (2) Memory effect — repetitive partial cycling reduces capacity. (3) Cell reversal — over-discharge reverses individual cell polarity. Required maintenance: capacity checks, individual cell voltage monitoring, scheduled discharge/charge cycles, temperature monitoring during charging. Answer B.`,
@@ -1553,7 +1553,7 @@ export const aasaQuestions = [
     `A. The packs require minimum 200°C bleed air to operate the ACM`,
     `B. Raw bleed air is acidic and must be neutralised`,
     `C. ECS regulations require bleed air below 50°C for passenger comfort`,
-    `D. HP stage bleed air may be 450-550°C and 300-500 kPa — too hot and high-pressure for pack components; the pre-cooler reduces temperature and the PRSOV reduces pressure to pack design specifications`
+    `D. HP stage bleed air may be 450-550°C and 300-500 kPa — too hot and high-pressure for pack components`
     ],
     correct: 3,
     explanation: `HP bleed at high power: approximately 400-500°C and 300+ kPa. Pack components are designed for specific temperature/pressure ranges. The pre-cooler (ram-air cooled heat exchanger) reduces temperature to approximately 150-200°C. The PRSOV reduces pressure to pack design pressure. Without regulation: ACM turbines damaged by excessive temperature; structural components over-pressurised. Answer B.`,
@@ -1575,7 +1575,7 @@ export const aasaQuestions = [
     question: `An aircraft DC bus voltage drops from 28V to 22V. The most likely cause is:`,
     options: [
     `A. Normal variation — 22V is within acceptable range for all DC equipment`,
-    `B. The TRU supplying the bus has failed or the bus has transferred to battery backup — the battery supplies approximately 22-24V under load; investigation and power restoration are required`,
+    `B. The TRU supplying the bus has failed or the bus has transferred to battery backup — the battery supplies approximately 22-24V under load`,
     `C. High electrical load from passenger entertainment`,
     `D. Automatic voltage reduction by the power management system to conserve power in cruise`
     ],
@@ -1587,7 +1587,7 @@ export const aasaQuestions = [
     question: `The Flight Management System (FMS) optimises cruise altitude and speed using:`,
     options: [
     `A. ATC assigned altitudes only — the FMS cannot optimise independently of ATC`,
-    `B. A cost index (CI) value that balances time-related costs against fuel costs — CI=0 maximises fuel savings; CI=maximum minimises flight time regardless of fuel cost; the FMS then computes the ECON speed/altitude profile`,
+    `B. A cost index (CI) value that balances time-related costs against fuel costs — CI=0 maximises fuel savings`,
     `C. A fixed Mach number (0.78) and FL350 for all aircraft types regardless of conditions`,
     `D. Real-time fuel pricing data downloaded via ACARS to compute the optimal profile`
     ],
@@ -1600,7 +1600,7 @@ export const aasaQuestions = [
     options: [
     `A. Prevent structural failure of the fuselage during rapid pressurisation`,
     `B. Protect sensitive avionics from rapid pressure changes`,
-    `C. Ensure passenger comfort during pressure changes — the human ear requires time to equalise pressure through the Eustachian tube; faster pressure changes cause ear pain (barotitis) particularly in passengers with colds, ear infections, or anatomical variations`,
+    `C. Ensure passenger comfort during pressure changes — the human ear requires time to equalise pressure through the Eustachian tube`,
     `D. Comply with CASA minimum pressurisation rate requirements for all transport aircraft`
     ],
     correct: 2,
@@ -1613,7 +1613,7 @@ export const aasaQuestions = [
     `A. Drop to ambient immediately`,
     `B. Remain at the current level — closing the valve simply holds the current pressure`,
     `C. Decrease — closing the valve reduces air circulation`,
-    `D. Increase (cabin altitude decreases) — with no air escaping through the outflow valve, the continuous bleed air supply to the cabin pressurises it further until another relief path is found or a relief valve opens`
+    `D. Increase (cabin altitude decreases) — with no air escaping through the outflow valve`
     ],
     correct: 3,
     explanation: `With the outflow valve closed: bleed air continues to be supplied to the cabin (packs still running). No air is escaping through the outflow valve (the primary escape path). Cabin pressure rises (cabin altitude decreases toward ambient or below if unchecked). The positive pressure relief valve (PPRV) would open if differential exceeds the maximum certified limit. This is why the outflow valve controller is carefully managed — full closure during climb would rapidly over-pressurise the cabin. The cabin differential pressure is primarily controlled by the outflow valve position. Answer B.`,
@@ -1624,7 +1624,7 @@ export const aasaQuestions = [
     options: [
     `A. The gust was expected — anticipated loads cause no damage — the aerodynamic forces in this configuration do not produce this effect`,
     `B. The aircraft was at maximum or minimum weight — load factor is not significant`,
-    `C. Whether +3.5g exceeds the aircraft's limit load factor — if limit load (typically +2.5g for transport category) is exceeded, permanent deformation or structural failure may occur; if below ultimate load (typically 1.5× limit = +3.75g), the structure may deform but not fail catastrophically`,
+    `C. Whether +3.5g exceeds the aircraft's limit load factor — if limit load is exceeded, permanent deformation or structural failure may occur`,
     `D. The autopilot was engaged — autopilot limits all load factors to +2.5g regardless of gust intensity`
     ],
     correct: 2,
@@ -1635,7 +1635,7 @@ export const aasaQuestions = [
     question: `The pneumatic (bleed air) system on a transport jet is primarily sourced from:`,
     options: [
     `A. A dedicated cabin pressurisation compressor driven by the APU only`,
-    `B. Engine compressor stages — hot high-pressure air is bled from the LP or HP compressor and regulated in pressure and temperature before supplying pressurisation, airconditioning, wing anti-ice, and engine starting`,
+    `B. Engine compressor stages — hot high-pressure air is bled from the LP or HP compressor and regulated in pressure and temperature`,
     `C. Ram air scoops on the fuselage that compress air dynamically at cruise speed`,
     `D. Ground carts that supply pressurised air through a dedicated fuselage connection during all phases of flight`
     ],
@@ -1671,7 +1671,7 @@ export const aasaQuestions = [
     question: `The aircraft battery is primarily intended for:`,
     options: [
     `A. Providing normal flight instrument power during cruise`,
-    `B. Emergency power for essential systems when all generators fail, APU starting, and maintaining essential hot bus systems (fire handles, fuel shutoffs) at all times — providing typically 30 minutes for essential avionics`,
+    `B. Emergency power for essential systems when all generators fail, APU starting`,
     `C. Powering all aircraft systems during ground operations`,
     `D. Maintaining constant voltage on the AC bus during generator switching transients`
     ],
@@ -1685,7 +1685,7 @@ export const aasaQuestions = [
     `A. The aircraft descends from very high altitude to sea level in less than 5 minutes`,
     `B. OAT drops below −40°C causing the turbine housing to contract and rub on blade tips`,
     `C. Thrust is reduced to idle for extended periods causing the turbine to cool below its design temperature range`,
-    `D. A rapid large increase in thrust (e.g. from flight idle to maximum in a go-around) causes a sudden large temperature change in the turbine — the temperature gradient through the thick blade root and disc causes differential thermal expansion, generating thermal stresses that can crack the material`
+    `D. A rapid large increase in thrust causes a sudden large temperature change in the turbine`
     ],
     correct: 3,
     explanation: `Thermal shock (thermal fatigue): when thrust is rapidly increased from cold idle to TOGA in a go-around, the combustion temperature rises very rapidly. The thin airfoil sections of turbine blades respond quickly; the thick blade roots and disc respond slowly. The temperature gradient (hot surface vs cool interior) creates differential expansion stresses. Repeated thermal cycles degrade the material (thermal fatigue cracking). This is why extended idle descent followed by an aggressive TOGA application is hard on the hot section. Airlines manage this with minimum descent thrust requirements and smooth thrust management. Answer B.`,
@@ -1697,7 +1697,7 @@ export const aasaQuestions = [
     `A. Disconnect the IDG immediately using the cockpit disconnect switch`,
     `B. Monitor temperature — if steady below the operating limit, proceed with start`,
     `C. Apply cooling spray to reduce temperature before start`,
-    `D. Maintenance inspection before flight — the IDG disconnect switch must not be used on the ground; it is a mechanical release that is irreversible in flight on most aircraft`
+    `D. Maintenance inspection before flight — the IDG disconnect switch must not be used on the ground`
     ],
     correct: 3,
     explanation: `IDG disconnect: physically disconnects the IDG from the engine gearbox using a mechanical release. CRITICAL: irreversible in flight on most aircraft — cannot be reconnected until on the ground with maintenance. Reasons for disconnect: sustained high oil temperature (lubrication problem, bearing failure). On the ground: pre-start IDG temperature warning = maintenance inspection required before dispatch. Never use in-flight disconnect procedure on the ground. Answer B.`,
@@ -1707,7 +1707,7 @@ export const aasaQuestions = [
     question: `The Ram Air Turbine (RAT) deploys automatically when:`,
     options: [
     `A. Any hydraulic pump low-pressure warning activates`,
-    `B. All AC electrical power is lost — the RAT is a wind-driven turbine that extends into the airstream to generate emergency hydraulic and/or electrical power when all primary generators and APU are unavailable`,
+    `B. All AC electrical power is lost — the RAT is a wind-driven turbine that extends into the airstream to`,
     `C. The aircraft exceeds VMO — the RAT provides emergency aerodynamic drag`,
     `D. Any single engine generator fails — the RAT supplements normal generation`
     ],
@@ -1718,7 +1718,7 @@ export const aasaQuestions = [
   {
     question: `The primary hydraulic pump on most transport aircraft is:`,
     options: [
-    `A. Engine-driven pump (EDP) — directly driven from the engine accessory gearbox, providing primary hydraulic pressure whenever the engine runs; supplemented by electric motor-driven pumps (EMDP) for redundancy`,
+    `A. Engine-driven pump (EDP) — directly driven from the engine accessory gearbox, providing primary hydraulic pressure whenever the engine runs`,
     `B. Ram air turbine (RAT) driven — deployed automatically on any hydraulic failure`,
     `C. APU-driven pump — provides hydraulic power on the ground only`,
     `D. Manual hand pump — for flight controls only`
@@ -1730,7 +1730,7 @@ export const aasaQuestions = [
   {
     question: `During an approach in light icing conditions, the crew notes a slight airspeed fluctuation of ±3 kt and the aircraft feels 'mushy' in pitch. A likely cause is:`,
     options: [
-    `A. Ice accumulation on the wing leading edges and horizontal tail surfaces — ice roughens the surface, disrupts boundary layer flow, reduces CLmax, and can cause erratic lift generation and altered stall characteristics; airspeed fluctuations and reduced control feel may indicate degraded wing aerodynamics from icing`,
+    `A. Ice accumulation on the wing leading edges and horizontal tail surfaces`,
     `B. Normal turbulence in the boundary layer near the surface — no concern`,
     `C. Normal autopilot hunting in approach mode`,
     `D. Fuel imbalance causing asymmetric lift — requires aileron trim`
@@ -1745,7 +1745,7 @@ export const aasaQuestions = [
     `A. The aircraft must be able to fly indefinitely on the remaining engines`,
     `B. A second emergency must be manageable even if the first has not been resolved`,
     `C. The crew must always return to the departure aerodrome after any engine failure`,
-    `D. Following failure of the most critical engine, the aircraft must still be able to continue the flight to a suitable aerodrome and land safely — all systems, flight controls, performance, and emergency procedures must support this capability`
+    `D. Following failure of the most critical engine`
     ],
     correct: 3,
     explanation: `Continued safe flight and landing (CSFL) requirement: FAR/CASR Part 25 fundamental safety requirement — following failure of the most critical engine at the most critical moment of flight, the aircraft must be capable of completing a landing safely at a suitable aerodrome. This drives requirements for: multi-system redundancy; OEI performance (drift-down ceiling, landing distance); flight manual OEI procedures; engine fire suppression sufficient for flight to continue; structural integrity with one engine inoperative. Answer B.`,
@@ -1754,7 +1754,7 @@ export const aasaQuestions = [
   {
     question: `The maximum structural cruising speed (VNO) on a piston aircraft corresponds to which marking on a jet transport aircraft:`,
     options: [
-    `A. VNO on jets is called VMO — maximum operating speed; both represent the maximum speed for normal operations in smooth air, above which only smooth controls are used and gusts are potentially hazardous`,
+    `A. VNO on jets is called VMO — maximum operating speed`,
     `B. VNE — the never-exceed speed on all transport aircraft — the aerodynamic forces in this configuration do not produce this effect`,
     `C. VLE — the maximum speed with gear extended`,
     `D. VFE — the maximum speed with flaps extended`
@@ -1767,7 +1767,7 @@ export const aasaQuestions = [
     question: `VMCG differs from VMCA because:`,
     options: [
     `A. VMCG is always higher than VMCA because the aircraft is heavier on the ground`,
-    `B. VMCG uses only aerodynamic rudder for directional control — no nosewheel steering or differential braking is permitted; V1 must be at or above VMCG`,
+    `B. VMCG uses only aerodynamic rudder for directional control — no nosewheel steering or differential braking is permitted`,
     `C. VMCG applies only to four-engine aircraft`,
     `D. VMCG is measured with flaps fully extended; VMCA with flaps retracted`
     ],
@@ -1780,7 +1780,7 @@ export const aasaQuestions = [
     options: [
     `A. The maximum number of aircraft of a given type that can operate from a runway simultaneously`,
     `B. The minimum runway length required for a specific aircraft type`,
-    `C. Whether an aircraft can operate from a given pavement — if ACN ≤ PCN, the aircraft can operate without restriction; ACN > PCN indicates potential pavement damage requiring special permission or weight restriction`,
+    `C. Whether an aircraft can operate from a given pavement — if ACN ≤ PCN, the aircraft can operate without restriction`,
     `D. The fuel contamination risk from a given pavement surface material`
     ],
     correct: 2,
@@ -1793,7 +1793,7 @@ export const aasaQuestions = [
     `A. The autopilot can land the aircraft three times on the same approach`,
     `B. Exactly three autopilot channels must be engaged for autoland`,
     `C. The system performs autoland at three different runways per flight`,
-    `D. Triple redundancy — fail-operational, fail-operational: any single failure does not prevent autoland and any second failure does not cause significant flight path deviation — suitable for CAT III operations`
+    `D. Triple redundancy — fail-operational, fail-operational: any single failure does not prevent`
     ],
     correct: 3,
     explanation: `Autoland certification: Land 2 (fail-passive) — single failure causes disconnect without significant deviation; crew completes landing manually; CAT IIIA (DH 50-100 ft, RVR 200 m). Land 3 (fail-operational × 2) — first failure degrades to fail-passive; second failure maintains safe flight path; two successive failures still allow autoland. Suitable for CAT IIIB (DH < 50 ft, RVR < 200 m). Status annunciated on FMA. Answer B.`,
@@ -1817,7 +1817,7 @@ export const aasaQuestions = [
     `A. Maximum hydraulic pressure is available to all systems simultaneously`,
     `B. The hydraulic fluid temperature does not exceed 100°C`,
     `C. Engine oil and hydraulic fluid remain separated in the heat exchangers`,
-    `D. In the event of low hydraulic pressure or flow, essential flight controls (elevators, ailerons, rudder) receive priority over non-essential services (landing gear, brakes) — the priority valve throttles flow to non-essential consumers to protect essential control surfaces`
+    `D. Essential flight controls (elevators, ailerons, rudder) receive priority over non-essential services`
     ],
     correct: 3,
     explanation: `Hydraulic priority valve: when hydraulic system pressure drops (e.g. high demand during simultaneous gear extension + braking + flight control inputs), the priority valve reduces flow to less critical consumers (landing gear, doors, brakes) while maintaining pressure to essential flight controls. This ensures the pilot retains pitch, roll, and yaw control even in a degraded hydraulic state. Essential flight controls are always protected above non-flight-critical services. Answer B.`,
@@ -1829,7 +1829,7 @@ export const aasaQuestions = [
     `A. The VHF radio and DME systems in one unit`,
     `B. The FMS and autopilot computers in one integrated unit`,
     `C. The weather radar and EGPWS in a common processing platform`,
-    `D. The air data computer (ADC) and inertial reference system (IRS) in a single unit — providing: air data (airspeed, altitude, AOA, TAT) from pitot-static sensors; and inertial data (attitude, heading, acceleration, position) from ring laser gyroscopes and accelerometers`
+    `D. The air data computer (ADC) and inertial reference system (IRS) in a single unit`
     ],
     correct: 3,
     explanation: `ADIRU: an twin-engine narrowbody jet architecture combining ADC + IRS. ADC function: processes pitot-static inputs → CAS, TAS, altitude, VSI, Mach, AOA, TAT/SAT. IRS function: ring laser gyroscopes (3 axes of rotation) and accelerometers (3 axes of translation) → attitude (pitch/roll), heading, body accelerations, and integrated position (navigation). Combined: eliminates the need for separate boxes and reduces wiring complexity. Three ADIRUs on an twin-engine narrowbody jet for redundancy — two flight-critical, one standby. Answer B.`,
@@ -1841,7 +1841,7 @@ export const aasaQuestions = [
     `A. A nose-down pitch with no vibration — the aerodynamic forces in this configuration do not produce this effect`,
     `B. A sudden total loss of lift across the whole wing`,
     `C. A loud bang as the shock wave strikes the fuselage`,
-    `D. A low-frequency vibration through the airframe — the separated turbulent flow behind a shock wave on the wing upper surface impinges on the tail and fuselage, creating a periodic pressure variation that excites airframe structure`
+    `D. A low-frequency vibration through the airframe`
     ],
     correct: 3,
     explanation: `High-speed buffet: as Mach increases above Mcrit, a shock wave forms on the wing upper surface. Boundary layer separates at the shock foot → turbulent separated flow hits the tail surfaces → airframe vibrates (buffet). Initially mild, increasing with further speed increase. First indication: low-amplitude buffet felt through the seat and control column. Warning is earlier and more gradual than low-speed stall buffet. If buffet is significant, the crew must reduce speed (or reduce weight/altitude to move the buffet boundary). Answer B.`,
@@ -1865,7 +1865,7 @@ export const aasaQuestions = [
     `A. Airspeed decreases by 30 kt causing the aircraft to descend — the aerodynamic forces in this configuration do not produce this effect`,
     `B. No effect — the autopilot compensates instantaneously`,
     `C. The aircraft yaws 30° into the wind`,
-    `D. Airspeed increases by approximately 30 kt (IAS increases as more air hits the pitot tube) — the aircraft momentarily 'surges' ahead; the autopilot/autothrottle will respond by reducing thrust or the pitch autopilot will raise the nose to maintain altitude`
+    `D. Airspeed increases by approximately 30 kt (IAS increases as more air hits the pitot tube) — the aircraft momentarily 'surges' ahead`
     ],
     correct: 3,
     explanation: `Windshear — headwind increase: the airspeed indicator responds immediately to the change in relative wind. A 30 kt headwind increase → IAS increases by approximately 30 kt instantaneously (before the aircraft can accelerate or decelerate in response). Autopilot response: (1) Autothrottle reduces thrust (SPEED mode) to reduce speed back to target; (2) ALT HOLD autopilot may pitch up slightly (higher IAS = more lift; nose up to maintain altitude). The opposite: headwind decrease (tailwind shear) → IAS drops → risk of stall in approach configuration. Answer B.`,
@@ -1876,7 +1876,7 @@ export const aasaQuestions = [
     options: [
     `A. The centre tank is always at lower pressure than wing tanks`,
     `B. Centre tank fuel is higher density, suitable for the initial climb phase`,
-    `C. Wing fuel provides bending relief — wing tanks should remain full throughout flight; the centre tank does not provide bending relief, so it burns first`,
+    `C. Wing fuel provides bending relief — wing tanks should remain full throughout flight`,
     `D. ATC regulations require centre tank fuel used first in RVSM airspace`
     ],
     correct: 2,
@@ -1899,7 +1899,7 @@ export const aasaQuestions = [
     question: `A transport aircraft's maximum operating speed VMO is 340 KCAS. At FL370, the IAS for VMO is approximately 210 kt. This difference exists because:`,
     options: [
     `A. At FL370, the pitot system reads lower due to lower air temperature — the aerodynamic forces in this configuration do not produce this effect`,
-    `B. At FL370, air density is approximately 60% less than at sea level; the same dynamic pressure (structural load) that corresponds to 340 KCAS at sea level corresponds to only 210 KIAS at FL370 (IAS indicates the same structural loads as a lower CAS value at altitude)`,
+    `B. At FL370, air density is approximately 60% less than at sea level`,
     `C. The autopilot reduces the VMO at altitude for fuel economy`,
     `D. VMO increases at altitude — 210 KIAS at FL370 represents a higher speed than 340 KCAS at sea level`
     ],
@@ -1912,7 +1912,7 @@ export const aasaQuestions = [
     options: [
     `A. Direct mechanical cables in all cases — hydraulics provide force multiplication only`,
     `B. Pneumatic signals from the bleed air system`,
-    `C. Mechanical linkages (cables, pushrods) in conventional aircraft, or electrical signals in fly-by-wire aircraft — the hydraulic actuator provides force to move the surface against aerodynamic loads`,
+    `C. Mechanical linkages (cables, pushrods) in conventional aircraft, or electrical signals in fly-by-wire aircraft`,
     `D. Optical fibre signals carrying digital position commands`
     ],
     correct: 2,
@@ -1924,7 +1924,7 @@ export const aasaQuestions = [
     options: [
     `A. Directly moving the elevator to the desired position`,
     `B. Adjusting the stabiliser incidence to change trim`,
-    `C. Deflecting a small tab on the elevator trailing edge which aerodynamically loads the elevator to move it to the trimmed position — the elevator moves to the angle where the tab-induced aerodynamic moment is in equilibrium with the hinge moment`,
+    `C. Deflecting a small tab on the elevator trailing edge which aerodynamically loads`,
     `D. Providing stick force feedback to the pilot`
     ],
     correct: 2,
@@ -1936,7 +1936,7 @@ export const aasaQuestions = [
     options: [
     `A. Note it in the technical log but continue with normal operations`,
     `B. Add oleo servicing fluid and resume operations`,
-    `C. Ground the aircraft and report a hard landing — a bottomed-out shock absorber indicates the gear absorbed more than its normal design energy; a structural inspection (hard landing inspection) is required per Aircraft Maintenance Manual before further flight`,
+    `C. Ground the aircraft and report a hard landing — a bottomed-out shock absorber indicates the gear absorbed more than its normal design energy`,
     `D. Check if the strut needs nitrogen re-charging — a nitrogen issue causes bottoming out without structural damage`
     ],
     correct: 2,
@@ -1948,7 +1948,7 @@ export const aasaQuestions = [
     options: [
     `A. Red indicates the maximum speed for gear extension`,
     `B. Red is the international colour for maximum IFR speed`,
-    `C. Red indicates the absolute maximum — exceeding VMO risks structural failure, Mach tuck, buffet, or loss of control; the 'never exceed' zone is shown as a red arc on some indicators, or the red/white barber pole is the VMO/MMO pointer`,
+    `C. Red indicates the absolute maximum — exceeding VMO risks structural failure, Mach tuck, buffet, or loss of control`,
     `D. Red is used for all speed limits regardless of their safety significance`
     ],
     correct: 2,
@@ -1960,7 +1960,7 @@ export const aasaQuestions = [
     options: [
     `A. Increased CLmax at the tip for better cruise efficiency — the aerodynamic forces in this configuration do not produce this effect`,
     `B. Reduces the aspect ratio of the wing, decreasing induced drag`,
-    `C. Ensures the root reaches CLmax before the tip — promoting root-first stall; the ailerons at the tip remain in attached flow until after the root stalls, maintaining roll control throughout the stall warning regime`,
+    `C. Ensures the root reaches CLmax before the tip — promoting root-first stall`,
     `D. Increases the maximum IAS limit by reducing tip compression`
     ],
     correct: 2,
@@ -1983,7 +1983,7 @@ export const aasaQuestions = [
     question: `Engine-out long-range cruise speed differs from all-engines cruise speed because:`,
     options: [
     `A. Engine-out speed is always lower to conserve fuel on the remaining engine`,
-    `B. The optimum speed changes because total drag is different — windmill drag, rudder drag, and bank/sideslip drag change the drag polar; the flight manual publishes specific engine-out cruise speeds for maximum range`,
+    `B. The optimum speed changes because total drag is different — windmill drag, rudder drag, and bank/sideslip drag change the drag polar`,
     `C. Engine-out cruise uses the same speed as normal cruise — only altitude changes`,
     `D. Engine-out cruise speed equals VMCA plus a safety margin`
     ],
@@ -1997,7 +1997,7 @@ export const aasaQuestions = [
     `A. Through the front fan of the engine when the APU is connected`,
     `B. Through the main engine exhaust nozzles via a crossfeed duct`,
     `C. Through louvres on the fuselage belly near the APU compartment`,
-    `D. Through a dedicated APU exhaust duct at the rear of the aircraft (tail cone) — the APU is located in the tail section and exhausts rearward away from the engines and fuselage sides`
+    `D. Through a dedicated APU exhaust duct at the rear of the aircraft (tail cone)`
     ],
     correct: 3,
     explanation: `APU location and exhaust: typically located in the tail section of the aircraft (rear fuselage). APU exhaust exits through a dedicated tailpipe at the very rear of the aircraft. APU intake: either dedicated inlet door or louvres near the tail. The APU compartment has its own fire detection and suppression system. APU inlet/exhaust doors are controlled by the APU start/stop sequence. Exhaust from the tail is away from fuel vents, main engine intakes, and fuselage doors. Answer B.`,
@@ -2032,7 +2032,7 @@ export const aasaQuestions = [
     options: [
     `A. Emergency thrust in case of engine failure on takeoff`,
     `B. Engine starting power only`,
-    `C. Bleed air for airconditioning and pressurisation, and electrical power via an APU generator — allowing operation without ground support equipment`,
+    `C. Bleed air for airconditioning and pressurisation, and electrical power via an APU generator`,
     `D. Hydraulic power for flight control actuation only`
     ],
     correct: 2,
@@ -2056,7 +2056,7 @@ export const aasaQuestions = [
     options: [
     `A. Fan outlet pressure to engine inlet pressure`,
     `B. Turbine exit pressure to compressor inlet pressure`,
-    `C. Compressor exit total pressure to engine inlet total pressure — OPR = P₃/P₂; modern high-OPR engines (OPR 40-60) achieve higher thermodynamic efficiency than older low-OPR designs`,
+    `C. Compressor exit total pressure to engine inlet total pressure — OPR = P₃/P₂`,
     `D. Maximum EGT to ambient temperature in Kelvin`
     ],
     correct: 2,
@@ -2068,7 +2068,7 @@ export const aasaQuestions = [
     options: [
     `A. Maintain approach speed and retract flaps immediately to clean configuration`,
     `B. Reduce pitch to regain airspeed before applying go-around thrust`,
-    `C. Apply maximum rated thrust immediately and maintain a pitch attitude that prevents flight path decay — accept speed below Vref; do not retract flaps or gear until safely climbing`,
+    `C. Apply maximum rated thrust immediately and maintain a pitch attitude that prevents flight path decay — accept speed below Vref`,
     `D. Declare emergency and advise ATC — no other action required until established in the climb`
     ],
     correct: 2,
@@ -2093,7 +2093,7 @@ export const aasaQuestions = [
     `A. Select APU bleed air to flow warm air through the wing fuel tanks via dedicated heating ducts installed specifically for cold-weather polar operations`,
     `B. Increase engine thrust to generate higher fuel temperatures through the fuel-cooled oil cooler — high thrust raises fuel temperature above the freeze point`,
     `C. Transfer fuel to the centre tank which is warmer due to its proximity to the fuselage pressurisation system and environmental control system ducting`,
-    `D. Monitor fuel temperature via the FQIS fuel temperature indicator; if approaching the freeze point (typically 3°C above the freeze point as the warning margin), descend to warmer air, deviate, or accept the route restriction; some operators add freeze point depressants to fuel in cold-weather operations`
+    `D. Monitor fuel temperature via the FQIS fuel temperature indicator`
     ],
     correct: 3,
     explanation: `Fuel freeze management: monitoring fuel temperature is continuous on long polar/high-latitude routes. Action triggers: when fuel temperature approaches the freeze point (usually at a 3°C margin above the published freeze point for the specific fuel uplifted). Options: (1) Descend to lower, warmer altitude; (2) Route modification to reduce time at low temperature; (3) Increase fuel temperature via heat soak from other systems (limited options); (4) Operator may use Jet A (freeze point −40°C) only in warm routes; Jet A-1 (−47°C) for cold routes. Answer B.`,
@@ -2116,7 +2116,7 @@ export const aasaQuestions = [
     options: [
     `A. Maintain altitude — the autopilot prevents any altitude change`,
     `B. Accelerate — reduced thrust means less drag forces`,
-    `C. Decelerate and descend — net rearward force decelerates the aircraft; at lower speed drag eventually increases (if below VMD) or reduces below the thrust level, establishing a new equilibrium in a descent`,
+    `C. Decelerate and descend — net rearward force decelerates the aircraft`,
     `D. Pitch up immediately — reducing thrust causes a nose-up pitching moment always`
     ],
     correct: 2,
@@ -2127,7 +2127,7 @@ export const aasaQuestions = [
     question: `The hydraulic system priority valve ensures that during high demand:`,
     options: [
     `A. Maximum hydraulic pressure is delivered to all systems simultaneously`,
-    `B. Essential flight controls (elevators, ailerons, rudder) receive priority over non-essential services (landing gear, brakes, doors) — the valve throttles flow to non-essential consumers when system pressure drops`,
+    `B. Essential flight controls (elevators, ailerons, rudder) receive priority over non-essential services (landing gear`,
     `C. The hydraulic fluid temperature is maintained within limits`,
     `D. Engine oil and hydraulic fluid remain separated in the heat exchangers`
     ],
@@ -2139,7 +2139,7 @@ export const aasaQuestions = [
     question: `The relationship between outside air temperature (OAT) and total air temperature (TAT) displayed in the cockpit is:`,
     options: [
     `A. TAT = OAT — they are the same measurement`,
-    `B. TAT > OAT at speed — TAT includes kinetic heating (ram rise): TAT = OAT × (1 + 0.2M²) in Kelvin; at M0.82, ram rise is approximately 9°C`,
+    `B. TAT > OAT at speed — TAT includes kinetic heating (ram rise): TAT = OAT × (1 + 0.2M²) in Kelvin`,
     `C. TAT < OAT — sensor cooling reduces the reading`,
     `D. TAT = OAT + altitude in thousands of feet`
     ],
@@ -2163,7 +2163,7 @@ export const aasaQuestions = [
     question: `When a transport aircraft's flaps are extended, the wing's stall speed decreases because:`,
     options: [
     `A. Flap extension reduces aircraft weight by lowering fuel consumption`,
-    `B. Flap extension increases the wing's camber and effective chord area, increasing CLmax — since stall speed VS = √(2W/(ρ × S × CLmax)), higher CLmax reduces VS for the same W, ρ, and S`,
+    `B. Flap extension increases the wing's camber and effective chord area, increasing CLmax`,
     `C. Flap extension increases the wing area (S) — larger wing generates more lift at the same speed`,
     `D. Flaps reduce the induced drag, allowing lower approach speeds without penalty`
     ],
@@ -2175,7 +2175,7 @@ export const aasaQuestions = [
     question: `The essential (hot) battery bus is permanently connected to the battery because:`,
     options: [
     `A. The hot bus provides constant voltage regulation for the main AC buses`,
-    `B. Critical systems (fire shutoff valves, fuel cutoffs, fire bottle discharge) must remain powered regardless of any electrical fault or switch position — ensuring immediate-action systems are always available`,
+    `B. Critical systems (fire shutoff valves, fuel cutoffs, fire bottle discharge) must remain powered regardless of any electrical fault or switch position`,
     `C. The hot bus reduces the number of electrical relays needed in the normal bus system`,
     `D. Regulations require all aircraft to have a permanently powered bus for passenger call systems`
     ],
@@ -2188,7 +2188,7 @@ export const aasaQuestions = [
     options: [
     `A. Monitor tyre temperature and alert crew to overheating`,
     `B. Seal the wheel against water ingestion on contaminated runways`,
-    `C. Deliberately deflate the tyre at a set temperature — if braking energy heats the wheel above the plug design temperature, the plug melts and the tyre deflates in a controlled manner rather than risking an explosive failure`,
+    `C. Deliberately deflate the tyre at a set temperature`,
     `D. Provide a static discharge path from the tyre to the ground`
     ],
     correct: 2,
@@ -2210,7 +2210,7 @@ export const aasaQuestions = [
   {
     question: `The ACN/PCN system ensures:`,
     options: [
-    `A. Pavement loading compatibility — if ACN exceeds PCN, the aircraft loading exceeds the pavement's designed capacity; if ACN ≤ PCN, unrestricted operations are permitted`,
+    `A. Pavement loading compatibility — if ACN exceeds PCN, the aircraft loading exceeds the pavement's designed capacity`,
     `B. The number of aircraft movements a runway can accommodate per day`,
     `C. The maximum approach speed for a given runway length`,
     `D. The minimum runway length required for the aircraft type`
@@ -2223,7 +2223,7 @@ export const aasaQuestions = [
     question: `When both main generators fail and the APU is not running, the recommended action is:`,
     options: [
     `A. Land immediately — all electrical power is lost`,
-    `B. Start the APU immediately — if the APU generates successfully it restores AC power; simultaneously reduce electrical load, configure essential systems, and divert to the nearest suitable aerodrome`,
+    `B. Start the APU immediately — if the APU generates successfully it restores AC power`,
     `C. Deploy the RAT and continue to the planned destination`,
     `D. Reset both generator circuit breakers — this always restores normal generation`
     ],
@@ -2258,7 +2258,7 @@ export const aasaQuestions = [
   {
     question: `The aircraft's maximum zero fuel weight (MZFW) of 64,500 kg is exceeded if the fuel burned in flight drops the weight below what value?`,
     options: [
-    `A. The concept is inverted: MZFW is a maximum PAYLOAD structural limit, not a minimum fuel limit. The aircraft's weight always decreases during flight. MZFW prevents exceeding the wing bending structural limit with maximum payload and zero fuel. Once fuel is loaded, the aircraft weight is ZFW + fuel, always ≥ MZFW if loaded correctly`,
+    `A. The concept is inverted — MZFW is a maximum structural payload limit, not a minimum fuel limit; adding payload beyond MZFW without wing fuel overstresses the wing root`,
     `B. 64,500 kg — the aircraft cannot be below MZFW during flight and must burn fuel to reach this weight before descending`,
     `C. 55,000 kg — any aircraft weight below 55,000 kg represents a risk of structural failure in the wing`,
     `D. The aircraft weight cannot decrease during flight because fuel is recirculated rather than consumed by modern turbofan engines`
@@ -2270,7 +2270,7 @@ export const aasaQuestions = [
   {
     question: `In trimmed engine-out cruise, the live engine must produce more thrust than in normal symmetric cruise because:`,
     options: [
-    `A. The live engine must overcome normal cruise drag PLUS the additional drag from the failed engine (windmill drag), rudder deflection drag, and any drag from the required bank/sideslip`,
+    `A. The live engine must overcome normal cruise drag PLUS the additional drag from the failed engine (windmill drag)`,
     `B. The live engine must produce twice the thrust to replace the failed engine`,
     `C. The live engine automatically increases thrust to compensate for the lost engine`,
     `D. The live engine must produce extra thrust only to maintain directional control`
@@ -2297,7 +2297,7 @@ export const aasaQuestions = [
     `A. Segregation allows different hydraulic pressures for different services`,
     `B. Separate systems allow maintenance on one while the other remains pressurised`,
     `C. Different hydraulic systems use different fluid types requiring segregation`,
-    `D. A single failure in one system cannot affect others — all critical flight control surfaces have actuators powered by at least two independent hydraulic systems`
+    `D. A single failure in one system cannot affect others`
     ],
     correct: 3,
     explanation: `Hydraulic redundancy: 2-3 independent systems (a twin-engine narrowbody jet: A, B, Standby; a twin-engine narrowbody jet: Green, Blue, Yellow), each with independent reservoir, pump, and distribution. Critical surfaces powered by actuators from multiple systems. A leak in one system drains its own reservoir only. Ensures no single hydraulic failure results in total loss of flight control. Answer B.`,
@@ -2309,7 +2309,7 @@ export const aasaQuestions = [
     `A. No effect — the aircraft's autopilot corrects automatically without any aerodynamic penalty`,
     `B. The heavier wing increases induced drag on that side only — total drag is unchanged`,
     `C. Fuel imbalance only affects ground handling — no aerodynamic effect in flight`,
-    `D. The heavier left wing creates a rolling moment requiring right aileron trim — in straight and level flight this means an aileron (or spoiler) is continuously deflected, increasing drag and fuel burn; the longer the imbalance persists, the more fuel is wasted`
+    `D. The heavier left wing creates a rolling moment requiring right aileron trim`
     ],
     correct: 3,
     explanation: `Lateral fuel imbalance: the heavier wing creates a rolling moment — the aircraft tends to roll toward the heavier wing. To maintain level flight, the autopilot/crew applies aileron input (right aileron up on right side, or left aileron down on left side, or asymmetric spoiler). This continuous aileron/spoiler deflection increases drag. More spoiler = more drag = more fuel burn. The imbalance is not self-correcting (unlike an aircraft that burns from the heavier side automatically). Crew must crossfeed or transfer fuel. Answer B.`,
@@ -2320,7 +2320,7 @@ export const aasaQuestions = [
     options: [
     `A. Automatic pitch trimming based on speed and altitude`,
     `B. Elevator position feedback to the autopilot for precision tracking`,
-    `C. Artificial feedback force to the pilot — proportional to dynamic pressure (q-feel) or spring-loaded; prevents over-control at high speed and ensures the pilot can feel control authority changes; without feel, the hydraulically powered controls are dangerously light`,
+    `C. Artificial feedback force to the pilot — proportional to dynamic pressure (q-feel) or spring-loaded`,
     `D. Aileron-elevator interconnect for coordinated rolling manoeuvres`
     ],
     correct: 2,
@@ -2343,7 +2343,7 @@ export const aasaQuestions = [
     question: `For a given aircraft weight, flying above the optimum cruise altitude will:`,
     options: [
     `A. Always improve specific air range — higher is always better`,
-    `B. Reduce efficiency — above the optimum altitude the required CL approaches the buffet onset CL; induced drag increases significantly and the aircraft may be forced to fly slower, degrading specific air range`,
+    `B. Reduce efficiency — above the optimum altitude the required CL approaches the buffet onset CL`,
     `C. Improve efficiency up to the service ceiling`,
     `D. Have no effect on range — altitude only affects fuel burn at sea level`
     ],
@@ -2355,7 +2355,7 @@ export const aasaQuestions = [
     question: `The FMS top-of-descent (TOD) point is calculated to:`,
     options: [
     `A. Always begin descent 50 nm before destination`,
-    `B. Arrive at altitude constraints and the destination at the correct altitude and speed using an idle-thrust profile — the FMC works backward from constraints to find the geometric point at cruise altitude where descent should begin`,
+    `B. Arrive at altitude constraints and the destination at the correct altitude and speed using an idle-thrust descent profile`,
     `C. Use maximum descent rate to minimise flight time`,
     `D. Maintain constant 2,000 fpm throughout the descent`
     ],
@@ -2378,7 +2378,7 @@ export const aasaQuestions = [
   {
     question: `Differential braking for directional control uses:`,
     options: [
-    `A. Independent toe brake pedals — pressing one toe brake applies hydraulic braking to that main gear, while the other side remains free-rolling, creating a yawing moment toward the braked side`,
+    `A. Independent toe brake pedals — pressing one toe brake applies hydraulic braking to that main gear`,
     `B. The parking brake lever applied asymmetrically`,
     `C. The anti-skid system applied asymmetrically on the two main gear sets`,
     `D. Engine thrust differential combined with full rudder deflection`
@@ -2391,7 +2391,7 @@ export const aasaQuestions = [
     question: `The integrated drive generator (IDG) maintains constant 400 Hz output frequency by:`,
     options: [
     `A. Using a digital frequency converter that electronically adjusts the output`,
-    `B. Incorporating a hydromechanical constant speed drive — a variable ratio hydraulic torque converter that adjusts the gear ratio between the engine gearbox and generator shaft to maintain constant generator speed regardless of engine RPM`,
+    `B. Incorporating a hydromechanical constant speed drive`,
     `C. Running the generator at variable frequency then converting to 400 Hz`,
     `D. Connecting multiple generators in parallel so their frequencies average to 400 Hz`
     ],
@@ -2403,7 +2403,7 @@ export const aasaQuestions = [
     question: `On a transport aircraft at cruise, the crew notes that N1 is fluctuating between 89% and 93% on the left engine with a corresponding EGT fluctuation. N2 is steady. The most likely cause is:`,
     options: [
     `A. Normal engine behaviour — all turbofan engines fluctuate this much in cruise`,
-    `B. An LP turbine or fan blade issue — N1 fluctuation with stable N2 suggests a problem in the LP spool (fan, LP compressor, LP turbine) such as a blade vibration, partial obstruction, or sensor fault`,
+    `B. An LP turbine or fan blade issue — N1 fluctuation with stable N2 suggests a problem in the LP spool (fan, LP compressor`,
     `C. A compressor stall — indicated by N2 fluctuation only`,
     `D. A fuel control problem — would show as both N1 and N2 fluctuating together`
     ],
@@ -2428,7 +2428,7 @@ export const aasaQuestions = [
     options: [
     `A. Increase the aerodynamic force the surface can generate`,
     `B. Provide additional structural stiffness to the control surface`,
-    `C. Reduce the hinge moment — the area forward of the hinge generates an aerodynamic force opposite to the main control surface force, partially cancelling the hinge moment and reducing stick forces`,
+    `C. Reduce the hinge moment — the area forward of the hinge generates an aerodynamic force`,
     `D. Create a horn-shaped profile that improves aerodynamic efficiency`
     ],
     correct: 2,
@@ -2439,7 +2439,7 @@ export const aasaQuestions = [
     question: `An aircraft's takeoff V1 is limited to a maximum of:`,
     options: [
     `A. 1.1 times VMCA`,
-    `B. VR — V1 cannot exceed the rotation speed (a V1 above VR would mean the decision to continue or stop is made after rotation has started, which is unacceptable)`,
+    `B. VR — V1 cannot exceed the rotation speed`,
     `C. V2 − 5 kt for safety margin`,
     `D. 250 KIAS in all cases`
     ],
@@ -2464,7 +2464,7 @@ export const aasaQuestions = [
     options: [
     `A. Adjusting engine thrust to maintain the reference altitude`,
     `B. Adjusting both pitch and thrust simultaneously`,
-    `C. Modulating elevator (pitch) to maintain a reference pressure altitude — deviations above cause nose-down pitch commands; deviations below cause nose-up commands; the autothrottle controls speed separately`,
+    `C. Modulating elevator (pitch) to maintain a reference pressure altitude — deviations above cause nose-down pitch commands`,
     `D. Locking the elevator at a fixed position`
     ],
     correct: 2,
@@ -2477,7 +2477,7 @@ export const aasaQuestions = [
     `A. Supersonic blades are heavier and harder to manufacture`,
     `B. Supersonic flow reduces the air pressure entering the combustion chamber`,
     `C. The FADEC limits all compressor RPM to prevent blade tip supersonic flow`,
-    `D. Supersonic local flow creates shock waves within the compressor passages — the shock waves cause pressure losses, increase the risk of compressor stall, reduce efficiency, and cause blade fatigue from unsteady loading`
+    `D. Supersonic local flow creates shock waves within the compressor passages`
     ],
     correct: 3,
     explanation: `Transonic and supersonic flow in compressors: modern fan blades are designed as 'transonic' — supersonic at the tip, subsonic at the hub. Managing the shock waves that form is a key design challenge. Supersonic internal flow: shock waves create pressure losses (entropy increase); separation behind shocks reduces compressor efficiency; oscillating shock positions cause blade fatigue; compressor surge risk increases. Compressor designers work to minimize shock losses while accepting them as necessary for high-stage-pressure-ratio designs. Answer B.`,
@@ -2487,7 +2487,7 @@ export const aasaQuestions = [
     question: `VMCA is defined as:`,
     options: [
     `A. The minimum speed at which the aircraft can maintain altitude on one engine`,
-    `B. The minimum speed in flight at which directional control can be maintained following failure of the critical engine, with maximum rudder deflection and bank angle not exceeding 5° toward the live engine`,
+    `B. The minimum speed in flight at which directional control can be maintained following failure of the critical engine`,
     `C. The minimum speed for gear retraction after engine failure`,
     `D. The minimum speed at which the autopilot can maintain heading with one engine inoperative`
     ],
@@ -2501,7 +2501,7 @@ export const aasaQuestions = [
     `A. DC battery power to 400 Hz AC for essential avionics`,
     `B. Three-phase AC to single-phase AC for galley equipment`,
     `C. High-pressure bleed air to electrical power via a turbocompressor`,
-    `D. 115V AC 400 Hz to 28V DC — providing DC power for systems that require direct current (DC motors, battery charging, instruments, engine fuel controls, emergency systems)`
+    `D. 115V AC 400 Hz to 28V DC`
     ],
     correct: 3,
     explanation: `TRU: a transformer-rectifier device. Transformer: steps down voltage (115V AC → 28V AC approximately). Rectifier: converts AC to DC (28V DC). The aircraft has primary TRUs supplying the main DC buses and the battery charging bus. Loss of a TRU: the affected DC bus may be powered by alternate TRU or battery. DC systems: engine fuel controls, some instruments, battery charging, emergency lighting, some avionics. Answer B.`,
@@ -2513,7 +2513,7 @@ export const aasaQuestions = [
     `A. Minimum airspeed must be maintained for aircraft control with the engine at zero thrust`,
     `B. The fuel control system does not function below the minimum relight speed`,
     `C. ATC requires a minimum speed for any aircraft without full engine power`,
-    `D. Sufficient ram air pressure is needed to windmill the engine to a minimum N2 speed for the fuel/air ratio at light-off — below the minimum airspeed, the engine does not windmill fast enough for successful ignition`
+    `D. Sufficient ram air pressure is needed to windmill the engine to a minimum N2 speed for the fuel/air ratio at light-off`
     ],
     correct: 3,
     explanation: `Airborne relight requires windmill speed: as the aircraft flies with the failed engine shutdown, the engine windmills (free-spins) due to ram airflow through the compressor. The windmill RPM increases with increasing airspeed. For a successful relight: N2 must be above the minimum ignition RPM (typically 5-15% N2 depending on engine). Below the minimum relight airspeed, N2 is too low for reliable ignition. Above maximum relight airspeed: windmill RPM may be so high that the fuel/air ratio is too lean for ignition. The relight envelope (altitude vs airspeed) defines the acceptable region. Answer B.`,
@@ -2523,7 +2523,7 @@ export const aasaQuestions = [
     question: `VMCA decreases with increasing altitude because:`,
     options: [
     `A. At high altitude VMCA is higher due to lower air density making the rudder less effective`,
-    `B. The live engine produces less thrust at altitude — the asymmetric yawing moment is smaller; although rudder effectiveness also decreases, the thrust reduction dominates and VMCA falls; published VMCA is the sea-level value`,
+    `B. The live engine produces less thrust at altitude — the asymmetric yawing moment is smaller`,
     `C. Engine failures at high altitude cannot occur`,
     `D. At high altitude only the autopilot can maintain control after engine failure`
     ],
@@ -2534,7 +2534,7 @@ export const aasaQuestions = [
   {
     question: `An EICAS (Engine Indicating and Crew Alerting System) WARNING message (red) requires:`,
     options: [
-    `A. Immediate crew action — a red warning indicates a condition requiring urgent attention to prevent catastrophic failure or safety of flight issue; the crew must immediately action the associated QRH procedure`,
+    `A. Immediate crew action — a red warning indicates a condition requiring urgent attention to prevent catastrophic failure or safety of flight issue`,
     `B. No immediate action — red messages are informational only`,
     `C. The crew to advise ATC only — no flight crew action is required for red messages`,
     `D. Autopilot disengagement only — the specific system failure requires no other action`
@@ -2548,7 +2548,7 @@ export const aasaQuestions = [
     options: [
     `A. Equal to the wing's angle of attack — the aerodynamic forces in this configuration do not produce this effect`,
     `B. Greater than the wing's AoA due to the accelerated slipstream`,
-    `C. Less than the wing's angle of attack — the downwash reduces the effective AoA seen by the tail; as wing AoA increases, downwash increases and the tail's effective AoA increases by less than the wing's`,
+    `C. Less than the wing's angle of attack — the downwash reduces the effective AoA seen by the tail`,
     `D. Unaffected by wing downwash — only the fuselage wake affects the tail`
     ],
     correct: 2,
@@ -2595,7 +2595,7 @@ export const aasaQuestions = [
     question: `Bus tie contactors in a transport aircraft's electrical system serve to:`,
     options: [
     `A. Physically connect the generator output shafts for synchronisation`,
-    `B. Allow individual generator buses to be connected to or isolated from the common tie bus — enabling any generator to supply any bus and allowing automatic transfer to an alternate source if a generator trips offline`,
+    `B. Allow individual generator buses to be connected to or isolated from the common tie bus`,
     `C. Convert three-phase power to single-phase for selected consumers`,
     `D. Regulate the voltage on each bus independently`
     ],
@@ -2608,7 +2608,7 @@ export const aasaQuestions = [
     options: [
     `A. Apply maximum brake pressure continuously to all wheels`,
     `B. Limit total braking to 50% of maximum to prevent skidding`,
-    `C. Prevent individual wheel lock-up by reducing pressure to any wheel decelerating too rapidly, then rapidly reapplying — maintaining optimum slip ratio for maximum deceleration without skidding`,
+    `C. Prevent individual wheel lock-up by reducing pressure to any wheel decelerating too rapidly, then rapidly reapplying`,
     `D. Deploy brake parachutes when wheel braking is insufficient`
     ],
     correct: 2,
@@ -2621,7 +2621,7 @@ export const aasaQuestions = [
     `A. EAS accounts for wind while TAS does not — the aerodynamic forces in this configuration do not produce this effect`,
     `B. EAS includes a Mach correction while TAS does not`,
     `C. EAS and TAS are always equal for jet aircraft`,
-    `D. EAS = TAS × √(ρ/ρ₀) — at altitude air density ρ is less than sea-level density ρ₀, so EAS < TAS; EAS represents the dynamic pressure the aircraft structure experiences, equivalent to a lower TAS at sea-level density`
+    `D. EAS = TAS × √(ρ/ρ₀) — at altitude air density ρ is less than sea-level density ρ₀, so EAS < TAS`
     ],
     correct: 3,
     explanation: `EAS: the airspeed that would produce the same dynamic pressure at sea level (ρ₀) as the actual TAS at altitude (ρ). EAS = TAS × √(ρ/ρ₀). At FL350, ρ/ρ₀ ≈ 0.31, so EAS ≈ TAS × 0.56. Structural loads on the aircraft are proportional to dynamic pressure = ½ρ₀ × EAS². Structural limits are therefore expressed in EAS (or CAS, which approximates EAS at low Mach). Answer B.`,
@@ -2630,7 +2630,7 @@ export const aasaQuestions = [
   {
     question: `The weight and balance (W&B) CG envelope is defined by:`,
     options: [
-    `A. Forward and aft CG limits expressed as a percentage of Mean Aerodynamic Chord (MAC) or as a distance from a datum — the envelope defines all permissible combinations of weight and CG location for safe operation`,
+    `A. Forward and aft CG limits expressed as a percentage of Mean Aerodynamic Chord (MAC) or as a distance from a datum`,
     `B. Minimum and maximum fuselage payload only — fuel has no effect on CG`,
     `C. The maximum weight at which the aircraft can rotate within the runway length`,
     `D. ATC weight restrictions for the departure airport only`
@@ -2645,7 +2645,7 @@ export const aasaQuestions = [
     `A. Adjusts thrust to maintain the selected climb/descent rate`,
     `B. Adjusts both pitch and thrust to hold exactly the selected V/S`,
     `C. Uses speedbrakes to increase descent rate if the selected V/S is not achieved`,
-    `D. Commands pitch (elevator) to maintain the selected V/S; the autothrottle controls speed; if insufficient thrust is available in a climb, speed will decay as the autopilot holds V/S regardless`
+    `D. Commands pitch (elevator) to maintain the selected V/S`
     ],
     correct: 3,
     explanation: `V/S mode: the autopilot holds a selected rate of climb or descent using pitch. The autothrottle manages speed. Critical limitation: if selected V/S requires more power than available, the autothrottle cannot keep up and speed decays (climb case). Unlike VNAV path, V/S does not protect against speed exceedances — it holds V/S even if speed approaches the stall. Crews must monitor speed in V/S mode, especially at high altitude. Answer B.`,
@@ -2656,7 +2656,7 @@ export const aasaQuestions = [
     options: [
     `A. The entire fuselage load is carried by the skin alone`,
     `B. The fuselage has no internal structure — all loads are carried externally by the wing`,
-    `C. The skin carries significant loads (tension, shear) but is reinforced by stringers (longitudinal) and frames/formers (transverse) — the skin and supporting structure share the loads; no internal load-carrying framework (no 'box beam' or 'truss')`,
+    `C. The skin carries significant loads (tension, shear) but is reinforced by stringers (longitudinal) and frames/formers (transverse)`,
     `D. Semi-monocoque means the cockpit windows carry all pressurisation loads`
     ],
     correct: 2,
@@ -2668,7 +2668,7 @@ export const aasaQuestions = [
     options: [
     `A. A fixed point 100 nm before the destination`,
     `B. ATC instruction only — crews cannot calculate TOD independently`,
-    `C. The required descent path to reach the initial approach fix or destination at the correct altitude and speed — factoring in: distance, altitude to lose, speed constraints, wind, aircraft performance, and idle/clean descent profile`,
+    `C. The required descent path to reach the initial approach fix or destination at the correct altitude and speed`,
     `D. The cruise altitude only — speed and distance are not factors`
     ],
     correct: 2,
@@ -2678,7 +2678,7 @@ export const aasaQuestions = [
   {
     question: `A transport aircraft's maximum certified altitude (service ceiling) is primarily limited by:`,
     options: [
-    `A. The altitude at which the aircraft can no longer maintain a minimum climb gradient (typically 0.5% or specific flight manual value) in the cruise configuration at maximum continuous thrust with all engines operating`,
+    `A. The altitude at which the aircraft can no longer maintain a minimum climb gradient in the cruise configuration at maximum continuous thrust with all engines operating`,
     `B. The maximum altitude at which the pressurisation system can maintain a cabin altitude of 8,000 ft`,
     `C. The altitude at which aerodynamic forces become insufficient for level flight regardless of engine power`,
     `D. ICAO altitude restrictions for international airways`
@@ -2690,7 +2690,7 @@ export const aasaQuestions = [
   {
     question: `The battery on a transport aircraft is primarily used for:`,
     options: [
-    `A. Emergency power for essential/standby systems when all generators have failed — maintains critical instruments, radios, and controls for typically 30 minutes or less`,
+    `A. Emergency power for essential/standby systems when all generators have failed`,
     `B. Providing normal inflight backup power for all aircraft systems`,
     `C. Starting the main engines via direct battery start`,
     `D. Powering passenger entertainment independently`
@@ -2705,7 +2705,7 @@ export const aasaQuestions = [
     `A. Automatic pilot-input correction for wind gusts`,
     `B. Turbulence damping to reduce pilot workload in rough air`,
     `C. Automatic centering of the controls when the pilot releases them`,
-    `D. Stick force proportional to dynamic pressure (½ρV²) — preventing dangerously light controls at high speed where the hydraulic system would otherwise allow full deflection with minimal pilot effort, risking structural overload`
+    `D. Stick force proportional to dynamic pressure (½ρV²)`
     ],
     correct: 3,
     explanation: `Artificial feel necessity: in a hydraulic powered control system, the pilot only positions a valve — the hydraulic pressure does all the work with no aerodynamic feedback. Without feel, the pilot could apply full deflection at VMO with the same stick force as at approach speed — massively overstressing the aircraft. The q-feel (dynamic pressure feel) system generates resistance proportional to dynamic pressure: light at low speed (easier manoeuvring), heavy at high speed (prevents over-control). Directly analogous to natural aerodynamic stick forces in unpowered controls. Answer B.`,
@@ -2741,7 +2741,7 @@ export const aasaQuestions = [
     `A. The aircraft exceeds VMO with gear retracted — overspeed is detected by the autothrottle and the gear warning horn activates as an additional alert`,
     `B. The nose gear shimmy exceeds the design limit as measured by accelerometers in the nose strut — the warning alerts the crew to retract the nose gear`,
     `C. The landing gear is extended above FL250 — ATC regulations prohibit gear extension above this altitude and the warning system enforces this limitation`,
-    `D. The aircraft exceeds VLO (maximum speed for extending/retracting gear, 270 kt / M0.82) or VLE (maximum speed with gear extended, 270 kt / M0.82) — a warning alerts the crew to retract the gear or reduce speed to prevent structural damage to the gear doors, actuators, or gear structure`
+    `D. The aircraft exceeds VLO (maximum speed for extending/retracting gear, 270 kt / M0.82) or VLE (maximum speed with gear extended, 270 kt / M0.82)`
     ],
     correct: 3,
     explanation: `Landing gear speed limits: VLO = max speed at which gear may be extended or retracted (structural limit during gear transit — doors open, gear moving). VLE = max speed with gear extended. Exceeding VLE: aerodynamic loads on gear structure and doors exceed design values — risk of gear door failure, gear collapse. Warning: an overspeed warning activates above VLO/VLE with gear not up and locked. Action: reduce speed immediately. If gear was extended above VLE: gear/door inspection required. On a twin-engine narrowbody jet: VLO = VLE = 270 kt/M0.82. Answer B.`,
@@ -2751,7 +2751,7 @@ export const aasaQuestions = [
     question: `A bogie (multi-axle truck) landing gear configuration is used on heavy aircraft to:`,
     options: [
     `A. Increase braking force by having more brake units`,
-    `B. Distribute weight over more wheels and a larger contact area — reducing load per wheel and per unit pavement area, lowering the ACN and allowing operations from pavements with lower PCN ratings`,
+    `B. Distribute weight over more wheels and a larger contact area`,
     `C. Improve crosswind landing capability`,
     `D. Allow higher approach speeds by providing better aerodynamic braking from the gear doors`
     ],
@@ -2763,7 +2763,7 @@ export const aasaQuestions = [
     question: `The Mach trimmer automatically applies nose-up stabiliser trim as Mach increases because:`,
     options: [
     `A. Mach tuck creates a nose-up tendency requiring nose-down stabiliser`,
-    `B. Mach tuck creates a progressive nose-down pitching moment as the centre of pressure moves aft above Mcrit — the Mach trimmer counteracts this by adding nose-up stabiliser trim proportional to Mach number`,
+    `B. Mach tuck creates a progressive nose-down pitching moment as the centre of pressure moves aft above Mcrit`,
     `C. The Mach trimmer only adjusts elevator position, leaving the stabiliser fixed`,
     `D. Mach tuck only occurs above MMO where the Mach trimmer is inactive`
     ],
@@ -2777,7 +2777,7 @@ export const aasaQuestions = [
     `A. Control all aircraft systems automatically during flight`,
     `B. Provide real-time aircraft system status to ATC`,
     `C. Monitor passenger seat assignments and cabin environmental settings`,
-    `D. Store and display fault messages, maintenance codes, and system status data — allowing maintenance engineers to identify faults post-flight using standardised BITE (Built-In Test Equipment) codes without requiring the fault to be reproduced`
+    `D. Store and display fault messages, maintenance codes, and system status data`
     ],
     correct: 3,
     explanation: `CMC/OMS and BITE: modern transport aircraft systems have built-in self-test capability. When a system fault occurs: the BITE logic generates a fault code (LRU identification, fault type, confidence level). These codes are stored in the CMC. Post-flight: maintenance engineers access the CMC to identify which Line Replaceable Units (LRUs) have generated fault codes. This eliminates the need for lengthy troubleshooting of intermittent faults — the CMC points directly to the failed component. Reduces maintenance time and avoids 'no fault found' outcomes when the fault is intermittent. Answer B.`,
@@ -2787,7 +2787,7 @@ export const aasaQuestions = [
     question: `The thrust management computer (TMC) computes N1 or EPR targets for takeoff based on:`,
     options: [
     `A. Crew-selected thrust only — actual engine condition is not measured`,
-    `B. Ambient conditions (OAT, altitude/pressure), assumed temperature derate (if selected), engine bleed extraction, and the engine performance model — producing the correct thrust target for the specific conditions`,
+    `B. Ambient conditions (OAT, altitude/pressure), assumed temperature derate (if selected), engine bleed extraction`,
     `C. Runway length and obstacle height only`,
     `D. A fixed N1 value that does not change with temperature or altitude`
     ],
@@ -2822,7 +2822,7 @@ export const aasaQuestions = [
   {
     question: `The 'Q' symbol in aerodynamics represents:`,
     options: [
-    `A. Dynamic pressure — q = ½ρV²; the pressure due to the kinetic energy of the airflow; determines aerodynamic forces on the aircraft`,
+    `A. Dynamic pressure — q = ½ρV²`,
     `B. Flow rate in litres per second`,
     `C. The aircraft's quality factor in structural certification`,
     `D. Fuel calorific value in kJ/kg`
@@ -2837,7 +2837,7 @@ export const aasaQuestions = [
     `A. VMCG is always higher than VMCA — the aerodynamic forces in this configuration do not produce this effect`,
     `B. VMCG applies above FL100; VMCA applies below FL100`,
     `C. VMCG requires both engines operating; VMCA is for single-engine only`,
-    `D. VMCG uses only aerodynamic rudder for directional control — no nose gear steering or differential braking is permitted; VMCA uses aerodynamic controls in flight but may use up to 5° bank; VMCG is typically lower than VMCA`
+    `D. VMCG uses only aerodynamic rudder for directional control — no nose gear steering or differential braking is permitted`
     ],
     correct: 3,
     explanation: `VMCG vs VMCA: VMCG (ground): minimum speed on the ground at which directional control can be maintained after critical engine failure using ONLY aerodynamic rudder (no nosewheel steering, no differential braking — per FAR Part 25). Required because nosewheel steering may not be available at rotation speed. VMCG < VMCA typically because the rudder authority needed increases when gear is retracted (VMCA condition) and bank angle up to 5° can assist in air. V1 must be ≥ VMCG. Answer B.`,
@@ -2861,7 +2861,7 @@ export const aasaQuestions = [
     `A. GPS ground speed divided by the published local speed of sound for the aircraft's current altitude`,
     `B. TAS divided by the sea level speed of sound (661.5 kt) at all times`,
     `C. The EGT of the engines, which is proportional to local speed of sound`,
-    `D. The ratio of pitot-static differential pressure to static pressure — this ratio is a direct function of Mach number (derived from the compressible flow equations), allowing the Mach meter to display Mach without requiring any knowledge of temperature or density`
+    `D. The ratio of pitot-static differential pressure to static pressure`
     ],
     correct: 3,
     explanation: `Mach meter computation: the compressible flow equation relates the pressure difference (pitot − static = impact pressure qc) to static pressure (Ps) and Mach number: M = √[5 × ((qc/Ps + 1)^(2/7) − 1)] for subsonic flow. The Mach meter mechanically or electronically computes this ratio, displaying Mach directly from the pitot-static system — no temperature or density sensor required. This is why the Mach reading is accurate regardless of temperature. Answer B.`,
@@ -2873,7 +2873,7 @@ export const aasaQuestions = [
     `A. The wing leading edge to the point of interest`,
     `B. The main landing gear to the nose gear`,
     `C. Sea level to the aircraft's current altitude`,
-    `D. An arbitrary fixed datum point (usually the nose of the aircraft or a specified reference forward of the nose) — the moment = weight × arm, and the CG = total moment / total weight`
+    `D. An arbitrary fixed datum point (usually the nose of the aircraft or a`
     ],
     correct: 3,
     explanation: `W&B arm: the horizontal distance from the datum (reference point) to the point of interest. Datum is defined by the manufacturer — often the nose or a specific fuselage station forward of the nose. Moment = mass × arm. CG location = Σ(mass × arm) / Σ(mass). The datum and fuselage station numbering system allow: seat positions, cargo bay locations, fuel tank CGs all to be expressed as arms from the same datum. Answer B.`,
@@ -2883,7 +2883,7 @@ export const aasaQuestions = [
     question: `Aircraft structural category 'transport category' (CASR Part 25) requires the aircraft to meet which primary design philosophy:`,
     options: [
     `A. The aircraft must be able to withstand unlimited load cycles with no maintenance`,
-    `B. Safe life, fail-safe, or damage tolerant design — the structure must either not fail within its certified life (safe life), or survive with a failed member until inspection detects it (fail-safe), or sustain damage up to a critical size detectable by inspection before catastrophic failure (damage tolerance)`,
+    `B. Safe life, fail-safe, or damage tolerant design — ensuring no single structural failure causes catastrophic loss`,
     `C. The aircraft must be designed to withstand only the maximum aerodynamic loads — no fatigue consideration required`,
     `D. All structural members must be replaceable in under 4 hours by a single technician`
     ],
@@ -2896,7 +2896,7 @@ export const aasaQuestions = [
     options: [
     `A. Only during night IFR operations`,
     `B. Only when weather is below VMC`,
-    `C. Whenever the aircraft is airborne and in certain ground operations — from engine start to engine shutdown at destination; helps other aircraft and vehicles see the aircraft's position`,
+    `C. Whenever the aircraft is airborne and in certain ground operations`,
     `D. Only during approach and landing in IMC`
     ],
     correct: 2,
@@ -2906,7 +2906,7 @@ export const aasaQuestions = [
   {
     question: `Cascade-type thrust reversers redirect the engine exhaust by:`,
     options: [
-    `A. Deploying blocker doors that close the normal exhaust path, while cascade vanes open to redirect exhaust forward and outward — through vanes in the nacelle that direct the flow in a forward direction to produce retarding thrust`,
+    `A. Deploying blocker doors that close the normal exhaust path, while cascade vanes open to redirect exhaust forward and outward`,
     `B. Rotating the entire engine nacelle 180° to point the thrust forward`,
     `C. Increasing turbine RPM to generate forward thrust from the turbine exhaust`,
     `D. Opening doors on the front of the nacelle to spill compressor air forward`
@@ -2919,7 +2919,7 @@ export const aasaQuestions = [
     question: `During engine start, the starter motor is disengaged (cut out) when:`,
     options: [
     `A. The engine reaches idle RPM`,
-    `B. The engine reaches self-sustaining speed — typically 50-60% N2 — at which the turbine is producing sufficient power to continue accelerating the compressor without starter assistance; the fuel control schedules appropriate fuel flow for the self-sustained acceleration to idle`,
+    `B. The engine reaches self-sustaining speed — typically 50-60% N2`,
     `C. The EGT reaches 500°C indicating full combustion`,
     `D. The crew manually selects starter OFF on the overhead panel in all cases`
     ],
@@ -2931,7 +2931,7 @@ export const aasaQuestions = [
     question: `Thermal fuse (fusible) plugs in wheel rims are designed to:`,
     options: [
     `A. Monitor tyre temperature and alert crew to overheating`,
-    `B. Deliberately deflate the tyre at a set temperature — if braking energy heats the wheel assembly above the plug design temperature, the alloy melts and the tyre deflates safely rather than risking an explosive failure`,
+    `B. Deliberately deflate the tyre at a set temperature`,
     `C. Seal the wheel against water on contaminated runways`,
     `D. Provide a static discharge path from the tyre to the ground`
     ],
@@ -2945,7 +2945,7 @@ export const aasaQuestions = [
     `A. Selecting a fixed Mach from a standard table`,
     `B. Adjusting cruise altitude only — speed is fixed for all aircraft`,
     `C. Following ATC-assigned speeds — CI is set by ATC`,
-    `D. Balancing the cost of time against the cost of fuel — CI=0 minimises fuel (maximum range Mach); high CI minimises time (maximum speed); the FMC computes the Mach that minimises total cost for the entered CI, weight, altitude, and wind`
+    `D. Balancing the cost of time against the cost of fuel — CI=0 minimises fuel (maximum range Mach)`
     ],
     correct: 3,
     explanation: `Cost Index: CI = time cost rate / fuel cost rate. CI=0: fly at maximum range Mach (pure fuel minimisation). High CI: fly faster at higher fuel burn (time saving justifies extra fuel). The FMC uses CI, weight, altitude, and wind to compute ECON Mach continuously as conditions change. Airlines set CI based on their actual cost structure. Answer B.`,
@@ -2967,7 +2967,7 @@ export const aasaQuestions = [
     question: `High-speed (Mach) buffet onset IAS decreases with increasing altitude because:`,
     options: [
     `A. At higher altitude, air is less dense so more speed is needed to generate the same lift`,
-    `B. The same Mach number corresponds to a lower IAS at higher altitude — Mach buffet onset is a fixed Mach, so its IAS equivalent falls with altitude while stall IAS remains roughly constant, compressing the usable speed range`,
+    `B. The same Mach number corresponds to a lower IAS at higher altitude`,
     `C. At higher altitude, wing sweepback becomes less effective at delaying compressibility`,
     `D. Engine thrust decreases with altitude, limiting the speed achievable`
     ],
@@ -2990,7 +2990,7 @@ export const aasaQuestions = [
   {
     question: `An aircraft's wing loading (W/S) affects:`,
     options: [
-    `A. Stall speed, gust sensitivity, and cruise performance — high wing loading (heavier aircraft per unit wing area) gives higher stall speed but is less affected by gusts (better ride in turbulence); lower wing loading gives lower stall speed but is more gust-sensitive`,
+    `A. Stall speed, gust sensitivity, and cruise performance — high wing loading (heavier aircraft per unit wing area) gives higher stall speed but is less affected by gusts (better ride in turbulence)`,
     `B. Only the fuel consumption — no aerodynamic effects — the aerodynamic forces in this configuration do not produce this effect`,
     `C. Only the range — wing loading has no effect on approach or landing`,
     `D. Only the climb performance — no effect on cruise or approach`
@@ -3015,7 +3015,7 @@ export const aasaQuestions = [
     question: `Rudder deflection required to maintain directional control after engine failure increases as speed:`,
     options: [
     `A. Increases — faster speed demands more rudder force`,
-    `B. Decreases — lower speed reduces dynamic pressure and therefore rudder aerodynamic effectiveness; at VMCA, maximum rudder deflection is just sufficient to maintain control`,
+    `B. Decreases — lower speed reduces dynamic pressure and therefore rudder aerodynamic effectiveness`,
     `C. Decreases — lower speed means less asymmetric thrust yawing moment`,
     `D. Is unchanged — rudder deflection is fixed by the degree of asymmetry`
     ],
@@ -3027,7 +3027,7 @@ export const aasaQuestions = [
     question: `In alternate law, flight envelope protections are:`,
     options: [
     `A. Unchanged from normal law — alternate law only affects the lateral axis`,
-    `B. Partially removed — bank angle protection reduces from 67° to 45°, alpha protection changes from hard limiting to a stall warning with reduced stick force; the crew must manually respect limits`,
+    `B. Partially removed — bank angle protection reduces from 67° to 45°, alpha protection changes from hard limiting to a stall warning with reduced stick force`,
     `C. Completely removed — the aircraft is flown as a conventional mechanical aircraft`,
     `D. Enhanced — alternate law adds protections not available in normal law`
     ],
@@ -3052,7 +3052,7 @@ export const aasaQuestions = [
     options: [
     `A. The cabin altitude drops automatically following the aircraft below 8,000 ft`,
     `B. The outflow valve closes completely trapping the current cabin altitude`,
-    `C. The pressurisation controller schedules the outflow valve to reduce cabin altitude at approximately 300-500 ft/min toward the destination elevation — for passenger ear comfort`,
+    `C. The pressurisation controller schedules the outflow valve to reduce cabin altitude at approximately 300-500`,
     `D. The system is switched manually — automatic control is unavailable below 8,000 ft`
     ],
     correct: 2,
@@ -3065,7 +3065,7 @@ export const aasaQuestions = [
     `A. Clear ice is electrically conductive — it can cause short circuits in wing navigation lights`,
     `B. Clear ice melts at a lower temperature, making anti-icing systems less effective`,
     `C. Rime ice only forms below −30°C; clear ice forms at all temperatures`,
-    `D. Clear ice is hard, dense, and adheres strongly to the surface; it is difficult to detect visually (transparent); it can accumulate outside protected areas; and its shape closely matches the protected area profile making visual detection harder — it can significantly increase drag and alter stall characteristics`
+    `D. Clear ice is hard, dense, and adheres strongly to the surface`
     ],
     correct: 3,
     explanation: `Clear ice formation: supercooled large droplets (SLD), freezing rain, or moderate liquid water content. Water runs back beyond the leading edge protected area before freezing, forming a clear, dense ice. Characteristics: (1) Dense (high mass) — significant weight penalty; (2) Transparent — very difficult to detect on forward/invisible surfaces; (3) Strong adhesion — difficult to dislodge; (4. Forms beyond protected zones — standard leading edge anti-ice may not prevent clear ice formation mid-chord. Rime ice: small droplets freeze on impact — white, porous, brittle, mostly at the stagnation point/protected area. Answer B.`,
@@ -3076,7 +3076,7 @@ export const aasaQuestions = [
     options: [
     `A. 30-40% — most energy is wasted in the hot exhaust`,
     `B. 95-99% — modern engines are nearly perfectly efficient`,
-    `C. 60-70% for a modern high-BPR turbofan — the gap between thermal efficiency (~50%) and overall efficiency is partly recovered by the high propulsive efficiency of the large fan`,
+    `C. 60-70% for a modern high-BPR turbofan — the gap between thermal efficiency (~50%) and overall`,
     `D. 15-20% — jet engines are inherently inefficient at subsonic cruise`
     ],
     correct: 2,
@@ -3100,7 +3100,7 @@ export const aasaQuestions = [
     options: [
     `A. The aircraft descends below the minimum safe altitude`,
     `B. The radio altimeter reads below 50 ft on a non-precision approach`,
-    `C. The crew selects TOGA — the autothrottle advances to go-around thrust, the pitch mode commands go-around pitch attitude, speedbrakes retract, and the AFCS sequences the missed approach procedure`,
+    `C. The crew selects TOGA — the autothrottle advances to go-around thrust`,
     `D. The aircraft descends through decision height on an autoland`
     ],
     correct: 2,
@@ -3124,7 +3124,7 @@ export const aasaQuestions = [
     options: [
     `A. Permanently disconnect all buses from each other to prevent cascade failure`,
     `B. Switch the aircraft to 28V DC operation using TRUs only`,
-    `C. Attempt to connect the APU generator (if available) or external power to restore AC power; failing that, the RAT deploys and the static inverter powers the essential AC bus from battery DC`,
+    `C. Attempt to connect the APU generator (if available) or external power to restore AC power`,
     `D. Activate a warning and wait for crew manual switching only`
     ],
     correct: 2,
@@ -3136,7 +3136,7 @@ export const aasaQuestions = [
     options: [
     `A. Anti-icing is used on wings; de-icing on engines only`,
     `B. Anti-icing uses hot air; de-icing always uses fluid`,
-    `C. Anti-icing prevents ice formation by continuously heating the surface; de-icing removes ice that has already formed using cyclic systems`,
+    `C. Anti-icing prevents ice formation by continuously heating the surface`,
     `D. Anti-icing is CASA-required; de-icing is optional`
     ],
     correct: 2,
@@ -3149,7 +3149,7 @@ export const aasaQuestions = [
     `A. The T-tail creates excessive nose-up trim at low speeds — the aerodynamic forces in this configuration do not produce this effect`,
     `B. The T-tail increases induced drag at high AoA causing stall at lower angles`,
     `C. T-tail aircraft have no deep stall tendency — only delta wings are susceptible`,
-    `D. At very high angles of attack, the wing's wake blankets the horizontal stabiliser — the tail loses effectiveness and the aircraft can pitch up into a locked-in stall from which recovery may be impossible; the stall is 'deep' because the tail cannot generate nose-down pitching moment`
+    `D. At very high angles of attack, the wing's wake blankets the horizontal stabiliser — the tail loses effectiveness and the aircraft can pitch up into a locked-in stall from which recovery may be impossible`
     ],
     correct: 3,
     explanation: `Deep stall (superstall) in T-tail aircraft: at very high AoA (deep stall), the wing's turbulent separated wake rises and engulfs the horizontal tail surfaces (mounted at the top of the fin, in the wake zone). The tail loses lift and its pitch control authority. Without the tail's nose-down restoring moment, the aircraft is stuck at a high AoA with no nose-down authority available. The stall is self-sustaining and unrecoverable from. Examples: a twin-engine narrowbody jet, a twin-engine narrowbody jet, early 737. Protection: stick pusher system activates before the deep stall AoA is reached, forcing the nose down. Answer B.`,
@@ -3158,7 +3158,7 @@ export const aasaQuestions = [
   {
     question: `Supercooled Large Droplet (SLD) icing is particularly hazardous because:`,
     options: [
-    `A. Large droplets (>50 μm) can impinge and freeze behind the leading edge protection area, forming ice on unprotected mid-chord and tail surfaces — standard anti-icing systems are designed for smaller droplets and do not protect against SLD`,
+    `A. Large droplets (>50 μm) can impinge and freeze behind the leading edge protection area`,
     `B. SLD causes electrical static discharge through the airframe`,
     `C. SLD always occurs below −40°C beyond the anti-icing system's heating capacity`,
     `D. SLD clogs pitot probes that lack ice protection`
@@ -3170,7 +3170,7 @@ export const aasaQuestions = [
   {
     question: `The 'green arc' on a conventional airspeed indicator represents:`,
     options: [
-    `A. The normal operating speed range — from VS1 (stall speed in clean configuration) to VNO (maximum structural cruising speed); operation within the green arc is normal`,
+    `A. The normal operating speed range — from VS1 (stall speed in clean configuration) to VNO (maximum structural cruising speed)`,
     `B. The range between VMO and Mach never-exceed speed`,
     `C. The flap operating range — from VS0 to VFE`,
     `D. The caution range — speeds requiring extra crew attention`
@@ -3184,7 +3184,7 @@ export const aasaQuestions = [
     options: [
     `A. Immediately disconnect the IDG using the DISC switch to prevent fire`,
     `B. Shut down the associated engine to allow the IDG to cool`,
-    `C. Monitor the temperature — if it reaches the disconnect threshold, use the DISC switch; note that IDG disconnect is irreversible in flight and the affected bus must transfer to another source`,
+    `C. Monitor the temperature — if it reaches the disconnect threshold, use the DISC switch`,
     `D. Reset the IDG by cycling the generator bus tie switch`
     ],
     correct: 2,
@@ -3195,7 +3195,7 @@ export const aasaQuestions = [
     question: `The altimeter is set to 1013.25 hPa above the transition altitude in Australia because:`,
     options: [
     `A. This gives the most accurate altitude reading`,
-    `B. All aircraft above the transition use the same reference pressure — ensuring consistent relative altitude between aircraft maintaining Flight Levels, regardless of actual QNH below`,
+    `B. All aircraft above the transition use the same reference pressure`,
     `C. QNH becomes unreliable above the transition altitude`,
     `D. Standard setting reduces altimeter errors caused by the ISA`
     ],
@@ -3208,7 +3208,7 @@ export const aasaQuestions = [
     options: [
     `A. DC battery power to 115V AC 400 Hz for essential avionics`,
     `B. Three-phase AC to single-phase AC for galley equipment`,
-    `C. 115V AC 400 Hz to 28V DC — providing direct current for systems requiring DC power, including battery charging, some instruments, and engine controls`,
+    `C. 115V AC 400 Hz to 28V DC`,
     `D. 28V DC to 115V AC for the main electrical buses`
     ],
     correct: 2,
@@ -3218,7 +3218,7 @@ export const aasaQuestions = [
   {
     question: `Autopilot engage interlocks prevent the autopilot from engaging if:`,
     options: [
-    `A. Certain preconditions are not met — such as excessive attitude, airspeed outside the AP range, insufficient hydraulic pressure, or invalid air data — because engaging in these conditions could make the situation worse`,
+    `A. Certain preconditions are not met — such as excessive attitude, airspeed outside the AP range`,
     `B. The aircraft is below 10,000 ft`,
     `C. The thrust levers are not in the cruise detent`,
     `D. The FMS has not been fully programmed with the route`
@@ -3233,7 +3233,7 @@ export const aasaQuestions = [
     `A. Normal inflight backup power for all systems`,
     `B. Starting main engines via direct battery start`,
     `C. Powering passenger entertainment independently`,
-    `D. Emergency power for essential systems when all generators fail — maintains critical instruments, radios, and essential controls for approximately 30 minutes or less`
+    `D. Emergency power for essential systems when all generators fail`
     ],
     correct: 3,
     explanation: `Transport aircraft battery (24V DC NiCd, 40-60 Ah): (1) emergency power if all generators fail — powers standby instruments, VHF radio, interphone, emergency lighting, FDR/CVR, essential avionics; duration approximately 30 minutes at full load; (2) APU start — initial power for APU start sequence; (3) Hot battery bus — always live for fire bottles and emergency systems. Answer B.`,
@@ -3243,7 +3243,7 @@ export const aasaQuestions = [
     question: `The hydraulic brake accumulator provides:`,
     options: [
     `A. Emergency steering pressure for the nosewheel`,
-    `B. Stored hydraulic energy — pre-charged with nitrogen and fluid — providing several brake applications when main hydraulic pumps are not operating, for parking brake, emergency braking, and taxi after engine shutdown`,
+    `B. Stored hydraulic energy — pre-charged with nitrogen and fluid`,
     `C. Automatic brake pressure regulation during normal operations`,
     `D. Surge damping to prevent hydraulic pressure spikes during brake application`
     ],
@@ -3256,7 +3256,7 @@ export const aasaQuestions = [
     options: [
     `A. The autopilot has full control with direct manual override`,
     `B. All flight control computers have failed completely with no computer assistance`,
-    `C. The pilot's input is transmitted directly to surfaces without envelope protection or stability augmentation — full manual authority but the pilot must respect all speed and structural limits manually`,
+    `C. The pilot's input is transmitted directly to surfaces without envelope protection or stability augmentation`,
     `D. Only direct mechanical backup cables are available with no hydraulic power`
     ],
     correct: 2,
@@ -3269,7 +3269,7 @@ export const aasaQuestions = [
     `A. Twice the maximum surface deflection force`,
     `B. One chamber locks the surface while the other drives it`,
     `C. The surface can deflect twice as far as with a single actuator`,
-    `D. If one hydraulic system fails, the remaining chamber continues full authority — no critical surface becomes inoperative from a single hydraulic failure`
+    `D. If one hydraulic system fails, the remaining chamber continues full authority`
     ],
     correct: 3,
     explanation: `Tandem actuator: two independent chambers, each powered by a different hydraulic system. One system fails: its chamber becomes passive; remaining chamber provides full authority. No reduction in deflection rate or force. Used on critical surfaces (elevator, rudder, ailerons on large aircraft). Answer B.`,
@@ -3293,7 +3293,7 @@ export const aasaQuestions = [
     `A. Normal — the HP spool always starts before the LP spool`,
     `B. The N1 sensor has failed — the engine is operating normally`,
     `C. Normal transient during very cold temperature starts — LP spool always lags significantly`,
-    `D. A possible LP shaft failure, LP turbine failure, or fan blade failure — the HP core is rotating but the LP shaft is not transmitting power to the fan; requires immediate abort of the start and maintenance investigation`
+    `D. A possible LP shaft failure, LP turbine failure, or fan blade failure — the HP core is rotating but the LP shaft is not transmitting power to the fan`
     ],
     correct: 3,
     explanation: `LP shaft failure during start: the HP (N2) spool is driven by the starter motor (pneumatic or electric); it drives the HP compressor and turbine. The LP spool (fan, LP compressor, LP turbine) is coupled to the HP spool aerodynamically through the gas path and mechanically through the LP shaft. If N2 is running but N1 is zero: the LP shaft may be fractured or the fan/LP system is seized. An N2-running-N1-zero condition during start is abnormal and dangerous — immediate abort required. Answer B.`,
@@ -3339,7 +3339,7 @@ export const aasaQuestions = [
     question: `The positive pressure relief valve (PPRV) in the pressurisation system activates to:`,
     options: [
     `A. Maintain cabin altitude at a safe maximum during rapid ascent`,
-    `B. Limit maximum positive pressure differential — if the outflow valve fails closed and the cabin is over-pressurised, the PPRV opens when the differential reaches the structural certified limit, protecting the fuselage from excessive hoop stress`,
+    `B. Limit maximum positive pressure differential`,
     `C. Allow ram air into the cabin if the pressurisation packs fail`,
     `D. Reduce cabin altitude during emergency descent`
     ],
@@ -3350,7 +3350,7 @@ export const aasaQuestions = [
   {
     question: `A turbofan engine's accessory gearbox (AGB) drives:`,
     options: [
-    `A. Multiple accessories: fuel pump, oil pump, hydraulic pump (engine-driven), AC generator/IDG, starter (during start), N2 speed sensor, and various other engine accessories — all driven by the HP (N2) spool via a tower shaft and bevel gear`,
+    `A. Multiple accessories: fuel pump, oil pump, hydraulic pump, AC generator/IDG, starter`,
     `B. Only the fuel control unit`,
     `C. Only the starter motor during engine start`,
     `D. The fan blades through a variable pitch mechanism`
@@ -3389,7 +3389,7 @@ export const aasaQuestions = [
     `A. The maximum aircraft weight — the aerodynamic forces in this configuration do not produce this effect`,
     `B. The amount of fuel that can be carried in the wing tanks`,
     `C. The aircraft's maximum operating altitude`,
-    `D. The static longitudinal stability margin — if CG is forward of AC, the aircraft is stable (nose-down pitching moment when AoA increases restores trim); if CG is aft of AC (behind the neutral point), the aircraft is unstable`
+    `D. The static longitudinal stability margin — if CG is forward of AC, the aircraft is stable (nose-down pitching moment when AoA increases restores trim)`
     ],
     correct: 3,
     explanation: `Neutral point (NP): the CG position at which the aircraft has neutral static longitudinal stability (no pitching moment change with AoA). The NP is approximately at the combined AC of wing plus horizontal tail. Stability margin: distance from CG to NP. Forward CG (CG ahead of NP): stable — increasing AoA produces nose-down restoring moment. Aft CG (CG behind NP): unstable — FBW required to stabilise (some military aircraft, experimental). Transport aircraft: CG always forward of NP; stability margin typically 5-15% MAC. Answer B.`,
@@ -3400,7 +3400,7 @@ export const aasaQuestions = [
     options: [
     `A. Increase wing chord for additional lift at cruise speed`,
     `B. Reduce wave drag at cruise Mach by modifying the leading edge radius`,
-    `C. Delay leading edge boundary layer separation at high angles of attack by re-energising the boundary layer through a slot, increasing CLmax and reducing stall speed`,
+    `C. Delay leading edge boundary layer separation at high angles of attack by re-energising the boundary layer through a slot`,
     `D. Provide additional elevator authority by shifting lift distribution forward`
     ],
     correct: 2,
@@ -3413,7 +3413,7 @@ export const aasaQuestions = [
     `A. Setting a fixed brake pressure maintained throughout the landing roll`,
     `B. Selecting the number of braking cycles per second`,
     `C. Pre-setting a brake temperature limit — braking stops when the limit is reached`,
-    `D. Measuring actual deceleration via accelerometers and modulating brake pressure to maintain the target rate — regardless of runway condition, speed, or aircraft weight`
+    `D. Measuring actual deceleration via accelerometers and modulating brake pressure to maintain the target rate`
     ],
     correct: 3,
     explanation: `Autobrake deceleration control: the system measures actual longitudinal deceleration (via IRS accelerometers) and compares to the selected target (LO, MED, MAX). Brake pressure is modulated to achieve the target rate. Benefits: consistent deceleration regardless of runway condition or weight; reduced pilot workload; correct RTO deceleration. Anti-skid remains active within the autobrake system. Answer B.`,
@@ -3437,7 +3437,7 @@ export const aasaQuestions = [
     `A. Increased drag — the ground proximity creates a high-pressure cushion that increases total drag — the aerodynamic forces in this configuration do not produce this effect`,
     `B. Increased stall speed — the ground effect reduces the wing's effective angle of attack`,
     `C. Reduced lift — ground proximity creates a Bernoulli suction reducing lift`,
-    `D. Reduced induced drag and increased lift — as the aircraft descends within approximately one wingspan height of the ground, the wingtip vortices are constrained, reducing the downwash angle, reducing induced drag, and increasing effective lift; the aircraft may float beyond the intended touchdown point`
+    `D. Reduced induced drag and increased lift — as the aircraft descends within approximately one wingspan height of the ground, the wingtip vortices are constrained, reducing the downwash angle, reducing induced drag, and increasing effective lift`
     ],
     correct: 3,
     explanation: `Ground effect: within approximately one wingspan height of the ground (~30-50 m for large transport), wingtip vortices are physically constrained by the ground. The reduced vortex intensity decreases downwash behind the wing, increasing the effective angle of attack of the wing → more lift at the same geometric AoA. Simultaneously: induced drag reduces significantly. Effect on landing: aircraft 'floats' in ground effect — may not settle onto the runway without slight thrust reduction or nose-up pitch reduction. Answer B.`,
@@ -3446,7 +3446,7 @@ export const aasaQuestions = [
   {
     question: `The benefit of winglets on a transport aircraft compared to simply extending the wingspan is:`,
     options: [
-    `A. Winglets reduce the total induced drag the same amount as an equivalent wingspan extension but with less weight, bending moment increase, and sometimes less gate space issues — an aerodynamic solution that is structurally more efficient for retrofit situations`,
+    `A. Winglets reduce the total induced drag the same amount as an equivalent wingspan extension but with less weight, bending moment increase`,
     `B. Winglets increase lift coefficient, allowing lower approach speeds — the aerodynamic forces in this configuration do not produce this effect`,
     `C. Winglets reduce Mach drag by modifying the flow at the wingtip`,
     `D. Winglets are purely cosmetic — they provide no aerodynamic benefit`
@@ -3483,7 +3483,7 @@ export const aasaQuestions = [
     question: `The anti-skid braking system modulates brake pressure to:`,
     options: [
     `A. Apply maximum hydraulic pressure to all wheels simultaneously`,
-    `B. Maintain each wheel at approximately 10-15% slip — the point of maximum tyre-runway friction — preventing wheel lockup while maximising braking force on each wheel independently`,
+    `B. Maintain each wheel at approximately 10-15% slip — the point of maximum tyre-runway friction`,
     `C. Limit maximum brake temperature by reducing pressure when temperature sensors detect overheating`,
     `D. Provide differential braking for directional control during the landing roll`
     ],
@@ -3497,7 +3497,7 @@ export const aasaQuestions = [
     `A. Bank right to counteract the yaw with dihedral effect`,
     `B. Reduce thrust on the left engine to eliminate asymmetry and continue to the runway`,
     `C. Select maximum reverse thrust on the operating engine to slow down before the asymmetry becomes critical`,
-    `D. Apply left rudder to counteract the yaw — sufficient rudder to maintain the runway centreline; the required rudder force increases as speed decreases toward VMCL; the approach speed must remain above VMCL`
+    `D. Apply left rudder to counteract the yaw — sufficient rudder to maintain the runway centreline`
     ],
     correct: 3,
     explanation: `Engine failure on approach: asymmetric thrust yaws the aircraft toward the failed engine. Correction: (1) Apply rudder toward the operating engine (left rudder for right engine failure); (2) Maintain approach speed above VMCL (if below VMCL → go-around on remaining engine is not possible); (3) Apply up to 5° bank toward the operating engine to reduce rudder requirement (sideslip); (4) Maintain runway centreline and glidepath. If the approach is stabilised: continue to landing. If not stable: go-around per OEI procedures. Answer B.`,
@@ -3509,7 +3509,7 @@ export const aasaQuestions = [
     `A. The normal operating range — green would be preferable`,
     `B. A prohibited operating range — N1 must never enter the amber band`,
     `C. The recommended cruise N1 setting for fuel economy`,
-    `D. A caution range approaching the N1 limit — operation in this range is permitted for short periods (typically takeoff) but sustained operation is limited; the crew should avoid unnecessarily extended operation in this range`
+    `D. A caution range approaching the N1 limit — operation in this range is permitted for short periods but sustained operation is limited`
     ],
     correct: 3,
     explanation: `Engine indicator colour coding (typical): Green arc: normal continuous operation range. Amber/yellow band: caution range — operation permitted for limited time or specific conditions (e.g. takeoff); may also indicate approaching a limit. Red radial/line: limit — do not exceed. Red arc: prohibited range. The amber band alerts the crew that the parameter is elevated and approaching limits — not necessarily an emergency but requiring attention. Extended operation in the amber band increases wear and life consumption. Answer B.`,
@@ -3520,7 +3520,7 @@ export const aasaQuestions = [
     options: [
     `A. Gradual nose-up pitching tendency — the aircraft slowly climbs despite elevator neutral`,
     `B. Lateral roll instability — asymmetric tail icing causes roll`,
-    `C. An abrupt, often uncontrollable nose-down pitch — the iced tailplane stalls at a higher angle of attack than normal, which can occur when flaps are extended (increasing wing download on the tail, increasing tail AoA) on approach`,
+    `C. An abrupt, often uncontrollable nose-down pitch`,
     `D. Loss of rudder effectiveness only — no pitch effect from tailplane icing`
     ],
     correct: 2,
@@ -3531,7 +3531,7 @@ export const aasaQuestions = [
     question: `The turboprop propeller creates most of its thrust through:`,
     options: [
     `A. Jet efflux from the turbine exhaust only`,
-    `B. Aerodynamic lift (thrust) generated by the rotating propeller blades acting as rotating aerofoils — accounting for approximately 80-90% of total propulsion; the jet exhaust contributes the remaining 10-20%`,
+    `B. Aerodynamic lift (thrust) generated by the rotating propeller blades acting as rotating aerofoils — accounting for approximately 80-90% of total propulsion`,
     `C. Equal contribution from the propeller and jet exhaust`,
     `D. Primarily the jet exhaust — the propeller only provides directional control`
     ],
@@ -3542,7 +3542,7 @@ export const aasaQuestions = [
   {
     question: `A stabiliser trim runaway is a critical emergency because:`,
     options: [
-    `A. The stabiliser has very large pitch authority — an uncommanded runaway to full nose-up or nose-down deflection can produce a pitch moment that overwhelms elevator authority, making the aircraft uncontrollable without immediate cutout`,
+    `A. The stabiliser has very large pitch authority`,
     `B. It increases fuel consumption by creating trim drag`,
     `C. A stabiliser runaway always leads to hydraulic system failure`,
     `D. Stabiliser runaway is a minor issue that self-corrects when the autopilot detects it`
@@ -3554,7 +3554,7 @@ export const aasaQuestions = [
   {
     question: `Maximum landing weight (MLW) is less than maximum takeoff weight (MTOW) because:`,
     options: [
-    `A. Landing imposes higher structural loads on the gear and airframe than normal cruise — the gear must absorb the kinetic energy of the aircraft at the landing sink rate; the structure is certified for specific landing loads at MLW; landing above MLW risks structural overload`,
+    `A. Landing imposes higher structural loads on the gear and airframe than normal cruise`,
     `B. The undercarriage design requires this for structural certification`,
     `C. The brakes cannot stop a heavier aircraft within certified distance`,
     `D. MLW equals MTOW minus minimum trip fuel for any flight`
@@ -3581,7 +3581,7 @@ export const aasaQuestions = [
     `A. Reject the takeoff — an engine failure at rotation is always an automatic reject`,
     `B. Immediately reduce thrust on all engines to zero`,
     `C. Apply full aileron toward the live engine to counteract the yaw with roll`,
-    `D. Continue the takeoff — apply firm rudder toward the live engine to prevent yaw developing while maintaining the rotation pitch attitude; above V1 the aircraft is committed to fly`
+    `D. Continue the takeoff — apply firm rudder toward the live engine to prevent yaw developing while maintaining the rotation pitch attitude`
     ],
     correct: 3,
     explanation: `Engine failure at/after V1: continue the takeoff (V1 has passed — insufficient runway to stop). Immediate action: firm rudder toward the live engine to arrest yaw before it becomes large. Maintain rotation pitch attitude — do not over-rotate (tail strike risk) or under-rotate (aircraft stays on runway). Climb at V2 (minimum engine-out speed). After 400 ft: action QRH engine failure items. Timely rudder application is critical — every second of uncorrected yaw increases workload. Answer B.`,
@@ -3590,7 +3590,7 @@ export const aasaQuestions = [
   {
     question: `The static inverter converts:`,
     options: [
-    `A. DC (28V from the battery bus) to AC (115V 400 Hz) — used during total generator failure to power essential AC avionics from the battery; no moving parts unlike a rotating generator`,
+    `A. DC (28V from the battery bus) to AC (115V 400 Hz) — used during total generator failure to power essential AC avionics from the battery`,
     `B. Variable frequency AC to constant 400 Hz AC`,
     `C. AC power to hydraulic pressure via an electric motor pump`,
     `D. High-voltage AC to low-voltage AC for passenger reading lights`
@@ -3617,7 +3617,7 @@ export const aasaQuestions = [
     `A. Altitude increases at the same IAS`,
     `B. Speed increases at constant altitude and weight`,
     `C. Wing aspect ratio increases`,
-    `D. Aircraft weight increases — higher weight requires higher CL at the same speed; induced drag proportional to CL squared`
+    `D. Aircraft weight increases — higher weight requires higher CL at the same speed`
     ],
     correct: 3,
     explanation: `Induced drag = CDi × ½ρV²S where CDi = CL²/(π×AR×e). In level flight: CL = 2W/(ρV²S). If weight increases, CL must increase → CDi increases → induced drag increases. Speed increase at constant weight: CL decreases → induced drag decreases. Higher aspect ratio: CDi ∝ 1/AR → induced drag reduces. Weight is the dominant factor for induced drag at a given speed. Answer B.`,
@@ -3629,7 +3629,7 @@ export const aasaQuestions = [
     `A. The landing gear causes more drag on landing, requiring shorter field`,
     `B. The landing distance is always shorter than the takeoff distance regardless of weight`,
     `C. Reverse thrust in landing is twice as effective as during an RTO`,
-    `D. Fuel was burned during the flight, reducing weight; lower weight → lower approach speed (Vref ∝ √W) → shorter landing distance; also the landing performance calculations use a different (more conservative) brake effectiveness than the RTO calculation`
+    `D. Fuel was burned during the flight, reducing weight`
     ],
     correct: 3,
     explanation: `Landing at lower weight: fuel burn during flight reduces aircraft weight. Vref = 1.3 × VS (stall speed), VS ∝ √W. Lower W → lower VS → lower Vref → lower kinetic energy to be absorbed → shorter stopping distance. Additionally, the landing distance in Approved Flight Manual performance tables is based on a specific brake effectiveness assumption — typically less than the maximum achievable. The aircraft's actual landing weight (MTOW − fuel burned) must be ≤ MLW. Answer B.`,
@@ -3676,7 +3676,7 @@ export const aasaQuestions = [
     options: [
     `A. 33 kt is the regulatory maximum for all transport aircraft — the aerodynamic forces in this configuration do not produce this effect`,
     `B. 33 kt crosswind is the maximum that can be achieved at any airport due to physical constraints`,
-    `C. During certification testing, a crosswind of 33 kt was demonstrated with satisfactory handling — it is not necessarily the absolute limit the aircraft can handle; operators may choose lower limits based on their operational policies`,
+    `C. During certification testing, a crosswind of 33 kt was demonstrated with satisfactory handling — it is not necessarily the absolute limit the aircraft can handle`,
     `D. The crosswind limit is determined by the strength of the landing gear side load capacity`
     ],
     correct: 2,
@@ -3687,7 +3687,7 @@ export const aasaQuestions = [
     question: `Electrical load shedding during emergency is performed to:`,
     options: [
     `A. Increase electrical frequency above 400 Hz for better avionics performance`,
-    `B. Disconnect non-essential loads (galley, entertainment, cargo heating) — preserving available power for flight-critical systems and extending remaining generation capacity`,
+    `B. Disconnect non-essential loads (galley, entertainment, cargo heating)`,
     `C. Reduce aircraft weight by turning off heavy electrical components`,
     `D. Prevent thermal damage to busbars by reducing current flow`
     ],
@@ -3700,7 +3700,7 @@ export const aasaQuestions = [
     options: [
     `A. Clean bird remains after a bird strike`,
     `B. Cool the compressor before the next engine start`,
-    `C. Remove salt and particulate contamination from compressor blades — these deposits roughen the blade surface, reducing aerodynamic efficiency and increasing SFC; regular washing restores compressor performance and extends the time to EGT margin depletion`,
+    `C. Remove salt and particulate contamination from compressor blades`,
     `D. Calibrate the N1 speed sensor after maintenance`
     ],
     correct: 2,
@@ -3724,7 +3724,7 @@ export const aasaQuestions = [
     options: [
     `A. The bank angle reduces the thrust of the live engine through gyroscopic precession`,
     `B. Banking increases weight on the failed engine side, reducing its windmill drag`,
-    `C. The horizontal component of lift (from the slight bank) provides a side-force assisting the rudder in countering the asymmetric yaw — reducing required rudder deflection, sideslip, and drag`,
+    `C. The horizontal component of lift (from the slight bank) provides a side-force assisting the rudder in countering the asymmetric yaw`,
     `D. A 5° bank is required by regulation regardless of any aerodynamic effect`
     ],
     correct: 2,
@@ -3737,7 +3737,7 @@ export const aasaQuestions = [
     `A. Pitch down to maximum negative pitch limit and maintain it`,
     `B. Descend at maximum possible rate until minimum altitude`,
     `C. Pitch up briefly then the computers override the input to prevent a nose-down dive`,
-    `D. Pitch down to the selected maximum negative pitch angle (approximately -15°) and hold it — the FBW computers limit the pitch attitude, and the pilot must hold the sidestick input to maintain the commanded attitude`
+    `D. Pitch down to the selected maximum negative pitch angle (approximately -15°) and hold it`
     ],
     correct: 3,
     explanation: `a twin-engine narrowbody jet FBW normal law pitch control: the sidestick commands a pitch RATE (load factor) not a direct elevator deflection. With full forward sidestick: the computer commands maximum negative load factor (approximately -1.0g) and limits pitch attitude to approximately -15°. Once the limit attitude is reached, the computer maintains it regardless of continued sidestick input — 'attitude protection'. The pilot must maintain the sidestick input to hold the attitude; releasing the sidestick returns to 0° pitch datum. This prevents inadvertent pushover exceedances. Answer B.`,
@@ -3748,7 +3748,7 @@ export const aasaQuestions = [
     options: [
     `A. Decreases — cabin altitude rises as the aircraft climbs past FL250`,
     `B. Remains constant — isobaric mode means constant differential`,
-    `C. Increases — aircraft climbs to lower ambient pressure while cabin stays at 8,000 ft equivalent; differential (cabin minus ambient) increases`,
+    `C. Increases — aircraft climbs to lower ambient pressure while cabin stays at 8,000 ft equivalent`,
     `D. Is automatically set to zero above FL300`
     ],
     correct: 2,
@@ -3759,7 +3759,7 @@ export const aasaQuestions = [
     question: `Engine inlet anti-icing is required in visible moisture near 0°C because:`,
     options: [
     `A. Ice on the inlet increases airflow velocity helping the compressor`,
-    `B. Ice forming on the inlet lip can break off and be ingested — fragments striking rotating compressor blades at high RPM can cause blade failure, compressor stall, or engine damage`,
+    `B. Ice forming on the inlet lip can break off and be ingested`,
     `C. Inlet icing reduces EGT, protecting the turbine from overtemperature`,
     `D. Inlet icing has no effect on performance — only on runway contamination from shedding`
     ],
@@ -3773,7 +3773,7 @@ export const aasaQuestions = [
     `A. The aircraft is dangerously high — go around immediately`,
     `B. The aircraft is on the correct glidepath — 4 white is the ideal PAPI indication`,
     `C. The PAPI lights have failed — all white indicates a system fault`,
-    `D. The aircraft is too high on the glidepath — the PAPI is showing all four white lights meaning the aircraft is well above the glideslope; the crew should increase descent rate to return to the correct glidepath`
+    `D. The aircraft is too high on the glidepath — the PAPI is showing all four white lights meaning the aircraft is well above the glideslope`
     ],
     correct: 3,
     explanation: `PAPI interpretation: (1) 4 red = dangerously low (pull up, go around); (2) 3 red 1 white = slightly low; (3) 2 red 2 white = on glidepath (correct: visual slope indicator); (4) 1 red 3 white = slightly high; (5) 4 white = too high. 'All white, you're a kite; all red, you're dead.' All 4 white = aircraft significantly above the glidepath — increase descent rate. Go-around consideration: if too high to land in the touchdown zone. Answer B.`,
@@ -3784,7 +3784,7 @@ export const aasaQuestions = [
     options: [
     `A. To maintain its current attitude indefinitely with no pilot input — the aerodynamic forces in this configuration do not produce this effect`,
     `B. To immediately enter a spiral dive`,
-    `C. To slowly diverge in altitude and speed in a phugoid oscillation — gradually changing altitude and speed but maintaining approximately constant AoA; the lightly damped phugoid will persist for several minutes before returning to the original trim state`,
+    `C. To slowly diverge in altitude and speed in a phugoid oscillation — gradually changing altitude and speed but maintaining approximately constant AoA`,
     `D. To pitch up steeply due to the natural nose-up tendency of swept wings`
     ],
     correct: 2,
@@ -3797,7 +3797,7 @@ export const aasaQuestions = [
     `A. Flight idle maintains minimum EGT for thermal protection of the turbine`,
     `B. ATC requires a specific minimum power setting during descent`,
     `C. Flight idle maximises fuel efficiency by running engines at their most efficient partial-power point`,
-    `D. Flight idle provides the minimum thrust consistent with engine windmill stability, fuel flow for internal lubrication and cooling, and ability to rapidly spool back up to go-around thrust — below flight idle, the engine might be unable to rapidly respond to a go-around demand`
+    `D. Flight idle maintains minimum thrust consistent with engine stability, internal lubrication and cooling, and the ability to rapidly accelerate to go-around thrust`
     ],
     correct: 3,
     explanation: `Flight idle (versus ground idle): flight idle is a higher minimum thrust setting than ground idle, maintained in flight to ensure: (1) the engine remains spooled up sufficiently for rapid response to a go-around or speed control input (spool-up time from flight idle to TOGA is approximately 5-8 seconds — acceptable; from ground idle could be 15+ seconds); (2) sufficient fuel flow for internal cooling and lubrication; (3) bleed air availability for systems (pressurisation, anti-ice). Ground idle (lower RPM) is only permitted on the ground where rapid spool-up response is not required. Answer B.`,
@@ -3807,7 +3807,7 @@ export const aasaQuestions = [
     question: `The flight director displays on the PFD to:`,
     options: [
     `A. Show the autopilot's current control inputs to the crew`,
-    `B. Show the crew the required pitch and roll attitudes to satisfy the selected modes — allowing manual flight guidance equivalent to autopilot-coupled flight without the autopilot engaged`,
+    `B. Show the crew the required pitch and roll attitudes to satisfy the selected modes`,
     `C. Warn the crew of flight envelope exceedances`,
     `D. Indicate current aircraft attitude for monitoring only`
     ],
@@ -3820,7 +3820,7 @@ export const aasaQuestions = [
     options: [
     `A. The combustion chamber burns only 15% of available air — the rest bypasses the engine`,
     `B. Modern lean-burn combustors use all available air achieving 130:1 ratios in every zone`,
-    `C. Only primary zone air (15-25% of total) participates in combustion. Remaining air provides dilution to reduce temperature to turbine-acceptable levels and cools combustor liner walls`,
+    `C. Only primary zone air (15-25% of total) participates in combustion. Remaining air provides dilution to reduce`,
     `D. The bypass ratio of the turbofan accounts for the lean overall ratio`
     ],
     correct: 2,
@@ -3832,7 +3832,7 @@ export const aasaQuestions = [
     options: [
     `A. No immediate action — auto fault means the system will correct itself`,
     `B. Increase aircraft altitude to reduce the differential pressure demand on the system`,
-    `C. Immediate action: select manual pressurisation control and manually close the outflow valve to stop the cabin altitude increase; if cabin altitude approaches 10,000 ft — prepare for emergency oxygen and potential emergency descent`,
+    `C. Immediate action: select manual pressurisation control and manually close the outflow valve to stop the cabin altitude increase`,
     `D. Select emergency pressurisation — this automatically resolves all pressurisation faults`
     ],
     correct: 2,
@@ -3866,7 +3866,7 @@ export const aasaQuestions = [
   {
     question: `A transport aircraft experiences a double hydraulic system failure (systems A and B both at zero pressure). The flight crew's primary concern for landing is:`,
     options: [
-    `A. Identifying which flight controls, brakes, and gear systems remain available — typically the standby hydraulic system or RAT powers essential controls; the crew follows the QRH for the specific failure combination`,
+    `A. Identifying which flight controls, brakes, and gear systems remain available — typically the standby hydraulic system or RAT powers essential controls`,
     `B. The aircraft cannot be landed — a two-hydraulic-system failure is unsurvivable`,
     `C. Fuel dumping to minimum weight before attempting any landing`,
     `D. Requesting military escort to the nearest aerodrome`
@@ -3881,7 +3881,7 @@ export const aasaQuestions = [
     `A. Apply maximum starter motor rotation to free the seized shaft`,
     `B. Motor the engine at low RPM to free the lock before applying fuel`,
     `C. Apply full thrust on the remaining engine to create enough airflow to free the seized rotor`,
-    `D. Not attempt to start the engine — do not apply starter motor power to a seized engine (risk of starter damage, structural damage, and fire); maintenance investigation required`
+    `D. Not attempt to start the engine — do not apply starter motor power to a seized engine (risk of starter damage, structural damage, and fire)`
     ],
     correct: 3,
     explanation: `Core lock (rotor lock, rotor bow): after engine shutdown, thermal gradients can cause the compressor rotor to warp and press against the compressor case — seizing the rotor. This commonly occurs in hot-and-soak conditions (engine shutdown after high power, left standing in hot ambient). Attempting to start: starter motor applies torque to a seized shaft → can damage starter, flexplate, or cause catastrophic structural failure of the seized component. Procedure: allow time for thermal equalization (cool soak period), then attempt gentle rotation by hand (if on-wing access permits) or attempt a 'motoring' run with caution per Aircraft Maintenance Manual procedures. Answer B.`,
@@ -3893,7 +3893,7 @@ export const aasaQuestions = [
     `A. Kept OFF — ice crystals form only below −40°C and engine bleed is needed for performance`,
     `B. Only selected if the anti-ice light illuminates`,
     `C. Not required at FL310 — engine icing only occurs below FL100`,
-    `D. Selected ON — ice crystal icing (ICI) can cause engine core icing and power loss even in non-visible moisture; the engines should be protected when ice crystals are present`
+    `D. Selected ON — ice crystal icing (ICI) can cause engine core icing and power loss even in non-visible moisture`
     ],
     correct: 3,
     explanation: `Ice crystal icing (ICI): at temperatures below −20°C to −40°C in or near convective systems, ice crystals (non-supercooled water) can accumulate in the engine core, partially melting on warm surfaces (probe elements, compressor exit stages), refreezing, and building up deposits that can cause power loss (uncommanded rollback) or engine damage. Numerous incidents at high altitude in tropical convection. Solution: engine inlet anti-ice (hot air) and maintaining engine core temperature above freezing by avoiding idle power settings in potential ICI zones. EASA/FAA have issued guidance on high-altitude engine icing (ICI). Answer B.`,
@@ -3916,7 +3916,7 @@ export const aasaQuestions = [
     options: [
     `A. The spar carries all fuel in integral tanks`,
     `B. The spars provide aerodynamic shape — they define the wing profile`,
-    `C. The spars (typically two main spars, front and rear) carry the primary bending moments and shear forces from aerodynamic lift loads — the wing can be thought of as a cantilever beam with the root attachment as the fixed point`,
+    `C. The spars carry the primary bending moments and shear forces from aerodynamic lift loads`,
     `D. The spars carry the engine weight only on engine-mounted wings`
     ],
     correct: 2,
@@ -3941,7 +3941,7 @@ export const aasaQuestions = [
     `A. The wing root, progressing outboard toward the tip`,
     `B. Simultaneously across the entire span`,
     `C. The trailing edge of the aileron section only`,
-    `D. The wing tip, progressing inboard — sweep causes outboard spanwise boundary layer thickening, and tips operate at higher local angles of attack`
+    `D. The wing tip, progressing inboard — sweep causes outboard spanwise boundary layer thickening`
     ],
     correct: 3,
     explanation: `Swept-wing stall characteristics: spanwise pressure gradients drive flow outboard, thickening the boundary layer at the tips. Tips also have lower local Reynolds numbers. Result: swept wings tend to stall tip-first. Tip stall is undesirable: (1) loss of aileron effectiveness first, degrading roll control; (2) less natural nose-down pitching moment warning. Washout (geometric twist reducing tip AoA) and leading edge slats help ensure root-first stall progression. Answer B.`,
@@ -3951,7 +3951,7 @@ export const aasaQuestions = [
     question: `Mcrit can be increased by using a thinner wing aerofoil section because:`,
     options: [
     `A. A thinner wing produces more lift at low speed, delaying the need for high angles of attack`,
-    `B. A thinner aerofoil has a smaller upper-surface curvature — the airflow accelerates less over the surface, so the local velocity reaches Mach 1.0 at a higher free-stream Mach number`,
+    `B. A thinner aerofoil has a smaller upper-surface curvature`,
     `C. Thinner wings have higher torsional stiffness, resisting aileron reversal`,
     `D. Thin wings reduce the wing's overall weight, reducing the cruise Mach needed`
     ],
@@ -3965,7 +3965,7 @@ export const aasaQuestions = [
     `A. 10g for 11 milliseconds (lightweight test)`,
     `B. Only rain and saltwater — structural crash protection is not required`,
     `C. 100g sustained for 1 second`,
-    `D. High-impact crash forces (3,400g for 6.5 ms), fire exposure (1,100°C for 30 minutes), deep water pressure (6,000 m submersion), and seawater corrosion — the protective housing uses stainless steel and high-temperature insulation`
+    `D. High-impact crash forces (3,400g for 6.5 ms), fire exposure (1,100°C for 30 minutes)`
     ],
     correct: 3,
     explanation: `FDR crash survivability specifications (EUROCAE ED-55/TSO-C124): (1) Impact: 3,400g (3,400 × acceleration due to gravity) for 6.5 ms — simulates high-speed crash; (2) Fire: 1,100°C for 30 minutes (within insulated housing, memory must survive); (3) Static crush: 22,240 N from any direction; (4) Fluid immersion: various aircraft fluids; (5) Seawater: continuous immersion for 30 days; (6) Deep water: 6 km depth for 30 days. The memory module (solid-state flash memory) is within the crash-protected housing. A locating beacon (underwater locator beacon, ULB) is attached — activates on water immersion at 37.5 kHz. Answer B.`,
@@ -3987,7 +3987,7 @@ export const aasaQuestions = [
     question: `The pitot tube is electrically heated to:`,
     options: [
     `A. Increase air density at the probe for more accurate measurement`,
-    `B. Prevent ice forming on and inside the tube — blockage causes erroneous airspeed readings; selected ON before any icing conditions as standard SOP before takeoff`,
+    `B. Prevent ice forming on and inside the tube — blockage causes erroneous airspeed readings`,
     `C. Heat the air sample to standard temperature for consistent density`,
     `D. Prevent condensation forming in the static lines`
     ],
@@ -4001,7 +4001,7 @@ export const aasaQuestions = [
     `A. The maximum altitude at which the aircraft can fly in any configuration`,
     `B. The altitude above which the cabin cannot be pressurised`,
     `C. The maximum certified altitude for RVSM operations`,
-    `D. The altitude at which the maximum rate of climb has reduced to a specified minimum value (typically 100 fpm for piston aircraft; for jets, often the altitude where coffin corner margins are reached or minimum climb gradient is no longer achievable)`
+    `D. The altitude at which the maximum rate of climb has reduced to a specified minimum value (typically 100 fpm for piston aircraft`
     ],
     correct: 3,
     explanation: `Service ceiling: for pistons, 100 fpm ROC. For jet transports: defined differently — often the altitude at which: the aircraft can maintain a minimum cruise Mach with sufficient margins from both stall and Mach buffet boundaries; OR where the required minimum climb gradient is no longer achievable at max continuous thrust. The absolute ceiling is where ROC = 0. Service ceiling is operationally usable; absolute ceiling is not. Answer B.`,
@@ -4011,7 +4011,7 @@ export const aasaQuestions = [
     question: `The takeoff configuration warning (TOWS) sounds a horn when thrust is advanced for takeoff if:`,
     options: [
     `A. Engines are above normal idle before the takeoff call`,
-    `B. One or more unsafe configurations exist — stabiliser trim outside the green band, speedbrakes not stowed, flaps not in a certified takeoff range, or parking brake set`,
+    `B. One or more unsafe configurations exist — stabiliser trim outside the green band, speedbrakes not stowed`,
     `C. Any door open warning is active anywhere on the aircraft`,
     `D. Either engine is below 60% N2 during the takeoff roll`
     ],
@@ -4025,7 +4025,7 @@ export const aasaQuestions = [
     `A. Located in the engine intake where airflow is greatest`,
     `B. Mounted on the vertical stabiliser for minimum airframe interference`,
     `C. Located on the wing leading edge adjacent to the angle-of-attack vane`,
-    `D. Located on the fuselage in an area of undisturbed airflow, typically on the forward fuselage below the cockpit windows — positioned to receive clean airflow unaffected by engine or propeller wake, with electrical anti-icing`
+    `D. Located on the fuselage in an area of undisturbed airflow, typically on the forward fuselage below the cockpit windows`
     ],
     correct: 3,
     explanation: `TAT probe location: forward fuselage (typically below and to the side of the cockpit windows) in an area of clean, undisturbed airflow. The probe uses a Rosemount-style housing with a sharply-pointed inlet to minimise water/ice ingestion while allowing accurate total temperature recovery. Electrical heating prevents ice blockage. The probe is kept away from propeller wash, engine exhaust, or boundary layer interference. Multiple probes (2-3) are fitted for redundancy. Answer B.`,
@@ -4049,7 +4049,7 @@ export const aasaQuestions = [
     `A. No inspection required — MLW limits are conservative and designed for normal operations only`,
     `B. An engine inspection only — the extra weight affects only the engine thrust requirements`,
     `C. A routine daily check is sufficient — overweight landings require no special treatment`,
-    `D. A structural inspection (hard or overweight landing inspection) — per the Aircraft Maintenance Manual, landing above MLW requires an engineering assessment and may require detailed structural inspection before the aircraft is returned to service`
+    `D. A structural inspection (hard or overweight landing inspection)`
     ],
     correct: 3,
     explanation: `Overweight landing inspection: landing at 70,000 kg vs MLW 66,360 kg = 3,640 kg above MLW (5.5% over). The landing gear and airframe structure is certified for the landing impact loads at MLW with a defined sink rate. Exceeding MLW: potential structural overload of gear, wing root, and attachment fittings. CASR/Aircraft Maintenance Manual: overweight landing inspection required before next flight — typically: visual inspection of gear, wheel well area, wing root attachments; may require more detailed NDT inspection depending on the degree of overweight and sink rate. The inspection finding determines airworthiness. Answer B.`,
@@ -4060,7 +4060,7 @@ export const aasaQuestions = [
     options: [
     `A. Improves takeoff performance — tailwind reduces headwind component`,
     `B. Has no effect on jet aircraft — only piston aircraft are affected by wind`,
-    `C. Degrades takeoff performance — the aircraft must achieve a higher ground speed to reach the required IAS for rotation; more runway is consumed and the climb speed over obstacles is lower, reducing margins`,
+    `C. Degrades takeoff performance — the aircraft must achieve a higher ground speed to reach the required IAS for rotation`,
     `D. Allows a lower V1 to be used, improving balanced field margins`
     ],
     correct: 2,
@@ -4082,7 +4082,7 @@ export const aasaQuestions = [
   {
     question: `Alpha floor protection activates when:`,
     options: [
-    `A. Angle of attack reaches a threshold — the autothrottle automatically commands maximum (TOGA) thrust regardless of thrust lever position, adding energy to prevent the developing low-speed situation from progressing to a stall`,
+    `A. Angle of attack reaches a threshold — the autothrottle automatically commands maximum (TOGA) thrust`,
     `B. The aircraft descends below the altitude set in the FMC`,
     `C. The aircraft exceeds the maximum angle of bank in the approach configuration`,
     `D. The selected approach speed falls below 1.3 × VS`
@@ -4094,7 +4094,7 @@ export const aasaQuestions = [
   {
     question: `The maximum operating speed VMO is expressed in KIAS/KCAS because:`,
     options: [
-    `A. Structural loads (aerodynamic forces) depend on dynamic pressure q = ½ρV² = ½ρ0EAS² — EAS (≈ CAS at low Mach) is the appropriate speed measure for structural limits; VMO in CAS/IAS represents the same structural load at all altitudes`,
+    `A. Structural loads (aerodynamic forces) depend on dynamic pressure q = ½ρV² = ½ρ0EAS² — EAS (≈ CAS at low Mach) is the appropriate speed measure for structural limits`,
     `B. IAS is the most convenient speed to read from the ASI — the aerodynamic forces in this configuration do not produce this effect`,
     `C. VMO in KIAS is required by ICAO for international operations`,
     `D. IAS accounts for wind, making VMO independent of wind conditions`
@@ -4106,7 +4106,7 @@ export const aasaQuestions = [
   {
     question: `The angle of incidence of a wing is:`,
     options: [
-    `A. The angle between the wing chord line and the aircraft's longitudinal axis (fuselage reference line) — a fixed design angle built into the aircraft structure; sets the baseline angle of attack for cruise attitude`,
+    `A. The angle between the wing chord line and the aircraft's longitudinal axis (fuselage reference line) — a fixed design angle built into the aircraft structure`,
     `B. The angle between the chord line of the wing and the aircraft's flight path — the aerodynamic forces in this configuration do not produce this effect`,
     `C. The same as the angle of attack — they are interchangeable terms`,
     `D. The dihedral angle of the wing measured from horizontal`
@@ -4119,7 +4119,7 @@ export const aasaQuestions = [
     question: `In trimmed engine-out flight (one engine inoperative, maintaining straight flight), the balanced control inputs are:`,
     options: [
     `A. Only rudder deflection — no other trim input is needed`,
-    `B. Rudder toward the live engine, aileron to maintain wings level (or slight bank toward live engine), and stabiliser/elevator trim to remove sustained control column forces`,
+    `B. Rudder toward the live engine, aileron to maintain wings level (or slight bank toward live engine)`,
     `C. Full rudder and full aileron held continuously — no trim is possible in asymmetric flight`,
     `D. Rudder input only; no pitch trim is affected by asymmetric flight`
     ],
@@ -4132,7 +4132,7 @@ export const aasaQuestions = [
     options: [
     `A. Decreases — the cabin altitude rises as the aircraft climbs past FL250`,
     `B. Remains constant — isobaric mode means constant differential pressure`,
-    `C. Increases — aircraft climbs to lower ambient pressure while cabin maintained at 8,000 ft equivalent pressure; pressure differential (cabin minus ambient) increases`,
+    `C. Increases — aircraft climbs to lower ambient pressure while cabin maintained at 8,000 ft equivalent pressure`,
     `D. Is automatically reduced to zero above FL300 for safety`
     ],
     correct: 2,
@@ -4144,7 +4144,7 @@ export const aasaQuestions = [
     options: [
     `A. A separate electric-motor-driven compressor`,
     `B. The APU only — main engine bleed reserved for anti-icing`,
-    `C. Intermediate and high-pressure compressor stages — high-pressure stage valve opens when low-pressure stage delivery is insufficient at low power settings`,
+    `C. Intermediate and high-pressure compressor stages`,
     `D. Ram air scoops on the fuselage at all times`
     ],
     correct: 2,
@@ -4155,7 +4155,7 @@ export const aasaQuestions = [
     question: `Autoland requires multiple autopilot channels because:`,
     options: [
     `A. Each channel controls a separate flight control surface`,
-    `B. Redundancy — any single failure must not cause significant flight path deviation; multiple independent channels monitor each other and can take over, providing fail-operational or fail-passive capability for low-visibility operations`,
+    `B. Redundancy — any single failure must not cause significant flight path deviation`,
     `C. More channels provide faster control response for Cat III precision`,
     `D. ATC requires confirmation from multiple channels before clearing Cat III approaches`
     ],
@@ -4169,7 +4169,7 @@ export const aasaQuestions = [
     `A. The aircraft lands in crosswind greater than 15 kt on a wet runway`,
     `B. Runway surface temperature exceeds the dewpoint creating a thin film`,
     `C. Brake pressure exceeds 2,000 PSI on a wet runway`,
-    `D. A water wedge builds under the tyre faster than it can be displaced — the tyre lifts off the runway and rides on a water film; hydroplaning speed ≈ 9 × √tyre pressure (PSI)`
+    `D. A water wedge builds under the tyre faster than it can be displaced — the tyre lifts off the runway and rides on a water film`
     ],
     correct: 3,
     explanation: `Dynamic hydroplaning: water cannot be expelled through tyre tread fast enough; hydrodynamic pressure equals tyre contact pressure; tyre lifts off pavement. All tyre-runway friction is lost — braking, steering, side force = zero. Hydroplaning speed ≈ 9 × √(tyre inflation pressure in PSI). For 200 PSI tyre: ≈ 9 × 14.1 = 127 kt. Anti-skid is ineffective during hydroplaning. Reverse thrust becomes disproportionately important. Prevention: grooved runways, tread patterns, appropriate landing technique. Answer B.`,
@@ -4179,7 +4179,7 @@ export const aasaQuestions = [
     question: `The APU (auxiliary power unit) on a transport aircraft is primarily used on the ground to:`,
     options: [
     `A. Provide thrust for taxiing when main engines are shut down`,
-    `B. Supply electrical power and bleed air for airconditioning, allowing main engines to start without needing a ground power unit or external air start`,
+    `B. Supply electrical power and bleed air for airconditioning`,
     `C. Charge the main aircraft batteries only`,
     `D. Provide hydraulic power for landing gear retraction after takeoff`
     ],
@@ -4204,7 +4204,7 @@ export const aasaQuestions = [
     options: [
     `A. It is made of a special alloy that resists flutter at all speeds`,
     `B. It uses an automatic servo to prevent the crew from over-rotating`,
-    `C. The entire horizontal tail surface rotates as one unit for pitch control — there is no separate elevator; this provides better authority at transonic speeds where a conventional elevator may lose effectiveness in the shock boundary layer`,
+    `C. The entire horizontal tail surface rotates as one unit for pitch control — there is no separate elevator`,
     `D. It has a separate elevator and stabiliser that move simultaneously in the same direction`
     ],
     correct: 2,
@@ -4227,7 +4227,7 @@ export const aasaQuestions = [
     question: `In the region of reversed command (below VMD), the aircraft is speed-unstable because:`,
     options: [
     `A. The elevator is ineffective at low speed`,
-    `B. A speed reduction below VMD increases induced drag, requiring MORE thrust to maintain altitude — without added thrust, speed continues to fall in a self-reinforcing manner`,
+    `B. A speed reduction below VMD increases induced drag, requiring MORE thrust to maintain altitude`,
     `C. Below VMD, parasite drag increases faster than induced drag decreases`,
     `D. The aircraft enters Dutch roll below VMD`
     ],
@@ -4240,7 +4240,7 @@ export const aasaQuestions = [
     options: [
     `A. Anti-icing is used only on the ground; de-icing is used only in flight`,
     `B. Anti-icing uses bleed air; de-icing always uses electrical power`,
-    `C. Anti-icing continuously prevents ice formation by heating the surface before ice can form; de-icing removes ice that has already accumulated, typically using cyclic inflation of rubber boots or pulsed electrical heating`,
+    `C. Anti-icing continuously prevents ice formation by heating the surface before ice can form`,
     `D. Anti-icing protects only the wing; de-icing protects only the tail`
     ],
     correct: 2,
@@ -4251,7 +4251,7 @@ export const aasaQuestions = [
     question: `Turbine blade creep occurs when:`,
     options: [
     `A. Turbine blades are over-cooled causing brittleness`,
-    `B. Under sustained high temperature and centrifugal stress, blade material slowly elongates over time — the blade grows until it contacts the casing or fails structurally`,
+    `B. Under sustained high temperature and centrifugal stress, blade material slowly elongates over time`,
     `C. Vibration resonance causes fatigue cracking at the trailing edge`,
     `D. Thermal cycling causes the blade thermal barrier coating to spall`
     ],
@@ -4262,7 +4262,7 @@ export const aasaQuestions = [
   {
     question: `A transport aircraft's aileron is locked out at high IAS (outboard ailerons locked above approximately 250 KIAS). The primary roll control at high speed is provided by:`,
     options: [
-    `A. Spoilers (flight spoilers) deployed asymmetrically — on the raised-wing side, spoilers extend to reduce lift and increase drag; more effective and structurally safer than outboard ailerons at high dynamic pressure`,
+    `A. Spoilers (flight spoilers) deployed asymmetrically — on the raised-wing side, spoilers extend to reduce lift and increase drag`,
     `B. Differential elevator — one elevator goes up and the other down to create roll`,
     `C. The rudder — at high speed, rudder provides sufficient roll through dihedral effect`,
     `D. Engine thrust differential — one engine is throttled back to create a rolling moment`
@@ -4276,7 +4276,7 @@ export const aasaQuestions = [
     options: [
     `A. The autopilot only — all other systems are manual`,
     `B. The FMS only — the flight director is an optional add-on`,
-    `C. An integrated suite including: autopilot (AP), flight director (FD), autothrottle (A/T), and yaw damper (YD) — working together to manage aircraft pitch, roll, heading, altitude, speed, and yaw without continuous manual pilot input`,
+    `C. An integrated suite including: autopilot (AP), flight director (FD), autothrottle (A/T)`,
     `D. Autopilot and weather radar integrated in one system`
     ],
     correct: 2,
@@ -4289,7 +4289,7 @@ export const aasaQuestions = [
     `A. Compressibility effects that reduce effective chord`,
     `B. Aileron deflection limits at low speed`,
     `C. Wing flutter which begins at the stall angle of attack`,
-    `D. Leading edge boundary layer separation at high AoA — the sharp leading edge causes the boundary layer to separate early, limiting achievable lift coefficient`
+    `D. Leading edge boundary layer separation at high AoA`
     ],
     correct: 3,
     explanation: `Without leading edge protection, the boundary layer separates from the leading edge at high AoA because the leading edge radius is small and the adverse pressure gradient is steep. This limits the usable AoA and CLmax to relatively low values. Adding leading edge slats opens a slot that re-energises the boundary layer, permitting the wing to operate at much higher AoA before separation — increasing CLmax by 20-30%. This is critical for acceptable approach/landing speeds. Answer B.`,
@@ -4298,7 +4298,7 @@ export const aasaQuestions = [
   {
     question: `During a crosswind landing, the aircraft touches down on the upwind main gear first. This technique:`,
     options: [
-    `A. Is a normal result of the crab-kick-drift technique or wing-low method — touching on the upwind gear first prevents the downwind gear from touching first (which would cause the aircraft to weathervane away from the runway centreline)`,
+    `A. Is a normal result of the crab-kick-drift technique or wing-low method — touching on the upwind gear first prevents the downwind gear from touching first`,
     `B. Is incorrect — both main gear must touch simultaneously on all aircraft — the aerodynamic forces in this configuration do not produce this effect`,
     `C. Is only acceptable on runways with grooves — not for smooth wet runways`,
     `D. Increases the landing distance by reducing the effective braking area`
@@ -4310,7 +4310,7 @@ export const aasaQuestions = [
   {
     question: `An twin-engine narrowbody jet in ALTERNATE LAW after a hydraulic system failure will have which changed flight envelope:`,
     options: [
-    `A. Reduced protections compared to NORMAL LAW: bank angle protection limited to 45° (instead of 67°); low-speed stability (alpha protection) changes to a stall warning with a slight push; load factor limit protection remains; pilot must manually respect all speed and structural limits more carefully`,
+    `A. Reduced protections compared to NORMAL LAW: bank angle protection limited to 45° (instead of 67°)`,
     `B. All flight envelopes are maintained — alternate law provides full protection`,
     `C. The aircraft can no longer be flown manually — autopilot is required`,
     `D. All protections are removed — identical to direct law`
@@ -4325,7 +4325,7 @@ export const aasaQuestions = [
     `A. Fuel in wings increases the bending moment at the wing root by adding outboard weight`,
     `B. Wing fuel tanks provide structural rigidity through pressurisation of skin panels`,
     `C. Wing fuel moves laterally in turbulence to provide roll damping`,
-    `D. Wing fuel weight acts downward, opposing the upward aerodynamic lift force along the span, reducing net bending moment at the wing root — allowing lighter structure or higher MTOW`
+    `D. Wing fuel weight acts downward, opposing the upward aerodynamic lift force along the span, reducing net bending moment at the wing root`
     ],
     correct: 3,
     explanation: `Wing bending relief: lift is distributed along the span, creating an upward bending force at the root. Wing fuel weight acts downward — opposing and partially cancelling the upward lift moment. This reduces structural load at the wing root: lighter root structure possible; higher MTOW for same structure; reduced fatigue. This is why ZFW is a structural limit. Answer B.`,
@@ -4337,7 +4337,7 @@ export const aasaQuestions = [
     `A. Turbofans have more stages of compression, increasing thermodynamic efficiency`,
     `B. Turbofan engines operate at lower temperatures, reducing fuel consumption`,
     `C. Turbofan engines have shorter gas paths, reducing friction losses`,
-    `D. The turbofan accelerates a large mass of air to a small velocity increment (fan bypass) rather than a small mass to a large velocity increment (turbojet jet) — for the same thrust, the momentum equation shows the turbofan kinetic energy waste is less, giving higher propulsive efficiency`
+    `D. The turbofan accelerates a large mass of air to a small velocity increment rather than a small mass to a high velocity`
     ],
     correct: 3,
     explanation: `Propulsive efficiency comparison: for a given thrust = ṁ × ΔV, we can achieve this with large ṁ and small ΔV (turbofan) or small ṁ and large ΔV (turbojet). Kinetic energy wasted per second (power lost in exhaust) = ½ṁΔV². For the same thrust: turbofan (large ṁ, small ΔV) wastes less kinetic energy than turbojet (small ṁ, large ΔV). This gives higher propulsive efficiency. The ideal efficiency limit is 100% when ΔV → 0 (propeller). Answer B.`,
@@ -4385,7 +4385,7 @@ export const aasaQuestions = [
     `A. 1.3 × VS in the clean configuration`,
     `B. VMCA — the air minimum control speed from the AFM`,
     `C. 1.5 × stall speed in landing configuration`,
-    `D. VMCL — the minimum control speed in the landing configuration with one engine inoperative and maximum go-around thrust on live engines`
+    `D. VMCL — the minimum control speed in the landing configuration with one engine`
     ],
     correct: 3,
     explanation: `VMCL (Landing Minimum Control Speed): the minimum speed in the approach/landing configuration at which directional control can be maintained with the critical engine failed and maximum go-around thrust on remaining engines. Vref must be at or above VMCL to ensure a safe go-around remains possible at any point in the approach. VMCL is lower than VMCA (more drag in landing config) but must be respected. Answer B.`,
@@ -4407,7 +4407,7 @@ export const aasaQuestions = [
     question: `A hung start on a gas turbine is characterised by:`,
     options: [
     `A. Starter motor remaining engaged after light-off with N2 rising above 50%`,
-    `B. Engine lighting but failing to accelerate to idle RPM — N2 stabilises below idle with rising EGT, indicating insufficient energy to overcome mechanical loads`,
+    `B. Engine lighting but failing to accelerate to idle RPM`,
     `C. Engine failing to light due to insufficient fuel flow`,
     `D. An immediate overspeed past governed idle speed`
     ],
@@ -4421,7 +4421,7 @@ export const aasaQuestions = [
     `A. Maintains a constant thrust rating`,
     `B. Maintains constant engine EPR`,
     `C. Holds the manually set thrust without adjustment`,
-    `D. Maintains the selected airspeed or Mach — adjusting thrust levers to compensate for configuration changes, turns, and wind variations`
+    `D. Maintains the selected airspeed or Mach — adjusting thrust levers to`
     ],
     correct: 3,
     explanation: `Autothrottle SPEED mode: compares actual speed to selected speed; advances or retards thrust levers to maintain target. Compensates for flap/gear changes, turns, wind variations. Used during approach to maintain Vapp, and during cruise to maintain Mach/IAS. Answer B.`,
@@ -4442,7 +4442,7 @@ export const aasaQuestions = [
   {
     question: `The autothrottle in speed mode:`,
     options: [
-    `A. Adjusts thrust lever position to maintain the selected speed/Mach — advancing thrust when below target, retarding when above; compensates automatically for configuration changes, turns, and wind variations`,
+    `A. Adjusts thrust lever position to maintain the selected speed/Mach — advancing thrust when below target, retarding when above`,
     `B. Maintains a fixed thrust setting regardless of airspeed`,
     `C. Controls speed by adjusting pitch, with thrust fixed`,
     `D. Only operates during the approach phase — not active in cruise`
@@ -4478,7 +4478,7 @@ export const aasaQuestions = [
   {
     question: `Rapid decompression at FL390 requires immediate oxygen mask donning because:`,
     options: [
-    `A. At FL390 the time of useful consciousness (TUC) without supplemental oxygen is approximately 9-15 seconds — immediate mask donning is the only way to prevent crew incapacitation before the emergency descent can be initiated`,
+    `A. At FL390 the time of useful consciousness (TUC) without supplemental oxygen is approximately 9-15 seconds`,
     `B. The cabin fills with toxic fumes during decompression`,
     `C. Cold air entering the cabin at decompression altitude causes immediate frostbite`,
     `D. High-altitude airflow creates suction that can eject unsecured items through any opening`
@@ -4492,7 +4492,7 @@ export const aasaQuestions = [
     options: [
     `A. Downslope increases stopping distance and decreases takeoff distance — a net degradation overall`,
     `B. Downslope has no effect on jet aircraft takeoff performance — only affects propeller aircraft`,
-    `C. Downslope increases the effective accelerating force — gravity component aids acceleration; takeoff distance decreases (beneficial) but stopping distance in an RTO increases (detrimental). V1 must be reconsidered for the asymmetry`,
+    `C. Downslope increases the effective accelerating force — gravity component aids acceleration`,
     `D. Downslope reduces VMCG and always permits a lower V1`
     ],
     correct: 2,
@@ -4502,7 +4502,7 @@ export const aasaQuestions = [
   {
     question: `The FADEC on a modern turbofan controls:`,
     options: [
-    `A. All engine parameters — fuel flow, variable stator vanes, bleed valves, starts, thrust reverser interlocks — with full authority and no mechanical fuel control backup`,
+    `A. All engine parameters — fuel flow, variable stator vanes, bleed valves, starts, thrust reverser interlocks`,
     `B. Fuel flow only — all other parameters managed by the crew`,
     `C. Fuel flow and N1 only — EGT monitored by a separate analogue system`,
     `D. Start and shutdown only — cruise operation is managed by the autothrottle`
@@ -4516,7 +4516,7 @@ export const aasaQuestions = [
     options: [
     `A. Altitude increases at the same IAS`,
     `B. Speed increases at constant altitude and weight`,
-    `C. Aircraft weight increases — higher weight requires higher CL at the same speed; induced drag proportional to CL squared`,
+    `C. Aircraft weight increases — higher weight requires higher CL at the same speed`,
     `D. Wing aspect ratio increases`
     ],
     correct: 2,
@@ -4540,7 +4540,7 @@ export const aasaQuestions = [
     options: [
     `A. A turbojet produces more noise — noise represents wasted energy`,
     `B. A turbojet has lower thermal efficiency than a turbofan`,
-    `C. A turbojet accelerates a small mass of air to a very high jet velocity; propulsive efficiency = 2V₀/(V₀+Vⱼ) — a high jet velocity Vⱼ relative to flight speed V₀ gives low efficiency; a turbofan's lower Vⱼ (large mass, low velocity) gives higher efficiency at subsonic speeds`,
+    `C. A turbojet accelerates a small mass of air to a very high jet velocity`,
     `D. Turbojets cannot operate efficiently at altitudes above FL300`
     ],
     correct: 2,
@@ -4565,7 +4565,7 @@ export const aasaQuestions = [
     `A. The ash is radioactive — high-altitude volcanic eruptions release uranium and thorium isotopes that create a radiation hazard for crew and passengers above FL200`,
     `B. Volcanic ash clogs only the pitot system causing false airspeed indications — engine performance is not affected because the compressor blades repel the fine particles`,
     `C. Ash only affects wing aerodynamics by roughening the leading edge surface — the engines are fully protected by inlet particle separators fitted to all transport category turbofans`,
-    `D. Fine volcanic ash particles (silica) are ingested by the engine: in the hot section they partially melt (softening temperature approximately 1,100°C, below engine operating temperatures) and solidify on turbine blade cooling holes and guide vanes, blocking cooling passages and causing engine damage or failure`
+    `D. Fine volcanic ash particles (silica) are ingested by the engine: in the hot section they partially melt (softening temperature approximately 1,100°C`
     ],
     correct: 3,
     explanation: `Volcanic ash engine damage: (1) Ash particles erode compressor blades (abrasive); (2) In the combustion chamber and turbine: ash partially melts (glass transition ~1,000°C) and solidifies on cool surfaces — blocking turbine blade cooling holes (causing blade overtemperature), coating NGVs, and reducing turbine efficiency; (3) All four engines can flame out simultaneously. Historic incidents: 1982 British Airways a four-engine widebody jet (four engine flameout), 1989 KLM a four-engine widebody jet. Avoidance is critical — ash is often invisible at night. Do NOT fly through visible volcanic ash. Answer B.`,
@@ -4577,7 +4577,7 @@ export const aasaQuestions = [
     `A. The aircraft cannot descend below the minimum approach altitude`,
     `B. The elevator is limited to prevent nose-down input below 50 ft`,
     `C. The angle of approach is limited to a maximum 5.5° glidepath`,
-    `D. If angle of attack reaches a threshold (alpha floor threshold, approximately 9.5° AoA), the autothrottle automatically advances to TOGA thrust — even if the crew has retarded the thrust levers — protecting against inadvertent low-speed approach stall`
+    `D. If angle of attack reaches a threshold (alpha floor threshold, approximately 9.5° AoA)`
     ],
     correct: 3,
     explanation: `a twin-engine narrowbody jet alpha floor: a FBW protection that activates when AoA reaches the alpha floor threshold (approximately 9.5° in approach config). The autothrottle is commanded to TOGA regardless of thrust lever position. Purpose: prevent an inadvertent low-energy/low-speed approach from developing into a stall — the automatic TOGA thrust gives the aircraft energy to recover. The crew will feel the thrust advancing and should respond to the energy problem. Alpha floor can be inhibited on the ground. Answer B.`,
@@ -4589,7 +4589,7 @@ export const aasaQuestions = [
     `A. No failure can affect the flight controls — they are failure-proof`,
     `B. The autopilot automatically takes over when a control failure is detected`,
     `C. The flight controls automatically return to neutral on any failure`,
-    `D. The system is designed so that any single failure does not result in loss of control of the aircraft — redundant actuators, dual/triple hydraulic supply, alternative modes or manual reversion ensure continued controllability`
+    `D. The system is designed so that any single failure does not result in loss of control of the aircraft`
     ],
     correct: 3,
     explanation: `Fail-safe design principle: no single failure shall result in a catastrophic outcome. Applied to flight controls: (1) Multiple independent hydraulic actuators per surface; (2) Independent hydraulic systems powering different actuators; (3) Manual reversion (some aircraft); (4) Alternate electrical control paths (FBW); (5) Structural redundancy (multiple load paths — if one path fails, loads redistribute). 'Fail-safe' does not mean failure-proof — it means a single failure leaves the aircraft in a safe condition from which recovery or continued safe flight is possible. Answer B.`,
@@ -4601,7 +4601,7 @@ export const aasaQuestions = [
     `A. Ram air turbine driven — deployed automatically on any hydraulic failure`,
     `B. APU-driven pump — provides hydraulic power on the ground only`,
     `C. Manual hand pump — for flight controls only`,
-    `D. Engine-driven pump (EDP) — directly driven from the engine gearbox, providing primary hydraulic pressure whenever the engine runs; supplemented by electric motor-driven pumps`
+    `D. Engine-driven pump (EDP) — directly driven from the engine gearbox, providing primary hydraulic pressure whenever the engine runs`
     ],
     correct: 3,
     explanation: `Hydraulic pump types: (1) EDP — direct mechanical drive from engine gearbox; primary pump, highest flow; (2) EMDP — AC motor driven; backup and ground operations; (3) APU pump — some aircraft for ground; (4) RAT — emergency only. EDPs on all engines provide normal operating pressure. Answer B.`,
@@ -4612,7 +4612,7 @@ export const aasaQuestions = [
     options: [
     `A. The autopilot can land the aircraft three times on the same approach`,
     `B. Exactly three autopilot channels must be engaged`,
-    `C. Triple redundancy (fail-operational, fail-operational) — any single failure does not prevent autoland and any second failure does not cause significant flight path deviation; suitable for CAT IIIB/C operations`,
+    `C. Triple redundancy (fail-operational, fail-operational)`,
     `D. The system can perform autoland at three different runways per flight`
     ],
     correct: 2,
@@ -4623,7 +4623,7 @@ export const aasaQuestions = [
     question: `Circuit breakers in aircraft wiring serve primarily to:`,
     options: [
     `A. Prevent arcing by using only direct current throughout the aircraft`,
-    `B. Protect wiring from overload — when current exceeds the rated value, the CB trips open, breaking the circuit and preventing overheating, wire melting, or fire; also allow crew to manually isolate circuits during abnormals`,
+    `B. Protect wiring from overload — when current exceeds the rated value, the CB trips open`,
     `C. Install all wiring in grounded metallic conduits`,
     `D. Limit maximum voltage to 28V DC`
     ],
@@ -4634,7 +4634,7 @@ export const aasaQuestions = [
   {
     question: `The gust load factor formula ∆n = (ρ × U × V × a × S) / (2 × W) shows that at a given altitude and airspeed, gust loads are greater for aircraft with:`,
     options: [
-    `A. Lower wing loading (W/S) — a lower ratio of weight to wing area makes the aircraft more responsive to gusts; lighter aircraft with large wings are more gust-sensitive`,
+    `A. Lower wing loading (W/S) — a lower ratio of weight to wing area makes the aircraft more responsive to gusts`,
     `B. Higher weight (W) — heavier aircraft experience greater gust forces`,
     `C. Higher sweep angle — sweep directly increases gust response`,
     `D. Lower aspect ratio — shorter wingspan reduces gust exposure`
@@ -4648,7 +4648,7 @@ export const aasaQuestions = [
     options: [
     `A. At high altitude, VMO and MMO converge to the same value`,
     `B. Coffin corner occurs when aircraft weight exceeds maximum certified ceiling weight`,
-    `C. As altitude increases, stall IAS remains approximately constant while Mach buffet onset IAS decreases — they converge at the coffin corner where the buffet-free margin disappears`,
+    `C. As altitude increases, stall IAS remains approximately constant while Mach buffet onset IAS decreases`,
     `D. At high altitude flight controls become ineffective, reducing the safe operating speed range`
     ],
     correct: 2,
@@ -4673,7 +4673,7 @@ export const aasaQuestions = [
     `A. Hydraulic pressure decreases as the aircraft slows`,
     `B. The reverse thrust buckets mechanically lose effectiveness below 80 kt`,
     `C. Anti-skid automatically reduces brake pressure when reverse thrust is applied`,
-    `D. Mass airflow through the engine decreases with reducing ground speed — less mass flow means less reversed momentum and therefore less retarding force; additionally, reversed exhaust flow risks re-ingestion into the engine intakes at low speed`
+    `D. Mass airflow through the engine decreases with reducing ground speed — less mass flow means less reversed momentum and therefore less retarding force`
     ],
     correct: 3,
     explanation: `Reverse thrust: force = mass flow × velocity change. As aircraft ground speed decreases: intake ram air velocity decreases → less mass flow → less force in both forward and reverse. At low speeds, reversed exhaust can flow forward and be re-ingested, disrupting intake airflow and risking compressor stalls. Best practice: use reverse thrust at high speed for maximum effect, then reduce to minimum (or stow) below approximately 60-80 kt. Wheel brakes (anti-skid) are effective throughout the speed range. Answer B.`,
@@ -4684,7 +4684,7 @@ export const aasaQuestions = [
     options: [
     `A. Aerodynamic braking — pitching up to increase drag`,
     `B. Friction pads mechanically applied by cables from the cockpit`,
-    `C. The brake accumulator which stores hydraulic energy — provides several brake applications at full pressure without the main hydraulic pumps operating; anti-skid remains active if electrical power is available`,
+    `C. The brake accumulator which stores hydraulic energy`,
     `D. The parking brake system using the nose gear only`
     ],
     correct: 2,
@@ -4694,7 +4694,7 @@ export const aasaQuestions = [
   {
     question: `A transport aircraft descends from FL370 to FL290 at constant Mach 0.80. The IAS will:`,
     options: [
-    `A. Increase — at lower altitude the same Mach number corresponds to a higher TAS (warmer air, higher LSS) and higher air density, producing higher dynamic pressure and higher IAS`,
+    `A. Increase — at lower altitude the same Mach number corresponds to a higher TAS (warmer air`,
     `B. Remain constant — Mach is constant so IAS is constant`,
     `C. Decrease — the aircraft is descending so it is slowing down`,
     `D. Remain at VMO — the autopilot limits IAS to VMO throughout the descent`
@@ -4709,7 +4709,7 @@ export const aasaQuestions = [
     `A. Maintain cabin altitude at a safe maximum during descent`,
     `B. Allow ram air into the cabin if pressurisation fails`,
     `C. Reduce cabin altitude during emergency descent`,
-    `D. Limit maximum positive differential — opens if differential exceeds the structural certified limit, protecting the fuselage from excessive hoop stress`
+    `D. Limit maximum positive differential — opens if differential exceeds the structural certified limit`
     ],
     correct: 3,
     explanation: `PPRV (safety valve): if pressurisation controller malfunctions and over-pressurises the cabin (outflow valve fails closed), PPRV opens at maximum certified positive differential. Prevents fuselage structural failure from excessive hoop stress. Two PPRVs typically fitted for redundancy. Primary control is the outflow valve; PPRV is emergency-only. Answer B.`,
@@ -4719,7 +4719,7 @@ export const aasaQuestions = [
     question: `The aircraft encounters severe turbulence at FL350. The crew should:`,
     options: [
     `A. Disengage autopilot and hand fly as the autopilot cannot handle turbulence — the aerodynamic forces in this configuration do not produce this effect`,
-    `B. Engage the autopilot (if not already engaged) in turbulence penetration mode or maintain appropriate attitude; reduce speed to the turbulence penetration speed (if above it); fasten seatbelt signs ON; cabin crew seated; avoid abrupt control inputs`,
+    `B. Engage the autopilot (if not already engaged) in turbulence penetration mode or maintain appropriate attitude`,
     `C. Climb immediately to FL430 to escape the turbulence`,
     `D. Declare an emergency and request immediate descent clearance for all turbulence encounters`
     ],
@@ -4733,7 +4733,7 @@ export const aasaQuestions = [
     `A. Increasing tail effectiveness in yaw — the aerodynamic forces in this configuration do not produce this effect`,
     `B. Reducing the aircraft's tendency to Dutch roll`,
     `C. Providing additional lift at high angles of attack`,
-    `D. Generating a rolling moment that opposes a sideslip — when the aircraft sideslips, the lower (windward) wing experiences increased effective AoA and generates more lift, rolling the aircraft back toward wings level`
+    `D. Generating a rolling moment that opposes a sideslip`
     ],
     correct: 3,
     explanation: `Dihedral effect (Clβ): when the aircraft sideslips (e.g. sideslip to the right), the right (lower/forward) wing moves into the relative wind at a more effective AoA; the left wing moves away. The right wing generates more lift → roll moment to the left (back toward wings level). This is positive lateral static stability (Clβ < 0). Sweep also contributes a dihedral effect. The overall lateral stability is the combination of geometric dihedral and sweep effects. Answer B.`,
@@ -4754,7 +4754,7 @@ export const aasaQuestions = [
   {
     question: `An autopilot hardover drives the control surface to full deflection because:`,
     options: [
-    `A. A fault in the autopilot servo or electronics causes the actuator to run at maximum rate continuously in one direction — producing a large rapid unintended flight path change`,
+    `A. A fault in the autopilot servo or electronics causes the actuator to run at maximum rate continuously in one direction`,
     `B. A power surge in the autopilot computer sends maximum signal to all surfaces simultaneously`,
     `C. A hardover only occurs when the autopilot is disconnected and surfaces spring to neutral`,
     `D. Hardover failures are prevented by dual-redundant computers and cannot occur in flight`
@@ -4767,7 +4767,7 @@ export const aasaQuestions = [
     question: `The spoiler panels on a transport aircraft in flight have three separate control functions. When all spoilers deploy symmetrically to maximum deflection in flight, this is called:`,
     options: [
     `A. Differential spoileron mode — used for roll control`,
-    `B. Speed brake (flight spoiler) mode — symmetric deployment increases total drag and descent rate while the crew maintains speed control; used during emergency descents or high-drag descents`,
+    `B. Speed brake (flight spoiler) mode — symmetric deployment increases total drag and descent rate while the crew maintains speed control`,
     `C. Ground spoiler pre-arm mode — only available above 1,000 ft`,
     `D. Stall recovery mode — full spoilers reduce lift to prevent over-rotation`
     ],
@@ -4804,7 +4804,7 @@ export const aasaQuestions = [
     options: [
     `A. Improved fuel efficiency — aft CG always improves efficiency`,
     `B. Slightly heavier stick forces requiring more pilot strength`,
-    `C. Reduced or reversed static longitudinal stability — the aircraft may pitch up (nose rises) when disturbed, with the pilot unable to counteract with nose-down elevator; in extremis, unrecoverable nose-up divergence`,
+    `C. Reduced or reversed static longitudinal stability`,
     `D. Activation of the FADEC limiter system — no flight risk`
     ],
     correct: 2,
@@ -4815,7 +4815,7 @@ export const aasaQuestions = [
     question: `SLD (Supercooled Large Droplet) icing is hazardous because:`,
     options: [
     `A. SLD causes electrical static discharge through the airframe`,
-    `B. Large droplets (>50 μm) impinge and freeze behind the leading edge protection area, forming ice on unprotected mid-chord and tail surfaces — standard anti-icing systems don't protect against SLD`,
+    `B. Large droplets (>50 μm) impinge and freeze behind the leading edge protection area`,
     `C. SLD always occurs below −40°C beyond anti-icing capacity`,
     `D. SLD clogs pitot probes which lack ice protection`
     ],
@@ -4829,7 +4829,7 @@ export const aasaQuestions = [
     `A. Provide primary pitch control — elevators are for fine adjustment only`,
     `B. Increase pitch stability by moving the tailplane aerodynamic centre aft`,
     `C. Provide additional lift at low speed by acting as a second lifting surface`,
-    `D. Remove sustained elevator deflection by repositioning the entire horizontal tail surface — eliminating trim drag from deflected elevators and reducing control forces to near zero in the trimmed condition`
+    `D. Remove sustained elevator deflection by repositioning the entire horizontal tail surface`
     ],
     correct: 3,
     explanation: `The THS repositions the entire horizontal stabiliser to match the trimmed flight condition. When the aircraft needs a sustained nose-up or nose-down force (different CG, flap change, speed change), the stabiliser repositions to provide this force without deflecting the elevator. Result: elevator returns to near-neutral, eliminating trim drag. The elevator provides the immediate pitch control authority. Answer B.`,
@@ -4839,7 +4839,7 @@ export const aasaQuestions = [
     question: `Spanwise flow on a swept wing is produced by:`,
     options: [
     `A. Engine slipstream deflecting airflow toward the wingtips — the aerodynamic forces in this configuration do not produce this effect`,
-    `B. The chordwise pressure gradient on the swept wing resolves into components — one chordwise and one spanwise (outboard) — continuously moving the boundary layer outboard and thickening it at the tips, promoting tip stall`,
+    `B. The chordwise pressure gradient on the swept wing resolves into components — one chordwise and one spanwise (outboard)`,
     `C. Wing washout creating a spanwise pressure gradient`,
     `D. The wingtip vortex drawing flow outward along the lower surface only`
     ],
@@ -4853,7 +4853,7 @@ export const aasaQuestions = [
     `A. Starting the engine in ambient temperatures above 35°C`,
     `B. The turbine temperature indicator failing during start`,
     `C. Oil temperature exceeding limits before engine start`,
-    `D. EGT exceeding the start temperature limit — typically from excess fuel flow, slow N2 acceleration, or attempting relight with residual hot gases in the engine`
+    `D. EGT exceeding the start temperature limit`
     ],
     correct: 3,
     explanation: `Hot start: EGT exceeds the published start temperature limit before the engine reaches self-sustaining speed. Causes: excessive fuel flow (fuel control fault), slow N2 (weak starter, high altitude, hot ambient), or relighting with residual hot gas (improper motoring purge). Action: immediately close fuel shutoff valve, motor the engine (starter only) to cool. Borescope inspection may be required if limits were exceeded. Answer B.`,
@@ -4886,7 +4886,7 @@ export const aasaQuestions = [
   {
     question: `Airframe de-icing using pneumatic boots (used on some turboprops and regional aircraft) works by:`,
     options: [
-    `A. Inflating rubber boot tubes on the leading edge — the inflation cracks and sheds accumulated ice; the boots then deflate and the leading edge returns to aerodynamic shape`,
+    `A. Inflating rubber boot tubes on the leading edge — the inflation cracks and sheds accumulated ice`,
     `B. Continuously inflating a heated rubber boot to prevent ice formation`,
     `C. Injecting TKS (Thickened Kerosene Solution) fluid through porous panels on the leading edge`,
     `D. Using hot bleed air channelled through the leading edge structure to melt ice as it forms`
@@ -4899,7 +4899,7 @@ export const aasaQuestions = [
     question: `The autopilot heading select (HDG SEL) mode commands the aircraft to:`,
     options: [
     `A. Hold the current magnetic heading regardless of wind`,
-    `B. Turn to and maintain a selected magnetic heading — the autopilot banks at an appropriate angle (typically limited to 25-30°) to turn to the selected heading and levels off when the heading is reached`,
+    `B. Turn to and maintain a selected magnetic heading`,
     `C. Track a specific ground track accounting for wind drift`,
     `D. Turn at maximum rate 1 to the selected heading`
     ],
@@ -4912,7 +4912,7 @@ export const aasaQuestions = [
     options: [
     `A. Engines above idle before the takeoff call`,
     `B. Any door open warning anywhere on the aircraft`,
-    `C. An unsafe configuration — stabiliser trim outside the green band, speedbrakes not stowed, flaps not in a certified takeoff setting, or parking brake set — giving an unmistakeable aural warning before V1`,
+    `C. An unsafe configuration — stabiliser trim outside the green band, speedbrakes not stowed`,
     `D. Either engine below 60% N2 during the takeoff roll`
     ],
     correct: 2,
@@ -4923,7 +4923,7 @@ export const aasaQuestions = [
     question: `The APU altitude limitation for bleed air supply on most transport aircraft (e.g. approximately FL250) exists because:`,
     options: [
     `A. The APU cannot start above FL250`,
-    `B. Above the altitude limit, the APU compressor cannot maintain sufficient output pressure differential for airconditioning — the APU generator function typically remains available to higher altitudes`,
+    `B. Above the altitude limit, the APU compressor cannot maintain sufficient output pressure`,
     `C. APU bleed air is contaminated above FL250 due to ionospheric effects`,
     `D. CASR Part 25 prohibits APU bleed air above FL250 for all aircraft`
     ],
@@ -4935,7 +4935,7 @@ export const aasaQuestions = [
     question: `The air cycle machine (ACM) produces cold air by:`,
     options: [
     `A. Evaporating liquid refrigerant in an expansion valve`,
-    `B. Expanding hot compressed bleed air through a turbine — the expansion does work against the turbine blades, cooling the air; the turbine shaft drives a compressor and fan within the ACM pack`,
+    `B. Expanding hot compressed bleed air through a turbine — the expansion does work against the turbine blades, cooling the air`,
     `C. Mixing hot bleed air with cold ram air only`,
     `D. Pumping air through desiccant that absorbs heat during adsorption`
     ],
@@ -4946,7 +4946,7 @@ export const aasaQuestions = [
   {
     question: `Mixing valves in the airconditioning system regulate:`,
     options: [
-    `A. The mixture of cold ACM outlet air and hot bleed air bypass to achieve the desired zone temperature — providing independent control for cockpit, forward, and rear cabin zones`,
+    `A. The mixture of cold ACM outlet air and hot bleed air bypass to achieve the desired zone temperature`,
     `B. The blend of ram air with bleed air for cabin temperature control`,
     `C. The mix of dry and humidified air for passenger comfort`,
     `D. The mixture of recirculated and fresh air for oxygen levels`
@@ -4960,7 +4960,7 @@ export const aasaQuestions = [
     options: [
     `A. Oil is used as fuel for the APU start sequence`,
     `B. Oil consumption determines compressor blade replacement intervals`,
-    `C. It may indicate internal seal failures — oil entering the gas path causes fire risk, cabin fumes via bleed air, or sudden bearing seizure if oil drops critically low`,
+    `C. It may indicate internal seal failures — oil entering the gas path causes fire risk, cabin fumes via bleed air`,
     `D. Engine oil cools the fan hub and must be continuously replenished`
     ],
     correct: 2,
@@ -4973,7 +4973,7 @@ export const aasaQuestions = [
     `A. Alert crew if the aircraft is above maximum takeoff weight`,
     `B. Warn of approaching terrain during the takeoff roll`,
     `C. Alert ground crew if any access panels are open on the aircraft exterior`,
-    `D. Alert the crew if the aircraft is not properly configured for takeoff before or during the takeoff roll — typically warns if: flaps not in a takeoff range, speedbrakes extended, parking brake on, or stabiliser trim out of the green band`
+    `D. Alert the crew if the aircraft is not properly configured for takeoff before or during the takeoff roll`
     ],
     correct: 3,
     explanation: `Takeoff configuration warning (TOWS): sounds a distinctive warning horn/alarm if the crew attempts to advance thrust for takeoff with: (1) Flaps not in a certified takeoff position; (2) Speedbrakes/spoilers not stowed; (3) Parking brake set; (4) Stabiliser trim outside the takeoff range; (5) Some aircraft: door not closed, cowl not latched. The warning prevents takeoff with an unsafe configuration. Multiple accidents have occurred from takeoff with incorrect flap setting (e.g. Air France 358 if TOWS was inhibited). The warning is independent of the autopilot. Answer B.`,
@@ -4984,7 +4984,7 @@ export const aasaQuestions = [
     options: [
     `A. The reverser would overspeed the engine if deployed in flight`,
     `B. The reverser is aerodynamically shaped only for ground use and would stall in flight`,
-    `C. Inadvertent in-flight reverser deployment would immediately produce large asymmetric retarding force, causing yaw and potential loss of control — it cannot be corrected quickly enough at cruise speed`,
+    `C. Inadvertent in-flight reverser deployment would immediately produce large asymmetric retarding force, causing yaw and potential loss of control`,
     `D. Regulatory prohibition on in-flight reverser use is simply a convention without aerodynamic justification`
     ],
     correct: 2,
@@ -4996,7 +4996,7 @@ export const aasaQuestions = [
     options: [
     `A. Below ZFW the aircraft is too light to maintain control authority`,
     `B. ZFW ensures minimum hydraulic cooling from the fuel system`,
-    `C. With empty fuel tanks, the wing bending moment is maximum (no fuel bending relief); adding payload above ZFW increases wing root bending beyond structural limits`,
+    `C. With empty fuel tanks, the wing bending moment is maximum (no fuel bending relief)`,
     `D. ZFW ensures minimum reserve fuel for approach and landing`
     ],
     correct: 2,
@@ -5007,7 +5007,7 @@ export const aasaQuestions = [
     question: `A compressor stall in a gas turbine is caused by:`,
     options: [
     `A. The fan speed exceeding the maximum certified N1 limit`,
-    `B. The angle of attack of the compressor blades exceeding the stall angle — caused by low airflow, excessive fuel flow, damaged blades, or ingestion of disturbed air; symptoms include a bang, EGT spike, and thrust loss`,
+    `B. The angle of attack of the compressor blades exceeding the stall angle`,
     `C. Over-cooling of the compressor causing ice formation on the blades`,
     `D. The combustion chamber reaching maximum operating temperature`
     ],
@@ -5018,7 +5018,7 @@ export const aasaQuestions = [
   {
     question: `The purpose of variable stator vanes (VSVs) in the high-pressure compressor is:`,
     options: [
-    `A. To adjust the angle of stator (guide) vanes to match the correct incidence angle as engine speed changes — preventing compressor stall at part-power or off-design conditions by directing air optimally onto the next stage rotor blades`,
+    `A. To adjust the angle of stator (guide) vanes to match the correct incidence angle as engine speed changes`,
     `B. To vary the amount of bleed air taken from the compressor`,
     `C. To provide variable area exhaust nozzles for the turbine`,
     `D. To control the fan RPM independently of the LP turbine`
@@ -5031,7 +5031,7 @@ export const aasaQuestions = [
     question: `Hot section inspection intervals are driven primarily by:`,
     options: [
     `A. Calendar time — every 2 years regardless of operation`,
-    `B. Engine cycle counts (each takeoff-to-landing is one cycle) and/or flight hours — whichever limit is first; high-cycle operations reach limits faster than long-haul because each cycle produces a temperature excursion in the hot section`,
+    `B. Engine cycle counts (each takeoff-to-landing is one cycle) and/or flight hours — whichever limit is first`,
     `C. Total fuel consumed since new only`,
     `D. Average cruise EGT measured over the preceding 100 hours`
     ],
@@ -5043,7 +5043,7 @@ export const aasaQuestions = [
     question: `N1 and N2 RPM indicators express spool speed as a percentage because:`,
     options: [
     `A. Percentage is easier to read under high workload`,
-    `B. N1 and N2 have different maximum speeds (they are separate spools) — expressing each as a percentage of its own maximum allows direct comparison and limit monitoring on the same 0-100% scale for both spools`,
+    `B. N1 and N2 have different maximum speeds (they are separate spools)`,
     `C. ATC requires percentage RPM for noise abatement`,
     `D. Percentage RPM is standardised across all turbofan manufacturers`
     ],
@@ -5054,7 +5054,7 @@ export const aasaQuestions = [
   {
     question: `A turbofan engine oil system uses synthetic oil rather than mineral oil because:`,
     options: [
-    `A. Synthetic oil has a much wider usable temperature range — from −54°C startup temperatures to +200°C bearing temperatures; mineral oil would either congeal at cold start or break down thermally at high operating temperatures`,
+    `A. Synthetic oil has a much wider usable temperature range — from −54°C startup temperatures to +200°C bearing temperatures`,
     `B. Synthetic oil is cheaper and more readily available worldwide`,
     `C. Synthetic oil is electrically non-conductive, preventing static discharge in the fuel system`,
     `D. CASR Part 33 requires synthetic oil exclusively for turbine engines`
@@ -5067,7 +5067,7 @@ export const aasaQuestions = [
     question: `The zero fuel weight (ZFW) structural limit exists to prevent:`,
     options: [
     `A. The aircraft from being too light for safe operation`,
-    `B. Exceedance of the wing root bending moment when fuel tanks are empty — with no fuel in the wings to provide bending relief, the full payload weight creates the maximum bending stress at the wing root; adding payload above ZFW without wing fuel would overstress the structure`,
+    `B. Exceedance of the wing root bending moment when fuel tanks are empty`,
     `C. Fuel contamination from excessive payload density`,
     `D. The CG from moving too far aft with heavy cargo in the rear hold`
     ],
@@ -5079,7 +5079,7 @@ export const aasaQuestions = [
     question: `A headwind reduces aircraft range because:`,
     options: [
     `A. The headwind increases aerodynamic drag on the airframe`,
-    `B. Ground speed = TAS − headwind component; the aircraft covers less ground for the same TAS and fuel flow — fewer ground miles per kg of fuel burned; optimal TAS should be increased slightly into a headwind`,
+    `B. Ground speed = TAS − headwind component`,
     `C. Headwind increases turbulence which increases fuel burn`,
     `D. Headwind requires higher thrust to maintain the same IAS`
     ],
@@ -5102,7 +5102,7 @@ export const aasaQuestions = [
   {
     question: `The purpose of a fuel dump (jettison) system on a transport aircraft is to:`,
     options: [
-    `A. Reduce aircraft weight to at or below maximum landing weight (MLW) for an immediate landing after takeoff when it's not possible to burn off fuel — the dump system reduces weight faster than fuel burn allows`,
+    `A. Reduce aircraft weight to at or below maximum landing weight (MLW) for an immediate landing`,
     `B. Allow emergency fuel dumping to extinguish a wing fire`,
     `C. Transfer fuel between aircraft in formation flying`,
     `D. Dump contaminated fuel that has failed a pre-flight water check`
@@ -5115,7 +5115,7 @@ export const aasaQuestions = [
     question: `The maximum altitude at which the APU can supply bleed air is limited because:`,
     options: [
     `A. The APU cannot start above FL250`,
-    `B. Above the bleed limit altitude, the APU compressor output pressure is insufficient to supply the ECS packs — the APU generator may still function above this altitude but bleed is unavailable`,
+    `B. Above the bleed limit altitude, the APU compressor output pressure is insufficient to supply the ECS packs`,
     `C. APU bleed air is contaminated above FL250`,
     `D. CASR prohibits APU bleed air above FL250 for all aircraft`
     ],
@@ -5150,7 +5150,7 @@ export const aasaQuestions = [
   {
     question: `The relationship between the FMS, autothrottle, and autopilot in the AFCS is:`,
     options: [
-    `A. The FMS provides target speeds, altitudes, and routing — the autopilot executes the lateral and vertical path, and the autothrottle manages thrust for speed; all three share data via the flight management computer buses`,
+    `A. The FMS provides target speeds, altitudes, and routing`,
     `B. Each system operates independently with no interaction`,
     `C. The FMS controls the autopilot directly; the AT is manual only`,
     `D. The autopilot controls the FMS routing; the AT controls autopilot pitch`
@@ -5165,7 +5165,7 @@ export const aasaQuestions = [
     `A. −30°C — Type I can be used at any temperature`,
     `B. 0°C — Type I is only effective above the freezing point`,
     `C. −10°C — Type I is effective to this temperature in all conditions`,
-    `D. −25°C — below this, Type I loses effectiveness and Type II, III, or IV anti-icing fluids are required, which have better low-temperature performance`
+    `D. −25°C — below this, Type I loses effectiveness and Type II, III, or IV anti-icing fluids are required`
     ],
     correct: 3,
     explanation: `Ground de-icing fluids: Type I (diluted glycol/water, heated to 60-80°C): lowest holdover time; effective to approximately −25°C for de-icing. Below −25°C: Type I effectiveness decreases significantly — higher-viscosity fluids required. Type II, III, IV (thickened glycol): better low-temperature performance (to −40°C or below). Holdover time also varies with fluid type and ambient conditions. The crew must verify that the de-icing/anti-icing fluid type, concentration, and holdover time are appropriate for the ambient conditions before takeoff. Answer B.`,
@@ -5176,7 +5176,7 @@ export const aasaQuestions = [
     options: [
     `A. Indicate that the aircraft has fully stalled and recovery is required`,
     `B. Warn of approaching VMO`,
-    `C. Provide an unmistakeable tactile warning approximately 5-10% above stall speed — vibrating the control column to alert the crew before the aerodynamic stall develops, while control effectiveness is still available`,
+    `C. Provide an unmistakeable tactile warning approximately 5-10% above stall speed`,
     `D. Signal that flap extension is required for approach`
     ],
     correct: 2,
@@ -5188,7 +5188,7 @@ export const aasaQuestions = [
     options: [
     `A. Pull back aggressively on the column to reduce speed quickly`,
     `B. Deploy maximum speedbrakes immediately at full deflection to reduce speed as rapidly as possible`,
-    `C. Smoothly reduce thrust (retard thrust levers) and apply speedbrakes — then gently reduce pitch to slowly reduce speed; avoid abrupt pitch-up manoeuvres that could add to structural loads`,
+    `C. Smoothly reduce thrust (retard thrust levers) and apply speedbrakes — then gently reduce pitch to slowly reduce speed`,
     `D. Disengage autopilot and roll wings level — overspeed is caused by bank angle only`
     ],
     correct: 2,
@@ -5201,7 +5201,7 @@ export const aasaQuestions = [
     `A. Heats the fuel before combustion while also providing backup oil pressure`,
     `B. Maintains oil temperature above 100°C for optimum viscosity`,
     `C. Provides a secondary heat source for the anti-icing system`,
-    `D. Cools hot engine oil using cooler fuel as the heat sink — simultaneously heating the fuel (improving atomisation and preventing wax precipitation) while cooling the oil`
+    `D. Cools hot engine oil using cooler fuel as the heat sink`
     ],
     correct: 3,
     explanation: `FCOC: heat exchanger where hot engine oil and cooler fuel are in thermal contact (without mixing). Oil (150-200°C) is cooled; fuel (0-30°C at altitude) is warmed. Benefits: oil prevented from coking; fuel warmed for better atomisation and prevention of ice crystal/wax formation. Some engines use air-cooled oil cooler as primary, with FCOC as secondary. Answer B.`,
@@ -5211,7 +5211,7 @@ export const aasaQuestions = [
     question: `The brake energy limit for an RTO is a function of:`,
     options: [
     `A. Aircraft weight alone — heavier aircraft have lower RTO speed limits`,
-    `B. Aircraft kinetic energy at brake application — ½mv²; higher V1 and higher weight both increase energy; the brake energy limit sets a maximum permissible V1/weight combination`,
+    `B. Aircraft kinetic energy at brake application — ½mv²`,
     `C. Maximum brake pressure multiplied by wheel contact area`,
     `D. Runway slope and temperature only`
     ],
@@ -5222,7 +5222,7 @@ export const aasaQuestions = [
   {
     question: `Dynamic hydroplaning begins when:`,
     options: [
-    `A. A water wedge builds under the tyre faster than it can be displaced — the tyre lifts off the runway; hydroplaning speed ≈ 9 × √(tyre pressure in PSI)`,
+    `A. A water wedge builds under the tyre faster than it can be displaced — the tyre lifts off the runway`,
     `B. The aircraft lands in crosswind greater than 15 kt on a wet runway`,
     `C. Runway surface temperature exceeds the dewpoint creating a thin film`,
     `D. Brake pressure exceeds 2,000 PSI on a wet runway`
@@ -5235,7 +5235,7 @@ export const aasaQuestions = [
     question: `Thermal ice protection for wing leading edges on a jet transport uses:`,
     options: [
     `A. Electrically heated elements embedded in the leading edge skin`,
-    `B. Hot engine bleed air ducted through the leading edge structure via a piccolo tube — heating the leading edge skin from inside and preventing ice formation by keeping the surface above 0°C`,
+    `B. Hot engine bleed air ducted through the leading edge structure via a piccolo tube`,
     `C. A chemical spray of glycol solution through porous panels`,
     `D. Infrared lamps inside the wing illuminating the leading edge from inside`
     ],
@@ -5259,7 +5259,7 @@ export const aasaQuestions = [
     question: `On a coupled approach, the crew's role while the autopilot flies the aircraft is:`,
     options: [
     `A. No action required — the autopilot manages everything to landing`,
-    `B. Monitor the AFCS, verify FMA mode annunciations, call out deviations, maintain readiness to take over manually, and action any abnormal indications — the crew retains full command responsibility`,
+    `B. Monitor the AFCS, verify FMA mode annunciations, call out deviations, maintain readiness to take over manually`,
     `C. Manage radio communications only — all other tasks are automated`,
     `D. Manually fly while the autopilot monitors for failures`
     ],
@@ -5282,7 +5282,7 @@ export const aasaQuestions = [
   {
     question: `A transport aircraft experiences a bird strike to an engine at rotation. The primary risk is:`,
     options: [
-    `A. Foreign Object Damage (FOD) — the bird can cause: fan blade damage (impact/fracture), compressor damage, combustion disruption (flame-out), or ingestion-induced compressor stall — potentially causing thrust loss or engine shutdown at the most critical phase of flight`,
+    `A. Foreign Object Damage (FOD) — the bird can cause: fan blade damage (impact/fracture), compressor damage, combustion disruption (flame-out)`,
     `B. Rapid fuel leak from the engine piercing the fuel manifold`,
     `C. Windscreen damage obscuring the captain's view during rotation`,
     `D. Nose gear shimmy from bird remains on the runway`
@@ -5294,7 +5294,7 @@ export const aasaQuestions = [
   {
     question: `Aircraft pressurisation is typically supplied by bleed air because:`,
     options: [
-    `A. Engine compressor bleed air is available at sufficient pressure and flow to maintain cabin pressure throughout the flight envelope — the compressor provides a continuous supply at higher-than-needed pressure which is then regulated down to pack inlet pressure; the system requires no additional compressors or pumps`,
+    `A. Engine compressor bleed air is available at sufficient pressure and flow to maintain cabin pressure throughout the flight envelope`,
     `B. Bleed air is the hottest and most highly pressurised air source on the aircraft`,
     `C. CASA requires bleed-air pressurisation for all transport category aircraft`,
     `D. Bleed air is 100% contamination-free and does not require filtration before entering the cabin`
@@ -5307,7 +5307,7 @@ export const aasaQuestions = [
     question: `The EPR (Engine Pressure Ratio) gauge displays:`,
     options: [
     `A. The ratio of N1 rotational speed to N2 rotational speed`,
-    `B. Total pressure at the turbine exhaust divided by total pressure at the engine intake — EPR = Pt7/Pt2; a higher EPR indicates more work done on the airflow and more thrust`,
+    `B. Total pressure at the turbine exhaust divided by total pressure at the engine intake — EPR = Pt7/Pt2`,
     `C. The ratio of combustion chamber pressure to ambient pressure`,
     `D. Fan inlet total pressure to compressor exit total pressure`
     ],
@@ -5330,7 +5330,7 @@ export const aasaQuestions = [
   {
     question: `The autobrake system allows the crew to preselect:`,
     options: [
-    `A. A deceleration rate — the system modulates brake pressure after touchdown to maintain the selected rate regardless of runway contamination or weight`,
+    `A. A deceleration rate — the system modulates brake pressure after touchdown to`,
     `B. A maximum brake temperature limit`,
     `C. The number of brake applications per landing`,
     `D. The wheel slip percentage to avoid anti-skid activation`
@@ -5345,7 +5345,7 @@ export const aasaQuestions = [
     `A. Excessive intake air temperature causing the compressor to overheat`,
     `B. Insufficient fuel flow causing lean burn in the compressor`,
     `C. A turbine blade failure allowing compressor overspeed`,
-    `D. Compressor blades exceeding their aerofoil stall angle — from low mass flow or high pressure ratio for the RPM, inlet flow distortion, or rapid throttle advancement`
+    `D. Compressor blades exceeding their aerofoil stall angle`
     ],
     correct: 3,
     explanation: `Compressor stall: blades operate beyond their aerodynamic stall angle (like a wing stall). Causes: rapid throttle advance (fuel flow increases faster than N2 can respond); inlet distortion (turbulent/asymmetric airflow); FOD; icing; operation outside design envelope. Symptoms: bang, vibration, EGT rise, N2 fluctuation, possible flameout. Recovery: reduce throttle smoothly. Answer B.`,
@@ -5355,7 +5355,7 @@ export const aasaQuestions = [
     question: `Gear door sequencing valves ensure:`,
     options: [
     `A. Hydraulic fluid temperature is controlled in the gear actuation system`,
-    `B. Landing gear doors open before the gear moves and close after the gear is fully in position — preventing gear from jamming against a partially open door`,
+    `B. Landing gear doors open before the gear moves and close after the gear is fully in position`,
     `C. The rate of gear retraction is controlled to prevent aerodynamic buffet`,
     `D. Alternate gear extension is automatically selected if the primary system fails`
     ],
@@ -5367,7 +5367,7 @@ export const aasaQuestions = [
     question: `Incorrect stabiliser trim for takeoff is a critical safety issue because:`,
     options: [
     `A. Incorrect trim slows the aircraft's acceleration on the takeoff roll`,
-    `B. If set too far nose-up: the aircraft can pitch up uncontrollably at rotation before the crew can respond. If set too far nose-down: rotation may not be achievable within the available runway`,
+    `B. If set too far nose-up: the aircraft can pitch up uncontrollably at rotation before the crew can respond. If set`,
     `C. Incorrect trim prevents the autothrottle from engaging properly`,
     `D. Trim errors are automatically detected and corrected by the flight management system`
     ],
@@ -5391,7 +5391,7 @@ export const aasaQuestions = [
     question: `Mach tuck on a swept-wing aircraft at high Mach occurs because:`,
     options: [
     `A. The tailplane stalls at high Mach due to the wing wake`,
-    `B. As Mach increases above Mcrit, the shock wave moves aft — the centre of pressure shifts rearward, creating a progressive nose-down pitching moment that tends to increase Mach further (divergent if uncorrected)`,
+    `B. As Mach increases above Mcrit, the shock wave moves aft`,
     `C. High Mach compresses the fuselage, moving the CG forward`,
     `D. The elevator loses effectiveness at high Mach, preventing pitch correction`
     ],
@@ -5405,7 +5405,7 @@ export const aasaQuestions = [
     `A. To increase the pump outlet pressure beyond 3,000 PSI for flight control actuators`,
     `B. To provide emergency pressure for one additional brake application if the pump fails`,
     `C. To maintain fluid temperature below 80°C by increasing boiling point`,
-    `D. To prevent the pump from cavitating — low pressure at the pump inlet (suction side) could allow dissolved air/gases to boil out of the fluid at the reduced pressure, forming bubbles that damage the pump; reservoir pressurisation ensures positive pump inlet pressure`
+    `D. To prevent the pump from cavitating — low pressure at the pump inlet (suction side) could allow dissolved`
     ],
     correct: 3,
     explanation: `Reservoir pressurisation: the hydraulic pump requires positive inlet pressure (suction head) to prevent cavitation. At altitude, ambient pressure is low — unpressurised reservoir might not provide adequate inlet pressure. Hydraulic fluid can also have dissolved gases that come out of solution at low pressure (cavitation). Pressurising the reservoir with bleed air or nitrogen at 40-50 PSI ensures the pump always has a positive inlet head, preventing cavitation and ensuring pump longevity. Answer B.`,
@@ -5416,7 +5416,7 @@ export const aasaQuestions = [
     options: [
     `A. Hydraulic pressure is maintained by pumps — fluid quantity has no effect`,
     `B. The system will automatically top up from the water separator`,
-    `C. Maintenance investigation before flight — low quantity risks pump cavitation, insufficient pressure under demand, and air entrainment causing spongy control response`,
+    `C. Maintenance investigation before flight — low quantity risks pump cavitation, insufficient pressure under demand`,
     `D. Low fluid only affects landing gear — flight controls use a separate sealed system`
     ],
     correct: 2,
@@ -5428,7 +5428,7 @@ export const aasaQuestions = [
     options: [
     `A. The autopilot disengages from all modes simultaneously`,
     `B. The autopilot freezes in the current control position without further authority`,
-    `C. The autopilot servo drives the control surface to full or near-full deflection — a maximum-rate input in one direction causing rapid aircraft divergence if not immediately disconnected`,
+    `C. The autopilot servo drives the control surface to full or near-full deflection`,
     `D. A fail-passive failure causing autopilot disconnect without any control surface input`
     ],
     correct: 2,
@@ -5438,7 +5438,7 @@ export const aasaQuestions = [
   {
     question: `The nose gear steering tiller provides greater deflection than rudder pedals because:`,
     options: [
-    `A. The tiller allows approximately 75-80° nose gear deflection for tight taxiway turns; rudder pedal steering is typically limited to ±7° for directional control during takeoff and landing roll`,
+    `A. The tiller allows approximately 75-80° nose gear deflection for tight taxiway turns`,
     `B. The tiller is mechanically connected; rudder pedals connect hydraulically only`,
     `C. Tiller steering is powered; rudder pedal steering is unpowered`,
     `D. Tiller steering uses both nose gear and differential braking; rudder pedals use nose gear only`
@@ -5452,7 +5452,7 @@ export const aasaQuestions = [
     options: [
     `A. The thermal barrier coating melts protectively before the alloy substrate`,
     `B. Modern alloys have melting points above 2,000°C, eliminating the need for cooling`,
-    `C. Internal cooling passages allow cool compressor bleed air to flow through the blade, keeping metal below the alloy limit; thermal barrier coatings provide additional insulation`,
+    `C. Internal cooling passages allow cool compressor bleed air to flow through the blade, keeping metal below the alloy limit`,
     `D. Blade cooling is only used on LP turbine blades where temperatures are lower`
     ],
     correct: 2,
@@ -5499,7 +5499,7 @@ export const aasaQuestions = [
     question: `Nosewheel shimmy is caused by:`,
     options: [
     `A. The nosewheel being aerodynamically unstable above 100 kt`,
-    `B. Worn shimmy damper, worn torque links, or out-of-balance tyres allowing the nosewheel to oscillate about its steering axis — creating structural stress on the nose gear and fuselage attachment`,
+    `B. Worn shimmy damper, worn torque links, or out-of-balance tyres allowing the nosewheel to oscillate`,
     `C. Asymmetric thrust causing the nosewheel to oscillate`,
     `D. Wet runway conditions causing the nosewheel to hydroplane and oscillate`
     ],
@@ -5513,7 +5513,7 @@ export const aasaQuestions = [
     `A. VA is the maximum turbulence penetration speed`,
     `B. VA is the speed at which ailerons first become effective`,
     `C. VA marks the transition from low to high-speed flight regime`,
-    `D. At VA and below, the aircraft stalls before reaching the structural limit load factor — a single full abrupt control input cannot overstress the structure`
+    `D. At VA and below, the aircraft stalls before reaching the structural limit load factor`
     ],
     correct: 3,
     explanation: `VA: at this speed or below, CLmax is reached (stall) before the positive structural limit load factor (+3.8g transport category). A single full control input cannot overstress the airframe — the wing stalls first. IMPORTANT: VA does not protect against multiple rapid sequential inputs or gust loads — these can still overstress the structure below VA. Above VA, a single input can reach limit load before stalling. Answer B.`,
@@ -5537,7 +5537,7 @@ export const aasaQuestions = [
     `A. Climb thrust is limited by fuel flow only`,
     `B. Climb thrust requires a different fuel mixture than TOGA`,
     `C. ATC always requires reduced thrust above 3,000 ft for noise abatement`,
-    `D. After the initial climb phase (typically above 400-1,500 ft AGL), thrust is reduced from TOGA to Maximum Climb (MCT/CLB) — this extends engine life (hot section), reduces fuel burn, and noise; the aircraft is clear of obstacles and can climb safely at reduced thrust`
+    `D. After the initial climb phase, thrust is reduced from TOGA to Maximum Climb (MCT/CLB)`
     ],
     correct: 3,
     explanation: `Thrust reduction after takeoff: at the thrust reduction altitude (typically 400-1,500 ft AGL per airline SOP): (1) Engine life — reducing from TOGA to MCT limits turbine temperature exposure; each minute at TOGA consumes significant turbine life; (2) Noise — reduced thrust reduces noise footprint (noise abatement procedures); (3) Fuel — lower thrust = lower fuel burn at lower altitudes where fuel is heaviest. Performance: the aircraft must still achieve the required OEI climb gradient with MCT (MCT is the maximum sustained thrust rating). Answer B.`,
@@ -5546,7 +5546,7 @@ export const aasaQuestions = [
   {
     question: `Sweepback on a transport aircraft wing delays the onset of compressibility effects because:`,
     options: [
-    `A. Only the velocity component perpendicular to the wing leading edge affects compressibility — sweepback reduces this component by the cosine of the sweep angle, raising the effective Mcrit to a higher free-stream Mach number`,
+    `A. Only the velocity component perpendicular to the wing leading edge affects compressibility`,
     `B. Swept wings have less surface area exposed to the oncoming airflow — the aerodynamic forces in this configuration do not produce this effect`,
     `C. Swept wings have a lower lift coefficient so they fly at smaller angles of attack`,
     `D. Sweepback reduces wing chord length, reducing the Reynolds number and delaying transition`
@@ -5561,7 +5561,7 @@ export const aasaQuestions = [
     `A. CASA regulations require EAI ON for all takeoffs regardless of conditions`,
     `B. OAT below +10°C always causes ice regardless of moisture content`,
     `C. EAI is only required for ice on the runway — not for engine protection`,
-    `D. Visible moisture includes fog — in fog, supercooled water droplets can accumulate on the inlet even in clear sky conditions; EAI prevents ice formation on the inlet lip which could shed into the engine during acceleration through takeoff thrust`
+    `D. Visible moisture includes fog — in fog, supercooled water droplets can accumulate on the inlet even in clear sky conditions`
     ],
     correct: 3,
     explanation: `EAI in fog: fog is composed of supercooled water droplets when OAT is ≤ +10°C. These can freeze on the cold engine inlet cowl. As the aircraft accelerates on the takeoff roll: aerodynamic heating can dislodge accumulated ice → ingestion into engine at maximum RPM. EAI prevents this. EAI is selected ON before engine runup in these conditions: OAT ≤ +10°C and visible moisture (cloud, fog, rain, snow, ice crystals). The energy penalty is acceptable compared to the risk of ingested ice. Answer B.`,
@@ -5573,7 +5573,7 @@ export const aasaQuestions = [
     `A. Maximum N1 to protect fan blade integrity`,
     `B. Compressor discharge pressure decreasing with altitude`,
     `C. The altitude at which the starter can no longer restart a flamed-out engine`,
-    `D. Maximum turbine entry temperature (TET/EGT limit) — lower air density at altitude reduces engine cooling, so the engine runs hotter for the same thrust; the fuel control schedules fuel flow to stay within limits`
+    `D. Maximum turbine entry temperature (TET/EGT limit) — lower air density at altitude reduces engine cooling, so the engine runs hotter for the same thrust`
     ],
     correct: 3,
     explanation: `Temperature-limited operation at altitude: lower density → lower mass flow → less internal cooling → engine runs hotter for the same thrust. The fuel control limits fuel flow to stay within TET/EGT limits, reducing maximum available N1. On hot days, temperature limiting is encountered at lower altitudes, reducing climb performance and available ceiling. Answer B.`,
@@ -5596,7 +5596,7 @@ export const aasaQuestions = [
     options: [
     `A. Corrosion only affects cosmetic surfaces — structural panels do not corrode`,
     `B. Aircraft corrosion is purely a weight problem — it adds mass to the airframe`,
-    `C. Corrosion reduces metal thickness and creates stress concentrations — even small areas of corrosion can significantly reduce structural strength; in pressurised structures, corrosion can lead to fatigue cracking and eventual skin failure`,
+    `C. Corrosion reduces metal thickness and creates stress concentrations — even small areas of corrosion can significantly reduce structural strength`,
     `D. Corrosion affects only aluminium — modern composites and titanium alloys are immune`
     ],
     correct: 2,
@@ -5606,7 +5606,7 @@ export const aasaQuestions = [
   {
     question: `In the coffin corner, the aircraft operates in a narrow speed range because:`,
     options: [
-    `A. Stall IAS is approximately constant with altitude while Mach buffet onset IAS decreases — they converge at the coffin corner altitude where the buffet-free margin disappears`,
+    `A. Stall IAS is approximately constant with altitude while Mach buffet onset IAS decreases`,
     `B. VMO and MMO converge to the same value at high altitude`,
     `C. Coffin corner occurs when weight exceeds maximum certified ceiling weight`,
     `D. Flight controls become ineffective at high altitude, reducing the safe operating range`
@@ -5618,7 +5618,7 @@ export const aasaQuestions = [
   {
     question: `The air cycle machine (ACM) produces cold air by:`,
     options: [
-    `A. Expanding hot compressed bleed air through a turbine — expansion does work against the blades, cooling the air; the turbine shaft drives a compressor and fan within the pack`,
+    `A. Expanding hot compressed bleed air through a turbine — expansion does work against the blades, cooling the air`,
     `B. Evaporating liquid refrigerant in an expansion valve`,
     `C. Mixing hot bleed air with cold ram air only`,
     `D. Pumping air through desiccant that absorbs heat during adsorption`
@@ -5632,7 +5632,7 @@ export const aasaQuestions = [
     options: [
     `A. The T-tail creates excessive trim force at high speed`,
     `B. The T-tail moment arm is shorter than a conventional tail, reducing pitch stability`,
-    `C. At very high angles of attack, the wing's separated wake rises and blankets the horizontal tail at the top of the fin — the tail loses lift and pitch-down authority; the aircraft is locked in an unrecoverable stall`,
+    `C. At very high angles of attack, the wing's separated wake rises and blankets the horizontal tail at the top of the fin`,
     `D. The T-tail traps airflow above the fuselage at high AoA`
     ],
     correct: 2,
@@ -5645,7 +5645,7 @@ export const aasaQuestions = [
     `A. Volume flow is easier to measure than mass flow`,
     `B. Mass flow indicators are simpler and less expensive`,
     `C. Volume flow is only available during refuelling — not during flight`,
-    `D. The energy content of fuel is proportional to its mass — jet fuel density changes with temperature, so volumetric flow would give incorrect energy information; mass flow directly represents the rate of energy consumption`
+    `D. The energy content of fuel is proportional to its mass`
     ],
     correct: 3,
     explanation: `Mass fuel flow: calorific value is approximately constant per kilogram (~43.2 MJ/kg for Jet A-1) regardless of temperature. But fuel volume changes significantly with temperature — 1 litre of cold fuel has more mass (energy) than 1 litre of warm fuel. For accurate performance calculation (range, endurance) mass flow (kg/hr or lb/hr) is needed. This is why aircraft are fuelled by mass, not volume. The flowmeter measures kg/hr directly. Answer B.`,
@@ -5655,7 +5655,7 @@ export const aasaQuestions = [
     question: `A windmilling failed turbofan engine creates significant drag because:`,
     options: [
     `A. Zero thrust means no drag from the failed engine nacelle`,
-    `B. The large diameter fan disk presents a high-drag frontal area; the compressor blades do aerodynamic work on the airflow without producing useful thrust, creating substantial resistance`,
+    `B. The large diameter fan disk presents a high-drag frontal area`,
     `C. A windmilling engine provides useful lift through the fan bypass stream`,
     `D. Zero thrust has no performance effect — only the yawing moment matters`
     ],
@@ -5669,7 +5669,7 @@ export const aasaQuestions = [
     `A. Normal runway roughness — no action required`,
     `B. Engine surge — accompanied by a bang and EGT rise`,
     `C. Normal nose wheel shimmy — acceptable up to 100 kt`,
-    `D. A possible tyre failure on the nose gear or main gear — the crew should assess: is the aircraft controllable? Is V1 reached? If below V1 and uncertain of aircraft control or structural integrity → reject; if above V1 → continue and assess`
+    `D. A possible tyre failure on the nose gear or main gear`
     ],
     correct: 3,
     explanation: `Bump/lateral jolt below V1: possible causes include tyre deflation, tyre burst, or foreign object impact. A tyre failure (especially main gear) can cause: directional control difficulty (asymmetric braking), structural damage to the wheel well, and potential fuel or hydraulic system impact. Below V1: crew decision — if directional control is maintained and no obvious structural problem, and V1 is imminent, the decision depends on speed, remaining runway, and severity. SOPs vary but typically: below V1 with tyre failure → reject. Above V1: continue and assess after airborne. Answer B.`,
@@ -5693,7 +5693,7 @@ export const aasaQuestions = [
     `A. Wet runways always have headwinds which reduce ground speed`,
     `B. Rain adds weight to the aircraft increasing the kinetic energy`,
     `C. The autobrake system automatically reduces brake pressure on wet runways`,
-    `D. Reduced tyre-pavement friction on a wet runway decreases braking effectiveness — anti-skid modulates for lower peak friction; the deceleration rate is lower; stopping distance increases by 30-65% depending on contamination level`
+    `D. Reduced tyre-pavement friction on a wet runway decreases braking effectiveness — anti-skid modulates for lower peak friction`
     ],
     correct: 3,
     explanation: `Wet runway friction: dry runway peak friction μ ≈ 0.4-0.6 (BRK action Good). Wet runway: μ ≈ 0.3-0.4 (BRK action Medium). Stopping distance ∝ 1/μ. For μ reducing from 0.5 (dry) to 0.3 (wet): stopping distance increases by 0.5/0.3 = 1.67× → 67% longer. CAR Part 25 landing performance uses factored values: landing field length = actual distance / 0.60 (dry); wet runway factor applied on top. Crews must use wet landing distances from performance tables for contaminated runways. Answer B.`,
@@ -5704,7 +5704,7 @@ export const aasaQuestions = [
     options: [
     `A. Reduce the temperature of gases entering the turbine`,
     `B. Control the amount of fuel entering the combustion chamber`,
-    `C. Direct the high-temperature, high-pressure combustion gases onto the turbine rotor blades at the optimal angle — converting gas pressure energy into kinetic energy and directing it to maximise work extraction by the rotor`,
+    `C. Direct the high-temperature, high-pressure combustion gases onto the turbine rotor blades at the optimal angle`,
     `D. Seal the turbine cavity to prevent gas leakage past the turbine rotor`
     ],
     correct: 2,
@@ -5715,7 +5715,7 @@ export const aasaQuestions = [
     question: `Auto-derate (assumed temperature) takeoff thrust reduces thrust by:`,
     options: [
     `A. Manually reducing thrust lever position to a preset value`,
-    `B. Commanding the rated thrust for an assumed higher temperature — since engines produce less thrust in hotter conditions, entering a higher assumed temperature limits thrust output while all actual engine limits are still respected`,
+    `B. Commanding the rated thrust for an assumed higher temperature`,
     `C. Reducing N1 limit by a fixed percentage set by maintenance`,
     `D. Automatically activating after V1 to reduce engine wear during the climb`
     ],
@@ -5727,7 +5727,7 @@ export const aasaQuestions = [
     question: `The crossover altitude is relevant because:`,
     options: [
     `A. It is the altitude at which the aircraft transitions from climbing to cruise`,
-    `B. It is the altitude at which VMO in KIAS and MMO expressed as equivalent IAS are equal — below this altitude VMO governs, above it MMO governs; the autoflight system typically switches from IAS hold to Mach hold at this point`,
+    `B. It is the altitude at which VMO in KIAS and MMO expressed as equivalent IAS are equal — below this altitude VMO governs, above it MMO governs`,
     `C. It is the altitude at which swept-wing aircraft first experience Dutch roll`,
     `D. It is the altitude at which aileron reversal first becomes a risk`
     ],
@@ -5762,7 +5762,7 @@ export const aasaQuestions = [
   {
     question: `Reverse thrust on a turbofan is produced by:`,
     options: [
-    `A. Deploying cascade vanes or clamshell buckets that redirect fan bypass air (and/or core exhaust) forward and outward — the forward component decelerates the aircraft`,
+    `A. Deploying cascade vanes or clamshell buckets that redirect fan bypass air (and/or core exhaust) forward and outward`,
     `B. Reversing engine rotation direction to push air forward`,
     `C. Reducing thrust to minimum idle while applying aerodynamic brakes simultaneously`,
     `D. Directing exhaust gases through vanes on the wing leading edges`
@@ -5777,7 +5777,7 @@ export const aasaQuestions = [
     `A. Attempt the landing using maximum rudder — the limit is conservative — the aerodynamic forces in this configuration do not produce this effect`,
     `B. Land with the upwind engine at higher thrust to counteract the crosswind`,
     `C. Extend full flap to increase directional stability on the runway`,
-    `D. Divert to an aerodrome with a more favourable runway orientation, or hold for conditions to improve — exceeding the demonstrated crosswind component risks loss of directional control on the runway, particularly after touchdown when aerodynamic rudder effectiveness decreases`
+    `D. Divert to an aerodrome with a more favourable runway orientation, or hold for conditions to improve`
     ],
     correct: 3,
     explanation: `Crosswind limit: the maximum demonstrated crosswind component for landing (CASR Part 25 requires only that a value be determined — it is the maximum demonstrated, not an absolute structural limit). Operating beyond this value: insufficient rudder authority may prevent directional control on the runway; the crosswind component exceeds the gear side-load limits; or ground loop/excursion risk. Action: hold for wind change, divert, or request a different runway. Note: the demonstrated limit is often conservative — some aircraft can handle higher crosswinds — but operating beyond Approved Flight Manual limits is the crew's responsibility. Answer B.`,
@@ -5786,7 +5786,7 @@ export const aasaQuestions = [
   {
     question: `The maximum floor loading in cargo compartments is specified to prevent:`,
     options: [
-    `A. Localised high-pressure damage to the floor structure — cargo with small contact area (e.g. heavy machinery on a narrow base) can exert extreme pressure per unit area; maximum floor loading (kg/m² or lb/ft²) ensures the cargo load is distributed sufficiently to avoid overstressing the floor beams and panels`,
+    `A. Localised high-pressure damage to the floor structure — cargo with small contact area can exert extreme pressure per unit area`,
     `B. Cargo from falling through the floor in turbulence`,
     `C. Cargo from shifting due to the aircraft's centre of gravity changes`,
     `D. Fuel contamination from cargo chemical reactions`
@@ -5800,7 +5800,7 @@ export const aasaQuestions = [
     options: [
     `A. Roll control only — cannot be used as speedbrakes`,
     `B. Ground spoilers for lift dumping only — no in-flight function`,
-    `C. Roll control (differential deployment), speedbrake (symmetric deployment in flight), and ground spoilers (all panels deployed after touchdown to dump lift and maximise braking)`,
+    `C. Roll control (differential deployment), speedbrake (symmetric deployment in flight), and ground spoilers`,
     `D. Speed control only — ailerons provide all roll authority`
     ],
     correct: 2,
@@ -5813,7 +5813,7 @@ export const aasaQuestions = [
     `A. CASR requires masks that can be donned without removing spectacles`,
     `B. Quick-don design reduces the oxygen flow rate required`,
     `C. Quick-don masks are lighter than conventional masks, reducing aircraft empty weight`,
-    `D. At FL350, the time of useful consciousness without oxygen is approximately 30-60 seconds — the mask must be donnable with one hand in 5 seconds or less so the crew can don and communicate before incapacitation`
+    `D. At FL350, the time of useful consciousness without oxygen is approximately 30-60 seconds`
     ],
     correct: 3,
     explanation: `Quick-don design requirement: at rapid decompression from FL350, TUC is approximately 30-60 seconds. The crew must: (1) react to warning; (2) don mask with ONE hand (the other maintains aircraft control); (3) establish 100% oxygen flow; (4) communicate — all within approximately 10-15 seconds to maintain useful consciousness. CASR Part 91: oxygen masks must be within immediate reach of each crewmember and must be quickly donnable. The harness should position over the head with a single hand motion. Answer B.`,
@@ -5824,7 +5824,7 @@ export const aasaQuestions = [
     options: [
     `A. The maximum efficient Mach number — above MMO the specific fuel consumption deteriorates`,
     `B. ATC radar tracking capability — radar cannot accurately track aircraft above M0.90`,
-    `C. The Mach number above which the aircraft exceeds flutter, buffet, control authority, or structural limitations — MMO provides a margin below the onset of these limitations`,
+    `C. The Mach number above which the aircraft exceeds flutter, buffet, control authority, or structural limitations`,
     `D. The maximum Mach at which the engine compressor can operate without surge`
     ],
     correct: 2,
@@ -5835,7 +5835,7 @@ export const aasaQuestions = [
     question: `Leading edge slats increase CLmax by:`,
     options: [
     `A. Increasing the overall wing chord and therefore wing area`,
-    `B. Creating a slot between the slat and the main wing — high-energy lower-surface air accelerates through the slot and re-energises the upper-surface boundary layer, delaying flow separation and allowing the wing to reach a higher angle of attack before stalling`,
+    `B. Creating a slot between the slat and the main wing`,
     `C. Reducing the camber of the leading edge, allowing lower approach speeds`,
     `D. Deflecting the leading edge downward to increase the effective angle of attack at low speed`
     ],
@@ -5847,7 +5847,7 @@ export const aasaQuestions = [
     question: `Rapid decompression at FL390 requires immediate oxygen mask donning because:`,
     options: [
     `A. The cabin fills with toxic fumes after decompression`,
-    `B. At FL390, ambient oxygen partial pressure is insufficient — time of useful consciousness is approximately 9-15 seconds; immediate mask donning is life-critical`,
+    `B. At FL390, ambient oxygen partial pressure is insufficient — time of useful consciousness is approximately 9-15 seconds`,
     `C. Cold air entering the cabin causes immediate frostbite`,
     `D. High-altitude airflow creates suction pulling unsecured items out`
     ],
@@ -5860,7 +5860,7 @@ export const aasaQuestions = [
     options: [
     `A. An accurate weight measurement for W&B purposes`,
     `B. Automatic gear retraction after takeoff at a preset height`,
-    `C. An air/ground logic signal to multiple aircraft systems — enabling ground-only systems (ground spoilers, autobrake arming) and providing a gear retraction safety interlock preventing inadvertent gear retraction on the ground`,
+    `C. An air/ground logic signal to multiple aircraft systems`,
     `D. Brake temperature monitoring to prevent brake overuse on the ground`
     ],
     correct: 2,
@@ -5873,7 +5873,7 @@ export const aasaQuestions = [
     `A. The sum of all weights on the aircraft`,
     `B. Total weight multiplied by the wingspan`,
     `C. The product of MTOW and the MAC length`,
-    `D. The sum of each component's weight multiplied by its arm from the datum — total moment = Σ(weight × arm); CG = total moment / total weight`
+    `D. The sum of each component's weight multiplied by its arm from the datum — total moment = Σ(weight × arm)`
     ],
     correct: 3,
     explanation: `Moment = mass × arm (distance from datum). CG = Σ(mass × arm) / Σ(mass) = total moment / total mass. Example: Aircraft with empty weight 40,000 kg at arm 18.0 m, fuel 15,000 kg at arm 20.0 m, payload 5,000 kg at arm 16.0 m. Total mass = 60,000 kg. Total moment = (40,000×18) + (15,000×20) + (5,000×16) = 720,000 + 300,000 + 80,000 = 1,100,000 kg·m. CG = 1,100,000 / 60,000 = 18.33 m from datum. Answer B.`,
@@ -5883,7 +5883,7 @@ export const aasaQuestions = [
     question: `The AFCS crossover from IAS hold to Mach hold occurs at:`,
     options: [
     `A. 10,000 ft altitude — a regulatory requirement`,
-    `B. The crossover altitude — where VMO in knots and MMO as equivalent IAS are equal; above this altitude Mach hold better manages the operative speed limit`,
+    `B. The crossover altitude — where VMO in knots and MMO as equivalent IAS are equal`,
     `C. FL290 — the base of the reduced vertical separation standard airspace`,
     `D. When the crew selects it manually — there is no automatic switching`
     ],
@@ -5894,7 +5894,7 @@ export const aasaQuestions = [
   {
     question: `Zero Fuel Weight (ZFW) is a structural limit because:`,
     options: [
-    `A. ZFW is the maximum weight with empty fuel tanks — without wing fuel the bending moment is maximum; adding payload above ZFW increases wing root bending beyond structural limits`,
+    `A. ZFW is the maximum weight with empty fuel tanks — without wing fuel the bending moment is maximum`,
     `B. Below ZFW the aircraft is too light to maintain control authority`,
     `C. ZFW ensures minimum hydraulic cooling by the fuel system`,
     `D. ZFW ensures minimum reserve fuel for approach and landing`
@@ -5909,7 +5909,7 @@ export const aasaQuestions = [
     `A. The maximum rudder deflection available — the aerodynamic forces in this configuration do not produce this effect`,
     `B. The aerodynamic stall — the gust cannot load the aircraft above CLmax`,
     `C. The tyre speed rating — high-speed gusts can blow the aircraft off the runway`,
-    `D. The gust load factor: n = 1 + (U_de × a × V × ρ_0 × S)/(2 × W), where U_de is the design gust velocity; at low speeds gust loads are relatively small (V is low); at cruise speed gust loads are larger; the critical gust condition is typically at cruise speed (Vc) with design gust velocity`
+    `D. The gust load factor: n = 1 + (U_de × a × V × ρ_0 × S)/(2 × W), where U_de is the design gust velocity`
     ],
     correct: 3,
     explanation: `Gust load factor: Δn = (ρ₀ × U_de × V × a × S)/(2 × W) where U_de = design gust velocity (per CASR Part 25: 66 fps at Vc, 50 fps at Vd). The gust load increment increases with: higher speed V; steeper lift curve slope a (lower altitude); lower wing loading W/S. At low speed: the gust Δn is small (low V). At Vc (cruise): maximum gust load. The gust envelope overlays the manoeuvre envelope; the overall limit is the higher of the two. Answer B.`,
@@ -5919,7 +5919,7 @@ export const aasaQuestions = [
     question: `The pneumatic (bleed air) de-icing boot cycle on turboprop aircraft is activated:`,
     options: [
     `A. Continuously whenever OAT drops below 0°C in IMC — the boot system should inflate at regular timed intervals regardless of ice accumulation`,
-    `B. When ice has accumulated to approximately 3-6 mm on the leading edge — the crew observes ice formation, selects the boots, which inflate/deflate to crack and shed the accumulated ice; cycling continuously without accumulated ice ('early activation') can actually prevent effective de-icing by forming a smooth ice cap over uninflated boots`,
+    `B. When ice has accumulated to approximately 3-6 mm on the leading edge — the crew observes ice formation, selects the boots, which inflate/deflate to crack and shed the accumulated ice`,
     `C. Automatically at any indication of visible moisture below +10°C — the system is fully automatic and requires no crew selection or monitoring`,
     `D. Only on the ground before flight — in-flight activation of pneumatic boots is not permitted by CASR`
     ],
@@ -5932,7 +5932,7 @@ export const aasaQuestions = [
     options: [
     `A. Discharge both fire bottles immediately then shut down the engine`,
     `B. Declare emergency and divert before actioning any checklist`,
-    `C. Thrust lever idle → engine master/cutoff OFF → confirm fire handle illuminated → pull fire handle → discharge fire bottle 1; if fire persists after 30 seconds → discharge fire bottle 2; divert`,
+    `C. Thrust lever idle → engine master/cutoff OFF → confirm fire handle illuminated → pull fire handle → discharge fire bottle 1`,
     `D. Continue to destination — engine fire warnings are frequently false alarms from hot duct sensors`
     ],
     correct: 2,
@@ -5956,7 +5956,7 @@ export const aasaQuestions = [
     options: [
     `A. Increase thrust to climb back to the commanded path`,
     `B. The autopilot disconnects — VNAV does not handle vertical deviations`,
-    `C. In VNAV PATH mode: the pitch channel commands nose-up to return to the path; the autothrottle (if in a compatible mode) may adjust speed; the autopilot attempts to regain the computed vertical path profile using elevator`,
+    `C. In VNAV PATH mode: the pitch channel commands nose-up to return to the path`,
     `D. Increase descent rate to rejoin the path below`
     ],
     correct: 2,
@@ -5967,7 +5967,7 @@ export const aasaQuestions = [
     question: `When conducting a transport aircraft rejected takeoff from V1, the crew member flying calls 'REJECT' and the other crew member:`,
     options: [
     `A. Simultaneously grabs the control column and applies back-pressure to prevent porpoising`,
-    `B. Confirms 'REJECTING', monitors the deceleration and runway remaining, calls out speed and aids thrust reverser deployment verification if required — both crew work together on the RTO but the PF (pilot flying) has primary control of the stop`,
+    `B. Confirms 'REJECTING', monitors the deceleration and runway remaining`,
     `C. Immediately contacts ATC to clear the runway`,
     `D. Selects FLAPS UP to reduce aerodynamic drag during the stop`
     ],
@@ -5981,7 +5981,7 @@ export const aasaQuestions = [
     `A. The actuator can produce twice the force of a single chamber`,
     `B. One chamber locks the surface while the other drives it`,
     `C. The actuators can deflect the surface twice as far as a single actuator`,
-    `D. If one hydraulic system fails, the other chamber continues to provide full authority — a single hydraulic failure does not render any critical surface inoperative`
+    `D. If one hydraulic system fails, the other chamber continues to provide full authority`
     ],
     correct: 3,
     explanation: `Tandem actuator: two independent hydraulic chambers, each powered by a different system. Normal: both chambers work together. One system fails: that chamber becomes passive (minimal resistance); the remaining chamber provides full authority. No reduction in deflection rate or force from the remaining system. Used on critical surfaces (elevator, rudder, ailerons on large aircraft) for single-system-failure protection. Answer B.`,
