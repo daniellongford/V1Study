@@ -22,6 +22,7 @@ let ahufQuestions: any[] = []
 let ametQuestions: any[] = []
 let anavQuestions: any[] = []
 let aasaQuestions: any[] = []
+let aplaQuestions: any[] = []
 // ── Add new bank variables here ──────────────────────────────────────────────
 // let aadaQuestions: any[] = []
 // let aasyQuestions: any[] = []
@@ -40,6 +41,7 @@ try { ahufQuestions = require('./questions-ahuf').ahufQuestions } catch {}
 try { ametQuestions = require('./questions-amet').ametQuestions } catch {}
 try { anavQuestions = require('./questions-anav').anavQuestions } catch {}
 try { aasaQuestions = require('./questions-aasa').aasaQuestions } catch {}
+try { aplaQuestions = require('./questions-apla').aplaQuestions } catch {}
 // ── Add new bank requires here ────────────────────────────────────────────────
 // try { aadaQuestions = require('./questions-aada').aadaQuestions } catch {}
 // try { aasyQuestions = require('./questions-aasy').aasyQuestions } catch {}
@@ -65,7 +67,7 @@ export const FULL_BANKS: Record<string, any[]> = {
   'Meteorology Advanced':            ametQuestions,
   'Navigation Advanced':             anavQuestions,
   'Flight Planning':                 cfpaQuestions,  // replace with aafpQuestions when ready
-  'Performance and Loading':         cfpaQuestions,  // replace with aasyQuestions when ready
+  'Performance and Loading':         aplaQuestions,
 }
 // ── Plan access control ───────────────────────────────────────────────────────
 export const PLAN_ACCESS: Record<string, string[]> = {
