@@ -178,7 +178,7 @@ export default function Home() {
         </section>
 
         {/* CONTACT — full bleed photo at bottom of page */}
-        <section style={{ position: 'relative', overflow: 'hidden', minHeight: '420px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0', padding: '0', width: '100%', display: 'block' }}>
+        <section style={{ position: 'relative', overflow: 'hidden', minHeight: '420px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0', padding: '0', width: '100%' }}>
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/contact-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center 45%', filter: 'brightness(0.45)' }} />
           <div style={{ position: 'relative', zIndex: 1, padding: '6rem 2.5rem', textAlign: 'center', width: '100%' }}>
             <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.65)', marginBottom: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>Get in Touch</p>
