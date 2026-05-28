@@ -241,8 +241,9 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
 }
 
 function FlagPanel({ question, subject, userId }: { question: any; subject: string; userId: string | null }) {
-  const [open, setOpen]     = useState(false)
-  const [reason, setReason] = useState('')
+  const [open, setOpen]       = useState(false)
+  const [reason, setReason]   = useState('')
+  const [otherText, setOtherText] = useState('')
   const [loading, setLoading] = useState(false)
   const [flagged, setFlagged] = useState(false)
 
@@ -256,6 +257,7 @@ function FlagPanel({ question, subject, userId }: { question: any; subject: stri
 
   async function submitFlag() {
     setLoading(true)
+    const finalReason = reason === 'Other' && otherText.trim() ? `Other: ${otherText.trim()}` : reason
     try {
       await fetch('/api/flag-question', {
         method: 'POST',
@@ -265,7 +267,7 @@ function FlagPanel({ question, subject, userId }: { question: any; subject: stri
           subject,
           question: question.question,
           correctAnswer: question.options[question.correct],
-          reason,
+          reason: finalReason,
         })
       })
       setFlagged(true)
@@ -293,19 +295,29 @@ function FlagPanel({ question, subject, userId }: { question: any; subject: stri
           <div style={{ fontSize: '12px', fontWeight: '700', color: '#dc2626', marginBottom: '8px' }}>Flag for review</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '10px' }}>
             {reasons.map(r => (
-              <label key={r} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#475569', cursor: 'pointer' }}>
-                <input type="radio" name="flag-reason" value={r} checked={reason === r} onChange={() => setReason(r)}
-                  style={{ cursor: 'pointer' }} />
-                {r}
-              </label>
+              <div key={r}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#475569', cursor: 'pointer' }}>
+                  <input type="radio" name="flag-reason" value={r} checked={reason === r} onChange={() => setReason(r)} style={{ cursor: 'pointer' }} />
+                  {r}
+                </label>
+                {r === 'Other' && reason === 'Other' && (
+                  <textarea
+                    placeholder="Please describe the issue..."
+                    value={otherText}
+                    onChange={e => setOtherText(e.target.value)}
+                    rows={2}
+                    style={{ width: '100%', marginTop: '6px', padding: '8px 12px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '13px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', background: 'white' }}
+                  />
+                )}
+              </div>
             ))}
           </div>
           <div style={{ display: 'flex', gap: '8px' }}>
-            <button onClick={submitFlag} disabled={loading || !reason}
-              style={{ background: loading || !reason ? '#94a3b8' : '#dc2626', color: 'white', border: 'none', borderRadius: '8px', padding: '8px 16px', fontSize: '12px', fontWeight: '600', cursor: loading || !reason ? 'not-allowed' : 'pointer' }}>
+            <button onClick={submitFlag} disabled={loading || !reason || (reason === 'Other' && !otherText.trim())}
+              style={{ background: loading || !reason || (reason === 'Other' && !otherText.trim()) ? '#94a3b8' : '#dc2626', color: 'white', border: 'none', borderRadius: '8px', padding: '8px 16px', fontSize: '12px', fontWeight: '600', cursor: loading || !reason || (reason === 'Other' && !otherText.trim()) ? 'not-allowed' : 'pointer' }}>
               {loading ? 'Sending...' : 'Submit flag'}
             </button>
-            <button onClick={() => { setOpen(false); setReason('') }}
+            <button onClick={() => { setOpen(false); setReason(''); setOtherText('') }}
               style={{ background: 'none', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '8px 12px', fontSize: '12px', color: '#64748b', cursor: 'pointer' }}>
               Cancel
             </button>
