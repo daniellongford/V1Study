@@ -57,7 +57,7 @@ export default function Home() {
               <a href="#exams" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Exams</a>
               <a href="#pricing" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Pricing</a>
               <a href="/login" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Login</a>
-              <a href="/signup" style={{ color: 'white', textDecoration: 'none', fontSize: '14px', fontWeight: '600', background: '#2563eb', padding: '8px 20px', borderRadius: '7px' }}>Sign up</a>
+              <a href="/signup" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px', fontWeight: '600' }}>Sign up</a>
             </div>
           </nav>
 
@@ -83,9 +83,8 @@ export default function Home() {
         <section id="exams" style={{ padding: '5rem 2.5rem', background: '#ffffff' }}>
           <div style={{ maxWidth: '1060px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
-              <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: '#2563eb', marginBottom: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>Exams Covered</p>
-              <h2 style={{ fontSize: '36px', fontWeight: '800', color: '#0a1628', letterSpacing: '-0.5px' }}>Every Australian Pilot Exam, Covered.</h2>
-              <p style={{ fontSize: '16px', color: '#64748b', marginTop: '0.75rem' }}>From your first PPL theory exam to your ATPL — we have every subject covered.</p>
+              <h2 style={{ fontSize: '36px', fontWeight: '800', color: '#0a1628', letterSpacing: '-0.5px', textAlign: 'center' }}>Every Australian Pilot Exam, Covered.</h2>
+              <p style={{ fontSize: '16px', color: '#64748b', marginTop: '0.75rem', textAlign: 'center' }}>From your first PPL theory exam to your ATPL.</p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1.25rem', alignItems: 'stretch' }}>
               {[
@@ -112,7 +111,6 @@ export default function Home() {
         <section id="pricing" style={{ padding: '5rem 2.5rem', background: '#f8fafc' }}>
           <div style={{ maxWidth: '1060px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
-              <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: '#2563eb', marginBottom: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>Pricing</p>
               <h2 style={{ fontSize: '36px', fontWeight: '800', color: '#0a1628', letterSpacing: '-0.5px' }}>Simple, Transparent Pricing.</h2>
               <p style={{ fontSize: '16px', color: '#64748b', marginTop: '0.75rem' }}>Every plan includes a 7 day free trial. Full access from day one.</p>
             </div>
@@ -180,7 +178,7 @@ export default function Home() {
         </section>
 
         {/* CONTACT — full bleed photo at bottom of page */}
-        <section style={{ position: 'relative', overflow: 'hidden', minHeight: '420px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <section style={{ position: 'relative', overflow: 'hidden', minHeight: '420px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 0, padding: 0 }}>
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/contact-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center 45%', filter: 'brightness(0.45)' }} />
           <div style={{ position: 'relative', zIndex: 1, padding: '6rem 2.5rem', textAlign: 'center', width: '100%' }}>
             <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.65)', marginBottom: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>Get in Touch</p>
