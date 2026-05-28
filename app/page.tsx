@@ -41,7 +41,7 @@ export default function Home() {
       <main style={{ minHeight: '100vh', background: '#ffffff', fontFamily: 'system-ui, -apple-system, sans-serif', opacity: contentVisible ? 1 : 0, transition: 'opacity 0.6s ease' }}>
 
         {/* HERO — full bleed, nav overlaid on top */}
-        <section style={{ position: 'relative', height: '100vh', minHeight: '650px', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        <section style={{ position: 'relative', height: '100vh', minHeight: '650px', display: 'flex', flexDirection: 'column', overflow: 'hidden', margin: 0, padding: 0 }}>
 
           {/* Background photo — edge to edge, no border */}
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/IMG_4488.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center 35%', filter: 'brightness(0.52)' }} />
@@ -57,7 +57,7 @@ export default function Home() {
               <a href="#exams" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Exams</a>
               <a href="#pricing" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Pricing</a>
               <a href="/login" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Login</a>
-              <a href="/signup" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px', fontWeight: '600' }}>Sign up</a>
+              <a href="/signup" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Sign up</a>
             </div>
           </nav>
 
@@ -178,7 +178,7 @@ export default function Home() {
         </section>
 
         {/* CONTACT — full bleed photo at bottom of page */}
-        <section style={{ position: 'relative', overflow: 'hidden', minHeight: '420px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 0, padding: 0 }}>
+        <section style={{ position: 'relative', overflow: 'hidden', minHeight: '420px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0', padding: '0', width: '100%', display: 'block' }}>
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/contact-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center 45%', filter: 'brightness(0.45)' }} />
           <div style={{ position: 'relative', zIndex: 1, padding: '6rem 2.5rem', textAlign: 'center', width: '100%' }}>
             <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.65)', marginBottom: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>Get in Touch</p>
