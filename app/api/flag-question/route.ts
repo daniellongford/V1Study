@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
+        'Authorization': `Bearer ${process.env.RESEND_FLAGS_API_KEY}`,
       },
       body: JSON.stringify({
         from: 'V1 Study <support@v1study.com.au>',
