@@ -4,11 +4,6 @@ import { supabase } from '../../../lib/supabase'
 import { freeQuestions } from '../../../lib/questions'
 import { FULL_BANKS, PLAN_ACCESS, getLicence } from '../../../lib/question-banks'
 
-// ─────────────────────────────────────────────────────────────────────────────
-// This file is infrastructure — do not edit it to add question banks.
-// Add banks to lib/question-banks.ts instead.
-// ─────────────────────────────────────────────────────────────────────────────
-
 const SESSION_SIZE = 10
 
 function seenKey(subject: string) {
@@ -64,12 +59,14 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const [finished, setFinished]     = useState(false)
   const [saved, setSaved]           = useState(false)
   const [finalScore, setFinalScore] = useState(0)
+  const [userId, setUserId]         = useState<string | null>(null)
   const scoreRef   = useRef(0)
   const sessionIdx = useRef<number[]>([])
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data: { user } }) => {
       if (!user) { setPlanLoaded(true); return }
+      setUserId(user.id)
       supabase.from('subscriptions').select('plan,status')
         .eq('user_id', user.id).eq('status', 'active').maybeSingle()
         .then(({ data }) => { setPlan(data?.plan ?? null); setPlanLoaded(true) })
@@ -229,6 +226,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
                 <div style={{ fontSize: '12px', color: '#3b82f6', fontFamily: 'monospace' }}>{q.reference}</div>
               </div>
             )}
+            <FlagPanel question={q} subject={subject} userId={userId} />
             <AiHelpPanel question={q} subject={subject} />
           </div>
         )}
@@ -239,6 +237,82 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         )}
       </div>
     </main>
+  )
+}
+
+function FlagPanel({ question, subject, userId }: { question: any; subject: string; userId: string | null }) {
+  const [open, setOpen]     = useState(false)
+  const [reason, setReason] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [flagged, setFlagged] = useState(false)
+
+  const reasons = [
+    'Incorrect answer',
+    'Unclear question wording',
+    'Outdated reference',
+    'Duplicate question',
+    'Other',
+  ]
+
+  async function submitFlag() {
+    setLoading(true)
+    try {
+      await fetch('/api/flag-question', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId,
+          subject,
+          question: question.question,
+          correctAnswer: question.options[question.correct],
+          reason,
+        })
+      })
+      setFlagged(true)
+    } catch {
+      alert('Something went wrong. Please try again.')
+    }
+    setLoading(false)
+  }
+
+  if (flagged) return (
+    <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '12px', marginBottom: '12px' }}>
+      <div style={{ fontSize: '12px', color: '#16a34a', fontWeight: '600' }}>✓ Question flagged for review — thank you</div>
+    </div>
+  )
+
+  return (
+    <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '12px', marginBottom: '12px' }}>
+      {!open ? (
+        <button onClick={() => setOpen(true)}
+          style={{ background: 'none', border: 'none', padding: '0', fontSize: '12px', color: '#94a3b8', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}>
+          🚩 Flag this question
+        </button>
+      ) : (
+        <div>
+          <div style={{ fontSize: '12px', fontWeight: '700', color: '#dc2626', marginBottom: '8px' }}>Flag for review</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '10px' }}>
+            {reasons.map(r => (
+              <label key={r} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#475569', cursor: 'pointer' }}>
+                <input type="radio" name="flag-reason" value={r} checked={reason === r} onChange={() => setReason(r)}
+                  style={{ cursor: 'pointer' }} />
+                {r}
+              </label>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '8px' }}>
+            <button onClick={submitFlag} disabled={loading || !reason}
+              style={{ background: loading || !reason ? '#94a3b8' : '#dc2626', color: 'white', border: 'none', borderRadius: '8px', padding: '8px 16px', fontSize: '12px', fontWeight: '600', cursor: loading || !reason ? 'not-allowed' : 'pointer' }}>
+              {loading ? 'Sending...' : 'Submit flag'}
+            </button>
+            <button onClick={() => { setOpen(false); setReason('') }}
+              style={{ background: 'none', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '8px 12px', fontSize: '12px', color: '#64748b', cursor: 'pointer' }}>
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
   )
 }
 
