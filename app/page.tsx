@@ -96,7 +96,7 @@ export default function Home() {
                 return (
                   <div key={item.title} style={{ background: '#f8fafc', borderRadius: '12px', padding: '1.75rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
                     <div style={{ fontSize: '10px', fontWeight: '700', color: '#94a3b8', letterSpacing: '0.18em', fontFamily: 'monospace', marginBottom: '0.75rem', textTransform: 'uppercase' }}>{item.title}</div>
-                    <div style={{ fontSize: '17px', fontWeight: '700', color: '#0a1628', marginBottom: '4px', lineHeight: 1.3 }}>{item.full}</div>
+                    <div style={{ fontSize: '17px', fontWeight: '700', color: '#0a1628', marginBottom: '4px', lineHeight: 1.3, minHeight: '48px' }}>{item.full}</div>
                     <div style={{ fontSize: '12px', color: '#2563eb', fontWeight: '600', marginBottom: '0.75rem' }}>{item.exams}</div>
                     <div style={{ width: '24px', height: '2px', background: '#2563eb', borderRadius: '99px', marginBottom: '0.75rem' }} />
                     <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.65 }}>{item.desc}</div>
