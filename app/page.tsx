@@ -51,26 +51,24 @@ export default function Home() {
             <a href="#exams" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Exams</a>
             <a href="#pricing" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Pricing</a>
             <a href="/login" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Login</a>
-            <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '7px', padding: '9px 22px', textDecoration: 'none', fontWeight: '600', fontSize: '14px' }}>Start Free Trial</a>
+            <a href="/signup" style={{ color: '#2563eb', textDecoration: 'none', fontSize: '14px', fontWeight: '600' }}>Sign up</a>
           </div>
         </nav>
 
-        {/* HERO */}
+        {/* HERO — full width Sydney Harbour photo */}
         <section style={{ position: 'relative', height: '92vh', minHeight: '600px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', overflow: 'hidden' }}>
-          {/* Background image */}
-          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/IMG_4488.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center 30%', filter: 'brightness(0.55)' }} />
-          {/* Content */}
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/IMG_4488.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center 30%', filter: 'brightness(0.52)' }} />
           <div style={{ position: 'relative', zIndex: 1, padding: '0 2.5rem', maxWidth: '800px' }}>
-            <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.7)', marginBottom: '1.25rem', fontWeight: '700', textTransform: 'uppercase' }}>Australia&apos;s Pilot Exam Prep Platform</p>
+            <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.65)', marginBottom: '1.25rem', fontWeight: '700', textTransform: 'uppercase' }}>Australia&apos;s Pilot Exam Prep Platform</p>
             <h1 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: '800', color: 'white', marginBottom: '1.5rem', lineHeight: 1.05, letterSpacing: '-2px' }}>
               Your Journey to the<br />Flight Deck Starts Here.
             </h1>
-            <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.75)', maxWidth: '520px', margin: '0 auto 2.5rem', lineHeight: 1.8 }}>
+            <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.72)', maxWidth: '520px', margin: '0 auto 2.5rem', lineHeight: 1.8 }}>
               Expert-reviewed questions aligned to real CASA references. Every PPL, CPL, ATPL and IREX exam covered.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
               <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '700', textDecoration: 'none' }}>Start Free Trial</a>
-              <a href="#pricing" style={{ background: 'rgba(255,255,255,0.12)', color: 'white', border: '2px solid rgba(255,255,255,0.35)', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '600', textDecoration: 'none', backdropFilter: 'blur(4px)' }}>See Pricing</a>
+              <a href="#pricing" style={{ background: 'rgba(255,255,255,0.1)', color: 'white', border: '2px solid rgba(255,255,255,0.3)', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '600', textDecoration: 'none' }}>See Pricing</a>
             </div>
           </div>
         </section>
@@ -85,18 +83,18 @@ export default function Home() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1.25rem' }}>
               {[
-                { title: 'PPL', full: 'Private Pilot Licence', exams: '1 combined exam', desc: 'The foundation of flight. Master the core theory required to earn your Private Pilot Licence.' },
-                { title: 'CPL', full: 'Commercial Pilot Licence', exams: '7 exams', desc: 'All 7 CASA subjects. Built for pilots serious about going professional.' },
-                { title: 'ATPL', full: 'Airline Transport Pilot', exams: '7 exams', desc: 'The highest standard in Australian pilot licensing. All 7 subjects for pilots bound for the airlines.' },
-                { title: 'IREX', full: 'Instrument Rating Exam', exams: '1 exam', desc: 'Cleared for the clouds. Everything you need to pass the CASA Instrument Rating Exam.' },
+                { title: 'PPL', full: 'Private Pilot Licence', exams: '1 combined exam', desc: 'Master the core theory required for your Private Pilot Licence. The essential first step for every aspiring pilot.' },
+                { title: 'CPL', full: 'Commercial Pilot Licence', exams: '7 exams', desc: 'All 7 CASA subjects covered in full. Built for pilots serious about taking their career to a professional level.' },
+                { title: 'ATPL', full: 'Airline Transport Pilots Licence', exams: '7 exams', desc: 'The highest standard in Australian licensing. All 7 subjects for pilots on the path to the airline flight deck.' },
+                { title: 'IREX', full: 'Instrument Rating Exam', exams: '1 exam', desc: 'Everything you need to pass the CASA Instrument Rating Exam and take command in instrument meteorological conditions.' },
               ].map(function (item) {
                 return (
-                  <div key={item.title} style={{ background: '#f8fafc', borderRadius: '12px', padding: '1.75rem', border: '1px solid #e2e8f0' }}>
+                  <div key={item.title} style={{ background: '#f8fafc', borderRadius: '12px', padding: '1.75rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
                     <div style={{ fontSize: '10px', fontWeight: '700', color: '#94a3b8', letterSpacing: '0.18em', fontFamily: 'monospace', marginBottom: '0.75rem', textTransform: 'uppercase' }}>{item.title}</div>
                     <div style={{ fontSize: '17px', fontWeight: '700', color: '#0a1628', marginBottom: '4px', lineHeight: 1.3 }}>{item.full}</div>
                     <div style={{ fontSize: '12px', color: '#2563eb', fontWeight: '600', marginBottom: '0.75rem' }}>{item.exams}</div>
                     <div style={{ width: '24px', height: '2px', background: '#2563eb', borderRadius: '99px', marginBottom: '0.75rem' }} />
-                    <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.65 }}>{item.desc}</div>
+                    <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.65, flex: 1 }}>{item.desc}</div>
                   </div>
                 )
               })}
@@ -113,7 +111,6 @@ export default function Home() {
               <p style={{ fontSize: '16px', color: '#64748b', marginTop: '0.75rem' }}>Every plan includes a 7 day free trial. Full access from day one.</p>
             </div>
 
-            {/* Top 3 */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.25rem', marginBottom: '1.25rem' }}>
               {[
                 { plan: 'PPL Pack', price: '$9.99', priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz', features: ['PPL Theory exam', 'Unlimited practice questions', 'Full explanations', 'CASA references'], popular: false },
@@ -121,19 +118,19 @@ export default function Home() {
                 { plan: 'ATPL Pack', price: '$29.99', priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn', features: ['CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], popular: false },
               ].map(function (item) {
                 return (
-                  <div key={item.plan} style={{ background: item.popular ? '#0a1628' : 'white', borderRadius: '12px', padding: '2rem', border: item.popular ? 'none' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+                  <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '2rem', border: item.popular ? '2px solid #2563eb' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
                     {item.popular && (
-                      <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#2563eb', color: 'white', fontSize: '10px', fontWeight: '700', padding: '4px 14px', borderRadius: '99px', whiteSpace: 'nowrap', letterSpacing: '0.08em' }}>MOST POPULAR</div>
+                      <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: 'white', color: '#2563eb', border: '2px solid #2563eb', fontSize: '10px', fontWeight: '700', padding: '3px 14px', borderRadius: '99px', whiteSpace: 'nowrap', letterSpacing: '0.08em' }}>MOST POPULAR</div>
                     )}
-                    <div style={{ fontSize: '12px', fontWeight: '700', color: item.popular ? 'rgba(255,255,255,0.4)' : '#64748b', marginBottom: '1rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>{item.plan}</div>
+                    <div style={{ fontSize: '12px', fontWeight: '700', color: '#64748b', marginBottom: '1rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>{item.plan}</div>
                     <div style={{ display: 'flex', alignItems: 'baseline', gap: '4px', marginBottom: '0.25rem' }}>
-                      <span style={{ fontSize: '38px', fontWeight: '800', color: item.popular ? 'white' : '#0a1628', lineHeight: 1 }}>{item.price}</span>
+                      <span style={{ fontSize: '38px', fontWeight: '800', color: '#0a1628', lineHeight: 1 }}>{item.price}</span>
                     </div>
-                    <div style={{ fontSize: '12px', color: item.popular ? 'rgba(255,255,255,0.3)' : '#94a3b8', marginBottom: '1.5rem' }}>per month</div>
+                    <div style={{ fontSize: '12px', color: '#94a3b8', marginBottom: '1.5rem' }}>per month</div>
                     <div style={{ flex: 1, marginBottom: '1.5rem' }}>
                       {item.features.map(function (f) {
                         return (
-                          <div key={f} style={{ fontSize: '13px', color: item.popular ? 'rgba(255,255,255,0.6)' : '#475569', marginBottom: '9px', display: 'flex', alignItems: 'center', gap: '9px' }}>
+                          <div key={f} style={{ fontSize: '13px', color: '#475569', marginBottom: '9px', display: 'flex', alignItems: 'center', gap: '9px' }}>
                             <span style={{ color: '#2563eb', fontWeight: '800', fontSize: '13px', flexShrink: 0 }}>✓</span>
                             {f}
                           </div>
@@ -148,7 +145,6 @@ export default function Home() {
               })}
             </div>
 
-            {/* Bottom 2 centred */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '1.25rem', maxWidth: '706px', margin: '0 auto' }}>
               {[
                 { plan: 'IREX Standalone', price: '$14.99', priceId: 'price_1TIPDdCbt27bkqBvZzwkYthb', features: ['IREX exam only', 'Unlimited practice questions', 'Full explanations', 'CASA references'] },
@@ -181,13 +177,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CONTACT */}
-        <section style={{ padding: '5rem 2.5rem', background: 'white', borderTop: '1px solid #e2e8f0' }}>
-          <div style={{ maxWidth: '1060px', margin: '0 auto', textAlign: 'center' }}>
-            <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: '#2563eb', marginBottom: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>Get in Touch</p>
-            <h2 style={{ fontSize: '36px', fontWeight: '800', color: '#0a1628', letterSpacing: '-0.5px', marginBottom: '1rem' }}>Questions? We&apos;re here to help.</h2>
-            <p style={{ fontSize: '16px', color: '#64748b', marginBottom: '2rem' }}>Reach out any time at <a href="mailto:support@v1study.com.au" style={{ color: '#2563eb', fontWeight: '600', textDecoration: 'none' }}>support@v1study.com.au</a></p>
-            <a href="/contact" style={{ background: '#0a1628', color: 'white', borderRadius: '7px', padding: '13px 36px', textDecoration: 'none', fontWeight: '700', fontSize: '15px', display: 'inline-block' }}>Contact us</a>
+        {/* CONTACT with background image */}
+        <section style={{ position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/contact-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center 40%', filter: 'brightness(0.45)' }} />
+          <div style={{ position: 'relative', zIndex: 1, padding: '6rem 2.5rem', textAlign: 'center' }}>
+            <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.65)', marginBottom: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>Get in Touch</p>
+            <h2 style={{ fontSize: '36px', fontWeight: '800', color: 'white', letterSpacing: '-0.5px', marginBottom: '1rem' }}>Questions? We&apos;re here to help.</h2>
+            <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.7)', marginBottom: '2rem' }}>Reach out any time at <a href="mailto:support@v1study.com.au" style={{ color: 'white', fontWeight: '600', textDecoration: 'none' }}>support@v1study.com.au</a></p>
+            <a href="/contact" style={{ background: 'white', color: '#0a1628', borderRadius: '7px', padding: '13px 36px', textDecoration: 'none', fontWeight: '700', fontSize: '15px', display: 'inline-block' }}>Contact us</a>
           </div>
         </section>
 
