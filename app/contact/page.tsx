@@ -20,9 +20,9 @@ export default function ContactPage() {
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
         </a>
-        <div style={{ display: 'flex', gap: '1rem' }}>
+        <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           <a href="/login" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Login</a>
-          <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '8px 16px', textDecoration: 'none', fontWeight: '600', fontSize: '14px' }}>Sign up free</a>
+          <a href="/signup" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Sign up free</a>
         </div>
       </nav>
 
@@ -65,9 +65,9 @@ export default function ContactPage() {
             </button>
           </div>
         ) : (
-          <div style={{ background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '16px', padding: '2rem', textAlign: 'center' }}>
+          <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '2rem', textAlign: 'center' }}>
             <div style={{ fontSize: '48px', marginBottom: '1rem' }}>✉️</div>
-            <h2 style={{ fontSize: '20px', fontWeight: '700', color: '#15803d', marginBottom: '8px' }}>Message sent!</h2>
+            <h2 style={{ fontSize: '20px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Message sent!</h2>
             <p style={{ fontSize: '14px', color: '#64748b' }}>Your email client should have opened. We'll get back to you within 24 hours.</p>
           </div>
         )}
