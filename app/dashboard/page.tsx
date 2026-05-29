@@ -151,9 +151,9 @@ export default function Dashboard() {
   return (
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
       {/* NAV */}
-      <nav style={{ background: '#0a1628', borderBottom: '1px solid #1e3a5f', padding: isMobile ? '0.875rem 1rem' : '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative' }}>
+      <nav style={{ background: '#2563eb', borderBottom: '1px solid #1d4ed8', padding: isMobile ? '0.875rem 1rem' : '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative' }}>
         <div>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#60a5fa' }}>V1</span>
+          <span style={{ fontSize: '20px', fontWeight: '800', color: 'white' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: 'white' }}> Study</span>
           <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.35)', fontStyle: 'italic' }}>V1. Rotate. Pass.</div>
         </div>
