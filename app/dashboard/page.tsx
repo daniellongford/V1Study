@@ -18,7 +18,7 @@ const subjectsByLicence: Record<string, { subject: string; code: string; passMar
   ATPL: [
     { subject: 'Human Factors', code: 'AHUF', passMark: 70 },
     { subject: 'Aerodynamics and Systems', code: 'AASA', passMark: 70 },
-    { subject: 'Performance and Loading', code: 'AASY', passMark: 70 },
+    { subject: 'Performance and Loading', code: 'APLA', passMark: 70 },
     { subject: 'Meteorology', code: 'AMET', passMark: 70 },
     { subject: 'Navigation', code: 'ANAV', passMark: 70 },
     { subject: 'Flight Planning', code: 'AAFP', passMark: 70 },
