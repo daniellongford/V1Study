@@ -153,9 +153,9 @@ export default function Dashboard() {
       {/* NAV */}
       <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: isMobile ? '0.875rem 1rem' : '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative' }}>
         <div>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}>V1</span>
+          <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
-          <div style={{ fontSize: '11px', color: '#94a3b8', fontStyle: 'italic' }}>V1. Rotate. Pass.</div>
+
         </div>
         {isMobile ? (
           <>
