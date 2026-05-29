@@ -151,15 +151,15 @@ export default function Dashboard() {
   return (
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
       {/* NAV */}
-      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: isMobile ? '0.875rem 1rem' : '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative' }}>
+      <nav style={{ background: '#0a1628', borderBottom: '1px solid #1e3a5f', padding: isMobile ? '0.875rem 1rem' : '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative' }}>
         <div>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
-          <div style={{ fontSize: '11px', color: '#94a3b8', fontStyle: 'italic' }}>V1. Rotate. Pass.</div>
+          <span style={{ fontSize: '20px', fontWeight: '800', color: '#60a5fa' }}>V1</span>
+          <span style={{ fontSize: '20px', fontWeight: '800', color: 'white' }}> Study</span>
+          <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.35)', fontStyle: 'italic' }}>V1. Rotate. Pass.</div>
         </div>
         {isMobile ? (
           <>
-            <button onClick={() => setMenuOpen(!menuOpen)} style={{ background: 'none', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '8px 12px', cursor: 'pointer', fontSize: '18px', color: '#0a1628', minWidth: '44px', minHeight: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <button onClick={() => setMenuOpen(!menuOpen)} style={{ background: 'none', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '8px', padding: '8px 12px', cursor: 'pointer', fontSize: '18px', color: 'white', minWidth: '44px', minHeight: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               {menuOpen ? '✕' : '☰'}
             </button>
             {menuOpen && (
@@ -174,12 +174,12 @@ export default function Dashboard() {
           </>
         ) : (
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-            <a href="/dashboard" style={{ color: '#2563eb', textDecoration: 'none', fontSize: '14px', fontWeight: '600' }}>Study</a>
-            <a href="/progress" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Progress</a>
-            <a href="/pricing" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Upgrade</a>
+            <a href="/dashboard" style={{ color: 'white', textDecoration: 'none', fontSize: '14px', fontWeight: '600' }}>Study</a>
+            <a href="/progress" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '14px' }}>Progress</a>
+            <a href="/pricing" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '14px' }}>Upgrade</a>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ fontSize: '13px', color: '#64748b' }}>{user?.user_metadata?.full_name || user?.email}</span>
-              <button onClick={handleSignOut} style={{ background: 'none', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '5px 12px', fontSize: '13px', cursor: 'pointer', color: '#64748b' }}>Sign out</button>
+              <span style={{ fontSize: '13px', color: 'rgba(255,255,255,0.5)' }}>{user?.user_metadata?.full_name || user?.email}</span>
+              <button onClick={handleSignOut} style={{ background: 'none', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '8px', padding: '5px 12px', fontSize: '13px', cursor: 'pointer', color: 'rgba(255,255,255,0.6)' }}>Sign out</button>
             </div>
           </div>
         )}
@@ -227,7 +227,7 @@ export default function Dashboard() {
             const trial = getTrialStatus(subject)
 
             return (
-              <div key={subject} style={{ background: 'white', borderRadius: '10px', padding: '1.25rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <div key={subject} style={{ background: 'white', borderRadius: '10px', padding: '1.25rem', border: '1px solid #cbd5e1', boxShadow: '0 1px 3px rgba(0,0,0,0.06)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                   <div style={{ fontSize: '11px', fontWeight: '700', color: accessible ? '#2563eb' : '#94a3b8', fontFamily: 'monospace', letterSpacing: '0.06em', background: accessible ? '#eff6ff' : '#f1f5f9', padding: '3px 8px', borderRadius: '4px' }}>{code}</div>
                   {accessible && best !== undefined && (
@@ -246,15 +246,15 @@ export default function Dashboard() {
                   </div>
                 </div>
                 {accessible ? (
-                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: 'transparent', color: '#0a1628', border: '1px solid #cbd5e1', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
+                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
                     Start Quiz →
                   </button>
                 ) : trial.exhausted ? (
-                  <a href="/pricing" style={{ background: 'transparent', color: '#0a1628', border: '1px solid #cbd5e1', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
+                  <a href="/pricing" style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
                     Subscribe to continue →
                   </a>
                 ) : (
-                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: 'transparent', color: '#0a1628', border: '1px solid #cbd5e1', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', minHeight: '44px' }}>
+                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', minHeight: '44px' }}>
                     Start free trial →
                   </button>
                 )}
