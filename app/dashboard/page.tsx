@@ -246,15 +246,15 @@ export default function Dashboard() {
                   </div>
                 </div>
                 {accessible ? (
-                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
+                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: 'white', color: '#0a1628', border: '2px solid #2563eb', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
                     Start Quiz →
                   </button>
                 ) : trial.exhausted ? (
-                  <a href="/pricing" style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
+                  <a href="/pricing" style={{ background: 'white', color: '#0a1628', border: '2px solid #2563eb', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
                     Subscribe to continue →
                   </a>
                 ) : (
-                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', minHeight: '44px' }}>
+                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: 'white', color: '#0a1628', border: '2px solid #2563eb', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', minHeight: '44px' }}>
                     Start free trial →
                   </button>
                 )}
@@ -263,30 +263,6 @@ export default function Dashboard() {
           })}
         </div>
 
-        {/* BANNER */}
-        {!plan ? (
-          <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '10px', padding: '1.25rem', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '1.5rem' }}>
-            <div>
-              <div style={{ fontSize: '13px', fontWeight: '700', color: '#0a1628', marginBottom: '2px' }}>Try before you subscribe — free trial questions available</div>
-              <div style={{ fontSize: '12px', color: '#64748b' }}>Each subject includes free trial questions. Subscribe for unlimited access.</div>
-            </div>
-            <a href="/pricing" style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '12px 20px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>
-              View Plans
-            </a>
-          </div>
-        ) : (
-          <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '10px', padding: '1.25rem', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '1.5rem' }}>
-            <div>
-              <div style={{ fontSize: '13px', fontWeight: '700', color: '#0a1628', marginBottom: '2px' }}>
-                {planStatus === 'cancelling' ? `${plan} Pack — cancelling at period end` : `Active plan — ${plan} Pack`}
-              </div>
-              <div style={{ fontSize: '12px', color: '#64748b' }}>Unlimited practice questions written to the full CASA MOS syllabus</div>
-            </div>
-            <a href="/pricing" style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '12px 20px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>
-              Manage Plan
-            </a>
-          </div>
-        )}
 
         {/* CONTACT SECTION */}
         <ContactSection isMobile={isMobile} userEmail={user?.email} />
