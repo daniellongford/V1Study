@@ -46,16 +46,7 @@ export default function ProgressPage() {
   const totalAttempts = scores.length
   const avg = scores.length > 0 ? Math.round(scores.reduce((a, s) => a + Number(s.percentage), 0) / scores.length) : 0
   const passRate = scores.length > 0 ? Math.round(scores.filter((s) => Number(s.percentage) >= 70).length / scores.length * 100) : 0
-
-  // Average of filtered scores
   const filteredAvg = filtered.length > 0 ? Math.round(filtered.reduce((a, s) => a + Number(s.percentage), 0) / filtered.length) : 0
-
-  function color(pct: number) {
-    if (pct >= 80) return '#16a34a'
-    if (pct >= 70) return '#2563eb'
-    if (pct >= 50) return '#f59e0b'
-    return '#dc2626'
-  }
 
   if (loading) return (
     <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif' }}>
@@ -89,52 +80,60 @@ export default function ProgressPage() {
           </div>
         ) : (
           <>
+            {/* STAT CARDS */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '12px', marginBottom: '2rem' }}>
               {[
-                { label: 'Total attempts', value: String(totalAttempts), c: '#2563eb' },
-                { label: 'Average score', value: avg + '%', c: color(avg) },
-                { label: 'Pass rate', value: passRate + '%', c: color(passRate) },
+                { label: 'Total attempts', value: String(totalAttempts) },
+                { label: 'Average score', value: avg + '%' },
+                { label: 'Pass rate', value: passRate + '%' },
               ].map((s) => (
-                <div key={s.label} style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0', textAlign: 'center' }}>
-                  <div style={{ fontSize: '28px', fontWeight: '700', color: s.c, fontFamily: 'monospace' }}>{s.value}</div>
+                <div key={s.label} style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0', textAlign: 'center', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
+                  <div style={{ fontSize: '28px', fontWeight: '700', color: '#0a1628', fontFamily: 'monospace' }}>{s.value}</div>
                   <div style={{ fontSize: '12px', color: '#94a3b8', marginTop: '4px' }}>{s.label}</div>
                 </div>
               ))}
             </div>
 
+            {/* FILTER TABS */}
             <div style={{ display: 'flex', gap: '8px', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
               {licences.map((l) => (
-                <button key={l} onClick={() => setFilter(l)} style={{ padding: '6px 16px', borderRadius: '99px', border: 'none', fontWeight: '600', fontSize: '13px', cursor: 'pointer', background: filter === l ? '#2563eb' : '#e2e8f0', color: filter === l ? 'white' : '#475569' }}>
+                <button key={l} onClick={() => setFilter(l)} style={{ padding: '6px 16px', borderRadius: '99px', border: 'none', fontWeight: '600', fontSize: '13px', cursor: 'pointer', background: filter === l ? '#0a1628' : '#e2e8f0', color: filter === l ? 'white' : '#475569' }}>
                   {l}
                 </button>
               ))}
             </div>
 
+            {/* SUBJECT CARDS */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '2rem' }}>
               {subjectStats.map((s) => (
-                <div key={s.subject} style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0' }}>
+                <div key={s.subject} style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px', flexWrap: 'wrap', gap: '8px' }}>
                     <div>
-                      <div style={{ fontSize: '11px', fontWeight: '700', color: '#2563eb', marginBottom: '2px', fontFamily: 'monospace' }}>{s.licence}</div>
-                      <div style={{ fontSize: '15px', fontWeight: '600', color: '#0a1628' }}>{s.subject}</div>
+                      <div style={{ fontSize: '11px', fontWeight: '700', color: '#94a3b8', marginBottom: '2px', fontFamily: 'monospace', letterSpacing: '0.08em' }}>{s.licence}</div>
+                      <div style={{ fontSize: '15px', fontWeight: '600', color: '#0a1628' }}>
+                        {s.best >= 70 ? '✓ ' : '○ '}{s.subject}
+                      </div>
                       <div style={{ fontSize: '12px', color: '#94a3b8', marginTop: '2px' }}>{s.attempts} attempt{s.attempts !== 1 ? 's' : ''} · avg {s.avg}%</div>
                     </div>
                     <div style={{ display: 'flex', gap: '8px' }}>
-                      <div style={{ background: s.best >= 70 ? '#f0fdf4' : '#fff1f2', borderRadius: '8px', padding: '4px 12px', textAlign: 'center' }}>
-                        <div style={{ fontSize: '20px', fontWeight: '700', color: color(s.best), fontFamily: 'monospace' }}>{s.best}%</div>
+                      <div style={{ background: '#f8fafc', borderRadius: '8px', padding: '4px 12px', textAlign: 'center', border: '1px solid #e2e8f0' }}>
+                        <div style={{ fontSize: '20px', fontWeight: '700', color: '#0a1628', fontFamily: 'monospace' }}>{s.best}%</div>
                         <div style={{ fontSize: '10px', color: '#94a3b8' }}>Best</div>
                       </div>
-                      <div style={{ background: '#f8fafc', borderRadius: '8px', padding: '4px 12px', textAlign: 'center' }}>
+                      <div style={{ background: '#f8fafc', borderRadius: '8px', padding: '4px 12px', textAlign: 'center', border: '1px solid #e2e8f0' }}>
                         <div style={{ fontSize: '20px', fontWeight: '700', color: '#64748b', fontFamily: 'monospace' }}>{s.last}%</div>
                         <div style={{ fontSize: '10px', color: '#94a3b8' }}>Last</div>
                       </div>
                     </div>
                   </div>
-                  <div style={{ background: '#f1f5f9', borderRadius: '99px', height: '6px', overflow: 'hidden', marginBottom: '8px' }}>
-                    <div style={{ height: '100%', background: color(s.avg), borderRadius: '99px', width: Math.min(s.avg, 100) + '%' }}></div>
+                  {/* Progress bar — always blue, pass mark line at 70% */}
+                  <div style={{ position: 'relative', background: '#f1f5f9', borderRadius: '99px', height: '6px', overflow: 'visible', marginBottom: '8px' }}>
+                    <div style={{ height: '100%', background: '#2563eb', borderRadius: '99px', width: Math.min(s.avg, 100) + '%', transition: 'width 0.4s' }} />
+                    {/* Pass mark line at 70% */}
+                    <div style={{ position: 'absolute', top: '-3px', left: '70%', width: '2px', height: '12px', background: '#cbd5e1', borderRadius: '1px' }} />
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ fontSize: '12px', color: s.best >= 70 ? '#16a34a' : '#dc2626', fontWeight: '600' }}>{s.best >= 70 ? '✓ Pass achieved' : '✗ Not yet passing'}</span>
+                    <span style={{ fontSize: '11px', color: '#94a3b8' }}>{s.best >= 70 ? 'Pass mark achieved' : 'Pass mark not yet reached'}</span>
                     <a href={'/quiz/' + encodeURIComponent(s.subject)} style={{ fontSize: '13px', color: '#2563eb', textDecoration: 'none', fontWeight: '600' }}>Practice again →</a>
                   </div>
                 </div>
@@ -142,7 +141,7 @@ export default function ProgressPage() {
             </div>
 
             {/* OVERALL AVERAGE BAR */}
-            <div style={{ background: 'white', borderRadius: '12px', padding: '1.25rem 1.5rem', border: '1px solid #e2e8f0', marginBottom: '1.5rem' }}>
+            <div style={{ background: 'white', borderRadius: '12px', padding: '1.25rem 1.5rem', border: '1px solid #e2e8f0', marginBottom: '1.5rem', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
                 <div>
                   <div style={{ fontSize: '13px', fontWeight: '700', color: '#0a1628' }}>
@@ -150,19 +149,21 @@ export default function ProgressPage() {
                   </div>
                   <div style={{ fontSize: '11px', color: '#94a3b8' }}>Across all {filtered.length} attempt{filtered.length !== 1 ? 's' : ''}</div>
                 </div>
-                <div style={{ fontSize: '28px', fontWeight: '800', color: color(filteredAvg), fontFamily: 'monospace' }}>{filteredAvg}%</div>
+                <div style={{ fontSize: '28px', fontWeight: '800', color: '#0a1628', fontFamily: 'monospace' }}>{filteredAvg}%</div>
               </div>
-              <div style={{ background: '#f1f5f9', borderRadius: '99px', height: '8px', overflow: 'hidden' }}>
-                <div style={{ height: '100%', background: color(filteredAvg), borderRadius: '99px', width: Math.min(filteredAvg, 100) + '%', transition: 'width 0.6s ease' }}></div>
+              <div style={{ position: 'relative', background: '#f1f5f9', borderRadius: '99px', height: '8px', overflow: 'visible' }}>
+                <div style={{ height: '100%', background: '#2563eb', borderRadius: '99px', width: Math.min(filteredAvg, 100) + '%', transition: 'width 0.6s ease' }} />
+                <div style={{ position: 'absolute', top: '-4px', left: '70%', width: '2px', height: '16px', background: '#94a3b8', borderRadius: '1px' }} />
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '6px' }}>
                 <span style={{ fontSize: '11px', color: '#94a3b8' }}>0%</span>
-                <span style={{ fontSize: '11px', color: '#f59e0b' }}>Pass mark 70%</span>
+                <span style={{ fontSize: '11px', color: '#94a3b8' }}>Pass mark 70%</span>
                 <span style={{ fontSize: '11px', color: '#94a3b8' }}>100%</span>
               </div>
             </div>
 
-            <div style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0' }}>
+            {/* RECENT ATTEMPTS */}
+            <div style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
               <h3 style={{ fontSize: '15px', fontWeight: '600', color: '#0a1628', marginBottom: '1rem' }}>Recent attempts</h3>
               {scores.slice(0, 10).map((s) => (
                 <div key={s.id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #f1f5f9' }}>
@@ -170,7 +171,7 @@ export default function ProgressPage() {
                     <div style={{ fontSize: '13px', fontWeight: '500', color: '#0a1628' }}>{s.subject}</div>
                     <div style={{ fontSize: '11px', color: '#94a3b8' }}>{new Date(s.created_at).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })}</div>
                   </div>
-                  <div style={{ background: Number(s.percentage) >= 70 ? '#f0fdf4' : '#fff1f2', borderRadius: '6px', padding: '3px 10px', fontSize: '13px', fontWeight: '700', color: color(Number(s.percentage)), fontFamily: 'monospace' }}>
+                  <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '6px', padding: '3px 10px', fontSize: '13px', fontWeight: '700', color: '#0a1628', fontFamily: 'monospace' }}>
                     {Number(s.percentage)}%
                   </div>
                 </div>
