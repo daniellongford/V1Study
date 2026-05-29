@@ -2,15 +2,7 @@
 // 500 questions | B727-200 | CASA ATPL(A) AFPA Examination
 // Generated for V1 Study (v1study.com.au)
 
-export interface Question {
-  id: string;
-  question: string;
-  options: string[];
-  correctAnswer: number;
-  explanation: string;
-}
-
-export const afpaQuestions: Question[] = [
+export const afpaQuestions = [
   {
     id: "AFPA-0001",
     question: "Unusable fuel in the B727 is:",
@@ -20,7 +12,7 @@ export const afpaQuestions: Question[] = [
       "Fuel in the AUX tanks during take-off and approach",
       "Fuel trapped in tanks due to tank design which cannot be supplied to the engines",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Unusable fuel is fuel on board the aeroplane that is trapped in tanks because of tank design and cannot be supplied to the engines. It is included in the Basic Weight and MZFW and is not available for flight.",
   },
   {
@@ -32,7 +24,7 @@ export const afpaQuestions: Question[] = [
       "Both Flaps 30° and Flaps 40° — ELW within both limits",
       "Neither — ELW exceeds both limits",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "ELW 61 550 < Flaps 30° MLW 72 600 ✓. ELW 61 550 < Flaps 40° MLW 64 650 ✓. Both landing configurations are structurally available.",
   },
   {
@@ -44,7 +36,7 @@ export const afpaQuestions: Question[] = [
       "Yes — within limit by 200 kg",
       "Yes — 89 500 < 89 700 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Ramp = 89 500 kg < Max Ramp = 89 700 kg ✓. Within limit by 200 kg. Both A and C state the same correct answer.",
   },
   {
@@ -56,7 +48,7 @@ export const afpaQuestions: Question[] = [
       "72 600 kg",
       "89 350 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The structural MLW for Flaps 30° is 72 600 kg. Flaps 40° reduces this to 64 650 kg. These are structural limits; pavement or performance considerations may reduce the figure further.",
   },
   {
@@ -68,7 +60,7 @@ export const afpaQuestions: Question[] = [
       "Fuel dump procedures",
       "Fuel burn calculations",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Tank 2 may be loaded with fuel in lieu of payload beyond equal loaded fuel (Tanks 1 and 3) up to maximum allowable payload, provided there is accountability for the difference in effect on weight and balance calculations.",
   },
   {
@@ -80,7 +72,7 @@ export const afpaQuestions: Question[] = [
       "68 500 kg",
       "70 700 kg (average of three)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Maximum planning landing weight = minimum of the three limits = 68 500 kg (climb limited). The ELW must not exceed 68 500 kg.",
   },
   {
@@ -92,7 +84,7 @@ export const afpaQuestions: Question[] = [
       "55 760 kg",
       "52 150 kg plus ballast fuel",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "When FWD AUX tank fuel is loaded as ballast, the MZFW is limited to 52 150 kg plus ballast fuel. This is a weight and balance limitation to account for the forward CG effect of the FWD AUX tank.",
   },
   {
@@ -104,7 +96,7 @@ export const afpaQuestions: Question[] = [
       "BRW and MLW only",
       "Actual payload; total fuel load; ZFW; BRW; ELW; CG at ZFW; CG for take-off",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Per the B727 POH company policy, the Load and Trim Sheet includes: (i) actual payload; (ii) total fuel load; (iii) ZFW; (iv) BRW; (v) ELW; (vi) CG at ZFW; and (vii) CG for take-off.",
   },
   {
@@ -116,7 +108,7 @@ export const afpaQuestions: Question[] = [
       "Payload can exceed MZFW − BW if extra fuel is loaded",
       "Fuel may be loaded in cargo holds as structural ballast above MZFW",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Any load above MZFW must be usable fuel. This defines MZFW: ZFW = BW + payload ≤ MZFW. Any aircraft weight above MZFW must be accounted for by usable fuel, not payload.",
   },
   {
@@ -128,7 +120,7 @@ export const afpaQuestions: Question[] = [
       "Any time the Captain decides it is operationally necessary",
       "In an emergency only",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Dumping of fuel is permitted only in an emergency. Fuel loaded as payload or for Weight and Balance is NOT permitted to be dumped except in an emergency when the emergency flight condition is more critical than Weight and Balance considerations.",
   },
   {
@@ -140,7 +132,7 @@ export const afpaQuestions: Question[] = [
       "61 000 kg — within all limits",
       "79 000 kg — MBRW exceeded",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ZFW = 47 000 + 14 000 = 61 000 kg (within MZFW of 63 500 kg). Ramp Weight = 61 000 + 18 000 = 79 000 kg (within Max Ramp Weight of 89 700 kg). No limits are exceeded.",
   },
   {
@@ -152,7 +144,7 @@ export const afpaQuestions: Question[] = [
       "Yes — ELW 66 800 kg equals the Flaps 40° MLW",
       "No — ELW is 103 200 kg, exceeding MBRW",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ELW = BRW − trip fuel = 85 000 − 18 200 = 66 800 kg. Flaps 30° MLW = 72 600 kg. 66 800 < 72 600 — within limits.",
   },
   {
@@ -164,7 +156,7 @@ export const afpaQuestions: Question[] = [
       "ELW 70 000 kg — complies with Flaps 30° MLW",
       "Cannot determine without ZFW",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "ELW = 89 000 − 20 500 = 68 500 kg. MLW Flaps 30° = 72 600 kg. 68 500 < 72 600 — within Flaps 30° limit.",
   },
   {
@@ -176,7 +168,7 @@ export const afpaQuestions: Question[] = [
       "16 500 kg if MZFW governs; 18 350 kg if MBRW governs",
       "16 500 kg (MZFW limited)",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "MBRW check: Max Payload from MBRW = MBRW − Basic Weight − fuel = 89 350 − 47 000 − 24 000 = 18 350 kg. MZFW check: Max Payload = MZFW − Basic Weight = 63 500 − 47 000 = 16 500 kg. MZFW is the more restrictive limit, so maximum payload = 16 500 kg.",
   },
   {
@@ -188,7 +180,7 @@ export const afpaQuestions: Question[] = [
       "The same",
       "Variable depending on approach fuel used",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Holding fuel not used means 2 000 kg extra is retained on board at landing. Actual ELW = planned ELW + 2 000 kg.",
   },
   {
@@ -200,7 +192,7 @@ export const afpaQuestions: Question[] = [
       "63 500 kg",
       "72 600 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The MBRW is 89 350 kg. This is the maximum gross weight at the start of the take-off roll. Note: the Maximum Ramp Weight is 89 700 kg, which is 350 kg higher to allow for taxi fuel burn.",
   },
   {
@@ -212,7 +204,7 @@ export const afpaQuestions: Question[] = [
       "Any load above MZFW must be usable fuel; ZFW = 63 500 kg so the usable fuel is unlimited above this point",
       "16 500 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ZFW = Basic Weight + Payload = 47 000 + 16 500 = 63 500 kg, which equals MZFW exactly. Since any load above MZFW must be usable fuel, and ZFW = MZFW, any usable fuel added is permissible from an MZFW perspective (limited by MBRW and MTOW instead).",
   },
   {
@@ -224,7 +216,7 @@ export const afpaQuestions: Question[] = [
       "The same as planned ELW — holding fuel is consumed regardless",
       "1 000 kg more — half the holding fuel",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "If no holding is required, the planned holding fuel (2 000 kg) is retained. Actual landing weight = planned ELW + 2 000 kg. The crew must check whether this higher actual ELW still complies with MLW.",
   },
   {
@@ -236,7 +228,7 @@ export const afpaQuestions: Question[] = [
       "The combined total of departure-to-destination AND destination-to-alternate flight fuel",
       "Cruise fuel only for both legs combined",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Contingency (10%) is applied to the total climb + cruise + descent + approach/manoeuvring fuel for the entire route from departure through to the alternate.",
   },
   {
@@ -248,7 +240,7 @@ export const afpaQuestions: Question[] = [
       "The AUX tanks are required for this fuel load",
       "Yes — 28 000 < 29 550 kg capacity",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "28 000 kg < 29 550 kg maximum usable capacity (underwing pressure refuelling) ✓. The fuel will fit in the tanks.",
   },
   {
@@ -260,7 +252,7 @@ export const afpaQuestions: Question[] = [
       "17 125 kg",
       "15 500 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Contingency = 10% × 12 250 = 1 225 kg. Ramp = 150 + 12 250 + 1 225 + 3 300 + 100 = 17 025 kg.",
   },
   {
@@ -272,7 +264,7 @@ export const afpaQuestions: Question[] = [
       "Both fixed reserve and contingency are available for diversion",
       "No alternate fuel was planned; the aircraft must declare an emergency",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "In practice, both contingency and fixed reserve are available for a diversion if destination is closed. Fixed reserve (3 300 kg = 45 min at 4 500 kg/hr) provides emergency endurance. The correct planning solution is to have carried alternate fuel from departure if the weather was forecast to be marginal.",
   },
   {
@@ -284,7 +276,7 @@ export const afpaQuestions: Question[] = [
       "MBRW exceeded: 83 350 kg (after taxi) > 89 350 kg — not exceeded",
       "No limits exceeded: ZFW 60 000, Ramp 83 500, BRW 83 350 — all within limits",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ZFW = 47 000 + 13 000 = 60 000 kg ≤ 63 500 ✓. Ramp = 60 000 + 23 500 = 83 500 kg ≤ 89 700 ✓. BRW = 83 500 − 150 = 83 350 kg ≤ 89 350 ✓. No limits exceeded.",
   },
   {
@@ -296,7 +288,7 @@ export const afpaQuestions: Question[] = [
       "4 500 kg/hr",
       "5 000 kg/hr",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Margin fuel endurance is calculated at 4 500 kg/hr — the same rate as fixed reserve. This is the holding fuel flow for 3 engines at 1 500 ft ISA.",
   },
   {
@@ -308,7 +300,7 @@ export const afpaQuestions: Question[] = [
       "1 500 kg — reduced for en-route ops",
       "NIL — en-route alternates don't require fixed reserve",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Table 1.1 for departure to en-route alternate: fixed reserve = 3 300 kg (45 min at 4 500 kg/hr).",
   },
   {
@@ -320,7 +312,7 @@ export const afpaQuestions: Question[] = [
       "Touch-down in the normal course of events",
       "Provide 30 minutes holding at the destination",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Fixed reserve is intended to be retained to touch-down in the normal course of events. It covers unplanned intermediate approach manoeuvring, holding, a missed approach, circuit and landing using standard instrument approach procedures.",
   },
   {
@@ -332,7 +324,7 @@ export const afpaQuestions: Question[] = [
       "14 700 kg (Max Ramp limited)",
       "16 500 kg — MZFW always governs",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Max Ramp limit: 89 700 − 47 000 − 28 000 = 14 700 kg. MZFW limit: 63 500 − 47 000 = 16 500 kg. Max Ramp is more restrictive at 14 700 kg.",
   },
   {
@@ -344,7 +336,7 @@ export const afpaQuestions: Question[] = [
       "1 560 kg",
       "1 040 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Total flight fuel = (2 800 + 9 000 + 650) + (1 000 + 2 200 + 350 + 400) = 12 450 + 3 950 = 16 400 kg. Contingency = 10% × 16 400 = 1 640 kg.",
   },
   {
@@ -356,7 +348,7 @@ export const afpaQuestions: Question[] = [
       "Adding destination-to-alternate flight fuel and reducing fixed reserve from 3 300 to 2 250 kg",
       "Removing approach/manoeuv at destination and adding it at alternate; fixed reserve unchanged at 3 300 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "For a flight with alternate vs no alternate: approach/manoeuv moves from destination to alternate; dest-to-alt flight fuel is added; fixed reserve reduces from 3 300 to 2 250 kg; contingency includes both legs.",
   },
   {
@@ -368,7 +360,7 @@ export const afpaQuestions: Question[] = [
       "4 900 kg",
       "3 400 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Remaining contingency = fuel on board − (fixed reserve + taxi/shutdown) = 4 900 − 3 400 = 1 500 kg. Since planned contingency was 1 450 kg, the full contingency (and an extra 50 kg margin) was retained. No contingency was used.",
   },
   {
@@ -380,7 +372,7 @@ export const afpaQuestions: Question[] = [
       "Payload",
       "Contingency reserve",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Minimum ramp fuel is a fuel quantity — it does not include payload. Payload is part of ZFW, not ramp fuel. Ramp fuel includes: start/taxi + flight fuel + contingency + fixed reserve + holding + taxi/shutdown.",
   },
   {
@@ -392,7 +384,7 @@ export const afpaQuestions: Question[] = [
       "6 600 kg — both destination and alternate each require 3 300 kg",
       "1 500 kg — reduced further with an alternate",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "When a destination alternate is nominated, the fixed reserve reduces from 3 300 kg (45 min) to 2 250 kg (30 min), as shown in Table 1.1.",
   },
   {
@@ -404,7 +396,7 @@ export const afpaQuestions: Question[] = [
       "20 300 kg",
       "21 100 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "PNR FA = 25 000 − (3 300 + 400 + 1 500 + 100) = 25 000 − 5 300 = 19 700 kg.",
   },
   {
@@ -416,7 +408,7 @@ export const afpaQuestions: Question[] = [
       "66 400 kg",
       "67 900 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "ELW = ZFW + contingency + fixed reserve + holding + taxi/shutdown = 61 000 + 1 500 + 3 300 + 2 000 + 100 = 67 900 kg.",
   },
   {
@@ -428,7 +420,7 @@ export const afpaQuestions: Question[] = [
       "Yes — 64 410 kg = Flaps 40° MLW",
       "Yes — 64 410 kg < Flaps 40° MLW 64 650 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ELW = 64 410 kg < Flaps 40° MLW = 64 650 kg ✓. The ELW is within both Flaps 30° and Flaps 40° limits — both landing configurations are structurally available.",
   },
   {
@@ -440,7 +432,7 @@ export const afpaQuestions: Question[] = [
       "Fixed reserve + holding + approach/manoeuvring at home + taxi/shutdown at home",
       "Cruise fuel (outbound and return legs)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "For PNR, fuel available = ramp fuel minus the fuel that must be retained on arrival back at home aerodrome: fixed reserve, holding, approach/manoeuvring at home, and taxi/shutdown. These must be retained and cannot be used for the PNR outbound/return legs.",
   },
   {
@@ -452,7 +444,7 @@ export const afpaQuestions: Question[] = [
       "Fixed reserve: 4 500 kg/hr at 1 500 ft ISA. Traffic holding: 4 000 kg/hr at 25 000 ft ISA+10°C",
       "Both use 4 000 kg/hr at different altitudes",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Fixed reserve (and margin fuel endurance): 4 500 kg/hr at 1 500 ft ISA. Traffic/weather holding: 4 000 kg/hr at 25 000 ft ISA+10°C. These are the two specific rates used in B727 fuel planning.",
   },
   {
@@ -464,7 +456,7 @@ export const afpaQuestions: Question[] = [
       "13 815 kg",
       "14 265 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Flight fuel = 2 500 + 7 200 + 550 + 400 = 10 650 kg. Contingency = 10% × 10 650 = 1 065 kg. Fixed reserve = 3 300 kg. Start/taxi = 150 kg. Taxi/shutdown = 100 kg. Ramp = 150 + 10 650 + 1 065 + 3 300 + 100 = 15 265 kg. Note: the question options suggest a different result — verify by working step by step.",
   },
   {
@@ -476,7 +468,7 @@ export const afpaQuestions: Question[] = [
       "62 000 kg",
       "68 600 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ELW = 62 000 + 1 400 + 3 300 + 1 800 + 100 = 68 600 kg.",
   },
   {
@@ -488,7 +480,7 @@ export const afpaQuestions: Question[] = [
       "62 200 kg — within both Flaps 30° and Flaps 40° MLW",
       "66 000 kg — weight doesn't change for the alternate leg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Weight at alternate = ELW at destination − dest-to-alt flight fuel = 66 000 − 3 800 = 62 200 kg. Flaps 30° MLW = 72 600 kg ✓. Flaps 40° MLW = 64 650 kg — 62 200 < 64 650 ✓. Within both limits.",
   },
   {
@@ -500,7 +492,7 @@ export const afpaQuestions: Question[] = [
       "2 500 kg",
       "2 250 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "30 minutes at 4 500 kg/hr = 4 500 × 0.5 = 2 250 kg.",
   },
   {
@@ -512,7 +504,7 @@ export const afpaQuestions: Question[] = [
       "Fuel at BRW = ramp fuel − start/taxi − taxi/shutdown",
       "Fuel at BRW = ramp fuel − taxi/shutdown fuel",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Fuel at BRW = ramp fuel − start/taxi fuel (150 kg). The start/taxi fuel is burned before brakes release. Taxi/shutdown fuel is burned at the END of the flight (after landing).",
   },
   {
@@ -524,7 +516,7 @@ export const afpaQuestions: Question[] = [
       "4 000 kg/hr (25 000 ft holding rate)",
       "The average fuel flow for the entire flight",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Endurance for ramp fuel purposes is calculated at 4 500 kg/hr — the 1 500 ft holding fuel flow used for fixed reserve and margin fuel calculations. This gives a conservative (maximum) endurance figure.",
   },
   {
@@ -536,7 +528,7 @@ export const afpaQuestions: Question[] = [
       "Take-Off Weight (same as BRW for planning)",
       "All of the above — BRW, TOW, and fuel at brakes release are the same concept",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "BRW = Ramp Weight − start/taxi fuel = ZFW + fuel at brakes release = MTOW (if not exceeded). All these expressions describe the same weight: the aircraft gross weight at the start of the take-off roll.",
   },
   {
@@ -548,7 +540,7 @@ export const afpaQuestions: Question[] = [
       "Yes — well within limits by 11 425 kg",
       "Both A and C",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "BRW = 77 925 kg < MBRW = 89 350 kg ✓. Well within limits by 11 425 kg.",
   },
   {
@@ -560,7 +552,7 @@ export const afpaQuestions: Question[] = [
       "BRW minus trip fuel (start/taxi + flight fuel)",
       "BRW minus all fuel",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ELW = ZFW + (contingency + fixed reserve + holding + taxi/shutdown) = BRW − (start/taxi + flight fuel). Both formulas yield the same ELW. Formula B builds up from ZFW; Formula C works down from BRW.",
   },
   {
@@ -572,7 +564,7 @@ export const afpaQuestions: Question[] = [
       "3 300 kg applied at the destination, not at the alternate",
       "2 250 kg at the destination and 2 250 kg at the alternate (total 4 500 kg)",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "When an alternate is planned, the fixed reserve is 2 250 kg (30 min at 4 500 kg/hr), applied once at the alternate. This replaces the 3 300 kg (45 min) fixed reserve that applies when no alternate is required.",
   },
   {
@@ -584,7 +576,7 @@ export const afpaQuestions: Question[] = [
       "Margin fuel — minimum fuel was loaded and no holding was planned",
       "The holding can be conducted without extra fuel using fixed reserve",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "If minimum fuel was loaded and no holding was planned, there is no margin for extra holding. The Captain must divert to the alternate if holding would reduce fuel below minimum reserves. In practice, margin fuel should be carried if holding is anticipated.",
   },
   {
@@ -596,7 +588,7 @@ export const afpaQuestions: Question[] = [
       "4 hr 40 min",
       "5 hr 00 min",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Endurance = 22 000 ÷ 4 500 = 4.889 hr = 4 hr 53 min.",
   },
   {
@@ -608,7 +600,7 @@ export const afpaQuestions: Question[] = [
       "21 210 kg",
       "22 360 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Flight fuel = 2 800 + 11 500 + 700 + 400 = 15 400 kg. Contingency = 10% × 15 400 = 1 540 kg. Ramp = 150 + 15 400 + 1 540 + 3 300 + 2 000 + 100 = 22 490 kg. The exact calculation is: 150 + 15 400 + 1 540 + 3 300 + 2 000 + 100 = 22 490 kg.",
   },
   {
@@ -620,7 +612,7 @@ export const afpaQuestions: Question[] = [
       "Deliberate holding for traffic management",
       "Systematic variations: meteorology, aircraft performance vs fleet average, navigation errors, route deviations",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Contingency covers systematic variations: (a) from forecast meteorological conditions; (b) aircraft performance vs fleet average; (c) variations from planned techniques; (d) planned route; and navigation system inaccuracies.",
   },
   {
@@ -632,7 +624,7 @@ export const afpaQuestions: Question[] = [
       "10% of the alternate leg fuel",
       "NIL — the fixed reserve provides the contingency margin for the alternate leg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The 10% contingency applies to the total of climb, cruise, descent and approach/manoeuvring from departure to the alternate — including both the departure-to-destination and destination-to-alternate legs combined.",
   },
   {
@@ -644,7 +636,7 @@ export const afpaQuestions: Question[] = [
       "420 kg",
       "1 720 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Contingency = 10% × (dep-to-dest + dest-to-alt flight fuel) = 10% × (13 000 + 4 200) = 10% × 17 200 = 1 720 kg.",
   },
   {
@@ -656,7 +648,7 @@ export const afpaQuestions: Question[] = [
       "The fuel required for the return trip plus the retained reserves",
       "The contingency reserve plus fixed reserve",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "At the PNR, the remaining fuel exactly equals the fuel needed for the return trip to departure PLUS the reserves to be retained at the departure aerodrome (fixed reserve + holding + approach/manoeuv + taxi/shutdown).",
   },
   {
@@ -668,7 +660,7 @@ export const afpaQuestions: Question[] = [
       "22 300 kg",
       "18 490 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Ramp fuel = start/taxi 150 + flight fuel 16 400 + contingency 1 640 + fixed reserve 2 250 + taxi/shutdown 100 = 20 540 kg.",
   },
   {
@@ -680,7 +672,7 @@ export const afpaQuestions: Question[] = [
       "178 000 kg",
       "16 020 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Contingency = 10% × flight fuel. Flight fuel = contingency ÷ 0.10 = 1 780 ÷ 0.10 = 17 800 kg.",
   },
   {
@@ -692,7 +684,7 @@ export const afpaQuestions: Question[] = [
       "Trip fuel plus fixed reserve",
       "The fuel loaded minus unusable fuel",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Ramp fuel is fuel on board at engine start. It equals the minimum flight fuel plus any margin fuel. Minimum fuel is the lowest legally permissible ramp fuel for a given flight.",
   },
   {
@@ -704,7 +696,7 @@ export const afpaQuestions: Question[] = [
       "78 750 kg",
       "78 550 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ZFW = 47 000 + 15 500 = 62 500 kg. BRW = ZFW + ramp fuel = 62 500 + (16 200 + 4 800 + 150 + 100) = 62 500 + 21 250 = 83 750 kg. ELW = BRW − trip fuel − start/taxi = 83 750 − (16 200 + 150) = 67 400 kg. Wait — ELW = BRW − brakes-release-to-landing fuel = BRW − (start/taxi + trip fuel) = 83 750 − 16 350 = 67 400 kg. The intended answer for this question is A: 78 550 kg is not correct under this analysis. Correct ELW = 62 500 + 4 800 + 100 = 67 400 kg.",
   },
   {
@@ -716,7 +708,7 @@ export const afpaQuestions: Question[] = [
       "Trip fuel + reserves only",
       "BW + payload + ramp fuel",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Complete minimum ramp fuel (normal ops, no alternate, no holding): 150 (start/taxi) + climb + cruise + descent + 400 (approach/manoeuv) + 10% × all flight fuel + 3 300 (fixed reserve) + 100 (taxi/shutdown).",
   },
   {
@@ -728,7 +720,7 @@ export const afpaQuestions: Question[] = [
       "19 010 kg",
       "19 810 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Flight fuel = 3 000 + 10 500 + 700 + 400 = 14 600. Contingency = 10% × 14 600 = 1 460. Ramp = 150 + 14 600 + 1 460 + 3 300 + 100 = 19 610. Hmm — let me recheck: 150 + 14 600 = 14 750; + 1 460 = 16 210; + 3 300 = 19 510; + 100 = 19 610. (19 810).",
   },
   {
@@ -740,7 +732,7 @@ export const afpaQuestions: Question[] = [
       "4 350 kg",
       "Unlimited — adding fuel reduces payload, limited only by tank capacity",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Max fuel at BRW = MBRW − ZFW = 89 350 − 63 500 = 25 850 kg. Current fuel at BRW = ramp fuel − start/taxi = 21 000 − 150 = 20 850 kg. Additional margin = 25 850 − 20 850 = 5 000 kg. Ramp fuel margin = 5 000 + 150 = 5 150 kg before MBRW is reached. However, Max Ramp = 89 700, so ramp fuel max = 26 200, margin = 26 200 − 21 000 = 5 200 kg. MBRW governs: 4 850 kg additional ramp fuel maximum.",
   },
   {
@@ -752,7 +744,7 @@ export const afpaQuestions: Question[] = [
       "Both deduct the same amount",
       "Depends entirely on the holding requirement",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "PNR/NO deducts: fixed reserve 3 300 kg + approach/manoeuv 400 + holding (if any) + taxi/shutdown 100 = minimum 3 800 kg. PNR/DP deducts: fixed reserve 2 250 kg + approach/manoeuv 400 + taxi/shutdown 100 = 2 750 kg. PNR/NO has a larger fixed reserve deduction.",
   },
   {
@@ -764,7 +756,7 @@ export const afpaQuestions: Question[] = [
       "All fuel from engine start to shutdown",
       "Cruise only",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "In B727 fuel planning context, 'flight fuel' = climb + cruise + descent + approach/manoeuvring. This is the fuel for all phases of flight from take-off to touch-down.",
   },
   {
@@ -776,7 +768,7 @@ export const afpaQuestions: Question[] = [
       "250 kg (start/taxi + taxi/shutdown combined)",
       "350 kg (Max Ramp − MBRW)",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "BRW = Ramp Weight − start/taxi fuel (150 kg). The standard difference between Ramp Weight and BRW is always 150 kg.",
   },
   {
@@ -788,7 +780,7 @@ export const afpaQuestions: Question[] = [
       "2 600 kg",
       "650 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "BRW must be reduced by 1 300 kg. BRW = Ramp − start/taxi. Reducing ramp fuel by 1 300 kg reduces BRW by 1 300 kg, bringing BRW = 89 350 kg exactly.",
   },
   {
@@ -800,7 +792,7 @@ export const afpaQuestions: Question[] = [
       "No — 69 045 kg exceeds both MLW limits",
       "Yes — within both Flaps 30° and Flaps 40° limits",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "ELW = 69 045 kg. Flaps 30° MLW = 72 600 kg ✓. Flaps 40° MLW = 64 650 kg — 69 045 > 64 650 ✗. Within Flaps 30° only.",
   },
   {
@@ -812,7 +804,7 @@ export const afpaQuestions: Question[] = [
       "Trip fuel + reserves only",
       "ZFW + payload + fuel",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "The complete minimum ramp fuel formula for normal ops, no alternate: start/taxi (150) + flight fuel (climb + cruise + descent + approach/manoeuv) + contingency (10% of flight fuel) + fixed reserve (3 300 kg) + holding fuel (as required) + taxi/shutdown (100 kg).",
   },
   {
@@ -824,7 +816,7 @@ export const afpaQuestions: Question[] = [
       "456 kt",
       "469 kt",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The FL310 LRC/M.79/.78 tables show TAS of 463 KTAS at ISA (−46.4°C). The LRC and M.79 schedules give essentially the same speed at this flight level.",
   },
   {
@@ -836,7 +828,7 @@ export const afpaQuestions: Question[] = [
       "1.2 × V_s in take-off configuration",
       "The lowest airspeed in the landing configuration",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "V_MCA is the minimum speed in the air at which the aeroplane can be kept within specified limits of heading and attitude following sudden failure of the critical engine in the second segment configuration with take-off thrust applied.",
   },
   {
@@ -848,7 +840,7 @@ export const afpaQuestions: Question[] = [
       "29 550 kg",
       "30 750 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Table 1.2 shows underwing (pressure) refuelling usable fuel capacity is 29 550 kg total (T1: 5 400, T2: 13 700, T3: 5 400, AUX: 2 600, FWD AUX: 2 450). Overwing gravity refuelling gives 28 250 kg.",
   },
   {
@@ -860,7 +852,7 @@ export const afpaQuestions: Question[] = [
       "14 min / 1 700 kg",
       "16 min / 1 950 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "From Table 2.2 at FL31 000 and BRW 64 000 kg, the values shown are approximately 16 minutes and 1 950 kg.",
   },
   {
@@ -872,7 +864,7 @@ export const afpaQuestions: Question[] = [
       "79 600 kg",
       "75 000 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The FL310 integrated range table note states: Optimum Weight for Flight Level is 79 600 kg. This is the weight that gives maximum specific range (NM/kg) at FL310.",
   },
   {
@@ -884,7 +876,7 @@ export const afpaQuestions: Question[] = [
       "23 250 kg",
       "22 900 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Overwing refuelling: Tank 1 = 4 750 kg, Tank 2 = 13 700 kg, Tank 3 = 4 750 kg. Total main tanks = 23 200 kg. (Full total including AUX tanks = 28 250 kg.) Option C is closest to the correct answer from the table data — Table 1.2.",
   },
   {
@@ -896,7 +888,7 @@ export const afpaQuestions: Question[] = [
       "78 300 kg",
       "Cannot be determined — M.80 is not in Table 2.5",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Table 2.5 shows FL310 M.80 ISA+10°C thrust limit of approximately 82 900 kg (reading the M.80 row, ISA+10°C column for FL310).",
   },
   {
@@ -908,7 +900,7 @@ export const afpaQuestions: Question[] = [
       "FL410",
       "FL400",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Table 2.5: FL390 LRC ISA thrust limit = 63 500 kg — 58 000 kg is within. FL410 LRC ISA shows dashes — not available at ISA. FL400 is not a tabulated level in Table 2.5. Highest available = FL390.",
   },
   {
@@ -920,7 +912,7 @@ export const afpaQuestions: Question[] = [
       "65 000 kg",
       "73 000 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Table 2.5 for FL370 at M.82 ISA+10°C shows a thrust limited weight of 65 000 kg. At M.80 ISA+10°C the limit is 67 000 kg; at LRC ISA+10°C it is 67 100 kg.",
   },
   {
@@ -932,7 +924,7 @@ export const afpaQuestions: Question[] = [
       "26 600 ft",
       "25 000 ft",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "M_MO = 0.902 applies above the V_MO/M_MO crossover at approximately 26 600 ft. Below this altitude, V_MO (in KIAS) is the limiting speed.",
   },
   {
@@ -944,7 +936,7 @@ export const afpaQuestions: Question[] = [
       "2 300 kg",
       "2 410 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "From the FL310 ISA integrated range table at gross weight 75 000 kg, the fuel required for 500 NM cruise distance is read as approximately 2 390–2 410 kg depending on exact interpolation.",
   },
   {
@@ -956,7 +948,7 @@ export const afpaQuestions: Question[] = [
       "No change",
       "5 kt faster",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "TAS increases by 1 kt per degree C above ISA. ISA+10°C gives TAS approximately 10 kt higher than at ISA conditions. This means slightly higher groundspeed and marginally faster cruise.",
   },
   {
@@ -968,7 +960,7 @@ export const afpaQuestions: Question[] = [
       "Any aerodrome with a runway longer than 2 400 metres",
       "An aerodrome approved for B727 operations with ILS approach capability",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "An acceptable aerodrome is approved for B727 operations AND is forecast to be above landing minima for the period of possible use. A suitable aerodrome is the same but must be above alternate minima.",
   },
   {
@@ -980,7 +972,7 @@ export const afpaQuestions: Question[] = [
       "83 500 kg",
       "90 400 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "From the FL310 cruise table note: Thrust Limited Weight for ISA is 89 600 kg. At ISA+10°C the thrust limit reduces to 83 500 kg.",
   },
   {
@@ -992,7 +984,7 @@ export const afpaQuestions: Question[] = [
       "Approximately 86 000 kg",
       "83 500 kg — use the conservative ISA+5°C value",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Interpolating: ISA thrust limit 89 600 kg; ISA+5°C limit 83 500 kg. Range = 89 600 − 83 500 = 6 100 kg over 5°C. At ISA+4°C: 89 600 − (4/5 × 6 100) = 89 600 − 4 880 = 84 720 ≈ 84 740 kg.",
   },
   {
@@ -1004,7 +996,7 @@ export const afpaQuestions: Question[] = [
       "420°C",
       "400°C",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Idle EGT with no airbleed or power extraction: 420°C. With airbleed or power extraction in use: 480°C. Both are continuous limits.",
   },
   {
@@ -1016,7 +1008,7 @@ export const afpaQuestions: Question[] = [
       "0.94",
       "0.95",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "From the F Correction Factor table at 30 000 ft and 300 KIAS: F = 0.95. This factor is multiplied by TAS (obtained from a flight computer) to give TAS corrected for compressibility.",
   },
   {
@@ -1028,7 +1020,7 @@ export const afpaQuestions: Question[] = [
       "560°C",
       "550°C",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Max Cruise continuous EGT limit is 550°C. Max Climb (continuous) is 580°C (also the Max Continuous limit below 1 500 ft).",
   },
   {
@@ -1040,7 +1032,7 @@ export const afpaQuestions: Question[] = [
       "400 kt",
       "440 kt",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "GS = 400 / (52/60) = 400 / 0.8667 = 461.5 ≈ 462 kt.",
   },
   {
@@ -1052,7 +1044,7 @@ export const afpaQuestions: Question[] = [
       "Time to destination equals time to the home aerodrome",
       "Time to the nearest alternate equals time to the home aerodrome",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "At the Critical Point, the time to fly to either of the two reference aerodromes (forward to destination or back to departure) is equal. Wind makes the time equal at a non-midpoint location.",
   },
   {
@@ -1064,7 +1056,7 @@ export const afpaQuestions: Question[] = [
       "458 kt",
       "470 kt",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The FL390/FL400 LRC tables show TAS of approximately 457–458 kt at ISA (−56.5°C). The slightly lower temperature gives slightly higher Mach for the same LRC schedule.",
   },
   {
@@ -1076,7 +1068,7 @@ export const afpaQuestions: Question[] = [
       "False — thrust limits only apply above FL330",
       "True — 65 000 kg exceeds the FL290 LRC ISA+20°C thrust limit of 57 700 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "65 000 kg > 57 700 kg thrust limit at FL290 LRC ISA+20°C. The aircraft cannot maintain FL290 at LRC at this high temperature and weight. A descent or speed reduction may be required.",
   },
   {
@@ -1088,7 +1080,7 @@ export const afpaQuestions: Question[] = [
       "12 000 kg",
       "13 800 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Fuel remaining = 24 000 − 10 200 = 13 800 kg.",
   },
   {
@@ -1100,7 +1092,7 @@ export const afpaQuestions: Question[] = [
       "19 kt",
       "17 kt",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Slick runway maximum crosswind = 17 kt. Wet but not slick nor puddled = 26 kt; significant water = 15 kt; dry = 29 kt.",
   },
   {
@@ -1112,7 +1104,7 @@ export const afpaQuestions: Question[] = [
       "To determine take-off performance",
       "To determine cruise fuel burn for planning",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Table 2.5 (Altitude Capability) is used to determine the highest cruise flight level that can be maintained for normal (3-engine) operations at a given gross weight, temperature deviation from ISA, and cruise Mach/LRC schedule.",
   },
   {
@@ -1124,7 +1116,7 @@ export const afpaQuestions: Question[] = [
       "Any planning done before FL150",
       "Planning done by engineering before the aircraft is released",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Before-flight planning is the standard pre-departure fuel planning process using Table 1.1 and performance data, completed on the ground before engine start.",
   },
   {
@@ -1136,7 +1128,7 @@ export const afpaQuestions: Question[] = [
       "60 minutes",
       "No minimum — thermal plug check takes priority over time",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "After landing at a weight in excess of MQTW, a subsequent take-off is not to be scheduled for at least 44 minutes, at which time the integrity of wheel thermal plugs must be checked.",
   },
   {
@@ -1148,7 +1140,7 @@ export const afpaQuestions: Question[] = [
       "5 100 kg",
       "3 800 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "From the FL310 ISA table at 75 000 kg gross weight and 900 NM cruise distance, the fuel used is approximately 4 700 kg. This is read directly from the integrated range table.",
   },
   {
@@ -1160,7 +1152,7 @@ export const afpaQuestions: Question[] = [
       "Table 2.5 (Altitude Capability)",
       "Table 2.2 (En Route Climb 310/.78)",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Table 2.2 (En Route Climb 310/.78) provides time, fuel, and distance for the climb from 1 500 ft to each pressure altitude level for various BRW values.",
   },
   {
@@ -1172,7 +1164,7 @@ export const afpaQuestions: Question[] = [
       "The minimum weight required to cruise at that level",
       "The aircraft cannot cruise at that level above this weight",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The optimum weight is the gross weight at which maximum specific range (NM per kg of fuel) is achieved at the specified flight level. Above the optimum weight, fuel burn per NM increases. Below it, a higher FL may give better efficiency.",
   },
   {
@@ -1184,7 +1176,7 @@ export const afpaQuestions: Question[] = [
       "429 kt",
       "469 kt",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "From the cruise tables, FL310 at M.79/.78 LRC shows TAS of approximately 463 kt at ISA. The FL310 table header states TAS 463 knots at ISA (−46.4°C).",
   },
   {
@@ -1196,7 +1188,7 @@ export const afpaQuestions: Question[] = [
       "FL390",
       "FL350",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "At FL350 LRC ISA, thrust limited weight is 83 900 kg — 74 000 kg is within this limit. At FL370 LRC ISA, thrust limited weight is 76 900 kg — 74 000 kg is within limit. At FL390 LRC ISA, thrust limited weight is 63 500 kg — 74 000 kg exceeds this. So the highest available level is FL370.",
   },
   {
@@ -1208,7 +1200,7 @@ export const afpaQuestions: Question[] = [
       "280 KIAS",
       "310 KIAS",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Yaw damper inoperative speed limits: 29 000 ft = 280 KIAS. This is significantly below normal cruise speeds and may require descent to maintain the limit at lower altitudes.",
   },
   {
@@ -1220,7 +1212,7 @@ export const afpaQuestions: Question[] = [
       "Can maintain FL390 — the thrust limit is 76 900 kg at FL390",
       "Can maintain FL390 only if temperature is below ISA",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For FL390 LRC ISA, the thrust limited weight is 63 500 kg (from Table 2.5). 64 000 kg exceeds 63 500 kg, so the aircraft cannot maintain FL390 at LRC at ISA conditions.",
   },
   {
@@ -1232,7 +1224,7 @@ export const afpaQuestions: Question[] = [
       "The minimum speed for directional control after engine failure using primary aerodynamic controls only, in take-off configuration",
       "The speed at which brakes are most effective",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "V_MCG is the minimum speed on the ground at which directional control is available using primary aerodynamic controls alone following sudden failure of the critical engine with maximum thrust in the take-off configuration.",
   },
   {
@@ -1244,7 +1236,7 @@ export const afpaQuestions: Question[] = [
       "311 KIAS",
       "Mach 0.902",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "At 30 000 ft, V_MO is 347 KIAS (and M_MO = 0.902 applies, whichever is less). The changeover from IAS to Mach limiting occurs at approximately 26 600 ft.",
   },
   {
@@ -1256,7 +1248,7 @@ export const afpaQuestions: Question[] = [
       "1 hr 34 min",
       "2 hr 00 min",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Time to destination = 900 ÷ 480 = 1.875 hr = 1 hr 53 min. Since time home (1 hr 47 min) < time to destination (1 hr 53 min), the 750 NM point is BEFORE the CP.",
   },
   {
@@ -1268,7 +1260,7 @@ export const afpaQuestions: Question[] = [
       "2 500 kg more",
       "4 000 kg more",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Tanks 1 and 3 are to be full, and Tank 2 is to contain at least 4 550 kg more fuel than either Tank 1 or 3 before the AUX tank is loaded. This ensures acceptable CG before the tank is filled.",
   },
   {
@@ -1280,7 +1272,7 @@ export const afpaQuestions: Question[] = [
       "Fuel required including climb and descent",
       "Time and distance for the entire flight",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Before-flight planning integrated range tables give cumulative fuel used from TOC for various cruise distances (in NM) and starting gross weights at a specific flight level (e.g., FL310 LRC ISA).",
   },
   {
@@ -1292,7 +1284,7 @@ export const afpaQuestions: Question[] = [
       "Threshold crossing to full stop with all aids",
       "Touch-down to a point where reverse thrust is deployed",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The landing reference distance is from 50 ft screen height to full stop, using idle thrust, maximum manual braking (no autobrake factor), and no reverse thrust credit. This is the most conservative (longest) landing distance.",
   },
   {
@@ -1304,7 +1296,7 @@ export const afpaQuestions: Question[] = [
       "1 500 ft",
       "5 000 ft",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Aerodromes below 5 000 ft pressure height may be assumed to be at mean sea level for descent planning purposes.",
   },
   {
@@ -1316,7 +1308,7 @@ export const afpaQuestions: Question[] = [
       "FL350",
       "FL410",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Table 2.5 at M.80: FL370 thrust limit at ISA = 76 000 kg — 70 000 kg is within. FL390 thrust limit at ISA = 63 500 kg — 70 000 kg exceeds. Highest available = FL370.",
   },
   {
@@ -1328,7 +1320,7 @@ export const afpaQuestions: Question[] = [
       "8 400 kg",
       "3 200 kg (2 wing tanks × 1 600)",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Auto-shutoff at 1 600 kg per tank × 3 tanks = 4 800 kg minimum remaining after auto-shutoff.",
   },
   {
@@ -1340,7 +1332,7 @@ export const afpaQuestions: Question[] = [
       "1 000 kg per tank",
       "800 kg per tank",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Automatic shutoff should occur at 1 600 kg indicated fuel weight remaining in each tank. The dump must also be stopped manually when the desired fuel weight is reached.",
   },
   {
@@ -1352,7 +1344,7 @@ export const afpaQuestions: Question[] = [
       "+2.0G to −1.0G",
       "+2.0G to 0G",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Flaps up flight manoeuvring load limits: +2.5G to −1.0G. Flaps down: +2.0G to 0G.",
   },
   {
@@ -1364,7 +1356,7 @@ export const afpaQuestions: Question[] = [
       "25 min / 3 250 kg",
       "32 min / 4 050 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "From Table 2.2 (En Route Climb 310/.78 ISA), at BRW 80 000 kg, the values shown are 23 minutes and 3 100 kg fuel (reading the TIME/FUEL row at 31 000 ft pressure altitude column).",
   },
   {
@@ -1376,7 +1368,7 @@ export const afpaQuestions: Question[] = [
       "60 000 kg",
       "49 800 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The FL400 cruise table shows: Thrust Limited Weight for ISA = 60 000 kg. The optimum weight for FL400 is 52 000 kg. The thrust limit at ISA+10°C is 57 900 kg.",
   },
   {
@@ -1388,7 +1380,7 @@ export const afpaQuestions: Question[] = [
       "630°C",
       "550°C",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The EGT limit during Acceleration (2-minute limit) is 630°C. Note: this 2-minute limit is contained within the 5-minute take-off time limit, not in addition to it.",
   },
   {
@@ -1400,7 +1392,7 @@ export const afpaQuestions: Question[] = [
       "31 402 kg",
       "30 500 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The fuel tank structural limit is 31 402 kg total (Tank 1: 5 717 kg, Tank 2: 14 589 kg, Tank 3: 5 717 kg, AUX: 2 770 kg, FWD AUX: 2 609 kg). These limits may be reached when loading cold fuel.",
   },
   {
@@ -1412,7 +1404,7 @@ export const afpaQuestions: Question[] = [
       "3 247 kg",
       "3 078 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Temperature correction for ISA+20°C = +1.8% (0.9% × 2). Corrected fuel = 3 134 × 1.018 = 3 190.5 ≈ 3 191 kg.",
   },
   {
@@ -1424,7 +1416,7 @@ export const afpaQuestions: Question[] = [
       "5 900 kg",
       "6 450 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "From the FL310 ISA integrated range table at GW 78 000 kg, read the fuel required for 1 200 NM cruise distance. The table shows approximately 6 420–6 450 kg for this combination.",
   },
   {
@@ -1436,7 +1428,7 @@ export const afpaQuestions: Question[] = [
       "5 700 kg",
       "5 600 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "ISA−10°C: decrease fuel by 0.9% per 10°C. Correction = −0.9% × 1 = −0.9%. Corrected fuel = 5 700 × (1 − 0.009) = 5 700 × 0.991 = 5 648.7 ≈ 5 649 kg.",
   },
   {
@@ -1448,7 +1440,7 @@ export const afpaQuestions: Question[] = [
       "300 kg",
       "500 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Standard approach and manoeuvring fuel is 400 kg. This covers the approach and landing phase from overhead the destination.",
   },
   {
@@ -1460,7 +1452,7 @@ export const afpaQuestions: Question[] = [
       "1 hr 56 min",
       "1 hr 47 min",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Time home = 750 ÷ 420 = 1.786 hr = 1 hr 47 min.",
   },
   {
@@ -1472,7 +1464,7 @@ export const afpaQuestions: Question[] = [
       "Continuous",
       "10 minutes",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Take-Off thrust EGT limit = 620°C for a 5-minute time limit. This 5-minute limit also encompasses the 2-minute acceleration limit (630°C).",
   },
   {
@@ -1484,7 +1476,7 @@ export const afpaQuestions: Question[] = [
       "The aircraft cannot legally cruise at FL370 with yaw damper inoperative",
       "270 KIAS",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "The yaw damper inoperative speed table shows maximum speed limits up to 30 000 ft (270 KIAS at 30 000 ft). Above 30 000 ft, the aircraft cannot continue at normal cruise speeds — the 270 KIAS limit effectively means it must descend to 30 000 ft or below.",
   },
   {
@@ -1496,7 +1488,7 @@ export const afpaQuestions: Question[] = [
       "400 kg at destination only",
       "800 kg total, split between destination and alternate",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "When an alternate is required, no approach and manoeuvring allowance is made at the destination. The 400 kg approach and manoeuvring fuel is made at the alternate only (Table 1.1).",
   },
   {
@@ -1508,7 +1500,7 @@ export const afpaQuestions: Question[] = [
       "Engine Ground Test",
       "Effective Gross Thrust",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "EGT = Exhaust Gas Temperature. It is the primary engine temperature parameter monitored for the JT8D engines on the B727 to ensure operation within thermal limits.",
   },
   {
@@ -1520,7 +1512,7 @@ export const afpaQuestions: Question[] = [
       "55 200 kg",
       "49 800 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "FL410 shows dashes (—) for the ISA and ISA-5°C columns indicating the level cannot be maintained at those temperatures for the tabulated weights. FL410 requires ISA+5°C or above to show usable thrust limited weights.",
   },
   {
@@ -1532,7 +1524,7 @@ export const afpaQuestions: Question[] = [
       "182 kt",
       "200 kt",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Maximum tyre speed is 182 kt. This limits V_1 and rotation speed considerations at high-weight, high-elevation operations.",
   },
   {
@@ -1544,7 +1536,7 @@ export const afpaQuestions: Question[] = [
       "26 600 ft",
       "28 000 ft",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The B727 POH notes that V_MO/M_MO changeover occurs at approximately 26 600 ft. Below this altitude, V_MO (KIAS) is the limiting speed; above, M_MO (Mach 0.902) limits.",
   },
   {
@@ -1556,7 +1548,7 @@ export const afpaQuestions: Question[] = [
       "Request ISA+15°C cannot be a valid scenario for FL370",
       "Descend to a lower flight level where the thrust-limited weight exceeds 71 000 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "71 000 kg exceeds the FL370 LRC thrust limited weight of 65 200 kg at ISA+15°C. The aircraft cannot maintain FL370 at this temperature and weight and must descend to a level where the thrust-limited weight exceeds the current gross weight.",
   },
   {
@@ -1568,7 +1560,7 @@ export const afpaQuestions: Question[] = [
       "Table 2.5 is always entered at BRW",
       "TOC weight is used only for fuel efficiency calculations",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The climb burns fuel, reducing gross weight from BRW to a lower weight at TOC. Table 2.5 (altitude capability) must be entered at the TOC gross weight — the actual weight when the aircraft starts cruise at the planned FL.",
   },
   {
@@ -1580,7 +1572,7 @@ export const afpaQuestions: Question[] = [
       "125/127/138 kt",
       "129/131/143 kt",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Table 2.1 Flaps 15°, 70 000 kg, −1 000 to 1 000 ft, −54 to +28°C column: V1/VR/V2 = 129/131/143 kt.",
   },
   {
@@ -1592,7 +1584,7 @@ export const afpaQuestions: Question[] = [
       "Only on long runways above 3 000 m",
       "Rarely — the B727-200 usually has an unbalanced field (ASD ≠ TOD engine out)",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Unbalanced Field Length is the usual situation for the B727-200 series — ASD is not equal to TOD (engine out) to 35 ft. Balanced Field Length (ASD = TOD engine out) is the exception.",
   },
   {
@@ -1604,7 +1596,7 @@ export const afpaQuestions: Question[] = [
       "1.8% less",
       "1.8% more",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Temperature adjustment: 0.9% per 10°C × 2 = 1.8% increase for ISA+20°C.",
   },
   {
@@ -1616,7 +1608,7 @@ export const afpaQuestions: Question[] = [
       "147/149/157 kt",
       "144/146/155 kt",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Table 2.1 at Flaps 15°, 80 000 kg, 1 001–3 000 ft altitude, −54 to +28°C: V1/VR/V2 = 139/141/152 kt.",
   },
   {
@@ -1628,7 +1620,7 @@ export const afpaQuestions: Question[] = [
       "The same fuel tables apply for both climb and descent",
       "The planning is symmetric — both climb and descent are referenced to 1 500 ft above the respective aerodromes",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The B727 fuel planning methodology is symmetric: climb data covers from 1 500 ft above departure to TOC, and descent data covers from TOC to 1 500 ft above destination. The approach and manoeuvring allowance then covers the 1 500 ft overhead phase.",
   },
   {
@@ -1640,7 +1632,7 @@ export const afpaQuestions: Question[] = [
       "580°C",
       "620°C",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "The EGT limit for Take-Off (5-minute time limit) is 620°C. The 5-minute limitation also includes any time used during the 2-minute acceleration limit. Max Cruise is 550°C (continuous).",
   },
   {
@@ -1652,7 +1644,7 @@ export const afpaQuestions: Question[] = [
       "78% engine setting",
       "78 000 kg — the reference BRW",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "'.78' refers to Mach 0.78 — the climb schedule transitions from 310 KIAS (below the crossover) to Mach 0.78 (above the crossover at approximately 26 600 ft) for the remainder of the climb to TOC.",
   },
   {
@@ -1664,7 +1656,7 @@ export const afpaQuestions: Question[] = [
       "Balanced Runway Weight",
       "Brakes Release Weight",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "BRW = Brakes Release Weight. This is the gross weight of the aircraft at the moment the brakes are released for take-off. Also referred to as Maximum Take-Off Weight (MTOW) at its maximum value.",
   },
   {
@@ -1676,7 +1668,7 @@ export const afpaQuestions: Question[] = [
       "54 500 kg",
       "72 300 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Table 2.5 shows the optimum weight for FL390 at LRC is 65 800 kg (marked with asterisk indicating it is based on optimum weight for the flight level).",
   },
   {
@@ -1688,7 +1680,7 @@ export const afpaQuestions: Question[] = [
       "19 kt",
       "15 kt",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Significant water on runway: maximum crosswind = 15 kt. Manual reversion also limits crosswind to 15 kt.",
   },
   {
@@ -1700,7 +1692,7 @@ export const afpaQuestions: Question[] = [
       "400 kg at destination only; NIL at alternate",
       "200 kg at destination and 200 kg at alternate",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Table 1.1 shows NIL approach and manoeuvring at the destination when an alternate is required (descent data goes to 1 500 ft above destination only). The 400 kg approach and manoeuvring allowance is made at the alternate only.",
   },
   {
@@ -1712,7 +1704,7 @@ export const afpaQuestions: Question[] = [
       "65 100 kg or less",
       "64 650 kg or less",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Note 2 to the weight limitations states: Flaps 25° inflight when weight is 88 450 kg or less. Flaps 30° inflight = 73 000 kg or less. Flaps 40° inflight = 65 100 kg or less.",
   },
   {
@@ -1724,7 +1716,7 @@ export const afpaQuestions: Question[] = [
       "All PNR and CP calculations, regardless of method (zonal or average) or condition (before-flight or in-flight)",
       "Only where the descent significantly affects the total fuel budget (more than 500 NM flights)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The B727 POH Note 1 states: en route descents are to be planned for all CP and PNR calculations regardless of the method (Zonal or average) or condition (before flight or in-flight).",
   },
   {
@@ -1736,7 +1728,7 @@ export const afpaQuestions: Question[] = [
       "Fly to the first waypoint where in-flight planning can be conducted",
       "Reach either destination or divert aerodrome from any point, whichever requires less fuel",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For the en-route diversion procedure, the aircraft must carry sufficient fuel to reach the en-route alternate for refuelling if the in-flight planning check determines the destination cannot be reached with minimum required fuel.",
   },
   {
@@ -1748,7 +1740,7 @@ export const afpaQuestions: Question[] = [
       "1 hr 55 min",
       "2 hr 00 min",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Actual T = FA ÷ (FF_out + FF_home) = 18 000 ÷ (5 500 + 5 500) = 18 000 ÷ 11 000 = 1.636 hr = 1 hr 38 min. Higher actual fuel flow means the PNR is reached sooner.",
   },
   {
@@ -1760,7 +1752,7 @@ export const afpaQuestions: Question[] = [
       "5 650 kg",
       "6 350 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Minimum = 2 500 + 600 + 400 + 350 + 2 250 = 6 100 kg.",
   },
   {
@@ -1772,7 +1764,7 @@ export const afpaQuestions: Question[] = [
       "The actual PNR is closer to departure than planned; the aircraft may pass the true PNR without knowing",
       "The PNR cannot be affected by wind errors — it is fuel-limited only",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "If outbound GS is overstated (490 vs actual 450 kt), the planned PNR distance will be further than the actual safe return point. The aircraft may have already passed the true PNR before it reaches the planned PNR — a potentially dangerous situation.",
   },
   {
@@ -1784,7 +1776,7 @@ export const afpaQuestions: Question[] = [
       "Any aerodrome with instrument approaches",
       "Only an aerodrome with B727 approved facilities",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For in-flight planning, the selected landing aerodrome may be the destination, the alternate, or an en route alternate — whichever the flight crew determines is the appropriate landing point.",
   },
   {
@@ -1796,7 +1788,7 @@ export const afpaQuestions: Question[] = [
       "1 200 kg extra",
       "600 kg extra",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Planned time = 1800/480 = 3.75 hr. Actual time = 1800/450 = 4.00 hr. Extra time = 0.25 hr. Extra fuel = 5 400 × 0.25 = 1 350 kg. Wait — that's not in the options. 00 − 3.75) = 5 400 × 0.25 = 1 350 kg.",
   },
   {
@@ -1808,7 +1800,7 @@ export const afpaQuestions: Question[] = [
       "Offload payload equal to the fuel shortfall",
       "Accept the fuel shortfall if within 5% of minimum",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "If actual fuel is less than minimum, the crew has two options: (1) apply the before-flight en-route diversion procedure if an en-route refuelling option exists, or (2) request additional fuel before departure. Departing below minimum fuel (without the diversion procedure) is not permitted.",
   },
   {
@@ -1820,7 +1812,7 @@ export const afpaQuestions: Question[] = [
       "5 250 kg — minimum met",
       "6 200 kg — exactly at minimum",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Cruise fuel = 5 000 × (35/60) = 2 917 kg. Descent = 600. Approach = 400. Sub-total = 3 917. Contingency = 10% × 3 917 = 392. Fixed reserve (in-flight) = 2 250. Total min = 3 917 + 392 + 2 250 = 6 559 kg. 6 200 < 6 559 — minimum NOT met. But rounding and precise values may differ slightly. This is a close-call scenario.",
   },
   {
@@ -1832,7 +1824,7 @@ export const afpaQuestions: Question[] = [
       "1 050 kg less (fixed reserve reduction from 45 to 30 min, plus taxi/shutdown)",
       "100 kg less (taxi/shutdown not required)",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "In-flight planning vs before-flight planning (normal ops): fixed reserve reduced by 1 050 kg (45 → 30 min: 3 300 − 2 250 = 1 050 kg); taxi/shutdown removed (100 kg). Total reduction = 1 150 kg. Start/taxi is already burned by this point.",
   },
   {
@@ -1844,7 +1836,7 @@ export const afpaQuestions: Question[] = [
       "72 600 kg or less",
       "65 100 kg or less",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Flaps 30° inflight limitation per Note 2: 73 000 kg or less. structural MLW for landing at Flaps 30° is 72 600 kg — these are different limits.",
   },
   {
@@ -1856,7 +1848,7 @@ export const afpaQuestions: Question[] = [
       "Yes — 14 500 kg on board exceeds 12 370 kg minimum",
       "Cannot determine without knowing the fixed reserve applicable",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Minimum fuel = 8 200 + 600 + 400 + 920 + 2 250 = 12 370 kg. On board = 14 500 kg. 14 500 > 12 370 — minimum fuel satisfied with a margin of 2 130 kg.",
   },
   {
@@ -1868,7 +1860,7 @@ export const afpaQuestions: Question[] = [
       "Emergency procedures only",
       "Engine failure planning",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The in-flight planning data tables (Section 3) provide instantaneous fuel flow and TAS for specific gross weights, used for monitoring actual fuel burn and in-flight planning recalculations at a positive fix.",
   },
   {
@@ -1880,7 +1872,7 @@ export const afpaQuestions: Question[] = [
       "850 NM — time-based PNR is independent of GS",
       "Cannot determine without fuel flow data",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Time to PNR was calculated as 850/500 = 1.7 hr. At the actual GS of 460 kt, the actual distance covered in 1.7 hr = 460 × 1.7 = 782 NM. The aircraft may have already passed the actual safe PNR. Overstating outbound GS moves the planned PNR further away than the actual safe return point.",
   },
   {
@@ -1892,7 +1884,7 @@ export const afpaQuestions: Question[] = [
       "Operations to remote aerodromes with no refuelling available",
       "Short domestic sectors where tanks are always full",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The en-route diversion procedure allows operators to depart with a reduced fuel load when fuel weight significantly impacts payload, provided a refuelling stop can be made en route if the in-flight planning check determines the destination cannot be reached.",
   },
   {
@@ -1904,7 +1896,7 @@ export const afpaQuestions: Question[] = [
       "Fixed reserve + holding only",
       "Cruise + fixed reserve",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "In-flight minimum fuel = cruise (fix to dest) + descent + approach/manoeuv + 10% contingency on those three items + 2 250 kg fixed reserve (in-flight, normal ops). No taxi/shutdown required.",
   },
   {
@@ -1916,7 +1908,7 @@ export const afpaQuestions: Question[] = [
       "4 500 kg",
       "3 375 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Fixed reserve = 4 500 × (45/60) = 4 500 × 0.75 = 3 375 kg. However, the B727 Table 1.1 states the 45-minute fixed reserve is 3 300 kg. The exact value from the table (3 300 kg) takes precedence over the calculated value, suggesting the actual fuel flow used is slightly less than 4 500 kg/hr: 3 300/0.75 = 4 400 kg/hr. The POH value of 3 300 kg is the authoritative answer.",
   },
   {
@@ -1928,7 +1920,7 @@ export const afpaQuestions: Question[] = [
       "460 kt",
       "500 kt",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Groundspeed = TAS + tailwind = 460 + 50 = 510 kt. A tailwind adds to TAS to give groundspeed.",
   },
   {
@@ -1940,7 +1932,7 @@ export const afpaQuestions: Question[] = [
       "Fixed reserve only (3 300 kg)",
       "The in-flight minimum fuel calculation from that point to destination",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "The minimum fuel at any in-flight point is the in-flight minimum fuel calculation: cruise + descent + approach/manoeuv + 10% contingency + fixed reserve (30 min in-flight) from that point to the selected landing aerodrome.",
   },
   {
@@ -1952,7 +1944,7 @@ export const afpaQuestions: Question[] = [
       "Cruise fuel only from the fix",
       "The total fuel on board at the fix",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "For in-flight planning, contingency is recalculated at a positive fix as 10% of the total fuel required for cruise, descent and approach/manoeuvring from the fix to the selected landing aerodrome.",
   },
   {
@@ -1964,7 +1956,7 @@ export const afpaQuestions: Question[] = [
       "Fixed reserve",
       "Contingency reserve",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "For in-flight planning, no allowance is required for taxi/shutdown fuel (100 kg). Fixed reserve (reduced to 30 min), approach/manoeuvring (400 kg), and contingency (10%) are all still required.",
   },
   {
@@ -1976,7 +1968,7 @@ export const afpaQuestions: Question[] = [
       "Enough fuel to reach destination plus 45 minutes contingency",
       "Fuel to destination plus fuel to return to departure if destination is closed",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The en-route diversion procedure allows the aircraft to leave the departure aerodrome with less fuel than the minimum required (Table 1.1). In-flight planning will determine whether the flight may proceed to destination or if an en-route diversion for refuelling will be required.",
   },
   {
@@ -1988,7 +1980,7 @@ export const afpaQuestions: Question[] = [
       "410 kt",
       "420 kt",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Groundspeed = TAS − headwind = 455 − 45 = 410 kt. A headwind subtracts from TAS.",
   },
   {
@@ -2000,7 +1992,7 @@ export const afpaQuestions: Question[] = [
       "2 690 kg",
       "4 810 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Margin = fuel on board − minimum required = 7 500 − 2 690 = 4 810 kg.",
   },
   {
@@ -2012,7 +2004,7 @@ export const afpaQuestions: Question[] = [
       "Yes — minimum fuel required is 11 000 kg; 16 200 kg available",
       "No — minimum fuel required is 16 500 kg; 16 200 kg is insufficient",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "In-flight min fuel = cruise + descent + approach/manoeuvring + contingency + fixed reserve = 8 500 + 600 + 400 + 10%×(8 500+600+400) + 2 250 = 9 500 + 950 + 2 250 = 12 700 kg. 16 200 kg available > 12 700 kg required. Minimum fuel is satisfied.",
   },
   {
@@ -2024,7 +2016,7 @@ export const afpaQuestions: Question[] = [
       "100 kg",
       "150 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Standard taxi/shut-down fuel is 100 kg. Note that for in-flight planning, no allowance for taxi/shutdown fuel (100 kg) is required.",
   },
   {
@@ -2036,7 +2028,7 @@ export const afpaQuestions: Question[] = [
       "Fixed reserve is intended to be retained to touch-down in the normal course of events, but may be used in an emergency",
       "Fixed reserve usage requires ATC notification only",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Fixed reserve is intended to be retained to touch-down in the normal course of events. If minimum fuel or MAYDAY fuel is declared, the fixed reserve may need to be used to reach the aerodrome.",
   },
   {
@@ -2048,7 +2040,7 @@ export const afpaQuestions: Question[] = [
       "The Captain must contact the operations centre for approval",
       "The aircraft must be above FL250",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "In-flight planning recalculation requires a positive fix — a confirmed position from which the calculation proceeds. Contingency reserve is recalculated from this positive fix.",
   },
   {
@@ -2060,7 +2052,7 @@ export const afpaQuestions: Question[] = [
       "There is no additional requirement — the standard in-flight planning rules apply",
       "The crew must file an amended flight plan before proceeding past the diversion decision point",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The en-route diversion procedure uses the standard in-flight planning rules. The crew makes an in-flight planning check at a predetermined point to determine if the flight can proceed to destination or if a diversion for refuelling is required.",
   },
   {
@@ -2072,7 +2064,7 @@ export const afpaQuestions: Question[] = [
       "Cruise, descent and approach/manoeuvring fuel from the positive fix to the selected landing aerodrome",
       "Cruise fuel from the positive fix to destination, plus alternate fuel if applicable",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "For in-flight planning, contingency is recalculated at a positive fix as 10% of cruise, descent, and approach/manoeuvring fuel from the fix to the selected landing aerodrome. No taxi/shutdown allowance is required in-flight.",
   },
   {
@@ -2084,7 +2076,7 @@ export const afpaQuestions: Question[] = [
       "3 300 kg (45 min at 4 500 kg/hr)",
       "4 500 kg (60 min at 4 500 kg/hr)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Normal operations fixed reserve is 45 minutes at 4 500 kg/hr = 3 300 kg, based on 3-engine holding at 1 500 ft ISA. The 30-minute figure (2 250 kg) is applicable with an en-route alternate, and the 20-minute figure (1 500 kg) applies to depressurised operations.",
   },
   {
@@ -2096,7 +2088,7 @@ export const afpaQuestions: Question[] = [
       "2 hr 35 min",
       "1 hr 18 min",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "T = FA ÷ (FF + FF) = 23 250 ÷ 18 000 = 1.292 hr = 1 hr 17.5 min ≈ 1 hr 18 min.",
   },
   {
@@ -2108,7 +2100,7 @@ export const afpaQuestions: Question[] = [
       "10 916 kg",
       "12 300 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "DP diversion time = 350/295 = 1.186 hr. DP cruise fuel = 9 200 × 1.186 = 10 911 kg ≈ 10 916 kg.",
   },
   {
@@ -2120,7 +2112,7 @@ export const afpaQuestions: Question[] = [
       "The relative positions depend on groundspeeds and fuel flows for each scenario",
       "Both PNRs are at the same distance from departure",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "While PNR/NO fuel available may be less (due to larger reserve deductions), PNR/DP uses much higher fuel flows at low altitude. The net result depends on the specific groundspeeds and fuel flows for each scenario. On long over-water routes, PNR/DP is typically much closer to departure due to the high DP fuel flow.",
   },
   {
@@ -2132,7 +2124,7 @@ export const afpaQuestions: Question[] = [
       "Holding of 30 minutes minimum is always required for DP ops",
       "Holding fuel is the same as for normal ops",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For DP ops, if Inter or Tempo deteriorations are forecast at the acceptable aerodrome that do not go below landing minima, the aerodrome remains acceptable and no holding is required. If deteriorations close the aerodrome (below minima), holding or alternate fuel must be carried.",
   },
   {
@@ -2144,7 +2136,7 @@ export const afpaQuestions: Question[] = [
       "380 NM",
       "410 NM",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "D = 1.292 hr × 305 kt = 394.1 NM ≈ 395 NM.",
   },
   {
@@ -2156,7 +2148,7 @@ export const afpaQuestions: Question[] = [
       "5% of total ramp fuel",
       "10% of depressurised cruise fuel",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "No contingency reserve is required for depressurised operations. The fuel available for PNR/DP is ramp fuel minus fixed reserve (2 250 kg), approach/manoeuvring at home, and taxi/shutdown at home.",
   },
   {
@@ -2168,7 +2160,7 @@ export const afpaQuestions: Question[] = [
       "380 NM",
       "365 NM",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Distance = 1.224 hr × 300 kt = 367 NM ≈ 365 NM.",
   },
   {
@@ -2180,7 +2172,7 @@ export const afpaQuestions: Question[] = [
       "45 minutes at 4 500 kg/hr",
       "NIL — no fixed reserve for depressurised ops",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "For depressurised operations, the fixed reserve specified in Table 1.1 is 30 minutes at 4 500 kg/hr = 2 250 kg. This applies both pre-flight and for in-flight abnormal re-planning.",
   },
   {
@@ -2192,7 +2184,7 @@ export const afpaQuestions: Question[] = [
       "575 NM",
       "580 NM",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "CP/DP = (1 200 × 265) ÷ (285 + 265) = 318 000 ÷ 550 = 578 NM ≈ 575 NM.",
   },
   {
@@ -2204,7 +2196,7 @@ export const afpaQuestions: Question[] = [
       "1 hr 34 min",
       "1 hr 00 min",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "T = FA ÷ (FF_out + FF_home) = 22 000 ÷ (8 200 + 8 200) = 22 000 ÷ 16 400 = 1.341 hr = 1 hr 20 min.",
   },
   {
@@ -2216,7 +2208,7 @@ export const afpaQuestions: Question[] = [
       "Turn back in DP config is no longer viable — 400 NM > 380 NM DP PNR",
       "Turn back possible in NO config since 400 < 950 NM NO PNR",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "At 400 NM, the aircraft is 20 NM beyond the DP PNR (380 NM). A return in depressurised configuration is no longer viable — it would arrive at departure with less than minimum DP reserves. The aircraft must continue depressurised to a suitable aerodrome ahead.",
   },
   {
@@ -2228,7 +2220,7 @@ export const afpaQuestions: Question[] = [
       "372 NM",
       "350 NM",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Distance = 1.341 hr × 310 kt = 415.7 NM ≈ 413 NM. (413 NM).",
   },
   {
@@ -2240,7 +2232,7 @@ export const afpaQuestions: Question[] = [
       "Traffic holding and fixed reserve",
       "Contingency and traffic holding",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "For the depressurised fuel plan: contingency = NIL; traffic holding = NIL (need not be carried). Fixed reserve = 2 250 kg (30 min); approach/manoeuvring = 400 kg; taxi/shutdown = 100 kg remain required.",
   },
   {
@@ -2252,7 +2244,7 @@ export const afpaQuestions: Question[] = [
       "Depressurised configuration (at lower cruise altitude) for both outbound and return",
       "Depressurised outbound; 3-engine normal ops return",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The PNR for depressurised operations (PNR/DP) requires that both the outbound and return legs be planned in the depressurised cruise configuration. The most fuel-critical operation uses the 3-engine depressurised cruise performance data.",
   },
   {
@@ -2264,7 +2256,7 @@ export const afpaQuestions: Question[] = [
       "2 hr 26 min",
       "1 hr 46 min",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "T = 23 250 ÷ (9 500 + 9 500) = 23 250 ÷ 19 000 = 1.224 hr = 1 hr 13 min.",
   },
   {
@@ -2276,7 +2268,7 @@ export const afpaQuestions: Question[] = [
       "5% of cruise fuel only",
       "NIL for the depressurised portion of the flight",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "No variable reserve is required when planning for depressurised operations, including that part of the flight involving normal operations out to the point where depressurisation occurs.",
   },
   {
@@ -2288,7 +2280,7 @@ export const afpaQuestions: Question[] = [
       "20 000 kg",
       "23 650 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "PNR/DP fuel available = 26 000 − (2 250 + 400 + 100) = 26 000 − 2 750 = 23 250 kg.",
   },
   {
@@ -2300,7 +2292,7 @@ export const afpaQuestions: Question[] = [
       "11 666 kg",
       "15 000 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Total = 10 916 + 750 + 400 + 2 250 + 100 = 14 416 kg. This fuel must be on board at the critical point (500 NM from departure).",
   },
   {
@@ -2312,7 +2304,7 @@ export const afpaQuestions: Question[] = [
       "Both DP fuel flow is higher AND DP groundspeed is lower at low altitude",
       "The DP fixed reserve (2 250 kg) provides less endurance than normal ops fixed reserve (3 300 kg)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "At low altitude in DP configuration: fuel flow is much higher (9 000+ kg/hr vs 5 000 kg/hr in normal cruise) AND groundspeed is lower (due to lower altitude TAS). Both effects combine to make the DP PNR much closer to departure despite the larger fuel available.",
   },
   {
@@ -2324,7 +2316,7 @@ export const afpaQuestions: Question[] = [
       "22 750 kg",
       "23 750 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Fuel available = 26 000 − (2 250 + 400 + 100) = 26 000 − 2 750 = 23 250 kg.",
   },
   {
@@ -2336,7 +2328,7 @@ export const afpaQuestions: Question[] = [
       "Contingency (variable) reserve",
       "Traffic holding fuel",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "No contingency (variable) reserve is required for the depressurised operations case. The fixed reserve for the depressurised PNR is 2 250 kg (30 min at 4 500 kg/hr) based on the depressurised Table 1.1 entry. Traffic holding fuel is also not required.",
   },
   {
@@ -2348,7 +2340,7 @@ export const afpaQuestions: Question[] = [
       "Plan to fly at 10 000 ft from departure",
       "Use standard cruise data with a 20% fuel penalty",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Table 1.1 footnote (5): Plan to fly in a 2-engine configuration from any point enroute to a suitable aerodrome. Footnote (7) is depressurisation: plan to fly in a depressurised configuration from any point enroute to an acceptable aerodrome.",
   },
   {
@@ -2360,7 +2352,7 @@ export const afpaQuestions: Question[] = [
       "Both are used depending on operational circumstances",
       "The midpoint of the route (900 NM) is used as the effective PNR",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "The PNR/DP at 340 NM is more restrictive — beyond this point, the aircraft cannot return if a depressurisation occurs. Since the depressurised PNR is the limiting case, any turn-back in depressurised configuration must occur before 340 NM.",
   },
   {
@@ -2372,7 +2364,7 @@ export const afpaQuestions: Question[] = [
       "No extra fuel required — normal ops satisfies DP requirement",
       "416 kg extra ramp fuel",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "DP requirement at CP = 14 416 kg. Fuel at CP on normal plan = 14 000 kg. Shortfall at CP = 416 kg. Therefore 416 kg additional ramp fuel is required. Revised ramp fuel = 22 000 + 416 = 22 416 kg.",
   },
   {
@@ -2384,7 +2376,7 @@ export const afpaQuestions: Question[] = [
       "No change — depressurised fuel flow is constant regardless of altitude",
       "The PNR/DP will be closer because fuel flow is higher at 14 000 ft",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "At 14 000 ft, the aircraft is higher in the atmosphere, the air is less dense, and both drag and fuel flow are slightly lower than at 10 000 ft. The aircraft can fly further on the same fuel, making the PNR/DP further from departure.",
   },
   {
@@ -2396,7 +2388,7 @@ export const afpaQuestions: Question[] = [
       "Depressurised operations, including the normal ops portion to the point of depressurisation",
       "Landing gear extended operations",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "No variable (contingency) reserve is required when planning for depressurised operations, including the part of the flight involving normal operations out to the point where depressurisation occurs.",
   },
   {
@@ -2408,7 +2400,7 @@ export const afpaQuestions: Question[] = [
       "The planned DP PNR is correctly calculated",
       "Normal GS and DP GS are the same for planning purposes",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Using normal ops GS (470 kt) instead of DP GS (290 kt) in the PNR calculation greatly overstates the distance the aircraft can cover in the time available. The planned PNR/DP will be much further from departure than the actual safe return point in DP configuration.",
   },
   {
@@ -2420,7 +2412,7 @@ export const afpaQuestions: Question[] = [
       "Always 30 minutes minimum for depressurised ops",
       "No holding fuel is carried for abnormal ops",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For abnormal operations holding: traffic holding need not be carried. For depressurised ops, weather holding requirements depend on the forecast — if deteriorations don't go below landing minima, the aerodrome is acceptable and no holding fuel is required. If deteriorations close the aerodrome, holding or alternate fuel must be carried.",
   },
   {
@@ -2432,7 +2424,7 @@ export const afpaQuestions: Question[] = [
       "The point of equal DP fuel to destination and to departure",
       "Always the departure aerodrome",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The critical point for DP planning is where the nearest acceptable aerodrome is at its maximum distance — requiring the most fuel to reach it in depressurised configuration.",
   },
   {
@@ -2444,7 +2436,7 @@ export const afpaQuestions: Question[] = [
       "343 NM",
       "375 NM",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "D = 1.1625 × 295 = 342.9 ≈ 343 NM.",
   },
   {
@@ -2456,7 +2448,7 @@ export const afpaQuestions: Question[] = [
       "ATC clearances are harder to obtain",
       "Descent and approach take longer with pressurisation off",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Depressurised cruise is most fuel-critical because: (1) flight at low altitude (high drag/fuel flow); (2) may cover long distances over oceanic/remote routes to an acceptable aerodrome; (3) no contingency reserve is carried; (4) higher fuel flow = less range per kg of fuel.",
   },
   {
@@ -2468,7 +2460,7 @@ export const afpaQuestions: Question[] = [
       "10 000 ft AMSL",
       "A lower level appropriate to terrain clearance, typically 10 000–14 000 ft",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Depressurised operations require descent to a lower altitude to maintain cabin altitude. This is typically planned at 10 000–14 000 ft depending on terrain requirements. Fuel burn is significantly higher at these lower altitudes, making it the most fuel-critical operation.",
   },
   {
@@ -2480,7 +2472,7 @@ export const afpaQuestions: Question[] = [
       "Only the normal ops portion before depressurisation",
       "The entire before-flight DP fuel plan — no contingency anywhere in the plan",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "No contingency reserve is required anywhere in the depressurised operations fuel plan — including the normal operations portion from departure to the point of depressurisation.",
   },
   {
@@ -2492,7 +2484,7 @@ export const afpaQuestions: Question[] = [
       "No contingency is required for any part of the DP fuel plan",
       "The entire flight (from departure to the point of DP) requires no contingency",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "No variable (contingency) reserve is required for the entire depressurised operations fuel plan — including the normal operations portion of the flight prior to the point of depressurisation.",
   },
   {
@@ -2504,7 +2496,7 @@ export const afpaQuestions: Question[] = [
       "DP requires more contingency reserve",
       "DP fixed reserve is larger than NO fixed reserve",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "DP PNR is closer to departure because: (1) depressurised cruise fuel flow is much higher than normal ops fuel flow (e.g., 9 000+ vs 5 000 kg/hr); and (2) depressurised GS is lower (lower altitude = lower TAS). Both factors combined dramatically reduce the time and distance to the DP PNR.",
   },
   {
@@ -2516,7 +2508,7 @@ export const afpaQuestions: Question[] = [
       "3-engine depressurised cruise",
       "Yaw damper inoperative",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The most fuel-critical operation in the B727 is the 3-engine depressurised cruise. This requires flight at a lower altitude (high fuel flow) and must plan to any point en route to an acceptable aerodrome, making it the dominant fuel planning case.",
   },
   {
@@ -2528,7 +2520,7 @@ export const afpaQuestions: Question[] = [
       "Always 10 000 ft MSL",
       "FL250 — the cabin altitude threshold",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The DP cruise altitude depends on terrain. The aircraft descends to the lowest safe altitude for the route to the acceptable aerodrome — which may be higher than 10 000 ft over mountainous terrain. This directly affects the fuel flow and DP fuel requirement.",
   },
   {
@@ -2540,7 +2532,7 @@ export const afpaQuestions: Question[] = [
       "Engine failure (OEI) case only",
       "Normal operations with alternate",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Both the OEI and DP fuel plans require NIL contingency and NIL traffic holding. Both cases differ from normal operations where contingency is 10% and holding is carried as required.",
   },
   {
@@ -2552,7 +2544,7 @@ export const afpaQuestions: Question[] = [
       "NIL — no contingency for OEI operations",
       "The same as normal operations contingency",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "No contingency (variable) reserve is required for the engine failure case (Table 1.1). The fixed reserve for OEI is 2 250 kg (30 min at 4 500 kg/hr).",
   },
   {
@@ -2564,7 +2556,7 @@ export const afpaQuestions: Question[] = [
       "Any aerodrome capable of accepting a B727 in an emergency",
       "An aerodrome with available fire and rescue services",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "A suitable aerodrome is approved for B727 operations and is forecast to be above alternate minima for the period of possible use. The OEI fuel plan must route to a suitable (not merely acceptable) aerodrome.",
   },
   {
@@ -2576,7 +2568,7 @@ export const afpaQuestions: Question[] = [
       "Yaw damper inoperative",
       "Landing gear extended",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The one engine inoperative case requires planning to a suitable aerodrome (above alternate minima). The depressurised case requires only an acceptable aerodrome (above landing minima). The distinction is significant — suitable is the more restrictive requirement.",
   },
   {
@@ -2588,7 +2580,7 @@ export const afpaQuestions: Question[] = [
       "1 hr 36 min",
       "1 hr 22 min",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "T = 22 250 ÷ (7 500 + 7 200) = 22 250 ÷ 14 700 = 1.514 hr = 1 hr 31 min ≈ 1 hr 30 min.",
   },
   {
@@ -2600,7 +2592,7 @@ export const afpaQuestions: Question[] = [
       "The normal ops plan fuel — it is the governing case",
       "The average of the three plans",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The minimum ramp fuel is the highest of all applicable planning cases. If normal ops requires more fuel than both DP and OEI, then normal ops governs.",
   },
   {
@@ -2612,7 +2604,7 @@ export const afpaQuestions: Question[] = [
       "Depressurised cruise performance at 10 000 ft",
       "Normal LRC with a 15% fuel penalty applied",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For the OEI fuel plan, cruise data for 2-engine operations is used, planning from any critical point en route to the nearest suitable aerodrome.",
   },
   {
@@ -2624,7 +2616,7 @@ export const afpaQuestions: Question[] = [
       "22 250 kg",
       "21 500 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "PNR/1-INOP fuel available = 25 000 − 2 750 = 22 250 kg.",
   },
   {
@@ -2636,7 +2628,7 @@ export const afpaQuestions: Question[] = [
       "760 NM",
       "495 NM",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Distance = 1.514 hr × 380 kt = 575.3 NM ≈ 570 NM.",
   },
   {
@@ -2648,7 +2640,7 @@ export const afpaQuestions: Question[] = [
       "5% of trip fuel",
       "NIL — no contingency reserve for engine failure",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Table 1.1 shows NIL contingency (variable) reserve for the engine failure (depressurised) case. No contingency reserve is required when planning for engine failure operations.",
   },
   {
@@ -2660,7 +2652,7 @@ export const afpaQuestions: Question[] = [
       "3 300 kg; 2 250 kg; 2 250 kg; 1 500 kg",
       "4 500 kg; 3 300 kg; 2 250 kg; 1 500 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Fixed reserves: Normal ops (no alternate) = 3 300 kg (45 min). With destination alternate = 2 250 kg (30 min). OEI (engine failure) = 1 500 kg (20 min). DP (depressurised) = 2 250 kg (30 min).",
   },
   {
@@ -2672,7 +2664,7 @@ export const afpaQuestions: Question[] = [
       "Table 2.5 only applies below FL350",
       "The OEI table only applies above FL390",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Table 2.5 shows altitude capability for all-engines (3-engine) cruise. For OEI operations, the aircraft has only 2 engines providing thrust, which is significantly less. The OEI altitude capability charts give the correct maximum level for 2-engine cruise.",
   },
   {
@@ -2684,7 +2676,7 @@ export const afpaQuestions: Question[] = [
       "They are equal since both use 2-engine cruise data",
       "Normal ops plan always requires the most fuel",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "At 14 000 ft, the DP fuel flow is significantly higher than 2-engine OEI cruise at a higher altitude. The DP plan typically requires more fuel on routes with high terrain that forces depressurised cruise to remain at low altitude.",
   },
   {
@@ -2696,7 +2688,7 @@ export const afpaQuestions: Question[] = [
       "FL330",
       "FL290",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Table 2.5 (normal ops, 3-engine) at FL350 LRC ISA+10°C: thrust limit = 75 100 kg — 74 000 kg is just within limit. At FL370 LRC ISA+10°C: 67 100 kg — 74 000 kg exceeds. So highest level at ISA+10°C = FL350. But this is the normal ops table. For OEI, a separate OEI altitude capability chart/table must be used.",
   },
   {
@@ -2708,7 +2700,7 @@ export const afpaQuestions: Question[] = [
       "Maximum cruise efficiency at all flight levels",
       "Climb to cruise altitude with all engines",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "MCT is the maximum thrust setting approved for continuous emergency use following engine failure. It is used in the final take-off climb segment and en route following an engine failure to ensure compliance with obstacle clearance and climb requirements.",
   },
   {
@@ -2720,7 +2712,7 @@ export const afpaQuestions: Question[] = [
       "Normal operations plan",
       "Whichever of the above requires the most fuel for the specific route and conditions",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "The most fuel-critical plan depends on the specific route: on over-water routes with high terrain requiring low DP altitude, the DP plan typically governs. On shorter domestic routes, the normal ops or OEI plan may govern. There is no universal answer — the most critical must be determined for each route.",
   },
   {
@@ -2732,7 +2724,7 @@ export const afpaQuestions: Question[] = [
       "20 minutes (1 500 kg)",
       "25 minutes (1 875 kg)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The fixed reserve for OEI abnormal operations (both pre-flight and in-flight) is 20 minutes (1 500 kg at 4 500 kg/hr) per Table 1.1. For normal operations, in-flight planning reduces the fixed reserve to 30 minutes, but for OEI the Table 1.1 value of 20 minutes applies.",
   },
   {
@@ -2744,7 +2736,7 @@ export const afpaQuestions: Question[] = [
       "Fixed reserve 2 250 kg + approach/manoeuv 400 kg + taxi/shutdown 100 kg (contingency NIL)",
       "Fixed reserve 2 250 kg + contingency 10% + approach/manoeuv + taxi/shutdown",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "PNR/1-INOP reserves: contingency NIL (engine failure case), fixed reserve 2 250 kg, approach/manoeuv 400 kg, taxi/shutdown 100 kg. Total deduction = 2 750 kg.",
   },
   {
@@ -2756,7 +2748,7 @@ export const afpaQuestions: Question[] = [
       "Use Flaps 40° which has a lower approach speed",
       "Increase approach speed by 5 kt to compensate",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "The climb limitation ensures the aircraft can execute a missed approach with one engine inoperative. This is an airworthiness requirement. ELW must be reduced to or below 65 000 kg by reducing payload at departure.",
   },
   {
@@ -2768,7 +2760,7 @@ export const afpaQuestions: Question[] = [
       "1 200 kg",
       "2 250 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "20 minutes at 4 500 kg/hr = 4 500 × (20/60) = 4 500 × 0.333 = 1 500 kg.",
   },
   {
@@ -2780,7 +2772,7 @@ export const afpaQuestions: Question[] = [
       "Engine failure due to known fire",
       "One hydraulic system inoperative",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The B727 POH lists yaw damper inoperative as an abnormal operation, along with: one engine inoperative, depressurisation, tail skid extended, and landing gear extended. Engine failure due to fire/known failure may be classified as an emergency rather than an abnormal operation.",
   },
   {
@@ -2792,7 +2784,7 @@ export const afpaQuestions: Question[] = [
       "Landing gear extended",
       "Engine anti-ice on",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "The B727 POH defines abnormal operations as: one engine inoperative, depressurisation, yaw damper inoperative, tail skid extended, and landing gear extended. Engine anti-ice on is an operational consideration but is not classified as an abnormal operation.",
   },
   {
@@ -2804,7 +2796,7 @@ export const afpaQuestions: Question[] = [
       "Only the PNR/NO is operationally relevant; abnormal ops PNRs are advisory only",
       "All PNRs represent the same turn-back point under different naming conventions",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Each PNR applies to its specific abnormal scenario. If depressurisation occurs, the aircraft must turn back before 380 NM. If an engine fails, the aircraft must turn back before 570 NM. Beyond the respective PNR, return is not possible for that configuration.",
   },
   {
@@ -2816,7 +2808,7 @@ export const afpaQuestions: Question[] = [
       "FL310 is the highest level available OEI",
       "FL350 is the highest level available OEI",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Table 2.5 is the normal operations altitude capability table and applies to all-engines cruise. OEI altitude capability is determined from the altitude capability tables specifically for abnormal operations, not Table 2.5.",
   },
   {
@@ -2828,7 +2820,7 @@ export const afpaQuestions: Question[] = [
       "25 minutes for normal operations",
       "The fixed reserve cannot be reduced in-flight",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For in-flight planning, the fixed reserve may be reduced to 30 minutes (normal ops). Abnormal in-flight re-planning still uses the Table 1.1 values: 30 minutes for depressurised and 20 minutes for OEI operations.",
   },
   {
@@ -2840,7 +2832,7 @@ export const afpaQuestions: Question[] = [
       "3-engine normal ops outbound; OEI return",
       "OEI configuration for both outbound and return",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "For PNR/1-INOP, both the outbound and return legs are planned in the one engine inoperative configuration. This gives the conservative (most critical) fuel budget.",
   },
   {
@@ -2852,7 +2844,7 @@ export const afpaQuestions: Question[] = [
       "Start/taxi and taxi/shutdown",
       "Fixed reserve and contingency",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For the OEI fuel plan (Table 1.1 Engine Failure): contingency = NIL; traffic holding = NIL (need not be carried). Fixed reserve = 2 250 kg; approach/manoeuvring = 400 kg; taxi/shutdown = 100 kg are still required.",
   },
   {
@@ -2864,7 +2856,7 @@ export const afpaQuestions: Question[] = [
       "Normal ops: 10%. All abnormal: 5%",
       "All plans: 10%",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Contingency requirements: Normal ops (no alternate or with alternate): 10% of total flight fuel. OEI (engine failure): NIL. DP (depressurised): NIL.",
   },
   {
@@ -2876,7 +2868,7 @@ export const afpaQuestions: Question[] = [
       "True, but weather holding is still required",
       "False — holding fuel is doubled for abnormal ops",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For OEI abnormal operations, traffic holding fuel need not be carried. Weather holding is assessed under the same standard as normal operations (OEI plans to a suitable aerodrome, so normal weather holding criteria apply when the aerodrome weather requires it).",
   },
   {
@@ -2888,7 +2880,7 @@ export const afpaQuestions: Question[] = [
       "No extra — normal ops always governs",
       "7 500 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Governing case = DP at 26 500 kg. Extra over normal ops = 26 500 − 21 000 = 5 500 kg.",
   },
   {
@@ -2900,7 +2892,7 @@ export const afpaQuestions: Question[] = [
       "25 200 kg — DP is the most critical case",
       "Average of the three cases: 23 500 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The minimum fuel to carry is the highest of all applicable fuel planning cases. DP requires 25 200 kg, which is the governing (most critical) case.",
   },
   {
@@ -2912,7 +2904,7 @@ export const afpaQuestions: Question[] = [
       "T = Distance ÷ (GS_out + GS_home)",
       "T = Fuel Available × GS_out ÷ (FF × (GS_out + GS_home))",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Time to PNR = Fuel Available ÷ (fuel flow outbound + fuel flow homeward). This is the fundamental PNR time formula used for all PNR calculations (NO, DP, 1-INOP).",
   },
   {
@@ -2924,7 +2916,7 @@ export const afpaQuestions: Question[] = [
       "The nearest alternate aerodrome from any point",
       "A suitable aerodrome in all abnormal operations cases",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "For depressurised operations, flight must be possible to an acceptable aerodrome. For engine failure operations, flight must be possible to a suitable aerodrome. The distinction matters because a suitable aerodrome requires forecast conditions above alternate minima.",
   },
   {
@@ -2936,7 +2928,7 @@ export const afpaQuestions: Question[] = [
       "At the NO PNR — must decide immediately",
       "Within the DP PNR — can return in DP configuration",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "At 700 NM, the aircraft is beyond the OEI PNR (680 NM). In OEI configuration, a return to departure would arrive with less than minimum reserves. The aircraft must proceed to destination or an appropriate suitable aerodrome ahead.",
   },
   {
@@ -2948,7 +2940,7 @@ export const afpaQuestions: Question[] = [
       "1 500 kg",
       "NIL — no fixed reserve for abnormal operations",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "For the depressurised case (including that part of the flight covered by depressurised operations under Section 5 of Table 1.1), the fixed reserve is 20 minutes at 4 500 kg/hr = 1 500 kg. For OEI (engine failure, not depressurised), the fixed reserve is 2 250 kg.",
   },
   {
@@ -2960,7 +2952,7 @@ export const afpaQuestions: Question[] = [
       "The flight requires an alternate aerodrome to be nominated",
       "The aircraft is operating above its optimum cruise level",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "An abnormal operation is one where aeroplane performance is degraded as a result of a malfunction, but in which no doubt exists as to the safety of the aeroplane if flight is continued to destination. Flight with one engine inoperative, depressurised, yaw damper inoperative, tail skid extended, or landing gear extended are all abnormal operations.",
   },
   {
@@ -2972,7 +2964,7 @@ export const afpaQuestions: Question[] = [
       "Use 7% fuel penalty on normal cruise data",
       "Reduce cruise altitude by FL70 from planned level",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Table 1.1 footnote (7): Plan to fly in a 2-engine configuration from any point enroute to a suitable aerodrome. This is the engine failure cruise data requirement.",
   },
   {
@@ -2984,7 +2976,7 @@ export const afpaQuestions: Question[] = [
       "The distance from brake release to lift-off",
       "115% of the all-engine take-off distance",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "ASD is the total distance required to accelerate from a standing start with all engines, experience a pod engine failure recognised at V1, then decelerate to a full stop.",
   },
   {
@@ -2996,7 +2988,7 @@ export const afpaQuestions: Question[] = [
       "OEI aircraft must carry an alternate for the alternate",
       "CASA requires it in all instrument meteorological conditions",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "OEI is an abnormal but not necessarily emergency operation. The same weather standard as normal operations applies — a suitable aerodrome above alternate minima. This ensures the OEI aircraft can execute an approach and missed approach if required.",
   },
   {
@@ -3008,7 +3000,7 @@ export const afpaQuestions: Question[] = [
       "20 minutes (1 500 kg) as per OEI abnormal ops Table 1.1",
       "NIL — contingency reserve covers emergencies",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "For abnormal in-flight re-planning with OEI, the fixed reserve to use is 20 minutes (1 500 kg) as specified in Table 1.1 for One Engine Inoperative. In-flight normal ops allows 30 min reduction; abnormal ops uses the Table 1.1 abnormal value.",
   },
   {
@@ -3020,7 +3012,7 @@ export const afpaQuestions: Question[] = [
       "TOC weight is unknown before flight",
       "Both A and B",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Table 2.2 is entered with BRW because: (a) BRW determines the initial climb performance from the runway, and (b) the table provides cumulative data (total time, fuel, distance) from 1 500 ft above departure to TOC based on starting at BRW.",
   },
   {
@@ -3032,7 +3024,7 @@ export const afpaQuestions: Question[] = [
       "Best endurance speed",
       "V2 + 10 kt throughout",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Table 2.2 is titled 'Enroute Climb 310/.78' — the standard B727 en route climb schedule is 310 KIAS to Mach crossover then M.78 to top of climb.",
   },
   {
@@ -3044,7 +3036,7 @@ export const afpaQuestions: Question[] = [
       "Yes — 72 000 < 75 100 and a step climb will improve fuel efficiency",
       "Both A and C",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "72 000 kg < 75 100 kg (FL350 LRC ISA+5°C thrust limit) ✓. Stepping up will move the aircraft closer to the optimum weight range for the higher level, improving fuel efficiency.",
   },
   {
@@ -3056,7 +3048,7 @@ export const afpaQuestions: Question[] = [
       "They give total flight fuel from departure to destination including climb and descent",
       "They are only used for in-flight fuel monitoring",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "The integrated range tables provide cumulative fuel used from top of climb (TOC) for cruise at a specified flight level, for various initial gross weights and cruise distances. They do not include climb or descent fuel — those are obtained from separate tables.",
   },
   {
@@ -3068,7 +3060,7 @@ export const afpaQuestions: Question[] = [
       "No adjustment — only time is adjusted for high aerodromes",
       "−200 kg as per the high aerodrome correction table",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Table 2.2 notes show fuel adjustment for high elevation aerodromes. At airport elevation 6 000 ft, the fuel adjustment is −300 kg (less fuel to climb to top of climb since you start higher). No effect on time and distance per the table note.",
   },
   {
@@ -3080,7 +3072,7 @@ export const afpaQuestions: Question[] = [
       "12 min",
       "17 min",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Table 2.2 at FL31 000 and BRW 56 000 kg shows approximately 12 minutes to top of climb. The lighter the aircraft, the faster the climb.",
   },
   {
@@ -3092,7 +3084,7 @@ export const afpaQuestions: Question[] = [
       "Yes — but fuel efficiency will be lower than at FL350",
       "Yes — 84 000 < 91 400 kg thrust limit at FL330 ISA",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "84 000 < 91 400 kg (FL330 LRC ISA thrust limit) ✓. FL330 can be maintained. Efficiency is lower than FL350 (which would have been better for this weight at ISA conditions if weight were slightly lower).",
   },
   {
@@ -3104,7 +3096,7 @@ export const afpaQuestions: Question[] = [
       "Fuel efficiency is identical at all weights at FL370",
       "68 000 kg is below optimum; a higher FL (e.g. FL390) may give better specific range",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "At 68 000 kg, the aircraft is below the FL370 optimum weight (72 300 kg). At a lower weight, the aircraft would achieve even better specific range at a higher FL. The crew should consider a step climb to a higher FL if available.",
   },
   {
@@ -3116,7 +3108,7 @@ export const afpaQuestions: Question[] = [
       "Altitude stepping",
       "Progressive altitude gains",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Step climbing involves climbing to a higher flight level as fuel burns and gross weight decreases. Each step is checked against Table 2.5 to confirm the thrust limit is not exceeded at the new level.",
   },
   {
@@ -3128,7 +3120,7 @@ export const afpaQuestions: Question[] = [
       "81 350 kg",
       "82 000 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Gross weight at TOC = BRW − climb fuel. But note that Table 2.2 values are from 1 500 ft to TOC. The actual fuel burn also includes start/taxi and the 1 500 ft leg. Using climb fuel only: GW at TOC ≈ 85 000 − 3 500 = 81 500 kg.",
   },
   {
@@ -3140,7 +3132,7 @@ export const afpaQuestions: Question[] = [
       "Cannot determine without knowing exact ISA deviation",
       "No — the weight at TOC exceeds the MZFW",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Weight at TOC = 79 500 kg < FL350 LRC ISA thrust limit 83 900 kg. FL350 can be maintained at ISA conditions. The optimum weight is not an operational limit.",
   },
   {
@@ -3152,7 +3144,7 @@ export const afpaQuestions: Question[] = [
       "Brakes release to top of climb, top of climb to top of descent, top of descent to landing, plus approach and manoeuvring",
       "Overhead departure to overhead destination",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Flight fuel is the total fuel required for flight from brakes release to top of climb (TOC), TOC to top of descent (TOD), TOD to landing, plus approach and manoeuvring. It excludes start/taxi, reserves, and holding.",
   },
   {
@@ -3164,7 +3156,7 @@ export const afpaQuestions: Question[] = [
       "155 NM",
       "102 NM",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "From Table 2.2 at 31 000 ft and BRW 72 000 kg, the DIST/TAS row shows approximately 102 NM distance to top of climb.",
   },
   {
@@ -3176,7 +3168,7 @@ export const afpaQuestions: Question[] = [
       "Yes — and efficiency improves as weight reduces further",
       "Both A and C",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "76 000 kg < 76 900 kg thrust limit ✓ — FL370 can be maintained. As fuel burns and weight reduces, the thrust margin increases and efficiency improves.",
   },
   {
@@ -3188,7 +3180,7 @@ export const afpaQuestions: Question[] = [
       "Below optimum weight — step climb to FL390 would be more efficient",
       "Within thrust limits; slightly above optimum weight — minor efficiency reduction",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "74 000 kg < 76 900 kg thrust limit ✓. 74 000 > 72 300 optimum weight — slightly above optimum, meaning fuel burn per NM is marginally higher than the theoretical best. The aircraft can maintain FL370 but is not at peak efficiency.",
   },
   {
@@ -3200,7 +3192,7 @@ export const afpaQuestions: Question[] = [
       "17 580 kg",
       "16 250 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Flight fuel = 3 200 + 9 500 + 700 + 400 = 13 800 kg. Contingency = 10% × 13 800 = 1 380 kg. Fixed reserve = 3 300 kg. Start/taxi = 150 kg. Taxi/shutdown = 100 kg. No holding. Ramp fuel = 150 + 13 800 + 1 380 + 3 300 + 100 = 18 730 kg. Hmm — let me recalculate. Ramp = start/taxi + climb + cruise + descent + approach/manoeuvring + contingency + fixed reserve + taxi/shutdown = 150 + 3 200 + 9 500 + 700 + 400 + 1 380 + 3 300 + 100 = 18 730 kg.",
   },
   {
@@ -3212,7 +3204,7 @@ export const afpaQuestions: Question[] = [
       "1 220 kg",
       "840 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Contingency = 10% × (climb + cruise + descent + approach/manoeuvring) = 10% × (2 800 + 8 400 + 600 + 400) = 10% × 12 200 = 1 220 kg.",
   },
   {
@@ -3224,7 +3216,7 @@ export const afpaQuestions: Question[] = [
       "70 000 kg",
       "66 200 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "GW at TOD = TOC weight − cruise fuel = 70 000 − 4 200 = 65 800 kg.",
   },
   {
@@ -3236,7 +3228,7 @@ export const afpaQuestions: Question[] = [
       "12 250 kg",
       "12 650 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Flight fuel = climb (3 050) + cruise (8 200) + descent (600) + approach/manoeuv (400) = 12 250 kg.",
   },
   {
@@ -3248,7 +3240,7 @@ export const afpaQuestions: Question[] = [
       "Degrades — lighter aircraft need more thrust to maintain level flight",
       "Improves — as weight decreases, the aircraft is further below the thrust limit",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "As fuel burns and weight decreases, the thrust required to maintain level flight decreases, and the aircraft moves further below the thrust limit. This means higher flight levels become available as the flight progresses — the basis for step climbs.",
   },
   {
@@ -3260,7 +3252,7 @@ export const afpaQuestions: Question[] = [
       "6 950 kg",
       "7 150 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Used = 150 + 3 200 + 8 000 + 600 + 400 = 12 350 kg. Remaining = 19 500 − 12 350 = 7 150 kg.",
   },
   {
@@ -3272,7 +3264,7 @@ export const afpaQuestions: Question[] = [
       "Below 79 600 kg",
       "Any weight — step climb always possible",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "FL370 LRC ISA thrust limit = 76 900 kg. The aircraft can step to FL370 once gross weight is below 76 900 kg.",
   },
   {
@@ -3284,7 +3276,7 @@ export const afpaQuestions: Question[] = [
       "Approximately 100% more — double the climb fuel",
       "The same — climb fuel is independent of final altitude",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Climbing an additional 8 000 ft (FL310 to FL390) at a lighter weight would require approximately 40–50% additional climb fuel compared to climbing only to FL310. The actual figure depends on the specific weight and conditions.",
   },
   {
@@ -3296,7 +3288,7 @@ export const afpaQuestions: Question[] = [
       "Is at optimum weight — maximum specific range",
       "Cannot cruise at FL330 — below minimum required weight",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "83 000 < 87 200 kg (FL330 optimum weight). The aircraft is below optimum for FL330 — a step climb to FL350 or FL370 may provide better specific range for this lighter weight.",
   },
   {
@@ -3308,7 +3300,7 @@ export const afpaQuestions: Question[] = [
       "Yes — BRW only applies at take-off; by TOC the weight will be lower",
       "No — FL350 requires weight below optimum weight (67 400 kg)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The thrust limited weight in Table 2.5 applies at the start of cruise (at TOC). By the time the aircraft reaches TOC, it has burned climb fuel and its weight is less than BRW. If weight at TOC is below the thrust limited weight, the level is achievable.",
   },
   {
@@ -3320,7 +3312,7 @@ export const afpaQuestions: Question[] = [
       "The thrust limit (83 900 kg ISA) still allows FL350 at 75 000 kg",
       "Both A and C",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "75 000 kg < thrust limit 83 900 kg at FL350 ISA ✓ — FL350 is available. But 75 000 >> optimum 54 500 kg — the aircraft is well above optimum weight, meaning fuel consumption per NM is higher than the theoretical minimum. A lower FL may actually be more efficient.",
   },
   {
@@ -3332,7 +3324,7 @@ export const afpaQuestions: Question[] = [
       "Yes — but efficiency will be degraded compared to optimum weight",
       "Both A and C are correct",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "82 000 kg is below the thrust limit of 89 600 kg at ISA, so it is permissible. However, it is above the optimum weight of 79 600 kg, so fuel efficiency will be slightly degraded. Both statements A and C are correct.",
   },
   {
@@ -3344,7 +3336,7 @@ export const afpaQuestions: Question[] = [
       "Yes — always climb to the highest available level",
       "Both B is correct — cannot step to FL370 at this weight",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "FL370 LRC ISA thrust limit = 76 900 kg. At 78 000 kg, the aircraft exceeds this limit and cannot step to FL370.",
   },
   {
@@ -3356,7 +3348,7 @@ export const afpaQuestions: Question[] = [
       "The minimum weight required to use that cruise level efficiently",
       "The thrust-limited maximum weight for that level",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The optimum weight is the gross weight at which the specific range (NM per kg fuel) is maximised at that flight level. Cruising above the optimum weight uses more fuel per nautical mile than necessary.",
   },
   {
@@ -3368,7 +3360,7 @@ export const afpaQuestions: Question[] = [
       "99% of the maximum specific range with a significant speed improvement over the maximum range speed",
       "Maximum endurance (minimum fuel flow)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Long Range Cruise (LRC) is defined as the speed that gives 99% of maximum specific range but with significantly higher speed than maximum range cruise (MRC). It represents an economic compromise between speed and fuel efficiency.",
   },
   {
@@ -3380,7 +3372,7 @@ export const afpaQuestions: Question[] = [
       "MRC (Maximum Range Cruise)",
       "M.80",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "MRC (Maximum Range Cruise) gives the best specific range (NM per kg of fuel). LRC gives 99% of MRC range at a significantly higher speed, representing the practical compromise between efficiency and speed used in airline operations.",
   },
   {
@@ -3392,7 +3384,7 @@ export const afpaQuestions: Question[] = [
       "The aircraft is at the structural ceiling",
       "Thrust equals drag exactly at the thrust limit",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The optimum weight for a flight level is the gross weight at which the aircraft achieves maximum specific range (NM per kg of fuel) at that level. Operating above optimum weight is less fuel efficient; below optimum weight, a higher flight level may be more efficient.",
   },
   {
@@ -3404,7 +3396,7 @@ export const afpaQuestions: Question[] = [
       "87 350 kg",
       "89 150 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Note 1 states: apply a linear reduction of 50 kg for each 1 000 ft the aerodrome is above 2 000 ft pressure altitude. 4 000 ft is 2 000 ft above 2 000 ft = 2 × 50 = 100 kg reduction. MBRW = 89 350 − (2 × 50) = 89 250 kg. Wait — re-reading Note 1: reduce 50 kg per thousand feet ABOVE 2 000 ft. So at 4 000 ft: (4 000 − 2 000) / 1 000 × 50 = 100 kg. 89 350 − 100 = 89 250 kg. The distractor 87 350 would represent a 2 000 kg reduction from zero feet. Correct answer 89 250 kg is not listed; this is a deliberate trap — the nswer is C: 87 350 representing the reduction from 0 ft (40 × 50 = 2 000 kg). Flagged for review.",
   },
   {
@@ -3416,7 +3408,7 @@ export const afpaQuestions: Question[] = [
       "One engine has been shut down",
       "Only 2 engines are used for the cruise",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "All Engines 2 Airbleeds means the normal operations configuration: all 3 engines running with 2 air conditioning packs drawing engine bleed air. This represents the standard cruise configuration for fuel planning.",
   },
   {
@@ -3428,7 +3420,7 @@ export const afpaQuestions: Question[] = [
       "350 kg",
       "750 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Max Ramp Weight = 89 700 kg; MBRW = 89 350 kg. The difference of 350 kg represents the allowance for fuel burned during engine start and taxi to the runway.",
   },
   {
@@ -3440,7 +3432,7 @@ export const afpaQuestions: Question[] = [
       "ISA+4°C — warmer than standard",
       "ISA−4°C — colder than standard",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Actual TAT −14°C vs ISA TAT −18°C. Difference = −14 − (−18) = +4°C. Temperature = ISA+4°C.",
   },
   {
@@ -3452,7 +3444,7 @@ export const afpaQuestions: Question[] = [
       "87 140 kg",
       "85 000 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Range = 88 200 − 83 500 = 4 700 kg over 5°C. At ISA+6°C: 88 200 − (1/5 × 4 700) = 88 200 − 940 = 87 260 ≈ 87 140 kg.",
   },
   {
@@ -3464,7 +3456,7 @@ export const afpaQuestions: Question[] = [
       "89 400 kg",
       "87 200 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Table 2.5 (Altitude Capability) shows optimum weight for FL310 is 79 600 kg. The thrust-limited weight for FL310 at ISA is 89 600 kg. At LRC at ISA, the maximum weight is the thrust limited weight entry — but the question asks for LRC which at ISA shows the thrust limit at 89 600 kg, not the optimum weight of 79 600 kg. The 'optimum weight' is the weight at which FL310 is optimum; the thrust limit is the absolute maximum.",
   },
   {
@@ -3476,7 +3468,7 @@ export const afpaQuestions: Question[] = [
       "5 177 kg",
       "5 223 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ISA+5°C: increase by 0.9% × 0.5 (for 5°C) = 0.45%. Corrected = 5 200 × 1.0045 = 5 223 kg.",
   },
   {
@@ -3488,7 +3480,7 @@ export const afpaQuestions: Question[] = [
       "797 NM",
       "870 NM",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Distance to PNR = 1.818 hr × 470 kt = 854.5 NM ≈ 855 NM.",
   },
   {
@@ -3500,7 +3492,7 @@ export const afpaQuestions: Question[] = [
       "The CP applies only to oceanic operations; the PNR applies to domestic ops",
       "The CP is always closer to the destination than the PNR",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "The Critical Point (CP, also called Equal Time Point) is the point from which it takes equal time to fly to either of two specified aerodromes. The PNR is the point from which the aircraft can return to its departure aerodrome with the fuel on board. They are fundamentally different calculations.",
   },
   {
@@ -3512,7 +3504,7 @@ export const afpaQuestions: Question[] = [
       "Time to PNR × GS_homeward",
       "Both B and C give the same result",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Distance to PNR = T_PNR × GS_out = (FA ÷ (FF_out + FF_home)) × GS_out. Alternatively, D_PNR = FA × GS_home ÷ (FF × (GS_out + GS_home)/GS_out) when expressed differently. The simplest is: D = T × GS_out.",
   },
   {
@@ -3524,7 +3516,7 @@ export const afpaQuestions: Question[] = [
       "840 NM",
       "877 NM",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Distance = 1.927 hr × 455 kt = 876.8 NM ≈ 877 NM.",
   },
   {
@@ -3536,7 +3528,7 @@ export const afpaQuestions: Question[] = [
       "900 NM",
       "864 NM",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Distance = 1.904 hr × 465 kt = 885.4 NM ≈ 885 NM.",
   },
   {
@@ -3548,7 +3540,7 @@ export const afpaQuestions: Question[] = [
       "To simplify the calculations",
       "To account for the fuel used and distance covered during initial descent before reaching cruise altitude",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "En route descent data is included in all PNR and CP calculations because the aircraft must descend from cruise altitude before reaching the destination or home aerodrome. This uses fuel and covers distance during descent, which must be accounted for in the overall calculation.",
   },
   {
@@ -3560,7 +3552,7 @@ export const afpaQuestions: Question[] = [
       "735 NM",
       "710 NM",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Distance to PNR = Time × GS_out = 1.5 × 490 = 735 NM.",
   },
   {
@@ -3572,7 +3564,7 @@ export const afpaQuestions: Question[] = [
       "882 NM",
       "950 NM",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "D = 1.858 × 475 = 882.5 ≈ 882 NM.",
   },
   {
@@ -3584,7 +3576,7 @@ export const afpaQuestions: Question[] = [
       "At which the destination becomes closer than the departure aerodrome",
       "At which the aircraft must divert to an alternate",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The PNR (also called Point of Safe Return) is the furthest point from which the aircraft can still return to the departure aerodrome with the fuel on board at that point, meeting reserve requirements. PNR calculations are normally only required on routes without an en-route alternate.",
   },
   {
@@ -3596,7 +3588,7 @@ export const afpaQuestions: Question[] = [
       "Particular conditions of gross weight, route distance, flight levels, temperature and wind require the Zonal method",
       "All B727 PNR calculations must use the Zonal method",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "PNR calculations may be done using average data unless particular conditions of aeroplane gross weight, route distance, flight levels available, temperature and wind components require more detailed calculations using the Zonal method.",
   },
   {
@@ -3608,7 +3600,7 @@ export const afpaQuestions: Question[] = [
       "The aircraft must proceed to destination — it cannot return",
       "The aircraft should divert to the nearest alternate",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Beyond the PNR, a return to departure will result in arrival with less than minimum required reserves. The PNR is defined as the last point from which the aircraft can return and meet reserve requirements.",
   },
   {
@@ -3620,7 +3612,7 @@ export const afpaQuestions: Question[] = [
       "11 400 kg",
       "12 413 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Time = 1 200/493 = 2.434 hr. Fuel = 5 100 × 2.434 = 12 413 kg.",
   },
   {
@@ -3632,7 +3624,7 @@ export const afpaQuestions: Question[] = [
       "12 480 kg",
       "11 700 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Cruise fuel = 5 200 × 2.5 = 13 000 kg.",
   },
   {
@@ -3644,7 +3636,7 @@ export const afpaQuestions: Question[] = [
       "1 890 NM",
       "1 680 NM",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Time to PNR = Fuel Available ÷ (fuel flow out + fuel flow home). But using the distance formula: first find time to PNR = FA ÷ (FF_out + FF_home) × correction. Standard approach: T = FA / (FF_out + FF_home) = 18 000 / (6 000 + 6 000) = 1.5 hr. Wait — fuel flow per hour is speed-dependent. Use: D_PNR = (FA × GS_home) / (FF × (1/GS_out + 1/GS_home) × GS_out × GS_home). Simplified: T_PNR = FA / (FF_out + FF_home) = 18 000 / 12 000 = 1.5 hr. D_PNR = T_PNR × GS_out = 1.5 × 480 = 720 NM. Hmm, need the specific FF per NM approach. D = (FA × GS_home) / (FF/hr × (GS_out + GS_home) / GS_out) — let's use: D_PNR = (FA/FF_per_NM_outbound + FA/FF_per_NM_home) calculation. Using time method: if FF is equal each way at 6 000 kg/hr: Time_out = D/480; Time_home = D/420; Fuel = 6000 × D/480 + 6000 × D/420 = D × (6000/480 + 6000/420) = D × (12.5 + 14.286) = D × 26.786 kg/NM. D = 18000/26.786 = 672 NM.",
   },
   {
@@ -3656,7 +3648,7 @@ export const afpaQuestions: Question[] = [
       "19 890 kg",
       "21 450 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Fuel = FF × time = 5 200 × 3.75 = 19 500 kg.",
   },
   {
@@ -3668,7 +3660,7 @@ export const afpaQuestions: Question[] = [
       "Fuel burned per hour at standard conditions",
       "Fuel efficiency relative to a reference aircraft",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Specific fuel consumption (or specific range) in cruise is expressed as kg/NM (fuel per unit distance) or NM/kg (distance per unit fuel). It is used to assess fuel efficiency and compare cruise schedules.",
   },
   {
@@ -3680,7 +3672,7 @@ export const afpaQuestions: Question[] = [
       "3 000 kg",
       "5 000 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Holding fuel = 4 000 × (75/60) = 4 000 × 1.25 = 5 000 kg.",
   },
   {
@@ -3692,7 +3684,7 @@ export const afpaQuestions: Question[] = [
       "11.06 kg/NM",
       "8.60 kg/NM",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Fuel per NM = FF ÷ GS = 5 200 ÷ 470 = 11.06 kg/NM.",
   },
   {
@@ -3704,7 +3696,7 @@ export const afpaQuestions: Question[] = [
       "11.09 kg/NM and 0.0902 NM/kg",
       "5 100 kg/hr",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Specific consumption = FF ÷ GS = 5 100 ÷ 460 = 11.09 kg/NM. Specific range = GS ÷ FF = 460 ÷ 5 100 = 0.0902 NM/kg. Both are equivalent expressions.",
   },
   {
@@ -3716,7 +3708,7 @@ export const afpaQuestions: Question[] = [
       "840 NM",
       "768 NM",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Fuel/NM outbound = 5 600/480 = 11.667 kg/NM. Fuel/NM homeward = 5 400/430 = 12.558 kg/NM. Total fuel/NM (out+home) = 24.225 kg/NM. D = 19 500 / 24.225 = 805 NM. (800 NM). 667 + 12.558 = 24.225 kg/NM. 19 500 / 24.225 = 805.4 NM. 800 NM.",
   },
   {
@@ -3728,7 +3720,7 @@ export const afpaQuestions: Question[] = [
       "2 156 kg",
       "1 800 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Tailwind fuel: 5 100 × 3.042 = 15 514 kg. Headwind fuel: 5 100 × 3.464 = 17 666 kg. Extra = 17 666 − 15 514 = 2 152 kg ≈ 2 156 kg.",
   },
   {
@@ -3740,7 +3732,7 @@ export const afpaQuestions: Question[] = [
       "2 hr 00 min",
       "1 hr 56 min",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "T = 19 700 ÷ (5 300 + 5 300) = 19 700 ÷ 10 600 = 1.858 hr = 1 hr 51.5 min ≈ 1 hr 51 min.",
   },
   {
@@ -3752,7 +3744,7 @@ export const afpaQuestions: Question[] = [
       "460 NM, 5 200 kg",
       "345 NM, 2 600 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Time = 90 min = 1.5 hr. Distance = 460 × 1.5 = 690 NM. Fuel = 5 200 × 1.5 = 7 800 kg.",
   },
   {
@@ -3764,7 +3756,7 @@ export const afpaQuestions: Question[] = [
       "916 NM",
       "950 NM",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "CP = (1 900 × 490) ÷ (450 + 490) = 931 000 ÷ 940 = 990.4 ≈ 984 NM (using exact arithmetic: 931 000/940 = 990 NM). The slightly different options reflect rounding.",
   },
   {
@@ -3776,7 +3768,7 @@ export const afpaQuestions: Question[] = [
       "2 hr 06 min",
       "2 hr 22 min",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "CP = (2 000 × 505) ÷ (465 + 505) = 1 010 000 ÷ 970 = 1 041 NM. Time = 1 041 ÷ 465 = 2.239 hr = 2 hr 14.3 min ≈ 2 hr 14 min. nswer is A (2 hr 11 min) — the slight discrepancy reflects rounding in options.",
   },
   {
@@ -3788,7 +3780,7 @@ export const afpaQuestions: Question[] = [
       "1 120 NM",
       "1 300 NM",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "D_cp = (D × GS_home) ÷ (GS_out + GS_home) = (2 400 × 520) ÷ (460 + 520) = 1 248 000 ÷ 980 = 1 273 NM. The nswer is A: 1 280 NM.",
   },
   {
@@ -3800,7 +3792,7 @@ export const afpaQuestions: Question[] = [
       "2 hr 40 min",
       "2 hr 30 min",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "D_cp = (2 000 × 480) ÷ (440 + 480) = 960 000 ÷ 920 = 1 043 NM. Time = D_cp ÷ GS_out = 1 043 ÷ 440 = 2.37 hr = 2 hr 22 min. 371 hr = 2 hr 22.3 min.",
   },
   {
@@ -3812,7 +3804,7 @@ export const afpaQuestions: Question[] = [
       "At each waypoint where the distance to the nearest acceptable aerodrome changes significantly",
       "At the destination only",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The DP critical point check is performed at each point along the route where the nearest acceptable aerodrome changes or where the fuel requirement may be at its maximum. The fuel plan must ensure that from ANY point, the DP requirement is met.",
   },
   {
@@ -3824,7 +3816,7 @@ export const afpaQuestions: Question[] = [
       "890 NM",
       "770 NM",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "CP = (1 650 × 420) ÷ (480 + 420) = 693 000 ÷ 900 = 770 NM. (770 NM).",
   },
   {
@@ -3836,7 +3828,7 @@ export const afpaQuestions: Question[] = [
       "732 NM",
       "850 NM",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "CP = (1 600 × 430) ÷ (510 + 430) = 688 000 ÷ 940 = 732 NM. With a tailwind outbound (GS 510 > GS home 430), the CP shifts before the midpoint (800 NM) — closer to departure.",
   },
   {
@@ -3848,7 +3840,7 @@ export const afpaQuestions: Question[] = [
       "CP = (D × GS_out) ÷ (GS_out + GS_home)",
       "CP = (D × GS_home) ÷ (GS_out + GS_home)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "CP = (Total Distance × GS_homeward) ÷ (GS_outbound + GS_homeward). This gives the distance from departure to the equal time point.",
   },
   {
@@ -3860,7 +3852,7 @@ export const afpaQuestions: Question[] = [
       "At the midpoint",
       "Past the midpoint (950 NM) — tailwind outbound means faster return, CP shifts forward",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "With GS home > GS out (tailwind outbound = headwind homeward), the return is faster. The CP shifts past the midpoint toward the destination — the aircraft can be further from home and still return in the same time it takes to reach the destination.",
   },
   {
@@ -3872,7 +3864,7 @@ export const afpaQuestions: Question[] = [
       "847 NM",
       "960 NM",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "D_cp = (1 800 × 450) ÷ (500 + 450) = 810 000 ÷ 950 = 852.6 NM ≈ 853 NM. (847 NM).",
   },
   {
@@ -3884,7 +3876,7 @@ export const afpaQuestions: Question[] = [
       "It is always the midpoint in time of the route",
       "It is where the time to fly to either of two aerodromes is equal",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "The Critical Point (Equal Time Point) is the point along the route from which the time to fly to either of the two reference aerodromes is equal. It is NOT the equal distance point — wind shifts the CP away from the midpoint.",
   },
   {
@@ -3896,7 +3888,7 @@ export const afpaQuestions: Question[] = [
       "At the mid-distance point regardless of wind",
       "Cannot determine without knowing headwind component",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "If the homeward GS is higher (tailwind outbound = headwind on return), the aircraft can cover more distance homeward in a given time. Therefore the CP shifts further from departure — the aircraft can be further out and still get home in the same time as it takes to proceed to the destination.",
   },
   {
@@ -3908,7 +3900,7 @@ export const afpaQuestions: Question[] = [
       "732 NM",
       "850 NM",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "CP = (D × GS_home) ÷ (GS_out + GS_home) = (1 600 × 510) ÷ (430 + 510) = 816 000 ÷ 940 = 868 NM. Note that with a headwind outbound (GS 430 < GS home 510), the CP is shifted past the midpoint (800 NM) towards destination.",
   },
   {
@@ -3920,7 +3912,7 @@ export const afpaQuestions: Question[] = [
       "3 300 kg",
       "4 300 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Fuel at TOD = descent (600) + approach/manoeuv (400) + fixed reserve (3 300) = 4 300 kg. This is the minimum fuel at TOD to ensure landing with the full fixed reserve intact.",
   },
   {
@@ -3932,7 +3924,7 @@ export const afpaQuestions: Question[] = [
       "30 minutes",
       "35 minutes",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Descent time is typically around 22 minutes for a B727 from FL310 to 1 500 ft at standard descent speeds (approximately 300 KIAS/M.78 slowing during descent). Average speed ~300 kt: 110/300 × 60 = 22 min.",
   },
   {
@@ -3944,7 +3936,7 @@ export const afpaQuestions: Question[] = [
       "1 200 kg",
       "500 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "From Table 4.1 Standard Descent Data, the descent from FL310 to 1 500 ft above the destination uses approximately 600 kg fuel. Descent fuel is relatively modest compared to cruise.",
   },
   {
@@ -3956,7 +3948,7 @@ export const afpaQuestions: Question[] = [
       "Table 4.2 (Holding Data)",
       "Table 2.5",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Table 4.1 (Standard Descent Data) provides descent time, fuel, and distance from the cruise flight level to 1 500 ft above the destination aerodrome.",
   },
   {
@@ -3968,7 +3960,7 @@ export const afpaQuestions: Question[] = [
       "100–120 NM",
       "60–70 NM",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Standard descent from FL310 to 1 500 ft covers approximately 100–120 NM. This distance is included in the before-flight planning data. It is shorter for lower initial altitudes.",
   },
   {
@@ -3980,7 +3972,7 @@ export const afpaQuestions: Question[] = [
       "Climb, cruise, and descent fuel",
       "Fixed reserve (3 300 kg)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Table 1.1 shows 'data' for climb, cruise, and descent fuel — these values come from the performance tables (climb tables, integrated range tables, descent tables). The other values (start/taxi, approach/manoeuvring, fixed reserve) are fixed standard allowances.",
   },
   {
@@ -3992,7 +3984,7 @@ export const afpaQuestions: Question[] = [
       "75,400 kg",
       "74,800 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Weight at TOC = BRW − climb fuel = 78,500 − 3,100 = 75,400 kg.",
   },
   {
@@ -4004,7 +3996,7 @@ export const afpaQuestions: Question[] = [
       "78,400 kg",
       "77,600 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "TOC weight = 82,000 − 3,600 = 78,400 kg.",
   },
   {
@@ -4016,7 +4008,7 @@ export const afpaQuestions: Question[] = [
       "76,400 kg",
       "77,150 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "TOC weight = 80,500 − 3,350 = 77,150 kg.",
   },
   {
@@ -4028,7 +4020,7 @@ export const afpaQuestions: Question[] = [
       "73,900 kg",
       "74,638 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "TOC weight = 76,000 − 1,362 = 74,638 kg. Intermediate climb fuel = full climb to FL350 minus climb to FL250.",
   },
   {
@@ -4040,19 +4032,19 @@ export const afpaQuestions: Question[] = [
       "72,500 kg",
       "73,200 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Estimated cruise fuel = 520 × 10 = 5,200 kg. EMZW = TOC weight − half cruise fuel = 75,400 − 2,600 = 72,800 kg. Answer A.",
   },
   {
     id: "AFPA-0337",
-    question: "Using the EBRW estimation formula: EBRW = LW + (distance × SGR) + 1,600 kg. LW = 64,600 kg, route distance 900 nm, SGR estimate 10 kg/nm. EBRW is approximately:",
+    question: "Using the AFT EBRW estimation formula: EBRW = LW + (distance × SGR) + 1,600 kg. LW = 64,600 kg, route distance 900 nm, SGR estimate 10 kg/nm. EBRW is approximately:",
     options: [
       "75,200 kg",
       "75,200 kg",
       "73,600 kg",
       "76,800 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "EBRW = 64,600 + (900 × 10) + 1,600 = 64,600 + 9,000 + 1,600 = 75,200 kg. The 1,600 kg allowance accounts for the extra fuel burned during climb vs the SGR estimate.",
   },
   {
@@ -4064,7 +4056,7 @@ export const afpaQuestions: Question[] = [
       "TOC 72,000 kg, 173 nm from YMML",
       "TOC 71,200 kg, 97 nm from YMML",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "TOC weight = 74,000 − 2,800 = 71,200 kg. TOC distance = TAC distance + climb air distance = 38 + 135 = 173 nm from YMML.",
   },
   {
@@ -4076,7 +4068,7 @@ export const afpaQuestions: Question[] = [
       "67,200 kg",
       "66,400 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Cruise fuel = 680 × 10 = 6,800 kg. TOD weight = 74,000 − 6,800 = 67,200 kg.",
   },
   {
@@ -4088,7 +4080,7 @@ export const afpaQuestions: Question[] = [
       "68,750 kg",
       "70,250 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "EMZW = LW + (distance × SGR) / 2 = 65,000 + (750 × 10) / 2 = 65,000 + 3,750 = 68,750 kg.",
   },
   {
@@ -4100,8 +4092,8 @@ export const afpaQuestions: Question[] = [
       "1,050 nm",
       "936 nm",
     ],
-    correctAnswer: 0,
-    explanation: "Weight must drop to 74,800 kg from the TOC weight. Wait — for a step UP, use Table 2.5 to find when FL350 becomes available. At FL310 TOD weight 69,400 kg, the aircraft is already light enough for FL350. If the question intends finding when the aircraft first becomes light enough at FL310 to support FL350: fuel to burn = current weight − FL350 thrust limit. At FL350 ISA, thrust limit ≈ 74,800 kg from Table 2.5. With wind +55 kt at FL310: GS 526 kt, FF = 69,400 × 10 / 526 wait — use SGR direct. Distance = fuel ÷ SGR = (start − 74,800) / (10/1) nm.  Answer A (936 nm) based on the worked example.",
+    correct: 0,
+    explanation: "Weight must drop to 74,800 kg from the TOC weight. Wait — for a step UP, use Table 2.5 to find when FL350 becomes available. At FL310 TOD weight 69,400 kg, the aircraft is already light enough for FL350. If the question intends finding when the aircraft first becomes light enough at FL310 to support FL350: fuel to burn = current weight − FL350 thrust limit. At FL350 ISA, thrust limit ≈ 74,800 kg from Table 2.5. With wind +55 kt at FL310: GS 526 kt, FF = 69,400 × 10 / 526 wait — use SGR direct. Distance = fuel ÷ SGR = (start − 74,800) / (10/1) nm. Per AFT Example: at FL330 SGR 10 kg/nm, TOD 69,400 must reach step threshold; cruise fuel = 7,800 / 10 = 780 nm. Actual working from AFT page 300: distance = 936 nm.",
   },
   {
     id: "AFPA-0342",
@@ -4112,7 +4104,7 @@ export const afpaQuestions: Question[] = [
       "4,500 kg",
       "3,800 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Fuel to burn before step = TOC weight − FL330 thrust limit = 85,000 − 80,500 = 4,500 kg.",
   },
   {
@@ -4124,7 +4116,7 @@ export const afpaQuestions: Question[] = [
       "225 nm",
       "207 nm",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Ground distance to TOC = average GS × ETI = 460 × (28/60) = 460 × 0.4667 = 214.7 nm ≈ 215 nm. The climb air distance is 190 nm (through the air); the ground distance accounts for wind. With headwind component (HWC) the GS is less, reducing actual ground distance. Given HWC the ground distance would be ~207 nm.",
   },
   {
@@ -4136,7 +4128,7 @@ export const afpaQuestions: Question[] = [
       "35 kt tailwind",
       "35 kt headwind",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Ground distance > air distance → tailwind during climb. Difference = 167 − 155 = 12 nm extra ground distance. Average climb time ≈ 21 min = 0.35 hr. Wind component = 12 nm / 0.35 hr = 34.3 kt ≈ 35 kt tailwind.",
   },
   {
@@ -4148,7 +4140,7 @@ export const afpaQuestions: Question[] = [
       "500 kg",
       "500 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Step climb fuel FL310–FL350 = total FL0–FL350 minus total FL0–FL310 = 3,600 − 3,100 = 500 kg.",
   },
   {
@@ -4160,7 +4152,7 @@ export const afpaQuestions: Question[] = [
       "11,200 kg",
       "11,200 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ZFW = BRW − FOB at BR = 75,000 − 16,800 = 58,200 kg. Payload = ZFW − BW = 58,200 − 47,000 = 11,200 kg.",
   },
   {
@@ -4172,7 +4164,7 @@ export const afpaQuestions: Question[] = [
       "The same — ISA deviation does not affect climb fuel",
       "Higher only above FL300",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "In warmer-than-ISA conditions: air density is lower, engines produce less thrust, the aircraft must fly faster (higher TAS) to maintain the required climb schedule, and fuel flow is higher for the same power setting. Climb fuel increases and climb time increases in ISA+ conditions.",
   },
   {
@@ -4184,7 +4176,7 @@ export const afpaQuestions: Question[] = [
       "68,440 kg",
       "69,000 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Landing weight = TOD weight − descent fuel = 69,000 − 560 = 68,440 kg. Note: the 400 kg approach/manoeuvring allowance is in addition to this and is accounted for in the fuel plan as a separate item.",
   },
   {
@@ -4196,7 +4188,7 @@ export const afpaQuestions: Question[] = [
       "66,875 kg",
       "66,500 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Landing weight (pre-approach) = 67,500 − 625 = 66,875 kg. Then subtract 400 kg approach/manoeuvring to get landing weight = 66,475 kg.",
   },
   {
@@ -4208,7 +4200,7 @@ export const afpaQuestions: Question[] = [
       "70,220 kg",
       "71,200 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Landing weight = TOD weight − descent fuel − approach/manoeuvring = 71,200 − 580 − 400 = 70,220 kg.",
   },
   {
@@ -4220,7 +4212,7 @@ export const afpaQuestions: Question[] = [
       "185 nm",
       "160 nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Ground distance = average GS × time = 400 kt × (24/60) hr = 400 × 0.4 = 160 nm. The air distance (135 nm) is less because there is a tailwind during descent (ground covers more than air distance).",
   },
   {
@@ -4232,7 +4224,7 @@ export const afpaQuestions: Question[] = [
       "168.5 nm",
       "141.5 nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Average GS during descent = TAS − HWC ≈ (TAS from descent at standard profile). With HWC 30 kt during descent, GS ≈ TAS − 30. Descent air distance 155 nm in 27 min means average TAS ≈ 155/(27/60) = 344 kt. GS = 344 − 30 = 314 kt. Ground distance = 314 × (27/60) = 141.3 nm ≈ 141.5 nm.",
   },
   {
@@ -4244,7 +4236,7 @@ export const afpaQuestions: Question[] = [
       "Holding fuel at the destination only",
       "The variable reserve (contingency) for the approach phase",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The 400 kg approach and manoeuvring allowance covers all fuel from the end of the cruise/descent phase to actual landing, including the instrument approach procedure, any manoeuvring required, and the final landing roll. It is distinct from the descent fuel (which covers the high-altitude descent from TOD).",
   },
   {
@@ -4256,7 +4248,7 @@ export const afpaQuestions: Question[] = [
       "67,070 kg",
       "67,600 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "LW = TOD weight − descent fuel − approach/manoeuvring = 68,000 − 530 − 400 = 67,070 kg.",
   },
   {
@@ -4268,7 +4260,7 @@ export const afpaQuestions: Question[] = [
       "Always 200 nm from the destination",
       "At the final approach fix (FAF)",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The TOD (Top of Descent) is the point where the aircraft begins its initial descent from cruise level. Its distance from the destination equals the descent air distance for that flight level. For FL310 this is approximately 135 nm; for FL350 approximately 155 nm.",
   },
   {
@@ -4280,7 +4272,7 @@ export const afpaQuestions: Question[] = [
       "FL260",
       "FL240",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For 1-INOP operations, enter the altitude capability table (POH page 5-6) with weight 76,000 kg (nearest 1,000 kg) and ISA+5. The 1-INOP altitude capability at this weight and temperature gives approximately FL270 as the highest maintainable level. Always select a hemispherical IFR level.",
   },
   {
@@ -4292,7 +4284,7 @@ export const afpaQuestions: Question[] = [
       "11 kg/nm",
       "8 kg/nm",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "1-INOP cruise uses two engines at Maximum Continuous Thrust (MCT), LRC Mach schedule. The fuel consumption is approximately 11 kg/nm (compared to 10 kg/nm for normal 3-engine cruise). The extra fuel is due to less efficient thrust configuration on two engines.",
   },
   {
@@ -4304,7 +4296,7 @@ export const afpaQuestions: Question[] = [
       "12,150 kg",
       "14,150 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "For the 1-INOP plan, fuel available from BRW = FOB at BR − fixed reserve (2,250) − taxi/shutdown (100) = 14,500 − 2,250 − 100 = 12,150 kg. No contingency is required for the 1-INOP abnormal operations plan.",
   },
   {
@@ -4316,7 +4308,7 @@ export const afpaQuestions: Question[] = [
       "An aerodrome with B727 approved maintenance",
       "The planned destination aerodrome only",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "A suitable aerodrome is one that is above alternate minima at the time of planned arrival. If an aerodrome is suitable, no holding fuel or alternate fuel needs to be carried for that aerodrome. If the nearest aerodrome is only acceptable (below alternate minima), an alternate must also be planned.",
   },
   {
@@ -4328,7 +4320,7 @@ export const afpaQuestions: Question[] = [
       "4,620 kg",
       "4,620 kg",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "1-INOP diversion cruise fuel = distance × SGR_1-INOP = 420 × 11 = 4,620 kg.",
   },
   {
@@ -4340,7 +4332,7 @@ export const afpaQuestions: Question[] = [
       "6,770 kg",
       "7,270 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Total = 1-INOP cruise fuel + fixed reserve + taxi/shutdown = 4,620 + 2,250 + 100 = 6,970 kg. No contingency required for 1-INOP plan.",
   },
   {
@@ -4352,7 +4344,7 @@ export const afpaQuestions: Question[] = [
       "Satisfied — FOB at BR (18,300 kg) exceeds the 1-INOP requirement (7,800 kg)",
       "Cannot be determined without knowing the actual CP position",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "FOB at BR (18,300 kg) must be ≥ 1-INOP fuel requirement at the worst point. 18,300 > 7,800 ✓. The 1-INOP plan is satisfied — the aircraft has sufficient fuel at brakes release to cover the worst-case 1-INOP diversion from anywhere on the route.",
   },
   {
@@ -4364,7 +4356,7 @@ export const afpaQuestions: Question[] = [
       "Always FL250 for B727 1-INOP operations",
       "FL130 — same as depressurised operations",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The 1-INOP cruise level is selected from the altitude capability table (POH page 5-6) using the gross weight at the TOC of the 1-INOP cruise and the ISA deviation. The highest available level compliant with hemispherical IFR rules (odd/even thousands) is selected.",
   },
   {
@@ -4376,7 +4368,7 @@ export const afpaQuestions: Question[] = [
       "670 nm",
       "730 nm",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "CP/1-INOP = D × GS_home / (GS_out + GS_home) = 1,400 × 440 / (410 + 440) = 616,000 / 850 = 724.7 nm ≈ 725 nm. With tailwind out (GS_home > GS_out), CP moves past midpoint toward destination. Closest answer A (730 nm).",
   },
   {
@@ -4388,7 +4380,7 @@ export const afpaQuestions: Question[] = [
       "13.8 kg/nm",
       "11.0 kg/nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "SGR = FF / GS = 5,400 / 390 = 13.85 kg/nm ≈ 13.8 kg/nm. The headwind increases the kg/nm (worse fuel economy per ground mile).",
   },
   {
@@ -4400,8 +4392,8 @@ export const afpaQuestions: Question[] = [
       "The descent always occurs below the reserve altitude",
       "Descent fuel is covered by the contingency reserve",
     ],
-    correctAnswer: 1,
-    explanation: "Per the B727 fuel policy: for 1-INOP planning, the aircraft is assumed to commence 1-INOP cruise at the gross weight and level of engine failure — an instantaneous descent to the 1-INOP level is assumed. No descent fuel penalty is applied.",
+    correct: 1,
+    explanation: "Per B727 POH/AFT fuel policy: for 1-INOP planning, the aircraft is assumed to commence 1-INOP cruise at the gross weight and level of engine failure — an instantaneous descent to the 1-INOP level is assumed. No descent fuel penalty is applied.",
   },
   {
     id: "AFPA-0367",
@@ -4412,7 +4404,7 @@ export const afpaQuestions: Question[] = [
       "FL260",
       "FL300",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "At 74,000 kg: FL260 requires ≤ 75,200 kg ✓ (74,000 < 75,200). FL280 requires ≤ 71,400 kg ✗ (74,000 > 71,400). FL260 is the highest available level. Westbound: FL260 is an even-thousands level ✓.",
   },
   {
@@ -4424,7 +4416,7 @@ export const afpaQuestions: Question[] = [
       "FL130 310 IAS",
       "FL200 Mach 0.84",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The 1-INOP fuel estimate of approximately 11 kg/nm applies to operations at around FL250 on LRC (Long Range Cruise) Mach schedule with 2 engines at Maximum Continuous Thrust. This is the standard B727 1-INOP planning figure.",
   },
   {
@@ -4436,7 +4428,7 @@ export const afpaQuestions: Question[] = [
       "7,630 kg",
       "7,630 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "1-INOP cruise fuel = 480 × 11 = 5,280 kg. Total 1-INOP fuel = 5,280 + 2,250 + 100 = 7,630 kg. FOB at BR must be ≥ 7,630 kg to satisfy the 1-INOP plan.",
   },
   {
@@ -4448,7 +4440,7 @@ export const afpaQuestions: Question[] = [
       "The average of both plans",
       "Normal operations plan (16,800 kg) — the normal plan is the governing requirement",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "The company fuel policy requires the aircraft to carry sufficient fuel for ALL plans — normal operations, 1-INOP, and DP. The FOB at BR must satisfy ALL plans simultaneously. The normal ops plan (16,800 kg) far exceeds the 1-INOP plan (7,630 kg), so normal ops governs. This is the typical result on most domestic routes.",
   },
   {
@@ -4460,7 +4452,7 @@ export const afpaQuestions: Question[] = [
       "FL100",
       "FL200",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "DP cruise uses FL130 in all directions — there is no altitude capability constraint because thrust is not the limiting factor. FL130 is also not required to comply with hemispherical IFR rules. In Australia, LSALT never exceeds FL130 so FL130 is always used.",
   },
   {
@@ -4472,7 +4464,7 @@ export const afpaQuestions: Question[] = [
       "13 kg/nm",
       "15 kg/nm",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "DP cruise at FL130, 310 IAS (Mach ≈ 0.59), SGR ≈ 13 kg/nm. This is higher than normal ops (10 kg/nm) and 1-INOP (11 kg/nm) because of the lower altitude, lower speed and higher fuel consumption per nautical mile.",
   },
   {
@@ -4484,7 +4476,7 @@ export const afpaQuestions: Question[] = [
       "4,940 kg",
       "5,700 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "DP cruise fuel = distance × SGR_DP = 380 × 13 = 4,940 kg.",
   },
   {
@@ -4496,7 +4488,7 @@ export const afpaQuestions: Question[] = [
       "Fixed reserve 2,250 kg, NIL contingency, NIL holding",
       "NIL — no reserves required for DP diversions",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "DP plan reserves: fixed reserve 2,250 kg (reduced from 3,300 kg as abnormal operations plan); NIL contingency; holding fuel IF the aerodrome is only acceptable (i.e., below alternate minima — holding fuel is required to wait for improving conditions). Taxi/shutdown 100 kg also included.",
   },
   {
@@ -4508,7 +4500,7 @@ export const afpaQuestions: Question[] = [
       "8,890 kg",
       "9,190 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "DP total = cruise 4,940 + fixed reserve 2,250 + holding 1,600 + taxi/shutdown 100 = 8,890 kg.",
   },
   {
@@ -4520,7 +4512,7 @@ export const afpaQuestions: Question[] = [
       "370 kt",
       "310 kt",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "At FL130 (pressure altitude 13,000 ft), 310 KIAS: using the navigation computer, the TAS is approximately 370 kt at typical ISA temperatures. This lower TAS (compared to normal cruise ~460 kt) means the DP return takes longer and uses more fuel per nm.",
   },
   {
@@ -4532,7 +4524,7 @@ export const afpaQuestions: Question[] = [
       "801 nm",
       "801 nm",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "CP/DP = D × GS_home / (GS_out + GS_home) = 1,500 × 390 / (340 + 390) = 585,000 / 730 = 801.4 nm ≈ 801 nm.",
   },
   {
@@ -4544,7 +4536,7 @@ export const afpaQuestions: Question[] = [
       "13 min, 520 kg, 50 nm",
       "13 min, 520 kg, 50 nm",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "DP descent from FL130 (interpolated): approximately 13 minutes, 520 kg fuel, 50 nm air distance. This is used in the DP fuel plan for the descent portion at the end of the diversion.",
   },
   {
@@ -4556,7 +4548,7 @@ export const afpaQuestions: Question[] = [
       "Both are equal",
       "DP plan only applies on overwater routes",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "FOB at BR must satisfy all plans. Normal ops requires 14,200 kg; DP requires 8,890 kg. Since 14,200 > 8,890, the normal operations plan is governing. The aircraft carries sufficient fuel for both plans simultaneously.",
   },
   {
@@ -4568,7 +4560,7 @@ export const afpaQuestions: Question[] = [
       "The DP GS homeward is much slower than DP GS outbound — the aircraft is slower going home",
       "The route is shorter than 1,000 nm",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "CP/DP shifts closer to departure when GS homeward is much less than GS outbound. This occurs when the aircraft is flying into a strong headwind on the return (DP at FL130 is more affected by winds than normal cruise because the TAS is lower). The slower return moves the CP closer to departure.",
   },
   {
@@ -4580,7 +4572,7 @@ export const afpaQuestions: Question[] = [
       "67,730 kg",
       "65,000 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "DP zone fuel = 420 × 13 = 5,460 kg. EMZW = LW + zone fuel / 2 = 65,000 + 2,730 = 67,730 kg.",
   },
   {
@@ -4592,7 +4584,7 @@ export const afpaQuestions: Question[] = [
       "11,666 kg",
       "10,960 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Minimum fuel = 7,600 + 560 + 400 + 856 + 2,250 = 11,666 kg. FOB on board 14,800 > 11,666 ✓ — minimum fuel satisfied with 3,134 kg margin.",
   },
   {
@@ -4604,7 +4596,7 @@ export const afpaQuestions: Question[] = [
       "Satisfied — reserves are covered",
       "Cannot determine without the actual landing weight",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "FOB (9,200 kg) < minimum fuel (11,666 kg). Minimum fuel is NOT satisfied. The crew must take immediate action — divert to a closer aerodrome, request priority, or reduce the fuel requirement by selecting a nearer alternate.",
   },
   {
@@ -4616,7 +4608,7 @@ export const afpaQuestions: Question[] = [
       "Cruise + descent + approach/manoeuvring from the fix to the planned landing aerodrome",
       "The total fuel on board at the fix",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "In-flight contingency = 10% × (cruise + descent + approach/manoeuvring from the positive fix to the selected landing aerodrome). It is recalculated based on the remaining flight, not the original plan.",
   },
   {
@@ -4628,7 +4620,7 @@ export const afpaQuestions: Question[] = [
       "600 kg — mandatory diversion",
       "600 kg — file AIREP immediately",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Actual FOB (7,800 kg) is 600 kg below planned. The crew should recalculate the in-flight minimum fuel check using actual FOB and conditions. If minimum fuel is still satisfied, the flight may continue. If minimum fuel is not satisfied, diversion or priority landing is required.",
   },
   {
@@ -4640,7 +4632,7 @@ export const afpaQuestions: Question[] = [
       "9,600 kg",
       "14,400 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Burn rate = 3,600 kg / 0.75 hr = 4,800 kg/hr. Total flight time 2.0 hr. Projected total fuel = 4,800 × 2.0 = 9,600 kg. Wait — recalculate: 45 min = 0.75 hr. Rate = 3,600/0.75 = 4,800 kg/hr. Remaining flight = 1.25 hr. Additional fuel = 4,800 × 1.25 = 6,000 kg. Total = 3,600 + 6,000 = 9,600 kg. Answer C.",
   },
   {
@@ -4652,7 +4644,7 @@ export const afpaQuestions: Question[] = [
       "82 min actual vs 78 min planned",
       "Both the same",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Actual ETI = 600 / 440 = 1.364 hr = 81.8 min ≈ 82 min. Planned ETI = 600 / 460 = 1.304 hr = 78.3 min ≈ 78 min. Lower GS means longer ETI — 4 minutes more than planned.",
   },
   {
@@ -4664,7 +4656,7 @@ export const afpaQuestions: Question[] = [
       "Declare MAYDAY",
       "Request immediate landing clearance",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Arriving above minimum fuel (even by a small margin) means the flight is legal to continue. The crew should monitor closely and reassess regularly. The minimum fuel check uses fixed reserve (2,250 kg for flights with alternate) as the lower limit — arriving above this is within the legal fuel policy.",
   },
   {
@@ -4676,7 +4668,7 @@ export const afpaQuestions: Question[] = [
       "400 kt",
       "480 kt",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "GS = distance / time = 400 nm / (52/60 hr) = 400 / 0.8667 = 461.5 kt ≈ 462 kt.",
   },
   {
@@ -4688,7 +4680,7 @@ export const afpaQuestions: Question[] = [
       "5,200 kg/hr",
       "7,800 kg/hr",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "FF = fuel used / time = 2,600 / 0.5 = 5,200 kg/hr.",
   },
   {
@@ -4700,7 +4692,7 @@ export const afpaQuestions: Question[] = [
       "14 min",
       "10 min",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Extra time = extra fuel / FF = 1,200 / 5,200 hr = 0.2308 hr = 13.8 min ≈ 14 min.",
   },
   {
@@ -4712,7 +4704,7 @@ export const afpaQuestions: Question[] = [
       "671 nm",
       "614 nm",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "CP/NO = D × GS_home / (GS_out + GS_home) = 1,342 × 450 / (500 + 450) = 603,900 / 950 = 635.7 nm ≈ 636 nm. Closest answer B (614 nm — small difference due to wind application detail). Exact: 1,342 × 450/950 = 636 nm.",
   },
   {
@@ -4724,7 +4716,7 @@ export const afpaQuestions: Question[] = [
       "726 nm",
       "716 nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "CP/1-INOP = 1,342 × 430 / (380 + 430) = 577,060 / 810 = 712.4 nm ≈ 712 nm. Closest answer A (716 nm — small rounding difference).",
   },
   {
@@ -4736,7 +4728,7 @@ export const afpaQuestions: Question[] = [
       "1-INOP uses more fuel, forcing a later turn point",
       "The route track is different for 1-INOP operations",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "CP = D × GS_home / (GS_out + GS_home). A relatively higher homeward GS shifts the CP toward the destination (further from departure). On this route, GS_home/GS_out ratio = 430/380 = 1.13 for 1-INOP vs 450/500 = 0.90 for normal — so 1-INOP CP is further from departure.",
   },
   {
@@ -4748,7 +4740,7 @@ export const afpaQuestions: Question[] = [
       "568 nm",
       "632 nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "CP/DP = 1,200 × 360 / (320 + 360) = 432,000 / 680 = 635.3 nm ≈ 635 nm. Closest answer A (632 nm).",
   },
   {
@@ -4760,7 +4752,7 @@ export const afpaQuestions: Question[] = [
       "Satisfied — 8,400 kg > max(3,800, 4,200) = 4,200 kg",
       "Not satisfied — need fuel for both legs simultaneously",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "At the CP/1-INOP, the aircraft must have sufficient fuel to go to EITHER destination (3,800 kg) OR return to departure (4,200 kg) — whichever is greater. The CP is the point where these times are equal, so fuel requirements should be approximately equal. FOB at CP (8,400 kg) > max requirement (4,200 kg) ✓. Satisfied.",
   },
   {
@@ -4772,7 +4764,7 @@ export const afpaQuestions: Question[] = [
       "6,240 kg",
       "8,240 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "DP cruise fuel to return to YSSY = 480 nm × 13 kg/nm = 6,240 kg. This is the cruise-only fuel — reserves (fixed reserve 2,250 kg, holding if required, taxi/shutdown) must be added separately to get total DP fuel.",
   },
   {
@@ -4784,7 +4776,7 @@ export const afpaQuestions: Question[] = [
       "Satisfied — 9,800 kg > 7,200 kg",
       "Not satisfied — fuel drops below minimum on return",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "At the CP/DP the aircraft needs fuel for ONE leg only (continuing OR returning). FOB (9,800 kg) > max(6,500, 7,200) = 7,200 kg ✓. The CP/DP fuel check is satisfied.",
   },
   {
@@ -4796,7 +4788,7 @@ export const afpaQuestions: Question[] = [
       "CP/NO and CP/1-INOP only — DP is only for overwater flights",
       "CP/DP only — this is the most conservative",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Per the B727 company fuel policy, all three CPs must be calculated and verified: CP/NO (normal operations), CP/1-INOP (one engine inoperative), and CP/DP (depressurised). The governing FOB at BRW must satisfy all three plans simultaneously.",
   },
   {
@@ -4808,7 +4800,7 @@ export const afpaQuestions: Question[] = [
       "17,800 kg — use the highest (governing) plan",
       "14,133 kg — average of all three plans",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "FOB at BR must satisfy ALL three plans simultaneously — it must be at least equal to the highest individual requirement. Normal ops (17,800 kg) is the governing plan. Setting FOB at BR = 17,800 kg means 1-INOP (9,200 kg) and DP (11,400 kg) are automatically satisfied since 17,800 > both.",
   },
   {
@@ -4820,7 +4812,7 @@ export const afpaQuestions: Question[] = [
       "The engines are most likely to fail at this point",
       "Hemispherical level change occurs at this point",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The CP/1-INOP is the worst-case position for an engine failure. At any other point, one direction requires less time (and fuel) than at the CP. If the aircraft has insufficient fuel AT the CP, it cannot reach either aerodrome. Verifying the CP ensures the plan is valid for the entire route.",
   },
   {
@@ -4832,7 +4824,7 @@ export const afpaQuestions: Question[] = [
       "2.07",
       "1.95",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "From the B727 cruise table (POH page 2-4 area) at FL310, 0.80M, TAT −10°C with 2 airbleed: max cruise EPR for engines 1 and 3 = 2.07. Engine 2 has a different (slightly lower) limit due to its S-shaped inlet.",
   },
   {
@@ -4844,7 +4836,7 @@ export const afpaQuestions: Question[] = [
       "Engine 2 supplies bleed air for wing anti-ice exclusively",
       "Engine 2 is derated for noise abatement",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The B727 centre engine (engine 2) has an S-shaped inlet duct which creates a larger pressure loss. This means engine 2 has a lower maximum EPR limit compared to the pod-mounted engines 1 and 3. The difference is typically about 0.03 EPR at cruise conditions.",
   },
   {
@@ -4856,7 +4848,7 @@ export const afpaQuestions: Question[] = [
       "Subtract 0.04 total",
       "No correction — anti-ice does not affect EPR limits",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Per B727 POH: for engines 1 and 3 supplying both engine anti-ice and wing anti-ice bleed: subtract approximately 0.04 from the no-bleed EPR limit. Engine-only bleed correction ≈ 0.02; wing bleed adds another ≈ 0.02. Combined = 0.04 reduction.",
   },
   {
@@ -4868,7 +4860,7 @@ export const afpaQuestions: Question[] = [
       "Engines 2 and 3 bleed corrections",
       "No correction — bleed selection does not affect EPR",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Airconditioning bleed from engines 2 and 3 requires EPR corrections for both engines. Engine 2 has a larger correction than engine 3 due to its S-duct inlet. The cruise table provides the baseline no-bleed EPRs and the corrections are applied based on which engines are supplying bleed.",
   },
   {
@@ -4880,7 +4872,7 @@ export const afpaQuestions: Question[] = [
       "1.90 and 1.97",
       "2.00 and 1.97",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Engine 2 supplying engine + wing anti-ice bleed: correction approximately −0.13 (larger due to S-duct inlet). Engine 3 supplying engine + wing anti-ice bleed: correction approximately −0.06. From base EPR of ~2.03: Engine 2 ≈ 1.90; Engine 3 ≈ 1.97.",
   },
   {
@@ -4892,7 +4884,7 @@ export const afpaQuestions: Question[] = [
       "MCT limits are the same as cruise EPR limits",
       "MCT is only used for takeoff",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Following engine failure, the remaining engines must provide maximum available continuous thrust to maintain the selected 1-INOP cruise level. MCT is the highest thrust rating permitted for continuous use (versus takeoff EPR which has a time limit). Cruise EPR limits are set for fuel efficiency at altitude, not maximum performance.",
   },
   {
@@ -4904,7 +4896,7 @@ export const afpaQuestions: Question[] = [
       "Eng 1: 2.13, Eng 2: 2.10, Eng 3: 2.13",
       "Eng 1: 2.07, Eng 2: 2.10, Eng 3: 2.07",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Engines 1 and 3 supply bleed: 2.13 − 0.06 = 2.07 each. Engine 2 has no bleed: remains 2.10. Maximum EPRs: Eng 1 = 2.07, Eng 2 = 2.10, Eng 3 = 2.07.",
   },
   {
@@ -4916,7 +4908,7 @@ export const afpaQuestions: Question[] = [
       "23,488 kg",
       "24,288 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Flight fuel = 3,600+13,500+625+400 = 18,125 kg. Contingency = 10% × 18,125 = 1,812.5 ≈ 1,813 kg. Ramp fuel = 150 + 18,125 + 1,813 + 3,300 + 100 = 23,488 kg.",
   },
   {
@@ -4928,7 +4920,7 @@ export const afpaQuestions: Question[] = [
       "Cannot check without knowing actual fuel burn",
       "ELW 65,213 kg < MLW Flaps 40° 64,650 kg ✓",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "ELW (65,213 kg) < MLW flap 30° (72,600 kg) ✓. All structural limits satisfied. Also check ELW vs flap 40° MLW (64,650 kg): 65,213 > 64,650 so flap 40° is not available structurally — only flap 30° can be used.",
   },
   {
@@ -4940,7 +4932,7 @@ export const afpaQuestions: Question[] = [
       "Ramp fuel 19,653 kg, ramp weight 98,153 kg",
       "Ramp fuel 19,803 kg, ramp weight 83,303 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Flight fuel = 3,250+10,500+625+400 = 14,775 kg. Contingency 10% = 1,477.5 ≈ 1,478 kg. Ramp fuel = 150 + 14,775 + 1,478 + 3,300 + 100 = 19,803 kg. Ramp weight = ZFW + ramp fuel. ZFW = BRW − (ramp fuel − 150) = 78,500 − 19,653 = 58,847 kg. Ramp weight = 58,847 + 19,803 ≈ 78,650 + 150 = 78,800. Let me recalculate: ramp weight = BRW + 150 = 78,500 + 150 = 78,650. But ramp fuel = 19,803. Ramp weight = ZFW + ramp fuel. Need ZFW: ZFW = BRW − FOB at BR = 78,500 − 19,653 = 58,847. Ramp weight = 58,847 + 19,803 = 78,650. Actually with BW 47,000: payload = 58,847 − 47,000 = 11,847 kg. Answer D shows 83,303 — this would need ZFW 63,500 (MZFW). The ramp weight = BRW + taxi allowance = 78,500 + 150 = 78,650 kg, not 83,303. Adjusted answer: ramp fuel 19,803 kg, ramp weight ≈ 78,650 kg.",
   },
   {
@@ -4952,7 +4944,7 @@ export const afpaQuestions: Question[] = [
       "Ramp fuel 20,300 kg, ramp weight 83,800 kg",
       "Ramp fuel 20,050 kg, ramp weight 83,550 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Contingency = 10% × 15,000 = 1,500 kg. Ramp fuel = 150 + 15,000 + 1,500 + 3,300 + 100 = 20,050 kg. Ramp weight = ZFW + ramp fuel = 63,500 + 20,050 = 83,550 kg. BRW = 83,550 − 150 = 83,400 ≤ MBRW ✓. Recalculate: 150+15,000=15,150+1,500=16,650+3,300=19,950+100=20,050. Ramp = 63,500+20,050=83,550. Answer D.",
   },
   {
@@ -4964,7 +4956,7 @@ export const afpaQuestions: Question[] = [
       "FL330",
       "FL310",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "EMZW ≈ 71,750 kg. From B727 altitude capability table at 0.79M ISA: the optimum (highest available) level at 71,750 kg is approximately FL350 (optimum column shows ~73.8t at FL350, which 71,750 is below). FL370 would typically require a lighter weight.",
   },
   {
@@ -4976,7 +4968,7 @@ export const afpaQuestions: Question[] = [
       "2.10",
       "2.03",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Permissible EPR = no-bleed EPR − bleed correction = 2.13 − 0.06 = 2.07 for engines 1 and 3 (2-bleed from engines 1 and 3).",
   },
   {
@@ -4988,7 +4980,7 @@ export const afpaQuestions: Question[] = [
       "14,200 kg",
       "13,745 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Actual SGR = 10.07 kg/nm. Cruise fuel = 1,365 × 10.07 = 13,745 kg. The more accurate SGR gives 95 kg more than the initial estimate.",
   },
   {
@@ -5000,7 +4992,7 @@ export const afpaQuestions: Question[] = [
       "13,500 kg",
       "14,300 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Cruise fuel = cruise distance × SGR = 1,340 × 10.39 = 13,922 kg.",
   },
   {
@@ -5012,7 +5004,7 @@ export const afpaQuestions: Question[] = [
       "17,982 kg",
       "14,882 kg",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Flight fuel = climb + cruise + descent + approach = 3,100 + 13,922 + 560 + 400 = 17,982 kg. Answer A.",
   },
   {
@@ -5024,7 +5016,7 @@ export const afpaQuestions: Question[] = [
       "23,330 kg",
       "23,330 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Ramp fuel = 150 + 17,982 + 1,798 + 3,300 + 100 = 23,330 kg.",
   },
   {
@@ -5036,7 +5028,7 @@ export const afpaQuestions: Question[] = [
       "30 kt headwind",
       "Nil component",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Wind 270° at 60 kt on a track of 090° (east): the wind is directly from behind the aircraft (wind direction 270 = from the west, aircraft going east). A west wind on an eastbound track is a headwind of 60 kt.",
   },
   {
@@ -5048,7 +5040,7 @@ export const afpaQuestions: Question[] = [
       "52 kt headwind",
       "52 kt tailwind",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Angle between wind direction (270°) and track (120°): difference = 150°. Wind component = speed × cos(150°) from direction. The wind is 150° off the nose (from the 270° direction onto a 120° track). Component = 60 × cos(30°) = 60 × 0.866 = 52 kt headwind (the wind from 270° has a headwind component on a 120° track since 270° is somewhat opposing a 120° track direction).",
   },
   {
@@ -5060,7 +5052,7 @@ export const afpaQuestions: Question[] = [
       "FL290 or FL310",
       "FL320 — even thousands eastbound",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "IFR hemispherical rules: eastbound (tracks 000°–179°M) = odd thousands (FL290, FL310, FL330, FL350 etc.). FL310 is an odd-thousands level on an eastbound track — correct.",
   },
   {
@@ -5072,7 +5064,7 @@ export const afpaQuestions: Question[] = [
       "FL320 — even thousands westbound",
       "FL300 — even thousands westbound",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Westbound (tracks 180°–359°M) = even thousands (FL280, FL300, FL320, FL340 etc.). FL320 is an even-thousands level on a westbound track — correct. FL300 would also be valid but FL320 is closer to the desired FL320.",
   },
   {
@@ -5084,7 +5076,7 @@ export const afpaQuestions: Question[] = [
       "ISA+52",
       "ISA−52",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "ISA deviation = OAT − ISA standard temperature = −52 − (−57) = +5°C = ISA+5.",
   },
   {
@@ -5096,7 +5088,7 @@ export const afpaQuestions: Question[] = [
       "−30°C — add ram rise of 22°C",
       "−22°C",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "TAT = OAT + ram temperature rise. At 0.80M the ram temperature rise is approximately 30°C. TAT = −52 + 30 = −22°C. The B727 cockpit temperature gauge shows TAT, not OAT.",
   },
   {
@@ -5108,7 +5100,7 @@ export const afpaQuestions: Question[] = [
       "Wind 250° True/40 kt, ISA deviation of −42°C",
       "Cannot interpret without the RSWT legend",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "RSWT 6-digit code format: first 2 digits × 10 = wind direction (250°), next 2 digits = speed (40 kt), last 2 digits = temperature deviation from ISA with sign determined by context. 2504042: direction 250°True, speed 40 kt, temperature −42°C from ISA. (Negative ISA deviation at cruise altitude is common.)",
   },
   {
@@ -5120,7 +5112,7 @@ export const afpaQuestions: Question[] = [
       "FL290 — odd thousands eastbound",
       "FL310 — odd thousands",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Track 060°M is eastbound (000°–179°M range). Eastbound = odd thousands. FL290 is an odd-thousands level ✓ — correct for this track.",
   },
   {
@@ -5132,7 +5124,7 @@ export const afpaQuestions: Question[] = [
       "Valid only if winds are favourable",
       "Valid — FL310 and FL330 are both odd thousands, appropriate for eastbound tracks",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "FL310 and FL330 are both odd-thousands levels. Both are valid for eastbound tracks under IFR hemispherical rules. ATC clearance is required for any level change, but the levels themselves are hemispherically appropriate.",
   },
   {
@@ -5144,7 +5136,7 @@ export const afpaQuestions: Question[] = [
       "10,665 kg",
       "11,050 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Cruise fuel = SGR × distance = 9.92 × 1,075 = 10,664 kg ≈ 10,665 kg. Tailwind improves SGR below the standard 10 kg/nm estimate.",
   },
   {
@@ -5156,7 +5148,7 @@ export const afpaQuestions: Question[] = [
       "Satisfied — FOB 16,400 > min 13,827",
       "Cannot determine — need actual fuel flow",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Min fuel = 9,500 + 625 + 400 + 1,052 + 2,250 = 13,827 kg. FOB (16,400 kg) > min fuel (13,827 kg) ✓. Margin = 16,400 − 13,827 = 2,573 kg. Satisfied.",
   },
   {
@@ -5168,7 +5160,7 @@ export const afpaQuestions: Question[] = [
       "37,500 kg",
       "18,500 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "FOB at BR must satisfy all three plans simultaneously. Required FOB = max(18,500, 8,200, 10,800) = 18,500 kg (normal ops governs).",
   },
   {
@@ -5180,7 +5172,7 @@ export const afpaQuestions: Question[] = [
       "BRW exceeds MBRW",
       "ELW exceeds MLW flap 30",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "ZFW 60,300 ≤ MZFW 63,500 ✓. Ramp 81,900 ≤ Max Ramp 89,700 ✓. BRW 81,750 ≤ MBRW 89,350 ✓. ELW 65,860 ≤ MLW flap 30 72,600 ✓. All structural limits satisfied.",
   },
   {
@@ -5192,7 +5184,7 @@ export const afpaQuestions: Question[] = [
       "7,480 kg",
       "7,480 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "1-INOP cruise fuel = distance × SGR = 680 × 11 = 7,480 kg.",
   },
   {
@@ -5204,7 +5196,7 @@ export const afpaQuestions: Question[] = [
       "10,790 kg",
       "10,790 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Total 1-INOP = cruise 7,480 + descent 560 + approach 400 + fixed reserve 2,250 + taxi/shutdown 100 = 10,790 kg.",
   },
   {
@@ -5216,7 +5208,7 @@ export const afpaQuestions: Question[] = [
       "1.50 hr",
       "2.20 hr",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "T = FA / (FF_out + FF_home) = 17,450 / (4,420 + 4,422.5) = 17,450 / 8,842.5 = 1.974 hr ≈ 1.97 hr. Distance to PNR/DP = 1.974 × 340 = 671 nm.",
   },
   {
@@ -5228,7 +5220,7 @@ export const afpaQuestions: Question[] = [
       "72,400 kg",
       "73,200 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "TOC = 76,000 − 2,800 = 73,200 kg.",
   },
   {
@@ -5240,7 +5232,7 @@ export const afpaQuestions: Question[] = [
       "80,000 kg",
       "80,800 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "TOC = 85,000 − 4,200 = 80,800 kg.",
   },
   {
@@ -5252,7 +5244,7 @@ export const afpaQuestions: Question[] = [
       "550 kg",
       "3,350 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Step climb fuel = 3,350 − 2,800 = 550 kg.",
   },
   {
@@ -5264,7 +5256,7 @@ export const afpaQuestions: Question[] = [
       "66,000 kg",
       "75,000 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Cruise fuel = 900 × 10 = 9,000 kg. TOD = 75,000 − 9,000 = 66,000 kg.",
   },
   {
@@ -5276,7 +5268,7 @@ export const afpaQuestions: Question[] = [
       "69,000 kg",
       "69,000 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "EMZW = LW + (1,100 × 10)/2 = 63,500 + 5,500 = 69,000 kg.",
   },
   {
@@ -5288,7 +5280,7 @@ export const afpaQuestions: Question[] = [
       "77,600 kg",
       "79,200 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "EBRW = 62,000 + (1,400 × 10) + 1,600 = 62,000 + 14,000 + 1,600 = 77,600 kg.",
   },
   {
@@ -5300,7 +5292,7 @@ export const afpaQuestions: Question[] = [
       "197 nm",
       "177 nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Ground distance during climb = 385 × (21/60) = 134.75 nm. Total TOC ground dist = TAC 42 + 134.75 = 176.75 ≈ 177 nm. Closest A. Actually: 42 + 135 (air dist, nil wind assumed) = 197 nm without wind correction. With nil wind, air dist = ground dist, so total = 42 + 155 = 197 nm.",
   },
   {
@@ -5312,7 +5304,7 @@ export const afpaQuestions: Question[] = [
       "Thrust limits only apply to 1-INOP operations",
       "78,400 kg < thrust limit 79,500 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "TOC weight (78,400 kg) < thrust limit (79,500 kg) ✓ — the aircraft can maintain FL370 at this weight.",
   },
   {
@@ -5324,7 +5316,7 @@ export const afpaQuestions: Question[] = [
       "Thrust limit only applies below FL300",
       "FL350 can be maintained with anti-ice OFF only",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "TOC weight (82,000 kg) > thrust limit (80,500 kg) — the aircraft is too heavy for FL350. Must select a lower level (e.g., FL330) where the thrust limit is higher.",
   },
   {
@@ -5336,7 +5328,7 @@ export const afpaQuestions: Question[] = [
       "250 nm",
       "333 nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Time to burn 2,500 kg = 2,500/4,500 = 0.556 hr. Distance = 0.556 × 450 = 250 nm.",
   },
   {
@@ -5348,7 +5340,7 @@ export const afpaQuestions: Question[] = [
       "10.65 kg/nm",
       "10.65 kg/nm",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "SGR = FF/GS = 4,560/428 = 10.65 kg/nm. Headwind reduces GS, increasing fuel burn per nm.",
   },
   {
@@ -5360,7 +5352,7 @@ export const afpaQuestions: Question[] = [
       "9.25 kg/nm",
       "8.50 kg/nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "SGR = 4,560/493 = 9.25 kg/nm. Tailwind increases GS, reducing fuel per nm.",
   },
   {
@@ -5372,7 +5364,7 @@ export const afpaQuestions: Question[] = [
       "11 kg/nm",
       "13 kg/nm",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "At average weights above 80t, the B727 burns closer to 11 kg/nm. Below 70t it is closer to 9 kg/nm. The standard estimate of 10 kg/nm applies to average weights of 70–80t.",
   },
   {
@@ -5384,7 +5376,7 @@ export const afpaQuestions: Question[] = [
       "More — hot air at 1,000 ft reduces engine performance",
       "Slightly less",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Starting the climb from 1,000 ft PA rather than sea level means approximately 1,000 ft less total climb. The climb fuel is slightly less — subtract the climb fuel from sea level to 1,000 ft from the tabulated sea level to FL330 figure. For exam purposes this small difference is often ignored unless specifically asked.",
   },
   {
@@ -5396,7 +5388,7 @@ export const afpaQuestions: Question[] = [
       "69,040 kg",
       "70,000 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "LW = 70,000 − 560 − 400 = 69,040 kg.",
   },
   {
@@ -5408,7 +5400,7 @@ export const afpaQuestions: Question[] = [
       "64,975 kg",
       "64,975 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "LW = 66,000 − 625 − 400 = 64,975 kg.",
   },
   {
@@ -5420,7 +5412,7 @@ export const afpaQuestions: Question[] = [
       "127 nm",
       "113 nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Ground distance = GS × time = 362 × (21/60) = 362 × 0.35 = 126.7 nm ≈ 127 nm.",
   },
   {
@@ -5432,7 +5424,7 @@ export const afpaQuestions: Question[] = [
       "135 nm is the standard holding fix distance",
       "Radar coverage ends at 135 nm",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The TOD placement (135 nm for FL310) reflects the B727 descent air distance from that flight level at the standard descent profile. The aircraft needs this distance to descend, slow down, and configure for approach.",
   },
   {
@@ -5444,7 +5436,7 @@ export const afpaQuestions: Question[] = [
       "130.5 nm",
       "130.5 nm",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Ground distance = GS × time = 290 × (27/60) = 290 × 0.45 = 130.5 nm.",
   },
   {
@@ -5456,7 +5448,7 @@ export const afpaQuestions: Question[] = [
       "Cruise only — climb and descent are negligible",
       "Climb + cruise + descent only — approach is in reserves",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Flight fuel = climb fuel + cruise fuel + descent fuel + approach/manoeuvring allowance. All four items are flight fuel. Contingency (10%) is then applied to this total. Reserves (fixed reserve, holding) are added separately.",
   },
   {
@@ -5468,7 +5460,7 @@ export const afpaQuestions: Question[] = [
       "81,000 kg",
       "81,000 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Using SGR estimate 10 kg/nm: cruise fuel = 900 × 10 = 9,000 kg. TOC = TOD + cruise fuel = 72,000 + 9,000 = 81,000 kg.",
   },
   {
@@ -5480,7 +5472,7 @@ export const afpaQuestions: Question[] = [
       "The descent profile changes at high-elevation airports",
       "Descent fuel and distance are the same regardless of destination elevation",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Descent distance is proportional to the altitude change. From FL330 to 3,500 ft ≈ 29,500 ft of descent vs 33,000 ft to sea level — approximately 11% less altitude change, giving slightly shorter descent distance and less fuel. For exam purposes, the standard table values are used and adjusted for significant elevation differences.",
   },
   {
@@ -5492,7 +5484,7 @@ export const afpaQuestions: Question[] = [
       "Permitted only with special ATC clearance",
       "Requires fuel jettison before landing",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "LW (70,500 kg) < structural MLW flap 30 (72,600 kg) ✓ with 2,100 kg margin. The flight is permitted. No special clearance required.",
   },
   {
@@ -5504,7 +5496,7 @@ export const afpaQuestions: Question[] = [
       "1,200 kg",
       "1,800 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Excess = 73,800 − 72,600 = 1,200 kg. The BRW must be reduced (less payload or fuel) to bring LW within the MLW limit.",
   },
   {
@@ -5516,7 +5508,7 @@ export const afpaQuestions: Question[] = [
       "Use flap 40 for landing — higher thrust required",
       "Reduce cruise speed to burn more fuel en route",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "LW = BRW − flight fuel. Reducing FOB at BR by 1,200 kg reduces BRW by 1,200 kg (same flight fuel burned, lower starting weight = lower LW). This assumes reserves minimum is still met. Alternatively reduce payload.",
   },
   {
@@ -5528,7 +5520,7 @@ export const afpaQuestions: Question[] = [
       "Both flap 30 and flap 40",
       "Flap 30 only — LW 68,000 > flap 40 MLW 64,650; flap 30 OK as 68,000 < 72,600",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "LW 68,000 vs flap 40 MLW 64,650: 68,000 > 64,650 — flap 40 not available structurally. LW 68,000 vs flap 30 MLW 72,600: 68,000 < 72,600 ✓ — flap 30 available. Only flap 30 is structurally permissible.",
   },
   {
@@ -5540,7 +5532,7 @@ export const afpaQuestions: Question[] = [
       "2,274 kg above minimum",
       "Exactly at minimum",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Margin = FOB − min fuel = 10,200 − 7,926 = 2,274 kg above minimum. Flight may continue.",
   },
   {
@@ -5552,7 +5544,7 @@ export const afpaQuestions: Question[] = [
       "4,985 kg/hr",
       "6,092 kg/hr",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "FF = 5,400 / (65/60) = 5,400 / 1.0833 = 4,985 kg/hr.",
   },
   {
@@ -5564,7 +5556,7 @@ export const afpaQuestions: Question[] = [
       "462 kt",
       "420 kt",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "GS = 600 / (78/60) = 600 / 1.3 = 461.5 kt ≈ 462 kt.",
   },
   {
@@ -5576,7 +5568,7 @@ export const afpaQuestions: Question[] = [
       "2.8 min",
       "8.2 min",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Actual ETI = 700/462 = 1.515 hr = 90.9 min. Planned ETI = 700/480 = 1.458 hr = 87.5 min. Extra time = 90.9 − 87.5 = 3.4 min ≈ but recalculate: 700/462 = 91.6 min; 700/480 = 87.5 min; extra = 4.1 min. Closest B at 5.4 min but arithmetic gives 4.1. Rechecking: 700/462 = 1.5152 × 60 = 90.9 min. 700/480 = 1.4583 × 60 = 87.5 min. Extra = 3.4 min. Answer closest to none listed exactly — answer B 5.4 min uses slightly different speeds.",
   },
   {
@@ -5588,7 +5580,7 @@ export const afpaQuestions: Question[] = [
       "4,800 kg/hr",
       "5,200 kg/hr",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Actual burn rate = 9,600 / 2 = 4,800 kg/hr — 300 kg/hr above plan.",
   },
   {
@@ -5600,7 +5592,7 @@ export const afpaQuestions: Question[] = [
       "30 min",
       "30 min",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Extra fuel = 11,800 − 9,400 = 2,400 kg. Extra time = 2,400/4,800 = 0.5 hr = 30 min.",
   },
   {
@@ -5612,7 +5604,7 @@ export const afpaQuestions: Question[] = [
       "Reduce cruise speed to save fuel",
       "Request direct routing to save distance",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "FOB (8,000 kg) < minimum fuel (9,200 kg) — the minimum fuel check is NOT satisfied. The crew must take immediate action: divert to the nearest suitable aerodrome, or if continuing to destination, declare minimum fuel to ATC and request priority.",
   },
   {
@@ -5624,7 +5616,7 @@ export const afpaQuestions: Question[] = [
       "545 kg",
       "650 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Planned ETI = 850/460 = 1.848 hr. Actual ETI = 850/435 = 1.954 hr. Extra time = 0.106 hr. Extra fuel = 0.106 × 4,500 = 477 kg ≈ 545 kg (closest answer).",
   },
   {
@@ -5636,7 +5628,7 @@ export const afpaQuestions: Question[] = [
       "Calculate the landing weight precisely",
       "Update the aircraft weight for the navigation computer",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "The in-flight fuel check at a positive fix compares actual FOB with planned FOB to identify any discrepancy. If actual is lower than planned, the minimum fuel check must be re-run with actual values to confirm the aircraft can still reach the destination with adequate reserves.",
   },
   {
@@ -5648,7 +5640,7 @@ export const afpaQuestions: Question[] = [
       "490 kt",
       "470 kt",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "GS = 350 / (44.7/60) = 350 / 0.745 = 469.8 kt ≈ 470 kt ✓.",
   },
   {
@@ -5660,7 +5652,7 @@ export const afpaQuestions: Question[] = [
       "1.67 hr",
       "2.00 hr",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "T = 15,000 / (4,200 + 4,800) = 15,000 / 9,000 = 1.667 hr ≈ 1.67 hr.",
   },
   {
@@ -5672,7 +5664,7 @@ export const afpaQuestions: Question[] = [
       "767 nm",
       "800 nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Distance = 1.667 × 460 = 766.8 nm ≈ 767 nm.",
   },
   {
@@ -5684,7 +5676,7 @@ export const afpaQuestions: Question[] = [
       "14,450 kg",
       "18,000 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "PNR FA = FOB at BR − fixed reserve − start/taxi − taxi/shutdown = 18,000 − 3,300 − 150 − 100 = 14,450 kg.",
   },
   {
@@ -5696,7 +5688,7 @@ export const afpaQuestions: Question[] = [
       "At the same point as nil wind",
       "Closer to departure than with nil wind — headwind out slows the outbound leg and tailwind home speeds the return",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Headwind outbound: slower GS out → lower FF/nm ratio outbound (less distance per unit time means the aircraft uses fuel faster per nm outbound). Tailwind homeward: faster return. Both effects move the PNR closer to departure.",
   },
   {
@@ -5708,7 +5700,7 @@ export const afpaQuestions: Question[] = [
       "1.376 hr, 661 nm",
       "1.250 hr, 600 nm",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "T = 13,500/(5,200+4,600) = 13,500/9,800 = 1.378 hr. Distance = 1.378 × 480 = 661.4 nm ≈ 661 nm.",
   },
   {
@@ -5720,7 +5712,7 @@ export const afpaQuestions: Question[] = [
       "13,650 kg",
       "16,000 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "FA = 16,000 − 2,250 − 100 = 13,650 kg. No start/taxi deducted as aircraft is in flight.",
   },
   {
@@ -5732,7 +5724,7 @@ export const afpaQuestions: Question[] = [
       "850 nm (PNR)",
       "1,000 nm (past PNR)",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "The PNR is the furthest point from which the aircraft can return with required reserves. Once past 850 nm from YSSY, the aircraft does not have sufficient fuel to return. It must continue to NZAA.",
   },
   {
@@ -5744,7 +5736,7 @@ export const afpaQuestions: Question[] = [
       "1.97 hr",
       "1.97 hr",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "T = 17,450/(4,420+4,422) = 17,450/8,842 = 1.974 hr ≈ 1.97 hr.",
   },
   {
@@ -5756,7 +5748,7 @@ export const afpaQuestions: Question[] = [
       "Both legs have equal fuel consumption — nil wind assumed",
       "540 nm outbound uses same fuel as 360 nm return — different SGR each way",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "PNR ≠ midpoint unless fuel flows are equal. The PNR at 540 nm (vs 360 nm return) means the outbound SGR is lower than the homeward SGR — the aircraft covers more distance per kg outbound. The fuel used for 540 nm out equals the fuel for 360 nm home when the respective fuel flows (kg/nm) are applied.",
   },
   {
@@ -5768,7 +5760,7 @@ export const afpaQuestions: Question[] = [
       "BRW minus flight fuel (all fuel from BRW to landing) equals ZFW + minimum reserves",
       "ZFW only — all fuel is burned",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Minimum planned landing weight at the return aerodrome from the PNR = ZFW + fixed reserve + taxi/shutdown (the minimum fuel that must remain on landing). This confirms the aircraft is not landing below structural limits or below minimum reserves.",
   },
   {
@@ -5780,7 +5772,7 @@ export const afpaQuestions: Question[] = [
       "Cannot check without more information",
       "BRW 84,500 kg ≤ MBRW 89,350 kg ✓",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "BRW = 84,500 kg ≤ MBRW 89,350 kg ✓. The weight check is satisfied. Answer D.",
   },
   {
@@ -5792,7 +5784,7 @@ export const afpaQuestions: Question[] = [
       "16,500 kg",
       "16,500 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "Max ZFW = MZFW = 63,500 kg. Max payload = MZFW − BW = 63,500 − 47,000 = 16,500 kg. The FOB doesn't limit payload through MZFW — it's ZFW = BW + payload ≤ 63,500.",
   },
   {
@@ -5804,7 +5796,7 @@ export const afpaQuestions: Question[] = [
       "16,000 kg",
       "16,000 kg",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ZFW = BRW − FOB = 82,000 − 19,000 = 63,000 kg. Payload = ZFW − BW = 63,000 − 47,000 = 16,000 kg. Performance limit (82,000 kg) restricts payload to 16,000 kg.",
   },
   {
@@ -5816,7 +5808,7 @@ export const afpaQuestions: Question[] = [
       "63,500 kg",
       "41,500 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "BRW = ZFW + FOB = 63,500 + 22,000 = 85,500 kg ≤ MBRW 89,350 kg ✓.",
   },
   {
@@ -5828,7 +5820,7 @@ export const afpaQuestions: Question[] = [
       "68,500 kg > MLW 72,600 kg",
       "68,500 kg < MLW 72,600 kg ✓",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "ELW 68,500 < MLW flap 30 72,600 ✓. Structurally within limits.",
   },
   {
@@ -5840,7 +5832,7 @@ export const afpaQuestions: Question[] = [
       "Fuel → ZFW → BRW → payload",
       "Payload → BRW → fuel → LW",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Backward planning: (1) start with LW (known from payload + BW + reserves); (2) add descent fuel to get TOD weight; (3) add cruise fuel to get TOC weight; (4) add climb fuel to get BRW. This is the reverse of forward planning.",
   },
   {
@@ -5852,7 +5844,7 @@ export const afpaQuestions: Question[] = [
       "Finding payload from LW",
       "Finding fuel requirements",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "ZFW = BRW − FOB at BR (fuel on board at brakes release). This formula converts from the known BRW and fuel load to the zero fuel weight for structural checking against MZFW.",
   },
   {
@@ -5864,7 +5856,7 @@ export const afpaQuestions: Question[] = [
       "26,000 kg",
       "61,000 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "FOB at BR = BRW − ZFW = 87,000 − 61,000 = 26,000 kg.",
   },
   {
@@ -5876,7 +5868,7 @@ export const afpaQuestions: Question[] = [
       "33,050 kg",
       "47,250 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "ZFW = BW + payload = 47,250 + 14,200 = 61,450 kg ≤ MZFW 63,500 kg ✓.",
   },
   {
@@ -5888,7 +5880,7 @@ export const afpaQuestions: Question[] = [
       "29,550 kg",
       "89,350 kg",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Max FOB at BR = MBRW − ZFW = 89,350 − 63,500 = 25,850 kg. Any more fuel would exceed the structural MBRW.",
   },
   {
@@ -5900,7 +5892,7 @@ export const afpaQuestions: Question[] = [
       "300° True/40 kt temperature column showing +55 above ISA",
       "300°/40 kt/ISA−5 (last 2 digits are degrees C from ISA)",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "RSWT format: 2-digit direction (×10°), 2-digit speed (kt), 2-digit temperature deviation in degrees C from ISA. 3004055: direction 300°T, speed 40 kt, temperature −5°C from ISA (the last 2 digits represent the deviation; sign depends on context and the ISA column shown).",
   },
   {
@@ -5912,7 +5904,7 @@ export const afpaQuestions: Question[] = [
       "060°M — no conversion needed",
       "050°M",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Wind direction magnetic = wind direction true − variation (east). 060°T − 10°E = 050°M.",
   },
   {
@@ -5924,7 +5916,7 @@ export const afpaQuestions: Question[] = [
       "Nil component — 10° difference is negligible",
       "Near zero",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Wind from 260°M on a 270°M track: the angle between wind direction and track = 10°. Wind component = speed × cos(10°) ≈ 0.985 × speed. For a 30 kt wind: component ≈ 29.5 kt headwind. With a small angle between wind and track direction, the component is nearly equal to the full wind speed — essentially a direct headwind.",
   },
   {
@@ -5936,7 +5928,7 @@ export const afpaQuestions: Question[] = [
       "FL340 — even thousands westbound",
       "FL290 — odd thousands",
     ],
-    correctAnswer: 2,
+    correct: 2,
     explanation: "Westbound (180°–359°M) = even thousands. FL340 is an even-thousands level ✓. FL310, FL350, FL290 are odd thousands — incorrect for westbound.",
   },
   {
@@ -5948,7 +5940,7 @@ export const afpaQuestions: Question[] = [
       "Either — southbound has no specific rule",
       "Even thousands — southbound always uses even",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "IFR hemispherical rules: eastbound = 000°–179°M = odd thousands. 175°M is within this range (just under 180°) so odd thousands apply. FL310, FL330, FL350 etc are appropriate.",
   },
   {
@@ -5960,7 +5952,7 @@ export const afpaQuestions: Question[] = [
       "The FL340 values — always use the level above cruise",
       "The FL300 values — closest standard level",
     ],
-    correctAnswer: 3,
+    correct: 3,
     explanation: "For cruise between standard forecast levels, use the values from the closest available standard level. FL310 is between FL300 and FL340. FL300 is closer to FL310 (difference 10 vs 30). Use FL300 values.",
   },
   {
@@ -5972,7 +5964,7 @@ export const afpaQuestions: Question[] = [
       "Lower-than-forecast fuel flow",
       "Navigation error",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "GS = TAS ± wind component. If TAS is as planned, a higher GS indicates a stronger-than-forecast tailwind. This is the most common cause of GS being above planned on high-altitude cruise.",
   },
   {
@@ -5984,7 +5976,7 @@ export const afpaQuestions: Question[] = [
       "27 kt headwind",
       "14 kt crosswind only",
     ],
-    correctAnswer: 0,
+    correct: 0,
     explanation: "Wind direction 240°M, track 060°M. Angle between wind direction and track: 240−060 = 180°. Wait — the wind is FROM 240°M, track TO 060°M. Angle between wind FROM direction and track = |240 − (060+180)| = |240−240| = 0°. A wind FROM 240°M on a track TO 060°M is directly on the nose = full headwind = 40 kt. Hmm but answer A shows 27 kt. Let me re-examine: if wind direction is 240°M (from SW) and aircraft tracks 060°M (to NE), the wind is from the southwest and the aircraft flies northeast — the wind is roughly on the nose. Component = 40 × cos(|240−060−180|) = 40 × cos(0) = 40 kt. Answer should be 40 kt HWC not 27. Answer B.",
   },
   {
@@ -5996,7 +5988,7 @@ export const afpaQuestions: Question[] = [
       "280°M",
       "270°M",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Wind_M = 280°T − 10°E = 270°M.",
   },
   {
@@ -6008,7 +6000,7 @@ export const afpaQuestions: Question[] = [
       "Only the fuel flow difference between FL350 and FL370",
       "Whether FL370 is an appropriate hemispherical level for the track",
     ],
-    correctAnswer: 1,
+    correct: 1,
     explanation: "Before accepting FL370, the crew must verify from Table 2.5 that the current gross weight is at or below the thrust limit for FL370 at the current ISA conditions. FL370 is an odd-thousands level ✓ for eastbound. The thrust limit check is the critical operational requirement.",
   },
 ];
