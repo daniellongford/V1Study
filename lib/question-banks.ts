@@ -23,10 +23,10 @@ let ametQuestions: any[] = []
 let anavQuestions: any[] = []
 let aasaQuestions: any[] = []
 let aplaQuestions: any[] = []
+let afpaQuestions: any[] = []
 // ── Add new bank variables here ──────────────────────────────────────────────
 // let aadaQuestions: any[] = []
 // let aasyQuestions: any[] = []
-// let aafpQuestions: any[] = []
 try { clwaQuestions = require('./questions-clwa').clwaQuestions } catch {}
 try { chufQuestions = require('./questions-chuf').chufQuestions } catch {}
 try { cmetQuestions = require('./questions-cmet').cmetQuestions } catch {}
@@ -42,10 +42,10 @@ try { ametQuestions = require('./questions-amet').ametQuestions } catch {}
 try { anavQuestions = require('./questions-anav').anavQuestions } catch {}
 try { aasaQuestions = require('./questions-aasa').aasaQuestions } catch {}
 try { aplaQuestions = require('./questions-apla').aplaQuestions } catch {}
+try { afpaQuestions = require('./questions-afpa').afpaQuestions } catch {}
 // ── Add new bank requires here ────────────────────────────────────────────────
 // try { aadaQuestions = require('./questions-aada').aadaQuestions } catch {}
 // try { aasyQuestions = require('./questions-aasy').aasyQuestions } catch {}
-// try { aafpQuestions = require('./questions-aafp').aafpQuestions } catch {}
 // ── Bank registry ─────────────────────────────────────────────────────────────
 export const FULL_BANKS: Record<string, any[]> = {
   // CPL subjects
@@ -66,7 +66,7 @@ export const FULL_BANKS: Record<string, any[]> = {
   'Aerodynamics and Systems':        aasaQuestions,
   'Meteorology Advanced':            ametQuestions,
   'Navigation Advanced':             anavQuestions,
-  'Flight Planning':                 cfpaQuestions,  // replace with aafpQuestions when ready
+  'Flight Planning':                 afpaQuestions,
   'Performance and Loading':         aplaQuestions,
 }
 // ── Plan access control ───────────────────────────────────────────────────────
