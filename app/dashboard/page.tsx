@@ -200,7 +200,7 @@ export default function Dashboard() {
                 {recentScores.map((s, i) => (
                   <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
                     <div style={{ fontSize: '13px', color: '#475569', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{s.subject}</div>
-                    <div style={{ fontSize: '13px', fontWeight: '700', fontFamily: 'monospace', color: Number(s.percentage) >= 70 ? '#16a34a' : '#dc2626', flexShrink: 0 }}>{Number(s.percentage)}%</div>
+                    <div style={{ fontSize: '13px', fontWeight: '700', fontFamily: 'monospace', color: '#0a1628', flexShrink: 0 }}>{Number(s.percentage)}%</div>
                   </div>
                 ))}
               </div>
@@ -227,18 +227,17 @@ export default function Dashboard() {
             const trial = getTrialStatus(subject)
 
             return (
-              <div key={subject} style={{ background: accessible ? 'white' : trial.exhausted ? '#fff8f0' : 'white', borderRadius: '10px', padding: '1.25rem', border: accessible ? '1px solid #e2e8f0' : trial.exhausted ? '1px solid #fcd34d' : '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <div key={subject} style={{ background: 'white', borderRadius: '10px', padding: '1.25rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                   <div style={{ fontSize: '11px', fontWeight: '700', color: accessible ? '#2563eb' : '#94a3b8', fontFamily: 'monospace', letterSpacing: '0.06em', background: accessible ? '#eff6ff' : '#f1f5f9', padding: '3px 8px', borderRadius: '4px' }}>{code}</div>
                   {accessible && best !== undefined && (
-                    <div style={{ fontSize: '11px', fontWeight: '600', color: hasPassed ? '#16a34a' : '#f59e0b', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                      <span style={{ fontSize: '10px' }}>{hasPassed ? '✓' : '○'}</span>
-                      Best: {best}%
+                    <div style={{ fontSize: '11px', color: '#64748b' }}>
+                      Best: {best}%{hasPassed ? ' ✓' : ''}
                     </div>
                   )}
-                  {!accessible && trial.exhausted && <div style={{ fontSize: '11px', color: '#f59e0b', fontWeight: '600' }}>Trial complete</div>}
-                  {!accessible && !trial.exhausted && trial.used > 0 && <div style={{ fontSize: '11px', color: '#2563eb' }}>{trial.used}/{trial.limit} used</div>}
-                  {!accessible && !trial.exhausted && trial.used === 0 && <div style={{ fontSize: '11px', color: '#94a3b8' }}>🎯 {trial.limit} free questions</div>}
+                  {!accessible && trial.exhausted && <div style={{ fontSize: '11px', color: '#94a3b8' }}>Trial complete</div>}
+                  {!accessible && !trial.exhausted && trial.used > 0 && <div style={{ fontSize: '11px', color: '#64748b' }}>{trial.used}/{trial.limit} used</div>}
+                  {!accessible && !trial.exhausted && trial.used === 0 && <div style={{ fontSize: '11px', color: '#94a3b8' }}>{trial.limit} free questions</div>}
                 </div>
                 <div>
                   <div style={{ fontSize: '14px', fontWeight: '600', color: '#0a1628', lineHeight: 1.3, marginBottom: '4px' }}>{subject}</div>
@@ -246,26 +245,16 @@ export default function Dashboard() {
                     {accessible ? '10 questions · Pass mark ' + passMark + '%' : trial.exhausted ? 'Trial complete — subscribe for unlimited access' : `${trial.limit - trial.used} trial questions remaining`}
                   </div>
                 </div>
-                {accessible && best !== undefined && (
-                  <div style={{ background: '#f8fafc', borderRadius: '4px', height: '4px', overflow: 'hidden' }}>
-                    <div style={{ height: '100%', background: hasPassed ? '#16a34a' : '#f59e0b', borderRadius: '4px', width: Math.min(best, 100) + '%', transition: 'width 0.4s' }}></div>
-                  </div>
-                )}
-                {!accessible && !trial.exhausted && trial.used > 0 && (
-                  <div style={{ background: '#eff6ff', borderRadius: '4px', height: '4px', overflow: 'hidden' }}>
-                    <div style={{ height: '100%', background: '#2563eb', borderRadius: '4px', width: (trial.used / trial.limit * 100) + '%', transition: 'width 0.4s' }}></div>
-                  </div>
-                )}
                 {accessible ? (
-                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
+                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: 'transparent', color: '#0a1628', border: '1px solid #cbd5e1', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
                     Start Quiz →
                   </button>
                 ) : trial.exhausted ? (
-                  <a href="/pricing" style={{ background: '#f59e0b', color: 'white', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
+                  <a href="/pricing" style={{ background: 'transparent', color: '#0a1628', border: '1px solid #cbd5e1', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
                     Subscribe to continue →
                   </a>
                 ) : (
-                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: 'transparent', color: '#2563eb', border: '1px solid #2563eb', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', minHeight: '44px' }}>
+                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: 'transparent', color: '#0a1628', border: '1px solid #cbd5e1', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', minHeight: '44px' }}>
                     Start free trial →
                   </button>
                 )}
@@ -276,24 +265,24 @@ export default function Dashboard() {
 
         {/* BANNER */}
         {!plan ? (
-          <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '10px', padding: '1.25rem', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '1.5rem' }}>
+          <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '10px', padding: '1.25rem', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '1.5rem' }}>
             <div>
-              <div style={{ fontSize: '13px', fontWeight: '700', color: '#1d4ed8', marginBottom: '2px' }}>Try before you subscribe — free trial questions available</div>
-              <div style={{ fontSize: '12px', color: '#3b82f6' }}>Each subject includes free trial questions. Subscribe for unlimited access.</div>
+              <div style={{ fontSize: '13px', fontWeight: '700', color: '#0a1628', marginBottom: '2px' }}>Try before you subscribe — free trial questions available</div>
+              <div style={{ fontSize: '12px', color: '#64748b' }}>Each subject includes free trial questions. Subscribe for unlimited access.</div>
             </div>
-            <a href="/pricing" style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px 20px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>
+            <a href="/pricing" style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '12px 20px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>
               View Plans
             </a>
           </div>
         ) : (
-          <div style={{ background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '10px', padding: '1.25rem', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '1.5rem' }}>
+          <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '10px', padding: '1.25rem', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between', gap: '1rem', marginBottom: '1.5rem' }}>
             <div>
-              <div style={{ fontSize: '13px', fontWeight: '700', color: '#15803d', marginBottom: '2px' }}>
+              <div style={{ fontSize: '13px', fontWeight: '700', color: '#0a1628', marginBottom: '2px' }}>
                 {planStatus === 'cancelling' ? `${plan} Pack — cancelling at period end` : `Active plan — ${plan} Pack`}
               </div>
-              <div style={{ fontSize: '12px', color: '#16a34a' }}>Unlimited practice questions written to the full CASA MOS syllabus</div>
+              <div style={{ fontSize: '12px', color: '#64748b' }}>Unlimited practice questions written to the full CASA MOS syllabus</div>
             </div>
-            <a href="/pricing" style={{ background: '#16a34a', color: 'white', border: 'none', borderRadius: '6px', padding: '12px 20px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>
+            <a href="/pricing" style={{ background: '#0a1628', color: 'white', border: 'none', borderRadius: '6px', padding: '12px 20px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', whiteSpace: 'nowrap', textDecoration: 'none', minHeight: '44px', display: 'flex', alignItems: 'center' }}>
               Manage Plan
             </a>
           </div>
@@ -335,10 +324,23 @@ function ContactSection({ isMobile, userEmail }: { isMobile: boolean; userEmail?
     setAiLoading(false)
   }
 
-  function handleEmailSend() {
+  async function handleEmailSend() {
     if (!name || !email || !message) return
-    window.location.href = `mailto:support@v1study.com.au?subject=Support request from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`
-    setEmailSent(true)
+    try {
+      const res = await fetch('/api/support-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+      })
+      const data = await res.json()
+      if (data.success) {
+        setEmailSent(true)
+      } else {
+        alert('Something went wrong. Please email us directly at support@v1study.com.au')
+      }
+    } catch (e) {
+      alert('Something went wrong. Please email us directly at support@v1study.com.au')
+    }
   }
 
   return (
@@ -349,7 +351,7 @@ function ContactSection({ isMobile, userEmail }: { isMobile: boolean; userEmail?
       </div>
       <div style={{ display: 'flex', borderBottom: '1px solid #e2e8f0' }}>
         {(['chat', 'email'] as const).map(t => (
-          <button key={t} onClick={() => setTab(t)} style={{ flex: 1, padding: '10px', fontSize: '13px', fontWeight: '600', border: 'none', background: tab === t ? '#f8fafc' : 'white', color: tab === t ? '#2563eb' : '#64748b', cursor: 'pointer', borderBottom: tab === t ? '2px solid #2563eb' : '2px solid transparent' }}>
+          <button key={t} onClick={() => setTab(t)} style={{ flex: 1, padding: '10px', fontSize: '13px', fontWeight: '600', border: 'none', background: tab === t ? '#f8fafc' : 'white', color: tab === t ? '#0a1628' : '#94a3b8', cursor: 'pointer', borderBottom: tab === t ? '2px solid #0a1628' : '2px solid transparent' }}>
             {t === 'chat' ? '💬 Ask a question' : '✉️ Email support'}
           </button>
         ))}
@@ -358,12 +360,12 @@ function ContactSection({ isMobile, userEmail }: { isMobile: boolean; userEmail?
         {tab === 'chat' ? (
           <>
             <textarea placeholder="Ask anything about CASA exams, study tips, or how V1 Study works..." value={aiMessage} onChange={e => setAiMessage(e.target.value)} rows={3} style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '14px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '10px' }} />
-            <button onClick={handleAskClaude} disabled={aiLoading || !aiMessage.trim()} style={{ background: aiLoading || !aiMessage.trim() ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '10px 20px', fontSize: '13px', fontWeight: '600', cursor: aiLoading || !aiMessage.trim() ? 'not-allowed' : 'pointer', minHeight: '44px' }}>
+            <button onClick={handleAskClaude} disabled={aiLoading || !aiMessage.trim()} style={{ background: aiLoading || !aiMessage.trim() ? '#f1f5f9' : '#0a1628', color: aiLoading || !aiMessage.trim() ? '#94a3b8' : 'white', border: 'none', borderRadius: '8px', padding: '10px 20px', fontSize: '13px', fontWeight: '600', cursor: aiLoading || !aiMessage.trim() ? 'not-allowed' : 'pointer', minHeight: '44px' }}>
               {aiLoading ? 'Thinking...' : 'Ask →'}
             </button>
             {aiResponse && (
-              <div style={{ marginTop: '1rem', background: '#f0f7ff', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '1rem', fontSize: '14px', color: '#1e3a6e', lineHeight: 1.65 }}>
-                <div style={{ fontSize: '11px', fontWeight: '700', color: '#2563eb', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
+              <div style={{ marginTop: '1rem', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1rem', fontSize: '14px', color: '#0a1628', lineHeight: 1.65 }}>
+                <div style={{ fontSize: '11px', fontWeight: '700', color: '#94a3b8', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
                 {aiResponse}
               </div>
             )}
@@ -377,12 +379,12 @@ function ContactSection({ isMobile, userEmail }: { isMobile: boolean; userEmail?
                   <input type="email" placeholder="Your email" value={email} onChange={e => setEmail(e.target.value)} style={{ padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none' }} />
                 </div>
                 <textarea placeholder="How can we help?" value={message} onChange={e => setMessage(e.target.value)} rows={3} style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '14px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '10px' }} />
-                <button onClick={handleEmailSend} disabled={!name || !email || !message} style={{ background: !name || !email || !message ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '10px 20px', fontSize: '13px', fontWeight: '600', cursor: !name || !email || !message ? 'not-allowed' : 'pointer', minHeight: '44px' }}>
+                <button onClick={handleEmailSend} disabled={!name || !email || !message} style={{ background: !name || !email || !message ? '#f1f5f9' : '#0a1628', color: !name || !email || !message ? '#94a3b8' : 'white', border: 'none', borderRadius: '8px', padding: '10px 20px', fontSize: '13px', fontWeight: '600', cursor: !name || !email || !message ? 'not-allowed' : 'pointer', minHeight: '44px' }}>
                   Send message
                 </button>
               </>
             ) : (
-              <div style={{ textAlign: 'center', padding: '1rem', color: '#15803d', fontSize: '14px', fontWeight: '600' }}>
+              <div style={{ textAlign: 'center', padding: '1rem', color: '#0a1628', fontSize: '14px', fontWeight: '600' }}>
                 ✓ Message sent — we'll get back to you within 24 hours
               </div>
             )}
