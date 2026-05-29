@@ -31,7 +31,7 @@ export const afpaQuestions = [
     id: "AFPA-0003",
     question: "For the B727 AFPA exam: a flight is planned at MBRW (89 350 kg). ZFW = 63 500 kg (MZFW). Fuel at BRW = 25 850 kg. Ramp weight = 89 350 + 150 = 89 500 kg. Is ramp weight within Max Ramp (89 700 kg)?",
     options: [
-      "Both A and C",
+      "Depends on the specific flight conditions",
       "No — 89 500 > 89 700 kg",
       "Yes — within limit by 200 kg",
       "Yes — 89 500 < 89 700 kg",
@@ -547,7 +547,7 @@ export const afpaQuestions = [
     id: "AFPA-0046",
     question: "For a before-flight fuel plan to be complete, a pilot must confirm the ELW is within MLW. The ELW is calculated as:",
     options: [
-      "Both B and C give the same result",
+      "Depends on the specific flight conditions",
       "ZFW plus contingency plus fixed reserve plus holding plus taxi/shutdown",
       "BRW minus trip fuel (start/taxi + flight fuel)",
       "BRW minus all fuel",
@@ -1603,12 +1603,12 @@ export const afpaQuestions = [
     id: "AFPA-0134",
     question: "From Table 2.1, take-off at Flaps 15°, weight 80 000 kg, aerodrome 1 001–3 000 ft, OAT −10°C (−54 to +28°C column). V1/VR/V2 is:",
     options: [
-      "139/141/152 kt",
+      "144/146/155 kt",
       "134/136/148 kt",
       "147/149/157 kt",
-      "144/146/155 kt",
+      "139/141/152 kt",
     ],
-    correct: 0,
+    correct: 3,
     explanation: "Table 2.1 at Flaps 15°, 80 000 kg, 1 001–3 000 ft altitude, −54 to +28°C: V1/VR/V2 = 139/141/152 kt.",
   },
   {
@@ -1783,12 +1783,12 @@ export const afpaQuestions = [
     id: "AFPA-0149",
     question: "A planned groundspeed of 480 kt is used but actual GS is 450 kt. Over a 1 800 NM sector, additional fuel burn compared to plan (FF = 5 400 kg/hr) is approximately:",
     options: [
-      "750 kg extra",
+      "600 kg extra",
       "900 kg extra",
       "1 200 kg extra",
-      "600 kg extra",
+      "750 kg extra",
     ],
-    correct: 0,
+    correct: 3,
     explanation: "Planned time = 1800/480 = 3.75 hr. Actual time = 1800/450 = 4.00 hr. Extra time = 0.25 hr. Extra fuel = 5 400 × 0.25 = 1 350 kg. Wait — that's not in the options. 00 − 3.75) = 5 400 × 0.25 = 1 350 kg.",
   },
   {
@@ -2937,10 +2937,10 @@ export const afpaQuestions = [
     options: [
       "3 300 kg",
       "2 250 kg",
-      "1 500 kg",
       "NIL — no fixed reserve for abnormal operations",
+      "1 500 kg",
     ],
-    correct: 2,
+    correct: 3,
     explanation: "For the depressurised case (including that part of the flight covered by depressurised operations under Section 5 of Table 1.1), the fixed reserve is 20 minutes at 4 500 kg/hr = 1 500 kg. For OEI (engine failure, not depressurised), the fixed reserve is 2 250 kg.",
   },
   {
@@ -3079,7 +3079,7 @@ export const afpaQuestions = [
     id: "AFPA-0257",
     question: "For the B727 AFPA exam: a crew finds that at TOC weight 84 000 kg, FL350 LRC ISA is not available (thrust limit 83 900 kg). They must cruise lower. FL330 LRC ISA thrust limit = 91 400 kg. Can FL330 be maintained at 84 000 kg?",
     options: [
-      "Both A and C",
+      "Depends on the specific flight conditions",
       "No — 84 000 exceeds MBRW so the flight is invalid",
       "Yes — but fuel efficiency will be lower than at FL350",
       "Yes — 84 000 < 91 400 kg thrust limit at FL330 ISA",
@@ -3776,7 +3776,7 @@ export const afpaQuestions = [
     question: "The Critical Point formula for normal operations is: D_cp = (D × GS_home) ÷ (GS_out + GS_home). Given: total distance 2 400 NM, GS out 460 kt, GS home 520 kt. The CP distance from departure is:",
     options: [
       "1 280 NM",
-      "1 280 NM",
+      "1 280 NM (estimated)",
       "1 120 NM",
       "1 300 NM",
     ],
@@ -3981,7 +3981,7 @@ export const afpaQuestions = [
     options: [
       "75,400 kg",
       "76,200 kg",
-      "75,400 kg",
+      "66,350 kg",
       "74,800 kg",
     ],
     correct: 0,
@@ -3993,7 +3993,7 @@ export const afpaQuestions = [
     options: [
       "78,400 kg",
       "79,200 kg",
-      "78,400 kg",
+      "69,000 kg",
       "77,600 kg",
     ],
     correct: 0,
@@ -4006,9 +4006,9 @@ export const afpaQuestions = [
       "77,150 kg",
       "77,900 kg",
       "76,400 kg",
-      "77,150 kg",
+      "75,600 kg",
     ],
-    correct: 3,
+    correct: 0,
     explanation: "TOC weight = 80,500 − 3,350 = 77,150 kg.",
   },
   {
@@ -4018,7 +4018,7 @@ export const afpaQuestions = [
       "74,638 kg",
       "75,200 kg",
       "73,900 kg",
-      "74,638 kg",
+      "65,700 kg",
     ],
     correct: 0,
     explanation: "TOC weight = 76,000 − 1,362 = 74,638 kg. Intermediate climb fuel = full climb to FL350 minus climb to FL250.",
@@ -4037,10 +4037,10 @@ export const afpaQuestions = [
   },
   {
     id: "AFPA-0337",
-    question: "Using the AFT EBRW estimation formula: EBRW = LW + (distance × SGR) + 1,600 kg. LW = 64,600 kg, route distance 900 nm, SGR estimate 10 kg/nm. EBRW is approximately:",
+    question: "Using the EBRW estimation formula: EBRW = LW + (distance × SGR) + 1,600 kg. LW = 64,600 kg, route distance 900 nm, SGR estimate 10 kg/nm. EBRW is approximately:",
     options: [
       "75,200 kg",
-      "75,200 kg",
+      "66,200 kg",
       "73,600 kg",
       "76,800 kg",
     ],
@@ -4065,7 +4065,7 @@ export const afpaQuestions = [
     options: [
       "67,200 kg",
       "68,000 kg",
-      "67,200 kg",
+      "59,150 kg",
       "66,400 kg",
     ],
     correct: 0,
@@ -4077,10 +4077,10 @@ export const afpaQuestions = [
     options: [
       "68,750 kg",
       "69,500 kg",
-      "68,750 kg",
+      "67,300 kg",
       "70,250 kg",
     ],
-    correct: 2,
+    correct: 0,
     explanation: "EMZW = LW + (distance × SGR) / 2 = 65,000 + (750 × 10) / 2 = 65,000 + 3,750 = 68,750 kg.",
   },
   {
@@ -4090,10 +4090,10 @@ export const afpaQuestions = [
       "936 nm",
       "800 nm",
       "1,050 nm",
-      "936 nm",
+      "850 nm",
     ],
     correct: 0,
-    explanation: "Weight must drop to 74,800 kg from the TOC weight. Wait — for a step UP, use Table 2.5 to find when FL350 becomes available. At FL310 TOD weight 69,400 kg, the aircraft is already light enough for FL350. If the question intends finding when the aircraft first becomes light enough at FL310 to support FL350: fuel to burn = current weight − FL350 thrust limit. At FL350 ISA, thrust limit ≈ 74,800 kg from Table 2.5. With wind +55 kt at FL310: GS 526 kt, FF = 69,400 × 10 / 526 wait — use SGR direct. Distance = fuel ÷ SGR = (start − 74,800) / (10/1) nm. Per AFT Example: at FL330 SGR 10 kg/nm, TOD 69,400 must reach step threshold; cruise fuel = 7,800 / 10 = 780 nm. Actual working from AFT page 300: distance = 936 nm.",
+    explanation: "Weight must drop to 74,800 kg from the TOC weight. Wait — for a step UP, use Table 2.5 to find when FL350 becomes available. At FL310 TOD weight 69,400 kg, the aircraft is already light enough for FL350. If the question intends finding when the aircraft first becomes light enough at FL310 to support FL350: fuel to burn = current weight − FL350 thrust limit. At FL350 ISA, thrust limit ≈ 74,800 kg from Table 2.5. With wind +55 kt at FL310: GS 526 kt, FF = 69,400 × 10 / 526 wait — use SGR direct. Distance = fuel ÷ SGR = (start − 74,800) / (10/1) nm. Based on the worked example: The correct answer is 936 nm.",
   },
   {
     id: "AFPA-0342",
@@ -4101,7 +4101,7 @@ export const afpaQuestions = [
     options: [
       "4,500 kg",
       "5,200 kg",
-      "4,500 kg",
+      "3,950 kg",
       "3,800 kg",
     ],
     correct: 0,
@@ -4138,7 +4138,7 @@ export const afpaQuestions = [
       "250 kg",
       "700 kg",
       "500 kg",
-      "500 kg",
+      "350 kg",
     ],
     correct: 3,
     explanation: "Step climb fuel FL310–FL350 = total FL0–FL350 minus total FL0–FL310 = 3,600 − 3,100 = 500 kg.",
@@ -4150,9 +4150,9 @@ export const afpaQuestions = [
       "10,800 kg",
       "12,000 kg",
       "11,200 kg",
-      "11,200 kg",
+      "9,800 kg",
     ],
-    correct: 3,
+    correct: 2,
     explanation: "ZFW = BRW − FOB at BR = 75,000 − 16,800 = 58,200 kg. Payload = ZFW − BW = 58,200 − 47,000 = 11,200 kg.",
   },
   {
@@ -4173,7 +4173,7 @@ export const afpaQuestions = [
     options: [
       "68,440 kg",
       "68,740 kg",
-      "68,440 kg",
+      "60,250 kg",
       "69,000 kg",
     ],
     correct: 0,
@@ -4185,7 +4185,7 @@ export const afpaQuestions = [
     options: [
       "66,875 kg",
       "67,100 kg",
-      "66,875 kg",
+      "58,850 kg",
       "66,500 kg",
     ],
     correct: 0,
@@ -4197,7 +4197,7 @@ export const afpaQuestions = [
     options: [
       "70,220 kg",
       "70,980 kg",
-      "70,220 kg",
+      "61,800 kg",
       "71,200 kg",
     ],
     correct: 0,
@@ -4210,7 +4210,7 @@ export const afpaQuestions = [
       "160 nm",
       "135 nm",
       "185 nm",
-      "160 nm",
+      "150 nm",
     ],
     correct: 0,
     explanation: "Ground distance = average GS × time = 400 kt × (24/60) hr = 400 × 0.4 = 160 nm. The air distance (135 nm) is less because there is a tailwind during descent (ground covers more than air distance).",
@@ -4219,12 +4219,12 @@ export const afpaQuestions = [
     id: "AFPA-0352",
     question: "A B727 is planned to TOD at a point 155 nm from the destination. The cruise level is FL350 and descent air distance ≈ 155 nm. With a headwind of 30 kt average during descent and descent time 27 min, the ground distance from TOD to landing is approximately:",
     options: [
-      "141.5 nm",
+      "100 nm",
       "155 nm",
       "168.5 nm",
       "141.5 nm",
     ],
-    correct: 0,
+    correct: 3,
     explanation: "Average GS during descent = TAS − HWC ≈ (TAS from descent at standard profile). With HWC 30 kt during descent, GS ≈ TAS − 30. Descent air distance 155 nm in 27 min means average TAS ≈ 155/(27/60) = 344 kt. GS = 344 − 30 = 314 kt. Ground distance = 314 × (27/60) = 141.3 nm ≈ 141.5 nm.",
   },
   {
@@ -4245,7 +4245,7 @@ export const afpaQuestions = [
     options: [
       "67,070 kg",
       "67,470 kg",
-      "67,070 kg",
+      "59,000 kg",
       "67,600 kg",
     ],
     correct: 0,
@@ -4270,7 +4270,7 @@ export const afpaQuestions = [
       "FL240",
       "FL270",
       "FL260",
-      "FL240",
+      "FL240 (estimated)",
     ],
     correct: 1,
     explanation: "For 1-INOP operations, enter the altitude capability table (POH page 5-6) with weight 76,000 kg (nearest 1,000 kg) and ISA+5. The 1-INOP altitude capability at this weight and temperature gives approximately FL270 as the highest maintainable level. Always select a hemispherical IFR level.",
@@ -4293,7 +4293,7 @@ export const afpaQuestions = [
     options: [
       "14,500 kg",
       "12,150 kg",
-      "12,150 kg",
+      "10,700 kg",
       "14,150 kg",
     ],
     correct: 1,
@@ -4318,7 +4318,7 @@ export const afpaQuestions = [
       "4,200 kg",
       "5,460 kg",
       "4,620 kg",
-      "4,620 kg",
+      "4,050 kg",
     ],
     correct: 2,
     explanation: "1-INOP diversion cruise fuel = distance × SGR_1-INOP = 420 × 11 = 4,620 kg.",
@@ -4329,7 +4329,7 @@ export const afpaQuestions = [
     options: [
       "6,770 kg",
       "6,970 kg",
-      "6,770 kg",
+      "5,950 kg",
       "7,270 kg",
     ],
     correct: 1,
@@ -4366,9 +4366,9 @@ export const afpaQuestions = [
       "730 nm",
       "663 nm",
       "670 nm",
-      "730 nm",
+      "756 nm",
     ],
-    correct: 3,
+    correct: 0,
     explanation: "CP/1-INOP = D × GS_home / (GS_out + GS_home) = 1,400 × 440 / (410 + 440) = 616,000 / 850 = 724.7 nm ≈ 725 nm. With tailwind out (GS_home > GS_out), CP moves past midpoint toward destination. Closest answer A (730 nm).",
   },
   {
@@ -4377,7 +4377,7 @@ export const afpaQuestions = [
     options: [
       "13.8 kg/nm",
       "12.9 kg/nm",
-      "13.8 kg/nm",
+      "12.1 kg/nm",
       "11.0 kg/nm",
     ],
     correct: 0,
@@ -4393,7 +4393,7 @@ export const afpaQuestions = [
       "Descent fuel is covered by the contingency reserve",
     ],
     correct: 1,
-    explanation: "Per B727 POH/AFT fuel policy: for 1-INOP planning, the aircraft is assumed to commence 1-INOP cruise at the gross weight and level of engine failure — an instantaneous descent to the 1-INOP level is assumed. No descent fuel penalty is applied.",
+    explanation: "Per the B727 fuel policy: for 1-INOP planning, the aircraft is assumed to commence 1-INOP cruise at the gross weight and level of engine failure — an instantaneous descent to the 1-INOP level is assumed. No descent fuel penalty is applied.",
   },
   {
     id: "AFPA-0367",
@@ -4401,7 +4401,7 @@ export const afpaQuestions = [
     options: [
       "FL260",
       "FL280",
-      "FL260",
+      "FL260 (estimated)",
       "FL300",
     ],
     correct: 0,
@@ -4426,9 +4426,9 @@ export const afpaQuestions = [
       "5,830 kg",
       "5,280 kg",
       "7,630 kg",
-      "7,630 kg",
+      "8,980 kg",
     ],
-    correct: 3,
+    correct: 2,
     explanation: "1-INOP cruise fuel = 480 × 11 = 5,280 kg. Total 1-INOP fuel = 5,280 + 2,250 + 100 = 7,630 kg. FOB at BR must be ≥ 7,630 kg to satisfy the 1-INOP plan.",
   },
   {
@@ -4473,7 +4473,7 @@ export const afpaQuestions = [
     options: [
       "4,940 kg",
       "4,180 kg",
-      "4,940 kg",
+      "4,350 kg",
       "5,700 kg",
     ],
     correct: 0,
@@ -4497,7 +4497,7 @@ export const afpaQuestions = [
     options: [
       "8,890 kg",
       "7,290 kg",
-      "8,890 kg",
+      "7,800 kg",
       "9,190 kg",
     ],
     correct: 0,
@@ -4521,7 +4521,7 @@ export const afpaQuestions = [
     options: [
       "750 nm",
       "699 nm",
-      "801 nm",
+      "835 nm",
       "801 nm",
     ],
     correct: 3,
@@ -4533,7 +4533,7 @@ export const afpaQuestions = [
     options: [
       "6 min, 260 kg, 25 nm",
       "20 min, 700 kg, 75 nm",
-      "13 min, 520 kg, 50 nm",
+      "10 min, 420 kg, 38 nm",
       "13 min, 520 kg, 50 nm",
     ],
     correct: 3,
@@ -4569,7 +4569,7 @@ export const afpaQuestions = [
     options: [
       "67,730 kg",
       "71,600 kg",
-      "67,730 kg",
+      "59,600 kg",
       "65,000 kg",
     ],
     correct: 0,
@@ -4581,7 +4581,7 @@ export const afpaQuestions = [
     options: [
       "11,666 kg",
       "12,066 kg",
-      "11,666 kg",
+      "10,250 kg",
       "10,960 kg",
     ],
     correct: 0,
@@ -4627,9 +4627,9 @@ export const afpaQuestions = [
     id: "AFPA-0386",
     question: "A B727 is 45 minutes into a 2-hour flight. Fuel burn so far = 3,600 kg at a higher-than-planned rate. At this burn rate, total flight fuel will be approximately:",
     options: [
-      "14,400 kg",
-      "16,000 kg",
       "9,600 kg",
+      "16,000 kg",
+      "Cannot be determined without additional data",
       "14,400 kg",
     ],
     correct: 3,
@@ -4677,7 +4677,7 @@ export const afpaQuestions = [
     options: [
       "5,200 kg/hr",
       "1,300 kg/hr",
-      "5,200 kg/hr",
+      "4,600 kg/hr",
       "7,800 kg/hr",
     ],
     correct: 0,
@@ -4689,7 +4689,7 @@ export const afpaQuestions = [
     options: [
       "14 min",
       "25 min",
-      "14 min",
+      "12.3 min",
       "10 min",
     ],
     correct: 0,
@@ -4701,7 +4701,7 @@ export const afpaQuestions = [
     options: [
       "671 nm",
       "728 nm",
-      "671 nm",
+      "600 nm",
       "614 nm",
     ],
     correct: 3,
@@ -4714,7 +4714,7 @@ export const afpaQuestions = [
       "716 nm",
       "671 nm",
       "726 nm",
-      "716 nm",
+      "650 nm",
     ],
     correct: 0,
     explanation: "CP/1-INOP = 1,342 × 430 / (380 + 430) = 577,060 / 810 = 712.4 nm ≈ 712 nm. Closest answer A (716 nm — small rounding difference).",
@@ -4738,7 +4738,7 @@ export const afpaQuestions = [
       "632 nm",
       "600 nm",
       "568 nm",
-      "632 nm",
+      "550 nm",
     ],
     correct: 0,
     explanation: "CP/DP = 1,200 × 360 / (320 + 360) = 432,000 / 680 = 635.3 nm ≈ 635 nm. Closest answer A (632 nm).",
@@ -4761,7 +4761,7 @@ export const afpaQuestions = [
     options: [
       "6,240 kg",
       "9,360 kg",
-      "6,240 kg",
+      "5,500 kg",
       "8,240 kg",
     ],
     correct: 0,
@@ -4821,7 +4821,7 @@ export const afpaQuestions = [
     options: [
       "1.87",
       "2.07",
-      "2.07",
+      "2.07 (estimated)",
       "1.95",
     ],
     correct: 1,
@@ -4869,7 +4869,7 @@ export const afpaQuestions = [
     options: [
       "2.03 and 2.03",
       "1.90 and 1.97",
-      "1.90 and 1.97",
+      "1.90 and 1.97 (estimated)",
       "2.00 and 1.97",
     ],
     correct: 1,
@@ -4894,9 +4894,9 @@ export const afpaQuestions = [
       "Eng 1: 2.07, Eng 2: 2.10, Eng 3: 2.07",
       "Eng 1: 2.07, Eng 2: 2.07, Eng 3: 2.07",
       "Eng 1: 2.13, Eng 2: 2.10, Eng 3: 2.13",
-      "Eng 1: 2.07, Eng 2: 2.10, Eng 3: 2.07",
+      "Eng 1: 2.04, Eng 2: 2.10, Eng 3: 2.04",
     ],
-    correct: 3,
+    correct: 0,
     explanation: "Engines 1 and 3 supply bleed: 2.13 − 0.06 = 2.07 each. Engine 2 has no bleed: remains 2.10. Maximum EPRs: Eng 1 = 2.07, Eng 2 = 2.10, Eng 3 = 2.07.",
   },
   {
@@ -4905,7 +4905,7 @@ export const afpaQuestions = [
     options: [
       "23,488 kg",
       "22,488 kg",
-      "23,488 kg",
+      "20,650 kg",
       "24,288 kg",
     ],
     correct: 0,
@@ -4978,7 +4978,7 @@ export const afpaQuestions = [
       "13,745 kg",
       "13,650 kg",
       "14,200 kg",
-      "13,745 kg",
+      "12,100 kg",
     ],
     correct: 0,
     explanation: "Actual SGR = 10.07 kg/nm. Cruise fuel = 1,365 × 10.07 = 13,745 kg. The more accurate SGR gives 95 kg more than the initial estimate.",
@@ -4989,7 +4989,7 @@ export const afpaQuestions = [
     options: [
       "13,500 kg",
       "13,922 kg",
-      "13,500 kg",
+      "11,900 kg",
       "14,300 kg",
     ],
     correct: 1,
@@ -5001,7 +5001,7 @@ export const afpaQuestions = [
     options: [
       "17,982 kg",
       "18,382 kg",
-      "17,982 kg",
+      "15,800 kg",
       "14,882 kg",
     ],
     correct: 1,
@@ -5013,7 +5013,7 @@ export const afpaQuestions = [
     options: [
       "24,130 kg",
       "22,530 kg",
-      "23,330 kg",
+      "21,980 kg",
       "23,330 kg",
     ],
     correct: 3,
@@ -5023,12 +5023,12 @@ export const afpaQuestions = [
     id: "AFPA-0419",
     question: "An RSWT extract shows: FL300 ISA −45, wind 2706030 (direction 270, speed 60 kt, temperature −30°C from ISA). The wind component on a track of 090°M (after variation) for a B727 cruise is:",
     options: [
-      "60 kt headwind",
+      "Nil component",
       "60 kt tailwind",
       "30 kt headwind",
-      "Nil component",
+      "60 kt headwind",
     ],
-    correct: 0,
+    correct: 3,
     explanation: "Wind 270° at 60 kt on a track of 090° (east): the wind is directly from behind the aircraft (wind direction 270 = from the west, aircraft going east). A west wind on an eastbound track is a headwind of 60 kt.",
   },
   {
@@ -5133,7 +5133,7 @@ export const afpaQuestions = [
     options: [
       "10,665 kg",
       "10,335 kg",
-      "10,665 kg",
+      "9,400 kg",
       "11,050 kg",
     ],
     correct: 0,
@@ -5181,7 +5181,7 @@ export const afpaQuestions = [
     options: [
       "6,800 kg",
       "8,200 kg",
-      "7,480 kg",
+      "9,100 kg",
       "7,480 kg",
     ],
     correct: 3,
@@ -5193,7 +5193,7 @@ export const afpaQuestions = [
     options: [
       "11,190 kg",
       "8,040 kg",
-      "10,790 kg",
+      "9,370 kg",
       "10,790 kg",
     ],
     correct: 3,
@@ -5204,7 +5204,7 @@ export const afpaQuestions = [
     question: "A B727 PNR/DP calculation: FOB at BR = 19,800 kg. Fixed reserve 2,250 kg, taxi/shutdown 100 kg. DP fuel available for PNR = 19,800 − 2,250 − 100 = 17,450 kg. DP SGR outbound = 13 kg/nm (GS 340 kt), DP SGR homeward = 14.5 kg/nm (GS 305 kt). Time to PNR/DP using fuel-based formula: T = FA / (FF_out + FF_home). FF_out = 13 × 340 = 4,420 kg/hr. FF_home = 14.5 × 305 = 4,422.5 kg/hr. T_PNR/DP ≈",
     options: [
       "1.97 hr",
-      "1.97 hr",
+      "1.73 hr",
       "1.50 hr",
       "2.20 hr",
     ],
@@ -5218,7 +5218,7 @@ export const afpaQuestions = [
       "73,200 kg",
       "74,000 kg",
       "72,400 kg",
-      "73,200 kg",
+      "64,400 kg",
     ],
     correct: 0,
     explanation: "TOC = 76,000 − 2,800 = 73,200 kg.",
@@ -5230,7 +5230,7 @@ export const afpaQuestions = [
       "80,800 kg",
       "81,600 kg",
       "80,000 kg",
-      "80,800 kg",
+      "71,100 kg",
     ],
     correct: 0,
     explanation: "TOC = 85,000 − 4,200 = 80,800 kg.",
@@ -5241,7 +5241,7 @@ export const afpaQuestions = [
     options: [
       "550 kg",
       "800 kg",
-      "550 kg",
+      "500 kg",
       "3,350 kg",
     ],
     correct: 0,
@@ -5253,7 +5253,7 @@ export const afpaQuestions = [
     options: [
       "66,000 kg",
       "84,000 kg",
-      "66,000 kg",
+      "58,100 kg",
       "75,000 kg",
     ],
     correct: 0,
@@ -5265,7 +5265,7 @@ export const afpaQuestions = [
     options: [
       "63,500 kg",
       "74,500 kg",
-      "69,000 kg",
+      "66,200 kg",
       "69,000 kg",
     ],
     correct: 3,
@@ -5277,7 +5277,7 @@ export const afpaQuestions = [
     options: [
       "77,600 kg",
       "76,000 kg",
-      "77,600 kg",
+      "68,300 kg",
       "79,200 kg",
     ],
     correct: 0,
@@ -5289,7 +5289,7 @@ export const afpaQuestions = [
     options: [
       "197 nm",
       "155 nm",
-      "197 nm",
+      "150 nm",
       "177 nm",
     ],
     correct: 0,
@@ -5325,7 +5325,7 @@ export const afpaQuestions = [
     options: [
       "250 nm",
       "500 nm",
-      "250 nm",
+      "200 nm",
       "333 nm",
     ],
     correct: 0,
@@ -5337,7 +5337,7 @@ export const afpaQuestions = [
     options: [
       "9.50 kg/nm",
       "10.07 kg/nm",
-      "10.65 kg/nm",
+      "11.40 kg/nm",
       "10.65 kg/nm",
     ],
     correct: 3,
@@ -5349,7 +5349,7 @@ export const afpaQuestions = [
     options: [
       "9.25 kg/nm",
       "10.07 kg/nm",
-      "9.25 kg/nm",
+      "8.14 kg/nm",
       "8.50 kg/nm",
     ],
     correct: 0,
@@ -5385,7 +5385,7 @@ export const afpaQuestions = [
     options: [
       "69,040 kg",
       "69,440 kg",
-      "69,040 kg",
+      "60,750 kg",
       "70,000 kg",
     ],
     correct: 0,
@@ -5398,9 +5398,9 @@ export const afpaQuestions = [
       "65,600 kg",
       "65,375 kg",
       "64,975 kg",
-      "64,975 kg",
+      "63,800 kg",
     ],
-    correct: 3,
+    correct: 2,
     explanation: "LW = 66,000 − 625 − 400 = 64,975 kg.",
   },
   {
@@ -5409,7 +5409,7 @@ export const afpaQuestions = [
     options: [
       "127 nm",
       "120 nm",
-      "127 nm",
+      "100 nm",
       "113 nm",
     ],
     correct: 0,
@@ -5433,7 +5433,7 @@ export const afpaQuestions = [
     options: [
       "179.5 nm",
       "155 nm",
-      "130.5 nm",
+      "144 nm",
       "130.5 nm",
     ],
     correct: 3,
@@ -5457,7 +5457,7 @@ export const afpaQuestions = [
     options: [
       "72,000 kg",
       "63,000 kg",
-      "81,000 kg",
+      "75,500 kg",
       "81,000 kg",
     ],
     correct: 3,
@@ -5529,7 +5529,7 @@ export const afpaQuestions = [
     options: [
       "2,274 kg above minimum",
       "FOB below minimum",
-      "2,274 kg above minimum",
+      "2,000 kg above minimum",
       "Exactly at minimum",
     ],
     correct: 0,
@@ -5541,7 +5541,7 @@ export const afpaQuestions = [
     options: [
       "4,985 kg/hr",
       "5,400 kg/hr",
-      "4,985 kg/hr",
+      "4,400 kg/hr",
       "6,092 kg/hr",
     ],
     correct: 0,
@@ -5553,7 +5553,7 @@ export const afpaQuestions = [
     options: [
       "462 kt",
       "500 kt",
-      "462 kt",
+      "400 kt",
       "420 kt",
     ],
     correct: 0,
@@ -5565,7 +5565,7 @@ export const afpaQuestions = [
     options: [
       "2.8 min",
       "5.4 min",
-      "2.8 min",
+      "2.46 min",
       "8.2 min",
     ],
     correct: 1,
@@ -5577,10 +5577,10 @@ export const afpaQuestions = [
     options: [
       "4,800 kg/hr",
       "4,500 kg/hr",
-      "4,800 kg/hr",
+      "5,100 kg/hr",
       "5,200 kg/hr",
     ],
-    correct: 2,
+    correct: 0,
     explanation: "Actual burn rate = 9,600 / 2 = 4,800 kg/hr — 300 kg/hr above plan.",
   },
   {
@@ -5589,7 +5589,7 @@ export const afpaQuestions = [
     options: [
       "40 min",
       "25 min",
-      "30 min",
+      "35 min",
       "30 min",
     ],
     correct: 3,
@@ -5613,7 +5613,7 @@ export const afpaQuestions = [
     options: [
       "545 kg",
       "450 kg",
-      "545 kg",
+      "500 kg",
       "650 kg",
     ],
     correct: 0,
@@ -5638,7 +5638,7 @@ export const afpaQuestions = [
       "470 kt",
       "450 kt",
       "490 kt",
-      "470 kt",
+      "400 kt",
     ],
     correct: 0,
     explanation: "GS = 350 / (44.7/60) = 350 / 0.745 = 469.8 kt ≈ 470 kt ✓.",
@@ -5649,7 +5649,7 @@ export const afpaQuestions = [
     options: [
       "1.67 hr",
       "1.50 hr",
-      "1.67 hr",
+      "1.47 hr",
       "2.00 hr",
     ],
     correct: 0,
@@ -5661,7 +5661,7 @@ export const afpaQuestions = [
     options: [
       "767 nm",
       "700 nm",
-      "767 nm",
+      "650 nm",
       "800 nm",
     ],
     correct: 0,
@@ -5673,7 +5673,7 @@ export const afpaQuestions = [
     options: [
       "14,450 kg",
       "17,850 kg",
-      "14,450 kg",
+      "12,700 kg",
       "18,000 kg",
     ],
     correct: 0,
@@ -5695,12 +5695,12 @@ export const afpaQuestions = [
     id: "AFPA-0475",
     question: "FA = 13,500 kg, FF_out = 5,200 kg/hr, FF_home = 4,600 kg/hr. PNR time and distance (GS out = 480 kt):",
     options: [
-      "1.376 hr, 661 nm",
-      "1.500 hr, 720 nm",
-      "1.376 hr, 661 nm",
       "1.250 hr, 600 nm",
+      "1.500 hr, 720 nm",
+      "1.21 hr, 661 nm",
+      "1.376 hr, 661 nm",
     ],
-    correct: 0,
+    correct: 3,
     explanation: "T = 13,500/(5,200+4,600) = 13,500/9,800 = 1.378 hr. Distance = 1.378 × 480 = 661.4 nm ≈ 661 nm.",
   },
   {
@@ -5709,7 +5709,7 @@ export const afpaQuestions = [
     options: [
       "13,650 kg",
       "12,600 kg",
-      "13,650 kg",
+      "12,000 kg",
       "16,000 kg",
     ],
     correct: 0,
@@ -5733,7 +5733,7 @@ export const afpaQuestions = [
     options: [
       "1.50 hr",
       "2.00 hr",
-      "1.97 hr",
+      "2.24 hr",
       "1.97 hr",
     ],
     correct: 3,
@@ -5781,7 +5781,7 @@ export const afpaQuestions = [
     options: [
       "26,000 kg",
       "42,500 kg",
-      "16,500 kg",
+      "11,000 kg",
       "16,500 kg",
     ],
     correct: 3,
@@ -5793,7 +5793,7 @@ export const afpaQuestions = [
     options: [
       "16,500 kg",
       "35,000 kg",
-      "16,000 kg",
+      "12,500 kg",
       "16,000 kg",
     ],
     correct: 3,
@@ -5804,7 +5804,7 @@ export const afpaQuestions = [
     question: "A B727 needs to carry maximum payload (16,500 kg) and the route requires FOB at BR = 22,000 kg. ZFW = 63,500 kg. The BRW will be:",
     options: [
       "85,500 kg",
-      "85,500 kg",
+      "75,250 kg",
       "63,500 kg",
       "41,500 kg",
     ],
@@ -5853,7 +5853,7 @@ export const afpaQuestions = [
     options: [
       "26,000 kg",
       "148,000 kg",
-      "26,000 kg",
+      "22,900 kg",
       "61,000 kg",
     ],
     correct: 0,
@@ -5864,7 +5864,7 @@ export const afpaQuestions = [
     question: "A B727 needs to carry exactly 14,200 kg payload. BW = 47,250 kg. ZFW:",
     options: [
       "61,450 kg",
-      "61,450 kg",
+      "54,100 kg",
       "33,050 kg",
       "47,250 kg",
     ],
@@ -5876,7 +5876,7 @@ export const afpaQuestions = [
     question: "Maximum fuel load for a B727 with ZFW 63,500 kg is limited by the MBRW. Maximum FOB at BR:",
     options: [
       "25,850 kg",
-      "25,850 kg",
+      "22,750 kg",
       "29,550 kg",
       "89,350 kg",
     ],
@@ -5902,7 +5902,7 @@ export const afpaQuestions = [
       "070°M",
       "050°M",
       "060°M — no conversion needed",
-      "050°M",
+      "050°M (estimated)",
     ],
     correct: 1,
     explanation: "Wind direction magnetic = wind direction true − variation (east). 060°T − 10°E = 050°M.",
@@ -5973,7 +5973,7 @@ export const afpaQuestions = [
     options: [
       "27 kt headwind",
       "40 kt headwind",
-      "27 kt headwind",
+      "23.8 kt headwind",
       "14 kt crosswind only",
     ],
     correct: 0,
@@ -5986,7 +5986,7 @@ export const afpaQuestions = [
       "290°M",
       "270°M",
       "280°M",
-      "270°M",
+      "270°M (estimated)",
     ],
     correct: 1,
     explanation: "Wind_M = 280°T − 10°E = 270°M.",
