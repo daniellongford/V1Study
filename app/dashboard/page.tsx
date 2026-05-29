@@ -246,15 +246,15 @@ export default function Dashboard() {
                   </div>
                 </div>
                 {accessible ? (
-                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: 'white', color: '#0a1628', border: '2px solid #2563eb', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
+                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
                     Start Quiz →
                   </button>
                 ) : trial.exhausted ? (
-                  <a href="/pricing" style={{ background: 'white', color: '#0a1628', border: '2px solid #2563eb', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
+                  <a href="/pricing" style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
                     Subscribe to continue →
                   </a>
                 ) : (
-                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: 'white', color: '#0a1628', border: '2px solid #2563eb', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', minHeight: '44px' }}>
+                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', minHeight: '44px' }}>
                     Start free trial →
                   </button>
                 )}
