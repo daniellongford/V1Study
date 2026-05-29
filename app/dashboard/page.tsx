@@ -4,7 +4,7 @@ import { supabase } from '../../lib/supabase'
 
 const subjectsByLicence: Record<string, { subject: string; code: string; passMark: number }[]> = {
   PPL: [
-    { subject: 'PPL Theory', code: 'PPL', passMark: 70 },
+    { subject: 'PPL Theory', code: 'PPLA', passMark: 70 },
   ],
   CPL: [
     { subject: 'Human Factors', code: 'CHUF', passMark: 70 },
