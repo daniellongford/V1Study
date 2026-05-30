@@ -40,13 +40,9 @@ export default function Home() {
       {showIntro && <IntroAnimation onComplete={handleIntroComplete} />}
       <main style={{ minHeight: '100vh', background: '#ffffff', fontFamily: 'system-ui, -apple-system, sans-serif', opacity: contentVisible ? 1 : 0, transition: 'opacity 0.6s ease' }}>
 
-        {/* HERO — full bleed, nav overlaid on top */}
+        {/* HERO */}
         <section style={{ position: 'relative', height: '100vh', minHeight: '650px', display: 'flex', flexDirection: 'column', overflow: 'hidden', margin: 0, padding: 0 }}>
-
-          {/* Background photo — edge to edge, no border */}
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/IMG_4488.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center 35%', filter: 'brightness(0.52)' }} />
-
-          {/* NAV overlaid on hero */}
           <nav style={{ position: 'relative', zIndex: 10, padding: '1.25rem 2.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div>
               <span style={{ fontSize: '22px', fontWeight: '800', color: 'white' }}>V1</span>
@@ -60,8 +56,6 @@ export default function Home() {
               <a href="/signup" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Sign up</a>
             </div>
           </nav>
-
-          {/* Hero content centred in remaining space */}
           <div style={{ position: 'relative', zIndex: 1, flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 2.5rem' }}>
             <div style={{ maxWidth: '800px' }}>
               <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.65)', marginBottom: '1.25rem', fontWeight: '700', textTransform: 'uppercase' }}>Australia&apos;s Pilot Exam Prep Platform</p>
@@ -86,7 +80,7 @@ export default function Home() {
               <h2 style={{ fontSize: '36px', fontWeight: '800', color: '#0a1628', letterSpacing: '-0.5px', textAlign: 'center' }}>Every Australian Pilot Exam, Covered.</h2>
               <p style={{ fontSize: '16px', color: '#64748b', marginTop: '0.75rem', textAlign: 'center' }}>From your first PPL theory exam to your ATPL.</p>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1.25rem', alignItems: 'stretch' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1.25rem' }}>
               {[
                 { title: 'PPL', full: 'Private Pilot Licence', exams: '1 combined exam', desc: 'Master the core theory required for your Private Pilot Licence — the essential first step for every aspiring pilot in Australia.' },
                 { title: 'CPL', full: 'Commercial Pilot Licence', exams: '7 exams', desc: 'All 7 CASA subjects covered in full. Built for pilots who are serious about taking their flying career to a professional level.' },
@@ -96,7 +90,7 @@ export default function Home() {
                 return (
                   <div key={item.title} style={{ background: '#f8fafc', borderRadius: '12px', padding: '1.75rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
                     <div style={{ fontSize: '10px', fontWeight: '700', color: '#94a3b8', letterSpacing: '0.18em', fontFamily: 'monospace', marginBottom: '0.75rem', textTransform: 'uppercase' }}>{item.title}</div>
-                    <div style={{ fontSize: '17px', fontWeight: '700', color: '#0a1628', marginBottom: '4px', lineHeight: 1.3, minHeight: '48px' }}>{item.full}</div>
+                    <div style={{ fontSize: '17px', fontWeight: '700', color: '#0a1628', marginBottom: '4px', lineHeight: 1.3, minHeight: '72px', display: 'flex', alignItems: 'flex-start' }}>{item.full}</div>
                     <div style={{ fontSize: '12px', color: '#2563eb', fontWeight: '600', marginBottom: '0.75rem' }}>{item.exams}</div>
                     <div style={{ width: '24px', height: '2px', background: '#2563eb', borderRadius: '99px', marginBottom: '0.75rem' }} />
                     <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.65 }}>{item.desc}</div>
@@ -177,7 +171,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CONTACT — full bleed photo at bottom of page */}
+        {/* CONTACT */}
         <section style={{ position: 'relative', overflow: 'hidden', minHeight: '420px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0', padding: '0', width: '100%' }}>
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/contact-hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center 45%', filter: 'brightness(0.45)' }} />
           <div style={{ position: 'relative', zIndex: 1, padding: '6rem 2.5rem', textAlign: 'center', width: '100%' }}>
