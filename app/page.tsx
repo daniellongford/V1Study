@@ -82,15 +82,18 @@ export default function Home() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '1.25rem' }}>
               {[
-                { title: 'PPL', full: 'Private Pilot Licence', exams: '1 combined exam', desc: 'Master the core theory required for your Private Pilot Licence — the essential first step for every aspiring pilot in Australia.' },
-                { title: 'CPL', full: 'Commercial Pilot Licence', exams: '7 exams', desc: 'All 7 CASA subjects covered in full. Built for pilots who are serious about taking their flying career to a professional level.' },
-                { title: 'ATPL', full: 'Airline Transport Pilots Licence', exams: '7 exams', desc: 'The highest standard in Australian pilot licensing. All 7 subjects for pilots on the path to the airline flight deck.' },
-                { title: 'IREX', full: 'Instrument Rating Exam', exams: '1 exam', desc: 'Everything you need to pass the CASA Instrument Rating Exam and operate confidently in instrument meteorological conditions.' },
+                { title: 'PPL', full: 'Private Pilot', sub: 'Licence', exams: '1 combined exam', desc: 'Master the core theory required for your Private Pilot Licence — the essential first step for every aspiring pilot in Australia.' },
+                { title: 'CPL', full: 'Commercial Pilot', sub: 'Licence', exams: '7 exams', desc: 'All 7 CASA subjects covered in full. Built for pilots who are serious about taking their flying career to a professional level.' },
+                { title: 'ATPL', full: 'Airline Transport Pilots', sub: 'Licence', exams: '7 exams', desc: 'The highest standard in Australian pilot licensing. All 7 subjects for pilots on the path to the airline flight deck.' },
+                { title: 'IREX', full: 'Instrument Rating', sub: 'Exam', exams: '1 exam', desc: 'Everything you need to pass the CASA Instrument Rating Exam and operate confidently in instrument meteorological conditions.' },
               ].map(function (item) {
                 return (
                   <div key={item.title} style={{ background: '#f8fafc', borderRadius: '12px', padding: '1.75rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
                     <div style={{ fontSize: '10px', fontWeight: '700', color: '#94a3b8', letterSpacing: '0.18em', fontFamily: 'monospace', marginBottom: '0.75rem', textTransform: 'uppercase' }}>{item.title}</div>
-                    <div style={{ fontSize: '17px', fontWeight: '700', color: '#0a1628', marginBottom: '4px', lineHeight: 1.3, minHeight: '72px', display: 'flex', alignItems: 'flex-start' }}>{item.full}</div>
+                    <div style={{ marginBottom: '4px', lineHeight: 1.3, minHeight: '52px' }}>
+                      <div style={{ fontSize: '17px', fontWeight: '700', color: '#0a1628' }}>{item.full}</div>
+                      <div style={{ fontSize: '17px', fontWeight: '700', color: '#0a1628' }}>{(item as any).sub}</div>
+                    </div>
                     <div style={{ fontSize: '12px', color: '#2563eb', fontWeight: '600', marginBottom: '0.75rem' }}>{item.exams}</div>
                     <div style={{ width: '24px', height: '2px', background: '#2563eb', borderRadius: '99px', marginBottom: '0.75rem' }} />
                     <div style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.65 }}>{item.desc}</div>
