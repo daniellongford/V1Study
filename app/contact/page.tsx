@@ -6,11 +6,27 @@ export default function ContactPage() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
 
-  function handleSubmit() {
+  async function handleSubmit() {
     if (!name || !email || !message) return
-    window.location.href = `mailto:support@v1study.com.au?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`
-    setSent(true)
+    setLoading(true)
+    try {
+      const res = await fetch('/api/support-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+      })
+      const data = await res.json()
+      if (data.success) {
+        setSent(true)
+      } else {
+        alert('Something went wrong. Please email us directly at support@v1study.com.au')
+      }
+    } catch (e) {
+      alert('Something went wrong. Please email us directly at support@v1study.com.au')
+    }
+    setLoading(false)
   }
 
   return (
@@ -29,7 +45,7 @@ export default function ContactPage() {
       <div style={{ maxWidth: '600px', margin: '0 auto', padding: '4rem 2rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <h1 style={{ fontSize: '36px', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>Get in touch</h1>
-          <p style={{ fontSize: '16px', color: '#64748b' }}>Have a question about V1 Study? We're here to help.</p>
+          <p style={{ fontSize: '16px', color: '#64748b' }}>Have a question about V1 Study? We&apos;re here to help.</p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '2.5rem' }}>
@@ -60,15 +76,15 @@ export default function ContactPage() {
               <label style={{ fontSize: '13px', fontWeight: '600', color: '#374151', display: 'block', marginBottom: '6px' }}>Message</label>
               <textarea placeholder="How can we help?" value={message} onChange={e => setMessage(e.target.value)} rows={5} style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none', resize: 'vertical', boxSizing: 'border-box', fontFamily: 'system-ui,sans-serif' }} />
             </div>
-            <button onClick={handleSubmit} disabled={!name || !email || !message} style={{ width: '100%', background: !name || !email || !message ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontSize: '15px', fontWeight: '600', cursor: !name || !email || !message ? 'not-allowed' : 'pointer' }}>
-              Send message
+            <button onClick={handleSubmit} disabled={!name || !email || !message || loading} style={{ width: '100%', background: !name || !email || !message ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontSize: '15px', fontWeight: '600', cursor: !name || !email || !message ? 'not-allowed' : 'pointer' }}>
+              {loading ? 'Sending...' : 'Send message'}
             </button>
           </div>
         ) : (
           <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '2rem', textAlign: 'center' }}>
             <div style={{ fontSize: '48px', marginBottom: '1rem' }}>✉️</div>
             <h2 style={{ fontSize: '20px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Message sent!</h2>
-            <p style={{ fontSize: '14px', color: '#64748b' }}>Your email client should have opened. We'll get back to you within 24 hours.</p>
+            <p style={{ fontSize: '14px', color: '#64748b' }}>We&apos;ll get back to you within 24 hours.</p>
           </div>
         )}
       </div>
