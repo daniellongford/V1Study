@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer re_jorGiwah_7GJgo154iW3fTYmETsvXWaGK`,
+        'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
       },
       body: JSON.stringify({
         from: 'V1 Study <support@v1study.com.au>',
