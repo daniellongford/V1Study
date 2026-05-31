@@ -2,160 +2,119 @@
 import { useState, useEffect, useRef, use } from 'react'
 import { supabase } from '../../../lib/supabase'
 import { freeQuestions } from '../../../lib/questions'
-import { FULL_BANKS, PLAN_ACCESS, getLicence } from '../../../lib/question-banks'
 
-const SESSION_SIZE = 10
-
-function seenKey(subject: string) {
-  return 'v1_seen_' + subject.replace(/\s+/g, '_').toLowerCase()
-}
-
-function getSeenSet(subject: string): Set<number> {
-  try {
-    const raw = localStorage.getItem(seenKey(subject))
-    return raw ? new Set(JSON.parse(raw)) : new Set()
-  } catch { return new Set() }
-}
-
-function markSeen(subject: string, indices: number[]) {
-  try {
-    const s = getSeenSet(subject)
-    indices.forEach(i => s.add(i))
-    localStorage.setItem(seenKey(subject), JSON.stringify([...s]))
-  } catch {}
-}
-
-function pickFromBank(bank: any[], subject: string): any[] {
-  if (!bank || bank.length === 0) return []
-  const seen = getSeenSet(subject)
-  let pool = bank.filter((_, i) => !seen.has(i))
-  if (pool.length < SESSION_SIZE) {
-    try { localStorage.removeItem(seenKey(subject)) } catch {}
-    pool = bank
-  }
-  return [...pool].sort(() => Math.random() - 0.5).slice(0, SESSION_SIZE)
-}
-
-function findFree(subject: string): any[] {
+function findQuestions(subject: string) {
   if (freeQuestions[subject]) return freeQuestions[subject]
-  const lo = subject.toLowerCase()
-  for (const k of Object.keys(freeQuestions)) {
-    if (k.toLowerCase() === lo || lo.includes(k.toLowerCase()) || k.toLowerCase().includes(lo))
-      return freeQuestions[k]
+  const lower = subject.toLowerCase().trim()
+  for (const key of Object.keys(freeQuestions)) {
+    if (key.toLowerCase().trim() === lower) return freeQuestions[key]
+  }
+  for (const key of Object.keys(freeQuestions)) {
+    if (lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) return freeQuestions[key]
   }
   return []
+}
+
+function getLicence(subject: string): string {
+  if (subject === 'PPL Theory') return 'PPL'
+  if (subject === 'Instrument Rating') return 'IREX'
+  if (['Human Factors', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology', 'Navigation', 'Flight Planning', 'Air Law'].includes(subject)) return 'ATPL'
+  return 'CPL'
 }
 
 export default function QuizPage({ params }: { params: Promise<{ subject: string }> }) {
   const resolvedParams = use(params)
   const subject = decodeURIComponent(resolvedParams.subject || '')
-
-  const [plan, setPlan]             = useState<string | null>(null)
-  const [planLoaded, setPlanLoaded] = useState(false)
-  const [questions, setQuestions]   = useState<any[]>([])
-  const [idx, setIdx]               = useState(0)
-  const [answered, setAnswered]     = useState(false)
-  const [selected, setSelected]     = useState<number | null>(null)
-  const [finished, setFinished]     = useState(false)
-  const [saved, setSaved]           = useState(false)
+  const [questions, setQuestions] = useState<any[]>([])
+  const [currentIdx, setCurrentIdx] = useState(0)
+  const [answered, setAnswered] = useState(false)
+  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
+  const [finished, setFinished] = useState(false)
+  const [scoreSaved, setScoreSaved] = useState(false)
   const [finalScore, setFinalScore] = useState(0)
-  const [userId, setUserId]         = useState<string | null>(null)
-  const scoreRef   = useRef(0)
-  const sessionIdx = useRef<number[]>([])
+  const scoreRef = useRef(0)
 
   useEffect(() => {
-    supabase.auth.getUser().then(({ data: { user } }) => {
-      if (!user) { setPlanLoaded(true); return }
-      setUserId(user.id)
-      supabase.from('subscriptions').select('plan,status')
-        .eq('user_id', user.id).eq('status', 'active').maybeSingle()
-        .then(({ data }) => { setPlan(data?.plan ?? null); setPlanLoaded(true) })
-    })
-  }, [])
-
-  useEffect(() => {
-    if (!subject || !planLoaded) return
-    loadQuestions()
-  }, [subject, planLoaded]) // eslint-disable-line
-
-  function loadQuestions() {
-    const hasAccess = !!(plan && PLAN_ACCESS[plan]?.includes(subject))
-    const bank = FULL_BANKS[subject]
-    let pool: any[]
-
-    if (hasAccess && bank && bank.length > 0) {
-      pool = pickFromBank(bank, subject)
-      sessionIdx.current = pool.map(q => bank.indexOf(q))
-    } else {
-      pool = [...findFree(subject)].sort(() => Math.random() - 0.5).slice(0, SESSION_SIZE)
-      sessionIdx.current = []
-    }
-
-    setQuestions(pool)
+    if (!subject) return
+    const bank = findQuestions(subject)
+    const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
+    setQuestions(shuffled)
     scoreRef.current = 0
-  }
+  }, [subject])
 
   async function saveScore(s: number, total: number) {
     try {
       const { data: { user } } = await supabase.auth.getUser()
       if (!user) return
-      await supabase.from('scores').insert({
-        user_id: user.id, subject,
+      const pct = Math.round(s / total * 100)
+      const { error } = await supabase.from('scores').insert({
+        user_id: user.id,
+        subject,
         licence: getLicence(subject),
-        score: s, total, percentage: Math.round(s / total * 100),
+        score: s,
+        total,
+        percentage: pct
       })
-      setSaved(true)
-    } catch {}
+      if (!error) setScoreSaved(true)
+    } catch (e) {
+      console.error('Score save error:', e)
+    }
   }
 
-  function selectAnswer(i: number) {
+  function selectAnswer(idx: number) {
     if (answered) return
     setAnswered(true)
-    setSelected(i)
-    if (i === questions[idx].correct) scoreRef.current++
+    setSelectedAnswer(idx)
+    if (idx === questions[currentIdx].correct) {
+      scoreRef.current += 1
+    }
   }
 
-  function next() {
-    if (idx >= questions.length - 1) {
+  function nextQuestion() {
+    const isLast = currentIdx >= questions.length - 1
+    if (isLast) {
       const fs = scoreRef.current
       setFinalScore(fs)
       saveScore(fs, questions.length)
-      if (sessionIdx.current.length) markSeen(subject, sessionIdx.current.filter(i => i >= 0))
       setFinished(true)
     } else {
-      setIdx(i => i + 1)
+      setCurrentIdx(i => i + 1)
       setAnswered(false)
-      setSelected(null)
+      setSelectedAnswer(null)
     }
   }
 
   function restart() {
-    loadQuestions()
-    setIdx(0); setFinalScore(0); setFinished(false)
-    setAnswered(false); setSelected(null); setSaved(false)
+    const bank = findQuestions(subject)
+    setQuestions([...bank].sort(() => Math.random() - 0.5).slice(0, 10))
+    setCurrentIdx(0)
+    setFinalScore(0)
+    setFinished(false)
+    setAnswered(false)
+    setSelectedAnswer(null)
+    setScoreSaved(false)
     scoreRef.current = 0
   }
 
-  if (!subject || !planLoaded || questions.length === 0) return (
+  if (!subject || questions.length === 0) return (
     <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif', flexDirection: 'column', gap: '1rem' }}>
       <p style={{ color: '#64748b', fontSize: '16px' }}>Loading questions...</p>
-      <a href="/dashboard" style={{ color: '#2563eb', textDecoration: 'none' }}>← Dashboard</a>
+      <a href="/dashboard" style={{ color: '#2563eb', textDecoration: 'none' }}>Back to dashboard</a>
     </main>
   )
 
   if (finished) {
     const pct = Math.round(finalScore / questions.length * 100)
-    const pass = pct >= 70
     return (
       <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
         <div style={{ background: 'white', borderRadius: '16px', padding: '2.5rem', maxWidth: '500px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
           <div style={{ fontSize: '13px', color: '#94a3b8', fontFamily: 'monospace', marginBottom: '8px' }}>{subject}</div>
           <div style={{ fontSize: '56px', fontWeight: '800', color: '#1e3a6e', fontFamily: 'monospace' }}>{pct}</div>
           <div style={{ fontSize: '16px', color: '#64748b', marginBottom: '8px' }}>percent</div>
-          <div style={{ fontSize: '16px', fontWeight: '600', color: pass ? '#16a34a' : '#dc2626', marginBottom: '0.5rem' }}>
-            {pass ? 'Pass — well done!' : 'Below pass mark — keep studying'}
+          <div style={{ fontSize: '16px', fontWeight: '600', color: pct >= 70 ? '#16a34a' : '#dc2626', marginBottom: '0.5rem' }}>
+            {pct >= 70 ? 'Pass — well done!' : 'Below pass mark — keep studying'}
           </div>
-          {saved && <div style={{ fontSize: '12px', color: '#10b981', marginBottom: '1.5rem' }}>Score saved to your progress</div>}
+          {scoreSaved && <div style={{ fontSize: '12px', color: '#10b981', marginBottom: '1.5rem' }}>Score saved to your progress</div>}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '2rem' }}>
             <div style={{ background: '#f0fdf4', borderRadius: '8px', padding: '12px' }}>
               <div style={{ fontSize: '24px', fontWeight: '600', color: '#16a34a' }}>{finalScore}</div>
@@ -167,7 +126,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
             </div>
           </div>
           <div style={{ display: 'flex', gap: '8px' }}>
-            <button onClick={restart} style={{ flex: 1, background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '11px', fontWeight: '600', cursor: 'pointer', fontSize: '14px' }}>Next 10 →</button>
+            <button onClick={restart} style={{ flex: 1, background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '11px', fontWeight: '600', cursor: 'pointer', fontSize: '14px' }}>Try Again</button>
             <a href="/dashboard" style={{ flex: 1, background: '#f8fafc', color: '#0a1628', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '11px', fontWeight: '600', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>Dashboard</a>
           </div>
           <a href="/progress" style={{ display: 'block', marginTop: '12px', fontSize: '13px', color: '#2563eb', textDecoration: 'none' }}>View all progress →</a>
@@ -176,7 +135,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
     )
   }
 
-  const q = questions[idx]
+  const q = questions[currentIdx]
   const letters = ['A', 'B', 'C', 'D']
 
   return (
@@ -189,28 +148,29 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         <a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Back to dashboard</a>
       </nav>
       <div style={{ maxWidth: '700px', margin: '0 auto', padding: '2rem' }}>
-        <div style={{ marginBottom: '6px', fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>Question {idx + 1} of {questions.length}</div>
+        <div style={{ marginBottom: '6px', fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>Question {currentIdx + 1} of {questions.length}</div>
         <div style={{ background: '#e2e8f0', borderRadius: '99px', height: '4px', marginBottom: '1.5rem', overflow: 'hidden' }}>
-          <div style={{ height: '100%', background: '#2563eb', borderRadius: '99px', width: `${(idx / questions.length) * 100}%`, transition: 'width 0.4s' }} />
+          <div style={{ height: '100%', background: '#2563eb', borderRadius: '99px', width: `${(currentIdx / questions.length) * 100}%`, transition: 'width 0.4s' }}></div>
         </div>
         <div style={{ background: 'white', borderRadius: '12px', padding: '1.5rem', border: '1px solid #e2e8f0', marginBottom: '1rem' }}>
           <div style={{ fontSize: '11px', fontWeight: '600', color: '#2563eb', marginBottom: '10px', fontFamily: 'monospace' }}>{subject}</div>
           <div style={{ fontSize: '16px', fontWeight: '600', color: '#0a1628', lineHeight: 1.55, marginBottom: '1.25rem' }}>{q.question}</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {q.options.map((opt: string, i: number) => {
-              let bg = 'white', border = '1px solid #e2e8f0', col = '#0a1628'
+              let bg = 'white'
+              let border = '1px solid #e2e8f0'
+              let col = '#0a1628'
               if (answered) {
-                if (i === q.correct)     { bg = '#f0fdf4'; border = '1px solid #16a34a'; col = '#15803d' }
-                else if (i === selected) { bg = '#fff1f2'; border = '1px solid #dc2626'; col = '#b91c1c' }
-                else                     { col = '#94a3b8' }
+                if (i === q.correct) { bg = '#f0fdf4'; border = '1px solid #16a34a'; col = '#15803d' }
+                else if (i === selectedAnswer) { bg = '#fff1f2'; border = '1px solid #dc2626'; col = '#b91c1c' }
+                else { col = '#94a3b8' }
               }
               return (
-                <button key={i} onClick={() => selectAnswer(i)} disabled={answered}
-                  style={{ background: bg, border, borderRadius: '8px', padding: '11px 14px', textAlign: 'left', cursor: answered ? 'default' : 'pointer', fontSize: '14px', color: col, display: 'flex', alignItems: 'flex-start', gap: '10px', width: '100%' }}>
-                  <span style={{ fontFamily: 'monospace', fontSize: '12px', background: answered && i === q.correct ? '#dcfce7' : answered && i === selected ? '#ffe4e6' : '#f1f5f9', borderRadius: '4px', padding: '1px 6px', minWidth: '22px', textAlign: 'center', flexShrink: 0, marginTop: '1px' }}>
-                    {answered && i === q.correct ? '✓' : answered && i === selected ? '✗' : letters[i]}
+                <button key={i} onClick={() => selectAnswer(i)} disabled={answered} style={{ background: bg, border, borderRadius: '8px', padding: '11px 14px', textAlign: 'left', cursor: answered ? 'default' : 'pointer', fontSize: '14px', color: col, display: 'flex', alignItems: 'flex-start', gap: '10px', width: '100%' }}>
+                  <span style={{ fontFamily: 'monospace', fontSize: '12px', background: answered && i === q.correct ? '#dcfce7' : answered && i === selectedAnswer ? '#ffe4e6' : '#f1f5f9', borderRadius: '4px', padding: '1px 6px', minWidth: '22px', textAlign: 'center', flexShrink: 0, marginTop: '1px' }}>
+                    {answered && i === q.correct ? '✓' : answered && i === selectedAnswer ? '✗' : letters[i]}
                   </span>
-                  <span>{opt.replace(/^[A-D]\.\s*/, '')}</span>
+                  <span style={{ flex: 1, minWidth: 0 }}>{opt.replace(/^[A-D]\.\s*/, '')}</span>
                 </button>
               )
             })}
@@ -219,20 +179,17 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         {answered && (
           <div style={{ background: '#f0f7ff', border: '1px solid #bfdbfe', borderRadius: '12px', padding: '1.25rem', marginBottom: '1rem' }}>
             <div style={{ fontSize: '13px', fontWeight: '600', color: '#1d4ed8', marginBottom: '8px' }}>Explanation</div>
-            <p style={{ fontSize: '13px', lineHeight: 1.65, color: '#1e3a6e', marginBottom: q.reference ? '12px' : '0' }}>{q.explanation}</p>
-            {q.reference && (
-              <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '10px', marginBottom: '12px' }}>
-                <div style={{ fontSize: '10px', fontFamily: 'monospace', color: '#2563eb', marginBottom: '4px', textTransform: 'uppercase' as const, letterSpacing: '0.08em' }}>Reference — verify this yourself</div>
-                <div style={{ fontSize: '12px', color: '#3b82f6', fontFamily: 'monospace' }}>{q.reference}</div>
-              </div>
-            )}
-            <FlagPanel question={q} subject={subject} userId={userId} />
+            <p style={{ fontSize: '13px', lineHeight: 1.65, color: '#1e3a6e', marginBottom: '12px' }}>{q.explanation}</p>
+            <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '10px', marginBottom: '12px' }}>
+              <div style={{ fontSize: '10px', fontFamily: 'monospace', color: '#2563eb', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Reference — verify this yourself</div>
+              <div style={{ fontSize: '12px', color: '#3b82f6', fontFamily: 'monospace' }}>{q.reference}</div>
+            </div>
             <AiHelpPanel question={q} subject={subject} />
           </div>
         )}
         {answered && (
-          <button onClick={next} style={{ width: '100%', background: '#1e3a6e', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontSize: '15px', fontWeight: '600', cursor: 'pointer' }}>
-            {idx < questions.length - 1 ? 'Next question →' : 'See results →'}
+          <button onClick={nextQuestion} style={{ width: '100%', background: '#1e3a6e', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontSize: '15px', fontWeight: '600', cursor: 'pointer' }}>
+            {currentIdx < questions.length - 1 ? 'Next question →' : 'See results →'}
           </button>
         )}
       </div>
@@ -240,148 +197,77 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   )
 }
 
-function FlagPanel({ question, subject, userId }: { question: any; subject: string; userId: string | null }) {
-  const [open, setOpen]       = useState(false)
-  const [reason, setReason]   = useState('')
-  const [otherText, setOtherText] = useState('')
-  const [loading, setLoading] = useState(false)
-  const [flagged, setFlagged] = useState(false)
-
-  const reasons = [
-    'Incorrect answer',
-    'Unclear question wording',
-    'Outdated reference',
-    'Duplicate question',
-    'Other',
-  ]
-
-  async function submitFlag() {
-    setLoading(true)
-    const finalReason = reason === 'Other' && otherText.trim() ? `Other: ${otherText.trim()}` : reason
-    try {
-      await fetch('/api/flag-question', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          userId,
-          subject,
-          question: question.question,
-          correctAnswer: question.options[question.correct],
-          reason: finalReason,
-        })
-      })
-      setFlagged(true)
-    } catch {
-      alert('Something went wrong. Please try again.')
-    }
-    setLoading(false)
-  }
-
-  if (flagged) return (
-    <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '12px', marginBottom: '12px' }}>
-      <div style={{ fontSize: '12px', color: '#16a34a', fontWeight: '600' }}>✓ Question flagged for review — thank you</div>
-    </div>
-  )
-
-  return (
-    <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '12px', marginBottom: '12px' }}>
-      {!open ? (
-        <button onClick={() => setOpen(true)}
-          style={{ background: 'none', border: 'none', padding: '0', fontSize: '12px', color: '#94a3b8', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}>
-          🚩 Flag this question
-        </button>
-      ) : (
-        <div>
-          <div style={{ fontSize: '12px', fontWeight: '700', color: '#dc2626', marginBottom: '8px' }}>Flag for review</div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '10px' }}>
-            {reasons.map(r => (
-              <div key={r}>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#475569', cursor: 'pointer' }}>
-                  <input type="radio" name="flag-reason" value={r} checked={reason === r} onChange={() => setReason(r)} style={{ cursor: 'pointer' }} />
-                  {r}
-                </label>
-                {r === 'Other' && reason === 'Other' && (
-                  <textarea
-                    placeholder="Please describe the issue..."
-                    value={otherText}
-                    onChange={e => setOtherText(e.target.value)}
-                    rows={2}
-                    style={{ width: '100%', marginTop: '6px', padding: '8px 12px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '13px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', background: 'white' }}
-                  />
-                )}
-              </div>
-            ))}
-          </div>
-          <div style={{ display: 'flex', gap: '8px' }}>
-            <button onClick={submitFlag} disabled={loading || !reason || (reason === 'Other' && !otherText.trim())}
-              style={{ background: loading || !reason || (reason === 'Other' && !otherText.trim()) ? '#94a3b8' : '#dc2626', color: 'white', border: 'none', borderRadius: '8px', padding: '8px 16px', fontSize: '12px', fontWeight: '600', cursor: loading || !reason || (reason === 'Other' && !otherText.trim()) ? 'not-allowed' : 'pointer' }}>
-              {loading ? 'Sending...' : 'Submit flag'}
-            </button>
-            <button onClick={() => { setOpen(false); setReason(''); setOtherText('') }}
-              style={{ background: 'none', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '8px 12px', fontSize: '12px', color: '#64748b', cursor: 'pointer' }}>
-              Cancel
-            </button>
-          </div>
-        </div>
-      )}
-    </div>
-  )
-}
-
 function AiHelpPanel({ question, subject }: { question: any; subject: string }) {
-  const [open, setOpen]         = useState(false)
-  const [msg, setMsg]           = useState('')
+  const [open, setOpen] = useState(false)
+  const [userMessage, setUserMessage] = useState('')
   const [response, setResponse] = useState('')
-  const [loading, setLoading]   = useState(false)
+  const [loading, setLoading] = useState(false)
 
-  async function ask() {
-    if (!msg.trim()) return
-    setLoading(true); setResponse('')
+  async function handleAsk() {
+    if (!userMessage.trim()) return
+    setLoading(true)
+    setResponse('')
     try {
       const res = await fetch('/api/support-chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          message: msg,
+          message: userMessage,
           context: {
-            question: question.question, options: question.options,
+            question: question.question,
+            options: question.options,
             correctAnswer: question.options[question.correct],
-            explanation: question.explanation, reference: question.reference, subject,
+            explanation: question.explanation,
+            reference: question.reference,
+            subject,
           }
         })
       })
       const data = await res.json()
       setResponse(data.response || 'Sorry, something went wrong.')
-    } catch { setResponse('Sorry, something went wrong. Please try again.') }
+    } catch (e) {
+      setResponse('Sorry, something went wrong. Please try again.')
+    }
     setLoading(false)
   }
 
   return (
     <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '12px' }}>
       {!open ? (
-        <button onClick={() => setOpen(true)}
-          style={{ background: 'none', border: '1px solid #2563eb', borderRadius: '8px', padding: '8px 16px', fontSize: '13px', fontWeight: '600', color: '#2563eb', cursor: 'pointer' }}>
+        <button
+          onClick={() => setOpen(true)}
+          style={{ background: 'none', border: '1px solid #2563eb', borderRadius: '8px', padding: '8px 16px', fontSize: '13px', fontWeight: '600', color: '#2563eb', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
+        >
           💬 Still confused? Ask for more help
         </button>
       ) : (
         <div>
-          <div style={{ fontSize: '12px', fontWeight: '700', color: '#1d4ed8', marginBottom: '8px', textTransform: 'uppercase' as const, letterSpacing: '0.06em' }}>Ask a follow-up question</div>
-          <textarea placeholder='e.g. "Why is option A wrong?" or "Give me a real-world example"'
-            value={msg} onChange={e => setMsg(e.target.value)} rows={3}
-            style={{ width: '100%', padding: '10px 14px', border: '1px solid #bfdbfe', borderRadius: '8px', fontSize: '14px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '8px', background: 'white' }} />
+          <div style={{ fontSize: '12px', fontWeight: '700', color: '#1d4ed8', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Ask a follow-up question</div>
+          <textarea
+            placeholder={`Ask anything about this question — e.g. "Can you explain why option A is wrong?" or "Give me a real world example"`}
+            value={userMessage}
+            onChange={e => setUserMessage(e.target.value)}
+            rows={3}
+            style={{ width: '100%', padding: '10px 14px', border: '1px solid #bfdbfe', borderRadius: '8px', fontSize: '14px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '8px', background: 'white' }}
+          />
           <div style={{ display: 'flex', gap: '8px', marginBottom: response ? '12px' : '0' }}>
-            <button onClick={ask} disabled={loading || !msg.trim()}
-              style={{ background: loading || !msg.trim() ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '9px 18px', fontSize: '13px', fontWeight: '600', cursor: loading || !msg.trim() ? 'not-allowed' : 'pointer' }}>
+            <button
+              onClick={handleAsk}
+              disabled={loading || !userMessage.trim()}
+              style={{ background: loading || !userMessage.trim() ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '9px 18px', fontSize: '13px', fontWeight: '600', cursor: loading || !userMessage.trim() ? 'not-allowed' : 'pointer' }}
+            >
               {loading ? 'Thinking...' : 'Ask →'}
             </button>
-            <button onClick={() => { setOpen(false); setResponse(''); setMsg('') }}
-              style={{ background: 'none', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '9px 14px', fontSize: '13px', color: '#64748b', cursor: 'pointer' }}>
+            <button
+              onClick={() => { setOpen(false); setResponse(''); setUserMessage('') }}
+              style={{ background: 'none', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '9px 14px', fontSize: '13px', color: '#64748b', cursor: 'pointer' }}
+            >
               Close
             </button>
           </div>
           {response && (
             <div style={{ background: 'white', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '1rem', fontSize: '13px', color: '#1e3a6e', lineHeight: 1.65 }}>
-              <div style={{ fontSize: '10px', fontWeight: '700', color: '#2563eb', marginBottom: '6px', textTransform: 'uppercase' as const, letterSpacing: '0.08em' }}>V1 Study Assistant</div>
+              <div style={{ fontSize: '10px', fontWeight: '700', color: '#2563eb', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
               {response}
             </div>
           )}
