@@ -2,10 +2,17 @@
 import { useState, useEffect, useRef, use } from 'react'
 import { supabase } from '../../../lib/supabase'
 import { freeQuestions } from '../../../lib/questions'
+import { FULL_BANKS, PLAN_ACCESS, getLicence } from '../../../lib/question-banks'
 
-function findQuestions(subject: string) {
-  if (freeQuestions[subject]) return freeQuestions[subject]
+function getBank(subject: string, plan: string | null): any[] {
+  // Subscribers: use full bank if they have access
+  if (plan && PLAN_ACCESS[plan]?.includes(subject)) {
+    const full = FULL_BANKS[subject]
+    if (full && full.length > 0) return full
+  }
+  // Trial / no plan: use free questions
   const lower = subject.toLowerCase().trim()
+  if (freeQuestions[subject]) return freeQuestions[subject]
   for (const key of Object.keys(freeQuestions)) {
     if (key.toLowerCase().trim() === lower) return freeQuestions[key]
   }
@@ -13,13 +20,6 @@ function findQuestions(subject: string) {
     if (lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) return freeQuestions[key]
   }
   return []
-}
-
-function getLicence(subject: string): string {
-  if (subject === 'PPL Theory') return 'PPL'
-  if (subject === 'Instrument Rating') return 'IREX'
-  if (['Human Factors', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology', 'Navigation', 'Flight Planning', 'Air Law'].includes(subject)) return 'ATPL'
-  return 'CPL'
 }
 
 export default function QuizPage({ params }: { params: Promise<{ subject: string }> }) {
@@ -32,14 +32,36 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const [finished, setFinished] = useState(false)
   const [scoreSaved, setScoreSaved] = useState(false)
   const [finalScore, setFinalScore] = useState(0)
+  const [plan, setPlan] = useState<string | null>(null)
   const scoreRef = useRef(0)
 
   useEffect(() => {
     if (!subject) return
-    const bank = findQuestions(subject)
-    const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
-    setQuestions(shuffled)
-    scoreRef.current = 0
+    async function loadQuestions() {
+      // Fetch user plan
+      let userPlan: string | null = null
+      try {
+        const { data: { user } } = await supabase.auth.getUser()
+        if (user) {
+          const { data } = await supabase
+            .from('subscriptions')
+            .select('plan, status')
+            .eq('user_id', user.id)
+            .eq('status', 'active')
+            .maybeSingle()
+          if (data) userPlan = data.plan
+        }
+      } catch (e) {
+        console.error('Plan fetch error:', e)
+      }
+      setPlan(userPlan)
+
+      const bank = getBank(subject, userPlan)
+      const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 10)
+      setQuestions(shuffled)
+      scoreRef.current = 0
+    }
+    loadQuestions()
   }, [subject])
 
   async function saveScore(s: number, total: number) {
@@ -85,7 +107,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   }
 
   function restart() {
-    const bank = findQuestions(subject)
+    const bank = getBank(subject, plan)
     setQuestions([...bank].sort(() => Math.random() - 0.5).slice(0, 10))
     setCurrentIdx(0)
     setFinalScore(0)
@@ -170,7 +192,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
                   <span style={{ fontFamily: 'monospace', fontSize: '12px', background: answered && i === q.correct ? '#dcfce7' : answered && i === selectedAnswer ? '#ffe4e6' : '#f1f5f9', borderRadius: '4px', padding: '1px 6px', minWidth: '22px', textAlign: 'center', flexShrink: 0, marginTop: '1px' }}>
                     {answered && i === q.correct ? '✓' : answered && i === selectedAnswer ? '✗' : letters[i]}
                   </span>
-                  <span style={{ flex: 1, minWidth: 0 }}>{opt.replace(/^[A-D]\.\s*/, '')}</span>
+                  <span>{opt.replace(/^[A-D]\.\s*/, '')}</span>
                 </button>
               )
             })}
