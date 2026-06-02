@@ -267,7 +267,7 @@ export const clwaQuestions: {
     options: [
       'No additional requirements — the CPL alone authorises all operations',
       'The pilot must hold an ATPL to act as PIC on any RPT operation',
-      'The operation must be conducted under an operator AOC (Air Operator Certificate) and the pilot must meet the operator's additional requirements for that role',
+      'The operation must be conducted under an operator AOC (Air Operator Certificate) and the pilot must meet the operator\'s additional requirements for that role',
       'A CPL with 1,000 hours automatically qualifies for RPT operations',
     ],
     correct: 2,
@@ -5222,12 +5222,12 @@ export const clwaQuestions: {
     question: 'You are on final approach following a heavy aircraft that has just landed. What wake turbulence precaution should you take?',
     options: [
       'Wake turbulence dissipates immediately after an aircraft lands — no precaution is needed',
-      'Allow additional separation, aim to touch down beyond the preceding aircraft's touchdown point, and be alert for unexpected control inputs',
+      'Allow additional separation, aim to touch down beyond the preceding aircraft\'s touchdown point, and be alert for unexpected control inputs',
       'Fly a tighter circuit to close the gap quickly',
       'Wake turbulence only affects jet aircraft — piston aircraft do not generate it',
     ],
     correct: 1,
-    explanation: 'Wake turbulence from a heavier aircraft can persist for several minutes after landing, particularly in calm conditions. On approach, allow additional time or distance separation, touch down beyond the preceding aircraft's touchdown point, and be prepared for unexpected roll inputs from residual vortices.',
+    explanation: 'Wake turbulence from a heavier aircraft can persist for several minutes after landing, particularly in calm conditions. On approach, allow additional time or distance separation, touch down beyond the preceding aircraft\'s touchdown point, and be prepared for unexpected roll inputs from residual vortices.',
     reference: 'AIP ENR 1.1',
   },
   {
