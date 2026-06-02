@@ -167,7 +167,8 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.23.02 / ICAO Annex 2 Appendix 1',
   },
   {
-    question: 'You are a CPL pilot on a charter flight when a passenger suffers a serious medical emergency requiring immediate diversion to the nearest hospital helipad. This would require descending below the normal minimum height for the area. Under what conditions may you deviate from the regulations?',
+  {
+    question: 'You are a CPL pilot on a charter flight when a passenger suffers a serious medical emergency requiring immediate diversion to the nearest aerodrome. This requires descending below the normal minimum height for the area. Under what conditions may you deviate from the regulations?',
     options: [
       'You may never deviate from minimum heights — contact ATC and request a clearance instead',
       'You may deviate from regulations to the extent necessary to meet the emergency, and must report the deviation to CASA if required',
@@ -175,8 +176,8 @@ export const clwaQuestions: {
       'You may deviate only if you declare MAYDAY — a PAN-PAN is insufficient authorisation',
     ],
     correct: 1,
-    explanation: 'In an in-flight emergency, the pilot in command may deviate from any provision of the CASRs to the extent necessary to meet the emergency. After the emergency, CASA may require a written report. This is sometimes called a \'mercy flight\' deviation and the authority rests solely with the PIC.',
-    reference: 'CASR 91.175 / CASR Part 91',
+    explanation: 'CASR 91.175 grants the pilot in command authority to deviate from any CASR provision to the extent necessary to meet an in-flight emergency. A genuine passenger medical emergency qualifies. After the emergency, CASA may require a written report. The deviation must be genuinely necessary — it cannot be used for convenience.',
+    reference: 'CASR 91.175',
   },
   {
     question: 'You are planning a VFR flight that will cross a mountain range. The current SIGMET warns of severe turbulence over the ranges below 10,000 ft. What should you do?',
@@ -267,12 +268,12 @@ export const clwaQuestions: {
     options: [
       'No additional requirements — the CPL alone authorises all operations',
       'The pilot must hold an ATPL to act as PIC on any RPT operation',
-      'The operation must be conducted under a Part 121 or Part 135 AOC, the pilot must meet any additional operator requirements',
+      'The operation must be conducted under an operator AOC (Air Operator Certificate) and the pilot must meet the operator's additional requirements for that role',
       'A CPL with 1,000 hours automatically qualifies for RPT operations',
     ],
     correct: 2,
-    explanation: 'RPT operations require an AOC held by the operator. The pilot must meet additional requirements under CASR Part 121 or Part 135 as applicable, including an instrument rating for the relevant operations. Simply holding a CPL is not sufficient for RPT operations without these additional qualifications and the operator\'s AOC. And an instrument rating is required for the operations being conducted',
-    reference: 'CASR Part 135 / CASR Part 121',
+    explanation: 'RPT operations require the operator to hold an Air Operator Certificate (AOC). A CPL alone does not authorise charter or RPT operations — the operator\'s AOC sets the framework and the pilot must meet all applicable requirements within that framework.',
+    reference: 'CASR Part 119 / CASR Part 135',
   },
   {
     question: 'What is the transition layer, and why is it considered a separation layer?',
@@ -311,15 +312,15 @@ export const clwaQuestions: {
     reference: 'CASR 91.335 Chapter 1',
   },
   {
-    question: 'What is the VFR cruising level for a magnetic track of 270° at 9,500 ft?',
+    question: 'You are planning a VFR cruise at approximately 9,000 ft on a magnetic track of 270°. Which hemispherical cruising level should you select?',
     options: [
-      '9,500 ft — correct hemispherical level for westbound VFR',
-      '10,000 ft — westbound VFR uses even thousands',
-      '9,000 ft — westbound VFR uses odd thousands',
-      '9,500 ft is not a recognised VFR hemispherical level',
+      '9,500 ft',
+      '8,500 ft',
+      '9,000 ft',
+      '10,000 ft',
     ],
-    correct: 0,
-    explanation: 'VFR hemispherical levels: westbound (180°–359°M) uses EVEN thousands + 500 ft (e.g. 4,500, 6,500, 8,500, 10,500). Track 270° is westbound, so 9,500 ft is incorrect — it is an eastbound level (odd + 500). The correct westbound levels near 9,500 ft would be 8,500 ft or 10,500 ft.',
+    correct: 1,
+    explanation: 'Track 270°M is westbound (180°–359°M). Westbound VFR uses even thousands + 500 ft: 4,500 / 6,500 / 8,500 / 10,500 ft. The appropriate level near 9,000 ft for a westbound track is 8,500 ft. Eastbound (000°–179°M) uses odd thousands + 500 ft: 3,500 / 5,500 / 7,500 / 9,500 ft.',
     reference: 'AIP ENR 1.7',
   },
   {
@@ -938,13 +939,13 @@ export const clwaQuestions: {
     question: 'What transponder code should a VFR aircraft in Class G airspace squawk when no ATC code has been assigned?',
     options: [
       '2000',
-      '1200',
-      '0000',
+      '3000',
       '7000',
+      '1200',
     ],
     correct: 3,
-    explanation: 'In Australia, the VFR conspicuity code in Class G airspace when no ATC code has been assigned is 7000. Code 1200 is the VFR conspicuity code in some other countries (such as the USA) but 7000 is the Australian standard. Code 2000 is used when entering Australian airspace from a non-transponder-mandatory area.',
-    reference: 'AIP ENR 1.6 / Part 91 MOS s.26.69',
+    explanation: 'Part 91 MOS Table 26.69(7) Item 3: VFR flights in Class E or Class G airspace must squawk 1200 when no discrete ATC code has been assigned. Code 3000 is for Class A/C/D and IFR Class E flights. Code 2000 is for IFR Class G flights. Code 7000 is used by RPAS in all classes of airspace — it is NOT the general VFR code in Australia.',
+    reference: 'Part 91 MOS Table 26.69(7) / AIP ENR 1.6 para 7.1.4',
   },
   {
     question: 'An aircraft is compelled to land due to an emergency. Which aircraft has the right-of-way?',
@@ -3163,7 +3164,7 @@ export const clwaQuestions: {
       'Until 500 ft AGL, unless a track change is necessary to avoid terrain',
     ],
     correct: 3,
-    explanation: 'CASR 91.390: for other than a helicopter, after take-off, the pilot must maintain the take-off track until the aircraft is above 500 ft AGL — unless a track change is necessary to avoid terrain.',
+    explanation: 'CASR 91.390: after take-off from a non-controlled aerodrome, the pilot must maintain the take-off track until the aircraft is above 500 ft AGL — unless a track change is necessary to avoid terrain.',
     reference: 'CASR 91.390 Chapter 3',
   },
   {
@@ -3499,7 +3500,7 @@ export const clwaQuestions: {
       'Runway length and aircraft weight only',
     ],
     correct: 0,
-    explanation: 'Part 91 MOS s.25.02(3): landing performance must account for: landing distance available; runway surface type and condition; pressure altitude and temperature; runway gradient in landing direction; wind direction, speed and characteristics; landing weather forecast; and obstacles in the approach and missed approach flight paths. Runway surface type and condition; pressure altitude and temperature; runway gradient in the landing direction; wind direction, speed and characteristics; landing weather forecast; and obstacles in the approach and missed approach flight paths',
+    explanation: 'Before landing, the pilot must ensure the aircraft can stop within the available landing distance. Factors include: landing distance available; runway surface type and condition; pressure altitude and temperature; runway gradient; wind direction and speed; and the landing weather forecast. These are assessed using the aircraft performance charts.',
     reference: 'Part 91 MOS 2020 s.25.02(3)',
   },
   {
@@ -3755,15 +3756,15 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.2.09 Table 2.09(1)',
   },
   {
-    question: 'AIP, when is holding fuel required as part of the pre-flight fuel calculation?',
+    question: 'When is holding fuel required as part of the pre-flight fuel calculation?',
     options: [
       'Holding fuel is always required for IFR flights, and the flight manual',
-      'Holding fuel is required when anticipated holding delays are expected, such as due to ATC congestion, anticipated instrument approach delays, or weather',
+      'Holding fuel is required when holding delays are anticipated, such as due to ATC congestion, busy terminal areas, or adverse weather at the destination',
       'Only when flying to a destination without an instrument approach',
       'Holding fuel is included automatically within the final reserve',
     ],
     correct: 1,
-    explanation: 'Part 91 MOS s.19.04(1)(d): holding fuel is listed as a required fuel component "if required." It is needed when holding delays are anticipated due to ATC congestion, weather, instrument approach delays, or other operational factors. It is separate from final reserve fuel.',
+    explanation: 'Part 91 MOS s.19.04(1)(d): holding fuel is listed as a required fuel component "if required." It is needed when holding delays are anticipated due to ATC congestion, weather, or other operational factors. It is separate from final reserve fuel.',
     reference: 'Part 91 MOS 2020 s.19.04(1)(d)',
   },
   {
@@ -4007,16 +4008,16 @@ export const clwaQuestions: {
     reference: 'CASR Part 61 Subpart 61.L',
   },
   {
-    question: 'When must a pilot NOT commence a take-off under IFR?',
+    question: 'Before commencing a VFR flight, the forecast for the destination shows conditions below VFR minima at your planned ETA. May you depart?',
     options: [
-      'When the meteorological conditions are less than the take-off minima, or when conditions for a return to land do not meet landing minima or allow a visual approach',
-      'When there is any cloud in the terminal area',
-      'When the reported cloud base is below 1,000 ft AGL',
-      'Any time visibility is below 5 km',
+      'Yes — forecasts are unreliable and actual conditions may be better',
+      'Yes — provided you carry enough fuel to return to the departure aerodrome',
+      'No — a pilot must not commence a flight if the destination conditions are forecast to be below VFR minima at ETA without a suitable alternate being planned',
+      'Only if you hold an instrument rating as a backup',
     ],
-    correct: 0,
-    explanation: 'Part 91 MOS s.15.03: a pilot must not commence take-off if (a) conditions are less than the take-off minima for the aircraft, or (b) conditions for a return-to-land after engine failure are not at or above the landing minima for an available IAP, or do not allow a visual approach. Minima or allow a visual approach',
-    reference: 'Part 91 MOS 2020 s.15.03',
+    correct: 2,
+    explanation: 'A pilot must not plan to arrive at a destination where the forecast conditions are below VFR minima unless a suitable alternate is nominated. Departing and hoping conditions improve is not an acceptable approach. The pilot is responsible for ensuring the flight can be safely completed at the time of departure.',
+    reference: 'CASR 91.265 / Part 91 MOS s.8.04',
   },
   {
     question: 'What conditions must a pilot comply with to operate under Special VFR in a control zone?',
@@ -5083,7 +5084,7 @@ export const clwaQuestions: {
       '3 NM from the threshold',
     ],
     correct: 3,
-    explanation: 'CASR 91.395: unless conducting an instrument approach in IMC or a specific Part 103 aircraft, the pilot must be established on final approach by at least 3 NM from the threshold of the intended runway. The aircraft making a straight-in approach must give way to aircraft in the circuit.',
+    explanation: 'AIP ENR 1.1: a VFR aircraft making a straight-in approach at a non-controlled aerodrome must be established on final approach by at least 3 NM from the threshold of the intended runway. The straight-in aircraft must give way to aircraft already in the circuit pattern.',
     reference: 'CASR 91.395 Chapter 3',
   },
   {
@@ -5219,16 +5220,16 @@ export const clwaQuestions: {
     reference: 'CASR Part 67',
   },
   {
-    question: 'What is the primary source of wake turbulence hazard in the circuit at a non-controlled aerodrome?',
+    question: 'You are on final approach following a heavy aircraft that has just landed. What wake turbulence precaution should you take?',
     options: [
-      'Helicopters hovering or slow air-taxiing creating rotor downwash',
-      'Light aircraft in the circuit only',
-      'Wake turbulence only exists above FL100',
-      'Wake turbulence is only an issue in controlled airspace where separation standards apply',
+      'Wake turbulence dissipates immediately after an aircraft lands — no precaution is needed',
+      'Allow additional separation, aim to touch down beyond the preceding aircraft's touchdown point, and be alert for unexpected control inputs',
+      'Fly a tighter circuit to close the gap quickly',
+      'Wake turbulence only affects jet aircraft — piston aircraft do not generate it',
     ],
-    correct: 0,
-    explanation: 'AIP ENR 1.1 Chapter 3: a hovering or slow air-taxiing helicopter creates rotor downwash that can be a hazard to nearby aircraft. In forward flight, helicopters produce vortices similar to those produced by fixed-wing aircraft. Pilots of small aircraft should avoid operating close to helicopters. In forward flight, helicopters produce vortices similar to fixed-wing aircraft',
-    reference: 'AIP ENR 1.1 Chapter 3',
+    correct: 1,
+    explanation: 'Wake turbulence from a heavier aircraft can persist for several minutes after landing, particularly in calm conditions. On approach, allow additional time or distance separation, touch down beyond the preceding aircraft's touchdown point, and be prepared for unexpected roll inputs from residual vortices.',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'Which of the following correctly describes a \'daily inspection\' of an aircraft?',
