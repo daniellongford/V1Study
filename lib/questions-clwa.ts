@@ -167,7 +167,6 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.23.02 / ICAO Annex 2 Appendix 1',
   },
   {
-  {
     question: 'You are a CPL pilot on a charter flight when a passenger suffers a serious medical emergency requiring immediate diversion to the nearest aerodrome. This requires descending below the normal minimum height for the area. Under what conditions may you deviate from the regulations?',
     options: [
       'You may never deviate from minimum heights — contact ATC and request a clearance instead',
