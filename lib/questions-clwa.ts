@@ -2,7 +2,7 @@
 // 500 questions | CPL Flight Rules and Air Law | Pass mark: 80% | 2 hours
 // Scope: CFRC (Unit 1.5.8) + CFRA (Unit 1.5.9) — VFR only
 // V1 Study (v1study.com.au) | ABN: 67 533 972 478
-// All correct answers verified against current CASR/Part 91 MOS/AIP source documents
+// All correct answers verified against current CASR/Part 91 MOS/AIP/CAO source documents
 
 export const clwaQuestions: {
   question: string;
@@ -182,10 +182,10 @@ export const clwaQuestions: {
   {
     question: 'You are planning a VFR flight that will cross a mountain range. The current SIGMET warns of severe turbulence over the ranges below 10,000 ft. What should you do?',
     options: [
-      'Do not fly the route if the SIGMET warns of severe turbulence that could cause loss of control or structural damage to the aircraft',
-      'Continue, SIGMETs are advisory only',
-      'File an IFR flight plan to get ATC protection through the turbulence',
-      'Fly at reduced power through the turbulence area',
+      'Do not fly the route if the SIGMET warns of severe turbulence that could cause loss of control or structural damage',
+      'Continue as planned, SIGMETs are advisory only and do not carry legal prohibition on VFR flight',
+      'File an IFR flight plan to obtain ATC separation which reduces risk when transiting areas of severe turbulence',
+      'Fly at reduced power to maintain manoeuvrability through the turbulence, keeping below the cloud base',
     ],
     correct: 0,
     explanation: 'CASR 91.265: a pilot must not fly an aircraft in meteorological conditions that would likely cause loss of control or structural damage. A SIGMET for severe turbulence is a formal warning that conditions below 10,000 ft present a serious risk. The pilot must avoid the area or wait until the SIGMET has expired.',
@@ -194,10 +194,10 @@ export const clwaQuestions: {
   {
     question: 'A pilot is about to depart on a cross-country flight in Australian airspace. Which documents must be carried on board the aircraft?',
     options: [
-      'Certificate of Airworthiness, Certificate of Registration, maintenance release, flight manual, and pilot licence',
-      'Current flight plan and maintenance release only',
-      'Pilot licence and crew licences only',
-      'A copy of the relevant CASRs and CAO 48.1',
+      'Certificate of Airworthiness, Certificate of Registration, maintenance release, and the relevant pilot licence and medical certificate',
+      'Current NAIPS flight plan and a copy of the maintenance release are the only documents required to be carried',
+      'Pilot licence and crew licences only, as the aircraft documents are retained by the registered operator',
+      'A copy of the relevant CASRs, CAO 48.1, and the aircraft flight manual only',
     ],
     correct: 0,
     explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 / CASR Part 91: required documents include Certificate of Airworthiness, Certificate of Registration, maintenance release, flight crew licences and medicals, radio station licence, journey log (international), and applicable AIP information.',
@@ -410,10 +410,10 @@ export const clwaQuestions: {
   {
     question: 'What is the meaning of "in the vicinity" of a non-controlled aerodrome?',
     options: [
-      'Within 5 NM at any altitude',
-      'Within 50 NM at or above circuit height',
-      'In uncontrolled airspace, within 10 NM of the aerodrome, at a height that could result in conflict with aerodrome operations',
-      'Within the aerodrome traffic zone as published in ERSA',
+      'Within 5 NM of the aerodrome reference point at any altitude above the aerodrome elevation',
+      'Within 50 NM of the aerodrome at or above circuit height as specified in ERSA',
+      'In uncontrolled airspace, within 10 NM of the aerodrome, at a height that could conflict with circuit traffic or approach procedures',
+      'Within the aerodrome traffic zone boundary as published in ERSA for the specific aerodrome',
     ],
     correct: 2,
     explanation: 'CASR 91.360: an aircraft is in the vicinity of a non-controlled aerodrome if it is (a) in uncontrolled airspace; (b) within 10 NM of the aerodrome; and (c) at a height above the aerodrome that could result in conflict with operations at the aerodrome.',
@@ -518,10 +518,10 @@ export const clwaQuestions: {
   {
     question: 'May an aircraft take off with frost on the wings?',
     options: [
-      'Yes, light frost is permitted for day VFR operations',
-      'Provided the frost is less than 3 mm thick',
+      'Yes, light frost is acceptable for day VFR operations when outside air temperature is above 0°C',
+      'Yes, provided the frost deposit is less than 3 mm thick and affects less than half the wing surface',
       'No, there must be no frost, ice or snow adhering to the wings, flaps, control surfaces, propellers, or stabilisers before take-off',
-      'Provided the pilot has assessed it will clear during the take-off run',
+      'Yes, provided the pilot has assessed it will sublimate during the take-off roll before rotation speed',
     ],
     correct: 2,
     explanation: 'CASR 91.705 : before beginning a flight, there must be no frost, ice or snow adhering to the aircraft\'s wings, flaps, control surfaces, rotors, propellers, and horizontal or vertical stabilisers. Exception: if take-off is conducted in accordance with AFM procedures for those conditions. (unless the AFM authorises operation in those conditions)',
@@ -530,10 +530,10 @@ export const clwaQuestions: {
   {
     question: 'Which of the following subject areas is covered in the CFRC (CPL flight rules and air law — all categories) MOS unit?',
     options: [
-      'Aerodynamics and aircraft performance',
-      'Instrument approach procedures and IFR minima',
+      'Aerodynamics, aircraft systems, performance, and human factors theory for the CPL',
+      'Instrument approach procedures, IFR minima, holding, and precision approach operations only',
       'Documentation, CPL licence privileges, flight rules, air service operations, aerodromes, airspace, altimetry, emergencies, and security',
-      'Navigation, meteorology, and flight planning',
+      'Navigation, meteorology, flight planning, fuel calculations, and operational control only',
     ],
     correct: 2,
     explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 (CFRC): the CPL flight rules and air law syllabus covers documentation and publications, CPL licence privileges and limitations, flight rules and conditions of flight, air service operations, aerodromes, airspace, altimetry, emergencies and accidents, security, and airworthiness and equipment.',
@@ -627,9 +627,9 @@ export const clwaQuestions: {
     question: 'In VFR flight in Class G airspace, your radio fails completely. What is the correct action?',
     options: [
       'Select transponder code 7600, attempt to re-establish communications on all available frequencies including 121.5 MHz, and land as soon as practicable',
-      'Continue to destination and file an incident report on landing',
-      'Declare MAYDAY immediately on all frequencies',
-      'Return to departure aerodrome only',
+      'Continue to destination and file a mandatory occurrence report with CASA immediately after landing',
+      'Declare MAYDAY immediately on all frequencies and divert to the nearest controlled aerodrome for ATC assistance',
+      'Return to the departure aerodrome only, as landing at any other aerodrome without radio is not permitted',
     ],
     correct: 0,
     explanation: 'Part 91 MOS s.11.10(2): on radio failure in VFR Class G airspace, select transponder code 7600, attempt to re-establish contact on all available frequencies including 121.5 MHz, and as soon as practicable descend below 3,000 ft AGL over land and land at the nearest suitable aerodrome.',
@@ -807,9 +807,9 @@ export const clwaQuestions: {
     question: 'You are at a non-controlled aerodrome and wish to determine the active runway before joining the circuit. What is the recommended procedure?',
     options: [
       'Overfly the aerodrome at least 500 ft above circuit height, observe the windsock and signals area, then position on the non-active side before joining',
-      'Join the downwind leg on any runway and assess from there',
-      'Land on the longest runway regardless of wind direction',
-      'Call the nearest ATC unit for an active runway advisory',
+      'Join the downwind leg on any runway that faces into wind and determine the correct circuit direction from traffic already in the circuit',
+      'Land on the longest available runway regardless of wind direction and confirm circuit direction with the CTAF',
+      'Call the nearest ATC facility on 121.5 MHz to request circuit direction information before entering the area',
     ],
     correct: 0,
     explanation: 'At an unfamiliar non-controlled aerodrome, the recommended procedure is to overfly at 500 ft or more above circuit height to observe the windsock, signals area, and any circuit traffic. Once the active runway and circuit direction are determined, position to the non-active side before descending to join.',
@@ -908,20 +908,20 @@ export const clwaQuestions: {
       'The same equipment as a land flight, Bass Strait is under 100 NM wide',
     ],
     correct: 1,
-    explanation: 'Bass Strait poses a significant overwater hazard for single-engine aircraft. At cruise altitude the gliding distance to land is far less than the width of the strait. Life jackets for all occupants, an appropriate life raft, and signalling equipment are required when the aircraft cannot glide to land following engine failure. The pilot must calculate glide capability at planned altitude.',
-    reference: 'CAO 20.11',
+    explanation: 'Part 91 MOS s.26.60(2)(c) and s.26.62: for this aircraft type the life raft threshold is the shorter of 30 minutes flight time at normal cruise or 100 NM. Bass Strait is approximately 150 NM wide and a 45-minute crossing exceeds the 30-minute threshold. Life rafts are therefore required, and s.26.62 additionally requires life jackets for each occupant and appropriate survival and signalling equipment when life rafts are carried.',
+    reference: 'Part 91 MOS s.26.60(2)(c) / s.26.62',
   },
   {
     question: 'For an overwater flight in a multi-engine aircraft, when does the life raft requirement apply?',
     options: [
-      'When the aircraft cannot reach land following failure of the most critical engine at the most critical point in the flight',
+      'When the aircraft is further from land than the shorter of 30 minutes flight time at normal cruise speed or 100 NM, whichever is less',
       'Never, multi-engine aircraft are always exempt from life raft requirements regardless of the distance from land',
-      'Only for charter flights operating more than 100 NM from the nearest land',
+      'Only for charter flights operating more than 100 NM from the nearest land, single-engine aircraft are exempt',
       'Only when the flight is conducted at night, regardless of distance from the coast',
     ],
     correct: 0,
-    explanation: 'For multi-engine aircraft, the overwater survival equipment threshold is the point at which, following failure of the most critical engine at the most critical point in the flight, the aircraft cannot reach land. This is a performance-based calculation rather than a fixed distance. The pilot must complete this assessment as part of pre-flight planning for overwater flights.',
-    reference: 'CAO 20.11',
+    explanation: 'Part 91 MOS s.26.60(2)(c): for any aircraft other than a large jet or turbine-propeller multi-engine aircraft, life rafts must be carried when the aircraft is operated over water further from land than the shorter of: the distance it would fly in 30 minutes at normal cruise speed in still air, or 100 NM. There is no exemption for multi-engine aircraft.',
+    reference: 'Part 91 MOS s.26.60(2)(c)',
   },
   {
     question: 'What does TEMPO indicate in a TAF?',
@@ -1022,10 +1022,10 @@ export const clwaQuestions: {
   {
     question: 'During pre-flight you discover the transponder is unserviceable. The planned flight is in Class G airspace below 5,000 ft with no requirement to enter controlled airspace. May you conduct the flight?',
     options: [
-      'No, all aircraft must have a serviceable transponder at all times',
-      'Yes, a transponder is not required for VFR flight in Class G airspace below 5,000 ft AMSL if not entering controlled airspace',
-      'Only if you obtain a CASA exemption',
-      'Only if you fly below 1,000 ft AGL',
+      'No, all aircraft must have a fully serviceable transponder before any flight in Australian airspace',
+      'Yes, a transponder is not required for VFR flight in Class G below 5,000 ft AMSL without a specific mandate',
+      'Only if CASA grants a specific written exemption for the aircraft registration for that flight',
+      'Only if the flight remains below 1,000 ft AGL where transponder use is not mandatory',
     ],
     correct: 1,
     explanation: 'Transponders are required in certain airspace — specifically Class A, C, D, and E, and in areas mandated by CASR. VFR flight in Class G below 5,000 ft AMSL that does not enter or transit through transponder-mandatory airspace can be conducted without a serviceable transponder, provided no other requirements apply.',
@@ -1166,10 +1166,10 @@ export const clwaQuestions: {
   {
     question: 'Is a VFR aircraft required to carry radio for day flight in Class G airspace at or below 5,000 ft AMSL?',
     options: [
-      'Yes, radio is always required regardless of airspace class or altitude',
-      'Radio is only required for IFR flights and all operations in controlled airspace',
-      'Only if the flight exceeds 25 NM from the departure aerodrome or enters controlled airspace',
-      'No, a VFR aircraft in Class G at or below 5,000 ft AMSL by day is not required to carry radio unless specific conditions in Part 91 MOS s.26.18 apply',
+      'Yes, radio is always required for all VFR flights regardless of airspace class or altitude',
+      'Radio is only required for IFR flights and all operations in Class A, C, D, and E controlled airspace',
+      'Only if the flight exceeds 25 NM from the departure aerodrome or transits controlled airspace',
+      'No, a VFR aircraft in Class G at or below 5,000 ft AMSL by day is not required to carry radio unless specific conditions apply',
     ],
     correct: 3,
     explanation: 'Part 91 MOS s.26.18(2): a VFR aircraft in Class G airspace at or below 5,000 ft AMSL is not required to comply with s.26.18(1) (radio requirement). Exceptions under s.26.18(3)–(4): if operating under VMC criteria at Table 2.07(3) items 4–6, or operating within or intending to enter an MBA.',
@@ -1407,7 +1407,7 @@ export const clwaQuestions: {
     question: 'You are flying at 2,500 ft AMSL in Class G airspace over flat terrain at sea level. Visibility drops to 4,000 m. Are you in VMC?',
     options: [
       'Yes, 4,000 m exceeds the minimum visibility for Class G at low level',
-      'No, at 2,500 ft AMSL over sea-level terrain you are above 1,000 ft AGL and below 3,000 ft AMSL, so Item 4 of Table 2.07(3) applies. This requires 5,000 m visibility, clear of cloud, and in sight of the ground. At 4,000 m you are not in VMC',
+      'No, at 2,500 ft AMSL over sea-level terrain the 5,000 m Item 4 requirement applies and 4,000 m is below VMC',
       'Yes, the 5,000 m requirement only applies above 3,000 ft AMSL',
       'Yes, Class G below 3,000 ft only requires 1,500 m visibility',
     ],
@@ -1442,10 +1442,10 @@ export const clwaQuestions: {
   {
     question: 'At a controlled aerodrome, an aircraft is cleared for take-off on a runway that is 1,500 m long. The preceding aircraft took off on the same runway and is still visible ahead. May you commence your take-off roll?',
     options: [
-      'Yes, the take-off clearance is sufficient authority to proceed',
-      'Yes, provided the preceding aircraft has reached 500 ft AGL',
-      'Only if the preceding aircraft has crossed the upwind end of the runway, commenced a turn, or is at least 1,800 m ahead and airborne',
-      'Only if ATC confirms the preceding aircraft has landed at the destination',
+      'Yes, the take-off clearance is sufficient authority to roll immediately after receiving it from ATC',
+      'Yes, provided the preceding aircraft has climbed through 500 ft AGL and is clear of the runway environment',
+      'Only if the preceding aircraft has crossed the upwind end of the runway, commenced a turn, or is 1,800 m ahead on a long runway',
+      'Only if ATC specifically confirms the preceding aircraft has safely departed the terminal area',
     ],
     correct: 2,
     explanation: 'At a controlled aerodrome, ATC applies separation before issuing a take-off clearance, but the pilot must also be satisfied the situation is safe. Separation minima require the preceding aircraft to have crossed the upwind end of the runway, commenced a turn away, or if the runway is longer than 1,800 m, to be at least 1,800 m ahead and airborne.',
@@ -1610,10 +1610,10 @@ export const clwaQuestions: {
   {
     question: 'You depart on a VFR charter flight and enter IMC unexpectedly. You do not hold an instrument rating. What is the correct immediate action?',
     options: [
-      'Maintain heading and altitude, the IMC may be brief',
-      'Climb above the cloud and continue VFR on top',
-      'Execute an immediate 180° turn to exit IMC and return to VMC, or if unable, declare a MAYDAY and request ATC assistance',
-      'Reduce speed and continue, slow flight is safer in IMC',
+      'Maintain heading and altitude and advise ATC; the IMC may clear quickly ahead',
+      'Climb above the cloud layer and continue VFR on top of the cloud',
+      'Execute an immediate 180° turn to exit IMC and return to VMC, or declare MAYDAY if unable to maintain VFR',
+      'Reduce speed and continue at reduced power, as slow flight reduces the risk of structural damage in IMC',
     ],
     correct: 2,
     explanation: 'A VFR-only pilot who enters IMC faces an immediate life-threatening situation. Statistically, spatial disorientation occurs rapidly without instrument training. The immediate action is an immediate 180° turn to return to VMC. If unable to return to VMC, declare MAYDAY on 121.5 MHz and request immediate ATC assistance for vectors clear of terrain.',
@@ -1694,10 +1694,10 @@ export const clwaQuestions: {
   {
     question: 'During flight planning, you have calculated your trip fuel, taxi fuel, and final reserve. Your flight also requires \'additional fuel\'. What is additional fuel required to cover?',
     options: [
-      'Fuel required to fly to the alternate aerodrome in normal operations',
-      'Fuel to compensate for unforeseen headwinds or ATC delays',
-      'Extra fuel beyond the minimum required, carried at the PIC\'s discretion',
-      'Fuel to allow the aircraft to proceed to an alternate, hold for 15 minutes at 1,500 ft, and land following engine failure or pressurisation loss at the most critical point',
+      'Fuel required to fly directly to the destination alternate aerodrome only, without any holding allowance',
+      'Fuel to compensate for unforeseen headwinds, ATC delays, or routing changes that increase trip fuel beyond the planned figure',
+      'Extra fuel beyond the minimum required, carried entirely at the pilot in command\'s discretion based on personal preference',
+      'Fuel for a diversion to an alternate aerodrome, plus hold and approach fuel following the most critical failure en route',
     ],
     correct: 3,
     explanation: 'Part 91 MOS s.1.07: additional fuel enables an aircraft suffering engine failure or pressurisation loss at the most critical point to proceed to an alternate aerodrome, fly 15 minutes at holding speed at 1,500 ft above aerodrome elevation in ISA, and make an approach and landing.',
@@ -2042,10 +2042,10 @@ export const clwaQuestions: {
   {
     question: 'What is the difference between an \'MBZ\' and a \'CTAF\'?',
     options: [
-      'MBZ and CTAF are identical terms used interchangeably to describe the same airspace and frequency requirement',
+      'MBZ and CTAF are identical terms used interchangeably to describe the same frequency requirement at non-controlled aerodromes in Australia',
       'CTAF is the frequency used for positional broadcasts at a non-controlled aerodrome. MBZ is the designated airspace around the aerodrome where those broadcasts are mandatory',
-      'An MBZ frequency requirement applies only to IFR aircraft, while a CTAF requirement applies only to VFR aircraft',
-      'An MBZ is used at controlled aerodromes during off-peak hours, while a CTAF applies to non-controlled aerodromes',
+      'An MBZ frequency requirement applies only to IFR aircraft transiting the airspace, while a CTAF requirement applies to VFR aircraft only',
+      'An MBZ is used at controlled aerodromes during off-peak hours when the tower is closed, while a CTAF applies at permanently non-controlled aerodromes',
     ],
     correct: 1,
     explanation: 'A CTAF (Common Traffic Advisory Frequency) is a designated frequency at a non-controlled aerodrome for positional broadcasts. An MBZ (Mandatory Broadcast Zone) is a volume of airspace surrounding a non-controlled aerodrome where pilots must make broadcasts. Within the MBZ, CTAF broadcasts are mandatory, not just recommended.',
@@ -2150,10 +2150,10 @@ export const clwaQuestions: {
   {
     question: 'You are a CPL holder flying charter. Your FDP today is 9 hours. Your operator calls and asks you to extend by 2 more hours for an additional sector. The total would be 11 hours. Your start time was 0700 local. Is this permissible?',
     options: [
-      'No, extensions to FDPs are never permitted',
-      'Possibly, 11 hours is the maximum FDP for a single pilot starting between 0600-0859. The extension brings the FDP to the limit, which is permissible',
-      'Yes, up to 2-hour extensions are always available at the operator\'s discretion',
-      'Only if you have had a 30-minute rest break during the FDP',
+      'No, extensions to FDPs are never permitted regardless of start time or operational requirements',
+      'Possibly, 11 hours is the maximum FDP for a single pilot with a 0600-0859 start time. The extension brings the FDP to the absolute limit',
+      'Yes, up to 2-hour extensions are always available at the operator\'s discretion without any limit on start time',
+      'Only if a rest break of at least 30 minutes has been taken during the FDP to reduce accumulated fatigue',
     ],
     correct: 1,
     explanation: 'For a single-pilot charter starting between 0600–0859, the maximum FDP under CAO 48.1 is 11 hours. The proposed 11-hour total is exactly at this limit and is therefore permissible, provided no other CAO 48.1 limits (cumulative hours, rest periods) are exceeded. Going beyond 11 hours is not permitted without specific approval.',
@@ -2474,10 +2474,10 @@ export const clwaQuestions: {
   {
     question: 'What is the purpose of the \'controls check\' carried out immediately before take-off?',
     options: [
-      'To warm up the control cables before departure',
-      'To satisfy ATC that the aircraft is airworthy',
-      'To check the aerodynamic effectiveness of the controls at zero speed',
-      'To verify the flight controls move freely and correctly through their full range of travel, ensuring no binding, jamming, or cross-connection exists',
+      'To warm up the control cables and lubricate the hinges before the aircraft is exposed to full aerodynamic loads during flight',
+      'To satisfy the aircraft manufacturer\'s pre-flight checklist and demonstrate compliance to passengers',
+      'To check that the aerodynamic surfaces generate sufficient lift at low speed before committing to the take-off roll',
+      'To verify the flight controls move freely and correctly through their full range of movement and are not restricted or disconnected',
     ],
     correct: 3,
     explanation: 'The pre-take-off controls check confirms all flight controls move freely through their full range of travel in the correct sense. This check is mandatory before every take-off and may detect issues such as a jammed elevator, reversed aileron, or locked rudder — all potentially fatal on take-off.',
@@ -2762,14 +2762,14 @@ export const clwaQuestions: {
   {
     question: 'A NOTAM reads \'AERODROME UNLIT\'. Your planned arrival ETA is 30 minutes before last light. Is this a problem?',
     options: [
-      'No, arriving before last light means lighting is not required',
-      'It depends, aerodrome lighting is not needed for arrival before last light, but any delay causing arrival after daylight ends creates a problem',
-      'Lighting is only required for night VFR operations',
-      'AERODROME UNLIT means the taxi signs are out, the runway lights still operate',
+      'Yes, all aerodromes must have operational lighting available at all times regardless of day or night operations',
+      'No, AERODROME UNLIT means no lighting is available at night. A day VFR arrival 30 minutes before last light does not require aerodrome lighting',
+      'Yes, you must divert to an aerodrome with operational lighting before proceeding',
+      'AERODROME UNLIT means the runway lighting is unserviceable but taxiway lighting still operates',
     ],
     correct: 1,
-    explanation: 'An unlit aerodrome is fine for arrivals before last light. However, if there is any possibility of arriving after daylight ends, landing without aerodrome lighting is dangerous and potentially illegal without a night rating and night VFR certification. Build contingency into your planning to ensure daylight arrival.',
-    reference: 'AIP GEN 3.3 / ERSA',
+    explanation: 'AERODROME UNLIT means no aerodrome lighting is available for night operations. Day VFR does not require aerodrome lighting, so an arrival 30 minutes before last light is not affected by this NOTAM. The NOTAM becomes relevant only if you were planning a night arrival or if a delay could push the arrival past last light, in which case lighting alternate planning rules under Part 91 MOS s.8.06 would apply.',
+    reference: 'Part 91 MOS s.8.06 / AIP ENR 1.1 / ERSA',
   },
   {
     question: 'You discover during pre-flight that the aircraft\'s left navigation light is inoperative. Your flight is planned to return before last light. May you depart?',
@@ -2930,10 +2930,10 @@ export const clwaQuestions: {
   {
     question: 'What is the recommended procedure when arriving at an unfamiliar non-controlled aerodrome to determine circuit direction?',
     options: [
-      'Join the downwind leg at circuit height and observe the windsock',
       'Overfly at least 500 ft above circuit altitude, determine circuit direction, then position clear of traffic before descending to join the circuit',
-      'Land on any runway and call the circuit direction on CTAF',
-      'Contact the nearest ATC facility for circuit information',
+      'Join the downwind leg at normal circuit height and observe the windsock to confirm you have selected the correct runway direction',
+      'Land on any convenient runway and contact the aerodrome operator on CTAF after landing to confirm circuit procedures',
+      'Contact the nearest ATC facility before arrival to obtain current circuit information and aerodrome status',
     ],
     correct: 1,
     explanation: 'AIP ENR 1.1 Chapter 3: where the aerodrome layout or circuit direction cannot be ascertained prior to arrival, the pilot should overfly or circle the aerodrome at least 500 ft above circuit altitude (which may be 2,000 ft or more above elevation). Once the circuit direction is determined, position to the non-active side before descending. Ear point before descending to circuit height',
@@ -3074,10 +3074,10 @@ export const clwaQuestions: {
   {
     question: 'What normally comprises an airways clearance?',
     options: [
-      'Aircraft identification, destination or clearance limit, route of flight, assigned level, SSR code',
-      'Aircraft identification and squawk code only',
-      'Runway assignment and departure heading',
-      'Level allocation and transponder code only',
+      'Aircraft identification, destination or clearance limit, route, assigned level, and any specific instructions',
+      'Aircraft identification and assigned transponder code, all other elements are advisory only',
+      'Runway assignment and departure heading only, route and level are filed by the pilot beforehand',
+      'Level allocation and transponder squawk code only, the route is already in the flight notification',
     ],
     correct: 0,
     explanation: 'AIP ENR 1.1: an airways clearance normally contains: aircraft identification; destination, area of operation, or clearance limit; route of flight; assigned level; SSR code; and frequency requirements.',
@@ -3129,7 +3129,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'Aviation fuel vapour is highly flammable and can ignite from a small ignition source. Smoking during refuelling creates a serious fire risk. The prohibition applies to all aircraft during fuelling operations regardless of aircraft type or fuel type.',
-    reference: 'CASR 91.565 / CAO 20.9',
+    reference: 'CAO 20.9',
   },
   {
     question: 'When must a pilot change from QNH to 1,013.2 hPa on climb?',
@@ -3194,10 +3194,10 @@ export const clwaQuestions: {
   {
     question: 'In a METAR, what does \'SKC\' mean?',
     options: [
-      'Sky Covering, cloud is covering more than half the sky',
-      'Sky Ceiling, the lowest broken or overcast layer',
-      'Sky Condition, used when cloud amount is indeterminate',
-      'Sky Clear: at staffed stations, no cloud observed at any level; at automatic stations, no cloud detected below 5,000 ft',
+      'Sky Covering: cloud is covering more than half the sky and ceiling is below 3,000 ft',
+      'Sky Ceiling: indicates the lowest broken or overcast layer detected below 5,000 ft',
+      'Sky Condition: used when cloud amount is indeterminate and the observer cannot assess coverage',
+      'Sky Clear: at staffed stations, no cloud at any level; at automatic stations, no cloud detected below 5,000 ft',
     ],
     correct: 3,
     explanation: 'AIP GEN 3.5: SKC (Sky Clear) at a staffed (manned) station means the observer reports no cloud at any level. At an automatic station, SKC means no cloud was detected below 5,000 ft — the station cannot detect cloud above that altitude. SKC differs from CAVOK: SKC addresses cloud only; CAVOK additionally requires visibility of 10 km or more and no significant weather phenomena.',
@@ -3494,10 +3494,10 @@ export const clwaQuestions: {
   {
     question: 'Which factors must be taken into account when determining landing performance?',
     options: [
+      'Only the landing weight and available runway length need to be considered for landing performance',
+      'Wind direction only, as all other variables are pre-calculated within the AFM\'s built-in safety margins',
+      'Runway length and aircraft gross weight only, using the dry runway performance table from the AFM',
       'Landing distance available, runway surface and condition, pressure altitude, temperature, runway gradient, wind, and forecast weather',
-      'Only landing weight and runway length',
-      'Wind only, all other factors are covered by the AFM safety margins',
-      'Runway length and aircraft weight only',
     ],
     correct: 0,
     explanation: 'Part 91 MOS s.25.02(3): before landing, a pilot must account for: landing distance available; runway surface type and condition; pressure altitude and temperature; runway gradient in the landing direction; wind direction, speed and characteristics; and the landing weather forecast. All relevant performance charts must be consulted.',
@@ -3542,10 +3542,10 @@ export const clwaQuestions: {
   {
     question: 'You depart a non-controlled aerodrome and climb to well above circuit height. You are now at least 3 NM from the aerodrome. May you turn to join the circuit for another runway?',
     options: [
-      'No, you must always use the runway you departed on',
+      'No, you must always make a circuit and depart in the runway direction regardless of destination track',
       'Yes, once well outside the circuit area and at least 3 NM from the aerodrome, a turn in the opposite direction is permitted',
-      'Only with ATC permission even at a non-controlled aerodrome',
-      'Only if you broadcast your intentions on CTAF first',
+      'Only with ATC permission, even at a non-controlled aerodrome, a radio call to the nearest AFIS is required',
+      'Only if you broadcast your intentions on CTAF first and confirm no conflicting traffic in the area',
     ],
     correct: 1,
     explanation: 'At a non-controlled aerodrome, once an aircraft has climbed to well outside the circuit area and is at least 3 NM from the aerodrome, it may execute a turn opposite to the circuit direction. Broadcasting your intentions on CTAF is recommended practice, and this provision allows joining different runways when conditions require it.',
@@ -3758,26 +3758,26 @@ export const clwaQuestions: {
   {
     question: 'When is holding fuel required as part of the pre-flight fuel calculation?',
     options: [
-      'Holding fuel is always required for IFR flights',
+      'Holding fuel is always required for all IFR flights regardless of expected conditions',
       'Holding fuel is required when holding delays are anticipated, such as due to ATC congestion, busy terminal areas, or adverse weather at the destination',
-      'Only when flying to a destination without an instrument approach',
-      'Holding fuel is included automatically within the final reserve',
+      'Only when flying to a destination aerodrome that does not have an instrument approach procedure',
+      'Holding fuel is not a separate item — it is automatically included within the final reserve fuel calculation',
     ],
     correct: 1,
     explanation: 'Part 91 MOS s.19.04(1)(d): holding fuel is listed as a required fuel component "if required." It is needed when holding delays are anticipated due to ATC congestion, weather, or other operational factors. It is separate from final reserve fuel.',
     reference: 'Part 91 MOS 2020 s.19.04(1)(d)',
   },
   {
-    question: 'A multi-engine aircraft is conducting a flight over water 70 NM from the nearest land at a cruise altitude of FL100. What survival equipment must be on board?',
+    question: 'A multi-engine piston aircraft is conducting a flight over water 130 NM from the nearest land. What survival equipment is required?',
     options: [
-      'A life raft only, life jackets are not required for multi-engine aircraft',
-      'An ELT is sufficient, no life jackets or raft required',
-      'Only an EPIRB, life rafts and jackets are not required under 100 NM',
-      'Life jackets for each occupant and a life raft large enough for all occupants, plus appropriate signalling equipment',
+      'A life raft only — life jackets are not required for multi-engine aircraft at any distance from land',
+      'An ELT is the only mandatory equipment, life jackets and life rafts are voluntary at this distance',
+      'No additional equipment is required — the 100 NM distance threshold has not been exceeded here',
+      'Life jackets for each occupant and a life raft of sufficient capacity for all on board, plus overwater survival equipment',
     ],
     correct: 3,
-    explanation: 'For over-water operations beyond the distance where an engine-inoperative aircraft can reach land, the aircraft must carry life jackets for each occupant and a life raft of sufficient capacity. Appropriate distress signalling equipment must also be carried. The specific requirements depend on the distance and duration over water.',
-    reference: 'CAO 20.11',
+    explanation: 'Part 91 MOS s.26.60(2)(c) and s.26.62: for most aircraft (other than large jets or turbine-propeller types), life rafts are required when more than the shorter of 30 minutes flight time at normal cruise or 100 NM from land. At 130 NM, the 100 NM threshold is exceeded. When life rafts are required, s.26.62 also requires life jackets for each occupant, plus appropriate overwater survival equipment.',
+    reference: 'Part 91 MOS s.26.60(2)(c) / s.26.62',
   },
   {
     question: 'You are flying at 5,500 ft on a track of 185°M in Class G airspace. Are you on a correct VFR hemispherical level?',
@@ -3818,10 +3818,10 @@ export const clwaQuestions: {
   {
     question: 'Before each flight, you are handed the aircraft maintenance release. What must you be able to determine from this document?',
     options: [
-      'The aircraft\'s fuel capacity only',
-      'Whether the last flight was within the past 7 days',
-      'Only whether the aircraft has been maintained in the last 30 days',
-      'Its validity, the classes of operation authorised, and any outstanding defects and whether they affect airworthiness',
+      'The aircraft\'s total fuel capacity and the date of the last scheduled maintenance service',
+      'Whether the aircraft\'s last flight was conducted within the past 7 days and the current hobbs reading',
+      'Only whether the aircraft has been maintained within the last 30 days and has a valid C of A',
+      'Its validity period and expiry date, the classes of operation authorised, and any outstanding defects and their effect on airworthiness',
     ],
     correct: 3,
     explanation: 'CASR Part 61 MOS Schedule 3 AFRC s.2.1.5: a pilot must be able to (a) determine the maintenance release\'s validity; (b) list the class(es) of operation applicable to the aircraft; and (c) list outstanding defects/endorsements and decide whether they affect airworthiness.',
@@ -4250,10 +4250,10 @@ export const clwaQuestions: {
   {
     question: 'You are conducting a VFR flight in a single-engine aeroplane during the day. What are the minimum instruments that must be operative?',
     options: [
-      'Airspeed indicator only',
-      'Full six-pack regardless of conditions',
-      'As specified in Part 91 MOS s.26.06(1): airspeed, pressure altitude, magnetic heading, and time',
-      'Altimeter and compass only for day VFR',
+      'Airspeed indicator only, all other instruments are optional for day VFR flight',
+      'The full six-pack of instruments regardless of flight conditions or aircraft category',
+      'Airspeed indicator, altimeter, magnetic compass, and time — plus Mach number if applicable',
+      'Altimeter and magnetic compass only, as airspeed can be estimated by feel and attitude',
     ],
     correct: 2,
     explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 s.2.2.3 requires the pilot to state minimum VFR instruments. Per Part 91 MOS s.26.06(1): indicated airspeed, pressure altitude, magnetic heading, and time are the baseline. Additional instruments are required for night, aerial work, and IFR. With additional instruments for specific operations',
@@ -4359,9 +4359,9 @@ export const clwaQuestions: {
     question: 'What is a \'SIGMET\' and when would a pilot encounter one?',
     options: [
       'A meteorological information message advising of significant en-route weather such as severe turbulence, icing, or volcanic ash',
-      'A SIGMET is a weather forecast for a specific aerodrome',
-      'A SIGMET is a navigation signal from a satellite',
-      'A SIGMET is a special military movement notification',
+      'A SIGMET is a terminal area weather forecast for a specific aerodrome, valid for 24 hours from time of issue',
+      'A SIGMET is an in-flight navigation warning broadcast on VHF frequencies about satellite signal outages',
+      'A SIGMET is a special military airspace movement notification issued when exercises are active in the area',
     ],
     correct: 0,
     explanation: 'A SIGMET (Significant Meteorological Information) is an advisory message issued by a Meteorological Watch Office warning of en-route weather that may affect the safety of aircraft operations. Examples include: severe turbulence, severe icing, tropical cyclones, severe mountain waves, and volcanic ash. SIGMETs are important for flight planning and are obtained through NAIPS.',
@@ -4430,10 +4430,10 @@ export const clwaQuestions: {
   {
     question: 'You are flying VFR at 8,500 ft in a remote area of Australia. What class of airspace are you most likely in?',
     options: [
-      'Class A, all airspace above FL245 is Class A',
-      'Class C, the major controlled airspace in Australia',
-      'Class G, uncontrolled airspace that extends to the Class E floor, which is commonly 8,500 ft AMSL in remote Australia',
-      'Class D, all regional airspace is Class D',
+      'Class A, since all airspace above FL245 is classified as Class A in Australia',
+      'Class C, the major en-route controlled airspace that covers most of Australia above 8,500 ft',
+      'Class G, uncontrolled airspace extending from the surface to the base of Class E, typically 8,500 ft in remote areas',
+      'Class D, which covers all regional airspace below 10,000 ft outside major terminal areas',
     ],
     correct: 2,
     explanation: 'In remote Australia, Class G typically extends from the surface to the Class E floor, which is commonly 8,500 ft AMSL. Class E then extends from 8,500 ft to FL245 where Class A begins. At 8,500 ft in remote Australia you would be at the boundary of Class G and Class E.',
@@ -4586,10 +4586,10 @@ export const clwaQuestions: {
   {
     question: 'You are planning a VFR cross-country and your proposed cruise altitude of 4,500 ft places you only 300 ft above the highest terrain in one section of the route. Is this acceptable?',
     options: [
-      'Yes, any altitude above terrain is legal for VFR flight',
-      '300 ft clearance is acceptable provided you maintain VMC',
-      'No, over areas other than built-up areas, you must maintain at least 500 ft AGL. 300 ft clearance is below this minimum and you must plan a higher altitude',
-      'Only acceptable if you have filed a flight plan with the lower altitude',
+      'Yes, any altitude that keeps you clear of obstacles is acceptable for VFR flight regardless of the margin',
+      'Yes, 300 ft clearance is acceptable for VFR flight provided you maintain VMC throughout the flight',
+      'No, over areas other than built-up areas, you must maintain at least 500 ft AGL. 300 ft clearance is below this minimum and the altitude must be increased',
+      'Only acceptable if you file a flight plan with CASA listing the lower altitude and receive written approval',
     ],
     correct: 2,
     explanation: 'CASR 91.635: the minimum height for VFR flight over areas other than built-up areas is 500 ft AGL, except during take-off or landing. 300 ft clearance above terrain is below this minimum. The pilot must plan an altitude that provides the required clearance throughout the route.',
@@ -4706,10 +4706,10 @@ export const clwaQuestions: {
   {
     question: 'A pilot planning to overfly a sports event at low level is told the temporary restricted area over the event is only 3 NM in diameter. Can they plan to route around it at close range?',
     options: [
-      'No, a mandatory 2 NM buffer zone is required around all temporary restricted areas',
-      'Yes provided they maintain 500 ft AGL minimum height near the event',
-      'Yes, routing outside the boundary is legal. No additional buffer beyond the boundary is mandated, but accurate navigation is essential',
-      'All flights within 10 NM of a sports event require CASA permission',
+      'No, a mandatory 2 NM buffer zone is required around all temporary restricted area boundaries',
+      'Yes provided you maintain at least 500 ft AGL minimum height while operating near the event boundary',
+      'Yes, routing outside the boundary is legal. No additional buffer is mandated, but accurate navigation is essential to avoid inadvertent entry',
+      'All flights within 10 NM of a sports event restricted area require prior CASA permission',
     ],
     correct: 2,
     explanation: 'A temporary restricted area prohibits entry within its boundary. The pilot must stay outside the designated boundary. There is no legally mandated buffer zone beyond the boundary — routing outside is legal. However, pilots should navigate accurately to avoid inadvertent entry, and should be aware that ATC may impose additional conditions in some cases.',
@@ -5234,10 +5234,10 @@ export const clwaQuestions: {
   {
     question: 'Which of the following correctly describes a \'daily inspection\' of an aircraft?',
     options: [
-      'A comprehensive maintenance inspection performed by a LAME at the start of each calendar day\'s operations',
-      'A pre-flight inspection conducted by the pilot in command before the first flight of the day in accordance with the aircraft flight manual or approved checklist',
-      'An inspection required only for commercial charter operations, not applicable to private or training flights',
-      'An avionics system check conducted by a licensed avionics technician before each instrument flight',
+      'A comprehensive maintenance inspection performed by a LAME at the start of each calendar day of flight operations',
+      'A pre-flight inspection by the PIC before the first flight of the day, covering all items required by the aircraft flight manual',
+      'An inspection required only for commercial charter operations and not applicable to private or training flights',
+      'An avionics system check conducted by a licensed avionics technician before the first instrument flight of each day',
     ],
     correct: 1,
     explanation: 'The daily inspection (or pre-flight inspection) is conducted by the pilot in command before the first flight of the day using the approved checklist or AFM procedures. It is a pilot responsibility, not a LAME requirement for normal operations.',
@@ -5678,10 +5678,10 @@ export const clwaQuestions: {
   {
     question: 'You are cruising at 8,500 ft with area QNH set. ATC provides a local QNH from an aerodrome within 100 NM that differs by 4 hPa. Should you update the altimeter subscale?',
     options: [
-      'No, area QNH is always used below 10,000 ft',
+      'No, area QNH must always be maintained below 10,000 ft and local QNH is never set during cruise',
       'Yes, when local QNH from a station within 100 NM is available, update the altimeter subscale during cruise approaching the destination area',
-      'Only if the difference exceeds 10 hPa',
-      'Local QNH is only set during descent below 3,000 ft',
+      'Only if the difference between area QNH and local QNH exceeds 10 hPa at your current altitude',
+      'Local QNH is only set during the descent below 3,000 ft on the approach to the destination aerodrome',
     ],
     correct: 1,
     explanation: 'Approaching the top of climb, and during cruise, the altimeter should be updated to local QNH from the nearest station within 100 NM when available. If local QNH is not available, area QNH is used. Setting local QNH provides the most accurate altitude reference for terrain clearance.',
@@ -5889,7 +5889,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'Life jackets are required for each occupant when a single-engine aircraft operates over water at a distance from land greater than gliding distance with engine failure. For a multi-engine aircraft, the threshold is the distance that allows all engines failed drift-down to land. The specific distance depends on altitude and aircraft glide performance.',
-    reference: 'CAO 20.11 / CASR Part 91',
+    reference: 'Part 91 MOS s.26.56-26.62 / CASR Part 91',
   },
   {
     question: 'What ATC clearance readback is required?',
