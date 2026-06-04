@@ -83,7 +83,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.26.48 Chapter 7',
   },
   {
-    question: 'In a TAF you read \'TEMPO 0200/0600 4000 -RA BKN012\'. What does the TEMPO element mean for your planning?',
+    question: 'In a TAF you read \\\'TEMPO 0200/0600 4000 -RA BKN012\\\'. What does the TEMPO element mean for your planning?',
     options: [
       'Visibility will be exactly 4,000 m with BKN012 between 0200 and 0600 UTC',
       'Temporary variations from the mean conditions are expected',
@@ -124,10 +124,10 @@ export const clwaQuestions: {
       'No — an aircraft must not fly without an ELT under any circumstances',
       'Only if a personal PLB is carried as a substitute',
       'Only with a specific CASA exemption — otherwise the aircraft is grounded until the ELT is reinstalled',
-      'Yes for up to 90 days — a logbook entry, \'ELT NOT INSTALLED\' placard, and operational limitations must be in place',
+      'Yes for up to 90 days — a logbook entry, \\\'ELT NOT INSTALLED\\\' placard, and operational limitations must be in place',
     ],
     correct: 3,
-    explanation: 'Under Part 91 MOS s.26.52, an aircraft may fly without its ELT for up to 90 days for maintenance purposes, provided: a logbook entry records the removal and reason; a placard \'ELT NOT INSTALLED\' (or similar) is placed in the pilot\'s normal line of sight; and the operation is subject to the applicable limitations.',
+    explanation: 'Under Part 91 MOS s.26.52, an aircraft may fly without its ELT for up to 90 days for maintenance purposes, provided: a logbook entry records the removal and reason; a placard \\\'ELT NOT INSTALLED\\\' (or similar) is placed in the pilot\\\'s normal line of sight; and the operation is subject to the applicable limitations.',
     reference: 'Part 91 MOS 2020 s.26.52',
   },
   {
@@ -187,7 +187,7 @@ export const clwaQuestions: {
       'Fly at reduced power through the turbulence area',
     ],
     correct: 0,
-    explanation: 'Severe turbulence (SIGMET) can cause structural damage to the airframe and may be beyond the aircraft\'s design limits. The pilot must seriously consider delaying, diverting, or climbing above the affected area. Deliberately flying into known severe turbulence is negligent and may be illegal if it results in damage.',
+    explanation: 'Severe turbulence (SIGMET) can cause structural damage to the airframe and may be beyond the aircraft\\\'s design limits. The pilot must seriously consider delaying, diverting, or climbing above the affected area. Deliberately flying into known severe turbulence is negligent and may be illegal if it results in damage.',
     reference: 'AIP GEN 3.5 / CASR 91.265',
   },
   {
@@ -239,7 +239,7 @@ export const clwaQuestions: {
     reference: 'CAO 48.1 Instrument 2019',
   },
   {
-    question: 'During refuelling, the bowser truck\'s engine must be switched off and the truck positioned so that it can be rapidly moved if necessary. Why is this requirement in place?',
+    question: 'During refuelling, the bowser truck\\\'s engine must be switched off and the truck positioned so that it can be rapidly moved if necessary. Why is this requirement in place?',
     options: [
       'To comply with noise abatement regulations at the aerodrome',
       'This requirement only applies to commercial fuel trucks, not portable bowsers',
@@ -254,7 +254,7 @@ export const clwaQuestions: {
     question: 'You are number two for take-off behind a large jet aircraft. What additional separation is required before you commence your take-off roll?',
     options: [
       'The same as for any preceding aircraft — wait until it has crossed the upwind end',
-      'Separation behind a jet is the pilot\'s choice — ATC provides information only',
+      'Separation behind a jet is the pilot\\\'s choice — ATC provides information only',
       'No additional separation — wake turbulence only affects aircraft in the air',
       'Additional wake turbulence separation is required',
     ],
@@ -267,11 +267,11 @@ export const clwaQuestions: {
     options: [
       'No additional requirements — the CPL alone authorises all operations',
       'The pilot must hold an ATPL to act as PIC on any RPT operation',
-      'The operation must be conducted under an operator AOC (Air Operator Certificate) and the pilot must meet the operator\'s additional requirements for that role',
+      'The operation must be conducted under an operator AOC (Air Operator Certificate) and the pilot must meet the operator\\\'s additional requirements for that role',
       'A CPL with 1,000 hours automatically qualifies for RPT operations',
     ],
     correct: 2,
-    explanation: 'RPT operations require the operator to hold an Air Operator Certificate (AOC). A CPL alone does not authorise charter or RPT operations — the operator\'s AOC sets the framework and the pilot must meet all applicable requirements within that framework.',
+    explanation: 'RPT operations require the operator to hold an Air Operator Certificate (AOC). A CPL alone does not authorise charter or RPT operations — the operator\\\'s AOC sets the framework and the pilot must meet all applicable requirements within that framework.',
     reference: 'CASR Part 119 / CASR Part 135',
   },
   {
@@ -302,7 +302,7 @@ export const clwaQuestions: {
     question: 'Two aircraft are approaching head-on. what must each aircraft do?',
     options: [
       'The faster aircraft gives way and turns to the left',
-      'The lower aircraft climbs to the other\'s altitude',
+      'The lower aircraft climbs to the other\\\'s altitude',
       'Each aircraft alters heading to the right',
       'Each aircraft turns to the left',
     ],
@@ -359,7 +359,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.330 / AIP ENR 1.1',
   },
   {
-    question: 'During flight planning you need to calculate the fuel required to fly from your departure aerodrome to your destination. What does \'trip fuel\' include?',
+    question: 'During flight planning you need to calculate the fuel required to fly from your departure aerodrome to your destination. What does \\\'trip fuel\\\' include?',
     options: [
       'The total fuel on board at departure',
       'Fuel for take-off and climb to initial cruising level, cruise from top of climb to top of descent, descent and approach',
@@ -391,7 +391,7 @@ export const clwaQuestions: {
       'ASI, altimeter, compass, VSI, and attitude indicator — all are mandatory regardless of conditions',
     ],
     correct: 0,
-    explanation: 'Part 91 MOS s.26.06(1) specifies the minimum for VFR day: the aircraft must display indicated airspeed, pressure altitude, magnetic heading, and time. Mach number indication is required only when operating limits are expressed in Mach numbers. The \'full six-pack\' applies to IFR operations, not VFR day minima.',
+    explanation: 'Part 91 MOS s.26.06(1) specifies the minimum for VFR day: the aircraft must display indicated airspeed, pressure altitude, magnetic heading, and time. Mach number indication is required only when operating limits are expressed in Mach numbers. The \\\'full six-pack\\\' applies to IFR operations, not VFR day minima.',
     reference: 'Part 91 MOS 2020 s.26.06(1)',
   },
   {
@@ -467,7 +467,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.4.02 Table 4.02(1) Item 1',
   },
   {
-    question: 'In your pre-flight study of the AIP, you encounter the abbreviation \'GAAP\'. What does this mean and where does it apply?',
+    question: 'In your pre-flight study of the AIP, you encounter the abbreviation \\\'GAAP\\\'. What does this mean and where does it apply?',
     options: [
       'General Aviation Aerodrome Procedures',
       'General Arrival and Approach Procedure — applies to all aerodromes in Australia',
@@ -499,7 +499,7 @@ export const clwaQuestions: {
       'Sydney and Darwin FIRs — managed by ATSB',
     ],
     correct: 1,
-    explanation: 'Australia\'s airspace is divided into the Melbourne FIR (YMMM) and Brisbane FIR (YBBB), both managed by Airservices Australia. These FIRs provide flight information, alerting, and ATC services throughout Australian airspace.',
+    explanation: 'Australia\\\'s airspace is divided into the Melbourne FIR (YMMM) and Brisbane FIR (YBBB), both managed by Airservices Australia. These FIRs provide flight information, alerting, and ATC services throughout Australian airspace.',
     reference: 'AIP GEN 2.1',
   },
   {
@@ -523,7 +523,7 @@ export const clwaQuestions: {
       'Provided the pilot has assessed it will clear during the take-off run',
     ],
     correct: 2,
-    explanation: 'CASR 91.705 : before beginning a flight, there must be no frost, ice or snow adhering to the aircraft\'s wings, flaps, control surfaces, rotors, propellers, and horizontal or vertical stabilisers. Exception: if take-off is conducted in accordance with AFM procedures for those conditions. (unless the AFM authorises operation in those conditions)',
+    explanation: 'CASR 91.705 : before beginning a flight, there must be no frost, ice or snow adhering to the aircraft\\\'s wings, flaps, control surfaces, rotors, propellers, and horizontal or vertical stabilisers. Exception: if take-off is conducted in accordance with AFM procedures for those conditions. (unless the AFM authorises operation in those conditions)',
     reference: 'CASR 91.705 Chapter 2',
   },
   {
@@ -539,7 +539,7 @@ export const clwaQuestions: {
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 (CFRC)',
   },
   {
-    question: 'What does \'SARWATCH\' mean in Australian aviation?',
+    question: 'What does \\\'SARWATCH\\\' mean in Australian aviation?',
     options: [
       'A search and rescue watch held by Airservices Australia when a SARTIME has been nominated',
       'An air traffic radar watch for aircraft in distress',
@@ -547,7 +547,7 @@ export const clwaQuestions: {
       'A pilot self-briefing checklist for overwater operations',
     ],
     correct: 0,
-    explanation: 'When a pilot nominates a SARTIME with an Air Traffic Service, Airservices Australia maintains a SARWATCH — actively monitoring for the aircraft\'s safe arrival or cancellation of the SARTIME. If the SARTIME passes without confirmation of safe arrival, SAR is initiated. Pilots must cancel their SARTIME before or immediately upon landing.',
+    explanation: 'When a pilot nominates a SARTIME with an Air Traffic Service, Airservices Australia maintains a SARWATCH — actively monitoring for the aircraft\\\'s safe arrival or cancellation of the SARTIME. If the SARTIME passes without confirmation of safe arrival, SAR is initiated. Pilots must cancel their SARTIME before or immediately upon landing.',
     reference: 'AIP ENR 1.1',
   },
   {
@@ -676,10 +676,10 @@ export const clwaQuestions: {
       '50 NM',
       '30 minutes flight time',
       '2 hours flight time',
-      '1 hour\'s flight time of the planned destination aerodrome',
+      '1 hour\\\'s flight time of the planned destination aerodrome',
     ],
     correct: 3,
-    explanation: 'Part 91 MOS s.8.05(2) : for a VFR flight by night, the pilot must nominate a destination alternate that is within 1 hour\'s flight time of the planned destination aerodrome, unless the destination is served by a ground-based radio navigation aid and the aircraft is appropriately equipped and the pilot is competent to use it.',
+    explanation: 'Part 91 MOS s.8.05(2) : for a VFR flight by night, the pilot must nominate a destination alternate that is within 1 hour\\\'s flight time of the planned destination aerodrome, unless the destination is served by a ground-based radio navigation aid and the aircraft is appropriately equipped and the pilot is competent to use it.',
     reference: 'Part 91 MOS 2020 s.8.05(2) Chapter 2',
   },
   {
@@ -743,7 +743,7 @@ export const clwaQuestions: {
     reference: 'CASR Part 61 / CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.2.1',
   },
   {
-    question: 'What does \'Flight Information Service\' (FIS) provide to VFR pilots in Class G airspace?',
+    question: 'What does \\\'Flight Information Service\\\' (FIS) provide to VFR pilots in Class G airspace?',
     options: [
       'ATC separation from all other aircraft in Class G',
       'Radar vectoring to the destination',
@@ -987,11 +987,11 @@ export const clwaQuestions: {
     options: [
       'Squawk 7700 (general emergency) and declare MAYDAY on 121.5 MHz',
       'Squawk 7600 to alert ATC that communications have failed due to the interference',
-      'Squawk 7500 (unlawful interference) and notify ATC using the phraseology \'UNLAWFUL INTERFERENCE\' at the first opportunity',
-      'No specific transponder code — follow the operator\'s security manual procedures only',
+      'Squawk 7500 (unlawful interference) and notify ATC using the phraseology \\\'UNLAWFUL INTERFERENCE\\\' at the first opportunity',
+      'No specific transponder code — follow the operator\\\'s security manual procedures only',
     ],
     correct: 2,
-    explanation: 'CASR 91.335 and AIP ENR 6.1: in the event of unlawful interference, the pilot should select transponder code 7500 and at the first opportunity notify ATC using the phraseology \'UNLAWFUL INTERFERENCE\'. ATC will then coordinate all available assistance.',
+    explanation: 'CASR 91.335 and AIP ENR 6.1: in the event of unlawful interference, the pilot should select transponder code 7500 and at the first opportunity notify ATC using the phraseology \\\'UNLAWFUL INTERFERENCE\\\'. ATC will then coordinate all available assistance.',
     reference: 'CASR 91.335 / AIP ENR 6.1',
   },
   {
@@ -1084,10 +1084,10 @@ export const clwaQuestions: {
       'Only when an engine fails, and the flight manual',
       'Only for pressurisation failures above FL250',
       'Only when MTOW is exceeded, and the flight manual',
-      'When aircraft performance degrades below the level required for the airspace in which it is operating, or below the capability reported in the aircraft\'s flight notification',
+      'When aircraft performance degrades below the level required for the airspace in which it is operating, or below the capability reported in the aircraft\\\'s flight notification',
     ],
     correct: 3,
-    explanation: 'Part 91 MOS Table 21.05(1) Item 7: when aircraft performance degrades below (a) the level required for the airspace in which it is operating, or (b) the capability of the aircraft reported in the aircraft\'s flight notification, the pilot must report the situation to ATC.',
+    explanation: 'Part 91 MOS Table 21.05(1) Item 7: when aircraft performance degrades below (a) the level required for the airspace in which it is operating, or (b) the capability of the aircraft reported in the aircraft\\\'s flight notification, the pilot must report the situation to ATC.',
     reference: 'Part 91 MOS 2020 s.21.05 Table 21.05(1) Item 7',
   },
   {
@@ -1115,7 +1115,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.21.05(1) Table 21.05(1) Item 5',
   },
   {
-    question: 'What is the purpose of a \'Not Above\' (NA) altitude published for a VFR route?',
+    question: 'What is the purpose of a \\\'Not Above\\\' (NA) altitude published for a VFR route?',
     options: [
       'It defines the upper limit of the VFR corridor to ensure separation from controlled traffic above',
       'It sets the minimum altitude for the route to ensure obstacle clearance',
@@ -1123,7 +1123,7 @@ export const clwaQuestions: {
       'It is the compulsory holding altitude if ATC requests the aircraft to wait',
     ],
     correct: 0,
-    explanation: 'A \'Not Above\' altitude on a VFR route or transit lane defines the upper limit of the corridor. Flying above this altitude without a clearance would penetrate the controlled airspace above. The pilot must remain at or below the published \'Not Above\' altitude throughout the lane.',
+    explanation: 'A \\\'Not Above\\\' altitude on a VFR route or transit lane defines the upper limit of the corridor. Flying above this altitude without a clearance would penetrate the controlled airspace above. The pilot must remain at or below the published \\\'Not Above\\\' altitude throughout the lane.',
     reference: 'AIP ENR 1.4 / ERSA',
   },
   {
@@ -1179,11 +1179,11 @@ export const clwaQuestions: {
     options: [
       'Accept the clearance — ATC is responsible for fuel considerations once you are under their control',
       'Declare MAYDAY to alert ATC to the fuel situation',
-      'Advise ATC of your fuel state using the word \'MINIMUM FUEL\' or \'MAYDAY FUEL\' as appropriate',
+      'Advise ATC of your fuel state using the word \\\'MINIMUM FUEL\\\' or \\\'MAYDAY FUEL\\\' as appropriate',
       'Accept the clearance and divert without advising ATC',
     ],
     correct: 2,
-    explanation: 'The pilot is responsible for fuel at all times. If an ATC clearance would compromise fuel reserves, the pilot must advise ATC. \'MINIMUM FUEL\' is used when fuel state requires priority handling. \'MAYDAY MAYDAY MAYDAY FUEL\' is declared when the aircraft must land immediately. ATC is not responsible for the pilot\'s fuel state. And request an amended clearance to protect your fuel reserves',
+    explanation: 'The pilot is responsible for fuel at all times. If an ATC clearance would compromise fuel reserves, the pilot must advise ATC. \\\'MINIMUM FUEL\\\' is used when fuel state requires priority handling. \\\'MAYDAY MAYDAY MAYDAY FUEL\\\' is declared when the aircraft must land immediately. ATC is not responsible for the pilot\\\'s fuel state. And request an amended clearance to protect your fuel reserves',
     reference: 'AIP ENR 6.1 / Part 91 MOS s.19.05',
   },
   {
@@ -1226,12 +1226,12 @@ export const clwaQuestions: {
     question: 'A Danger Area is shown on your chart along your planned route. The NAIPS briefing shows no NOTAM activating it. May you transit it?',
     options: [
       'No — Danger Areas are permanently prohibited to civil aircraft',
-      'Yes — Danger Areas indicate potentially hazardous activities but do not legally prohibit civil flight. When not activated by NOTAM, transit is at the pilot\'s risk',
+      'Yes — Danger Areas indicate potentially hazardous activities but do not legally prohibit civil flight. When not activated by NOTAM, transit is at the pilot\\\'s risk',
       'Only if you file an IFR flight plan',
       'Only after obtaining permission from CASA',
     ],
     correct: 1,
-    explanation: 'Danger Areas (prefix D) warn of hazardous activities such as weapons firing or military exercises but do not legally prohibit civil aircraft entry. When no NOTAM has activated the area, transit is permissible but at the pilot\'s risk. Pilots should check activation times and, when active, contact the controlling authority.',
+    explanation: 'Danger Areas (prefix D) warn of hazardous activities such as weapons firing or military exercises but do not legally prohibit civil aircraft entry. When no NOTAM has activated the area, transit is permissible but at the pilot\\\'s risk. Pilots should check activation times and, when active, contact the controlling authority.',
     reference: 'AIP ENR 5.1 / CASR Part 91',
   },
   {
@@ -1303,7 +1303,7 @@ export const clwaQuestions: {
       'CAO 48.1 only applies to flight crew during flight operations',
     ],
     correct: 0,
-    explanation: 'CAO 48.1 defines duty time broadly — it includes any period during which a crew member is required to be available for work by the operator. Driving or other tasks at the operator\'s direction count as duty time. This may reduce the minimum required rest before the next FDP.',
+    explanation: 'CAO 48.1 defines duty time broadly — it includes any period during which a crew member is required to be available for work by the operator. Driving or other tasks at the operator\\\'s direction count as duty time. This may reduce the minimum required rest before the next FDP.',
     reference: 'CAO 48.1 Instrument 2019',
   },
   {
@@ -1319,7 +1319,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.1 Chapter 3',
   },
   {
-    question: 'You access NAIPS before a flight and find a NOTAM stating \'RWY 18/36 CLSD TIL 0800\'. Your planned departure is at 0730. What does this mean and what must you do?',
+    question: 'You access NAIPS before a flight and find a NOTAM stating \\\'RWY 18/36 CLSD TIL 0800\\\'. Your planned departure is at 0730. What does this mean and what must you do?',
     options: [
       'Runway 18 and 36 are only closed if you arrive before 0800 — departures are unaffected',
       'RWY CLSD means the runway markings are being repainted',
@@ -1370,12 +1370,12 @@ export const clwaQuestions: {
     question: 'After completing a Schedule 8 pilot maintenance task, what must the pilot record?',
     options: [
       'An entry in the aircraft journey log only — no other record is required',
-      'An entry in the pilot\'s logbook only',
+      'An entry in the pilot\\\'s logbook only',
       'A verbal report to the aircraft operator — no written record is required for Schedule 8 tasks',
       'An entry in the aircraft maintenance release certifying the task was completed, along with the pilot licence number',
     ],
     correct: 3,
-    explanation: 'After completing a Schedule 8 pilot maintenance task, the pilot must make an entry in the aircraft maintenance release (or equivalent document) certifying the task has been completed, including the pilot\'s licence number. This forms the maintenance record for the task.',
+    explanation: 'After completing a Schedule 8 pilot maintenance task, the pilot must make an entry in the aircraft maintenance release (or equivalent document) certifying the task has been completed, including the pilot\\\'s licence number. This forms the maintenance record for the task.',
     reference: 'CASR Part 43 Schedule 8 / CASR 91.755',
   },
   {
@@ -1387,7 +1387,7 @@ export const clwaQuestions: {
       '3,000 m visibility and 500 ft below cloud',
     ],
     correct: 1,
-    explanation: 'In Class G airspace above 3,000 ft AMSL during the day, VFR flight requires 5,000 m flight visibility, 1,000 ft above cloud, 500 ft below cloud, and 600 m horizontal clearance from cloud. These are more demanding than the \'clear of cloud\' requirement that applies at lower levels.',
+    explanation: 'In Class G airspace above 3,000 ft AMSL during the day, VFR flight requires 5,000 m flight visibility, 1,000 ft above cloud, 500 ft below cloud, and 600 m horizontal clearance from cloud. These are more demanding than the \\\'clear of cloud\\\' requirement that applies at lower levels.',
     reference: 'CASR 91.615 Table 91.615',
   },
   {
@@ -1411,7 +1411,7 @@ export const clwaQuestions: {
       '4,000 m satisfies VMC at all levels in Class G',
     ],
     correct: 0,
-    explanation: 'At 2,500 ft in Class G airspace, the aircraft is above 1,000 ft AGL but may or may not be above 3,000 ft AMSL depending on terrain. Below 3,000 ft AMSL or within 1,000 ft AGL, the VMC requirements differ by circumstance. At 2,500 ft above sea level in Class G above 1,000 ft AGL, 5,000 m applies UNLESS the aircraft is below 3,000 ft AMSL. The question states 2,500 ft which is below 3,000 ft AMSL, so the \'low-level\' exception applies — 3 km is the threshold.',
+    explanation: 'At 2,500 ft in Class G airspace, the aircraft is above 1,000 ft AGL but may or may not be above 3,000 ft AMSL depending on terrain. Below 3,000 ft AMSL or within 1,000 ft AGL, the VMC requirements differ by circumstance. At 2,500 ft above sea level in Class G above 1,000 ft AGL, 5,000 m applies UNLESS the aircraft is below 3,000 ft AMSL. The question states 2,500 ft which is below 3,000 ft AMSL, so the \\\'low-level\\\' exception applies — 3 km is the threshold.',
     reference: 'CASR 91.615',
   },
   {
@@ -1463,7 +1463,7 @@ export const clwaQuestions: {
     reference: 'CASR Part 43 Schedule 8',
   },
   {
-    question: 'A pilot takes a prescribed medication that causes drowsiness. The medication label says \'do not operate machinery\'. What must the pilot do?',
+    question: 'A pilot takes a prescribed medication that causes drowsiness. The medication label says \\\'do not operate machinery\\\'. What must the pilot do?',
     options: [
       'Not exercise flight crew privileges until the medication is no longer affecting their performance',
       'Fly normally — prescribed medication is legal and the pilot is not responsible for side effects',
@@ -1511,7 +1511,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.4 / ERSA',
   },
   {
-    question: 'You see \'INTER\' in a TAF forecast. What does this indicate?',
+    question: 'You see \\\'INTER\\\' in a TAF forecast. What does this indicate?',
     options: [
       'Intermittent — short variations expected at frequent intervals, each lasting less than 30 minutes and occurring for more than half the period',
       'International standard — the TAF is formatted to ICAO international standards',
@@ -1621,17 +1621,17 @@ export const clwaQuestions: {
   {
     question: 'A passenger lights a cigarette during the cruise portion of a charter flight. What are your obligations as pilot in command?',
     options: [
-      'Smoking is only prohibited during take-off and landing — cruise smoking is at the pilot\'s discretion',
+      'Smoking is only prohibited during take-off and landing — cruise smoking is at the pilot\\\'s discretion',
       'You must direct the passenger to extinguish the cigarette immediately',
       'Smoking is prohibited on all Australian civil aircraft at all times without exception',
       'You must return to the departure aerodrome immediately',
     ],
     correct: 1,
     explanation: 'Smoking is prohibited during take-off, landing, and refuelling. Additionally, the pilot in command may direct that no smoking occurs at any other time. In practice, most charter operators prohibit smoking throughout the flight. The passenger briefing must include smoking restrictions.',
-    reference: 'CAR 255 / CASR 91.565',
+    reference: 'CASR 91.565',
   },
   {
-    question: 'A piston-engine aeroplane MTOW 1,200 kg is on a VFR day flight. Fuel check shows that on landing, fuel remaining will be less than the 30-minute final reserve. What are the pilot\'s obligations?',
+    question: 'A piston-engine aeroplane MTOW 1,200 kg is on a VFR day flight. Fuel check shows that on landing, fuel remaining will be less than the 30-minute final reserve. What are the pilot\\\'s obligations?',
     options: [
       'Continue to destination — final reserve may be used as emergency fuel',
       'Land at the nearest aerodrome within 5 minutes without notifying ATS',
@@ -1655,7 +1655,7 @@ export const clwaQuestions: {
     reference: 'CAO 20.2 / CASR 91.465',
   },
   {
-    question: 'A NOTAM reads: \'RESTRICTED AREA R264 ACT 0000-2400 DAILY\'. What does this mean for your planned route through R264?',
+    question: 'A NOTAM reads: \\\'RESTRICTED AREA R264 ACT 0000-2400 DAILY\\\'. What does this mean for your planned route through R264?',
     options: [
       'R264 is closed to military aircraft only — VFR civil aircraft may transit',
       'R264 is active 24 hours a day every day — you must obtain permission from the controlling authority or plan an alternate route',
@@ -1679,7 +1679,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS s.2.04 Table 2.04(1)',
   },
   {
-    question: 'What is the meaning of \'INTER\' in a TAF and how does it differ from \'TEMPO\'?',
+    question: 'What is the meaning of \\\'INTER\\\' in a TAF and how does it differ from \\\'TEMPO\\\'?',
     options: [
       'INTER and TEMPO mean the same thing — they are interchangeable terms in TAF decoding',
       'INTER means variations occurring at frequent intervals (each < 30 min) that together cover more than half the period',
@@ -1691,11 +1691,11 @@ export const clwaQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'During flight planning, you have calculated your trip fuel, taxi fuel, and final reserve. Your flight also requires \'additional fuel\'. What is additional fuel required to cover?',
+    question: 'During flight planning, you have calculated your trip fuel, taxi fuel, and final reserve. Your flight also requires \\\'additional fuel\\\'. What is additional fuel required to cover?',
     options: [
       'Fuel required to fly to the alternate aerodrome in normal operations, and the flight manual',
       'Fuel to compensate for unforeseen headwinds or ATC delays, and the flight manual',
-      'Extra fuel beyond the minimum required, carried at the PIC\'s discretion, and the flight manual',
+      'Extra fuel beyond the minimum required, carried at the PIC\\\'s discretion, and the flight manual',
       'Fuel to allow an aircraft that suffers engine failure or pressurisation loss at the most critical point to proceed to an alternate, fly 15 minutes holding at 1,500 ft, and land',
     ],
     correct: 3,
@@ -1703,7 +1703,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.1.07 Definition of additional fuel',
   },
   {
-    question: 'In ERSA you read \'FUEL 100LL JET A1 H24\'. What does this mean for your flight planning?',
+    question: 'In ERSA you read \\\'FUEL 100LL JET A1 H24\\\'. What does this mean for your flight planning?',
     options: [
       'The aerodrome only has jet fuel — 100LL must be ordered in advance',
       'Both 100LL avgas and Jet A1 turbine fuel are available 24 hours a day',
@@ -1756,7 +1756,7 @@ export const clwaQuestions: {
       'Descend immediately to warmer air below the icing layer',
       'Activate the pitot heat and continue',
       'Continue to the nearest aerodrome at best speed',
-      'Change the aircraft\'s flight path to avoid the icing conditions as soon as practicable',
+      'Change the aircraft\\\'s flight path to avoid the icing conditions as soon as practicable',
     ],
     correct: 3,
     explanation: 'CASR 91.710 : if an aircraft not certified for icing conditions inadvertently enters icing conditions, the pilot must change the flight path to avoid them as soon as practicable.',
@@ -1859,15 +1859,15 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.1 / Part 91 MOS s.10.02',
   },
   {
-    question: 'You receive an ATC clearance to \'maintain not above 3,500 ft\' in Class C airspace. ATC then instructs you to \'climb to 5,500 ft\'. Do you comply?',
+    question: 'You receive an ATC clearance to \\\'maintain not above 3,500 ft\\\' in Class C airspace. ATC then instructs you to \\\'climb to 5,500 ft\\\'. Do you comply?',
     options: [
-      'No — once \'not above\' restrictions are issued they cannot be amended',
+      'No — once \\\'not above\\\' restrictions are issued they cannot be amended',
       'Yes — a subsequent ATC instruction supersedes the previous clearance; comply with the latest instruction',
       'Only if you can confirm the instruction verbally twice',
       'You need a new written airways clearance to climb above 3,500 ft',
     ],
     correct: 1,
-    explanation: 'An ATC clearance to climb to 5,500 ft supersedes the earlier \'not above 3,500 ft\' restriction. The latest instruction always takes precedence. Read back the climb clearance to confirm, then comply. If uncertain, query ATC before acting.',
+    explanation: 'An ATC clearance to climb to 5,500 ft supersedes the earlier \\\'not above 3,500 ft\\\' restriction. The latest instruction always takes precedence. Read back the climb clearance to confirm, then comply. If uncertain, query ATC before acting.',
     reference: 'AIP ENR 6.1 / CASR 91.155',
   },
   {
@@ -1879,7 +1879,7 @@ export const clwaQuestions: {
       'Continue on the original clearance until you can find the point',
     ],
     correct: 0,
-    explanation: 'Pilots must not accept ATC clearances containing points, routes, or levels they cannot comply with. The correct response is to advise ATC using the word \'UNABLE\' with the reason, and request an alternative. ATC can then provide an amended clearance using a point you can identify. And request an alternative or position fix',
+    explanation: 'Pilots must not accept ATC clearances containing points, routes, or levels they cannot comply with. The correct response is to advise ATC using the word \\\'UNABLE\\\' with the reason, and request an alternative. ATC can then provide an amended clearance using a point you can identify. And request an alternative or position fix',
     reference: 'AIP ENR 6.1',
   },
   {
@@ -1931,7 +1931,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.8.08 Table 8.08(1) Item 3',
   },
   {
-    question: 'And Part 91 MOS s.13.02, how frequently must a VFR pilot fix the aircraft\'s position when navigating by visual reference?',
+    question: 'And Part 91 MOS s.13.02, how frequently must a VFR pilot fix the aircraft\\\'s position when navigating by visual reference?',
     options: [
       'Every 15 minutes',
       'Continuously throughout the flight',
@@ -1939,7 +1939,7 @@ export const clwaQuestions: {
       'Every 10 NM or 15 minutes, whichever comes first',
     ],
     correct: 2,
-    explanation: 'CASR 91.273 / Part 91 MOS s.13.02: when navigating by visual reference to the ground or water, a pilot must positively fix the aircraft\'s position by visual reference to features marked on topographical charts at intervals not exceeding 30 minutes.',
+    explanation: 'CASR 91.273 / Part 91 MOS s.13.02: when navigating by visual reference to the ground or water, a pilot must positively fix the aircraft\\\'s position by visual reference to features marked on topographical charts at intervals not exceeding 30 minutes.',
     reference: 'CASR 91.273 / Part 91 MOS 2020 s.13.02 Chapter 3',
   },
   {
@@ -1975,11 +1975,11 @@ export const clwaQuestions: {
       'Infants are prohibited on charter flights',
     ],
     correct: 2,
-    explanation: 'When an infant is carried on a passenger\'s lap, the seat belt is fastened around the adult, not the infant. The passenger must be specifically briefed on this requirement. During phases when seat belts must be worn, the adult\'s seat belt is adjusted to secure around them, not the infant.',
+    explanation: 'When an infant is carried on a passenger\\\'s lap, the seat belt is fastened around the adult, not the infant. The passenger must be specifically briefed on this requirement. During phases when seat belts must be worn, the adult\\\'s seat belt is adjusted to secure around them, not the infant.',
     reference: 'CAO 20.16 / CASR 91.565',
   },
   {
-    question: 'What is a \'serious incident\' and how does it differ from an \'accident\'?',
+    question: 'What is a \\\'serious incident\\\' and how does it differ from an \\\'accident\\\'?',
     options: [
       'A serious incident is any event that costs more than $5,000 to rectify; an accident involves injury',
       'A serious incident involves circumstances indicating a high probability that an accident nearly occurred',
@@ -2027,7 +2027,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.1.07 Definitions',
   },
   {
-    question: 'ATC instructs you to \'descend to 3,000 ft on QNH 1005\'. What datum does \'3,000 ft\' refer to?',
+    question: 'ATC instructs you to \\\'descend to 3,000 ft on QNH 1005\\\'. What datum does \\\'3,000 ft\\\' refer to?',
     options: [
       '3,000 ft above the aerodrome elevation',
       '3,000 ft on standard pressure (1013.2 hPa)',
@@ -2039,7 +2039,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 4.1',
   },
   {
-    question: 'What is the difference between an \'MBZ\' and a \'CTAF\'?',
+    question: 'What is the difference between an \\\'MBZ\\\' and a \\\'CTAF\\\'?',
     options: [
       'MBZ and CTAF are identical — the terms are interchangeable',
       'A CTAF is the frequency at a non-controlled aerodrome used for positional broadcasts. An MBZ is a designated airspace around a non-controlled aerodrome where position broadcasts are mandatory',
@@ -2107,7 +2107,7 @@ export const clwaQuestions: {
       'To the extent practicable, take off and land into wind — unless the AFM allows downwind/crosswind and traffic conditions permit',
     ],
     correct: 3,
-    explanation: 'CASR 91.380 : to the extent practicable, pilots must land and take off into wind, unless the aircraft\'s AFM/POH allows a downwind or crosswind take-off/landing, and the pilot is satisfied that traffic conditions at the aerodrome allow it safely.',
+    explanation: 'CASR 91.380 : to the extent practicable, pilots must land and take off into wind, unless the aircraft\\\'s AFM/POH allows a downwind or crosswind take-off/landing, and the pilot is satisfied that traffic conditions at the aerodrome allow it safely.',
     reference: 'CASR 91.380 Chapter 3',
   },
   {
@@ -2143,7 +2143,7 @@ export const clwaQuestions: {
       'The MEL authorises pilots to perform additional maintenance beyond Schedule 8 — the minimum equipment requirement applies regardless of flight duration or conditions',
     ],
     correct: 0,
-    explanation: 'Part 91 MOS Chapter 28 / CASR: a MEL allows an aircraft to be dispatched with specified items inoperative, subject to conditions and rectification intervals defined in the MEL. The operator\'s MEL must be based on the MMEL for the aircraft type and approved by CASA.',
+    explanation: 'Part 91 MOS Chapter 28 / CASR: a MEL allows an aircraft to be dispatched with specified items inoperative, subject to conditions and rectification intervals defined in the MEL. The operator\\\'s MEL must be based on the MMEL for the aircraft type and approved by CASA.',
     reference: 'Part 91 MOS 2020 Chapter 28 / CASR Part 42',
   },
   {
@@ -2151,7 +2151,7 @@ export const clwaQuestions: {
     options: [
       'No — extensions to FDPs are never permitted, and the flight manual',
       'Possibly — the maximum FDP for a single-pilot starting at 0700 is 11 hours, so 11 hours is at the limit. An extension beyond 11 would not be permitted without specific provisions',
-      'Yes — up to 2-hour extensions are always available at the operator\'s discretion',
+      'Yes — up to 2-hour extensions are always available at the operator\\\'s discretion',
       'Only if you have had a 30-minute rest break during the FDP, and the flight manual',
     ],
     correct: 1,
@@ -2293,7 +2293,7 @@ export const clwaQuestions: {
   {
     question: 'The Certificate of Registration for your aircraft has the wrong owner name — you purchased the aircraft three months ago but the CASA register still shows the previous owner. What are your obligations?',
     options: [
-      'No obligation — the C of R is the seller\'s responsibility to update',
+      'No obligation — the C of R is the seller\\\'s responsibility to update',
       'No action required until the C of R expires',
       'The registration updates automatically when you insure the aircraft',
       'You must notify CASA and apply to update the registration within 30 days of transfer',
@@ -2323,7 +2323,7 @@ export const clwaQuestions: {
       'The CPL holder needs a separate PPL to fly privately',
     ],
     correct: 1,
-    explanation: 'A CPL includes all privileges of a PPL. A CPL holder may carry passengers for private, non-commercial purposes using their CPL privileges without requiring an AOC. The distinction is that commercial operations (hire and reward) require both the CPL and an operator\'s AOC.',
+    explanation: 'A CPL includes all privileges of a PPL. A CPL holder may carry passengers for private, non-commercial purposes using their CPL privileges without requiring an AOC. The distinction is that commercial operations (hire and reward) require both the CPL and an operator\\\'s AOC.',
     reference: 'CASR 61.390',
   },
   {
@@ -2359,7 +2359,7 @@ export const clwaQuestions: {
       'Every 24 months',
     ],
     correct: 3,
-    explanation: 'A Biennial Flight Review (BFR) must be completed within the preceding 24 months to exercise pilot in command privileges. It must be conducted with an authorised flight instructor and involves a review of at least the knowledge and skills relevant to the pilot\'s operations.',
+    explanation: 'A Biennial Flight Review (BFR) must be completed within the preceding 24 months to exercise pilot in command privileges. It must be conducted with an authorised flight instructor and involves a review of at least the knowledge and skills relevant to the pilot\\\'s operations.',
     reference: 'CASR 61.900',
   },
   {
@@ -2471,7 +2471,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.355 / CASR Part 91',
   },
   {
-    question: 'What is the purpose of the \'controls check\' carried out immediately before take-off?',
+    question: 'What is the purpose of the \\\'controls check\\\' carried out immediately before take-off?',
     options: [
       'To warm up the control cables before departure, and the flight manual',
       'To satisfy ATC that the aircraft is airworthy, and the flight manual',
@@ -2511,7 +2511,7 @@ export const clwaQuestions: {
     options: [
       'Licensed firearms may be carried in checked baggage without restriction',
       'Firearms are absolutely prohibited on all civil aircraft regardless of licensing',
-      'Firearms may be carried with the operator\'s approval, must be unloaded',
+      'Firearms may be carried with the operator\\\'s approval, must be unloaded',
       'Only commissioned police officers may carry firearms and only in uniformed duty',
     ],
     correct: 2,
@@ -2555,11 +2555,11 @@ export const clwaQuestions: {
     reference: 'AIP ENR 4.1',
   },
   {
-    question: 'You are flying a charter aircraft that carries passengers for hire and reward. A passenger asks to see the aircraft\'s Certificate of Registration. Are you required to show it?',
+    question: 'You are flying a charter aircraft that carries passengers for hire and reward. A passenger asks to see the aircraft\\\'s Certificate of Registration. Are you required to show it?',
     options: [
       'No — the C of R is a private document not available to passengers',
       'Only to CASA officers — passengers have no right to see aircraft documents',
-      'Yes — documents required to be carried on board must be produced to an authorised person on request, though passengers are not \'authorised persons\' in this context',
+      'Yes — documents required to be carried on board must be produced to an authorised person on request, though passengers are not \\\'authorised persons\\\' in this context',
       'Passengers have the right to inspect all aircraft documents, and the flight manual',
     ],
     correct: 2,
@@ -2579,7 +2579,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 4.1',
   },
   {
-    question: 'You are departing a Class D aerodrome. ATC clears you for take-off and instructs \'turn right, heading 090, climb to 3,000 ft\'. When are you permitted to turn?',
+    question: 'You are departing a Class D aerodrome. ATC clears you for take-off and instructs \\\'turn right, heading 090, climb to 3,000 ft\\\'. When are you permitted to turn?',
     options: [
       'Immediately after take-off',
       'After reaching circuit height',
@@ -2627,15 +2627,15 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.1 / AIP ENR 1.4',
   },
   {
-    question: 'Can a CPL holder fly as PIC on a charter flight without the operator holding an Air Operator\'s Certificate (AOC)?',
+    question: 'Can a CPL holder fly as PIC on a charter flight without the operator holding an Air Operator\\\'s Certificate (AOC)?',
     options: [
       'Yes — the CPL itself authorises charter operations',
       'Provided the CPL holder is insured for commercial operations',
-      'No — charter operations (hire and reward) require the operator to hold an AOC. The pilot\'s CPL alone is not sufficient to authorise charter operations',
+      'No — charter operations (hire and reward) require the operator to hold an AOC. The pilot\\\'s CPL alone is not sufficient to authorise charter operations',
       'For flights under 500 km no AOC is required',
     ],
     correct: 2,
-    explanation: 'Charter (hire and reward) operations require the operator to hold an Air Operator\'s Certificate (AOC). A CPL grants the pilot privileges to be employed as a pilot in charter operations, but the operation itself must be conducted under an AOC held by the operator. Flying commercially without an AOC is an offence.',
+    explanation: 'Charter (hire and reward) operations require the operator to hold an Air Operator\\\'s Certificate (AOC). A CPL grants the pilot privileges to be employed as a pilot in charter operations, but the operation itself must be conducted under an AOC held by the operator. Flying commercially without an AOC is an offence.',
     reference: 'CASR Part 119 / Civil Aviation Act 1988',
   },
   {
@@ -2663,7 +2663,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 4.1',
   },
   {
-    question: 'A METAR shows \'BKN025\'. What does this mean and what are the implications for VFR planning?',
+    question: 'A METAR shows \\\'BKN025\\\'. What does this mean and what are the implications for VFR planning?',
     options: [
       'Broken cloud at 2,500 ft AGL',
       'Broken cloud at 25,000 ft — no impact on low-level VFR',
@@ -2711,16 +2711,16 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.26.69 Table 26.69(7) Item 3',
   },
   {
-    question: 'What does the term \'LSALT\' mean and when would a pilot use it?',
+    question: 'You are planning a VFR cross-country over mountainous terrain. What minimum height above the highest obstacle within 600 m of your track must you maintain?',
     options: [
-      'Lowest Safe Altitude — the minimum altitude for the route segment that provides at least 1,000 ft of obstacle clearance',
-      'Large Scale Aeronautical Landing Track',
-      'Landing Safety Altitude for Traffic — used during instrument approaches',
-      'Last Sector Altitude Takeoff — the altitude used for the final sector of a flight',
+      '500 ft above the highest obstacle within 600 m',
+      '1,000 ft above the highest obstacle within 600 m',
+      '2,000 ft above the highest obstacle within 600 m',
+      '300 ft above the highest obstacle within 600 m',
     ],
-    correct: 0,
-    explanation: 'LSALT (Lowest Safe Altitude) is the minimum altitude for a route segment that provides at least 1,000 ft obstacle clearance in non-mountainous areas and 2,000 ft in designated mountainous areas. LSALTs are published on ERC and approach charts. Pilots planning VFR flights use LSALTs to ensure terrain clearance.',
-    reference: 'AIP ENR 1.1 / ERC Charts',
+    correct: 1,
+    explanation: 'CASR 91.635: over populated or built-up areas, the minimum height is 1,000 ft above the highest obstacle within 600 m of the aircraft. Over other areas the minimum is 500 ft AGL. When flying over terrain or mountainous areas, the pilot must plan to remain at least 1,000 ft clear of obstacles within 600 m when over a built-up area.',
+    reference: 'CASR 91.635',
   },
   {
     question: 'What is the maximum cumulative flight time in any 12-month period?',
@@ -2759,7 +2759,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.26.19',
   },
   {
-    question: 'A NOTAM reads \'AERODROME UNLIT\'. Your planned arrival ETA is 30 minutes before last light. Is this a problem?',
+    question: 'A NOTAM reads \\\'AERODROME UNLIT\\\'. Your planned arrival ETA is 30 minutes before last light. Is this a problem?',
     options: [
       'No — arriving before last light means lighting is not required',
       'It depends — if your flight is delayed and you arrive at or after the end of daylight, you would need aerodrome lighting to land safely',
@@ -2771,7 +2771,7 @@ export const clwaQuestions: {
     reference: 'AIP GEN 3.3 / ERSA',
   },
   {
-    question: 'You discover during pre-flight that the aircraft\'s left navigation light is inoperative. Your flight is planned to return before last light. May you depart?',
+    question: 'You discover during pre-flight that the aircraft\\\'s left navigation light is inoperative. Your flight is planned to return before last light. May you depart?',
     options: [
       'No — all navigation lights must be operative at all times',
       'Yes — navigation lights are only required for night operations',
@@ -2807,7 +2807,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.2 / CASR Part 91',
   },
   {
-    question: 'An aircraft\'s Certificate of Airworthiness has been suspended by CASA due to a compliance issue. What does this mean for the pilot?',
+    question: 'An aircraft\\\'s Certificate of Airworthiness has been suspended by CASA due to a compliance issue. What does this mean for the pilot?',
     options: [
       'The aircraft may not be flown at all until the C of A is reinstated',
       'The aircraft may be flown locally but not on charter operations',
@@ -2831,7 +2831,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.700 Chapter 7',
   },
   {
-    question: 'You check the maintenance release before flight and notice the \'next due\' for the 100-hourly inspection shows \'2,347 hours\' and the current airframe hours are 2,348. What must you do?',
+    question: 'You check the maintenance release before flight and notice the \\\'next due\\\' for the 100-hourly inspection shows \\\'2,347 hours\\\' and the current airframe hours are 2,348. What must you do?',
     options: [
       'The aircraft may not be flown',
       'Fly the aircraft — one hour over the inspection due date is within normal tolerances',
@@ -3128,7 +3128,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'Aviation fuel vapour is highly flammable and can ignite from a small ignition source. Smoking during refuelling creates a serious fire risk. The prohibition applies to all aircraft during fuelling operations regardless of aircraft type or fuel type.',
-    reference: 'CAR 255 / CAO 20.9',
+    reference: 'CASR 91.565 / CAO 20.9',
   },
   {
     question: 'When must a pilot change from QNH to 1,013.2 hPa on climb?',
@@ -3184,14 +3184,14 @@ export const clwaQuestions: {
       'On the right, remaining to the right until well clear',
       'Below and to the left',
       'Above and to the left',
-      'Either side at the pilot\'s discretion',
+      'Either side at the pilot\\\'s discretion',
     ],
     correct: 0,
     explanation: 'CASR 91.335 additional right-of-way rules: when overtaking another aircraft (whether climbing, descending or level), the overtaking aircraft must keep out of the way, pass on the right, and remain on the right until well clear.',
     reference: 'CASR 91.335 Chapter 1',
   },
   {
-    question: 'In a METAR, what does \'SKC\' mean?',
+    question: 'In a METAR, what does \\\'SKC\\\' mean?',
     options: [
       'Sky Covering — cloud is covering more than half the sky',
       'Sky Ceiling — the lowest broken or overcast layer',
@@ -3217,7 +3217,7 @@ export const clwaQuestions: {
   {
     question: 'You are overtaking a slower aircraft on a training flight. In which direction must you pass?',
     options: [
-      'On either side at the pilot\'s discretion',
+      'On either side at the pilot\\\'s discretion',
       'Above the slower aircraft',
       'On the right — the overtaking aircraft passes to the right and keeps right until well clear',
       'Below the slower aircraft',
@@ -3267,11 +3267,11 @@ export const clwaQuestions: {
     options: [
       'Comply with the clearance to the best of your ability and report the concern after landing',
       'Squawk 7700 to indicate distress',
-      'Advise ATC immediately using the word \'UNABLE\' and state why — ATC will issue an amended clearance',
+      'Advise ATC immediately using the word \\\'UNABLE\\\' and state why — ATC will issue an amended clearance',
       'Comply with the clearance without mentioning the concern',
     ],
     correct: 2,
-    explanation: 'If an ATC clearance cannot be complied with safely, the pilot must advise ATC immediately using \'UNABLE\' followed by the reason. For example: \'UNABLE [instruction] due [reason]\'. ATC will then issue an alternative clearance. Pilots are never required to comply with clearances that would compromise safety.',
+    explanation: 'If an ATC clearance cannot be complied with safely, the pilot must advise ATC immediately using \\\'UNABLE\\\' followed by the reason. For example: \\\'UNABLE [instruction] due [reason]\\\'. ATC will then issue an alternative clearance. Pilots are never required to comply with clearances that would compromise safety.',
     reference: 'CASR 91.155 / AIP ENR 6.1',
   },
   {
@@ -3343,7 +3343,7 @@ export const clwaQuestions: {
       'All lithium batteries are prohibited on charter flights — the passenger must leave the battery behind',
     ],
     correct: 2,
-    explanation: 'Lithium batteries are classified as dangerous goods. Spare lithium batteries (not installed in devices) must be carried in carry-on baggage only, and must comply with applicable watt-hour limits. The pilot in command must ensure dangerous goods carried comply with CASR Part 92 and the applicable operator\'s dangerous goods procedures.',
+    explanation: 'Lithium batteries are classified as dangerous goods. Spare lithium batteries (not installed in devices) must be carried in carry-on baggage only, and must comply with applicable watt-hour limits. The pilot in command must ensure dangerous goods carried comply with CASR Part 92 and the applicable operator\\\'s dangerous goods procedures.',
     reference: 'CASR Part 92 / CASR 91.680',
   },
   {
@@ -3443,7 +3443,7 @@ export const clwaQuestions: {
     reference: 'CASR 201.025 / AIP ENR 1.14',
   },
   {
-    question: 'What does the term \'OCTA\' mean in Australian aviation?',
+    question: 'What does the term \\\'OCTA\\\' mean in Australian aviation?',
     options: [
       'Outer Control Terminal Area — the boundary of Class C airspace',
       'Outside Controlled Airspace — any airspace that is not classified as Class A, C, D, or E',
@@ -3455,7 +3455,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.1',
   },
   {
-    question: 'A flight encounters stronger headwinds than forecast and arrives at the destination with fuel running lower than planned. What does \'contingency fuel\' cover, and why is it carried?',
+    question: 'A flight encounters stronger headwinds than forecast and arrives at the destination with fuel running lower than planned. What does \\\'contingency fuel\\\' cover, and why is it carried?',
     options: [
       'Fuel required for taxi and engine warm-up',
       'Fuel to fly a holding pattern at the destination',
@@ -3603,7 +3603,7 @@ export const clwaQuestions: {
     options: [
       'The aircraft fuel state',
       'The expected flight time and cruising altitude',
-      'The aircraft\'s certificate of airworthiness number',
+      'The aircraft\\\'s certificate of airworthiness number',
       'The requirement that life jackets must not be inflated inside the aircraft',
     ],
     correct: 3,
@@ -3611,7 +3611,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.20.06(n) / CASR 91.565',
   },
   {
-    question: 'A CPL holder discovers a defect during pre-flight that is not listed in the aircraft\'s approved Minimum Equipment List (MEL). What action must be taken before flight?',
+    question: 'A CPL holder discovers a defect during pre-flight that is not listed in the aircraft\\\'s approved Minimum Equipment List (MEL). What action must be taken before flight?',
     options: [
       'Record the defect and fly if the pilot assesses it does not affect airworthiness',
       'Obtain verbal approval from the aircraft operator and record it in the logbook',
@@ -3619,7 +3619,7 @@ export const clwaQuestions: {
       'Defer the item for up to 72 hours under the pilot-in-service deferral scheme',
     ],
     correct: 2,
-    explanation: 'A defect not listed in the approved MEL cannot be deferred. Only items expressly listed in the operator\'s approved MEL, with all applicable conditions met, may be deferred. An unlisted defect must be rectified by an authorised maintenance person before the aircraft is released for flight.',
+    explanation: 'A defect not listed in the approved MEL cannot be deferred. Only items expressly listed in the operator\\\'s approved MEL, with all applicable conditions met, may be deferred. An unlisted defect must be rectified by an authorised maintenance person before the aircraft is released for flight.',
     reference: 'CASR Part 42 / CASR 91.735',
   },
   {
@@ -3791,7 +3791,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.7',
   },
   {
-    question: 'What does the abbreviation \'CAVOK\' mean in a weather report?',
+    question: 'What does the abbreviation \\\'CAVOK\\\' mean in a weather report?',
     options: [
       'Cloud and Visibility OK — ceiling above 5,000 ft, visibility above 10 km, and no significant weather',
       'Ceiling and Visibility OK — ceiling above 3,000 ft and visibility above 8 km',
@@ -3817,13 +3817,13 @@ export const clwaQuestions: {
   {
     question: 'Before each flight, you are handed the aircraft maintenance release. What must you be able to determine from this document?',
     options: [
-      'The aircraft\'s fuel capacity only',
+      'The aircraft\\\'s fuel capacity only',
       'Whether the last flight was within the past 7 days',
       'Only whether the aircraft has been maintained in the last 30 days',
       'Its validity; the class(es) of operation applicable to the aircraft; and outstanding defects or endorsements and whether they affect airworthiness',
     ],
     correct: 3,
-    explanation: 'CASR Part 61 MOS Schedule 3 AFRC s.2.1.5: a pilot must be able to (a) determine the maintenance release\'s validity; (b) list the class(es) of operation applicable to the aircraft; and (c) list outstanding defects/endorsements and decide whether they affect airworthiness.',
+    explanation: 'CASR Part 61 MOS Schedule 3 AFRC s.2.1.5: a pilot must be able to (a) determine the maintenance release\\\'s validity; (b) list the class(es) of operation applicable to the aircraft; and (c) list outstanding defects/endorsements and decide whether they affect airworthiness.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.14 s.2.1.5',
   },
   {
@@ -3848,7 +3848,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'Passengers must not be carried during test flights of aircraft or components, during the practice of emergency procedures, or during low-level flying practice. These restrictions protect the public from the elevated risks of such operations.',
-    reference: 'CAR 249 / CASR Part 91',
+    reference: 'CASR 91.295 / CASR Part 91',
   },
   {
     question: 'What does a white cross (×) on the signal square at an aerodrome indicate?',
@@ -3872,7 +3872,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'Passengers must not be carried during certain types of flight including low-level flying practice, practice of emergency procedures, certain agricultural operations, and flight testing of aircraft. These restrictions exist because such operations pose unacceptable risk to uninvolved passengers.',
-    reference: 'CASR Part 91 / CAR 249',
+    reference: 'CASR 91.295 / CASR Part 91',
   },
   {
     question: 'At what interval should a VFR pilot fix their position when not in radar contact with ATC?',
@@ -3947,7 +3947,7 @@ export const clwaQuestions: {
     reference: 'ERSA / CASR 91.355',
   },
   {
-    question: 'A charter company instructs a pilot to extend a flight beyond the crew\'s maximum FDP to meet a passenger\'s schedule. What must the pilot do?',
+    question: 'A charter company instructs a pilot to extend a flight beyond the crew\\\'s maximum FDP to meet a passenger\\\'s schedule. What must the pilot do?',
     options: [
       'Comply — operator instructions override CAO 48.1 limits',
       'Comply if the extension is less than 1 hour',
@@ -3962,7 +3962,7 @@ export const clwaQuestions: {
     question: 'What information must be included when cancelling a SARTIME?',
     options: [
       'Aircraft registration and safe landing only',
-      'Aircraft registration, departure aerodrome, destination, time of landing, and pilot\'s name',
+      'Aircraft registration, departure aerodrome, destination, time of landing, and pilot\\\'s name',
       'Aircraft registration, actual landing time, destination, and fuel remaining',
       'Aircraft registration and confirmation of safe arrival',
     ],
@@ -4010,7 +4010,7 @@ export const clwaQuestions: {
     question: 'Before commencing a VFR flight, the forecast for the destination shows conditions below VFR minima at your planned ETA. May you depart?',
     options: [
       'Yes — forecasts are unreliable and actual conditions may be better',
-      'Yes — provided you carry enough fuel to return to the departure aerodrome',
+      'Provided you carry enough fuel to return to the departure aerodrome',
       'No — a pilot must not commence a flight if the destination conditions are forecast to be below VFR minima at ETA without a suitable alternate being planned',
       'Only if you hold an instrument rating as a backup',
     ],
@@ -4040,7 +4040,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'Before conducting a parachute drop, the pilot must be satisfied there is no risk of parachutists or any articles falling outside the designated drop site. Wind calculations, aircraft track, and exit timing must all be assessed to ensure this requirement is met.',
-    reference: 'CASR Part 91 / CAR 29.5',
+    reference: 'CASR 91.670 / CASR Part 91',
   },
   {
     question: 'Which ATS callsign designation indicates the surface movement control service?',
@@ -4139,9 +4139,9 @@ export const clwaQuestions: {
     reference: 'CASR 91.330',
   },
   {
-    question: 'You are about to fly a charter flight and discover the operator\'s AOC has been suspended by CASA. May you continue with the flight?',
+    question: 'You are about to fly a charter flight and discover the operator\\\'s AOC has been suspended by CASA. May you continue with the flight?',
     options: [
-      'Yes — the AOC is the operator\'s concern, not the pilot\'s',
+      'Yes — the AOC is the operator\\\'s concern, not the pilot\\\'s',
       'Yes provided you hold a current CPL',
       'No — operating charter flights under a suspended AOC is unlawful. The pilot must not operate until the AOC is reinstated',
       'Only for positioning flights with no passengers',
@@ -4151,7 +4151,7 @@ export const clwaQuestions: {
     reference: 'CASR Part 119 / Civil Aviation Act 1988',
   },
   {
-    question: 'A CPL holder\'s Class 1 medical has conditions attached — glasses must be worn. They forget their glasses on a charter flight. May they act as PIC?',
+    question: 'A CPL holder\\\'s Class 1 medical has conditions attached — glasses must be worn. They forget their glasses on a charter flight. May they act as PIC?',
     options: [
       'No — a pilot must comply with all conditions attached to their medical certificate. Flying without required corrective lenses violates the medical condition and renders the pilot not medically fit to fly',
       'Yes — vision can be managed without glasses for a short flight',
@@ -4187,7 +4187,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.1 Chapter 5 / AIP ENR 1.1',
   },
   {
-    question: 'A CPL pilot discovers during the daily inspection that an item covered by the aircraft\'s approved MEL is unserviceable. The MEL entry permits a 10-day deferral with a placard and reduced flight limitations. What must the pilot do before flight?',
+    question: 'A CPL pilot discovers during the daily inspection that an item covered by the aircraft\\\'s approved MEL is unserviceable. The MEL entry permits a 10-day deferral with a placard and reduced flight limitations. What must the pilot do before flight?',
     options: [
       'Fly the aircraft as normal — the MEL automatically authorises continued operations',
       'Contact CASA for approval before utilising the MEL deferral',
@@ -4259,7 +4259,7 @@ export const clwaQuestions: {
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 s.2.2.3 / Part 91 MOS s.26.06(1)',
   },
   {
-    question: 'What does the term \'height\' mean in Australian aviation terminology?',
+    question: 'What does the term \\\'height\\\' mean in Australian aviation terminology?',
     options: [
       'The distance measured vertically from mean sea level to a level, point, or object',
       'The distance measured vertically from a specified datum — in practice usually the aerodrome elevation or ground level',
@@ -4267,7 +4267,7 @@ export const clwaQuestions: {
       'The GPS-derived geometric altitude above the WGS84 ellipsoid',
     ],
     correct: 1,
-    explanation: 'In Australian aviation, \'height\' is the vertical distance measured from a specified datum — typically the surface or aerodrome elevation. \'Altitude\' is measured from mean sea level. \'Flight level\' is pressure altitude in hundreds of feet with 1013.2 hPa set. These distinctions are important in ATC communications and performance calculations.',
+    explanation: 'In Australian aviation, \\\'height\\\' is the vertical distance measured from a specified datum — typically the surface or aerodrome elevation. \\\'Altitude\\\' is measured from mean sea level. \\\'Flight level\\\' is pressure altitude in hundreds of feet with 1013.2 hPa set. These distinctions are important in ATC communications and performance calculations.',
     reference: 'AIP ENR 4.1 / ICAO Annex 2',
   },
   {
@@ -4297,13 +4297,13 @@ export const clwaQuestions: {
   {
     question: 'During a charter flight, your operator calls you on the radio and instructs you to continue to the destination despite your assessment that the weather makes the flight unsafe. What takes precedence?',
     options: [
-      'The operator\'s instruction — the operator holds the AOC and has authority over flight operations',
+      'The operator\\\'s instruction — the operator holds the AOC and has authority over flight operations',
       'Company operations manual procedures — these always take priority over PIC judgement',
       'ATC has final authority and must adjudicate between PIC and operator',
       'Your assessment as pilot in command',
     ],
     correct: 3,
-    explanation: 'The pilot in command has final authority and responsibility for the safe conduct of the flight. No operator, owner, or other person may override the PIC\'s decision on safety matters. Commercial pressure is not grounds to compromise safety and the PIC is legally protected when making genuine safety decisions.',
+    explanation: 'The pilot in command has final authority and responsibility for the safe conduct of the flight. No operator, owner, or other person may override the PIC\\\'s decision on safety matters. Commercial pressure is not grounds to compromise safety and the PIC is legally protected when making genuine safety decisions.',
     reference: 'CASR 91.165 / Civil Aviation Act 1988',
   },
   {
@@ -4355,7 +4355,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.285 / Part 91 MOS s.10.02',
   },
   {
-    question: 'What is a \'SIGMET\' and when would a pilot encounter one?',
+    question: 'What is a \\\'SIGMET\\\' and when would a pilot encounter one?',
     options: [
       'A SIGMET is a meteorological information message for en-route aircraft advising of significant en-route weather phenomena such as severe turbulence, icing, or volcanic ash',
       'A SIGMET is a weather forecast for a specific aerodrome, and the flight manual',
@@ -4367,7 +4367,7 @@ export const clwaQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'You are approaching an aerodrome where no ATC is operating. What makes an aerodrome \'non-controlled\', and does this status ever change?',
+    question: 'You are approaching an aerodrome where no ATC is operating. What makes an aerodrome \\\'non-controlled\\\', and does this status ever change?',
     options: [
       'An aerodrome with no instrument approaches',
       'An aerodrome where air traffic control is not currently operating',
@@ -4379,7 +4379,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.1 Chapter 3 / AIP ENR 1.4',
   },
   {
-    question: 'What are the hours of operation of Class D airspace at a regional aerodrome that shows \'H24\' in ERSA?',
+    question: 'What are the hours of operation of Class D airspace at a regional aerodrome that shows \\\'H24\\\' in ERSA?',
     options: [
       'Dawn to dusk only',
       '0600–2200 local time daily',
@@ -4444,7 +4444,7 @@ export const clwaQuestions: {
       'Yes — the expiry date is the only requirement; individual defect sign-offs are optional',
       'Provided the pilot assesses the defect does not affect airworthiness of the aircraft',
       'No — an outstanding defect that has not been cleared makes the aircraft unairworthy and it must not be operated',
-      'Only with the operator\'s written approval and a notation in the journey log',
+      'Only with the operator\\\'s written approval and a notation in the journey log',
     ],
     correct: 2,
     explanation: 'An outstanding uncleared defect recorded in the maintenance release means the aircraft is not airworthy. The pilot must not operate the aircraft. Defects must be cleared by an authorised person before flight, regardless of whether the maintenance release expiry date has been reached.',
@@ -4503,8 +4503,8 @@ export const clwaQuestions: {
     options: [
       'No — minimum is acceptable for any flight duration',
       'Only if the engine manufacturer specifies a minimum above the dipstick minimum',
-      'Yes — you should top up the oil to a level appropriate for the planned flight duration, following the engine manufacturer\'s recommendations',
-      'Oil level is the operator\'s responsibility, not the pilot\'s',
+      'Yes — you should top up the oil to a level appropriate for the planned flight duration, following the engine manufacturer\\\'s recommendations',
+      'Oil level is the operator\\\'s responsibility, not the pilot\\\'s',
     ],
     correct: 2,
     explanation: 'The pilot is responsible for ensuring adequate oil for the planned flight. Operating at minimum oil level for a longer flight may result in the oil dropping below minimum during flight. The pilot should consult the POH/AFM for the recommended oil level before extended flights and top up as appropriate.',
@@ -4525,7 +4525,7 @@ export const clwaQuestions: {
   {
     question: 'When conducting a circling manoeuvre, which minimum altitude applies?',
     options: [
-      'The highest of: the circling minimum altitude on the IAP chart, the relevant AFM minima, or the operator\'s operations manual minima',
+      'The highest of: the circling minimum altitude on the IAP chart, the relevant AFM minima, or the operator\\\'s operations manual minima',
       'The straight-in DA/DH from the IAP chart',
       '500 ft above the highest obstacle within 3 NM above aerodrome elevation',
       'The LSALT for the final segment',
@@ -4540,7 +4540,7 @@ export const clwaQuestions: {
       'Completed by not less than 500 ft above aerodrome elevation',
       'The turn may be completed at any height provided the runway is in sight',
       'Completed by not less than 1,000 ft AGL',
-      'Completed at the pilot\'s discretion based on aircraft performance',
+      'Completed at the pilot\\\'s discretion based on aircraft performance',
     ],
     correct: 0,
     explanation: 'AIP ENR 1.1 Chapter 3: the turn onto final approach should be completed by not less than 500 ft above aerodrome elevation. This allows sufficient time to ensure the runway is clear and for aircraft to be stabilised.',
@@ -4583,16 +4583,16 @@ export const clwaQuestions: {
     reference: 'CASR Part 47 / CASR Part 61 MOS Schedule 3 Unit 1.5.14 s.2.2.3',
   },
   {
-    question: 'Your planned VFR cruise altitude is 4,500 ft. The LSALT for the next section of your route is 5,300 ft. What must you do?',
+    question: 'You are planning a VFR cross-country and your proposed cruise altitude of 4,500 ft places you only 300 ft above the highest terrain in one section of the route. Is this acceptable?',
     options: [
-      'Continue at 4,500 ft — LSALTs only apply to IFR operations',
-      'Divert to an alternate route below the LSALT',
-      'Maintain 4,500 ft and increase lookout for terrain',
-      'Climb to at least the LSALT of 5,300 ft for that route section to maintain obstacle clearance',
+      'Yes — any altitude above terrain is legal for VFR flight',
+      '300 ft clearance is acceptable provided you maintain VMC',
+      'No — over areas other than built-up areas, you must maintain at least 500 ft AGL. 300 ft clearance is below this minimum and you must plan a higher altitude',
+      'Only acceptable if you have filed a flight plan with the lower altitude',
     ],
-    correct: 3,
-    explanation: 'LSALT is the minimum safe altitude for that route segment regardless of whether you are VFR or IFR. Operating below the LSALT means inadequate obstacle clearance — the minimum terrain/obstacle clearance of 1,000 ft is not being maintained. Climb to at least the LSALT before commencing that route section.',
-    reference: 'AIP ENR 1.1 / ERC Charts',
+    correct: 2,
+    explanation: 'CASR 91.635: the minimum height for VFR flight over areas other than built-up areas is 500 ft AGL, except during take-off or landing. 300 ft clearance above terrain is below this minimum. The pilot must plan an altitude that provides the required clearance throughout the route.',
+    reference: 'CASR 91.635',
   },
   {
     question: 'What is the standard circuit height for a medium performance aircraft (55–150 kt) at a non-controlled aerodrome?',
@@ -4643,7 +4643,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS s.2.04 Table 2.04(1)',
   },
   {
-    question: 'An aerodrome NOTAM reads \'BIRD ACT VICINITY RWY 09/27\'. What precautions should you take?',
+    question: 'An aerodrome NOTAM reads \\\'BIRD ACT VICINITY RWY 09/27\\\'. What precautions should you take?',
     options: [
       'Be alert for bird activity near runways 09 and 27, particularly during take-off and landing when engine ingestion and windscreen strikes are most dangerous',
       'None — birds are not a certified hazard under CASR, and the flight manual',
@@ -4679,7 +4679,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.330',
   },
   {
-    question: 'You are at the holding point awaiting take-off clearance. ATC states \'line up and wait runway 27\'. What does this mean?',
+    question: 'You are at the holding point awaiting take-off clearance. ATC states \\\'line up and wait runway 27\\\'. What does this mean?',
     options: [
       'You are cleared for take-off on runway 27',
       'Taxi to the runway threshold and hold there — you are not yet cleared for take-off',
@@ -4687,7 +4687,7 @@ export const clwaQuestions: {
       'Enter the runway and backtrack to the threshold',
     ],
     correct: 1,
-    explanation: '\'Line up and wait\' instructs the pilot to enter and line up on the runway in the take-off direction but NOT to commence the take-off roll. The aircraft holds on the runway awaiting the subsequent take-off clearance. Do not begin the take-off roll until \'cleared for take-off\' is received.',
+    explanation: '\\\'Line up and wait\\\' instructs the pilot to enter and line up on the runway in the take-off direction but NOT to commence the take-off roll. The aircraft holds on the runway awaiting the subsequent take-off clearance. Do not begin the take-off roll until \\\'cleared for take-off\\\' is received.',
     reference: 'AIP ENR 6.1 / CASR 91.155',
   },
   {
@@ -4759,7 +4759,7 @@ export const clwaQuestions: {
       'Refer the passenger to the operator — the pilot has no authority over dangerous goods',
     ],
     correct: 1,
-    explanation: 'Medical oxygen cylinders contain compressed gas under pressure — a dangerous good. While CASR Part 92 provides exemptions for medically necessary equipment under specific conditions, the pilot must verify these conditions are met before permitting it on board. The operator\'s dangerous goods manual will specify the applicable procedure.',
+    explanation: 'Medical oxygen cylinders contain compressed gas under pressure — a dangerous good. While CASR Part 92 provides exemptions for medically necessary equipment under specific conditions, the pilot must verify these conditions are met before permitting it on board. The operator\\\'s dangerous goods manual will specify the applicable procedure.',
     reference: 'CASR Part 92',
   },
   {
@@ -4787,7 +4787,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.385 Chapter 3',
   },
   {
-    question: 'What does \'ERSA\' stand for and what information does it contain?',
+    question: 'What does \\\'ERSA\\\' stand for and what information does it contain?',
     options: [
       'Emergency Rescue and Safety Airfield — a list of emergency landing areas',
       'En-Route Supplement Australia',
@@ -4799,7 +4799,7 @@ export const clwaQuestions: {
     reference: 'AIP GEN 0.1 / ERSA',
   },
   {
-    question: 'You hold a VFR clearance into a Class D control zone and the conditions are clearly VMC. ATC asks you to \'orbit\' to allow an IFR arrival to land first. Must you comply?',
+    question: 'You hold a VFR clearance into a Class D control zone and the conditions are clearly VMC. ATC asks you to \\\'orbit\\\' to allow an IFR arrival to land first. Must you comply?',
     options: [
       'No — you have VMC clearance and right of way over IFR traffic in Class D',
       'Yes — ATC instructions are binding and must be complied with unless they would compromise safety',
@@ -4811,7 +4811,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.155 / AIP ENR 1.4',
   },
   {
-    question: 'You discover a defect during pre-flight inspection that is not listed anywhere in the aircraft\'s approved Minimum Equipment List. The maintenance release has not yet expired. What is the correct action?',
+    question: 'You discover a defect during pre-flight inspection that is not listed anywhere in the aircraft\\\'s approved Minimum Equipment List. The maintenance release has not yet expired. What is the correct action?',
     options: [
       'The pilot may operate the aircraft if the defect is assessed as not immediately hazardous',
       'The aircraft may depart if the PIC believes the defect is minor',
@@ -4819,7 +4819,7 @@ export const clwaQuestions: {
       'The aircraft must not be operated until the defect is rectified by an authorised maintenance organisation, as it cannot be deferred under the MEL if not listed',
     ],
     correct: 3,
-    explanation: 'Under CASR Part 42 and the MEL framework: a defect not listed in the MEL cannot be deferred. Only items expressly listed in the operator\'s approved MEL with all applicable conditions met can be deferred. An unlisted defect must be rectified before the aircraft is released for flight.',
+    explanation: 'Under CASR Part 42 and the MEL framework: a defect not listed in the MEL cannot be deferred. Only items expressly listed in the operator\\\'s approved MEL with all applicable conditions met can be deferred. An unlisted defect must be rectified before the aircraft is released for flight.',
     reference: 'CASR Part 42 / CASR Part 91 MOS s.10.02(d)',
   },
   {
@@ -4847,7 +4847,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.615 Table 91.615',
   },
   {
-    question: 'You are taxiing at a controlled aerodrome and ATC instructs you to \'hold short of runway 23\'. You misread the taxiway markings and start to cross the runway holding point. What must you do the moment you realise the error?',
+    question: 'You are taxiing at a controlled aerodrome and ATC instructs you to \\\'hold short of runway 23\\\'. You misread the taxiway markings and start to cross the runway holding point. What must you do the moment you realise the error?',
     options: [
       'Stop immediately at the current position and advise ATC of your error and exact position',
       'Quickly complete the crossing and inform ATC after you have crossed',
@@ -4943,7 +4943,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.2.02 Table 2.02(2)',
   },
   {
-    question: 'What is the purpose of the \'area broadcast\' that should be made by VFR aircraft approaching a non-controlled aerodrome from approximately 10 NM?',
+    question: 'What is the purpose of the \\\'area broadcast\\\' that should be made by VFR aircraft approaching a non-controlled aerodrome from approximately 10 NM?',
     options: [
       'To obtain landing clearance from the aerodrome operator',
       'To request weather information from the aerodrome',
@@ -5123,7 +5123,7 @@ export const clwaQuestions: {
     reference: 'CASR Part 91 / AIP ENR 1.4',
   },
   {
-    question: 'When does \'daylight\' officially end for VFR planning purposes in Australia?',
+    question: 'When does \\\'daylight\\\' officially end for VFR planning purposes in Australia?',
     options: [
       'At sunset',
       '30 minutes after sunset',
@@ -5131,7 +5131,7 @@ export const clwaQuestions: {
       'When the horizon is no longer visible from the cockpit',
     ],
     correct: 2,
-    explanation: 'For VFR planning purposes in Australia, \'daylight\' ends at the end of evening civil twilight — not at sunset. Civil twilight is the period after sunset during which there is still sufficient light from the sun below the horizon. Bureau of Meteorology provides civil twilight times.',
+    explanation: 'For VFR planning purposes in Australia, \\\'daylight\\\' ends at the end of evening civil twilight — not at sunset. Civil twilight is the period after sunset during which there is still sufficient light from the sun below the horizon. Bureau of Meteorology provides civil twilight times.',
     reference: 'AIP ENR 1.2 / CASR Part 61 Dictionary',
   },
   {
@@ -5147,7 +5147,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.330 Chapter 1',
   },
   {
-    question: 'A NOTAM contains the code \'UNSERVICEABLE\' for the NDB at your destination. The NDB is your primary navigation aid for the approach. What action should you take?',
+    question: 'A NOTAM contains the code \\\'UNSERVICEABLE\\\' for the NDB at your destination. The NDB is your primary navigation aid for the approach. What action should you take?',
     options: [
       'Confirm the NDB is unserviceable and plan an alternate navigation method or divert to an aerodrome with serviceable aids',
       'Continue as planned — NOTAMs about navigation aids are advisory only',
@@ -5204,7 +5204,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'During parachute dropping operations, all persons on board except the jumper who is about to exit must remain seated and restrained. This protects them from injury if the aircraft manoeuvres or encounters unexpected conditions during the drop run.',
-    reference: 'CASR Part 91 / CAR 29.5',
+    reference: 'CASR 91.670 / CASR Part 91',
   },
   {
     question: 'What is the maximum validity period of a Class 1 medical certificate for a pilot aged 38?',
@@ -5222,16 +5222,16 @@ export const clwaQuestions: {
     question: 'You are on final approach following a heavy aircraft that has just landed. What wake turbulence precaution should you take?',
     options: [
       'Wake turbulence dissipates immediately after an aircraft lands — no precaution is needed',
-      'Allow additional separation, aim to touch down beyond the preceding aircraft\'s touchdown point, and be alert for unexpected control inputs',
+      'Allow additional separation, aim to touch down beyond the preceding aircraft\\\'s touchdown point, and be alert for unexpected control inputs',
       'Fly a tighter circuit to close the gap quickly',
       'Wake turbulence only affects jet aircraft — piston aircraft do not generate it',
     ],
     correct: 1,
-    explanation: 'Wake turbulence from a heavier aircraft can persist for several minutes after landing, particularly in calm conditions. On approach, allow additional time or distance separation, touch down beyond the preceding aircraft\'s touchdown point, and be prepared for unexpected roll inputs from residual vortices.',
+    explanation: 'Wake turbulence from a heavier aircraft can persist for several minutes after landing, particularly in calm conditions. On approach, allow additional time or distance separation, touch down beyond the preceding aircraft\\\'s touchdown point, and be prepared for unexpected roll inputs from residual vortices.',
     reference: 'AIP ENR 1.1',
   },
   {
-    question: 'Which of the following correctly describes a \'daily inspection\' of an aircraft?',
+    question: 'Which of the following correctly describes a \\\'daily inspection\\\' of an aircraft?',
     options: [
       'A comprehensive maintenance check performed by a LAME at the start of each calendar day',
       'A pre-flight inspection conducted by the pilot in command before the first flight of the day in accordance with the aircraft flight manual or approved checklist',
@@ -5246,12 +5246,12 @@ export const clwaQuestions: {
     question: 'Before starting the engine, you notice someone standing near the propeller arc. What must you do?',
     options: [
       'Start the engine slowly — the other person will hear it and move away',
-      'Sound the aircraft\'s horn once to warn the person, then start normally',
+      'Sound the aircraft\\\'s horn once to warn the person, then start normally',
       'Ensure the area around the propeller is clear of all persons and obstructions before starting the engine',
       'Starting procedures are the same regardless of surrounding personnel',
     ],
     correct: 2,
-    explanation: 'Before starting an engine, the pilot in command must ensure the area around the propeller arc and engine intakes is clear of all persons, obstructions, and loose objects. Calling \'clear prop\' and visually confirming the area is clear are standard required procedures.',
+    explanation: 'Before starting an engine, the pilot in command must ensure the area around the propeller arc and engine intakes is clear of all persons, obstructions, and loose objects. Calling \\\'clear prop\\\' and visually confirming the area is clear are standard required procedures.',
     reference: 'CASR Part 91 / Aircraft AFM',
   },
   {
@@ -5275,7 +5275,7 @@ export const clwaQuestions: {
       'CASA written approval is required for aerobatics over a public area',
     ],
     correct: 3,
-    explanation: 'Aerobatic flight over public gatherings is prohibited under CASR 91.640 regardless of what an endorsement specifies. CASA written approval is required for aerobatics over any public area or gathering. The aerobatic endorsement governs the pilot\'s general aerobatic privileges but does not override specific prohibited area rules.',
+    explanation: 'Aerobatic flight over public gatherings is prohibited under CASR 91.640 regardless of what an endorsement specifies. CASA written approval is required for aerobatics over any public area or gathering. The aerobatic endorsement governs the pilot\\\'s general aerobatic privileges but does not override specific prohibited area rules.',
     reference: 'CASR 91.640',
   },
   {
@@ -5291,7 +5291,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.1 Chapter 3',
   },
   {
-    question: 'You are inbound and receive an \'ATIS\' broadcast for the destination aerodrome. What does ATIS stand for and what does it provide?',
+    question: 'You are inbound and receive an \\\'ATIS\\\' broadcast for the destination aerodrome. What does ATIS stand for and what does it provide?',
     options: [
       'Air Traffic Information System — provides radar separation data',
       'Automatic Terminal Information Service',
@@ -5299,7 +5299,7 @@ export const clwaQuestions: {
       'Airport Tower Information Service — provided by the tower during peak hours only',
     ],
     correct: 1,
-    explanation: 'ATIS (Automatic Terminal Information Service) is a continuous broadcast of current non-control information for arrival and departure pilots at busy aerodromes. It includes weather (wind, visibility, cloud, QNH, temperature), active runway, NOTAM items, and any special procedures. Each update is given an alphabetical identifier (e.g. \'Information Delta\').',
+    explanation: 'ATIS (Automatic Terminal Information Service) is a continuous broadcast of current non-control information for arrival and departure pilots at busy aerodromes. It includes weather (wind, visibility, cloud, QNH, temperature), active runway, NOTAM items, and any special procedures. Each update is given an alphabetical identifier (e.g. \\\'Information Delta\\\').',
     reference: 'AIP ENR 1.1 / AIP GEN 2.2',
   },
   {
@@ -5347,7 +5347,7 @@ export const clwaQuestions: {
       'To list all defects ever recorded on the aircraft',
     ],
     correct: 1,
-    explanation: 'The maintenance release is issued by an authorised person certifying the aircraft has been maintained in accordance with the applicable maintenance requirements, is airworthy, and is fit to fly for the operations and period specified. It is the aircraft\'s current airworthiness certificate for day-to-day operations. And is fit for the type of operations specified for a defined period',
+    explanation: 'The maintenance release is issued by an authorised person certifying the aircraft has been maintained in accordance with the applicable maintenance requirements, is airworthy, and is fit to fly for the operations and period specified. It is the aircraft\\\'s current airworthiness certificate for day-to-day operations. And is fit for the type of operations specified for a defined period',
     reference: 'CASR 91.755',
   },
   {
@@ -5363,7 +5363,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.2.04 Table 2.04(1) Item 4',
   },
   {
-    question: 'A CPL holder\'s Class 1 medical was issued when aged 41. How long is it valid for?',
+    question: 'A CPL holder\\\'s Class 1 medical was issued when aged 41. How long is it valid for?',
     options: [
       '12 months',
       '24 months',
@@ -5407,7 +5407,7 @@ export const clwaQuestions: {
       'They are converging from your right',
     ],
     correct: 3,
-    explanation: 'If you see another aircraft\'s tail moving from right to left across your windscreen, the other aircraft is on a converging course from your right. Under the right-of-way rules, the aircraft that has the other on its right must give way — but in this case THEY have you on THEIR left, meaning YOU should be giving way. Seeing their tail means they have passed — but if you see their tail moving left, you are behind and to their right, so they should give way to you. For safety, take avoiding action regardless.',
+    explanation: 'If you see another aircraft\\\'s tail moving from right to left across your windscreen, the other aircraft is on a converging course from your right. Under the right-of-way rules, the aircraft that has the other on its right must give way — but in this case THEY have you on THEIR left, meaning YOU should be giving way. Seeing their tail means they have passed — but if you see their tail moving left, you are behind and to their right, so they should give way to you. For safety, take avoiding action regardless.',
     reference: 'CASR 91.330',
   },
   {
@@ -5431,7 +5431,7 @@ export const clwaQuestions: {
       'You may touch down provided you can stop before reaching the other aircraft',
     ],
     correct: 1,
-    explanation: 'No aircraft may land on a runway until the preceding aircraft has cleared the landing area. Even with an ATC landing clearance, it is the pilot\'s responsibility to not land if the runway is occupied. An ATC clearance to land assumes the runway will be clear by the time you arrive.',
+    explanation: 'No aircraft may land on a runway until the preceding aircraft has cleared the landing area. Even with an ATC landing clearance, it is the pilot\\\'s responsibility to not land if the runway is occupied. An ATC clearance to land assumes the runway will be clear by the time you arrive.',
     reference: 'CASR 91.330 / AIP ENR 1.1',
   },
   {
@@ -5459,15 +5459,15 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.8.04(8)(a)',
   },
   {
-    question: 'You are conducting a flight following your operator\'s Operations Manual. The manual requires a lower minimum than the regulatory VFR minima for your route. Which applies?',
+    question: 'You are conducting a flight following your operator\\\'s Operations Manual. The manual requires a lower minimum than the regulatory VFR minima for your route. Which applies?',
     options: [
-      'The operator\'s manual — it is more conservative than the regulations',
+      'The operator\\\'s manual — it is more conservative than the regulations',
       'The regulations — regulatory minima set the floor below which no operation may be conducted',
-      'Whichever is more restrictive — in this case the operator\'s manual',
+      'Whichever is more restrictive — in this case the operator\\\'s manual',
       'The pilot may choose either standard as long as flight is conducted safely',
     ],
     correct: 2,
-    explanation: 'If an operator\'s Operations Manual specifies more conservative (higher/more restrictive) minima than the regulations, the more restrictive of the two applies. Operators may set higher standards than the regulatory minimum. A pilot must comply with both the regulations AND any more restrictive operator standards.',
+    explanation: 'If an operator\\\'s Operations Manual specifies more conservative (higher/more restrictive) minima than the regulations, the more restrictive of the two applies. Operators may set higher standards than the regulatory minimum. A pilot must comply with both the regulations AND any more restrictive operator standards.',
     reference: 'CASR Part 119 / CASR Part 135',
   },
   {
@@ -5483,7 +5483,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.26.69 Table 26.69(7A) Item 3',
   },
   {
-    question: 'What does \'NIL\' mean when shown in the ERSA entry for a non-controlled aerodrome under \'additional requirements\' for the MBA?',
+    question: 'What does \\\'NIL\\\' mean when shown in the ERSA entry for a non-controlled aerodrome under \\\'additional requirements\\\' for the MBA?',
     options: [
       'There is no MBA at this aerodrome',
       'Night operations are not available',
@@ -5491,7 +5491,7 @@ export const clwaQuestions: {
       'No additional requirements beyond the standard MBA broadcast procedures apply',
     ],
     correct: 3,
-    explanation: 'When ERSA shows \'NIL\' under additional MBA requirements, it means no additional requirements beyond the standard mandatory broadcast procedures apply at that aerodrome. Some MBAs have special additional requirements (such as specific tracking or altitude constraints) — NIL indicates the standard MBA procedures alone apply.',
+    explanation: 'When ERSA shows \\\'NIL\\\' under additional MBA requirements, it means no additional requirements beyond the standard mandatory broadcast procedures apply at that aerodrome. Some MBAs have special additional requirements (such as specific tracking or altitude constraints) — NIL indicates the standard MBA procedures alone apply.',
     reference: 'ERSA / AIP ENR 6.4',
   },
   {
@@ -5519,7 +5519,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.4',
   },
   {
-    question: 'What does the airspace term \'TMA\' mean?',
+    question: 'What does the airspace term \\\'TMA\\\' mean?',
     options: [
       'Tactical Military Area',
       'Temporary Movement Area — used during airshow operations',
@@ -5575,7 +5575,7 @@ export const clwaQuestions: {
       'Proceed to the nearest military aerodrome',
     ],
     correct: 2,
-    explanation: 'When an intercepting aircraft rocks its wings, it signals \'you have been intercepted — follow me\'. The intercepted pilot must respond by rocking their wings, then following the intercepting aircraft. Compliance with interception signals is mandatory. ICAO Annex 2 Appendix 1 details all interception signals.',
+    explanation: 'When an intercepting aircraft rocks its wings, it signals \\\'you have been intercepted — follow me\\\'. The intercepted pilot must respond by rocking their wings, then following the intercepting aircraft. Compliance with interception signals is mandatory. ICAO Annex 2 Appendix 1 details all interception signals.',
     reference: 'Part 91 MOS s.23.02 / ICAO Annex 2 Appendix 1',
   },
   {
@@ -5603,15 +5603,15 @@ export const clwaQuestions: {
     reference: 'CASR 61.900',
   },
   {
-    question: 'Before departure you discover that the vertical speed indicator in your aircraft is unserviceable. The aircraft\'s MEL does not cover this item. What must be done before flight?',
+    question: 'Before departure you discover that the vertical speed indicator in your aircraft is unserviceable. The aircraft\\\'s MEL does not cover this item. What must be done before flight?',
     options: [
       'The aircraft may fly for day VFR without the VSI as it is not a required instrument for day VFR',
-      'The VSI must be placarded \'INOPERATIVE\' and the aircraft must not fly until repaired',
+      'The VSI must be placarded \\\'INOPERATIVE\\\' and the aircraft must not fly until repaired',
       'Any unserviceable instrument must be covered or placarded',
       'The pilot may fly if they note the defect in the journey log and advise ATC',
     ],
     correct: 2,
-    explanation: 'Any unserviceable instrument must be placarded \'INOPERATIVE\'. If the instrument is required for the planned operation and no MEL deferral is available, the flight must not be conducted until the instrument is repaired. The VSI is not a required instrument for day VFR, so if all other requirements are met, the aircraft may fly for day VFR with the VSI placarded. And if it is required for the planned operation the aircraft must not be flown until repaired',
+    explanation: 'Any unserviceable instrument must be placarded \\\'INOPERATIVE\\\'. If the instrument is required for the planned operation and no MEL deferral is available, the flight must not be conducted until the instrument is repaired. The VSI is not a required instrument for day VFR, so if all other requirements are met, the aircraft may fly for day VFR with the VSI placarded. And if it is required for the planned operation the aircraft must not be flown until repaired',
     reference: 'Part 91 MOS 2020 s.26.04 / CASR 91.505',
   },
   {
@@ -5620,7 +5620,7 @@ export const clwaQuestions: {
       'At the top of climb only',
       'Every 30 minutes',
       'At regular intervals throughout the flight, comparing planned versus actual consumption and determining remaining fuel',
-      'Fuel monitoring is at the pilot\'s discretion for VFR flights',
+      'Fuel monitoring is at the pilot\\\'s discretion for VFR flights',
     ],
     correct: 2,
     explanation: 'Part 91 MOS s.19.05(2): the pilot in command must check fuel at regular intervals throughout the flight, comparing planned with actual consumption, determining remaining fuel, and determining whether fuel remaining is sufficient to satisfy the requirements of s.19.04.',
@@ -5639,7 +5639,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.23.02',
   },
   {
-    question: 'What does \'contact\' mean in the phrase \'contact SYDNEY APPROACH on 124.4\'?',
+    question: 'What does \\\'contact\\\' mean in the phrase \\\'contact SYDNEY APPROACH on 124.4\\\'?',
     options: [
       'Listen out on 124.4 without transmitting until called',
       'Establish two-way communications with Sydney Approach on 124.4 — you should call them immediately and not wait to be called',
@@ -5647,7 +5647,7 @@ export const clwaQuestions: {
       'Switch to 124.4 for monitoring only — your current controller retains control',
     ],
     correct: 1,
-    explanation: '\'Contact\' means establish two-way radio communications. Upon receiving a frequency change instruction, acknowledge, read back the frequency, switch to the new frequency, and call the new station immediately. \'Monitor\' means listen without transmitting. \'Contact\' and \'monitor\' have specific different meanings in aviation radio communications.',
+    explanation: '\\\'Contact\\\' means establish two-way radio communications. Upon receiving a frequency change instruction, acknowledge, read back the frequency, switch to the new frequency, and call the new station immediately. \\\'Monitor\\\' means listen without transmitting. \\\'Contact\\\' and \\\'monitor\\\' have specific different meanings in aviation radio communications.',
     reference: 'AIP ENR 6.1',
   },
   {
@@ -5845,7 +5845,7 @@ export const clwaQuestions: {
   {
     question: 'During which phases of flight are all occupants required to have their seat belts fastened?',
     options: [
-      'Take-off and landing only — cruise is at the pilot\'s discretion',
+      'Take-off and landing only — cruise is at the pilot\\\'s discretion',
       'Whenever turbulence is encountered or forecast',
       'During take-off, landing, when flying below 1,000 ft AGL, in turbulence',
       'At all times throughout the entire flight without exception',
@@ -5895,7 +5895,7 @@ export const clwaQuestions: {
     options: [
       'Full readback of all clearances and instructions in accordance with ATC procedures',
       'Only altitude assignments need to be read back',
-      'Readback is optional and at the pilot\'s discretion',
+      'Readback is optional and at the pilot\\\'s discretion',
       'Only squawk codes and runway assignments require readback',
     ],
     correct: 0,
@@ -5929,13 +5929,13 @@ export const clwaQuestions: {
   {
     question: 'What broadcast must be made before or immediately after entering an MBA?',
     options: [
-      'The pilot\'s intended use of the MBA',
+      'The pilot\\\'s intended use of the MBA',
       'Aircraft callsign, altitude and destination',
       'Aircraft registration and fuel state',
       'Estimated time for transit of the MBA',
     ],
     correct: 0,
-    explanation: 'Part 91 MOS Table 21.09(1) Item 1: when entering an MBA, the broadcast must state the pilot\'s intended use of the MBA. This allows other traffic to build a picture of the intended operation.',
+    explanation: 'Part 91 MOS Table 21.09(1) Item 1: when entering an MBA, the broadcast must state the pilot\\\'s intended use of the MBA. This allows other traffic to build a picture of the intended operation.',
     reference: 'Part 91 MOS 2020 s.21.09 Table 21.09(1) Item 1',
   },
   {
