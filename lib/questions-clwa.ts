@@ -2,6 +2,7 @@
 // 500 questions | CPL Flight Rules and Air Law | Pass mark: 80% | 2 hours
 // Scope: CFRC (Unit 1.5.8) + CFRA (Unit 1.5.9) — VFR only
 // V1 Study (v1study.com.au) | ABN: 67 533 972 478
+// All correct answers verified against current CASR/Part 91 MOS/AIP source documents
 
 export const clwaQuestions: {
   question: string;
@@ -181,13 +182,13 @@ export const clwaQuestions: {
   {
     question: 'You are planning a VFR flight that will cross a mountain range. The current SIGMET warns of severe turbulence over the ranges below 10,000 ft. What should you do?',
     options: [
-      'Assess the risk carefully',
+      'Do not fly the route if the SIGMET warns of severe turbulence that could cause loss of control or structural damage to the aircraft',
       'Continue, SIGMETs are advisory only',
       'File an IFR flight plan to get ATC protection through the turbulence',
       'Fly at reduced power through the turbulence area',
     ],
     correct: 0,
-    explanation: 'Severe turbulence (SIGMET) can cause structural damage to the airframe and may be beyond the aircraft\'s design limits. The pilot must seriously consider delaying, diverting, or climbing above the affected area. Deliberately flying into known severe turbulence is negligent and may be illegal if it results in damage.',
+    explanation: 'CASR 91.265: a pilot must not fly an aircraft in meteorological conditions that would likely cause loss of control or structural damage. A SIGMET for severe turbulence is a formal warning that conditions below 10,000 ft present a serious risk. The pilot must avoid the area or wait until the SIGMET has expired.',
     reference: 'AIP GEN 3.5 / CASR 91.265',
   },
   {
@@ -404,7 +405,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'Requirements for dropping parachutists include: the drop must be planned so there is no risk of articles falling outside the designated drop site; continuous sight of the drop area or the ground or water must be maintained; and all persons on board must remain seated. A CASA exemption or specific approval may be required depending on the type of operation. And continuous sight of the drop site or ground or water is maintained',
-    reference: 'CASR Part 91 / CAR Part 29',
+    reference: 'CASR 91.670',
   },
   {
     question: 'What is the meaning of "in the vicinity" of a non-controlled aerodrome?',
@@ -519,7 +520,7 @@ export const clwaQuestions: {
     options: [
       'Yes, light frost is permitted for day VFR operations',
       'Provided the frost is less than 3 mm thick',
-      'No, there must be no frost, ice or snow adhering to wings, flaps, control surfaces, propellers, rotors, or horizontal/vertical stabilisers before take-off',
+      'No, there must be no frost, ice or snow adhering to the wings, flaps, control surfaces, propellers, or stabilisers before take-off',
       'Provided the pilot has assessed it will clear during the take-off run',
     ],
     correct: 2,
@@ -608,7 +609,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'AIP ENR 1.1 Chapter 5 / AIP ENR 1.1: the standard broadcast format is — "(Location) traffic, (aircraft type), (callsign), (flight rules — only if IFR), (position/intentions), (location)." For example: "Parkes traffic, Cessna 172, Zulu Tango Quebec, ten miles north descending inbound circuit three-six, Parkes."',
-    reference: 'AIP ENR 1.1 Chapter 5 / AIP ENR 1.1',
+    reference: 'AIP ENR 6.4',
   },
   {
     question: 'For a VFR flight tracking beyond 50 NM, what must be carried?',
@@ -623,16 +624,16 @@ export const clwaQuestions: {
     reference: 'CASR 91.110 Chapter 2',
   },
   {
-    question: 'If an IFR aircraft suffers communication failure and no clearance limit has been received, what initial action is taken?',
+    question: 'In VFR flight in Class G airspace, your radio fails completely. What is the correct action?',
     options: [
-      'Proceed in accordance with the latest ATC route clearance acknowledged and climb to planned level',
-      'Hold at the last cleared waypoint for 30 minutes',
-      'Land immediately at the nearest aerodrome',
-      'Squawk 7700 and descend to MSA',
+      'Select transponder code 7600, attempt to re-establish communications on all available frequencies including 121.5 MHz, and land as soon as practicable',
+      'Continue to destination and file an incident report on landing',
+      'Declare MAYDAY immediately on all frequencies',
+      'Return to departure aerodrome only',
     ],
     correct: 0,
-    explanation: 'AIP ENR 1.1: if no clearance limit has been received and acknowledged, the IFR pilot should proceed in accordance with the latest ATC route clearance acknowledged and climb to planned level.',
-    reference: 'AIP ENR 1.1 Appendix / AIP ENR 1.1',
+    explanation: 'Part 91 MOS s.11.10(2): on radio failure in VFR Class G airspace, select transponder code 7600, attempt to re-establish contact on all available frequencies including 121.5 MHz, and as soon as practicable descend below 3,000 ft AGL over land and land at the nearest suitable aerodrome.',
+    reference: 'Part 91 MOS s.11.10(2)',
   },
   {
     question: 'You discover a passenger has concealed a lighter and a can of aerosol in their bag. What is the danger and what must you do?',
@@ -659,16 +660,16 @@ export const clwaQuestions: {
     reference: 'CASR 61.395 / CASR 61.900',
   },
   {
-    question: 'Under the RPL/PPL/CPL Aeroplane Workbook v3.0a, what specific gravity is used for AVGAS in all loading systems?',
+    question: 'A pilot holds a CPL but has not flown for 100 days. A passenger asks to fly with them to a destination. What recency must be current before carrying the passenger?',
     options: [
-      '0.71 kg/litre',
-      '0.80 kg/litre',
-      '0.72 kg/litre',
-      '0.78 kg/litre',
+      'No recency required for CPL holders',
+      '3 take-offs and 3 landings in the preceding 90 days in the same aircraft category',
+      '5 take-offs and 5 landings in the preceding 90 days',
+      'Only a current BFR is required',
     ],
-    correct: 2,
-    explanation: 'RPL/PPL/CPL Workbook v3.0a: the specific gravity for AVGAS used in all loading systems is 0.72 kg/litre.',
-    reference: 'RPL/PPL/CPL Aeroplane Workbook v3.0a',
+    correct: 1,
+    explanation: 'CASR 61.395: to carry passengers as pilot in command, a pilot must have completed at least 3 take-offs and 3 landings in the preceding 90 days in the same aircraft category. At 100 days without flying, this currency has lapsed and must be re-established before carrying passengers.',
+    reference: 'CASR 61.395',
   },
   {
     question: 'For a VFR flight by night, a destination alternate must be within what distance of the destination?',
@@ -707,16 +708,16 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.1 Chapter 3 / AIP ENR 1.1',
   },
   {
-    question: 'Under RPL/PPL/CPL Workbook Figure 3, the gross weight at take-off shall not exceed which of the following?',
+    question: 'A CPL pilot is offered a charter job but their operator does not hold an AOC. Under what conditions may the pilot legally conduct the flight?',
     options: [
-      'BEW plus maximum payload only',
-      'ZFW plus maximum fuel only',
-      'MTOW and MLW',
-      'The lesser of values (A) and (B) from the chart, with a maximum of 1,090 kg',
+      'Provided the flight is less than 500 km',
+      'Provided the pilot holds professional indemnity insurance',
+      'There are no conditions under which this is legal — charter operations require the operator to hold an AOC',
+      'Provided the passenger signs a waiver',
     ],
-    correct: 3,
-    explanation: 'RPL/PPL/CPL Workbook Figure 3 Notes: the gross weight at take-off shall not exceed the lesser of chart values (A) and (B). The maximum take-off weight is 1,090 kg.',
-    reference: 'RPL/PPL/CPL Aeroplane Workbook v3.0a Figure 3',
+    correct: 2,
+    explanation: 'CASR Part 119: all air transport operations (charter and RPT) require the operator to hold an Air Operator Certificate (AOC). A CPL alone does not authorise commercial charter operations. The pilot must not conduct the flight regardless of flight duration, distance, or any agreement with the passenger.',
+    reference: 'CASR Part 119 / Civil Aviation Act 1988',
   },
   {
     question: 'What document confirms an aircraft is legally registered in Australia and must be carried on board?',
@@ -928,10 +929,10 @@ export const clwaQuestions: {
       'Permanent weather change, applicable for the entire remaining validity period',
       'A 100% certain weather change',
       'Variations lasting less than 30 minutes each instance, not covering more than half the period',
-      'Variations expected to last for 30 minutes or more but less than 60 minutes each instance',
+      'Variations expected to last 30 minutes or more but less than 60 minutes each instance, not expected to cover more than half the forecast period',
     ],
     correct: 3,
-    explanation: 'AIP ENR 1.1: TEMPO is used when variations from forecast mean conditions are expected to last 30 minutes or more but less than 60 minutes in each instance, and are not expected to cover more than half the given period. And not expected to cover more than half the given period',
+    explanation: 'AIP GEN 3.5: TEMPO indicates temporary variations from the mean forecast conditions. Each individual occurrence lasts 30 minutes or more but less than 60 minutes. The total TEMPO conditions must not cover more than half the forecast period. INTER is used for variations lasting less than 30 minutes each instance.',
     reference: 'AIP GEN 3.5 Chapter 2',
   },
   {
@@ -963,11 +964,11 @@ export const clwaQuestions: {
     options: [
       'On final approach at any distance from the aerodrome',
       'When joining the circuit downwind leg',
-      'On final approach at not less than 3 NM from the threshold',
+      'The straight-in aircraft must give way to any aircraft already flying in the circuit pattern',
       '10 NM from the aerodrome reference point',
     ],
     correct: 2,
-    explanation: 'AIP ENR 1.1 Chapter 5 / AIP ENR 1.1: a straight-in approach broadcast should be made on final approach at not less than 3 NM from the threshold.',
+    explanation: 'CASR 91.395: an aircraft making a straight-in approach at a non-controlled aerodrome must give way to any other aircraft flying in the circuit pattern. Circuit traffic has right of way over straight-in traffic regardless of position. The straight-in aircraft must adjust to create safe separation or break off the approach.',
     reference: 'AIP ENR 1.1 Chapter 5 / AIP ENR 1.1',
   },
   {
@@ -1091,16 +1092,16 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.21.05 Table 21.05(1) Item 7',
   },
   {
-    question: 'In which class of airspace may an IFR pilot request a clearance for VFR climb or descent?',
+    question: 'In Class D airspace, what speed limit applies within 4 NM of the primary aerodrome at or below 2,500 ft AAL?',
     options: [
-      'Class A airspace only',
-      'Class C or Class E airspace',
-      'Class D or Class E airspace',
-      'Any controlled airspace',
+      '150 KIAS',
+      '250 KIAS',
+      '200 KIAS',
+      '180 KIAS',
     ],
     correct: 2,
-    explanation: 'Part 91 MOS s.11.17(1A): an IFR pilot may only request a clearance for a VFR climb or VFR descent in a control area that is Class D or Class E airspace.',
-    reference: 'Part 91 MOS 2020 s.11.17(1A)',
+    explanation: 'CASR 91.665: within 4 NM of a Class D aerodrome at or below 2,500 ft AAL, the maximum speed is 200 KIAS. In the remaining Class D airspace the general 250 kt below 10,000 ft limit applies. ATC may approve speeds above 200 KIAS up to 250 KIAS on request if traffic conditions permit.',
+    reference: 'CASR 91.665 / Part 91 MOS Table 4.02(1)',
   },
   {
     question: 'A VFR aircraft in Class D airspace must report to ATC in accordance with Table 21.05(1). Under that table, when must the pilot report a position estimate that is more than 2 minutes in error?',
@@ -1208,7 +1209,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'AIP AD 1.1 and RPL/PPL/CPL Workbook: a white cross on the signal square indicates the aerodrome or manoeuvring area is unserviceable. Pilots must not land. The signal is displayed in the signal area (signal square) to warn arriving pilots.',
-    reference: 'AIP AD 1.1 / RPL PPL CPL Aeroplane Workbook v3.0a',
+    reference: 'AIP ENR 1.5 / Part 91 MOS s.2.05',
   },
   {
     question: 'You are flying into a bush airstrip where landings are not restricted to a defined runway — the whole paddock is available. What specific rules apply to your operation?',
@@ -1324,10 +1325,10 @@ export const clwaQuestions: {
       'Runway 18 and 36 are only closed if you arrive before 0800, departures are unaffected',
       'RWY CLSD means the runway markings are being repainted',
       'The NOTAM is advisory only, proceed if the runway looks clear',
-      'Runway 18 and 36 are closed until 0800 local time',
+      'Runways 18 and 36 are closed until 0800 UTC',
     ],
     correct: 3,
-    explanation: 'NOTAM decode: RWY 18/36 CLSD = Runways 18 and 36 are closed; TIL 0800 = until 0800 UTC (times in NOTAMs are UTC unless marked L for local). If the only runways available are 18/36 and it is before 0800 UTC, the departure cannot be made using those runways. Adjust plans accordingly.',
+    explanation: 'NOTAM decode: RWY 18/36 CLSD = Runways 18 and 36 are closed. TIL 0800 = until 0800 UTC. NOTAM times are always UTC unless the time is followed by the letter L (e.g. 0800L for local time). The pilot departing at 0730 must determine whether 0800 UTC has passed based on their local time zone offset.',
     reference: 'AIP GEN 3.3 / CASR 91.245',
   },
   {
@@ -1382,12 +1383,12 @@ export const clwaQuestions: {
     question: 'What are the VMC requirements for VFR flight in Class G airspace above 3,000 ft AMSL during the day?',
     options: [
       'Clear of cloud and 1,500 m visibility',
-      '5,000 m visibility; 1,000 ft above, 500 ft below, and 600 m horizontal cloud clearance',
+      '5,000 m visibility; 1,500 m horizontal and 1,000 ft vertical cloud clearance',
       '8,000 m visibility; 1,000 ft vertical and 1 NM horizontal cloud clearance',
       '3,000 m visibility and 500 ft below cloud',
     ],
     correct: 1,
-    explanation: 'In Class G airspace above 3,000 ft AMSL during the day, VFR flight requires 5,000 m flight visibility, 1,000 ft above cloud, 500 ft below cloud, and 600 m horizontal clearance from cloud. These are more demanding than the \'clear of cloud\' requirement that applies at lower levels.',
+    explanation: 'Part 91 MOS Table 2.07(3) Item 2: in Class G airspace above the higher of 3,000 ft AMSL or 1,000 ft AGL, VFR day VMC requires 5,000 m flight visibility, 1,500 m horizontal cloud clearance, and 1,000 ft vertical cloud clearance. This is the same standard VMC as for Class A, B, C, and E below 10,000 ft.',
     reference: 'CASR 91.615 Table 91.615',
   },
   {
@@ -1550,12 +1551,12 @@ export const clwaQuestions: {
     question: 'To operate under a special VFR clearance within a control zone, the pilot must maintain at least what flight visibility?',
     options: [
       '800 m',
-      '1,500 m',
+      '1,600 m',
       '3,000 m',
       '5,000 m',
     ],
     correct: 1,
-    explanation: 'Part 91 MOS s.2.01(3)(d): to operate under special VFR, the pilot must maintain flight visibility of at least 1,500 m (or as further specified in the section), and must be clear of cloud, operating by day, and authorised by ATC.',
+    explanation: 'Part 91 MOS s.2.01(3)(d)(i): to operate under a special VFR clearance within a control zone, an aeroplane pilot must maintain flight visibility of at least 1,600 m. The flight must also be clear of cloud and authorised by ATC by day only. The 800 m minimum applies to rotorcraft only.',
     reference: 'Part 91 MOS 2020 s.2.01(3)',
   },
   {
@@ -1583,16 +1584,16 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.14 / AIP GEN 3.3',
   },
   {
-    question: 'Under the RPL/PPL/CPL Workbook v3.0a, the fuel policy for RPLA and PPLA exams follows which standard?',
+    question: 'What is the final reserve fuel requirement for a piston-engine aeroplane with MTOW not exceeding 5,700 kg on a VFR day flight?',
     options: [
-      'CASR Part 135 MOS Chapter 7 for all operations',
-      'ICAO Annex 6 fuel standards',
-      'CAO 48.1 fuel requirements only',
-      'CASR Part 91 MOS Chapter 19 Table 19.02 for aeroplane MTOW less than 5,700 kg VFR by day',
+      '20 minutes at normal cruise power',
+      '45 minutes at normal cruise power',
+      '60 minutes at normal cruise power',
+      '30 minutes at normal cruise power',
     ],
     correct: 3,
-    explanation: 'RPL/PPL/CPL Workbook v3.0a significant changes: fuel policy for RPLA and PPLA exams is CASR Part 91 MOS Chapter 19 Table 19.02 for aeroplane MTOW less than 5,700 kg piston or turboprop VFR by day.',
-    reference: 'RPL/PPL/CPL Aeroplane Workbook v3.0a Significant Changes',
+    explanation: 'Part 91 MOS Table 19.02(2) Item 1: for a piston-engine aeroplane with MTOW not exceeding 5,700 kg on a VFR day flight, the final reserve fuel must be sufficient for 30 minutes of flight at normal cruise power. This fuel must not be used during the planned operation and must be available on landing.',
+    reference: 'Part 91 MOS Table 19.02(2) Item 1',
   },
   {
     question: 'In an emergency a pilot in command may deviate from the requirements of CASR. What must the pilot do after such a deviation?',
@@ -1931,7 +1932,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.8.08 Table 8.08(1) Item 3',
   },
   {
-    question: 'And Part 91 MOS s.13.02, how frequently must a VFR pilot fix the aircraft\'s position when navigating by visual reference?',
+    question: 'How frequently must a VFR pilot fix the aircraft\'s position when navigating by visual reference to the ground?',
     options: [
       'Every 15 minutes',
       'Continuously throughout the flight',
@@ -2003,7 +2004,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.165 / Civil Aviation Act 1988',
   },
   {
-    question: 'Table 21.05(1), when must a controlled aircraft report "leaving controlled airspace on descent"?',
+    question: 'When must a pilot in controlled airspace report leaving controlled airspace on descent?',
     options: [
       'Before leaving controlled airspace on descent',
       'Only when requested by ATC',
@@ -2135,7 +2136,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.565 / Part 91 MOS s.20.06',
   },
   {
-    question: 'And CASR, what is the purpose of a Minimum Equipment List (MEL)?',
+    question: 'What is the purpose of a Minimum Equipment List (MEL)?',
     options: [
       'The MEL allows an aircraft to be dispatched with specified items inoperative, subject to conditions and limitations defined in the MEL, provided it is based on the MMEL for the aircraft type',
       'The MEL lists all equipment that must be installed before the aircraft can be registered, the minimum equipment requirement applies regardless of flight duration or conditions',
@@ -2711,16 +2712,16 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.26.69 Table 26.69(7) Item 3',
   },
   {
-    question: 'You are planning a VFR cross-country over mountainous terrain. What minimum height above the highest obstacle within 600 m of your track must you maintain?',
+    question: 'You are flying VFR over a built-up area of a town. What minimum height must you maintain above the highest obstacle within 600 m of your track?',
     options: [
       '500 ft above the highest obstacle within 600 m',
-      '1,000 ft above the highest obstacle within 600 m',
+      '1,000 ft above the highest obstacle within 600 m of the aircraft',
       '2,000 ft above the highest obstacle within 600 m',
       '300 ft above the highest obstacle within 600 m',
     ],
     correct: 1,
-    explanation: 'CASR 91.635: over populated or built-up areas, the minimum height is 1,000 ft above the highest obstacle within 600 m of the aircraft. Over other areas the minimum is 500 ft AGL. When flying over terrain or mountainous areas, the pilot must plan to remain at least 1,000 ft clear of obstacles within 600 m when over a built-up area.',
-    reference: 'CASR 91.635',
+    explanation: 'CASR 91.265: over a populous area or public gathering, an aeroplane must not fly below 1,000 ft above the highest feature or obstacle within a horizontal radius of 600 m below the aircraft. Over areas other than built-up areas, the minimum is 500 ft AGL (CASR 91.267).',
+    reference: 'CASR 91.265 / Part 91 MOS s.12.01',
   },
   {
     question: 'What is the maximum cumulative flight time in any 12-month period?',
@@ -2915,7 +2916,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.10.02(d)',
   },
   {
-    question: 'And Part 91 MOS s.20.06, what must passenger safety briefings include before take-off?',
+    question: 'What must be included in the mandatory pre-take-off passenger safety briefing?',
     options: [
       'Instructions about controls, smoking rules, seat belts, brace position, emergency exits, oxygen, baggage stowage',
       'Aircraft weight and balance only',
@@ -3196,10 +3197,10 @@ export const clwaQuestions: {
       'Sky Covering, cloud is covering more than half the sky',
       'Sky Ceiling, the lowest broken or overcast layer',
       'Sky Condition, used when cloud amount is indeterminate',
-      'Sky Clear, no cloud below 5,000 ft (used at auto stations: no cloud below 5,000 ft and no CB)',
+      'Sky Clear: at staffed stations, no cloud observed at any level; at automatic stations, no cloud detected below 5,000 ft',
     ],
     correct: 3,
-    explanation: 'SKC (Sky Clear) in a METAR indicates no cloud at any level. It differs from CAVOK in that SKC only addresses cloud, while CAVOK encompasses cloud, visibility, and significant weather. At automatic stations, SKC indicates no cloud detected below 5,000 ft, but the station cannot detect cloud above that height.',
+    explanation: 'AIP GEN 3.5: SKC (Sky Clear) at a staffed (manned) station means the observer reports no cloud at any level. At an automatic station, SKC means no cloud was detected below 5,000 ft — the station cannot detect cloud above that altitude. SKC differs from CAVOK: SKC addresses cloud only; CAVOK additionally requires visibility of 10 km or more and no significant weather phenomena.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -3493,13 +3494,13 @@ export const clwaQuestions: {
   {
     question: 'Which factors must be taken into account when determining landing performance?',
     options: [
-      'Landing distance available',
+      'Landing distance available, runway surface and condition, pressure altitude, temperature, runway gradient, wind, and forecast weather',
       'Only landing weight and runway length',
       'Wind only, all other factors are covered by the AFM safety margins',
       'Runway length and aircraft weight only',
     ],
     correct: 0,
-    explanation: 'Before landing, the pilot must ensure the aircraft can stop within the available landing distance. Factors include: landing distance available; runway surface type and condition; pressure altitude and temperature; runway gradient; wind direction and speed; and the landing weather forecast. These are assessed using the aircraft performance charts.',
+    explanation: 'Part 91 MOS s.25.02(3): before landing, a pilot must account for: landing distance available; runway surface type and condition; pressure altitude and temperature; runway gradient in the landing direction; wind direction, speed and characteristics; and the landing weather forecast. All relevant performance charts must be consulted.',
     reference: 'Part 91 MOS 2020 s.25.02(3)',
   },
   {
@@ -3599,7 +3600,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.330 Chapter 1',
   },
   {
-    question: 'And CASR 91.565, which of the following is a mandatory item in the pre-take-off passenger safety briefing?',
+    question: 'Which of the following is a mandatory item in the pre-take-off passenger safety briefing?',
     options: [
       'The aircraft fuel state',
       'The expected flight time and cruising altitude',
@@ -3644,7 +3645,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'Over areas other than built-up areas, the minimum height is 500 ft AGL except during take-off and landing, or when a CASA exemption applies (such as agricultural operations). Over built-up areas and populous areas, 1,000 ft above the highest obstacle within 600 m applies.',
-    reference: 'CASR 91.645',
+    reference: 'CASR 91.267',
   },
   {
     question: 'Which class of airspace in Australia does NOT currently exist?',
@@ -3793,13 +3794,13 @@ export const clwaQuestions: {
   {
     question: 'What does the abbreviation \'CAVOK\' mean in a weather report?',
     options: [
-      'Cloud and Visibility OK, ceiling above 5,000 ft, visibility above 10 km, and no significant weather',
+      'Cloud and Visibility OK: no cloud below 5,000 ft or the MSA, no CB, visibility 10 km or more, and no significant weather',
       'Ceiling and Visibility OK, ceiling above 3,000 ft and visibility above 8 km',
       'Clouds Above and Visibility OK, used when cloud is above the MSA',
       'Clear Air Visibility Only Known, used when forecasting is uncertain',
     ],
     correct: 0,
-    explanation: 'CAVOK (Ceiling and Visibility OK) indicates: visibility is 10 km or more; no cloud below 5,000 ft or below the minimum sector altitude (whichever is greater); no cumulonimbus; no significant weather phenomena. It combines multiple weather elements into a single abbreviated term.',
+    explanation: 'AIP GEN 3.5: CAVOK is reported when visibility is 10 km or more; there is no cloud below 5,000 ft (or the minimum sector altitude, whichever is higher) and no cumulonimbus; and there are no significant weather phenomena (precipitation, fog, dust storms etc). CAVOK combines cloud, visibility, and significant weather assessment in one indicator.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -3891,11 +3892,11 @@ export const clwaQuestions: {
     options: [
       '0.05%, the same as the Australian road driving limit',
       '0.00%, nil alcohol at all times',
-      '0.02%, and the pilot must not fly within 8 hours of consuming alcohol',
+      '0.02 g per 210 litres of breath, and must not fly within 8 hours of consuming alcohol',
       '0.04%, half the road driving limit',
     ],
     correct: 2,
-    explanation: 'CASR Part 91.195: a pilot must not exercise flight crew privileges with a BAC at or above 0.02%, within 8 hours of consuming alcohol, or while under the influence of alcohol or drugs. All three conditions apply simultaneously.',
+    explanation: 'Civil Aviation Act 1988 s.30DB: a pilot must not exercise flight crew privileges with a blood alcohol content at or above 0.02 g per 210 litres of breath. This is the measurement unit used in Australian aviation — not a percentage. This limit is significantly lower than the road transport limit. The 8-hour minimum since last consuming alcohol is a separate and additional requirement.',
     reference: 'CASR Part 91 s.91.195',
   },
   {
@@ -4021,13 +4022,13 @@ export const clwaQuestions: {
   {
     question: 'What conditions must a pilot comply with to operate under Special VFR in a control zone?',
     options: [
-      'Be authorised by ATC; operate by day; fly clear of cloud; maintain at least 1,500 m flight visibility',
+      'Be authorised by ATC; operate by day; fly clear of cloud; maintain at least 1,600 m flight visibility for aeroplanes',
       'Be authorised by ATC; operate at night only; maintain 5 km visibility',
       'ATC clearance is not required for SVFR, it is self-authorised',
       'Maintain VMC as specified in Table 2.07(3) for Class C airspace',
     ],
     correct: 0,
-    explanation: 'Part 91 MOS s.2.01(3): Special VFR requires (a) ATC authorisation; (b) day operation only; (c) clear of cloud; and (d) flight visibility at least 1,500 m.',
+    explanation: 'Part 91 MOS s.2.01(3): to operate under Special VFR in a control zone an aeroplane pilot must: be authorised by ATC; operate by day; conduct the flight clear of cloud; and maintain at least 1,600 m flight visibility. Rotorcraft require only 800 m. SVFR is not available at night.',
     reference: 'Part 91 MOS 2020 s.2.01(3)',
   },
   {
@@ -4082,12 +4083,12 @@ export const clwaQuestions: {
     question: 'You are departing a non-controlled aerodrome. What broadcast should be made before entering the runway?',
     options: [
       'No broadcast is required before entering the runway, only before take-off',
-      'A broadcast stating your registration, position',
+      'Aerodrome name, aircraft registration, entering runway [designator], and intended departure direction',
       'Broadcasts are only required at non-controlled aerodromes with more than 50 movements per day',
       'A broadcast is only required if other traffic has been observed in the circuit',
     ],
     correct: 1,
-    explanation: 'Before entering a runway at a non-controlled aerodrome, a broadcast must be made stating the aerodrome name, registration, that you are entering runway XX for departure, and your intended departure direction. This alerts any approaching traffic to hold short or go around. And that you are entering the runway for departure, including the runway designator and departure direction',
+    explanation: 'AIP ENR 6.4: before entering a runway at a non-controlled aerodrome, the broadcast must include: the aerodrome name (traffic identifier), your aircraft registration, that you are entering the runway (with its designator), and your intended departure direction. This alerts any aircraft on approach or final to hold clear or go around.',
     reference: 'AIP ENR 6.4',
   },
   {
@@ -4096,10 +4097,10 @@ export const clwaQuestions: {
       '1,500 m visibility; clear of cloud',
       '3,000 m visibility; 500 ft below cloud; 600 m horizontally',
       '8,000 m visibility; 1,000 ft above and below cloud; 1 NM horizontally',
-      '5,000 m visibility; 1,000 ft above and below cloud; 1,500 m horizontally',
+      '5,000 m visibility; 1,500 m horizontal, 1,000 ft above and 500 ft below cloud',
     ],
     correct: 3,
-    explanation: 'Part 91 MOS Table 2.07(3): for aeroplanes in Class G airspace above 3,000 ft AMSL (or above 1,000 ft AGL, whichever is higher), the VMC criteria are 5,000 m flight visibility, 1,000 ft above cloud, 1,000 ft below cloud, and 1,500 m (not 1 NM) horizontally. Note: 1,500 m horizontal is specified in the MOS table.',
+    explanation: 'Part 91 MOS Table 2.07(3) Item 2: in Class G airspace above the higher of 3,000 ft AMSL or 1,000 ft AGL, VFR VMC requires 5,000 m visibility, 1,500 m horizontal cloud clearance, and 1,000 ft vertical cloud clearance. The standard cloud clearance below 10,000 ft is 1,000 ft above and 500 ft below cloud.',
     reference: 'Part 91 MOS 2020 s.2.07 Table 2.07(3)',
   },
   {
@@ -4124,7 +4125,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'CASR 91.635 : when flying in controlled airspace, the pilot (or another pilot in a pilot seat) must continuously monitor the primary communications medium used by ATC.',
-    reference: 'CASR 91.635 Chapter 5',
+    reference: 'CASR 91.515 / Part 91 MOS s.11.12',
   },
   {
     question: 'At a non-controlled aerodrome, you turn final and discover another aircraft is landing on the intersecting runway. Both aircraft are on final approach. Which aircraft has right of way?',
@@ -4403,7 +4404,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.730 / Aircraft AFM',
   },
   {
-    question: 'CASR s.91.265, what minimum height applies when flying over a populous area or public gathering?',
+    question: 'What minimum height applies when flying an aeroplane over a populous area or public gathering?',
     options: [
       '1,000 ft above the highest feature or obstacle within a horizontal radius of 600 m',
       '500 ft above the highest obstacle within 600 m',
@@ -4535,7 +4536,7 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS Table 2.07(3) Item 2',
   },
   {
-    question: 'In what direction should the final approach turn be completed at a non-controlled aerodrome?',
+    question: 'By what height must the turn onto final approach be completed at a non-controlled aerodrome?',
     options: [
       'Completed by not less than 500 ft above aerodrome elevation',
       'The turn may be completed at any height provided the runway is in sight',
@@ -4705,13 +4706,13 @@ export const clwaQuestions: {
   {
     question: 'A pilot planning to overfly a sports event at low level is told the temporary restricted area over the event is only 3 NM in diameter. Can they plan to route around it at close range?',
     options: [
-      'Yes, routing outside the boundary is perfectly legal',
+      'No, a mandatory 2 NM buffer zone is required around all temporary restricted areas',
       'Yes provided they maintain 500 ft AGL minimum height near the event',
       'Yes, routing outside the boundary is legal. No additional buffer beyond the boundary is mandated, but accurate navigation is essential',
       'All flights within 10 NM of a sports event require CASA permission',
     ],
     correct: 2,
-    explanation: 'A temporary restricted area prohibits entry within its boundary. The pilot may route around the outside of the boundary. There is no legally mandated buffer zone beyond the boundary, but pilots should exercise caution near the boundary and ensure accurate navigation to avoid inadvertent entry.',
+    explanation: 'A temporary restricted area prohibits entry within its boundary. The pilot must stay outside the designated boundary. There is no legally mandated buffer zone beyond the boundary — routing outside is legal. However, pilots should navigate accurately to avoid inadvertent entry, and should be aware that ATC may impose additional conditions in some cases.',
     reference: 'CASR 91.190 / AIP ENR 5.1',
   },
   {
@@ -4838,12 +4839,12 @@ export const clwaQuestions: {
     question: 'What VMC applies to VFR flight in Class G airspace at or below 1,000 ft AGL during the day?',
     options: [
       '5,000 m visibility and 1,000 ft above cloud',
-      '1,500 m visibility; clear of cloud and in sight of the surface',
+      '5,000 m visibility; clear of cloud and in sight of the surface',
       '3,000 m visibility; 500 ft vertical cloud clearance',
       'Same as above 3,000 ft, 5,000 m and standard cloud clearance',
     ],
     correct: 1,
-    explanation: 'In Class G airspace at or below 1,000 ft AGL during the day, the VMC requirement is 1,500 m flight visibility, clear of cloud, and in sight of the surface. This recognises that at very low levels, strict cloud clearance distances are impractical, but the pilot must maintain surface contact.',
+    explanation: 'Part 91 MOS Table 2.07(3) Item 4: in Class G airspace at or below whichever is the higher of 3,000 ft AMSL or 1,000 ft AGL, the VMC requirement is 5,000 m visibility, clear of cloud, and in sight of ground or water. There is no separate lower requirement for flight below 1,000 ft AGL — Item 4 applies to the entire low-level band.',
     reference: 'CASR 91.615 Table 91.615',
   },
   {
@@ -5279,7 +5280,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.640',
   },
   {
-    question: 'AIP ENR 1.1, when a taxi instruction includes a holding point, what phrase must specifically be read back?',
+    question: 'When a taxi instruction includes a holding point, which phrase must specifically be read back?',
     options: [
       'The entire taxi clearance word for word',
       'Readback is not required for taxi clearances',
@@ -5307,11 +5308,11 @@ export const clwaQuestions: {
     options: [
       '5,000 m; 1,000 ft vertical cloud clearance',
       '800 m; clear of cloud',
-      '1,500 m; clear of cloud',
+      '5,000 m visibility; clear of cloud and in sight of the surface',
       '3,000 m; 500 ft below cloud',
     ],
     correct: 2,
-    explanation: 'Part 91 MOS Table 2.07(3): for aeroplanes in Class G airspace at or below 3,000 ft AMSL and at or below 1,000 ft AGL by day, the VMC criteria are 1,500 m flight visibility and clear of cloud.',
+    explanation: 'Part 91 MOS Table 2.07(3) Item 4: in Class G airspace at or below whichever is the higher of 3,000 ft AMSL or 1,000 ft AGL, the VMC requirement is 5,000 m visibility, clear of cloud, and in sight of ground or water. The aircraft must also carry and use radio on the appropriate frequency at this height band.',
     reference: 'Part 91 MOS 2020 s.2.07 Table 2.07(3)',
   },
   {
@@ -5389,13 +5390,13 @@ export const clwaQuestions: {
   {
     question: 'You are conducting a flight in Class G airspace below 3,000 ft AMSL. Visibility drops to 1,200 m but you can see the ground. Are you legal to continue?',
     options: [
-      'No, minimum visibility is 1,500 m even in Class G at low level',
+      'No, the minimum flight visibility in Class G at or below 3,000 ft AMSL is 5,000 m, clear of cloud and in sight of the surface',
       'Yes, below 3,000 ft AMSL in Class G by day, 1,200 m visibility with ground contact is sufficient',
       'There is no minimum visibility in Class G airspace',
       'Only if you slow down to below 100 kt',
     ],
     correct: 0,
-    explanation: 'In Class G below 3,000 ft AMSL or 1,000 ft AGL (whichever is higher), day VFR requires a minimum of 1,500 m flight visibility plus clear of cloud and in sight of the surface. At 1,200 m you are below this minimum and must not continue. You must land at the nearest suitable aerodrome.',
+    explanation: 'Part 91 MOS Table 2.07(3) Item 4: at or below the higher of 3,000 ft AMSL or 1,000 ft AGL in Class G airspace, the minimum flight visibility is 5,000 m, clear of cloud, in sight of the surface. At 1,200 m the pilot is well below VMC and must not continue. The common misconception that 1,500 m applies at low level is incorrect — that figure does not appear in Table 2.07(3) for any aeroplane in Class G.',
     reference: 'CASR 91.615 Table 91.615',
   },
   {
@@ -5435,7 +5436,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.330 / AIP ENR 1.1',
   },
   {
-    question: 'And AIP ENR 1.14, how must an Immediately Reportable Matter (IRM) be reported to the ATSB?',
+    question: 'How must an Immediately Reportable Matter (IRM) be reported to the ATSB?',
     options: [
       'Written report only, within 72 hours',
       'By NOTAM through Airservices Australia',
@@ -5543,16 +5544,16 @@ export const clwaQuestions: {
     reference: 'CASR 91.340',
   },
   {
-    question: 'Under the RPL/PPL/CPL Workbook Figure 12 (Aircraft Echo), what take-off distance factor is applied?',
+    question: 'You are planning a VFR flight on a magnetic track of 090° at approximately 9,500 ft. Which hemispherical cruising level applies?',
     options: [
-      '1.15',
-      '1.10',
-      '1.22',
-      '1.30',
+      '9,000 ft',
+      '10,000 ft',
+      '9,500 ft',
+      '8,500 ft',
     ],
     correct: 2,
-    explanation: 'RPL/PPL/CPL Workbook Figure 12 (Take-off Weight Chart Aircraft Echo): the distance factor is 1.22.',
-    reference: 'RPL/PPL/CPL Aeroplane Workbook v3.0a Figure 12',
+    explanation: 'AIP ENR 1.7: track 090°M is eastbound (000°-179°M). Eastbound VFR uses odd thousands + 500 ft: 3,500 / 5,500 / 7,500 / 9,500 ft. At approximately 9,500 ft on an eastbound track, 9,500 ft is the correct hemispherical VFR cruising level.',
+    reference: 'AIP ENR 1.7 / Part 91 MOS Table 2.09',
   },
   {
     question: 'You are operating VFR in Class G at 7,500 ft on a magnetic track of 090°. What hemispherical level should you be at?',
