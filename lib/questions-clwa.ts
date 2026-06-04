@@ -1632,16 +1632,16 @@ export const clwaQuestions: {
     reference: 'CASR 91.565',
   },
   {
-    question: 'A piston-engine aeroplane MTOW 1,200 kg is on a VFR day flight. Fuel check shows that on landing, fuel remaining will be less than the 30-minute final reserve. What are the pilot\'s obligations?',
+    question: 'During a VFR day flight, a fuel check shows that unforeseen headwinds mean the aircraft could land at the destination with less than the 30-minute final reserve. The pilot can still divert if required. What must the pilot do?',
     options: [
-      'Continue to destination, final reserve may be used as emergency fuel',
-      'Land at the nearest aerodrome within 5 minutes without notifying ATS',
-      'Declare MAYDAY immediately',
-      'Request ATS advise any likely delay',
+      'Continue to destination without action — final reserve may be used if no other option exists',
+      'Declare MAYDAY MAYDAY MAYDAY FUEL immediately on 121.5 MHz',
+      'Request from ATS the duration of any likely delay in landing, and consider diverting to an aerodrome that allows the final reserve to be maintained',
+      'Declare minimum fuel immediately regardless of whether a diversion is still possible',
     ],
-    correct: 3,
-    explanation: 'Part 91 MOS s.19.06(1)-(3): if fuel on landing will be below the amount required by s.19.04(3), the pilot must consider operational conditions, may need to divert, must request ATS advice on likely delay, and if committed to an aerodrome must declare "minimum fuel" if any clearance change would result in landing below final reserve. Consider diverting to maintain compliance with s.19.04(3); declare "minimum fuel" if committed to an aerodrome and any ATC clearance change would result in landing below final reserve',
-    reference: 'Part 91 MOS 2020 s.19.06(1)-(3)',
+    correct: 2,
+    explanation: 'Part 91 MOS s.19.06(1) and (2): when a fuel check shows that landing with less than final reserve fuel is possible, the pilot must first consider diverting to an aerodrome that allows the requirements of s.19.04 to be met. The pilot must also request from ATS the duration of any likely delay. MAYDAY FUEL (s.19.06(4)) is only required when fuel at the nearest aerodrome where a safe landing can be made will also be below final reserve. Minimum fuel declaration (s.19.06(3)) applies only when committed to one aerodrome and any clearance change would result in landing below final reserve.',
+    reference: 'Part 91 MOS s.19.06(1)-(2)',
   },
   {
     question: 'When must the fuel system be inspected for water contamination?',
@@ -2096,7 +2096,7 @@ export const clwaQuestions: {
       'No, VFR flight in Class A airspace must be specifically approved',
     ],
     correct: 3,
-    explanation: 'CASR 91.285 : VFR flight in Class A airspace must be approved. VFR operations in Class A are exceptional.',
+    explanation: 'CASR 91.285 and Part 91 MOS s.11.14: a pilot must not fly under the VFR in Class A airspace unless they hold a specific approval. Class A is normally IFR-only airspace. VFR is not absolutely prohibited, but requires individual CASA approval — it is not available simply by requesting an ATC clearance. Option B is incorrect because approval, while rare, can be granted.',
     reference: 'CASR 91.285 Chapter 3',
   },
   {
@@ -2943,12 +2943,12 @@ export const clwaQuestions: {
     question: 'After take-off from a non-controlled aerodrome, at what height may you begin a turn to depart from the circuit area?',
     options: [
       'Immediately after becoming airborne, height restrictions on turns only apply at controlled aerodromes',
-      'After reaching 500 ft above aerodrome elevation',
+      'After reaching 500 ft AGL',
       'After reaching circuit height (1,000 ft AGL)',
       'After crossing the aerodrome boundary',
     ],
     correct: 1,
-    explanation: 'After take-off from a non-controlled aerodrome, you must maintain the take-off track until reaching 500 ft above aerodrome elevation before making any turn, unless a turn is necessary to avoid terrain or an obstacle. This prevents aircraft from turning into circuit traffic.',
+    explanation: 'After take-off from a non-controlled aerodrome, you must maintain the take-off track until the aircraft is above 500 ft AGL before making any turn, unless a turn is necessary to avoid terrain or an obstacle. This prevents aircraft from turning into circuit traffic.',
     reference: 'CASR 91.390',
   },
   {
