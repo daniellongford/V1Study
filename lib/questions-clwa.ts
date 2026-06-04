@@ -2544,11 +2544,11 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.4 / ERSA',
   },
   {
-    question: 'You are cruising at FL085 and receive a QNH of 1018 hPa. The standard pressure is 1013 hPa. If you convert to altitude on QNH, your approximate altitude will be:?',
+    question: 'You are cruising at 8,500 ft with 1013.2 hPa set on your altimeter. You receive QNH of 1018 hPa. If you reset to QNH, what will your altimeter approximately read?',
     options: [
       'Approximately 8,500 ft, same as the flight level',
-      'Approximately 8,350 ft, slightly lower because QNH is higher than standard',
-      'Approximately 8,650 ft, slightly higher because QNH is above standard',
+      'Approximately 8,350 ft',
+      'Approximately 8,650 ft',
       'The conversion is impossible without knowing the temperature',
     ],
     correct: 2,
@@ -4512,7 +4512,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.285 / Aircraft AFM',
   },
   {
-    question: 'You set 1013.2 hPa during a flight and the altimeter reads FL095. The actual QNH at your location is 1010 hPa. What is your approximate actual altitude?',
+    question: 'You have 1013.2 hPa set on your altimeter and it reads 9,500 ft. The actual QNH at your location is 1010 hPa. What is your approximate actual altitude above mean sea level?',
     options: [
       '9,500 ft AMSL, the same as the flight level reading',
       'Approximately 9,500 ft plus 90 ft = approximately 9,590 ft AMSL',
@@ -4520,7 +4520,7 @@ export const clwaQuestions: {
       'Approximately 9,500 ft minus 90 ft = approximately 9,410 ft AMSL',
     ],
     correct: 3,
-    explanation: 'Each 1 hPa difference between QNH and standard pressure (1013.2) produces approximately 30 ft of altimeter error. QNH of 1010 is 3 hPa below 1013.2, so the actual altitude is approximately 3 × 30 = 90 ft below the flight level indication. FL095 = 9,500 ft; actual ≈ 9,410 ft AMSL.',
+    explanation: 'Each 1 hPa difference between QNH and standard pressure (1013.2) produces approximately 30 ft of altimeter error. QNH of 1010 is 3 hPa below 1013.2, so the actual altitude is approximately 3 × 30 = 90 ft below the flight level indication. 9,500 ft = 9,500 ft; actual ≈ 9,410 ft AMSL.',
     reference: 'AIP ENR 4.1 / Part 91 MOS',
   },
   {
