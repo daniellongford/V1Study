@@ -2,7 +2,7 @@
 // 500 questions | CPL Meteorology | Pass mark: 70% | 1.5 hours
 // Permitted materials: AIP Book, AUS PCA, Sydney WAC
 // V1 Study (v1study.com.au) | ABN: 67 533 972 478
-// All questions verified against CMTC (Unit 1.8.3) syllabus — Part 61 MOS Schedule 3
+// All questions verified against CMTC (Unit 1.8.3) — Part 61 MOS Schedule 3
 
 export const cmetQuestions: {
   question: string;
@@ -52,8 +52,8 @@ export const cmetQuestions: {
     options: [
       'Significant weather qualifier, means all subsequent weather groups are significant',
       'Squall, a sudden increase in wind speed of at least 16 kt reaching 22 kt or more and lasting at least 1 minute, associated with convective activity and frontal passages',
-      'Snow quality indicator, used to describe snow crystal type on the runway, which significantly affects aircraft performance and safety',
-      'Soft hail, a precipitation type associated with weak convection',
+      'Snow quality indicator, used to describe snow crystal type on the runway, according to current aviation weather procedures',
+      'Soft hail, a precipitation type associated with weak convection, according to current aviation weather procedures',
     ],
     correct: 1,
     explanation: '"SQ" = Squall. A squall is a sudden increase in wind speed of at least 16 knots, reaching 22 knots or more, and lasting at least 1 minute. It indicates rapid wind fluctuations that are hazardous for take-off and landing.',
@@ -111,8 +111,8 @@ export const cmetQuestions: {
     question: 'What is a sea breeze and what drives its circulation?',
     options: [
       'wind blowing from high to low pressure along the coast, driven by synoptic-scale pressure gradients',
-      'wind blowing from the land to the sea, driven by cooling of the land surface at night, which significantly affects aircraft performance and safety',
-      'convective wind that develops only over tropical coastlines with SST above 26°C',
+      'wind blowing from the land to the sea, driven by cooling of the land surface at night',
+      'convective wind that develops only over tropical coastlines with SST above 26°C, according to current aviation weather procedures',
       'A daytime wind blowing from the sea to the land, driven by differential heating, land heats faster than sea, creating a pressure gradient that draws cool maritime air inland',
     ],
     correct: 3,
@@ -134,7 +134,7 @@ export const cmetQuestions: {
   {
     question: 'What is the meteorological concept of "positive feedback" in tropical cyclone intensification?',
     options: [
-      'Positive feedback means conditions are improving, the cyclone is weakening, which significantly affects aircraft performance and safety, pilots must understand this concept to correctly interpret METARs, TAFs, and area forecasts for pre-flight planning',
+      'Positive feedback means conditions are improving, the cyclone is weakening, pilots must understand this concept to correctly interpret METARs, TAFs, and area forecasts for pre-flight planning',
       'Positive feedback is a radar term, it refers to signal amplification in Doppler processing',
       'Positive feedback refers to the ATC instruction that weather conditions are acceptable for departure',
       'Positive feedback in tropical cyclone intensification',
@@ -146,9 +146,9 @@ export const cmetQuestions: {
   {
     question: 'What weather phenomenon is indicated by a rapidly falling barometer combined with increasing southerly cloud from the west?',
     options: [
-      'high-pressure system building, the cloud is the leading edge of the anticyclone, which significantly affects aircraft performance and safety',
+      'A high-pressure system building, the cloud is the leading edge of the anticyclone',
       'An approaching cold front or frontal low, the combination of falling pressure and increasing western cloud signals deteriorating',
-      'Sea breeze development, southerly cloud often forms with afternoon sea breezes, which significantly affects aircraft performance and safety',
+      'Sea breeze development, southerly cloud often forms with afternoon sea breezes',
       'heat low developing over the interior, the pressure fall is associated with surface heating, not approaching weather',
     ],
     correct: 1,
@@ -243,9 +243,9 @@ export const cmetQuestions: {
     question: 'What is "SIGWX" and what does a SIGWX chart depict?',
     options: [
       'A Significant Weather chart, shows forecast areas of turbulence, icing, and thunderstorm activity at various altitude bands, used for IFR route planning',
-      'SIGWX is only issued for oceanic flights, not used for domestic operations, which significantly affects aircraft performance and safety',
-      'surface weather chart, identical to the surface analysis chart, which significantly affects aircraft performance and safety',
-      'signal weather report, an automated weather advisory from ground-based sensors',
+      'SIGWX is only issued for oceanic flights, not used for domestic operations, according to current aviation weather procedures',
+      'surface weather chart, identical to the surface analysis chart, according to current aviation weather procedures',
+      'signal weather report, an automated weather advisory from ground-based sensors, according to current aviation weather procedures',
     ],
     correct: 0,
     explanation: 'SIGWX (Significant Weather) charts depict forecast areas of significant meteorological hazards over a range of altitudes — including severe turbulence, icing, CB activity, jet streams, and tropopause height. They are produced for different altitude bands (low-level, mid-level, high-level) and used in IFR flight planning.',
@@ -578,7 +578,7 @@ export const cmetQuestions: {
   {
     question: 'What is "smoke haze" from bushfires and what operational challenges does it create?',
     options: [
-      'Bushfire smoke can extend to high altitudes (above FL200), reducing visibility across wide areas, contaminating cabin air,',
+      'Bushfire smoke can extend to high altitudes (above FL200), reducing visibility across wide areas, contaminating cabin air',
       'Smoke haze is not reportable in METARs, only fog and mist are visibility-reducing phenomena',
       'Smoke haze only reduces ground-level visibility, it does not affect en-route flight above 3,000 ft',
       'Smoke haze is only a concern for VFR pilots, IFR operations are unaffected',
@@ -686,9 +686,9 @@ export const cmetQuestions: {
   {
     question: 'What characterises a "maritime polar" (mP) air mass and what weather does it bring?',
     options: [
-      'Arm, humid air from tropical oceans, associated with thunderstorms and heavy rain',
-      'Ry, stable air from continental polar regions, associated with clear skies and very cold temperatures',
-      'Arm, dry air from continental regions, associated with heatwaves and dust storms',
+      'Warm, humid air from tropical oceans, associated with thunderstorms and heavy rain',
+      'Dry, stable air from continental polar regions, associated with clear skies and very cold temperatures',
+      'Warm, dry air from continental regions, associated with heatwaves and dust storms',
       'Cold, moist air from polar maritime regions, associated with cool temperatures, showery precipitation, good visibility between',
     ],
     correct: 3,
@@ -770,10 +770,10 @@ export const cmetQuestions: {
   {
     question: 'What is "wind direction variability" in a METAR and when is it reported as VRB?',
     options: [
-      'RB is only used at automated stations, staffed stations always measure a specific direction, which significantly affects aircraft performance and safety',
+      'RB is only used at automated stations, staffed stations always measure a specific direction',
       'RB is used whenever the anemometer malfunctions, it does not indicate actual variability',
       'Wind direction is reported as VRB when it varies by 60° or more and wind speed is 6 kt or less, or when direction is truly',
-      'RB is used when wind direction changes by more than 30°, any variation beyond this is VRB, which significantly affects aircraft performance and safety',
+      'RB is used when wind direction changes by more than 30°, any variation beyond this is VRB',
     ],
     correct: 2,
     explanation: 'VRB (variable) is used when wind direction varies by 60° or more and the mean speed is ≤6 kt, making direction specification meaningless. For stronger winds with ≥60° variation, both extremes of direction are reported — e.g. "18006KT 160V220" = 180° at 6 kt, variable between 160° and 220°.',
@@ -1121,7 +1121,7 @@ export const cmetQuestions: {
       'Satellite imagery showing current cloud cover and movement, visible imagery (shows cloud reflectance in daylight), infrared',
       'S-derived wind and temperature soundings from atmospheric monitoring satellites',
       'satellite-transmitted METAR from remote aerodromes without staffed weather observers',
-      'ground-based radar image enhanced by satellite uplink, shows precipitation at higher resolution',
+      'A ground-based radar image enhanced by satellite uplink, showing precipitation at higher resolution',
     ],
     correct: 0,
     explanation: 'Meteorological satellites provide: (1) Visible imagery — cloud reflectance (daytime only); (2) Infrared imagery — cloud top temperature/height (day and night; cold tops = high, tall cloud); (3) Water vapour imagery — showing moisture fields and upper-level flow patterns.',
@@ -1490,10 +1490,10 @@ export const cmetQuestions: {
   {
     question: 'What is the "post-frontal" weather sequence after a cold front passage?',
     options: [
-      'Continued rain and cloud, conditions remain poor for 24 hours after the front',
-      'Post-frontal conditions are always VMC, IFR only applies during and ahead of the front',
+      'Continued rain and cloud, conditions remain poor for 24 hours after the front, according to current aviation weather procedures, as defined in AIP GEN 3.5',
+      'Post-frontal conditions are always VMC, IFR only applies during and ahead of the front, which is not consistent with standard meteorological practice',
       'Gradual clearing, developing southwesterly winds, falling temperatures, showery precipitation from convective cumulonimbus in the polar air mass, and improving visibility between showers',
-      'Fog developing in the cooler air behind the front, the most hazardous post-frontal condition, which significantly affects aircraft performance and safety',
+      'Fog developing in the cooler air behind the front, the most hazardous post-frontal condition, which is not consistent with standard meteorological practice',
     ],
     correct: 2,
     explanation: 'After a cold front: rapid clearing of frontal cloud, gusty southwesterly winds, temperature drop, polar air moves in — often unstable as it crossed warmer water. Convective showers develop in the unstable polar air — often with good visibility between showers but poor visibility in the showers themselves.',
@@ -1588,7 +1588,7 @@ export const cmetQuestions: {
     options: [
       'Climatology data is provided in real-time METARs, no separate climatological product exists',
       'Historical weather statistics for a specific aerodrome, used to assess the probability of encountering weather below minima, to',
-      'Aerodrome climatology only covers temperature and wind, not visibility or cloud, which significantly affects aircraft performance and safety',
+      'Aerodrome climatology only covers temperature and wind, not visibility or cloud',
       'Aerodrome climatology is only used for airport construction planning, not by pilots',
     ],
     correct: 1,
@@ -1683,7 +1683,7 @@ export const cmetQuestions: {
     question: 'What is "turbulence forecasting" and what information sources are used?',
     options: [
       'Turbulence forecasting is only possible within 2 hours, beyond this time horizon all forecasts are unreliable',
-      'Turbulence can only be forecast from PIREP observations, model-based forecasts are unreliable, which significantly affects aircraft performance and safety',
+      'Turbulence can only be forecast from PIREP observations, model-based forecasts are unreliable',
       'Turbulence forecasting uses: upper wind and temperature charts (wind shear zones), NWP turbulence indices (EDR, Ri), mountain',
       'Turbulence is only forecast in SIGMETs, no other product addresses turbulence risk',
     ],
@@ -1706,8 +1706,8 @@ export const cmetQuestions: {
   {
     question: 'What is the "ISA deviation" and how is it used in flight planning?',
     options: [
-      'The difference between the actual temperature at altitude and the ISA standard temperature for that altitude (ISA +/-). Used to calculate density altitude and performance corrections',
-      'The difference between the pilot\'s altimeter reading and the charted terrain, used for obstacle clearance, which significantly affects aircraft performance and safety',
+      'The difference between the actual temperature at altitude and the ISA standard temperature for that altitude (ISA +/-)',
+      'The difference between the pilot\'s altimeter reading and the charted terrain, used for obstacle clearance',
       'The difference between QNH and standard pressure, used to calculate transition altitude',
       'The deviation of the aircraft from its planned route, used for navigation corrections',
     ],
@@ -1804,7 +1804,7 @@ export const cmetQuestions: {
     options: [
       'CB" in a METAR is used for all convective clouds, including cumulus and altocumulus castellanus',
       'B is only used at automated stations, staffed stations report thunderstorm activity using the TS group instead',
-      '"CB" after a cloud group indicates cumulonimbus, it is specifically identified because it is uniquely hazardous for aviation,',
+      '"CB" after a cloud group indicates cumulonimbus, it is specifically identified because it is uniquely hazardous for aviation',
       'CB" is a cloud coverage code, it means 10 oktas, which is physically impossible and indicates instrument malfunction',
     ],
     correct: 2,
@@ -1899,7 +1899,7 @@ export const cmetQuestions: {
     question: 'What is a "freezing level" and why is it important for flight planning?',
     options: [
       'The altitude at which jet fuel begins to gel, critical for fuel system management on long flights',
-      'The altitude above which all moisture in the atmosphere is frozen, relevant to engine anti-ice, which significantly affects aircraft performance and safety',
+      'The altitude above which all moisture in the atmosphere is frozen, relevant to engine anti-ice',
       'The altitude at which frost forms on the aircraft exterior, relevant to de-icing before departure',
       'The altitude at which the temperature is 0°C, above this level, icing is possible in cloud or precipitation. The freezing level',
     ],
@@ -1935,7 +1935,7 @@ export const cmetQuestions: {
     question: 'What is "turbulence avoidance" strategy at cruise altitude?',
     options: [
       'Turbulence at cruise altitude is unavoidable, no routing strategy reduces exposure',
-      'Creasing speed to VNE prevents turbulence damage, faster aircraft are immune to CAT',
+      'Increasing speed to VNE prevents turbulence damage, faster aircraft are immune to CAT',
       'Turbulence avoidance at cruise: use PIREPs to identify turbulent levels, request altitude change (above or below the turbulence',
       'Turbulence avoidance requires radar, without airborne radar, no avoidance is possible',
     ],
@@ -1959,9 +1959,9 @@ export const cmetQuestions: {
     question: 'What is "surface-based convection" vs "elevated convection" and why does the distinction matter?',
     options: [
       'They are identical, all convection ultimately reaches the surface',
-      'Reliefated convection only occurs above FL250, not relevant to low-altitude operations',
+      'Elevated convection is always weaker than surface-based convection, the energy is distributed differently',
       'Surface-based convection originates from thermals at the surface',
-      'Reliefated convection is always weaker than surface-based convection',
+      'Elevated convection is always weaker than surface-based convection, the energy is distributed differently',
     ],
     correct: 2,
     explanation: 'Surface-based convection draws from the boundary layer — a stable or capped surface layer inhibits it (CIN). Elevated convection occurs when a layer above the surface is unstable — it can develop even when a strong surface inversion is present. This means severe convection can occur without the warning signs of surface-based development (dust devils, thermal activity).',
@@ -2115,9 +2115,9 @@ export const cmetQuestions: {
     question: 'What is a "convergence line" in meteorology and how does it affect weather?',
     options: [
       'convergence line marks the boundary between two air masses of the same temperature but different humidity',
-      'convergence line is another term for an isobar, it indicates areas of equal pressure, which significantly affects aircraft performance and safety',
+      'A convergence line is another term for an isobar, indicating areas of equal pressure',
       'convergence line is an upper-level jet stream, relevant only to high-altitude operations',
-      'A line along which surface air masses converge, air is forced upward along the line, promoting cloud and precipitation development. Sea breeze convergence zones and trough lines are examples',
+      'A line along which surface air masses converge, air is forced upward along the line, promoting cloud and precipitation development',
     ],
     correct: 3,
     explanation: 'Convergence occurs where surface winds from different directions meet, forcing air upward. This promotes cloud development and precipitation. Examples include sea breeze fronts (where the sea breeze meets land-breeze air), trough lines, and ITCZ convergence zones.',
@@ -2162,9 +2162,9 @@ export const cmetQuestions: {
   {
     question: 'What is a "weather briefing" and what information should a CPL pilot obtain before an IFR flight?',
     options: [
-      'briefing from ATC on weather along the route, provided automatically when filing an IFR flight plan',
+      'A briefing from ATC on weather along the route, provided automatically when filing an IFR flight plan',
       'weather briefing only requires the destination TAF and the current surface analysis chart',
-      'weather briefing is optional for IFR flights, the TAF provides all required information, which significantly affects aircraft performance and safety',
+      'A weather briefing is optional for IFR flights, the TAF provides all required information',
       'A pre-flight weather assessment including',
     ],
     correct: 3,
@@ -2451,9 +2451,9 @@ export const cmetQuestions: {
     question: 'What is "pilot decision-making" in the context of weather and what is the recommended process?',
     options: [
       'Decision-making is automatic for experienced pilots, no structured process is needed',
-      'All weather decisions should be delegated to ATC, pilots should not make independent weather decisions, which significantly affects aircraft performance and safety',
+      'All weather decisions should be delegated to ATC, pilots should not make independent weather decisions',
       'Pilot decision-making is only relevant to IFR operations, VFR pilots do not need a structured process',
-      'A recommended decision-making model: identify the hazard → assess the risk → determine options → choose best action → review outcome. For weather: the "3Ps"',
+      'A recommended decision-making model: identify the hazard → assess the risk → determine options → choose best action → review outcome',
     ],
     correct: 3,
     explanation: 'CASA advocates structured ADM (Aeronautical Decision Making) for weather decisions. The 3Ps model: Perceive (gather weather information), Process (analyse against flight requirements), Perform (decide and act — including go/no-go, deviation, diversion). Applying the model reduces the risk of plan continuation bias and cognitive errors under pressure.',
@@ -2570,10 +2570,10 @@ export const cmetQuestions: {
   {
     question: 'What is "gust factor" and how is it used operationally?',
     options: [
-      'Gust factor is a forecast term only, observed winds do not include gust factors',
+      'Gust factor is a forecast term only, observed winds do not include gust factors, according to current aviation weather procedures',
       'The difference between peak gust and mean wind speed, relevant only for large jet aircraft',
       'The ratio of maximum wind speed to mean wind speed, a gust factor of 1.5 or more indicates significant gusting requiring attention for landing and take-off calculations',
-      'The maximum wind speed measured in the past hour, used for crosswind component calculations, which significantly affects aircraft performance and safety',
+      'The maximum wind speed measured in the past hour, used for crosswind component calculations',
     ],
     correct: 2,
     explanation: 'Gust factor = maximum gust speed / mean wind speed. A high gust factor (e.g. 1.5×) indicates significant wind variability. For landing, aircraft must be able to handle maximum gust speed while maintaining directional control — the gust speed (not mean speed) determines the effective crosswind component for landing performance.',
@@ -2726,10 +2726,10 @@ export const cmetQuestions: {
   {
     question: 'A TAF contains the group "TEMPO 0412/0418 BKN005 TSRA". What does this mean for a pilot planning an arrival at 1500Z on the 4th?',
     options: [
-      'Permanent broken cloud at 500 ft with thunderstorm and rain from 1200Z to 1800Z, meaning conditions will remain continuously below limits for the full 6-hour period',
+      'Permanent broken cloud at 500 ft with thunderstorm and rain from 1200Z to 1800Z on the 4th, as defined in AIP GEN 3.5',
       'Temporary broken cloud at 500 ft and thunderstorm with rain between 1200Z-1800Z on the 4th, each lasting less than 60 minutes, possibly recurring',
-      'TEMPO means the thunderstorm occurred in the past and has cleared, current conditions at the aerodrome are now back to the base TAF forecast values',
-      'BKN005 means only 5 oktas of cloud cover which is broken, so the sky is more than half clear and no IFR concern applies regardless of the CB',
+      'TEMPO means the thunderstorm occurred in the past, current conditions are now clear, as defined in AIP GEN 3.5',
+      'BKN005 means 5 oktas of cloud which is broken but not overcast, no IFR concern exists, as defined in AIP GEN 3.5',
     ],
     correct: 1,
     explanation: 'TEMPO = temporary fluctuations expected, each occurrence lasting 30 minutes or more but less than 60 minutes, and covering less than half the validity period. 0412/0418 = from 1200Z to 1800Z on the 4th. BKN005 = broken cloud at 500 ft AAL. TSRA = thunderstorm with rain. A 1500Z arrival is within this period — the pilot must plan for possible below-minima conditions and carry alternate fuel.',
@@ -2871,9 +2871,9 @@ export const cmetQuestions: {
     question: 'What is "sea breeze front" and what weather can develop along it?',
     options: [
       'The boundary between the sea breeze and the pre-existing land wind, marked by a line of convergence that can trigger convective showers and thunderstorms, particularly in summer',
-      'Sea breeze fronts only form along tropical coastlines, southern Australian coasts do not produce sea breeze fronts',
-      'sea breeze front only produces fog, no convective development occurs',
-      'frontal boundary between ocean air masses, identical to a cold front in weather character, which significantly affects aircraft performance and safety',
+      'Sea breeze fronts only form along tropical coastlines, southern Australian coasts do not produce sea breeze fronts, as defined in AIP GEN 3.5',
+      'sea breeze front only produces fog, no convective development occurs, according to current aviation weather procedures, as defined in AIP GEN 3.5',
+      'A frontal boundary between ocean air masses, identical to a cold front in weather character, according to standard aviation procedures',
     ],
     correct: 0,
     explanation: 'The sea breeze front is the advancing boundary of cool maritime air meeting the hotter land air mass. Along this convergence line, lifting can trigger convective showers and thunderstorms — particularly in summer when CAPE is high and the existing air mass is unstable.',
@@ -2942,9 +2942,9 @@ export const cmetQuestions: {
   {
     question: 'What is "infrared satellite imagery" and what does a bright white return indicate?',
     options: [
-      'imagery shows wind shear zones, white areas indicate strong shear',
-      'imagery shows precipitation rate, bright white means heavy rain, which significantly affects aircraft performance and safety',
-      'Bright white in IR imagery indicates warm, low cloud, near the surface',
+      'imagery shows wind shear zones, white areas indicate strong shear, according to current aviation weather procedures',
+      'imagery shows precipitation rate, bright white means heavy rain, according to current aviation weather procedures',
+      'Bright white in IR imagery indicates warm, low cloud, near the surface, according to current aviation weather procedures',
       'Infrared imagery detects thermal emissions, bright white (coldest temperature) indicates high cloud tops (CB anvils, high',
     ],
     correct: 3,
@@ -2991,7 +2991,7 @@ export const cmetQuestions: {
     question: 'What is "CAT" (clear air turbulence) and what is the most reliable method for detecting it in flight?',
     options: [
       'AT can be detected visually, cloud at jet stream level indicates CAT zones',
-      'CAT is invisible and not detectable by weather radar, the most reliable real-time information comes from PIREPs,',
+      'CAT is invisible and not detectable by weather radar, the most reliable real-time information comes from PIREPs',
       'Weather radar detects CAT with high reliability, it shows clear air turbulence zones in clear colours',
       'AT is only encountered in winter, summer flights above FL250 never experience CAT',
     ],
@@ -3110,10 +3110,10 @@ export const cmetQuestions: {
   {
     question: 'What is "VV" in a METAR cloud section and what does it indicate?',
     options: [
-      'V means Very Visible, sky is completely clear and 9999 visibility applies, which significantly affects aircraft performance and safety',
-      'V is the velocity vector, it describes the wind speed and direction combined',
-      'Vertical Visibility, reported when sky is obscured (fog, dust, precipitation) and a cloud base cannot be determined. The number following gives vertical visibility in hundreds of feet',
-      'V means Vertical Velocity, the rate of ascent or descent of the dominant cloud system',
+      'VV means Very Visible, sky is completely clear and 9999 visibility applies, according to current aviation weather procedures',
+      'VV is the velocity vector, describing wind speed and direction combined, according to current aviation weather procedures',
+      'Vertical Visibility, reported when sky is obscured (fog, dust, precipitation) and a cloud base cannot be determined',
+      'VV means Vertical Velocity, the rate of ascent or descent of the dominant cloud system',
     ],
     correct: 2,
     explanation: '"VV" = Vertical Visibility — used when the sky is completely obscured and normal cloud group reporting is not possible. VV///000 means sky obscured with vertical visibility less than 100 ft. "VV006" means vertical visibility of 600 ft into an obscured sky.',
@@ -3268,7 +3268,7 @@ export const cmetQuestions: {
     options: [
       'They are identical, precipitation type depends only on temperature, not the cloud type',
       'Stratiform precipitation falls from layered cloud, steady, widespread, moderate intensity, icing risk. Convective precipitation',
-      'Stratiform precipitation is heavier, convective precipitation is lighter and more widespread, which significantly affects aircraft performance and safety',
+      'Stratiform precipitation is heavier, convective precipitation is lighter and more widespread',
       'Stratiform is associated with cold fronts, convective is associated with warm fronts, reversed from what most pilots assume',
     ],
     correct: 1,
@@ -3423,7 +3423,7 @@ export const cmetQuestions: {
     question: 'What is the "precipitation echo" on a weather radar and what does its intensity coding indicate?',
     options: [
       'Radar colour indicates distance, closer precipitation is shown in warmer colours',
-      'Colour indicates precipitation type, green for rain, blue for snow, orange for hail, which significantly affects aircraft performance and safety',
+      'Colour indicates precipitation type, green for rain, blue for snow, orange for hail',
       'Colour represents radar reflectivity (dBZ), low values (blue/green) indicate light rain',
       'L precipitation is shown in the same colour, intensity is indicated by the density of returns',
     ],
@@ -3590,10 +3590,10 @@ export const cmetQuestions: {
   {
     question: 'What is "fuel reserve planning" in relation to weather uncertainty?',
     options: [
-      'Additional fuel for weather is only required for international flights, domestic operations use standard reserves, which significantly affects aircraft performance and safety',
-      'Fuel reserves for weather are determined by the aircraft manufacturer, not a pilot decision',
+      'Additional fuel for weather is only required for international flights, domestic operations use standard reserves, as defined in AIP GEN 3.5',
+      'Fuel reserves for weather are determined by the aircraft manufacturer, not a pilot decision, according to standard aviation procedures',
       'When weather uncertainty is higher (forecast unreliable, alternate marginal, en-route convection possible), additional contingency fuel beyond regulatory minima is prudent',
-      'Weather uncertainty has no effect on fuel reserves, standard reserves are always adequate',
+      'Weather uncertainty has no effect on fuel reserves, standard reserves are always adequate, according to standard aviation procedures',
     ],
     correct: 2,
     explanation: 'Weather uncertainty directly drives fuel planning. When: the destination TAF has low confidence, the alternate is marginal, significant en-route convective deviations are possible, or forecast accuracy is poor — carrying extra fuel beyond regulatory minimums is prudent airmanship. The pilot-in-command determines fuel uplift and is responsible for the decision.',
@@ -3638,7 +3638,7 @@ export const cmetQuestions: {
   {
     question: 'What is the difference between "active" and "dormant" volcanic hazards for aviation planning?',
     options: [
-      'L volcanoes are treated identically, active or dormant, all require the same avoidance margins, which significantly affects aircraft performance and safety',
+      'L volcanoes are treated identically, active or dormant, all require the same avoidance margins',
       'Dormant volcanoes pose no aviation hazard, only currently erupting volcanoes need avoidance',
       'Active volcanoes with confirmed ongoing eruption require active SIGMETs and avoidance action. Dormant volcanoes have no current',
       'Only volcanoes with active lava flow are hazardous, ash-only eruptions do not require avoidance',
@@ -3650,10 +3650,10 @@ export const cmetQuestions: {
   {
     question: 'What is "induction system icing" in fuel-injected engines and how does it differ from carburetor icing?',
     options: [
-      'Fuel-injected engines are immune to all forms of induction icing, carb icing only affects carburetted engines, which significantly affects aircraft performance and safety',
+      'Fuel-injected engines are immune to all forms of induction icing, carb icing only affects carburetted engines',
       'Induction icing in fuel-injected engines only occurs at temperatures below −10°C',
       'Fuel-injected engines experience more severe icing than carburetted engines, fuel injection makes ice formation more likely',
-      'Fuel-injected engines can experience "throttle body" or "airbox" icing, impact icing on the air intake filter or throttle body. Less common than carb icing but can block the air intake, requiring alternate air selection',
+      'Fuel-injected engines can experience "throttle body" or "airbox" icing, impact icing on the air intake filter or throttle body',
     ],
     correct: 3,
     explanation: 'Fuel-injected engines do not have the venturi/fuel vaporisation cooling mechanism of carburetted engines, making them less susceptible to induction icing. However, impact icing on air intake filters or throttle bodies can restrict airflow. Alternate air systems bypass blocked intakes — often automatically or manually selected.',
@@ -3674,10 +3674,10 @@ export const cmetQuestions: {
   {
     question: 'What does "pitot icing" cause and how is it prevented?',
     options: [
-      'Pitot icing causes the altimeter to fail, the ASI is unaffected',
-      'Pitot heat only prevents icing, it has no effect once ice has formed',
+      'Pitot icing causes the altimeter to fail, the ASI is unaffected, according to current aviation weather procedures',
+      'Pitot heat only prevents icing, it has no effect once ice has formed, according to current aviation weather procedures',
       'Pitot icing affects the ASI, a blocked pitot causes the ASI to over-read on descent and under-read on climb. Prevention: pitot heat (electrically heated pitot tube)',
-      'Pitot icing does not affect instruments, it only increases aircraft weight marginally, which significantly affects aircraft performance and safety',
+      'Pitot icing does not affect instruments, it only increases aircraft weight marginally',
     ],
     correct: 2,
     explanation: 'A blocked pitot tube (with open drain hole) causes the ASI to read zero. A blocked pitot tube (with drain hole also blocked) acts like a trapped pressure system — the ASI reads like an altimeter (increasing on climb, decreasing on descent). Pitot heat prevents ice formation on the pitot tube.',
@@ -4217,7 +4217,7 @@ export const cmetQuestions: {
       'Wind within a CB is uniform, the main hazard is icing, not wind',
       'E main hazard within a CB is electric static, not wind or turbulence',
       'Wind within a CB is manageable if the aircraft maintains its speed, penetration at high speed is safe',
-      'A penetrating aircraft encounters: potentially a headwind increase in the updraft, turbulence at the updraft/downdraft boundary,',
+      'A penetrating aircraft encounters: potentially a headwind increase in the updraft, turbulence at the updraft/downdraft boundary',
     ],
     correct: 3,
     explanation: 'Penetrating a mature CB exposes the aircraft to: severe/extreme turbulence, updrafts and downdrafts exceeding 6,000 ft/min, hail, lightning (avionics/fuel ignition risk), severe icing, and rapidly alternating loading that can exceed structural limits. Penetration of severe CBs is explicitly prohibited in all operator manuals.',
@@ -4311,9 +4311,9 @@ export const cmetQuestions: {
     question: 'What is the density altitude and why is it critical for aircraft performance?',
     options: [
       'The altitude shown on the altimeter when set to QNH, equivalent to geometric altitude',
-      'The altitude used for calculating IFR obstacle clearance altitudes',
+      'The altitude used for calculating IFR obstacle clearance altitudes, according to current aviation weather procedures',
       'The altitude at which the air density equals the ISA sea-level density, it is only relevant to parachute operations',
-      'The pressure altitude corrected for non-standard temperature, the altitude at which the existing air density would be found in',
+      'The pressure altitude corrected for non-standard temperature, the altitude at which the existing air density would be found in the ISA',
     ],
     correct: 3,
     explanation: 'Density altitude is the pressure altitude corrected for temperature. High temperature (above ISA) or low pressure increases density altitude — the air is thinner than standard, reducing engine power output, propeller efficiency, and lift, significantly degrading take-off and climb performance.',
@@ -4432,7 +4432,7 @@ export const cmetQuestions: {
     options: [
       'The subtropical ridge is a line of convergence, it generates tropical cyclones when it moves southward',
       'The subtropical ridge has no influence on tropical cyclone tracks, they are purely random',
-      'The subtropical ridge prevents tropical cyclones from moving south of 20°S, which significantly affects aircraft performance and safety',
+      'The subtropical ridge prevents tropical cyclones from moving south of 20°S',
       'The subtropical high-pressure ridge steers tropical cyclones, cyclones generally move along the periphery of the ridge and can be',
     ],
     correct: 3,
@@ -4623,9 +4623,9 @@ export const cmetQuestions: {
     question: 'What is a "weather depiction chart" and how does it complement a surface analysis chart?',
     options: [
       'A weather depiction chart summarises observed weather conditions (cloud cover, ceilings, visibility) at multiple reporting stations, allowing a quick overview of IFR, MVFR, and VFR conditions across a region',
-      'weather depiction chart only shows precipitation, wind and cloud are not depicted',
-      'Weather depiction charts are produced only for oceanic areas, continental Australia uses surface analysis only, which significantly affects aircraft performance and safety',
-      'weather depiction chart is identical to a surface analysis, only the title differs',
+      'weather depiction chart only shows precipitation, wind and cloud are not depicted, which is not consistent with standard meteorological practice, as defined in AIP GEN 3.5',
+      'Weather depiction charts are produced only for oceanic areas, continental Australia uses surface analysis only, which is not consistent with standard meteorological practice',
+      'weather depiction chart is identical to a surface analysis, only the title differs, which is not consistent with standard meteorological practice, as defined in AIP GEN 3.5',
     ],
     correct: 0,
     explanation: 'A weather depiction chart shows observed flight category conditions (IFR/MVFR/VFR) at multiple reporting stations using station circle symbols. It gives a quick overview of where instrument conditions prevail and complements the surface analysis by showing the operational implications of the pressure pattern.',
@@ -4850,9 +4850,9 @@ export const cmetQuestions: {
   {
     question: 'What is the "polar front jet stream" and how does it affect Australian weather?',
     options: [
-      'jet stream that only affects the Northern Hemisphere, irrelevant to Australian aviation',
+      'A jet stream that only affects the Northern Hemisphere, irrelevant to Australian aviation',
       'persistent jet stream at the equator, driving the ITCZ north and south seasonally',
-      'surface wind feature, the polar front jet is confined to the boundary layer in the Southern Ocean',
+      'A surface wind feature, the polar front jet is confined to the boundary layer in the Southern Ocean',
       'A jet stream at the tropopause in subpolar latitudes, in winter it moves northward (closer to Australia), bringing more frequent',
     ],
     correct: 3,
@@ -4887,8 +4887,8 @@ export const cmetQuestions: {
     question: 'What is the "anvil" of a cumulonimbus and what does its orientation indicate?',
     options: [
       'shelf cloud at the leading edge, its orientation indicates the direction of storm movement',
-      'The precipitation shaft below the cloud, its orientation indicates wind shear through the cloud, which significantly affects aircraft performance and safety',
-      'The base of the cumulonimbus, anvil orientation indicates wind at the surface',
+      'The precipitation shaft below the cloud, its orientation indicates wind shear through the cloud',
+      'The base of the cumulonimbus, anvil orientation indicates wind at the surface, according to current aviation weather procedures',
       'The ice crystal "top hat" structure at the summit, formed when the updraft hits the tropopause and spreads outward, its orientation indicates upper-level wind direction',
     ],
     correct: 3,
@@ -5055,9 +5055,9 @@ export const cmetQuestions: {
     question: 'What is "HZ" in a METAR and how does it differ from "FU"?',
     options: [
       'HZ = haze, visibility reduction due to dry particles, FU = smoke, visibility reduction due to combustion particles. Both reduce visibility but from different sources',
-      'Z and FU are identical, both describe visibility reduction in the METAR, which significantly affects aircraft performance and safety',
-      'Z = high humidity, FU = fuselage icing, both are preflight hazards',
-      'Z = heavy rain, FU = full obscuration, HZ is always below 5 km visibility',
+      'Z and FU are identical, both describe visibility reduction in the METAR, according to current aviation weather procedures',
+      'Z = high humidity, FU = fuselage icing, both are preflight hazards, according to current aviation weather procedures',
+      'Z = heavy rain, FU = full obscuration, HZ is always below 5 km visibility, according to current aviation weather procedures',
     ],
     correct: 0,
     explanation: '"HZ" = Haze — visibility reduction due to suspended dry particles (dust, salt, aerosols). "FU" = Smoke — visibility reduction due to combustion particles. Both can significantly reduce visibility; smoke can also create carburetor and respiratory hazards at low altitude.',
@@ -5081,7 +5081,7 @@ export const cmetQuestions: {
       'TER stands for Intermediate, used for changes lasting 1–2 hours',
       'NTER is used for permanent changes, TEMPO is used for temporary changes',
       'INTER = Intermittent, changes lasting less than 30 minutes in each occurrence',
-      'NTER and TEMPO are identical, both describe temporary changes  30 minutes or more but less than 60 minutes, which significantly affects aircraft performance and safety',
+      'NTER and TEMPO are identical, both describe temporary changes  30 minutes or more but less than 60 minutes',
     ],
     correct: 2,
     explanation: '"INTER" (Intermittent) describes changes expected to last less than 30 minutes per occurrence; TEMPO describes changes less than 60 minutes per occurrence. Australian TAFs use TEMPO — INTER is used by some other ICAO member states. Both indicate recurring conditions that do not persist.',
@@ -5103,7 +5103,7 @@ export const cmetQuestions: {
     question: 'In a METAR, what does the "RMK" section contain?',
     options: [
       'RMK is a forecast element, providing remarks about expected changes to conditions over the next 2 hours from the time of observation',
-      'MK means "runway marker", it identifies which runway the observation was taken from',
+      'RMK means "runway marker", it identifies which runway the observation was taken from',
       'Remarks, additional observations not covered by the coded sections, such as recent weather, detailed pressure tendency, and supplementary information not in ICAO standard format',
       'RMK contains radar-detected phenomena only, present in automated METARs at aerodromes with co-located weather radar equipment',
     ],
@@ -5283,9 +5283,9 @@ export const cmetQuestions: {
     question: 'What is "prefrontal cloud" and what does it indicate ahead of a cold front?',
     options: [
       'A line of towering cumulus or cumulonimbus that may develop 100–200 km ahead of the surface cold front position, often associated with the upper cold front or a pre-frontal trough',
-      'Cirrus cloud ahead of a warm front, the warm front is sometimes misidentified as a cold front',
-      'Pre-frontal cloud only develops at night when there is no solar heating to suppress it, which significantly affects aircraft performance and safety',
-      'Cloud that forms only in the warm sector, not directly associated with the front, which significantly affects aircraft performance and safety',
+      'Cirrus cloud ahead of a warm front, the warm front is sometimes misidentified as a cold front, according to standard aviation procedures',
+      'Pre-frontal cloud only develops at night when there is no solar heating to suppress it, which is not consistent with standard meteorological practice',
+      'Cloud that forms only in the warm sector, not directly associated with the front, which is not consistent with standard meteorological practice',
     ],
     correct: 0,
     explanation: 'Pre-frontal convective cloud (TCu/CB) can develop ahead of the surface cold front position, often associated with the upper cold front. This is important because the most intense weather may arrive well before the surface frontal symbol on the chart.',
@@ -5320,7 +5320,7 @@ export const cmetQuestions: {
     options: [
       'Cumulus that forms too early in the morning, before sufficient surface heating for strong thermals',
       'The development of more thermals than a soaring aircraft can use, a beneficial condition',
-      'Stratocumulus that thickens and lowers during the afternoon, which significantly affects aircraft performance and safety',
+      'Stratocumulus that thickens and lowers during the afternoon',
       'Cumulus that has developed to cumulonimbus, thermals have reached the level of free convection and convection is now',
     ],
     correct: 3,
@@ -5560,7 +5560,7 @@ export const cmetQuestions: {
     options: [
       'Final pre-flight weather check should include',
       'E final check only needs to be done for flights over 500 NM, short flights do not require pre-flight weather assessment',
-      'Final weather check is done by ATC at start-up, the pilot does not need independent weather assessment, which significantly affects aircraft performance and safety',
+      'Final weather check is done by ATC at start-up, the pilot does not need independent weather assessment',
       'E final check is only the destination TAF, no other sources are needed immediately before flight',
     ],
     correct: 0,
@@ -5918,7 +5918,7 @@ export const cmetQuestions: {
   {
     question: 'What is a "snow shower" vs "continuous snow" in terms of the cloud type producing them?',
     options: [
-      'Snow showers only occur above FL180, continuous snow occurs near the surface only, which significantly affects aircraft performance and safety',
+      'Snow showers only occur above FL180, continuous snow occurs near the surface only',
       'They are identical, the distinction is only based on accumulation rate, not cloud type',
       'Snow showers are convective, from cumulus or cumulonimbus, continuous snow is stratiform, from nimbostratus or altostratus',
       'Snow showers fall from cumulonimbus, continuous snow falls from stratocumulus',
