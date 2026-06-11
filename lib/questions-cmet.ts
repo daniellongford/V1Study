@@ -532,7 +532,7 @@ export const cmetQuestions: {
     options: [
       'Orographic stratus cloud on the windward slopes only, no cloud on the leeward side',
       'Cumulonimbus clouds forming over the mountain peaks',
-      'Lenticular clouds stationary at the wave crests, with rotor turbulence below',
+      'Lenticular clouds stationary at the wave crests, with rotor turbulence below them',
       'Cirrostratus spreading downwind from mountain ranges',
     ],
     correct: 2,
@@ -689,7 +689,7 @@ export const cmetQuestions: {
       'Warm, humid air from tropical oceans, associated with thunderstorms and heavy rain',
       'Dry, stable air from continental polar regions, associated with clear skies and very cold temperatures',
       'Warm, dry air from continental regions, associated with heatwaves and dust storms',
-      'Cold, moist air from polar maritime regions, linked to cool temperatures, showery precipitation, good visibility between',
+      'Cold moist polar maritime air, bringing cool temperatures, showers and good visibility between the showers',
     ],
     correct: 3,
     explanation: 'Maritime polar (mP) air is cold and moist, originating over polar oceans. As it moves northward over warmer Australian waters, it is heated from below, becoming unstable. Associated with cool showery weather, good visibility between showers, and possible thunderstorms when instability is sufficient.',
@@ -1336,7 +1336,7 @@ export const cmetQuestions: {
     options: [
       'Weather reporting is only required for IFR flights operating on airways',
       'Only airline pilots are required to report weather, GA pilots are exempt',
-      'When a pilot encounters significant weather hazards (severe turbulence, severe icing, volcanic ash, or other significant',
+      'Pilots encountering hazardous unforecast weather, severe turbulence, icing or ash, should report it to ATS by AIREP',
       'Pilots have no obligation to report weather, it is at their discretion',
     ],
     correct: 2,
@@ -2284,7 +2284,7 @@ export const cmetQuestions: {
     options: [
       'A SIGMET is advisory only, no action required unless conditions are actually encountered',
       'A SIGMET indicates the route is legally closed, the flight cannot proceed until the SIGMET expires',
-      'A SIGMET for a route contains the affected area, altitude band, phenomenon type (e.g',
+      'A SIGMET gives the affected area, the altitude band, the phenomenon, its movement and the validity period',
       'A SIGMET only applies to jet aircraft, piston aircraft are exempt from SIGMET requirements',
     ],
     correct: 2,
@@ -2667,7 +2667,7 @@ export const cmetQuestions: {
     question: 'What criteria trigger the issue of a SIGMET for severe turbulence?',
     options: [
       'SIGMETs for turbulence are not issued, turbulence is only reported via AIREP',
-      'A SIGMET for severe turbulence is issued when severe turbulence (causing large abrupt attitude changes, aircraft momentarily out',
+      'Issued when severe turbulence, large abrupt attitude changes with momentary loss of control, is observed or forecast',
       'Any turbulence at altitude above FL100 triggers a severe turbulence SIGMET',
       'Severe turbulence SIGMETs are only issued for jet aircraft, propeller aircraft are not affected',
     ],
@@ -5750,7 +5750,7 @@ export const cmetQuestions: {
   {
     question: 'What effect does a blocked static port have on aircraft instruments?',
     options: [
-      'A blocked static port affects the altimeter, VSI, and ASI (reads incorrectly',
+      'A blocked static port affects the altimeter, the VSI and the ASI, all three rely on static pressure',
       'A blocked static port only causes a 5% error in all pressure instruments, not significant for navigation',
       'A blocked static port affects only the altimeter, ASI and VSI are unaffected',
       'A blocked static port causes all instruments to fail, no useful information remains',
