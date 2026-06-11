@@ -62,7 +62,7 @@ export const cmetQuestions: {
   {
     question: 'What is the difference between "FEW", "SCT", "BKN", and "OVC" in cloud amount reporting?',
     options: [
-      'FEW = up to 2 oktas, SCT = 3–5 oktas, BKN = 6–8 oktas, OVC = more than 8 oktas (unusual)',
+      'FEW = up to 2 oktas, SCT = 3–5 oktas, BKN = 6–8 oktas, OVC = more than 8 oktas',
       'FEW = less than 1 okta, SCT = 2–3 oktas, BKN = 4–6 oktas, OVC = 7–8 oktas',
       'FEW = 1–3 oktas, SCT = 4–5 oktas, BKN = 6–7 oktas, OVC = 8 oktas',
       'FEW = 1–2 oktas, SCT = 3–4 oktas, BKN = 5–7 oktas, OVC = 8 oktas',
@@ -147,7 +147,7 @@ export const cmetQuestions: {
     question: 'What weather phenomenon is indicated by a rapidly falling barometer combined with increasing southerly cloud from the west?',
     options: [
       'A high-pressure system building, the cloud is the leading edge of the anticyclone',
-      'An approaching cold front or frontal low, the combination of falling pressure and increasing western cloud signals deteriorating',
+      'An approaching cold front or frontal low, falling pressure with thickening western cloud signals deteriorating weather',
       'Sea breeze development, southerly cloud often forms with afternoon sea breezes',
       'A heat low developing over the interior, the pressure fall is associated with surface heating, not approaching weather',
     ],
@@ -1826,7 +1826,7 @@ export const cmetQuestions: {
   {
     question: 'How does "AMDAR" support weather forecasting in Australia?',
     options: [
-      'Aircraft Meteorological Data Relay, an international program using commercial aircraft to collect and transmit atmospheric',
+      'Aircraft Meteorological Data Relay, a program using airline aircraft to collect and report atmospheric data in flight',
       'AMDAR measures surface conditions only, upper-air data comes from radiosondes exclusively',
       'advanced military radar system, not related to aviation weather reporting',
       'AMDAR is only used for training meteorologists, operational forecasting uses different data',
@@ -1961,7 +1961,7 @@ export const cmetQuestions: {
       'They are identical, all convection ultimately reaches the surface',
       'Elevated convection is always weaker than surface-based convection, the energy is distributed differently',
       'Surface-based convection originates from thermals at the surface',
-      'Elevated convection is always weaker than surface-based convection, the energy is distributed differently',
+      'Elevated convection only occurs at night and never produces thunderstorms',
     ],
     correct: 2,
     explanation: 'Surface-based convection draws from the boundary layer — a stable or capped surface layer inhibits it. Elevated convection occurs when a layer above the surface is unstable — it can develop even when a strong surface inversion is present. This means severe convection can occur without the warning signs of surface-based development (dust devils, thermal activity).',
@@ -2187,7 +2187,7 @@ export const cmetQuestions: {
     question: 'What is the Metwatch website and aviation weather app services used by Australian pilots?',
     options: [
       'A subscription portal for commercial operators, official briefings are not available free of charge',
-      'The Bureau of Meteorology\'s aviation weather portal provides pilots with digital',
+      'The Bureau of Meteorology aviation portal gives pilots digital access to forecasts, observations, charts and warnings',
       'Aviation weather in Australia is only available by telephone briefing, no online services exist',
       'Third-party apps provide all aviation weather in Australia, no government services are available online',
     ],
@@ -2368,7 +2368,7 @@ export const cmetQuestions: {
     options: [
       'A wind that funnels through mountain passes, driven by synoptic pressure gradients',
       'A warm upslope wind driven by daytime solar heating of terrain',
-      'A cold downslope drainage wind that develops at night when slopes lose heat by radiation, cooling the overlying air which becomes',
+      'A cold downslope drainage wind, slopes cool by radiation at night and the dense surface air slides into the valleys',
       'A strong offshore wind driven by temperature contrast between land and sea during summer',
     ],
     correct: 2,
@@ -2475,7 +2475,7 @@ export const cmetQuestions: {
     question: 'How do wake vortices behave after generation and what factors affect their persistence?',
     options: [
       'Wake vortices rise above the generating aircraft, they are only hazardous to aircraft above the generator',
-      'Wake vortices sink at about 100–500 ft/min and drift downwind, they persist longer in calm conditions and dissipate',
+      'Wake vortices sink at about 100–500 ft/min and drift downwind, persisting longest in calm air and breaking up faster in wind',
       'Wake vortices are horizontal, they move along the aircraft\'s flight path and do not descend',
       'Wake vortices dissipate within 500 m of the generating aircraft, not a concern for aircraft maintaining ATC separation',
     ],
@@ -2630,7 +2630,7 @@ export const cmetQuestions: {
   {
     question: 'How does "low-level jet" (LLJ) affect aviation at night?',
     options: [
-      'Ow-level jets occur at the tropopause only, "low-level" refers to the pressure level, not AGL height',
+      'Low-level jets occur at the tropopause only, the name refers to the pressure level, not the height AGL',
       'The low-level jet only occurs in tropical regions, not relevant to Australian mid-latitude operations',
       'The LLJ is a constant feature, it is present at all times and not a nocturnal phenomenon',
       'A low-level wind maximum, typically 500 to 2,000 ft AGL, forming at night as the surface layer decouples under an inversion',
@@ -2762,7 +2762,7 @@ export const cmetQuestions: {
   {
     question: 'What is a "TEMPO" change indicator in a TAF and how does it differ from a "BECMG"?',
     options: [
-      'TEMPO indicates conditions expected to last 30 minutes or more but less than 60 minutes in each occurrence but recurring',
+      'TEMPO means fluctuations lasting 30 to 60 minutes at a time, which may recur through the stated period',
       'TEMPO and BECMG are identical, both indicate forecast changes',
       'TEMPO indicates a permanent change, BECMG indicates a temporary change',
       'TEMPO applies to wind changes only, BECMG applies to cloud and visibility changes',
@@ -3257,7 +3257,7 @@ export const cmetQuestions: {
       'Mountain obscuration only occurs in winter, summer convective cloud does not cover mountains completely',
       'Orographic cloud that forms only above mountain ranges, does not affect valley flight operations',
       'A cloud layer covering a mountain summit, only significant if the mountain extends above 10,000 ft',
-      'Mountains hidden by cloud, fog, or precipitation, dangerous because VFR pilots navigating in hilly or mountainous terrain may fly',
+      'Mountains hidden by cloud, fog or precipitation, dangerous because a VFR pilot may fly into terrain that cannot be seen',
     ],
     correct: 3,
     explanation: 'Mountain obscuration is one of the most dangerous weather hazards for VFR pilots. Cloud or fog covering mountains removes the visual references needed to navigate safely. Pilots can inadvertently fly into the cloud or into the terrain it conceals. Airmet mountain obscuration advisories warn of this specific hazard.',
@@ -3300,15 +3300,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'During an approach in the Southern Hemisphere, the wind is backing from 200° at circuit height to 170° at the surface. What does this indicate and what is the aerodynamic effect?',
+    question: 'Descending on approach, the wind is 170° at the surface and 200° at 2,000 ft. In the Southern Hemisphere, what does this profile indicate?',
     options: [
-      'Backing indicates warm air advection in the SH, the aircraft will gain airspeed as it descends into the backed surface wind',
-      'Backing indicates cold air advection in the SH, and on descent the headwind drops, costing airspeed and demanding prompt power',
-      'Backing is not aerodynamically significant, only veering affects approach airspeed',
-      'Backing in the SH always indicates an approaching cold front, the approach must be discontinued',
+      'Cold air advection, in the SH wind veering with height marks colder air moving into the area',
+      'Warm air advection, veering with height always means warming, whichever hemisphere',
+      'Nothing, wind direction aloft carries no information about temperature advection',
+      'An observation error, wind direction cannot change between the surface and 2,000 ft',
     ],
-    correct: 1,
-    explanation: 'In the Southern Hemisphere, backing (anticlockwise direction change) indicates cold air advection. On approach, the wind at higher levels has a more southerly component than at the surface. Descending through this layer, the headwind contribution reduces (wind backs = becomes more southerly = less head-on for a northbound approach). This sudden airspeed loss requires immediate power to prevent undershoot.',
+    correct: 0,
+    explanation: 'From 170 at the surface to 200 aloft the wind veers with height. In the Southern Hemisphere veering with height marks cold air advection and backing with height warm advection, the mirror of the northern rule. Colder air moving in fits an approaching or recent cold change, so expect the denser air to bring gustier low-level conditions and a further wind shift at the surface.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.6',
   },
   {
@@ -3461,7 +3461,7 @@ export const cmetQuestions: {
       'A blocking high causes storms to intensify, responsible for most Australian severe weather events',
       'A persistent, slow-moving high-pressure system that blocks the normal westerly flow',
       'A blocking high is identical to a regular anticyclone, it only differs in that it is slightly stronger',
-      'A high-pressure system that blocks cold fronts from reaching an area, associated with drought and heatwaves',
+      'A high-pressure system that accelerates the passage of cold fronts, bringing repeated rain events',
     ],
     correct: 1,
     explanation: 'A blocking high is a persistent, strong anticyclone that blocks or deflects the normal progression of weather systems. It can persist for weeks, producing prolonged hot, dry periods (heatwaves, drought) in regions under the high, while frontal systems are deflected around it.',
@@ -3626,7 +3626,7 @@ export const cmetQuestions: {
   {
     question: 'How can "outflow boundary" trigger new convection?',
     options: [
-      'The leading edge of cold air from a thunderstorm downdraft, it is a zone of convergence and lifting that can trigger new',
+      'The leading edge of cold downdraught air, a convergence zone whose lifting can set off new cells away from the parent storm',
       'An outflow boundary is identical to a cold front, both are produced by the same atmospheric dynamics',
       'Outflow boundaries only affect aviation at night, daytime convection inhibits their development',
       'The boundary of a high-pressure anticyclone, outflow from the centre triggers convection at the boundary',
@@ -3640,7 +3640,7 @@ export const cmetQuestions: {
     options: [
       'All volcanoes are treated identically, active or dormant, with the same avoidance margins',
       'Dormant volcanoes pose no aviation hazard, only currently erupting volcanoes need avoidance',
-      'Active volcanoes with confirmed ongoing eruption require active SIGMETs and avoidance action. Dormant volcanoes have no current',
+      'Active volcanoes in eruption carry SIGMETs and demand avoidance, dormant volcanoes pose no current ash hazard to flight',
       'Only volcanoes with active lava flow are hazardous, ash-only eruptions do not require avoidance',
     ],
     correct: 2,
@@ -3989,7 +3989,7 @@ export const cmetQuestions: {
       'Mixed-phase clouds only exist above FL300, not an issue for piston aircraft operations',
       'Mixed-phase clouds have no icing hazard, the ice crystals and water cancel each other',
       'Mixed-phase cloud produces only rime ice, never clear ice',
-      'A cloud containing both liquid water and ice, typically produces heavier structural icing than pure liquid-water or pure',
+      'A cloud containing both liquid water and ice, typically giving heavier structural icing than purely liquid or purely ice cloud',
     ],
     correct: 3,
     explanation: 'Mixed-phase clouds (containing both SLW and ice crystals) in the temperature range 0°C to −20°C can produce significant icing. The SLW adheres to aircraft surfaces and freezes — the Bergeron-Findeisen process grows ice crystals (which may then be swept against the aircraft) while simultaneously depleting the SLW supply.',
@@ -4301,7 +4301,7 @@ export const cmetQuestions: {
       'Upper trough passages only occur in winter, summer troughs are too weak to affect surface weather',
       'Upper trough passages improve weather, clear skies and light winds follow immediately',
       'Upper troughs only affect flight above FL200, below this level their passage has no effect',
-      'Upper trough passage promotes surface low development, increases vorticity and divergence aloft which enhances',
+      'Upper trough passage promotes surface low development, the vorticity and divergence aloft enhancing ascent beneath',
     ],
     correct: 3,
     explanation: 'Upper troughs enhance upper-level divergence, which promotes surface convergence, low development, and convective uplift. A previously clear region under an upper trough can rapidly develop convective activity or low intensification. Monitoring upper trough positions on upper-level charts is important for forecasting rapidly developing situations. Cyclogenesis.',
@@ -4335,7 +4335,7 @@ export const cmetQuestions: {
     question: 'What is the "lifting condensation level" (LCL) rule-of-thumb for estimating cumulus base?',
     options: [
       'LCL height is estimated from the surface pressure only, no temperature data needed',
-      'LCL height ≈ × 400 ft, the spread in °C multiplied by approximately 400 gives the cloud base in feet',
+      'LCL height ≈ spread × 400 ft, the temperature minus dew point in degrees multiplied by about 400 gives the base in feet',
       'LCL height = (temperature − dew point) × 1,000 ft',
       'LCL height = surface temperature × 200 ft',
     ],
@@ -4358,7 +4358,7 @@ export const cmetQuestions: {
   {
     question: 'What is "the Australian continent\'s position relative to the subtropical high pressure belt" and what does it mean for aviation?',
     options: [
-      'Australia straddles the subtropical high, the northern interior is dominated by the monsoon, the southern coast by mid-latitude',
+      'Australia straddles the subtropical high, monsoon weather dominates the north and mid-latitude westerlies the southern coast',
       'Australia lies entirely south of the subtropical high, dominated by polar fronts and westerlies year-round',
       'Australia lies entirely north of the subtropical high, dominated by tropical weather year-round',
       'The subtropical high belt passes through the southern ocean, Australia is only affected by it in winter',
@@ -4805,7 +4805,7 @@ export const cmetQuestions: {
       'Ice on propellers has no effect on performance, the propeller thrust is unaffected',
       'Propeller icing is less hazardous than wing icing, propellers can tolerate more ice accumulation',
       'Propeller icing only affects the stall speed, no effect on thrust',
-      'Ice accumulation on propeller blades reduces thrust by disrupting the aerodynamic profile, increases vibration due to asymmetric',
+      'Ice on the blades reduces thrust by spoiling the aerofoil shape, and asymmetric shedding causes severe vibration',
     ],
     correct: 3,
     explanation: 'Ice on propeller blades reduces efficiency and thrust (similar to wing icing). Ice shedding is typically asymmetric, causing vibration — which can be severe and structurally damaging. Ice may be shed onto the fuselage, causing noise and potential damage.',
@@ -4853,7 +4853,7 @@ export const cmetQuestions: {
       'A jet stream that only affects the Northern Hemisphere, irrelevant to Australian aviation',
       'A persistent jet stream at the equator, driving the ITCZ north and south seasonally',
       'A surface wind feature, the polar front jet is confined to the boundary layer in the Southern Ocean',
-      'A jet stream at the tropopause in subpolar latitudes, in winter it moves northward, bringing more frequent',
+      'A jet stream at the tropopause in subpolar latitudes, moving north in winter and bringing more frequent strong upper winds',
     ],
     correct: 3,
     explanation: 'The polar front jet stream forms along the boundary between polar and subtropical air masses at the tropopause. In the Southern Hemisphere, it varies seasonally — in winter it migrates toward Australia, intensifying frontal activity and westerly winds in southern Australia. Understanding its position helps forecast frontal frequency and intensity.',
@@ -5345,7 +5345,7 @@ export const cmetQuestions: {
       'Dew point is used only for fog forecasting, not for in-flight cloud base estimates',
       'The dew point represents the LCL directly, cloud base equals the dew point temperature in Celsius',
       'Dew point has no role in cloud base estimation, only the temperature at the LCL matters',
-      'The surface dew point, combined with the surface temperature, allows estimation of cloud base using the formula: base ≈ × 400 ft',
+      'The surface dew point, with the surface temperature, gives the cloud base estimate, the spread multiplied by about 400 ft',
     ],
     correct: 3,
     explanation: 'The unsaturated lapse rate (3°C/1,000 ft) is much greater than the dew point lapse rate (~0.5°C/1,000 ft). Rising unsaturated air sees its temperature and dew point converge at approximately 2.5°C per 1,000 ft rise = 400 ft per degree of spread. So cloud base ≈ (T − Td) × 400 ft.',
@@ -5356,7 +5356,7 @@ export const cmetQuestions: {
     options: [
       'Obscuration is never reported in METARs, pilots infer it from the weather groups',
       'Obscuration codes are used only at tropical stations, temperate stations report OVC instead',
-      'Obscuration is reported when the sky is hidden by surface-based phenomena and normal',
+      'Obscuration is reported when surface-based phenomena hide the sky and a normal cloud base cannot be observed',
       'Obscuration is reported when the sky is overcast, identical to OVC',
     ],
     correct: 2,
