@@ -38,7 +38,7 @@ export const cmetQuestions: {
   {
     question: 'What is the "warm core" structure of a tropical cyclone and how does it differ from a mid-latitude low?',
     options: [
-      'Tropical cyclones have a warm core (warmer than environment throughout their depth)',
+      'Tropical cyclones have a warm core',
       'Tropical cyclones are cold-core systems, the cold core is what makes them spin faster',
       'There is no structural difference, the distinction is only based on latitude of formation',
       'Both tropical cyclones and mid-latitude lows are warm-core systems',
@@ -48,15 +48,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "SQ" in a METAR or TAF and what wind conditions does it imply?',
+    question: 'A METAR reports "25018G45KT 4000 +SHRA SQ". What does the SQ group tell you?',
     options: [
-      'Significant weather qualifier, means all subsequent weather groups are significant',
-      'Squall, a sudden wind increase of at least 16 kt, reaching 22 kt or more and lasting at least one minute, linked to convective activity',
-      'Snow quality indicator, describing the snow crystal type included in the runway surface report',
-      'Soft hail, small white ice pellets that bounce on impact, which METARs code as GS rather than SQ',
+      'A squall, a sudden wind rise of 16 kt or more to at least 22 kt, lasting a minute or more',
+      'Snow grains are falling with the rain showers',
+      'The observation is suspect and awaiting quality control',
+      'Standing water, the runway is contaminated',
     ],
-    correct: 1,
-    explanation: '"SQ" = Squall. A squall is a sudden increase in wind speed of at least 16 knots, reaching 22 knots or more, and lasting at least 1 minute. It indicates rapid wind fluctuations that are hazardous for take-off and landing.',
+    correct: 0,
+    explanation: 'SQ is the code for squall, a sudden increase of at least 16 kt to a sustained speed of 22 kt or more lasting at least one minute. Combined with heavy showers and a 45 kt gust, this METAR paints a violent low-level wind picture, typical of a gust front or front passage. Expect severe mechanical turbulence and wind shear near the surface.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -72,11 +72,11 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a thunderstorm and what are the three stages of its lifecycle?',
+    question: 'What are the three stages of a thunderstorm\'s lifecycle?',
     options: [
       'A convective storm, lifecycle: cumulus (growth), cumulonimbus (peak), stratocumulus (decay)',
       'A frontal storm, lifecycle: approach, passage, clearance',
-      'A convective storm with lightning, lifecycle: developing (updraft only), mature (updrafts and downdrafts), dissipating (downdrafts only)',
+      'A convective storm with lightning, lifecycle: developing, mature, dissipating',
       'A tropical storm with lightning, lifecycle: tropical disturbance, tropical depression, tropical storm',
     ],
     correct: 2,
@@ -86,13 +86,13 @@ export const cmetQuestions: {
   {
     question: 'What is the "Airmet" weather advisory and who is it primarily intended for?',
     options: [
-      'An advisory for light aircraft and light IFR operations (similar to AIRMET in the US)',
+      'An advisory for light aircraft operating below 10,000 ft',
       'An automated METAR transmission, not a forecasting product',
       'A severe weather advisory issued for all aircraft, equivalent in severity to a SIGMET',
       'A weather radar image transmitted on aviation frequencies, updated every 30 minutes',
     ],
     correct: 0,
-    explanation: 'An Airmet (in Australian usage and internationally) is a weather advisory for enroute aircraft, typically for conditions below those that trigger a SIGMET — moderate icing, moderate turbulence, widespread IFR conditions, and mountain obscuration. Primarily useful for light GA and IFR operations at lower altitudes.',
+    explanation: 'An AIRMET advises of en-route weather below 10,000 ft that is significant to light aircraft but falls short of SIGMET criteria, such as moderate turbulence or moderate icing. It supplements the GAF between issues. SIGMETs, by contrast, warn all aircraft of severe phenomena.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -108,15 +108,15 @@ export const cmetQuestions: {
     reference: 'ICAO Standard Atmosphere',
   },
   {
-    question: 'What is a sea breeze and what drives its circulation?',
+    question: 'A coastal TAF reads "VRB03KT ... FM050300 16015KT". What is the most likely cause of the FM group?',
     options: [
-      'A wind blowing from high to low pressure along the coast, driven by synoptic-scale pressure gradients',
-      'A wind blowing from the land to the sea, driven by cooling of the land surface at night',
-      'A convective wind that develops only over tropical coastlines where the SST exceeds 26°C',
-      'A daytime wind from sea to land, driven by the land heating faster than the sea, creating a pressure gradient that draws cool maritime air inland',
+      'A cold front timed to the minute',
+      'Sea breeze onset, the afternoon switch to a moderate onshore wind',
+      'Katabatic drainage beginning at midday',
+      'Random forecaster preference for FM over BECMG',
     ],
-    correct: 3,
-    explanation: 'The sea breeze is a diurnal coastal wind driven by differential heating. Land heats faster than sea; the air over the land becomes warmer and rises, creating lower pressure. Cooler, denser maritime air flows inland to replace it. The reverse (land breeze) occurs at night.',
+    correct: 1,
+    explanation: 'Light variable morning wind flipping to a steady 15 kt onshore around early afternoon local time is the classic sea breeze signature. The land heats, rising air draws maritime air inland, and the breeze arrives abruptly enough to justify FM. Expect a runway change, low-level mechanical turbulence and convergence cloud inland.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
@@ -125,7 +125,7 @@ export const cmetQuestions: {
       'No Significant weather at the aerodrome right now, but NOSIG says nothing about enroute conditions',
       'NOSIG is only used at aerodromes without TAFs, it replaces the TAF at unstaffed stations',
       'NOSIG means no instrument approaches are available at this aerodrome',
-      'No Significant change is forecast for the next 2 hours, so conditions at the reporting aerodrome are expected to remain essentially the same',
+      'No significant change is forecast for two hours, conditions should remain essentially as reported',
     ],
     correct: 3,
     explanation: 'NOSIG appended to a METAR indicates that no significant changes are forecast in the next 2 hours. For departure planning, it confirms that the current observed conditions are expected to persist — useful for confirming take-off weather and initial enroute conditions.',
@@ -137,7 +137,7 @@ export const cmetQuestions: {
       'Positive feedback means conditions are improving and the tropical cyclone is weakening',
       'Positive feedback is a radar term for the signal amplification applied within Doppler processing chains',
       'Positive feedback refers to an ATC advisory that conditions are acceptable for departure despite a deteriorating trend',
-      'A self-reinforcing loop in which warm sea water fuels convection, latent heat release deepens the low, and stronger winds drive further evaporation and intensification',
+      'A self-reinforcing loop where warm sea fuels convection, latent heat deepens the low, and stronger winds drive more evaporation',
     ],
     correct: 3,
     explanation: 'Positive feedback in a tropical cyclone: warming the core reduces surface pressure → increases surface wind → enhances ocean evaporation and heat flux → more convection and latent heat release → warmer core. This cycle intensifies the storm until limiting factors (land, cooler SST, wind shear) disrupt it.',
@@ -170,7 +170,7 @@ export const cmetQuestions: {
   {
     question: 'What is the aviation significance of "high humidity" in tropical operations?',
     options: [
-      'High humidity increases density altitude (moist air is less dense than dry air at the same temperature and pressure)',
+      'High humidity increases density altitude',
       'High humidity has no effect on aircraft performance, only temperature matters for density altitude',
       'High humidity reduces thrust output of turbine engines and increases structural ice formation at low temperatures',
       'High humidity reduces density altitude, beneficial for aircraft performance in the tropics',
@@ -182,7 +182,7 @@ export const cmetQuestions: {
   {
     question: 'What is a "supercell" thunderstorm and what makes it more dangerous than ordinary CB?',
     options: [
-      'A long-lived organised thunderstorm with a persistent rotating updraft (mesocyclone)',
+      'A long-lived organised thunderstorm with a persistent rotating updraft',
       'A very large thunderstorm, it is more dangerous purely because of its size',
       'A supercell is a tropical cyclone-associated CB, only found in the tropics',
       'A cluster of thunderstorms that merge, more dangerous than an individual CB',
@@ -196,7 +196,7 @@ export const cmetQuestions: {
     options: [
       'Dew on grass indicates a thunderstorm is imminent, the moisture is associated with approaching storms',
       'Dew on grass has no meteorological significance, it is a normal overnight occurrence unrelated to weather conditions',
-      'Dew on grass indicates calm winds, clear skies overnight, and high humidity near the surface, the same conditions that produce radiation fog',
+      'Dew shows calm wind, clear skies and high surface humidity overnight, the same recipe that produces radiation fog',
       'Dew on grass indicates an approaching warm front, the moisture is advected by the warm sector winds',
     ],
     correct: 2,
@@ -207,24 +207,24 @@ export const cmetQuestions: {
     question: 'What is the "dangerous semi-circle" of a tropical cyclone and which side is it on in the Southern Hemisphere?',
     options: [
       'The dangerous semi-circle is directly ahead of the cyclone track, not on either side',
-      'The dangerous semi-circle is the LEFT side of the cyclone\'s track in the SH, it has stronger winds and more violent seas, and the track itself curves toward that side',
+      'The LEFT side of the track in the SH, where winds are stronger and the curving track tends to carry the cyclone toward you',
       'Both sides are equally dangerous, the concept of dangerous semi-circle only applies in the Northern Hemisphere',
-      'The dangerous semi-circle is the RIGHT side of the cyclone\'s track in the Southern Hemisphere, winds are stronger and a vessel or aircraft in that quadrant may be trapped as the cyclone advances',
+      'The RIGHT side of the track in the SH, where stronger winds may trap an aircraft as the cyclone advances',
     ],
     correct: 1,
     explanation: 'In the Southern Hemisphere, the LEFT semi-circle (relative to the cyclone\'s direction of movement) is generally the more dangerous side. The cyclone\'s forward speed adds to the rotational wind speed on this side. Additionally, the recurving track means systems in this quadrant may remain exposed longer.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is the purpose of a VOLMET broadcast and how does a pilot obtain it?',
+    question: 'You are en route at 6,500 ft, out of range of your destination ATIS, and want its latest METAR. What service provides this by voice?',
     options: [
-      'A continuous broadcast of current METAR/SPECI, TAF and SIGMET information for aircraft in flight, received by tuning the published frequency',
-      'A direct request service in which ATC reads the destination TAF to the pilot on the area frequency whenever it is asked for',
-      'A recorded broadcast giving runway, wind and QNH for a single aerodrome only, updated whenever local conditions change',
-      'A satellite datalink service available only to aircraft equipped with ACARS data terminals and a current subscription',
+      'Flightwatch will read any METAR on request on 121.5',
+      'The area frequency AWIS rebroadcast every 15 minutes',
+      'The VOLMET broadcast on HF, giving METARs for major aerodromes',
+      'The destination tower transmits its METAR hourly on the CTAF',
     ],
-    correct: 0,
-    explanation: 'VOLMET (meteorological information for aircraft in flight) is a continuous, repetitive broadcast of current METAR/SPECI, TAF and SIGMET information for selected locations, transmitted on published HF frequencies in Australia. Pilots obtain it simply by tuning the frequency. The single-aerodrome recorded broadcast describes the ATIS, not VOLMET.',
+    correct: 2,
+    explanation: 'VOLMET is a continuous HF voice broadcast of current METARs for major Australian aerodromes, designed exactly for this situation. Pilots can also request specific reports from Flightwatch on the published frequencies, but 121.5 is reserved for emergencies. The CTAF and ATIS do not serve distant en-route aircraft.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -240,9 +240,9 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "SIGWX" and what does a SIGWX chart depict?',
+    question: 'What does a SIGWX chart depict?',
     options: [
-      'A Significant Weather chart, shows forecast areas of turbulence, icing, and thunderstorm activity at various altitude bands, used for IFR route planning',
+      'A Significant Weather chart showing forecast turbulence, icing and thunderstorm areas by altitude band for IFR planning',
       'SIGWX charts are produced only for oceanic flights and are not used for Australian domestic operations',
       'A surface weather chart identical to the MSL surface analysis, simply published under a different name',
       'A signal weather report generated automatically from networks of ground-based aerodrome sensors',
@@ -257,7 +257,7 @@ export const cmetQuestions: {
       'A supercell is a cluster of ordinary thunderstorms, the term refers to the organisation of the cluster',
       'A supercell is simply a larger ordinary thunderstorm, the only difference is size',
       'Supercells only occur in the Northern Hemisphere, Australian thunderstorms are single-cell events',
-      'A supercell is a long-lived, highly organised thunderstorm with a persistent rotating updraft (mesocyclone)',
+      'A supercell is a long-lived, highly organised thunderstorm with a persistent rotating updraft',
     ],
     correct: 3,
     explanation: 'A supercell is characterised by a rotating updraft (mesocyclone) resulting from strong vertical wind shear. The rotation separates updraft and downdraft, allowing the storm to sustain itself for hours. Supercells produce the most extreme weather: large hail (>5 cm), tornadoes, extreme rainfall, and severe to extreme turbulence.',
@@ -276,7 +276,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "temperature correction for altimeter" and when is it significant?',
+    question: 'When is "temperature correction for altimeter" significant?',
     options: [
       'Modern altimeters automatically correct for temperature, manual correction is not required',
       'In temperatures significantly colder than ISA, the true altitude is less than the indicated altitude',
@@ -291,12 +291,12 @@ export const cmetQuestions: {
     question: 'What is "precipitation at the aerodrome" in METAR and how does it affect landing?',
     options: [
       'Precipitation only affects take-off performance, landing performance is unaffected by rain on the runway surface',
-      'Precipitation may sharply reduce visibility, contaminate the runway with an aquaplaning risk, and degrade braking action and climb performance',
-      'Precipitation automatically triggers a missed approach requirement, no approach is permitted during rain',
+      'Precipitation can slash visibility, contaminate the runway with aquaplaning risk, and degrade braking and climb',
+      'Heavy rain automatically closes the runway until it passes, no operations are permitted during rain',
       'Precipitation has no effect on landing distance, only the wind and visibility figures matter for planning',
     ],
     correct: 1,
-    explanation: 'Precipitation at an aerodrome creates multiple hazards: (1) heavy rain reduces RVR/visibility; (2) water on runway creates aquaplaning and braking action reduction; (3) thunderstorm precipitation may indicate CB and wind shear nearby; (4) freezing precipitation creates icy surface. All require specific operational responses.',
+    explanation: 'Precipitation at an aerodrome attacks several things at once: visibility falls, sometimes dramatically in heavy showers, water on the runway invites aquaplaning and degrades braking, climb performance suffers in heavy rain, and shower-type precipitation flags convective cloud with the gust and shear risks that follow. Freezing precipitation adds ground icing.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -315,9 +315,9 @@ export const cmetQuestions: {
     question: 'What is "sea-level pressure" (QNH) correction and how is QNH derived from station pressure?',
     options: [
       'QNH is derived from the ISA standard, it is always 1013.25 hPa regardless of conditions',
-      'QNH is derived from station pressure by adjusting for elevation, with the station pressure corrected to mean sea level using the ISA temperature profile',
+      'QNH is station pressure corrected to mean sea level for elevation using the ISA temperature profile',
       'QNH is station pressure divided by 2, adjusted for the fact that station pressure is measured at altitude',
-      'H and station pressure are identical, no correction is applied',
+      'QNH and station pressure are identical, no correction is applied',
     ],
     correct: 1,
     explanation: 'QNH is derived by reducing the aerodrome station pressure to mean sea level using the local temperature profile. It represents what the pressure would be at sea level beneath the aerodrome. Used as the altimeter reference so the altimeter reads MSL altitude. Differs from MSLP analysis charts which use standardised temperature assumptions.',
@@ -336,15 +336,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.6',
   },
   {
-    question: 'What is the "METAR trend" component and what does it forecast?',
+    question: 'What is the "TAF3" service introduced at major Australian aerodromes?',
     options: [
-      'A 6-hour forecast appended to the METAR, identical to a short-period TAF',
-      'METAR trends are only produced by staffed stations, automated METARs never include trends',
-      'The trend component predicts the next 30 minutes only, not 2 hours',
-      'A 2-hour trend forecast appended to a METAR using NOSIG, BECMG, or TEMPO',
+      'A three-hourly TAF with priority amendments, which replaced the Trend Type Forecast in November 2020',
+      'A TAF that is valid for only three hours, used when conditions are changing rapidly',
+      'The third routine TAF of the day, issued at 1800 local time each evening',
+      'A trend statement appended to the METAR every three hours',
     ],
-    correct: 3,
-    explanation: 'The METAR trend component is a 2-hour short-period forecast appended to the observation. NOSIG = no significant change expected; BECMG = gradual change to stated conditions; TEMPO = temporary fluctuation to stated conditions. It bridges the gap between current observations and TAF forecasts.',
+    correct: 0,
+    explanation: 'The TAF3 service began on 5 November 2020 when the Bureau of Meteorology ceased issuing Trend Type Forecasts. A TAF3 is a standard-format TAF issued routinely every three hours and given priority amendment, providing the short-term responsiveness the TTF used to give. It operates at the major aerodromes, including Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra, Darwin, Cairns, Gold Coast and Hobart, plus military aerodromes.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -364,7 +364,7 @@ export const cmetQuestions: {
     options: [
       'Strong winds, clear skies, and high humidity near the surface',
       'Overcast skies, light rain, and temperatures above the dew point',
-      'Clear skies overnight, calm winds (less than 5 kt), and high humidity near the surface',
+      'Clear skies overnight, calm winds of less than 5 kt, and high humidity near the surface',
       'Frontal lifting, warm moist air advection, and falling pressure',
     ],
     correct: 2,
@@ -372,15 +372,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a "mountain wave rotor zone" and what makes it uniquely hazardous?',
+    question: 'Crossing a mountain range you see stationary lens-shaped cloud above the ridge and the wind at ridge height is 40 kt across it. What should you conclude?',
     options: [
-      'A rotor zone is a turbulent recirculation zone below the crest of a mountain wave',
-      'A rotor zone is a turbulent area near mountain peaks, hazardous because of strong updrafts',
-      'Rotor zones are always clearly visible, they always produce cloud and precipitation',
-      'Rotor zones only extend to 500 ft AGL, aircraft above this height are unaffected',
+      'The cloud is harmless cap cloud with no wind implication',
+      'The lenticulars mark smooth air, the crossing will be calm everywhere',
+      'Thunderstorms are forming over the ridge',
+      'Mountain waves are established, expect strong up and downdraughts and possible severe rotor turbulence downwind',
     ],
-    correct: 0,
-    explanation: 'The rotor zone lies below the first lee wave crest, where airflow becomes turbulent and recirculates. It contains some of the most extreme turbulence in the atmosphere — severe to extreme, with rapid, unpredictable wind direction changes. Rotor cloud marks the zone visually, but the turbulence extends beyond the visible cloud.',
+    correct: 3,
+    explanation: 'Lenticular cloud forms in the crests of standing waves generated by strong flow across a range, and 40 kt at ridge height is well above the threshold. Wave downdraughts can exceed a light aircraft\'s climb capability, and rotors beneath the wave crests on the lee side produce some of the most violent low-level turbulence in aviation. Cross high, or not at all.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
@@ -399,7 +399,7 @@ export const cmetQuestions: {
     question: 'What is "wet season" and "dry season" in northern Australia and how do they affect aviation operations?',
     options: [
       'The wet season brings clear skies, the dry season brings cloud and rain',
-      'The wet season (October–April) brings the monsoon, tropical cyclones, intense convection, flooding, and airport closures',
+      'The wet season brings the monsoon, tropical cyclones, intense convection, flooding, and airport closures',
       'Northern Australia has no distinct seasons, weather is uniform year-round',
       'Wet season operations are unrestricted, only the dry season creates aviation hazards from dust',
     ],
@@ -408,7 +408,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.11',
   },
   {
-    question: 'What is the Coriolis effect and how does it affect wind direction in the Southern Hemisphere?',
+    question: 'How does the Coriolis effect affect wind direction in the Southern Hemisphere?',
     options: [
       'The effect of the Earth\'s rotation on moving air, deflects freely moving air to the left in the Southern Hemisphere',
       'The effect of temperature differences between land and sea, drives sea breezes in the SH',
@@ -444,21 +444,21 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What does "TEMPO BKN010 TSRA" in a TAF mean for a pilot planning an approach?',
+    question: 'A TAF includes "TEMPO 0516/0520 3000 TSRA BKN008". How should you read this period?',
     options: [
-      'The TAF is forecasting a permanent change to broken cloud at 1,000 ft and thunderstorm with rain',
-      'The 010 refers to cloud 1 okta, not 1,000 ft, the cloud is actually very light',
-      'Temporarily (conditions expected to last 30 minutes or more but less than 60 minutes) broken cloud at 1,000 ft AAL with thunderstorm and rain',
-      'TEMPO means the thunderstorm is currently occurring, the TAF is reporting a current condition',
+      'Between 16Z and 20Z on the 5th, periods of 30 to 60 minutes of 3,000 m visibility in thunderstorms with rain and broken cloud at 800 ft',
+      'A permanent change to thunderstorms from 1600 local time lasting for the rest of the TAF period',
+      'Conditions lasting under 30 minutes at a time between 16Z and 20Z, the code for intermittent bursts',
+      'A 30 per cent probability of thunderstorms at some stage between 16Z and 20Z on the 5th',
     ],
-    correct: 2,
-    explanation: '"TEMPO" indicates temporary conditions (30 minutes or more but less than 60 minutes duration, recurring possible). "BKN010" = broken cloud at 1,000 ft AAL. "TSRA" = thunderstorm with rain. A pilot planning an IFR approach should assess whether these temporary conditions would preclude landing, require a missed approach, or compromise alternate planning.',
+    correct: 0,
+    explanation: 'TEMPO means temporary fluctuations lasting 30 to 60 minutes at a time within the stated window, here 051600Z to 052000Z. INTER covers fluctuations under 30 minutes, and PROB30 expresses probability. During each TEMPO burst expect 3,000 m visibility, thunderstorm with rain and a 800 ft broken base, demanding holding fuel or an alternate.',
     reference: 'AIP GEN 3.5',
   },
   {
     question: 'What is meant by a "Hazard Alert" service in the Australian aviation weather system?',
     options: [
-      'A service drawing pilots\' attention to urgent hazardous conditions not yet covered by current forecasts or SIGMETs, passed by ATS and the ATIS',
+      'A service alerting pilots to urgent hazards not yet covered by forecasts or SIGMETs, passed by ATS and the ATIS',
       'An automated warning tone transmitted on 121.5 MHz whenever severe weather enters controlled airspace anywhere in Australia',
       'A monthly safety bulletin published by CASA summarising weather-related accidents and incidents for pilot education',
       'A SIGMET subtype issued exclusively for volcanic ash events within the Australian Flight Information Regions',
@@ -468,11 +468,11 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "turbulence intensity classification" and what are the ICAO intensity categories?',
+    question: 'What are the ICAO turbulence intensity categories?',
     options: [
       'Level 1-4, based on altitude and wind shear gradient',
       'Category A, B, C, D, based on cloud type and updraft speed',
-      'Light, Moderate, Severe, Extreme, based on aircraft acceleration (g-force) and structural risk',
+      'Light, Moderate, Severe, Extreme, based on aircraft acceleration and structural risk',
       'Smooth, Slight, Moderate, Rough, Australian classification differing from ICAO',
     ],
     correct: 2,
@@ -492,15 +492,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is a "TCU" in a METAR cloud group and what does it indicate?',
+    question: 'The destination METAR shows "SCT025TCU". What does this mean for your arrival?',
     options: [
-      'CU is a navigation term, Track Correction Unit, included in METAR for reference',
-      'Towering Cumulus, a large cumulus with significant vertical development but not yet meeting the full CB criteria. Indicates',
-      'CU stands for Temperature Cold Upper, an inversion layer',
-      'Tropical Cumulus, only reported in tropical areas above 20°N/20°S',
+      'Thin cirrus at 25,000 ft of no operational concern',
+      'Towering cumulus at 2,500 ft, vigorous convection that may build into CB, expect bumps and possible showers',
+      'A temperature inversion capping cloud at 2,500 ft',
+      'Total cloud unbroken at 2,500 ft requiring an instrument approach',
     ],
     correct: 1,
-    explanation: '"TCU" = Towering Cumulus (cumulus congestus) — a cumulus cloud with significant vertical development that has not yet produced lightning (which would classify it as a CB). It indicates vigorous convection that may develop into a CB. Associated with turbulence, strong updrafts, and icing near the top.',
+    explanation: 'TCU appended to a cloud group identifies towering cumulus, strongly developing convective cloud. Scattered TCU with bases at 2,500 ft means convective turbulence below and between cloud, possible showers, and the chance of further growth into cumulonimbus. Plan your circuit with the bumps in mind and watch for deterioration.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -512,19 +512,19 @@ export const cmetQuestions: {
       'Only available by requesting a special briefing from the Bureau, not in standard products',
     ],
     correct: 2,
-    explanation: 'Freezing level forecasts are included in area forecast products (GAF, GAMET) and depicted on SIGWX charts. The forecast 0°C isotherm altitude allows pilots to assess icing risk — the zone of greatest supercooled water (and therefore most hazardous icing) is typically in the first 4,000–5,000 ft above the freezing level.',
+    explanation: 'Freezing level forecasts are included in area forecast products (GAF) and depicted on SIGWX charts. The forecast 0°C isotherm altitude allows pilots to assess icing risk — the zone of greatest supercooled water (and therefore most hazardous icing) is typically in the first 4,000–5,000 ft above the freezing level.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "visible satellite imagery" and what does it show?',
+    question: 'At dawn an area appears bright white on the visible satellite image but barely shows on the infrared image. What is it most likely to be?',
     options: [
-      'Visible imagery is a low-resolution radar substitute, only used when radar is unavailable',
-      'Visible satellite imagery uses sunlight reflected from cloud tops',
-      'Visible imagery shows cloud top temperature, bright areas are cold, high cloud',
-      'Visible imagery shows rainfall intensity, identical to radar in resolution',
+      'An active thunderstorm complex with very cold tops',
+      'A field of high cirrus ahead of a front',
+      'Low cloud or fog, reflective but with tops near surface temperature',
+      'A dust storm lifted by overnight winds',
     ],
-    correct: 1,
-    explanation: 'Visible satellite imagery captures reflected solar radiation. Bright white = thick, high-reflectance cloud (often deep convective cloud or thick stratus). Dark areas = clear sky or thin cloud. Cloud texture helps distinguish cloud types — grainy texture = convective cells; smooth sheets = stratus. Only available in daylight.',
+    correct: 2,
+    explanation: 'Visible imagery shows reflectivity while infrared shows temperature. Fog and low stratus reflect sunlight strongly, appearing bright on the visible channel, but their tops are nearly as warm as the ground, so they blend into the surface on infrared. Cold CB or cirrus tops would be bright on both. The VIS and IR pair is the classic fog-detection trick.',
     reference: 'Bureau of Meteorology',
   },
   {
@@ -532,15 +532,15 @@ export const cmetQuestions: {
     options: [
       'Orographic stratus cloud on the windward slopes only, no cloud on the leeward side',
       'Cumulonimbus clouds forming over the mountain peaks',
-      'Lenticular (lens-shaped or \'flying saucer\') clouds stationary at the wave crests, with rotor turbulence below',
+      'Lenticular clouds stationary at the wave crests, with rotor turbulence below',
       'Cirrostratus spreading downwind from mountain ranges',
     ],
     correct: 2,
-    explanation: 'Lenticular (altocumulus lenticularis) clouds form at mountain wave crests where air rises and cools to condensation. They appear stationary (despite strong winds) because cloud continuously forms on the upwind side and evaporates on the downwind side. Rotor clouds below the wave crest indicate extreme turbulence.',
+    explanation: 'Lenticular (altocumulus lenticularis) clouds form at mountain wave crests where air rises and cools to condensation. They appear stationary (despite strong winds) because cloud continuously forms on the upwind side and evaporates on the downwind side. Rotor clouds below the wave crest indicate extreme turbulence. Lens-shaped or \'flying saucer\'.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a "radiosonde" and what does it measure?',
+    question: 'What does a "radiosonde" measure?',
     options: [
       'A ground-based radar instrument for measuring the height of the tropopause',
       'A balloon-borne instrument package that measures temperature, humidity, and pressure as it ascends',
@@ -578,7 +578,7 @@ export const cmetQuestions: {
   {
     question: 'What is "smoke haze" from bushfires and what operational challenges does it create?',
     options: [
-      'Bushfire smoke can extend to high altitudes (above FL200), reducing visibility across wide areas, contaminating cabin air',
+      'Bushfire smoke can extend to above FL200, reducing visibility over wide areas and contaminating cabin air',
       'Smoke haze is not reportable in METARs, only fog and mist are visibility-reducing phenomena',
       'Smoke haze only reduces ground-level visibility, it does not affect en-route flight above 3,000 ft',
       'Smoke haze is only a concern for VFR pilots, IFR operations are unaffected',
@@ -593,19 +593,19 @@ export const cmetQuestions: {
       'Vortex shedding produces fog, not cloud vortex patterns',
       'Vortex shedding is a thunderstorm process, unrelated to island meteorology',
       'Vortex shedding only occurs around tropical islands, continental Australia is not affected',
-      'Airflow disturbed by an island in the low-level flow can create alternating vortices downwind (von Kármán vortex street)',
+      'Airflow disturbed by an island in the low-level flow can create alternating vortices downwind',
     ],
     correct: 3,
-    explanation: 'Von Kármán vortices can form downwind of islands or elevated terrain in stable, low-level flows. Alternating cyclonic and anticyclonic vortices produce distinctive spiral cloud patterns visible in satellite imagery. The turbulent wake downwind of islands can be significant for low-level flight.',
+    explanation: 'Von Kármán vortices can form downwind of islands or elevated terrain in stable, low-level flows. Alternating cyclonic and anticyclonic vortices produce distinctive spiral cloud patterns visible in satellite imagery. The turbulent wake downwind of islands can be significant for low-level flight. Von Kármán vortex street.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "frost" on an aircraft and what does the pre-flight requirement state?',
+    question: 'What does the pre-flight requirement state regarding frost on an aircraft?',
     options: [
       'Frost below 3 mm thickness on wings is acceptable, only thick frost affects performance significantly',
       'Frost on non-critical surfaces is acceptable, only frost on fuel caps must be removed',
-      'Frost on all critical surfaces (wings, control surfaces, tail) must be completely removed before flight',
-      'Frost on upper wing surfaces is acceptable provided the leading edges are clear, the upper surface frost is shed by airflow during take-off',
+      'Frost on all critical surfaces must be completely removed before flight',
+      'Frost on the upper wings is acceptable if the leading edges are clear, airflow sheds it on take-off',
     ],
     correct: 2,
     explanation: 'All frost must be removed from aircraft critical surfaces before flight. Even a light, even layer of frost disrupts the boundary layer and significantly degrades lift — similar effects to sandpaper. This can increase the stall speed and degrade climb performance to a dangerous degree.',
@@ -624,7 +624,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "mountain wave turbulence SIGMET" and when is it issued?',
+    question: 'When is "mountain wave turbulence SIGMET" issued?',
     options: [
       'Mountain wave turbulence is always forecast in area forecasts, a separate SIGMET is never issued',
       'Issued for severe or extreme turbulence associated with mountain wave activity',
@@ -644,7 +644,7 @@ export const cmetQuestions: {
       '1008.00 hPa',
     ],
     correct: 0,
-    explanation: 'The ISA defines standard sea-level pressure as 1013.25 hPa (hectopascals), equivalent to 29.92 inHg. This is the reference pressure used for altimetry above the transition altitude.',
+    explanation: 'The ISA defines standard sea-level pressure as 1013.25 hPa (hectopascals). This is the reference pressure used for altimetry above the transition altitude.',
     reference: 'ICAO Standard Atmosphere',
   },
   {
@@ -660,16 +660,16 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "1-2-3 rule" used for in alternate fuel planning?',
+    question: 'Under Australian rules, which forecast conditions at your destination require a VFR flight to provide for an alternate?',
     options: [
-      'A US-based rule for selecting alternates, if the destination TAF forecasts less than 2,000 ft ceiling and 3 SM visibility from 1',
-      'E 1-2-3 rule governs the number of approaches permitted before diverting, not fuel-related',
-      'E rule requires 1 hour contingency fuel, 2 alternates, and 3 hours total endurance',
-      'Australian fuel rule, 1 hour fuel at destination, 2 hours additional, 3% overhead fuel',
+      'More than scattered cloud below 1,500 ft, visibility below 8 km, or thunderstorms forecast or probable',
+      'Any cloud below 3,000 ft, visibility below 10 km, or surface wind above 20 kt at the destination',
+      'An alternate is a fuel decision only, destination weather never requires one for VFR flight',
+      'Cloud below 1,000 ft and visibility below 5 km, the same figures as the VMC minima',
     ],
     correct: 0,
-    explanation: 'The "1-2-3 rule" is a US FAR concept (1 hour before to 1 hour after ETA, ceiling below 2,000 ft, visibility below 3 SM = alternate required). Australian regulations differ but operate on similar principles — if conditions at the destination may be below landing minima, an alternate must be nominated and fuel carried.',
-    reference: 'AIP GEN 3.5',
+    explanation: 'For a VFR flight, an alternate must be provided when the destination forecast shows more than scattered cloud below 1,500 ft, visibility less than 8 km, a probability of visibility falling below 8 km, or thunderstorms or their probability. The trigger sits above the bare VMC minima because forecasts are imperfect and arrival conditions can be worse than forecast.',
+    reference: 'CASR Part 91',
   },
   {
     question: 'What is a "SPECI" and under what conditions is it issued?',
@@ -689,14 +689,14 @@ export const cmetQuestions: {
       'Warm, humid air from tropical oceans, associated with thunderstorms and heavy rain',
       'Dry, stable air from continental polar regions, associated with clear skies and very cold temperatures',
       'Warm, dry air from continental regions, associated with heatwaves and dust storms',
-      'Cold, moist air from polar maritime regions, associated with cool temperatures, showery precipitation, good visibility between',
+      'Cold, moist air from polar maritime regions, linked to cool temperatures, showery precipitation, good visibility between',
     ],
     correct: 3,
     explanation: 'Maritime polar (mP) air is cold and moist, originating over polar oceans. As it moves northward over warmer Australian waters, it is heated from below, becoming unstable. Associated with cool showery weather, good visibility between showers, and possible thunderstorms when instability is sufficient.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is a prognostic chart (prog chart) and how far ahead does it typically forecast?',
+    question: 'How far ahead does a prognostic chart (prog chart) typically forecast?',
     options: [
       'A forecast chart showing expected pressure systems, fronts, and weather at a future time',
       'A chart showing radar precipitation, updated every 10 minutes',
@@ -720,7 +720,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the "wind at 3,000 ft" and how does it relate to the geostrophic wind?',
+    question: 'How does the "wind at 3,000 ft" relate to the geostrophic wind?',
     options: [
       'The 3,000 ft wind is the same as the 500 hPa wind, pressure levels do not change between them',
       'At 3,000 ft, wind direction reverses compared to the surface, it blows from the opposite direction',
@@ -732,9 +732,9 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.6',
   },
   {
-    question: 'What is a land breeze and when does it occur?',
+    question: 'When does a land breeze occur?',
     options: [
-      'A nocturnal wind blowing from the land to the sea, driven by the land cooling faster than the sea after sunset, creating a pressure gradient from land to sea',
+      'A night wind from land to sea, driven by the land cooling faster than the sea and reversing the daytime pressure gradient',
       'A wind driven by cold air drainage from elevated inland terrain, not related to coastal temperature differences',
       'A daytime wind from land to sea, opposite of the sea breeze',
       'A wind that only occurs along straight coastlines, curved coastlines experience different circulation',
@@ -761,34 +761,34 @@ export const cmetQuestions: {
       'Cumulonimbus first, then stratocumulus, then clearing as the front passes',
       'Stratus at the surface initially, building upward to altostratus then cirrostratus',
       'No cloud change occurs ahead of a warm front, cloud only develops at the surface front',
-      'Cirrus first (500-1000 km ahead), thickening to cirrostratus, then altostratus, then nimbostratus with continuous rain',
+      'Cirrus first, as far as 1,000 km ahead, thickening to cirrostratus, then altostratus, then nimbostratus with continuous rain',
     ],
     correct: 3,
     explanation: 'The warm front cloud sequence approaching from as far as 1,000 km away: cirrus appears first (highest, wispy ice crystal cloud), then cirrostratus (causing halos around the sun/moon), then altostratus (sun appears as through frosted glass), then nimbostratus with the onset of continuous rain as the surface front approaches. Each layer is lower and thicker than the last.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "wind direction variability" in a METAR and when is it reported as VRB?',
+    question: 'A METAR wind group reads "VRB03KT". Why has the direction been given as VRB?',
     options: [
-      'RB is only used at automated stations, staffed stations always measure a specific direction',
-      'RB is used whenever the anemometer malfunctions, it does not indicate actual variability',
-      'Wind direction is reported as VRB when it varies by 60° or more and wind speed is 6 kt or less, or when direction is truly',
-      'RB is used when wind direction changes by more than 30°, any variation beyond this is VRB',
+      'VRB indicates a vertical gust component at the sensor',
+      'The anemometer has failed and direction cannot be measured',
+      'The wind is varying by more than 180 degrees in gusts',
+      'At 3 kt the wind is too light to hold a steady direction, so it is reported variable',
     ],
-    correct: 2,
-    explanation: 'VRB (variable) is used when wind direction varies by 60° or more and the mean speed is ≤6 kt, making direction specification meaningless. For stronger winds with ≥60° variation, both extremes of direction are reported — e.g. "18006KT 160V220" = 180° at 6 kt, variable between 160° and 220°.',
+    correct: 3,
+    explanation: 'VRB is used when the wind is light, generally 3 kt or less, and wandering in direction, or when stronger wind varies so widely that no mean direction is useful. With 3 kt the cause is simply light and variable conditions. Expect a negligible wind effect, with the duty runway chosen on other grounds.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "runway visual range" (RVR) and how does it differ from prevailing visibility?',
+    question: 'Visibility on the METAR is 0400 in fog, but the tower passes "RVR Runway 16, 800 metres". Why do the two numbers differ?',
     options: [
-      'VR is only relevant to CAT II/III approaches, CAT I approaches use prevailing visibility',
-      'RVR is the distance over which a pilot can see the runway surface markings or lights, measured by transmissometers at specific runway positions',
-      'VR is always higher than prevailing visibility, runway lights enhance forward visibility',
-      'VR and prevailing visibility are identical, both measured at the same point on the aerodrome boundary',
+      'RVR is measured along the runway with high-intensity lights, so it usually exceeds the met visibility in fog',
+      'The METAR value is stale, RVR is always the more recent figure',
+      'The tower estimate is unreliable compared with the met observation',
+      'They measure the same thing, one of the readings is an error',
     ],
-    correct: 1,
-    explanation: 'RVR is an instrument-measured visibility along the runway axis at specific positions — typically touchdown zone, midpoint, and rollout end. It differs from prevailing visibility because: it is runway-aligned (not omnidirectional), accounts for runway lighting effects, and may be affected by local conditions (fog pockets, precipitation) not representative of the field as a whole.',
+    correct: 0,
+    explanation: 'RVR is the distance a pilot can see down the runway, assessed where transmissometers and high-intensity runway lighting are installed. Lights punch through fog, so RVR commonly exceeds the reported meteorological visibility, which is why the tower may pass a usable runway picture while the met visibility looks hopeless.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -840,16 +840,16 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "aircraft performance in turbulence" and what airspeed should be maintained?',
+    question: 'Your destination TAF forecasts "24018G35KT". Approaching in moderate turbulence, what airspeed discipline applies?',
     options: [
-      'Turbulence penetration speed is the same as Vne, maintaining Vne prevents structural damage',
-      'In turbulence, reduce to the published turbulence penetration speed (Vra or Va)',
-      'In turbulence, maintain maximum cruise speed to get through the area as quickly as possible',
-      'In turbulence, increase speed to provide more lift margin against sudden airspeed loss',
+      'Fly faster for control authority in the gusts',
+      'Slow to turbulence penetration speed, at or below Va for your weight, to protect the structure',
+      'Hold normal cruise, speed makes no difference',
+      'Slow to just above the stall for minimum loads',
     ],
     correct: 1,
-    explanation: 'In turbulence, reduce to the turbulence penetration speed (Va — design manoeuvring speed or Vra). At or below Va, full deflection of one control at a time will not exceed structural design loads. This prevents structural damage while maintaining controllability during sudden gusts.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.8',
+    explanation: 'In significant turbulence the aircraft must be at or below manoeuvring or turbulence penetration speed so a sharp gust stalls the wing before it overloads the structure. Va falls with weight, so check the figure for today\'s loading. Excess speed risks structural damage; flying near the stall risks departure in the gusts, so the target sits between.',
+    reference: 'Aircraft Flight Manual',
   },
   {
     question: 'What does weather radar NOT detect that a pilot should be aware of?',
@@ -868,7 +868,7 @@ export const cmetQuestions: {
     options: [
       'BCFG and FG are identical, the "BC" prefix has no operational meaning',
       'BCFG = background fog, light fog that does not reduce visibility below IFR minima',
-      'BCFG = patchy fog in isolated patches that does not cover the entire aerodrome, with visibility varying dramatically over short distances',
+      'BCFG means fog patches, fog in isolated banks with visibility varying sharply over short distances',
       'BCFG = beach fog, coastal fog formed when warm sea breezes cool over cold beach sand at night',
     ],
     correct: 2,
@@ -876,19 +876,19 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "altocumulus castellanus" (ACC) and what does its presence indicate?',
+    question: 'What does the presence of altocumulus castellanus (ACC) indicate?',
     options: [
       'ACC is a stable, harmless mid-level cloud, no aviation hazard',
       'ACC is a type of orographic cloud, forms only over mountainous terrain',
-      'Altocumulus castellanus is a mid-level cloud with vertical development (turret-shaped tops)',
+      'Altocumulus castellanus is a mid-level cloud with vertical development',
       'ACC only forms at night, it dissipates immediately when sunlight reaches it',
     ],
     correct: 2,
-    explanation: 'Altocumulus castellanus (ACC) features small cumuliform towers growing from a common base at mid-levels. Its presence indicates middle-level instability and sufficient moisture for convective development in the mid-troposphere. Seeing ACC in the morning is a useful indicator of likely afternoon thunderstorm activity.',
+    explanation: 'Altocumulus castellanus (ACC) features small cumuliform towers growing from a common base at mid-levels. Its presence indicates middle-level instability and sufficient moisture for convective development in the mid-troposphere. Seeing ACC in the morning is a useful indicator of likely afternoon thunderstorm activity. Turret-shaped tops.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "frontal inversion" and how does it affect cloud and precipitation?',
+    question: 'How does "frontal inversion" affect cloud and precipitation?',
     options: [
       'A frontal inversion only forms at cold fronts, warm fronts never produce inversions',
       'A temperature inversion at a frontal surface where warm air overlies cold air',
@@ -900,15 +900,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "aerodrome forecast" (TAF) validity period options available in Australia?',
+    question: 'A TAF header reads "TAF YSSY 050503Z 0506/0606". How long is this forecast valid?',
     options: [
-      'Australian TAFs are available for 12, 24 or 30-hour validity periods depending on the aerodrome and schedule',
-      'Australian TAFs are valid for 6 hours only, with the GAF used for any forecast beyond that',
-      'TAFs in Australia are only issued for major airports, regional aerodromes use GAF only',
-      'TAFs are always 24 hours, no other validity period exists',
+      '6 hours, from 0500Z until 0600Z reissue',
+      '30 hours, the standard for an international aerodrome',
+      '24 hours, from 0600Z on the 5th until 0600Z on the 6th',
+      '12 hours, with an automatic 12-hour extension',
     ],
-    correct: 0,
-    explanation: 'Australian aerodromes issue TAFs in various formats: 9-hour TAFs for some smaller aerodromes; 24-hour TAFs for major aerodromes; and 30-hour TAFs for major international aerodromes to support long-haul flight planning. Update frequency is typically every 3 or 6 hours.',
+    correct: 2,
+    explanation: 'The validity group 0506/0606 runs from day 05 at 0600 UTC to day 06 at 0600 UTC, 24 hours. Australian TAFs are valid for between 12 and 30 hours depending on the aerodrome, with major airports also receiving the three-hourly TAF3 service. The 050503Z group is merely the issue time.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -950,7 +950,7 @@ export const cmetQuestions: {
   {
     question: 'What is the role of "get-there-itis" (plan continuation bias) in weather-related accidents?',
     options: [
-      'Plan continuation bias (pressing on despite deteriorating conditions) is a major factor in weather-related aviation accidents',
+      'Plan continuation bias is a major factor in weather-related aviation accidents',
       'Get-there-itis only affects student pilots, experienced pilots are immune',
       'Get-there-itis is not a recognised safety concern, it is a myth perpetuated by accident investigators',
       'Plan continuation bias actually improves safety outcomes by maintaining crew focus on the destination',
@@ -960,7 +960,7 @@ export const cmetQuestions: {
     reference: 'CASA Safety Bulletin',
   },
   {
-    question: 'What are "multicell thunderstorms" and why are they longer-lived than single-cell storms?',
+    question: 'Why are "multicell thunderstorms" longer-lived than single-cell storms?',
     options: [
       'Multicell storms are weaker than single-cell storms, the energy is divided between multiple cells',
       'Multicell storms consist of a cluster of cells at different stages of their lifecycle',
@@ -996,19 +996,19 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "stratocumulus deck" and what phenomenon produces it under high pressure?',
+    question: 'What phenomenon produces a stratocumulus deck under high pressure?',
     options: [
       'Stratocumulus deck is a cumulonimbus cluster, produced by intense afternoon heating',
       'Stratocumulus deck is a widespread layer of stratocumulus cloud that forms below a subsidence inversion in the high-pressure system',
       'Stratocumulus deck is only found over the ocean, continental Australia never experiences it',
-      'Sc deck is produced by frontal lifting, it always indicates an approaching front',
+      'A stratocumulus deck is produced by frontal lifting, so it always indicates an approaching front',
     ],
     correct: 1,
     explanation: 'Stratocumulus decks form when a subsidence inversion in a high-pressure system caps a moist boundary layer. The layer below the inversion cools radiatively and develops Sc cloud. They can persist for days, producing extensive overcast and reduced visibility. Common over the Southern Ocean and Bass Strait in winter.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is the "meteorologist\'s forecast uncertainty" and how should pilots account for it in planning?',
+    question: 'How should pilots account for the "meteorologist\'s forecast uncertainty" in planning?',
     options: [
       'All weather forecasts carry uncertainty that increases with time horizon',
       'Forecast uncertainty is the meteorologist\'s problem, pilots only need to act on the issued forecast',
@@ -1020,40 +1020,40 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a METAR and how does it differ from a SPECI?',
+    question: 'At 0715Z you receive "SPECI YSCB 050715Z 28035G50KT 2000 +TSRA BKN005CB". Why is this a SPECI rather than a METAR?',
     options: [
-      'METAR and SPECI are identical, SPECI is just an older name for METAR',
-      'METAR covers the terminal area, SPECI covers only the runway environment',
-      'METAR is a forecast, SPECI is an observed report, both issued at the same intervals',
-      'METAR is a routine hourly (or half-hourly) aerodrome meteorological observation report',
+      'It was made by an automatic station without an observer',
+      'Canberra only issues SPECI reports, never METARs',
+      'SPECI is the label for any report containing a thunderstorm',
+      'Conditions changed significantly between routine reports, triggering a special observation',
     ],
     correct: 3,
-    explanation: 'A METAR is a routine aerodrome meteorological observation (issued hourly or half-hourly). A SPECI is a special observation issued when conditions change significantly — such as when visibility, cloud ceiling, or wind speed/direction changes by defined amounts between METAR times.',
+    explanation: 'A SPECI is a special report issued off-schedule whenever specified criteria are crossed, such as visibility, cloud base, wind or the onset of a thunderstorm. The content format is identical to a METAR. Here severe winds, 2,000 m visibility and a heavy thunderstorm forced an immediate report rather than waiting for the next routine time.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "GS" in a METAR weather group?',
+    question: 'A METAR weather group reads "+SHGS". What is falling at the aerodrome?',
     options: [
-      'Gust speed, used when gusts exceed the mean wind speed by 10 kt or more',
-      'Gusts and squalls, used when both gusty winds and squall conditions occur together',
-      'Ground snow, indicating snow on the runway surface',
-      'Small hail (diameter less than 5 mm) or snow pellets/graupel',
+      'Heavy showers of small hail or snow pellets',
+      'Heavy snow showers with gusts',
+      'Ground snow drifting across the runway',
+      'Showers of large hail greater than 5 mm',
     ],
-    correct: 3,
-    explanation: '"GS" = Small hail (diameter < 5 mm) or snow pellets/graupel. Less severe than GR but still indicates convective activity. Graupel (soft rime-coated snow crystals) can also cause icing on aircraft.',
+    correct: 0,
+    explanation: 'GS is the code for small hail or snow pellets, also called graupel, with diameters under 5 mm. SH marks shower-type precipitation and the plus sign heavy intensity. Large hail of 5 mm or more is coded GR. Graupel signals vigorous convective cloud overhead with icing aloft.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a temperature inversion and what does it mean for atmospheric stability?',
+    question: 'On morning climb-out the air is glassy smooth, smoke from a chimney spreads flat at about 1,500 ft, then at 1,800 ft you hit light chop and a sudden temperature drop. What did you climb through?',
     options: [
-      'Temperature decreasing at exactly the DALR, neutral stability',
-      'Temperature increasing with altitude, indicates very stable conditions that suppress vertical air movement',
-      'Temperature constant with altitude, neutral stability layer',
-      'Temperature decreasing with altitude faster than the DALR, indicates extreme instability',
+      'The freezing level',
+      'A low-level temperature inversion capping the stable surface layer',
+      'A sea breeze front',
+      'The transition layer at 10,000 ft',
     ],
     correct: 1,
-    explanation: 'A temperature inversion is a layer where temperature increases with altitude (opposite to normal). It is an extremely stable condition because rising air quickly becomes cooler than its surroundings and sinks back down, suppressing convection and vertical mixing.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.8',
+    explanation: 'Smoke flattening into a layer and dead-smooth air are textbook signs of an inversion, where temperature rises with height and vertical motion is suppressed. Climbing through the top, you re-enter the normal lapse and mixing, felt as light turbulence and a temperature fall. Inversions also trap haze and can hide fog formation beneath them overnight.',
+    reference: 'Part 61 MOS Sch 3, CMTC 2.3',
   },
   {
     question: 'How can the approximate cloud base height be estimated from surface observations?',
@@ -1071,7 +1071,7 @@ export const cmetQuestions: {
     question: 'What conditions are necessary for a tropical cyclone to form in the Australian region?',
     options: [
       'Sea surface temperatures above 15°C, strong upper-level winds, and proximity to a cold front',
-      'Sea surface temperatures above 26.5°C, low vertical wind shear, sufficient Coriolis effect (away from the equator), and a pre-existing disturbance',
+      'Sea surface temperatures above 26.5°C, low vertical wind shear, sufficient Coriolis effect, and a pre-existing disturbance',
       'Cold ocean currents, high surface pressure, and orographic lifting over continental Australia',
       'SSTs above 20°C, strong vertical wind shear to organise the circulation, and frontal convergence',
     ],
@@ -1082,29 +1082,29 @@ export const cmetQuestions: {
   {
     question: 'What is "turbulence avoidance" strategy and what are the key decision points?',
     options: [
-      'Pre-flight assessment of the GAF, GPWT and SIGMETs, route or level changes to avoid forecast areas, and turbulence penetration speed if entry is unavoidable',
+      'Plan around forecast areas using the GAF, GPWT and SIGMETs, and slow to turbulence penetration speed if entry is unavoidable',
       'Turbulence avoidance means always flying in VMC, since IFR flight inherently accepts whatever turbulence is encountered',
       'Once turbulence is entered, no avoidance action is possible, continue straight and level',
       'Turbulence avoidance only applies to jet aircraft, piston aircraft can fly through any turbulence safely',
     ],
     correct: 0,
-    explanation: 'Turbulence avoidance is a layered strategy: pre-flight SIGWX/PIREP review; enroute altitude or route changes to avoid known areas; speed reduction to Va on encountering turbulence; 180° turn if inadvertently entering embedded CB; and PIREP filing to warn subsequent pilots.',
+    explanation: 'Turbulence avoidance is a layered strategy: pre-flight SIGWX/AIREP review; enroute altitude or route changes to avoid known areas; speed reduction to Va on encountering turbulence; 180° turn if inadvertently entering embedded CB; and AIREP filing to warn subsequent pilots.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the difference between "rain" and "showers" in meteorological reporting?',
+    question: 'Your destination TAF forecasts "RA", but the current METAR shows "-SHRA". What is the practical difference?',
     options: [
-      'Rain is always heavier than showers, showers are defined as light precipitation only',
-      'Rain and showers are identical, with the choice of term left entirely to the preference of the observer',
-      'Rain (RA) is continuous or intermittent precipitation from stratiform cloud, while showers (SH) fall from convective cloud and start and stop abruptly',
-      'Showers only occur in summer, rain only in winter, a seasonal distinction',
+      'SHRA means the rain has already stopped and the runway is drying',
+      'They are interchangeable codes for exactly the same conditions',
+      'RA is steady stratiform rain, while SHRA falls from convective cloud in bursts that start and stop abruptly',
+      'RA is by definition heavier than any shower can possibly be',
     ],
     correct: 2,
-    explanation: 'Rain (RA) is continuous or intermittent precipitation from stratiform cloud (As, Ns) — steady, widespread, associated with frontal or large-scale lifting. Showers (SHRA) fall from convective cloud (Cu, CB) — variable intensity, localised, interspersed with brighter intervals, often gusty.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.4',
+    explanation: 'Rain coded RA falls continuously or intermittently from stratiform cloud, giving prolonged wet conditions. Showers coded SH come from convective cloud, arriving and clearing abruptly with bright intervals between. The minus sign shows light intensity. Showery weather usually means better average visibility but bumpier air beneath the convective bases.',
+    reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a surface analysis chart and what information does it provide for flight planning?',
+    question: 'What information does a surface analysis chart provide for flight planning?',
     options: [
       'A forecast chart valid 24 hours ahead, not a current observation product',
       'A chart showing cloud cover and precipitation, directly showing in-flight visibility conditions',
@@ -1116,9 +1116,9 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.9',
   },
   {
-    question: 'What is a satellite image and what types of imagery are most commonly used in aviation weather?',
+    question: 'What types of imagery are most commonly used in aviation weather?',
     options: [
-      'Satellite imagery showing current cloud cover and movement, visible imagery (shows cloud reflectance in daylight), infrared',
+      'Satellite imagery showing current cloud cover and movement, visible imagery, infrared',
       'S-derived wind and temperature soundings from atmospheric monitoring satellites',
       'A satellite-transmitted METAR from remote aerodromes without staffed weather observers',
       'A ground-based radar image enhanced by satellite uplink, showing precipitation at higher resolution',
@@ -1131,7 +1131,7 @@ export const cmetQuestions: {
     question: 'Why must a pilot be cautious about weather forecasts close to the knowledge cutoff of a forecast?',
     options: [
       'Forecast accuracy increases near the cutoff time, the last few hours of a TAF are the most reliable',
-      'Weather forecasts have decreasing accuracy with time, forecasts valid more than 24 hours ahead have significantly more',
+      'Weather forecasts lose accuracy with time, and elements valid more than 24 hours ahead carry significantly more uncertainty',
       'Forecast accuracy is uniform throughout the validity period, time does not affect reliability',
       'Forecasts are less accurate near their issue time, the first few hours have higher uncertainty',
     ],
@@ -1140,15 +1140,15 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What does the METAR group "9999" in the visibility field indicate?',
+    question: 'A METAR visibility group shows "9999". What does this mean?',
     options: [
-      'Visibility measured as infinite, no haze or precipitation present',
-      'Visibility of 10 km or more',
-      'Visibility data unavailable, instrumentation error',
-      'Visibility of 9,999 m, just below 10 km',
+      'Unlimited visibility with no cloud below 5,000 ft',
+      'Visibility is exactly 9,999 m',
+      'The visibility sensor has failed',
+      'Visibility is 10 km or more',
     ],
-    correct: 1,
-    explanation: '"9999" in the visibility field of a METAR indicates visibility of 10 km or more (not a specific measurement of 9,999 m, but a code meaning ≥ 10 km). It is frequently paired with CAVOK when other conditions are also met.',
+    correct: 3,
+    explanation: '9999 is the code for visibility of 10 km or more, the maximum reported value. It says nothing about cloud, which is reported separately, so 9999 can coexist with low overcast. Only CAVOK combines the visibility, cloud and weather statements in a single code.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -1164,21 +1164,21 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.3',
   },
   {
-    question: 'What is the difference between "IFR take-off minima" and "IFR landing minima"?',
+    question: 'A CB is approaching and its anvil has spread overhead, though rain has not yet reached you. What surface wind behaviour should you expect before the rain arrives?',
     options: [
-      'IFR take-off minima are only relevant to multi-engine aircraft, single-engine IFR has no take-off minimum',
-      'IFR take-off minima are always higher than landing minima to allow fuel to be burned before return',
-      'They are identical, the same visibility and ceiling apply for both take-off and landing',
-      'Take-off minima ensure the crew can execute a rejected take-off safely and maintain obstacle clearance',
+      'A sudden gusty outflow, the gust front, often arriving kilometres ahead of the rain with sharp wind shifts',
+      'No change until the rain begins, storm winds and rain always arrive together',
+      'A steady calm as the storm draws air inward at the surface ahead of it',
+      'A gradual easterly drift as the anvil shades the ground and cools it evenly',
     ],
-    correct: 3,
-    explanation: 'Take-off minima ensure safe rejected take-off and initial climb obstacle clearance. They depend on the departure area and obstacle environment — not necessarily tied to approach minima. Landing minima are published for each approach procedure. Take-off minima may be lower (e.g. RVR 150 m for CAT III) than some approach minima.',
-    reference: 'CASR Part 91',
+    correct: 0,
+    explanation: 'Cold downdraught air spreading beneath a storm forms the gust front, which can run several kilometres, sometimes tens of kilometres, ahead of the precipitation. It brings an abrupt wind shift, strong gusts and severe low-level shear, which is why departures and arrivals should not be attempted just before a storm hits even while the field is still dry.',
+    reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
     question: 'What is "negative wind shear" on approach and what action does it require?',
     options: [
-      'Negative wind shear on approach means the headwind decreases (or becomes a tailwind) as the aircraft descends',
+      'Negative wind shear on approach means the headwind decreases as the aircraft descends',
       'Negative wind shear requires the pilot to increase approach speed by 50 kt to compensate',
       'Negative wind shear means the headwind increases on approach, beneficial for the landing distance',
       'Negative wind shear only requires a minor pitch correction, no power change is needed',
@@ -1200,23 +1200,23 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "cloud base" as reported in a METAR and how is it measured?',
+    question: 'The METAR shows "BKN008". Above what datum is the 800 ft measured?',
     options: [
-      'Cloud base is only measured by radiosonde, surface instruments cannot accurately determine cloud height',
-      'Cloud base measurement accuracy is ±500 ft, the METAR gives an approximate value only',
-      'Cloud base is measured from MSL, a cloud at 1,500 ft AAL at an aerodrome 500 ft AMSL is reported as "020" (2,000 ft MSL)',
-      'Cloud base is measured by a ceilometer (laser-based instrument) or estimated by a human observer',
+      'Aerodrome level, cloud bases in METARs are heights above the aerodrome',
+      'Mean sea level, like all aviation heights',
+      'The highest terrain within 10 NM',
+      'Standard pressure datum 1013 hPa',
     ],
-    correct: 3,
-    explanation: 'Cloud base in a METAR is measured by a ceilometer (laser cloud-height indicator/LCHI) or estimated visually. It is reported in hundreds of feet AAL (Above Aerodrome Level). "BKN018" = broken cloud at 1,800 ft above the aerodrome surface — not above MSL.',
+    correct: 0,
+    explanation: 'Cloud bases in METARs, SPECIs and TAFs are given in hundreds of feet above aerodrome level. BKN008 is therefore a broken base 800 ft above the field. GAF cloud heights differ, being quoted AMSL, a distinction that matters when you convert area forecasts to circuit expectations.',
     reference: 'AIP GEN 3.5',
   },
   {
     question: 'What is "CBs on route" as a SIGMET trigger and what action should a pilot take?',
     options: [
-      'When SIGMETs or forecasts identify CBs on or near the planned route, pilots must',
+      'When SIGMETs or forecasts put CBs on or near the route, plan to avoid them by re-routing, delaying or diverting',
       'CB on route SIGMETs are only advisory, pilots are not required to deviate',
-      'S on route are only a concern below FL180, high-altitude aircraft overfly all CB activity',
+      'CBs on route are only a concern below FL180, high-altitude aircraft overfly all CB activity',
       'SIGMETs require flight cancellation, no operational procedures allow continuation',
     ],
     correct: 0,
@@ -1248,7 +1248,7 @@ export const cmetQuestions: {
     reference: 'ICAO Standard Atmosphere',
   },
   {
-    question: 'What is the "eye" of a tropical cyclone and what conditions exist within it?',
+    question: 'What conditions exist within the "eye" of a tropical cyclone?',
     options: [
       'The eye is a region of very low cloud base, the cyclone\'s main precipitation area',
       'The eye only forms in Category 5 cyclones, weaker cyclones do not have a distinct eye',
@@ -1260,7 +1260,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "Doppler weather radar" and what advantage does it have over conventional radar?',
+    question: 'What advantage does "Doppler weather radar" have over conventional radar?',
     options: [
       'Doppler radar is used only for long-range surveillance, conventional radar is used for local weather detection',
       'Doppler radar has no advantage over conventional radar for aviation weather applications',
@@ -1272,9 +1272,9 @@ export const cmetQuestions: {
     reference: 'Bureau of Meteorology',
   },
   {
-    question: 'What is the cloud classification system and what are the four cloud families?',
+    question: 'What are the four cloud families?',
     options: [
-      'High clouds (above 20,000 ft), middle clouds (6,500–20,000 ft), low clouds (surface–6,500 ft), and clouds with vertical development',
+      'High clouds above 20,000 ft, middle clouds between 6,500 and 20,000 ft, low clouds below 6,500 ft, and clouds with vertical development',
       'Order: stratus, cumulus, cirrus, and nimbus, based on the visual appearance of the cloud',
       'Low, medium, high, and convective, based on cloud base altitude',
       'Fog, cloud, precipitation, and storm, based on water content and altitude',
@@ -1284,27 +1284,27 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is the maximum permissible difference between the reported wind direction and the actual take-off runway direction for METAR wind reporting purposes?',
+    question: 'The wind is 250° at 15 kt and the available runways are 07 and 25. Which runway should be in use?',
     options: [
-      '0°, wind must always align exactly with the runway direction',
-      '30°, beyond which the tower must nominate a different runway for operations',
-      '5°, a 5-degree tolerance is permitted to account for instrument errors',
-      'There is no maximum, wind is always the measured direction regardless of runway alignment',
-    ],
-    correct: 3,
-    explanation: 'Wind direction in a METAR is always the true wind direction (rounded to the nearest 10°) from which the wind is blowing — it is not aligned to runway headings. ATC and pilots convert between wind direction and runway heading to determine crosswind components. No alignment restriction applies.',
-    reference: 'AIP GEN 3.5',
-  },
-  {
-    question: 'What is "freezing level information" in an GAF and how should it be used?',
-    options: [
-      'The GAF provides forecast freezing level for the area, used to assess',
-      'Freezing level from GAF is only relevant to jet aircraft, piston aircraft cannot encounter the freezing level',
-      'E GAF freezing level is only indicative, actual freezing level may be 5,000 ft different',
-      'Freezing level information is not included in GAF, pilots must obtain it from a radiosonde',
+      'Runway 25, giving a 15 kt headwind almost straight down the runway',
+      'Runway 07, because departures should be made downwind',
+      'Either runway, the difference is negligible at 15 kt',
+      'Neither, a 15 kt wind requires use of a cross runway',
     ],
     correct: 0,
-    explanation: 'The GAF freezing level information guides icing risk assessment: flights above the forecast freezing level in cloud encounter potential icing. It also indicates where a descent below the freezing level will exit icing conditions. Combining freezing level with cloud heights and types allows a complete icing risk assessment.',
+    explanation: 'Aircraft take off and land into wind. Wind from 250° is aligned with Runway 25, giving a direct headwind, while Runway 07 would carry a 15 kt tailwind, lengthening the ground roll and exceeding most tailwind limits.',
+    reference: 'Part 61 MOS Sch 3, CMTC 2.6',
+  },
+  {
+    question: 'The GAF gives "FZL: 9000FT" and forecasts cloud from 7,000 to 12,000 ft AMSL. You plan to cruise at 9,500 ft in cloud. What should you expect?',
+    options: [
+      'No icing, the freezing level only matters in precipitation',
+      'Airframe icing, you would be in cloud above the freezing level',
+      'Carburettor icing only, airframes do not ice in stratiform cloud',
+      'Nothing significant, icing needs temperatures below minus 20',
+    ],
+    correct: 1,
+    explanation: 'Above the freezing level any flight in cloud or precipitation risks airframe ice, and the worst accretion commonly occurs just above the FZL where large supercooled drops abound. Cruising at 9,500 ft inside cloud with the FZL at 9,000 ft places you exactly there. Plan to cruise below the FZL, on top, or in clear air.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -1320,7 +1320,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.9',
   },
   {
-    question: 'What is embedded thunderstorm and why is it particularly dangerous?',
+    question: 'Why is an embedded thunderstorm particularly dangerous?',
     options: [
       'A thunderstorm that forms in the middle of a squall line, most dangerous position in the line',
       'A thunderstorm with an embedded dry slot, dangerous because the precipitation core is hidden',
@@ -1340,7 +1340,7 @@ export const cmetQuestions: {
       'Pilots have no obligation to report weather, it is at their discretion',
     ],
     correct: 2,
-    explanation: 'While specific CASR requirements vary, standard airmanship and ICAO Annex 3 obligations require pilots encountering significant weather hazards to report them to ATC. Voluntary pilot weather reports (PIREPs) are critical safety communications that benefit all traffic in the area — they are the only real-time source for turbulence, icing, and CAT data.',
+    explanation: 'While specific CASR requirements vary, standard airmanship and ICAO Annex 3 obligations require pilots encountering significant weather hazards to report them to ATC. Voluntary pilot weather reports (AIREPs) are critical safety communications that benefit all traffic in the area — they are the only real-time source for turbulence, icing, and CAT data.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -1348,7 +1348,7 @@ export const cmetQuestions: {
     options: [
       'Spatial disorientation is only caused by aircraft malfunctions, not weather-related',
       'Weather only promotes disorientation in tropical regions where humidity affects instrument accuracy',
-      'Flight over featureless terrain, glassy water or snow, and conditions where the horizon is indistinct, all of which favour spatial disorientation',
+      'Featureless terrain, glassy water or snow, and any indistinct horizon, all of which favour spatial disorientation',
       'Spatial disorientation risk increases with altitude, it only affects high-altitude operations',
     ],
     correct: 2,
@@ -1360,7 +1360,7 @@ export const cmetQuestions: {
     options: [
       'Altostratus (As), mid-level layer cloud with embedded turbulence',
       'Nimbostratus (Ns), continuous rain cloud with embedded turbulence',
-      'Cumulonimbus (Cb) and towering cumulus (TCu)',
+      'Cumulonimbus and towering cumulus',
       'Cirrus (Ci), high ice crystal cloud indicating jet stream turbulence',
     ],
     correct: 2,
@@ -1368,7 +1368,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is clear ice (glaze ice) and why is it considered the most hazardous form of structural icing?',
+    question: 'Why is clear ice (glaze ice) considered the most hazardous form of structural icing?',
     options: [
       'A thin, transparent layer of ice that forms on windscreens, hazardous because it reduces pilot visibility',
       'A smooth, dense, transparent ice that forms when large supercooled droplets freeze slowly and spread',
@@ -1392,11 +1392,11 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is a "marked temperature inversion" on a sounding and how does it affect pilot briefing?',
+    question: 'How does a "marked temperature inversion" on a sounding affect pilot briefing?',
     options: [
       'Inversions only affect high-altitude supersonic flight, below FL250 they are irrelevant to normal operations',
       'An inversion means turbulence, the shear at the inversion top always produces severe turbulence',
-      'A stable layer that suppresses convection, traps haze below it, favours fog or low stratus beneath it, and produces wind shear at its boundaries',
+      'A stable layer that suppresses convection, traps haze, favours fog or stratus beneath it, and shears the wind at its edges',
       'An inversion on a sounding indicates the tropopause only, not relevant to low-altitude operations',
     ],
     correct: 2,
@@ -1404,15 +1404,15 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a radiation fog and what conditions are required for it to form?',
+    question: 'The 1000Z evening METAR reads "02003KT 9999 SKC 24/22 Q1018". What does this combination warn of for a dawn departure?',
     options: [
-      'Fog forming on clear, calm nights when longwave radiation cools the ground and the overlying air to below its dew point',
-      'Fog forming when warm moist air flows over a cold surface, common on cold ocean currents',
-      'Fog forming in valleys when cold dense air drains downslope and pools',
-      'Fog forming over warm water when cold dry air flows over it, requires a large sea-air temperature difference',
+      'Strong winds by morning as the gradient tightens',
+      'Thunderstorms, the high dew point guarantees convection',
+      'Radiation fog, light wind, clear sky and a 2 degree spread are the classic overnight fog recipe',
+      'Nothing, conditions are ideal and will remain so',
     ],
-    correct: 0,
-    explanation: 'Radiation fog forms on clear, calm nights when the ground loses heat by longwave radiation. The ground cools, which cools the overlying air below its dew point. Clear skies (no insulating cloud), high humidity, and calm winds (< 5 kt) are required conditions.',
+    correct: 2,
+    explanation: 'Clear skies let the ground radiate heat away, the 3 kt drift is too weak to mix the air but enough to deepen a fog layer, and the temperature only has 2 degrees to fall before saturation. Expect fog forming in the small hours and lingering past sunrise. Plan a later departure, an alternate, or be ready to wait it out.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
@@ -1428,19 +1428,19 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "latent heat" and how does it influence atmospheric processes relevant to aviation weather?',
+    question: 'How does "latent heat" influence atmospheric processes relevant to aviation weather?',
     options: [
       'Latent heat is irrelevant to aviation weather, it only affects ocean temperature',
       'Latent heat only affects surface temperatures, no effect on upper atmosphere',
       'Latent heat is the heat stored in the fuel, relevant to engine performance only',
-      'Latent heat is the heat absorbed or released during phase changes of water (evaporation, condensation, freezing, melting) without',
+      'Latent heat is the heat absorbed or released during phase changes of water without',
     ],
     correct: 3,
     explanation: 'Latent heat is the hidden heat exchanged during phase changes. Condensation releases heat (warms the air, fuels updrafts and reduces SALR), evaporation absorbs heat (cools downdrafts, producing cold pools). The release of latent heat in CBs drives severe updrafts and powers tropical cyclones.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.2',
   },
   {
-    question: 'What is a dust devil and what conditions are needed for it to form?',
+    question: 'What conditions are needed for a dust devil to form?',
     options: [
       'A rotating column of air caused by intense surface heating creating a strong surface-level temperature gradient',
       'Swirling dust caused by aircraft propeller wash, a runway safety hazard',
@@ -1452,15 +1452,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "ceiling unlimited" (CAVU) and when might a pilot encounter it operationally?',
+    question: 'An AUTO METAR cloud group reads "NCD". What does it mean?',
     options: [
-      'CAVU means the METAR automated system is unavailable, ceiling and visibility cannot be measured',
-      'CAVU means Ceiling And Visibility Unlimited, sky clear (SKC/NSC), visibility more than 10 km and no other restrictions.',
-      'CAVU is an IFR standard, it applies when flight levels are unlimited due to clear upper airspace',
-      'CAVU only applies at night, daytime operations always have a defined ceiling',
+      'The ceilometer is unserviceable',
+      'No cloud below 12,000 ft anywhere within 30 NM',
+      'Night conditions, cloud detection suspended',
+      'No cloud detected by the automatic sensor, though cloud may still exist outside its view',
     ],
-    correct: 1,
-    explanation: 'CAVU (Ceiling and Visibility Unlimited) describes ideal VFR conditions: no ceiling (sky clear or scattered only), visibility greater than 10 km, and no significant weather. It represents optimal visual flight conditions with unrestricted visibility for navigation, terrain avoidance, and traffic identification.',
+    correct: 3,
+    explanation: 'NCD appears in automatic reports when the ceilometer detects no cloud. The sensor only samples the sky directly above its narrow beam, so distant or thin cloud can be missed entirely. Treat NCD with more caution than a human-observed SKC, especially around dawn fog or isolated convection.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -1476,10 +1476,10 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.2',
   },
   {
-    question: 'What is the "tropopause height" and how does it vary with latitude and season?',
+    question: 'How does the "tropopause height" vary with latitude and season?',
     options: [
       'The tropopause height only varies between day and night, it has no seasonal or latitudinal variation',
-      'The tropopause height varies, higher at lower latitudes (16–18 km near the equator) and lower at higher latitudes (7–9 km near',
+      'Higher at low latitudes, about 16 to 18 km near the equator, and lower at the poles, about 7 to 9 km',
       'Tropopause height decreases toward the equator, polar regions have the highest tropopause',
       'The tropopause height is constant at 36,089 ft globally, as defined in the ISA',
     ],
@@ -1492,7 +1492,7 @@ export const cmetQuestions: {
     options: [
       'Continued steady rain and low cloud, with conditions remaining poor for at least 24 hours behind the front',
       'Post-frontal conditions are always VMC, with IFR conditions confined to the period during and ahead of the front',
-      'Gradual clearing, a southwesterly change, falling temperatures, showery convective precipitation in the polar air, and improving visibility between showers',
+      'Gradual clearing with a southwesterly change, falling temperature, convective showers in the polar air and good visibility between them',
       'Fog developing immediately in the cooler air behind the front, which is the most hazardous post-frontal condition',
     ],
     correct: 2,
@@ -1500,11 +1500,11 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "CAT forecast" and what chart products show expected CAT areas?',
+    question: 'What chart products show expected CAT areas?',
     options: [
       'CAT forecasts are only available to airline operators, GA pilots cannot access them',
       'CAT forecasts are included in SIGWX charts and turbulence SIGWX charts',
-      'CAT is unpredictable, no forecast products exist. PIREPs are the only source',
+      'CAT is unpredictable, no forecast products exist. AIREPs are the only source',
       'CAT only occurs over the ocean, no CAT forecast products exist for continental Australia',
     ],
     correct: 1,
@@ -1512,11 +1512,11 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "hoar frost" and why must it be removed from aircraft before flight?',
+    question: 'Why must "hoar frost" be removed from aircraft before flight?',
     options: [
       'A type of structural icing that forms in flight, removed by de-icing boots in flight',
       'A form of runway contamination, relevant to landing distance calculations only',
-      'A white crystalline deposit of ice that forms directly from water vapour when a surface temperature is below 0°C and below the frost point',
+      'A white crystalline ice deposit formed straight from water vapour on surfaces below 0°C and below the frost point',
       'Hoar frost is a minor cosmetic issue, it does not affect aircraft performance and does not require removal',
     ],
     correct: 2,
@@ -1526,7 +1526,7 @@ export const cmetQuestions: {
   {
     question: 'What are "standard pressure levels" used in upper atmosphere analysis and why?',
     options: [
-      'Standard pressure levels (e.g. 850, 700, 500, 300, 200 hPa) are isobaric surfaces on which upper-air analyses are performed',
+      'Standard pressure levels such as 850, 700, 500, 300 and 200 hPa are the isobaric surfaces on which upper-air analyses are performed',
       'Standard pressure levels are fixed altitudes (in feet) used by all aircraft for cruise, e.g. FL350',
       'Standard pressure levels are only used for oceanic flights, continental analysis uses altitude levels',
       'Standard pressure levels change monthly, they are not fixed',
@@ -1536,7 +1536,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.2',
   },
   {
-    question: 'What is clear air turbulence (CAT) and where is it most commonly encountered?',
+    question: 'Where is clear air turbulence (CAT) most commonly encountered?',
     options: [
       'Turbulence above the tropopause in the stratosphere, only affects very high-altitude operations',
       'Severe turbulence in cloud-free conditions typically associated with the jet stream',
@@ -1544,35 +1544,35 @@ export const cmetQuestions: {
       'Turbulence in clear air caused by orographic effects, only occurs within 50 NM of mountain ranges',
     ],
     correct: 1,
-    explanation: 'CAT occurs in clear air, typically near the jet stream at the tropopause level. It is associated with strong wind shear and cannot be detected visually or by weather radar. Most common on the poleward side of jet cores and in areas of significant temperature contrast. PIREPs are the primary detection tool.',
+    explanation: 'CAT occurs in clear air, typically near the jet stream at the tropopause level. It is associated with strong wind shear and cannot be detected visually or by weather radar. Most common on the poleward side of jet cores and in areas of significant temperature contrast. AIREPs are the primary detection tool.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "great circle route" effect on wind analysis for long-distance flights?',
+    question: 'A radar loop shows a thunderstorm cell moving 15 NM in 30 minutes. What is its speed of movement?',
     options: [
-      'Wind analysis is irrelevant for great circle routes, they are always optimal',
-      'Great circle routes pass through higher latitudes where jet streams and stronger winds are more likely',
-      'Great circle routes are always shorter in time than rhumb line routes regardless of winds',
-      'Great circle routes always provide more favourable winds than direct routes',
+      '30 kt',
+      '15 kt',
+      '45 kt',
+      '7.5 kt',
     ],
-    correct: 1,
-    explanation: 'Great circle routes pass through higher latitudes than rhumb line routes, potentially encountering different jet stream positions, stronger winds, and more frontal activity. Optimum routing considers the balance between route distance and forecast wind efficiency — sometimes a longer track with stronger tailwinds is faster and more fuel-efficient.',
+    correct: 0,
+    explanation: 'Fifteen nautical miles in half an hour is 30 NM per hour, or 30 kt. Stepping the radar loop and measuring cell movement against the range rings is a quick way to judge whether a storm will affect your route or destination, and how much time you have.',
+    reference: 'Bureau of Meteorology',
+  },
+  {
+    question: 'A METAR reports a temperature and dew point of 32/24. What does this suggest about thunderstorm potential?',
+    options: [
+      'Strong potential, the heat and very moist air provide abundant energy if a trigger is present',
+      'No potential, thunderstorms require a temperature below 25°C',
+      'Low potential, the 8 degree spread means the air is too dry for convection',
+      'None, dew point has no connection to thunderstorm development',
+    ],
+    correct: 0,
+    explanation: 'A 32°C temperature with a 24°C dew point is hot, energy-rich air carrying abundant moisture. If instability and a trigger such as a trough, front or strong surface heating are present, deep convection is likely. High dew points are a key warm-season thunderstorm ingredient across northern and eastern Australia.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What flying weather is typically associated with a ridge of high pressure?',
-    options: [
-      'Subsiding air, light winds, stable conditions and generally fine weather, though haze, smoke or fog may be trapped beneath the subsidence inversion',
-      'Strong gusty winds and widespread thunderstorms developing along the ridge axis, similar to a cold front passage',
-      'Continuous heavy rain from deep nimbostratus as moist air converges into the centre of the ridge',
-      'Severe turbulence at all levels caused by the strong pressure gradient found within all ridges',
-    ],
-    correct: 0,
-    explanation: 'A ridge is an elongated extension of high pressure. Air within it subsides, warming and drying, which suppresses cloud and produces stable, fine conditions with light winds. The subsidence inversion can trap haze, smoke and pollution in the lowest layers, and on clear winter nights radiation fog may form beneath it. Convective weather is suppressed, not enhanced.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.9',
-  },
-  {
-    question: 'What is turbulence and what are its main causes in aviation?',
+    question: 'What are the main causes of turbulence in aviation?',
     options: [
       'Any vertical air movement, only relevant above FL200 where jet aircraft operate',
       'Turbulence only occurs in or near clouds, clear air turbulence is a misnomer',
@@ -1584,39 +1584,39 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "aerodrome climatology" and how is it used in pre-flight planning?',
+    question: 'You are planning a February charter into Cairns. What does Australian seasonal climatology tell you to build into the plan?',
     options: [
-      'Climatology data is provided in real-time METARs, no separate climatological product exists',
-      'Historical weather statistics for an aerodrome, used to assess the likelihood of weather below minima when planning ahead',
-      'Aerodrome climatology only covers temperature and wind, not visibility or cloud',
-      'Aerodrome climatology is only used for airport construction planning, not by pilots',
+      'Wet season conditions, daily storms, heavy rain, low cloud and possible tropical cyclone activity',
+      'Dry stable air with morning frost and excellent visibility',
+      'Persistent strong southerly busters along the coast each afternoon',
+      'Widespread dust storms carried east from the inland deserts',
     ],
-    correct: 1,
-    explanation: 'Aerodrome climatology provides historical statistics on weather conditions — frequency of low visibility, fog, crosswinds, temperature extremes, etc. Used for: planning fuel reserves for aerodromes with high fog frequency, understanding when operations may be restricted, and selecting alternates with a historically reliable track record.',
+    correct: 0,
+    explanation: 'February sits in the heart of the northern wet season. The monsoon trough and abundant tropical moisture drive afternoon and overnight thunderstorms, torrential rain, low cloud on the ranges and the peak of cyclone season. Plan generous fuel, flexible timing, robust alternates and a daily check of the TC outlook.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.11',
   },
   {
-    question: 'What is the relationship between "cloud amount" in oktas and VFR/IFR conditions?',
+    question: 'How do the METAR cloud amount codes relate to the ceiling used for planning?',
     options: [
-      'IFR and VFR are determined only by visibility, with cloud amount playing no role in the assessment',
+      'VMC is determined only by visibility, cloud amount plays no role in the assessment',
       'FEW is 1–2 oktas, SCT is 3–4, BKN is 5–7 and OVC is 8 oktas; the lowest BKN or OVC layer constitutes the ceiling for planning purposes',
-      'Any cloud at any altitude constitutes a ceiling for IFR purposes, regardless of its amount or height above the aerodrome',
-      'Cloud amount has no relationship to IFR operations, only the height of the ceiling matters for approach planning',
+      'Any cloud at any height constitutes a ceiling regardless of its amount or coverage',
+      'Cloud amount has no bearing on the ceiling, only the height of the lowest layer matters',
     ],
     correct: 1,
-    explanation: 'A ceiling is defined as the lowest layer of BKN (5-7 oktas) or OVC (8 oktas) cloud. SCT layers (3-4 oktas) do not constitute a ceiling by definition. IFR conditions are determined by the combination of ceiling and visibility — low ceiling (BKN or OVC below 1,000 ft) and/or visibility below 3 SM/5 km.',
+    explanation: 'FEW is 1 to 2 oktas, SCT 3 to 4, BKN 5 to 7 and OVC 8. The ceiling is the lowest broken or overcast layer, since smaller amounts leave usable sky. Whether conditions are VMC or IMC then follows from the ceiling and visibility taken against the airspace minima.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the indication of carburettor icing in a piston engine aircraft and what action should be taken?',
+    question: 'Cruising at reduced power, OAT 23°C and dew point 18°C, the engine RPM decays slowly with no change in throttle. What is the most likely cause and action?',
     options: [
-      'Exhaust gas temperature drop, enrich the mixture and increase power',
-      'Cylinder head temperature increase, reduce power and apply carb heat immediately',
-      'Fuel flow increase and manifold pressure drop, switch to the backup fuel pump',
-      'Engine roughness and loss of RPM in a carburetted piston engine',
+      'Fuel exhaustion on the selected tank, change tanks immediately',
+      'Carburettor icing, apply full carburettor heat and expect a brief rough-running as the ice clears',
+      'Magneto failure, switch to the other magneto and continue',
+      'Detonation caused by the high outside air temperature',
     ],
-    correct: 3,
-    explanation: 'Carb ice typically shows as a gradual RPM loss (fixed pitch prop) or manifold pressure drop (variable pitch prop), sometimes with engine roughness. Applying full carburettor heat initially causes a further RPM drop (hot air is less dense) then RPM rises as ice melts. Full carb heat should remain on until all ice has cleared.',
+    correct: 1,
+    explanation: 'Warm humid air at reduced power is prime carburettor icing territory: the CASA probability chart puts 23 over 18 well inside the serious icing band at descent power. Venturi cooling can ice the throat at OATs up to about 30 degrees. Full carb heat melts the ice, often with momentary roughness as the water passes through, and should be applied early rather than late.',
     reference: 'CASA Carburettor Icing Probability Chart',
   },
   {
@@ -1632,7 +1632,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is a weather radar image and what does it show?',
+    question: 'What does a weather radar image show?',
     options: [
       'A ground-based image showing only fog and low cloud, not useful for thunderstorm detection',
       'A chart showing upper-level wind fields derived from atmospheric soundings',
@@ -1644,27 +1644,27 @@ export const cmetQuestions: {
     reference: 'Bureau of Meteorology',
   },
   {
-    question: 'What does "OVC004" in a METAR cloud group mean for IFR approach planning?',
+    question: 'Your destination METAR shows "OVC004". You are VFR. What does this mean for your arrival?',
     options: [
-      'OVC004 means 4 oktas of cloud, a scattered amount rather than an overcast condition',
-      'Overcast cloud at 40,000 ft, far above any approach minima and of no concern for instrument approach planning',
-      'Overcast cloud at 4,000 ft AAL, above typical IFR minima for most instrument approaches',
-      'Overcast at 400 ft AAL, below most instrument approach minima, requiring assessment of the approach ban, holding and alternate requirements',
+      'Overcast at 400 ft above the aerodrome, far below VFR requirements, divert to your alternate',
+      'Overcast at 4,000 ft, comfortably above circuit height for a normal arrival',
+      'Four oktas of cloud, a scattered amount that will not affect a visual circuit',
+      'Overcast at 40,000 ft, high cloud of no consequence to the circuit area',
     ],
-    correct: 3,
-    explanation: '"OVC004" = overcast cloud at 400 ft AAL. Most non-precision approaches have minima around 350–600 ft AGL, and precision approaches (ILS CAT I) around 200 ft. OVC at 400 ft is at or below many approach minima, requiring careful comparison with published minima and alternate planning.',
+    correct: 0,
+    explanation: 'OVC004 is an overcast base 400 ft above aerodrome level. A visual circuit, normally flown around 1,000 ft, is impossible, and the cloud sits far below any workable VFR arrival. This is exactly the situation alternate planning exists for: divert while fuel and daylight allow rather than descending to scud-run beneath it.',
     reference: 'AIP GEN 3.5',
   },
   {
     question: 'What is "icing SIGMET" criteria — at what icing intensity is a SIGMET issued vs an AIRMET?',
     options: [
       'Both are issued simultaneously for all icing, the difference is geographic coverage only',
-      'SIGMETs are issued for severe icing (accumulation exceeds de-icing capability)',
+      'SIGMETs are issued for severe icing',
       'AIRMETs are issued for severe icing, SIGMETs are reserved for turbulence and volcanic ash only',
       'SIGMETs are issued for any icing, AIRMETs are not used for icing',
     ],
     correct: 1,
-    explanation: 'Icing severity drives the product level: SIGMET for severe icing (accumulation rate exceeds de-icing capability — immediate risk to all aircraft); AIRMET for moderate icing (significant hazard to light aircraft without de-icing, manageable for equipped aircraft with caution). Light icing is typically only in PIREPs.',
+    explanation: 'Icing severity drives the product level: SIGMET for severe icing (accumulation rate exceeds de-icing capability — immediate risk to all aircraft); AIRMET for moderate icing (significant hazard to light aircraft without de-icing, manageable for equipped aircraft with caution). Light icing is typically only in AIREPs.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -1672,7 +1672,7 @@ export const cmetQuestions: {
     options: [
       'No hazards, inversions always indicate stable, benign conditions ideal for flight',
       'Severe turbulence throughout the inversion layer due to the temperature gradient',
-      'Wind shear at the inversion boundaries, possible fog or low cloud below the inversion, reduced visibility from trapped haze, and suppressed convection',
+      'Wind shear at its boundaries, fog or low cloud beneath it, haze trapped below, and suppressed convection',
       'Extreme icing throughout the inversion layer regardless of temperature, requiring aircraft to avoid the entire layer',
     ],
     correct: 2,
@@ -1680,15 +1680,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "turbulence forecasting" and what information sources are used?',
+    question: 'What information sources are used for turbulence forecasting?',
     options: [
       'Turbulence forecasting is only possible within 2 hours, beyond this time horizon all forecasts are unreliable',
-      'Turbulence can only be forecast from PIREP observations, model-based forecasts are unreliable',
+      'Turbulence can only be forecast from AIREP observations, model-based forecasts are unreliable',
       'GPWT wind and temperature charts, turbulence areas shown on the GAF and SIGWX charts, SIGMETs for severe turbulence, and pilot reports',
       'Turbulence is only forecast in SIGMETs, no other product addresses turbulence risk',
     ],
     correct: 2,
-    explanation: 'Modern turbulence forecasting integrates: NWP-derived turbulence indices (Richardson number, EDR), mountain wave models, jet stream analysis, convective energy/instability for convective turbulence, and real-time PIREPs. Graphical Turbulence Guidance (GTG) products synthesise these to provide gridded probability of turbulence at multiple levels.',
+    explanation: 'Modern turbulence forecasting integrates: NWP-derived turbulence indices (Richardson number, EDR), mountain wave models, jet stream analysis, convective energy/instability for convective turbulence, and real-time AIREPs. Graphical Turbulence Guidance (GTG) products synthesise these to provide gridded probability of turbulence at multiple levels.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -1704,22 +1704,22 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "ISA deviation" and how is it used in flight planning?',
+    question: 'An aerodrome at 2,000 ft elevation reports a temperature of 27°C. What is the approximate ISA deviation?',
     options: [
-      'The difference between the actual temperature at altitude and the ISA standard temperature for that altitude (ISA +/-)',
-      'The difference between the pilot\'s altimeter reading and the charted terrain, used for obstacle clearance',
-      'The difference between QNH and standard pressure, used to calculate transition altitude',
-      'The deviation of the aircraft from its planned route, used for navigation corrections',
+      'ISA −16',
+      'ISA +16',
+      'ISA +27',
+      'ISA +9',
     ],
-    correct: 0,
-    explanation: 'ISA deviation is the actual temperature minus the ISA standard temperature for that altitude. "ISA +10" means the actual temperature is 10°C above standard. Used to calculate density altitude and apply corrections to aircraft performance data (which is based on ISA conditions).',
+    correct: 1,
+    explanation: 'ISA temperature falls about 2°C per 1,000 ft from 15°C at sea level, so ISA at 2,000 ft is 15 − 4 = 11°C. The actual 27°C is 16 degrees warmer, an ISA +16 deviation, which raises density altitude and degrades take-off and climb performance.',
     reference: 'ICAO Standard Atmosphere',
   },
   {
     question: 'What is "Coriolis force" and is it actually a "force" in the strict physical sense?',
     options: [
       'The Coriolis force is a real force generated by Earth\'s rotation, it directly exerts force on air molecules',
-      'The Coriolis effect is an apparent force arising from observations in a rotating reference frame (the Earth)',
+      'The Coriolis effect is an apparent force arising from observations in a rotating reference frame',
       'Coriolis force only acts on water, it does not affect atmospheric motion',
       'The Coriolis force is identical to friction, both deflect wind toward lower pressure',
     ],
@@ -1755,7 +1755,7 @@ export const cmetQuestions: {
     question: 'Why can the visibility a pilot experiences in flight differ from the visibility reported in a METAR?',
     options: [
       'METAR visibility is a forecast value, so it always differs from the real-time conditions a pilot actually experiences',
-      'Reported visibility is measured horizontally at the surface, while a pilot looks slantwise through haze or fog layers, often toward a low sun or wet windscreen',
+      'Reported visibility is horizontal at the surface, while the pilot looks slantwise through haze layers, often toward a low sun',
       'Inflight visibility is always greater than reported visibility because the aircraft flies above the surface friction layer',
       'The difference exists only at night, when ground observers cannot judge the visibility markers accurately',
     ],
@@ -1800,19 +1800,19 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "Cb" identifier in a METAR cloud group and why is it treated differently from other cloud types?',
+    question: 'The METAR for your destination includes "SCT030CB". What is the operational significance?',
     options: [
-      'CB" in a METAR is used for all convective clouds, including cumulus and altocumulus castellanus',
-      'B is only used at automated stations, staffed stations report thunderstorm activity using the TS group instead',
-      '"CB" after a cloud group indicates cumulonimbus, it is specifically identified because it is uniquely hazardous for aviation',
-      'CB" is a cloud coverage code, it means 10 oktas, which is physically impossible and indicates instrument malfunction',
+      'Cloud sensor bias, CB means could not be determined',
+      'Scattered cloud of no consequence at 3,000 ft',
+      'Cumulonimbus in the area, expect thunderstorms, wind shifts and severe turbulence near the cells',
+      'Thirty per cent chance of cloud at that level',
     ],
     correct: 2,
-    explanation: 'Cumulonimbus (CB) is specifically identified in METAR cloud groups because of its unique and severe hazard to aviation. The cloud group format is: amount (FEW/SCT/BKN/OVC) + height (100s of ft) + CB (e.g. FEW010CB = few cumulonimbus at 1,000 ft). CB is always specifically reported regardless of amount.',
+    explanation: 'The CB suffix identifies cumulonimbus, and even scattered CB means active or imminent thunderstorm cells near the aerodrome. Associated hazards include gust fronts, wind shear, heavy showers, hail and lightning. Time your arrival around the cells and be ready for a sudden runway change.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "ground de-icing" and when is it required?',
+    question: 'When is "ground de-icing" required?',
     options: [
       'De-icing is only required when the airport is closed by snow, open airports have cleared runways eliminating the need',
       'Ground de-icing is only required for jet aircraft, piston aircraft surfaces never require treatment',
@@ -1824,7 +1824,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "AMDAR" and how does it support weather forecasting in Australia?',
+    question: 'How does "AMDAR" support weather forecasting in Australia?',
     options: [
       'Aircraft Meteorological Data Relay, an international program using commercial aircraft to collect and transmit atmospheric',
       'AMDAR measures surface conditions only, upper-air data comes from radiosondes exclusively',
@@ -1865,7 +1865,7 @@ export const cmetQuestions: {
       'A guarantee of rapid clearing, because wave depressions accelerate the frontal passage and break up the cloud band',
       'Weather identical to a tropical cyclone, with destructive winds confined to a tight circular core near the centre',
       'No change to the existing forecast, because wave depressions affect only the upper-level winds above FL200',
-      'A renewed deterioration along the front, with the wind shift, low cloud and rain repeating as the wave and its secondary low move along the frontal zone',
+      'Renewed deterioration as the wave and its secondary low travel along the front, repeating the wind shift, low cloud and rain',
     ],
     correct: 3,
     explanation: 'A wave depression forms when a new low develops on a trailing cold front. Instead of continued clearing after the initial frontal passage, the weather deteriorates again as the wave moves along the front, bringing renewed rain, lowering cloud and a further wind change. Wave depressions are a classic reason an apparently passed front produces another round of poor flying weather.',
@@ -1874,20 +1874,20 @@ export const cmetQuestions: {
   {
     question: 'What is the "Fremantle Doctor" effect on aircraft performance at Perth Airport?',
     options: [
-      'E sea breeze creates turbulence below 500 ft, all approaches must be discontinued',
-      'E Fremantle Doctor increases density altitude by bringing humid maritime air',
-      'The sea breeze arrival in the afternoon shifts winds from light northeasterly to strong southwesterly (15–25 kt), requiring',
-      'E sea breeze cools the air, reducing density altitude and improving performance',
+      'The sea breeze creates turbulence below 500 ft, so all approaches must be discontinued',
+      'The Fremantle Doctor increases density altitude by bringing humid maritime air',
+      'The afternoon sea breeze swings the wind from light northeasterly to a 15 to 25 kt southwesterly, forcing a runway change',
+      'The sea breeze cools the air, reducing density altitude and improving performance',
     ],
     correct: 2,
     explanation: 'The Fremantle Doctor (Perth sea breeze) arrives with a significant wind shift from NE to SW, often quite rapidly. This requires: runway changes at Perth Airport, new crosswind component calculations, and revised performance calculations. The cooler, denser maritime air actually improves engine and aerodynamic performance.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "fractus cloud" and where is it observed?',
+    question: 'Where is "fractus cloud" observed?',
     options: [
       'Fractus is a cloud type associated with mountain waves, found on the lee side of ranges',
-      'Fractus is ragged, shredded-looking cloud (stratus fractus or cumulus fractus)',
+      'Fractus is ragged, shredded-looking cloud',
       'Fractus cloud forms at high altitude, it is a type of cirrus',
       'Fractus is the name for cloud that has been dissipated by solar radiation, observed only in the afternoon',
     ],
@@ -1896,12 +1896,12 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is a "freezing level" and why is it important for flight planning?',
+    question: 'Why is a "freezing level" important for flight planning?',
     options: [
       'The altitude at which jet fuel begins to gel, critical for fuel system management on long flights',
       'The altitude above which all moisture in the atmosphere is frozen, relevant to engine anti-ice',
       'The altitude at which frost forms on the aircraft exterior, relevant to de-icing before departure',
-      'The altitude at which the temperature is 0°C, above this level, icing is possible in cloud or precipitation. The freezing level',
+      'The altitude where the temperature is 0°C, above which icing is possible in cloud or precipitation',
     ],
     correct: 3,
     explanation: 'The freezing level (0°C isotherm) is the altitude at which temperature is 0°C. Above this level, cloud or precipitation may contain supercooled liquid water — creating structural icing risk. The freezing level varies with season, latitude, and air mass characteristics.',
@@ -1936,15 +1936,15 @@ export const cmetQuestions: {
     options: [
       'Turbulence at cruise altitude is unavoidable, no routing strategy reduces exposure',
       'Increasing speed to VNE prevents turbulence damage, because the structural margins of faster aircraft grow with speed',
-      'Use pilot reports to identify the turbulent levels and request a level change above or below them, as CAT layers are often only a few thousand feet thick',
+      'Use pilot reports to find the turbulent levels and request a level change, since CAT layers are often only a few thousand feet thick',
       'Turbulence avoidance requires radar, without airborne radar, no avoidance is possible',
     ],
     correct: 2,
-    explanation: 'CAT avoidance at cruise: use upper wind charts to identify jet stream position (CAT common at flanks); request altitude changes to move above or below the shear layer; deviate laterally; use PIREPs from preceding aircraft on same route; if unable to avoid, reduce to turbulence penetration airspeed (Va or turbulence speed), engage autopilot altitude hold, and brief passengers/crew.',
+    explanation: 'CAT avoidance at cruise: use upper wind charts to identify jet stream position (CAT common at flanks); request altitude changes to move above or below the shear layer; deviate laterally; use AIREPs from preceding aircraft on same route; if unable to avoid, reduce to turbulence penetration airspeed (Va or turbulence speed), engage autopilot altitude hold, and brief passengers/crew.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "Bureau of Meteorology" (BOM) and what aviation weather services does it provide?',
+    question: 'What aviation weather services does the "Bureau of Meteorology" (BOM) provide?',
     options: [
       'The Australian government meteorological agency responsible for issuing aviation weather products',
       'The Bureau only provides climate data, aviation weather is provided by Airservices Australia',
@@ -2004,15 +2004,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "convective SIGMET" and what criteria trigger it in Australia?',
+    question: 'A SIGMET reads "EMBD TS FCST ... TOP FL450 MOV SE 20KT". What does EMBD tell you?',
     options: [
-      'Any thunderstorm activity triggers a convective SIGMET in Australia',
-      'In Australia, SIGMETs for CB/thunderstorm activity are issued when isolated or widespread CB is hazardous to all aircraft',
-      'SIGMETs for CB are only issued for tropical regions, with mid-latitude CB activity handled by AIRMET',
-      'Convective SIGMETs are issued by ATC, not by the Bureau of Meteorology',
+      'The cells are stationary and embedded over terrain',
+      'The storms are weakening and embedded in rain',
+      'Storm coverage is between 50 and 75 per cent of the area',
+      'The thunderstorms are embedded in other cloud layers and cannot be seen and avoided visually',
     ],
-    correct: 1,
-    explanation: 'SIGMETs for CB/thunderstorm activity are issued when hazardous convective activity exists or is forecast for a defined area — particularly embedded CB (not visible from cockpit), widespread CBs, or organised squall lines. They specify location, altitude extent, movement, and intensity.',
+    correct: 3,
+    explanation: 'EMBD means the CB are buried within stratiform cloud layers, so the usual see-and-avoid tactic fails completely. Penetrating the layer risks blundering into a cell with no warning. Tops to FL450 confirm severe storms. Avoid the whole forecast area or stay visual well clear of the cloud mass.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -2028,31 +2028,31 @@ export const cmetQuestions: {
     reference: 'CASA Carburettor Icing Probability Chart',
   },
   {
-    question: 'What is a "crosswind component" and what limits apply?',
+    question: 'You are landing on Runway 09 and the wind is 120° at 20 kt. What is the approximate crosswind component?',
     options: [
-      'The component of wind along the runway, determines the take-off ground roll distance',
-      'A crosswind component only applies to jet aircraft, piston aircraft are not crosswind-limited',
-      'The wind component that reduces ground speed, it is always beneficial to minimise',
-      'The component of wind at 90° to the aircraft\'s longitudinal axis on the ground',
+      '10 kt',
+      '20 kt',
+      '17 kt',
+      '14 kt',
     ],
-    correct: 3,
-    explanation: 'The crosswind component is the wind vector perpendicular to the runway. Aircraft have a demonstrated crosswind limit in the AFM. Exceeding this limit risks loss of directional control during take-off or landing roll. The crosswind component = wind speed × sine of the angle between wind and runway.',
+    correct: 0,
+    explanation: 'The wind is 30° off the runway heading. Crosswind equals wind speed times the sine of the angle, and sin 30° is 0.5, giving 20 × 0.5 = 10 kt. A quick rule of thumb: at 30° off the runway, the crosswind is half the wind speed.',
     reference: 'Aircraft Flight Manual',
   },
   {
-    question: 'What is a microburst and why is it considered more dangerous than general wind shear?',
+    question: 'On final beneath a heavy shower the airspeed surges 15 kt, then the aircraft sinks hard with the speed decaying. What are you flying through and what is the response?',
     options: [
-      'Type of wind shear that only occurs above the freezing level in cumulonimbus clouds',
-      'An intense localised downdraft of less than 4 km diameter, when encountered on approach, the initial headwind increase followed',
-      'Strong surface wind gust associated with a squall line, hazardous only during take-off',
-      'A strong sustained downdraft covering an area more than 4 km in diameter, dangerous because of its large horizontal extent',
+      'A microburst, full power and go around immediately, the sink and tailwind shear can exceed climb performance',
+      'Normal gusty conditions, continue the approach to land',
+      'Wake turbulence from preceding traffic on the same approach',
+      'Carburettor icing, apply full carb heat and continue the approach',
     ],
-    correct: 1,
-    explanation: 'A microburst is an intense small-scale downdraft (< 4 km diameter) from a convective cell. An aircraft penetrating it experiences: first an increasing headwind (airspeed rise), then a downdraft, then a strong tailwind (airspeed loss). At low altitude, the rapid airspeed loss may be unrecoverable.',
+    correct: 0,
+    explanation: 'A performance gain followed by heavy sink and decaying airspeed is the microburst signature: headwind into the downdraught core, then a tailwind on exit. The only survivable response, especially low and slow, is an immediate maximum-performance go-around begun at the first sign. Never try to salvage the approach through a shaft of heavy rain.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What are "stratospheric intrusions" and why are they hazardous for aviation?',
+    question: 'Why are "stratospheric intrusions" hazardous for aviation?',
     options: [
       'Stratospheric intrusions are a theoretical concept, not observed in the real atmosphere',
       'Downward mixing of stratospheric air into the troposphere during tropopause folds',
@@ -2060,11 +2060,11 @@ export const cmetQuestions: {
       'Ice crystals from cirrus clouds that penetrate the stratosphere, causing contrails at high altitude',
     ],
     correct: 1,
-    explanation: 'Stratospheric intrusions bring dry, cold, ozone-rich air from the stratosphere into the upper troposphere. They are associated with CAT (due to strong wind shear), cannot be detected visually or by radar, and are sometimes identifiable by low humidity at cruise altitude. PIREPs are key for detecting their location.',
+    explanation: 'Stratospheric intrusions bring dry, cold, ozone-rich air from the stratosphere into the upper troposphere. They are associated with CAT (due to strong wind shear), cannot be detected visually or by radar, and are sometimes identifiable by low humidity at cruise altitude. AIREPs are key for detecting their location.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is a stationary front and what weather is associated with it?',
+    question: 'What weather is associated with a stationary front?',
     options: [
       'A front where the boundary between air masses is not advancing in either direction',
       'A front that moves slower than 5 kt, identical to a cold front in its weather',
@@ -2076,7 +2076,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "orographic thunderstorm" and what time of day do they typically develop?',
+    question: 'What time of day do orographic thunderstorms typically develop?',
     options: [
       'Orographic thunderstorms only develop in winter when fronts lift air over mountains',
       'Orographic thunderstorms develop at night when katabatic winds lift moisture over ranges',
@@ -2088,19 +2088,19 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "warm rain process" and where is it most prevalent?',
+    question: 'Where is "warm rain process" most prevalent?',
     options: [
       'The warm rain process requires cloud temperatures above 20°C, only relevant to desert regions',
       'Warm rain only produces drizzle, not rain. Heavy rain always requires the ice process',
-      'Precipitation forming entirely within the warm (unfrozen) part of cloud',
+      'Precipitation forming entirely within the warm part of cloud',
       'The warm rain process is the dominant rain-producing mechanism in all Australian clouds',
     ],
     correct: 2,
-    explanation: 'The warm rain process involves collision and coalescence of water droplets within clouds where temperatures remain above 0°C throughout. Common in tropical regions with deep, warm clouds. In mid-latitudes, most significant precipitation involves the Bergeron-Findeisen (ice crystal) process — ice crystals grow at the expense of supercooled droplets.',
+    explanation: 'The warm rain process involves collision and coalescence of water droplets within clouds where temperatures remain above 0°C throughout. Common in tropical regions with deep, warm clouds. In mid-latitudes, most significant precipitation involves the Bergeron-Findeisen (ice crystal) process — ice crystals grow at the expense of supercooled droplets. Unfrozen.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is a temperature inversion layer and what aviation hazard can it create for aircraft on approach?',
+    question: 'What aviation hazard can a temperature inversion layer create for aircraft on approach?',
     options: [
       'An inversion causes turbulence on approach, more severe than normal convective turbulence',
       'An inversion causes severe icing because the warm layer above the cold surface traps supercooled water',
@@ -2124,7 +2124,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a ridge of high pressure and what weather does it bring?',
+    question: 'What weather does a ridge of high pressure bring?',
     options: [
       'A ridge of high pressure is identical to a col, both occur between systems',
       'A ridge produces the same weather as a trough, the terms are interchangeable',
@@ -2152,7 +2152,7 @@ export const cmetQuestions: {
     options: [
       'A large dew point depression means more icing, dry air at the freezing level is most hazardous',
       'A dew point depression below 5°C at the freezing level indicates a high probability of icing in that layer',
-      'A small dew point depression at the freezing level (< 3°C) indicates the air is nearly saturated',
+      'A small dew point depression of less than 3°C at the freezing level indicates the air there is nearly saturated',
       'Dew point depression is irrelevant to icing, temperature is the only factor',
     ],
     correct: 2,
@@ -2160,19 +2160,19 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a "weather briefing" and what information should a CPL pilot obtain before an IFR flight?',
+    question: 'What weather information should a CPL pilot obtain before a cross-country charter flight?',
     options: [
-      'A briefing from ATC on weather along the route, provided automatically when filing an IFR flight plan',
+      'A briefing from ATC on weather along the route, provided automatically when a flight plan is filed',
       'A weather briefing only requires the destination TAF and the current surface analysis chart printed before departure',
-      'A weather briefing is optional for IFR flights, the TAF provides all required information',
-      'The GAF and GPWT for the route, TAFs for the departure, destination and alternates, current METARs and SPECIs, and any SIGMETs or AIRMETs',
+      'A weather briefing is optional, the destination TAF alone provides all required information',
+      'The GAF and GPWT, TAFs for departure, destination and alternates, current METARs and SPECIs, and any SIGMETs or AIRMETs',
     ],
     correct: 3,
-    explanation: 'A comprehensive IFR weather briefing includes: destination and alternate TAFs, enroute METARs, route SIGMETs and AIRMETs, upper wind charts for planned altitudes, area forecasts (GAF/GAMET), relevant PIREPs, and any NOTAMs relating to weather-affected facilities.',
+    explanation: 'A complete pre-flight picture means the GAF and GPWT for the route, TAFs for departure, destination and alternates, current METARs and SPECIs, any SIGMETs or AIRMETs, recent AIREPs, and weather-related NOTAMs. NAIPS assembles these into a single briefing.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a "col" and what aviation weather concern does it raise in summer?',
+    question: 'What aviation weather concern does a "col" raise in summer?',
     options: [
       'A col is only associated with fog, light winds and cooling in a col produce radiative fog',
       'A col is associated with strong winds, it is the area where the strongest wind gradient exists',
@@ -2186,19 +2186,19 @@ export const cmetQuestions: {
   {
     question: 'What is the Metwatch website and aviation weather app services used by Australian pilots?',
     options: [
-      'The Bureau of Meteorology operates aviationweather.gov, an Australian equivalent of the US FAA weather site',
-      'The Bureau of Meteorology\'s aviation weather portal (formerly MetEye and aviationweather.gov.au) provides pilots with digital',
+      'A subscription portal for commercial operators, official briefings are not available free of charge',
+      'The Bureau of Meteorology\'s aviation weather portal provides pilots with digital',
       'Aviation weather in Australia is only available by telephone briefing, no online services exist',
       'Third-party apps provide all aviation weather in Australia, no government services are available online',
     ],
     correct: 1,
-    explanation: 'The Bureau of Meteorology provides online aviation weather services including: METARs, TAFs, SIGMETs, AIRMETs, upper wind and temperature forecasts, weather radar, satellite imagery, surface analysis, and forecast charts. These are accessible via web portal and API services used by flight planning applications.',
+    explanation: 'The Bureau of Meteorology provides online aviation weather services including: METARs, TAFs, SIGMETs, AIRMETs, upper wind and temperature forecasts, weather radar, satellite imagery, surface analysis, and forecast charts. These are accessible via web portal and API services used by flight planning applications. Formerly MetEye and aviationweather.gov.au.',
     reference: 'AIP GEN 3.5',
   },
   {
     question: 'How does the surface wind typically vary over a 24-hour period on a clear day inland?',
     options: [
-      'It is lightest around dawn, strengthens through the morning to a maximum in mid-afternoon, then eases after sunset as surface heating ceases',
+      'Lightest near dawn, building to a mid-afternoon maximum, then easing after sunset as heating ceases',
       'It is strongest at dawn when the air is densest and weakest at midday when the air is least dense',
       'It remains constant in speed throughout the day, with diurnal variation affecting the wind direction only',
       'It peaks around midnight, when radiative cooling produces the strongest local pressure gradients',
@@ -2220,7 +2220,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "occlusion weather" and how does it combine aspects of warm and cold fronts?',
+    question: 'How does "occlusion weather" combine aspects of warm and cold fronts?',
     options: [
       'An occlusion always clears faster than either a warm or cold front',
       'An occlusion combines cloud and precipitation from both warm and cold frontal zones',
@@ -2235,7 +2235,7 @@ export const cmetQuestions: {
     question: 'What is the meteorological difference between a "squall" and a "gust" in METAR reporting?',
     options: [
       'Gusts and squalls are identical, both coded using the G suffix in the wind group of the body of the report',
-      'A gust is a brief rise in wind speed lasting under a minute, while a squall is an increase of at least 16 kt, to 22 kt or more, lasting at least one minute',
+      'A gust is a brief rise lasting under a minute, while a squall rises at least 16 kt to reach 22 kt or more for at least one minute',
       'Squalls are only associated with thunderstorms, gusts occur in any wind condition',
       'A squall is weaker than a gust, squalls are only associated with light wind conditions',
     ],
@@ -2244,7 +2244,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a "warm sector" in a frontal depression and what weather characterises it?',
+    question: 'What weather characterises a "warm sector" in a frontal depression?',
     options: [
       'The upper-level warm core of a tropical cyclone, not related to mid-latitude frontal systems',
       'The area ahead of the warm front, characterised by high cirrus and improving pressure',
@@ -2256,15 +2256,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is an "AIRMET" and how does it differ from a "SIGMET"?',
+    question: 'An AIRMET is current for your area: "MOD TURB BLW 5000FT". You are in a light aircraft at 2,500 ft. How should you treat it?',
     options: [
-      'An AIRMET warns of en-route weather below 10,000 ft hazardous mainly to light aircraft and below SIGMET criteria, while SIGMETs cover hazards to all aircraft',
-      'An AIRMET is the military version of a SIGMET, issued only for operations inside restricted airspace',
-      'An AIRMET is a routine hourly broadcast of aerodrome weather conditions, while a SIGMET is issued once daily',
-      'AIRMETs and SIGMETs are identical products issued by different forecasting offices purely for redundancy',
+      'As advisory only, since AIRMETs apply to aircraft cruising above 10,000 ft',
+      'As directly relevant, AIRMETs warn light aircraft of conditions below 10,000 ft that fall short of SIGMET criteria',
+      'As superseded, an AIRMET lapses as soon as the next GAF is issued',
+      'As applying only to IFR flights operating in controlled airspace',
     ],
-    correct: 0,
-    explanation: 'An AIRMET is issued for the occurrence or expected occurrence of specified en-route weather below 10,000 ft, such as moderate icing or turbulence, widespread reduced visibility or strong winds, that is of concern mainly to light aircraft but does not meet SIGMET criteria. A SIGMET warns of phenomena hazardous to all aircraft, such as severe turbulence, severe icing, thunderstorm areas, tropical cyclones and volcanic ash.',
+    correct: 1,
+    explanation: 'AIRMETs cover en-route phenomena below 10,000 ft, such as moderate turbulence or icing, of concern mainly to light aircraft but below SIGMET severity. At 2,500 ft you are squarely in the warned band, so expect moderate turbulence, secure loose items and consider a smoother level. SIGMETs, by contrast, warn all aircraft of severe phenomena.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -2296,7 +2296,7 @@ export const cmetQuestions: {
     options: [
       'Only when an aircraft accident has occurred at the aerodrome and ATC requests an immediate special observation',
       'Whenever a pilot telephones the Bureau of Meteorology and requests a special observation for flight planning',
-      'When conditions pass specified criteria between routine reports, such as visibility or cloud base crossing key thresholds, or the onset of thunderstorms',
+      'When conditions pass set criteria between routine reports, such as visibility or cloud base thresholds or thunderstorm onset',
       'At every half-hour between the routine hourly METARs at all Australian aerodromes, even when the weather is completely unchanged',
     ],
     correct: 2,
@@ -2304,7 +2304,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the "mature stage" of a thunderstorm and what hazards reach their maximum?',
+    question: 'What hazards reach their maximum during the mature stage of a thunderstorm?',
     options: [
       'The mature stage only produces lightning, no precipitation or turbulence hazard exists',
       'The mature stage is the safest stage, most hazards are confined to the dissipating stage',
@@ -2328,7 +2328,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "International Standard Atmosphere" (ISA) and why is it used as a reference?',
+    question: 'Why is "International Standard Atmosphere" (ISA) used as a reference?',
     options: [
       'ISA is used only by equipment manufacturers, pilots use actual atmospheric data for all calculations',
       'ISA describes actual atmospheric conditions measured globally, it changes with the seasons',
@@ -2354,17 +2354,17 @@ export const cmetQuestions: {
   {
     question: 'What is the standard validity period for an aviation SIGMET in Australia?',
     options: [
-      '12 hours',
-      '4 hours (up to 6 hours for tropical cyclone SIGMETs)',
-      '1 hour',
-      '24 hours',
+      '12 hours, matching the TAF validity period',
+      '4 hours, extended to up to 6 hours for tropical cyclone SIGMETs',
+      '1 hour, after which it must be reissued',
+      '24 hours, covering a full day of operations',
     ],
     correct: 1,
     explanation: 'Aviation SIGMETs in Australia are generally valid for up to 4 hours. Tropical cyclone SIGMETs may be valid for up to 6 hours. They are updated before expiry if conditions persist.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a katabatic wind and when does it typically develop?',
+    question: 'When does a katabatic wind typically develop?',
     options: [
       'A wind that funnels through mountain passes, driven by synoptic pressure gradients',
       'A warm upslope wind driven by daytime solar heating of terrain',
@@ -2376,7 +2376,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a "SIGMET for severe icing" and what conditions trigger it?',
+    question: 'What conditions trigger a "SIGMET for severe icing"?',
     options: [
       'Any icing detected in cloud triggers a severe icing SIGMET',
       'Severe icing SIGMETs are only issued for turbine aircraft, piston aircraft are not significant',
@@ -2400,15 +2400,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a "prognostic icing product" and how is it used?',
+    question: 'How is a "prognostic icing product" used?',
     options: [
-      'A product showing current icing based on PIREP observations, not a forecast',
-      'A forecast product (from NWP model output) showing areas of expected icing at various altitude levels',
+      'A product showing current icing based on AIREP observations, not a forecast',
+      'A forecast product showing areas of expected icing at various altitude levels',
       'Icing products are only issued by AIRMET, no separate prognostic icing product exists',
       'Prognostic icing products are only available for jet routes above FL180',
     ],
     correct: 1,
-    explanation: 'Prognostic icing products (available via BOM and third-party tools) use NWP model output to forecast areas of icing at multiple levels — typically showing icing probability, liquid water content, and temperature. Used with PIREPs to build a complete picture of the icing environment for route planning.',
+    explanation: 'Prognostic icing products (available via BOM and third-party tools) use NWP model output to forecast areas of icing at multiple levels — typically showing icing probability, liquid water content, and temperature. Used with AIREPs to build a complete picture of the icing environment for route planning.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -2436,31 +2436,31 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What does a "METAR CAVOK" mean for a pilot planning to fly VFR?',
+    question: 'Your destination METAR is simply "CAVOK 28/06 Q1023". A colleague says everything is fine for your arrival. What has the METAR NOT told you?',
     options: [
-      'CAVOK means conditions are marginal for VFR, pilots should check all three conditions carefully',
-      'CAVOK indicates very good conditions for VFR, visibility ≥10 km, no cloud below 5,000 ft or MSA, and no significant weather. An',
-      'CAVOK applies only to IFR operations, VFR pilots need different weather information',
-      'CAVOK means the aerodrome is closed, no operations are taking place',
+      'The temperature trend for the next hour',
+      'The QNH, which must come from the ATIS',
+      'The wind, CAVOK covers visibility, weather and cloud but says nothing about wind',
+      'Nothing, CAVOK guarantees all elements are benign',
     ],
-    correct: 1,
-    explanation: 'CAVOK represents excellent VFR conditions — visibility at or above 10 km, no CB or TCu, no cloud below 5,000 ft or the MSA, and no significant weather. For a VFR pilot this means: good ground reference, no low cloud to force inadvertent IMC, and no precipitation or other hazards.',
+    correct: 2,
+    explanation: 'CAVOK means visibility 10 km or more, no cloud below 5,000 ft or the highest MSA, no CB or TCU, and no significant weather. The wind group is separate and in this report is conspicuously absent from your colleague\'s thinking: a 25 kt crosswind can coexist with CAVOK. Always read the wind group on its own merits.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "pilot decision-making" in the context of weather and what is the recommended process?',
+    question: 'What is the recommended process for pilot weather decision-making?',
     options: [
       'Decision-making is automatic for experienced pilots, no structured process is needed',
       'All weather decisions should be delegated to ATC, pilots should not make independent weather decisions',
       'Pilot decision-making is only relevant to IFR operations, VFR pilots do not need a structured process',
-      'A recommended model is to identify the hazard, assess the risk, determine the options, choose the best course of action, then review the outcome',
+      'Identify the hazard, assess the risk, weigh the options, choose a course of action, then review the outcome',
     ],
     correct: 3,
     explanation: 'CASA advocates structured ADM (Aeronautical Decision Making) for weather decisions. The 3Ps model: Perceive (gather weather information), Process (analyse against flight requirements), Perform (decide and act — including go/no-go, deviation, diversion). Applying the model reduces the risk of plan continuation bias and cognitive errors under pressure.',
     reference: 'CASA Safety Bulletin',
   },
   {
-    question: 'What is "subsidence inversion" and where does it typically form in relation to anticyclones?',
+    question: 'Where does "subsidence inversion" typically form in relation to anticyclones?',
     options: [
       'An inversion formed by radiation cooling at the surface, most common at night',
       'An inversion formed by warming of descending air in an anticyclone',
@@ -2475,7 +2475,7 @@ export const cmetQuestions: {
     question: 'How do wake vortices behave after generation and what factors affect their persistence?',
     options: [
       'Wake vortices rise above the generating aircraft, they are only hazardous to aircraft above the generator',
-      'Wake vortices sink at approximately 100–500 ft/min and drift downwind, they persist longer in calm conditions and dissipate',
+      'Wake vortices sink at about 100–500 ft/min and drift downwind, they persist longer in calm conditions and dissipate',
       'Wake vortices are horizontal, they move along the aircraft\'s flight path and do not descend',
       'Wake vortices dissipate within 500 m of the generating aircraft, not a concern for aircraft maintaining ATC separation',
     ],
@@ -2484,16 +2484,16 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is sea fog (steam fog) and when does it typically occur?',
+    question: 'The ATIS gives wind 070° at 15 kt while the latest METAR shows 080° at 15 kt. Magnetic variation is 10°E. Are the two consistent?',
     options: [
-      'Fog that forms in harbours due to pollution and ship exhaust, a form of industrial fog',
-      'Fog over the sea caused by warm moist air advecting over cold water, identical to advection fog',
-      'Fog forming when very cold air flows over warmer water, causing rapid evaporation that saturates the cold air',
-      'A type of radiation fog that only forms over ocean surfaces away from the coast',
+      'Yes, but only because the wind is light',
+      'No, one of the reports must be in error',
+      'No, ATIS and METAR winds always agree exactly',
+      'Yes, the METAR is in degrees true and the ATIS in degrees magnetic, 080T equals 070M here',
     ],
-    correct: 2,
-    explanation: 'Steam fog (Arctic sea smoke) forms when cold air flows over much warmer water. Rapid evaporation saturates the very cold air immediately above the water surface, creating wisps of fog that appear like steam. Common in cold outbreaks over relatively warmer coastal waters.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.8',
+    correct: 3,
+    explanation: 'METARs, TAFs and GAFs give wind in degrees true, while ATIS and tower-passed winds are magnetic so they can be set straight against the runway heading. With 10° east variation, true equals magnetic plus ten, so 080 true is 070 magnetic. The reports agree perfectly.',
+    reference: 'AIP GEN 3.5',
   },
   {
     question: 'A METAR reports the wind as 240/15 while the ATIS at the same aerodrome gives 230/15. What is the most likely reason for the difference?',
@@ -2508,7 +2508,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is relative humidity and how does it relate to dew point?',
+    question: 'How does relative humidity relate to dew point?',
     options: [
       'The total water vapour content of the air in grams per kilogram, increases with temperature',
       'The ratio of water vapour pressure to the saturation pressure at the same temperature',
@@ -2536,7 +2536,7 @@ export const cmetQuestions: {
     options: [
       'Tropical conditions are identical to mid-latitude conditions, standard met procedures apply without modification',
       'Tropical weather only occurs above 15°N, northern Australia is too far south to experience true tropical conditions',
-      'Deep moisture layers, intense convection with very tall CB above FL500, rapid development, and monsoonal or trade-wind regimes rather than frontal systems',
+      'Deep moisture, very tall CB above FL500, rapid development, and monsoon or trade-wind regimes rather than frontal systems',
       'Tropical weather is simpler than mid-latitude weather, fewer weather systems produce all the weather',
     ],
     correct: 2,
@@ -2568,19 +2568,19 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "gust factor" and how is it used operationally?',
+    question: 'A METAR observation period has a mean wind of 14 kt with a maximum of 22 kt. Will a gust group be appended?',
     options: [
-      'Gust factor is a forecast-only term, and observed METAR winds never include gust information',
-      'The difference between peak gust and mean wind speed, relevant only for large jet aircraft',
-      'The ratio of maximum to mean wind speed, with a factor of 1.5 or more indicating significant gusting for landing and take-off',
-      'The maximum wind speed measured in the past hour, used for crosswind component calculations',
+      'Yes, any maximum above 20 kt is reported as a gust',
+      'No, the 8 kt excess is below the 10 kt threshold for reporting gusts',
+      'Yes, gusts are reported whenever the maximum exceeds the mean',
+      'No, gusts are only reported when thunderstorms are present',
     ],
-    correct: 2,
-    explanation: 'Gust factor = maximum gust speed / mean wind speed. A high gust factor (e.g. 1.5×) indicates significant wind variability. For landing, aircraft must be able to handle maximum gust speed while maintaining directional control — the gust speed (not mean speed) determines the effective crosswind component for landing performance.',
+    correct: 1,
+    explanation: 'A gust group, the letter G followed by the peak speed, is added when the maximum exceeds the mean wind by 10 kt or more. Here the excess is 22 − 14 = 8 kt, below the threshold, so the wind is reported simply as 14 kt with no G group.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "mammatus cloud" and what does it indicate?',
+    question: 'What does "mammatus cloud" indicate?',
     options: [
       'Mammatus cloud forms below CB anvils as rounded, hanging pouches',
       'Mammatus cloud forms at the base of altostratus, indicates moderate icing',
@@ -2592,12 +2592,12 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "altimeter error due to pressure" and how is it calculated?',
+    question: 'How is "altimeter error due to pressure" calculated?',
     options: [
       'Altimeter pressure error is fixed at ±100 ft, no calculation is required',
-      'If QNH is lower than standard (1013 hPa), the altimeter over-reads, error = (1013 − QNH) × 30 ft per hPa',
+      'If QNH is below standard 1013 hPa, the altimeter over-reads, with the error equal to (1013 − QNH) × 30 ft per hPa',
       'Pressure error is negligible below FL100, only applies to high-altitude operations',
-      'If QNH is lower than standard, the altimeter under-reads by the same factor',
+      'If QNH is lower than standard, the altimeter under-reads by (QNH − 1013) × 30 ft per hPa',
     ],
     correct: 1,
     explanation: 'As a rule of thumb: 1 hPa change in QNH ≈ 30 ft change in indicated altitude. If QNH is 1003 hPa (10 hPa below standard), an altimeter set to 1013 (or not updated) will read approximately 300 ft higher than actual altitude. Using correct local QNH eliminates this error.',
@@ -2628,12 +2628,12 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "low-level jet" (LLJ) and how does it affect aviation at night?',
+    question: 'How does "low-level jet" (LLJ) affect aviation at night?',
     options: [
       'Ow-level jets occur at the tropopause only, "low-level" refers to the pressure level, not AGL height',
       'The low-level jet only occurs in tropical regions, not relevant to Australian mid-latitude operations',
       'The LLJ is a constant feature, it is present at all times and not a nocturnal phenomenon',
-      'A wind-speed maximum in the lower troposphere, typically 500–2,000 ft AGL, that develops at night as the surface layer decouples beneath an inversion',
+      'A low-level wind maximum, typically 500 to 2,000 ft AGL, forming at night as the surface layer decouples under an inversion',
     ],
     correct: 3,
     explanation: 'The nocturnal LLJ forms as the surface friction layer decouples after sunset, allowing a wind maximum to develop at typically 500–2,000 ft AGL. It produces wind shear at the LLJ top (hazardous for approaches), advects moisture rapidly, and is associated with nocturnal convection. Strongest just before dawn — can exceed 50 kt in ideal conditions.',
@@ -2656,7 +2656,7 @@ export const cmetQuestions: {
     options: [
       'A cold core upper low is associated with high pressure at the surface, no convective risk',
       'Cold core upper lows only affect the stratosphere, no tropospheric weather impact',
-      'A cold core upper low (trough deepened around a cold air mass aloft) is associated with enhanced instability',
+      'A cold core upper low is associated with enhanced instability',
       'Cold core upper lows produce only stratiform precipitation, convection cannot occur with cold upper air',
     ],
     correct: 2,
@@ -2664,9 +2664,9 @@ export const cmetQuestions: {
     reference: 'ICAO Standard Atmosphere',
   },
   {
-    question: 'What is "SIGMET for severe turbulence" and what criteria trigger its issuance?',
+    question: 'What criteria trigger the issue of a SIGMET for severe turbulence?',
     options: [
-      'SIGMETs for turbulence are not issued, turbulence is only reported via PIREP',
+      'SIGMETs for turbulence are not issued, turbulence is only reported via AIREP',
       'A SIGMET for severe turbulence is issued when severe turbulence (causing large abrupt attitude changes, aircraft momentarily out',
       'Any turbulence at altitude above FL100 triggers a severe turbulence SIGMET',
       'Severe turbulence SIGMETs are only issued for jet aircraft, propeller aircraft are not affected',
@@ -2705,18 +2705,18 @@ export const cmetQuestions: {
       'Warmer air holds more water vapour because hot air is less dense, density determines capacity',
       'Warmer air physically creates more water vapour through increased evaporation from surfaces',
       'All air holds the same amount of water vapour, temperature determines whether it is liquid or vapour',
-      'Saturation vapour pressure increases exponentially with temperature (Clausius-Clapeyron)',
+      'Saturation vapour pressure increases exponentially with temperature',
     ],
     correct: 3,
-    explanation: 'Saturation vapour pressure increases approximately exponentially with temperature. At higher temperatures, more molecules have sufficient kinetic energy to escape the liquid phase. This means warm air can contain far more water vapour before reaching saturation — e.g. air at 30°C can hold about 4× more vapour than air at 10°C.',
+    explanation: 'Saturation vapour pressure increases approximately exponentially with temperature. At higher temperatures, more molecules have sufficient kinetic energy to escape the liquid phase. This means warm air can contain far more water vapour before reaching saturation — e.g. air at 30°C can hold about 4× more vapour than air at 10°C. Clausius-Clapeyron.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.2',
   },
   {
-    question: 'What is the "surface friction layer" and how deep is it typically?',
+    question: 'How deep is the "surface friction layer" typically?',
     options: [
       'The friction layer is exactly 300 ft deep, above this winds are purely geostrophic',
       'The friction layer only exists over rough terrain, over water and flat plains it is absent',
-      'The surface friction layer (atmospheric boundary layer) extends from the surface to approximately 1,500–3,000 ft AGL in Australia',
+      'The surface friction layer extends from the surface to approximately 1,500–3,000 ft AGL in Australia',
       'The surface friction layer is the layer from the surface to the top of the troposphere, friction affects all altitudes',
     ],
     correct: 2,
@@ -2727,7 +2727,7 @@ export const cmetQuestions: {
     question: 'A TAF contains the group "TEMPO 0412/0418 BKN005 TSRA". What does this mean for a pilot planning an arrival at 1500Z on the 4th?',
     options: [
       'Permanent broken cloud at 500 ft with thunderstorm and rain from 1200Z to 1800Z, with no return to the base forecast during that period',
-      'Temporary broken cloud at 500 ft and thunderstorm with rain between 1200Z-1800Z on the 4th, each lasting less than 60 minutes, possibly recurring',
+      'Temporary 500 ft broken cloud with thunderstorms and rain between 12Z and 18Z on the 4th, each burst under 60 minutes',
       'TEMPO means the thunderstorm occurred before the issue time and conditions have since returned to the base forecast',
       'BKN005 means 5 oktas of cloud, which is broken rather than overcast, so no IFR ceiling applies',
     ],
@@ -2738,8 +2738,8 @@ export const cmetQuestions: {
   {
     question: 'What is "wind backing" and "wind veering" and what does each indicate in the Southern Hemisphere?',
     options: [
-      'Backing = wind direction decreasing (e.g. 270, then 180, then 090), veering = wind direction increasing (e.g. 090, then 180, then 270). In the SH, veering with height indicates warm air advection, backing indicates cold air advection',
-      'Backing = anticlockwise direction change, veering = clockwise direction change. In the SH, backing indicates warm air advection and veering indicates cold air advection',
+      'Backing is a decreasing direction, 270 to 180 to 090, veering increasing, and veering aloft in the SH means warm advection',
+      'Backing is an anticlockwise direction change and veering clockwise, and in the SH backing with height indicates warm air advection',
       'Backing and veering are Northern Hemisphere terms, in the SH the equivalents are "leftward shift" and "rightward shift"',
       'Backing = wind becoming stronger, veering = wind becoming weaker. Both indicate an approaching frontal system',
     ],
@@ -2748,12 +2748,12 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.6',
   },
   {
-    question: 'What is "El Niño" and how does it affect Australian precipitation patterns?',
+    question: 'How does "El Niño" affect Australian precipitation patterns?',
     options: [
       'El Niño is a seasonal weather pattern, occurring every summer in Australia',
       'El Niño is associated with above-average rainfall in eastern Australia and below-average in western Australia',
       'El Niño only affects coastal regions, inland Australia is unaffected',
-      'El Niño events involve warming of the central and eastern Pacific Ocean, reducing the Walker Circulation and shifting rainfall away from Australia',
+      'Warming of the central and eastern Pacific that weakens the Walker Circulation and shifts rain away from Australia',
     ],
     correct: 3,
     explanation: 'El Niño involves above-average sea surface temperatures in the central and eastern Pacific, weakening the Walker Circulation. This typically shifts rainfall patterns away from Australia, producing below-average rainfall over eastern and northern Australia, increasing drought risk and fire danger.',
@@ -2772,15 +2772,15 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What weather phenomena are included in the "TS" group when reported in a METAR?',
+    question: 'One METAR shows "TSRA" and another shows "VCTS". What is the difference?',
     options: [
-      'TS means heavy rain, the thunder aspect is implicit but not the primary hazard reported',
-      'TS means only thunder is audible, no lightning or precipitation necessarily occurs',
-      'TS means a thunderstorm is occurring at the aerodrome',
-      'TS indicates severe thunderstorm only, ordinary thunderstorms are coded "CB"',
+      'TSRA is a thunderstorm with rain at the aerodrome, VCTS is a thunderstorm in the vicinity, within about 8 to 16 km',
+      'VCTS is the more severe code, indicating a violent cell on the field',
+      'TSRA is the forecast form while VCTS is the observed form of the same code',
+      'They are identical in meaning, VC merely abbreviates the cloud type involved',
     ],
-    correct: 2,
-    explanation: '"TS" in a METAR indicates a thunderstorm is occurring or has occurred at the aerodrome during the observation period. Lightning is implied. Associated precipitation is separately coded — e.g. "TSRA" = thunderstorm with rain, "TSGR" = thunderstorm with hail.',
+    correct: 0,
+    explanation: 'Codes without a prefix describe weather at the aerodrome itself, so TSRA is a thunderstorm with rain overhead. The VC prefix means in the vicinity, beyond the aerodrome but within roughly 8 to 16 km, so VCTS warns of a cell close by that may arrive or pass clear. Both demand caution, but VCTS buys you a little distance and time.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -2796,10 +2796,10 @@ export const cmetQuestions: {
     reference: 'Bureau of Meteorology',
   },
   {
-    question: 'What is the "radar loop" and how does it assist weather avoidance?',
+    question: 'How does the "radar loop" assist weather avoidance?',
     options: [
       'Radar loops are only produced for major aerodromes, regional weather is a static image',
-      'An animated sequence of radar images showing precipitation movement, development and dissipation, letting pilots judge storm motion and trend',
+      'An animated radar sequence showing precipitation movement and development, letting you judge storm motion and trend',
       'A single radar image showing the current precipitation distribution, with no information about movement or trend',
       'A radar loop is only useful for ATC, pilots do not need to assess storm motion',
     ],
@@ -2844,34 +2844,34 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a frontal inversion and what weather is characteristically associated with it?',
+    question: 'What weather is characteristically associated with a frontal inversion?',
     options: [
       'A temperature inversion that only forms at cold fronts, producing brief but intense convective showers',
-      'A temperature inversion at the warm frontal surface where warm air overrides cold air, associated with the cloud and precipitation sequence of an approaching warm front',
+      'A temperature inversion at the warm frontal surface where warm air overrides cold, beneath the approaching warm front cloud',
       'An inversion that only forms above 10,000 ft and has no effect on surface weather or visibility',
-      'A subsidence inversion forming in the centre of a high-pressure system, associated with clear skies and strong surface winds',
+      'A subsidence inversion forming in the centre of a high-pressure system, linked to clear skies and strong surface winds',
     ],
     correct: 1,
     explanation: 'A frontal inversion exists at the surface of a warm front where warm air has overrun the cold air below. The warm air rises along this gentle slope, cooling and condensing to form the characteristic warm front cloud sequence: cirrus → cirrostratus → altostratus → nimbostratus. The inversion itself marks the boundary between the cold surface air and the warm overriding air.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "conditional forecast language" in aviation weather products and how should it be interpreted?',
+    question: 'Your destination TAF ends with "PROB30 0518/0522 0500 FG". How should this shape your planning?',
     options: [
-      'Conditional" means the forecast is guaranteed, conditions will occur regardless of other factors',
-      'Conditional forecasts only apply to ceiling and visibility, all wind and temperature forecasts are certain',
-      'Conditional forecast language means the meteorologist is uncertain of the whole forecast, no forecast elements can be relied upon',
-      'Conditional language (PROB30, PROB40, TEMPO) indicates forecast uncertainty, the described conditions are possible but not',
+      'Ignore it, probabilities under 50 per cent are not operationally relevant',
+      'Treat fog as a real possibility in that window and carry the fuel or alternate to cope with 500 m visibility',
+      'Expect fog for exactly 30 per cent of the four hours',
+      'Divert now, PROB30 means fog is already forming',
     ],
-    correct: 3,
-    explanation: 'Conditional language in TAFs (TEMPO, PROB30, PROB40) explicitly quantifies forecast uncertainty. PROB40 means a 40% probability of the stated conditions. Pilots must evaluate whether the flight can proceed safely even if the less likely (conditional) scenario occurs — particularly for alternates and fuel planning.',
+    correct: 1,
+    explanation: 'PROB30 expresses a 30 per cent probability of the stated conditions during the window, here 500 m in fog between 18Z and 22Z. It is uncertain, not unlikely enough to dismiss: prudent planning treats the conditional scenario as one you must be able to handle, through holding fuel, an alternate or retiming the arrival.',
     reference: 'AIP GEN 3.5',
   },
   {
     question: 'How does the position of the ITCZ change with season, and what is the effect on northern Australia?',
     options: [
       'It remains fixed over the equator year-round, so it never directly influences weather over the Australian continent',
-      'It follows the sun, moving south over northern Australia in the wet season and bringing the northwest monsoon, deep convection and heavy rain',
+      'It follows the sun, moving south over northern Australia in the wet season with the monsoon, deep convection and heavy rain',
       'It moves south in the southern winter, bringing the wet season to northern Australia between June and August',
       'It controls only oceanic weather and has no effect on conditions over the Australian land mass',
     ],
@@ -2880,11 +2880,11 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.11',
   },
   {
-    question: 'What is absolute stability and what type of cloud is associated with it?',
+    question: 'What type of cloud is associated with absolute stability?',
     options: [
       'ELR greater than the DALR, associated with cumulonimbus development',
       'ELR equal to the DALR, neutral stability producing fair-weather cumulus',
-      'ELR less than the SALR, any lifting produces stable, layered cloud (stratus type) rather than convective cloud',
+      'ELR less than the SALR, any lifting produces stable, layered cloud rather than convective cloud',
       'ELR equal to the SALR, marginal stability with alto-type cloud',
     ],
     correct: 2,
@@ -2904,19 +2904,19 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is significant meteorological information (SIGMET) and what types of phenomena trigger the issue of a SIGMET?',
+    question: 'A SIGMET for your route reads "SEV ICE FCST WI ... FL080/FL140". What is the essential message?',
     options: [
-      'A weather advisory issued only for thunderstorm activity, not relevant to other hazards',
-      'A general aviation weather briefing issued by Airservices Australia for all controlled airspace',
-      'A routine weather briefing issued for all flights, covers all forecast weather along the route',
-      'An unscheduled weather advisory issued for significant meteorological hazards',
+      'Light rime ice is possible below 8,000 ft only',
+      'Severe ice exists only above FL140, the band beneath is clear',
+      'Severe airframe icing is forecast in the area between FL080 and FL140, avoid that band in cloud',
+      'Surface frost is expected on parking aprons overnight',
     ],
-    correct: 3,
-    explanation: 'A SIGMET (Significant Meteorological Information) is an unscheduled advisory warning of specific meteorological hazards significant to all aircraft. Triggers include: severe and extreme turbulence, severe icing, widespread dust/sandstorm, volcanic ash, tropical cyclones, and severe mountain waves.',
+    correct: 2,
+    explanation: 'SIGMETs warn of phenomena hazardous to all aircraft, and SEV ICE means accretion faster than de-icing or anti-icing equipment can shed. The level band FL080 to FL140 defines where the hazard lies. Plan to cross the area below, above, or in clear air, and treat the band as closed for flight in cloud.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the "tropopause" and what meteorological significance does it have for aviation?',
+    question: 'What meteorological significance does the "tropopause" have for aviation?',
     options: [
       'The boundary between the surface layer and the free atmosphere, located at about 3,000 ft AGL',
       'The tropopause is an isothermal layer that has no operational significance for aviation',
@@ -2932,7 +2932,7 @@ export const cmetQuestions: {
     options: [
       'Temperatures below −10°C and low humidity, dry cold air promotes carb ice most rapidly',
       'Carb heat should only be used after ice has formed, preventive use wastes engine power',
-      'Temperatures between +5°C and +25°C with high relative humidity, particularly at low power settings (idle or partial power in descent)',
+      'Temperatures between +5°C and +25°C with high relative humidity, particularly at low power settings',
       'Temperatures above 30°C with 100% humidity, maximum evaporation rate promotes ice formation',
     ],
     correct: 2,
@@ -2940,19 +2940,19 @@ export const cmetQuestions: {
     reference: 'CASA Carburettor Icing Probability Chart',
   },
   {
-    question: 'What is "infrared satellite imagery" and what does a bright white return indicate?',
+    question: 'On the infrared satellite image a cloud mass shows tops colder than minus 60°C. What does this indicate?',
     options: [
-      'IR imagery shows wind shear zones, with white areas marking the strongest shear gradients',
-      'IR imagery shows precipitation rate, with bright white indicating the heaviest rainfall cores',
-      'Bright white in IR imagery indicates warm, low cloud lying close to the surface',
-      'Thermal imagery in which bright white marks the coldest, highest cloud tops such as CB anvils, while warm low cloud appears grey',
+      'A dust layer in the mid-levels',
+      'Low warm stratus, infrared inverts the grey scale',
+      'Fog banks over cold ground',
+      'Very high, deep convective tops, likely CB reaching the tropopause',
     ],
     correct: 3,
-    explanation: 'IR satellite measures thermal emissions. Cold surfaces (high cloud tops) appear bright/white; warm surfaces (ground, low cloud, clear ocean) appear grey/black. A bright white CB anvil indicates a very high, cold cloud top — a deep, intense thunderstorm. IR is available 24 hours and is the primary satellite product for night operations.',
+    explanation: 'Infrared imagery maps cloud-top temperature, and colder means higher. Tops below minus 60°C in the Australian region sit near the tropopause, the signature of deep cumulonimbus or a violent storm complex. Pairing IR with the visible channel and radar confirms the convective nature.',
     reference: 'Bureau of Meteorology',
   },
   {
-    question: 'What is an occluded front and how does it form?',
+    question: 'How does an occluded front form?',
     options: [
       'A front where cold and warm air have the same temperature, produces stable, stratiform cloud only',
       'A front where a faster-moving cold front catches a warm front',
@@ -2976,11 +2976,11 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.9',
   },
   {
-    question: 'What is "haze" and how does it form in the Australian context?',
+    question: 'How does "haze" form in the Australian context?',
     options: [
       'Water droplets suspended in the atmosphere, identical to mist but at higher altitude',
       'Haze only forms over the ocean, not observed over continental Australia',
-      'Visibility reduction caused by suspended dry particulate matter (dust, smoke, salt, aerosols)',
+      'Visibility reduction caused by suspended dry particulate matter',
       'Haze is a temporary phenomenon lasting less than 30 minutes, longer events are reclassified as fog',
     ],
     correct: 2,
@@ -2988,15 +2988,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.5',
   },
   {
-    question: 'What is "CAT" (clear air turbulence) and what is the most reliable method for detecting it in flight?',
+    question: 'What is the most reliable method for detecting "CAT" (clear air turbulence) in flight?',
     options: [
-      'AT can be detected visually, cloud at jet stream level indicates CAT zones',
-      'CAT is invisible and not detectable by weather radar, the most reliable real-time information comes from PIREPs',
+      'CAT can be detected visually, because cloud at jet stream level marks the CAT zones',
+      'CAT is invisible and not detectable by weather radar, the most reliable real-time information comes from AIREPs',
       'Weather radar detects CAT with high reliability, it shows clear air turbulence zones in clear colours',
-      'AT is only encountered in winter, summer flights above FL250 never experience CAT',
+      'CAT is only encountered in winter, summer flights above FL250 never experience it',
     ],
     correct: 1,
-    explanation: 'CAT cannot be detected visually or by conventional weather radar (no precipitation present). The best information sources are: PIREPs from pilots who have recently traversed the route, satellite-derived wind shear and turbulence products, NWP turbulence forecasts (GTG), and knowledge of jet stream position from upper wind charts.',
+    explanation: 'CAT cannot be detected visually or by conventional weather radar (no precipitation present). The best information sources are: AIREPs from pilots who have recently traversed the route, satellite-derived wind shear and turbulence products, NWP turbulence forecasts (GTG), and knowledge of jet stream position from upper wind charts.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
@@ -3014,7 +3014,7 @@ export const cmetQuestions: {
   {
     question: 'What is "atmospheric optics" relevant to aviation and what causes a "halo" around the sun or moon?',
     options: [
-      'A halo (typically 22°) forms when sunlight/moonlight refracts through ice crystals in cirrus cloud',
+      'A halo, typically of 22°, forms when sunlight or moonlight refracts through the ice crystals of cirrus cloud',
       'A halo is caused by water droplets, its presence means stratus cloud is forming',
       'Atmospheric optics have no meteorological significance, halos are purely cosmetic phenomena',
       'A halo indicates clear skies, it only forms in perfectly transparent air',
@@ -3036,23 +3036,23 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a "weather window" and how is it assessed for flight planning?',
+    question: 'A TAF is valid 0512/0612 and your ETA is 1300Z on the 6th. Can you use this TAF for planning?',
     options: [
-      'A period of marginally acceptable weather, used only when no other option exists',
-      'A weather window is only relevant to IFR flights, VFR operations use current observations only',
-      'A dedicated display window on the aircraft\'s avionics for showing real-time weather radar',
-      'A period during which conditions are expected to be suitable for a planned flight',
+      'No, your ETA falls outside the validity period, so an updated TAF is required',
+      'Yes, a TAF remains usable for one hour past its validity end',
+      'Yes, provided the last two hours showed no change groups',
+      'No, a TAF can never be used within one hour of its expiry time',
     ],
-    correct: 3,
-    explanation: 'A weather window is the period during which forecast conditions are within the flight\'s requirements. Assessing a window requires: comparing forecast cloud, visibility, winds, and precipitation against the flight\'s minima, ensuring adequate margins for forecast uncertainty, and planning for contingencies if the window closes.',
+    correct: 0,
+    explanation: 'The validity group 0512/0612 means day 05 at 1200 UTC until day 06 at 1200 UTC. An arrival at 1300Z on the 6th is an hour after expiry, so the TAF is not valid for your arrival and an updated forecast must be obtained before relying on it.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "radar beam blockage" and how does it affect Australian weather radar?',
+    question: 'How does "radar beam blockage" affect Australian weather radar?',
     options: [
       'Radar beam blockage only occurs when the antenna is malfunctioning, it is not a routine operational concern',
       'Beam blockage only affects high-frequency radars, the S-band and C-band radars used in Australia are unaffected',
-      'Terrain and buildings near the radar antenna can block the radar beam, creating "shadows" (gaps in radar coverage)',
+      'Terrain and buildings near the radar antenna can block the radar beam, creating "shadows"',
       'Beam blockage is caused by heavy rain attenuating the radar beam, identical to precipitation attenuation',
     ],
     correct: 2,
@@ -3064,7 +3064,7 @@ export const cmetQuestions: {
     options: [
       'Lightning and hail only, modern aircraft are certified to withstand all other thunderstorm hazards',
       'Reduced visibility and icing only, turbulence is not significant outside the thunderstorm cell',
-      'Severe turbulence (including clear air turbulence near the cell), lightning, hail, heavy rain, windshear/microburst, icing, and reduced visibility',
+      'Severe turbulence, lightning, hail, heavy rain, windshear/microburst, icing, and reduced visibility',
       'Only turbulence and lightning, precipitation and icing are not significant thunderstorm hazards',
     ],
     correct: 2,
@@ -3072,15 +3072,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the difference between "BR" and "FG" in a METAR visibility group?',
+    question: 'A dawn METAR reads "0800 FG VV002". Decode the picture.',
     options: [
-      'BR = mist (visibility 1,000–9,999 m), FG = fog (visibility below 1,000 m)',
-      'BR and FG are identical, both describe the same visibility condition',
-      'BR = light fog, FG = heavy fog, distinguished by rate of formation',
-      'BR = rain, FG = freezing, both reduce visibility',
+      'Fog with 800 m visibility and the sky obscured, vertical visibility only 200 ft',
+      'Mist with 800 m visibility under a 200 ft ceiling',
+      'Fog patches with 8 km visibility between them',
+      'Freezing fog with cloud at 2,000 ft',
     ],
     correct: 0,
-    explanation: '"BR" = Mist — visibility between 1,000 m and 9,999 m caused by water droplets/ice crystals. "FG" = Fog — visibility below 1,000 m. The 1,000 m threshold is the ICAO boundary between mist and fog in aviation meteorology.',
+    explanation: 'FG is fog, by definition visibility below 1,000 m, here 800 m. VV002 means the sky is obscured and the observer or sensor can see vertically only 200 ft, with no discernible cloud base. Mist would be coded BR with visibility of 1,000 m or more. These are well below VFR and most IFR minima, so wait for the fog to lift.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -3096,27 +3096,27 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a haboob and where is it most commonly experienced in Australia?',
+    question: 'Where is a haboob most commonly experienced in Australia?',
     options: [
       'A severe tropical cyclone, classified as a haboob when wind speeds exceed 100 kt',
-      'A large dust storm driven by thunderstorm outflow, common in inland Australia (particularly Queensland and South Australia) when',
+      'A large dust storm driven by thunderstorm outflow, most common in arid inland Australia when storm gust fronts lift dry surface dust',
       'A type of fog that forms in the Nullarbor region, associated with cold maritime air advection',
-      'N intense orographic cloud, forms when moist easterly flows hit the Great Dividing Range',
+      'An intense orographic cloud that forms when moist easterly flow strikes the Great Dividing Range',
     ],
     correct: 1,
     explanation: 'A haboob is a large, intense dust storm generated by the outflow of cold air from a collapsing thunderstorm. The dense, cool downdraft rushes outward and picks up fine surface dust, creating a wall of dust that can be hundreds of metres high. Common in arid inland Australia.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "VV" in a METAR cloud section and what does it indicate?',
+    question: 'Why does a METAR report "VV001" instead of a normal cloud group?',
     options: [
-      'VV means Very Visible, indicating a completely clear sky with 9999 visibility',
-      'VV is the velocity vector, a combined coding of the wind speed and direction',
-      'Vertical Visibility, reported when sky is obscured (fog, dust, precipitation) and a cloud base cannot be determined',
-      'VV means Vertical Velocity, the rate of ascent or descent of the dominant cloud system',
+      'The ceilometer measured cloud exactly at 100 ft',
+      'The sky is totally obscured, often by fog, so only a vertical visibility of 100 ft can be given',
+      'Variable visibility of 100 m is affecting the field',
+      'The cloud amount is varying between one and two oktas',
     ],
-    correct: 2,
-    explanation: '"VV" = Vertical Visibility — used when the sky is completely obscured and normal cloud group reporting is not possible. VV///000 means sky obscured with vertical visibility less than 100 ft. "VV006" means vertical visibility of 600 ft into an obscured sky.',
+    correct: 1,
+    explanation: 'When fog, heavy rain, smoke or dust hides the sky completely, no cloud base exists to measure, so the report gives vertical visibility instead. VV001 means you could see only about 100 ft straight up. For approach purposes treat it like an extremely low indefinite ceiling.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -3132,15 +3132,15 @@ export const cmetQuestions: {
     reference: 'Bureau of Meteorology',
   },
   {
-    question: 'What is wind shear and why is it hazardous to aviation?',
+    question: 'Why is wind shear hazardous to aviation?',
     options: [
       'A change in wind direction only, speed changes are not classified as wind shear',
-      'A change in wind speed and/or direction over a short distance (vertically or horizontally)',
+      'A change in wind speed and/or direction over a short distance',
       'Any wind above 30 kt, the speed alone creates turbulence hazardous to aviation',
       'The difference between surface wind and upper wind, relevant only above the transition altitude',
     ],
     correct: 1,
-    explanation: 'Wind shear is a change in wind velocity (speed and/or direction) over a short distance. It can be horizontal or vertical. Low-level wind shear (LLWS) is particularly hazardous on approach and departure — sudden airspeed loss on final approach can lead to controlled flight below the glidepath.',
+    explanation: 'Wind shear is a change in wind velocity (speed and/or direction) over a short distance. It can be horizontal or vertical. Low-level wind shear (LLWS) is particularly hazardous on approach and departure — sudden airspeed loss on final approach can lead to controlled flight below the glidepath. Vertically or horizontally.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
@@ -3170,7 +3170,7 @@ export const cmetQuestions: {
   {
     question: 'What flying weather characterises the wet season (approximately December to March) in the Top End of northern Australia?',
     options: [
-      'Daily afternoon and evening thunderstorms, very high humidity, extensive CB, heavy showers and reduced visibility under the northwest monsoon',
+      'Daily afternoon and evening storms, very high humidity, extensive CB and heavy showers under the northwest monsoon',
       'Persistent clear skies and smooth flying conditions, with strong, dry southeasterly winds throughout the period',
       'Frequent frontal passages with backing winds, low stratus and drizzle, similar to a southern Australian winter',
       'Widespread radiation fog every morning, with the afternoons remaining stable and completely cloud-free',
@@ -3197,30 +3197,30 @@ export const cmetQuestions: {
       'The ISA is only used for altimeter calibration, aircraft performance is based on actual conditions',
       'ISA is used for navigation calculations, actual temperature does not affect performance data in AFMs',
       'The standard atmosphere is used for cabin pressurisation calculations only',
-      'All aircraft performance data (take-off charts, climb tables, fuel flow, range) is based on ISA conditions',
+      'All aircraft performance data is based on ISA conditions',
     ],
     correct: 3,
     explanation: 'Aircraft performance charts and tables are based on ISA conditions. Pilots must apply ISA deviation corrections to determine actual performance — ISA+ (warmer than standard) degrades performance; ISA− may improve it. Density altitude combines pressure altitude and temperature correction for a single performance index.',
     reference: 'ICAO Standard Atmosphere',
   },
   {
-    question: 'What is the significance of a TAF amendment (AMD) and when is it issued?',
+    question: 'Mid-morning you notice the TAF header now reads "TAF AMD YMML 050820Z 0508/0606". What has happened?',
     options: [
-      'N AMD is a routine TAF update, issued every 6 hours regardless of whether conditions have changed',
-      'N AMD corrects a coding error in the previous TAF, it does not change the forecast conditions',
-      'An AMD is issued when the forecast conditions have changed significantly enough that the current TAF no longer accurately',
-      'N AMD is only issued for IFR aerodromes, VFR aerodromes use corrections (COR) instead',
+      'A coding correction with no change to the forecast weather',
+      'A routine reissue at the scheduled time',
+      'The forecaster has amended the TAF because conditions are expected to differ significantly from the original',
+      'The TAF has been extended by 24 hours',
     ],
     correct: 2,
-    explanation: 'A TAF amendment (AMD) is issued when forecast conditions have changed significantly beyond normal TAF uncertainty. It immediately supersedes the previous TAF from the time of issue. Pilots should always use the most recent TAF, checking for AMD issuances.',
+    explanation: 'AMD marks an amended TAF, issued whenever the forecaster judges the current forecast no longer represents expected conditions. It supersedes the previous issue immediately, and the new issue time 050820Z sits inside the validity period rather than on the routine schedule. A pure typographical fix would be labelled COR. Always brief from the latest AMD.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is advection fog and where is it most commonly encountered in Australia?',
+    question: 'Where is advection fog most commonly encountered in Australia?',
     options: [
       'Fog forming in valleys when cold air drains downslope and pools at night, common in the alpine regions of NSW and Victoria',
       'Fog forming on clear calm nights when the ground surface cools by radiation, most common in inland areas',
-      'Fog forming when warm moist air advects over a cooler surface, cooling below the dew point, common along southern coastlines when warm air flows over cooler coastal waters',
+      'Fog formed when warm moist air moves over a cooler surface and is chilled below its dew point, common over cool southern coastal waters',
       'Fog forming immediately after a cold frontal passage when cold polar air moves over warmer sea surface temperatures',
     ],
     correct: 2,
@@ -3230,17 +3230,17 @@ export const cmetQuestions: {
   {
     question: 'What is the "Q-code" system in aviation weather and give three examples?',
     options: [
-      'Codes are only used in ATC communications, not in weather products',
-      'Q-codes are three-letter codes starting with Q used in aviation and maritime communications. Weather examples',
-      'Codes in weather only have two examples: QNH and QFE, no others exist',
-      'Codes are obsolete, modern weather communications use ICAO plain language only',
+      'Q-codes are only used in ATC voice communications and never appear in weather products',
+      'Three-letter codes beginning with Q used in aviation and maritime signalling, the weather examples being QNH, QFE and QNE',
+      'Q-codes in weather have only two examples, QNH and QFE, no others exist',
+      'Q-codes are obsolete, modern weather communications use ICAO plain language only',
     ],
     correct: 1,
     explanation: 'Q-codes originate from the International Radiotelegraph Convention. Weather-relevant codes: QNH (altimeter setting → MSL altitude), QFE (aerodrome pressure → AGL height), QNE (standard 1013.25 hPa → flight level system). These three altimetry Q-codes are essential knowledge for all instrument pilots.',
     reference: 'AIP ENR 1.7',
   },
   {
-    question: 'What is "tropical cyclone track" and what factors influence its movement?',
+    question: 'What factors influence the movement of a tropical cyclone?',
     options: [
       'Track prediction is deterministic, a single forecast track is always reliable to 120 hours',
       'Tropical cyclones only move poleward, they cannot return to lower latitudes once formed',
@@ -3252,7 +3252,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "mountain obscuration" and why is it particularly dangerous for VFR flight?',
+    question: 'Why is "mountain obscuration" particularly dangerous for VFR flight?',
     options: [
       'Mountain obscuration only occurs in winter, summer convective cloud does not cover mountains completely',
       'Orographic cloud that forms only above mountain ranges, does not affect valley flight operations',
@@ -3267,9 +3267,9 @@ export const cmetQuestions: {
     question: 'What is the difference between "stratiform" and "convective" precipitation and the associated aviation hazards?',
     options: [
       'They are identical, precipitation type depends only on temperature, not the cloud type',
-      'Stratiform precipitation falls from layered cloud, steady, widespread, moderate intensity, icing risk. Convective precipitation',
+      'Stratiform rain falls steadily and widely from layered cloud, convective rain in brief intense showers from cumuliform cloud',
       'Stratiform precipitation is heavier, convective precipitation is lighter and more widespread',
-      'Stratiform is associated with cold fronts, convective is associated with warm fronts, reversed from what most pilots assume',
+      'Stratiform is linked to cold fronts, convective is linked to warm fronts, reversed from what most pilots assume',
     ],
     correct: 1,
     explanation: 'Stratiform precipitation (from Ns, As) is steady, moderate, widespread — primary hazard is structural icing. Convective precipitation (from Cu, CB) is intense, localised, showery — hazards include severe turbulence, large hail, microbursts, lightning, and rapid airspeed changes. Completely different risk profiles.',
@@ -3303,7 +3303,7 @@ export const cmetQuestions: {
     question: 'During an approach in the Southern Hemisphere, the wind is backing from 200° at circuit height to 170° at the surface. What does this indicate and what is the aerodynamic effect?',
     options: [
       'Backing indicates warm air advection in the SH, the aircraft will gain airspeed as it descends into the backed surface wind',
-      'Backing (anticlockwise change) indicates cold air advection in the SH, as the aircraft descends the headwind reduces causing airspeed loss requiring immediate power',
+      'Backing indicates cold air advection in the SH, and on descent the headwind drops, costing airspeed and demanding prompt power',
       'Backing is not aerodynamically significant, only veering affects approach airspeed',
       'Backing in the SH always indicates an approaching cold front, the approach must be discontinued',
     ],
@@ -3312,16 +3312,16 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.6',
   },
   {
-    question: 'What is the "squall" and how is it coded in a METAR wind group?',
+    question: 'The wind rises from 10 kt to 27 kt and holds for two minutes. Does this meet the squall criteria?',
     options: [
-      'A squall is reported in the weather group as "SQ" and also visible as a large difference between mean wind and gust in the wind group',
-      'Squalls are only reported in TAFs, not in METARs',
-      'A squall appears in the wind direction as a sudden shift, coded as a variability group',
-      'A squall is coded as "BLSQ", blowing squall',
+      'Yes, the rise of 17 kt to a speed above 22 kt lasting over a minute is a squall',
+      'No, a squall must reach at least 34 kt',
+      'No, the increase must last at least ten minutes',
+      'Yes, but only if thunderstorms are also reported',
     ],
     correct: 0,
-    explanation: 'In a METAR, a squall is reported in the weather group as "SQ" when a sudden increase in wind speed of ≥16 kt reaching ≥22 kt for ≥1 minute occurs. It may also be evident from a large gust factor in the wind group (e.g. 15025G45KT where mean 25 kt gusting 45 kt suggests squall activity).',
-    reference: 'AIP GEN 3.5',
+    explanation: 'A squall is a sudden increase of at least 16 kt, to a speed of 22 kt or more, lasting at least one minute. Here the wind rose 17 kt to 27 kt and held for two minutes, meeting every limb of the definition. A shorter burst would be reported as a gust.',
+    reference: 'Part 61 MOS Sch 3, CMTC 2.6',
   },
   {
     question: 'What is the "cold-air damming" phenomenon and where does it occur in Australia?',
@@ -3336,21 +3336,21 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is a "TREND" forecast in a METAR and how long is it valid?',
+    question: 'Your altimeter subscale is set to 1030 hPa but the actual QNH is 1010 hPa. The altimeter reads 3,000 ft. What is your approximate true altitude?',
     options: [
-      'Trend forecasts are only appended to SPECI observations, not regular METARs',
-      'A trend forecast is issued separately from the METAR, not appended to it',
-      'A trend forecast appended to a METAR indicating expected changes in the next 2 hours',
-      'A trend forecast is valid for 6 hours, longer than the METAR itself',
+      '3,600 ft',
+      '3,000 ft',
+      '2,400 ft',
+      '2,940 ft',
     ],
     correct: 2,
-    explanation: 'A TREND forecast is appended to a METAR at some aerodromes, providing a 2-hour forecast of significant changes using BECMG, TEMPO, or NOSIG. It gives pilots a short-range indication of expected conditions — useful for planning approach and alternate decisions.',
-    reference: 'AIP GEN 3.5',
+    explanation: 'The subscale is set 20 hPa too high, so the altimeter over-reads. At roughly 30 ft per hPa the error is 20 × 30 = 600 ft, giving a true altitude near 3,000 − 600 = 2,400 ft. Setting the subscale above the actual QNH always makes the altimeter read higher than you really are.',
+    reference: 'AIP ENR 1.7',
   },
   {
-    question: 'What is "wind correction angle" (WCA) and how is it applied to the true course?',
+    question: 'How is "wind correction angle" (WCA) applied to the true course?',
     options: [
-      'The angle the aircraft must be pointed into (or away from) the wind to maintain the desired track',
+      'The angle the aircraft must be pointed into the wind to maintain the desired track',
       'The angle added to the true airspeed to account for headwind components',
       'The angle between magnetic north and true north at the aircraft\'s position',
       'The correction applied to the altimeter for non-standard wind conditions at altitude',
@@ -3374,7 +3374,7 @@ export const cmetQuestions: {
   {
     question: 'What is the significance of a thunderstorm within 5 NM of an aerodrome for flight operations?',
     options: [
-      'A thunderstorm within 5 NM of the aerodrome may indicate severe wind shear, microbursts, hail, and rapidly changing conditions in the terminal area',
+      'A storm within 5 NM can mean severe shear, microbursts, hail and rapidly changing conditions in the terminal area',
       'No specific significance, only thunderstorms at the aerodrome itself affect operations',
       'A thunderstorm within 5 NM indicates heavy rain is imminent, delay for weather only applies if rain starts',
       'Thunderstorms within 5 NM are only significant for helicopter operations, fixed-wing aircraft can continue',
@@ -3384,15 +3384,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is an "operationally significant weather" report and when might a pilot file one?',
+    question: 'En route you encounter moderate turbulence that was not forecast. Why should you transmit an AIREP?',
     options: [
-      'A voluntary or mandatory pilot report of weather that would affect the safety of flight operations',
-      'A report filed by ATC on behalf of pilots, pilots do not file weather reports directly',
-      'Operationally significant weather reports are only required for international flights',
-      'A report filed after any weather delay, for insurance and statistical purposes only',
+      'AIREPs are only for routine navigation position reporting',
+      'It is required by ATC before you may change cruising level',
+      'To log the event formally for your operator\'s insurance records',
+      'Pilot reports feed forecasters and warn following aircraft, and may trigger an amended forecast or SIGMET',
     ],
-    correct: 0,
-    explanation: 'Pilots encountering significant weather hazards should file PIREPs — both as a professional obligation and because they provide valuable real-time information to update forecasts and warn other aircraft. Severe turbulence, icing, wind shear, CB encounters, and volcanic ash sightings are all PIREP-worthy events.',
+    correct: 3,
+    explanation: 'An AIREP passes real observed conditions to ATS and the Bureau of Meteorology. Reports of unforecast turbulence, icing or thunderstorms give forecasters ground truth, can prompt an amended GAF, TAF or a SIGMET, and directly warn pilots behind you. Reporting significant unforecast weather is part of good airmanship.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -3420,34 +3420,34 @@ export const cmetQuestions: {
     reference: 'Bureau of Meteorology',
   },
   {
-    question: 'What is the "precipitation echo" on a weather radar and what does its intensity coding indicate?',
+    question: 'The BoM radar shows a cell 40 NM ahead with a deep red and black core. What does that colour coding mean and what should you do?',
     options: [
-      'Radar colour indicates distance, closer precipitation is shown in warmer colours',
-      'Colour indicates precipitation type, green for rain, blue for snow, orange for hail',
-      'Colour represents radar reflectivity (dBZ), low values (blue/green) indicate light rain',
-      'L precipitation is shown in the same colour, intensity is indicated by the density of returns',
+      'Very intense precipitation, almost certainly a severe storm core, divert well clear, preferably upwind',
+      'Light drizzle, the dark shades indicate the weakest returns',
+      'A radar calibration artefact that can safely be ignored',
+      'Snow, which always paints darker than rain on the radar display',
     ],
-    correct: 2,
-    explanation: 'Radar reflectivity (dBZ) represents precipitation intensity. Standard colour scales: blue/light green ≈ 15–30 dBZ (light rain); green/yellow ≈ 35–45 dBZ (moderate rain); orange/red ≈ 50–60 dBZ (heavy rain); purple/white > 65 dBZ (extreme precipitation, likely hail). VFR/IFR pilots should deviate around red/purple echoes.',
+    correct: 0,
+    explanation: 'Radar colours scale with echo intensity, and the red to black end marks the heaviest precipitation, the signature of a severe thunderstorm core likely to hold hail, microbursts and extreme turbulence. Give such cells a wide berth, at least 10 NM and preferably on the upwind side where new growth is less likely.',
     reference: 'Bureau of Meteorology',
   },
   {
-    question: 'What is "upper trough" and how does it influence surface weather development?',
+    question: 'How does "upper trough" influence surface weather development?',
     options: [
       'An upper trough is identical to a jet stream, both terms describe the same feature',
       'Upper troughs only affect weather above FL200, below this level they have no influence',
-      'An elongated area of low pressure aloft that promotes surface low development (cyclogenesis) by enhancing upper-level divergence',
+      'An elongated area of low pressure aloft that promotes surface low development by enhancing upper-level divergence',
       'A trough in the upper atmosphere that has no connection to surface weather',
     ],
     correct: 2,
-    explanation: 'Upper troughs are elongated areas of low pressure aloft. They enhance upper-level divergence, which promotes surface convergence and low development. The position of upper troughs relative to surface lows is critical for forecasting surface weather intensification.',
+    explanation: 'Upper troughs are elongated areas of low pressure aloft. They enhance upper-level divergence, which promotes surface convergence and low development. The position of upper troughs relative to surface lows is critical for forecasting surface weather intensification. Cyclogenesis.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.9',
   },
   {
     question: 'What is "cyclone season" in Australia and what months does it cover?',
     options: [
       'The official Australian tropical cyclone season is November to April',
-      'March to September, aligned with Northern Hemisphere typhoon season',
+      'May to September, peaking in the cooler southern winter months',
       'Year-round, tropical cyclones can form in any month in the Australian region',
       'June to October, the Southern Hemisphere winter when sea temperatures are highest',
     ],
@@ -3456,7 +3456,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "blocking high" and how does it affect weather patterns for extended periods?',
+    question: 'How does "blocking high" affect weather patterns for extended periods?',
     options: [
       'A blocking high causes storms to intensify, responsible for most Australian severe weather events',
       'A persistent, slow-moving high-pressure system that blocks the normal westerly flow',
@@ -3470,44 +3470,44 @@ export const cmetQuestions: {
   {
     question: 'What is the "southerly change" weather pattern in South Australia and Victoria?',
     options: [
-      'A seasonal pattern that only occurs in winter, summer fronts always bring warm conditions without a significant wind shift',
+      'A seasonal pattern that only occurs in winter, summer fronts always bring warm conditions without a marked wind shift',
       'A trough passage with no associated cold front, producing steady rain without the characteristic wind shift or temperature drop',
       'A slow frontal passage associated with stratocumulus cloud and drizzle, takes 2–3 days to pass',
-      'Rapid wind shift from northerly to southerly, temperature drop, gusty conditions, and often convective showers following the frontal passage',
+      'A sharp northerly-to-southerly wind shift, a temperature drop, gusts, and often convective showers behind the front',
     ],
     correct: 3,
     explanation: 'Southerly changes in SA/Vic are cold frontal passages characterised by rapid wind shifts, temperature drops of 10–20°C, gusty conditions, and convective showers. They can arrive with little warning in summer (when the atmosphere is more unstable) and significantly affect aerodrome conditions across multiple aerodromes simultaneously.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is the purpose of weather minima for IFR alternates and how are they applied?',
+    question: 'Why do the VFR alternate criteria sit above the bare VMC minima rather than equal to them?',
     options: [
-      'Alternate weather minima add a buffer above destination minima to ensure the alternate is likely to be available if the destination becomes unusable',
-      'IFR alternates do not require a weather assessment, they only require fuel to reach them',
-      'Alternate minima are 200 ft lower than destination minima, allowing a margin for deterioration',
-      'Alternate weather minima are identical to destination minima, any aerodrome can be used as an alternate',
+      'Forecasts are imperfect, the buffer means conditions can be worse than forecast and the destination still usable',
+      'They do not, the alternate criteria and the VMC minima are identical figures',
+      'The higher figures exist only to standardise planning between aircraft categories',
+      'The buffer is a fuel allowance expressed as weather rather than minutes of holding',
     ],
     correct: 0,
-    explanation: 'Alternate weather minima add a buffer to ensure the alternate is usable when needed. Australian regulations specify that the forecast weather at the alternate must meet higher (more conservative) minima than those for the destination approach. This accounts for forecast uncertainty and ensures the alternate provides genuine weather redundancy.',
+    explanation: 'If alternates were required only when the forecast equalled the VMC minima, any small forecast error would leave the flight with no legal destination and no plan. Setting the trigger at more than scattered below 1,500 ft and 8 km visibility builds in a margin for forecast uncertainty, so deterioration below forecast still leaves room to arrive or divert in good order.',
     reference: 'CASR Part 91',
   },
   {
-    question: 'What is a GAMET and how is it used by GA pilots in Australia?',
+    question: 'How can you obtain the current actual weather at an unattended aerodrome that has an automatic weather station?',
     options: [
-      'A general aviation meteorological examination report, the written exam format for CPL met theory',
-      'A forecast equivalent to SIGMET, issued for all significant weather events affecting GA operations',
-      'O graphical area forecast produced by the Bureau of Meteorology for use on weather apps',
-      'A low-level aviation weather forecast for general aviation, covers meteorological conditions below FL100 for a defined',
+      'Only from the area GAF, automatic weather stations do not release their observations',
+      'By calling the nearest control tower, which holds the AWS data for its region',
+      'From the ATIS, which every AWS-equipped aerodrome transmits continuously',
+      'Through the AWIS, by VHF broadcast or telephone, giving the current AWS observations directly',
     ],
     correct: 3,
-    explanation: 'A GAMET (General Aviation Meteorological Forecast) is a low-level area forecast in abbreviated plain language, covering conditions below FL100 for a defined geographical area. It provides wind, cloud, visibility, and significant weather information relevant to GA flight planning.',
+    explanation: 'Many AWS-equipped aerodromes provide an Aerodrome Weather Information Service, a computer-voiced readout of the current observations available on a VHF frequency listed in ERSA, by telephone, or both. It is the standard way to obtain actual conditions at unattended fields. The ATIS is a separate service found at controlled aerodromes.',
     reference: 'AIP GEN 3.5',
   },
   {
     question: 'What is the "transition from VFR to IMC" accident chain and how is it broken?',
     options: [
       'Modern aircraft auto-land in IMC, so the transition from VFR to IMC is no longer hazardous to properly equipped aircraft',
-      'Deteriorating weather, continued VFR into worsening conditions, then CFIT or loss of control, broken by an early decision to turn back or divert',
+      'Deteriorating weather, pressing on VFR, then CFIT or loss of control, broken by an early turn-back or diversion',
       'The transition to IMC only occurs in mountainous terrain, flat terrain always provides sufficient visibility',
       'The accident chain is inevitable once VMC deteriorates, no action can prevent it',
     ],
@@ -3516,19 +3516,19 @@ export const cmetQuestions: {
     reference: 'CASA Safety Bulletin',
   },
   {
-    question: 'What is "wind gradient" and how does it affect aircraft performance in a circuit?',
+    question: 'How does "wind gradient" affect aircraft performance in a circuit?',
     options: [
       'Wind gradient only affects high-altitude operations, below 5,000 ft it is negligible',
-      'E difference between surface wind and cloud-level wind, used to calculate crosswind components at the cloud base',
-      'E change in wind with latitude, most significant on long north-south routes',
-      'The change in wind speed with altitude, an aircraft descending in a decreasing headwind (positive wind gradient) loses airspeed',
+      'The difference between surface wind and cloud-level wind, used for crosswind at the cloud base',
+      'The change in wind with latitude, most significant on long north-south routes',
+      'The change in wind speed with altitude, an aircraft descending in a decreasing headwind loses airspeed',
     ],
     correct: 3,
     explanation: 'Wind gradient is the change in wind with altitude. In the friction layer below ~2,000 ft, wind typically decreases toward the surface. An aircraft descending in this decreasing headwind will lose airspeed (the headwind is taken away). Pilots must add power to compensate or the aircraft will undershoot.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a "wind rose" and how is it used in aviation?',
+    question: 'How is a "wind rose" used in aviation?',
     options: [
       'A weather forecasting tool, shows predicted wind direction for the next 24 hours',
       'A navigational instrument showing the wind direction from a magnetic compass',
@@ -3542,7 +3542,7 @@ export const cmetQuestions: {
   {
     question: 'What is the dominant weather pattern across southern Australia during winter?',
     options: [
-      'Cold fronts and lows in the westerlies cross in procession as the subtropical ridge moves north, each bringing a wind shift, rain and showery cold air',
+      'Cold fronts and lows cross in procession as the ridge moves north, each bringing a wind shift, rain and showery cold air',
       'The monsoon trough settles over the southern coastline, producing daily tropical thunderstorms through the season',
       'A blocking high remains stationary over the Great Australian Bight all winter, preventing any frontal activity',
       'Easterly trade winds dominate the region, with the only significant weather being coastal showers on the east coast',
@@ -3567,7 +3567,7 @@ export const cmetQuestions: {
     question: 'A pilot inadvertently enters a cumulonimbus cloud. What is the correct immediate action?',
     options: [
       'Maintain original heading and increase power to climb above the cloud as quickly as possible',
-      'Turn 180° immediately to exit the cloud the way you entered, maintain attitude using instruments, and reduce to turbulence penetration speed',
+      'Turn 180° at once to exit the way you entered, hold attitude on instruments, and slow to penetration speed',
       'Descend below the cloud base to regain visual reference and continue to destination',
       'Continue through the cloud maintaining original heading, the cell will be passed quickly',
     ],
@@ -3600,7 +3600,7 @@ export const cmetQuestions: {
     reference: 'CASR Part 91',
   },
   {
-    question: 'What is "mesoscale convective system" (MCS) and why is it hazardous?',
+    question: 'Why is "mesoscale convective system" (MCS) hazardous?',
     options: [
       'An MCS is another term for a squall line, the same phenomenon with a different name',
       'An MCS is only a tropical phenomenon, not relevant to Australian mid-latitude weather',
@@ -3614,7 +3614,7 @@ export const cmetQuestions: {
   {
     question: 'What is a tropical cyclone and at what wind speed is it classified as a tropical cyclone in Australia?',
     options: [
-      'Any tropical low with winds above 25 kt, classified at a lower threshold than typhoons',
+      'Sustained winds of 25 kt near the centre, the same threshold as a tropical low',
       'A warm-core low-pressure system with maximum sustained winds of 34 kt or more',
       'A warm-core low with maximum sustained surface winds of 63 kt or more',
       'A tropical disturbance that reaches the Australian continent, wind speed is not the classification criterion',
@@ -3624,7 +3624,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "outflow boundary" and how can it trigger new convection?',
+    question: 'How can "outflow boundary" trigger new convection?',
     options: [
       'The leading edge of cold air from a thunderstorm downdraft, it is a zone of convergence and lifting that can trigger new',
       'An outflow boundary is identical to a cold front, both are produced by the same atmospheric dynamics',
@@ -3638,7 +3638,7 @@ export const cmetQuestions: {
   {
     question: 'What is the difference between "active" and "dormant" volcanic hazards for aviation planning?',
     options: [
-      'L volcanoes are treated identically, active or dormant, all require the same avoidance margins',
+      'All volcanoes are treated identically, active or dormant, with the same avoidance margins',
       'Dormant volcanoes pose no aviation hazard, only currently erupting volcanoes need avoidance',
       'Active volcanoes with confirmed ongoing eruption require active SIGMETs and avoidance action. Dormant volcanoes have no current',
       'Only volcanoes with active lava flow are hazardous, ash-only eruptions do not require avoidance',
@@ -3660,7 +3660,7 @@ export const cmetQuestions: {
     reference: 'CASA Carburettor Icing Probability Chart',
   },
   {
-    question: 'What is the "Walker Circulation" and how does it relate to ENSO?',
+    question: 'How does the "Walker Circulation" relate to ENSO?',
     options: [
       'The Walker Circulation is a Southern Ocean circulation, relevant only to oceanic routes',
       'The Walker Circulation is another name for the ITCZ, they are identical phenomena',
@@ -3684,19 +3684,19 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is pressure altitude and how is it used in aircraft performance calculations?',
+    question: 'An aerodrome at 1,500 ft elevation has QNH 1003. What is the approximate pressure altitude?',
     options: [
-      'The altitude calculated by adding the aerodrome elevation to the aircraft\'s height above ground',
-      'The altitude indicated on the altimeter when 1013.25 hPa is set as the sub-scale setting',
-      'The altitude at which the local pressure equals the ISA pressure at that altitude',
-      'The altitude indicated on the altimeter when QNH is set',
+      '1,500 ft',
+      '1,800 ft',
+      '1,200 ft',
+      '2,400 ft',
     ],
     correct: 1,
-    explanation: 'Pressure altitude is the altitude indicated when the altimeter is set to 1013.25 hPa. It is used in aircraft performance calculations as the starting point — density altitude is then calculated by correcting pressure altitude for temperature deviation from ISA.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.2',
+    explanation: 'Pressure altitude is the altimeter reading with 1013 set. The QNH is 10 hPa below standard, and at about 30 ft per hPa that adds 10 × 30 = 300 ft, so 1,500 + 300 = 1,800 ft. When QNH is below 1013, pressure altitude is higher than the elevation.',
+    reference: 'ICAO Standard Atmosphere',
   },
   {
-    question: 'What is "pressure tendency" and what does a rapidly falling barometer indicate?',
+    question: 'What does a rapidly falling barometer indicate?',
     options: [
       'A falling barometer always indicates deteriorating weather, a rising barometer always means improvement',
       'A rapidly falling barometer combined with increasing cloud from the west indicates an approaching cold front or depression',
@@ -3708,31 +3708,31 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.9',
   },
   {
-    question: 'What is "TAF coverage" and what aerodromes in Australia receive TAFs?',
+    question: 'You are planning a flight to a small country strip with no TAF. Where does your aerodrome forecast information come from?',
     options: [
-      'Only capital city aerodromes receive TAFs in Australia',
-      'All registered aerodromes in Australia receive TAFs, they are automatically generated for every aerodrome',
-      'TAFs are issued for aerodromes designated by the Bureau of Meteorology as requiring a TAF',
-      'TAF coverage is identical to ATIS coverage, any aerodrome with an ATIS has a TAF',
+      'Every registered aerodrome receives a TAF on request',
+      'The GAF for the area, supported by TAFs at suitable nearby aerodromes',
+      'The strip owner is required to provide a daily forecast',
+      'No forecast is available, so none is required',
     ],
-    correct: 2,
-    explanation: 'TAFs are issued for designated aerodromes that meet certain traffic volume or operational requirements. Not all aerodromes have TAFs. Pilots operating into aerodromes without TAFs rely on area forecasts (GAF, GAMET), nearby TAFs, and METARs from nearby reporting stations. TAF validity in Australia ranges from 12 to 30 hours depending on the aerodrome, with routine issues approximately every 6 hours and amendments as required.',
+    correct: 1,
+    explanation: 'TAFs are produced only for designated aerodromes. For strips without one, the Graphical Area Forecast describes the weather across the area, and TAFs at nearby forecast aerodromes refine the picture and provide alternates. The mandatory forecast requirements can be satisfied by the GAF where no TAF exists.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the purpose of the "aviation weather briefing" before an IFR cross-country flight and what should it include?',
+    question: 'What is the purpose of the pre-flight aviation weather briefing for a cross-country flight?',
     options: [
       'A comprehensive briefing ensures the pilot understands all meteorological hazards relevant to the planned flight',
-      'A weather briefing is only required for international flights, domestic IFR flights use NOTAMs only',
+      'A weather briefing is required only for international departures, domestic flights rely on NOTAMs',
       'The weather briefing only requires the destination TAF and the latest METAR, no other products are needed',
       'Weather briefings are automatic, the airline dispatch department handles them without pilot involvement',
     ],
     correct: 0,
-    explanation: 'A comprehensive IFR weather briefing includes: TAFs for departure, destination, and alternates; enroute SIGMETs and AIRMETs; upper wind and temperature charts for cruising altitude; SIGWX charts (turbulence, icing); volcanic ash advisories; PIREPs; and any weather-affecting NOTAMs. This builds a complete picture of the meteorological environment for the planned flight.',
+    explanation: 'The briefing exists so that every meteorological hazard bearing on the flight is known before departure: the forecasts for departure, destination and alternates, the area picture from the GAF and GPWT, any warnings in force, and what other pilots have actually encountered. Decisions about fuel, routing, levels and alternates all hang off it.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the Saturated Adiabatic Lapse Rate (SALR) and why is it less than the DALR?',
+    question: 'Why is the Saturated Adiabatic Lapse Rate (SALR) less than the DALR?',
     options: [
       'SALR ≈ 1.5°C/1,000 ft, less than DALR because condensation releases latent heat, partially offsetting cooling',
       'SALR ≈ 3°C/1,000 ft, same as DALR because condensation has no thermal effect',
@@ -3748,7 +3748,7 @@ export const cmetQuestions: {
     options: [
       'The freezing level marks the base of controlled airspace, so VFR flight above it requires an airways clearance',
       'It has no practical significance for VFR operations, because airframe icing can occur only inside cloud and never in precipitation',
-      'Icing can occur in any visible moisture, such as rain below cloud, at or above the freezing level, so remain below it when flying in precipitation',
+      'Icing can occur in any visible moisture at or above the freezing level, including rain below cloud, so stay below it',
       'Engine failure becomes more likely above the freezing level because aviation fuel begins to freeze and restrict the fuel flow',
     ],
     correct: 2,
@@ -3756,7 +3756,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "aviation weather decision making" and what is the pilot\'s responsibility?',
+    question: 'What is the pilot\'s responsibility in weather decision-making?',
     options: [
       'The pilot-in-command is ultimately responsible for weather-related go/no-go and in-flight decisions',
       'ATC is responsible for all weather-related decisions, pilots only execute instructions',
@@ -3768,19 +3768,19 @@ export const cmetQuestions: {
     reference: 'CASA Safety Bulletin',
   },
   {
-    question: 'What is the "Flight Information Region" (FIR) and how many FIRs does Australia have?',
+    question: 'How many Flight Information Regions does Australia have?',
     options: [
-      'Australia has one FIR, the Melbourne FIR covering the whole continent and all adjacent oceanic areas',
-      'Australia has seven FIRs, one for each state and territory plus the Northern Territory',
-      'FIRs are ATC boundaries only, not related to meteorological services or weather product issuance',
-      'Australia has four FIRs, Brisbane, Melbourne, Adelaide, and Perth, each covering defined portions of the continent and adjacent oceanic areas',
+      'Two, the Melbourne and Brisbane FIRs, together covering Australian and adjacent oceanic airspace',
+      'Four, the Brisbane, Melbourne, Adelaide and Perth regions, one for each major centre',
+      'One national FIR administered centrally from Canberra by Airservices Australia',
+      'Seven, one flight information region for each state and territory',
     ],
-    correct: 3,
-    explanation: 'Australia has four Flight Information Regions: Brisbane FIR (YBBB), Melbourne FIR (YMMM), Adelaide FIR (YPAD), and Perth FIR (YPPH). The FIR boundaries are relevant to aviation weather products — SIGMETs are issued per FIR with identifying letters (B, M, A, P respectively).',
+    correct: 0,
+    explanation: 'Australian airspace is divided into two flight information regions, Melbourne and Brisbane, which between them cover the continent and large oceanic areas. SIGMETs and met watch services are organised on an FIR basis, which is why the boundaries matter when reading warnings.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is dewpoint temperature and what does a small temperature-dew point spread indicate?',
+    question: 'What does a small temperature-dew point spread indicate?',
     options: [
       'The temperature at which precipitation falls, a small spread indicates heavy precipitation is likely',
       'The temperature at which ice crystals form in cirrus clouds, a small spread indicates glaciation is likely',
@@ -3796,7 +3796,7 @@ export const cmetQuestions: {
     options: [
       'A type of orographic cloud found in the Great Dividing Range, forms when westerly winds strike the ranges',
       'A thunderstorm anvil cloud that forms in the early morning hours, associated with the Australian monsoon',
-      'A spectacular roll cloud (solitary wave) that propagates across the Gulf of Carpentaria',
+      'A spectacular roll cloud that propagates across the Gulf of Carpentaria',
       'A type of radiation fog that forms in the early morning, found throughout southeast Australia',
     ],
     correct: 2,
@@ -3820,7 +3820,7 @@ export const cmetQuestions: {
     options: [
       'Greatest depth at midnight, disperses at sunrise when radiation stops',
       'Greatest depth just after sunset, disperses by midnight as surface temperature equalises with air temperature',
-      'Greatest depth just after sunrise, disperses late morning as solar heating warms and mixes the surface layer, breaking the stable inversion',
+      'Deepest just after sunrise, dispersing late morning as heating warms and mixes the surface layer',
       'Greatest depth at midday, disperses in the afternoon when sea breezes bring drier air inland',
     ],
     correct: 2,
@@ -3840,15 +3840,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.6',
   },
   {
-    question: 'At what pressure altitude is density altitude equal to pressure altitude?',
+    question: 'An aerodrome at 1,500 ft elevation has QNH 1013 and a temperature of 31°C. What is the approximate density altitude?',
     options: [
-      'When the outside air temperature equals the ISA temperature for that altitude',
-      'They are always equal, pressure altitude and density altitude are the same measurement',
-      'At FL180, the standard pressure level where the two always coincide',
-      'At sea level only',
+      '1,500 ft',
+      '3,800 ft',
+      '−800 ft',
+      '2,300 ft',
     ],
-    correct: 0,
-    explanation: 'Density altitude equals pressure altitude when the actual temperature equals the ISA standard temperature for that altitude. If the actual temperature is above ISA, density altitude is higher than pressure altitude (worse performance). If actual temperature is below ISA, density altitude is lower than pressure altitude (better performance).',
+    correct: 1,
+    explanation: 'With QNH 1013 the pressure altitude equals the elevation, 1,500 ft. ISA there is 15 − 3 = 12°C, so the air is 19 degrees warmer than ISA. Density altitude rises roughly 120 ft per degree of deviation: 1,500 + 19 × 120 ≈ 3,800 ft, and the aircraft performs as if at that height.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.2',
   },
   {
@@ -3867,7 +3867,7 @@ export const cmetQuestions: {
     question: 'What is the "Bergeron-Findeisen" process and why is it important for understanding precipitation?',
     options: [
       'The Bergeron-Findeisen process only applies to fog formation, not to in-cloud precipitation',
-      'The process in mixed-phase clouds where ice crystals grow at the expense of supercooled water droplets due to their different saturation vapour pressures',
+      'Ice crystals in mixed-phase cloud grow at the expense of supercooled droplets because of their different saturation vapour pressures',
       'The process by which fronts form along temperature gradients, producing frontal precipitation',
       'The process by which cloud droplets grow by collision and coalescence, relevant in warm clouds above 0°C',
     ],
@@ -3876,7 +3876,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "water vapour satellite imagery" and how is it used in aviation meteorology?',
+    question: 'How is "water vapour satellite imagery" used in aviation meteorology?',
     options: [
       'Water vapour imagery detects mid-to-upper tropospheric moisture using the 6.7 μm absorption band',
       'Water vapour imagery shows sea surface temperature, used only for marine forecasting',
@@ -3891,7 +3891,7 @@ export const cmetQuestions: {
     question: 'A tropical cyclone is forecast to pass within 200 NM of your planned route. What are the primary aviation hazards associated with it?',
     options: [
       'Only heavy rain, turbulence is negligible in a tropical cyclone beyond 100 NM',
-      'Extreme turbulence, wind shear, heavy precipitation, embedded CB cells to the tropopause, and rapidly changing surface winds across a wide area',
+      'Extreme turbulence, wind shear, heavy rain, embedded CB to the tropopause, and fast-changing surface winds over a wide area',
       'The hazards only extend to 50 NM from the centre, routes beyond 50 NM are unaffected',
       'Only relevant to aircraft flying below 3,000 ft, cruise altitude aircraft are above the worst conditions',
     ],
@@ -3900,31 +3900,31 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'How does a headwind affect take-off performance?',
+    question: 'You are departing Runway 36 with the wind 030° at 16 kt. What is the approximate headwind component?',
     options: [
-      'A headwind increases ground roll and reduces the climb gradient',
-      'A headwind reduces take-off performance by pushing the aircraft back along the runway',
-      'A headwind reduces take-off ground roll and improves climb gradient by increasing airspeed at a lower ground speed',
-      'A headwind has no effect on take-off performance, only density altitude matters',
+      '14 kt',
+      '16 kt',
+      '8 kt',
+      '11 kt',
     ],
-    correct: 2,
-    explanation: 'A headwind increases the airspeed at a given ground speed, so the aircraft reaches lift-off speed at a lower ground speed and shorter distance. Take-off ground roll is significantly reduced and climb gradient improves. A 10 kt headwind typically reduces take-off roll by approximately 10–20%.',
+    correct: 0,
+    explanation: 'The wind is 30° off the runway. Headwind equals wind speed times the cosine of the angle, and cos 30° is about 0.87, giving 16 × 0.87 ≈ 14 kt. At 30° off you still keep almost ninety per cent of the wind as headwind.',
     reference: 'Aircraft Flight Manual',
   },
   {
-    question: 'What does "RVR" mean in a METAR and when is it reported?',
+    question: 'A report begins "METAR YBAS 050600Z AUTO 09008KT ...". What does AUTO oblige you to remember?',
     options: [
-      'VR is only used at military aerodromes, civilian METARs use prevailing visibility only',
-      'RVR = Runway Visual Range, measured by transmissometers alongside the runway, reported when prevailing visibility is below 1,500',
-      'VR = Relative Visibility Report, a qualitative assessment made by a human observer',
-      'VR is reported in all METARs, it replaces prevailing visibility as the primary visibility measure',
+      'The report is a test transmission and must not be used operationally by pilots',
+      'The aerodrome is currently unattended and therefore closed to all arriving traffic',
+      'The observation is fully automatic, sensors sample only their own location, so some phenomena may be missed or misread',
+      'Wind is the only element in an automatic report that can be fully trusted',
     ],
-    correct: 1,
-    explanation: 'RVR (Runway Visual Range) is the maximum distance an instrument on the runway centreline can detect a specified high-intensity light target. Measured by transmissometers. Reported in METARs when prevailing visibility is below approximately 1,500 m (varies by aerodrome equipment). Reported for specific runway designators with prefix "R".',
+    correct: 2,
+    explanation: 'AUTO flags a report generated without a human observer. The instruments are accurate but narrow: the ceilometer sees one column of sky, present-weather sensors can confuse phenomena, and distant CB or dust may go unreported. Cross-check AUTO reports against radar, satellite, the GAF and nearby staffed aerodromes.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "potential temperature" and why is it used by meteorologists instead of actual temperature?',
+    question: 'Why is "potential temperature" used by meteorologists instead of actual temperature?',
     options: [
       'Potential temperature is the temperature measured at the surface before sunrise, the minimum daily temperature',
       'Potential temperature equals actual temperature plus the effect of humidity',
@@ -3938,8 +3938,8 @@ export const cmetQuestions: {
   {
     question: 'At 0800 local time, the surface temperature is 14°C and dew point is 11°C. By 1400, surface temperature has risen to 28°C and the dew point remains at 11°C. What has happened to atmospheric stability and what type of cloud is likely?',
     options: [
-      'Stability has increased, the larger temperature-dew point spread means drier air and less cloud',
-      'Surface heating has increased the ELR, increasing instability, cumulus cloud should develop with a base at approximately (28-11) x 400 = 6,800 ft',
+      'Stability has increased, the larger spread (now 17°C) means drier air and less cloud',
+      'Surface heating has increased the ELR and instability, and cumulus should develop with a base near (28 − 11) × 400 = 6,800 ft',
       'No change in stability, stability depends only on the dew point, not the temperature',
       'Stability has decreased slightly, only cirrus cloud will develop at the higher temperature',
     ],
@@ -3964,15 +3964,15 @@ export const cmetQuestions: {
     options: [
       'Because they are the only cloud types an automated weather station can detect with a ceilometer',
       'Because all other cloud types never reduce visibility or produce precipitation at an aerodrome',
-      'Because ICAO abolished the reporting of all other cloud types in 2017 in order to shorten the length of METAR transmissions',
-      'Because these convective types bring severe turbulence, icing, hail, lightning and wind shear, they are singled out as directly hazardous',
+      'Because ICAO abolished the reporting of all other cloud types in 2017 to shorten the length of METAR transmissions',
+      'These convective types bring severe turbulence, icing, hail, lightning and wind shear, so they are singled out as hazards',
     ],
     correct: 3,
     explanation: 'METAR cloud groups give amount and height only (for example BKN020), with the type appended solely for cumulonimbus and towering cumulus, as in SCT030CB. These convective clouds present immediate hazards of severe turbulence, icing, hail, lightning and wind shear, which is why they alone are identified by name.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the Lifting Condensation Level (LCL) and why is it important?',
+    question: 'Why is the Lifting Condensation Level (LCL) important?',
     options: [
       'The altitude at which updrafts in a cumulonimbus become strong enough to support precipitation',
       'The altitude above which ice crystals form instead of water droplets',
@@ -3984,7 +3984,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is a "mixed-phase cloud" and what icing hazard does it present?',
+    question: 'What icing hazard does a "mixed-phase cloud" present?',
     options: [
       'Mixed-phase clouds only exist above FL300, not an issue for piston aircraft operations',
       'Mixed-phase clouds have no icing hazard, the ice crystals and water cancel each other',
@@ -3996,7 +3996,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "pileus cloud" and how does it form?',
+    question: 'How does "pileus cloud" form?',
     options: [
       'Pileus is a cap cloud that briefly forms above a rapidly growing cumulus tower',
       'Pileus is a type of fog, forms in still air below a temperature inversion',
@@ -4008,28 +4008,28 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "icing SIGMET" and what information does it contain?',
+    question: 'The GAF forecasts "MOD ICE" in cloud above the freezing level for your area. Will there also be a SIGMET for this icing?',
     options: [
-      'Icing SIGMETs are issued by pilots, not by the meteorological service',
-      'Icing SIGMETs only cover flight levels above FL200, low-level icing uses a different product',
-      'A SIGMET issued for severe icing, specifying the affected area, altitude band, cloud types involved, and valid time. Severe icing',
-      'SIGMET issued for any icing, includes both trace and light icing reports',
+      'Yes, but only outside controlled airspace',
+      'Yes, every icing forecast generates a SIGMET',
+      'Only if the freezing level is below 10,000 ft',
+      'No, SIGMETs are only issued for severe icing, moderate icing lives in the GAF and AIRMET',
     ],
-    correct: 2,
-    explanation: 'An icing SIGMET is issued for severe icing that constitutes a hazard to all aircraft. It specifies the geographic area, altitude band, and valid period. Severe icing accumulates faster than de-icing/anti-icing systems can handle, potentially causing loss of control.',
+    correct: 3,
+    explanation: 'Moderate icing is part of the routine GAF picture and may also appear in an AIRMET for light aircraft. A SIGMET is reserved for severe icing, where accumulation outpaces protective systems. So the absence of a SIGMET never means the absence of ice: read the GAF icing panel for every flight near or above the FZL.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the alternate static source and when should it be used?',
+    question: 'On a hot, dry afternoon with light winds you see dust devils tracking across the aerodrome. What do they indicate and what is the risk?',
     options: [
-      'A backup GPS altitude source, used when GPS primary is unavailable',
-      'A radio altimeter, used when the barometric altimeter fails',
-      'A secondary static port on the aircraft connected to the same instruments',
-      'The alternate static source connects to a separate air data computer, used only on transport category aircraft',
+      'Intense surface heating and strong thermals, a small one can upset an aircraft at take-off or landing',
+      'An approaching dust storm, the field will be unusable within the hour',
+      'Harmless dust raised by ground traffic, with no meteorological meaning',
+      'A developing tornado on the field, vacate the aerodrome immediately',
     ],
-    correct: 2,
-    explanation: 'The alternate static source provides an alternative reference pressure when the primary static port is blocked. In unpressurised aircraft, it often samples cabin air — slightly below ambient pressure (due to cabin airflow). This introduces small errors: altimeter reads slightly higher than actual, ASI reads slightly higher than actual.',
-    reference: 'Aircraft Flight Manual',
+    correct: 0,
+    explanation: 'Dust devils, willy-willies, are rotating thermals made visible by lifted dust, the product of intense surface heating in hot, dry, light-wind conditions. They mark strong low-level convective turbulence, and an encounter during take-off, landing or taxi can roll an aircraft with little warning. Expect them on hot afternoons inland and give visible ones a wide margin.',
+    reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
     question: 'What is hail and at what altitude does it typically exit the base of a cumulonimbus?',
@@ -4044,31 +4044,31 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "thermal high" (heat low) and where does it typically form in Australia?',
+    question: 'Where does the "thermal high" (heat low) typically form in Australia?',
     options: [
       'A thermal high is a localised upward-moving air mass over heated surfaces, not a synoptic-scale pressure feature',
-      'A warm-core low (heat low/heat trough) that forms over very hot land surfaces due to intense heating',
+      'A warm-core low that forms over very hot land surfaces due to intense heating',
       'A high-pressure system that forms over cold continental surfaces in winter',
       'A high-pressure system that forms over the Southern Ocean in summer',
     ],
     correct: 1,
-    explanation: 'A heat low (thermal low) forms over the intensely heated Australian interior in summer. The hot surface heats the overlying air which becomes less dense, causing pressure to fall. The heat low draws in surrounding air — including hot northerlies from the interior into southern states.',
+    explanation: 'A heat low (thermal low) forms over the intensely heated Australian interior in summer. The hot surface heats the overlying air which becomes less dense, causing pressure to fall. The heat low draws in surrounding air — including hot northerlies from the interior into southern states. Heat low/heat trough.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What does the "Volcanic Ash Advisory Centre" (VAAC) do and which centre covers Australia?',
+    question: 'A SIGMET reads "VA ERUPTION MT BAGANA ... VA CLD FL200/FL350 MOV SE 25KT". How should you treat the area?',
     options: [
-      'A VAAC detects volcanic ash using ground-based radar and issues local warnings only',
-      'There is only one global VAAC, located in London, covering all volcanic events worldwide',
-      'The VAAC is operated by CASA and issues pilot reports on volcanic ash encounters',
-      'VAACs monitor volcanic eruptions and issue Volcanic Ash Advisories (VAA) detailing ash cloud locations, heights, and forecast movements',
+      'Avoid the ash cloud entirely, ash is invisible to radar and destroys engines, plan around it with a generous margin',
+      'Cross beneath FL200 where the ash concentration is thin enough to be safe',
+      'Transit through the area is safe at night when the ash settles out',
+      'Penetrate only with engine anti-ice and continuous ignition selected on',
     ],
-    correct: 3,
-    explanation: 'VAACs are international centres designated by ICAO to monitor volcanic eruptions and issue Volcanic Ash Advisories. The Darwin VAAC is responsible for the Australian/Southeast Asian region. Their advisories feed into SIGMETs for volcanic ash which inform flight planning and routing decisions.',
-    reference: 'Bureau of Meteorology',
+    correct: 0,
+    explanation: 'Volcanic ash is not detectable by weather radar and at jet and piston levels it abrades, clogs and can stop engines. The SIGMET defines the cloud, here FL200 to FL350 drifting southeast, and the only safe answer is complete avoidance with a wide buffer, including beneath it where ash falls out. VA SIGMETs are valid 6 hours and reissued while the hazard persists.',
+    reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the Dry Adiabatic Lapse Rate (DALR) and when does it apply?',
+    question: 'When does the Dry Adiabatic Lapse Rate (DALR) apply?',
     options: [
       '1.98°C per 1,000 ft, applies to all atmospheric conditions',
       '3°C per 1,000 ft, applies to unsaturated air rising or sinking adiabatically',
@@ -4092,7 +4092,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is the "wet bulb temperature" and how is it used in aviation meteorology?',
+    question: 'How is the "wet bulb temperature" used in aviation meteorology?',
     options: [
       'Wet bulb temperature is identical to dew point temperature, they are both saturation temperatures',
       'Wet bulb temperature is only used in humidity calculations for refrigeration systems, no aviation application',
@@ -4144,7 +4144,7 @@ export const cmetQuestions: {
     options: [
       'Temperature is only reported in Celsius above 0°C, negative temperatures are not included in the main METAR groups',
       '"T15/12" means temperature 15°C and dew point 12°C, expressed in whole degrees',
-      'Temperature is in Fahrenheit and dew point in Celsius in Australian METARs',
+      'Temperature is in Kelvin and dew point in Celsius in Australian METARs',
       'Temperature and dew point are encoded as two-digit groups with a "/" separator',
     ],
     correct: 3,
@@ -4152,7 +4152,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "anvil blowoff" and what does it indicate about storm severity?',
+    question: 'What does "anvil blowoff" indicate about storm severity?',
     options: [
       'An anvil means the storm has reached its maximum height, it will not intensify further',
       'The anvil extends downwind of the storm when upper-level winds shear the cloud tops horizontally',
@@ -4164,7 +4164,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "Fremantle Doctor" and what effect does it have on aviation?',
+    question: 'What effect does the "Fremantle Doctor" have on aviation?',
     options: [
       'A summer sea breeze that develops along the Western Australian coast',
       'A local name for the Perth dust storm, associated with cold frontal passages',
@@ -4188,7 +4188,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "freezing drizzle" and what icing hazard does it present?',
+    question: 'What icing hazard does "freezing drizzle" present?',
     options: [
       'Freezing drizzle is a minor hazard, less significant than freezing rain because of smaller droplet size',
       'Supercooled drizzle droplets that freeze on contact with aircraft surfaces',
@@ -4203,7 +4203,7 @@ export const cmetQuestions: {
     question: 'What is the aviation significance of a "rapidly deepening low" (bomb cyclogenesis)?',
     options: [
       'Rapidly deepening lows only produce wind, cloud and precipitation are not enhanced',
-      'Rapid cyclogenesis (central pressure falling >24 hPa in 24 hours) can produce explosive development of severe weather',
+      'Rapid cyclogenesis, with central pressure falling more than 24 hPa in 24 hours, can produce explosive development of severe weather',
       'Bomb cyclogenesis is a North Atlantic phenomenon, Southern Hemisphere lows deepen slowly',
       'A bomb cyclone only affects maritime routes, continental Australia is shielded from rapid deepening',
     ],
@@ -4212,12 +4212,12 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.9',
   },
   {
-    question: 'What is the wind pattern within a thunderstorm and why is it hazardous to penetration?',
+    question: 'Why is the wind pattern within a thunderstorm hazardous to penetration?',
     options: [
       'Wind within a CB is uniform, the main hazard is icing, not wind',
       'The main hazard within a CB is static electricity, not wind or turbulence',
       'Wind within a CB is manageable if speed is maintained, because high-speed penetration keeps the encounter brief and safe',
-      'Strong updrafts and downdrafts in close proximity, severe turbulence at their boundaries, hail, heavy icing and large airspeed fluctuations',
+      'Adjacent strong updrafts and downdrafts, severe turbulence at their boundaries, hail, heavy icing and big airspeed swings',
     ],
     correct: 3,
     explanation: 'Penetrating a mature CB exposes the aircraft to: severe/extreme turbulence, updrafts and downdrafts exceeding 6,000 ft/min, hail, lightning (avionics/fuel ignition risk), severe icing, and rapidly alternating loading that can exceed structural limits. Penetration of severe CBs is explicitly prohibited in all operator manuals.',
@@ -4236,19 +4236,19 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "altimeter lag" and when is it significant?',
+    question: 'The actual QNH at a point in an Area QNH Zone is 1019 hPa while the forecast Area QNH is 1013 hPa. Is the Area QNH within tolerance?',
     options: [
-      'Altimeter lag is the delay in pressure sensing caused by long static lines, significant in pressurised aircraft only',
-      'A mechanical altimeter may respond sluggishly to rapid altitude changes',
-      'Altimeter lag is a temperature error, identical to cold temperature correction',
-      'Altimeter lag is caused by QNH not being updated, significant only when QNH changes rapidly',
+      'No, the 6 hPa difference exceeds the ±5 hPa accuracy standard',
+      'Yes, Area QNH only needs to be within ±10 hPa',
+      'Yes, any difference is acceptable provided both are forecasts',
+      'No, Area QNH must match the actual QNH exactly',
     ],
-    correct: 1,
-    explanation: 'Older mechanical altimeters use aneroid capsules that may exhibit slight mechanical hysteresis (lag) during rapid altitude changes. The indicated altitude may momentarily lag behind actual altitude during steep climbs or descents. Modern sensitive altimeters have minimal lag.',
+    correct: 0,
+    explanation: 'Area QNH forecasts must be within ±5 hPa of the actual QNH at any low-level point in the zone throughout their three-hour validity. A 6 hPa difference is outside that standard, so the zone would be subdivided or the forecast amended.',
     reference: 'AIP ENR 1.7',
   },
   {
-    question: 'What is "popcorn convection" and when is it most likely in Australia?',
+    question: 'When is "popcorn convection" most likely in Australia?',
     options: [
       'Convection that develops into cumulonimbus very rapidly in the afternoon from an initially clear morning',
       'Popcorn convection is always associated with cold fronts, it cannot occur in the warm sector',
@@ -4260,27 +4260,27 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.1',
   },
   {
-    question: 'What is the weather observation schedule for a staffed aerodrome in Australia?',
+    question: 'A TAF carries the validity group "0618/0706". When is it valid?',
     options: [
-      'METARs are typically issued at least every 30 minutes at major aerodromes and at least hourly at others. SPECIs are issued',
-      'METARs are issued only on request by ATC or pilots, not on a fixed schedule',
-      'METARs at Australian aerodromes are issued every 3 hours, only major international airports issue hourly METARs',
-      'METARs are issued every 30 minutes continuously at all staffed aerodromes',
+      'From 18Z on the 6th until 06Z on the 7th',
+      'From 0618 UTC until 0706 UTC on the same day',
+      'From 06Z on the 6th until 18Z on the 7th',
+      'For six hours from 1807 UTC',
     ],
     correct: 0,
-    explanation: 'At Australian major aerodromes (Category A stations), METARs are issued every 30 minutes during ATC hours. At other aerodromes, hourly METARs are issued. SPECIs supplement the schedule whenever significant changes occur between routine observation times.',
+    explanation: 'The TAF validity group is day and hour to day and hour, in UTC. 0618/0706 therefore means day 06 at 1800 UTC until day 07 at 0600 UTC, a 12-hour TAF. Always decode the day digits first, then the hours.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is an ATIS (Automatic Terminal Information Service) and what information does it contain?',
+    question: 'The ATIS broadcasts "RUNWAY 16, WIND 140 DEGREES 15 KNOTS, QNH 1009". What wind reference is being used and why?',
     options: [
-      'A weather radar image broadcast on the ATIS frequency, updated every 30 minutes',
-      'A direct ATC weather briefing provided on request, ATIS only operates at major international aerodromes',
-      'A continuous radio broadcast of recorded meteorological and operational information for a specific aerodrome',
-      'A VHF broadcast of the current TAF for the destination aerodrome, does not include actual observed conditions',
+      'True, as in every aviation weather product',
+      'Magnetic, so the direction can be compared straight against the runway heading',
+      'Grid, for compatibility with area charts',
+      'Compass, corrected for the tower\'s deviation card',
     ],
-    correct: 2,
-    explanation: 'ATIS is a continuous recorded broadcast providing aerodrome information including: current weather observation (wind, visibility, weather, cloud, temperature, dew point, QNH), runway in use, NOTAMs, and other operational information. Updated at least hourly or on significant change, identified by letter.',
+    correct: 1,
+    explanation: 'ATIS and tower winds are given in degrees magnetic because runways are numbered magnetically: 140 magnetic against runway 16, 160 magnetic, is a 20 degree off-axis wind you can resolve at a glance. Written products such as METARs, TAFs and GAFs use degrees true. Crossing between the two without converting causes crosswind miscalculations.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -4301,14 +4301,14 @@ export const cmetQuestions: {
       'Upper trough passages only occur in winter, summer troughs are too weak to affect surface weather',
       'Upper trough passages improve weather, clear skies and light winds follow immediately',
       'Upper troughs only affect flight above FL200, below this level their passage has no effect',
-      'Upper trough passage promotes surface low development (cyclogenesis), increases vorticity and divergence aloft which enhances',
+      'Upper trough passage promotes surface low development, increases vorticity and divergence aloft which enhances',
     ],
     correct: 3,
-    explanation: 'Upper troughs enhance upper-level divergence, which promotes surface convergence, low development, and convective uplift. A previously clear region under an upper trough can rapidly develop convective activity or low intensification. Monitoring upper trough positions on upper-level charts is important for forecasting rapidly developing situations.',
+    explanation: 'Upper troughs enhance upper-level divergence, which promotes surface convergence, low development, and convective uplift. A previously clear region under an upper trough can rapidly develop convective activity or low intensification. Monitoring upper trough positions on upper-level charts is important for forecasting rapidly developing situations. Cyclogenesis.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.9',
   },
   {
-    question: 'What is the density altitude and why is it critical for aircraft performance?',
+    question: 'Why is the density altitude critical for aircraft performance?',
     options: [
       'The altitude shown on the altimeter when set to QNH, equivalent to geometric altitude',
       'The altitude used for calculating IFR obstacle clearance and lowest safe altitudes',
@@ -4324,7 +4324,7 @@ export const cmetQuestions: {
     options: [
       'The Tropic of Capricorn separates tropical cyclone zones from mid-latitude weather, cyclones cannot cross it',
       'The Tropic of Capricorn marks the boundary between Class G and Class E airspace in Australia',
-      'The Tropic of Capricorn (~23.5°S) marks the approximate southern limit of the overhead sun in summer',
+      'The Tropic of Capricorn, at about 23.5°S, marks the approximate southern limit of the overhead sun in summer',
       'The tropic of Capricorn has no meteorological significance, weather systems cross it without change',
     ],
     correct: 2,
@@ -4335,7 +4335,7 @@ export const cmetQuestions: {
     question: 'What is the "lifting condensation level" (LCL) rule-of-thumb for estimating cumulus base?',
     options: [
       'LCL height is estimated from the surface pressure only, no temperature data needed',
-      'LCL height ≈ (temperature − dew point) × 400 ft, the spread in °C multiplied by approximately 400 gives the cloud base in feet',
+      'LCL height ≈ × 400 ft, the spread in °C multiplied by approximately 400 gives the cloud base in feet',
       'LCL height = (temperature − dew point) × 1,000 ft',
       'LCL height = surface temperature × 200 ft',
     ],
@@ -4344,7 +4344,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "entrainment" in a thunderstorm and what effect does it have on the storm\'s lifecycle?',
+    question: 'What effect does "entrainment" in a thunderstorm have on the storm\'s lifecycle?',
     options: [
       'The drawing in of aircraft by thunderstorm updrafts, a hazard for light aircraft near CB',
       'Entrainment refers to the entraining of precipitation into the aircraft engine, an engine contamination issue',
@@ -4368,19 +4368,19 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.2',
   },
   {
-    question: 'What is a SIGMET for volcanic ash and why is it critical for flight operations?',
+    question: 'A SIGMET warns of "OBSC TS". Why is this category singled out?',
     options: [
-      'Volcanic ash only affects piston aircraft, turbine-powered aircraft are immune to ash ingestion',
-      'Volcanic ash SIGMETs warn of ash cloud locations, volcanic ash can cause catastrophic engine failure by abrasion and melting',
-      'Volcanic ash is a minor turbulence hazard, SIGMETs are issued as a precaution only',
-      'A volcanic ash SIGMET is only issued for volcanic events within Australia, overseas eruptions are not relevant',
+      'The cells are weakening behind obscuring rain',
+      'The storms are over ocean and out of radar coverage',
+      'The storms are hidden by haze, smoke or darkness, so they cannot be seen and avoided visually',
+      'OBSC marks storms that are observed rather than forecast',
     ],
-    correct: 1,
-    explanation: 'Volcanic ash SIGMETs provide critical safety information. Volcanic ash is invisible to weather radar, can appear as clear air, and causes catastrophic damage to aircraft by: abrasion of compressor blades, melting and re-solidifying in the turbine section (flame-out), and blocking cooling holes. Multiple aircraft have suffered engine failures from ash encounters.',
+    correct: 2,
+    explanation: 'OBSC means obscured: the CB are masked by haze, smoke, dust or darkness even though they are not buried inside other cloud layers. Like EMBD storms, they defeat visual avoidance, which is why both categories justify a SIGMET. Use radar, lightning data and generous routing rather than your eyes.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is valley fog (cold air drainage fog) and how does it form?',
+    question: 'How does valley fog (cold air drainage fog) form?',
     options: [
       'Fog formed when strong winds in a valley channel compress and cool the air to saturation',
       'Fog formed by the evaporation of overnight dew in valleys heated by the morning sun',
@@ -4394,7 +4394,7 @@ export const cmetQuestions: {
   {
     question: 'What is the "Beaufort scale" and is it used in Australian aviation weather products?',
     options: [
-      'The Beaufort scale is a qualitative wind strength scale (0 = calm, 12 = hurricane force) used in marine weather and general public weather forecasts',
+      'The Beaufort scale is a qualitative wind scale from 0 calm to 12 hurricane force, used in marine and public forecasts',
       'The Beaufort scale has been superseded and is no longer used in any Australian weather products',
       'The Beaufort scale is used only in tropical cyclone advisories, Category 1 to 5 corresponds to Beaufort 8 to 12',
       'The Beaufort scale is used in all Australian aviation METARs, it replaces knots for wind reporting',
@@ -4416,7 +4416,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "virga" and why is it operationally significant?',
+    question: 'Why is "virga" operationally significant?',
     options: [
       'Virga is ice crystals falling from cirrus cloud, the ice always evaporates in the warm lower atmosphere',
       'A streak of precipitation falling from a cloud base that evaporates before reaching the ground',
@@ -4428,28 +4428,28 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is the "subtropical ridge" and what role does it play in steering tropical cyclones in the Australian region?',
+    question: 'What role does the "subtropical ridge" play in steering tropical cyclones in the Australian region?',
     options: [
       'The subtropical ridge is a line of convergence, it generates tropical cyclones when it moves southward',
       'The subtropical ridge has no influence on tropical cyclone tracks, they are purely random',
       'The subtropical ridge prevents tropical cyclones from moving south of 20°S',
-      'The subtropical high-pressure ridge steers tropical cyclones, cyclones generally move along the periphery of the ridge and can be',
+      'It steers tropical cyclones along its periphery, with recurvature south when a weakness or trough develops in the ridge',
     ],
     correct: 3,
     explanation: 'Tropical cyclones are steered by the large-scale flow, particularly the subtropical ridge. They tend to move westward in the trade winds and may curve poleward when they encounter breaks in the ridge or upper-level troughs. The ridge strength and position are key forecast variables for tropical cyclone tracks.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is the significance of an "overshooting top" on a cumulonimbus?',
+    question: 'The GAF forecasts "BKN ST 1500/3000FT". Your aerodrome sits at 800 ft elevation. Roughly where is the cloud base above the strip?',
     options: [
-      'Overshooting tops only occur in tropical cyclones, not in ordinary thunderstorms',
-      'An overshooting top is purely cosmetic, storm severity is determined only by precipitation rate',
-      'A dome of cloud penetrating above the flat anvil indicates an extremely powerful updraft exceeding the tropopause',
-      'The overshooting top indicates the storm has dissipated, the top has overshot its maximum height',
+      'Impossible to say without the area QNH',
+      '1,500 ft above the aerodrome, GAF heights are above ground',
+      '2,300 ft above the aerodrome, base plus elevation',
+      'About 700 ft above the aerodrome, GAF heights are AMSL',
     ],
-    correct: 2,
-    explanation: 'An overshooting top is a dome of cloud punching above the flat anvil into the stratosphere. It indicates an extremely vigorous updraft exceeding the stability of the tropopause. Associated with the most severe thunderstorms — supercells — and indicates extreme hazards including large hail, severe turbulence, and powerful updrafts.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.8',
+    correct: 3,
+    explanation: 'GAF cloud levels are quoted above mean sea level, unlike METAR and TAF bases which are above aerodrome level. A 1,500 ft AMSL base over an 800 ft strip leaves roughly 700 ft of clear air, marginal at best for circuits. Converting AMSL forecasts to AGL reality is one of the most common GAF traps.',
+    reference: 'AIP GEN 3.5',
   },
   {
     question: 'To what datum are cloud base and other heights referenced in a GAF?',
@@ -4488,19 +4488,19 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.9',
   },
   {
-    question: 'What is "INTER" and "FM" in a TAF and how are they distinct from "BECMG"?',
+    question: 'One TAF change reads "FM051200 19025KT" and another "BECMG 0512/0514". What is the difference in how the change arrives?',
     options: [
-      'INTER and BECMG are equivalent, FM only applies to wind changes',
-      'INTER = intermittent changes <30 min, FM = rapid complete change within 30 min becoming the new base conditions, BECMG = gradual',
-      'They are identical in meaning, the choice depends only on the forecaster\'s preference',
-      'L three indicate changes that become permanent for the rest of the TAF period',
+      'FM is a rapid switch at the stated time, BECMG is a gradual change spread across the two-hour window',
+      'BECMG is instantaneous, FM is gradual',
+      'FM applies only to wind, BECMG only to cloud',
+      'There is no difference, the codes are interchangeable',
     ],
-    correct: 1,
-    explanation: 'INTER: intermittent, each occurrence < 30 min. FM: conditions change rapidly (<30 min) and the new conditions then apply for the rest of the validity period (or next change group). BECMG: gradual change over 1–2 hours — the new conditions then apply. FM and BECMG both establish new base conditions; INTER does not.',
+    correct: 0,
+    explanation: 'FM marks a rapid and permanent change to a completely new forecast from the stated time, typical of a frontal passage. BECMG describes a gradual transition beginning and ending within the given window, with conditions evolving somewhere in between. Both rewrite the forecast permanently, unlike TEMPO and INTER which are fluctuations.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What are "southerly busters" and where do they occur in Australia?',
+    question: 'Where do southerly busters occur in Australia?',
     options: [
       'Tropical cyclone outflow events, occurring off the Queensland coast',
       'Post-frontal polar air outbreaks, only occurring south of Tasmania',
@@ -4524,23 +4524,23 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.2',
   },
   {
-    question: 'What is "hail avoidance" and what radar return should be avoided?',
+    question: 'Radar shows an intense cell with a hook of strong returns just upwind of your track at cruise level. How far should you keep from it, and which side?',
     options: [
-      'Hail is only a risk in tropical regions, southern Australian CB cannot produce damaging hail',
-      'Hail only falls below the cloud base, aircraft above the cloud are immune to hail damage',
-      'Hail avoidance requires maintaining at least 20 NM lateral separation from severe CB cells',
-      'Hail can always be detected by weather radar, avoid any red returns and hail risk is eliminated',
+      '2 NM is sufficient once clear of rain',
+      'At least 10 NM, more for severe cells, and pass on the upwind side',
+      'Directly overhead is safest, hail falls vertically',
+      'Downwind, where the anvil gives shade',
     ],
-    correct: 2,
-    explanation: 'Hail avoidance requires giving severe CBs a wide berth — at least 20 NM laterally. Large hail can be ejected outward from the anvil well clear of the visible precipitation core. Intense radar returns (red/magenta) indicate very heavy precipitation and probable large hail — avoid by maximum separation.',
-    reference: 'Bureau of Meteorology',
+    correct: 1,
+    explanation: 'Hail can be thrown well outside the visible cloud and radar core, particularly downwind beneath the anvil where it falls from the overhang. Standard practice is to give intense cells at least 10 NM, increasing with severity, and to route on the upwind side where new development and hail carry-out are least likely.',
+    reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
     question: 'What is the effect of "high terrain" on QNH validity and what correction should be applied?',
     options: [
-      'H errors only occur above FL100, below this altitude terrain effects are negligible',
-      'H remains valid regardless of terrain elevation, it always gives accurate MSL altitude',
-      'QNH is valid near the level at which it was measured, at high terrain well away from the reporting station, the QNH may not',
+      'QNH errors only occur above FL100, below this altitude terrain effects are negligible',
+      'QNH remains valid regardless of terrain elevation, always giving accurate MSL altitude',
+      'QNH is valid near the level where it was measured, so over distant high terrain the indicated altitude may be in error',
       'High terrain requires QFE setting, QNH is not used in mountainous areas',
     ],
     correct: 2,
@@ -4550,8 +4550,8 @@ export const cmetQuestions: {
   {
     question: 'In a METAR, what does the group "BKN012" indicate?',
     options: [
-      'Few cloud layer (1–2 oktas) with base at 1,200 ft AAL',
-      'Broken cloud layer (5–7 oktas) with base at 1,200 ft AAL',
+      'Few cloud, 1 to 2 oktas, with a base of 1,200 ft AAL',
+      'Broken cloud, 5 to 7 oktas, with a base of 1,200 ft AAL',
       'Broken cloud layer at 12,000 ft AMSL',
       'Broken cloud layer with base at 120 ft AAL',
     ],
@@ -4560,19 +4560,19 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is freezing rain and why is it particularly hazardous to aircraft?',
+    question: 'In cloud at plus 2 degrees you enter rain and ice builds at an alarming rate on the airframe. What have you most likely encountered?',
     options: [
-      'Rain at high altitude where the temperature is below −20°C, causes rapid structural ice buildup',
-      'Rain mixed with ice crystals, hazardous because the mixed phase causes rapid accumulation',
-      'Rain that has fallen through a cold layer and cooled below 0°C while remaining in liquid form',
-      'Rain that falls when the surface temperature is below 0°C, hazardous because it freezes on runways',
+      'Rime ice from tiny droplets, accumulation will stay slow',
+      'Hoar frost, harmless in flight',
+      'Freezing rain, supercooled drops falling from warmer air aloft, an immediate escape is required',
+      'Snow, which never adheres to airframes',
     ],
     correct: 2,
-    explanation: 'Freezing rain occurs when rain (or melted snow) falls through a subfreezing layer near the surface and arrives as supercooled water. On contact with any surface at or below 0°C it freezes instantly, producing large amounts of clear ice very rapidly. It can overwhelm anti-icing/de-icing systems.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.4',
+    explanation: 'Rapid clear ice in rain near freezing means supercooled drops, often falling from a warm layer aloft through colder air, the freezing rain profile. It produces the fastest, heaviest accretion of all icing forms and can exceed any protection system within minutes. Escape immediately, usually by climbing into the warmer air above or making an urgent descent and diversion.',
+    reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "cloud street" and what does it indicate meteorologically?',
+    question: 'What does "cloud street" indicate meteorologically?',
     options: [
       'Cloud streets are a sign of an approaching cold front, the rows of cloud indicate frontal cirrus',
       'A line of stratocumulus along a coastline, indicates sea breeze activity',
@@ -4584,31 +4584,31 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "significant weather" and how is it defined in a TAF context?',
+    question: 'After a change group a TAF shows "9999 NSW". What does NSW signify?',
     options: [
-      'Significant weather only refers to thunderstorms, other weather is not reported in TAFs',
-      'Significant weather in a TAF includes any phenomenon that affects flight operations',
-      'Significant weather in a TAF refers to weather with a METAR code, only phenomena with codes are reported',
-      'All weather phenomena above 5,000 ft are "significant" by definition in a TAF',
+      'Night-time snow warning',
+      'New South Wales conditions apply',
+      'No surface wind expected',
+      'Nil significant weather, the previously forecast weather phenomena have ended',
     ],
-    correct: 1,
-    explanation: 'In a TAF, "significant weather" (the weather group) includes phenomena that pose a hazard or affect operations: precipitation types and intensities, visibility-reducing phenomena (FG, HZ, BR, FU, DU), thunderstorms (TS), freezing precipitation, and showers. If conditions are good with no significant weather, the weather group is omitted.',
+    correct: 3,
+    explanation: 'NSW, nil significant weather, is used after a change group to cancel previously forecast weather such as showers or thunderstorms when no other phenomenon replaces them. Paired with 9999 it paints a clean picture: visibility 10 km or more and the earlier weather finished.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "icing intensity" and how is it reported in aviation weather products?',
+    question: 'You hear another pilot report "moderate icing" on descent. What does moderate mean in the standard intensity scale?',
     options: [
-      'Icing intensity is reported on a scale of 1–10 based on structural damage probability',
-      'Icing intensity is not reported in weather products, only cloud temperature determines icing risk',
-      'Icing intensity is reported using the ICAO categories of trace, light, moderate and severe',
-      'Australian weather products report icing as a binary yes/no, no intensity classification is used',
+      'Accretion fast enough that diversion or de-icing use may be needed, conditions are hazardous if prolonged',
+      'A trace that needs no action at all',
+      'Ice visible only on the spinner',
+      'Accumulation that exceeds all aircraft systems immediately',
     ],
-    correct: 2,
-    explanation: 'ICAO icing intensities: Trace (barely noticeable, no action needed), Light (slow accumulation, de-icing periodically required), Moderate (significant accumulation, continuous de-icing needed), Severe (accumulation rate exceeds de-icing capability — immediate diversion required). These are reported in PIREPs, SIGMETs, and icing forecasts.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.8',
+    correct: 0,
+    explanation: 'The ladder runs light, moderate, severe. Moderate icing accumulates quickly enough that the environment becomes hazardous if you stay in it, and use of protection equipment or a level or route change becomes necessary. Severe means accretion overwhelms the protective systems, the trigger for a SIGMET. Report what you see so others can act.',
+    reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the Clausius-Clapeyron relationship in simple terms and how is it relevant to aviation weather?',
+    question: 'Why is the Clausius-Clapeyron relationship relevant to aviation weather?',
     options: [
       'It describes how saturated vapour pressure increases rapidly with temperature',
       'It defines the relationship between temperature and density in the ISA, used for performance calculations',
@@ -4624,7 +4624,7 @@ export const cmetQuestions: {
     options: [
       'Strong, steady westerly winds with clear skies, similar to the roaring forties belt of the Southern Ocean further south',
       'Persistent widespread fog caused by the convergence of warm and cold ocean currents near the equator',
-      'Light and variable winds with widespread convergence, deep convective cloud, frequent showers and thunderstorms, and possible tropical low development',
+      'Light variable winds, widespread convergence, deep convective cloud, frequent storms and possible tropical low development',
       'Smooth, stable conditions with stratiform cloud only, because deep convection cannot occur within five degrees of the equator',
     ],
     correct: 2,
@@ -4644,7 +4644,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is the effect of lightning on aircraft and what does the aircraft certification require?',
+    question: 'What protection does aircraft certification require against lightning?',
     options: [
       'Lightning only affects aircraft above FL200, below this altitude the threat is negligible',
       'Lightning always causes catastrophic damage, aircraft must divert immediately when lightning is visible',
@@ -4659,7 +4659,7 @@ export const cmetQuestions: {
     question: 'As a cold front passes in the Southern Hemisphere, the wind backs from SW to SE and then to NE. What does this backing sequence indicate and what weather is associated with it?',
     options: [
       'Backing indicates warm air advection in the SH, meaning weather is improving and temperatures will rise after frontal passage',
-      'Backing in the SH indicates cold air advection, confirming cold front passage as post-frontal southerly air replaces the pre-frontal northwesterly air mass',
+      'Backing in the SH confirms cold advection, as post-frontal southerly air replaces the pre-frontal northwesterly flow',
       'Backing only occurs at the surface level, the gradient wind above is unaffected by frontal passage and does not change direction',
       'Backing from SW to NE is not possible, wind always veers clockwise after a cold front',
     ],
@@ -4671,7 +4671,7 @@ export const cmetQuestions: {
     question: 'What is "buoyancy" in atmospheric thermodynamics and how does it drive convection?',
     options: [
       'Buoyancy only applies to ocean meteorology, not to atmospheric dynamics',
-      'Buoyancy is the upward force on a parcel when it is warmer (less dense) than its surroundings',
+      'Buoyancy is the upward force on a parcel when it is warmer than its surroundings',
       'Buoyancy force is negligible in the atmosphere, pressure gradient force dominates at all scales',
       'Buoyancy is the resistance of air to vertical motion, high buoyancy means stable conditions',
     ],
@@ -4683,7 +4683,7 @@ export const cmetQuestions: {
     question: 'What is the relationship between atmospheric stability and the development of thunderstorms?',
     options: [
       'Stable atmospheric conditions promote thunderstorm development by trapping moisture near the surface',
-      'Atmospheric stability has no relationship to thunderstorm development, thunderstorms are triggered purely by frontal lifting regardless of stability',
+      'Stability has no bearing on thunderstorms, which are triggered purely by frontal lifting',
       'Absolute instability, where the ELR exceeds the DALR, produces vigorous convection, air parcels continue rising spontaneously',
       'Thunderstorms only develop in absolutely stable conditions when a temperature inversion traps the energy needed',
     ],
@@ -4697,7 +4697,7 @@ export const cmetQuestions: {
       'Australia does not have a transition altitude, QNH is used at all altitudes',
       'The altitude below which QFE is used, approximately 3,000 ft at all Australian aerodromes',
       'The transition altitude varies for every aerodrome, pilots must check NOTAMs',
-      'The altitude at or below which QNH is used for altitude reference, and above which standard pressure (1013.25 hPa) is used',
+      'The altitude at or below which QNH is used, with standard pressure of 1013.25 hPa set above it',
     ],
     correct: 3,
     explanation: 'In Australia, the transition altitude is 10,000 ft AMSL (in most areas). Below it, altitude is referenced to QNH. Above it, altimeters are set to 1013.25 hPa (standard) and the aircraft\'s vertical position is expressed as a flight level (FL). The transition layer between the transition altitude and transition level may exist when QNH differs significantly from 1013 hPa.',
@@ -4708,7 +4708,7 @@ export const cmetQuestions: {
     options: [
       'BKN030 means broken cloud at 30,000 ft, no concern for a low-level VFR flight',
       'SCT020CB is only reported as a courtesy, CB cloud cannot be scattered, so it is actually overcast',
-      'Broken cloud at 3,000 ft with scattered cumulonimbus at 2,000 ft over the mountains, requiring avoidance or cancellation as VFR flight near CB is not permitted',
+      'Broken cloud at 3,000 ft with scattered CB at 2,000 ft over the mountains, requiring avoidance or cancellation for VFR',
       'The forecast is only valid at the time of issue, no planning action required as the actual conditions will be assessed on the day',
     ],
     correct: 2,
@@ -4716,7 +4716,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is nimbostratus (Ns) and what precipitation is associated with it?',
+    question: 'What precipitation is associated with nimbostratus (Ns)?',
     options: [
       'A high-altitude cloud, associated with light snow at the jet stream level',
       'A low cloud with drizzle only, associated with radiation fog rather than frontal weather',
@@ -4732,7 +4732,7 @@ export const cmetQuestions: {
     options: [
       'Convective turbulence is equally distributed throughout the day, it has no diurnal variation',
       'Convective turbulence is worst at sunrise, the temperature inversion breaks rapidly at dawn',
-      'Convective turbulence from thermal activity peaks in the early to mid-afternoon when solar heating is maximum and thermals are strongest',
+      'It peaks early to mid-afternoon when solar heating and thermal strength are at their maximum',
       'Convective turbulence is most severe in the morning, before sea breezes develop',
     ],
     correct: 2,
@@ -4742,7 +4742,7 @@ export const cmetQuestions: {
   {
     question: 'What does a 500 hPa height anomaly indicate about the temperature of the air column below it?',
     options: [
-      'A higher-than-normal 500 hPa surface height indicates warm air below, warm air expands the atmospheric column raising all pressure surfaces',
+      'A higher 500 hPa surface means warm air below, the expanded column lifting all pressure surfaces',
       'A lower 500 hPa height indicates warm air below, warm air sinks and lowers pressure levels',
       'A higher-than-normal 500 hPa height indicates cold air below, cold air is denser and the surface is lower',
       '500 hPa height anomalies are only relevant to oceanic weather, not Australian continental forecasting',
@@ -4755,7 +4755,7 @@ export const cmetQuestions: {
     question: 'What is a warm front and how does its weather differ from a cold front?',
     options: [
       'A warm front produces a rapid improvement in weather, similar to the clearing after a cold front',
-      'A warm front is where warm air advances over cold air, associated with gradual deterioration, extensive cloud (cirrus , then',
+      'A warm front is where warm air advances over cold air, linked to gradual deterioration, extensive cloud (cirrus, then',
       'A warm front only produces light drizzle, heavy precipitation is not associated with warm fronts',
       'A warm front produces more intense and violent weather than a cold front because of stronger temperature contrasts',
     ],
@@ -4764,7 +4764,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "airframe icing" and why does it reduce lift and increase drag?',
+    question: 'Why does "airframe icing" reduce lift and increase drag?',
     options: [
       'Airframe icing only affects control surfaces, the wing lift is not significantly changed',
       'Ice accumulation changes the shape of airfoil leading edges and surfaces, disrupting smooth airflow',
@@ -4776,7 +4776,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a high-pressure system (anticyclone) and what weather is typically associated with it?',
+    question: 'What weather is typically associated with a high-pressure system (anticyclone)?',
     options: [
       'A system where pressure is high only at altitude, no surface pressure gradient exists',
       'A region of low surface pressure with clockwise airflow in the Southern Hemisphere, associated with cloud and rain',
@@ -4800,7 +4800,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "propeller icing" and what are its effects on aircraft performance?',
+    question: 'What are the effects of propeller icing on aircraft performance?',
     options: [
       'Ice on propellers has no effect on performance, the propeller thrust is unaffected',
       'Propeller icing is less hazardous than wing icing, propellers can tolerate more ice accumulation',
@@ -4814,7 +4814,7 @@ export const cmetQuestions: {
   {
     question: 'In a GAF, what do the qualifiers "ISOL", "OCNL" and "FREQ" indicate when applied to CB?',
     options: [
-      'The spatial distribution of the CB, from isolated single cells through well-separated cells to frequent cells with little or no separation',
+      'The spatial distribution of CB, from isolated cells through occasional to frequent cells with little separation',
       'The time of day the CB will occur: morning, afternoon and evening respectively',
       'The vertical extent of the CB: below 10,000 ft, up to FL200, and above FL300 respectively',
       'The probability of lightning within each cell, namely 30, 60 and 90 percent respectively for the three qualifiers',
@@ -4824,7 +4824,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the "Tropical Cyclone Warning Centre" and what services does it provide?',
+    question: 'What services does the "Tropical Cyclone Warning Centre" provide?',
     options: [
       'The Tropical Cyclone Warning Centre is operated by CASA, not the Bureau of Meteorology',
       'A joint Australian-Indonesian facility that only covers the Northwest Shelf',
@@ -4836,7 +4836,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "upslope fog" and where does it form?',
+    question: 'Where does "upslope fog" form?',
     options: [
       'Upslope fog is identical to katabatic fog, both form on mountain slopes at night',
       'Upslope fog only forms above the snowline, not relevant to Australian aviation',
@@ -4848,12 +4848,12 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "polar front jet stream" and how does it affect Australian weather?',
+    question: 'How does the "polar front jet stream" affect Australian weather?',
     options: [
       'A jet stream that only affects the Northern Hemisphere, irrelevant to Australian aviation',
       'A persistent jet stream at the equator, driving the ITCZ north and south seasonally',
       'A surface wind feature, the polar front jet is confined to the boundary layer in the Southern Ocean',
-      'A jet stream at the tropopause in subpolar latitudes, in winter it moves northward (closer to Australia), bringing more frequent',
+      'A jet stream at the tropopause in subpolar latitudes, in winter it moves northward, bringing more frequent',
     ],
     correct: 3,
     explanation: 'The polar front jet stream forms along the boundary between polar and subtropical air masses at the tropopause. In the Southern Hemisphere, it varies seasonally — in winter it migrates toward Australia, intensifying frontal activity and westerly winds in southern Australia. Understanding its position helps forecast frontal frequency and intensity.',
@@ -4880,16 +4880,16 @@ export const cmetQuestions: {
       'LLWS causes the autopilot to disconnect, the pilot must hand-fly to maintain the glidepath',
     ],
     correct: 1,
-    explanation: 'Low-level wind shear (LLWS) during approach can cause sudden airspeed and lift changes. A headwind-to-tailwind transition (the most dangerous scenario) rapidly removes lift at low altitude. If power is not added immediately, the aircraft will rapidly descend below the glidepath. LLWS windshear alerts (PIREP/SIGMET/ATIS) should be taken very seriously.',
+    explanation: 'Low-level wind shear (LLWS) during approach can cause sudden airspeed and lift changes. A headwind-to-tailwind transition (the most dangerous scenario) rapidly removes lift at low altitude. If power is not added immediately, the aircraft will rapidly descend below the glidepath. LLWS windshear alerts (AIREP/SIGMET/ATIS) should be taken very seriously.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "anvil" of a cumulonimbus and what does its orientation indicate?',
+    question: 'What does the orientation of a cumulonimbus anvil indicate?',
     options: [
       'A shelf cloud at the leading edge, its orientation indicates the direction of storm movement',
       'The precipitation shaft below the cloud, its orientation indicates wind shear through the cloud',
       'The base of the cumulonimbus, whose orientation shows the wind direction at the surface',
-      'The ice-crystal canopy at the summit, spreading where the updraft meets the tropopause, with its orientation showing the upper-level wind',
+      'The ice-crystal canopy where the updraft meets the tropopause, its spread showing the upper-level wind direction',
     ],
     correct: 3,
     explanation: 'The anvil is the flattened, ice-crystal top of a mature cumulonimbus. It forms when strong updrafts reach the tropopause (a stable layer) and spread horizontally. Its orientation indicates upper-level wind direction — it points downwind. Hail and CAT can occur beneath the anvil.',
@@ -4901,26 +4901,26 @@ export const cmetQuestions: {
       '50,000 ft',
       '25,000 ft',
       '45,000 ft',
-      '36,089 ft (approximately 11 km)',
+      '36,089 ft, approximately 11 km',
     ],
     correct: 3,
     explanation: 'In the ISA, the tropopause is located at 36,089 ft (approximately 11 km) at mid-latitudes. Above the tropopause, temperature remains constant at −56.5°C in the ISA (isothermal layer).',
     reference: 'ICAO Standard Atmosphere',
   },
   {
-    question: 'What is the "lenticular cloud" and what does its stationary appearance indicate?',
+    question: 'What does the stationary appearance of lenticular cloud indicate?',
     options: [
       'Lenticular clouds always indicate light winds, heavy winds produce cumulus, not lenticular',
-      'Lenticular (altocumulus lenticularis) clouds appear stationary because cloud continuously forms on the upwind side as air rises',
+      'Lenticular clouds appear stationary because cloud continuously forms on the upwind side as air rises',
       'A lenticular cloud moves very slowly, it takes 24 hours to traverse a mountain range',
       'A stationary lenticular cloud means there is no wind, it is a fog cloud over a mountain peak',
     ],
     correct: 1,
-    explanation: 'Lenticular clouds appear stationary (even in strong winds) because they form continuously on the upwind edge as air rises and cools, and evaporate continuously on the downwind edge as air descends. The cloud is stationary but individual air molecules are rapidly passing through it. Strong, persistent lenticular clouds = strong mountain wave activity.',
+    explanation: 'Lenticular clouds appear stationary (even in strong winds) because they form continuously on the upwind edge as air rises and cools, and evaporate continuously on the downwind edge as air descends. The cloud is stationary but individual air molecules are rapidly passing through it. Strong, persistent lenticular clouds = strong mountain wave activity. Altocumulus lenticularis.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "instability showering" and what atmospheric conditions produce it?',
+    question: 'What atmospheric conditions produce "instability showering"?',
     options: [
       'Showers from absolute instability when the ELR exceeds the DALR, producing vigorous cumulonimbus with heavy precipitation',
       'Drizzle from stratocumulus under a subsidence inversion, associated with high pressure',
@@ -4932,7 +4932,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.3',
   },
   {
-    question: 'What is the "roll cloud" (arcus cloud) and what does it indicate?',
+    question: 'What does the "roll cloud" (arcus cloud) indicate?',
     options: [
       'A type of lenticular cloud, associated with mountain wave activity',
       'A low, horizontal, rotating cloud associated with the leading edge of a gust front or sea breeze front',
@@ -4947,7 +4947,7 @@ export const cmetQuestions: {
     question: 'What is the "mountain wave" safety brief for flight through passes or over ranges?',
     options: [
       'Mountain waves are only hazardous above FL180, low-level flights through passes are safe',
-      'Cross the ridge at about 45° with at least 3,000 ft clearance, avoid the lee side below crest height, and turn away if strong downdrafts are met',
+      'Cross at about 45° with 3,000 ft clearance, avoid the lee below crest height, and turn away if strong sink is met',
       'If mountain waves are possible, descend below the mountain peaks for calmer conditions',
       'Mountain wave turbulence is predictable, fly through the smooth wave crests and avoid the troughs',
     ],
@@ -4956,7 +4956,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "cloud top temperature" and how is it used to estimate cloud top height?',
+    question: 'How is "cloud top temperature" used to estimate cloud top height?',
     options: [
       'Cloud top temperature is unrelated to cloud height, only a radar can measure cloud top height',
       'Cloud top temperature only works for CB, stratus and altostratus cannot be height-estimated from IR',
@@ -4968,7 +4968,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is "isobar" and how does the shape of isobars indicate pressure system type?',
+    question: 'How does the shape of isobars indicate pressure system type?',
     options: [
       'Isobars only appear on upper-level charts, surface charts use streamlines instead',
       'Isobars indicate altitude, they are equivalent to contour lines on a topographic map',
@@ -4988,14 +4988,14 @@ export const cmetQuestions: {
       'Pilots detect microbursts visually by observing CB clouds on approach',
     ],
     correct: 0,
-    explanation: 'At aerodromes equipped with TDWR or LLWS sensors, wind shear alerts are transmitted on ATIS and/or reported by ATC. A microburst alert specifies location (e.g. "final approach") and wind change magnitude. At unequipped aerodromes, pilot weather reports (PIREPs) are the primary detection method.',
+    explanation: 'At aerodromes equipped with TDWR or LLWS sensors, wind shear alerts are transmitted on ATIS and/or reported by ATC. A microburst alert specifies location (e.g. "final approach") and wind change magnitude. At unequipped aerodromes, pilot weather reports (AIREPs) are the primary detection method.',
     reference: 'AIP GEN 3.5',
   },
   {
     question: 'What is a "cold front passage" weather sequence experienced at a surface station?',
     options: [
       'Pressure steady, winds increasing steadily from the west, and fog developing in the moist air behind the front',
-      'Rapid pressure fall then rise, a northerly-to-southerly wind shift, a temperature drop, a heavy shower or thunderstorm, then rapid clearing',
+      'Pressure fall then rise, a northerly-to-southerly shift, a temperature drop, a heavy shower or storm, then rapid clearing',
       'Gradual pressure rise over 24 hours, decreasing winds, improving visibility',
       'Steady continuous rain for 12–24 hours, a slow pressure rise, and a gradual wind shift over many hours',
     ],
@@ -5004,15 +5004,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is the ICAO-standard wind direction convention used in METARs and TAFs?',
+    question: 'The METAR wind is "33008KT" and you are inbound for Runway 15. What does a quick read tell you?',
     options: [
-      'Wind direction in METARs is True North referenced, reported in 10-degree increments as a 3-digit group',
-      'Wind direction in METARs is Magnetic North referenced, same as runway headings',
-      'METAR wind directions are reported in the direction the wind is going to, not from',
-      'METARs use compass points (N, NE, E, etc.) not degree values',
+      'A direct 8 kt headwind on Runway 15',
+      'An 8 kt tailwind component, consider the opposite runway or accept a longer landing roll',
+      'A pure crosswind from the left',
+      'Nothing useful until converted to magnetic',
     ],
-    correct: 0,
-    explanation: 'METAR and TAF winds are always True North referenced and reported in degrees True as a 3-digit group rounded to the nearest 10°, indicating the direction FROM which the wind is blowing. E.g. "27015KT" = wind from 270°T at 15 kt. This differs from runway numbers which are magnetic.',
+    correct: 1,
+    explanation: 'Wind from 330 onto runway heading 150 is straight down the tail. Even 8 kt of tailwind lengthens the landing roll markedly and most aircraft limit tailwind operations to 5 or 10 kt. Runway 33 would give the same 8 kt as headwind. The small true-magnetic difference does not change the picture.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -5028,7 +5028,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "conditional instability release" and what triggers it in the Australian context?',
+    question: 'What triggers "conditional instability release" in the Australian context?',
     options: [
       'The activation of aircraft anti-icing systems when temperature drops below 0°C',
       'Conditional instability release only occurs in tropical air masses, not relevant to southern Australian meteorology',
@@ -5040,16 +5040,16 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.3',
   },
   {
-    question: 'What is "pressure tendency" and how is it used in weather prediction?',
+    question: 'The Area QNH is 1003 hPa, making the transition level FL115. How thick is the transition layer?',
     options: [
-      'Pressure tendency measures the horizontal pressure gradient, strong tendency means strong winds',
-      'Pressure tendency is only useful for ocean weather, continental pressure change is too slow to forecast',
-      'Pressure tendency is the forecast pressure change over the next 24 hours',
-      'Pressure tendency is the rate of change of pressure over the previous 3 hours',
+      '1,500 ft',
+      '1,000 ft',
+      '500 ft',
+      '3,000 ft',
     ],
-    correct: 3,
-    explanation: 'Pressure tendency is the change in pressure over the past 3 hours. A falling tendency indicates an approaching low/trough/cold front. A rising tendency indicates clearing conditions with an approaching high. Rapid falls (>4 hPa in 3 hours) indicate rapidly deepening systems and potentially severe weather.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.2',
+    correct: 0,
+    explanation: 'The transition layer lies between the transition altitude, 10,000 ft, and the transition level. With a transition level of FL115 the layer spans 10,000 to 11,500 ft, a thickness of 1,500 ft. The system guarantees at least 1,000 ft, and cruising within the layer is not permitted.',
+    reference: 'AIP ENR 1.7',
   },
   {
     question: 'What is "HZ" in a METAR and how does it differ from "FU"?',
@@ -5064,15 +5064,15 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the purpose of the "transition altitude" and "transition level" in altimetry?',
+    question: 'The Area QNH is 995 hPa. What is the transition level?',
     options: [
-      'Transition altitude is the altitude below which QFE is used, transition level is where QNH takes over',
-      'Transition altitude is the altitude at or below which QNH is used',
-      'Transition altitude is only used on IFR departures, transition level only on arrivals',
-      'Transition altitude and transition level are the same altitude, there is no difference',
+      'FL110',
+      'FL115',
+      'FL120',
+      'FL125',
     ],
-    correct: 1,
-    explanation: 'Below the transition altitude, aircraft use QNH (MSL altitude references). Above the transition level, aircraft set standard pressure (1013.25 hPa) and reference flight levels. The transition layer between them must never be used as a cruising level. In Australia, the transition altitude varies by aerodrome.',
+    correct: 2,
+    explanation: 'The transition altitude is fixed at 10,000 ft and the transition level moves with Area QNH to keep at least 1,000 ft of transition layer. Under the Part 91 MOS table, an Area QNH of at least 980 but less than 997 hPa gives a transition level of FL120, so at 995 hPa the answer is FL120.',
     reference: 'AIP ENR 1.7',
   },
   {
@@ -5088,7 +5088,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "Brisbane convergence zone" and how does it affect weather in southeast Queensland?',
+    question: 'How does "Brisbane convergence zone" affect weather in southeast Queensland?',
     options: [
       'A zone of convergence between sea breezes from Moreton Bay/Pacific coast and westerly drainage winds',
       'A permanent fog belt at the mouth of the Brisbane River, not weather-related',
@@ -5100,19 +5100,19 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'In a METAR, what does the "RMK" section contain?',
+    question: 'A METAR ends "RMK RF00.8/016.2". What is this remark telling you?',
     options: [
-      'RMK is a forecast element, providing remarks about expected changes to conditions over the next 2 hours from the time of observation',
-      'RMK means "runway marker", it identifies which runway the observation was taken from',
-      'Remarks, additional observations not covered by the coded sections, such as recent weather, detailed pressure tendency, and supplementary information not in ICAO standard format',
-      'RMK contains radar-detected phenomena only, present in automated METARs at aerodromes with co-located weather radar equipment',
+      'Radio failure of the automatic sensor at that time',
+      'Runway friction readings for both runway directions',
+      'Rainfall, 0.8 mm in the last ten minutes and 16.2 mm since 0900 local',
+      'Fog density measured at two heights',
     ],
     correct: 2,
-    explanation: 'The RMK (Remarks) section of a METAR contains additional information beyond the standard ICAO coded groups. It may include recent weather (wind, precipitation, pressure tendency), supplementary observations, and information not fitting standard ICAO format.',
+    explanation: 'Australian METARs append rainfall in the remarks as RF, giving millimetres in the ten minutes before the observation and the total since 0900 local time. Here light rain is falling now and a worthwhile 16 mm has fallen through the day, useful context for runway state, recent storm activity and trend.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the Foehn effect and what weather hazard does it create?',
+    question: 'What weather hazard does the Foehn effect create?',
     options: [
       'A warm, dry wind on the leeward side of a mountain range, air descends, warms at the DALR, and arrives at the leeward side warmer',
       'A cold downslope drainage wind on the leeward side, similar to katabatic but driven by a different mechanism',
@@ -5136,15 +5136,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.3',
   },
   {
-    question: 'What is the maximum wind speed at which "calm" conditions are reported in Australian aviation weather?',
+    question: 'The METAR wind group is "00000KT". What does it mean and what should you expect?',
     options: [
-      '2 kt or less',
-      'Less than 1 kt, any detectable wind is reported',
-      '3 kt or less',
-      '5 kt or less',
+      'Variable wind of less than 10 kt',
+      'A sensor failure, treat the wind as unknown',
+      'Wind exactly from north at zero altitude',
+      'Calm, wind below 1 kt, runway choice will follow noise or traffic rather than wind',
     ],
-    correct: 1,
-    explanation: 'In Australian METAR practice (following ICAO), "00000KT" (calm) is reported when the mean wind speed is less than 1 knot. At 1 kt or above, the actual direction and speed are reported.',
+    correct: 3,
+    explanation: '00000KT is the code for calm, a wind of less than 1 kt. With no wind to favour a runway, the duty runway is chosen on other grounds such as noise abatement or traffic flow, and performance gets neither headwind credit nor tailwind penalty. Calm, clear nights also flag radiation fog and inversion risk.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -5160,7 +5160,7 @@ export const cmetQuestions: {
     reference: 'ICAO Standard Atmosphere',
   },
   {
-    question: 'What is "lee cyclogenesis" and where does it occur relative to mountain ranges?',
+    question: 'Where does "lee cyclogenesis" occur relative to mountain ranges?',
     options: [
       'Lee cyclogenesis only occurs with tropical systems, not relevant to mid-latitude Australia',
       'Lee cyclogenesis occurs on the windward side, not the lee side',
@@ -5172,7 +5172,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.9',
   },
   {
-    question: 'What is a "gust front" and how does it affect aircraft on approach?',
+    question: 'How does a "gust front" affect aircraft on approach?',
     options: [
       'Gust fronts only extend to 50 ft AGL, aircraft above this height are unaffected',
       'A gust front is identical to a cold front, both produce identical wind shift and temperature changes',
@@ -5184,9 +5184,9 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "mechanical turbulence" and what terrain features produce it?',
+    question: 'What terrain features produce "mechanical turbulence"?',
     options: [
-      'Turbulence from airflow over surface obstacles such as buildings, trees, ridges and hills, occurring downwind of them within the friction layer',
+      'Turbulence from flow over buildings, trees, ridges and hills, found downwind of them within the friction layer',
       'Mechanical turbulence is caused by the aircraft\'s own propeller or engine, not related to the terrain',
       'Turbulence caused by aircraft engine exhaust, wake turbulence from jet aircraft',
       'Mechanical turbulence only occurs above 10,000 ft where wind speeds are highest',
@@ -5213,14 +5213,14 @@ export const cmetQuestions: {
       'Icing in clear air is more predictable, it always occurs when temperature is below 0°C at the surface',
       'Icing in clear air is identical to icing in cloud, the distinction has no operational significance',
       'They are equally predictable, both are forecast the same way',
-      'Icing in cloud is more predictable, it occurs in visible cloud where conditions (temperature, dew point) can be assessed. Icing',
+      'Icing in cloud is more predictable because the cloud is visible, while freezing precipitation below cloud is harder to anticipate',
     ],
     correct: 3,
     explanation: 'In-cloud icing can be anticipated from cloud base/top altitudes and temperature profile. Icing in clear air (FZRA, FZDZ falling below cloud into subfreezing air) is harder to forecast and detect — it occurs in what appears to be clear air below cloud and may not be obvious from satellite or radar.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "conditional instability" and what does it mean for cloud development?',
+    question: 'What does "conditional instability" mean for cloud development?',
     options: [
       'Conditionally unstable air is unstable at all times regardless of its moisture content',
       'The ELR lies between the SALR and DALR, so the air is stable while unsaturated but becomes unstable once saturated and cloud forms',
@@ -5232,10 +5232,10 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.3',
   },
   {
-    question: 'What are cirrus clouds and what do they indicate meteorologically?',
+    question: 'What do cirrus clouds indicate meteorologically?',
     options: [
       'Lumpy mid-level cloud, indicates convective instability in the middle troposphere',
-      'Ow, grey layer cloud, indicates an approaching warm front',
+      'Low, grey layer cloud that indicates an approaching warm front',
       'Thin, wispy ice-crystal cloud at high altitude whose thickening and lowering to cirrostratus may signal an approaching warm front',
       'Vertical development cloud, indicates strong surface heating and potential thunderstorms',
     ],
@@ -5268,7 +5268,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a "land breeze convergence zone" and what weather can it produce?',
+    question: 'What weather can a "land breeze convergence zone" produce?',
     options: [
       'A convergence zone formed by katabatic winds colliding in a valley, produces fog only',
       'A coastal zone where the land breeze meets the sea breeze at midday, produces maximum turbulence at the coast',
@@ -5280,7 +5280,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is "prefrontal cloud" and what does it indicate ahead of a cold front?',
+    question: 'What does "prefrontal cloud" indicate ahead of a cold front?',
     options: [
       'A line of TCu or CB up to 100–200 km ahead of the surface front, often linked to the upper cold front or a pre-frontal trough',
       'Cirrus cloud running ahead of a warm front, which is sometimes misidentified as a cold front band',
@@ -5292,27 +5292,27 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "AIREP" (Aircraft Report) and how does it differ from a PIREP?',
+    question: 'What is "AIREP" (Aircraft Report) and how does it differ from a AIREP?',
     options: [
       'An AIREP is a formal position report made by aircraft in non-radar oceanic airspace that also includes meteorological observations',
-      'AIREPs are automated reports from aircraft avionics, PIREPs are manually entered by pilots',
-      'AIREPs are issued by ATC, PIREPs are issued by pilots, the information content is different',
-      'AIREP and PIREP are identical, different terms used by different countries for the same product',
+      'AIREPs are automated reports from aircraft avionics, AIREPs are manually entered by pilots',
+      'AIREPs are issued by ATC, AIREPs are issued by pilots, the information content is different',
+      'AIREP and AIREP are identical, different terms used by different countries for the same product',
     ],
     correct: 0,
-    explanation: 'An AIREP (Aircraft Report) is a combined position/meteorological report made by aircraft in non-radar oceanic airspace — mandatory on oceanic tracks. It includes position, altitude, airspeed, and a meteorological observation. A PIREP is a voluntary in-flight meteorological report submitted en-route.',
+    explanation: 'An AIREP (Aircraft Report) is a combined position/meteorological report made by aircraft in non-radar oceanic airspace — mandatory on oceanic tracks. It includes position, altitude, airspeed, and a meteorological observation. A AIREP is a voluntary in-flight meteorological report submitted en-route.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the difference between "SKC" and "NSC" cloud cover in a METAR?',
+    question: 'A staffed METAR shows "NSC" rather than "SKC". What is the observer telling you?',
     options: [
-      'SKC is used at automated stations, NSC is used at staffed stations with human observers',
-      'SKC means cloud below 5,000 ft only, NSC means no cloud at all altitudes',
-      'SKC and NSC are identical, both indicate completely clear skies',
-      'SKC means sky clear (no cloud), NSC means no significant cloud (no cloud below 5,000 ft or MSA and no CB or TCU)',
+      'Cloud exists somewhere, but none below 5,000 ft or the MSA and no CB or TCU',
+      'The sky is completely clear of all cloud',
+      'The cloud sensor has nothing to report',
+      'Cloud cover is between scattered and broken',
     ],
-    correct: 3,
-    explanation: 'SKC = Sky Clear — no cloud detected at any level (used at automated stations). NSC = Nil Significant Cloud — no cloud below 5,000 ft AAL, no CB and no TCU. NSC is used at manual stations; cloud may exist above 5,000 ft but it is not considered operationally significant for the METAR.',
+    correct: 0,
+    explanation: 'SKC means a totally clear sky. NSC, no significant cloud, means cloud is present but none of it sits below 5,000 ft or the highest minimum sector altitude and there is no CB or TCU. High cirrus over an otherwise clear field is reported NSC, a meaningful distinction when you are picturing the sky.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -5328,7 +5328,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "wake turbulence" and when is it most hazardous?',
+    question: 'When is "wake turbulence" most hazardous?',
     options: [
       'Wake turbulence dissipates within 30 seconds, the hazard is only to aircraft immediately behind the generating aircraft',
       'Counter-rotating wing-tip vortices generated by any aircraft producing lift',
@@ -5345,7 +5345,7 @@ export const cmetQuestions: {
       'Dew point is used only for fog forecasting, not for in-flight cloud base estimates',
       'The dew point represents the LCL directly, cloud base equals the dew point temperature in Celsius',
       'Dew point has no role in cloud base estimation, only the temperature at the LCL matters',
-      'The surface dew point, combined with the surface temperature, allows estimation of cloud base using the formula: base ≈ (T − Td) × 400 ft',
+      'The surface dew point, combined with the surface temperature, allows estimation of cloud base using the formula: base ≈ × 400 ft',
     ],
     correct: 3,
     explanation: 'The unsaturated lapse rate (3°C/1,000 ft) is much greater than the dew point lapse rate (~0.5°C/1,000 ft). Rising unsaturated air sees its temperature and dew point converge at approximately 2.5°C per 1,000 ft rise = 400 ft per degree of spread. So cloud base ≈ (T − Td) × 400 ft.',
@@ -5356,7 +5356,7 @@ export const cmetQuestions: {
     options: [
       'Obscuration is never reported in METARs, pilots infer it from the weather groups',
       'Obscuration codes are used only at tropical stations, temperate stations report OVC instead',
-      'Obscuration (///Xm) is reported when the sky is hidden by surface-based phenomena (fog, dust, smoke, precipitation) and normal',
+      'Obscuration is reported when the sky is hidden by surface-based phenomena and normal',
       'Obscuration is reported when the sky is overcast, identical to OVC',
     ],
     correct: 2,
@@ -5366,7 +5366,7 @@ export const cmetQuestions: {
   {
     question: 'What is the difference between QNH and QFE, and when would a pilot use each setting?',
     options: [
-      'QNH and QFE are the same pressure, they differ only in units (hPa vs inHg)',
+      'QNH and QFE are the same pressure setting, differing only in the units used to express them',
       'QFE is the standard pressure 1013.25 hPa used above the transition altitude',
       'QNH is set to give MSL altitude on the altimeter, used for enroute flight and IFR',
       'QNH is only used below 3,000 ft and QFE above 3,000 ft in Australian operations',
@@ -5388,7 +5388,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a cold front and what weather sequence does a pilot typically experience passing through one?',
+    question: 'Flying from north to south through a cold front in southern Australia, what sequence of weather should you expect?',
     options: [
       'The boundary between a warm air mass and a cold air mass where cold air is advancing',
       'A stationary boundary between air masses, associated with prolonged cloud and drizzle',
@@ -5415,7 +5415,7 @@ export const cmetQuestions: {
     question: 'What is QNH and how does it differ from QFE?',
     options: [
       'QNH is used below the transition altitude, QFE is used above the transition altitude',
-      'QNH and QFE are the same pressure expressed in different units, QNH in hPa, QFE in inHg',
+      'The same setting expressed in different units, QNH in whole hectopascals and QFE in tenths',
       'QNH is the pressure at the aerodrome, QFE is the standard pressure 1013.25 hPa used above transition altitude',
       'QNH is the altimeter sub-scale setting that causes the altimeter to read altitude above mean sea level',
     ],
@@ -5424,16 +5424,16 @@ export const cmetQuestions: {
     reference: 'AIP ENR 1.7',
   },
   {
-    question: 'What is "thermal soaring" weather and what cumulus cloud development indicates good soaring conditions?',
+    question: 'Your destination METAR includes "RETS". You arrive in fifteen minutes. What should you anticipate?',
     options: [
-      'Cumulus clouds with vertical extent of 2,000–5,000 ft, moderate instability, ELR between SALR and DALR',
-      'Cumulonimbus clouds, ideal for soaring because of the extreme lift within the updrafts',
-      'Overcast stratocumulus, good soaring because it reflects radiation back down',
-      'Clear skies (no cumulus), best soaring because thermals do not trigger convective showers',
+      'A thunderstorm is occurring on the field right now and arrivals are suspended',
+      'A thunderstorm occurred within the last hour but is not current, expect residual CB, shifting wind and possible re-development',
+      'Thunderstorms are forecast to develop at the field within the next hour or so',
+      'The runway has been closed while a full storm-damage inspection is carried out',
     ],
-    correct: 0,
-    explanation: 'Good thermal soaring requires moderate conditional instability — thermals reaching the LCL and forming cumulus clouds but not reaching the level of free convection for uncontrolled development. Well-spaced cumulus with moderate vertical extent (2,000–4,000 ft) indicates good thermal strength without overdevelopment to CB.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.8',
+    correct: 1,
+    explanation: 'RE codes report recent weather, observed since the last report but not at observation time, so RETS means a thunderstorm has just passed. The atmosphere remains primed: expect leftover CB cells nearby, gusty shifting outflow winds, a wet runway and the real chance another cell fires. Treat the arrival as a storm arrival until proven otherwise.',
+    reference: 'AIP GEN 3.5',
   },
   {
     question: 'What does the group "RETS" in a METAR indicate?',
@@ -5448,7 +5448,7 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "wind veer on approach" and how does it affect landing?',
+    question: 'How does "wind veer on approach" affect landing?',
     options: [
       'Wind veer on approach always benefits the landing, a veering wind improves the headwind component in the SH',
       'A wind that veers (clockwise shift) on approach in the SH, indicates cold air advection that improves visibility',
@@ -5460,15 +5460,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a PIREP (Pilot Report) and what is its significance for weather forecasting?',
+    question: 'Your briefing includes an AIREP: "YMML-YSCB FL085 MOD TURB". How should this shape your flight at 8,500 ft on that route?',
     options: [
-      'A report issued by ATC describing weather conditions along the route based on radar data',
-      'A post-flight weather report submitted by all pilots after completing an IFR flight',
-      'An in-flight report from a pilot describing actual meteorological conditions',
-      'A pre-departure weather briefing that pilots must obtain before IFR flights',
+      'As a forecast product that remains valid for the next six hours of flight',
+      'As irrelevant to your flight, since AIREPs are processed by forecasters only',
+      'As current real-world evidence of moderate turbulence at your level, consider another level and secure the cabin',
+      'As applying only to the aircraft type that submitted the report',
     ],
     correct: 2,
-    explanation: 'PIREPs are actual observations from pilots in flight — providing real-time data on turbulence, icing, cloud tops, and other phenomena. They complement model forecasts and radar data, and are particularly valuable for confirming or adjusting forecasts of turbulence and icing.',
+    explanation: 'An AIREP is an actual in-flight observation, the freshest truth available about en-route conditions. Moderate turbulence reported at FL085 on your track is a strong cue to plan a different level, slow toward turbulence penetration speed if you do encounter it, and warn passengers. Turbulence intensity is subjective by aircraft size, but the warning stands.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -5476,7 +5476,7 @@ export const cmetQuestions: {
     options: [
       'Valley fog is identical to radiation fog, it only affects the aerodrome directly and can be seen on the METAR',
       'Valley fog only forms over rivers and lakes, aerodromes on elevated terrain are unaffected',
-      'Valley fog forms when cold dense air drains down slopes at night and pools in low-lying valleys, leaving elevated aerodromes clear while valleys are obscured',
+      'Cold air drains downslope at night and pools as fog in the valleys, leaving elevated aerodromes clear while the valleys are obscured',
       'Valley fog disperses immediately at sunrise, no planning consideration is needed for daytime departures',
     ],
     correct: 2,
@@ -5500,7 +5500,7 @@ export const cmetQuestions: {
     options: [
       'Altostratus, indicates steady rain is already falling at higher altitudes',
       'Cirrus, associated with jet stream activity at high altitude',
-      'Altocumulus in a wave pattern (altocumulus undulatus) or rippled patches',
+      'Altocumulus in a wave pattern or rippled patches',
       'Stratocumulus, associated with persistent cloud and drizzle',
     ],
     correct: 2,
@@ -5508,7 +5508,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.4',
   },
   {
-    question: 'What is a squall line and where does the most intense weather typically occur?',
+    question: 'Where does the most intense weather typically occur in a squall line?',
     options: [
       'A line of fog banks that form at the boundary between two air masses',
       'A line of thunderstorms that forms along a cold front or ahead of it',
@@ -5546,7 +5546,7 @@ export const cmetQuestions: {
   {
     question: 'What is a "space weather" event and how can it affect aviation operations?',
     options: [
-      'Solar events (solar flares, coronal mass ejections) that produce geomagnetic storms',
+      'Solar events that produce geomagnetic storms',
       'Space weather affects only polar routes above 78°N or 78°S, Australian aviation is unaffected',
       'Space weather only affects satellites, no effect on aircraft below the ionosphere',
       'Severe weather associated with satellite-tracked weather systems, not different from standard weather',
@@ -5556,27 +5556,27 @@ export const cmetQuestions: {
     reference: 'Bureau of Meteorology',
   },
   {
-    question: 'What is the final pre-flight weather check and what sources should a CPL pilot consult before an IFR flight?',
+    question: 'You briefed at 0600 for an 0800 departure, but maintenance delays you to 1200. What must you do about weather?',
     options: [
-      'A final check of the latest METAR or SPECI, any TAF amendments, current SIGMETs and the radar picture immediately before departure',
-      'The final check is only needed for flights over 500 NM, short flights do not require pre-flight weather assessment',
-      'Final weather check is done by ATC at start-up, the pilot does not need independent weather assessment',
-      'The final check is only the destination TAF, no other sources are needed immediately before flight',
+      'Depart and update from the ATIS en route',
+      'Nothing, a briefing is valid for 24 hours',
+      'Add ten per cent fuel to cover forecast drift',
+      'Obtain a fresh briefing, your forecasts may have been amended and new SIGMETs or SPECIs issued',
     ],
-    correct: 0,
-    explanation: 'Before an IFR flight, the final pre-flight weather check should refresh all key products: current METARs and ATIS, latest TAFs (check for AMD), new SIGMETs/AIRMETs, current radar (any surprise convective development?), satellite imagery, PIREPs from recently completed flights, and QNH for setting altimeters. This confirms the earlier briefing remains valid.',
+    correct: 3,
+    explanation: 'A four-hour delay can span TAF amendments, new GAF issues, SIGMETs and a changed synoptic picture. The original briefing describes a flight that no longer exists. A quick NAIPS re-brief or Flightwatch check restores currency and satisfies the obligation to plan on the latest forecast information.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What does "CAVOK" mean in a METAR or TAF?',
+    question: 'The METAR cloud reads "FEW010 SCT025 BKN040 OVC100". For approach planning, which layer is the ceiling?',
     options: [
-      'Cloud ceiling Above VFR OK, used when cloud ceiling is above the VFR minimum of 1,000 ft',
-      'Clear skies and visibility OK, used only when the sky is completely clear with no cloud at any level',
-      'Cloud And Visibility OK, meaning visibility at least 10 km, no cloud below 5,000 ft or MSA whichever is higher, no CB or TCU, and no significant weather',
-      'Ceiling And Visibility OK, used when no cloud below 3,000 ft and visibility is at least 5 km across the aerodrome',
+      'The broken layer at 4,000 ft, the lowest broken or overcast layer',
+      'The few at 1,000 ft, the lowest cloud reported',
+      'The overcast at 10,000 ft, the highest solid layer',
+      'The scattered at 2,500 ft, the first layer above circuit height',
     ],
-    correct: 2,
-    explanation: 'CAVOK is used when all three conditions are met: (1) visibility ≥ 10 km, (2) no cloud below 5,000 ft AAL or below the minimum sector altitude (whichever is higher) and no cumulonimbus or towering cumulus, and (3) no significant weather (no precipitation, thunderstorm, shallow fog, or low drifting snow).',
+    correct: 0,
+    explanation: 'The ceiling is the lowest layer reported as broken or overcast, here BKN040. FEW and SCT layers cover half the sky or less and do not constitute a ceiling, though they still matter for visual manoeuvring. Reading multi-layer groups quickly is a staple of exam and real-world planning alike.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -5592,9 +5592,9 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the "roaring forties" and why are they significant for aviation?',
+    question: 'Why are the "roaring forties" significant for aviation?',
     options: [
-      'The latitude band 40-50°S with persistent strong westerlies, frequent depressions, and severe conditions relevant to trans-Tasman and oceanic routes',
+      'The 40 to 50°S band of persistent strong westerlies and frequent depressions, affecting trans-Tasman and oceanic routes',
       'A zone of tropical cyclone activity off northwestern Australia, restricted to the 40-50 degree longitude band',
       'The roaring forties refers to wind speeds, winds above 40 kt are classified as "roaring" in aviation',
       'The roaring forties only affect shipping, commercial aviation operates above the weather systems in this zone',
@@ -5640,15 +5640,15 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.7',
   },
   {
-    question: 'What is "fog patch" (MIFG) and how is it reported in a METAR?',
+    question: 'A dawn METAR shows "9999 MIFG". Can you depart VFR, and what is the catch?',
     options: [
-      'MIFG = shallow fog, patches not deeper than 2 metres at the surface, reported as "MIFG" in the weather group',
-      'MIFG = mixed fog, a combination of radiation and advection fog',
-      'MIFG = migrating fog, fog moving along the coast',
-      'MIFG = moderate intensity fog, used when visibility is 500–999 m',
+      'No, MIFG means the aerodrome is completely fog-bound and closed until further notice',
+      'Probably yes, MIFG is shallow fog below about two metres, but it can thicken quickly and slant visibility on the roll may suffer',
+      'Yes, and MIFG only ever forms over open water so it can never affect the runway',
+      'No, MIFG indicates freezing fog already lying on the runway and taxiway surfaces',
     ],
-    correct: 0,
-    explanation: '"MIFG" = shallow fog (Mist In Fog) — fog that does not exceed 2 metres depth above the surface. It appears as a thin layer of fog near the ground. It is distinguishable from ordinary fog in that it does not extend to normal eye level. Reported in the weather group of a METAR.',
+    correct: 1,
+    explanation: 'MIFG is shallow fog, a layer less than about two metres deep, with visibility above it of 10 km here. Eye-level visibility is legal, but looking down the runway through the layer can be worse than the report suggests, and shallow fog often deepens as the sun stirs the inversion. Depart promptly or expect a wait.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -5664,11 +5664,11 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is an "air mass" and how are air masses classified?',
+    question: 'How are air masses classified?',
     options: [
       'Air masses are classified by altitude only, low, middle, and upper air masses',
       'Air masses only exist at high altitudes, surface observations reflect a mixture of all air mass types',
-      'A large body of air with approximately uniform horizontal properties (temperature and humidity) acquired from its source region',
+      'A large body of air with approximately uniform horizontal properties acquired from its source region',
       'Any large volume of air, classified by its temperature only',
     ],
     correct: 2,
@@ -5678,7 +5678,7 @@ export const cmetQuestions: {
   {
     question: 'What does standard pressure (1013.25 hPa / STD) mean as an altimeter setting and when is it used?',
     options: [
-      'Standard pressure (STD) is set above the transition altitude/level, all aircraft use the same reference pressure ensuring consistent separation in the flight levels',
+      'Standard pressure 1013 is set above the transition layer so all aircraft share one reference for flight-level separation',
       'Standard pressure is used below the transition altitude to ensure terrain clearance',
       'Standard pressure is used only by military aircraft, civil aviation always uses QNH',
       'Standard pressure is set when an aircraft is on the ground at an aerodrome with sea-level pressure of exactly 1013.25 hPa',
@@ -5688,19 +5688,19 @@ export const cmetQuestions: {
     reference: 'AIP ENR 1.7',
   },
   {
-    question: 'What is a "SIGMET for tropical cyclone" and what information does it contain?',
+    question: 'A SIGMET reads "TC GRETEL PSN S18 E148 MOV SW 08KT ... SFC WSPD MAX 75KT WI 150NM OF CENTRE". What is the minimum sensible plan?',
     options: [
-      'A SIGMET issued when a tropical cyclone poses a hazard to aircraft',
-      'Tropical cyclone SIGMETs are only valid within 100 NM of the cyclone centre',
-      'A SIGMET issued only when a tropical cyclone crosses the Australian coast',
-      'A tropical cyclone SIGMET is equivalent to a Category 1 weather alert, only issued for Cat 3+',
+      'Operate normally beyond 50 NM of the eye',
+      'Cross the centre at height where winds are lighter',
+      'Remain well outside the 150 NM radius and replan around the forecast track',
+      'Wait two hours, TC SIGMETs lapse quickly',
     ],
-    correct: 0,
-    explanation: 'Tropical cyclone SIGMETs are issued by the FIR in which the cyclone exists. They contain: cyclone name, current position, maximum sustained wind speed, movement, and forecast track. They are valid for up to 6 hours. Pilots operating in or transiting areas near tropical cyclones use these to plan avoidance routes.',
+    correct: 2,
+    explanation: 'The SIGMET gives position, movement and the radius of destructive winds, 75 kt within 150 NM. Light aircraft have no business anywhere inside that circle, and the system is moving, so plan against its forecast track, not its current spot. TC SIGMETs run up to six hours validity and are continually renewed while the threat exists.',
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a "cut-off low" and what weather does it produce?',
+    question: 'What weather does a "cut-off low" produce?',
     options: [
       'A low formed by a cold front that has stalled, identical to a stationary front',
       'A low-pressure system that has been cut off from the main westerly flow and may stall over a region for days',
@@ -5724,11 +5724,11 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is a sea breeze convergence zone and what weather can develop along it?',
+    question: 'What weather can develop along a sea breeze convergence zone?',
     options: [
       'A sea breeze convergence zone only produces fog, no convective development occurs along it',
       'The sea breeze front advances inland to about 200 km before dissipating without producing any significant weather',
-      'The advancing boundary of cool maritime air meeting the hotter land air mass where lifting can trigger convective showers and thunderstorms in summer',
+      'The advancing edge of cool sea air meeting hot land air, where lifting can fire showers and storms in summer',
       'Sea breeze convergence zones are only found in tropical Australia, temperate regions do not experience this phenomenon',
     ],
     correct: 2,
@@ -5750,7 +5750,7 @@ export const cmetQuestions: {
   {
     question: 'What effect does a blocked static port have on aircraft instruments?',
     options: [
-      'A blocked static port affects the altimeter (reads last altitude when blocked), VSI (reads zero), and ASI (reads incorrectly',
+      'A blocked static port affects the altimeter, VSI, and ASI (reads incorrectly',
       'A blocked static port only causes a 5% error in all pressure instruments, not significant for navigation',
       'A blocked static port affects only the altimeter, ASI and VSI are unaffected',
       'A blocked static port causes all instruments to fail, no useful information remains',
@@ -5764,7 +5764,7 @@ export const cmetQuestions: {
     options: [
       'This notation is not valid, TCU and OVC cannot appear in the same group',
       'Overcast cloud layer of towering cumulus at an unknown height, the "///" indicates the height could not be measured',
-      'Overcast towering cumulus, the base height is not measurable or not known, typically because the cloud base is obscured or ground contact is established',
+      'Overcast towering cumulus with a base that cannot be measured, typically because the cloud base is obscured',
       'Overcast cloud at 3,000 ft identified as towering cumulus, the 3 slashes represent 3 thousand feet',
     ],
     correct: 1,
@@ -5772,11 +5772,11 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the jet stream and how does it influence aviation operations?',
+    question: 'How does the jet stream influence aviation operations?',
     options: [
       'The jet stream only affects military high-altitude aircraft, below FL300 it has no operational significance',
       'A band of high-speed winds at the surface, only relevant to aerodrome operations',
-      'A concentrated band of high-speed winds (typically > 60 kt) at the tropopause level',
+      'A concentrated band of high-speed winds of typically more than 60 kt at the tropopause level',
       'A strong low-level wind that develops only in tropical regions',
     ],
     correct: 2,
@@ -5784,7 +5784,7 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.8',
   },
   {
-    question: 'What is the Inter-Tropical Convergence Zone (ITCZ) and how does it affect northern Australia?',
+    question: 'How does the Inter-Tropical Convergence Zone (ITCZ) affect northern Australia?',
     options: [
       'A temperature inversion at the tropopause that limits convection to the lower troposphere',
       'A belt of high pressure at the equator that suppresses convection in tropical regions',
@@ -5796,31 +5796,31 @@ export const cmetQuestions: {
     reference: 'Part 61 MOS Sch 3, CMTC 2.11',
   },
   {
-    question: 'What is the "special VFR" (SVFR) clearance in Australia and under what conditions is it available?',
+    question: 'At a Class D aerodrome the METAR is "4000 BR OVC012". You are VFR. What is your realistic option?',
     options: [
-      'SVFR allows VFR pilots to fly in IMC, it provides the same clearance as an IFR clearance',
-      'SVFR is available in all airspace when a pilot holds a CPL, no special authorisation required',
-      'SVFR allows flight within a control zone in conditions below normal VMC minimums',
-      'SVFR is only available to RPT airlines at major aerodromes, GA pilots cannot request it',
+      'Orbit outside the zone until the METAR improves to 9999',
+      'Continue VFR, 4,000 m is comfortably above the VFR minimum',
+      'Declare yourself IFR and enter without a clearance',
+      'Request a Special VFR clearance, conditions are below VMC but SVFR may permit entry clear of cloud',
     ],
-    correct: 2,
-    explanation: 'SVFR clearances allow flight within a control zone when conditions are below normal VMC limits but not full IMC. Requirements: clear of cloud, flight visibility ≥ 1,500 m (during day), ATC must issue the clearance. Not available when IMC exists (VV000 or similar), when IFR traffic would be conflicted, or at night without specific authorisation.',
+    correct: 3,
+    explanation: 'VMC in Class D requires 5 km visibility and the cloud criteria; 4,000 m in mist under a 1,200 ft overcast is below that. Special VFR, available by request in a control zone, can authorise flight clear of cloud with reduced visibility minima when traffic permits. Whether it is wise depends on the trend, but it is the lawful path in.',
     reference: 'AIP ENR 1.2',
   },
   {
-    question: 'What is the geostrophic wind and when does it apply?',
+    question: 'The surface wind at an inland aerodrome is 360° at 10 kt. What should you expect the wind to be at 2,000 ft?',
     options: [
-      'Wind that flows from high pressure to low pressure along the pressure gradient',
-      'Wind in the jet stream that results from temperature contrast between air masses',
-      'Wind above approximately 2,000–3,000 ft where the pressure gradient force and Coriolis effect are in balance',
-      'Wind at the surface that is balanced between pressure gradient force and friction',
+      'Backed and stronger, something like 330° at 20 kt',
+      'Veered and weaker, around 030° at 5 kt',
+      'Identical, friction has no effect below 3,000 ft',
+      'Reversed, about 180° at 10 kt',
     ],
-    correct: 2,
-    explanation: 'The geostrophic wind occurs above the surface friction layer (approximately 2,000–3,000 ft AGL) where the pressure gradient force and Coriolis force are in balance. The wind blows parallel to the isobars — in the SH with low pressure on the right (left in NH).',
+    correct: 0,
+    explanation: 'Friction slows the surface wind and turns it toward lower pressure, so in the Southern Hemisphere the surface wind is veered relative to the flow above the friction layer. Climbing out of that layer the wind therefore backs and strengthens, commonly by about 30 degrees and roughly double the speed by 2,000 ft over land. Allow for it in drift and circuit planning.',
     reference: 'Part 61 MOS Sch 3, CMTC 2.6',
   },
   {
-    question: 'What is "sea-surface temperature" (SST) and why is it important for aviation weather forecasting in Australia?',
+    question: 'Why is "sea-surface temperature" (SST) important for aviation weather forecasting in Australia?',
     options: [
       'SST shapes tropical cyclone intensity and track, the moisture of maritime air masses, and sea breeze and coastal cloud development',
       'SST only affects aviation in oceanic airspace, continental operations are unaffected',
@@ -5856,16 +5856,16 @@ export const cmetQuestions: {
     reference: 'CASA Carburettor Icing Probability Chart',
   },
   {
-    question: 'What is "IFR meteorological conditions" (IMC) and what does it mean operationally?',
+    question: 'Day VFR at 4,500 ft, the visibility ahead falls to 4 km in haze. Are you still in VMC?',
     options: [
-      'IMC only applies above the transition altitude, below it, all conditions are VMC',
-      'IMC exists when visibility is below 1 km regardless of cloud',
-      'IMC means any cloud is present, clear air is always VMC',
-      'IMC is meteorological conditions below visual meteorological conditions (VMC) minima',
+      'Yes, 4 km is acceptable below 5,000 ft',
+      'No, below 10,000 ft VMC requires at least 5 km flight visibility',
+      'Yes, provided you remain clear of cloud',
+      'Only if you slow below 140 kt',
     ],
-    correct: 3,
-    explanation: 'IMC exists when conditions fall below VMC minima — typically visibility less than 5 km or cloud closer than 1,000 ft below/1,500 m horizontal (Class G above 3,000 ft). Flying into IMC without an IFR rating and IFR equipment is illegal and extremely dangerous. CPL holders must hold an instrument rating for IFR flight.',
-    reference: 'CASR Part 91',
+    correct: 1,
+    explanation: 'Below 10,000 ft the VMC minimum is 5 km flight visibility plus the cloud separation distances. At 4 km in haze you are in IMC regardless of cloud, and continued VFR flight is both illegal and the classic precursor to disorientation accidents. Turn toward better conditions, descend if appropriate options exist, or divert.',
+    reference: 'AIP ENR 1.2',
   },
   {
     question: 'Under what conditions is a pilot required to submit an AIREP (air report) after encountering significant meteorological phenomena?',
@@ -5873,7 +5873,7 @@ export const cmetQuestions: {
       'Only airline pilots are required to submit AIREPs, general aviation pilots have no obligation',
       'AIREPs are never mandatory, they are always voluntary and at pilot discretion',
       'AIREPs are only required when flying on designated airways above FL180, general aviation below this altitude is not required to report',
-      'A pilot who encounters severe turbulence, severe icing, wind shear, or CB is required to submit an AIREP to inform ATC and meteorological services',
+      'A pilot meeting severe turbulence, severe icing, wind shear or CB must submit an AIREP to ATC and the met service',
     ],
     correct: 3,
     explanation: 'Under CASR and ICAO requirements, pilots who encounter hazardous meteorological conditions — severe turbulence, severe icing, significant wind shear, CB, or volcanic ash — should submit an AIREP. These reports are the only real-time source of turbulence and icing data and help protect other aircraft on the same route. The AIREP is transmitted to ATC who relay it and pass it to met services for use in updating forecasts and SIGMETs.',
@@ -5894,7 +5894,7 @@ export const cmetQuestions: {
   {
     question: 'What is "diurnal variation" of pressure and temperature and how does it affect operations?',
     options: [
-      'The daily (24-hour) cycle of pressure and temperature changes driven by solar heating and cooling',
+      'The daily 24-hour cycle of pressure and temperature changes driven by solar heating and cooling',
       'Variation due to latitude changes, most significant for long north-south routes',
       'Seasonal variation in pressure and temperature, most significant for winter operations',
       'Variation caused by passing weather systems, not a regular daily pattern',
@@ -5916,27 +5916,27 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is a "snow shower" vs "continuous snow" in terms of the cloud type producing them?',
+    question: 'A winter Hobart METAR shows "03/01 -SNRA". What is the operational message?',
     options: [
-      'Snow showers only occur above FL180, continuous snow occurs near the surface only',
-      'They are identical, the distinction is only based on accumulation rate, not cloud type',
-      'Snow showers are convective, from cumulus or cumulonimbus, continuous snow is stratiform, from nimbostratus or altostratus',
-      'Snow showers fall from cumulonimbus, continuous snow falls from stratocumulus',
+      'A coding error, snow cannot mix with rain',
+      'Snow pellets with no icing implication',
+      'Light snow and rain near zero degrees, expect airframe icing in flight and slush on the ground',
+      'Conditions only relevant to high-altitude jets',
     ],
     correct: 2,
-    explanation: 'Snow showers are convective (from Cu or CB) — intense, brief, with large flakes and gusty winds. Continuous snow is stratiform (from Ns or As) — steady, prolonged, with smaller flakes, associated with frontal systems. Both create icing risk for aircraft at or above the freezing level.',
-    reference: 'Part 61 MOS Sch 3, CMTC 2.4',
+    explanation: 'Mixed light snow and rain with a 3 degree surface temperature puts the freezing level barely above the field: any flight in cloud or precipitation will be at icing temperatures almost immediately after take-off. On the ground expect slush, poor braking and the need to remove any frozen contamination before departure.',
+    reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is "icing forecast" and where is this information published for Australian operations?',
+    question: 'Where are icing forecasts published for Australian operations?',
     options: [
       'Icing forecasts are only available for oceanic routes, with continental operations relying on pilot reports alone',
       'Icing information is only found in the METAR for the destination aerodrome',
-      'Icing forecasts appear in the GAF (icing levels with the associated cloud), on GPWT and SIGWX charts, and SIGMETs are issued when severe icing is expected',
+      'Icing appears in the GAF with the associated cloud, on GPWT and SIGWX charts, and SIGMETs are issued for severe icing',
       'Icing forecasts are only issued by pilot report, no official product exists',
     ],
     correct: 2,
-    explanation: 'Icing forecast information is distributed across multiple products: SIGWX charts show moderate/severe icing areas; GAF and GAMET describe cloud layers with icing potential; SIGMETs cover severe icing; and upper wind/temperature charts allow derivation of the freezing level at which icing risk begins.',
+    explanation: 'Icing forecast information is distributed across multiple products: SIGWX charts show moderate/severe icing areas; the GAF describes cloud layers with icing potential; SIGMETs cover severe icing; and upper wind/temperature charts allow derivation of the freezing level at which icing risk begins.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -6000,15 +6000,15 @@ export const cmetQuestions: {
     reference: 'AIP GEN 3.5',
   },
   {
-    question: 'What is the difference between a GAF and a SIGMET, and when would each be used in pre-flight planning?',
+    question: 'The GAF shows "ISOL TS" for your area. An hour later a SIGMET for "SQL TS" is issued. Which now drives your avoidance planning?',
     options: [
-      'GAF and SIGMET are identical products, issued by different offices for different regions of Australia',
-      'SIGMET is a routine scheduled product, while GAF is an unscheduled advisory issued only when hazards exceed normal levels',
-      'A GAF is a routine scheduled area weather forecast used for flight planning, a SIGMET is an unscheduled advisory for specific hazardous phenomena such as severe turbulence or volcanic ash',
-      'A GAF covers international routes only and is issued by ICAO, while a SIGMET covers only domestic routes within Australian Flight Information Regions',
+      'Whichever was issued by the more senior forecaster',
+      'The GAF, area forecasts always outrank advisories',
+      'Neither, METARs are the only observed truth',
+      'The SIGMET, it is the hazard alert for severe organised storms and supersedes the routine picture',
     ],
-    correct: 2,
-    explanation: 'The GAF provides routine scheduled area weather forecasts for flight planning. A SIGMET (Significant Meteorological Information) is an unscheduled advisory issued when specific hazardous phenomena are observed or expected — severe turbulence, severe icing, tropical cyclones, or volcanic ash. Both should be checked before flight: GAF for general conditions, SIGMETs for specific hazards.',
+    correct: 3,
+    explanation: 'The GAF gave the routine expectation, isolated storms. The SIGMET upgrades that to a squall line, organised severe convection hazardous to all aircraft, and as the dedicated warning product it now defines the operational hazard. Replan to remain clear of the SIGMET area for its validity, and expect the GAF to be amended to match.',
     reference: 'AIP GEN 3.5',
   },
 ];
