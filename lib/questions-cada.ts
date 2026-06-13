@@ -136,7 +136,7 @@ export const cadaQuestions: {
       'Increases, heavier aircraft must fly at a higher speed to maintain best L/D AoA',
     ],
     correct: 3,
-    explanation: 'Minimum drag speed (best glide speed) changes with weight: Vmd ∝ √W. A heavier aircraft must fly faster to maintain the same AoA (same CL). The best L/D ratio is the same, but it occurs at a higher airspeed. This is why heavier aircraft have higher best glide speeds.',
+    explanation: 'Minimum drag speed (best glide speed) changes with weight: Vmd is proportional to √W. A heavier aircraft must fly faster to maintain the same AoA (same CL). The best L/D ratio is the same, but it occurs at a higher airspeed. This is why heavier aircraft have higher best glide speeds.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -304,7 +304,7 @@ export const cadaQuestions: {
       'Ensure the control surface remains in the neutral (streamlined) position when no force is applied',
     ],
     correct: 0,
-    explanation: 'Mass balancing adds weight (a balance weight) forward of the hinge line. This moves the surface\'s CG to or ahead of the hinge, preventing the surface from lagging behind control inputs at high speed, preventing aeroelastic flutter.',
+    explanation: 'Mass balancing adds weight (a balance weight) forward of the hinge line. This moves the surface\'s CG to or ahead of the hinge, preventing the surface from lagging behind control inputs at high speed, preventing flutter.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -976,7 +976,7 @@ export const cadaQuestions: {
       'A destructive self-sustaining oscillation of a structure, driven by interacting aerodynamic, inertial and elastic forces',
     ],
     correct: 3,
-    explanation: 'Flutter is an aeroelastic phenomenon, a structural oscillation where aerodynamic forces continuously add energy to the oscillation each cycle. Left unchecked, it is divergent and can rapidly destroy the structure. It is prevented by mass balancing, structural stiffness, and not exceeding Vne.',
+    explanation: 'Flutter is a structural oscillation in which the airflow feeds energy into the vibration on each cycle. Left unchecked it grows quickly and can destroy the structure. It is prevented by mass balancing, structural stiffness, and not exceeding Vne.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -1456,7 +1456,7 @@ export const cadaQuestions: {
       'Decreases as aspect ratio decreases',
     ],
     correct: 1,
-    explanation: 'CDi = CL²/(π e AR). Since CDi ∝ CL², doubling CL (doubling AoA approximately) quadruples induced drag. This is why induced drag is enormous near the stall and small at high speed, and why steep turns generate so much additional drag (elevated CL required for the elevated load factor).',
+    explanation: 'CDi = CL²/(π e AR). Since CDi is proportional to CL², doubling CL (doubling AoA approximately) quadruples induced drag. This is why induced drag is enormous near the stall and small at high speed, and why steep turns generate so much additional drag (elevated CL required for the elevated load factor).',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -1864,7 +1864,7 @@ export const cadaQuestions: {
       'Altitude (pressure altitude)',
     ],
     correct: 3,
-    explanation: 'IAS stall speed is not affected by altitude, it remains constant at all altitudes (same IAS). It IS affected by: weight (Vs ∝ √W), bank angle (Vs ∝ √n where n increases with bank), and wing loading. Altitude changes TAS at the stall but not IAS stall speed.',
+    explanation: 'IAS stall speed is not affected by altitude, it remains constant at all altitudes (same IAS). It IS affected by: weight (Vs is proportional to √W), bank angle (Vs is proportional to √n where n increases with bank), and wing loading. Altitude changes TAS at the stall but not IAS stall speed.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -2368,7 +2368,7 @@ export const cadaQuestions: {
       'Total drag increases by a factor of 4 at all speeds',
     ],
     correct: 1,
-    explanation: 'Parasite drag ∝ V². Doubling speed quadruples parasite drag. Induced drag ∝ 1/V², doubling speed reduces induced drag by a factor of 4. Total drag at double speed depends on the mix, at high speed, parasite dominates and total drag increases significantly.',
+    explanation: 'Parasite drag is proportional to V². Doubling speed quadruples parasite drag. Induced drag is proportional to 1/V², doubling speed reduces induced drag by a factor of 4. Total drag at double speed depends on the mix, at high speed, parasite dominates and total drag increases significantly.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -2410,13 +2410,13 @@ export const cadaQuestions: {
   {
     question: 'In a head-on collision avoidance manoeuvre, a sudden pull-up generates load factor because:',
     options: [
-      'The inertial reaction to the curved pull-up path adds to weight, producing a load factor greater than 1g',
+      'In the pull-up the wings must support more than the aircraft’s weight, so the load factor rises above 1g',
       'Load factor is only generated in turns, not in pull-up manoeuvres',
       'The engine torque creates a load factor during rapid power changes',
       'The aircraft weight increases during rapid acceleration',
     ],
     correct: 0,
-    explanation: 'Any curved flight path creates centripetal acceleration = V²/r. The inertial reaction is the load factor. In a sudden pull-up at high speed, a small radius generates high centripetal acceleration, high load factor. At speed V and radius r: n = 1 + V²/(rg). This can easily exceed Va limits.',
+    explanation: 'Any curved flight path needs a force toward the inside of the curve. The wings supply it by producing extra lift, and that extra lift is felt as an increased load factor. The tighter and faster the pull-up, the higher the load factor, which can easily exceed the manoeuvring-speed limit.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -2836,7 +2836,7 @@ export const cadaQuestions: {
       'Remain constant, the bank has no effect on airspeed',
     ],
     correct: 2,
-    explanation: 'Entering a turn without adding power: back pressure increases AoA and CL, but also greatly increases induced drag (CDi ∝ CL²). Without additional thrust, drag exceeds thrust, the aircraft decelerates. This is why altitude and airspeed are both maintained in a level turn only by adding power.',
+    explanation: 'Entering a turn without adding power: back pressure increases AoA and CL, but also greatly increases induced drag (CDi is proportional to CL²). Without additional thrust, drag exceeds thrust, the aircraft decelerates. This is why altitude and airspeed are both maintained in a level turn only by adding power.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -2920,7 +2920,7 @@ export const cadaQuestions: {
       'Lighter aircraft have higher stall speeds',
     ],
     correct: 2,
-    explanation: 'Va is the speed at which full deflection produces exactly the limit load factor. At lower weight, the stall occurs at a lower speed (Vs ∝ √W). Full deflection at lower weight reaches the limit G at a lower speed, so Va is lower. Using the higher (MTOW) Va when lightly loaded is not conservative.',
+    explanation: 'Va is the speed at which full deflection produces exactly the limit load factor. At lower weight, the stall occurs at a lower speed (Vs is proportional to √W). Full deflection at lower weight reaches the limit G at a lower speed, so Va is lower. Using the higher (MTOW) Va when lightly loaded is not conservative.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -3548,7 +3548,7 @@ export const cadaQuestions: {
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
-    question: 'The "slipstream effect" from a tractor propeller causes:',
+    question: 'The slipstream effect from the propeller causes:',
     options: [
       'A rotating airflow that strikes the right side of the fin, creating a yaw to the right',
       'A rotating airflow that strikes the left side of the fin, creating a left yaw in most Australian aircraft',
@@ -3568,7 +3568,7 @@ export const cadaQuestions: {
       'At the absolute ceiling the aircraft cannot maintain level flight, but at the service ceiling it has full manoeuvrability',
     ],
     correct: 1,
-    explanation: 'The absolute ceiling is where ROC = 0, it is approached asymptotically and would take an impractically long time to reach. The service ceiling (100 ft/min ROC remaining) is achievable in a reasonable time and represents the practical altitude limit for operations.',
+    explanation: 'The absolute ceiling is where ROC = 0, it is approached only very gradually and would take an impractically long time to reach. The service ceiling (100 ft/min ROC remaining) is achievable in a reasonable time and represents the practical altitude limit for operations.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -3980,7 +3980,7 @@ export const cadaQuestions: {
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
-    question: 'The "slipstream" from a tractor propeller increases the dynamic pressure over which part of the aircraft?',
+    question: 'The propeller slipstream increases the dynamic pressure over which part of the aircraft?',
     options: [
       'The fuselage centreline, inner wing, and tail surfaces within the slipstream tube',
       'Only the tail, the wing is outside the slipstream diameter',
@@ -4204,7 +4204,7 @@ export const cadaQuestions: {
       'The same take-off distance, weight does not affect the required IAS for lift-off',
     ],
     correct: 2,
-    explanation: 'Lower weight, lower stall speed (Vs ∝ √W), lower lift-off IAS, lower lift-off ground speed, shorter take-off roll. Also, excess thrust/power is higher relative to weight, better acceleration. The improvement is real but not linear with weight reduction.',
+    explanation: 'Lower weight, lower stall speed (Vs is proportional to √W), lower lift-off IAS, lower lift-off ground speed, shorter take-off roll. Also, excess thrust/power is higher relative to weight, better acceleration. The improvement is real but not linear with weight reduction.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -4228,7 +4228,7 @@ export const cadaQuestions: {
       'Skin friction drag',
     ],
     correct: 2,
-    explanation: 'Aspect ratio primarily affects induced drag. CDi ∝ CL² / (π × e × AR), where AR is aspect ratio and e is the Oswald efficiency factor. Higher AR reduces induced drag for a given CL. Parasite drag (skin friction, form drag) is relatively unaffected by aspect ratio.',
+    explanation: 'Aspect ratio primarily affects induced drag. CDi is proportional to CL² / (π × e × AR), where AR is aspect ratio and e is the Oswald efficiency factor. Higher AR reduces induced drag for a given CL. Parasite drag (skin friction, form drag) is relatively unaffected by aspect ratio.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -4600,7 +4600,7 @@ export const cadaQuestions: {
       'High induced drag (from high CL required) and low parasite drag',
     ],
     correct: 3,
-    explanation: 'Just above the stall, very low speed means: high AoA, high CL, high induced drag (CDi ∝ CL²). But low speed means low dynamic pressure, low parasite drag. The drag picture is dominated by induced drag. This is the back side of the drag curve.',
+    explanation: 'Just above the stall, very low speed means: high AoA, high CL, high induced drag (CDi is proportional to CL²). But low speed means low dynamic pressure, low parasite drag. The drag picture is dominated by induced drag. This is the back side of the drag curve.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -4708,7 +4708,7 @@ export const cadaQuestions: {
       'A higher stall speed and lower climb rate',
     ],
     correct: 2,
-    explanation: 'Lower weight (full fuel, no payload), lower stall speed (Vs ∝ √W) and more excess power per unit weight, higher rate of climb. The lighter aircraft is below MTOW, both stall performance and climb performance improve.',
+    explanation: 'Lower weight (full fuel, no payload), lower stall speed (Vs is proportional to √W) and more excess power per unit weight, higher rate of climb. The lighter aircraft is below MTOW, both stall performance and climb performance improve.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -4896,7 +4896,7 @@ export const cadaQuestions: {
     options: [
       'The same, propeller efficiency is constant regardless of airspeed',
       'Maximum, propellers are most efficient when the aircraft is stationary',
-      'Lower than in cruise, because the air is given a large velocity change at zero advance ratio',
+      'Lower than in cruise, because at zero forward speed the propeller gives the air a very large velocity change',
       'Zero, propellers cannot produce thrust at zero airspeed',
     ],
     correct: 2,
@@ -4996,7 +4996,7 @@ export const cadaQuestions: {
       'One quarter as much',
     ],
     correct: 3,
-    explanation: 'Induced drag ∝ 1/V² (or ∝ CL²). At double the minimum drag speed: CL is halved (same lift, four times the dynamic pressure). CDi ∝ CL², CDi is (1/2)² = 1/4 of its value at minimum drag speed. Induced drag is one quarter as much at double the speed.',
+    explanation: 'Induced drag is proportional to 1/V² (or is proportional to CL²). At double the minimum drag speed: CL is halved (same lift, four times the dynamic pressure). CDi is proportional to CL², CDi is (1/2)² = 1/4 of its value at minimum drag speed. Induced drag is one quarter as much at double the speed.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -5440,7 +5440,7 @@ export const cadaQuestions: {
       'Quadruples',
     ],
     correct: 3,
-    explanation: 'Parasite drag ∝ V². Doubling speed from 60 to 120 KIAS: drag = k × 120² / k × 60² = 14400/3600 = 4. Parasite drag quadruples. This is why high-speed aircraft require so much more power per knot of speed increase, and why Vne and structural speed limits are so important.',
+    explanation: 'Parasite drag is proportional to V². Doubling speed from 60 to 120 KIAS: drag = k × 120² / k × 60² = 14400/3600 = 4. Parasite drag quadruples. This is why high-speed aircraft require so much more power per knot of speed increase, and why Vne and structural speed limits are so important.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
@@ -5508,7 +5508,7 @@ export const cadaQuestions: {
     options: [
       'Higher AR reduces parasite drag as well as induced drag',
       'Higher AR wings have lower CL at the same AoA',
-      'CDi ∝ 1/AR, doubling AR halves the induced drag coefficient at any given CL',
+      'CDi is proportional to 1/AR, doubling AR halves the induced drag coefficient at any given CL',
       'Lower aspect ratio always gives more induced drag regardless of CL',
     ],
     correct: 2,
@@ -5560,7 +5560,7 @@ export const cadaQuestions: {
       'Increases induced drag, heavier aircraft need more lift, increasing wingtip vortices',
     ],
     correct: 3,
-    explanation: 'Heavier aircraft require more lift at any given speed, which requires a higher angle of attack. Higher angle of attack increases CL and therefore induced drag (CDi ∝ CL²). Parasite drag is unaffected by weight.',
+    explanation: 'Heavier aircraft require more lift at any given speed, which requires a higher angle of attack. Higher angle of attack increases CL and therefore induced drag (CDi is proportional to CL²). Parasite drag is unaffected by weight.',
     reference: 'CPL Aerodynamics, CASA Syllabus',
   },
   {
