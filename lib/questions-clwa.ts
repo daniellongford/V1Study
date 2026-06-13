@@ -62,10 +62,10 @@ export const clwaQuestions: {
   {
     question: 'When starting to taxi in an MBA, what information must a pilot include in the broadcast?',
     options: [
-      'Aircraft callsign only',
-      'The situation, whether IFR',
-      'The fuel state and passenger count',
-      'ATIS code received',
+      'The aircraft callsign and nothing further',
+      'The situation, whether IFR, intended departure and the runway in use',
+      'The fuel state and the number of passengers on board',
+      'The ATIS code and the current QNH',
     ],
     correct: 1,
     explanation: 'Part 91 MOS Table 21.09(1) Item 7: when starting to taxi in an MBA, the broadcast must include the situation and: whether the flight is IFR; and either the planned destination aerodrome, the intended direction of flight, or the nature of operation; and the runway proposed for take-off.',
@@ -92,7 +92,7 @@ export const clwaQuestions: {
       'The temperature is expected to be 4°C with overcast cloud at 1,200 ft',
     ],
     correct: 1,
-    explanation: 'TEMPO indicates temporary variations from the preceding mean forecast. Each occurrence lasts less than 60 minutes and does not cover more than half the TEMPO period. 4000 = visibility 4,000 m; -RA = light rain; BKN012 = broken cloud at 1,200 ft AGL. This may affect alternate planning depending on your ETA.',
+    explanation: 'TEMPO indicates temporary variations from the preceding mean forecast, with each occurrence lasting 30 minutes or more but less than 60 minutes. 4000 = visibility 4,000 m; -RA = light rain; BKN012 = broken cloud at 1,200 ft AGL. This may affect alternate planning depending on your ETA.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -285,7 +285,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'The transition layer is the airspace between the transition altitude (10,000 ft on QNH) and the transition level (the lowest available FL above the transition altitude on 1013.2 hPa). Aircraft do not cruise in the transition layer — they pass through it ascending or descending. This prevents collisions between aircraft operating on different altimeter settings.',
-    reference: 'AIP ENR 4.1',
+    reference: 'AIP ENR 1.7',
   },
   {
     question: 'A powered aircraft and an aircraft being towed are converging. The towing aircraft and its tow are on your right. Who gives way?',
@@ -524,7 +524,7 @@ export const clwaQuestions: {
       'Yes, provided the pilot has assessed it will sublimate during the take-off roll before rotation speed',
     ],
     correct: 2,
-    explanation: 'CASR 91.705 : before beginning a flight, there must be no frost, ice or snow adhering to the aircraft\'s wings, flaps, control surfaces, rotors, propellers, and horizontal or vertical stabilisers. Exception: if take-off is conducted in accordance with AFM procedures for those conditions. (unless the AFM authorises operation in those conditions)',
+    explanation: 'CASR 91.705: before beginning a flight, there must be no frost, ice or snow adhering to the aircraft\'s wings, flaps, control surfaces, rotors, propellers, and horizontal or vertical stabilisers. Exception: if take-off is conducted in accordance with AFM procedures for those conditions.',
     reference: 'CASR 91.705',
   },
   {
@@ -572,7 +572,7 @@ export const clwaQuestions: {
       '243.0 MHz and 406 MHz',
     ],
     correct: 2,
-    explanation: 'Part 91 MOS s.26.49 : an ELT must simultaneously transmit on 121.5 MHz and 406 MHz when activated. The 406 MHz signal is processed by COSPAS-SARSAT for position determination.',
+    explanation: 'Part 91 MOS s.26.49: an ELT must simultaneously transmit on 121.5 MHz and 406 MHz when activated. The 406 MHz signal is processed by COSPAS-SARSAT for position determination.',
     reference: 'Part 91 MOS 2020 s.26.49',
   },
   {
@@ -620,7 +620,7 @@ export const clwaQuestions: {
       'A copy of CASR Part 91 and the aircraft flight manual are the only required documents',
     ],
     correct: 0,
-    explanation: 'CASR 91.110: for VFR flights beyond 50 NM, the pilot must carry applicable AIP information and either the aircraft technical log or maintenance release. applicable AIP information and either the aircraft technical log or maintenance release.',
+    explanation: 'CASR 91.110: for VFR flights beyond 50 NM, the pilot must carry applicable AIP information and either the aircraft technical log or maintenance release.',
     reference: 'CASR 91.110',
   },
   {
@@ -680,7 +680,7 @@ export const clwaQuestions: {
       '1 hour\'s flight time of the planned destination aerodrome',
     ],
     correct: 3,
-    explanation: 'Part 91 MOS s.8.05(2) : for a VFR flight by night, the pilot must nominate a destination alternate that is within 1 hour\'s flight time of the planned destination aerodrome, unless the destination is served by a ground-based radio navigation aid and the aircraft is appropriately equipped and the pilot is competent to use it.',
+    explanation: 'Part 91 MOS s.8.05(2): for a VFR flight by night, the pilot must nominate a destination alternate that is within 1 hour\'s flight time of the planned destination aerodrome, unless the destination is served by a ground-based radio navigation aid and the aircraft is appropriately equipped and the pilot is competent to use it.',
     reference: 'Part 91 MOS 2020 s.8.05(2)',
   },
   {
@@ -764,7 +764,7 @@ export const clwaQuestions: {
       'Class G',
     ],
     correct: 0,
-    explanation: 'AIP ENR 1.4 : Australia does not have Class B airspace. The Australian FIR uses Classes A, C, D, E, and G. The AIP ENR 1.1 specifically notes "The Australian flight information region does not have Class B airspace."',
+    explanation: 'AIP ENR 1.4: Australia does not have Class B airspace. The Australian FIR uses Classes A, C, D, E, and G. The AIP ENR 1.1 specifically notes "The Australian flight information region does not have Class B airspace."',
     reference: 'AIP ENR 1.4',
   },
   {
@@ -885,7 +885,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'In the ICAO standard atmosphere, temperature decreases at 2°C per 1,000 ft (or 6.5°C per 1,000 m) from sea level up to the tropopause at approximately 36,090 ft. Above the tropopause, temperature remains constant at -56.5°C.',
-    reference: 'AIP ENR 4.1 / ICAO standard atmosphere',
+    reference: 'ICAO Standard Atmosphere / ICAO standard atmosphere',
   },
   {
     question: 'You are tracking along the edge of Class C airspace when you notice from your GPS that you are 2 NM inside the boundary. You have not received a clearance. What must you do immediately?',
@@ -928,11 +928,11 @@ export const clwaQuestions: {
     options: [
       'Permanent weather change, applicable for the entire remaining validity period',
       'A 100% certain weather change',
-      'Variations lasting less than 30 minutes each instance, not covering more than half the period',
-      'Variations expected to last 30 minutes or more but less than 60 minutes each instance, not expected to cover more than half the forecast period',
+      'Variations lasting less than 30 minutes in each instance',
+      'Variations expected to last 30 minutes or more but less than 60 minutes in each instance',
     ],
     correct: 3,
-    explanation: 'AIP GEN 3.5: TEMPO indicates temporary variations from the mean forecast conditions. Each individual occurrence lasts 30 minutes or more but less than 60 minutes. The total TEMPO conditions must not cover more than half the forecast period. INTER is used for variations lasting less than 30 minutes each instance.',
+    explanation: 'AIP GEN 3.5: TEMPO indicates temporary variations from the mean forecast conditions, with each occurrence lasting 30 minutes or more but less than 60 minutes. INTER is used for variations lasting less than 30 minutes in each instance.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -944,8 +944,8 @@ export const clwaQuestions: {
       '1200',
     ],
     correct: 3,
-    explanation: 'Part 91 MOS Table 26.69(7) Item 3: VFR flights in Class E or Class G airspace must squawk 1200 when no discrete ATC code has been assigned. Code 3000 is for Class A/C/D and IFR Class E flights. Code 2000 is for IFR Class G flights. Code 7000 is used by RPAS in all classes of airspace — it is NOT the general VFR code in Australia.',
-    reference: 'Part 91 MOS Table 26.69(7) / AIP ENR 1.6 para 7.1.4',
+    explanation: 'Part 91 MOS Table 26.69(7) Item 3: VFR flights in Class E or Class G airspace squawk 1200 when no discrete ATC code has been assigned. Code 3000 is for flights in Class A/B/C/D and IFR flights in Class E; code 2000 is for IFR flights in Class G. There is no general 7000 conspicuity code in the Australian standard table.',
+    reference: 'Part 91 MOS 2020 s.26.69 Table 26.69(7)',
   },
   {
     question: 'An aircraft is compelled to land due to an emergency. Which aircraft has the right-of-way?',
@@ -1316,7 +1316,7 @@ export const clwaQuestions: {
       'Landing clearance is only required for IFR aircraft',
     ],
     correct: 2,
-    explanation: 'AIP ENR 1.1 : a pilot must not land unless the specific clearance "Cleared to land" (or "Cleared touch and go" or "Cleared for the option") has been received from ATC.',
+    explanation: 'AIP ENR 1.1: a pilot must not land unless the specific clearance "Cleared to land" (or "Cleared touch and go" or "Cleared for the option") has been received from ATC.',
     reference: 'AIP ENR 1.1',
   },
   {
@@ -1400,8 +1400,8 @@ export const clwaQuestions: {
       'No speed limit applies to VFR flight in Class G',
     ],
     correct: 2,
-    explanation: 'The speed limit for all aircraft below 10,000 ft in Australian airspace is 250 KIAS, unless a lower speed applies (e.g. 200 KIAS within 4 NM of a Class C or D aerodrome below 2,500 ft AAL). This applies in both controlled and uncontrolled airspace below 10,000 ft.',
-    reference: 'CASR 91.660',
+    explanation: 'The speed limit for all aircraft below 10,000 ft in Australian airspace is 250 KIAS, unless a lower limit applies (for example 200 KIAS within 4 NM of the primary Class D aerodrome at or below 2,500 ft above aerodrome elevation). This applies in both controlled and uncontrolled airspace below 10,000 ft.',
+    reference: 'Part 91 MOS 2020 s.4.02 Table 4.02(1)',
   },
   {
     question: 'You are flying at 2,500 ft AMSL in Class G airspace over flat terrain at sea level. Visibility drops to 4,000 m. Are you in VMC?',
@@ -1514,13 +1514,13 @@ export const clwaQuestions: {
   {
     question: 'You see \'INTER\' in a TAF forecast. What does this indicate?',
     options: [
-      'Intermittent variations each lasting less than 30 minutes, occurring for more than half the stated period',
+      'Intermittent variations each lasting less than 30 minutes',
       'International standard, the TAF is formatted to ICAO international standards',
       'Internal, the change applies only within the aerodrome boundary',
       'Intermediate forecast period, a 6-hour mid-period forecast',
     ],
     correct: 0,
-    explanation: 'INTER in a TAF indicates intermittent variations from the mean conditions. Each occurrence lasts less than 30 minutes, but the occurrences together cover more than half the INTER period. This is more frequent than TEMPO (where occurrences cover less than half the period).',
+    explanation: 'INTER in a TAF indicates intermittent variations from the mean conditions, each occurrence lasting less than 30 minutes. INTER occurrences are shorter and more frequent than TEMPO, where each occurrence lasts 30 to 60 minutes.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -1533,18 +1533,18 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'In the ICAO standard atmosphere, sea level temperature is 15°C (288.15 K). Sea level pressure is 1013.25 hPa and air density is 1.225 kg/m³. These values are used as the reference for calculating pressure altitude, density altitude, and aircraft performance.',
-    reference: 'AIP ENR 4.1 / ICAO Annex 8',
+    reference: 'ICAO Standard Atmosphere / ICAO Annex 8',
   },
   {
     question: 'What is the final reserve fuel requirement for a piston-engine aeroplane with MTOW ≤ 5,700 kg on a VFR day flight?',
     options: [
-      '45 minutes at normal cruise power',
-      '45 minutes at holding speed at 1,500 ft',
-      '20 minutes at holding speed at 1,500 ft',
       '30 minutes at normal cruise power',
+      '45 minutes at holding speed at 1,500 ft above aerodrome elevation',
+      '20 minutes at normal cruise power',
+      '30 minutes at holding speed at 1,500 ft above aerodrome elevation',
     ],
     correct: 3,
-    explanation: 'Part 91 MOS Table 19.02(2) Item 1: for an aeroplane with MTOW ≤ 5,700 kg (piston or turboprop) operating VFR, the final reserve fuel flight time is 30 minutes. Night VFR (Item 2) and IFR (Item 3) require 45 minutes.',
+    explanation: 'Part 91 MOS s.19.02 and Table 19.02(2) Item 1: for an aeroplane with MTOW 5,700 kg or less (piston or turboprop) on a day VFR flight, the final reserve fuel is the fuel to fly for 30 minutes at holding speed at 1,500 ft above aerodrome elevation in ISA conditions. Night VFR (Item 2) and IFR (Item 3) require 45 minutes on the same basis.',
     reference: 'Part 91 MOS 2020 s.19.02 Table 19.02(2) Item 1',
   },
   {
@@ -1586,13 +1586,13 @@ export const clwaQuestions: {
   {
     question: 'For a day VFR flight, what is the minimum final reserve fuel for a piston aeroplane of 5,700 kg MTOW or less?',
     options: [
-      '20 minutes at normal cruise power',
-      '45 minutes at normal cruise power',
-      '60 minutes at normal cruise power',
+      '45 minutes at holding speed at 1,500 ft above aerodrome elevation',
       '30 minutes at normal cruise power',
+      '60 minutes at holding speed at 1,500 ft above aerodrome elevation',
+      '30 minutes at holding speed at 1,500 ft above aerodrome elevation',
     ],
     correct: 3,
-    explanation: 'Part 91 MOS Table 19.02(2) Item 1: for a piston-engine aeroplane with MTOW not exceeding 5,700 kg on a VFR day flight, the final reserve fuel must be sufficient for 30 minutes of flight at normal cruise power. This fuel must not be used during the planned operation and must be available on landing.',
+    explanation: 'Part 91 MOS s.19.02 and Table 19.02(2) Item 1: for a piston aeroplane of 5,700 kg MTOW or less on a day VFR flight, the final reserve fuel is the fuel to fly for 30 minutes at holding speed at 1,500 ft above aerodrome elevation in ISA. The basis is holding speed at 1,500 ft, not cruise power; the required time rises to 45 minutes for night VFR and IFR.',
     reference: 'Part 91 MOS Table 19.02(2) Item 1',
   },
   {
@@ -1683,12 +1683,12 @@ export const clwaQuestions: {
     question: 'What is the meaning of \'INTER\' in a TAF and how does it differ from \'TEMPO\'?',
     options: [
       'INTER and TEMPO mean the same thing, they are interchangeable terms in TAF decoding',
-      'INTER means variations occurring at frequent intervals (each < 30 min) that together cover more than half the period',
+      'INTER means variations occurring at frequent intervals, each lasting less than 30 minutes',
       'INTER applies to cloud only; TEMPO applies to visibility',
       'INTER is for international aerodromes; TEMPO is for domestic',
     ],
     correct: 1,
-    explanation: 'INTER (intermittent): frequent variations, each lasting less than 30 minutes, occurring for more than half the total INTER period. TEMPO (temporary): variations each lasting less than 60 minutes, occurring for less than half the TEMPO period. INTER represents more frequent and persistent variation than TEMPO.',
+    explanation: 'INTER (intermittent): frequent variations, each lasting less than 30 minutes. TEMPO (temporary): variations each lasting 30 to less than 60 minutes. INTER represents more frequent variation than TEMPO.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -1748,7 +1748,7 @@ export const clwaQuestions: {
       '1,500 ft AGL',
     ],
     correct: 2,
-    explanation: 'CASR 91.185 : pilots must not engage in aerobatic flight below 3,000 ft AGL unless their aerobatic activity endorsement permits lower heights. Aerobatic manoeuvres are defined as those with bank angles greater than 60°, pitch angles greater than 45°, or abrupt changes.',
+    explanation: 'CASR 91.185: pilots must not engage in aerobatic flight below 3,000 ft AGL unless their aerobatic activity endorsement permits lower heights. Aerobatic manoeuvres are defined as those with bank angles greater than 60°, pitch angles greater than 45°, or abrupt changes.',
     reference: 'CASR 91.185',
   },
   {
@@ -1760,7 +1760,7 @@ export const clwaQuestions: {
       'Change the aircraft\'s flight path to avoid the icing conditions as soon as practicable',
     ],
     correct: 3,
-    explanation: 'CASR 91.710 : if an aircraft not certified for icing conditions inadvertently enters icing conditions, the pilot must change the flight path to avoid them as soon as practicable.',
+    explanation: 'CASR 91.710: if an aircraft not certified for icing conditions inadvertently enters icing conditions, the pilot must change the flight path to avoid them as soon as practicable.',
     reference: 'CASR 91.710',
   },
   {
@@ -1809,7 +1809,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'Upon receiving local QNH from a station within 100 NM, the altimeter should be updated to local QNH as soon as practicable. This gives the most accurate altitude reference for terrain clearance during the approach. With QNH 1004 versus area QNH 1009, the difference of 5 hPa represents approximately 150 ft error.',
-    reference: 'AIP ENR 4.1',
+    reference: 'AIP ENR 1.7',
   },
   {
     question: 'What separation does ATC provide to a VFR aircraft operating in Class D airspace?',
@@ -1827,12 +1827,12 @@ export const clwaQuestions: {
     question: 'What is required for a CPL holder to conduct single-engine aeroplane night VFR operations?',
     options: [
       'No additional endorsement, CPL privileges include night operations',
-      'A single-engine aeroplane night VFR endorsement under CASR Part 61',
+      'A single-engine aeroplane night VFR rating under CASR Part 61',
       'An IFR rating is required for all night operations',
       'A night VFR flight review only, no formal endorsement required',
     ],
     correct: 1,
-    explanation: 'CASR Part 61 : to conduct night VFR operations in a single-engine aeroplane, a pilot requires a single-engine aeroplane night VFR endorsement, which requires at least 5 hours night experience including 1 hour dual, 1 hour solo night circuits, and 3 hours dual instrument time.',
+    explanation: 'CASR Part 61: to conduct night VFR operations in a single-engine aeroplane, a pilot requires a single-engine aeroplane night VFR rating, which requires at least 5 hours night experience including 1 hour dual, 1 hour solo night circuits, and 3 hours dual instrument time.',
     reference: 'CASR Part 61',
   },
   {
@@ -2037,7 +2037,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'When ATC specifies an altitude with a QNH, the altitude is above mean sea level. You set QNH 1005 on the altimeter subscale and descend until the altimeter reads 3,000 ft — this is 3,000 ft AMSL. The QNH corrects the altimeter to read height above sea level.',
-    reference: 'AIP ENR 4.1',
+    reference: 'AIP ENR 1.7',
   },
   {
     question: 'What is the difference between a Mandatory Broadcast Area (MBA) and a CTAF?',
@@ -2072,7 +2072,7 @@ export const clwaQuestions: {
       'When starting or entering the downwind leg',
     ],
     correct: 3,
-    explanation: 'AIP ENR 1.1 : the pilot must report "downwind" when starting or entering the downwind leg. If frequency congestion prevents this, the pilot must report "mid-downwind" or "late-downwind.".',
+    explanation: 'AIP ENR 1.1: the pilot must report "downwind" when starting or entering the downwind leg. If frequency congestion prevents this, the pilot must report "mid-downwind" or "late-downwind.".',
     reference: 'AIP ENR 1.1',
   },
   {
@@ -2108,7 +2108,7 @@ export const clwaQuestions: {
       'To the extent practicable, take off and land into wind, unless the AFM allows downwind/crosswind and traffic conditions permit',
     ],
     correct: 3,
-    explanation: 'CASR 91.380 : to the extent practicable, pilots must land and take off into wind, unless the aircraft\'s AFM/POH allows a downwind or crosswind take-off/landing, and the pilot is satisfied that traffic conditions at the aerodrome allow it safely.',
+    explanation: 'CASR 91.380: to the extent practicable, pilots must land and take off into wind, unless the aircraft\'s AFM/POH allows a downwind or crosswind take-off/landing, and the pilot is satisfied that traffic conditions at the aerodrome allow it safely.',
     reference: 'CASR 91.380',
   },
   {
@@ -2160,7 +2160,7 @@ export const clwaQuestions: {
     reference: 'CAO 48.1 Instrument 2019',
   },
   {
-    question: 'You hold a current CPL with a night VFR endorsement. Your 90-day night landing currency has lapsed. May you fly at night without passengers?',
+    question: 'You hold a current CPL with a night VFR rating. Your 90-day night landing currency has lapsed. May you fly at night without passengers?',
     options: [
       'Yes, the 90-day recency requirement only applies when carrying passengers',
       'No, the night 90-day recency requirement applies regardless of whether passengers are carried',
@@ -2168,7 +2168,7 @@ export const clwaQuestions: {
       'Solo night flights do not require night currency',
     ],
     correct: 0,
-    explanation: 'The 90-day take-off and landing recency requirement applies only when the pilot intends to carry passengers. For solo or non-passenger night flights, no separate 90-day night currency is required. However, the pilot must still hold a current night VFR endorsement and current BFR.',
+    explanation: 'The 90-day take-off and landing recency requirement applies only when the pilot intends to carry passengers. For solo or non-passenger night flights, no separate 90-day night currency is required. However, the pilot must still hold a current night VFR rating and current BFR.',
     reference: 'CASR 61.395 / CASR 61.870',
   },
   {
@@ -2306,14 +2306,14 @@ export const clwaQuestions: {
   {
     question: 'You are descending from FL150 toward a destination with a QNH of 1008 hPa. At what point must you change from 1013.2 hPa back to QNH?',
     options: [
-      'Before entering the transition layer, the transition level must be checked in AIP ENR 4.1 for the current QNH',
+      'Before entering the transition layer, the transition level must be checked in AIP ENR 1.7 for the current QNH',
       'At FL100, this is the transition altitude and the change always occurs here',
       'When ATC issues descent below the transition altitude',
       'Only after landing at the destination',
     ],
     correct: 0,
-    explanation: 'When descending, the altimeter must be changed to QNH before passing through the transition level. The transition level varies with QNH and is found in AIP ENR 4.1. At QNH 1008 hPa the transition level is higher than normal, so the change must occur before passing through that level.',
-    reference: 'AIP ENR 4.1',
+    explanation: 'When descending, the altimeter must be changed to QNH before passing through the transition level. The transition level varies with QNH and is found in AIP ENR 1.7. At QNH 1008 hPa the transition level is higher than normal, so the change must occur before passing through that level.',
+    reference: 'AIP ENR 1.7',
   },
   {
     question: 'A CPL holder is employed as a pilot for a charter company. On their day off, they want to fly a friend in their own private aircraft for a non-commercial trip. What licence privileges apply?',
@@ -2348,7 +2348,7 @@ export const clwaQuestions: {
       'Aircraft callsign and "DETAILS", then destination and first tracking point, preferred level',
     ],
     correct: 3,
-    explanation: 'AIP ENR 1.1 : VFR aircraft without flight notification must provide: callsign and "DETAILS" (wait for ATC response), then destination and first tracking point, preferred level, and ATIS code received.',
+    explanation: 'AIP ENR 1.1: VFR aircraft without flight notification must provide: callsign and "DETAILS" (wait for ATC response), then destination and first tracking point, preferred level, and ATIS code received.',
     reference: 'AIP ENR 1.1',
   },
   {
@@ -2492,7 +2492,7 @@ export const clwaQuestions: {
       'No smoking during take-off and landing, or at any other time the pilot in command directs',
     ],
     correct: 3,
-    explanation: 'CASR 91.565 : passengers must not smoke during take-off and landing, or at any other time the pilot in command so directs. The no-smoking instruction forms part of the mandatory pre-take-off passenger safety briefing.',
+    explanation: 'CASR 91.565: passengers must not smoke during take-off and landing, or at any other time the pilot in command so directs. The no-smoking instruction forms part of the mandatory pre-take-off passenger safety briefing.',
     reference: 'CASR 91.565',
   },
   {
@@ -2504,7 +2504,7 @@ export const clwaQuestions: {
       'The 30-minute buffer increases to 60 minutes when using TAF3',
     ],
     correct: 0,
-    explanation: 'Part 91 MOS s.8.04(2): when planning is based on TAF3 and ETA is within the first 3 hours of TAF3 validity, an alternate must be nominated only if ETA falls during the period from forecast commencement to forecast ending of relevant weather — the 30-minute buffers before and after do not apply. The pilot must nominate an alternate only if ETA is during the actual forecast period of relevant weather conditions (not extended by 30 minutes)',
+    explanation: 'Part 91 MOS s.8.04(2): when planning is based on TAF3 and ETA is within the first 3 hours of TAF3 validity, an alternate must be nominated only if ETA falls during the period from forecast commencement to forecast ending of relevant weather — the 30-minute buffers before and after do not apply. The pilot must nominate an alternate only if ETA is during the actual forecast period of relevant weather conditions',
     reference: 'Part 91 MOS 2020 s.8.04(2)',
   },
   {
@@ -2553,7 +2553,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'QNH 1018 is 5 hPa above standard (1013). Each hPa above standard adds approximately 30 ft. So the altitude on QNH = 8,500 + (5 × 30) = 8,500 + 150 ≈ 8,650 ft. A higher-than-standard QNH means the aircraft is physically higher than the flight level indicates.',
-    reference: 'AIP ENR 4.1',
+    reference: 'AIP ENR 1.7',
   },
   {
     question: 'You are flying a charter aircraft that carries passengers for hire and reward. A passenger asks to see the aircraft\'s Certificate of Registration. Are you required to show it?',
@@ -2577,7 +2577,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'Standard atmosphere temperature at 8,000 ft = 15 - (8 × 2) = 15 - 16 = -1°C. Actual temperature is -2°C. ISA deviation = actual - standard = -2 - (-1) = -1°C. The atmosphere is 1°C colder than standard: ISA -1°C.',
-    reference: 'AIP ENR 4.1',
+    reference: 'ICAO Standard Atmosphere',
   },
   {
     question: 'You are departing a Class D aerodrome. ATC clears you for take-off and instructs \'turn right, heading 090, climb to 3,000 ft\'. When are you permitted to turn?',
@@ -2652,16 +2652,16 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.8.04(8)',
   },
   {
-    question: 'The area QNH is 995 hPa. Using AIP ENR 4.1, what is the transition level in Australian airspace?',
+    question: 'The area QNH is 995 hPa. Using AIP ENR 1.7, what is the transition level in Australian airspace?',
     options: [
       'FL110 regardless of QNH',
       'FL100, the transition level never changes in Australia',
-      'The transition level is found in AIP ENR 4.1 Table, at QNH 995 hPa the transition level is FL130',
+      'The transition level is found in the AIP ENR 1.7 table; at QNH 995 hPa the transition level is FL120',
       'The transition level equals the transition altitude, 10,000 ft at all times',
     ],
     correct: 2,
-    explanation: 'AIP ENR 4.1 contains a table showing the transition level for a given area QNH. The transition altitude in Australia is 10,000 ft. The transition level is the lowest available FL above the transition altitude that avoids potential conflicts with aircraft flying at the transition altitude on QNH. At low QNH values the transition level rises to FL130 or higher.',
-    reference: 'AIP ENR 4.1',
+    explanation: 'AIP ENR 1.7 contains a table giving the transition level for a given area QNH. The transition altitude in Australia is 10,000 ft and the transition layer is at least 1,000 ft, so the transition level varies from FL110 to FL130 as the QNH falls. For an area QNH of 995 hPa (in the 980 to 996 hPa band) the transition level is FL120.',
+    reference: 'AIP ENR 1.7',
   },
   {
     question: 'A METAR shows \'BKN025\'. What does this mean and what are the implications for VFR planning?',
@@ -2828,7 +2828,7 @@ export const clwaQuestions: {
       'Land at the nearest aerodrome immediately',
     ],
     correct: 1,
-    explanation: 'CASR 91.700 : if after making a distress signal the reason no longer exists, as soon as circumstances permit, the pilot must cancel the signal.',
+    explanation: 'CASR 91.700: if after making a distress signal the reason no longer exists, as soon as circumstances permit, the pilot must cancel the signal.',
     reference: 'CASR 91.700',
   },
   {
@@ -2852,7 +2852,7 @@ export const clwaQuestions: {
       'When deviation from specified bearing exceeds ±5°',
     ],
     correct: 3,
-    explanation: 'Part 91 MOS s.11.16 : for VOR or NDB-based operations in controlled airspace, ATC must be notified when the deviation from the specified bearing exceeds ±5°. For PBN operations: 1× the RNP value. For DME: ±2 NM. For visual navigation: 1 NM from cleared track.',
+    explanation: 'Part 91 MOS s.11.16: for VOR or NDB-based operations in controlled airspace, ATC must be notified when the deviation from the specified bearing exceeds ±5°. For PBN operations: 1× the RNP value. For DME: ±2 NM. For visual navigation: 1 NM from cleared track.',
     reference: 'Part 91 MOS 2020 s.11.16',
   },
   {
@@ -2966,13 +2966,13 @@ export const clwaQuestions: {
   {
     question: 'What does INTER indicate in a TAF?',
     options: [
-      'Variations each lasting less than 30 minutes, not expected to cover more than half the stated period',
+      'Variations each lasting less than 30 minutes, occurring frequently through the period',
       'Variations lasting 30-60 minutes each instance',
       'An international weather broadcast',
       'Intermediate weather, applicable to the entire period',
     ],
     correct: 0,
-    explanation: 'AIP GEN 3.5 : INTER is used when variations from forecast mean conditions are expected to last for less than 30 minutes in each instance, and are not expected to cover more than half the given period. The mean conditions remain those of the preceding part of the forecast.',
+    explanation: 'AIP GEN 3.5: INTER is used when variations from the forecast mean conditions are expected to last less than 30 minutes in each instance and to occur frequently. The mean conditions remain those of the preceding part of the forecast; TEMPO is used for variations of 30 to 60 minutes.',
     reference: 'AIP GEN 3.5',
   },
   {
@@ -3197,11 +3197,11 @@ export const clwaQuestions: {
       'Sky Covering: cloud is covering more than half the sky and ceiling is below 3,000 ft',
       'Sky Ceiling: indicates the lowest broken or overcast layer detected below 5,000 ft',
       'Sky Condition: used when cloud amount is indeterminate and the observer cannot assess coverage',
-      'Sky Clear: at staffed stations, no cloud at any level; at automatic stations, no cloud detected below 5,000 ft',
+      'Sky Clear: a staffed observer reports no cloud; automatic stations report NCD (nil cloud detected) instead',
     ],
     correct: 3,
-    explanation: 'AIP GEN 3.5: SKC (Sky Clear) at a staffed (manned) station means the observer reports no cloud at any level. At an automatic station, SKC means no cloud was detected below 5,000 ft — the station cannot detect cloud above that altitude. SKC differs from CAVOK: SKC addresses cloud only; CAVOK additionally requires visibility of 10 km or more and no significant weather phenomena.',
-    reference: 'AIP GEN 3.5',
+    explanation: 'SKC (Sky Clear) is reported by a staffed (manned) station when the observer sees no cloud. Automatic stations do not use SKC; they report NCD (nil cloud detected) when the cloud sensor detects no cloud. NSC (nil significant cloud) is the code for no cloud below 5,000 ft (or the highest MSA) and no CB or TCU. SKC differs from CAVOK, which additionally requires visibility of 10 km or more and no significant weather.',
+    reference: 'AIP GEN 3.5 / BoM TAF & METAR/SPECI guide',
   },
   {
     question: 'A pilot holds a CPL with aeroplane category. They want to fly a helicopter commercially. What must they do?',
@@ -3247,9 +3247,9 @@ export const clwaQuestions: {
       'A white double cross (××)',
       'A white disc symbol depicting a glider wing shape on the signal square',
     ],
-    correct: 3,
-    explanation: 'AIP ENR 1.1 Chapter 1 / AIP ENR 1.5: a disc-shaped symbol (depicting a glider — specifically a white disc with a glider wing) displayed near the wind direction indicator indicates that gliding operations are in progress.',
-    reference: 'AIP ENR 1.5',
+    correct: 2,
+    explanation: 'Part 91 MOS Table 2.05(1) Item 3: a white double cross displayed adjacent to the wind direction indicator indicates that gliding operations are in progress. A single white cross marks an area unfit for use by aircraft, and a white dumb-bell directs aircraft to use the hard (sealed) surfaces only.',
+    reference: 'Part 91 MOS 2020 s.2.05 Table 2.05(1) / AIP ENR 1.5',
   },
   {
     question: 'A pilot has inadvertently penetrated controlled airspace without a clearance and is now re-established in Class G. The radio is still functioning. What transponder code should the pilot select?',
@@ -3308,7 +3308,7 @@ export const clwaQuestions: {
       'Dangerous goods information must be withheld for security reasons',
     ],
     correct: 1,
-    explanation: 'CASR 91.680 : if dangerous goods are carried and an emergency is relevant to those goods, the pilot must advise ATS of both the emergency and the nature and state of the dangerous goods.',
+    explanation: 'CASR 91.680: if dangerous goods are carried and an emergency is relevant to those goods, the pilot must advise ATS of both the emergency and the nature and state of the dangerous goods.',
     reference: 'CASR 91.680',
   },
   {
@@ -3356,8 +3356,8 @@ export const clwaQuestions: {
       '200 KIAS',
     ],
     correct: 3,
-    explanation: 'Within 4 NM of a Class C or D aerodrome at or below 2,500 ft AAL, the speed limit is 200 KIAS. This is less than the general 250 KIAS limit below 10,000 ft, providing additional safety in the busy terminal environment.',
-    reference: 'CASR 91.665',
+    explanation: 'Per Part 91 MOS Table 4.02(1) Item 2, within 4 NM of the primary Class D aerodrome at or below 2,500 ft above aerodrome elevation the speed limit is 200 KIAS (unless ATC authorises 250). This is lower than the general 250 KIAS limit below 10,000 ft, providing additional safety in the busy terminal environment.',
+    reference: 'Part 91 MOS 2020 s.4.02 Table 4.02(1)',
   },
   {
     question: 'You are planning to overfly a small coastal town. The highest building in the town is 80 ft and there are no obstacles above 100 ft within 600 m of your intended track. What minimum height must you maintain?',
@@ -3369,7 +3369,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'Over a built-up area (town), the minimum height is 1,000 ft above the highest obstacle within 600 m of the aircraft, at a height that would permit a safe forced landing if the engine fails. The highest obstacle within 600 m is 100 ft, so the minimum is 1,000 + 100 = 1,100 ft above the obstacle level.',
-    reference: 'CASR 91.635',
+    reference: 'CASR 91.265',
   },
   {
     question: 'For how long must an ELT operate continuously once activated?',
@@ -3404,7 +3404,7 @@ export const clwaQuestions: {
       'A clearance that permits VFR operations within a control zone in weather below standard VMC minima',
     ],
     correct: 3,
-    explanation: 'A Special VFR clearance permits a VFR aircraft to operate within a control zone in meteorological conditions below standard VMC minima. It requires ATC authorisation, day operations only (for fixed-wing), clear of cloud, and a minimum flight visibility of 1,500 m. Traffic must permit its issue.',
+    explanation: 'A Special VFR clearance permits a VFR aircraft to operate within a control zone in meteorological conditions below standard VMC minima. It requires ATC authorisation, day operations only (for fixed-wing), clear of cloud, and a minimum flight visibility of 1,600 m. Traffic must permit its issue.',
     reference: 'CASR 91.430 / Part 91 MOS s.2.01(3)',
   },
   {
@@ -3596,7 +3596,7 @@ export const clwaQuestions: {
       'The higher aircraft gives way to the lower, but must not be forced into a dangerous manoeuvre by an aircraft exploiting that right of way',
     ],
     correct: 3,
-    explanation: 'CASR 91.330 : the higher aircraft gives way to the lower. However, if the higher aircraft is in the final stages of its approach, the lower aircraft must not take advantage of this rule.',
+    explanation: 'CASR 91.330: the higher aircraft gives way to the lower. However, if the higher aircraft is in the final stages of its approach, the lower aircraft must not take advantage of this rule.',
     reference: 'CASR 91.330',
   },
   {
@@ -3716,7 +3716,7 @@ export const clwaQuestions: {
       'No other aircraft, straight-in approaches have priority',
     ],
     correct: 0,
-    explanation: 'CASR 91.395 : the aircraft making the straight-in approach must give way to any other aircraft flying in the circuit pattern for the aerodrome. An aircraft on base or final leg has right-of-way over a straight-in aircraft.',
+    explanation: 'CASR 91.395: the aircraft making the straight-in approach must give way to any other aircraft flying in the circuit pattern for the aerodrome. An aircraft on base or final leg has right-of-way over a straight-in aircraft.',
     reference: 'CASR 91.395',
   },
   {
@@ -3824,8 +3824,8 @@ export const clwaQuestions: {
       'Its validity period and expiry date, the classes of operation authorised, and any outstanding defects and their effect on airworthiness',
     ],
     correct: 3,
-    explanation: 'CASR Part 61 MOS Schedule 3 AFRC s.2.1.5: a pilot must be able to (a) determine the maintenance release\'s validity; (b) list the class(es) of operation applicable to the aircraft; and (c) list outstanding defects/endorsements and decide whether they affect airworthiness.',
-    reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.14 s.2.1.5',
+    explanation: 'CASR Part 61 MOS Schedule 3 CFRC s.2.1.5: a pilot must be able to (a) determine the maintenance release\'s validity; (b) list the class(es) of operation applicable to the aircraft; and (c) list outstanding defects/endorsements and decide whether they affect airworthiness.',
+    reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.1.5',
   },
   {
     question: 'What is the correct order of right-of-way priority for aircraft in the vicinity (from highest to lowest priority)?',
@@ -3860,7 +3860,7 @@ export const clwaQuestions: {
       'The aerodrome or manoeuvring area is unserviceable, do not land',
     ],
     correct: 3,
-    explanation: 'AIP ENR 1.5 : a white cross on the signal square indicates the aerodrome or manoeuvring area is unserviceable and landing is not permitted.',
+    explanation: 'AIP ENR 1.5: a white cross on the signal square indicates the aerodrome or manoeuvring area is unserviceable and landing is not permitted.',
     reference: 'AIP ENR 1.5',
   },
   {
@@ -3897,7 +3897,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'Civil Aviation Act 1988 s.30DB: a pilot must not exercise flight crew privileges with a blood alcohol content at or above 0.02 g per 210 litres of breath. This is the measurement unit used in Australian aviation — not a percentage. This limit is significantly lower than the road transport limit. The 8-hour minimum since last consuming alcohol is a separate and additional requirement.',
-    reference: 'CASR Part 91 s.91.195',
+    reference: 'Civil Aviation Act 1988 s.30DB / CASR Part 99',
   },
   {
     question: 'What is the minimum medical certificate class required for a CPL holder exercising CPL privileges?',
@@ -4124,7 +4124,7 @@ export const clwaQuestions: {
       'Monitoring is only required for IFR flights in Class A airspace',
     ],
     correct: 0,
-    explanation: 'CASR 91.635 : when flying in controlled airspace, the pilot (or another pilot in a pilot seat) must continuously monitor the primary communications medium used by ATC.',
+    explanation: 'CASR 91.635: when flying in controlled airspace, the pilot (or another pilot in a pilot seat) must continuously monitor the primary communications medium used by ATC.',
     reference: 'CASR 91.515 / Part 91 MOS s.11.12',
   },
   {
@@ -4160,7 +4160,7 @@ export const clwaQuestions: {
       'Dangerous goods information must be withheld for security reasons',
     ],
     correct: 1,
-    explanation: 'CASR 91.680 : if dangerous goods are carried and an emergency is relevant to those goods, the pilot must advise ATS of both the emergency and the nature and state of the dangerous goods.',
+    explanation: 'CASR 91.680: if dangerous goods are carried and an emergency is relevant to those goods, the pilot must advise ATS of both the emergency and the nature and state of the dangerous goods.',
     reference: 'CASR 91.680',
   },
   {
@@ -4220,7 +4220,7 @@ export const clwaQuestions: {
       'When requiring a clearance into controlled airspace, and before and on completion of an over-water stage',
     ],
     correct: 3,
-    explanation: 'Part 91 MOS Table 21.07(1): VFR aircraft in Classes E and G must report when requiring clearance into controlled airspace (Item 1), and before and on completion of an over-water stage if SAR reporting schedules have been arranged (Item 2). (if SAR reporting schedules are arranged)',
+    explanation: 'Part 91 MOS Table 21.07(1): VFR aircraft in Classes E and G must report when requiring clearance into controlled airspace (Item 1), and before and on completion of an over-water stage if SAR reporting schedules have been arranged (Item 2).',
     reference: 'Part 91 MOS 2020 s.21.07 Table 21.07(1)',
   },
   {
@@ -4269,7 +4269,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'In Australian aviation, \'height\' is the vertical distance measured from a specified datum — typically the surface or aerodrome elevation. \'Altitude\' is measured from mean sea level. \'Flight level\' is pressure altitude in hundreds of feet with 1013.2 hPa set. These distinctions are important in ATC communications and performance calculations.',
-    reference: 'AIP ENR 4.1 / ICAO Annex 2',
+    reference: 'AIP ENR 1.7 / ICAO Annex 2',
   },
   {
     question: 'You are flying VFR in Class G airspace at 4,500 ft above a broken cloud layer. You cannot descend through the cloud to reach VMC below. What are your options?',
@@ -4317,7 +4317,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'Each 1 hPa error in the subscale setting produces approximately 30 ft of altimeter error. Setting 1020 instead of 1010 is an error of +10 hPa, so the altimeter reads approximately 10 × 30 = 300 ft too high. The aircraft is actually 300 ft lower than the altimeter indicates.',
-    reference: 'AIP ENR 4.1 / CASR Part 91 MOS s.10.05',
+    reference: 'AIP ENR 1.7 / CASR Part 91 MOS s.10.05',
   },
   {
     question: 'A passenger becomes aggressive and attempts to interfere with the controls. What powers does the pilot in command have?',
@@ -4521,7 +4521,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'Each 1 hPa difference between QNH and standard pressure (1013.2) produces approximately 30 ft of altimeter error. QNH of 1010 is 3 hPa below 1013.2, so the actual altitude is approximately 3 × 30 = 90 ft below the flight level indication. 9,500 ft = 9,500 ft; actual ≈ 9,410 ft AMSL.',
-    reference: 'AIP ENR 4.1 / Part 91 MOS',
+    reference: 'AIP ENR 1.7 / Part 91 MOS',
   },
   {
     question: 'You are VFR and approaching an aerodrome when the visibility deteriorates to 3,000 m. The cloud base is 1,500 ft. You are in Class G airspace above 1,000 ft AGL and above 3,000 ft AMSL. Are you in VMC?',
@@ -4580,8 +4580,8 @@ export const clwaQuestions: {
       'Registration is required only for aircraft with MTOW above 500 kg',
     ],
     correct: 0,
-    explanation: 'CASR Part 47 / CASR Part 61 MOS Schedule 3 AFRC s.2.2.3: Australian civil aircraft must be registered with CASA. The Certificate of Registration (or evidence of registration) must be carried on board. Registration requirements include requirements for transfer and cancellation.',
-    reference: 'CASR Part 47 / CASR Part 61 MOS Schedule 3 Unit 1.5.14 s.2.2.3',
+    explanation: 'CASR Part 47 / CASR Part 61 MOS Schedule 3 CFRC s.2.2.3: Australian civil aircraft must be registered with CASA. The Certificate of Registration (or evidence of registration) must be carried on board. Registration requirements include requirements for transfer and cancellation.',
+    reference: 'CASR Part 47 / CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.2.3',
   },
   {
     question: 'You are planning a VFR cross-country and your proposed cruise altitude of 4,500 ft places you only 300 ft above the highest terrain in one section of the route. Is this acceptable?',
@@ -4592,8 +4592,8 @@ export const clwaQuestions: {
       'Only acceptable if you file a flight plan with CASA listing the lower altitude and receive written approval',
     ],
     correct: 2,
-    explanation: 'CASR 91.635: the minimum height for VFR flight over areas other than built-up areas is 500 ft AGL, except during take-off or landing. 300 ft clearance above terrain is below this minimum. The pilot must plan an altitude that provides the required clearance throughout the route.',
-    reference: 'CASR 91.635',
+    explanation: 'CASR 91.267: the minimum height for VFR flight over areas other than built-up areas is 500 ft AGL, except during take-off or landing. 300 ft clearance above terrain is below this minimum. The pilot must plan an altitude that provides the required clearance throughout the route.',
+    reference: 'CASR 91.267',
   },
   {
     question: 'At a non-controlled aerodrome, what circuit height applies to a medium-performance aeroplane (55 to 150 kt)?',
@@ -4616,7 +4616,7 @@ export const clwaQuestions: {
       'Landing aircraft or those on final approach',
     ],
     correct: 3,
-    explanation: 'CASR 91.365 : when taxiing without ATC clearance, the pilot must give way to landing aircraft or those on final approach; aircraft taking off or preparing to take off; keep well clear when overtaking; give way to the right when on a converging course; and stop or turn right to remain clear of head-on aircraft.',
+    explanation: 'CASR 91.365: when taxiing without ATC clearance, the pilot must give way to landing aircraft or those on final approach; aircraft taking off or preparing to take off; keep well clear when overtaking; give way to the right when on a converging course; and stop or turn right to remain clear of head-on aircraft.',
     reference: 'CASR 91.365',
   },
   {
@@ -4737,7 +4737,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'National parks are not built-up areas for the purpose of minimum height rules. The standard 500 ft AGL minimum applies over areas that are not built-up, populated, or populous areas. However, specific national parks may have additional environmental or wildlife protection height restrictions published in AIP ENR 5.4 — pilots must check applicable restrictions.',
-    reference: 'CASR 91.635 / AIP ENR 5.4',
+    reference: 'CASR 91.267 / AIP ENR 5.4',
   },
   {
     question: 'You are flying VFR at 5,500 ft in Class E airspace. An IFR aircraft descends through your level. Who is responsible for separation?',
@@ -5336,7 +5336,7 @@ export const clwaQuestions: {
       'Glider operations are in progress',
     ],
     correct: 1,
-    explanation: 'Part 91 MOS Table 2.05(1) Item 1: a horizontal white dumb-bell displayed adjacent to the wind direction indicator means (1) use only hard surface movement areas; (2) where sealed and gravel areas exist, use only sealed; (3) where constructed gravel and natural surfaces exist, use only the gravel surfaces. (or sealed surfaces where both gravel and sealed areas exist)',
+    explanation: 'Part 91 MOS Table 2.05(1) Item 1: a horizontal white dumb-bell displayed adjacent to the wind direction indicator means (1) use only hard surface movement areas; (2) where sealed and gravel areas exist, use only sealed; (3) where constructed gravel and natural surfaces exist, use only the gravel surfaces.',
     reference: 'Part 91 MOS 2020 s.2.05 Table 2.05(1) Item 1',
   },
   {
@@ -5444,7 +5444,7 @@ export const clwaQuestions: {
       'By radio on 121.5 MHz during the occurrence',
     ],
     correct: 2,
-    explanation: 'CASR 91.606 : IRMs require immediate (as soon as practical) reporting by telephone to the ATSB, followed by a written report within 72 hours (preferably using the ASIR format). Routinely Reportable Matters (RRMs) only require a written report within 72 hours.',
+    explanation: 'CASR 91.606: IRMs require immediate (as soon as practical) reporting by telephone to the ATSB, followed by a written report within 72 hours (preferably using the ASIR format). Routinely Reportable Matters (RRMs) only require a written report within 72 hours.',
     reference: 'CASR 91.606',
   },
   {
@@ -5685,7 +5685,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'Approaching the top of climb, and during cruise, the altimeter should be updated to local QNH from the nearest station within 100 NM when available. If local QNH is not available, area QNH is used. Setting local QNH provides the most accurate altitude reference for terrain clearance.',
-    reference: 'AIP ENR 4.1',
+    reference: 'AIP ENR 1.7',
   },
   {
     question: 'An aircraft is conducting VFR flight on a track of 265°M at approximately 7,000 ft. what VFR cruising level should be used?',
@@ -5705,11 +5705,11 @@ export const clwaQuestions: {
       'Exactly at 10,000 ft',
       'After passing 10,000 ft and before levelling off at your cruise level, the change is made during the climb',
       'Only when ATC instructs you to set standard pressure',
-      'After reaching the transition level as published in AIP ENR 4.1',
+      'After reaching the transition level as published in AIP ENR 1.7',
     ],
     correct: 1,
     explanation: 'When climbing, the altimeter is changed from QNH to 1013.2 hPa (standard pressure) after passing through 10,000 ft and before levelling off at or above the cruise flight level. The transition altitude in Australia is 10,000 ft and aircraft above this level operate on flight levels using 1013.2 hPa.',
-    reference: 'AIP ENR 4.1',
+    reference: 'AIP ENR 1.7',
   },
   {
     question: 'When should a pilot broadcast when joining the circuit at a non-controlled aerodrome?',
@@ -5924,7 +5924,7 @@ export const clwaQuestions: {
       'Formation flying is permitted any time if all pilots have a formation endorsement',
     ],
     correct: 0,
-    explanation: 'CASR 91.205 : a pilot may only fly in formation if the flight has been prearranged with the other pilots in the formation. Formation flying at night or in IMC requires a CASA approval. A flight activity endorsement is also required under CASR 61.380.',
+    explanation: 'CASR 91.205: a pilot may only fly in formation if the flight has been prearranged with the other pilots in the formation. Formation flying at night or in IMC requires a CASA approval. A flight activity endorsement is also required under CASR 61.380.',
     reference: 'CASR 91.205',
   },
   {
@@ -5943,13 +5943,13 @@ export const clwaQuestions: {
     question: 'What is the minimum height for an aeroplane over areas other than populous areas?',
     options: [
       'Not less than 1,000 ft AGL at all times',
-      'Not less than 500 ft above the highest obstacle within 150 m of the aircraft',
-      'Not less than 500 ft AGL over open country',
+      'Not less than 500 ft above the ground or water',
+      'Not less than 1,000 ft above the highest obstacle within 600 m, as for a populous area',
       'Not less than 300 ft AGL at all times',
     ],
     correct: 1,
-    explanation: 'CASR 91.265: for areas other than populous areas or public gatherings, an aeroplane must not be flown at less than 500 ft above the highest obstacle within 150 m of the aircraft.',
-    reference: 'CASR 91.265',
+    explanation: 'CASR 91.267: over an area other than a populous area or public gathering, an aeroplane must not be flown lower than 500 ft above the ground or water. The 1,000 ft above the highest obstacle within 600 m rule applies only over populous areas and public gatherings (CASR 91.265).',
+    reference: 'CASR 91.267',
   },
   {
     question: 'You are planning a night VFR flight. The destination TAF reads: FM0200 BKN004 2000 TEMPO 0100/0300 BKN002 0800. Your ETA is 0130. Is a destination alternate required?',
