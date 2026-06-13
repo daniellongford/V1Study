@@ -68,7 +68,7 @@ export const clwaQuestions: {
       'ATIS code received',
     ],
     correct: 1,
-    explanation: 'Part 91 MOS Table 21.09(1) Item 7: when starting to taxi in an MBA, the broadcast must include the situation and: whether the flight is IFR; and either the planned destination aerodrome, the intended direction of flight, or the nature of operation; and the runway proposed for take-off. And either the planned destination, intended direction of flight, or nature of operation, plus the runway proposed for take-off',
+    explanation: 'Part 91 MOS Table 21.09(1) Item 7: when starting to taxi in an MBA, the broadcast must include the situation and: whether the flight is IFR; and either the planned destination aerodrome, the intended direction of flight, or the nature of operation; and the runway proposed for take-off.',
     reference: 'Part 91 MOS 2020 s.21.09 Table 21.09(1) Item 7',
   },
   {
@@ -81,7 +81,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'Part 91 MOS: as a minimum, all aircraft other than single-seat aircraft must be fitted with an automatic ELT or carry a survival ELT.',
-    reference: 'Part 91 MOS 2020 s.26.48 Chapter 7',
+    reference: 'Part 91 MOS 2020 s.26.48',
   },
   {
     question: 'In a TAF you read \'TEMPO 0200/0600 4000 -RA BKN012\'. What does the TEMPO element mean for your planning?',
@@ -116,7 +116,7 @@ export const clwaQuestions: {
       'VFR flights exceeding 500 NM only',
     ],
     correct: 0,
-    explanation: 'Part 91 MOS s.9.02(2): VFR flights requiring flight plan or SAR lodgement include: air transport operations; over-water flights beyond distance from land that allows engine-inoperative reach to land; flights in designated remote areas; and night flights beyond 120 NM from departure aerodrome. Over-water flights beyond gliding range to land; flights in designated remote areas; and night flights beyond 120 NM from departure aerodrome',
+    explanation: 'Part 91 MOS s.9.02(2): VFR flights requiring flight plan or SAR lodgement include: air transport operations; over-water flights beyond distance from land that allows engine-inoperative reach to land; flights in designated remote areas; and night flights beyond 120 NM from departure aerodrome.',
     reference: 'Part 91 MOS 2020 s.9.02(2)(a)–(d)',
   },
   {
@@ -141,7 +141,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'When a pilot certifies a maintenance task in the maintenance release, they are legally declaring the task was completed correctly. A false or misleading certification is a serious offence under CASR and may result in licence action or prosecution. The responsibility for the quality of the work lies with the certifying pilot.',
-    reference: 'CASR Part 43 / CASR 91.755',
+    reference: 'CAR 1988 / CASR 91.755',
   },
   {
     question: 'Before departing Australia on an international flight, what action must you take regarding the ADIZ?',
@@ -309,7 +309,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'CASR 91.335: where two aircraft are approaching head-on or approximately head-on, each aircraft must alter heading to the right.',
-    reference: 'CASR 91.335 Chapter 1',
+    reference: 'CASR 91.335',
   },
   {
     question: 'You are planning a VFR cruise at approximately 9,000 ft on a magnetic track of 270°. Which hemispherical cruising level should you select?',
@@ -368,7 +368,7 @@ export const clwaQuestions: {
       'The fuel remaining in the tanks after the flight',
     ],
     correct: 1,
-    explanation: 'Part 91 MOS s.1.07: trip fuel means fuel required to enable the aircraft to fly from any point to landing at the destination including: take-off and climb from departure elevation to initial cruising level; cruise from top of climb to top of descent; fuel from top of descent to landing. The total fuel from departure to landing at the destination',
+    explanation: 'Part 91 MOS s.1.07: trip fuel means fuel required to enable the aircraft to fly from any point to landing at the destination including: take-off and climb from departure elevation to initial cruising level; cruise from top of climb to top of descent; fuel from top of descent to landing.',
     reference: 'Part 91 MOS 2020 s.1.07 Definition of trip fuel',
   },
   {
@@ -404,7 +404,7 @@ export const clwaQuestions: {
       'The jump must be planned so there is no risk of articles falling outside the drop site',
     ],
     correct: 3,
-    explanation: 'Requirements for dropping parachutists include: the drop must be planned so there is no risk of articles falling outside the designated drop site; continuous sight of the drop area or the ground or water must be maintained; and all persons on board must remain seated. A CASA exemption or specific approval may be required depending on the type of operation. And continuous sight of the drop site or ground or water is maintained',
+    explanation: 'Requirements for dropping parachutists include: the drop must be planned so there is no risk of articles falling outside the designated drop site; continuous sight of the drop area or the ground or water must be maintained; and all persons on board must remain seated. A CASA exemption or specific approval may be required depending on the type of operation.',
     reference: 'CASR 91.670',
   },
   {
@@ -417,7 +417,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'CASR 91.360: an aircraft is in the vicinity of a non-controlled aerodrome if it is (a) in uncontrolled airspace; (b) within 10 NM of the aerodrome; and (c) at a height above the aerodrome that could result in conflict with operations at the aerodrome.',
-    reference: 'CASR 91.360 Chapter 3',
+    reference: 'CASR 91.360',
   },
   {
     question: 'During the pre-taxi radio check you receive your taxi clearance but cannot read back clearly due to interference. What should you do?',
@@ -468,19 +468,19 @@ export const clwaQuestions: {
     reference: 'Part 91 MOS 2020 s.4.02 Table 4.02(1) Item 1',
   },
   {
-    question: 'In your pre-flight study of the AIP, you encounter the abbreviation \'GAAP\'. What does this mean and where does it apply?',
+    question: 'In your pre-flight study you encounter the abbreviation \'AWIS\'. What does this mean?',
     options: [
-      'General Aviation Aerodrome Procedures',
-      'General Arrival and Approach Procedure, applies to all aerodromes in Australia',
-      'General Aviation Approved Pilot, a licence endorsement for GA operations',
-      'General Airspace Activity Permit, required for formation flights',
+      'Aerodrome Weather Information Service, a recorded or broadcast service providing current weather for an aerodrome',
+      'Automatic Wind Indicator System, a ground display of surface wind only',
+      'Airways Weather Information Summary, a national forecast issued twice daily',
+      'Aerodrome Warning and Information Signal, a light signal indicating hazardous conditions',
     ],
     correct: 0,
-    explanation: 'GAAP stands for General Aviation Aerodrome Procedures. GAAP aerodromes are designated GA aerodromes located adjacent to or within Class C airspace that have their own specific procedures published in ERSA. These procedures differ from standard CTAF procedures and must be understood before operating at or near GAAP aerodromes.',
-    reference: 'AIP ENR 1.1 / ERSA',
+    explanation: 'AWIS (Aerodrome Weather Information Service) provides current aerodrome weather — wind, temperature, QNH and other elements — by telephone or radio broadcast from an automatic weather station. It supports pre-flight and in-flight planning where no ATIS or staffed observation is available.',
+    reference: 'AIP GEN 3.5 / ERSA',
   },
   {
-    question: 'What do white flashes from the control tower mean to an aircraft in flight ?',
+    question: 'What do white flashes from the control tower mean to an aircraft in flight?',
     options: [
       'Land immediately, priority approach authorised',
       'No significance, meaning only applies to aircraft on the ground',
@@ -525,7 +525,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'CASR 91.705 : before beginning a flight, there must be no frost, ice or snow adhering to the aircraft\'s wings, flaps, control surfaces, rotors, propellers, and horizontal or vertical stabilisers. Exception: if take-off is conducted in accordance with AFM procedures for those conditions. (unless the AFM authorises operation in those conditions)',
-    reference: 'CASR 91.705 Chapter 2',
+    reference: 'CASR 91.705',
   },
   {
     question: 'Which of the following subject areas is covered in the CFRC (CPL flight rules and air law — all categories) MOS unit?',
@@ -573,7 +573,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'Part 91 MOS s.26.49 : an ELT must simultaneously transmit on 121.5 MHz and 406 MHz when activated. The 406 MHz signal is processed by COSPAS-SARSAT for position determination.',
-    reference: 'Part 91 MOS 2020 s.26.49 Chapter 7',
+    reference: 'Part 91 MOS 2020 s.26.49',
   },
   {
     question: 'You are landing at a non-controlled aerodrome and notice the signal area shows a white dumb-bell. What does this mean?',
@@ -620,8 +620,8 @@ export const clwaQuestions: {
       'A copy of CASR Part 91 and the aircraft flight manual are the only required documents',
     ],
     correct: 0,
-    explanation: 'CASR 91.110: for VFR flights beyond 50 NM, the pilot must carry applicable AIP information and either the aircraft technical log or maintenance release. applicable AIP information and either the aircraft technical log or maintenance release. The AIP information includes charts, NOTAMs, and aerodrome information relevant to the route and any probable diversionary routes',
-    reference: 'CASR 91.110 Chapter 2',
+    explanation: 'CASR 91.110: for VFR flights beyond 50 NM, the pilot must carry applicable AIP information and either the aircraft technical log or maintenance release. applicable AIP information and either the aircraft technical log or maintenance release.',
+    reference: 'CASR 91.110',
   },
   {
     question: 'In VFR flight in Class G airspace, your radio fails completely. What is the correct action?',
@@ -632,7 +632,7 @@ export const clwaQuestions: {
       'Return to the departure aerodrome only, as landing at any other aerodrome without radio is not permitted',
     ],
     correct: 0,
-    explanation: 'Part 91 MOS s.11.10(2): on radio failure in VFR Class G airspace, select transponder code 7600, attempt to re-establish contact on all available frequencies including 121.5 MHz, and as soon as practicable descend below 3,000 ft AGL over land and land at the nearest suitable aerodrome.',
+    explanation: 'Part 91 MOS s.11.10(2): on radio failure in VFR Class G airspace, select transponder code 7600, attempt to re-establish contact on all available frequencies including 121.5 MHz, and as soon as practicable descend below 5,000 ft to continue the flight under the VFR, landing at the nearest suitable aerodrome.',
     reference: 'Part 91 MOS s.11.10(2)',
   },
   {
@@ -656,7 +656,7 @@ export const clwaQuestions: {
       'Only that the aircraft has a current maintenance release and valid Certificate of Airworthiness',
     ],
     correct: 1,
-    explanation: 'Before acting as PIC, the pilot must confirm: their BFR is current (within 24 months); their 90-day take-off and landing currency has been maintained in the same aircraft category; any required class or type rating for that aircraft is current; and their medical certificate is valid. And whether any type or class rating currency requirements apply to that specific aircraft',
+    explanation: 'Before acting as PIC, the pilot must confirm: their BFR is current (within 24 months); their 90-day take-off and landing currency has been maintained in the same aircraft category; any required class or type rating for that aircraft is current; and their medical certificate is valid.',
     reference: 'CASR 61.395 / CASR 61.900',
   },
   {
@@ -681,7 +681,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'Part 91 MOS s.8.05(2) : for a VFR flight by night, the pilot must nominate a destination alternate that is within 1 hour\'s flight time of the planned destination aerodrome, unless the destination is served by a ground-based radio navigation aid and the aircraft is appropriately equipped and the pilot is competent to use it.',
-    reference: 'Part 91 MOS 2020 s.8.05(2) Chapter 2',
+    reference: 'Part 91 MOS 2020 s.8.05(2)',
   },
   {
     question: 'A mercy flight deviation is not permitted in which of the following situations?',
@@ -712,7 +712,7 @@ export const clwaQuestions: {
     options: [
       'Provided the flight is less than 500 km',
       'Provided the pilot holds professional indemnity insurance',
-      'There are no conditions under which this is legal — charter operations require the operator to hold an AOC',
+      'There are no conditions under which this is legal - charter operations require the operator to hold an AOC',
       'Provided the passenger signs a waiver',
     ],
     correct: 2,
@@ -765,7 +765,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'AIP ENR 1.4 : Australia does not have Class B airspace. The Australian FIR uses Classes A, C, D, E, and G. The AIP ENR 1.1 specifically notes "The Australian flight information region does not have Class B airspace."',
-    reference: 'AIP ENR 1.4 Chapter 5',
+    reference: 'AIP ENR 1.4',
   },
   {
     question: 'What ELT requirements apply to most domestic aeroplane flights?',
@@ -801,7 +801,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'CASR 91.330 right-of-way table Item 2: any other aircraft — whether in flight or operating on the ground or water — must give way to a landing aircraft.',
-    reference: 'CASR 91.330 Chapter 1',
+    reference: 'CASR 91.330',
   },
   {
     question: 'You are at a non-controlled aerodrome and wish to determine the active runway before joining the circuit. What is the recommended procedure?',
@@ -861,7 +861,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'Replacing a damaged propeller requires a licensed aircraft maintenance engineer — it is not a Schedule 8 pilot maintenance task. Replenishing oil, replacing safety wiring, and cleaning/lubricating undercarriage components are among the tasks listed in Schedule 8.',
-    reference: 'CASR Part 43 Schedule 8',
+    reference: 'CAR 1988 Schedule 8',
   },
   {
     question: 'You land at an unattended aerodrome and find the ERSA shows it is PPR. You did not obtain permission before landing. What should you do?',
@@ -872,7 +872,7 @@ export const clwaQuestions: {
       'Leave a note on the aircraft with your contact details, then depart without contacting the operator',
     ],
     correct: 0,
-    explanation: 'If you have landed at a PPR aerodrome without prior permission, you should contact the aerodrome operator as soon as possible. Explain the circumstances and seek their guidance. Leaving without making contact may compound the situation. Most operators are understanding of genuine operational necessity. And take any further direction from the operator',
+    explanation: 'If you have landed at a PPR aerodrome without prior permission, you should contact the aerodrome operator as soon as possible. Explain the circumstances and seek their guidance. Leaving without making contact may compound the situation. Most operators are understanding of genuine operational necessity.',
     reference: 'CASR 91.355 / ERSA',
   },
   {
@@ -933,7 +933,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'AIP GEN 3.5: TEMPO indicates temporary variations from the mean forecast conditions. Each individual occurrence lasts 30 minutes or more but less than 60 minutes. The total TEMPO conditions must not cover more than half the forecast period. INTER is used for variations lasting less than 30 minutes each instance.',
-    reference: 'AIP GEN 3.5 Chapter 2',
+    reference: 'AIP GEN 3.5',
   },
   {
     question: 'What transponder code should a VFR aircraft in Class G airspace squawk when no ATC code has been assigned?',
@@ -957,7 +957,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'CASR 91.330 right-of-way table Item 1: an aircraft that is in an emergency and compelled to land has absolute right-of-way over all other aircraft. All aircraft must give way to it.',
-    reference: 'CASR 91.330 Chapter 1',
+    reference: 'CASR 91.330',
   },
   {
     question: 'You are making a straight-in approach to a non-controlled aerodrome runway. Another aircraft broadcasts that it is on base leg for the same runway. Who must give way?',
@@ -1149,7 +1149,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'AIP ENR 1.1 Chapter 2 / AIP GEN 3.3: hazard alerts will be repeated at H+15 and H+45 in the hour following the initial transmission, normally ceasing after one hour or after an updated MET product or NOTAM is available for dissemination.',
-    reference: 'AIP GEN 3.3 Chapter 2',
+    reference: 'AIP GEN 3.3',
   },
   {
     question: 'After a radio failure in VFR Class G airspace, as soon as practicable, the pilot must descend below what height over land?',
@@ -1159,8 +1159,8 @@ export const clwaQuestions: {
       '5,000 ft AMSL',
       '3,000 ft AGL',
     ],
-    correct: 3,
-    explanation: 'Part 91 MOS s.11.10(2)(a)(iv): after radio failure in VFR Class G or E airspace, the pilot must as soon as practicable descend below 3,000 ft AGL over land (or 3,000 ft AMSL over water within 10 NM of the coast). This is to avoid conflicting with IFR traffic.',
+    correct: 2,
+    explanation: 'Part 91 MOS s.11.10(2)(a)(iv): after a radiocommunication failure when operating under the VFR in Class G or E airspace, the pilot must, as soon as practicable, descend below 5,000 ft to continue the flight under the VFR. This reduces the risk of conflict with IFR traffic at higher levels.',
     reference: 'Part 91 MOS 2020 s.11.10(2)(a)(iv)',
   },
   {
@@ -1184,7 +1184,7 @@ export const clwaQuestions: {
       'Accept the clearance and divert without advising ATC',
     ],
     correct: 2,
-    explanation: 'The pilot is responsible for fuel at all times. If an ATC clearance would compromise fuel reserves, the pilot must advise ATC. \'MINIMUM FUEL\' is used when fuel state requires priority handling. \'MAYDAY MAYDAY MAYDAY FUEL\' is declared when the aircraft must land immediately. ATC is not responsible for the pilot\'s fuel state. And request an amended clearance to protect your fuel reserves',
+    explanation: 'The pilot is responsible for fuel at all times. If an ATC clearance would compromise fuel reserves, the pilot must advise ATC. \'MINIMUM FUEL\' is used when fuel state requires priority handling. \'MAYDAY MAYDAY MAYDAY FUEL\' is declared when the aircraft must land immediately. ATC is not responsible for the pilot\'s fuel state.',
     reference: 'AIP ENR 6.1 / Part 91 MOS s.19.05',
   },
   {
@@ -1268,7 +1268,7 @@ export const clwaQuestions: {
       'Only recency requirements apply, there are no flight and duty time limitations for CPL holders',
     ],
     correct: 0,
-    explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.2.2: a CPL holder must be able to apply the rules pertaining to flight and duty time limitations for CPL licence holders. This includes CAO 48.1 FDP limits, cumulative limits, and rest requirements. Including CAO 48.1 FDP and cumulative limits',
+    explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.2.2: a CPL holder must be able to apply the rules pertaining to flight and duty time limitations for CPL licence holders. This includes CAO 48.1 FDP limits, cumulative limits, and rest requirements.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.2.2',
   },
   {
@@ -1316,8 +1316,8 @@ export const clwaQuestions: {
       'Landing clearance is only required for IFR aircraft',
     ],
     correct: 2,
-    explanation: 'AIP ENR 1.1 : a pilot must not land unless the specific clearance "Cleared to land" (or "Cleared touch and go" or "Cleared for the option") has been received from ATC. Ch and go" or "Cleared for the option") must be received',
-    reference: 'AIP ENR 1.1 Chapter 3',
+    explanation: 'AIP ENR 1.1 : a pilot must not land unless the specific clearance "Cleared to land" (or "Cleared touch and go" or "Cleared for the option") has been received from ATC.',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'You access NAIPS before a flight and find a NOTAM stating \'RWY 18/36 CLSD TIL 0800\'. Your planned departure is at 0730. What does this mean and what must you do?',
@@ -1341,7 +1341,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'CASR 91.330 Item 5: unpowered gliders have priority over power-driven aircraft. In the right-of-way hierarchy, an unpowered glider ranks higher than any power-driven aircraft. The powered aircraft must give way to the glider.',
-    reference: 'CASR 91.330 Chapter 1',
+    reference: 'CASR 91.330',
   },
   {
     question: 'What is the maximum flight time allowed in any single FDP for a single-pilot charter operation?',
@@ -1364,8 +1364,8 @@ export const clwaQuestions: {
       'Aerodrome NOTAMs, en-route NOTAMs and emergency NOTAMs',
     ],
     correct: 0,
-    explanation: 'AIP ENR 1.1 and AIP GEN 3.3: three types of NOTAMs are available — location NOTAMs (accessed by individual location identifier, e.g. YBWW for Brisbane West Wellcamp); FIR NOTAMs (applicable to Brisbane FIR (YBBB) or Melbourne FIR (YMMM)); and Head Office NOTAMs (accessed by identifier YSHO). Ms (for Brisbane or Melbourne FIR), and Head Office NOTAMs (accessed by YSHO)',
-    reference: 'AIP GEN 3.3 Chapter 2',
+    explanation: 'AIP ENR 1.1 and AIP GEN 3.3: three types of NOTAMs are available — location NOTAMs (accessed by an individual location identifier, e.g. YBWW for Brisbane West Wellcamp); FIR NOTAMs (applicable to the Brisbane FIR (YBBB) or Melbourne FIR (YMMM)); and Head Office NOTAMs (accessed by the identifier YSHO).',
+    reference: 'AIP GEN 3.3',
   },
   {
     question: 'After completing a Schedule 8 pilot maintenance task, what must the pilot record?',
@@ -1377,7 +1377,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'After completing a Schedule 8 pilot maintenance task, the pilot must make an entry in the aircraft maintenance release (or equivalent document) certifying the task has been completed, including the pilot\'s licence number. This forms the maintenance record for the task.',
-    reference: 'CASR Part 43 Schedule 8 / CASR 91.755',
+    reference: 'CAR 1988 Schedule 8 / CASR 91.755',
   },
   {
     question: 'What are the VMC requirements for VFR flight in Class G airspace above 3,000 ft AMSL during the day?',
@@ -1424,8 +1424,8 @@ export const clwaQuestions: {
       'A permanent instrument that supersedes CAOs and CARs when there is a conflict between them',
     ],
     correct: 0,
-    explanation: 'AIP ENR 1.1 Chapter 1: an Advisory Circular (AC) provides advice and guidance to illustrate a means (but not necessarily the only means) of complying with the regulations, or to explain certain regulatory requirements. ACs are advisory, not mandatory. , or explains regulatory requirements',
-    reference: 'AIP ENR 1.1 Chapter 1',
+    explanation: 'AIP ENR 1.1 Chapter 1: an Advisory Circular (AC) provides advice and guidance to illustrate a means (but not necessarily the only means) of complying with the regulations, or to explain certain regulatory requirements. ACs are advisory, not mandatory.',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'Which instruments are additionally required for VFR night flight compared to VFR day flight?',
@@ -1460,8 +1460,8 @@ export const clwaQuestions: {
       'Replacing a landing gear strut seal',
     ],
     correct: 2,
-    explanation: 'CASR Part 43 Schedule 8 permits licensed pilots to replace spark plugs as a Schedule 8 pilot maintenance task. Windscreen replacement, avionics replacement, and landing gear seal replacement require a LAME or authorised person. Pilot maintenance tasks are limited to low-risk consumable and adjustment items listed in Schedule 8.',
-    reference: 'CASR Part 43 Schedule 8',
+    explanation: 'CAR 1988 Schedule 8 permits licensed pilots to replace spark plugs as a Schedule 8 pilot maintenance task. Windscreen replacement, avionics replacement, and landing gear seal replacement require a LAME or authorised person. Pilot maintenance tasks are limited to low-risk consumable and adjustment items listed in Schedule 8.',
+    reference: 'CAR 1988 Schedule 8',
   },
   {
     question: 'A pilot takes a prescribed medication that causes drowsiness. The medication label says \'do not operate machinery\'. What must the pilot do?',
@@ -1472,7 +1472,7 @@ export const clwaQuestions: {
       'Notify ATC before each flight that they are on medication',
     ],
     correct: 0,
-    explanation: 'A pilot must not fly if any medication or drug (prescribed or otherwise) impairs their ability to safely exercise their licence privileges. If the condition requiring the medication persists beyond 7 days and affects flying fitness, the pilot must notify their DAME. The pilot is responsible for assessing their own fitness. And consult their DAME if the condition requiring the medication persists',
+    explanation: 'A pilot must not fly if any medication or drug (prescribed or otherwise) impairs their ability to safely exercise their licence privileges. If the condition requiring the medication persists beyond 7 days and affects flying fitness, the pilot must notify their DAME. The pilot is responsible for assessing their own fitness.',
     reference: 'CASR Part 67 / Civil Aviation Act 1988 s.30DB',
   },
   {
@@ -1508,7 +1508,7 @@ export const clwaQuestions: {
       'VFR lanes require a transponder squawk of 7000 at all times',
     ],
     correct: 2,
-    explanation: 'When using a VFR lane of entry or transit lane, the pilot must monitor and report on the designated frequency, maintain the published altitude, comply with all specific procedures in ERSA, and operate the transponder on the assigned code. Lanes have specific entry/exit reporting requirements. And comply with the specific procedures published for that lane in ERSA',
+    explanation: 'When using a VFR lane of entry or transit lane, the pilot must monitor and report on the designated frequency, maintain the published altitude, comply with all specific procedures in ERSA, and operate the transponder on the assigned code. Lanes have specific entry/exit reporting requirements.',
     reference: 'AIP ENR 1.4 / ERSA',
   },
   {
@@ -1584,7 +1584,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.14 / AIP GEN 3.3',
   },
   {
-    question: 'What is the final reserve fuel requirement for a piston-engine aeroplane with MTOW not exceeding 5,700 kg on a VFR day flight?',
+    question: 'For a day VFR flight, what is the minimum final reserve fuel for a piston aeroplane of 5,700 kg MTOW or less?',
     options: [
       '20 minutes at normal cruise power',
       '45 minutes at normal cruise power',
@@ -1634,7 +1634,7 @@ export const clwaQuestions: {
   {
     question: 'During a VFR day flight, a fuel check shows that unforeseen headwinds mean the aircraft could land at the destination with less than the 30-minute final reserve. The pilot can still divert if required. What must the pilot do?',
     options: [
-      'Continue to destination without action — final reserve may be used if no other option exists',
+      'Continue to destination without action - final reserve may be used if no other option exists',
       'Declare MAYDAY MAYDAY MAYDAY FUEL immediately on 121.5 MHz',
       'Request from ATS the duration of any likely delay in landing, and consider diverting to an aerodrome that allows the final reserve to be maintained',
       'Declare minimum fuel immediately regardless of whether a diversion is still possible',
@@ -1749,7 +1749,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'CASR 91.185 : pilots must not engage in aerobatic flight below 3,000 ft AGL unless their aerobatic activity endorsement permits lower heights. Aerobatic manoeuvres are defined as those with bank angles greater than 60°, pitch angles greater than 45°, or abrupt changes.',
-    reference: 'CASR 91.185 Chapter 1',
+    reference: 'CASR 91.185',
   },
   {
     question: 'If an aircraft not certified for icing conditions inadvertently enters icing conditions, what must the pilot do?',
@@ -1761,7 +1761,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'CASR 91.710 : if an aircraft not certified for icing conditions inadvertently enters icing conditions, the pilot must change the flight path to avoid them as soon as practicable.',
-    reference: 'CASR 91.710 Chapter 2',
+    reference: 'CASR 91.710',
   },
   {
     question: 'You call on CTAF to advise you are joining the circuit. Another pilot responds that they are also on final approach for the same runway. What should you do?',
@@ -1833,7 +1833,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'CASR Part 61 : to conduct night VFR operations in a single-engine aeroplane, a pilot requires a single-engine aeroplane night VFR endorsement, which requires at least 5 hours night experience including 1 hour dual, 1 hour solo night circuits, and 3 hours dual instrument time.',
-    reference: 'CASR Part 61 Chapter 3',
+    reference: 'CASR Part 61',
   },
   {
     question: 'You are landing at an unfamiliar aerodrome with crossed runways. As you approach to land on runway 18, you notice another aircraft has commenced its take-off roll on runway 09. What should you do?',
@@ -1880,7 +1880,7 @@ export const clwaQuestions: {
       'Continue on the original clearance until you can find the point',
     ],
     correct: 0,
-    explanation: 'Pilots must not accept ATC clearances containing points, routes, or levels they cannot comply with. The correct response is to advise ATC using the word \'UNABLE\' with the reason, and request an alternative. ATC can then provide an amended clearance using a point you can identify. And request an alternative or position fix',
+    explanation: 'Pilots must not accept ATC clearances containing points, routes, or levels they cannot comply with. The correct response is to advise ATC using the word \'UNABLE\' with the reason, and request an alternative. ATC can then provide an amended clearance using a point you can identify.',
     reference: 'AIP ENR 6.1',
   },
   {
@@ -1892,16 +1892,16 @@ export const clwaQuestions: {
       'A type rating is required for every specific multi-engine aircraft',
     ],
     correct: 1,
-    explanation: 'To act as PIC of a multi-engine aircraft, a pilot must hold a multi-engine class rating endorsed on their CPL in addition to the appropriate licence grade. They must also meet the 90-day recency requirement before carrying passengers. Not all CPL holders automatically have the multi-engine rating. And must meet the recency requirements for that category before carrying passengers',
+    explanation: 'To act as PIC of a multi-engine aircraft, a pilot must hold a multi-engine class rating endorsed on their CPL in addition to the appropriate licence grade. They must also meet the 90-day recency requirement before carrying passengers. Not all CPL holders automatically have the multi-engine rating.',
     reference: 'CASR Part 61 Subpart 61.J',
   },
   {
     question: 'What is the VAT range for Category C aircraft?',
     options: [
-      '91–120 kt',
-      '100–130 kt',
-      '141–165 kt',
-      '121–140 kt',
+      '91-120 kt',
+      '100-130 kt',
+      '141-165 kt',
+      '121-140 kt',
     ],
     correct: 3,
     explanation: 'Part 91 MOS Table 2.02(2) Item 3: Category C aircraft have a VAT (indicated airspeed at threshold speed) of 121–140 kt.',
@@ -1941,7 +1941,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'CASR 91.273 / Part 91 MOS s.13.02: when navigating by visual reference to the ground or water, a pilot must positively fix the aircraft\'s position by visual reference to features marked on topographical charts at intervals not exceeding 30 minutes.',
-    reference: 'CASR 91.273 / Part 91 MOS 2020 s.13.02 Chapter 3',
+    reference: 'CASR 91.273 / Part 91 MOS 2020 s.13.02',
   },
   {
     question: 'What is the purpose of a NOTAM, and how does it differ from the AIP?',
@@ -1988,7 +1988,7 @@ export const clwaQuestions: {
       'A serious incident occurs on the ground; an accident occurs in flight',
     ],
     correct: 1,
-    explanation: 'A serious incident involves circumstances that indicate a high probability that an accident nearly occurred — such as a near-collision or unexpected control loss that was recovered. An accident involves actual fatalities, serious injuries, or substantial aircraft damage. Both are reportable to the ATSB. No actual injury or substantial damage occurred',
+    explanation: 'A serious incident involves circumstances that indicate a high probability that an accident nearly occurred — such as a near-collision or unexpected control loss that was recovered. An accident involves actual fatalities, serious injuries, or substantial aircraft damage. Both are reportable to the ATSB.',
     reference: 'Transport Safety Investigation Act 2003 s.3 / AIP GEN 3.3',
   },
   {
@@ -2012,7 +2012,7 @@ export const clwaQuestions: {
       'After leaving controlled airspace',
     ],
     correct: 0,
-    explanation: 'Part 91 MOS Table 21.05(1) Item 10: the pilot must report the situation before leaving controlled airspace on descent. Note in the table: to ensure separation with aircraft near the base of controlled airspace is not compromised, the report is made to the ATS for the Class G airspace the aircraft will descend into. As specified in Table 21.05(1) Item 10',
+    explanation: 'Part 91 MOS Table 21.05(1) Item 10: the pilot must report the situation before leaving controlled airspace on descent. Note in the table: to ensure separation with aircraft near the base of controlled airspace is not compromised, the report is made to the ATS for the Class G airspace the aircraft will descend into.',
     reference: 'Part 91 MOS 2020 s.21.05(1) Table 21.05(1) Item 10',
   },
   {
@@ -2040,16 +2040,16 @@ export const clwaQuestions: {
     reference: 'AIP ENR 4.1',
   },
   {
-    question: 'What is the difference between an \'MBZ\' and a \'CTAF\'?',
+    question: 'What is the difference between a Mandatory Broadcast Area (MBA) and a CTAF?',
     options: [
-      'MBZ and CTAF are identical terms used interchangeably to describe the same frequency requirement at non-controlled aerodromes in Australia',
-      'CTAF is the frequency used for positional broadcasts at a non-controlled aerodrome. MBZ is the designated airspace around the aerodrome where those broadcasts are mandatory',
-      'An MBZ frequency requirement applies only to IFR aircraft transiting the airspace, while a CTAF requirement applies to VFR aircraft only',
-      'An MBZ is used at controlled aerodromes during off-peak hours when the tower is closed, while a CTAF applies at permanently non-controlled aerodromes',
+      'MBA and CTAF are identical terms used interchangeably to describe the same frequency requirement at non-controlled aerodromes in Australia',
+      'CTAF is the frequency used for positional broadcasts at a non-controlled aerodrome; an MBA is the designated airspace within which those broadcasts are mandatory',
+      'An MBA frequency requirement applies only to IFR aircraft transiting the airspace, while a CTAF requirement applies to VFR aircraft only',
+      'An MBA applies at controlled aerodromes during off-peak hours when the tower is closed, while a CTAF applies at permanently non-controlled aerodromes',
     ],
     correct: 1,
-    explanation: 'A CTAF (Common Traffic Advisory Frequency) is a designated frequency at a non-controlled aerodrome for positional broadcasts. An MBZ (Mandatory Broadcast Zone) is a volume of airspace surrounding a non-controlled aerodrome where pilots must make broadcasts. Within the MBZ, CTAF broadcasts are mandatory, not just recommended.',
-    reference: 'AIP ENR 6.4 / AIP GEN 2.2',
+    explanation: 'A CTAF (Common Traffic Advisory Frequency) is the designated frequency at a non-controlled aerodrome on which pilots make positional broadcasts. A Mandatory Broadcast Area (MBA) is a volume of airspace, usually around a busier non-controlled aerodrome, within which carriage and use of radio and the prescribed broadcasts are mandatory rather than merely recommended.',
+    reference: 'AIP ENR 1.1 / AIP GEN 2.2',
   },
   {
     question: 'What emergency equipment must be carried on board an aircraft operating in Australian airspace under CASR 91?',
@@ -2061,7 +2061,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'CASR 91 and Part 91 MOS s.26 specify the emergency equipment required based on the operation type. This includes an ELT, first aid kit, and additional equipment such as life jackets for overwater operations, survival equipment for remote area operations, and fire extinguishers where required. The specific requirements depend on the nature and route of the operation.',
-    reference: 'CASR 91 / Part 91 MOS s.26 Chapter 26',
+    reference: 'CASR 91 / Part 91 MOS s.26',
   },
   {
     question: 'When must a pilot report "downwind" in the traffic circuit at a controlled aerodrome?',
@@ -2072,8 +2072,8 @@ export const clwaQuestions: {
       'When starting or entering the downwind leg',
     ],
     correct: 3,
-    explanation: 'AIP ENR 1.1 : the pilot must report "downwind" when starting or entering the downwind leg. If frequency congestion prevents this, the pilot must report "mid-downwind" or "late-downwind.". Or "mid-downwind" or "late-downwind" if frequency congestion prevented the initial call',
-    reference: 'AIP ENR 1.1 Chapter 3',
+    explanation: 'AIP ENR 1.1 : the pilot must report "downwind" when starting or entering the downwind leg. If frequency congestion prevents this, the pilot must report "mid-downwind" or "late-downwind.".',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'During the pre-take-off control check, you find the elevator moves freely but appears to have restricted travel — it cannot be moved to the full up position. What is the correct action?',
@@ -2097,7 +2097,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'CASR 91.285 and Part 91 MOS s.11.14: a pilot must not fly under the VFR in Class A airspace unless they hold a specific approval. Class A is normally IFR-only airspace. VFR is not absolutely prohibited, but requires individual CASA approval — it is not available simply by requesting an ATC clearance. Option B is incorrect because approval, while rare, can be granted.',
-    reference: 'CASR 91.285 Chapter 3',
+    reference: 'CASR 91.285',
   },
   {
     question: 'What is the general rule regarding take-off and landing direction?',
@@ -2109,7 +2109,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'CASR 91.380 : to the extent practicable, pilots must land and take off into wind, unless the aircraft\'s AFM/POH allows a downwind or crosswind take-off/landing, and the pilot is satisfied that traffic conditions at the aerodrome allow it safely.',
-    reference: 'CASR 91.380 Chapter 3',
+    reference: 'CASR 91.380',
   },
   {
     question: 'Under ICAO Annex 2 and AIP, what is the correct distress message format?',
@@ -2172,7 +2172,7 @@ export const clwaQuestions: {
     reference: 'CASR 61.395 / CASR 61.870',
   },
   {
-    question: 'A student pilot who has not yet passed the General Flying Progress Test (GFPT) asks to carry a friend in the aircraft during a solo training flight. May they do so?',
+    question: 'A student pilot, operating on a solo flight authorisation and not yet holding any pilot licence, asks to carry a friend in the aircraft during a solo training flight. May they do so?',
     options: [
       'Yes, solo students may carry one passenger',
       'Provided the instructor gives written permission',
@@ -2180,7 +2180,7 @@ export const clwaQuestions: {
       'Only within the aerodrome traffic pattern',
     ],
     correct: 2,
-    explanation: 'A student pilot (operating on a solo endorsement) may not carry any passengers. Passenger carrying requires at least a Private Pilot Licence. Carrying a passenger without the required licence is an offence.',
+    explanation: 'A student pilot operating on a solo flight authorisation may not carry any passengers. Passenger carrying requires at least a Recreational or Private Pilot Licence. Carrying a passenger without the required licence is an offence.',
     reference: 'CASR 61.160 / CASR 61.165',
   },
   {
@@ -2192,11 +2192,11 @@ export const clwaQuestions: {
       'A death or serious injury caused by contact with an aircraft or jet blast',
     ],
     correct: 3,
-    explanation: 'AIP ENR 1.14: examples of IRMs include: a death or serious injury caused by contact with an aircraft, jet blast or component; an aircraft believed missing; an aircraft suffering damage; a breakdown of separation standards in a CTA. An aircraft believed missing; aircraft damage; or breakdown of separation standards in a control area',
+    explanation: 'AIP ENR 1.14: examples of IRMs include: a death or serious injury caused by contact with an aircraft, jet blast or component; an aircraft believed missing; an aircraft suffering damage; a breakdown of separation standards in a CTA.',
     reference: 'AIP ENR 1.1 Chapter 1 / AIP ENR 1.14',
   },
   {
-    question: 'How frequently must a VFR pilot fix the aircraft\'s position when navigating by visual reference to the ground?',
+    question: 'At what maximum interval must a VFR pilot positively fix the aircraft\'s position by visual reference to ground features?',
     options: [
       'Every 15 minutes',
       'Every 60 minutes',
@@ -2210,13 +2210,13 @@ export const clwaQuestions: {
   {
     question: 'An aerodrome has a left-hand circuit for runway 18. You are joining from the north (directly over the runway threshold). What is the correct joining procedure?',
     options: [
-      'Fly to the east side, then position for a crosswind or downwind join',
+      'Fly to the west side, then position for a crosswind or downwind join',
       'Join directly on a long final for runway 18',
       'Cross midfield at circuit height and turn into downwind',
       'Enter directly onto the crosswind leg from the north',
     ],
     correct: 0,
-    explanation: 'For a left-hand circuit on runway 18, the active side is the west (where the circuit is flown). The non-active side is the east. Arriving from the north, you should fly to the east side of the aerodrome, then position for a crosswind or downwind join from the non-active side. This avoids conflicts with departing traffic and approaching aircraft on final.',
+    explanation: 'For a left-hand circuit on runway 18 the circuit is flown on the east side, so the east is the active (live) side and the west is the non-active (dead) side. Arriving from the north, position to the west (non-active) side, then join the crosswind or downwind leg at circuit height. This keeps you clear of departing traffic and of aircraft on final approach.',
     reference: 'AIP ENR 6.4 / AIP ENR 1.1',
   },
   {
@@ -2253,7 +2253,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'AIP ENR 1.1: for entry into Class D airspace, establishing two-way communications between the aircraft and ATC constitutes a clearance for the aircraft to enter the Class D airspace.',
-    reference: 'AIP ENR 1.4 Chapter 3',
+    reference: 'AIP ENR 1.4',
   },
   {
     question: 'You receive a distress call from another aircraft on the CTAF. What is your immediate responsibility?',
@@ -2349,7 +2349,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'AIP ENR 1.1 : VFR aircraft without flight notification must provide: callsign and "DETAILS" (wait for ATC response), then destination and first tracking point, preferred level, and ATIS code received.',
-    reference: 'AIP ENR 1.1 Chapter 3',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'How often must a CPL holder complete a biennial flight review to maintain PIC privileges?',
@@ -2384,7 +2384,7 @@ export const clwaQuestions: {
       'ERSA contains runway data, radio frequencies, CTAF, aerodrome elevation, procedures',
     ],
     correct: 3,
-    explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.1.4 requires pilots to decode information in ERSA. ERSA (En Route Supplement Australia) contains runway data, radio frequencies, CTAF, elevation, NOTAMs, restricted and danger area details, and is mandatory for pre-flight planning at non-controlled aerodromes. And other operational information for pre-flight planning',
+    explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.1.4 requires pilots to decode information in ERSA. ERSA (En Route Supplement Australia) contains runway data, radio frequencies, CTAF, elevation, NOTAMs, restricted and danger area details, and is mandatory for pre-flight planning at non-controlled aerodromes.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.8 s.2.1.4',
   },
   {
@@ -2420,7 +2420,7 @@ export const clwaQuestions: {
       'Yes, the 8-hour rule only applies to airline pilots',
     ],
     correct: 2,
-    explanation: 'Pilots must not fly within 8 hours of consuming alcohol, must not fly with a BAC at or above 0.02 g/210 L of breath, and must not fly while under the influence of alcohol. All three conditions apply simultaneously. Feeling well does not guarantee BAC is below 0.02. And must not fly if their blood alcohol content is at or above 0.02 g/210 L breath, regardless of how they feel',
+    explanation: 'Pilots must not fly within 8 hours of consuming alcohol, must not fly with a BAC at or above 0.02 g/210 L of breath, and must not fly while under the influence of alcohol. All three conditions apply simultaneously. Feeling well does not guarantee BAC is below 0.02.',
     reference: 'Civil Aviation Act 1988 s.30DB / CASR Part 91',
   },
   {
@@ -2492,8 +2492,8 @@ export const clwaQuestions: {
       'No smoking during take-off and landing, or at any other time the pilot in command directs',
     ],
     correct: 3,
-    explanation: 'CASR 91.565 : passengers must not smoke during take-off and landing, or at any other time the pilot in command so directs. The no-smoking instruction forms part of the mandatory pre-take-off passenger safety briefing. Passengers must be briefed on smoking rules before take-off',
-    reference: 'CASR 91.565 Chapter 3',
+    explanation: 'CASR 91.565 : passengers must not smoke during take-off and landing, or at any other time the pilot in command so directs. The no-smoking instruction forms part of the mandatory pre-take-off passenger safety briefing.',
+    reference: 'CASR 91.565',
   },
   {
     question: 'What different alternate requirement applies when flight planning is based on a TAF3 and ETA is within the first 3 hours of TAF3 validity?',
@@ -2516,7 +2516,7 @@ export const clwaQuestions: {
       'Only commissioned police officers may carry firearms and only in uniformed duty',
     ],
     correct: 2,
-    explanation: 'The carriage of firearms in civil aircraft is regulated under CASR Part 91. Firearms must generally be unloaded and secured, and carriage requires operator approval and compliance with the specific regulations. Discharging a firearm in an aircraft is an offence. The specific conditions are found in CASR and applicable operator procedures. And the carriage must comply with applicable CASR provisions',
+    explanation: 'The carriage of firearms in civil aircraft is regulated under CASR Part 91. Firearms must generally be unloaded and secured, and carriage requires operator approval and compliance with the specific regulations. Discharging a firearm in an aircraft is an offence. The specific conditions are found in CASR and applicable operator procedures.',
     reference: 'CASR Part 91 / AIP ENR 1.1',
   },
   {
@@ -2529,7 +2529,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'AIP ENR 1.1 Chapter 1 / CASR Part 99: piloting an aircraft is a safety-sensitive aviation activity and pilots must comply with CASR Part 99. CASR Part 99 establishes a regime for random drug and alcohol testing conducted for or on behalf of CASA of all pilots in Australia.',
-    reference: 'CASR Part 99 Chapter 1',
+    reference: 'CASR Part 99',
   },
   {
     question: 'You are approaching a Class D control zone that operates part-time. Outside tower hours, the zone has been deactivated. What procedures now apply?',
@@ -2640,7 +2640,7 @@ export const clwaQuestions: {
     reference: 'CASR Part 119 / Civil Aviation Act 1988',
   },
   {
-    question: 'When planning alternate fuel and a TAF for the destination includes a BECMG element showing deteriorating conditions, from when should those conditions be applied ?',
+    question: 'When planning alternate fuel and a TAF for the destination includes a BECMG element showing deteriorating conditions, from when should those conditions be applied?',
     options: [
       'From the end of the BECMG period',
       'From the middle of the BECMG period',
@@ -2649,7 +2649,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'Part 91 MOS s.8.04(8)(a) and AIP ENR 1.1: where a BECMG element represents a deterioration in weather, the conditions are applied from the start of the BECMG forecast period. Improving conditions within a BECMG are applied from the end of the period.',
-    reference: 'Part 91 MOS 2020 s.8.04(8) Chapter 2',
+    reference: 'Part 91 MOS 2020 s.8.04(8)',
   },
   {
     question: 'The area QNH is 995 hPa. Using AIP ENR 4.1, what is the transition level in Australian airspace?',
@@ -2684,8 +2684,8 @@ export const clwaQuestions: {
       'Replacing a faulty radio transceiver',
     ],
     correct: 2,
-    explanation: 'CASR Part 43 Schedule 8 lists specific tasks a licensed pilot may perform as pilot maintenance. Replacing spark plugs is a Schedule 8 task. Windscreen, tyre, and radio transceiver replacement all require a licensed aircraft maintenance engineer (LAME).',
-    reference: 'CASR Part 43 Schedule 8',
+    explanation: 'CAR 1988 Schedule 8 lists specific tasks a licensed pilot may perform as pilot maintenance. Replacing spark plugs is a Schedule 8 task. Windscreen, tyre, and radio transceiver replacement all require a licensed aircraft maintenance engineer (LAME).',
+    reference: 'CAR 1988 Schedule 8',
   },
   {
     question: 'What is a Prohibited Area and can a civil aircraft ever enter one?',
@@ -2756,7 +2756,7 @@ export const clwaQuestions: {
       'For training flights only when authorised by the flying school',
     ],
     correct: 0,
-    explanation: 'Part 91 MOS s.26.19: an aircraft may begin a flight with inoperative radiocommunications in specified circumstances. The section specifies conditions including the class of airspace, aerodrome type, and availability of alternative communication means. Including that the flight is wholly in Class G, the aerodrome requires no radio, and the pilot has alternative means of communication',
+    explanation: 'Part 91 MOS s.26.19: an aircraft may begin a flight with inoperative radiocommunications in specified circumstances. The section specifies conditions including the class of airspace, aerodrome type, and availability of alternative communication means.',
     reference: 'Part 91 MOS 2020 s.26.19',
   },
   {
@@ -2792,7 +2792,7 @@ export const clwaQuestions: {
       'The pilot must hold at minimum a CPL with 1,000 hours',
     ],
     correct: 0,
-    explanation: 'Low-level agricultural and other special operations that require flight below the standard minimum heights need a specific CASA authorisation — typically a low-level rating or endorsement. The conditions of the authorisation must be complied with strictly. Flying below minimum heights without the required authorisation is an offence. And must comply with the conditions of the authorisation',
+    explanation: 'Low-level agricultural and other special operations that require flight below the standard minimum heights need a specific CASA authorisation — typically a low-level rating or endorsement. The conditions of the authorisation must be complied with strictly. Flying below minimum heights without the required authorisation is an offence.',
     reference: 'CASR 91.635 / CASR 61 Part M',
   },
   {
@@ -2829,7 +2829,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'CASR 91.700 : if after making a distress signal the reason no longer exists, as soon as circumstances permit, the pilot must cancel the signal.',
-    reference: 'CASR 91.700 Chapter 7',
+    reference: 'CASR 91.700',
   },
   {
     question: 'You check the maintenance release before flight and notice the \'next due\' for the 100-hourly inspection shows \'2,347 hours\' and the current airframe hours are 2,348. What must you do?',
@@ -2853,7 +2853,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'Part 91 MOS s.11.16 : for VOR or NDB-based operations in controlled airspace, ATC must be notified when the deviation from the specified bearing exceeds ±5°. For PBN operations: 1× the RNP value. For DME: ±2 NM. For visual navigation: 1 NM from cleared track.',
-    reference: 'Part 91 MOS 2020 s.11.16 Chapter 3',
+    reference: 'Part 91 MOS 2020 s.11.16',
   },
   {
     question: 'The ERC-LOW chart in your flight bag was published 3 months ago. A NOTAM has been issued changing the Class C boundary in the area you will transit. Which takes precedence?',
@@ -2877,7 +2877,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'Part 91 MOS s.9.02(2)(c): a VFR flight in a designated remote area requires the pilot to ensure either a flight plan has been submitted or a SARTIME has been nominated.',
-    reference: 'Part 91 MOS 2020 s.9.02(2)(c) Chapter 2',
+    reference: 'Part 91 MOS 2020 s.9.02(2)(c)',
   },
   {
     question: 'You hold a CPL and have not flown for 100 days. A passenger has asked you to fly them to a destination aerodrome in a Cessna 172. What recency requirement must you meet before carrying the passenger?',
@@ -2895,13 +2895,13 @@ export const clwaQuestions: {
     question: 'What types of maintenance may the holder of a CPL carry out on their aircraft?',
     options: [
       'All maintenance, the CPL includes a full maintenance authorisation',
-      'Only the specific tasks listed in Schedule 8 of CASR Part 43, such as replacing bulbs, replenishing oil',
+      'Only the specific tasks listed in Schedule 8 of CAR 1988, such as replacing bulbs, replenishing oil',
       'Any maintenance provided it is supervised by a LAME',
       'CPL holders may not carry out any maintenance, all work requires a LAME',
     ],
     correct: 1,
-    explanation: 'CPL holders may only perform the specific pilot maintenance tasks listed in Schedule 8 of CASR Part 43. These are limited and specific tasks such as replacing light bulbs, replenishing oil and fuel, replacing spark plugs, and checking for water in fuel. Any other maintenance requires an appropriately licensed maintenance engineer. And fuel system water checks',
-    reference: 'CASR Part 43 Schedule 8',
+    explanation: 'CPL holders may only perform the specific pilot maintenance tasks listed in Schedule 8 of CAR 1988. These are limited and specific tasks such as replacing light bulbs, replenishing oil and fuel, replacing spark plugs, and checking for water in fuel. Any other maintenance requires an appropriately licensed maintenance engineer.',
+    reference: 'CAR 1988 Schedule 8',
   },
   {
     question: 'What equipment check must the pilot complete before take-off?',
@@ -2924,8 +2924,8 @@ export const clwaQuestions: {
       'A briefing is only required if passengers have not flown before',
     ],
     correct: 0,
-    explanation: 'CASR 91.565 / Part 91 MOS s.20.06: the pre-take-off passenger safety briefing must cover: not manipulating controls; smoking rules; seat belt use; brace position; emergency exits and evacuation; oxygen use (if carried); baggage stowage; and life jacket use and no inflation in aircraft (if life jackets are carried). And life jackets',
-    reference: 'CASR 91.565 / Part 91 MOS 2020 s.20.06 Chapter 3',
+    explanation: 'CASR 91.565 / Part 91 MOS s.20.06: the pre-take-off passenger safety briefing must cover: not manipulating controls; smoking rules; seat belt use; brace position; emergency exits and evacuation; oxygen use (if carried); baggage stowage; and life jacket use and no inflation in aircraft (if life jackets are carried).',
+    reference: 'CASR 91.565 / Part 91 MOS 2020 s.20.06',
   },
   {
     question: 'What is the recommended procedure when arriving at an unfamiliar non-controlled aerodrome to determine circuit direction?',
@@ -2935,8 +2935,8 @@ export const clwaQuestions: {
       'Land on any convenient runway and contact the aerodrome operator on CTAF after landing to confirm circuit procedures',
       'Contact the nearest ATC facility before arrival to obtain current circuit information and aerodrome status',
     ],
-    correct: 1,
-    explanation: 'AIP ENR 1.1 Chapter 3: where the aerodrome layout or circuit direction cannot be ascertained prior to arrival, the pilot should overfly or circle the aerodrome at least 500 ft above circuit altitude (which may be 2,000 ft or more above elevation). Once the circuit direction is determined, position to the non-active side before descending. Ear point before descending to circuit height',
+    correct: 0,
+    explanation: 'AIP ENR 1.1 Chapter 3: where the aerodrome layout or circuit direction cannot be ascertained prior to arrival, the pilot should overfly or circle the aerodrome at least 500 ft above circuit altitude (which may be 2,000 ft or more above elevation). Once the circuit direction is determined, position to the non-active side before descending.',
     reference: 'AIP ENR 1.1 Chapter 3 / AIP ENR 1.1',
   },
   {
@@ -2967,13 +2967,13 @@ export const clwaQuestions: {
     question: 'What does INTER indicate in a TAF?',
     options: [
       'Variations each lasting less than 30 minutes, not expected to cover more than half the stated period',
-      'Variations lasting 30–60 minutes each instance',
+      'Variations lasting 30-60 minutes each instance',
       'An international weather broadcast',
       'Intermediate weather, applicable to the entire period',
     ],
     correct: 0,
     explanation: 'AIP GEN 3.5 : INTER is used when variations from forecast mean conditions are expected to last for less than 30 minutes in each instance, and are not expected to cover more than half the given period. The mean conditions remain those of the preceding part of the forecast.',
-    reference: 'AIP GEN 3.5 Chapter 2',
+    reference: 'AIP GEN 3.5',
   },
   {
     question: 'What type of aeroplane rating allows you to fly a Cessna 172, Piper Archer, and Beechcraft Bonanza under the one endorsement?',
@@ -2997,7 +2997,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'AIP ENR 1.1: if landing or taking off at an aerodrome where ATIS is provided, the pilot should obtain the ATIS before first contact on the approach or tower frequency. On first contact, the pilot must advise receipt of the ATIS code letter, for example "Received information Echo."',
-    reference: 'AIP ENR 1.1 Chapter 3',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'Under what circumstances may an aircraft fly with an ELT temporarily removed?',
@@ -3009,7 +3009,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'Part 91 MOS s.26.52: an aircraft may fly with an ELT temporarily removed for maintenance if a log entry is made, a "no ELT" placard is placed in the aircraft, and no more than 90 days have passed since removal.',
-    reference: 'Part 91 MOS 2020 s.26.52 Chapter 7',
+    reference: 'Part 91 MOS 2020 s.26.52',
   },
   {
     question: 'Before taxiing at a controlled aerodrome, you discover your radio transmitter appears to be working but you are unsure about the receiver. What must you do?',
@@ -3020,7 +3020,7 @@ export const clwaQuestions: {
       'Radio testing is only required for IFR flights',
     ],
     correct: 1,
-    explanation: 'Before taxiing, the pilot must test radio equipment to confirm it is serviceable. Two-way communication must be established with the appropriate ATC unit before taxiing at a controlled aerodrome. A listening watch must be maintained throughout the flight on the appropriate frequency. And maintain a listening watch throughout the flight',
+    explanation: 'Before taxiing, the pilot must test radio equipment to confirm it is serviceable. Two-way communication must be established with the appropriate ATC unit before taxiing at a controlled aerodrome. A listening watch must be maintained throughout the flight on the appropriate frequency.',
     reference: 'Part 91 MOS s.10.02 / CASR 91.500',
   },
   {
@@ -3056,7 +3056,7 @@ export const clwaQuestions: {
       'Declare MAYDAY on 121.5 MHz immediately to alert all stations of the communication failure',
     ],
     correct: 2,
-    explanation: 'On loss of communications, the pilot should squawk 7600, attempt to re-establish contact on all available frequencies (including 121.5 MHz guard frequency), and follow the AIP ENR 6.1 communication failure procedures. The AIP specifies what to do if in controlled and uncontrolled airspace. And follow any applicable lost communications procedures in the AIP',
+    explanation: 'On loss of communications, the pilot should squawk 7600, attempt to re-establish contact on all available frequencies (including 121.5 MHz guard frequency), and follow the AIP ENR 6.1 communication failure procedures. The AIP specifies what to do if in controlled and uncontrolled airspace.',
     reference: 'AIP ENR 6.1',
   },
   {
@@ -3081,7 +3081,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'AIP ENR 1.1: an airways clearance normally contains: aircraft identification; destination, area of operation, or clearance limit; route of flight; assigned level; SSR code; and frequency requirements.',
-    reference: 'AIP ENR 1.1 Chapter 5',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'For VFR day flight planning purposes, when does daylight officially end in Australia?',
@@ -3152,7 +3152,7 @@ export const clwaQuestions: {
       'By broadcasting on CTAF and asking other traffic',
     ],
     correct: 1,
-    explanation: 'Right-hand circuit requirements for specific runways at non-controlled aerodromes are published in ERSA. On arrival, the signals area should also be observed — a right-hand circuit indicator (circuit indicator arms pointing to the right side of the runway) in the segmented circle confirms the requirement. CTAF broadcasts from traffic already in the circuit also provide this information.',
+    explanation: 'Right-hand circuit requirements for specific runways at non-controlled aerodromes are published in ERSA. On arrival, the signals area should also be observed — a right-hand circuit indicator (circuit indicator arms pointing to the right side of the runway) in the signal area confirms the requirement. CTAF broadcasts from traffic already in the circuit also provide this information.',
     reference: 'AIP ENR 6.4 / ERSA',
   },
   {
@@ -3165,7 +3165,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'CASR 91.390: after take-off from a non-controlled aerodrome, the pilot must maintain the take-off track until the aircraft is above 500 ft AGL — unless a track change is necessary to avoid terrain.',
-    reference: 'CASR 91.390 Chapter 3',
+    reference: 'CASR 91.390',
   },
   {
     question: 'What is the blood alcohol limit for a pilot exercising flight crew privileges in Australia?',
@@ -3189,7 +3189,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'CASR 91.335 additional right-of-way rules: when overtaking another aircraft (whether climbing, descending or level), the overtaking aircraft must keep out of the way, pass on the right, and remain on the right until well clear.',
-    reference: 'CASR 91.335 Chapter 1',
+    reference: 'CASR 91.335',
   },
   {
     question: 'In a METAR, what does \'SKC\' mean?',
@@ -3208,7 +3208,7 @@ export const clwaQuestions: {
     options: [
       'A CPL covers all aircraft categories, no additional qualification is needed',
       'They need a helicopter class rating only, the CPL covers the commercial privileges',
-      'They must obtain a CPL(H), the pilot category in the CPL is specific to the aircraft category trained and tested for',
+      'They must obtain a CPL(H); the pilot category in a CPL is specific to the aircraft category for which the pilot was trained and tested',
       'They need an ATPL to fly helicopters commercially',
     ],
     correct: 2,
@@ -3249,7 +3249,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'AIP ENR 1.1 Chapter 1 / AIP ENR 1.5: a disc-shaped symbol (depicting a glider — specifically a white disc with a glider wing) displayed near the wind direction indicator indicates that gliding operations are in progress.',
-    reference: 'AIP ENR 1.5 Chapter 1',
+    reference: 'AIP ENR 1.5',
   },
   {
     question: 'A pilot has inadvertently penetrated controlled airspace without a clearance and is now re-established in Class G. The radio is still functioning. What transponder code should the pilot select?',
@@ -3309,7 +3309,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'CASR 91.680 : if dangerous goods are carried and an emergency is relevant to those goods, the pilot must advise ATS of both the emergency and the nature and state of the dangerous goods.',
-    reference: 'CASR 91.680 Chapter 7',
+    reference: 'CASR 91.680',
   },
   {
     question: 'You have a copy of the AIP Book from 12 months ago. Is this suitable for use in flight planning today?',
@@ -3320,7 +3320,7 @@ export const clwaQuestions: {
       'Yes for VFR, but IFR pilots require the current edition',
     ],
     correct: 2,
-    explanation: 'Pilots must use current, up-to-date publications. The AIP is amended regularly — Amendment 126 is the current edition as at 2024. Using an outdated AIP risks accessing incorrect frequencies, airspace details, procedures or aerodrome information. ERSA and NOTAMs must also be current.',
+    explanation: 'Pilots must use current, up-to-date publications. The AIP is amended regularly on the AIRAC cycle. Using an outdated AIP risks accessing incorrect frequencies, airspace details, procedures or aerodrome information. ERSA and NOTAMs must also be current.',
     reference: 'AIP GEN 0.1 / CASR 91.275',
   },
   {
@@ -3381,7 +3381,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'AIP ENR 1.1 Chapter 7: ELTs must operate continuously for at least 24 hours once activated.',
-    reference: 'AIP ENR 1.1 Chapter 7',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'When is flight notification required for a VFR over-water flight?',
@@ -3393,7 +3393,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'Part 91 MOS s.9.02(2)(b): flight notification is required for a VFR over-water flight conducted beyond a distance from land greater than that which would allow the aircraft to reach land with an engine inoperative.',
-    reference: 'Part 91 MOS 2020 s.9.02(2)(b) Chapter 2',
+    reference: 'Part 91 MOS 2020 s.9.02(2)(b)',
   },
   {
     question: 'What is a Special VFR (SVFR) clearance, and when might you request one?',
@@ -3427,8 +3427,8 @@ export const clwaQuestions: {
       '200 hours',
       '120 hours',
     ],
-    correct: 3,
-    explanation: 'CAO 48.1 limits cumulative flight time to 120 hours in any 28 consecutive days. There is also an annual limit of 1,000 hours in any 365 consecutive days for charter operations.',
+    correct: 0,
+    explanation: 'CAO 48.1: the maximum cumulative flight time is 100 hours in any 28 consecutive days and 1,000 hours in any 365 consecutive days. These cumulative limits apply regardless of how many operators the pilot works for.',
     reference: 'CAO 48.1 Instrument 2019',
   },
   {
@@ -3499,7 +3499,7 @@ export const clwaQuestions: {
       'Runway length and aircraft gross weight only, using the dry runway performance table from the AFM',
       'Landing distance available, runway surface and condition, pressure altitude, temperature, runway gradient, wind, and forecast weather',
     ],
-    correct: 0,
+    correct: 3,
     explanation: 'Part 91 MOS s.25.02(3): before landing, a pilot must account for: landing distance available; runway surface type and condition; pressure altitude and temperature; runway gradient in the landing direction; wind direction, speed and characteristics; and the landing weather forecast. All relevant performance charts must be consulted.',
     reference: 'Part 91 MOS 2020 s.25.02(3)',
   },
@@ -3524,7 +3524,7 @@ export const clwaQuestions: {
       'Allow them as carry-on, the passenger carries responsibility, not the pilot',
     ],
     correct: 2,
-    explanation: 'Aerosol products can be classified as dangerous goods depending on their contents. Flammable aerosols are generally restricted. Small quantities of non-flammable aerosols for personal use may be permitted. The PIC must ensure compliance with CASR Part 92 and is responsible for all dangerous goods on board. Small personal quantities of non-flammable aerosols may be permitted',
+    explanation: 'Aerosol products can be classified as dangerous goods depending on their contents. Flammable aerosols are generally restricted. Small quantities of non-flammable aerosols for personal use may be permitted. The PIC must ensure compliance with CASR Part 92 and is responsible for all dangerous goods on board.',
     reference: 'CASR Part 92',
   },
   {
@@ -3554,14 +3554,14 @@ export const clwaQuestions: {
   {
     question: 'What is the correct tier structure of Australian aviation legislation?',
     options: [
-      'CASR → AIP → CAO → Advisory Circulars',
+      'CASR, then AIP, then CAO, then Advisory Circulars',
       'ICAO standards form Tier 1; CASR forms Tier 2; CAO forms Tier 3',
-      'ICAO Annexes → Civil Aviation Act → AIP → ERSA',
-      'Tier 1: Civil Aviation Act and Airspace Act; Tier 2: CAR and CASR; Tier 3: MOS, CAO and other instruments',
+      'ICAO Annexes, then Civil Aviation Act, then AIP, then ERSA',
+      'Tier 1 is the Civil Aviation Act and Airspace Act; Tier 2 is CAR and CASR; Tier 3 is the MOS, CAO and other instruments',
     ],
     correct: 3,
     explanation: 'AIP ENR 1.1 Chapter 1 aviation legislation structure: Tier 1 — Civil Aviation Act 1988 and Airspace Act 2007 (primary legislation); Tier 2 — Civil Aviation Regulations 1988 (CAR) and Civil Aviation Safety Regulations 1998 (CASR); Tier 3 — Manual of Standards (MOS), Civil Aviation Orders (CAO), and other instruments.',
-    reference: 'AIP ENR 1.1 Chapter 1',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'During the pre-flight walk-around you notice frost has formed on the upper wing surface. What must you do before take-off?',
@@ -3584,7 +3584,7 @@ export const clwaQuestions: {
       'Cost sharing is permitted provided the pilot and passengers share costs equally, no profit is made',
     ],
     correct: 3,
-    explanation: 'Cost sharing flights are permitted for CPL holders provided the costs (fuel, landing fees, etc.) are shared equally between the pilot and all persons on board, no profit is made by the pilot, and the total number of persons including the pilot does not exceed 6. This is treated as a private flight, not a commercial operation. And the number of persons sharing does not exceed 6 including the pilot',
+    explanation: 'Cost sharing flights are permitted for CPL holders provided the costs (fuel, landing fees, etc.) are shared equally between the pilot and all persons on board, no profit is made by the pilot, and the total number of persons including the pilot does not exceed 6. This is treated as a private flight, not a commercial operation.',
     reference: 'CASR 91.605 / CAR Part 2',
   },
   {
@@ -3597,7 +3597,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'CASR 91.330 : the higher aircraft gives way to the lower. However, if the higher aircraft is in the final stages of its approach, the lower aircraft must not take advantage of this rule.',
-    reference: 'CASR 91.330 Chapter 1',
+    reference: 'CASR 91.330',
   },
   {
     question: 'Which of the following is a mandatory item in the pre-take-off passenger safety briefing?',
@@ -3627,12 +3627,12 @@ export const clwaQuestions: {
     question: 'Which factors must a pilot take into account when determining take-off performance?',
     options: [
       'Aircraft weight only',
-      'Take-off distance available',
+      'Take-off distance available, runway surface and condition, pressure altitude, temperature, runway gradient, wind, and obstacles in the take-off flight path',
       'Only the POH/AFM charts at standard conditions',
       'Runway length and wind only',
     ],
     correct: 1,
-    explanation: 'Part 91 MOS s.24.02(3): take-off performance determination must account for: take-off distance available; runway surface type and condition; pressure altitude and temperature; runway gradient; wind direction and speed; take-off and en route weather forecast; and obstacles near the take-off flight path. Runway surface type and condition; pressure altitude and temperature; runway gradient in take-off direction; wind direction, speed and characteristics; take-off and en route weather; and obstacles in the vicinity of the take-off flight path',
+    explanation: 'Part 91 MOS s.24.02(3): take-off performance determination must account for: take-off distance available; runway surface type and condition; pressure altitude and temperature; runway gradient; wind direction and speed; take-off and en route weather forecast; and obstacles near the take-off flight path.',
     reference: 'Part 91 MOS 2020 s.24.02(3)',
   },
   {
@@ -3717,7 +3717,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'CASR 91.395 : the aircraft making the straight-in approach must give way to any other aircraft flying in the circuit pattern for the aerodrome. An aircraft on base or final leg has right-of-way over a straight-in aircraft.',
-    reference: 'CASR 91.395 Chapter 3',
+    reference: 'CASR 91.395',
   },
   {
     question: 'Before loading a large heavy item into the baggage hold, what must you verify?',
@@ -3728,7 +3728,7 @@ export const clwaQuestions: {
       'That the item is not a prohibited item under customs regulations',
     ],
     correct: 1,
-    explanation: 'The pilot must ensure the aircraft is within certified weight and balance limits with all cargo loaded, and that all cargo is properly secured. The weight and balance must be checked at zero fuel weight and take-off weight. Cargo that shifts in flight can cause loss of control. And that the cargo is properly secured and will not shift in flight',
+    explanation: 'The pilot must ensure the aircraft is within certified weight and balance limits with all cargo loaded, and that all cargo is properly secured. The weight and balance must be checked at zero fuel weight and take-off weight. Cargo that shifts in flight can cause loss of control.',
     reference: 'CASR 91.290 / CASR 91.295',
   },
   {
@@ -3761,7 +3761,7 @@ export const clwaQuestions: {
       'Holding fuel is always required for all IFR flights regardless of expected conditions',
       'Holding fuel is required when holding delays are anticipated, such as due to ATC congestion, busy terminal areas, or adverse weather at the destination',
       'Only when flying to a destination aerodrome that does not have an instrument approach procedure',
-      'Holding fuel is not a separate item — it is automatically included within the final reserve fuel calculation',
+      'Holding fuel is not a separate item - it is automatically included within the final reserve fuel calculation',
     ],
     correct: 1,
     explanation: 'Part 91 MOS s.19.04(1)(d): holding fuel is listed as a required fuel component "if required." It is needed when holding delays are anticipated due to ATC congestion, weather, or other operational factors. It is separate from final reserve fuel.',
@@ -3770,9 +3770,9 @@ export const clwaQuestions: {
   {
     question: 'A multi-engine piston aircraft is conducting a flight over water 130 NM from the nearest land. What survival equipment is required?',
     options: [
-      'A life raft only — life jackets are not required for multi-engine aircraft at any distance from land',
+      'A life raft only - life jackets are not required for multi-engine aircraft at any distance from land',
       'An ELT is the only mandatory equipment, life jackets and life rafts are voluntary at this distance',
-      'No additional equipment is required — the 100 NM distance threshold has not been exceeded here',
+      'No additional equipment is required - the 100 NM distance threshold has not been exceeded here',
       'Life jackets for each occupant and a life raft of sufficient capacity for all on board, plus overwater survival equipment',
     ],
     correct: 3,
@@ -3837,7 +3837,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'CASR 91.330 right-of-way table Item 5: the order of right-of-way in descending priority is balloon, parachute descent, unpowered glider, airship, an aircraft that is towing something (including another aircraft), and power-driven aircraft.',
-    reference: 'CASR 91.330 Chapter 1',
+    reference: 'CASR 91.330',
   },
   {
     question: 'A pilot is conducting a test flight of an aircraft following maintenance. A friend asks to come along as a passenger. May the pilot agree?',
@@ -3861,7 +3861,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'AIP ENR 1.5 : a white cross on the signal square indicates the aerodrome or manoeuvring area is unserviceable and landing is not permitted.',
-    reference: 'AIP ENR 1.5 Chapter 1',
+    reference: 'AIP ENR 1.5',
   },
   {
     question: 'A flight instructor wants to take a passenger on a training flight to demonstrate low-level practice manoeuvres. The passenger has not signed a waiver. May the passenger be carried?',
@@ -3921,7 +3921,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'AIP ENR 1.1 Chapter 2: if the pre-flight briefing is obtained more than one hour before taxiing for departure, the pilot must obtain an update before departure to ensure the latest information is available.',
-    reference: 'AIP ENR 1.1 Chapter 2',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'You are tracking along the boundary of Class C airspace on a VFR flight. What lateral tolerance applies when tracking to avoid entering controlled airspace?',
@@ -4053,7 +4053,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'AIP ENR 1.1 Chapter 5 / AIP ENR 1.1: ATS callsigns include: Centre (en route area control); Approach (approach control); Tower (aerodrome control); Ground (surface movement control); Delivery (clearance delivery); Flightwatch (flight information service).',
-    reference: 'AIP ENR 1.1 Chapter 5',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'You are loading cargo into a charter aircraft. The cargo must not be placed in the baggage compartment because it is too bulky. What conditions must be met to carry it in the passenger cabin?',
@@ -4064,7 +4064,7 @@ export const clwaQuestions: {
       'Only with CASA written approval for each specific flight',
     ],
     correct: 2,
-    explanation: 'Cargo in the passenger cabin must be properly secured and restrained so it cannot shift in flight. It must not obstruct any emergency exit or aisle, and must not be positioned where it could injure occupants or interfere with aircraft controls. The pilot is responsible for ensuring cargo is safely loaded. And must be located so that it cannot injure occupants or interfere with aircraft operation',
+    explanation: 'Cargo in the passenger cabin must be properly secured and restrained so it cannot shift in flight. It must not obstruct any emergency exit or aisle, and must not be positioned where it could injure occupants or interfere with aircraft controls. The pilot is responsible for ensuring cargo is safely loaded.',
     reference: 'CASR 91.295 / CAO 20.16',
   },
   {
@@ -4152,16 +4152,16 @@ export const clwaQuestions: {
     reference: 'CASR Part 119 / Civil Aviation Act 1988',
   },
   {
-    question: 'A CPL holder\'s Class 1 medical has conditions attached — glasses must be worn. They forget their glasses on a charter flight. May they act as PIC?',
+    question: 'An emergency occurs in flight and dangerous goods are on board. What must the pilot communicate to ATS?',
     options: [
-      'No, medical certificate conditions are mandatory. Flying without required corrective lenses means the pilot is not medically fit',
-      'Yes, vision can be managed effectively without glasses for a short daylight VFR flight',
-      'Yes, in VMC only, provided a co-pilot is available to supplement visual lookout if required',
-      'Yes, provided the co-pilot monitors specifically for any vision-related issues throughout the flight',
+      'Nothing specific, dangerous goods do not affect ATC procedures',
+      'The nature and state of the dangerous goods, in addition to advising of the emergency',
+      'Only that dangerous goods are on board, without specifying type',
+      'Dangerous goods information must be withheld for security reasons',
     ],
-    correct: 0,
-    explanation: 'Medical certificate conditions are mandatory. A condition requiring corrective lenses means the pilot must wear them to exercise licence privileges. Flying without the required corrective lenses means the pilot is not meeting their medical conditions and is not legally fit to fly.',
-    reference: 'CASR 67.265',
+    correct: 1,
+    explanation: 'CASR 91.680 : if dangerous goods are carried and an emergency is relevant to those goods, the pilot must advise ATS of both the emergency and the nature and state of the dangerous goods.',
+    reference: 'CASR 91.680',
   },
   {
     question: 'You are tracking VFR and have drifted 4 NM from your planned track inside Class C airspace without a clearance. What is the most immediate priority?',
@@ -4172,7 +4172,7 @@ export const clwaQuestions: {
       'Continue to your destination and report the deviation on landing',
     ],
     correct: 2,
-    explanation: 'Any unplanned penetration of controlled airspace must be reported to ATC immediately. The priority is to communicate your actual position so ATC can provide separation from other traffic. Continuing without advising ATC risks mid-air collision. The deviation must also be reported as an airspace infringement. And request an amended clearance or exit the controlled airspace as directed',
+    explanation: 'Any unplanned penetration of controlled airspace must be reported to ATC immediately. The priority is to communicate your actual position so ATC can provide separation from other traffic. Continuing without advising ATC risks mid-air collision. The deviation must also be reported as an airspace infringement.',
     reference: 'CASR 91.155 / AIP ENR 1.1',
   },
   {
@@ -4184,7 +4184,7 @@ export const clwaQuestions: {
       'It may broadcast unchanging operational information such as CTAF frequency, preferred runways, and noise abatement procedures',
     ],
     correct: 3,
-    explanation: 'AIP ENR 1.1 and AIP: when control zones are deactivated, the ATIS may be used to broadcast operational information of an unchanging nature including CTAF pilot activated lighting frequency, preferred runways, noise abatement procedures, and expected tower reopening time. And expected reopening time',
+    explanation: 'AIP ENR 1.1 and AIP: when control zones are deactivated, the ATIS may be used to broadcast operational information of an unchanging nature including CTAF pilot activated lighting frequency, preferred runways, noise abatement procedures, and expected tower reopening time.',
     reference: 'AIP ENR 1.1 Chapter 5 / AIP ENR 1.1',
   },
   {
@@ -4233,7 +4233,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'Securing fuel tank caps is listed as a Schedule 8 pilot maintenance task that a CPL holder may perform. The pilot must ensure all fuel caps are secure before flight — this is a required pre-flight check under CASR 91.245 and Part 91 MOS s.10.02.',
-    reference: 'CASR Part 43 Schedule 8 / Part 91 MOS s.10.02',
+    reference: 'CAR 1988 Schedule 8 / Part 91 MOS s.10.02',
   },
   {
     question: 'What is a VFR transit lane, and why would a pilot use one?',
@@ -4252,11 +4252,11 @@ export const clwaQuestions: {
     options: [
       'Airspeed indicator only, all other instruments are optional for day VFR flight',
       'The full six-pack of instruments regardless of flight conditions or aircraft category',
-      'Airspeed indicator, altimeter, magnetic compass, and time — plus Mach number if applicable',
+      'Airspeed indicator, altimeter, magnetic compass, and time - plus Mach number if applicable',
       'Altimeter and magnetic compass only, as airspeed can be estimated by feel and attitude',
     ],
     correct: 2,
-    explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 s.2.2.3 requires the pilot to state minimum VFR instruments. Per Part 91 MOS s.26.06(1): indicated airspeed, pressure altitude, magnetic heading, and time are the baseline. Additional instruments are required for night, aerial work, and IFR. With additional instruments for specific operations',
+    explanation: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 s.2.2.3 requires the pilot to state minimum VFR instruments. Per Part 91 MOS s.26.06(1): indicated airspeed, pressure altitude, magnetic heading, and time are the baseline. Additional instruments are required for night, aerial work, and IFR.',
     reference: 'CASR Part 61 MOS Schedule 3 Unit 1.5.9 s.2.2.3 / Part 91 MOS s.26.06(1)',
   },
   {
@@ -4328,7 +4328,7 @@ export const clwaQuestions: {
       'The PIC may only verbally request the passenger to stop',
     ],
     correct: 0,
-    explanation: 'The pilot in command has authority over all persons on board for the purpose of ensuring the safety of the aircraft. The PIC may take any reasonable measures necessary — including physical restraint — to prevent a person from endangering the aircraft or its occupants. This authority is supported by the Civil Aviation Act 1988. And may take any reasonable measures including restraint to prevent interference with the aircraft',
+    explanation: 'The pilot in command has authority over all persons on board for the purpose of ensuring the safety of the aircraft. The PIC may take any reasonable measures necessary — including physical restraint — to prevent a person from endangering the aircraft or its occupants. This authority is supported by the Civil Aviation Act 1988.',
     reference: 'Civil Aviation Act 1988 / CASR 91.165',
   },
   {
@@ -4376,14 +4376,14 @@ export const clwaQuestions: {
       'A private strip not listed in ERSA',
     ],
     correct: 1,
-    explanation: 'AIP ENR 1.1 Chapter 3: a non-controlled aerodrome is one where ATC is not currently operating. This can be an aerodrome always in Class G airspace, an aerodrome with a control tower where ATC is not currently operating, or an aerodrome where ATC service is temporarily unavailable. This can be an aerodrome always in Class G, a tower aerodrome with ATC temporarily unavailable, or one where ATC service is temporarily inactive',
+    explanation: 'AIP ENR 1.1 Chapter 3: a non-controlled aerodrome is one where ATC is not currently operating. This can be an aerodrome always in Class G airspace, an aerodrome with a control tower where ATC is not currently operating, or an aerodrome where ATC service is temporarily unavailable.',
     reference: 'AIP ENR 1.1 Chapter 3 / AIP ENR 1.4',
   },
   {
     question: 'What are the hours of operation of Class D airspace at a regional aerodrome that shows \'H24\' in ERSA?',
     options: [
       'Dawn to dusk only',
-      '0600–2200 local time daily',
+      '0600-2200 local time daily',
       '24 hours a day, 7 days a week',
       'Business hours Monday to Friday only',
     ],
@@ -4569,7 +4569,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'CASR Part 61: night VFR PIC currency requires 3 take-offs and 3 landings at night on the relevant aircraft category in the preceding 90 days, separately from day VFR recency.',
-    reference: 'CASR Part 61 Chapter 3',
+    reference: 'CASR Part 61',
   },
   {
     question: 'You purchase a second-hand aircraft in Australia. What registration requirements apply before you can legally fly it in Australian airspace?',
@@ -4580,7 +4580,7 @@ export const clwaQuestions: {
       'Registration is required only for aircraft with MTOW above 500 kg',
     ],
     correct: 0,
-    explanation: 'CASR Part 47 / CASR Part 61 MOS Schedule 3 AFRC s.2.2.3: Australian civil aircraft must be registered with CASA. The Certificate of Registration (or evidence of registration) must be carried on board. Registration requirements include requirements for transfer and cancellation. The Certificate of Registration must be carried on board; and registration must be maintained current',
+    explanation: 'CASR Part 47 / CASR Part 61 MOS Schedule 3 AFRC s.2.2.3: Australian civil aircraft must be registered with CASA. The Certificate of Registration (or evidence of registration) must be carried on board. Registration requirements include requirements for transfer and cancellation.',
     reference: 'CASR Part 47 / CASR Part 61 MOS Schedule 3 Unit 1.5.14 s.2.2.3',
   },
   {
@@ -4596,7 +4596,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.635',
   },
   {
-    question: 'What is the standard circuit height for a medium performance aircraft (55–150 kt) at a non-controlled aerodrome?',
+    question: 'At a non-controlled aerodrome, what circuit height applies to a medium-performance aeroplane (55 to 150 kt)?',
     options: [
       '1,000 ft above aerodrome elevation',
       '500 ft above aerodrome elevation',
@@ -4616,8 +4616,8 @@ export const clwaQuestions: {
       'Landing aircraft or those on final approach',
     ],
     correct: 3,
-    explanation: 'CASR 91.365 : when taxiing without ATC clearance, the pilot must give way to landing aircraft or those on final approach; aircraft taking off or preparing to take off; keep well clear when overtaking; give way to the right when on a converging course; and stop or turn right to remain clear of head-on aircraft. Aircraft taking off or preparing to take off; and the aircraft on the right on a converging course',
-    reference: 'CASR 91.365 Chapter 1',
+    explanation: 'CASR 91.365 : when taxiing without ATC clearance, the pilot must give way to landing aircraft or those on final approach; aircraft taking off or preparing to take off; keep well clear when overtaking; give way to the right when on a converging course; and stop or turn right to remain clear of head-on aircraft.',
+    reference: 'CASR 91.365',
   },
   {
     question: 'What transponder code applies to IFR flights in Class G airspace?',
@@ -4772,7 +4772,7 @@ export const clwaQuestions: {
       'Immediately return to the departure aerodrome regardless of the distance',
     ],
     correct: 1,
-    explanation: 'If dangerous goods are discovered mid-flight, the pilot must take whatever action is necessary for safety. If an emergency arises related to the dangerous goods, ATS must be advised of their nature and state. The appropriate action depends on the type of dangerous goods and the risk they pose. And advise ATS of the nature and state of the dangerous goods if relevant to the emergency',
+    explanation: 'If dangerous goods are discovered mid-flight, the pilot must take whatever action is necessary for safety. If an emergency arises related to the dangerous goods, ATS must be advised of their nature and state. The appropriate action depends on the type of dangerous goods and the risk they pose.',
     reference: 'CASR 91.680 / CASR Part 92',
   },
   {
@@ -4785,7 +4785,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'CASR 91.385: the standard aerodrome traffic circuit facilitates orderly traffic flow and is normally made with all turns to the left. Right-hand circuits are published in ERSA for specific aerodromes where they are in use.',
-    reference: 'CASR 91.385 Chapter 3',
+    reference: 'CASR 91.385',
   },
   {
     question: 'What does \'ERSA\' stand for and what information does it contain?',
@@ -4880,11 +4880,11 @@ export const clwaQuestions: {
       '12 hours',
     ],
     correct: 2,
-    explanation: 'Under CAO 48.1, for a single-pilot charter starting between 0600–0859 local time, the maximum FDP is 11 hours. The FDP limit varies based on start time and crew complement. Two-pilot operations attract a higher limit.',
+    explanation: 'Under CAO 48.1, the maximum flight duty period for a single-pilot charter operation starting at 0900 local time is 11 hours. The FDP limit varies with start time and crew complement; two-pilot operations attract a higher limit.',
     reference: 'CAO 48.1 Instrument 2019',
   },
   {
-    question: 'Under the pilot maintenance provisions of CASR Part 43 Schedule 8, a CPL holder may replace which of the following items without LAME involvement?',
+    question: 'Under the pilot maintenance provisions of CAR 1988 Schedule 8, a CPL holder may replace which of the following items without LAME involvement?',
     options: [
       'A fuel tank bladder',
       'The aircraft battery',
@@ -4893,7 +4893,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'Replacing light bulbs (landing lights, navigation lights, cabin lighting) is listed as a Schedule 8 pilot maintenance task. Battery replacement, fuel bladder replacement, and hydraulic fitting replacement require a licensed maintenance engineer.',
-    reference: 'CASR Part 43 Schedule 8',
+    reference: 'CAR 1988 Schedule 8',
   },
   {
     question: 'When sharing a seatbelt between two children in one seat, what is the maximum combined weight permitted?',
@@ -4928,8 +4928,8 @@ export const clwaQuestions: {
       'IFR flights are separated from other IFR flights and from special VFR flights',
     ],
     correct: 3,
-    explanation: 'AIP ENR 1.4 Class D separation: IFR flights are separated from other IFR and special VFR flights. IFR flights receive traffic information on VFR flights. VFR flights receive traffic information on all other flights. Special VFR flights are separated from other SVFR when visibility is less than VMC. IFR flights receive traffic information on VFR traffic; VFR flights receive traffic information on all other flights',
-    reference: 'AIP ENR 1.4 Chapter 3',
+    explanation: 'AIP ENR 1.4 Class D separation: IFR flights are separated from other IFR and special VFR flights. IFR flights receive traffic information on VFR flights. VFR flights receive traffic information on all other flights. Special VFR flights are separated from other SVFR when visibility is less than VMC.',
+    reference: 'AIP ENR 1.4',
   },
   {
     question: 'What aircraft performance category applies to an aircraft with a VAT (threshold speed) of 105 kt?',
@@ -4952,7 +4952,7 @@ export const clwaQuestions: {
       'It is a mandatory ATC reporting requirement only for IFR aircraft',
     ],
     correct: 2,
-    explanation: 'An area broadcast at approximately 10 NM alerts other aircraft in the circuit and vicinity to your presence, position, and intentions. This gives circuit traffic time to adjust and builds situational awareness before you arrive. It is a recommended practice that significantly improves safety at non-controlled aerodromes. And intentions so they can build situational awareness before you join the circuit',
+    explanation: 'An area broadcast at approximately 10 NM alerts other aircraft in the circuit and vicinity to your presence, position, and intentions. This gives circuit traffic time to adjust and builds situational awareness before you arrive. It is a recommended practice that significantly improves safety at non-controlled aerodromes.',
     reference: 'AIP ENR 6.4',
   },
   {
@@ -4964,7 +4964,7 @@ export const clwaQuestions: {
       'Aircraft registration and fuel used only',
     ],
     correct: 0,
-    explanation: 'A pilot logbook must record for each flight: the date, names of departure and destination aerodromes, aircraft type and registration, and the time acted as PIC, co-pilot, or student, plus any instrument time. These are the required elements under CASR 61.345. And whether you acted as PIC or co-pilot',
+    explanation: 'A pilot logbook must record for each flight: the date, names of departure and destination aerodromes, aircraft type and registration, and the time acted as PIC, co-pilot, or student, plus any instrument time. These are the required elements under CASR 61.345.',
     reference: 'CASR 61.345',
   },
   {
@@ -5012,7 +5012,7 @@ export const clwaQuestions: {
       'Check you are on the correct frequency, check your radio is transmitting, try calling on 121.5 MHz',
     ],
     correct: 3,
-    explanation: 'If unable to contact ATC: verify the correct frequency, check radio functionality, try calling on 121.5 MHz, and squawk 7600 (radio failure). If in controlled airspace, the communication failure procedures in the AIP apply. Squawking 7600 alerts ATC and other aircraft that you have a communications failure. And squawk 7600 to indicate communication failure',
+    explanation: 'If unable to contact ATC: verify the correct frequency, check radio functionality, try calling on 121.5 MHz, and squawk 7600 (radio failure). If in controlled airspace, the communication failure procedures in the AIP apply. Squawking 7600 alerts ATC and other aircraft that you have a communications failure.',
     reference: 'AIP ENR 6.1',
   },
   {
@@ -5032,11 +5032,11 @@ export const clwaQuestions: {
     options: [
       'Squawk 7700 and continue, the transponder code is sufficient to alert ATC',
       'Land immediately at the nearest aerodrome and notify ATC of the radio failure',
-      'Select code 7600',
+      'Select code 7600 and follow the lost-communications procedure for Class G',
       'Squawk 7600 and continue to the filed destination on the cleared route',
     ],
     correct: 2,
-    explanation: 'Part 91 MOS s.11.10(2)(a): if operating VFR in Class G or E airspace with radio failure — select 7600 on transponder; remain outside controlled airspace; assume broadcasting and broadcast on appropriate frequency; as soon as practicable, descend below 3,000 ft AGL over land (see s.11.10(2)(a)(iv)).',
+    explanation: 'Part 91 MOS s.11.10(2)(a): if operating VFR in Class G or E airspace with radio failure — select code 7600 on the transponder; remain outside controlled airspace; assume the radio is broadcasting and broadcast position and intentions on the appropriate frequency; and as soon as practicable descend below 5,000 ft to continue the flight under the VFR.',
     reference: 'Part 91 MOS 2020 s.11.10(2)(a)',
   },
   {
@@ -5085,7 +5085,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'AIP ENR 1.1: a VFR aircraft making a straight-in approach at a non-controlled aerodrome must be established on final approach by at least 3 NM from the threshold of the intended runway. The straight-in aircraft must give way to aircraft already in the circuit pattern.',
-    reference: 'CASR 91.395 Chapter 3',
+    reference: 'CASR 91.395',
   },
   {
     question: 'When is a journey log required to be maintained?',
@@ -5145,7 +5145,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'CASR 91.330 right-of-way table Item 6: when two aircraft are on converging headings at approximately the same altitude, the aircraft that has the other aircraft on its right must give way.',
-    reference: 'CASR 91.330 Chapter 1',
+    reference: 'CASR 91.330',
   },
   {
     question: 'A NOTAM contains the code \'UNSERVICEABLE\' for the NDB at your destination. The NDB is your primary navigation aid for the approach. What action should you take?',
@@ -5168,7 +5168,7 @@ export const clwaQuestions: {
       'Only report it if it exceeds 500 ft AGL',
     ],
     correct: 1,
-    explanation: 'Pilots must report hazards to navigation including uncharted obstacles. The report should be made to the nearest ATC unit while airborne. A written report should follow to Airservices Australia so the information can be disseminated by NOTAM and charts can be updated. And submit a written hazard to navigation report to Airservices Australia',
+    explanation: 'Pilots must report hazards to navigation including uncharted obstacles. The report should be made to the nearest ATC unit while airborne. A written report should follow to Airservices Australia so the information can be disseminated by NOTAM and charts can be updated.',
     reference: 'AIP ENR 1.14',
   },
   {
@@ -5193,7 +5193,7 @@ export const clwaQuestions: {
     ],
     correct: 0,
     explanation: 'CASR 91.330 right-of-way table Item 3: when two heavier-than-air aircraft are on approach to land, the higher aircraft must give way to the lower. However, if the higher aircraft is in the final stages of approach, the lower aircraft must not take advantage of this rule.',
-    reference: 'CASR 91.330 Chapter 1',
+    reference: 'CASR 91.330',
   },
   {
     question: 'You are dropping a parachutist over a rural area. At what height must all other persons on board be seated and restrained?',
@@ -5289,7 +5289,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'AIP ENR 1.1: when ATC issues a taxi instruction that includes a holding point, pilots must specifically read back "Holding point (holding point designator)."',
-    reference: 'AIP ENR 1.1 Chapter 3',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'You are inbound and receive an \'ATIS\' broadcast for the destination aerodrome. What does ATIS stand for and what does it provide?',
@@ -5304,7 +5304,7 @@ export const clwaQuestions: {
     reference: 'AIP ENR 1.1 / AIP GEN 2.2',
   },
   {
-    question: 'An aeroplane is operating in Class G airspace below 3,000 ft AMSL and below 1,000 ft AGL. What is the minimum flight visibility ?',
+    question: 'An aeroplane is operating in Class G airspace below 3,000 ft AMSL and below 1,000 ft AGL. What is the minimum flight visibility?',
     options: [
       '5,000 m; 1,000 ft vertical cloud clearance',
       '800 m; clear of cloud',
@@ -5348,7 +5348,7 @@ export const clwaQuestions: {
       'To list all defects ever recorded on the aircraft',
     ],
     correct: 1,
-    explanation: 'The maintenance release is issued by an authorised person certifying the aircraft has been maintained in accordance with the applicable maintenance requirements, is airworthy, and is fit to fly for the operations and period specified. It is the aircraft\'s current airworthiness certificate for day-to-day operations. And is fit for the type of operations specified for a defined period',
+    explanation: 'The maintenance release is issued by an authorised person certifying the aircraft has been maintained in accordance with the applicable maintenance requirements, is airworthy, and is fit to fly for the operations and period specified. It is the aircraft\'s current airworthiness certificate for day-to-day operations.',
     reference: 'CASR 91.755',
   },
   {
@@ -5385,7 +5385,7 @@ export const clwaQuestions: {
     ],
     correct: 3,
     explanation: 'AIP ENR 1.4: when a pilot is assigned responsibility for separation from another aircraft, the pilot is also responsible for providing their own wake turbulence separation. The pilot must advise ATC immediately if they lose sight of the other aircraft.',
-    reference: 'AIP ENR 1.4 Chapter 3',
+    reference: 'AIP ENR 1.4',
   },
   {
     question: 'You are conducting a flight in Class G airspace below 3,000 ft AMSL. Visibility drops to 1,200 m but you can see the ground. Are you legal to continue?',
@@ -5408,7 +5408,7 @@ export const clwaQuestions: {
       'They are converging from your right',
     ],
     correct: 3,
-    explanation: 'If you see another aircraft\'s tail moving from right to left across your windscreen, the other aircraft is on a converging course from your right. Under the right-of-way rules, the aircraft that has the other on its right must give way — but in this case THEY have you on THEIR left, meaning YOU should be giving way. Seeing their tail means they have passed — but if you see their tail moving left, you are behind and to their right, so they should give way to you. For safety, take avoiding action regardless.',
+    explanation: 'An aircraft that shows you its tail and tracks across your windscreen from right to left is crossing ahead of you, converging from your right. Under CASR 91.330, when two aircraft converge at about the same level the aircraft that has the other on its right must give way — here the other aircraft is on your right, so you must give way. Alter course to pass behind it and keep it in sight.',
     reference: 'CASR 91.330',
   },
   {
@@ -5436,7 +5436,7 @@ export const clwaQuestions: {
     reference: 'CASR 91.330 / AIP ENR 1.1',
   },
   {
-    question: 'How must an Immediately Reportable Matter (IRM) be reported to the ATSB?',
+    question: 'By what means and within what time must an Immediately Reportable Matter (IRM) be notified to the ATSB?',
     options: [
       'Written report only, within 72 hours',
       'By NOTAM through Airservices Australia',
@@ -5445,7 +5445,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'CASR 91.606 : IRMs require immediate (as soon as practical) reporting by telephone to the ATSB, followed by a written report within 72 hours (preferably using the ASIR format). Routinely Reportable Matters (RRMs) only require a written report within 72 hours.',
-    reference: 'CASR 91.606 Chapter 1',
+    reference: 'CASR 91.606',
   },
   {
     question: 'If a TAF includes a BECMG element representing a deterioration in weather, when should the change be applied for alternate planning purposes?',
@@ -5516,7 +5516,7 @@ export const clwaQuestions: {
       'IFR flights are separated from other IFR flights',
     ],
     correct: 3,
-    explanation: 'AIP ENR 1.4: in Class E airspace, IFR flights are separated from other IFR flights. VFR flights are NOT separated from IFR or other VFR flights — they receive traffic information only. Class E is controlled airspace for IFR, not for VFR. VFR flights receive traffic information only and are not separated from IFR or other VFR traffic',
+    explanation: 'AIP ENR 1.4: in Class E airspace, IFR flights are separated from other IFR flights. VFR flights are NOT separated from IFR or other VFR flights — they receive traffic information only. Class E is controlled airspace for IFR, not for VFR.',
     reference: 'AIP ENR 1.4',
   },
   {
@@ -5588,7 +5588,7 @@ export const clwaQuestions: {
       'The area is restricted to military aircraft only',
     ],
     correct: 2,
-    explanation: 'CASR Part 91 and AIP ENR 2.2: Danger Areas (prefix D) indicate potentially hazardous activities (such as military exercises, weapons firing) but do not prohibit entry. Pilots enter at their own risk and should contact the controlling authority or check activation times via NAIPS NOTAMs. Pilots proceed at their own risk',
+    explanation: 'CASR Part 91 and AIP ENR 2.2: Danger Areas (prefix D) indicate potentially hazardous activities (such as military exercises, weapons firing) but do not prohibit entry. Pilots enter at their own risk and should contact the controlling authority or check activation times via NAIPS NOTAMs.',
     reference: 'CASR Part 91 / AIP ENR 2.2',
   },
   {
@@ -5612,7 +5612,7 @@ export const clwaQuestions: {
       'The pilot may fly if they note the defect in the journey log and advise ATC',
     ],
     correct: 2,
-    explanation: 'Any unserviceable instrument must be placarded \'INOPERATIVE\'. If the instrument is required for the planned operation and no MEL deferral is available, the flight must not be conducted until the instrument is repaired. The VSI is not a required instrument for day VFR, so if all other requirements are met, the aircraft may fly for day VFR with the VSI placarded. And if it is required for the planned operation the aircraft must not be flown until repaired',
+    explanation: 'Any unserviceable instrument must be placarded \'INOPERATIVE\'. If the instrument is required for the planned operation and no MEL deferral is available, the flight must not be conducted until the instrument is repaired. The VSI is not a required instrument for day VFR, so if all other requirements are met, the aircraft may fly for day VFR with the VSI placarded.',
     reference: 'Part 91 MOS 2020 s.26.04 / CASR 91.505',
   },
   {
@@ -5744,7 +5744,7 @@ export const clwaQuestions: {
       'Only if the passenger holds a pilot licence',
     ],
     correct: 2,
-    explanation: 'A passenger may occupy a seat with dual controls fitted provided the pilot gives adequate instruction to ensure the controls are not interfered with, and satisfactory communication is maintained with that passenger throughout the flight. And the pilot must be able to communicate with them at all times throughout the flight',
+    explanation: 'A passenger may occupy a seat with dual controls fitted provided the pilot gives adequate instruction to ensure the controls are not interfered with, and satisfactory communication is maintained with that passenger throughout the flight.',
     reference: 'CAO 20.16 / CASR Part 91',
   },
   {
@@ -5792,8 +5792,8 @@ export const clwaQuestions: {
       'When reaching the holding point of the runway',
     ],
     correct: 0,
-    explanation: 'AIP ENR 1.1: airways clearance is requested on clearance delivery frequency immediately before starting engines (or as soon as possible thereafter); where no delivery frequency exists, before entering the departure runway; or before entering controlled airspace. Where none, before entering the departure runway; before entering controlled airspace',
-    reference: 'AIP ENR 1.1 Chapter 5',
+    explanation: 'AIP ENR 1.1: airways clearance is requested on clearance delivery frequency immediately before starting engines (or as soon as possible thereafter); where no delivery frequency exists, before entering the departure runway; or before entering controlled airspace.',
+    reference: 'AIP ENR 1.1',
   },
   {
     question: 'What does CAVOK mean in a weather report or forecast?',
@@ -5804,7 +5804,7 @@ export const clwaQuestions: {
       'Visibility 10 km or more',
     ],
     correct: 3,
-    explanation: 'AIP ENR 1.1 Chapter 2: CAVOK is reported (from staffed stations) when: visibility is 10 km or more; there is nil significant cloud (no cloud below 5,000 ft or below the highest 25 NM MSA, whichever is greater, and no CB or TCU at any height); and nil significant weather simultaneously. No cloud below 5,000 ft or below the highest MSA (whichever is greater), no CB or TCU at any height; and nil significant weather',
+    explanation: 'AIP ENR 1.1 Chapter 2: CAVOK is reported (from staffed stations) when: visibility is 10 km or more; there is nil significant cloud (no cloud below 5,000 ft or below the highest 25 NM MSA, whichever is greater, and no CB or TCU at any height); and nil significant weather simultaneously.',
     reference: 'AIP ENR 1.1 Chapter 2 / AIP GEN 3.5',
   },
   {
@@ -5852,7 +5852,7 @@ export const clwaQuestions: {
       'At all times throughout the entire flight without exception',
     ],
     correct: 2,
-    explanation: 'Seat belts must be worn during take-off and landing, when flying below 1,000 ft AGL, in turbulent conditions, and whenever directed by the pilot in command. The PIC is legally responsible for ensuring all occupants comply. And at any other time the pilot in command directs',
+    explanation: 'Seat belts must be worn during take-off and landing, when flying below 1,000 ft AGL, in turbulent conditions, and whenever directed by the pilot in command. The PIC is legally responsible for ensuring all occupants comply.',
     reference: 'CAO 20.16 / CASR 91.310',
   },
   {
@@ -5876,7 +5876,7 @@ export const clwaQuestions: {
       'A written acknowledgment form must be signed',
     ],
     correct: 2,
-    explanation: 'Before allowing a passenger to occupy a seat with dual controls, the pilot must brief them not to interfere with the controls, and must ensure adequate communication can be maintained with them at all times during flight. These are specific requirements for dual-control seat carriage under CAO 20.16. And the pilot must be able to maintain communication with the passenger at all times during flight',
+    explanation: 'Before allowing a passenger to occupy a seat with dual controls, the pilot must brief them not to interfere with the controls, and must ensure adequate communication can be maintained with them at all times during flight. These are specific requirements for dual-control seat carriage under CAO 20.16.',
     reference: 'CAO 20.16 / CASR Part 91',
   },
   {
@@ -5924,8 +5924,8 @@ export const clwaQuestions: {
       'Formation flying is permitted any time if all pilots have a formation endorsement',
     ],
     correct: 0,
-    explanation: 'CASR 91.205 : a pilot may only fly in formation if the flight has been prearranged with the other pilots in the formation. Formation flying at night or in IMC requires a CASA approval. A flight activity endorsement is also required under CASR 61.380. And at night or in IMC only with a CASA approval',
-    reference: 'CASR 91.205 Chapter 1',
+    explanation: 'CASR 91.205 : a pilot may only fly in formation if the flight has been prearranged with the other pilots in the formation. Formation flying at night or in IMC requires a CASA approval. A flight activity endorsement is also required under CASR 61.380.',
+    reference: 'CASR 91.205',
   },
   {
     question: 'What broadcast must be made before or immediately after entering an MBA?',
@@ -5949,7 +5949,7 @@ export const clwaQuestions: {
     ],
     correct: 1,
     explanation: 'CASR 91.265: for areas other than populous areas or public gatherings, an aeroplane must not be flown at less than 500 ft above the highest obstacle within 150 m of the aircraft.',
-    reference: 'CASR 91.265 Chapter 1',
+    reference: 'CASR 91.265',
   },
   {
     question: 'You are planning a night VFR flight. The destination TAF reads: FM0200 BKN004 2000 TEMPO 0100/0300 BKN002 0800. Your ETA is 0130. Is a destination alternate required?',
@@ -5997,7 +5997,7 @@ export const clwaQuestions: {
     ],
     correct: 2,
     explanation: 'Part 91 MOS s.10.05: an altimeter used for a VFR flight is only operative if, with an accurate QNH set, it reads site elevation to within 100 ft, or 110 ft at test sites above 3,300 ft.',
-    reference: 'Part 91 MOS 2020 s.10.05 Chapter 3',
+    reference: 'Part 91 MOS 2020 s.10.05',
   },
   {
     question: 'What type of separation does ATC provide to VFR aircraft operating in Class E airspace?',
