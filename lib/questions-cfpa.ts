@@ -297,7 +297,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 3.1 / COPA 2.2 (range and endurance)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 150 kt and cruise fuel flow 40 units/hr. Usable fuel at start-up is 90 units, with 3 units for start-up and taxi and a 20 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 150 kt and cruise fuel flow 40 L/hr. Usable fuel at start-up is 90 L, with 3 L for start-up and taxi and a 20 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '123 nm',
       '126 nm',
@@ -305,7 +305,7 @@ export const cfpaQuestions: {
       '160 nm',
     ],
     correct: 0,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 40/60 = 20 units. Flight fuel available = 90 − 3 − 20 = 67 units, giving safe endurance = 67 ÷ 40 × 60 = 100 min. With a 20 kt headwind, GS out = 130 kt and GS home = 170 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 100 × 170 ÷ 300 = 57 min, so PNR distance = 57/60 × 130 = 123 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 40/60 = 20 L. Flight fuel available = 90 − 3 − 20 = 67 L, giving safe endurance = 67 ÷ 40 × 60 = 100 min. With a 20 kt headwind, GS out = 130 kt and GS home = 170 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 100 × 170 ÷ 300 = 57 min, so PNR distance = 57/60 × 130 = 123 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -645,7 +645,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 3.1 / COPA 2.2 (climb, cruise and descent)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 135 kt and cruise fuel flow 34 units/hr. Usable fuel at start-up is 72 units, with 2 units for start-up and taxi and a 15 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 135 kt and cruise fuel flow 34 L/hr. Usable fuel at start-up is 72 L, with 2 L for start-up and taxi and a 15 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '105 nm',
       '104 nm',
@@ -653,7 +653,7 @@ export const cfpaQuestions: {
       '137 nm',
     ],
     correct: 1,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 34/60 = 17 units. Flight fuel available = 72 − 2 − 17 = 53 units, giving safe endurance = 53 ÷ 34 × 60 = 94 min. With a 15 kt headwind, GS out = 120 kt and GS home = 150 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 94 × 150 ÷ 270 = 52 min, so PNR distance = 52/60 × 120 = 104 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 34/60 = 17 L. Flight fuel available = 72 − 2 − 17 = 53 L, giving safe endurance = 53 ÷ 34 × 60 = 94 min. With a 15 kt headwind, GS out = 120 kt and GS home = 150 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 94 × 150 ÷ 270 = 52 min, so PNR distance = 52/60 × 120 = 104 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -801,7 +801,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 4.2 (loading)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 130 kt and cruise fuel flow 30 units/hr. Usable fuel at start-up is 60 units, with 2 units for start-up and taxi and a 15 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 130 kt and cruise fuel flow 30 L/hr. Usable fuel at start-up is 60 L, with 2 L for start-up and taxi and a 15 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '124 nm',
       '117 nm',
@@ -809,7 +809,7 @@ export const cfpaQuestions: {
       '93 nm',
     ],
     correct: 2,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 30/60 = 15 units. Flight fuel available = 60 − 2 − 15 = 43 units, giving safe endurance = 43 ÷ 30 × 60 = 86 min. With a 15 kt headwind, GS out = 115 kt and GS home = 145 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 86 × 145 ÷ 260 = 48 min, so PNR distance = 48/60 × 115 = 92 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 30/60 = 15 L. Flight fuel available = 60 − 2 − 15 = 43 L, giving safe endurance = 43 ÷ 30 × 60 = 86 min. With a 15 kt headwind, GS out = 115 kt and GS home = 145 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 86 × 145 ÷ 260 = 48 min, so PNR distance = 48/60 × 115 = 92 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -825,7 +825,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 2.1 (density)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 150 kt and cruise fuel flow 40 units/hr. Usable fuel at start-up is 78 units, with 2 units for start-up and taxi and a 20 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 150 kt and cruise fuel flow 40 L/hr. Usable fuel at start-up is 78 L, with 2 L for start-up and taxi and a 20 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '103 nm',
       '105 nm',
@@ -833,7 +833,7 @@ export const cfpaQuestions: {
       '140 nm',
     ],
     correct: 0,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 40/60 = 20 units. Flight fuel available = 78 − 2 − 20 = 56 units, giving safe endurance = 56 ÷ 40 × 60 = 84 min. With a 20 kt headwind, GS out = 130 kt and GS home = 170 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 84 × 170 ÷ 300 = 48 min, so PNR distance = 48/60 × 130 = 103 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 40/60 = 20 L. Flight fuel available = 78 − 2 − 20 = 56 L, giving safe endurance = 56 ÷ 40 × 60 = 84 min. With a 20 kt headwind, GS out = 130 kt and GS home = 170 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 84 × 170 ÷ 300 = 48 min, so PNR distance = 48/60 × 130 = 103 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -957,7 +957,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (equi-time point)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 140 kt and cruise fuel flow 36 units/hr. Usable fuel at start-up is 70 units, with 2 units for start-up and taxi and a 10 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 140 kt and cruise fuel flow 36 L/hr. Usable fuel at start-up is 70 L, with 2 L for start-up and taxi and a 10 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '132 nm',
       '122 nm',
@@ -965,7 +965,7 @@ export const cfpaQuestions: {
       '97 nm',
     ],
     correct: 3,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 36/60 = 18 units. Flight fuel available = 70 − 2 − 18 = 50 units, giving safe endurance = 50 ÷ 36 × 60 = 83 min. With a 10 kt headwind, GS out = 130 kt and GS home = 150 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 83 × 150 ÷ 280 = 45 min, so PNR distance = 45/60 × 130 = 97 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 36/60 = 18 L. Flight fuel available = 70 − 2 − 18 = 50 L, giving safe endurance = 50 ÷ 36 × 60 = 83 min. With a 10 kt headwind, GS out = 130 kt and GS home = 150 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 83 × 150 ÷ 280 = 45 min, so PNR distance = 45/60 × 130 = 97 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -1029,7 +1029,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 5.2; CASR Part 91 MOS Chapter 19 (fuel requirements)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 170 kt and cruise fuel flow 47 units/hr. Usable fuel at start-up is 118 units, with 4 units for start-up and taxi and a 25 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 170 kt and cruise fuel flow 47 L/hr. Usable fuel at start-up is 118 L, with 4 L for start-up and taxi and a 25 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '185 nm',
       '160 nm',
@@ -1037,7 +1037,7 @@ export const cfpaQuestions: {
       '202 nm',
     ],
     correct: 1,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 47/60 = 23.5 units. Flight fuel available = 118 − 4 − 23.5 = 90.5 units, giving safe endurance = 90.5 ÷ 47 × 60 = 116 min. With a 25 kt tailwind, GS out = 195 kt and GS home = 145 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 116 × 145 ÷ 340 = 49 min, so PNR distance = 49/60 × 195 = 160 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 47/60 = 23.5 L. Flight fuel available = 118 − 4 − 23.5 = 90.5 L, giving safe endurance = 90.5 ÷ 47 × 60 = 116 min. With a 25 kt tailwind, GS out = 195 kt and GS home = 145 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 116 × 145 ÷ 340 = 49 min, so PNR distance = 49/60 × 195 = 160 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -1089,7 +1089,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 3.1 / COPA 2.2 (climb, cruise and descent)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 148 kt and cruise fuel flow 39 units/hr. Usable fuel at start-up is 82 units, with 2 units for start-up and taxi and a 18 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 148 kt and cruise fuel flow 39 L/hr. Usable fuel at start-up is 82 L, with 2 L for start-up and taxi and a 18 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '150 nm',
       '115 nm',
@@ -1097,7 +1097,7 @@ export const cfpaQuestions: {
       '138 nm',
     ],
     correct: 2,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 39/60 = 19.5 units. Flight fuel available = 82 − 2 − 19.5 = 60.5 units, giving safe endurance = 60.5 ÷ 39 × 60 = 93 min. With a 18 kt headwind, GS out = 130 kt and GS home = 166 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 93 × 166 ÷ 296 = 52 min, so PNR distance = 52/60 × 130 = 113 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 39/60 = 19.5 L. Flight fuel available = 82 − 2 − 19.5 = 60.5 L, giving safe endurance = 60.5 ÷ 39 × 60 = 93 min. With a 18 kt headwind, GS out = 130 kt and GS home = 166 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 93 × 166 ÷ 296 = 52 min, so PNR distance = 52/60 × 130 = 113 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -1209,7 +1209,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 3.1 / COPA 2.2 (climb performance)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 160 kt and cruise fuel flow 23 units/hr. Usable fuel at start-up is 80 units, with 2 units for start-up and taxi and a 15 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 160 kt and cruise fuel flow 23 L/hr. Usable fuel at start-up is 80 L, with 2 L for start-up and taxi and a 15 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '229 nm',
       '275 nm',
@@ -1217,7 +1217,7 @@ export const cfpaQuestions: {
       '204 nm',
     ],
     correct: 0,
-    explanation: 'Final reserve (VFR day, piston) = 30 min = 11.5 units. Flight fuel = 80-2-11.5 = 66.5 units; safe endurance = 66.5/23x60 = 173 min. With a 15 kt tailwind out, GS on = 175 kt, GS home = 145 kt. Time to PNR = SE x GS home/(GS on+GS home); PNR distance = time x GS on = 229 nm.',
+    explanation: 'Final reserve (VFR day, piston) = 30 min = 11.5 L. Flight fuel = 80-2-11.5 = 66.5 L; safe endurance = 66.5/23x60 = 173 min. With a 15 kt tailwind out, GS on = 175 kt, GS home = 145 kt. Time to PNR = SE x GS home/(GS on+GS home); PNR distance = time x GS on = 229 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -1293,7 +1293,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPA 2 (structural limitations); Aircraft Flight Manual',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 160 kt and cruise fuel flow 23 units/hr. Usable fuel at start-up is 67 units, with 2 units for start-up and taxi and a 0 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 160 kt and cruise fuel flow 23 L/hr. Usable fuel at start-up is 67 L, with 2 L for start-up and taxi and a 0 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '166 nm',
       '211 nm',
@@ -1301,7 +1301,7 @@ export const cfpaQuestions: {
       '186 nm',
     ],
     correct: 3,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 23/60 = 11.5 units. Flight fuel available = 67 − 2 − 11.5 = 53.5 units, giving safe endurance = 53.5 ÷ 23 × 60 = 140 min. With a 0 kt tailwind, GS out = 160 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 140 × 160 ÷ 320 = 70 min, so PNR distance = 70/60 × 160 = 186 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 23/60 = 11.5 L. Flight fuel available = 67 − 2 − 11.5 = 53.5 L, giving safe endurance = 53.5 ÷ 23 × 60 = 140 min. With a 0 kt tailwind, GS out = 160 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 140 × 160 ÷ 320 = 70 min, so PNR distance = 70/60 × 160 = 186 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -1617,7 +1617,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 2.2.3(a) / 5.1.2 (ERSA and charts); AIP',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 180 kt and cruise fuel flow 50 units/hr. Usable fuel at start-up is 100 units, with 3 units for start-up and taxi and a 20 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 180 kt and cruise fuel flow 50 L/hr. Usable fuel at start-up is 100 L, with 3 L for start-up and taxi and a 20 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '172 nm',
       '130 nm',
@@ -1625,7 +1625,7 @@ export const cfpaQuestions: {
       '153 nm',
     ],
     correct: 2,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 50/60 = 25 units. Flight fuel available = 100 − 3 − 25 = 72 units, giving safe endurance = 72 ÷ 50 × 60 = 86 min. With a 20 kt tailwind, GS out = 200 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 86 × 160 ÷ 360 = 38 min, so PNR distance = 38/60 × 200 = 128 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 50/60 = 25 L. Flight fuel available = 100 − 3 − 25 = 72 L, giving safe endurance = 72 ÷ 50 × 60 = 86 min. With a 20 kt tailwind, GS out = 200 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 86 × 160 ÷ 360 = 38 min, so PNR distance = 38/60 × 200 = 128 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -1641,7 +1641,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 3.1 (cruise: time, speed, distance)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 200 kt and cruise fuel flow 55 units/hr. Usable fuel at start-up is 140 units, with 4 units for start-up and taxi and a 40 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 200 kt and cruise fuel flow 55 L/hr. Usable fuel at start-up is 140 L, with 4 L for start-up and taxi and a 40 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '189 nm',
       '237 nm',
@@ -1649,11 +1649,11 @@ export const cfpaQuestions: {
       '197 nm',
     ],
     correct: 0,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 55/60 = 27.5 units. Flight fuel available = 140 − 4 − 27.5 = 108.5 units, giving safe endurance = 108.5 ÷ 55 × 60 = 118 min. With a 40 kt tailwind, GS out = 240 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 118 × 160 ÷ 400 = 47 min, so PNR distance = 47/60 × 240 = 189 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 55/60 = 27.5 L. Flight fuel available = 140 − 4 − 27.5 = 108.5 L, giving safe endurance = 108.5 ÷ 55 × 60 = 118 min. With a 40 kt tailwind, GS out = 240 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 118 × 160 ÷ 400 = 47 min, so PNR distance = 47/60 × 240 = 189 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 170 kt and cruise fuel flow 45 units/hr. Usable fuel at start-up is 110 units, with 4 units for start-up and taxi and a 30 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 170 kt and cruise fuel flow 45 L/hr. Usable fuel at start-up is 110 L, with 4 L for start-up and taxi and a 30 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '158 nm',
       '153 nm',
@@ -1661,7 +1661,7 @@ export const cfpaQuestions: {
       '178 nm',
     ],
     correct: 1,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 45/60 = 22.5 units. Flight fuel available = 110 − 4 − 22.5 = 83.5 units, giving safe endurance = 83.5 ÷ 45 × 60 = 111 min. With a 30 kt tailwind, GS out = 200 kt and GS home = 140 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 111 × 140 ÷ 340 = 46 min, so PNR distance = 46/60 × 200 = 153 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 45/60 = 22.5 L. Flight fuel available = 110 − 4 − 22.5 = 83.5 L, giving safe endurance = 83.5 ÷ 45 × 60 = 111 min. With a 30 kt tailwind, GS out = 200 kt and GS home = 140 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 111 × 140 ÷ 340 = 46 min, so PNR distance = 46/60 × 200 = 153 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -1677,7 +1677,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 5.2; CASR Part 91 MOS Chapter 19',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 165 kt and cruise fuel flow 44 units/hr. Usable fuel at start-up is 95 units, with 3 units for start-up and taxi and a 20 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 165 kt and cruise fuel flow 44 L/hr. Usable fuel at start-up is 95 L, with 3 L for start-up and taxi and a 20 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '154 nm',
       '131 nm',
@@ -1685,7 +1685,7 @@ export const cfpaQuestions: {
       '129 nm',
     ],
     correct: 3,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 44/60 = 22 units. Flight fuel available = 95 − 3 − 22 = 70 units, giving safe endurance = 70 ÷ 44 × 60 = 95 min. With a 20 kt tailwind, GS out = 185 kt and GS home = 145 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 95 × 145 ÷ 330 = 42 min, so PNR distance = 42/60 × 185 = 129 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 44/60 = 22 L. Flight fuel available = 95 − 3 − 22 = 70 L, giving safe endurance = 70 ÷ 44 × 60 = 95 min. With a 20 kt tailwind, GS out = 185 kt and GS home = 145 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 95 × 145 ÷ 330 = 42 min, so PNR distance = 42/60 × 185 = 129 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -1953,7 +1953,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPA 2 (structural limitations); Aircraft Flight Manual',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 160 kt and cruise fuel flow 46 units/hr. Usable fuel at start-up is 115 units, with 4 units for start-up and taxi and a 15 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 160 kt and cruise fuel flow 46 L/hr. Usable fuel at start-up is 115 L, with 4 L for start-up and taxi and a 15 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '191 nm',
       '153 nm',
@@ -1961,7 +1961,7 @@ export const cfpaQuestions: {
       '177 nm',
     ],
     correct: 2,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 46/60 = 23 units. Flight fuel available = 115 − 4 − 23 = 88 units, giving safe endurance = 88 ÷ 46 × 60 = 115 min. With a 15 kt tailwind, GS out = 175 kt and GS home = 145 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 115 × 145 ÷ 320 = 52 min, so PNR distance = 52/60 × 175 = 152 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 46/60 = 23 L. Flight fuel available = 115 − 4 − 23 = 88 L, giving safe endurance = 88 ÷ 46 × 60 = 115 min. With a 15 kt tailwind, GS out = 175 kt and GS home = 145 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 115 × 145 ÷ 320 = 52 min, so PNR distance = 52/60 × 175 = 152 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -1989,7 +1989,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 3.1 / COPA 2.2 (climb, cruise and descent)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 190 kt and cruise fuel flow 52 units/hr. Usable fuel at start-up is 130 units, with 4 units for start-up and taxi and a 30 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 190 kt and cruise fuel flow 52 L/hr. Usable fuel at start-up is 130 L, with 4 L for start-up and taxi and a 30 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '183 nm',
       '178 nm',
@@ -1997,7 +1997,7 @@ export const cfpaQuestions: {
       '203 nm',
     ],
     correct: 1,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 52/60 = 26 units. Flight fuel available = 130 − 4 − 26 = 100 units, giving safe endurance = 100 ÷ 52 × 60 = 115 min. With a 30 kt tailwind, GS out = 220 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 115 × 160 ÷ 380 = 49 min, so PNR distance = 49/60 × 220 = 178 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 52/60 = 26 L. Flight fuel available = 130 − 4 − 26 = 100 L, giving safe endurance = 100 ÷ 52 × 60 = 115 min. With a 30 kt tailwind, GS out = 220 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 115 × 160 ÷ 380 = 49 min, so PNR distance = 49/60 × 220 = 178 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -2025,7 +2025,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 3.1 / COPA 2.2 (climb, cruise and descent)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 185 kt and cruise fuel flow 50 units/hr. Usable fuel at start-up is 125 units, with 4 units for start-up and taxi and a 35 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 185 kt and cruise fuel flow 50 L/hr. Usable fuel at start-up is 125 L, with 4 L for start-up and taxi and a 35 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '171 nm',
       '216 nm',
@@ -2033,7 +2033,7 @@ export const cfpaQuestions: {
       '178 nm',
     ],
     correct: 0,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 50/60 = 25 units. Flight fuel available = 125 − 4 − 25 = 96 units, giving safe endurance = 96 ÷ 50 × 60 = 115 min. With a 35 kt tailwind, GS out = 220 kt and GS home = 150 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 115 × 150 ÷ 370 = 47 min, so PNR distance = 47/60 × 220 = 171 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 50/60 = 25 L. Flight fuel available = 125 − 4 − 25 = 96 L, giving safe endurance = 96 ÷ 50 × 60 = 115 min. With a 35 kt tailwind, GS out = 220 kt and GS home = 150 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 115 × 150 ÷ 370 = 47 min, so PNR distance = 47/60 × 220 = 171 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -2061,7 +2061,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 3.1 / COPA 2.2 (climb, cruise and descent)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 195 kt and cruise fuel flow 54 units/hr. Usable fuel at start-up is 135 units, with 4 units for start-up and taxi and a 30 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 195 kt and cruise fuel flow 54 L/hr. Usable fuel at start-up is 135 L, with 4 L for start-up and taxi and a 30 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '208 nm',
       '188 nm',
@@ -2069,7 +2069,7 @@ export const cfpaQuestions: {
       '183 nm',
     ],
     correct: 3,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 54/60 = 27 units. Flight fuel available = 135 − 4 − 27 = 104 units, giving safe endurance = 104 ÷ 54 × 60 = 116 min. With a 30 kt tailwind, GS out = 225 kt and GS home = 165 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 116 × 165 ÷ 390 = 49 min, so PNR distance = 49/60 × 225 = 183 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 54/60 = 27 L. Flight fuel available = 135 − 4 − 27 = 104 L, giving safe endurance = 104 ÷ 54 × 60 = 116 min. With a 30 kt tailwind, GS out = 225 kt and GS home = 165 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 116 × 165 ÷ 390 = 49 min, so PNR distance = 49/60 × 225 = 183 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -2181,7 +2181,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 5.2; CASR Part 91 MOS Chapter 19 (fuel requirements)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 155 kt and cruise fuel flow 42 units/hr. Usable fuel at start-up is 85 units, with 3 units for start-up and taxi and a 25 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 155 kt and cruise fuel flow 42 L/hr. Usable fuel at start-up is 85 L, with 3 L for start-up and taxi and a 25 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '147 nm',
       '110 nm',
@@ -2189,7 +2189,7 @@ export const cfpaQuestions: {
       '135 nm',
     ],
     correct: 1,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 42/60 = 21 units. Flight fuel available = 85 − 3 − 21 = 61 units, giving safe endurance = 61 ÷ 42 × 60 = 87 min. With a 25 kt headwind, GS out = 130 kt and GS home = 180 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 87 × 180 ÷ 310 = 51 min, so PNR distance = 51/60 × 130 = 110 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 42/60 = 21 L. Flight fuel available = 85 − 3 − 21 = 61 L, giving safe endurance = 61 ÷ 42 × 60 = 87 min. With a 25 kt headwind, GS out = 130 kt and GS home = 180 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 87 × 180 ÷ 310 = 51 min, so PNR distance = 51/60 × 130 = 110 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -2217,7 +2217,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 5.2; CASR Part 91 MOS Chapter 19 (fuel requirements)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 178 kt and cruise fuel flow 49 units/hr. Usable fuel at start-up is 108 units, with 3 units for start-up and taxi and a 30 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 178 kt and cruise fuel flow 49 L/hr. Usable fuel at start-up is 108 L, with 3 L for start-up and taxi and a 30 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '142 nm',
       '146 nm',
@@ -2225,7 +2225,7 @@ export const cfpaQuestions: {
       '185 nm',
     ],
     correct: 0,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 49/60 = 24.5 units. Flight fuel available = 108 − 3 − 24.5 = 80.5 units, giving safe endurance = 80.5 ÷ 49 × 60 = 99 min. With a 30 kt tailwind, GS out = 208 kt and GS home = 148 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 99 × 148 ÷ 356 = 41 min, so PNR distance = 41/60 × 208 = 142 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 49/60 = 24.5 L. Flight fuel available = 108 − 3 − 24.5 = 80.5 L, giving safe endurance = 80.5 ÷ 49 × 60 = 99 min. With a 30 kt tailwind, GS out = 208 kt and GS home = 148 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 99 × 148 ÷ 356 = 41 min, so PNR distance = 41/60 × 208 = 142 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -2241,7 +2241,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 4.2 (loading)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 185 kt and cruise fuel flow 28 units/hr. Usable fuel at start-up is 120 units, with 3 units for start-up and taxi and a 25 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 185 kt and cruise fuel flow 28 L/hr. Usable fuel at start-up is 120 L, with 3 L for start-up and taxi and a 25 kt tailwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '379 nm',
       '340 nm',
@@ -2249,11 +2249,11 @@ export const cfpaQuestions: {
       '359 nm',
     ],
     correct: 2,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 28/60 = 14 units. Flight fuel available = 120 − 3 − 14 = 103 units, giving safe endurance = 103 ÷ 28 × 60 = 221 min. With a 25 kt tailwind, GS out = 210 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 221 × 160 ÷ 370 = 95 min, so PNR distance = 95/60 × 210 = 334 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 28/60 = 14 L. Flight fuel available = 120 − 3 − 14 = 103 L, giving safe endurance = 103 ÷ 28 × 60 = 221 min. With a 25 kt tailwind, GS out = 210 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 221 × 160 ÷ 370 = 95 min, so PNR distance = 95/60 × 210 = 334 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 145 kt and cruise fuel flow 38 units/hr. Usable fuel at start-up is 75 units, with 2 units for start-up and taxi and a 15 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 145 kt and cruise fuel flow 38 L/hr. Usable fuel at start-up is 75 L, with 2 L for start-up and taxi and a 15 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '138 nm',
       '103 nm',
@@ -2261,7 +2261,7 @@ export const cfpaQuestions: {
       '102 nm',
     ],
     correct: 3,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 38/60 = 19 units. Flight fuel available = 75 − 2 − 19 = 54 units, giving safe endurance = 54 ÷ 38 × 60 = 85 min. With a 15 kt headwind, GS out = 130 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 85 × 160 ÷ 290 = 47 min, so PNR distance = 47/60 × 130 = 102 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 38/60 = 19 L. Flight fuel available = 75 − 2 − 19 = 54 L, giving safe endurance = 54 ÷ 38 × 60 = 85 min. With a 15 kt headwind, GS out = 130 kt and GS home = 160 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 85 × 160 ÷ 290 = 47 min, so PNR distance = 47/60 × 130 = 102 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -2349,7 +2349,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 3.1 / COPA 2.2 (climb performance)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 160 kt and cruise fuel flow 44 units/hr. Usable fuel at start-up is 88 units, with 3 units for start-up and taxi and a 20 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 160 kt and cruise fuel flow 44 L/hr. Usable fuel at start-up is 88 L, with 3 L for start-up and taxi and a 20 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '152 nm',
       '115 nm',
@@ -2357,7 +2357,7 @@ export const cfpaQuestions: {
       '113 nm',
     ],
     correct: 3,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 44/60 = 22 units. Flight fuel available = 88 − 3 − 22 = 63 units, giving safe endurance = 63 ÷ 44 × 60 = 86 min. With a 20 kt headwind, GS out = 140 kt and GS home = 180 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 86 × 180 ÷ 320 = 48 min, so PNR distance = 48/60 × 140 = 113 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 44/60 = 22 L. Flight fuel available = 88 − 3 − 22 = 63 L, giving safe endurance = 63 ÷ 44 × 60 = 86 min. With a 20 kt headwind, GS out = 140 kt and GS home = 180 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 86 × 180 ÷ 320 = 48 min, so PNR distance = 48/60 × 140 = 113 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
@@ -2373,7 +2373,7 @@ export const cfpaQuestions: {
     reference: 'Part 61 MOS Sch 3, COPC 2.2 (take-off and landing performance)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 168 kt and cruise fuel flow 45 units/hr. Usable fuel at start-up is 98 units, with 3 units for start-up and taxi and a 20 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 168 kt and cruise fuel flow 45 L/hr. Usable fuel at start-up is 98 L, with 3 L for start-up and taxi and a 20 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '175 nm',
       '133 nm',
@@ -2381,11 +2381,11 @@ export const cfpaQuestions: {
       '158 nm',
     ],
     correct: 1,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 45/60 = 22.5 units. Flight fuel available = 98 − 3 − 22.5 = 72.5 units, giving safe endurance = 72.5 ÷ 45 × 60 = 97 min. With a 20 kt headwind, GS out = 148 kt and GS home = 188 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 97 × 188 ÷ 336 = 54 min, so PNR distance = 54/60 × 148 = 133 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 45/60 = 22.5 L. Flight fuel available = 98 − 3 − 22.5 = 72.5 L, giving safe endurance = 72.5 ÷ 45 × 60 = 97 min. With a 20 kt headwind, GS out = 148 kt and GS home = 188 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 97 × 188 ÷ 336 = 54 min, so PNR distance = 54/60 × 148 = 133 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
-    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 175 kt and cruise fuel flow 48 units/hr. Usable fuel at start-up is 105 units, with 3 units for start-up and taxi and a 25 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
+    question: 'An aeroplane (MTOW ≤5,700 kg, piston) plans a day VFR flight with TAS 175 kt and cruise fuel flow 48 L/hr. Usable fuel at start-up is 105 L, with 3 L for start-up and taxi and a 25 kt headwind component. Using the Part 91 final reserve, the distance to the PNR is:',
     options: [
       '182 nm',
       '142 nm',
@@ -2393,7 +2393,7 @@ export const cfpaQuestions: {
       '164 nm',
     ],
     correct: 2,
-    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 48/60 = 24 units. Flight fuel available = 105 − 3 − 24 = 78 units, giving safe endurance = 78 ÷ 48 × 60 = 98 min. With a 25 kt headwind, GS out = 150 kt and GS home = 200 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 98 × 200 ÷ 350 = 56 min, so PNR distance = 56/60 × 150 = 139 nm.',
+    explanation: 'Final reserve fuel (VFR day, piston ≤5,700 kg) is 30 minutes at the cruise flow per Part 91 MOS Table 19.02(2) Item 1: 30 min × 48/60 = 24 L. Flight fuel available = 105 − 3 − 24 = 78 L, giving safe endurance = 78 ÷ 48 × 60 = 98 min. With a 25 kt headwind, GS out = 150 kt and GS home = 200 kt. Time to PNR = safe endurance × GS home ÷ (GS on + GS home) = 98 × 200 ÷ 350 = 56 min, so PNR distance = 56/60 × 150 = 139 nm.',
     reference: 'Part 61 MOS Sch 3, COPC 5.3 (point of no return)',
   },
   {
