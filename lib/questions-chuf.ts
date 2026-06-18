@@ -23,7 +23,7 @@ export const chufQuestions: {
     question: 'What is the human factors basis for using checklist items in a challenge-and-response format rather than reading silently?',
     options: [
       'Saying items aloud is faster because it removes the need to read each one carefully',
-      'Speaking and hearing each item adds auditory processing to silent reading, and a second crew member confirms the item is actually set',
+      'Speaking and hearing each item adds auditory processing and lets a second pilot confirm it',
       'It is required under CASR Part 91 for all multi-engine aircraft regardless of crew number',
       'Silent reading is more thorough because speaking the items invites distraction from radio calls',
     ],
@@ -37,7 +37,7 @@ export const chufQuestions: {
       'A visual illusion from a sloping runway that makes a normal approach appear too high',
       'Rain on the windscreen refracts light so that runway lights appear closer than their true distance',
       'A form of tunnel vision caused by hypoxia during a high-altitude final approach',
-      'Over dark, featureless terrain at night, missing ground cues make the approach seem higher than it is, so the pilot flies too low',
+      'Over dark terrain at night, missing cues make the approach seem too high, so the pilot flies low',
     ],
     correct: 3,
     explanation: 'Over unlit terrain or water at night there are no visual cues to judge the approach slope. The pilot perceives a steeper-than-actual angle and unconsciously flies a shallow, low approach, risking impact short of the runway.',
@@ -96,7 +96,7 @@ export const chufQuestions: {
     options: [
       'Increasing workload improves communication by creating urgency and focus',
       'Communication quality degrades under high workload as messages become shorter, ambiguous or missed',
-      'Workload has no effect on communication; only fatigue and stress affect communication quality',
+      'Workload has no effect on communication, and only fatigue and stress affect communication quality',
       'High workload forces crew to use formal phraseology exclusively, improving clarity',
     ],
     correct: 1,
@@ -107,7 +107,7 @@ export const chufQuestions: {
     question: 'What is "fixation" in an aviation human factors context?',
     options: [
       'The process of landing an aircraft at a specific aerodrome without fuel for an alternate',
-      'An unhealthy preoccupation with one instrument or task to the exclusion of others, leading to loss of overall situational awareness',
+      'An unhealthy preoccupation with one instrument or task, losing situational awareness',
       'A state of mental focus that improves accuracy during precision instrument approaches',
       'The pilot\'s eyes fixing on a point outside for visual navigation',
     ],
@@ -119,7 +119,7 @@ export const chufQuestions: {
     question: 'What is sleep apnoea and why is it a significant concern for pilots?',
     options: [
       'Sleep apnoea is reliably detected at annual DAME examinations and poses no hidden risk',
-      'A condition where breathing is repeatedly interrupted during sleep, causing fragmented sleep and daytime sleepiness',
+      'Breathing repeatedly stops during sleep, fragmenting it and causing daytime sleepiness',
       'A form of sleep paralysis from rotating shift work, relevant only to night freight pilots',
       'A rare neurological disorder preventing deep sleep, relevant only to pilots over 65',
     ],
@@ -130,7 +130,7 @@ export const chufQuestions: {
   {
     question: 'What must a pilot do before flying while taking a new medication?',
     options: [
-      'Only after a DAME has confirmed the medication and the underlying condition do not affect flight safety',
+      'Only after a DAME confirms the medication and condition do not affect flight safety',
       'Whenever the medication is sold over the counter rather than by prescription',
       'As long as the pilot feels no side effects on the morning of the flight',
       'Provided the flight is conducted privately rather than for a commercial operator',
@@ -144,7 +144,7 @@ export const chufQuestions: {
     options: [
       'To provide the FO with an opportunity to review the captain\'s qualifications',
       'To calculate take-off performance data collaboratively using paper charts',
-      'To share mental models, clarify roles and responsibilities, brief expected threats, and agree on decision criteria before the flight',
+      'Share mental models, clarify roles, brief expected threats and agree decision criteria',
       'To satisfy regulatory requirements for flight crew acknowledgement of duty times and fuel load',
     ],
     correct: 2,
@@ -156,7 +156,7 @@ export const chufQuestions: {
     options: [
       'The inability to change from one flight procedure to another without extensive cognitive effort',
       'The time delay between recognising a hazard and initiating an appropriate response',
-      'The tendency to maintain an existing course of action or belief rather than reassessing and changing in response to new information',
+      'The tendency to keep to an existing course or belief rather than reassessing with new information',
       'The physical momentum of a pilot\'s control inputs that makes reversing an action difficult',
     ],
     correct: 2,
@@ -190,7 +190,7 @@ export const chufQuestions: {
   {
     question: 'What is the "sterile cockpit" rule and what is its purpose?',
     options: [
-      'It bans non-essential activity and conversation during critical phases so attention stays on flying',
+      'It bans non-essential talk and tasks in critical phases to protect attention',
       'It requires the cockpit to be physically cleaned before each flight',
       'It applies only at altitudes above the transition altitude',
       'It requires both pilots to remain completely silent for the whole flight',
@@ -217,7 +217,7 @@ export const chufQuestions: {
       'It prevents radio frequency errors by requiring the frequency to be confirmed before switching',
       'It prevents frequency congestion by limiting the length of pilot transmissions',
       'It prevents callsign confusion by requiring full callsigns on every transmission',
-      'It catches communication errors, because the readback and confirmation loop confirms both parties share the same understanding',
+      'It catches communication errors, as readback confirms both share the same understanding',
     ],
     correct: 3,
     explanation: 'Closed-loop communication adds a readback and an acknowledgement, so a misheard or mis-spoken message is detected and corrected rather than acted on silently.',
@@ -228,7 +228,7 @@ export const chufQuestions: {
     options: [
       'A maintenance concept for identifying and controlling corrosion threats to aircraft structure',
       'The process of reporting threats and errors to ATSB after an incident',
-      'A model describing how flight crews identify threats, avoid errors and manage undesired aircraft states before they escalate',
+      'A model of how crews spot threats, avoid errors and manage undesired states before escalation',
       'An ATC system for detecting aircraft deviations from cleared routes',
     ],
     correct: 2,
@@ -262,10 +262,10 @@ export const chufQuestions: {
   {
     question: 'What is the difference between "task-oriented" and "relationship-oriented" leadership styles in a cockpit context?',
     options: [
-      'Task-oriented leaders use command-and-control; relationship-oriented leaders use participative management',
-      'Task-oriented leaders focus on flight duties; relationship-oriented leaders focus on passenger service',
-      'Task-oriented leaders prioritise efficient task completion; relationship-oriented leaders prioritise crew communication and cohesion',
-      'There is no meaningful difference; both styles produce equivalent outcomes',
+      'Task-oriented leaders use command-and-control, whereas relationship-oriented leaders use participative management',
+      'Task-oriented leaders focus on flight duties, whereas relationship-oriented leaders focus on passenger service',
+      'Task-oriented leaders prioritise task completion, whereas relationship-oriented leaders prioritise communication and cohesion',
+      'There is no meaningful difference, and both styles produce equivalent outcomes',
     ],
     correct: 2,
     explanation: 'Task-oriented leadership emphasises getting the job done; relationship-oriented leadership emphasises people and teamwork. Effective leaders flex between the two according to the situation.',
@@ -275,9 +275,9 @@ export const chufQuestions: {
     question: 'What is "implicit hazard perception" compared to "explicit hazard perception" in pilot judgement?',
     options: [
       'They are identical concepts and the distinction is only academic',
-      'Implicit perception is deliberate scanning; explicit perception is automatic detection without conscious effort',
-      'Implicit perception applies to maintenance; explicit perception applies only to flight operations',
-      'Explicit perception is conscious awareness of a specific hazard; implicit perception is a vague unease that something is wrong',
+      'Implicit perception is deliberate scanning, whereas explicit perception is automatic detection without conscious effort',
+      'Implicit perception applies to maintenance, whereas explicit perception applies only to flight operations',
+      'Explicit perception is conscious awareness of a specific hazard, whereas implicit perception is a vague unease that something is wrong',
     ],
     correct: 3,
     explanation: 'Explicit hazard perception is a conscious, nameable threat; implicit perception is the gut feeling that something is not right. Acting on that unease, and investigating it, is a valuable safety skill.',
@@ -286,7 +286,7 @@ export const chufQuestions: {
   {
     question: 'How does perceived time pressure affect pilot risk-taking?',
     options: [
-      'Experienced pilots are immune to time pressure; only low-time pilots take more risks under it',
+      'Experienced pilots are immune to time pressure, and only low-time pilots take more risks under it',
       'Time pressure has no measurable effect on risk-taking unless the operator states it explicitly',
       'It tends to increase risk-taking by narrowing attention and pushing pilots to accept lower safety margins',
       'Time pressure always reduces risk-taking by forcing the quickest, most conservative option',
@@ -348,7 +348,7 @@ export const chufQuestions: {
     options: [
       'The ability to attend to all cockpit information sources at once without any loss',
       'Deliberately scanning every instrument in a fixed sequence regardless of phase of flight',
-      'The brain focuses processing on one input and filters others out, so an unattended item such as a warning can go unnoticed',
+      'The brain focuses on one input and filters others, so a warning can go unnoticed',
       'A method for selecting the most important radio frequency in busy airspace',
     ],
     correct: 2,
@@ -370,8 +370,8 @@ export const chufQuestions: {
   {
     question: 'What is "hearback error" and how does it differ from "readback error"?',
     options: [
-      'They are identical terms; both describe miscommunication between ATC and the pilot',
-      'A readback error is the pilot reading back an incorrect clearance; a hearback error is ATC failing to detect that incorrect readback',
+      'They are identical terms, and both describe miscommunication between ATC and the pilot',
+      'A readback error is the pilot reading back an incorrect clearance, whereas a hearback error is ATC failing to catch it',
       'A hearback error occurs during ATC transmission and a readback error during pilot transmission, both from radio interference',
       'Hearback errors occur in multi-crew operations and readback errors in single-pilot operations',
     ],
@@ -382,7 +382,7 @@ export const chufQuestions: {
   {
     question: 'What is the principal danger of taking sleeping tablets the night before an early morning flight?',
     options: [
-      'Sleeping tablets are dangerous only if combined with alcohol; alone they have no next-day effect',
+      'Sleeping tablets are dangerous only if combined with alcohol, and on their own have no next-day effect',
       'The danger is purely cardiovascular, because sleeping tablets lower the resting heart rate',
       'Residual sedation from many sleeping tablets can persist into the next morning, impairing reaction time and judgement',
       'Sleeping tablets cause paradoxical insomnia that prevents adequate sleep before an early departure',
@@ -395,7 +395,7 @@ export const chufQuestions: {
     question: 'What is the significance of a thorough crew briefing before a non-normal procedure?',
     options: [
       'Crew briefings are needed only when the crew has not flown together before',
-      'Briefings help only on training flights; operational crews should respond without preparation',
+      'Briefings help only on training flights, and operational crews should respond without preparation',
       'Briefings are a regulatory requirement, so their content matters less than completing them',
       'It turns an unexpected event that triggers startle into an anticipated one that triggers a trained response',
     ],
@@ -420,7 +420,7 @@ export const chufQuestions: {
     options: [
       'Mental and physical workload are identical, so total workload is simply their sum',
       'Physical workload always exceeds mental workload, which is the primary limitation',
-      'Mental workload matters only above FL180; below that physical workload dominates',
+      'Mental workload matters only above FL180, whereas below that physical workload dominates',
       'Mental workload is the cognitive demand of processing information, deciding and managing tasks',
     ],
     correct: 3,
@@ -431,7 +431,7 @@ export const chufQuestions: {
     question: 'What is the relationship between stress, fatigue, and decision-making in the aviation context?',
     options: [
       'Stress and fatigue impair decisions independently, and their effects simply add together',
-      'Fatigue is the only factor that impairs decisions; stress alone has no cognitive effect',
+      'Fatigue is the only factor that impairs decisions, and stress alone has no cognitive effect',
       'Decision-making is impaired only when stress and fatigue are present at the same time',
       'Stress and fatigue interact, so the two together degrade decisions more than either does alone',
     ],
@@ -454,7 +454,7 @@ export const chufQuestions: {
   {
     question: 'What is the effect of high cockpit temperature on pilot performance?',
     options: [
-      'High temperature has no measurable effect on cognition; only physical work is affected',
+      'High temperature has no measurable effect on cognition, and only physical work is affected',
       'High temperature boosts adrenaline, temporarily improving decision speed',
       'Heat improves performance by raising core temperature toward an optimal range',
       'Moderate heat lowers alertness and concentration, and with dehydration performance degrades markedly',
@@ -467,7 +467,7 @@ export const chufQuestions: {
     question: 'What is the "gate" concept in threat and error management?',
     options: [
       'The boarding gate at a terminal, relevant only to passenger handling',
-      'A defined decision point where a safety criterion must be met or a set action, such as going around, is taken',
+      'A pre-set decision point where a criterion must be met or a set action taken',
       'A runway holding point, relevant only to runway-incursion prevention',
       'An ATC-assigned departure gate used for instrument departures',
     ],
@@ -504,8 +504,8 @@ export const chufQuestions: {
     options: [
       'Blaming the pilot is appropriate whenever the accident involved a clear procedural violation',
       'Blaming individual pilots misses the systemic and organisational factors that created the conditions for error',
-      'Modern aviation has not moved away from it; pilot blame remains central to investigations',
-      'Victim-blaming is used only in criminal cases; civil accidents use systemic analysis',
+      'Modern aviation has not moved away from it, and pilot blame remains central to investigations',
+      'Victim-blaming is used only in criminal cases, whereas civil accidents use systemic analysis',
     ],
     correct: 1,
     explanation: 'Modern safety treats error as a symptom of system weaknesses, not just individual failing. Blaming the pilot stops the inquiry too early and leaves the underlying organisational causes in place to cause the next event.',
@@ -526,7 +526,7 @@ export const chufQuestions: {
   {
     question: 'What is "confirmation bias" in pilot decision-making?',
     options: [
-      'The tendency to seek information that supports an initial assumption and ignore evidence against it',
+      'Favouring evidence that fits an initial assumption over evidence against it',
       'The tendency to confirm every checklist item aloud before acting',
       'The habit of confirming an ATC clearance twice before complying',
       'A preference for confirmed weather reports over forecasts',
@@ -551,8 +551,8 @@ export const chufQuestions: {
     question: 'What is the concept of "error chains" and how can they be broken?',
     options: [
       'An error chain is inevitable: once the first error occurs the accident cannot be stopped',
-      'Error chains develop only across multiple flights; within one flight none can form',
-      'Error chains apply only to maintenance; flight-crew errors are always isolated',
+      'Error chains develop only across multiple flights, and within one flight none can form',
+      'Error chains apply only to maintenance, and flight-crew errors are always isolated',
       'A sequence of errors and unsafe conditions that together lead to an accident, broken by catching any one link',
     ],
     correct: 3,
@@ -565,7 +565,7 @@ export const chufQuestions: {
       'A navigation reflex that guides eye movement toward the runway on a visual approach',
       'It stabilises vision in turbulence by moving the eyes, and causes trouble when reading charts in steady cruise',
       'The reflex that controls blink rate, so reduced blinking in instrument flight dries the eyes',
-      'It stabilises the visual image during head movement, and sudden head movement in a prolonged turn can trigger the Coriolis illusion',
+      'It stabilises vision during head movement, and a sudden head turn in a prolonged turn can trigger Coriolis',
     ],
     correct: 3,
     explanation: 'The reflex keeps the image steady as the head moves. Moving the head sharply during a sustained turn stimulates the semicircular canals abnormally, producing the powerful and disorienting Coriolis illusion.',
@@ -574,7 +574,7 @@ export const chufQuestions: {
   {
     question: 'What is barotrauma and when is it most likely to occur in aviation?',
     options: [
-      'Pain or damage to air-filled cavities such as ears and sinuses when pressure cannot equalise during altitude change',
+      'Pain or injury to air spaces like ears and sinuses when pressure cannot equalise',
       'Pressure injury to the lungs during a rapid emergency descent in an unpressurised aircraft',
       'Oxygen toxicity in the inner ear from prolonged supplemental oxygen above FL250',
       'Noise-induced hearing loss from prolonged propeller noise, most common on piston aircraft',
@@ -587,7 +587,7 @@ export const chufQuestions: {
     question: 'When is supplemental oxygen required, and why?',
     options: [
       'Supplemental oxygen is needed only above 25,000 ft in any aircraft',
-      'Above set cabin altitudes, supplemental oxygen is required because falling pressure starves the brain',
+      'Above set cabin altitudes, supplemental oxygen is required as pressure falls',
       'Oxygen is required only at night, not during the day',
       'A healthy pilot never needs supplemental oxygen below 20,000 ft',
     ],
@@ -598,7 +598,7 @@ export const chufQuestions: {
   {
     question: 'Which of the following best describes the body\'s circadian rhythm?',
     options: [
-      'An approximately 24-hour biological cycle regulating alertness, temperature, and hormone levels',
+      'A roughly 24-hour cycle setting alertness, temperature and hormones',
       'A variable cycle that resets instantly to any new time zone',
       'A 90-minute sleep cycle that determines dream frequency',
       'A 12-hour cycle governing hunger and satiety',
@@ -613,7 +613,7 @@ export const chufQuestions: {
       'Caffeine permanently resets the circadian rhythm to the local time zone',
       'Caffeine eliminates the need for sleep by replacing adenosine in the brain',
       'Caffeine has no measurable effect on pilot alertness at normal doses',
-      'Caffeine temporarily blocks adenosine receptors providing alertness, but does not address underlying sleep debt',
+      'Caffeine blocks adenosine for temporary alertness but does not clear sleep debt',
     ],
     correct: 3,
     explanation: 'Caffeine provides temporary alertness by blocking adenosine receptors but does not address sleep debt. When the effect wears off (4–6 hours), alertness drops. It can also impair the quality of subsequent sleep, potentially worsening next-cycle fatigue.',
@@ -624,7 +624,7 @@ export const chufQuestions: {
     options: [
       'Active failures are intentional and latent conditions unintentional, needing equal regulatory response',
       'Active failures occur in flight and latent conditions occur on the ground before departure',
-      'Active failures are errors with immediate effect, such as a wrong control input; latent conditions are dormant system weaknesses',
+      'Active failures have immediate effect, such as a wrong input, latent conditions are dormant',
       'Active failures involve flight crew and latent conditions involve only maintenance and management',
     ],
     correct: 2,
@@ -646,7 +646,7 @@ export const chufQuestions: {
   {
     question: 'What is the difference between acute and chronic fatigue?',
     options: [
-      'Acute fatigue follows one period of effort and clears with rest; chronic fatigue accumulates and is not cleared by a single sleep',
+      'Acute fatigue follows one effort and clears with rest, chronic builds and resists one sleep',
       'Acute fatigue affects only the body, whereas chronic fatigue affects only the mind',
       'Acute fatigue occurs only in flight, whereas chronic fatigue occurs only on the ground',
       'Acute fatigue is permanent, whereas chronic fatigue is always temporary',
@@ -668,23 +668,23 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.4 (fatigue)',
   },
   {
-    question: 'What is "vigilance decrement" and when is it most pronounced in aviation?',
+    question: 'Where are the rod photoreceptors that provide night and peripheral vision located?',
     options: [
-      'A drop in alertness during the circadian peak, corrected by raising workload',
-      'The progressive decline in the ability to detect rare signals during sustained monotonous monitoring',
-      'A decrease in visual acuity after prolonged exposure to instrument lighting',
-      'A reduction in scanning frequency during approach preparation, managed by checklists',
+      'Densely packed at the fovea in the very centre of the retina',
+      'Mainly in the peripheral retina, away from the central fovea',
+      'Spread evenly across the retina, giving equal night vision everywhere',
+      'Only at the optic disc, where the optic nerve leaves the eye',
     ],
     correct: 1,
-    explanation: 'Vigilance decrement is the fall-off in detecting infrequent signals during long, monotonous monitoring. It is worst when arousal is low (night, cruise) and is countered by active scanning and task variation.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (vigilance, monitoring)',
+    explanation: 'Rods are most numerous in the peripheral retina and are absent from the fovea, which is why a dim object is best seen at night by looking slightly to one side of it (off-centre viewing).',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8 (the eye and vision)',
   },
   {
     question: 'What is Crew Resource Management (CRM) and what is its primary goal?',
     options: [
       'A certification course for all CPL holders that standardises radio communication',
       'A rostering system designed to minimise fatigue through optimal crew pairing',
-      'The effective use of all available resources, people, information and equipment, to fly safely and efficiently',
+      'Using all available resources, people, information and equipment, to fly safely',
       'A maintenance procedure for managing crew seating and oxygen equipment',
     ],
     correct: 2,
@@ -694,8 +694,8 @@ export const chufQuestions: {
   {
     question: 'What does a human factors investigation approach (as opposed to a blame-focused approach) seek to identify after an accident?',
     options: [
-      'The single technical failure that was the root cause; once found, the analysis is complete',
-      'The chain of events, system conditions, organisational factors and latent conditions that combined to allow the accident',
+      'The single technical failure that was the root cause, and once found, the analysis is complete',
+      'The chain of events, system conditions and latent organisational factors that allowed it',
       'The insurance liability chain from the accident back to the maintenance organisation',
       'The one crew member whose action or inaction was most directly responsible',
     ],
@@ -706,7 +706,7 @@ export const chufQuestions: {
   {
     question: 'What is the danger of flying in heavy rain in terms of visual illusions?',
     options: [
-      'Rain has no illusory effect; only reduced forward visibility matters operationally',
+      'Rain has no illusory effect, and only reduced forward visibility matters operationally',
       'Rain heats the windscreen and produces a mirage that makes the runway appear closer',
       'Rain on the windscreen refracts light so runway lights look higher and farther away, leading to a low approach',
       'Rain cuts peripheral vision to zero, making it impossible to stay lined up without IFR equipment',
@@ -718,7 +718,7 @@ export const chufQuestions: {
   {
     question: 'Why can flying with a head cold be hazardous during altitude changes?',
     options: [
-      'Congestion can stop the ears and sinuses equalising, risking painful barotrauma, and the illness itself dulls performance',
+      'Congestion can stop the ears and sinuses equalising, risking painful barotrauma',
       'A head cold has no effect on flying once over-the-counter decongestants have been taken',
       'A head cold affects flying only at altitudes above 10,000 ft AMSL',
       'A head cold actually improves concentration by slightly raising body temperature',
@@ -732,7 +732,7 @@ export const chufQuestions: {
     options: [
       'Vibration affects performance only when it exceeds the airframe\'s structural limits',
       'Vibration has no effect below 10 Hz, so low-frequency vibration does not affect performance',
-      'Sustained vibration causes fatigue, blurs instrument reading, raises muscle tension and can cause musculoskeletal injury',
+      'Sustained vibration causes fatigue, blurs instruments, tenses muscles and can injure over time',
       'Sustained vibration improves alertness through stimulation, which is beneficial in helicopters',
     ],
     correct: 2,
@@ -755,7 +755,7 @@ export const chufQuestions: {
     question: 'What effect does shift work have on sleep quality compared to regular daytime employment?',
     options: [
       'Shift workers accumulate more total sleep because of fewer daytime obligations',
-      'It degrades sleep quality and duration, because sleep is attempted when the body is primed for wakefulness',
+      'It degrades sleep quality, as sleep is attempted when the body is primed to be awake',
       'Shift work has no effect on sleep quality provided total hours are unchanged',
       'Early starts are less disruptive than late finishes at the same duty length',
     ],
@@ -803,7 +803,7 @@ export const chufQuestions: {
     question: 'What is the aviation significance of "prospective memory failure" and what conditions increase its likelihood?',
     options: [
       'An inability to memorise emergency procedures, improved by repetition and overlearning',
-      'Forgetting to perform an intended future action, most likely after a distraction or when there is no strong cue at the action time',
+      'Forgetting an intended future action, most likely after a distraction or with no cue',
       'Forgetting recent events because of hypoxia, prevented by keeping cabin altitude low',
       'A failure to remember historical flight events, relevant to incident reporting',
     ],
@@ -850,7 +850,7 @@ export const chufQuestions: {
   {
     question: 'What is hypoxia and at what altitude does it typically begin to affect performance in an unacclimatised individual?',
     options: [
-      'Too little oxygen reaching the brain; subtle effects begin around 10,000 ft in an unacclimatised person',
+      'Too little oxygen reaching the brain, with effects beginning around 10,000 ft',
       'Excess oxygen in the blood, typically only above FL350',
       'Nitrogen narcosis, typically below 30 ft underwater',
       'Overbreathing, typically beginning above FL250 in pressurised aircraft',
@@ -863,7 +863,7 @@ export const chufQuestions: {
     question: 'Which physiological sign is most reliably associated with severe fatigue?',
     options: [
       'Increased resting heart rate and blood pressure',
-      'Increased appetite and food cravings',
+      'Long, deliberate rest periods taken by the pilot to recover during the cruise phase',
       'Microsleeps, brief involuntary sleep episodes lasting 1 to 30 seconds',
       'Increased motivation to complete tasks quickly',
     ],
@@ -876,7 +876,7 @@ export const chufQuestions: {
     options: [
       'Personal minima are identical to regulatory minima for pilots over 500 hours total time',
       'Personal minima reduce commercial viability by making operations needlessly conservative',
-      'Personal minima are legally invalid; only regulatory minima may be used for planning',
+      'Personal minima are legally invalid, and only regulatory minima may be used for planning',
       'Personal minima account for individual currency, recency and conditions that regulatory minima cannot',
     ],
     correct: 3,
@@ -911,7 +911,7 @@ export const chufQuestions: {
     question: 'What is the human factors principle behind good cockpit control design?',
     options: [
       'All controls should be identical in shape to simplify manufacturing',
-      'Controls should be shaped, located and moved so they are hard to confuse and match the pilot\'s expectations',
+      'Controls shaped, located and moved so they are hard to confuse and match expectations',
       'Controls should be placed wherever there is free panel space',
       'Control design has no effect on error rates if the pilot is properly trained',
     ],
@@ -936,8 +936,8 @@ export const chufQuestions: {
     options: [
       'A practised action firing in the wrong context, such as reaching for a control at the usual time when a new type differs',
       'Habitual action errors are actually positive, letting experts do routine tasks efficiently',
-      'Habitual action errors occur only with physical controls; display operations are immune',
-      'Habitual action errors occur only during training; operational pilots always have correct habits',
+      'Habitual action errors occur only with physical controls, and display operations are immune',
+      'Habitual action errors occur only during training, and operational pilots always have correct habits',
     ],
     correct: 0,
     explanation: 'Strong habits usually help, but in a new context or aircraft type they can trigger the old, now-wrong action automatically. Awareness and deliberate verification on type transition reduce this trap.',
@@ -948,7 +948,7 @@ export const chufQuestions: {
     options: [
       'Hyperventilation, since both cause tingling and lightheadedness',
       'Dehydration, since both cause thirst and reduced concentration',
-      'Hypoxia, since both cause headache, dizziness and impaired thinking with little warning',
+      'Hypoxia, as both cause headache, dizziness and impaired thinking',
       'Hypoglycaemia, since both cause hunger and irritability',
     ],
     correct: 2,
@@ -960,7 +960,7 @@ export const chufQuestions: {
     options: [
       'Stress affects only new learning, never recall of established procedures',
       'High stress reliably improves recall of all trained procedures',
-      'High stress can block recall of well-learned procedures, which is why memory items and checklists are used',
+      'High stress can block recall of well-learned procedures, so memory items are used',
       'Stress has no effect on recall provided the pilot is current',
     ],
     correct: 2,
@@ -973,7 +973,7 @@ export const chufQuestions: {
       'Pilots should avoid eating before flights to prevent motion sickness',
       'Adequate pre-flight nutrition stabilises blood glucose, the brain\'s primary fuel, supporting concentration',
       'Pre-flight nutrition has no measurable effect on cognition during short flights',
-      'Only long-haul pilots need consider nutrition; short-haul operations are unaffected',
+      'Only long-haul pilots need consider nutrition, and short-haul operations are unaffected',
     ],
     correct: 1,
     explanation: 'The brain runs on glucose. Skipping food before flight lets blood sugar fall, impairing concentration and decision-making; a balanced meal beforehand keeps cognitive performance stable.',
@@ -984,7 +984,7 @@ export const chufQuestions: {
     options: [
       'An emergency checklist: Isolate, Mayday, Squawk, Aviate, Fly, Escape',
       'An ATC handoff checklist: Identify, Monitor, Squawk, Altitude, Frequency, Emergency',
-      'A pre-flight personal fitness checklist: Illness, Medication, Stress, Alcohol, Fatigue, Eating and Emotion',
+      'Illness, Medication, Stress, Alcohol, Fatigue, Eating and Emotion, the IMSAFE self-check',
       'A weight and balance reminder: Index, Mass, Stability, Arm, Fuel, Equipment',
     ],
     correct: 2,
@@ -994,10 +994,10 @@ export const chufQuestions: {
   {
     question: 'What is the significance of a high-quality crew debrief for long-term performance improvement?',
     options: [
-      'Debriefs benefit only student pilots; experienced crews gain nothing from structured discussion',
+      'Debriefs benefit only student pilots, and experienced crews gain nothing from structured discussion',
       'Debriefs should cover only errors, since discussing successes breeds complacency',
-      'Specific, blame-free debriefs covering what went well and what to improve are among the most effective tools for skill development',
-      'Debriefs have no measurable effect; learning comes only from flight hours',
+      'Specific, blame-free debriefs of what went well and what to improve are among the best learning tools',
+      'Debriefs have no measurable effect, and learning comes only from flight hours',
     ],
     correct: 2,
     explanation: 'A focused, non-punitive debrief that examines both successes and shortfalls turns experience into learning far faster than hours alone, which is why it is a core element of CRM and training culture.',
@@ -1016,9 +1016,9 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (hazardous attitudes)',
   },
   {
-    question: 'What effect does high ambient noise in a cockpit have on crew performance?',
+    question: 'What is the most effective defence against high ambient cockpit noise?',
     options: [
-      'Wearing properly fitted hearing protection such as a headset or earplugs that attenuate noise',
+      'Wearing well-fitted hearing protection such as a headset or earplugs',
       'Limiting flights to under one hour regardless of noise level',
       'Relying on the ear\'s natural adaptation to repeated noise exposure',
       'Turning up the intercom volume to mask the ambient noise',
@@ -1030,9 +1030,9 @@ export const chufQuestions: {
   {
     question: 'How does a pilot\'s self-confidence level affect safety when it becomes overconfidence?',
     options: [
-      'Low self-confidence is the more dangerous extreme; confident pilots decide better in all conditions',
+      'Low self-confidence is the more dangerous extreme, and confident pilots decide better in all conditions',
       'Overconfidence makes a pilot underestimate risk, dismiss warnings and lower vigilance, and underlies the macho attitude',
-      'Self-confidence has no measurable effect on decisions; only technical knowledge matters',
+      'Self-confidence has no measurable effect on decisions, and only technical knowledge matters',
       'Higher self-confidence always improves decisions by reducing hesitation',
     ],
     correct: 1,
@@ -1043,8 +1043,8 @@ export const chufQuestions: {
     question: 'What is the effect of monotonous tasks on pilot error rates compared to complex tasks?',
     options: [
       'Monotonous tasks always have lower error rates because they need less capacity',
-      'Error rates depend only on task complexity; familiarity has no separate effect',
-      'Monotonous tasks cause errors only with fatigue; otherwise habituation lowers them',
+      'Error rates depend only on task complexity, and familiarity has no separate effect',
+      'Monotonous tasks cause errors only with fatigue, and otherwise habituation lowers them',
       'Monotonous tasks can have high error rates through reduced vigilance, inattention and habitual execution',
     ],
     correct: 3,
@@ -1057,7 +1057,7 @@ export const chufQuestions: {
       'Accidents where ATC issued instructions beyond their legal authority',
       'Accidents where a captain acted unilaterally without consulting the first officer',
       'Accidents where ATC authority over the flight was not established before departure',
-      'Accidents where a junior crew member had critical information but did not assert it because of deference to the captain',
+      'Accidents where a junior crew member withheld critical information through deference',
     ],
     correct: 3,
     explanation: 'A steep authority gradient silences the junior pilot, so vital information, fuel low, terrain ahead, never reaches the decision. Assertiveness training and a flatter gradient are the recognised remedies.',
@@ -1066,10 +1066,10 @@ export const chufQuestions: {
   {
     question: 'How does the presence of passengers affect a solo pilot\'s decision-making?',
     options: [
-      'Passengers affect decisions only in private operations; commercial pilots ignore them',
+      'Passengers affect decisions only in private operations, and commercial pilots ignore them',
       'Passengers generally improve performance through vigilance and the desire to impress',
       'Passenger expectations can create social pressure that biases a pilot toward pressing on when safety calls for diverting',
-      'Passengers have no effect; professional pilots keep the same standards regardless of who is aboard',
+      'Passengers have no effect, and professional pilots keep the same standards regardless of who is aboard',
     ],
     correct: 2,
     explanation: 'Spoken or merely felt passenger expectations add pressure to complete the flight as planned, biasing the pilot against diverting or turning back, a recognised contributor to get-there-itis accidents.',
@@ -1079,7 +1079,7 @@ export const chufQuestions: {
     question: 'How does obesity affect a pilot\'s risk profile from a human factors perspective?',
     options: [
       'Obesity affects only cockpit comfort on long flights, with no physiological safety effect',
-      'Obesity has no in-flight effect; only aerobic fitness matters',
+      'Obesity has no in-flight effect, and only aerobic fitness matters',
       'Obesity affects only physical endurance, not cognition',
       'Obesity is associated with obstructive sleep apnoea, cardiovascular disease risk and daytime sleepiness',
     ],
@@ -1090,7 +1090,7 @@ export const chufQuestions: {
   {
     question: 'What is the human factors basis for using challenge-and-response checklists in preference to read-and-do checklists?',
     options: [
-      'They reduce reliance on memory and make actions predictable, so errors and omissions are less likely and easier to detect',
+      'They cut reliance on memory and make actions predictable and deviations easy to spot',
       'They guarantee that no error can ever occur during a procedure',
       'They are required only for multi-crew operations and have no single-pilot value',
       'They speed operations up by removing the need for checklists',
@@ -1103,7 +1103,7 @@ export const chufQuestions: {
     question: 'A pilot fixes on the first forecast they saw and gives too little weight to later updates. Which bias is this?',
     options: [
       'Flying anchor legs while holding, relevant only to fuel planning',
-      'Over-relying on the first weather information received and under-revising the picture as newer information arrives',
+      'Over-relying on the first weather seen and under-revising as newer information arrives',
       'A bias toward the planned cruise altitude rather than adjusting for weather',
       'Basing weather decisions on departure conditions seen visually rather than the forecast',
     ],
@@ -1115,7 +1115,7 @@ export const chufQuestions: {
     question: 'What is the concept of "safety margins" in aviation operations and why should they be preserved?',
     options: [
       'Safety margins apply only to aircraft performance, not human performance',
-      'Safety margins are purely regulatory; the rules define the exact margin required',
+      'Safety margins are purely regulatory, and the rules define the exact margin required',
       'The buffer between current operating conditions and the boundary of safe operation',
       'Safety margins are just fuel reserves above the minimum, so always carry extra fuel',
     ],
@@ -1127,7 +1127,7 @@ export const chufQuestions: {
     question: 'Why are structured decision-making models such as DECIDE useful?',
     options: [
       'They guarantee the pilot reaches the correct decision in every situation encountered',
-      'A repeatable process to identify the problem, weigh options and act, cutting reliance on snap judgement under stress',
+      'A repeatable process to define the problem, weigh options and act under stress',
       'They are required by regulation for all private flights conducted under the VFR',
       'They remove the need for the pilot to gather any information before deciding',
     ],
@@ -1138,7 +1138,7 @@ export const chufQuestions: {
   {
     question: 'What is the "leans" and what should a pilot do about it?',
     options: [
-      'A false sensation of bank, after a slow roll goes undetected the pilot feels banked when the wings are level',
+      'A false sensation of bank felt when the wings are actually level',
       'A leaning sensation caused by uneven fuel loading in the wings',
       'A loss of balance caused by low blood sugar on long flights',
       'A tendency of the aircraft to lean into turns at high speed',
@@ -1198,7 +1198,7 @@ export const chufQuestions: {
   {
     question: 'What is a "near miss" or "serious incident" in aviation safety terms and why are they valuable?',
     options: [
-      'An incident involving a near-midair collision only; other events are classified differently',
+      'An incident involving a near-midair collision only, and other events are classified differently',
       'A term used only by the ATSB for reporting, not operationally relevant',
       'An occurrence where an accident nearly happened, valuable because it reveals system weaknesses at low cost',
       'An incident with only minor damage and little safety value since no one was hurt',
@@ -1234,7 +1234,7 @@ export const chufQuestions: {
   {
     question: 'What does "cognitive bandwidth" mean in the context of pilot performance and how is it managed?',
     options: [
-      'After an interruption a pilot often resumes past the point they stopped, skipping an item without noticing',
+      'After an interruption a pilot may resume past where they stopped, skipping an item',
       'Interruptions improve checklist accuracy by forcing a fresh start',
       'Interruptions affect only multi-crew checklists, not single-pilot use',
       'Interruptions have no effect provided the checklist is printed rather than memorised',
@@ -1256,21 +1256,21 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.1 (learning, skill transfer)',
   },
   {
-    question: 'What is stress and how does moderate stress typically affect pilot performance?',
+    question: 'The ear has three parts. Which part contains the organs of balance?',
     options: [
-      'Off-duty stress has no effect once the pilot enters the cockpit',
-      'Off-duty stress is a distraction that consumes attention and degrades concentration and decisions in the cockpit',
-      'Off-duty stress improves focus by motivating the pilot to escape problems',
-      'Only work-related stress affects flying; personal stress does not',
+      'The outer ear, which is made up of the pinna and the external ear canal',
+      'The inner ear, which holds the semicircular canals and otolith organs',
+      'The middle ear, which holds the three ossicles and the eardrum',
+      'The eustachian tube, which links the middle ear to the throat',
     ],
     correct: 1,
-    explanation: 'Stress from home or finances does not stay on the ground; it competes for attention and working memory, narrowing focus and impairing judgement in flight. Recognising it is part of the IMSAFE self-check.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.3 (domestic and work-related stress)',
+    explanation: 'The inner ear houses both the cochlea (hearing) and the vestibular apparatus, the semicircular canals and otolith organs, which provide the sense of balance and motion.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8 (the ear and hearing)',
   },
   {
     question: 'Why is carbon monoxide so dangerous, and how is it best detected?',
     options: [
-      'Carbon monoxide is colourless and odourless, so a personal CO detector is the best defence',
+      'Carbon monoxide is colourless and odourless, so a CO detector is the best defence',
       'Carbon monoxide has a strong smell that warns the pilot in good time',
       'Carbon monoxide is only a risk in jet aircraft, not piston types',
       'Carbon monoxide poisoning only occurs on the ground during start-up',
@@ -1284,7 +1284,7 @@ export const chufQuestions: {
     options: [
       'Captains complete FO tasks and FOs complete captain tasks to build overall knowledge',
       'Pilots switch seats to practise operating from the other side of the cockpit',
-      'Experiencing the other crew member\'s role builds understanding of their workload, perspective, and information access',
+      'Experiencing the other\'s role builds understanding of their workload and view',
       'Role reversal is a simulator instructor technique for assessing individual pilot proficiency',
     ],
     correct: 2,
@@ -1343,9 +1343,9 @@ export const chufQuestions: {
     question: 'What is a violation in human error terms and how does it differ from an error?',
     options: [
       'A violation and an error are identical, since both produce the same outcome regardless of intent',
-      'A violation is an intentional deviation from a rule or procedure, even if well-intentioned; an error is unintentional',
+      'A violation is an intentional deviation from a rule, an error is unintentional',
       'Violations apply only to regulatory breaches and errors only to procedural deviations',
-      'A violation occurs only when the pilot knows the rule being broken; an error occurs unknowingly',
+      'A violation occurs only when the pilot knows the rule being broken, whereas an error occurs unknowingly',
     ],
     correct: 1,
     explanation: 'Intent is the dividing line: a violation is a conscious decision to depart from a rule (even a well-meant shortcut), whereas an error is an unintended slip, lapse or mistake. The two need different management.',
@@ -1357,7 +1357,7 @@ export const chufQuestions: {
       'Well-practised pilots can perform two cognitive tasks at once with no penalty',
       'Performing two demanding tasks at once improves performance by raising arousal',
       'Task interference is irrelevant in glass cockpits because automation handles secondary tasks',
-      'Attempting two demanding cognitive tasks at once degrades both, since the brain cannot fully process competing high-demand inputs',
+      'Two demanding tasks at once degrade both, as the brain cannot fully process competing inputs',
     ],
     correct: 3,
     explanation: 'Two attention-hungry tasks cannot truly be done in parallel; the brain time-shares and both suffer. This is why demanding tasks are sequenced and the cockpit kept sterile during high-workload phases.',
@@ -1379,7 +1379,7 @@ export const chufQuestions: {
     question: 'What is the risk matrix used for in aviation safety?',
     options: [
       'A matrix for calculating the risk of runway exceedance based on crosswind components',
-      'A tool for evaluating identified hazards by combining likelihood of occurrence with severity of consequence to prioritise risk controls',
+      'A tool that ranks identified hazards by combining their likelihood and severity',
       'A legal document required by CASA to authorise operations in specific risk environments',
       'A performance assessment tool for crew members following abnormal events',
     ],
@@ -1392,7 +1392,7 @@ export const chufQuestions: {
     options: [
       'New procedures should always be learned without reference materials to build memory strength',
       'Complex procedures should be learned in one long session for maximum retention',
-      'Working memory is limited, so new procedures should be introduced in small steps, automating simple parts before adding complex ones',
+      'Working memory is limited, so introduce procedures in small steps, simple parts first',
       'Visual materials should be avoided in training because audio gives better retention',
     ],
     correct: 2,
@@ -1402,7 +1402,7 @@ export const chufQuestions: {
   {
     question: 'What is the recommended response to discovering a significant error after it has been made in flight?',
     options: [
-      'Acknowledge it, assess and correct it, monitor the result, and tell the crew without blame to restore shared awareness',
+      'Acknowledge it, assess and correct it, monitor the result, and tell the crew without blame',
       'Conceal it from the crew to keep their confidence, disclosing only if it cannot be corrected',
       'Complete the flight and file a voluntary safety report on landing for anonymity',
       'Immediately tell ATC so all other traffic is alerted to the error',
@@ -1417,7 +1417,7 @@ export const chufQuestions: {
       'The standardised mental model of aircraft systems shared by all type-rated pilots',
       'A requirement for both pilots to receive identical simulator training scenarios',
       'Two pilots simultaneously memorising the same emergency checklist',
-      'A common, synchronised understanding among the crew of the situation, plan, roles and likely contingencies',
+      'A shared crew understanding of the situation, plan, roles and likely contingencies',
     ],
     correct: 3,
     explanation: 'A shared mental model means everyone holds the same up-to-date picture of what is happening, what is planned and who does what, so the crew acts as a coordinated team rather than separate individuals.',
@@ -1426,7 +1426,7 @@ export const chufQuestions: {
   {
     question: 'What does "skill fade" describe and how is it managed for rarely-used emergency procedures?',
     options: [
-      'Skill fade applies only to emergency procedures; routine ones are kept up by use',
+      'Skill fade applies only to emergency procedures, and routine ones are kept up by use',
       'Physical deterioration of fine motor control in pilots over 50, managed by annual medicals',
       'Progressive decay of skills not regularly practised, managed by recurrent training and currency',
       'Loss of theory between initial training and the first operational flight, fixed by line training',
@@ -1451,9 +1451,9 @@ export const chufQuestions: {
     question: 'What is the primary benefit of using standardised phraseology in radio communications?',
     options: [
       'It lets ATC handle more aircraft by reducing frequency occupancy time',
-      'It reduces misunderstanding by using words with known, unambiguous meanings and lowers the effort of interpretation',
+      'It uses words with known, unambiguous meanings and lowers interpretation effort',
       'It stops junior pilots making non-standard requests that disrupt ATC flow',
-      'Standard phraseology is mainly a legal requirement; its operational benefit is secondary',
+      'Standard phraseology is mainly a legal requirement, and its operational benefit is secondary',
     ],
     correct: 1,
     explanation: 'Standard phraseology fixes the meaning of words so messages are not misread, and reduces the mental effort of interpretation, which matters most in high-workload, high-noise or non-native-language situations.',
@@ -1486,7 +1486,7 @@ export const chufQuestions: {
   {
     question: 'What is "response time" and how does it vary with fatigue, stress, and hypoxia?',
     options: [
-      'Only hypoxia affects response time; fatigue and stress do not increase latency',
+      'Only hypoxia affects response time, and fatigue and stress do not increase latency',
       'Response time is fixed by biology, so environmental factors have negligible effect',
       'Response time lengthens with fatigue, excessive stress and hypoxia, all of which slow processing',
       'Response time shortens with moderate fatigue through the stimulant effect of adrenaline',
@@ -1510,10 +1510,10 @@ export const chufQuestions: {
   {
     question: 'What is a "routine violation" and how does it differ from an exceptional one?',
     options: [
-      'A routine violation is a habitual shortcut that has become normal; an exceptional one is a rare situational departure',
+      'A routine violation is a habitual shortcut that has become normal, whereas an exceptional one is a rare situational departure',
       'A routine violation occurs during the cruise while an exceptional violation occurs only during emergencies',
       'Routine violations are committed by trainees while exceptional violations are committed only by captains',
-      'There is no real difference between them; both are simply unintentional errors of execution',
+      'There is no real difference between them, and both are simply unintentional errors of execution',
     ],
     correct: 0,
     explanation: 'Routine violations are everyday shortcuts that drift into normal practice; exceptional violations are rare, situational departures. Both differ from errors in that they are deliberate, and both erode safety margins.',
@@ -1536,7 +1536,7 @@ export const chufQuestions: {
     options: [
       'Positive g has no effect below +4g in any pilot',
       'Blood pools in the head, causing redout and burst capillaries first',
-      'Blood is forced away from the head, causing greyout, then blackout, and finally g-induced loss of consciousness',
+      'Blood drains from the head, causing greyout, then blackout, then G-LOC',
       'Positive g improves vision by raising blood pressure to the eyes',
     ],
     correct: 2,
@@ -1546,9 +1546,9 @@ export const chufQuestions: {
   {
     question: 'What is the relevance of "individual differences in fatigue susceptibility" to aviation operations?',
     options: [
-      'Fatigue differences appear only at extreme duty lengths; below 12 hours all pilots respond the same',
+      'Fatigue differences appear only at extreme duty lengths, and below 12 hours all pilots respond the same',
       'Individuals vary widely in how quickly and severely sleep loss and irregular rosters affect them',
-      'Individual differences are irrelevant; all pilots are trained to the same standard',
+      'Individual differences are irrelevant, and all pilots are trained to the same standard',
       'Individual differences apply only to pilots over 60',
     ],
     correct: 1,
@@ -1572,7 +1572,7 @@ export const chufQuestions: {
     options: [
       'Windscreen pillars and glare create optical distortions that reduce the apparent closing speed of approaching aircraft',
       'Pilots are simply too busy with instruments and cockpit tasks to spend adequate time scanning outside the aircraft',
-      'See-and-avoid is ineffective only in instrument conditions; in visual conditions it provides adequate protection',
+      'See-and-avoid is ineffective only in instrument conditions, and in visual conditions it provides adequate protection',
       'Blind spots, task absorption, empty-field myopia and a converging aircraft appearing stationary all cut the detection rate',
     ],
     correct: 3,
@@ -1596,7 +1596,7 @@ export const chufQuestions: {
     options: [
       'The regulatory minimum standards below which no operation is permitted',
       'The safety reporting infrastructure that catches incidents after they occur',
-      'A last-resort protective layer that catches errors that have propagated through all other defensive layers',
+      'A last-resort layer that catches errors getting through all other defences',
       'The physical restraint nets required in cargo aircraft to prevent load shift',
     ],
     correct: 2,
@@ -1606,7 +1606,7 @@ export const chufQuestions: {
   {
     question: 'What is hypoglycaemia and how does it affect pilot performance?',
     options: [
-      'It impairs concentration, judgement and coordination, with symptoms that can resemble early hypoxia',
+      'It impairs concentration, judgement and coordination, resembling early hypoxia',
       'It has no effect because the body stores enough glucose for any flight length',
       'It improves alertness by triggering an adrenaline response',
       'It affects only diabetic pilots and is irrelevant to others',
@@ -1633,7 +1633,7 @@ export const chufQuestions: {
       'A weather model: Precipitation, Atmosphere, Ceiling, Elevation',
       'An ATIS checklist: Pressure, Altimeter, Cloud, Expectation',
       'A performance model: Proficiency, Accuracy, Competence, Efficiency',
-      'A graded escalation model for raising a safety concern: Probe, Alert, Challenge, Emergency',
+      'A graded way to raise a concern, Probe, Alert, Challenge then Emergency',
     ],
     correct: 3,
     explanation: 'PACE gives a structured way to escalate a concern: gently Probe, then Alert, then Challenge, and finally declare an Emergency or intervene. It helps a junior crew member overcome a steep authority gradient.',
@@ -1657,7 +1657,7 @@ export const chufQuestions: {
       'Medicals are purely administrative with no direct relationship to flight safety',
       'Medicals exist mainly to satisfy insurance, with safety benefit secondary',
       'They identify physical and mental conditions that could impair performance or cause sudden incapacitation in flight',
-      'Flight crew medicals assess only cardiovascular fitness; cognitive screening is done by airlines',
+      'Flight crew medicals assess only cardiovascular fitness, and cognitive screening is done by airlines',
     ],
     correct: 2,
     explanation: 'The medical is a barrier in the accident chain: it screens for conditions, cardiac, neurological, psychological, that could degrade performance or cause sudden incapacitation, catching them before they cause harm.',
@@ -1666,8 +1666,8 @@ export const chufQuestions: {
   {
     question: 'What is the human factors significance of maintaining a "flight log" or "pilot logbook"?',
     options: [
-      'Logbooks matter only at licence renewal; their value is administrative',
-      'It records experience and currency, supporting honest self-assessment and helping a pilot spot patterns in their performance',
+      'Logbooks matter only at licence renewal, and their value is administrative',
+      'It records experience and currency, supporting honest self-assessment and trend-spotting',
       'Logbooks are needed only for recency calculations and otherwise hold little practical value',
       'The logbook is only a regulatory document with no human factors significance',
     ],
@@ -1692,7 +1692,7 @@ export const chufQuestions: {
     options: [
       'Vigorous exercise always improves alertness and should be encouraged before flight',
       'Light exercise is beneficial but anything over 10 minutes is prohibited before flight',
-      'Moderate exercise has no effect; only exhausting exercise matters',
+      'Moderate exercise has no effect, and only exhausting exercise matters',
       'Exhausting exercise can cause fatigue and muscle weakness that impair handling and decision-making',
     ],
     correct: 3,
@@ -1716,7 +1716,7 @@ export const chufQuestions: {
     options: [
       'NTS means non-transponder standard, relevant in uncontrolled airspace',
       'Non-technical skills are assessed only in initial training, not in type ratings',
-      'Cognitive, social and personal skills, situation awareness, decision-making, CRM, workload management and leadership',
+      'Cognitive and social skills like SA, decision-making, CRM, workload and leadership',
       'NTS means administrative skills such as flight planning and documentation',
     ],
     correct: 2,
@@ -1748,16 +1748,16 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.16 (communication, assertion)',
   },
   {
-    question: 'Why should non-essential tasks be completed before high-workload phases?',
+    question: 'The three small bones (ossicles) of the middle ear that pass sound vibration to the inner ear are the -',
     options: [
-      'Approach and landing, so non-essential tasks should be finished earlier to protect capacity for flying',
-      'Cruise, because monitoring automation is the most demanding task',
-      'Taxi, because ground navigation needs the most mental effort',
-      'Workload is constant through the flight, so the timing of tasks does not matter',
+      'The malleus, incus and stapes, often called the hammer, anvil and stirrup',
+      'The cochlea, the semicircular canals and the vestibule, all of the inner ear',
+      'The eardrum, the eustachian tube and the oval window of the middle ear',
+      'The pinna, the auditory canal and the eardrum of the outer ear',
     ],
     correct: 0,
-    explanation: 'Workload peaks in the terminal area, approach and landing, where time is short and tasks pile up. Completing planning, briefings and configuration earlier preserves spare capacity for the busiest phase.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (workload management)',
+    explanation: 'The middle ear holds three tiny linked bones, the malleus, incus and stapes, that pass and amplify vibration from the eardrum to the oval window of the inner ear. The other structures listed are real parts of the ear but are not the ossicles.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8 (the ear and hearing)',
   },
   {
     question: 'What is the Coriolis illusion and when does it typically occur?',
@@ -1765,7 +1765,7 @@ export const chufQuestions: {
       'An illusion from bright sunlight reflecting off cloud directly ahead',
       'A false altitude perception from looking down at ground features through a window',
       'An illusion in straight-and-level flight where the pilot feels they are turning',
-      'A tumbling sensation when the head is moved during a prolonged turn, stimulating several semicircular canals at once',
+      'A powerful false tumbling felt when the head is moved during a prolonged turn',
     ],
     correct: 3,
     explanation: 'In a steady turn the canals settle and signal no rotation. Moving the head then stimulates other canals, producing a powerful false tumbling sensation. Avoiding head movement in turns and trusting instruments counter it.',
@@ -1774,7 +1774,7 @@ export const chufQuestions: {
   {
     question: 'What are common barriers to effective communication in the cockpit?',
     options: [
-      'Steep authority gradients, ambient noise, ambiguous jargon, fatigue and unstated assumptions about shared knowledge',
+      'Steep authority gradients, noise, ambiguous jargon, fatigue and unstated assumptions',
       'Consistently using the standard radio phraseology that has been agreed between both pilots',
       'Confirming each instruction received from the other pilot or ATC with an accurate readback',
       'Thoroughly briefing the approach and the expected actions before commencing the descent',
@@ -1787,7 +1787,7 @@ export const chufQuestions: {
     question: 'What is "fatigue countermeasure training" and what are its aims?',
     options: [
       'An annual regulatory course for all pilots operating under CAO 48.1 duty limits',
-      'Education on the causes, effects and management of fatigue, including sleep hygiene, napping and recognising personal impairment',
+      'Education on the causes, effects and management of fatigue and personal impairment',
       'Training in emergency procedures for when a pilot realises they are too fatigued to continue',
       'Simulator training that deliberately induces fatigue to test performance',
     ],
@@ -1800,7 +1800,7 @@ export const chufQuestions: {
     options: [
       'Accepting that one is not invulnerable to risk',
       'Acting quickly without overthinking the situation',
-      'Reminding oneself that the rules are usually right and exist for good reasons',
+      'Reminding oneself that rules are usually right and sensible',
       'Recognising that one is able to make a difference',
     ],
     correct: 2,
@@ -1825,7 +1825,7 @@ export const chufQuestions: {
       'A stall-spin sequence from abrupt control inputs at low speed near the ground',
       'A high-speed spiral dive caused only by a wake-turbulence encounter',
       'A nose-low spiral caused by trim changes, corrected by forward pressure',
-      'An undetected, steepening turn in which the pilot, sensing level flight, pulls back and tightens the descending spiral',
+      'An unnoticed steepening turn the pilot tightens by pulling back, sensing level flight',
     ],
     correct: 3,
     explanation: 'In the graveyard spiral a gentle turn goes unnoticed; as the nose drops and speed builds the pilot pulls back, which only tightens the spiral and increases the descent. Recognising it on instruments and rolling level is the recovery.',
@@ -1837,7 +1837,7 @@ export const chufQuestions: {
       'Diving has no effect on flying provided the dive was in fresh water',
       'Diving permanently reduces lung capacity for 24 hours',
       'Salt water in the ears causes vertigo lasting several days',
-      'Ascending reduces ambient pressure and can release dissolved nitrogen as bubbles, risking decompression sickness',
+      'Lower pressure at altitude can release dissolved nitrogen as bubbles, the bends',
     ],
     correct: 3,
     explanation: 'After diving, the body holds extra dissolved nitrogen. Climbing to altitude lowers ambient pressure and can let that nitrogen form bubbles (the bends), so a waiting period before flight is required.',
@@ -1882,7 +1882,7 @@ export const chufQuestions: {
   {
     question: 'What is the false-horizon illusion and what causes it?',
     options: [
-      'Sloping cloud tops or sloping terrain are mistaken for the true horizon, so the pilot banks to align with them',
+      'Sloping cloud or terrain mistaken for the true horizon, so the pilot banks to it',
       'A horizon that appears doubled when looking through a curved windscreen',
       'The true horizon disappearing in haze, forcing an immediate instrument climb',
       'A reflection of the instrument panel on the windscreen at night',
@@ -1916,21 +1916,21 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8 / 2.14 (attention)',
   },
   {
-    question: 'What is "situation-specific competence" and why does it matter for currency?',
+    question: 'On a clear night, unusually bright runway and approach lights tend to make the runway appear -',
     options: [
-      'The competence level required to operate in specific airspace classes, maintained through currency requirements',
-      'Mechanical proficiency in physically controlling the aircraft, which is maintained through medical certification',
-      'Proficiency at a specific task in specific conditions, such as night approaches at unfamiliar strips, that decays without practice',
-      'The ability to operate a particular aircraft type, which is maintained through annual type proficiency checks',
+      'Farther away than it is, so the pilot tends to fly an unnecessarily high approach',
+      'Positioned at its true distance, since light intensity does not affect distance perception',
+      'Closer than it is, so the pilot tends to fly a lower and flatter approach',
+      'Blurred, which is the main reason that bright lights are a hazard on approach',
     ],
     correct: 2,
-    explanation: 'Competence is not general; a pilot current for day circuits may be rusty at night approaches into unfamiliar strips. Recency must match the specific task and conditions actually flown, not just total hours.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.1 (skill, currency)',
+    explanation: 'Bright lights make the runway look closer than it is, so the pilot tends to fly a lower, flatter approach and risks undershooting. Dim lights have the opposite effect, making the runway seem farther away.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8.5 (visual illusions on approach)',
   },
   {
     question: 'What is the recommended treatment for hyperventilation in flight?',
     options: [
-      'Consciously slow the breathing rate and depth so carbon dioxide levels return to normal',
+      'Consciously slow the breathing so carbon dioxide returns to normal',
       'Breathe faster to take in more oxygen',
       'Descend immediately and select 100 percent oxygen',
       'Ignore it, since hyperventilation resolves on its own without action',
@@ -1945,7 +1945,7 @@ export const chufQuestions: {
       'The endurance of the aircraft oxygen system at cruise altitude',
       'The maximum time a pilot may stay at altitude without supplemental oxygen by regulation',
       'The time the eyes take to adapt to darkness at high altitude',
-      'The time after losing the oxygen supply during which a pilot can still act usefully, which falls sharply as altitude rises',
+      'The time after losing oxygen in which a pilot can still act, falling sharply with altitude',
     ],
     correct: 3,
     explanation: 'Time of useful consciousness is the window, after a loss of oxygen, in which a pilot can still take meaningful action. It shrinks dramatically with altitude, from minutes in the low twenties of thousands of feet to seconds higher up.',
@@ -1955,7 +1955,7 @@ export const chufQuestions: {
     question: 'Under high stress a crew fixates on one fault while the aircraft drifts toward terrain. What is this?',
     options: [
       'The inability to perceive aircraft attitude without external visual references',
-      'A narrowing of attention onto one concern, usually under high stress or workload, so other relevant information is missed',
+      'Attention narrowing onto one concern under stress, so other cues are missed',
       'A visual restriction caused by high g-force during aerobatics',
       'Memorising checklist items by repetition until they become automatic',
     ],
@@ -1968,7 +1968,7 @@ export const chufQuestions: {
     options: [
       'The best intervention is to discipline the last person who let a hole appear',
       'Accidents are inevitable because the holes always eventually align',
-      'Strengthening each defensive layer with fewer holes, and adding more layers, lowers the chance of holes aligning',
+      'Strengthening each layer and adding more lowers the chance of holes aligning',
       'Accidents can be prevented only by eliminating every possible human error',
     ],
     correct: 2,
@@ -1979,7 +1979,7 @@ export const chufQuestions: {
     question: 'What are otolith organs and what false sensation can they produce in aviation?',
     options: [
       'Organs in the cochlea that detect sound and can misread altitude changes as accelerations',
-      'Organs in the utricle and saccule that sense linear acceleration and gravity, and can confuse forward acceleration with nose-up pitch',
+      'Inner-ear organs sensing linear acceleration and gravity, which can mimic a nose-up pitch',
       'Pressure-sensitive cells in the sinuses that detect cabin pressure changes',
       'Stretch receptors in the neck that detect head position for the vestibulo-ocular reflex',
     ],
@@ -2014,9 +2014,9 @@ export const chufQuestions: {
   {
     question: 'What is "capacity overload" and how does it differ from "capacity underload"?',
     options: [
-      'Overload occurs only in multi-crew and underload only in single-pilot operations',
+      'Overload occurs only in multi-crew operations and underload only in single-pilot operations',
       'Overload is the maximum flight hours and underload the minimum, both set by CAO 48.1',
-      'Overload is when demands exceed processing ability, causing errors; underload is when demands are so low that attention wanders',
+      'Overload exceeds capacity and causes errors, while underload drops arousal so attention wanders',
       'Overload and underload are identical, both describing a demand-capacity mismatch',
     ],
     correct: 2,
@@ -2050,7 +2050,7 @@ export const chufQuestions: {
   {
     question: 'What is the difference between a slip, a lapse, and a mistake in human error taxonomy?',
     options: [
-      'Slips are execution errors in an intended action; lapses are memory failures; mistakes are planning errors',
+      'Slips are action errors, lapses are memory failures, mistakes are planning errors',
       'Slips are minor, lapses moderate and mistakes severe errors requiring a safety report',
       'All three terms describe the same cognitive error and the distinction is only academic',
       'Slips are ground errors, lapses occur in flight and mistakes occur during training',
@@ -2063,7 +2063,7 @@ export const chufQuestions: {
     question: 'What is the "empty field myopia" phenomenon and when does it occur?',
     options: [
       'A visual illusion where flat terrain appears mountainous due to heat shimmer',
-      'The eyes relaxing to a resting focus of about one to two metres in featureless or poor-visibility conditions',
+      'The eyes relaxing to a resting focus of one to two metres in featureless conditions',
       'The inability to read charts clearly in low cockpit lighting',
       'Short-sightedness developing from long-term instrument flying without a break',
     ],
@@ -2099,7 +2099,7 @@ export const chufQuestions: {
     question: 'What does the aviation safety concept of "defence in depth" mean for a pilot preparing for a flight?',
     options: [
       'Brief every possible contingency individually so each is covered by a specific procedure',
-      'Use several independent checks so no single failure, a bad chart or a wrong setting, can propagate to an accident',
+      'Several independent checks so no single failure can propagate to an accident',
       'Fly at high altitude to give the maximum obstacle clearance',
       'Carry enough fuel for two extra alternates beyond the regulatory minimum',
     ],
@@ -2134,7 +2134,7 @@ export const chufQuestions: {
   {
     question: 'Why is even mild gastrointestinal illness a concern before flight?',
     options: [
-      'Symptoms and dehydration impair concentration, and sudden incapacitation from cramps or nausea can occur in flight',
+      'Symptoms and dehydration impair concentration, and cramps or nausea can incapacitate',
       'Gastro illness has no effect on flying once symptoms are masked by medication',
       'Gastro illness affects only long-haul operations',
       'Gastro illness improves alertness through the body\'s stress response',
@@ -2182,7 +2182,7 @@ export const chufQuestions: {
   {
     question: 'What is the runway slope illusion and how does it affect approach angle perception?',
     options: [
-      'A sloping runway has no effect on perceived approach angle; only PAPI gives accurate guidance',
+      'A sloping runway has no effect on perceived approach angle, and only PAPI gives accurate guidance',
       'A downsloping runway makes the approach appear too high, causing a low approach and undershoot',
       'An upsloping runway makes the approach appear too high, causing a low approach and undershoot',
       'A steeply upsloping runway makes the approach appear too low, causing a high approach and overshoot',
@@ -2197,7 +2197,7 @@ export const chufQuestions: {
       'A loss of night vision that is caused by external strobe lights',
       'A vibration of the cockpit instruments that is caused by engine roughness',
       'A flickering of the cockpit lighting that is caused by an alternator fault',
-      'A disorienting response to light flickering at certain rates, such as sun through a propeller',
+      'Disorientation from light flickering at certain rates, like sun through a prop',
     ],
     correct: 3,
     explanation: 'Flicker vertigo can occur when light flashes at roughly 4 to 20 times a second, for example low sun seen through a propeller disc or rotor, causing discomfort, disorientation and, rarely, a seizure in susceptible people.',
@@ -2231,7 +2231,7 @@ export const chufQuestions: {
     question: 'What is the aviation human factors significance of "experience-based mental models"?',
     options: [
       'Mental models are physical scale models used in type training',
-      'Mental models matter only in initial training; experienced pilots no longer use them',
+      'Mental models matter only in initial training, and experienced pilots no longer use them',
       'Mental models concern systems knowledge only and are relevant to systems testing',
       'Experienced pilots build rich mental models of aircraft, environments and situations from past experience',
     ],
@@ -2242,10 +2242,10 @@ export const chufQuestions: {
   {
     question: 'What is the aviation human factors concern with performing familiar tasks in an unfamiliar aircraft type?',
     options: [
-      'Pilots adapt immediately to unfamiliar types; type training is a regulatory formality',
+      'Pilots adapt immediately to unfamiliar types, and type training is a regulatory formality',
       'Unfamiliarity raises all forms of workload, reduces pattern recognition and promotes negative-transfer errors',
       'Unfamiliarity improves vigilance by stopping reliance on habit',
-      'Unfamiliarity matters only in emergencies; normal operations are equally safe',
+      'Unfamiliarity matters only in emergencies, and normal operations are equally safe',
     ],
     correct: 1,
     explanation: 'On a new type the familiar pattern recognition is gone, workload rises, and strong habits from the previous type can trigger the wrong action (negative transfer). Extra care and deliberate verification are needed during conversion.',
@@ -2293,7 +2293,7 @@ export const chufQuestions: {
       'Mild hypoxia removes colour vision entirely, leaving only greyscale',
       'Mild hypoxia enhances colour sensitivity as the pupil dilates',
       'Mild hypoxia has no effect on colour vision, only on visual acuity',
-      'Mild hypoxia reduces colour discrimination, especially of red, dimming the apparent brightness of red warning lights',
+      'Mild hypoxia dulls colour vision, red first, dimming red warning lights',
     ],
     correct: 3,
     explanation: 'The retina is oxygen-hungry, so even mild hypoxia degrades colour discrimination, red first, and reduces night vision, well before the pilot notices general impairment.',
@@ -2314,9 +2314,9 @@ export const chufQuestions: {
   {
     question: 'What does research into "human error" consistently show about the causes of aviation accidents?',
     options: [
-      'Human error causes about 20 percent of accidents; mechanical failure causes the majority',
+      'Human error causes about 20 percent of accidents, and mechanical failure causes the majority',
       'Most accidents are caused by reckless behaviour or intentional violations by flight crew',
-      'Human factors, error, poor decisions or organisational failures, contribute to roughly 70 to 80 percent of accidents',
+      'Human error and poor decisions contribute to roughly 70 to 80 percent of accidents',
       'Most accidents are caused mainly by mechanical failures beyond crew management',
     ],
     correct: 2,
@@ -2339,8 +2339,8 @@ export const chufQuestions: {
     question: 'What is the "fit to fly" self-assessment obligation for a CPL holder before each flight?',
     options: [
       'The pilot must honestly assess physical and mental fitness and, if in doubt, must not fly',
-      'Self-assessment is needed only for single-pilot operations; multi-crew has redundancy',
-      'Fitness is determined solely by a valid medical certificate; no self-assessment is needed',
+      'Self-assessment is needed only for single-pilot operations, and multi-crew has redundancy',
+      'Fitness is determined solely by a valid medical certificate, and no self-assessment is needed',
       'The pilot must complete a written IMSAFE checklist and keep it for 90 days',
     ],
     correct: 0,
@@ -2351,7 +2351,7 @@ export const chufQuestions: {
     question: 'While holding, a pilot senses their own aircraft creeping forward but it is stationary. What causes this?',
     options: [
       'A genuine loss of the brakes that requires immediate full braking pressure',
-      'A relative-motion illusion in which a moving adjacent aircraft is read as one’s own movement',
+      'A relative-motion illusion reading a moving nearby aircraft as own motion',
       'A somatogravic illusion that is produced by the aircraft\'s acceleration',
       'Hypoxia beginning to affect the balance organs of the inner ear',
     ],
@@ -2396,16 +2396,16 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.12.2 (atmosphere, decompression sickness)',
   },
   {
-    question: 'What is the human factors purpose of standard altitude and configuration callouts?',
+    question: 'Light entering the eye is focused onto the retina mainly by -',
     options: [
-      'Standard callouts apply only above the published transition altitude',
-      'Standard callouts exist only to satisfy the CVR recording requirements',
-      'Standard callouts slow operations down and are best omitted when busy',
-      'They share awareness, prompt the action, and help catch a deviation',
+      'The retina itself, which both focuses the light and then detects it',
+      'The optic nerve where it leaves the back of the eyeball',
+      'The pupil alone, by changing its size in bright and in dim light',
+      'The cornea and the lens at the front of the eye working together',
     ],
     correct: 3,
-    explanation: 'Standard callouts (\'1000 to go\', \'gear down\') confirm the expected state, trigger the matching action and give a clear cue to detect a deviation. Even a single pilot calling aloud reinforces monitoring.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.16 (communication, standard callouts)',
+    explanation: 'Most focusing is done by the cornea, with the lens making fine adjustments, projecting a focused image onto the retina. The retina detects the light, the pupil controls how much enters, and the optic nerve carries the signal to the brain.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8 (the eye and vision)',
   },
   {
     question: 'What is presbyopia and why does it matter to older pilots?',
@@ -2434,9 +2434,9 @@ export const chufQuestions: {
   {
     question: 'What is the relationship between "situational awareness" and "good decision-making"?',
     options: [
-      'High SA results from good decisions; making correct choices creates SA',
+      'High SA results from good decisions, and making correct choices creates SA',
       'Good decision-making causes high SA, since decisions create awareness',
-      'They are independent; a pilot can decide well with poor SA',
+      'They are independent, and a pilot can decide well with poor SA',
       'Situational awareness is the input to decisions, so accurate awareness enables good ones',
     ],
     correct: 3,
@@ -2448,7 +2448,7 @@ export const chufQuestions: {
     options: [
       'Increase altitude to reduce the concentration of CO in the cockpit',
       'Increase cabin heat to the maximum setting to burn off the CO',
-      'Shut off the cabin heat, maximise fresh air, use supplemental oxygen if available, and land as soon as practicable',
+      'Shut off cabin heat, select fresh air, use oxygen, and land as soon as practicable',
       'Open vents to increase airflow through the cockpit and continue the flight',
     ],
     correct: 2,
@@ -2458,7 +2458,7 @@ export const chufQuestions: {
   {
     question: 'A very experienced pilot discounts a risk they have safely flown past many times. What does this show?',
     options: [
-      'Experience and risk perception are unrelated; personality alone sets risk tolerance',
+      'Experience and risk perception are unrelated, and personality alone sets risk tolerance',
       'Less experienced pilots consistently underestimate risk compared with experienced ones',
       'Very experienced pilots can underestimate risk because familiarity reduces the sense of danger',
       'More experience always leads to more accurate risk perception',
@@ -2471,7 +2471,7 @@ export const chufQuestions: {
     question: 'What is the function of "challenge-verify" in approach briefings?',
     options: [
       'A call to ATC before an instrument approach to verify current information',
-      'A briefing technique where key items, minimums, missed approach and threats, are stated and verified against the plate by both pilots',
+      'Stating and verifying key items, minima and missed approach against the plate',
       'A regulatory requirement for CAT III approaches only',
       'A call where the flying pilot confirms each action before the monitoring pilot challenges',
     ],
@@ -2483,7 +2483,7 @@ export const chufQuestions: {
     question: 'How long does full dark adaptation take after bright light exposure?',
     options: [
       '1 to 2 minutes, the same time the pupils take to dilate fully',
-      '20 to 30 minutes, the time rod photoreceptors take to regenerate rhodopsin after bright light',
+      'About 20 to 30 minutes, the time rods need to regenerate rhodopsin',
       '45 to 60 minutes, relevant only to extended night flights',
       '5 to 10 minutes, since the rhodopsin cycle regenerates rapidly',
     ],
@@ -2542,10 +2542,10 @@ export const chufQuestions: {
   {
     question: 'What is "information overload" in aviation and how does it differ from task overload?',
     options: [
-      'Information overload occurs only in glass cockpits; task overload applies to all aircraft',
-      'Information overload is physical, from too many instruments; task overload is cognitive, from complex tasks',
+      'Information overload occurs only in glass cockpits, whereas task overload applies to all aircraft',
+      'Information overload is physical, from too many instruments, whereas task overload is cognitive, from complex tasks',
       'They are identical, both describing exceeded cognitive capacity',
-      'Information overload is too much incoming data to process; task overload is too many tasks for the time available',
+      'Information overload is too much incoming data to process, whereas task overload is too many tasks for the time available',
     ],
     correct: 3,
     explanation: 'Information overload is about the volume of data competing for attention; task overload is about having more to do than time allows. Both saturate the pilot, and both are managed by prioritising and shedding non-essentials.',
@@ -2554,10 +2554,10 @@ export const chufQuestions: {
   {
     question: 'What is the human factors significance of "role clarity" in multi-crew operations?',
     options: [
-      'Clear role definition reduces efficiency; flexible role assignment gives better CRM',
+      'Clear role definition reduces efficiency, and flexible role assignment gives better CRM',
       'Role clarity is a regulatory requirement specifying minimum qualifications for PF and PM',
-      'Role clarity matters only in emergencies; in normal operations roles are interchangeable',
-      'Defining who flies (PF) and who monitors (PM) stops both handling the controls at once and ensures monitoring tasks get done',
+      'Role clarity matters only in emergencies, and in normal operations roles are interchangeable',
+      'Defining who flies and who monitors prevents both flying and ensures monitoring gets done',
     ],
     correct: 3,
     explanation: 'Clear PF and PM roles prevent the dangerous situations where both pilots fly, or neither does, and make sure monitoring and checklist tasks are actually completed, especially under the pressure of an abnormal situation.',
@@ -2566,7 +2566,7 @@ export const chufQuestions: {
   {
     question: 'What is the role of "post-incident analysis" in individual pilot development?',
     options: [
-      'Post-incident analysis is only organisational; individuals need not analyse their own incidents',
+      'Post-incident analysis is only organisational, and individuals need not analyse their own incidents',
       'Reflecting on near-misses and errors lets a pilot spot personal vulnerability patterns and knowledge gaps',
       'Analysis is the ATSB\'s job and individuals should not analyse their own incidents',
       'Analysis is required only for accidents with injury or major damage',
@@ -2640,8 +2640,8 @@ export const chufQuestions: {
     options: [
       'CASA prohibits checklist use in actual emergencies, so memory items are mandatory',
       'Reading a checklist in an emergency is so distracting that it outweighs any benefit',
-      'Time-critical emergencies need an immediate response because there is less time than it takes to read and action a checklist',
-      'Memory items apply only to single-pilot operations; multi-crew always use checklists',
+      'Time-critical emergencies need an immediate response, with no time to read a checklist',
+      'Memory items apply only to single-pilot operations, and multi-crew always use checklists',
     ],
     correct: 2,
     explanation: 'For a handful of immediate actions, an engine fire on take-off, a stall warning, a GPWS alert, there is no time to find and read a checklist, so a few critical steps are memorised and actioned at once, with the checklist confirming afterward.',
@@ -2662,10 +2662,10 @@ export const chufQuestions: {
   {
     question: 'What is the "eight-hour bottle to throttle" rule and does it guarantee fitness to fly?',
     options: [
-      'An industry custom only; Australia has no regulatory minimum time between alcohol and flight',
+      'An industry custom only, and Australia has no regulatory minimum time between alcohol and flight',
       'A mandatory 8-hour rest period after landing, unrelated to alcohol',
       'A rule requiring 8 hours between alcohol and any aviation duty including briefings',
-      'A minimum of eight hours between the last drink and flight, a floor only and not a guarantee of fitness since metabolism varies',
+      'A minimum of eight hours between last drink and flight, a floor only since metabolism varies',
     ],
     correct: 3,
     explanation: 'The eight-hour \'bottle to throttle\' rule is a regulatory minimum, not a clearance to fly. Because alcohol clears slowly and at different rates, a pilot can still be impaired or hung over after eight hours and must self-assess.',
@@ -2760,7 +2760,7 @@ export const chufQuestions: {
     options: [
       'Physiological stress is measured by cortisol while psychological cannot be measured',
       'Physiological stress occurs only at altitude and psychological only on the ground',
-      'Physiological stress comes from physical conditions; psychological from mental demands',
+      'Physiological stress comes from physical conditions, whereas psychological from mental demands',
       'The two are identical and are always managed in exactly the same way',
     ],
     correct: 2,
@@ -2796,7 +2796,7 @@ export const chufQuestions: {
     options: [
       'The interface between pilots and the natural weather environment in flight',
       'The interface between the aircraft\'s environmental control systems and the pilots',
-      'The relationship between the pilot\'s physical and psychological needs and the physical work environment',
+      'The relationship between the pilot\'s needs and the physical work environment',
       'The link between flight crew and the regulatory environment of CASA oversight',
     ],
     correct: 2,
@@ -2809,7 +2809,7 @@ export const chufQuestions: {
       'A risk is a physical object whereas a hazard is a written procedure',
       'A hazard and a risk are simply two words for exactly the same thing',
       'A hazard is always inherently more dangerous than a risk in every case',
-      'A hazard is a source of potential harm, while risk combines the likelihood and the severity of that harm',
+      'A hazard is a potential source of harm, risk combines its likelihood and severity',
     ],
     correct: 3,
     explanation: 'A hazard is a source of potential harm (terrain, weather, fatigue); risk combines the likelihood of that harm with its severity. Separating the two lets a pilot decide which hazards need the most attention and control.',
@@ -2818,7 +2818,7 @@ export const chufQuestions: {
   {
     question: 'What is the aviation significance of "self-regulation" in professional pilots?',
     options: [
-      'The internal capacity to monitor one\'s own performance, recognise degradation, and take appropriate corrective action',
+      'The internal capacity to monitor one\'s own performance, spot decline and correct it',
       'The ability to regulate transponder modes without ATC instruction in uncontrolled airspace',
       'The legal self-certification of fitness to fly provided by a valid medical certificate',
       'The CASA-authorised deregistration of pilots from the medical system',
@@ -2854,7 +2854,7 @@ export const chufQuestions: {
   {
     question: 'In what order do the symptoms of hypoxia typically appear?',
     options: [
-      'Judgement, self-criticism and mood are affected before obvious physical symptoms appear',
+      'Judgement, self-criticism and mood are hit before physical symptoms appear',
       'Severe physical collapse occurs before any change in judgement or mood',
       'Vision is the only function affected and only above FL250',
       'There are no symptoms until the pilot suddenly loses consciousness',
@@ -2878,7 +2878,7 @@ export const chufQuestions: {
   {
     question: 'What is the "two-challenge" rule in crew communication?',
     options: [
-      'If a challenge is not acknowledged, the concern is repeated and, if still unheeded, the crew member acts',
+      'If a challenge is not acknowledged, repeat it, and if still unheeded, act',
       'Maintaining a firm control input against aerodynamic forces during an upset',
       'Communicating loudly and clearly in a noisy cockpit environment',
       'Making decisions unilaterally without consulting the other crew member',
@@ -2914,8 +2914,8 @@ export const chufQuestions: {
   {
     question: 'What is the difference between conductive and sensorineural hearing loss?',
     options: [
-      'Conductive loss blocks sound in the outer or middle ear; sensorineural loss damages the inner ear or nerve',
-      'The pilot fails to hear an ATC call because of cockpit noise',
+      'Conductive loss blocks the outer or middle ear, sensorineural damages the inner ear',
+      'The pilot fails to hear an ATC call because of high ambient cockpit noise levels',
       'Two stations transmit at once and block each other',
       'The pilot reads back a clearance incorrectly to ATC',
     ],
@@ -2974,7 +2974,7 @@ export const chufQuestions: {
   {
     question: 'How does haze affect a pilot’s perception of distance?',
     options: [
-      'Haze makes the runway and objects look farther away and lower than their true position',
+      'Haze makes the runway look farther away and lower than its true position',
       'Haze makes objects appear closer to the pilot than their true distance',
       'Haze has no effect on the perception of distance',
       'Haze only affects colour perception, not distance',
@@ -2999,7 +2999,7 @@ export const chufQuestions: {
     question: 'What does the "sterile cockpit rule" specifically prohibit during critical phases of flight?',
     options: [
       'The use of personal electronic devices below 10,000 ft',
-      'Non-essential communications, activities and discussions not related to operating the aircraft',
+      'Non-essential talk and tasks unrelated to operating the aircraft',
       'The use of the autopilot below 1,000 ft on approach',
       'All ATC communication during the final approach segment',
     ],
@@ -3070,7 +3070,7 @@ export const chufQuestions: {
   {
     question: 'What is the difference between being current and being proficient?',
     options: [
-      'Currency means recent practice; proficiency means actual skill, and they are not the same',
+      'Currency means recent practice, proficiency means actual skill, and they differ',
       'Currency and proficiency are identical and interchangeable terms',
       'Proficiency is a legal requirement and currency is optional',
       'Currency guarantees proficiency in all conditions',
@@ -3084,7 +3084,7 @@ export const chufQuestions: {
     options: [
       'Alcohol affects only coordination, never the balance organs',
       'Alcohol leaves the body completely within one hour of the last drink',
-      'Alcohol affects the inner ear and balance, increasing disorientation for many hours after drinking',
+      'Alcohol disturbs the inner ear and balance, raising disorientation for hours',
       'Alcohol\'s effects end the moment blood alcohol reaches zero',
     ],
     correct: 2,
@@ -3130,7 +3130,7 @@ export const chufQuestions: {
   {
     question: 'What is the "authority gradient" between ATC and the pilot and what are its safety implications?',
     options: [
-      'ATC issues clearances the pilot must normally follow, but the pilot in command keeps final authority for safety',
+      'ATC issues clearances, but the pilot in command keeps final authority for safety',
       'Authority is set by altitude, with ATC authority increasing above the transition altitude',
       'The pilot in command may disregard ATC instructions purely by preference',
       'ATC has final authority and pilot non-compliance is always a safety violation',
@@ -3144,7 +3144,7 @@ export const chufQuestions: {
     options: [
       'The vertical authority gradient between ATC and the PIC',
       'The hierarchy between the PIC and passengers, preventing passenger interference',
-      'The perceived authority difference between captain and first officer; too steep a gradient stops the FO speaking up',
+      'The authority gap between captain and FO, where too steep a gradient silences the FO',
       'The authority difference between operations management and the flight crew',
     ],
     correct: 2,
@@ -3157,7 +3157,7 @@ export const chufQuestions: {
       'The two strategies are equivalent and the choice depends only on the operation',
       'Error elimination is the CASA standard and error management is an unsafe industry shortcut',
       'Error management is for maintenance and error elimination for flight operations',
-      'Error elimination tries to prevent all errors; error management accepts they occur and limits their consequences',
+      'Error elimination tries to prevent all errors, management accepts them and limits consequences',
     ],
     correct: 3,
     explanation: 'Because humans inevitably err, modern safety does not chase zero errors; it builds layers to detect and trap errors early and limit their effects, the basis of threat and error management.',
@@ -3166,7 +3166,7 @@ export const chufQuestions: {
   {
     question: 'How does cannabis affect pilot performance?',
     options: [
-      'Cannabis impairs perception, reaction time and coordination for far longer than the felt high',
+      'Cannabis impairs reaction and coordination long after the felt high fades',
       'Cannabis affects only mood and has no effect on flying skills',
       'Cannabis improves concentration at low doses before a flight',
       'Cannabis effects end within thirty minutes of use',
@@ -3180,7 +3180,7 @@ export const chufQuestions: {
     options: [
       'A stall-spin accident where the aircraft is uncontrolled at impact',
       'A mid-air collision between two aircraft both under ATC control',
-      'An accident where an airworthy, controlled aircraft is inadvertently flown into terrain or water',
+      'An airworthy, controlled aircraft inadvertently flown into terrain or water',
       'A runway excursion caused by inadequate braking on a wet surface',
     ],
     correct: 2,
@@ -3190,7 +3190,7 @@ export const chufQuestions: {
   {
     question: 'Why are opioid medications such as codeine a concern for pilots?',
     options: [
-      'Codeine and other opioid medications cause drowsiness and slowed reactions and are unsafe for flying',
+      'Codeine and other opioids cause drowsiness and are unsafe for flying',
       'Opioid medications have no effect on a pilot\'s reaction time',
       'Opioids improve pain tolerance without affecting cognition',
       'Opioids are safe to fly on once the pain has eased',
@@ -3217,7 +3217,7 @@ export const chufQuestions: {
       'Red light has the same effect on night vision as white light',
       'Red light destroys dark adaptation faster than white light',
       'Red light improves colour discrimination of instruments at night',
-      'Red light barely affects the rod pigment, preserving dark adaptation while lighting the instruments',
+      'Red light barely bleaches the rods, preserving dark adaptation',
     ],
     correct: 3,
     explanation: 'Rods are relatively insensitive to red light, so dim red or low-level lighting lets a pilot read instruments without bleaching the rods, though red can wash out red markings on charts.',
@@ -3240,7 +3240,7 @@ export const chufQuestions: {
     options: [
       'Stimulants improve judgement and are recommended before night flights',
       'Stimulants safely remove the need for sleep on long duties',
-      'Stimulants such as amphetamines mask fatigue briefly but are followed by a dangerous performance crash',
+      'Stimulants like amphetamines mask fatigue briefly but a dangerous crash follows',
       'Stimulants have no rebound effect once they wear off',
     ],
     correct: 2,
@@ -3284,34 +3284,34 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.1.1 (basic health)',
   },
   {
-    question: 'What is the "Swiss cheese model" of accident causation?',
+    question: 'Which photoreceptors give sharp detail and colour vision, and where in the retina are they concentrated?',
     options: [
-      'A model showing accidents occur when holes in several defensive layers happen to line up',
-      'A model showing expertise is built through progressive layers of skill',
-      'A model showing accidents stem from a single catastrophic failure',
-      'A regulatory model of the layered responsibilities of CASA, operators and pilots',
+      'Cones, which are concentrated at the fovea in the central retina',
+      'Rods, which are also said to be concentrated at the fovea in the retina',
+      'Cones, which are spread evenly right across the whole retina',
+      'Rods, which sit in the periphery and provide all colour vision',
     ],
     correct: 0,
-    explanation: 'Reason\'s Swiss cheese model pictures each defence (training, procedures, equipment, checks) as a slice with holes; an accident occurs only when holes in successive slices align, letting a hazard pass through.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (defences, accident causation)',
+    explanation: 'Cones give colour vision and fine detail and are packed at the fovea in the centre of the retina. Rods give night and peripheral vision but no colour and are found away from the fovea.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8 (the eye and vision)',
   },
   {
-    question: 'How can familiarity with a routine route affect a pilot’s vigilance?',
+    question: 'Flying a night approach over a long stretch of dark, featureless terrain, a pilot is most likely to -',
     options: [
-      'Familiar routes require more conscious attention than new ones',
-      'A familiar route is always flown more safely than an unfamiliar one',
-      'Route familiarity has no effect on a pilot\'s vigilance',
-      'Familiarity with a routine route can breed complacency and reduced monitoring',
+      'See the runway clearly and judge the approach slope quite accurately',
+      'Perceive the approach as too low and climb above the correct slope',
+      'Experience the autokinetic illusion and chase a stationary ground light',
+      'Perceive the approach as higher than it is and descend dangerously low',
     ],
     correct: 3,
-    explanation: 'Repeatedly flying the same route can lull a pilot into reduced vigilance, so developing problems are missed. Treating each flight as if it were the first guards against this complacency.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.1 (complacency)',
+    explanation: 'With no ground lights or texture to judge height, a dark approach (the black-hole effect) makes the path seem higher than it is, so the pilot tends to descend too low and risk impact short of the runway. Instruments and PAPI are the defence.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8.5 (visual illusions on approach)',
   },
   {
     question: 'How do fear and anxiety affect a pilot’s performance?',
     options: [
       'Fear improves performance in all situations by sharpening focus',
-      'Fear and anxiety narrow attention and can cause freezing or hasty, poorly judged action',
+      'Fear and anxiety narrow attention and cause freezing or hasty action',
       'Fear has no effect on a trained pilot\'s performance',
       'Anxiety only affects performance in pilots with a clinical disorder',
     ],
@@ -3322,7 +3322,7 @@ export const chufQuestions: {
   {
     question: 'Reluctant to waste the time and fuel already spent, a pilot presses on with a flight they should abandon. Which bias is this?',
     options: [
-      'The \'sunk cost\' bias, where effort already invested pushes a pilot to continue a poor plan',
+      'Sunk-cost bias, where invested effort pushes a pilot to continue a poor plan',
       'A requirement to continue because ATC will not approve a change of plan',
       'Being physically unable to return due to fuel exhaustion',
       'Being unable to plan an alternate due to airspace restrictions',
@@ -3336,7 +3336,7 @@ export const chufQuestions: {
     options: [
       'A positive assertiveness skill used to challenge a senior crew member',
       'An instrument technique of abrupt inputs to penetrate convective weather',
-      'A frustration-driven tendency to make more risk-tolerant decisions when the plan is blocked',
+      'A frustration-driven tendency to take more risk when the plan is blocked',
       'Aggressive navigation around weather permitted only for AOC holders',
     ],
     correct: 2,
@@ -3346,7 +3346,7 @@ export const chufQuestions: {
   {
     question: 'How can terrain that rises toward the runway create an approach illusion?',
     options: [
-      'Terrain that rises toward the runway can make the approach look too high, prompting a low approach',
+      'Rising terrain toward the runway makes the approach look too high, prompting a low one',
       'Rising terrain before the runway has no effect on approach perception',
       'Rising terrain makes the approach look too low, prompting a high approach',
       'Terrain slope affects only the landing roll, not the approach',
@@ -3356,23 +3356,23 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8 (vision, terrain illusions)',
   },
   {
-    question: 'What is the value of deciding a takeoff abort point in advance?',
+    question: 'How do checklists and standard operating procedures help in Threat and Error Management?',
     options: [
-      'Takeoff aborts are required by regulation on every departure',
-      'Aborting a takeoff is always a sign of poor planning and should be rare',
-      'The decision to continue or abort can safely be left until the problem is obvious',
-      'Deciding a takeoff abort point in advance removes hesitation if a problem occurs on the roll',
+      'They remove every possible external threat before the flight even begins',
+      'They guarantee that a properly trained pilot can never make an error in flight',
+      'They replace the pilot need to actively monitor the aircraft state at all',
+      'They trap errors before they develop into an undesired aircraft state',
     ],
     correct: 3,
-    explanation: 'Briefing in advance what will be done if an engine or other problem occurs before a chosen point converts a startling event into a pre-decided action, removing dangerous hesitation during the takeoff roll.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (briefings, decision-making)',
+    explanation: 'Checklists and SOPs are error-management defences: they make actions predictable and let a missed or wrong item be caught and corrected before it becomes an undesired aircraft state. They reduce errors but cannot remove threats or replace monitoring.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (threat and error management)',
   },
   {
     question: 'Why can a long climb at high cabin altitude bring on fatigue and subtle hypoxia?',
     options: [
       'The period from 0200 to 0400 when circadian effects are worst',
       'A narrow altitude band where stall speed and critical Mach converge',
-      'A long climb at high cabin altitude can bring on fatigue and hypoxia earlier than expected',
+      'A long climb at high cabin altitude can bring fatigue and hypoxia on earlier',
       'The base-to-final turn, the most dangerous phase for disorientation',
     ],
     correct: 2,
@@ -3382,8 +3382,8 @@ export const chufQuestions: {
   {
     question: 'What is the minimum surface-to-flight interval recommended after scuba diving to a depth requiring a decompression stop?',
     options: [
-      'About 12 hours after a no-decompression dive, and 24 hours or more after a decompression dive',
-      'One hour after any single dive',
+      'About 12 hours after a no-stop dive, 24 hours or more after a decompression dive',
+      'Any short waiting period is enough, since nitrogen clears from the body almost immediately',
       'Eight hours regardless of the dive profile',
       'No waiting period is needed before flying after diving',
     ],
@@ -3395,7 +3395,7 @@ export const chufQuestions: {
     question: 'What is the most effective strategy for managing the risk of spatial disorientation?',
     options: [
       'Take anti-vertigo medication before any flight in marginal conditions',
-      'Maintain good instrument skills, trust the instruments over bodily sensations, and avoid IMC without the rating and currency',
+      'Trust the instruments over bodily sensations and keep instrument skills current',
       'Cross-check the instruments against bodily sensations when the two conflict',
       'Avoid all flight in any condition where disorientation could ever occur',
     ],
@@ -3421,7 +3421,7 @@ export const chufQuestions: {
       'Warnings only matter during the approach phase',
       'A minor warning should always be fully diagnosed before continuing to fly',
       'Minor warnings never distract a trained pilot',
-      'Fixating on a minor warning can let attention drift from the primary task of flying the aircraft',
+      'Fixating on a minor warning lets attention drift from flying the aircraft',
     ],
     correct: 3,
     explanation: 'A classic accident pattern is the whole crew absorbed in a minor problem while no one flies the aircraft. The rule is to keep someone flying first, then deal with the secondary issue.',
@@ -3442,7 +3442,7 @@ export const chufQuestions: {
   {
     question: 'What effect does alcohol have on sleep quality?',
     options: [
-      'Alcohol speeds sleep onset but suppresses REM sleep and fragments the second half of the night',
+      'Alcohol speeds sleep onset but suppresses REM and fragments later sleep',
       'Alcohol has no effect on sleep architecture at moderate doses',
       'Alcohol both helps you fall asleep and improves overall sleep quality',
       'Alcohol delays sleep onset and has no effect on REM sleep',
@@ -3466,7 +3466,7 @@ export const chufQuestions: {
   {
     question: 'Why can acting impulsively on the first option under time pressure be dangerous?',
     options: [
-      'Impulsively acting on the first option under time pressure can lead to a poorly judged decision',
+      'Acting impulsively on the first option under time pressure can be poorly judged',
       'Acting on the first option is always the safest choice when time is short',
       'Impulsive decisions are reliably better than considered ones in flight',
       'Time pressure has no effect on the quality of a pilot\'s decisions',
@@ -3492,7 +3492,7 @@ export const chufQuestions: {
     options: [
       'Placing navigation equipment nearest the pilot who uses it',
       'Positioning the compass in the pilot\'s forward sight line',
-      'Arranging controls so their movement matches the effect they produce reduces errors',
+      'Arranging controls so their movement matches their effect reduces errors',
       'Drawing the planned route on paper as a navigation backup',
     ],
     correct: 2,
@@ -3502,7 +3502,7 @@ export const chufQuestions: {
   {
     question: 'What is the significance of briefing contingencies before critical flight phases?',
     options: [
-      'Briefing the actions for an engine failure on takeoff turns a startling event into a planned response',
+      'Briefing engine-failure-on-takeoff actions turns a startle into a planned response',
       'Takeoff briefings are required only for training flights',
       'A takeoff safety briefing satisfies a documentation requirement only',
       'Briefing the takeoff transfers responsibility for an abort to the other pilot',
@@ -3512,22 +3512,22 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (briefings, startle)',
   },
   {
-    question: 'What is the "continuation bias" and what should a pilot do to counter it?',
+    question: 'Which of these is a physical (bodily) sign that a pilot is under excessive stress?',
     options: [
-      'Maintaining current altitude rather than climbing or descending',
-      'Always continuing to the nearest aerodrome in any emergency',
-      'Conservative fuel figures published for every flight',
-      'Pre-defining decision points and criteria before flight counters the pull to continue a poor plan',
+      'Improved concentration and a calm, measured decision-making style throughout',
+      'A lower resting heart rate and slower, deeper breathing than is usual',
+      'A complete absence of any outward physical sign right up until collapse',
+      'A racing heart, sweating, tense muscles and a dry mouth or throat',
     ],
     correct: 3,
-    explanation: 'Continuation bias is the unconscious pull to stick with the original plan as commitment grows. Deciding the go/no-go criteria in advance, before the pressure builds, is the main defence.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (decision-making, continuation bias)',
+    explanation: 'Excessive stress shows physically through a raised heart rate, sweating, muscle tension and a dry mouth, alongside cognitive and behavioural changes. Recognising these bodily signs early is part of managing stress before performance suffers.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.3 (physiological stress)',
   },
   {
     question: 'What is "overlearning" in pilot training and what is its benefit during emergency situations?',
     options: [
       'The tendency to recall training more vividly than real operations',
-      'Practising a procedure well past initial mastery so it holds up under stress and high workload',
+      'Practising a procedure well past mastery so it holds up under stress',
       'Excessive practice that causes boredom and should be avoided',
       'Learning optional procedures beyond the required syllabus',
     ],
@@ -3538,7 +3538,7 @@ export const chufQuestions: {
   {
     question: 'What are the early warning signs of fatigue that a pilot should act on?',
     options: [
-      'Yawning, heavy eyelids, drifting attention and missed calls are early fatigue signs needing action',
+      'Yawning, heavy eyelids, drifting attention and missed calls signal early fatigue',
       'Early fatigue produces no detectable signs until microsleeps begin',
       'Fatigue signs appear only after 24 hours awake',
       'Early fatigue can be reliably ignored if the pilot feels motivated',
@@ -3552,7 +3552,7 @@ export const chufQuestions: {
     options: [
       'Casual conversation should fill all quiet periods to maintain alertness',
       'Crew should never discuss anything but the immediate flight tasks at any time',
-      'Keeping cockpit talk task-focused in critical phases but allowing rapport-building when quiet aids both safety and teamwork',
+      'Task-focused talk in critical phases, with rapport-building allowed when quiet',
       'The captain should discourage all non-operational talk for the whole flight',
     ],
     correct: 2,
@@ -3563,7 +3563,7 @@ export const chufQuestions: {
     question: 'What is the significance of "shared responsibility" for safety in multi-crew operations?',
     options: [
       'Each crew member has an independent duty to maintain awareness and raise safety concerns',
-      'Only the cabin crew share safety responsibility; the flight deck rests with the PIC alone',
+      'Only the cabin crew share safety responsibility, and the flight deck rests with the PIC alone',
       'Both pilots are equally legally liable for any breach during the flight',
       'The PIC has sole responsibility and shared responsibility is not recognised',
     ],
@@ -3577,7 +3577,7 @@ export const chufQuestions: {
       'Cross-checking instruments wastes attention better spent elsewhere',
       'A single trusted instrument never needs to be cross-checked',
       'Cross-checking is needed only in instrument conditions',
-      'Cross-checking each instrument against the others and against the outside view catches a single false reading',
+      'Comparing instruments against each other and the outside view catches a false one',
     ],
     correct: 3,
     explanation: 'No single instrument is infallible, an iced pitot or a toppled gyro can lie convincingly, so the pilot scans and compares instruments against each other and the outside picture to detect the odd one out.',
@@ -3598,7 +3598,7 @@ export const chufQuestions: {
   {
     question: 'What is an "error-inducing environment" and how can a pilot identify one?',
     options: [
-      'A set of conditions raising error probability, such as high workload, time pressure, fatigue and ambiguity',
+      'Conditions raising error likelihood, like workload, time pressure and fatigue',
       'A cockpit with poor lighting and a noise level above the regulatory maximum limit',
       'Any flight conducted below the transition altitude in busy, high-density airspace',
       'Any flight operation conducted outside the published standard operating procedures',
@@ -3611,7 +3611,7 @@ export const chufQuestions: {
     question: 'In the SHELL model, what does "Liveware-Liveware" (L-L) interface refer to?',
     options: [
       'The interface between the maintenance engineer and the systems they service',
-      'The interpersonal interface between people, covering communication, leadership, authority gradients and CRM',
+      'The interface between people, covering communication, leadership, authority and CRM',
       'The interface between the pilot and the aircraft\'s flight management software',
       'The link between the flight crew and CASA regulations',
     ],
@@ -3622,7 +3622,7 @@ export const chufQuestions: {
   {
     question: 'How can a pilot support prospective memory (remembering a future action)?',
     options: [
-      'Using flows, gates and physical reminders to prompt an action that must be done later',
+      'Using flows, gates and physical reminders to prompt a later action',
       'Relying entirely on memory for actions that must be performed later',
       'Writing a safety report after forgetting an action',
       'Forgetting an action is unavoidable and cannot be defended against',
@@ -3636,7 +3636,7 @@ export const chufQuestions: {
     options: [
       'Pressure injury to the lungs during a rapid emergency descent',
       'Noise-induced hearing loss from prolonged propeller noise',
-      'Trapped gas can expand in a filling under a tooth, causing sharp pain on climb (barodontalgia)',
+      'Trapped gas can expand in a filling and cause sharp pain on climb (barodontalgia)',
       'Oxygen toxicity in the inner ear from prolonged supplemental oxygen',
     ],
     correct: 2,
@@ -3649,7 +3649,7 @@ export const chufQuestions: {
       'Acute fatigue from the previous night shift alone',
       'Complacency from repetitive route flying over six months',
       'Hypoglycaemia from a poor diet during night operations',
-      'Chronic fatigue from cumulative sleep debt that is not reversed by short rest periods',
+      'Chronic fatigue from cumulative sleep debt, not fixed by short rest',
     ],
     correct: 3,
     explanation: 'Performance that stays degraded despite apparently adequate rest points to chronic fatigue, an accumulated sleep debt from prolonged disrupted rest that a few normal nights do not clear.',
@@ -3658,7 +3658,7 @@ export const chufQuestions: {
   {
     question: 'What does "high workload" specifically do to a pilot\'s ability to detect and respond to novel hazards?',
     options: [
-      'High workload uses up the attention available for monitoring, so novel hazards outside the task are missed',
+      'High workload uses up monitoring attention, so hazards outside the task are missed',
       'High workload reduces only the detection of auditory hazards, not visual ones',
       'High workload increases hazard detection by raising overall arousal',
       'High workload has no effect on hazard detection in trained pilots',
@@ -3673,7 +3673,7 @@ export const chufQuestions: {
       'The visual startle from unexpected weather, corrected by scanning more often',
       'The surprise crew feel when automation changes mode without an annunciation',
       'A training response in which pilots memorise abnormal checklists',
-      'An involuntary freeze after a sudden unexpected event that briefly delays a coordinated response',
+      'An involuntary freeze after a sudden event that briefly delays response',
     ],
     correct: 3,
     explanation: 'The startle reflex is an automatic, brief freeze and spike of arousal after a sudden surprise. It can delay a coordinated response by a second or two, which is why expected events are briefed and responses over-learned.',
@@ -3683,7 +3683,7 @@ export const chufQuestions: {
     question: 'What is "risk appetite" in aviation safety management and how does it differ between individuals and organisations?',
     options: [
       'The fuel reserve carried above the regulatory minimum on a given flight',
-      'The amount of risk an individual or organisation is willing to accept to meet its objectives',
+      'The risk an individual or organisation will accept to meet its objectives',
       'A CASA-defined standard for acceptable risk in commercial operations',
       'A physical craving for risk that always increases with a pilot\'s experience',
     ],
@@ -3692,16 +3692,16 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (risk)',
   },
   {
-    question: 'How can an accumulation of small problems before a flight act as a decision trigger?',
+    question: 'A runway that slopes downhill away from the threshold tends to make the approach appear -',
     options: [
-      'Go-around triggers must be filed with ATC before an instrument approach',
-      'Go-around triggers are required only for CAT II and III approaches',
-      'The idea that several small problems before a flight together signal that it is time to stop',
-      'Go-around triggers are the same as the published missed approach point',
+      'Too high, so the pilot tends to fly an unusually low approach and undershoot',
+      'Unaffected, because runway slope changes only the landing roll, not the approach',
+      'Too low, so the pilot tends to fly an unusually high approach',
+      'Steeper than it is, so the pilot adds power and overshoots the touchdown zone',
     ],
     correct: 2,
-    explanation: 'A useful personal rule is that an accumulation of small problems, weather, a snag, running late, is itself a warning. Treating several minor issues as a collective trigger to delay or cancel counters the drift into a hazardous flight.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (risk, decision-making)',
+    explanation: 'A down-sloping runway makes the approach look too low, so the pilot tends to fly an unnecessarily high approach. An up-sloping runway has the opposite effect, making the approach look too high.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8.5 (visual illusions on approach)',
   },
   {
     question: 'What does "flight crew human factors training" aim to produce in pilots that technical training alone cannot?',
@@ -3716,23 +3716,23 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (human factors training)',
   },
   {
-    question: 'What does "error recovery" mean in the context of human factors and why is it as important as error prevention?',
+    question: 'What controls the amount of light entering the eye in bright and dim conditions?',
     options: [
-      'Recovering aircraft control after a technical fault disables a flight control',
-      'Error recovery matters less than prevention, which removes the need for recovery',
-      'Error recovery applies only to maintenance errors, not flight-crew errors',
-      'Detecting, diagnosing and correcting an error before it produces an undesirable consequence',
+      'The lens, by becoming thicker in bright light and thinner in dim light',
+      'The cornea, by changing its curvature as the light level changes',
+      'The retina, by switching between its rod and its cone photoreceptors',
+      'The iris, by widening or narrowing the pupil as light levels change',
     ],
     correct: 3,
-    explanation: 'Because errors are inevitable, the ability to catch and correct an error before it bites, through monitoring, cross-checks and challenge, is as vital as trying to prevent errors in the first place.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (error management)',
+    explanation: 'The iris is the coloured muscle that adjusts the size of the pupil, narrowing it in bright light and widening it in dim light to control how much light reaches the retina. The lens changes shape to focus, not to control light level.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8 (the eye and vision)',
   },
   {
     question: 'What is the primary human factors argument for using checklists rather than relying on memory for normal procedures?',
     options: [
       'Checklists are slower than memory and used only because regulations require them',
       'Checklists are a regulatory requirement for all normal operations',
-      'Memory is vulnerable to interference, distraction, stress and fatigue, so a checklist confirms nothing is missed',
+      'Memory is vulnerable to stress and fatigue, so a checklist confirms nothing is missed',
       'Memory is entirely unreliable and no pilot can remember any procedure',
     ],
     correct: 2,
@@ -3754,7 +3754,7 @@ export const chufQuestions: {
   {
     question: 'In what ways does stress show itself in a pilot?',
     options: [
-      'Stress shows itself in physical signs, in changed thinking and in changed behaviour',
+      'Stress shows in bodily signs, changed thinking and changed behaviour',
       'Stress affects only the body and never a pilot\'s thinking',
       'Stress shows only as visible shaking and nothing else',
       'Stress has no observable signs until the pilot collapses',
@@ -3802,10 +3802,10 @@ export const chufQuestions: {
   {
     question: 'Why is hypoxia so difficult for a pilot to self-detect?',
     options: [
-      'Personal minimums above the regulatory minimum are unnecessary',
-      'Recognising the symptoms of hypoxia is hard because hypoxia itself blunts self-awareness',
-      'Personal minimums must be filed with CASA before each flight',
-      'Personal minimums apply only to pilots on restricted licences',
+      'Hypoxia first causes sharp, unmistakable chest pain that warns the pilot',
+      'Hypoxia is hard to recognise because it blunts self-awareness',
+      'Hypoxia produces an obvious blue tinge a pilot notices in good time',
+      'The aircraft warns of hypoxia automatically, so no self-check is needed',
     ],
     correct: 1,
     explanation: 'Hypoxia degrades the very judgement needed to notice it, so a pilot may feel fine while badly impaired. This is why altitude oxygen rules, and a healthy suspicion of subtle symptoms, matter rather than relying on self-detection.',
@@ -3814,7 +3814,7 @@ export const chufQuestions: {
   {
     question: 'A pilot takes an antihistamine for hay fever on the morning of a flight. What is the primary aviation concern?',
     options: [
-      'The hay fever itself is the only concern; the medication has no relevant effect',
+      'The hay fever itself is the only concern, and the medication has no relevant effect',
       'Antihistamines are always safe for flight because they are sold over the counter',
       'Many antihistamines cause drowsiness, slowed reactions and reduced concentration',
       'Antihistamines affect only cardiovascular function, not cognition',
@@ -3827,9 +3827,9 @@ export const chufQuestions: {
     question: 'What is self-imposed pressure and why is it a common decision trap?',
     options: [
       'A self-imposed deadline (get-there pressure) is one of the most common decision traps',
-      'A variable cycle that resets instantly to a new time zone after two nights',
-      'A twelve-hour cycle governing hunger and satiety in shift workers',
-      'A ninety-minute cycle determining dream frequency',
+      'A pressure applied only by the operator roster, never created by the pilot',
+      'A regulatory limit on how long a flight may take once it is airborne',
+      'A helpful urgency that always sharpens a pilot decision-making under load',
     ],
     correct: 0,
     explanation: 'Self-imposed pressure, a meeting, a booking, the wish to get home, is a leading cause of pressing on into unsafe conditions. Recognising the pressure and pre-deciding limits is the defence.',
@@ -3841,7 +3841,7 @@ export const chufQuestions: {
       'Awareness of attitude during an unusual-attitude recovery',
       'Awareness of the VOR or ILS mode during an instrument approach',
       'Awareness of the weather radar mode during convective weather',
-      'Energy awareness, meaning knowing the aircraft’s speed and height state and where it is heading',
+      'Energy awareness, the aircraft\'s speed and height state and trend',
     ],
     correct: 3,
     explanation: 'Energy awareness, tracking whether the aircraft has enough or too much speed and height for what comes next, is central to avoiding both stalls and unstable approaches; losing track of energy state precedes many upsets.',
@@ -3864,7 +3864,7 @@ export const chufQuestions: {
     options: [
       'The pilot switches to a slow analytical mode that improves accuracy',
       'The pilot becomes overly cautious and refuses to make any decision',
-      'A self-assessment such as IMSAFE helps a pilot decide objectively whether they are fit to fly',
+      'A self-check such as IMSAFE helps a pilot judge if they are fit to fly',
       'The pilot\'s attention broadens to take in all information at once',
     ],
     correct: 2,
@@ -3874,26 +3874,26 @@ export const chufQuestions: {
   {
     question: 'Why is a thorough, unhurried pre-flight inspection important?',
     options: [
-      'The inability to read a moving map at high ground speed',
-      'A thorough, unhurried pre-flight inspection using a checklist guards against missing a defect',
-      'A visual disability from rapid changes in ambient light',
-      'The inability to detect instrument changes when switching to manual flight',
+      'A quick walk-around is best, since a long inspection only invites fatigue',
+      'A thorough, unhurried checklist inspection guards against missing a defect',
+      'The inspection matters only for the first flight of the day, not later ones',
+      'A rushed inspection is fine when the aircraft had no faults last flight',
     ],
     correct: 1,
     explanation: 'A rushed or distracted walk-around lets defects go unseen, especially changes since the last inspection. A deliberate, checklist-guided flow that touches each item in turn defends against the missed item.',
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15.5 (inspections, checklists)',
   },
   {
-    question: 'Why should a pilot ensure recent currency before a demanding flight?',
+    question: 'A runway much wider than a pilot is used to tends to make the aircraft appear -',
     options: [
-      'Establishing personal currency before a demanding flight, such as a recent night circuit before a night trip',
-      'Sterile cockpit violations matter only if they exceed five minutes',
-      'Such violations are minor infractions with little safety significance',
-      'Sterile cockpit rules apply only to RPT, not charter or private',
+      'Lower than it really is, tempting the pilot to fly an unnecessarily high approach',
+      'Higher than it really is, tempting the pilot to fly an unnecessarily low approach',
+      'Closer than it is, though this has no effect on the perceived approach slope',
+      'The correct height, since runway width has no effect on approach perception at all',
     ],
     correct: 0,
-    explanation: 'Currency must match the task: a pilot planning a night or marginal-weather flight is wise to refresh the relevant skill recently rather than rely on a distant last attempt, because situation-specific skills fade.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.1 (currency, recency)',
+    explanation: 'A wider-than-usual runway fills more of the windscreen, so the aircraft seems lower than it is and the pilot tends to fly an unnecessarily high approach. A narrow runway has the opposite effect.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8.5 (visual illusions on approach)',
   },
   {
     question: 'What is the physiological mechanism that causes drowsiness after a large meal and why is this relevant to pilot scheduling?',
@@ -3901,7 +3901,7 @@ export const chufQuestions: {
       'Eating before flight has no effect on alertness at any time',
       'Post-meal drowsiness is a myth with no measurable effect',
       'Drowsiness after eating is caused by food-borne pathogens in catering',
-      'Blood is diverted to digestion and a sugar spike then drop can cause post-meal drowsiness',
+      'Blood diverts to digestion and a sugar spike then drop causes drowsiness',
     ],
     correct: 3,
     explanation: 'A large meal diverts blood to digestion and a high-sugar meal causes a glucose spike then a slump, both promoting drowsiness. Timing lighter meals away from high-workload phases helps maintain alertness.',
@@ -3913,7 +3913,7 @@ export const chufQuestions: {
       'A regulatory mental-health screen for all new commercial pilots',
       'Counselling availability after a critical incident',
       'Absence of anxiety conditions that could impair performance',
-      'A crew climate where members feel safe to speak up, raise concerns and ask questions without fear',
+      'A climate where crew feel safe to speak up and raise concerns without fear',
     ],
     correct: 3,
     explanation: 'Psychological safety is the shared sense that speaking up, admitting an error or questioning a decision will not bring ridicule or punishment. Without it, vital information stays unspoken and CRM fails.',
@@ -3922,10 +3922,10 @@ export const chufQuestions: {
   {
     question: 'How can a short controlled rest before duty help a pilot, and what is the caution?',
     options: [
-      'A short, controlled rest taken before duty can restore alertness if kept brief to avoid sleep inertia',
-      'Over-reliance on autopilot during take-off and landing',
-      'Complacency from flying the same automated route repeatedly',
-      'Over-managing automation with unnecessary mode changes',
+      'A short controlled nap before duty, kept brief to avoid sleep inertia',
+      'A long deep sleep right before duty gives the freshest possible start',
+      'Any rest before duty is pointless, since alertness cannot be banked',
+      'Caffeine just before duty works better than any form of short rest',
     ],
     correct: 0,
     explanation: 'A planned short nap before a demanding or night duty is an effective fatigue countermeasure, provided it is kept short, around 20 minutes, so the pilot does not wake mid-deep-sleep with sleep inertia.',
@@ -3934,10 +3934,10 @@ export const chufQuestions: {
   {
     question: 'What is the value of knowing an antidote phrase for each hazardous attitude?',
     options: [
-      'Boredom, Stress, Anxiety, Overwork and Underwork',
-      'Knowing one antidote phrase for each hazardous attitude helps a pilot counter it in the moment',
-      'Overconfidence, Risk-taking, Fatalism, Aggression and Denial',
-      'Complacency, Fixation, Tunnel vision, Invulnerability and Resignation',
+      'Antidote phrases are useful only in training and have no in-flight value',
+      'An antidote phrase for each hazardous attitude helps counter it in the moment',
+      'Knowing the antidotes matters only for instructors, not for line pilots',
+      'The antidotes work automatically, so a pilot need not consciously recall them',
     ],
     correct: 1,
     explanation: 'Each hazardous attitude has a learned antidote phrase (for example, anti-authority: \'follow the rules, they are usually right\'). Recognising the attitude in oneself and reciting its antidote restores safer thinking.',
@@ -3948,7 +3948,7 @@ export const chufQuestions: {
     options: [
       'Dehydration improves alertness by activating the stress response',
       'Dehydration affects only physical strength, not cognition',
-      'Even mild dehydration of one to two percent of body weight measurably impairs concentration and reaction time',
+      'Even mild dehydration of one to two percent impairs concentration and reaction time',
       'Dehydration has no measurable effect at the levels seen in normal flight',
     ],
     correct: 2,
@@ -3959,7 +3959,7 @@ export const chufQuestions: {
     question: 'What is the correct response to a visual illusion on approach?',
     options: [
       'Trust the visual impression and adjust the approach to match it',
-      'Cross-check an independent reference such as PAPI or the published glidepath rather than fly on visual impression alone',
+      'Cross-check PAPI or the published glidepath, not the visual picture alone',
       'Increase approach speed to climb away from any obstacles below',
       'Briefly close the eyes to reset perception, then continue the approach',
     ],
@@ -3968,16 +3968,16 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8 (illusions, approach)',
   },
   {
-    question: 'Why is an excessively flat authority gradient also unsafe?',
+    question: 'The body\'s immediate \'fight or flight\' response to acute stress includes -',
     options: [
-      'A flat authority gradient is unsafe too, since an over-passive captain who will not decide is also a hazard',
-      'A culture where every violation is punished equally regardless of intent',
-      'A culture where only management are accountable and frontline errors are blameless',
-      'A culture where every error is excused with no consequences for anyone',
+      'A faster heart rate, raised blood pressure and a surge of adrenaline',
+      'A slower heart rate, lowered blood pressure and reduced adrenaline',
+      'Improved fine motor control and noticeably sharper complex reasoning',
+      'No measurable bodily change at all until the stressor becomes extreme',
     ],
     correct: 0,
-    explanation: 'CRM seeks a balanced gradient. Too steep and the junior cannot speak up; too flat and no one is clearly in command. The captain must invite input yet still take and own decisions.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.16 (authority gradient, leadership)',
+    explanation: 'Acute stress triggers the sympathetic nervous system: heart rate and blood pressure rise and adrenaline is released, priming the body for action. This narrows attention and can degrade fine motor control and complex reasoning.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.3 (physiological stress)',
   },
   {
     question: 'After an accident the warning signs look obvious that were not obvious at the time. Which bias is this?',
@@ -3985,7 +3985,7 @@ export const chufQuestions: {
       'Preferring physically achievable outcomes over theoretically optimal ones',
       'Bias toward outcomes that minimise fuel over those that minimise time',
       'Judging a decision by its outcome rather than the reasoning behind it',
-      'Hindsight bias makes an accident look more predictable after the fact than it was at the time',
+      'Hindsight bias makes an accident look more predictable afterward than at the time',
     ],
     correct: 3,
     explanation: 'After an event, hindsight bias makes the outcome seem obvious and the warning signs glaring, which is unfair to those who acted without that knowledge. Investigators guard against it to learn the real lessons.',
@@ -3996,7 +3996,7 @@ export const chufQuestions: {
     options: [
       'A legal principle treating all accidents as civil rather than criminal',
       'A culture where all violations are punished equally regardless of intent',
-      'Reporting a colleague\'s honest error in a just culture supports safety rather than betraying them',
+      'Reporting a colleague\'s honest error in a just culture supports safety, not betrayal',
       'A culture where only senior crew may report safety concerns',
     ],
     correct: 2,
@@ -4004,16 +4004,16 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (reporting culture)',
   },
   {
-    question: 'What does "anticipation" allow an experienced pilot to do?',
+    question: 'In Threat and Error Management, a \'threat\' is best described as -',
     options: [
-      'Anticipation, meaning thinking ahead of the aircraft to stay prepared for what comes next',
-      'Memorising new emergency procedures more quickly when required',
-      'Executing control inputs more precisely through proprioceptive feedback',
-      'Focusing on one instrument while monitoring all others at once',
+      'A condition outside the pilot\'s control that adds difficulty or risk to a flight',
+      'An action or inaction by the pilot that leads to a deviation from intentions',
+      'A deliberate decision by the pilot to depart from a standard operating procedure',
+      'A mechanical fault that makes the aircraft physically unsafe to keep flying',
     ],
     correct: 0,
-    explanation: 'Staying mentally ahead of the aircraft, anticipating the next frequency, fix, configuration or threat, keeps spare capacity and prevents the pilot from being rushed and reactive, a hallmark of an experienced operator.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (situational awareness)',
+    explanation: 'In TEM a threat is anything outside the crew that increases the difficulty or risk of the flight, such as weather, terrain, traffic or a demanding aerodrome. Managing threats early stops them generating errors.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (threat and error management)',
   },
   {
     question: 'What is the most important characteristic of an effective post-incident debrief?',
@@ -4021,7 +4021,7 @@ export const chufQuestions: {
       'It must be run by a CRM-certified instructor regardless of severity',
       'It must be completed within 24 hours to keep memory accurate',
       'It must result in discipline for the crew member who erred',
-      'A blame-free, specific debrief examining what happened and why, not who failed, and identifying concrete improvements',
+      'A blame-free, specific debrief of what happened and why, not who failed',
     ],
     correct: 3,
     explanation: 'The value of a debrief comes from honest, blame-free analysis of the events and their causes and from agreeing specific, actionable improvements; fear of blame or punishment shuts down the honesty that makes it work.',
@@ -4030,7 +4030,7 @@ export const chufQuestions: {
   {
     question: 'What is "transfer of control" in multi-crew operations and why must it be explicit?',
     options: [
-      'A clear, acknowledged \'you have control / I have control\' exchange ensures one pilot is always flying',
+      'A clear, acknowledged hand-over of control ensures one pilot is always flying',
       'The transfer of radar coverage between ATC sectors in cruise',
       'Automatic transfer of autopilot authority during approach',
       'The legal transfer of responsibility at the start and end of a duty',
@@ -4040,16 +4040,16 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.16 (communication, transfer of control)',
   },
   {
-    question: 'What is the main human factors risk of monitoring reliable automation?',
+    question: 'In Threat and Error Management, an \'error\' is best described as -',
     options: [
-      'Automation increases workload by needing mode inputs in every phase',
-      'The risk that monitoring reliable automation lowers vigilance, so a failure is detected late',
-      'Automation makes aircraft heavier, cutting range and performance',
-      'Automation removes the pilot\'s legal authority over the aircraft',
+      'A condition outside the crew control that raises the overall risk of the flight',
+      'A crew action or inaction causing a deviation from intentions or expectations',
+      'A position or speed that clearly reduces the aircraft safety margins',
+      'A deliberate, planned departure from a standard operating procedure',
     ],
     correct: 1,
-    explanation: 'Even where automation is not fitted, the lesson generalises: when a task runs reliably with little input, attention drifts, so active cross-monitoring and periodically doing the task manually keep the pilot engaged.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.1 (complacency, monitoring)',
+    explanation: 'In TEM an error is a crew action or inaction that departs from intentions or expectations, for example a misset altitude. Errors are trapped and managed before they become an undesired aircraft state.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (threat and error management)',
   },
   {
     question: 'What is the aviation safety value of "voluntary" incident reporting programs such as REPCON?',
@@ -4064,24 +4064,24 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (reporting)',
   },
   {
-    question: 'What does "confirmation bias" mean and how does it affect in-flight decision-making?',
+    question: 'What is the function of the eustachian tube that is important during a climb or descent?',
     options: [
-      'Seeking and believing information that fits a first assumption while discounting evidence against it',
-      'A bias toward conservative decisions in all weather judgements',
-      'Seeking extra checks before deciding, a sign of good airmanship',
-      'Confirming ATC readbacks, which is operationally important',
+      'It lets air pass between the throat and the middle ear to equalise pressure',
+      'It carries balance signals from the inner ear to the brain during flight',
+      'It drains fluid away from the cochlea so that hearing stays sharp at altitude',
+      'It holds the three ossicles that pass vibration into the inner ear',
     ],
     correct: 0,
-    explanation: 'Confirmation bias makes a pilot notice what fits their initial diagnosis and dismiss what contradicts it, so a wrong mental picture, for instance of which system has failed, can persist dangerously. Actively seeking disconfirming evidence counters it.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (judgment, bias)',
+    explanation: 'The eustachian tube connects the middle ear to the back of the throat and lets air move in and out to equalise middle-ear pressure as altitude changes. A cold can block it, causing pain or barotrauma, especially on descent.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.7 (ears, sinuses and pressure changes)',
   },
   {
     question: 'How does the runway aim point help a pilot judge a visual approach?',
     options: [
-      'Regulatory minimums are always stricter, so personal minimums are invalid',
-      'Personal minimums apply only to VFR operations',
-      'The aim point and touchdown markings let a pilot judge and hold the correct visual glidepath',
-      'Personal minimums equal regulatory minimums above 500 hours',
+      'The aim point only marks where to begin the flare, not the approach path',
+      'The aim point is useful only on instrument approaches, not visual ones',
+      'Aim point and touchdown markings let a pilot hold the correct visual glidepath',
+      'A moving aim point in the windscreen reliably means the aircraft is on slope',
     ],
     correct: 2,
     explanation: 'On a visual approach the runway aim point should stay still in the windscreen on the correct path; if it moves up, the aircraft is going low, if down, high. Using it, with PAPI, guards against approach illusions.',
@@ -4105,7 +4105,7 @@ export const chufQuestions: {
       'Drink caffeine before every duty period to keep alertness constant',
       'Stay awake the first night of a trip to build a sleep reserve',
       'Reduce flight time each day as the trip goes on to offset fatigue',
-      'Prioritise sleep at every opportunity, keep a regular schedule, and limit alcohol and caffeine before sleep',
+      'Protect sleep, keep a regular schedule, and limit alcohol and caffeine',
     ],
     correct: 3,
     explanation: 'Over a multi-day trip the best defence is protecting sleep: sleeping at every chance, keeping schedules as regular as possible, avoiding alcohol and late caffeine, and honestly monitoring one\'s own fatigue.',
@@ -4114,8 +4114,8 @@ export const chufQuestions: {
   {
     question: 'What is "get-home-itis" and how does it differ from "get-there-itis"?',
     options: [
-      'Get-home-itis is more severe and needs counselling; get-there-itis is normal',
-      'Get-there-itis pulls a pilot toward the destination; get-home-itis pulls them back toward base',
+      'Get-home-itis is more severe and needs counselling, whereas get-there-itis is normal',
+      'Get-there-itis pulls a pilot toward the destination, whereas get-home-itis pulls them back toward base',
       'They are identical, both describing the same plan-continuation bias',
       'Get-home-itis applies at night and get-there-itis by day',
     ],
@@ -4126,7 +4126,7 @@ export const chufQuestions: {
   {
     question: 'What is the hazard of a "blocked" or simultaneous radio transmission?',
     options: [
-      'If two stations transmit at once, neither is heard clearly and a clearance or warning can be missed',
+      'If two stations transmit at once, neither is heard and a call can be missed',
       'Simultaneous transmissions are automatically separated by the radio system',
       'A blocked transmission only delays a message and carries no safety risk',
       'Two stations can always be understood when they transmit together',
@@ -4140,7 +4140,7 @@ export const chufQuestions: {
     options: [
       'The crew model is the captain\'s view only, with the FO as backup',
       'The crew model equals individual SA, with no benefit from comparing',
-      'Two pilots comparing and integrating their views build a fuller, cross-checked picture than either alone',
+      'Two pilots integrating their views build a fuller, cross-checked picture',
       'The crew model is simply the average of the two pilots\' assessments',
     ],
     correct: 2,
@@ -4148,15 +4148,15 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.16 (shared awareness)',
   },
   {
-    question: 'What does "threat and error management" (TEM) describe in a flight operations context?',
+    question: 'In Threat and Error Management, an \'undesired aircraft state\' is -',
     options: [
-      'A maintenance concept for controlling corrosion threats to the structure',
-      'Identifying threats and errors and managing undesired aircraft states before they escalate',
-      'An ATC system for detecting deviations from cleared routes',
-      'The process of reporting threats and errors to the ATSB after an incident',
+      'A threat from outside the cockpit that the crew has not yet noticed',
+      'A position, speed or configuration that clearly reduces the safety margins',
+      'Any error the crew makes during a normal, routine phase of the flight',
+      'A mechanical failure that the crew simply cannot correct using the checklists',
     ],
     correct: 1,
-    explanation: 'Threat and error management is a practical framework: anticipate the threats a flight will face, trap the errors that occur, and recover from any undesired aircraft state before it becomes an accident.',
+    explanation: 'An undesired aircraft state is a position, speed or configuration, such as a high and fast approach, that clearly erodes safety margins. It usually results from an unmanaged threat or error and must be recovered promptly.',
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (threat and error management)',
   },
   {
@@ -4174,7 +4174,7 @@ export const chufQuestions: {
   {
     question: 'Why is the use of a personal electronic device a hazard during a critical phase of flight?',
     options: [
-      'It captures attention away from flying, navigating and watching for traffic at the worst possible time',
+      'It pulls attention from flying, navigating and watching for traffic at the worst time',
       'Personal devices have no effect on a pilot’s attention in the cockpit',
       'Devices are only a hazard because of their radio emissions, not distraction',
       'Using a device improves a pilot’s situational awareness during the approach',
@@ -4184,12 +4184,12 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (attention, distraction)',
   },
   {
-    question: 'What is the concept of "natural mapping" in cockpit design and why does it matter?',
+    question: 'What is anthropometry in cockpit design and why does it matter?',
     options: [
-      'Positioning the compass in the pilot\'s forward sight line',
-      'Anthropometry, designing the cockpit so controls and displays suit the range of pilot body sizes',
-      'Mapping the planned route on paper as a navigation backup',
-      'Placing navigation equipment nearest the pilot who uses it',
+      'Arranging controls so their movement matches the effect they produce',
+      'Anthropometry, fitting the cockpit to the range of pilot body sizes',
+      'The study of how cockpit noise and vibration affect the human body',
+      'Designing displays so the most important information is most prominent',
     ],
     correct: 1,
     explanation: 'Ergonomic design uses anthropometric data so that seats, controls and displays fit pilots from small to large, ensuring everyone can reach and see what they need, a basic defence against design-induced error.',
@@ -4198,7 +4198,7 @@ export const chufQuestions: {
   {
     question: 'What does threat and error management (TEM) ask a pilot to do?',
     options: [
-      'Threat and error management asks the pilot to anticipate threats, trap errors and recover from upsets',
+      'Anticipating threats, trapping errors and recovering from upsets',
       'Learning optional procedures beyond the required syllabus',
       'Excessive practice that causes boredom, to be avoided',
       'Recalling training more vividly than operational experience',
@@ -4213,7 +4213,7 @@ export const chufQuestions: {
       'NTS means non-transponder standard, used by aircraft in uncontrolled airspace',
       'NTS refers to administrative competencies such as flight planning and documentation',
       'Non-technical skills are assessed only during a pilot initial ab-initio training',
-      'Cognitive and social skills, awareness, decision-making and CRM, assessed because most accidents involve them',
+      'Cognitive and social skills, assessed because most accidents involve them',
     ],
     correct: 3,
     explanation: 'Non-technical skills are the cognitive and social abilities that determine how well technical flying is applied. Because the majority of accidents involve an NTS breakdown, they are assessed alongside handling skills.',
@@ -4224,7 +4224,7 @@ export const chufQuestions: {
     options: [
       'Low humidity improves alertness by keeping the airways clear',
       'Low humidity has no measurable effect on a pilot during flight',
-      'Very dry cabin air dries the eyes, nose and throat and adds to fatigue and dehydration over a long flight',
+      'Very dry cabin air dries the eyes, nose and throat and adds to fatigue',
       'Cabin humidity only affects passengers, never the flight crew',
     ],
     correct: 2,
@@ -4232,36 +4232,36 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.1.1 / 2.2.2 (cabin environment, dehydration)',
   },
   {
-    question: 'How can confirmation bias lead a pilot to accept a wrong instrument reading?',
+    question: 'A pilot who is starting to feel motion sickness in flight should -',
     options: [
-      'A simulator scenario exposing pilots to unexpected behaviour',
-      'The surprise of a TCAS activation occurring for the first time in service',
-      'A positive case where automation detects a hazard faster than the crew',
-      'Confirmation bias can make a pilot accept a wrong reading that fits their expectation',
+      'Shut the air vents and focus hard on a chart inside the cockpit',
+      'Make frequent, quick head movements to help the inner ear adjust faster',
+      'Breathe rapidly and deeply for a while to settle the stomach quickly',
+      'Look outside at the horizon, get fresh air and keep the head still',
     ],
     correct: 3,
-    explanation: 'When a displayed value matches what the pilot expects, confirmation bias can lead them to accept it without question, even if it is wrong; deliberately cross-checking against independent sources catches the error.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (judgment, bias)',
+    explanation: 'Motion sickness eases by restoring agreement between the eyes and the balance organs: look outside at a stable horizon, get cool fresh air, and avoid head movements. It usually settles with exposure over time.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.9 (motion sickness)',
   },
   {
-    question: 'What is the "authority gradient" problem in aviation and how is it manifested in accidents?',
+    question: 'Which of these are environmental (physical) stressors that can degrade a pilot in the cockpit?',
     options: [
-      'ATC issuing instructions beyond their legal authority over the flight',
-      'A junior crew member holding critical information but not asserting it, through deference to the captain',
-      'A captain acting alone without consulting the first officer',
-      'ATC authority over the flight not being established before departure',
+      'Time pressure, anxiety, high workload and personal worries off the job',
+      'Heat, cold, noise, vibration, glare and low cabin humidity',
+      'Hypoxia, hypoglycaemia, dehydration and the effects of medication',
+      'Get-there-itis, complacency and other hazardous attitudes',
     ],
     correct: 1,
-    explanation: 'The classic authority-gradient accident is the one where a first officer who saw the danger, low fuel, terrain, an unstable approach, failed to assert it firmly enough against a dominant captain. Assertion training is the remedy.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.16.4 (authority gradient, accidents)',
+    explanation: 'Environmental stressors are physical conditions in the cockpit, heat, cold, noise, vibration, glare and dry air, that load the body and degrade performance. The other options list psychological, internal physiological, or attitudinal factors.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.3 (physiological stress)',
   },
   {
     question: 'What is the primary difference between "red-out" and "grey-out" during unusual attitude manoeuvres?',
     options: [
       'Red-out is daytime and grey-out night-time, depending on ambient light',
       'Red-out is a hypoxia symptom and grey-out a hyperventilation symptom',
-      'Grey-out affects peripheral vision first and red-out central vision first',
-      'Grey-out occurs under positive g as blood drains from the head; red-out under negative g as blood is forced toward it',
+      'Grey-out affects peripheral vision first while red-out affects central vision first',
+      'Grey-out under positive g as blood drains from the head, red-out under negative g toward it',
     ],
     correct: 3,
     explanation: 'Positive g drains blood from the head, dimming vision to grey then black; negative g forces blood toward the head, congesting the retina and tinting vision red (red-out). Negative g is tolerated far less well.',
@@ -4280,24 +4280,24 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.1.1 / 2.14.3 (emotional factors, stress)',
   },
   {
-    question: 'What is "situation assessment" and how does it relate to the three levels of situational awareness?',
+    question: 'Which is an example of a Threat and Error Management countermeasure a single pilot can apply?',
     options: [
-      'Situation assessment applies only to Level 1, gathering raw data',
-      'Working through all three SA levels by perceiving the cues, understanding their meaning and projecting ahead',
-      'Situation assessment is the post-flight debrief after the three levels',
-      'Situation assessment is an ATC function delivered as advisories',
+      'Waiting until a problem is obvious before deciding how best to respond',
+      'Briefing likely threats before flight and cross-checking actions against the plan',
+      'Relying entirely on air traffic control to detect and call any error the pilot makes',
+      'Disabling nuisance warnings so they cannot distract during the approach',
     ],
     correct: 1,
-    explanation: 'Good situation assessment moves through perception (what is happening), comprehension (what it means now) and projection (what will happen next); a breakdown at any level degrades the picture and the resulting decision.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (situational awareness)',
+    explanation: 'Effective countermeasures include planning and briefing the threats a flight will meet, then actively monitoring and cross-checking actions against that plan so errors are caught early. The other options remove defences rather than add them.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (threat and error management)',
   },
   {
     question: 'Why should a go-around be treated as a normal, pre-briefed option?',
     options: [
-      'A go-around is a normal, pre-briefed option, not a failure, so it is flown without hesitation when needed',
-      'The automatic GPWS altitude below which all other tasks cease',
-      'The regulatory requirement to fly at or above MSA, with no human element',
-      'A cockpit display showing MSA continuously on the PFD',
+      'A go-around is a normal pre-briefed option, not a failure, and flown when needed',
+      'A go-around should be treated as a last resort to avoid wasting fuel',
+      'A go-around is always a sign of poor planning and should be rare',
+      'A go-around must be flown on every approach to keep the pilot current',
     ],
     correct: 0,
     explanation: 'Treating the go-around as a routine, expected manoeuvre, briefed before every approach, removes the hesitation of plan-continuation bias, so a pilot actually executes it the moment the approach is not right.',
@@ -4330,10 +4330,10 @@ export const chufQuestions: {
   {
     question: 'How does time of day affect performance even in a well-rested pilot?',
     options: [
-      'Time of day matters, since performance dips in the early-morning low however rested the pilot feels',
-      'The memory system storing emotional associations with flying',
-      'A computerised database of performance figures in the FMS',
-      'The long-term store for overlearned procedures, of unlimited capacity',
+      'Time of day matters, as performance dips in the early-morning low however rested',
+      'A well-rested pilot performs identically at every hour of the day',
+      'Performance is worst in the early afternoon, never in the early morning',
+      'Time of day affects only night-freight pilots, not daytime operations',
     ],
     correct: 0,
     explanation: 'Even a well-rested pilot performs worst during the early-morning circadian low (roughly 0300 to 0500), so demanding tasks scheduled then carry extra risk and warrant extra caution and cross-checking.',
@@ -4345,7 +4345,7 @@ export const chufQuestions: {
       'Excess nitrogen breathed at altitude in unpressurised aircraft above flight level 250',
       'A toxic gas from jet-engine combustion that affects crews on aircraft with engine leaks',
       'A breathing disorder from high-altitude hypoxia in aircraft without supplemental oxygen',
-      'A narcotic effect of nitrogen when diving; residual nitrogen can then cause the bends at altitude',
+      'A narcotic effect of nitrogen when diving, whereas residual nitrogen can then cause the bends at altitude',
     ],
     correct: 3,
     explanation: 'Nitrogen narcosis is a diving phenomenon, but it matters to flying because a pilot who dives carries extra dissolved nitrogen that can form bubbles (the bends) when they later climb to altitude, hence the wait before flying.',
@@ -4368,7 +4368,7 @@ export const chufQuestions: {
     options: [
       'A concern only for multi-crew aircraft',
       'Any temporary condition, managed by declaring an emergency on 121.5',
-      'Self-assessment of fitness before each flight is the main defence, since a lone pilot has no one to take over',
+      'Self-assessing fitness before flight, since a lone pilot has no relief',
       'Only cardiac arrest or unconsciousness counts as incapacitation',
     ],
     correct: 2,
@@ -4378,7 +4378,7 @@ export const chufQuestions: {
   {
     question: 'What is the human factors basis for "briefing the unexpected" before critical flight phases?',
     options: [
-      'Briefing what to do if something unexpected happens turns a potential surprise into a planned response',
+      'Briefing for the unexpected turns a surprise into a planned response',
       'A technique used only in initial training, replaced by experience',
       'A regulatory requirement for charter operations only',
       'Required only for flights carrying passengers',
@@ -4403,7 +4403,7 @@ export const chufQuestions: {
     question: 'What does it mean for a pilot to "fall behind the aircraft", and how is it recovered?',
     options: [
       'Falling behind the aircraft means simply flying slower than the planned cruise speed',
-      'Tasks pile up faster than they are done, so the pilot acts on a fast-moving aircraft from an out-of-date picture',
+      'Tasks pile up faster than they are done, so the pilot acts on an out-of-date picture',
       'It means the aircraft has outrun its fuel plan and must divert',
       'It means the flight is running behind its planned arrival schedule',
     ],
@@ -4417,7 +4417,7 @@ export const chufQuestions: {
       'Memorising the five hazardous attitudes and IMSAFE',
       'Compliance with the required CRM training hours',
       'Passing the human factors written examination',
-      'Genuine change in cockpit behaviour, best shown by how the pilot acts under real workload and stress',
+      'A genuine, lasting change in how the pilot behaves in the cockpit',
     ],
     correct: 3,
     explanation: 'Knowing the theory is not the goal; human factors training succeeds only if it changes behaviour, how the pilot manages workload, speaks up, and makes decisions under pressure, which is assessed in operational scenarios.',
@@ -4426,7 +4426,7 @@ export const chufQuestions: {
   {
     question: 'What is the primary advantage of using a challenge-and-response checklist over a read-and-do checklist?',
     options: [
-      'Saying each item aloud and confirming it engages extra processing and lets a second person catch a missed item',
+      'Saying each item aloud lets it be processed and independently confirmed',
       'Both crew need not know the normal configuration of each item',
       'Read-and-do is superior because it needs no second crew member',
       'Challenge-and-response is chosen mainly because it is faster',
@@ -4439,7 +4439,7 @@ export const chufQuestions: {
     question: 'What is meant by "effective communication" in a CRM context and what are its key elements?',
     options: [
       'Using the loudest, clearest voice possible on the radio',
-      'Achieving a genuine shared understanding between sender and receiver, confirmed by feedback',
+      'Shared understanding between sender and receiver, confirmed by feedback',
       'Purely technical correctness, since only phraseology matters',
       'Both crew members having identical communication styles',
     ],
@@ -4448,22 +4448,22 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.16 (communication)',
   },
   {
-    question: 'What does "redundancy" in aviation system design achieve from a human factors perspective?',
+    question: 'During the acute stress response, which glands release adrenaline and cortisol?',
     options: [
-      'Redundancy always provides an automatic backup needing no pilot action',
-      'Redundancy applies only to flight-critical mechanical systems',
-      'Independent cross-checks (chart against terrain warning, weather from two sources) catch a single failure',
-      'Redundancy only adds weight and is justified only when unavoidable',
+      'The pituitary glands, located at the base of the brain',
+      'The thyroid gland, located low in the front of the neck',
+      'The adrenal glands, which sit just above each kidney',
+      'The pineal gland, located deep within the centre of the brain',
     ],
     correct: 2,
-    explanation: 'Defence in depth for a pilot means not trusting any single source: cross-checking the chart against terrain warnings, weather against multiple sources, and instruments against each other, so one failure is caught by another layer.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (defences)',
+    explanation: 'The adrenal glands, sitting above the kidneys, release adrenaline (rapid fight-or-flight effects) and cortisol (a slower, sustained stress hormone). Prolonged high cortisol contributes to the harmful effects of chronic stress.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.3 (physiological stress)',
   },
   {
     question: 'What does "anticipatory threat management" mean in a pre-flight threat assessment?',
     options: [
       'Filing NOTAM requests for restricted-airspace penetration',
-      'Listing likely threats before flight, planning a response to each, and briefing them',
+      'Listing the flight\'s likely threats and planning for each',
       'Notifying ATC in advance of expected airspace deviations',
       'Booking alternate aerodromes before departure',
     ],
@@ -4476,7 +4476,7 @@ export const chufQuestions: {
     options: [
       'The captain assessing the FO\'s competency for reporting purposes',
       'ATC monitoring both crew\'s radio calls for standards compliance',
-      'Each crew member actively watching the other\'s actions, the aircraft state and the decisions made',
+      'Each pilot watching the other\'s actions, the aircraft and the decisions',
       'Both pilots watching the same instrument at once to verify it',
     ],
     correct: 2,
@@ -4486,7 +4486,7 @@ export const chufQuestions: {
   {
     question: 'What is "situation-based training" and why is it more effective than isolated skill drills?',
     options: [
-      'Realistic, complex scenarios that require technical and non-technical skills together',
+      'Realistic scenarios needing technical and non-technical skills together',
       'Training only on accident scenarios from investigation reports',
       'Training assessed only by written examination',
       'Training conducted on an active aerodrome for realistic conditions',
@@ -4499,7 +4499,7 @@ export const chufQuestions: {
     question: 'What is "normalisation of deviance" in aviation?',
     options: [
       'A process for approving an abnormal procedure for routine use after testing',
-      'Small deviations from standards gradually become accepted as normal, eroding safety margins until something fails',
+      'Small deviations gradually become accepted as normal, eroding safety margins',
       'A CASA process for accepting reduced standards in special operations',
       'The psychological adjustment a pilot makes when changing type',
     ],
@@ -4513,7 +4513,7 @@ export const chufQuestions: {
       'Coronary disease has no relevance to a pilot\'s fitness',
       'Coronary risk is fixed at birth and cannot be changed by lifestyle',
       'Only family history affects coronary risk, not lifestyle',
-      'Smoking, high cholesterol and obesity are major modifiable risk factors for coronary heart disease',
+      'Smoking, high cholesterol and obesity are modifiable coronary risk factors',
     ],
     correct: 3,
     explanation: 'Smoking, raised cholesterol, obesity, high blood pressure and inactivity raise the risk of coronary disease and sudden incapacitation. They are largely within the pilot\'s control through lifestyle, and matter to long-term fitness.',
@@ -4522,8 +4522,8 @@ export const chufQuestions: {
   {
     question: 'What is the eye’s blind spot and why does it matter for lookout?',
     options: [
-      'Each eye has a blind spot where the optic nerve leaves the retina, so a target can vanish if not scanned',
-      'The eye has no blind spot; the whole field is seen at once',
+      'Each eye has a blind spot at the optic disc, so a static target can vanish',
+      'The eye has no blind spot, and the whole field is seen at once',
       'The blind spot is only present at night',
       'The blind spot only affects colour vision',
     ],
@@ -4536,7 +4536,7 @@ export const chufQuestions: {
     options: [
       'Being overweight improves cold tolerance and is an advantage',
       'Body weight has no effect on a pilot\'s fitness or alertness',
-      'Obesity raises the risk of fatigue, sleep apnoea and cardiovascular events, all relevant to fitness',
+      'Obesity raises the risk of fatigue, sleep apnoea and cardiovascular events',
       'Obesity matters only for cabin crew, not pilots',
     ],
     correct: 2,
@@ -4547,7 +4547,7 @@ export const chufQuestions: {
     question: 'How does depth perception work, and what cues does it use?',
     options: [
       'Depth perception relies on a single cue that works at all ranges',
-      'Depth perception uses binocular cues at close range and monocular cues such as size and perspective at distance',
+      'Depth perception uses binocular cues up close and monocular cues at distance',
       'Pilots have no usable depth perception in flight',
       'Depth perception is unaffected by losing sight in one eye',
     ],
@@ -4558,7 +4558,7 @@ export const chufQuestions: {
   {
     question: 'Why does good colour vision matter for a pilot?',
     options: [
-      'Good colour vision matters for reading lights, signals and displays, so a deficiency is assessed',
+      'Colour vision matters for reading lights and displays, so a deficiency is assessed',
       'Colour vision plays no role at all in the tasks a pilot performs in flight',
       'Colour vision matters only for ground staff and never for the flight crew',
       'Colour vision automatically improves to compensate during night flying',
@@ -4572,7 +4572,7 @@ export const chufQuestions: {
     options: [
       'Stress has only a single, constant level over time',
       'Stress affects performance instantly and then disappears',
-      'The general adaptation syndrome describes stress in three stages of alarm, resistance and exhaustion',
+      'The three stress stages of alarm, resistance and exhaustion',
       'Only physical stressors follow any pattern over time',
     ],
     correct: 2,
@@ -4582,7 +4582,7 @@ export const chufQuestions: {
   {
     question: 'What is visual acuity and what reduces it in flight?',
     options: [
-      'Visual acuity, the sharpness of vision, is reduced by poor light, hypoxia, fatigue and glare',
+      'Acuity is reduced by poor light, hypoxia, fatigue and glare',
       'Visual acuity is fixed and cannot be degraded in flight',
       'Acuity improves in low light through dark adaptation',
       'Only colour vision, not acuity, is affected by hypoxia',
@@ -4597,7 +4597,7 @@ export const chufQuestions: {
       'Only physical preparation matters, never mental rehearsal',
       'Mental preparation has no effect on in-flight performance',
       'Preparation should be avoided as it raises anxiety',
-      'Briefing yourself before a demanding flight primes the planned actions and reduces in-flight surprise',
+      'Self-briefing before a demanding flight primes the planned actions',
     ],
     correct: 3,
     explanation: 'Mentally rehearsing the demanding parts of a flight, the approach, a likely abnormal, primes recognition and response, so the pilot acts with a prepared plan rather than reacting cold under pressure.',
@@ -4608,7 +4608,7 @@ export const chufQuestions: {
     options: [
       'Negative g is tolerated better than positive g',
       'Holding the breath fully relaxed gives the best g-tolerance',
-      'An anti-g straining manoeuvre and muscle tensing raise g-tolerance by helping keep blood in the head',
+      'Anti-g straining and muscle tensing keep blood in the head',
       'There is nothing a pilot can do to improve g-tolerance',
     ],
     correct: 2,
@@ -4618,7 +4618,7 @@ export const chufQuestions: {
   {
     question: 'How does trust between crew members affect CRM effectiveness?',
     options: [
-      'Trust must be calibrated, since too little causes friction while too much reduces vigilance and challenge',
+      'Calibrated trust, since too little causes friction and too much cuts vigilance',
       'Trust is irrelevant to CRM among professionals',
       'Trust matters only on long-haul operations',
       'High trust always improves CRM by removing the need to cross-check',
@@ -4633,7 +4633,7 @@ export const chufQuestions: {
       'Only low blood pressure is a concern for pilots',
       'High blood pressure always causes obvious symptoms before any risk',
       'Blood pressure has no relevance to fitness to fly',
-      'High blood pressure often has no symptoms yet raises the risk of a sudden incapacitating event',
+      'High blood pressure is often silent yet raises the risk of sudden incapacitation',
     ],
     correct: 3,
     explanation: 'Hypertension is frequently silent but increases the risk of stroke and cardiac events that could incapacitate a pilot in flight. It is monitored at medicals and managed through lifestyle and, where needed, approved treatment.',
@@ -4643,7 +4643,7 @@ export const chufQuestions: {
     question: 'What is the safest practice if a pilot is interrupted during a checklist?',
     options: [
       'After an interruption, resume from memory at the next item',
-      'When interrupted during a checklist, the safest practice is to back up several items and re-confirm them',
+      'Back up several items and re-confirm them after an interruption',
       'Interruptions during checklists have no effect on accuracy',
       'A completed-feeling checklist is always actually complete',
     ],
@@ -4678,10 +4678,10 @@ export const chufQuestions: {
   {
     question: 'What is the purpose of regular aviation medical examinations?',
     options: [
-      'Regular aviation medical examinations exist to detect conditions that could cause in-flight incapacitation',
+      'Regular medicals detect conditions that could cause in-flight incapacitation',
       'The medical certificate is a one-off check valid for a lifetime',
       'Medical examinations have no safety purpose',
-      'Only the initial medical matters; renewals are a formality',
+      'Only the initial medical matters, and renewals are a formality',
     ],
     correct: 0,
     explanation: 'Periodic examination by a DAME screens for developing conditions, cardiovascular, vision, hearing and others, that could impair or incapacitate a pilot, so they can be managed before they cause an in-flight event.',
@@ -4705,7 +4705,7 @@ export const chufQuestions: {
       'Traffic information from ATC removes any need to look outside in visual conditions',
       'In visual conditions the instruments alone are enough to avoid traffic',
       'An outside lookout is needed only in instrument meteorological conditions',
-      'Instruments do not show other traffic, so a deliberate outside scan is still needed to see and avoid in visual conditions',
+      'Instruments do not show traffic, so an outside scan is still needed to see and avoid',
     ],
     correct: 3,
     explanation: 'The instruments do not display nearby traffic, so in visual conditions the pilot must still scan outside to see and avoid, balancing this against necessary instrument checks. Relying only on the panel invites a mid-air collision.',
@@ -4715,7 +4715,7 @@ export const chufQuestions: {
     question: 'What are the warning signs that situational awareness is being lost?',
     options: [
       'Loss of awareness gives no warning signs at all',
-      'Warning signs of lost awareness include ambiguity, fixation, confusion and no one clearly flying',
+      'Lost-awareness cues include ambiguity, fixation, confusion and no one clearly flying',
       'Only instruments, never the pilot\'s feelings, indicate lost awareness',
       'Awareness, once gained, cannot be lost during a flight',
     ],
@@ -4726,7 +4726,7 @@ export const chufQuestions: {
   {
     question: 'When dealing with a problem in flight, what must always be ensured?',
     options: [
-      'When handling a problem, one pilot must keep flying the aircraft while the other works the issue',
+      'When solving a problem, one pilot keeps flying while the other works it',
       'In an abnormal situation both pilots should focus on the problem together',
       'The autopilot can always be trusted to fly while both pilots troubleshoot',
       'Troubleshooting always takes priority over flying the aircraft',
@@ -4740,7 +4740,7 @@ export const chufQuestions: {
     options: [
       'Expectation always improves accuracy of perception',
       'Experienced pilots are immune to expectation effects',
-      'Expectation can make a pilot perceive what they expect rather than what is actually there',
+      'A pilot may perceive what they expect, not what is there',
       'Expectation affects only student pilots',
     ],
     correct: 2,
@@ -4750,7 +4750,7 @@ export const chufQuestions: {
   {
     question: 'What is the effect of sustained low-level stress on long-term health and pilot performance?',
     options: [
-      'Sustained low-level stress impairs immunity and sleep and degrades performance through chronic fatigue and burnout',
+      'Sustained stress impairs immunity and sleep and erodes performance over time',
       'Low-level stress has no cumulative effect on health or performance',
       'Sustained stress builds resilience with no downside',
       'Stress affects performance only when combined with shift work',
@@ -4765,23 +4765,23 @@ export const chufQuestions: {
       'Rushed approaches are unstable only because of wind, not human factors',
       'A rushed approach changes the engine\'s performance characteristics',
       'Rushing increases fuel burn and unbalances the aircraft',
-      'Time pressure on a rushed approach promotes task shedding and poorer monitoring, leaving less time to configure',
+      'Time pressure on a rushed approach promotes task shedding and poorer monitoring',
     ],
     correct: 3,
     explanation: 'A rushed approach compresses the configuration and checks into too little time, so the pilot sheds tasks and monitors less, and the approach becomes unstable. The defence is to slow down or go around early.',
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (workload, approach)',
   },
   {
-    question: 'A pilot more easily picks the correct item from a checklist than recalls it unaided. What does this show?',
+    question: 'Why is Threat and Error Management taught for single-pilot operations, not only multi-crew?',
     options: [
-      'Recognition and recall are identical processes',
-      'Recognition (knowing something when seen) is easier than recall (producing it from memory unaided)',
-      'Recall is always easier than recognition',
-      'Neither recognition nor recall is relevant to flying',
+      'A single pilot faces far fewer threats, so the model is much simpler for them to use',
+      'A single pilot still meets threats and makes errors, and must manage them alone',
+      'The model is a legal requirement only for single-pilot charter operations',
+      'Single-pilot flights are short, so errors rarely develop into accidents',
     ],
     correct: 1,
-    explanation: 'It is easier to recognise the correct item from a list than to recall it from scratch, which is why checklists and prompts are used for important actions rather than relying on unaided recall under load.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.1 (memory)',
+    explanation: 'A single pilot is still exposed to threats and still makes errors, with no second crew member to catch them, so the discipline of anticipating threats and trapping errors matters just as much, arguably more.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (threat and error management)',
   },
   {
     question: 'What does "active monitoring" mean in an automated cockpit and why is it important?',
@@ -4799,7 +4799,7 @@ export const chufQuestions: {
     question: 'What is the primary cause of motion sickness in aviation?',
     options: [
       'Dehydration combined with low cabin pressure',
-      'A conflict between visual inputs and the signals from the vestibular and proprioceptive systems',
+      'A conflict between visual inputs and the balance (vestibular) signals',
       'Carbon monoxide exposure from exhaust in a poorly ventilated cockpit',
       'Rapid altitude changes causing pressure changes in the inner ear',
     ],
@@ -4812,7 +4812,7 @@ export const chufQuestions: {
     options: [
       'Side effects always appear immediately, so a ground trial is pointless',
       'Any medication is safe to fly on once the first dose is taken',
-      'A new medication should be trialled on the ground first, since side effects may not be obvious in advance',
+      'Trial a new medication on the ground first, as side effects may not be obvious',
       'Only the treating doctor, never a DAME, needs to be consulted',
     ],
     correct: 2,
@@ -4822,7 +4822,7 @@ export const chufQuestions: {
   {
     question: 'What does "incapacitation" in a multi-crew context mean and why is subtle incapacitation particularly dangerous?',
     options: [
-      'Keeping up normal cross-talk helps a crew notice if a colleague becomes quiet, confused or unwell',
+      'Normal cross-talk helps a crew notice if a colleague goes quiet or unwell',
       'Subtle incapacitation cannot be detected by the other crew member',
       'Only complete collapse counts as incapacitation',
       'Incapacitation is impossible if both pilots passed their medicals',
@@ -4836,7 +4836,7 @@ export const chufQuestions: {
     options: [
       'A scanning technique focusing on instruments rather than outside cues',
       'Inability to see low-contrast objects, such as a white aircraft against cloud',
-      'Failing to perceive an unexpected object even while looking toward it, because attention is on another task',
+      'Not perceiving an unexpected object while looking toward it, as attention is elsewhere',
       'Temporary blindness from sudden bright light after dark adaptation',
     ],
     correct: 2,
@@ -4849,7 +4849,7 @@ export const chufQuestions: {
       'Modern aircraft cannot be upset, so no training is needed',
       'Loss of control cannot be trained for and is purely a matter of luck',
       'Recovery training is needed only for aerobatic pilots',
-      'Practising stall, upset and unusual-attitude recognition and recovery prepares a pilot to prevent loss of control',
+      'Practising stall and unusual-attitude recovery helps prevent loss of control',
     ],
     correct: 3,
     explanation: 'Since loss of control is a leading killer, recognising the approach to the envelope edge, stall, overspeed, unusual attitude, and practising prompt, correct recovery is a key defence, alongside energy awareness and trusting instruments.',
@@ -4860,7 +4860,7 @@ export const chufQuestions: {
     options: [
       'Single-pilot operations are inherently unsafe and should be avoided',
       'A single pilot has no resources and must do everything unaided',
-      'A single pilot can treat ATC, automation, checklists and passengers as resources to share the load',
+      'A single pilot can use ATC, automation, checklists and passengers as resources',
       'CRM has no application to single-pilot flying',
     ],
     correct: 2,
@@ -4870,7 +4870,7 @@ export const chufQuestions: {
   {
     question: 'What is spatial disorientation and what is the recommended response?',
     options: [
-      'A conflict between vestibular and proprioceptive sensations and what the instruments show',
+      'A conflict between the balance senses and what the instruments show',
       'Inability to read maps accurately in reduced visibility',
       'A navigational error from flying without external references',
       'Confusion between left and right rudder inputs',
@@ -4883,7 +4883,7 @@ export const chufQuestions: {
     question: 'What is fatigue and how does it compare to alcohol intoxication in terms of performance impairment?',
     options: [
       'One good night fully clears any amount of accumulated sleep debt',
-      'Sleep debt builds night after night, so several short nights leave a pilot progressively more impaired',
+      'Sleep debt accumulates over successive short nights, worsening impairment',
       'Sleep debt cannot accumulate over consecutive nights',
       'Only a single night of lost sleep affects performance',
     ],
@@ -4920,7 +4920,7 @@ export const chufQuestions: {
     options: [
       'A false sense of speed from low-level flight over a featureless surface',
       'A false sense of motion from vibration through the seat',
-      'Below the runway aim point, the tendency to \'duck under\' and descend prematurely toward the threshold',
+      'Ducking under the aim point and descending prematurely toward the threshold',
       'Distortion from looking through a rain-covered windscreen at night',
     ],
     correct: 2,
@@ -4933,7 +4933,7 @@ export const chufQuestions: {
       'Cockpit familiarisation has no effect on error rates',
       'Unfamiliarity with a type improves safety by forcing vigilance',
       'A pilot adapts instantly to any new type with no extra workload',
-      'A deliberate, unhurried cockpit familiarisation on a new type reduces the errors that unfamiliarity causes',
+      'Slow, deliberate familiarisation on a new type reduces unfamiliarity errors',
     ],
     correct: 3,
     explanation: 'On a new type the pilot lacks the automatic pattern recognition built on the old one, so workload rises and old habits can intrude (negative transfer). Thorough familiarisation and slow, deliberate operation reduce the risk.',
@@ -4942,7 +4942,7 @@ export const chufQuestions: {
   {
     question: 'A pilot reads a long clearance back in grouped blocks to hold more of it in mind. Which technique is this?',
     options: [
-      'Grouping information into meaningful chunks lets a pilot hold more of it in limited working memory',
+      'Grouping information into chunks lets a pilot hold more in working memory',
       'Working memory has unlimited capacity, so chunking is pointless',
       'Chunking slows a pilot down and increases errors',
       'Information cannot be grouped to aid memory',
@@ -4956,7 +4956,7 @@ export const chufQuestions: {
     options: [
       'An error, once made, cannot be corrected in flight',
       'Admitting an error is a weakness best concealed from the other pilot',
-      'Promptly admitting and correcting one\'s own error is a strength that stops it from escalating',
+      'Promptly admitting and correcting one\'s own error stops it escalating',
       'Errors should be reported only after the flight, never corrected in flight',
     ],
     correct: 2,
@@ -4966,7 +4966,7 @@ export const chufQuestions: {
   {
     question: 'Why are night visual approaches at unfamiliar aerodromes challenging?',
     options: [
-      'Relying at night on PAPI, the glideslope and instruments rather than the deceptive visual picture',
+      'Relying at night on PAPI, the glideslope and instruments, not the visual picture',
       'Night approaches at unfamiliar fields are identical to day approaches',
       'Once the PAPI colours are seen, night and day approaches are equivalent',
       'Reduced visibility range is the only difference at night',
@@ -4979,7 +4979,7 @@ export const chufQuestions: {
     question: 'What does "adaptive capacity" in a pilot mean and how is it developed?',
     options: [
       'Every situation in flight is covered by a written procedure',
-      'When no procedure fits, the pilot falls back on principles and airmanship to manage a novel situation',
+      'When no procedure fits, the pilot relies on principles and airmanship',
       'If no procedure fits, the pilot should do nothing until one is found',
       'Novel situations never arise for a well-trained pilot',
     ],
@@ -5003,7 +5003,7 @@ export const chufQuestions: {
     question: 'What is "meta-cognition" in pilot performance and why is it important for self-assessment?',
     options: [
       'A medical condition affecting cognition, screened at the Class 1 medical',
-      'Awareness of one\'s own thinking, limits and current state, used to judge fitness and performance',
+      'Awareness of one\'s own thinking, limits and current state, used to judge fitness',
       'A CASA tool for assessing cognition during flight tests',
       'The ability to process more information than trained pilots',
     ],
@@ -5014,7 +5014,7 @@ export const chufQuestions: {
   {
     question: 'What is the recommended response to a startle in flight, where time allows?',
     options: [
-      'Pausing briefly to breathe and orient before acting helps overcome the startle freeze',
+      'Pausing to breathe and orient before acting overcomes the startle freeze',
       'The best response to startle is to act instantly on the first impulse',
       'Startle should be ignored as it has no effect on performance',
       'Startle can be trained away so it never occurs',
@@ -5027,7 +5027,7 @@ export const chufQuestions: {
     question: 'What is night myopia and how does it affect a pilot\'s ability to detect traffic?',
     options: [
       'The inability to detect navigation lights at normal distances',
-      'A slight shift toward near-focus in dim light that blurs distant objects and traffic',
+      'A slight shift toward near-focus in dim light that blurs distant traffic',
       'Progressive loss of peripheral vision from long-term night flying',
       'Complete colour blindness after twenty minutes in darkness',
     ],
@@ -5039,7 +5039,7 @@ export const chufQuestions: {
     question: 'What is the physiological effect of sustained vibration on pilot performance?',
     options: [
       'Vibration has no effect below the level that damages the airframe',
-      'Sustained vibration fatigues the pilot, blurs instrument reading and increases muscle tension',
+      'Sustained vibration fatigues the pilot, blurs instruments and tenses muscles',
       'Vibration improves alertness through stimulation',
       'Only vibration above 10 Hz affects performance',
     ],
@@ -5050,10 +5050,10 @@ export const chufQuestions: {
   {
     question: 'How does verbalising intentions and observations aid crew coordination?',
     options: [
-      'Only the captain\'s plan matters; the FO need not be informed',
+      'Only the captain\'s plan matters, and the FO need not be informed',
       'Thinking aloud distracts the crew and should be avoided',
       'A shared plan forms automatically without any communication',
-      'Saying intentions and observations aloud keeps both pilots, or a single pilot, on the same page',
+      'Saying intentions and observations aloud keeps both pilots on the same page',
     ],
     correct: 3,
     explanation: 'Verbalising what you intend and what you notice, \'I\'m going to descend now\', \'I don\'t like this weather\', builds a shared, current picture and gives the other pilot the chance to catch a mistake; even a single pilot benefits from calling key items.',
@@ -5062,7 +5062,7 @@ export const chufQuestions: {
   {
     question: 'What is "availability bias" in pilot decision-making?',
     options: [
-      'Giving too much weight to recent or vivid events when judging the likelihood of something',
+      'Over-weighting recent or vivid events when judging the likelihood of something',
       'A tendency to make conservative weather judgements in all cases',
       'Seeking extra confirmation before deciding, a sign of good airmanship',
       'Confirming ATC readbacks to prevent errors',
@@ -5077,7 +5077,7 @@ export const chufQuestions: {
       'The maximum number of errors a crew may make before an operation is unsafe',
       'The regulatory tolerance allowed for navigation errors in controlled airspace',
       'A maintenance standard for allowable measurement tolerances on components',
-      'Design that limits the consequences of an error through detection, containment or making it reversible',
+      'Design that limits an error\'s consequences by detection, containment or reversibility',
     ],
     correct: 3,
     explanation: 'An error-tolerant design assumes humans will err and limits the damage, an undo function, a confirmation step, a guard over a critical switch, so a single mistake is caught or absorbed rather than leading straight to an accident.',
@@ -5089,7 +5089,7 @@ export const chufQuestions: {
       'A fuel calculation: Distance, Output, Drag, Altitude, Range',
       'An emergency landing-site check: Distance, Obstructions, Direction, Area, Resources',
       'A navigation fix method: Dead reckoning, Observation, DME, ADF, Radio',
-      'A structured decision model, Diagnose, Options, Decide, Assign, Review, for non-normal situations where time allows',
+      'A structured model, Diagnose, Options, Decide, Assign, Review, for when time allows',
     ],
     correct: 3,
     explanation: 'DODAR gives a deliberate sequence when there is time to think: Diagnose what is happening, weigh the Options, Decide, Assign the tasks, then Review the result, repeating as the situation develops.',
@@ -5099,7 +5099,7 @@ export const chufQuestions: {
     question: 'What is "vigilance management" and what strategies support it during long cruise segments?',
     options: [
       'A regulatory framework for transponder use during night operations',
-      'Actively keeping alert in monotonous monitoring, using scan patterns, callouts, task variation and regular cross-checks',
+      'Staying alert in monotonous monitoring via scan patterns, callouts and cross-checks',
       'Managing crew fatigue through mandatory in-flight rest for augmented crews',
       'An ATC service that maintains vigilance over aircraft through sector handoffs',
     ],
@@ -5113,29 +5113,29 @@ export const chufQuestions: {
       'The capability of experienced pilots to continue flying effectively after a physical incapacitation',
       'The adaptation of a generic training programme to the specific needs of an individual student',
       'The ability to adapt quickly from one aircraft type to another during a type-rating transition',
-      'Expertise beyond procedural proficiency, able to generate novel solutions to non-standard, previously unpractised situations',
+      'Expertise beyond procedure, generating novel solutions to unpractised situations',
     ],
     correct: 3,
     explanation: 'Routine expertise means performing known procedures well. Adaptive expertise means applying knowledge creatively to genuinely novel situations — for example, an emergency for which no specific procedure exists. Building adaptive expertise requires exposure to varied scenarios and decision-making training beyond procedure drills.',
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.1 (expertise)',
   },
   {
-    question: 'What does "defensive decision-making" mean in the context of avoiding plan continuation bias?',
+    question: 'What is the key difference between a \'threat\' and an \'error\' in Threat and Error Management?',
     options: [
-      'Deferring all non-safety decisions to the operator to avoid responsibility',
-      'Always choosing the single most cautious option regardless of context',
-      'Periodically checking that the situation still supports the current plan rather than assuming it does',
-      'Making decisions that limit the pilot\'s personal liability rather than maximise safety',
+      'A threat is always considered far more dangerous than an error in nearly any situation a pilot meets',
+      'A threat only occurs in the cruise while an error only occurs on the approach',
+      'A threat comes from outside the pilot, while an error is the pilot\'s own action or inaction',
+      'There is no real difference, since the two words mean the same thing in TEM',
     ],
     correct: 2,
-    explanation: 'Defensive decision-making means actively asking \'does the original plan still make sense?\' as conditions change, rather than drifting on by assumption, the antidote to the unconscious pull of plan-continuation bias.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14 (decision-making)',
+    explanation: 'A threat originates outside the pilot (weather, terrain, traffic), whereas an error is something the pilot does or fails to do. Both are managed in TEM, but they are recognised and handled differently.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.15 (threat and error management)',
   },
   {
     question: 'Why is a head-on approaching aircraft most difficult to detect visually?',
     options: [
       'It is always hidden directly ahead by the windscreen framing',
-      'On a collision course it holds a constant bearing and appears as a motionless dot, hard to pick out',
+      'It holds a constant bearing and appears as a hard-to-see motionless dot',
       'It is hard to see because both aircraft share the same horizon',
       'It always approaches out of the sun and is masked by glare',
     ],
@@ -5147,7 +5147,7 @@ export const chufQuestions: {
     question: 'What is the recommended technique for maintaining manual flying skills in a highly automated cockpit?',
     options: [
       'Manual skills never fade once learned',
-      'Regularly hand-flying parts of the flight keeps manual skills sharp so they are there when needed',
+      'Regular hand-flying keeps manual skills sharp for when they are needed',
       'Manual flying should be avoided to reduce workload',
       'Skills are best maintained only in the simulator, never in the aircraft',
     ],
@@ -5171,7 +5171,7 @@ export const chufQuestions: {
     question: 'What is "premature closure" in pilot decision-making?',
     options: [
       'Closing the flight plan before the aircraft has landed',
-      'Settling on the first plausible explanation and stopping before verifying it or considering alternatives',
+      'Settling on the first plausible explanation without considering alternatives',
       'Closing the aircraft door before all passengers are seated',
       'Landing short of the destination because of weather, a sound decision',
     ],
@@ -5209,7 +5209,7 @@ export const chufQuestions: {
       'Experienced pilots stop using intuition entirely',
       'Intuition is always more reliable than analysis in flight',
       'Analysis is never useful once a pilot is experienced',
-      'Intuitive pattern-recognition is fast but can misfire when a situation only looks familiar',
+      'Fast pattern-recognition misfires when a situation only looks familiar',
     ],
     correct: 3,
     explanation: 'Experts decide quickly by recognising patterns, which is efficient, but the same speed becomes a trap when a novel situation is wrongly read as a familiar one. Knowing this, a wise pilot slows to analyse when something does not quite fit.',
@@ -5231,7 +5231,7 @@ export const chufQuestions: {
     question: 'What is the "human factors triad" of person, task, and environment and how do they interact?',
     options: [
       'The three regulators, CASA, ATSB and Airservices, and their jurisdictions',
-      'Three interacting factors, the person, the task and the environment, whose match determines performance',
+      'The person, the task and the environment, whose match sets performance',
       'The three crew of a two-crew operation plus a dispatcher',
       'The three parts of a pilot medical examination',
     ],
@@ -5242,8 +5242,8 @@ export const chufQuestions: {
   {
     question: 'At what time of day is human performance typically at its lowest point due to circadian rhythm effects?',
     options: [
-      'Between 1800 and 2000 local time',
-      'In the early-morning circadian low, roughly between 0200 and 0600 local time',
+      'In the early afternoon, around 1300 to 1500 local, after the midday meal break',
+      'The early-morning circadian low, around 0200 to 0600 local time',
       'Between 2200 and 2400 local time',
       'Only between 1300 and 1500, the post-lunch dip',
     ],
@@ -5268,7 +5268,7 @@ export const chufQuestions: {
     options: [
       'A preference for delaying every flight until conditions are perfect',
       'A realistic appraisal of weather based on the latest forecasts and observations',
-      'The tendency to expect conditions to turn out better than the evidence suggests, which encourages pressing into worsening weather',
+      'The tendency to expect things to turn out better than the evidence suggests',
       'A bias toward always carrying the maximum possible fuel reserve',
     ],
     correct: 2,
@@ -5278,7 +5278,7 @@ export const chufQuestions: {
   {
     question: 'What is "plan continuation bias" (get-there-itis) and what is the recommended countermeasure?',
     options: [
-      'The drive to continue the original plan despite evidence it should change; countered by pre-set limits',
+      'The drive to continue the original plan despite evidence it should change, countered by pre-set limits',
       'A cognitive preference for straight-line routing over procedurally correct routing',
       'A tendency to plan flights conservatively with maximum fuel and alternate options',
       'A bias toward following the filed flight plan even when ATC offers a useful shortcut',
@@ -5303,7 +5303,7 @@ export const chufQuestions: {
     question: 'A pilot on a long cruise segment notices a strong desire to sleep. Which strategy is most appropriate?',
     options: [
       'Keep talking to ATC to stay awake, since fatigue does not impair performance yet',
-      'If two-crew, use a controlled rest; if single-pilot, divert and rest before judgement is impaired',
+      'If two-crew, use a controlled rest, but if single-pilot, divert and rest before judgement is impaired',
       'Drink more caffeine and raise the cockpit temperature a little to stay alert',
       'Open the cockpit vents fully to increase airflow and try to stimulate alertness',
     ],
@@ -5338,7 +5338,7 @@ export const chufQuestions: {
   {
     question: 'What is the human factors importance of well-designed warnings and alerts?',
     options: [
-      'A warning that is hard to see or easily confused can be missed or misread, so clear, distinct alerts reduce error',
+      'A warning hard to see or easily confused is missed, so clear alerts cut error',
       'The design of a warning has no effect on whether a pilot responds to it',
       'More warnings are always better, regardless of how they are presented',
       'Warnings are needed only in automated aircraft, not simpler types',
@@ -5353,7 +5353,7 @@ export const chufQuestions: {
       'Sinus blockage improves pressure equalisation in the ears',
       'A blocked sinus has no effect during normal climbs or descents',
       'Sinus pain occurs only on the ground, never in flight',
-      'A blocked sinus cannot equalise as pressure rises on descent, causing sharp facial pain',
+      'A blocked sinus cannot equalise on descent, causing sharp facial pain',
     ],
     correct: 3,
     explanation: 'Air must move in and out of the sinuses through narrow openings as pressure changes. A cold or congestion can block them, so on descent the trapped lower-pressure air causes pain, sinus barotrauma, sometimes severe over the eyes or cheeks.',
@@ -5411,7 +5411,7 @@ export const chufQuestions: {
     question: 'What scanning method best detects other traffic?',
     options: [
       'A continuous smooth sweep of the eyes is the most effective scan for traffic',
-      'Scanning the sky in short, slightly overlapping segments detects traffic better than a continuous sweep',
+      'Scanning in short, slightly overlapping segments beats a continuous sweep',
       'Staring at the area dead ahead is the best way to find converging traffic',
       'Looking only when ATC calls traffic is sufficient for collision avoidance',
     ],
@@ -5424,7 +5424,7 @@ export const chufQuestions: {
     options: [
       'Ear pressure changes occur only on climb, never on descent',
       'The ears need no action on descent because they equalise on their own',
-      'Clearing the ears by swallowing or a gentle Valsalva equalises middle-ear pressure on descent',
+      'Swallowing or a gentle Valsalva clears the ears and equalises pressure on descent',
       'A blocked ear on descent has no consequence for the pilot',
     ],
     correct: 2,
@@ -5434,7 +5434,7 @@ export const chufQuestions: {
   {
     question: 'What is the safest practice after being interrupted during a checklist?',
     options: [
-      'Restarting a checklist section after an interruption catches an item the interruption may have caused to be skipped',
+      'Restarting a checklist section after an interruption catches a skipped item',
       'An interrupted checklist can safely be resumed from memory at the next item',
       'Interruptions during checklists do not cause omissions',
       'The feeling that a checklist is complete always means it is complete',
@@ -5447,7 +5447,7 @@ export const chufQuestions: {
     question: 'What is the minimum recommended scan frequency for maintaining situational awareness on traffic?',
     options: [
       'Scanning is needed only when ATC issues a traffic advisory to the pilot',
-      'No fixed cycle suits all conditions; only constant uninterrupted staring works',
+      'No fixed cycle suits all conditions, and only constant uninterrupted staring works',
       'Roughly one full outside scan every 20 to 30 seconds in cruise, and more often when busy',
       'One complete outside scan every ten minutes is enough during the cruise',
     ],
@@ -5459,7 +5459,7 @@ export const chufQuestions: {
     question: 'What is the Yerkes-Dodson law and how does it apply to pilot performance?',
     options: [
       'Simple tasks are always done better than complex tasks under stress',
-      'Performance rises with arousal to an optimum, then falls as arousal increases further',
+      'Performance rises with arousal to an optimum, then falls as arousal grows',
       'Fatigue accumulates in a straight line with hours of duty',
       'More experience always means better performance regardless of arousal',
     ],
@@ -5472,7 +5472,7 @@ export const chufQuestions: {
     options: [
       'By checking the altimeter, since hypoxia occurs only above 10,000 ft',
       'By noting tingling, which occurs in hypoxia but never in hyperventilation',
-      'By deliberately slowing and controlling the breathing; if symptoms ease it points to hyperventilation',
+      'By slowing the breathing, since easing symptoms then point to hyperventilation',
       'They cannot be told apart, so both simply require an immediate descent',
     ],
     correct: 2,
@@ -5485,7 +5485,7 @@ export const chufQuestions: {
       'To recover, add full power and hold the existing control inputs',
       'To recover, pull back firmly while maintaining the turn that feels level',
       'To recover, close the eyes briefly and let the aircraft settle itself',
-      'To recover from a graveyard spiral, level the wings on the instruments before gently easing out of the descent',
+      'Level the wings on the instruments first, then gently ease out of the descent',
     ],
     correct: 3,
     explanation: 'In a graveyard spiral the aircraft is in a descending turn the pilot may not sense. Recovery is to believe the instruments, level the wings first, then gently raise the nose, pulling without first levelling only tightens the spiral.',
@@ -5507,7 +5507,7 @@ export const chufQuestions: {
     question: 'Anticipating where traffic will be shortly is an example of which level of situational awareness?',
     options: [
       'Reading the current airspeed off the instrument is Level 3 awareness',
-      'Anticipating where traffic will be in two minutes is an example of Level 3 (projection) awareness',
+      'Anticipating where traffic will be shortly is Level 3 (projection) awareness',
       'Recalling the departure briefing is the highest level of awareness',
       'Projection is an ATC function delivered to the pilot as advisories',
     ],
@@ -5520,7 +5520,7 @@ export const chufQuestions: {
     options: [
       'Good ventilation has no effect on a pilot\'s alertness',
       'Carbon dioxide cannot accumulate in a cockpit under any circumstances',
-      'Poor cockpit ventilation can let carbon dioxide build up, causing headache and drowsiness',
+      'Poor ventilation lets carbon dioxide build up, causing headache and drowsiness',
       'Carbon dioxide build-up improves concentration during long flights',
     ],
     correct: 2,
@@ -5530,7 +5530,7 @@ export const chufQuestions: {
   {
     question: 'Why is acting on an assumed (unconfirmed) clearance hazardous?',
     options: [
-      'Acting on a clearance the pilot assumed rather than confirmed can lead to a serious error',
+      'Acting on an assumed, not confirmed, clearance can cause a serious error',
       'An assumed clearance is just as safe as a confirmed one',
       'Read-back of clearances serves no safety purpose',
       'Clearances need confirming only in controlled airspace',
@@ -5544,7 +5544,7 @@ export const chufQuestions: {
     options: [
       'A fuel-weight conversion tool used in pre-flight performance calculations',
       'A transponder altitude-reporting accuracy standard for RVSM operations',
-      'A workload assessment tool rating mental, physical and time demand, effort, performance and frustration',
+      'A workload tool rating mental, physical and time demand, effort and frustration',
       'A navigation instrument calibration standard for glass-cockpit aircraft',
     ],
     correct: 2,
@@ -5557,7 +5557,7 @@ export const chufQuestions: {
       'Flying a single constant altitude throughout the whole flight prevents it',
       'Restricting all instrument approaches to straight-in procedures prevents it',
       'Checking the ground-proximity warning system is serviceable is the key defence',
-      'Keeping continuous awareness of the aircraft\'s position relative to terrain prevents controlled flight into terrain',
+      'Keeping continuous awareness of position relative to terrain prevents CFIT',
     ],
     correct: 3,
     explanation: 'CFIT happens when a serviceable aircraft is flown into the ground through lost positional awareness. The primary human-factors defence is maintaining an accurate mental picture of where the aircraft is relative to terrain, especially at night or in cloud.',
@@ -5568,7 +5568,7 @@ export const chufQuestions: {
     options: [
       'Inviting input from the first officer undermines the captain\'s authority',
       'A captain who never shows uncertainty produces the safest crew climate',
-      'A captain who actively invites input and admits uncertainty makes the crew more willing to speak up',
+      'A captain who invites input and admits uncertainty makes the crew speak up',
       'Crew climate has no effect on whether concerns are raised',
     ],
     correct: 2,
@@ -5578,7 +5578,7 @@ export const chufQuestions: {
   {
     question: 'What is the most common precursor to loss of situational awareness in the flight deck?',
     options: [
-      'Fixating on one task or problem while other critical information goes unmonitored',
+      'Fixating on one task while other critical information goes unmonitored',
       'Carrying too much fuel for the planned route and alternates',
       'Receiving identical information from two independent instruments',
       'Communicating clearly and frequently with the other crew member',
@@ -5591,7 +5591,7 @@ export const chufQuestions: {
     question: 'Why can a long duty period be fatiguing even when the flying is light?',
     options: [
       'Only the flying hours matter for fatigue, not the total length of the duty',
-      'A long duty period is fatiguing even when the actual flying is light, because time on task and wakefulness accumulate',
+      'A long duty is fatiguing even when flying is light, as time awake accumulates',
       'Light flying during a long duty produces no fatigue at all',
       'Fatigue depends solely on the number of landings made',
     ],
@@ -5602,7 +5602,7 @@ export const chufQuestions: {
   {
     question: 'What is the value of submitting a confidential hazard or near-miss report?',
     options: [
-      'Submitting a confidential hazard report turns a personal near-miss into a lesson for everyone',
+      'A confidential hazard report turns one near-miss into a lesson for all',
       'Hazards a pilot personally experiences are not worth reporting',
       'Reporting a near-miss only creates paperwork with no safety value',
       'Only accidents, never near-misses, should ever be reported',
@@ -5615,7 +5615,7 @@ export const chufQuestions: {
     question: 'What is "channelised attention" and how does it differ from tunnelling?',
     options: [
       'Channelised attention and cognitive tunnelling are identical terms for narrowing under stress',
-      'Channelised attention is deliberate focus on one task; tunnelling is involuntary narrowing under stress',
+      'Channelised attention is deliberate focus on one task, whereas tunnelling is involuntary narrowing under stress',
       'Channelised attention happens only in emergencies and tunnelling only in routine flight',
       'Channelised attention is harmful while tunnelling matters only in multi-crew flight',
     ],
@@ -5629,7 +5629,7 @@ export const chufQuestions: {
       'Nicotine is relevant only above FL200 where its effects are potentiated',
       'Nicotine has no measurable effect on cognition or flight safety',
       'Nicotine withdrawal in flight causes no performance change in regular smokers',
-      'Nicotine briefly raises alertness but raises carboxyhaemoglobin, reducing the blood\'s oxygen-carrying capacity',
+      'Nicotine briefly raises alertness but raises carboxyhaemoglobin, cutting oxygen capacity',
     ],
     correct: 3,
     explanation: 'Smoking raises blood carboxyhaemoglobin, which reduces oxygen-carrying capacity and effectively raises the body\'s altitude, worsening hypoxia. Nicotine craving and withdrawal can also distract, so smoking degrades fitness in several ways.',
@@ -5640,7 +5640,7 @@ export const chufQuestions: {
     options: [
       'Defer all safety judgements to the operations department, which knows best',
       'Raise any schedule concern only afterwards in a post-flight report',
-      'Set clear personal and operational limits before the flight that define when it will not proceed',
+      'Set clear personal limits beforehand that define when the flight will not proceed',
       'Accept every schedule, since being legal makes it safe by definition',
     ],
     correct: 2,
@@ -5652,7 +5652,7 @@ export const chufQuestions: {
     options: [
       'Relying only on experience and never on written procedures',
       'Using automation to remove every cognitive demand during cruise',
-      'Using checklists, charts and written notes to hold information that would otherwise overload working memory',
+      'Using checklists and written notes to offload what would overload working memory',
       'Handing all thinking tasks to the co-pilot to reduce the captain\'s load',
     ],
     correct: 2,
@@ -5711,7 +5711,7 @@ export const chufQuestions: {
     question: 'Catching and correcting a wrongly set altitude illustrates which part of threat and error management?',
     options: [
       'TEM is mainly a form for documenting threats for the safety report',
-      'Noticing and correcting a wrongly set altitude before levelling is an example of trapping an error',
+      'Catching a wrongly set altitude before levelling off is trapping an error',
       'TEM is a post-flight system for recording errors after landing',
       'TEM is a maintenance system for finding mechanical defects',
     ],
@@ -5748,7 +5748,7 @@ export const chufQuestions: {
     options: [
       'Fatigue can always be overcome by willpower and concentration',
       'A pilot who feels alert is reliably safe to continue',
-      'Feeling alert is unreliable when fatigued, so a pilot should rest or divert instead of continuing',
+      'Feeling alert is unreliable when fatigued, so a pilot should rest or divert',
       'Caffeine fully restores a fatigued pilot to normal performance',
     ],
     correct: 2,
@@ -5761,7 +5761,7 @@ export const chufQuestions: {
       'On suspecting hypoxia, there is nothing useful the pilot can do',
       'On suspecting hypoxia, continue and monitor, as it resolves by itself',
       'On suspecting hypoxia, climb higher to clear the cabin air',
-      'On suspecting hypoxia, use oxygen if available and descend, since judgement is already impaired',
+      'On suspecting hypoxia, use oxygen and descend, as judgement is already impaired',
     ],
     correct: 3,
     explanation: 'Because hypoxia clouds judgement, any suspicion at altitude warrants immediate action: supplemental oxygen if available and a descent to a lower altitude, rather than waiting to confirm symptoms that the pilot may be unable to recognise.',
@@ -5771,7 +5771,7 @@ export const chufQuestions: {
     question: 'Why is the final "Check" step important in decision models such as FORDEC?',
     options: [
       'A fuel-planning method for choosing alternates',
-      'A model whose final step, checking the outcome, is what makes it a loop rather than a one-off decision',
+      'Its final check step makes it a loop, not a one-off decision',
       'A pre-flight weather tool for forecasting diversions',
       'A risk document completed on the ground before each charter',
     ],
@@ -5782,7 +5782,7 @@ export const chufQuestions: {
   {
     question: 'How do the dark-adaptation times of cones and rods differ?',
     options: [
-      'Cones recover dark adaptation in a few minutes, but rods take 20 to 30 minutes to reach full night sensitivity',
+      'Rods take 20 to 30 minutes to reach full night sensitivity, cones only minutes',
       'Both rods and cones adapt to darkness within about one minute',
       'Rods adapt almost instantly while cones take half an hour',
       'Dark adaptation is complete the moment the lights are turned off',
@@ -5795,7 +5795,7 @@ export const chufQuestions: {
     question: 'How can a pilot overcome empty field myopia?',
     options: [
       'Empty field myopia cannot be influenced by the pilot at all',
-      'Empty field myopia is overcome by deliberately focusing on a distant object, such as a wingtip then beyond',
+      'Deliberately focus on a distant object, such as a wingtip then beyond',
       'It is overcome by staring fixedly at the same point in the empty sky',
       'It is overcome by focusing on a near object inside the cockpit',
     ],
@@ -5808,7 +5808,7 @@ export const chufQuestions: {
     options: [
       'Performance is unaffected by low arousal, only by high arousal',
       'Boredom and low arousal always improve performance by conserving energy',
-      'Under-arousal, such as boredom in a long cruise, degrades performance just as over-arousal does',
+      'Under-arousal, such as cruise boredom, degrades performance as much as over-arousal',
       'Low arousal makes a pilot more alert to rare events',
     ],
     correct: 2,
@@ -5818,7 +5818,7 @@ export const chufQuestions: {
   {
     question: 'What is the difference between assertion and aggression in CRM?',
     options: [
-      'Assertion states a concern firmly and respectfully; aggression attacks the person and shuts down cooperation',
+      'Assertion states a concern firmly and respectfully, aggression attacks the person',
       'Assertion and aggression are the same thing in a cockpit',
       'Assertion means always obeying ATC without question',
       'Assertion means the monitoring pilot taking the controls whenever they disagree',
@@ -5833,7 +5833,7 @@ export const chufQuestions: {
       'It is dangerous mainly because it reduces the radio range',
       'Spatial disorientation is harmless once an attitude indicator is fitted',
       'It is dangerous only at night over water',
-      'The graveyard spiral is dangerous because the pilot\'s instinctive control inputs tighten rather than fix it',
+      'The pilot\'s instinctive control inputs tighten the spiral rather than fix it',
     ],
     correct: 3,
     explanation: 'In a graveyard spiral the pilot feels level while in a descending turn and instinctively pulls back, which only tightens the spiral and increases the descent. Recovery requires believing the instruments and levelling the wings first.',
@@ -5842,7 +5842,7 @@ export const chufQuestions: {
   {
     question: 'How should a pilot respond to the "leans"?',
     options: [
-      'The leans is overcome by trusting the attitude indicator despite the false feeling of bank',
+      'Trust the attitude indicator despite the false feeling of bank',
       'The leans is overcome by reducing power until the feeling passes',
       'The leans is overcome by closing the eyes until level flight returns',
       'The leans cannot be overcome and requires an immediate landing',
@@ -5856,7 +5856,7 @@ export const chufQuestions: {
     options: [
       'Conforming to standard procedures is what normative pressure means',
       'Matching the group is always safe because the group is usually right',
-      'A new pilot may copy a captain\'s unsafe shortcut to fit in, perpetuating the practice',
+      'A new pilot may copy a captain\'s unsafe shortcut to fit in, perpetuating it',
       'Group pressure has no influence on an individual pilot\'s behaviour',
     ],
     correct: 2,
@@ -5867,7 +5867,7 @@ export const chufQuestions: {
     question: 'How does time of useful consciousness change with altitude?',
     options: [
       'Time of useful consciousness is the same at all altitudes',
-      'Time of useful consciousness shortens rapidly with altitude, from many minutes low down to seconds high up',
+      'Time of useful consciousness shortens rapidly with altitude, to seconds up high',
       'Time of useful consciousness lengthens as altitude increases',
       'Altitude has no bearing on how long a pilot can act without oxygen',
     ],
@@ -5878,7 +5878,7 @@ export const chufQuestions: {
   {
     question: 'How can a pilot avoid flicker vertigo?',
     options: [
-      'Flicker vertigo is avoided by not staring through a turning propeller or rotor at low sun',
+      'Avoid staring through a turning prop or rotor toward a low sun',
       'Flicker vertigo affects only passengers, never pilots',
       'Flicker vertigo is best handled by staring at the flickering source',
       'Flicker vertigo is caused by turbulence in cloud',
@@ -5893,7 +5893,7 @@ export const chufQuestions: {
       'Attention has no effect on whether traffic is perceived',
       'Looking outside guarantees that traffic will be seen',
       'A heads-down task improves the chance of spotting traffic',
-      'A heads-down task absorbs attention, so a pilot can look out yet not register conflicting traffic',
+      'Eyes outside but attention inside, so conflicting traffic goes unseen',
     ],
     correct: 3,
     explanation: 'Inattentional blindness means a pilot deep in a checklist or radio call may have eyes outside yet not consciously see conflicting traffic, because attention, not gaze, drives perception. Minimising heads-down time in busy airspace reduces the risk.',
@@ -5902,7 +5902,7 @@ export const chufQuestions: {
   {
     question: 'What is the "plan continuation bias" and what makes it especially dangerous?',
     options: [
-      'Continuing a deteriorating approach toward landing instead of going around is plan-continuation bias in action',
+      'Continuing a deteriorating approach instead of going around is plan-continuation bias',
       'Plan-continuation bias means following the filed route after a new clearance',
       'It is a navigation computer fault that keeps the old route',
       'It is continuing a descent below the minimum descent altitude',
@@ -5917,7 +5917,7 @@ export const chufQuestions: {
       'The practice of debriefing emotional events to prevent nightmares',
       'A framework for reporting emotional distress to the medical system',
       'Suppressing all emotional responses to appear professional',
-      'Recognising and managing one\'s emotions so strong feelings do not degrade thinking or crew communication',
+      'Noticing and managing emotions so they do not degrade thinking or crew talk',
     ],
     correct: 3,
     explanation: 'Emotional regulation is not suppressing feelings but noticing them, anger, fear, excitement, and managing them so they do not narrow attention or distort decisions, keeping the pilot able to think and communicate clearly.',
@@ -5928,7 +5928,7 @@ export const chufQuestions: {
     options: [
       'A briefing matters only for training flights, not normal operations',
       'A shared mental model forms automatically without any briefing',
-      'A thorough briefing builds a shared mental model so both pilots expect the same things and can catch deviations',
+      'A briefing builds a shared mental model so both pilots expect the same things',
       'A shared mental model means both pilots using the same EFB app',
     ],
     correct: 2,
@@ -5951,7 +5951,7 @@ export const chufQuestions: {
     question: 'What is the "sterile cockpit" rule and when does it apply?',
     options: [
       'It is a hygiene rule requiring surfaces to be wiped before flight',
-      'Below a set altitude, non-essential talk and tasks are barred so attention stays on the critical phases',
+      'Below a set altitude, non-essential talk and tasks are prohibited',
       'It is a rule keeping passengers out of the cockpit at all times',
       'It requires the cockpit door to remain locked throughout the flight',
     ],
@@ -5974,7 +5974,7 @@ export const chufQuestions: {
   {
     question: 'How can a pilot avoid "premature closure" when diagnosing a problem?',
     options: [
-      'By deliberately considering what else could explain the situation before settling on an answer',
+      'Considering what else could explain it before settling on an answer',
       'Shutting down an engine before finishing the failure checklist',
       'Closing a runway inspection before the full length is checked',
       'Closing the flight plan before passengers have disembarked',
@@ -5984,23 +5984,23 @@ export const chufQuestions: {
     reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.2 (decision-making, diagnosis)',
   },
   {
-    question: 'What is the recommended countermeasure to automation complacency?',
+    question: 'The eardrum (tympanic membrane) contributes to hearing by -',
     options: [
-      'It is countered by always leaving the autopilot engaged',
-      'Automation complacency comes from making too many mode changes',
-      'Complacency is unavoidable in cruise and cannot be countered',
-      'The countermeasure to automation complacency is active monitoring and periodic manual flying',
+      'Producing the nerve signals that the brain then interprets as recognisable sound',
+      'Controlling the air pressure inside the middle-ear cavity',
+      'Sensing the rotation of the head during turns in flight',
+      'Vibrating in response to sound and passing that vibration to the ossicles',
     ],
     correct: 3,
-    explanation: 'Because reliable automation tempts the pilot into passive watching and lets manual skills fade, the countermeasures are to monitor actively, comparing what the system does against what it should, and to hand-fly periodically to keep skills sharp.',
-    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.14.1 (complacency, monitoring)',
+    explanation: 'The eardrum vibrates when sound waves strike it and passes that vibration to the three ossicles, which carry it to the inner ear. Nerve signals are generated in the cochlea, not at the eardrum.',
+    reference: 'Part 61 MOS Sch 3 Unit 1.6.2 CHFC 2.8 (the ear and hearing)',
   },
   {
     question: 'What does the "Swiss cheese model" tell us about accident prevention?',
     options: [
       'It implies the best response is to discipline whoever let a hole appear',
       'It implies accidents are inevitable because the holes always eventually align',
-      'It implies that adding and strengthening independent defensive layers makes it far less likely that failures line up',
+      'Adding independent defensive layers makes it far less likely that failures line up',
       'It implies a single perfect defence is better than several imperfect ones',
     ],
     correct: 2,
