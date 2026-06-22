@@ -43,7 +43,7 @@ export default function Home() {
         {/* HERO */}
         <section style={{ position: 'relative', height: '100vh', minHeight: '650px', display: 'flex', flexDirection: 'column', overflow: 'hidden', margin: 0, padding: 0 }}>
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/IMG_4488.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center 35%' }} />
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(8,20,40,0.35) 0%, rgba(8,20,40,0.55) 55%, rgba(8,20,40,0.85) 100%)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(8,20,40,0.15) 0%, rgba(8,20,40,0.30) 55%, rgba(8,20,40,0.60) 100%)' }} />
           <nav style={{ position: 'relative', zIndex: 10, padding: '1.25rem 2.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div>
               <span style={{ fontSize: '22px', fontWeight: '800', color: 'white' }}>V1</span>
@@ -60,11 +60,11 @@ export default function Home() {
           <div style={{ position: 'relative', zIndex: 1, flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 2.5rem' }}>
             <div style={{ maxWidth: '800px' }}>
               <p style={{ fontSize: '11px', letterSpacing: '0.32em', color: 'rgba(255,255,255,0.55)', marginBottom: '1.5rem', fontWeight: '500', textTransform: 'uppercase' }}>Australia&apos;s Pilot Exam Prep Platform</p>
-              <h1 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: '800', color: 'white', marginBottom: '1.5rem', lineHeight: 1.04, letterSpacing: '-2px' }}>
-                Your Journey to the<br />Flight Deck Starts Here.
+              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(48px, 7vw, 88px)', fontWeight: '600', color: 'white', marginBottom: '1.5rem', lineHeight: 1.02, letterSpacing: '-1px' }}>
+                From First Exam<br />to Flight Deck.
               </h1>
-              <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.72)', maxWidth: '520px', margin: '0 auto 2.5rem', lineHeight: 1.7 }}>
-                Expert-reviewed questions aligned to real CASA references. Every PPL, CPL, ATPL and IREX exam covered.
+              <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.72)', maxWidth: '500px', margin: '0 auto 2.5rem', lineHeight: 1.7 }}>
+                Clear, exam-ready practice for every CASA theory exam — from PPL to ATPL, plus IREX.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1.5rem' }}>
                 <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '700', textDecoration: 'none' }}>Start Free Trial</a>
