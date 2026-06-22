@@ -61,7 +61,7 @@ export const irexQuestions: {
 {
   question: 'When conducting an IFR flight, the pilot must obtain an airways clearance:',
   options: [
-    'Before entering controlled airspace; in Class G no airways clearance is issued and the pilot provides own separation',
+    'Before entering controlled airspace, since none is issued in Class G where the pilot self-separates',
     'Only when entering Class C airspace, because a clearance is not needed for any other class and can be requested in the air',
     'Before commencing any IFR flight, including one conducted wholly within Class G uncontrolled airspace',
     'Only when the flight is planned to operate above FL180 in the upper information region'
@@ -142,7 +142,7 @@ export const irexQuestions: {
     '2D approaches are flown on autopilot, while 3D approaches must be hand-flown throughout',
     '2D approaches are for piston aircraft; 3D approaches are for turbine aircraft',
     '2D approaches require DME for distance information, whereas 3D approaches are always flown using the ILS only',
-    '2D approaches provide only lateral guidance; 3D approaches provide both lateral and vertical guidance to the runway'
+    '2D approaches give only lateral guidance, while 3D approaches give both lateral and vertical guidance'
   ],
   correct: 3,
   explanation: '2D instrument approach operations provide lateral guidance only (NDB, VOR, GNSS/LNAV). The pilot must manage vertical profile manually to the MDA. 3D instrument approach operations provide both lateral AND vertical guidance (ILS, GLS, GNSS/LPV, RNP AR). A decision altitude (DA) is used rather than MDA. 3D approaches generally have lower minima.',
@@ -204,7 +204,7 @@ export const irexQuestions: {
 {
   question: 'An IFR flight notification (flight plan) submitted to ATC remains valid for:',
   options: [
-    '2 hours after the proposed departure time; if the flight has not departed it must be re-filed or amended',
+    '2 hours after the proposed departure time, after which it must be re-filed or amended',
     '24 hours from the proposed departure time, after which it is automatically renewed',
     'An indefinite period, lasting until the pilot actively cancels the flight plan with air traffic control by radio',
     '30 minutes after the proposed departure time, matching the SARTIME buffer'
@@ -220,7 +220,7 @@ export const irexQuestions: {
     'None, because terminating SAR is solely the responsibility of air traffic control',
     'To cancel SARWATCH within one hour of landing in all circumstances',
     'Nothing, as SARWATCH is cancelled automatically once the aircraft lands at the destination',
-    'To close the flight plan on arrival; if it is not closed, SAR action begins at the overdue time'
+    'To close the flight plan on arrival, or SAR action begins at the overdue time'
   ],
   correct: 3,
   explanation: 'ATC is the SAR alerting agency for IFR flights. The pilot must close the flight plan / cancel SARWATCH on arrival (by advising ATC or the relevant agency). If the aircraft does not arrive and SARWATCH is not cancelled, SAR action commences at the overdue time. This is a legal obligation on the pilot.',
@@ -350,7 +350,7 @@ export const irexQuestions: {
     'Unrestricted, because ground radar may be used for any purpose at any aerodrome',
     'Prohibited entirely, as radar may not be operated while an aircraft is on the ground',
     'Entirely at the pilot\'s discretion, since all use of radar on the ground is decided case by case by the flight crew',
-    'Limited; it may not be used for approach-control purposes on the ground, though surface movement radar is permitted'
+    'Limited, as it may not be used for approach control on the ground, though surface movement radar is allowed'
   ],
   correct: 3,
   explanation: 'Radar used for approach control (e.g. ASR/PAR) applies to airborne aircraft, not aircraft on the ground at a controlled aerodrome. Surface movement radar may be used for ground manoeuvring. This separation of function avoids interference with the approach radar picture.',
@@ -1037,7 +1037,7 @@ export const irexQuestions: {
   question: 'A Non-Directional Beacon (NDB) transmits:',
   options: [
     'Directional signals transmitted along 360 separate radials outward from the station',
-    'An omnidirectional LF/MF signal; the aircraft\'s ADF derives the bearing from the signal\'s arrival direction',
+    'An omnidirectional LF/MF signal, from which the aircraft\'s ADF derives the bearing',
     'A narrow directional beam similar to a VOR, but broadcast on the lower LF/MF frequencies instead',
     'Usable signals only on its published frequency during the hours of daylight'
   ],
@@ -1077,7 +1077,7 @@ export const irexQuestions: {
   options: [
     'The ADF needle settling steadily and firmly onto a single fixed bearing',
     'The ADF frequency display going completely blank, with no bearing or ident shown',
-    'The ADF needle rotating, oscillating or pointing erratically; an OFF flag may appear if fitted',
+    'The ADF needle rotating, oscillating or pointing erratically, with an OFF flag if fitted',
     'The NDB ident tone stopping, with no other indication available'
   ],
   correct: 2,
@@ -1244,7 +1244,7 @@ export const irexQuestions: {
 {
   question: 'When not tracking directly to or from a DME station, the DME reading:',
   options: [
-    'Does not change at groundspeed; the rate depends on the angle between track and the bearing to the station',
+    'Does not change at groundspeed, since the rate depends on the angle between track and the bearing',
     'Is always accurate to groundspeed, since DME reads slant range regardless of the track flown',
     'Must be corrected for magnetic variation before use',
     'Becomes unusable and cannot support navigation'
@@ -1324,7 +1324,7 @@ export const irexQuestions: {
   options: [
     'VOR coverage is effectively identical at every location throughout Australian airspace',
     'VOR coverage is fully reliable by day, but it changes and noticeably degrades only during the hours of darkness',
-    'Usability varies with altitude and distance; the rated coverage sets the minimum altitude and maximum reliable range',
+    'Usability varies with altitude and distance, so the rated coverage sets the minimum altitude and maximum range',
     'Coverage ratings are published for the ILS only and have no application to the VOR'
   ],
   correct: 2,
@@ -1377,7 +1377,7 @@ export const irexQuestions: {
     'Look out of the cockpit window to sight the VOR ground aerial below',
     'Wait until the DME happens to read the expected abeam distance',
     'Accept that the VOR cannot indicate when the aircraft is abeam the station',
-    'Set the OBS to 090 or 270; when the CDI centres with FROM, the aircraft is abeam the station'
+    'Set the OBS to 090 or 270, then the CDI centres with FROM when the aircraft is abeam the station'
   ],
   correct: 3,
   explanation: 'Setting the OBS to 090 (VOR to the right) or 270 (VOR to the left) and waiting for the CDI to centre with a FROM indication shows the aircraft is on that radial, i.e. directly abeam the station. The technique is used for timing checks, fixes and procedure-turn points.',
@@ -1598,7 +1598,7 @@ export const irexQuestions: {
     'The receiver can no longer navigate and so automatically suspends every one of its navigation functions',
     'The live satellite signal being received has degraded below a usable strength',
     'Simply that a current database must be loaded before commencing any IFR flight',
-    'The navigation database has expired; manual coordinates may still be navigated, but stored procedures must not be used'
+    'The navigation database has expired, so stored procedures must not be used though manual coordinates remain available'
   ],
   correct: 3,
   explanation: 'The navigation database is updated each 28-day AIRAC cycle. An expired database may hold outdated procedure or waypoint data: navigate by manually entered coordinates if necessary, do not use stored approaches without cross-checking current charts, and prefer an alternate aid. A current database is required for IFR.',
@@ -1819,7 +1819,7 @@ export const irexQuestions: {
     'ATC requires the weather reports before it will issue any clearance to divert to the alternate',
     'Weather reports are needed only for the destination aerodrome itself, and never for a nominated alternate',
     'Alternate weather reports are pulled from public online weather services on the day',
-    'Current alternate weather must be assessable near destination; if below minima at diversion, another aerodrome is needed'
+    'Current alternate weather must be assessable near destination, or another aerodrome is needed if below minima'
   ],
   correct: 3,
   explanation: 'The pilot must be able to determine the alternate\'s actual weather during the planned diversion period. If the alternate has no reporting (METAR/AWIS/ATIS) over that window, its usability cannot be confirmed. AIP/ERSA show which aerodromes report weather and when, and this is checked in planning.',
@@ -1845,7 +1845,7 @@ export const irexQuestions: {
     'A fixed 30-minute holding allowance applied to every IFR flight regardless of forecast',
     'ATC, which determines the required holding fuel so the pilot need not calculate it',
     'Whether the operation is being conducted at night, since holding fuel is purely a night-time-only requirement',
-    'The expected delay from the destination forecast; holding fuel must cover the delay until conditions improve to minima'
+    'The expected delay from the destination forecast, with holding fuel covering it until conditions reach minima'
   ],
   correct: 3,
   explanation: 'Weather holding fuel is based on the destination forecast: if conditions are forecast to improve after ETA, carry fuel to cover that delay; if sustained below-minima conditions are forecast, plan to divert rather than hold. Burn is computed at holding speed and level, and on reaching minimum diversion fuel the aircraft diverts regardless of weather.',
@@ -2066,7 +2066,7 @@ export const irexQuestions: {
     'No special requirements, since the remote areas are treated just the same as any other airspace',
     'Remote areas require a flight plan to be filed 24 hours in advance',
     'Only commercial operators need additional planning for remote areas',
-    'Additional contingency fuel for unreliable weather forecasts; SARTIME filing; ELT serviceability confirmation'
+    'Additional contingency fuel for unreliable forecasts, SARTIME filing, and ELT serviceability confirmation'
   ],
   correct: 3,
   explanation: 'Remote area IFR planning: (1) Additional contingency fuel (weather forecasts less reliable); (2) File SARTIME with JRCC; (3) Confirm GNSS RAIM availability (limited alternate navaids); (4) ELT serviceable and registered; (5) Survival equipment (water, first aid, signalling) appropriate to terrain; (6) Communication plan — HF radio or satellite phone; (7) Consider an alternate closer than legal minimum if conditions require.',
@@ -2076,7 +2076,7 @@ export const irexQuestions: {
 {
   question: 'The significance of the transition level for IFR planning is that:',
   options: [
-    'It is the lowest available cruising flight level; climbing through it, the altimeter changes from QNH to 1013 hPa',
+    'It is the lowest available cruising flight level, where the altimeter changes from QNH to 1013 hPa',
     'It marks the lateral boundary of the controlled airspace for IFR flights operating at that aerodrome',
     'It is the altitude at which flight under the IFR must begin after departure',
     'It is relevant only to international flights, not to domestic IFR operations'
@@ -2118,7 +2118,7 @@ export const irexQuestions: {
     'Attempt the approach anyway, on the basis that the published minima are deliberately set conservatively',
     'Execute the approach from a lower altitude to improve chances of breaking out',
     'Circle at MCA until fuel is critical then declare emergency',
-    'Declare MINIMUM FUEL to ATC if not already done; request immediate clearance to the alternate; divert without delay'
+    'Declare MINIMUM FUEL to ATC, request immediate clearance to the alternate, and divert without delay'
   ],
   correct: 3,
   explanation: 'Diversion decision: when holding fuel is exhausted to the diversion fuel level, divert immediately. Do not attempt the approach hoping for improvement — the consequences of a missed approach below diversion fuel are severe. Declare MINIMUM FUEL if not already done. Diversion fuel = transit + alternate approach + final reserve minimum. Once diversion fuel is reached, there is no discretion — divert.',
@@ -2233,7 +2233,7 @@ export const irexQuestions: {
   question: 'The missed approach point (MAP) on a non-precision approach is:',
   options: [
     'The point at which the DA is reached on a precision approach',
-    'The point beyond which visual reference must already exist; set by time from the FAF, by DME or by a waypoint',
+    'The point beyond which visual reference must already exist, set by time from the FAF, by DME or by a waypoint',
     'The furthest point from the runway on the whole approach procedure',
     'A fixed point that lies exactly 1 nm before the runway threshold on every single instrument approach'
   ],
@@ -2467,7 +2467,7 @@ export const irexQuestions: {
   question: 'A VOR/DME approach differs from a VOR approach in that:',
   options: [
     'These VOR/DME approaches carry lower published landing minima than the VOR-only approaches do',
-    'DME is needed to identify step-down fixes or the MAP; without it the VOR-only procedure is flown if published',
+    'DME is needed to identify step-down fixes or the MAP, without which the VOR-only procedure is flown if published',
     'VOR/DME approaches are inherently more accurate than VOR-only approaches',
     'There is no practical difference between a VOR and a VOR/DME approach'
   ],
@@ -2507,7 +2507,7 @@ export const irexQuestions: {
   options: [
     'The aerodrome elevation, expressed as a height measured above the aerodrome reference point itself',
     'The elevation of the ILS transmitter site itself',
-    'Mean sea level, read on the altimeter with QNH set; the decision height is referenced to the threshold',
+    'Mean sea level, read on the altimeter with QNH set, with the decision height referenced to the threshold',
     'The ground level lying directly beneath the aircraft'
   ],
   correct: 2,
@@ -2611,7 +2611,7 @@ export const irexQuestions: {
   options: [
     'Only the general airport security measures that are in place around the field perimeter itself',
     'Only the glideslope; the localiser is unaffected by passing ground traffic',
-    'Critical and sensitive areas; aircraft and vehicles hold clear during ILS approaches to prevent multipath',
+    'Critical and sensitive areas, which aircraft and vehicles hold clear of during ILS approaches to prevent multipath',
     'Nothing, since the ILS signal is self-correcting and needs no protection'
   ],
   correct: 2,
@@ -2754,7 +2754,7 @@ export const irexQuestions: {
   options: [
     'The pilot is cleared both to intercept the ILS and to land on runway 34L',
     'The pilot is cleared to land on 34L using any approach of their choosing',
-    'The pilot is cleared to fly the ILS procedure to runway 34L; the landing clearance is issued separately by the tower',
+    'Cleared to fly the ILS procedure to runway 34L, with the landing clearance issued separately by the tower',
     'The pilot is cleared for the ILS only if the glideslope is found to be fully serviceable on intercept'
   ],
   correct: 2,
@@ -3002,7 +3002,7 @@ export const irexQuestions: {
     'Microbursts affect only aircraft operating below about 200 ft AGL',
     'Microbursts are easily and reliably detected on standard airborne weather radar',
     'Microbursts occur only over water and never form over land areas',
-    'A brief, intense downburst; penetrating it gives a headwind gain then a rapid tailwind loss of airspeed'
+    'A brief, intense downburst giving a headwind gain then a rapid tailwind loss of airspeed'
   ],
   correct: 3,
   explanation: 'A microburst is a small (about 0.5-3 nm), intense downburst. Crossing it, the aircraft meets an increasing headwind (airspeed up, may climb), then the core downdraught, then a tailwind with rapid airspeed and altitude loss; the total change can exceed 50 kt over under a mile, and recovery may be impossible low down. Full power and go-around are essential.',
@@ -3142,7 +3142,7 @@ export const irexQuestions: {
 {
   question: 'Cold-temperature correction to approach altitudes is applied:',
   options: [
-    'When the aerodrome temperature is below 0 degrees; the correction grows with the temperature depression below ISA',
+    'When the aerodrome temperature is below 0 degrees, the correction growing with the depression below ISA',
     'Only when the aerodrome temperature falls below minus 20 degrees Celsius',
     'Never, since the cold-temperature corrections are considered entirely optional for the pilot to apply',
     'Only for jet aircraft when operating above FL100 on the approach'
@@ -3247,7 +3247,7 @@ export const irexQuestions: {
   question: 'The "dew point spread" (temperature minus dew point) indicates:',
   options: [
     'The likelihood of thunderstorm development',
-    'The relative humidity; a spread of 2°C or less indicates near-saturation',
+    'The relative humidity, with a spread of 2°C or less indicating near-saturation',
     'The wind chill factor',
     'Dew point spread is used only for the runway surface condition assessment on the day'
   ],
@@ -3262,7 +3262,7 @@ export const irexQuestions: {
     'INTER and TEMPO mean the same thing and may be used interchangeably',
     'TEMPO variations each last less than 30 minutes, while INTER variations last longer',
     'INTER applies to wind only, while TEMPO applies to visibility only',
-    'INTER variations last less than 30 minutes each; TEMPO variations last 30 minutes up to an hour'
+    'INTER variations last under 30 minutes each, while TEMPO variations last 30 minutes up to an hour'
   ],
   correct: 3,
   explanation: 'INTER (intermittent) denotes fluctuations expected to last less than 30 minutes each; TEMPO (temporary) denotes fluctuations of 30 minutes up to an hour each. They drive holding and alternate decisions: thunderstorms forecast INTER require 30 minutes holding fuel, TEMPO 60 minutes.',
@@ -3377,7 +3377,7 @@ export const irexQuestions: {
   question: 'The VOR (VHF Omnidirectional Range) provides:',
   options: [
     'Distance and bearing to the station together, presented as a single combined readout',
-    'Magnetic bearing from the station; the OBS selects the radial and the CDI shows deviation from it',
+    'Magnetic bearing from the station, with the OBS selecting the radial and the CDI showing deviation',
     'Vertical guidance for a precision approach to the runway',
     'Aircraft position directly in latitude and longitude'
   ],
@@ -3624,7 +3624,7 @@ export const irexQuestions: {
   question: 'The ILS glideslope has a false glideslope at approximately:',
   options: [
     'About 3 degrees above the true glide slope path',
-    'About 9 degrees, three times the true angle; following it gives an excessively steep approach',
+    'About 9 degrees, three times the true angle, giving an excessively steep approach if followed',
     'About 1 degree below the true glide slope path',
     'Nowhere, since false glide slopes do not exist on any modern ILS installation'
   ],
@@ -3665,7 +3665,7 @@ export const irexQuestions: {
     'No additional pilot training is required in order to fly this particular approach',
     'No precision vertical guidance is available on this approach',
     'Night operations are specifically permitted at this aerodrome',
-    'No Procedure Turn; the course reversal is not authorised when arriving via the specified routing'
+    'No Procedure Turn, so the course reversal is not authorised when arriving via the specified routing'
   ],
   correct: 3,
   explanation: 'NoPT means the procedure turn (course reversal) is neither required nor authorised when arriving via the specified routing (e.g. radar vectors or a nominated STAR); the aircraft proceeds straight in. Flying a procedure turn anyway would take it outside the protected airspace.',
@@ -3677,7 +3677,7 @@ export const irexQuestions: {
   options: [
     'The approach requires a minimum aircraft speed of Mach 0.3 throughout the procedure',
     'The approach may only be used within 0.3 nm of the airport itself',
-    'An RNP value of 0.3; the system must keep the aircraft within 0.3 nm of centreline 95% of the time',
+    'An RNP value of 0.3, so the system must keep the aircraft within 0.3 nm of centreline 95% of the time',
     'That exactly three satellites are required to fly the approach'
   ],
   correct: 2,
@@ -3716,7 +3716,7 @@ export const irexQuestions: {
   options: [
     'On the selected radial, regardless of the actual aircraft heading being flown at the time',
     'Heading directly toward the VOR station at that moment',
-    'On the selected course; the heading may differ for drift',
+    'On the selected course, with the heading possibly differing for drift',
     'Heading exactly equal to the selected OBS value at the time'
   ],
   correct: 2,
@@ -3754,7 +3754,7 @@ export const irexQuestions: {
   question: 'The ADF relative bearing is:',
   options: [
     'The magnetic bearing measured directly from the aircraft straight across to the NDB ground station',
-    'The clockwise angle from the nose to the NDB; add it to the heading to get the magnetic bearing to the station',
+    'The clockwise angle from the nose to the NDB, added to the heading to give the magnetic bearing',
     'The bearing measured from the NDB station back toward the aircraft',
     'The track the aircraft must fly to reach the NDB station'
   ],
@@ -3870,7 +3870,7 @@ export const irexQuestions: {
 {
   question: 'If an approach is annotated \'DME required\' and the DME is unserviceable, the pilot must:',
   options: [
-    'Do not conduct it; divert or fly another procedure that does not need DME',
+    'Do not conduct it, but divert or fly another procedure that does not need DME',
     'Continue the approach but fly it at a deliberately higher altitude as a precaution',
     'Use GPS distance in place of the required DME without any specific approval',
     'Conduct it at the pilot own discretion if familiar with the aerodrome layout'
@@ -3987,7 +3987,7 @@ export const irexQuestions: {
 {
   question: 'A pilot who calculates fuel at the destination will be 45 minutes above final reserve should:',
   options: [
-    'Continue; 45 minutes above final reserve is adequate, monitoring consumption against plan and reassessing',
+    'Continue, since 45 minutes above final reserve is adequate, monitoring consumption and reassessing',
     'Declare minimum fuel to ATC straight away as a precaution',
     'Divert to the nominated alternate immediately on reaching it',
     'Treat it as insufficient and land to take on more fuel at an en-route aerodrome along the way'
@@ -4143,7 +4143,7 @@ export const irexQuestions: {
 {
   question: 'A clearance \'climb to and maintain FL130, expect FL180 15 minutes after departure\' means the aircraft is:',
   options: [
-    'Cleared to FL130 and planning for FL180; the \'expect FL180\' is advisory, not a clearance to climb',
+    'Cleared to FL130 and planning for FL180, where the \'expect FL180\' is advisory, not a clearance to climb',
     'Cleared to climb to FL180 immediately after becoming airborne',
     'Required to climb directly to FL180 once it is airborne',
     'Bound by the \'expect FL180\' instruction exactly as if it were already a firm clearance'
@@ -4198,7 +4198,7 @@ export const irexQuestions: {
     'Charts never expire, so the printed effective date is purely informational',
     'The effective date matters only if a NOTAM has been issued for that aerodrome',
     'Chart dates are advisory only, since published instrument procedures rarely change',
-    'Procedures change on the AIRAC date; an outdated chart may show superseded minima or tracks'
+    'Procedures change on the AIRAC date, so an outdated chart may show superseded minima or tracks'
   ],
   correct: 3,
   explanation: 'Instrument procedures change on the 28-day AIRAC cycle (new obstacles, navaid or course changes). An out-of-date chart may show superseded minima, waypoints or tracks, so the chart effective date must match the current AIRAC cycle.',
@@ -4237,7 +4237,7 @@ export const irexQuestions: {
     'Increase the power setting to maintain the originally planned schedule to the destination',
     'Continue as planned, variations are expected on IFR flights',
     'Declare minimum fuel immediately to ATC',
-    'Recalculate fuel to destination and alternate; compare remaining fuel against required minimum'
+    'Recalculate fuel to destination and alternate, then compare the remaining fuel against the required minimum'
   ],
   correct: 3,
   explanation: 'Fuel management: if groundspeed is below plan, fuel at destination will be less than planned. Recalculate: fuel remaining ÷ fuel flow = endurance; compare to required fuel (trip + alternate + final reserve + contingency). If fuel is becoming marginal, earlier diversion is more efficient (closer alternative uses less fuel). Do not wait until minimum fuel — proactive diversion planning is required.',
@@ -4250,7 +4250,7 @@ export const irexQuestions: {
     'The time by which the aircraft must land at its destination aerodrome',
     'The time at which the IFR flight plan first becomes active within the ATC computer system',
     'Clearance void times are only issued for international flights',
-    'The time by which the aircraft must be airborne; after it, the clearance lapses and must be reissued'
+    'The time by which the aircraft must be airborne, after which the clearance lapses and must be reissued'
   ],
   correct: 3,
   explanation: 'Clearance void time: ATC clears the pilot for IFR departure with a void time (e.g. "clearance void if not airborne by 1435"). If not airborne by 1435, the clearance has expired and cannot be used. The pilot must contact ATC to obtain a new clearance. If radio contact is impossible, the pilot must not depart. If airborne and clearance expires, activate NORDO (7600) procedures.',
@@ -4445,7 +4445,7 @@ export const irexQuestions: {
     '5 nm horizontally and 1,000 ft vertically at every single altitude without any exception applied',
     '10 nm horizontally between IFR aircraft at all times',
     'Separation is provided only vertically, 1,000 ft at every altitude',
-    'Varies by airspace and phase of flight; en-route 5 nm or 1,000 ft, and 2,000 ft at and above FL290'
+    'Varies by airspace and phase of flight, en-route 5 nm or 1,000 ft, and 2,000 ft at and above FL290'
   ],
   correct: 3,
   explanation: 'Radar separation: en-route typically 5 nm horizontal or 1,000 ft vertical (2,000 ft at and above FL290). Terminal area: 3 nm horizontal or 1,000 ft vertical. Approaches: wake turbulence categories apply — heavy behind heavy 4 nm, light behind heavy up to 6 nm. Non-radar: 10 minutes or distance-based procedural separation. These are ICAO standards; actual values depend on specific Australian ATC procedures.',
@@ -4535,7 +4535,7 @@ export const irexQuestions: {
   options: [
     'Special-use airspace is relevant only to VFR pilots and is never relevant to any of the IFR pilots',
     'IFR aircraft are exempt from all special-use airspace restrictions',
-    'Restricted (R), prohibited (P) and danger (D) areas; R and P must be avoided unless specifically authorised',
+    'Restricted (R), prohibited (P) and danger (D) areas, with R and P avoided unless specifically authorised',
     'SUA affects only aircraft that are operating above FL180'
   ],
   correct: 2,
@@ -4575,7 +4575,7 @@ export const irexQuestions: {
     'Increase speed to transit the ash cloud quickly',
     'Volcanic ash can safely be penetrated at FL200 and above, where the ash concentration is much lower',
     'Only aircraft with special filters need to avoid volcanic ash',
-    'Avoid volcanic ash completely; ash causes engine flame-out, damages compressor blades, blocks fuel nozzles'
+    'Avoid volcanic ash completely, as it causes engine flame-out, compressor damage and blocked fuel nozzles'
   ],
   correct: 3,
   explanation: 'Volcanic ash: extreme hazard to all aircraft. Silicon ash melts in jet engines creating glass that re-solidifies on turbine blades — causes engine flame-out. Piston: can cause engine damage, fuel system blockage. Clogs pitot-static, blocks visibility. Volcanic ash SIGMETs are issued by VAAC (Volcanic Ash Advisory Centre). Treat ash avoidance as absolute — no penetration regardless of apparent conditions.',
@@ -4625,7 +4625,7 @@ export const irexQuestions: {
   question: 'When ATC instructs \'resume own navigation\', it means the aircraft is:',
   options: [
     'Cleared to climb or descend freely to any altitude that the pilot now chooses',
-    'No longer being radar vectored; the pilot navigates using the filed or ATC-assigned route',
+    'No longer being radar vectored, so the pilot navigates using the filed or ATC-assigned route',
     'Having its radar service terminated by ATC',
     'Required to return to its departure aerodrome'
   ],
@@ -4742,7 +4742,7 @@ export const irexQuestions: {
   question: 'Instrument-rating recency differs from currency in that:',
   options: [
     'Nothing, since the recency and the currency in fact mean exactly the very same thing',
-    'Currency is the short-term recent-experience requirement; recency is keeping skills sharp via regular checks',
+    'Currency is the short-term recent-experience requirement, while recency keeps skills sharp via regular checks',
     'Recency refers to medical certificate validity and currency to flight hours',
     'Currency applies only to VFR flight, while recency applies only to IFR'
   ],
@@ -4768,7 +4768,7 @@ export const irexQuestions: {
   question: 'When ATC issues a frequency change, the pilot should:',
   options: [
     'Change frequency whenever the previous ATC sector does not promptly respond to a first radio call',
-    'Acknowledge frequency and callsign, switch and call the new unit; never change without ATC except in emergency',
+    'Acknowledge frequency and callsign, then switch and call the new unit, never changing without ATC except in emergency',
     'Nothing, since frequency changes happen automatically in modern aircraft',
     'Change frequency whenever the pilot wishes, without any ATC instruction'
   ],
@@ -5067,7 +5067,7 @@ export const irexQuestions: {
   question: 'The immediate response to a GPWS "TERRAIN, TERRAIN, PULL UP" warning is:',
   options: [
     'Check the terrain on the navigation display before responding',
-    'Immediately pitch up to the maximum angle and apply maximum power; do not delay to check the display',
+    'Immediately pitch up to the maximum angle and apply maximum power, without delaying to check the display',
     'Advise ATC and continue the current approach',
     'The pilot uses their own judgment, and if they believe the alert is false they continue'
   ],
@@ -5147,7 +5147,7 @@ export const irexQuestions: {
     'The aircraft has exactly 45 minutes of usable fuel still remaining on board at the present time',
     'The aircraft has now exceeded its maximum operating range',
     'A distress call used only by commercial operators, not private pilots',
-    'A fuel emergency declaration; the aircraft may not reach a suitable aerodrome with safe fuel remaining'
+    'A fuel emergency declaration, meaning the aircraft may not reach a suitable aerodrome with safe fuel remaining'
   ],
   correct: 3,
   explanation: 'MAYDAY FUEL is a full distress call for a fuel emergency: landing at the nearest suitable aerodrome is essential. ATC clears the aircraft immediately, alerts emergency services and coordinates priority. A genuine fuel emergency must be declared without hesitation.',
@@ -5327,7 +5327,7 @@ export const irexQuestions: {
   question: 'If the ILS localiser shows full-scale deflection below 500 ft AGL, the pilot should:',
   options: [
     'Apply full aileron correction and continue the approach to land',
-    'Go around immediately; full-scale deflection at low altitude is a severely unstabilised approach',
+    'Go around immediately, since full-scale deflection at low altitude is a severely unstabilised approach',
     'Continue down to the MDA and assess the situation from there',
     'Accept it, since full-scale deflection is perfectly acceptable below 500 ft on final'
   ],
@@ -5574,7 +5574,7 @@ export const irexQuestions: {
   question: 'A STAR altitude constraint of \'AT OR ABOVE FL180\' at a fix means the aircraft must:',
   options: [
     'Cross that fix at exactly FL180, with neither a higher nor a lower level being permitted',
-    'Cross the fix at FL180 or higher; the FMS computes a path to meet it and the aircraft may not be lower',
+    'Cross the fix at FL180 or higher, with the FMS computing a path to meet it and never going lower',
     'Treat the AT OR ABOVE constraint as advisory information only',
     'Apply the constraint only when operating within Class A airspace'
   ],
@@ -6069,7 +6069,7 @@ export const irexQuestions: {
   options: [
     'The NDB is optional for the approach, it improves accuracy but is not required',
     'The approach minima are raised when the NDB is unserviceable but the procedure may still be conducted',
-    'The NDB is essential for identifying a critical fix; without it the approach is not safe and must not be commenced',
+    'The NDB is essential for identifying a critical fix, so without it the approach must not be commenced',
     'The restriction only applies to aircraft without GPS equipment on board'
   ],
   correct: 2,
@@ -6147,7 +6147,7 @@ export const irexQuestions: {
   options: [
     'It is only a recommendation to pilots and not a firm requirement',
     'Such gradients apply only to jet-powered aircraft, not piston types',
-    'The gradient gives obstacle clearance; if the aircraft cannot achieve it, that SID is unavailable',
+    'The gradient gives obstacle clearance, so if the aircraft cannot achieve it that SID is unavailable',
     'It is merely an ATC minimum, so the pilots may freely choose to climb slower if they wish'
   ],
   correct: 2,
@@ -6395,7 +6395,7 @@ export const irexQuestions: {
     'Continue the approach as planned, while monitoring the ongoing integrity alert',
     'Only discontinue if the alert persists for more than 30 seconds',
     'Request ATC radar guidance and continue',
-    'Immediately execute the missed approach; a GNSS integrity alert means the position cannot be trusted'
+    'Immediately execute the missed approach, as a GNSS integrity alert means the position cannot be trusted'
   ],
   correct: 3,
   explanation: 'GNSS integrity alert: immediate missed approach. An integrity alert means GPS position may have an error exceeding approach tolerances. Published minima assume GPS is within RAIM limits. Continuing with a GNSS integrity warning risks flying into terrain. Advise ATC and use alternate approach/navaid.',
