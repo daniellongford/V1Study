@@ -1114,13 +1114,13 @@ export const irexQuestions: {
 {
   question: 'Given heading 180°M and ADF relative bearing 270°, the magnetic bearing to the NDB is:',
   options: [
-    '090°M',
     '270°M',
-    '450°M (090°M)',
-    '180°M'
+    '180°M',
+    '090°M',
+    '360°M'
   ],
   correct: 2,
-  explanation: 'MB to station = MH + RB = 180 + 270 = 450 − 360 = 090°M. The NDB bears 090°M from the aircraft (due east). The aircraft is due west of the station. The ADF needle pointing 270° (left of nose) while heading south confirms the station is due east.',
+  explanation: 'Magnetic bearing to the station = magnetic heading + relative bearing = 180 + 270 = 450; a bearing cannot exceed 360, so subtract 360 to give 090°M. The NDB lies due east of the aircraft, which is heading south with the needle 90° to the left. 270°M uses the relative bearing alone, 180°M uses the heading alone, and 360°M results from subtracting 90 instead of 360.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.3'
 },
 
@@ -1957,16 +1957,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'In a right-hand holding pattern, all turns are:',
+  question: 'An aircraft has a Vat (1.3 Vso at maximum landing weight) of 130 kt. For selecting approach and circling minima, its category is:',
   options: [
-    'To the right',
-    'To the left',
-    'The first turn is right, the second is left',
-    'In the direction providing shortest path to the protected side'
+    'Category C, since a Vat of 130 kt falls in the 121-140 kt band',
+    'Category B, since the Vat is below 140 kt',
+    'Category D, since the Vat is above 120 kt',
+    'Category A, as the category depends on aircraft size rather than speed'
   ],
   correct: 0,
-  explanation: 'Standard holding is right-hand (all turns to the right). Non-standard holding is left-hand (all turns to the left) and is published on charts where terrain or traffic requires it. In a right-hand pattern the aircraft turns right from inbound to outbound and right again onto the inbound leg.',
-  reference: 'AIP ENR 1.5 — Holding Procedures'
+  explanation: 'Approach category is set by Vat, the threshold speed of 1.3 Vso at maximum landing weight: Cat A below 91 kt, B 91-120, C 121-140, D 141-165. A Vat of 130 kt is Category C, so the Category C approach and circling minima apply. Category is fixed by Vat, not by aircraft size or class.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.2'
 },
 
 {
@@ -3400,55 +3400,55 @@ export const irexQuestions: {
 },
 
 {
-  question: 'To operate in RVSM airspace, approval is required for:',
+  question: 'On an instrument approach, an IFR aircraft may descend below the en-route LSALT:',
   options: [
-    'Both the aircraft and the operator, with appropriately trained crew',
-    'The aircraft only, since its equipment provides the accuracy',
-    'The operator only, as a company-level authorisation to enter',
-    'Neither, provided the aircraft carries a serviceable transponder'
+    'When established on a published segment of the approach',
+    'At any time once cleared for the approach by ATC',
+    'Only after reporting visual with the runway',
+    'Only when within 5 nm of the aerodrome'
   ],
   correct: 0,
-  explanation: 'RVSM approval covers the aircraft\'s height-keeping capability, the operator, and crew training and procedures (CASR 91.655); a serviceable transponder alone is not enough.',
-  reference: 'MOS 7.1.2 / AIP GEN 1.5 / CASR 91.655'
+  explanation: 'The en-route LSALT applies along the route. Once established on a published instrument approach segment, the procedure\'s own obstacle-clearance altitudes, for the initial, intermediate and final segments, apply and the aircraft descends in accordance with the published profile. An approach clearance alone does not authorise descent until established on a segment.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.3.6'
 },
 
 {
-  question: 'An RVSM-approved aircraft must carry, for height-keeping accuracy:',
+  question: 'An approach chart publishes a straight-in MDA of 680 ft for Category A/B and 760 ft for Category C. A Category C aircraft must use:',
   options: [
-    'Just a single altimeter together with one serviceable transponder for the flight',
-    'A radio altimeter and a weather radar for use in the cruise',
-    'An approved GNSS receiver acting as the sole height reference',
-    'Two independent altimetry systems, an automatic altitude-keeping system and altitude alerting'
+    '680 ft, since it is the lowest published minimum on the chart',
+    'Either minimum, at the pilot\'s discretion',
+    '680 ft, provided the approach is flown at reduced speed',
+    '760 ft, the minimum published for its category'
   ],
   correct: 3,
-  explanation: 'RVSM aircraft carry two independent altitude-measuring systems, an automatic altitude-keeping system able to hold the level, and altitude alerting, so the assigned level is held within the tight RVSM tolerance.',
-  reference: 'MOS 7.1.3 / AIP GEN 1.5'
+  explanation: 'The minima published against the aircraft\'s own category must be used. A higher category flies a faster, wider approach and is given a higher minimum, so a Category C aircraft uses the 760 ft Category C MDA, not the lower Category A/B value. Flying slower does not entitle an aircraft to a lower category\'s minima unless its Vat actually places it in that category.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.2'
 },
 
 {
-  question: 'A non-RVSM-approved aircraft that must transit the FL290-FL410 band will be:',
+  question: 'By day, an IFR aircraft 25 nm from the aerodrome has the aerodrome in sight and is clear of cloud, but the visibility is 4,000 m. The aircraft:',
   options: [
-    'Permitted to use 1,000 ft separation just like approved aircraft',
-    'Separated from all other traffic by 2,000 ft vertically',
-    'Refused any clearance into that band under all circumstances',
-    'Required only to squawk a discrete code and then self-separate'
+    'May accept a visual approach, since it is within 30 nm and clear of cloud',
+    'May not accept a visual approach, since the visibility is below the 5,000 m required by day',
+    'May accept a visual approach, since it has the aerodrome in sight',
+    'May accept a visual approach, provided it remains below the LSALT'
   ],
   correct: 1,
-  explanation: 'A non-approved aircraft is separated by 2,000 ft from other traffic in the band, since it cannot be assured of holding the level to RVSM accuracy; ATC accommodates it with the larger separation where traffic permits.',
-  reference: 'MOS 7.1.2 / AIP GEN 1.5'
+  explanation: 'A day visual approach requires the aircraft to be within 30 nm, clear of cloud, in sight of the ground or water, and with a visibility of at least 5,000 m. Here the visibility is 4,000 m, below the requirement, so a visual approach may not be accepted even though the other conditions are met.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.4'
 },
 
 {
-  question: 'If an RVSM-approved aircraft loses the redundancy needed for RVSM while in the band, the pilot should:',
+  question: 'A destination has an instrument approach the aircraft can fly, and the TAF shows conditions well above the alternate minima for the whole arrival window, with no TEMPO, INTER or PROB. An alternate is:',
   options: [
-    'Continue at the assigned level, since one system is sufficient',
-    'Descend immediately below FL290 without advising ATC',
-    'Advise ATC and request a level outside the RVSM band or increased separation',
-    'Switch off the transponder to prevent a conflicting altitude readout'
+    'Always required for any IFR flight',
+    'Required, because IFR flights must always nominate an alternate',
+    'Not required, with a usable approach and the forecast above the minima',
+    'Required unless the destination is in controlled airspace'
   ],
   correct: 2,
-  explanation: 'Losing RVSM capability means the level can no longer be assured to RVSM accuracy, so the pilot tells ATC and requests a level outside the band or greater separation; continuing silently or descending without a clearance is unsafe.',
-  reference: 'MOS 7.1.5 / AIP GEN 1.5'
+  explanation: 'An alternate is required only when a trigger exists, such as a forecast at or below the alternate minima (including TEMPO, INTER or PROB variations), no usable instrument approach, unserviceable lighting at night, or other listed conditions. With a usable approach and a forecast comfortably above the minima and no variations, none of the triggers applies, so no alternate is required. IFR flights do not always need an alternate.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 4.2.1'
 },
 
 {
@@ -5727,16 +5727,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Overhead a fix at 1420 with the next fix 60 nm ahead at a groundspeed of 120 kt, the ETA for the next fix is:',
+  question: 'The circling area for a particular aircraft category is determined by:',
   options: [
-    '1440',
-    '1500',
-    '1435',
-    '1450'
+    'A fixed 3 nm radius drawn around the aerodrome reference point for all categories',
+    'Extending the straight-in final approach protected area by 1 nm on each side',
+    'A circle whose radius equals the MDA divided by the published descent gradient',
+    'Arcs of a category-specific radius from each runway threshold, joined by tangents'
   ],
   correct: 3,
-  explanation: 'At 120 kt, 60 nm takes 60/120 hour = 30 minutes. Adding 30 minutes to 1420 gives an ETA of 1450. Revised estimates are passed to ATC when the estimate changes by more than 2 minutes.',
-  reference: 'Navigation - time and distance'
+  explanation: 'The circling area is built by drawing an arc of a defined radius from each runway threshold and joining the arcs with tangent lines. The radius is set by aircraft category, which is a function of circling speed (1.3 Vso), so a higher category flies a larger circle, a larger protected area and higher circling minima. It is not a fixed radius for all aircraft.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.3.3'
 },
 
 {
@@ -6504,6 +6504,474 @@ export const irexQuestions: {
   correct: 1,
   explanation: 'BECMG describes a permanent change to a new prevailing condition. Once complete, those conditions apply for the rest of the TAF, so a BECMG to below-minima visibility before the ETA means the destination is forecast below minima at arrival, and an alternate is required. It is not a temporary variation.',
   reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
+},
+
+{
+  question: 'For an aeroplane of 5,700 kg MTOW or less, the fixed final reserve fuel required is:',
+  options: [
+    '30 minutes for day VFR, and 45 minutes for night VFR or IFR',
+    '45 minutes for all operations, whether day or night',
+    '30 minutes for every operation conducted under the weight',
+    '45 minutes for VFR operations and 30 minutes for IFR'
+  ],
+  correct: 0,
+  explanation: 'For aeroplanes of 5,700 kg MTOW or less the fixed final reserve is 30 minutes for day VFR and 45 minutes for night VFR or IFR, held at holding speed. Aircraft above 5,700 kg (and turbojets) also carry 5% contingency fuel. The day-VFR figure of 30 minutes is the common trap.',
+  reference: 'CASR 91.455 / Part 91 MOS 19.02'
+},
+
+{
+  question: 'For an IFR arrival, the forecast cloud at the ETA triggers an alternate requirement when it is:',
+  options: [
+    'Any trace of cloud at all below the alternate minimum',
+    'More than SCT, that is BKN or OVC, below the alternate minimum',
+    'Only OVC, and never BKN, below the alternate minimum',
+    'FEW or SCT cloud forecast below the alternate minimum'
+  ],
+  correct: 1,
+  explanation: 'An alternate must be provided when the forecast cloud at the ETA, or up to 30 minutes before, is more than scattered (BKN or OVC) below the alternate minimum. SCT or less below the minimum does not trigger the requirement, since sufficient sky is forecast clear.',
+  reference: 'AIP ENR 1.1 Para 10.7.2 / Part 91 MOS 8.04'
+},
+
+{
+  question: 'An IFR aircraft navigating with a GNSS receiver certified only to TSO-C129/129a must, for navigation to a destination alternate:',
+  options: [
+    'Use the same C129 GNSS to navigate to the alternate',
+    'Carry no alternate at all, provided a GNSS is fitted',
+    'Plan navigation to the alternate by another means, such as ADF or VOR',
+    'Fit a second TSO-C129 GNSS receiver as a backup'
+  ],
+  correct: 2,
+  explanation: 'A TSO-C129/129a GNSS is not approved as the sole means of navigation to a destination alternate. Navigation to the alternate must be planned using another system such as ADF or VOR, unless the no-alternate weather conditions are met. A TSO-C145/146 GNSS is not subject to this restriction.',
+  reference: 'AIP ENR 1.1 Para 10.7.3.3'
+},
+
+{
+  question: 'The ATC clearance \'CLEARED DME ARRIVAL\' authorises the aircraft to:',
+  options: [
+    'Descend only to the next DME step and then await a further clearance',
+    'Hold at the IAF until descent below the steps is approved',
+    'Descend below the published steps once the runway is in sight',
+    'Descend on the DME steps to the procedure minimum altitude, as a final-approach clearance'
+  ],
+  correct: 3,
+  explanation: '\'CLEARED DME (or GNSS) ARRIVAL\' is a clearance for final approach and authorises descent on the DME steps to the procedure\'s minimum altitude; ATC may not add an altitude restriction to it. Descent is not permitted until established within the sector or on the inbound track, and orbiting or holding entries are not used.',
+  reference: 'AIP ENR 1.5 Para 11'
+},
+
+{
+  question: 'The radius used to define the circling area for a Category C aircraft is:',
+  options: [
+    '4.20 NM',
+    '1.68 NM',
+    '2.66 NM',
+    '5.28 NM'
+  ],
+  correct: 0,
+  explanation: 'Circling area radii increase with category, drawn from each runway threshold: A 1.68 NM, B 2.66 NM, C 4.20 NM, D 5.28 NM, E 6.94 NM. The minimum obstacle clearance within the area is 300 ft for Cat A and B, 400 ft for Cat C and D, and 500 ft for Cat E.',
+  reference: 'AIP ENR 1.5 Para 1.6.6'
+},
+
+{
+  question: 'On a day visual approach, an IFR aircraft must maintain at or above the LSALT, MSA or DME/GNSS arrival step until:',
+  options: [
+    'The moment it first becomes visual with the ground',
+    'Within 5 nm of the aerodrome, or within the circling area',
+    'Within 30 nm of the aerodrome',
+    'Established on the PAPI at 10 nm to run'
+  ],
+  correct: 1,
+  explanation: 'On a day visual approach the aircraft maintains at or above the LSALT/MSA (or DME/GNSS step, or last assigned altitude if being vectored) until within 5 nm of the aerodrome or within the circling area. Becoming visual earlier does not authorise descent below those altitudes until that point.',
+  reference: 'AIP ENR 1.5 Para 1.14'
+},
+
+{
+  question: 'By day you fly an NDB approach to runway 18 at Mangalore and become visual at the circling MDA with 5 km visibility. The surface wind is 025°M at 25 kt, runway 18 is unusable, and circling is not authorised east of the aerodrome. You should:',
+  options: [
+    'Land on runway 18 and accept the 25 kt tailwind',
+    'Circle to the east and join a right downwind for runway 36',
+    'Circle to the west and join a left downwind for runway 36',
+    'Circle to the east and join a right downwind for runway 23'
+  ],
+  correct: 2,
+  explanation: 'The 025°M/25 kt wind is a strong tailwind on runway 18, so the landing must be into wind on runway 36. With circling not authorised east of the aerodrome, the manoeuvre is flown to the west, which for runway 36 is a left-hand circuit, so a left downwind, keeping the aerodrome in sight throughout. Runway 23 is not aligned into the wind.',
+  reference: 'AIP ENR 1.5 Para 1.6.6'
+},
+
+{
+  question: 'On a 2D (NDB) approach to runway 17 at Bendigo by day, you reach the MDA but do not have the required visual reference when you arrive at the missed approach point. You must:',
+  options: [
+    'Descend below the MDA to look for the runway',
+    'Continue past the missed approach point at the MDA, hoping to become visual',
+    'Circle at the MDA until the runway eventually appears',
+    'Carry out the published missed approach, since you are not visual at the missed approach point'
+  ],
+  correct: 3,
+  explanation: 'On a 2D approach the aircraft may descend only to the MDA and must not go below it. If the required visual reference is not established by the missed approach point, the published missed approach must be flown. Descending below the MDA, or continuing past the missed approach point without visual reference, is not permitted.',
+  reference: 'AIP ENR 1.5'
+},
+
+{
+  question: 'By day you fly an instrument approach to Wagga Wagga where the published circling minimum visibility is 4,000 m. At the circling MDA you are visual with the runway, but the reported visibility is 3,000 m. You must:',
+  options: [
+    'Carry out the missed approach, since the visibility is below the circling minimum',
+    'Circle to land, since you already have the runway in sight',
+    'Descend below the MDA to improve your view of the runway',
+    'Continue straight in, disregarding the circling minimum'
+  ],
+  correct: 0,
+  explanation: 'Circling requires the visibility to be at or above the published circling minimum, with the runway environment kept in sight. With 3,000 m against a 4,000 m circling minimum, circling is not permitted and the missed approach must be flown. Being momentarily visual does not authorise circling below the minimum visibility.',
+  reference: 'AIP ENR 1.5'
+},
+
+{
+  question: 'You are planning an IFR flight to Cobar, but no aerodrome forecast (TAF) is available for your ETA. You must:',
+  options: [
+    'Depart and assess the weather once overhead the destination',
+    'Provide for a suitable alternate that has an available forecast',
+    'Use the area forecast in place of the TAF, requiring no alternate',
+    'Delay departure until a TAF is issued, since flight is otherwise prohibited'
+  ],
+  correct: 1,
+  explanation: 'When an aerodrome forecast is not available for the destination, the pilot must provide for a suitable alternate that does have an available forecast. The absence of a TAF is itself an alternate trigger, and an area forecast does not substitute for the destination TAF for this purpose.',
+  reference: 'AIP ENR 1.1 Para 10.7.1.3'
+},
+
+{
+  question: 'Your IFR destination is Griffith, whose only available runway is 06/24. The forecast wind at your ETA is 150°M at 25 kt, giving a crosswind component beyond your aircraft\'s maximum. You must:',
+  options: [
+    'Land on runway 06 and accept the crosswind',
+    'Carry 30 minutes of holding fuel to wait for the wind to ease',
+    'Provide for a suitable alternate, since the forecast crosswind exceeds the aircraft limit',
+    'Plan to land on runway 15, which is into the wind'
+  ],
+  correct: 2,
+  explanation: 'Wind is part of the alternate-planning assessment, and gusts must be considered. When the forecast crosswind (or tailwind) component at the ETA exceeds the aircraft\'s maximum, a safe landing is not assured, so an alternate must be provided. There is no runway 15 at this aerodrome, and accepting an out-of-limits crosswind is not acceptable.',
+  reference: 'AIP ENR 1.1 Para 10.7.2 / Part 91 MOS 8.04'
+},
+
+{
+  question: 'You plan an IFR flight by night to Coonamble, which is not served by any instrument approach procedure. For this flight you must:',
+  options: [
+    'Make no special provision, since you hold an instrument rating',
+    'Provide an alternate only if the forecast is below the landing minima',
+    'Carry 30 minutes of holding fuel in place of an alternate',
+    'Provide for a suitable alternate, since the destination has no instrument approach by night'
+  ],
+  correct: 3,
+  explanation: 'By night, a destination not served by any instrument approach the pilot can conduct requires an alternate to be provided regardless of the forecast, because there is no means of making an instrument approach if visual conditions are not found. This is the \'Aids\' element of the alternate-planning requirements.',
+  reference: 'AIP ENR 1.1 Para 10.7.3 / Part 91 MOS 8.05'
+},
+
+{
+  question: 'When a thunderstorm, or at least a 30% probability of one, is forecast at the destination, the pilot must provide an alternate or carry holding fuel of:',
+  options: [
+    '30 minutes if the forecast is INTER, or 60 minutes if it is TEMPO',
+    '60 minutes for INTER and 90 minutes for TEMPO',
+    '15 minutes regardless of the endorsement used',
+    'no extra fuel, since a thunderstorm is only a brief event'
+  ],
+  correct: 0,
+  explanation: 'When a thunderstorm, its associated severe turbulence, or at least a 30% probability of one is forecast at the destination, the pilot must provide a suitable alternate or carry additional holding fuel: 30 minutes if endorsed INTER, or 60 minutes if endorsed TEMPO.',
+  reference: 'AIP ENR 1.1 Para 10.7.2.5'
+},
+
+{
+  question: 'The instruction \'DESCEND TO 4,000 NOT BELOW DME STEPS\' authorises the aircraft to:',
+  options: [
+    'Descend immediately to 4,000 ft by any convenient path',
+    'Descend in accordance with the DME arrival steps, but only as low as 4,000 ft',
+    'Descend below the steps once 4,000 ft has been reached',
+    'Hold at the IAF until a further descent clearance is issued'
+  ],
+  correct: 1,
+  explanation: 'Where ATC cannot clear an unrestricted DME or GNSS arrival, \'DESCEND TO (level) NOT BELOW DME (or GNSS) STEPS\' authorises descent in accordance with the published steps, but only down to the specified level. Further descent requires a new clearance.',
+  reference: 'AIP ENR 1.5 Para 11'
+},
+
+{
+  question: 'The maximum speed for the missed approach for a Category D aircraft is:',
+  options: [
+    '205 kt',
+    '240 kt',
+    '265 kt',
+    '185 kt'
+  ],
+  correct: 2,
+  explanation: 'Maximum missed-approach speeds increase with category: Cat A 110, B 150, C 240, D 265, E 275 kt. The 205 kt figure is the Category D maximum circling speed, a related but different value.',
+  reference: 'AIP ENR 1.5 Para 1.15'
+},
+
+{
+  question: 'The maximum speed when flying a reversal procedure (procedure turn) in a Category B aircraft is:',
+  options: [
+    '180 kt',
+    '120 kt',
+    '200 kt',
+    '140 kt'
+  ],
+  correct: 3,
+  explanation: 'Reversal procedures are flown at or below a reduced maximum speed to remain within the protected area: 110 kt for Category A and 140 kt for Category B. These are lower than the normal initial and intermediate approach speed ranges.',
+  reference: 'AIP ENR 1.5 Para 1.15'
+},
+
+{
+  question: 'If, after passing the final approach point on an ILS, the localiser or glideslope shows full-scale deflection, the pilot must:',
+  options: [
+    'Commence a missed approach',
+    'Continue while correcting back towards the centre',
+    'Maintain half-scale deflection and continue the approach',
+    'Descend to the MDA and assess the situation visually'
+  ],
+  correct: 0,
+  explanation: 'To ensure obstacle clearance the localiser and glideslope must be kept within half-scale deflection on final. If either reaches full-scale deflection at any time after the final approach point, a missed approach must be commenced.',
+  reference: 'AIP ENR 1.5 Para 7.3'
+},
+
+{
+  question: 'Planning to land at night at an aerodrome whose runway lighting is portable, the pilot must:',
+  options: [
+    'Treat portable lighting like fixed electric lighting, with no extra provision',
+    'Provide for an alternate unless a responsible person is arranged to operate the lights',
+    'Use the aircraft landing light only, since portable lighting is optional',
+    'Re-plan to land by day, since portable-lighting night landings are prohibited'
+  ],
+  correct: 1,
+  explanation: 'When landing at night where the runway lighting is portable, provision must be made for an alternate unless arrangements are made for a responsible person to be in attendance to display and operate the lights for the required period, from 30 minutes before ETA until landing and taxiing are complete.',
+  reference: 'AIP ENR 1.1 Para 10.7.4'
+},
+
+{
+  question: 'You are planning an IFR flight to Cloncurry, ETA 0730. The TAF reads \'TEMPO 0700/1000 TSRA BKN012\'. You must:',
+  options: [
+    'Make no provision, since the 1,200 ft cloud base is above the minima',
+    'Carry 30 minutes of holding fuel for the showers',
+    'Provide an alternate, or carry 60 minutes of holding fuel, for the forecast thunderstorm',
+    'Depart and divert only if the storm has not cleared on arrival'
+  ],
+  correct: 2,
+  explanation: 'A forecast thunderstorm (TSRA) endorsed TEMPO at the ETA requires the pilot to provide an alternate or carry 60 minutes of holding fuel. The thunderstorm triggers the requirement regardless of the cloud base, and a TEMPO calls for 60 minutes where an INTER would call for 30.',
+  reference: 'AIP ENR 1.1 Para 10.7.2.5'
+},
+
+{
+  question: 'On descent into Charleville, ATC instructs \'DESCEND TO 5,000 NOT BELOW DME STEPS\'. You may:',
+  options: [
+    'Descend directly to 5,000 ft by the most convenient path',
+    'Descend below 5,000 ft once established on the steps',
+    'Hold until cleared for an unrestricted DME arrival',
+    'Descend on the published DME steps, but no lower than 5,000 ft'
+  ],
+  correct: 3,
+  explanation: 'The phrase authorises descent in accordance with the published DME arrival steps, but only down to the specified level of 5,000 ft. The steps must be respected during the descent, and no descent below 5,000 ft is permitted without a further clearance.',
+  reference: 'AIP ENR 1.5 Para 11'
+},
+
+{
+  question: 'By day you fly an NDB approach to runway 05 at Dubbo and become visual at the circling MDA with good visibility. The surface wind is 250°M at 20 kt, so runway 05 is unusable, and circling is not authorised north of the aerodrome. You should:',
+  options: [
+    'Circle to the south and land into wind on runway 23',
+    'Circle to the north and join the pattern for runway 23',
+    'Land on runway 05 and accept the 20 kt tailwind',
+    'Hold until the wind changes, then land on runway 05'
+  ],
+  correct: 0,
+  explanation: 'The 250°M/20 kt wind is a tailwind on runway 05, so the landing must be into wind on runway 23. With circling not authorised north of the aerodrome, the manoeuvre is flown to the south, keeping the aerodrome in sight throughout. Landing on 05 with the tailwind is not acceptable.',
+  reference: 'AIP ENR 1.5 Para 1.6.6'
+},
+
+{
+  question: 'At Albury you fly the ILS (which uses a DA) and, on another day, the NDB (which uses an MDA). The key operational difference is that:',
+  options: [
+    'Both approaches allow a momentary descent below the minimum during the go-around',
+    'A momentary descent below the DA is accepted at the go-around, but never below the MDA',
+    'The MDA may be flown below momentarily, but the DA may not',
+    'The two terms are interchangeable and mean the same thing'
+  ],
+  correct: 1,
+  explanation: 'A decision altitude on a precision or 3D approach allows a momentary descent below it as the go-around is initiated, since the decision is made at the DA. A minimum descent altitude on a 2D approach must never be descended below; the aircraft levels at the MDA and flies to the missed approach point.',
+  reference: 'Part 91 MOS Ch 15 / AIP ENR 1.5'
+},
+
+{
+  question: 'A piston IFR flight to Roma has 90 minutes of trip fuel and 5 minutes of taxi fuel, with a usable alternate 25 minutes away. The TAF is endorsed TEMPO with a thunderstorm. Electing to carry holding fuel rather than divert, the minimum fuel is:',
+  options: [
+    '225 minutes',
+    '170 minutes',
+    '200 minutes',
+    '140 minutes'
+  ],
+  correct: 2,
+  explanation: 'A TEMPO thunderstorm requires 60 minutes of holding fuel, or an alternate, but not both. Carrying holding: taxi 5 + trip 90 + holding 60 + fixed reserve 45 = 200 minutes. 225 wrongly adds the 25-minute alternate on top of the holding, 170 uses 30-minute INTER holding, and 140 omits the holding.',
+  reference: 'Part 91 MOS Ch 19 / AIP ENR 1.1'
+},
+
+{
+  question: 'Departing Parafield by day in a single-engine IFR aeroplane, the cloud base is 250 ft and the visibility is 3 km. You:',
+  options: [
+    'May take off, since the 3 km visibility exceeds the requirement',
+    'May take off, since take-off minima do not apply by day',
+    'May take off once airborne and visual above the cloud',
+    'May not take off, since the 250 ft cloud base is below the 300 ft single-engine minimum'
+  ],
+  correct: 3,
+  explanation: 'The take-off minima for a single-engine (non-qualifying) aeroplane are a 300 ft cloud ceiling and 2 km visibility, allowing a return if an engine fails. With the cloud base at 250 ft, below the 300 ft minimum, the take-off may not be made even though the visibility is adequate.',
+  reference: 'AIP ENR 1.5'
+},
+
+{
+  question: 'To use special alternate weather minima, an aircraft must have dual ILS/VOR approach capability, meaning:',
+  options: [
+    'Duplicated localiser, glideslope and VOR, plus dual DME, dual GNSS, or single DME and single GNSS',
+    'A single ILS receiver, a single VOR receiver and a single ADF, with no duplication',
+    'Any approved GNSS receiver fitted, regardless of the other equipment carried',
+    'A serviceable autopilot coupled to the ILS glideslope and localiser'
+  ],
+  correct: 0,
+  explanation: 'Special alternate weather minima require duplicated LOC, duplicated GP and duplicated VOR, together with either dual DME, dual GNSS, or a single DME and a single GNSS. An aircraft without that redundancy uses the standard alternate minima.',
+  reference: 'AIP ENR 1.5 Para 6.2 / Part 91 MOS 8.08'
+},
+
+{
+  question: 'Published special alternate weather minima revert to the standard alternate minima when:',
+  options: [
+    'The aircraft has a maximum take-off weight below 5,700 kg',
+    'No local observations or forecasting, or no airport control service is provided',
+    'The flight is being conducted in daylight hours only',
+    'The pilot has not flown the approach in the previous 90 days'
+  ],
+  correct: 1,
+  explanation: 'Special alternate minima are not available, and revert to the standard alternate minima, during periods when local METAR/SPECI or forecasting services are not available, or when an airport control service is not provided.',
+  reference: 'AIP ENR 1.5 Para 6.2 / Part 91 MOS 8.08'
+},
+
+{
+  question: 'On a visual approach by night, an IFR aircraft must maintain the authorised track or heading until:',
+  options: [
+    'Within 30 nm of the aerodrome',
+    'On first sighting the aerodrome lighting',
+    'Within the circling area',
+    'Within 3 nm of the aerodrome'
+  ],
+  correct: 2,
+  explanation: 'By night, the aircraft must maintain the authorised track or heading until within the circling area, where by day the limit is within 5 nm of the aerodrome. Night visual approaches carry the tighter requirement.',
+  reference: 'AIP ENR 1.5 Para 1.14'
+},
+
+{
+  question: 'On a visual approach, a pilot may leave the authorised route to follow the glideslope from no further than:',
+  options: [
+    '5 nm',
+    '14 nm',
+    '7 nm',
+    '10 nm'
+  ],
+  correct: 3,
+  explanation: 'On a visual approach the aircraft may leave the authorised route to follow visual guidance from no further than 5 nm on a PAPI, 7 nm on a PAPI for an ILS runway, or 10 nm on a glideslope. The 10 nm figure applies to following the glideslope.',
+  reference: 'AIP ENR 1.5 Para 1.14'
+},
+
+{
+  question: 'The maximum initial and intermediate approach speed for a Category B aircraft is:',
+  options: [
+    '180 kt',
+    '150 kt',
+    '240 kt',
+    '120 kt'
+  ],
+  correct: 0,
+  explanation: 'Initial and intermediate approach speed ranges by category are: A 90-150, B 120-180, C 160-240, D 185-250 kt. The Category B maximum is therefore 180 kt.',
+  reference: 'AIP ENR 1.5 Para 1.15'
+},
+
+{
+  question: 'On a DME or GNSS arrival, descent is not permitted until the aircraft is:',
+  options: [
+    'Cleared for a visual approach by the controlling ATC unit',
+    'Established within the appropriate sector or on the specified inbound track',
+    'Within 30 nm of the destination aerodrome by day',
+    'Below the transition level on the area QNH'
+  ],
+  correct: 1,
+  explanation: 'Descent on a DME or GNSS arrival is not permitted until the aircraft is established within the appropriate sector or on the specified inbound track. Where manoeuvring within a sector is required, the aircraft must remain within the sector at or above the segment minimum safe altitude.',
+  reference: 'AIP ENR 1.5 Para 11'
+},
+
+{
+  question: 'A Category C aircraft flying the intermediate segment of an approach into Mildura must not exceed:',
+  options: [
+    '150 kt',
+    '180 kt',
+    '240 kt',
+    '265 kt'
+  ],
+  correct: 2,
+  explanation: 'The initial and intermediate approach speed range for a Category C aircraft is 160-240 kt, so the maximum on the intermediate segment is 240 kt. The 265 kt figure is the Category D missed-approach maximum, and 180 kt is the Category C maximum circling speed.',
+  reference: 'AIP ENR 1.5 Para 1.15'
+},
+
+{
+  question: 'On a day visual approach to Orange, following the PAPI, you may leave the authorised route to descend from no further than:',
+  options: [
+    '10 nm',
+    '14 nm',
+    '7 nm',
+    '5 nm'
+  ],
+  correct: 3,
+  explanation: 'On a day visual approach following a PAPI, the aircraft may leave the authorised route from no further than 5 nm (or 7 nm on a PAPI serving an ILS runway). The 10 nm limit applies only when following a glideslope.',
+  reference: 'AIP ENR 1.5 Para 1.14'
+},
+
+{
+  question: 'Your only instrument approach at Moree is a GNSS (RNP APCH), and RAIM is predicted unavailable for your ETA. You must:',
+  options: [
+    'Provide for a suitable alternate, since the GNSS approach cannot be relied upon',
+    'Continue, since RAIM is only advisory',
+    'Descend visually if the weather permits, ignoring the prediction',
+    'Depart and check RAIM again once airborne'
+  ],
+  correct: 0,
+  explanation: 'A GNSS approach requires RAIM to be available for the ETA. If RAIM is predicted unavailable and the GNSS approach is the only one available, the approach cannot be relied upon, so a suitable alternate must be provided (or the no-alternate weather conditions met).',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 5.2.4'
+},
+
+{
+  question: 'A piston IFR flight to Mildura has 100 minutes of trip fuel and 5 minutes of taxi fuel. The forecast requires an alternate 30 minutes away, with no TEMPO or INTER. The minimum fuel, in minutes, is:',
+  options: [
+    '240 minutes',
+    '180 minutes',
+    '165 minutes',
+    '135 minutes'
+  ],
+  correct: 1,
+  explanation: 'With an alternate required but no TEMPO or INTER, no weather holding is added. Minimum fuel = taxi 5 + trip 100 + alternate 30 + fixed final reserve 45 = 180 minutes. 240 adds 60 minutes of holding not required, 165 uses a 30-minute reserve, and 135 omits the fixed reserve.',
+  reference: 'Part 91 MOS Ch 19 / AIP ENR 1.1'
+},
+
+{
+  question: 'On the ILS at Coffs Harbour you reach the decision altitude without the required visual reference. You must:',
+  options: [
+    'Descend slightly below the DA to look for the runway',
+    'Maintain the DA and continue towards the threshold',
+    'Commence the missed approach at the decision altitude',
+    'Circle at the DA until the runway becomes visible'
+  ],
+  correct: 2,
+  explanation: 'On a precision approach the decision to continue or go around is made at the decision altitude. Without the required visual reference at the DA, the missed approach must be commenced. The DA is the point of decision, not a level to hold or continue beyond.',
+  reference: 'AIP ENR 1.5'
+},
+
+{
+  question: 'At a destination that publishes special alternate weather minima, your aircraft has dual ILS and dual VOR, but only a single GNSS and no DME. You:',
+  options: [
+    'May use the special alternate minima, since you have dual ILS',
+    'May use the special minima provided the GNSS has RAIM',
+    'May use the special minima by day only',
+    'May not use the special minima, since the DME/GNSS redundancy requirement is not met'
+  ],
+  correct: 3,
+  explanation: 'Special alternate minima require duplicated LOC, GP and VOR plus dual DME, dual GNSS, or single DME and single GNSS. A single GNSS with no DME does not meet that final redundancy requirement, so the standard alternate minima apply.',
+  reference: 'AIP ENR 1.5 Para 6.2 / Part 91 MOS 8.08'
 },
 
 ]
