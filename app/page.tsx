@@ -60,7 +60,7 @@ export default function Home() {
           <div style={{ position: 'relative', zIndex: 1, flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 2.5rem' }}>
             <div style={{ maxWidth: '800px' }}>
               <p style={{ fontSize: '11px', letterSpacing: '0.32em', color: 'rgba(255,255,255,0.55)', marginBottom: '1.5rem', fontWeight: '500', textTransform: 'uppercase' }}>Australia&apos;s Pilot Exam Prep Platform</p>
-              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(48px, 7vw, 88px)', fontWeight: '600', color: 'white', marginBottom: '1.5rem', lineHeight: 1.02, letterSpacing: '-1px' }}>
+              <h1 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: '800', color: 'white', marginBottom: '1.5rem', lineHeight: 1.04, letterSpacing: '-2px' }}>
                 From First Exam<br />to Flight Deck.
               </h1>
               <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.72)', maxWidth: '500px', margin: '0 auto 2.5rem', lineHeight: 1.7 }}>
