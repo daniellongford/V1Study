@@ -7,25 +7,25 @@ export const irexQuestions: {
 }[] = [
 
 {
-  question: 'An instrument rating allows the holder to:',
+  question: 'An instrument rating authorises the holder to fly as pilot in command:',
   options: [
-    'A. Fly as pilot in command of any aircraft type in any weather conditions — this is the correct regulatory position',
-    'B. Fly as pilot in command under the Instrument Flight Rules (IFR) in accordance with the privileges and endorsements on the licence',
-    'C. Fly as pilot in command in IMC without any additional endorsements and this applies to all IFR operations in Australian airspace',
-    'D. Carry passengers in IMC on a PPL without restriction according to current CASR and AIP requirements'
+    'Under the IFR, subject to the aircraft type and operational endorsements held on the licence',
+    'In any aircraft type and in any weather, with no further endorsement required',
+    'In IMC without endorsement, provided the flight remains in controlled airspace',
+    'Carrying passengers in IMC under a private licence with no proficiency check'
   ],
-  correct: 1,
-  explanation: 'An instrument rating permits the holder to fly as PIC under IFR, subject to any aircraft type and operational endorsements on the licence. The rating does not permit flight in any aircraft type — the pilot must hold the appropriate type endorsement. Operations are subject to recency and proficiency check requirements.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.1.1'
+  correct: 0,
+  explanation: 'An instrument rating permits flight as PIC under the IFR (and at night under the VFR), but only in aircraft for which the pilot holds the relevant type/class and operational endorsements, and only while recency and instrument proficiency check requirements are met. It does not authorise flight in any aircraft type, nor remove the need for endorsements or checks.',
+  reference: 'CASR 61.855 / Part 61 MOS Sch 3 IREX 2.1.1'
 },
 
 {
   question: 'The instrument rating proficiency check must be completed:',
   options: [
-    'A. Every 3 years',
-    'B. Every 2 years',
-    'C. Every 6 months',
-    'D. Every 12 months'
+    'Every 3 years',
+    'Every 2 years',
+    'Every 6 months',
+    'Every 12 months'
   ],
   correct: 3,
   explanation: 'An instrument rating proficiency check (IRPC) must be completed at least every 12 months to maintain the privileges of the instrument rating. The check covers instrument flying, approaches, and emergency procedures in the aircraft category.',
@@ -35,10 +35,10 @@ export const irexQuestions: {
 {
   question: 'The recent experience requirements for exercising instrument rating privileges include:',
   options: [
-    'A. 3 instrument approaches in the last 90 days in the relevant aircraft category',
-    'B. 1 hour of actual or simulated instrument flight in the last 90 days',
-    'C. 5 hours of instrument flight in the last 6 months',
-    'D. 2 instrument approaches and 1 hour of instrument flight in the last 90 days'
+    '3 instrument approaches in the last 90 days in the relevant aircraft category',
+    '1 hour of actual or simulated instrument flight in the last 90 days',
+    '5 hours of instrument flight in the last 6 months',
+    '2 instrument approaches and 1 hour of instrument flight in the last 90 days'
   ],
   correct: 0,
   explanation: 'To exercise instrument rating privileges, a pilot must have completed at least 3 instrument approaches in the preceding 90 days in the relevant aircraft category (actual IMC or simulated with a safety pilot or in an approved flight simulator).',
@@ -48,12 +48,12 @@ export const irexQuestions: {
 {
   question: 'The documents that must be carried on an IFR flight include:',
   options: [
-    'A. Pilot licence and aircraft logbook only',
-    'B. Certificate of registration, C of A, maintenance release, radio licence, IFR flight plan copy',
-    'C. Certificate of registration and maintenance release only',
-    'D. IFR clearance printout and pilot licence'
+    'The pilot licence and the aircraft logbooks only, with no airworthiness or registration papers',
+    'An IFR clearance printout and the pilot licence, the remaining documents held by the operator',
+    'Certificate of registration and maintenance release only',
+    'Certificate of registration, C of A, maintenance release, radio licence, IFR flight plan copy'
   ],
-  correct: 1,
+  correct: 3,
   explanation: 'An IFR flight must carry: Certificate of Registration, Certificate of Airworthiness, current Maintenance Release, radio station licence, and current instrument approach charts for the destination and nominated alternate. The pilot must also carry their licence and medical certificate.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.2.1'
 },
@@ -61,10 +61,10 @@ export const irexQuestions: {
 {
   question: 'When conducting an IFR flight, the pilot must obtain an airways clearance:',
   options: [
-    'A. Before departure — a clearance must be obtained before commencing any IFR flight in controlled or uncontrolled airspace',
-    'B. Only when entering Class C airspace',
-    'C. Before entering controlled airspace and before commencing the IFR flight in Class G',
-    'D. Only when flying above FL180'
+    'Before departure, a clearance must be obtained before commencing any IFR flight in controlled or uncontrolled airspace',
+    'Only when entering Class C airspace, because a clearance is not needed for any other class and can be requested in the air',
+    'Before entering controlled airspace and before commencing the IFR flight in Class G',
+    'Only when the flight is planned to operate above FL180 in the upper information region'
   ],
   correct: 0,
   explanation: 'An IFR clearance must be obtained before commencing an IFR flight. In controlled airspace, ATC issues the clearance and provides separation. In Class G (uncontrolled) airspace, the pilot must obtain an airways clearance via radio before commencing IFR and must comply with IFR procedures throughout.',
@@ -72,51 +72,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The standard radio phraseology for requesting an IFR clearance before departure is:',
+  question: 'The standard radio phraseology for requesting an airways clearance before an IFR departure is:',
   options: [
-    'A. "[Station], [callsign], [aircraft type], [departure aerodrome], [destination], [cruising level], request airways clearance"',
-    'B. "[Station], [callsign], request IFR clearance to [destination]" — this is the correct regulatory position',
-    'C. "[Station], [callsign], [aircraft type], ready for departure" and this applies to all IFR operations in Australian airspace',
-    'D. "[Station], [callsign], requesting clearance, standing by" according to current CASR and AIP requirements'
+    '[Station], [callsign], [type], [departure], to [destination], [requested level], request airways clearance',
+    '[Station], [callsign], IFR to [destination], request clearance and the current terminal weather',
+    '[Station], [callsign], [type], taxiing for [destination], ready to copy airways clearance',
+    '[Station], [callsign], holding point [runway], requesting airways clearance'
   ],
   correct: 0,
-  explanation: 'A standard clearance request includes: station name, callsign, aircraft type, departure aerodrome, destination, requested cruising level, and the words "request airways clearance." This gives ATC all the information needed to process the request efficiently.',
-  reference: 'AIP ENR 1.1 — IFR Communications'
+  explanation: 'The clearance request gives ATC the callsign, type, departure point, destination, requested cruising level and the words \'request airways clearance\', so the clearance can be processed without further questions. The other forms omit information ATC needs (type, departure, level) and are non-standard.',
+  reference: 'AIP GEN 3.4 / ENR 1.1 — IFR communications'
 },
 
 {
-  question: 'In the event of radio communication failure in controlled airspace, the pilot should:',
+  question: 'Following a radio communications failure in controlled airspace, the pilot should:',
   options: [
-    'A. Land immediately at the nearest aerodrome — this is the correct regulatory position',
-    'B. Squawk 7700 and return to departure aerodrome and this applies to all IFR operations in Australian airspace',
-    'C. Descend to VMC and continue visually according to current CASR and AIP requirements',
-    'D. Squawk 7600, continue on the last ATC clearance or filed flight plan, attempt to re-establish communications'
+    'Land at the nearest aerodrome at once regardless of its suitability, weather or available approach aids, then await contact',
+    'Squawk 7700 and return to the departure aerodrome by the reverse of the cleared route',
+    'Descend below LSALT to regain VMC and continue the flight visually to the destination',
+    'Squawk 7600, comply with the last ATC clearance acknowledged or the flight plan, and attempt to re-establish communications'
   ],
   correct: 3,
-  explanation: 'On radio failure: (1) Squawk 7600 to alert ATC; (2) Continue on the last clearance received or the filed flight plan if no clearance was received; (3) Attempt to re-establish contact on all available frequencies including 121.5 MHz; (4) Proceed to destination and conduct the approach in accordance with AIP lost communications procedures. ATC will clear the airspace.',
-  reference: 'AIP ENR 1.1 — Lost Communications Procedures'
+  explanation: 'On a communications failure: squawk 7600, listen out on ATIS and voice-modulated navaids, and transmit intentions blind. If IMC or unable to remain VMC, proceed in accordance with the last ATC clearance acknowledged (or the flight plan if none) and climb to the planned level, then carry out the approach to minima at the destination. Squawk 7700 signifies an emergency, not a comms failure.',
+  reference: 'AIP ENR 1.1 / ERSA EMERG — communications failure'
 },
 
 {
-  question: 'The IFR lost communications procedure for descent and approach specifies:',
+  question: 'Under the IFR lost-communications procedure, descent at the destination is commenced:',
   options: [
-    'A. Begin descent at the ETA filed in the flight plan — this is the correct regulatory position',
-    'B. Begin descent at the later of: the ETA at the destination as last notified to ATC, or the ETA derived from the current flight plan',
-    'C. Begin descent immediately upon losing communications and this applies to all IFR operations in Australian airspace',
-    'D. Hold at the destination navaid at LSALT until communications are restored according to current CASR and AIP requirements'
+    'At the later of the ETA last notified to ATC or the ETA derived from the current flight plan',
+    'At the ETA originally filed in the flight plan, disregarding any airborne delay',
+    'Immediately on losing communications, to arrive ahead of other traffic in the sequence',
+    'Only after holding at the destination aid at LSALT until communications are restored'
   ],
-  correct: 1,
-  explanation: 'AIP lost communications: the pilot commences descent at the later of: (1) the ETA at the destination or holding fix as last notified to ATC; or (2) the ETA derived from the filed flight plan plus any delay since departure. This ensures ATC can predict when the aircraft will enter the approach sequence and clear the airspace accordingly.',
-  reference: 'AIP ENR 1.1 — Lost Communications'
+  correct: 0,
+  explanation: 'Descent is commenced at the LATER of the ETA last passed to and acknowledged by ATC, or the ETA derived from the current flight plan (allowing for any delay since departure). Using the later time lets ATC predict the arrival and keep the airspace clear.',
+  reference: 'AIP ENR 1.1 — lost communications'
 },
 
 {
   question: 'On an instrument approach chart, the symbol "IAF" means:',
   options: [
-    'A. Initial Approach Fix — the point at which the initial approach segment begins',
-    'B. Instrument Approach Fix — the final approach waypoint',
-    'C. Instrument Arrival Fix — the transition from en-route to approach',
-    'D. IFR Approach Fix — any waypoint on an instrument approach'
+    'Initial Approach Fix, the point at which the initial approach segment begins',
+    'Instrument Approach Fix, the final approach waypoint',
+    'Instrument Arrival Fix, the transition from en-route to approach',
+    'IFR Approach Fix, any waypoint on an instrument approach'
   ],
   correct: 0,
   explanation: 'IAF (Initial Approach Fix) is the point that defines the beginning of the initial approach segment. The aircraft transitions from the en-route phase to the approach phase at the IAF. Multiple IAFs may be published to facilitate arrivals from different directions.',
@@ -126,12 +126,12 @@ export const irexQuestions: {
 {
   question: 'The "FAF" on an instrument approach chart is the:',
   options: [
-    'A. First Arrival Fix — the holding pattern entry point',
-    'B. Feeder Approach Fix — the transition from holding to approach',
-    'C. Final Approach Fix — the point at which the final approach descent begins on a non-precision approach',
-    'D. Final Altitude Fix — the point at which MDA is reached'
+    'Final Approach Fix, the point at which the final approach descent begins on a non-precision approach',
+    'The Feeder Approach Fix, marking the transition from the holding pattern onto the approach',
+    'The First Arrival Fix, which is the designated holding pattern entry point for the procedure',
+    'The Final Altitude Fix, the point at which the minimum descent altitude is first reached'
   ],
-  correct: 2,
+  correct: 0,
   explanation: 'FAF (Final Approach Fix) is the point at which the final approach segment begins for a non-precision approach (NDB, VOR, GNSS 2D). It defines where the final descent to MDA commences. On a precision approach (ILS), the glideslope intercept point serves a similar function but is not formally called the FAF.',
   reference: 'AIP GEN 3.4 / ICAO PANS-OPS'
 },
@@ -139,62 +139,62 @@ export const irexQuestions: {
 {
   question: 'The difference between a 2D and a 3D instrument approach operation is:',
   options: [
-    'A. 2D approaches are flown with autopilot; 3D approaches require manual flying',
-    'B. 2D approaches are for piston aircraft; 3D approaches are for turbine aircraft',
-    'C. 2D approaches provide only lateral guidance; 3D approaches provide both lateral and vertical guidance to the runway',
-    'D. 2D approaches require DME; 3D approaches use ILS only'
+    '2D approaches are flown on autopilot, while 3D approaches must be hand-flown throughout',
+    '2D approaches are for piston aircraft; 3D approaches are for turbine aircraft',
+    '2D approaches require DME for distance information, whereas 3D approaches are always flown using the ILS only',
+    '2D approaches provide only lateral guidance; 3D approaches provide both lateral and vertical guidance to the runway'
   ],
-  correct: 2,
+  correct: 3,
   explanation: '2D instrument approach operations provide lateral guidance only (NDB, VOR, GNSS/LNAV). The pilot must manage vertical profile manually to the MDA. 3D instrument approach operations provide both lateral AND vertical guidance (ILS, GLS, GNSS/LPV, RNP AR). A decision altitude (DA) is used rather than MDA. 3D approaches generally have lower minima.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.7'
 },
 
 {
-  question: 'The "MDA" (Minimum Descent Altitude) on a non-precision approach is:',
+  question: 'On a 2D (non-precision) approach, the Minimum Descent Altitude (MDA) is:',
   options: [
-    'A. The altitude below which the aircraft must not descend unless the runway is in sight',
-    'B. The altitude at which the pilot decides to land or go around — the same as DA',
-    'C. The minimum safe altitude for the approach segment provided the pilot holds a current medical certificate',
-    'D. The lowest altitude to which a pilot may descend on final approach and, if visual references are not established, the pilot must execute a missed approach'
+    'The altitude below which descent is prohibited unless the runway environment is in sight',
+    'The altitude at which the pilot decides to land or go around, identical to a decision altitude',
+    'The minimum safe altitude giving terrain clearance for the whole approach segment',
+    'The lowest altitude on final to which descent is permitted before a missed approach becomes mandatory'
   ],
   correct: 3,
-  explanation: 'MDA is the minimum altitude on a 2D (non-precision) approach. The pilot descends to MDA and then flies level (the "step-down") while looking for visual reference. If the required visual reference is not established at or before the missed approach point (MAP), a missed approach must be executed. Unlike DA, the pilot flies to MDA first, THEN assesses visual reference.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.8'
+  explanation: 'On a 2D approach the pilot descends to the MDA and may then fly level (the step-down) while seeking the required visual reference. If that reference is not established at or before the missed approach point, a missed approach must be flown. Unlike a DA, the aircraft may level off at the MDA — it is an altitude not to be descended below, rather than a decision point reached on a continuous descent.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.8'
 },
 
 {
-  question: 'The "DA" (Decision Altitude) on a precision or APV approach is:',
+  question: 'On a 3D (precision or APV) approach, the Decision Altitude (DA) is:',
   options: [
-    'A. The altitude at which the pilot must decide to land or go around — if the required visual references are not established at DA, an immediate missed approach is initiated',
-    'B. The same as MDA — the pilot levels off and looks for the runway — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The altitude published on the chart as the lowest usable altitude for the approach and this applies to all IFR operations in Australian airspace',
-    'D. The altitude derived by subtracting the decision height from the aerodrome elevation according to current CASR and AIP requirements'
+    'The altitude at which a missed approach must be initiated if the required visual reference is not established',
+    'The altitude at which the pilot levels off and then tracks along while visually searching for the runway environment',
+    'The lowest usable altitude published on the chart for the entire approach procedure',
+    'The value obtained by subtracting the decision height from the aerodrome elevation'
   ],
   correct: 0,
-  explanation: 'DA (Decision Altitude) is used on 3D approaches (ILS, LPV, RNP AR). At DA, the pilot must have the required visual references established to continue below DA. If not, an immediate missed approach is initiated — the aircraft must not descend below DA while assessing visual reference. This differs from MDA where the pilot can fly level at MDA while looking.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.8'
+  explanation: 'A DA is used on a continuous-descent 3D approach (ILS, LPV, Baro-VNAV). At the DA the pilot must have the required visual reference to continue; if not, an immediate missed approach is initiated and the aircraft is not flown level at the DA. This contrasts with an MDA, where level flight at the minimum is permitted while assessing visual reference.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.8'
 },
 
 {
-  question: 'Regarding temperature correction to altimeter readings on instrument approaches:',
+  question: 'On a day well below ISA, an approach chart publishes an MDA of 1,200 ft. With no temperature correction applied, the aircraft\'s true altitude at the indicated MDA will be:',
   options: [
-    'A. Temperature has no effect on altimeter readings — the QNH corrects for all errors — this is the correct regulatory position',
-    'B. In temperatures below ISA, the true altitude is lower than the indicated altitude — altimeter corrections must be applied to maintain obstacle clearance on cold days',
-    'C. In temperatures above ISA, the true altitude is lower than indicated and this applies to all IFR operations in Australian airspace',
-    'D. Temperature corrections only apply above FL100 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Lower than 1,200 ft, so a correction must be added to preserve obstacle clearance',
+    'Exactly 1,200 ft, because the QNH setting already corrects for temperature error',
+    'Higher than 1,200 ft, giving additional obstacle clearance with no correction needed',
+    'Unaffected, because temperature corrections apply only above the transition altitude'
   ],
-  correct: 1,
-  explanation: 'The altimeter is calibrated for ISA temperature. In temperatures BELOW ISA, air is denser and pressure levels are closer together — the true altitude is LOWER than indicated. This is critical on instrument approaches: "from high to low, look out below." CASA requires temperature corrections on approaches when temperature is significantly below ISA — particularly for approach minima, step-down fixes, and missed approach altitudes.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.9 / AIP ENR 1.7'
+  correct: 0,
+  explanation: 'The altimeter is calibrated to ISA. In air colder than ISA the pressure levels lie closer together, so true altitude is LOWER than indicated (\'from high to low, or hot to cold, look out below\'). On a cold day the aircraft is actually below the published MDA unless a temperature correction is added to the minima, step-down and missed-approach altitudes. The QNH corrects for pressure, not temperature.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.9 / AIP ENR 1.7'
 },
 
 {
   question: 'When conducting a 3D approach in temperatures significantly below ISA, the pilot must:',
   options: [
-    'A. Subtract the temperature correction — cold temperatures mean you fly lower than published',
-    'B. No corrections are required for 3D approaches — the glidepath guidance compensates automatically',
-    'C. Contact ATC for a corrected approach clearance',
-    'D. Add the temperature correction to the published DA to obtain the corrected DA to fly'
+    'Subtract the temperature correction, cold temperatures mean you fly lower than published',
+    'No corrections are required for 3D approaches, the glidepath guidance compensates automatically',
+    'Contact ATC for a corrected approach clearance',
+    'Add the temperature correction to the published DA to obtain the corrected DA to fly'
   ],
   correct: 3,
   explanation: 'For 3D approaches in cold temperatures: the published DA is based on ISA. In temperatures below ISA, the pilot must ADD the temperature correction to the published DA. This ensures the aircraft maintains the required obstacle clearance. The correction increases the altitude flown on the approach — the pilot initiates missed approach at the corrected (higher) DA.',
@@ -202,116 +202,116 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An IFR flight plan submitted to ATC is valid for:',
+  question: 'An IFR flight notification (flight plan) submitted to ATC remains valid for:',
   options: [
-    'A. 2 hours from the proposed departure time (EOBT) — if not departed, the plan must be re-filed or cancelled',
-    'B. 24 hours from the proposed departure time — this is the correct regulatory position',
-    'C. Until the pilot cancels it and this applies to all IFR operations in Australian airspace',
-    'D. 30 minutes after the proposed departure time according to current CASR and AIP requirements'
+    '2 hours after the proposed departure time; if the flight has not departed it must be re-filed or amended',
+    '24 hours from the proposed departure time, after which it is automatically renewed',
+    'An indefinite period, lasting until the pilot actively cancels the flight plan with air traffic control by radio',
+    '30 minutes after the proposed departure time, matching the SARTIME buffer'
   ],
   correct: 0,
-  explanation: 'A filed IFR flight plan is valid for 2 hours after the estimated off-blocks time (EOBT). If the flight has not departed within 2 hours, the plan lapses and must be re-filed. This prevents ATC from holding airspace for aircraft that have not departed.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.11 / AIP ENR 1.10'
+  explanation: 'A filed IFR flight notification lapses 2 hours after the nominated departure time (EOBT). If the flight has not departed within that window the plan must be re-filed or amended, so ATC is not holding capacity for an aircraft that has not got airborne.',
+  reference: 'AIP ENR 1.10 — flight notification'
 },
 
 {
-  question: 'The pilot\\\'s obligation for cancellation of SAR (search and rescue) on an IFR flight is:',
+  question: 'On an IFR flight, the pilot\'s obligation regarding cancellation of SAR (SARWATCH) is:',
   options: [
-    'A. SAR cancellation is ATC\'s responsibility — pilots have no obligation — this is the correct regulatory position',
-    'B. The pilot must cancel SAR within 1 hour of landing regardless of conditions and this applies to all IFR operations in Australian airspace',
-    'C. SAR is automatically cancelled when the aircraft lands at the destination according to current CASR and AIP requirements',
-    'D. The pilot must close the IFR flight plan on arrival by advising ATC — failure to do so will result in SAR action commencing at the overdue time'
+    'None, because terminating SAR is solely the responsibility of air traffic control',
+    'To cancel SARWATCH within one hour of landing in all circumstances',
+    'Nothing, as SARWATCH is cancelled automatically once the aircraft lands at the destination',
+    'To close the flight plan on arrival; if it is not closed, SAR action begins at the overdue time'
   ],
   correct: 3,
-  explanation: 'On IFR flights, ATC acts as the SAR monitoring agency. The pilot must close the IFR flight plan on arrival (by advising ATC or closing the flight plan with JRCC/FSS). If the aircraft does not arrive and the plan is not closed, SAR action commences at the overdue time. This is a pilot legal obligation.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.12 / AIP ENR 1.10'
+  explanation: 'ATC is the SAR alerting agency for IFR flights. The pilot must close the flight plan / cancel SARWATCH on arrival (by advising ATC or the relevant agency). If the aircraft does not arrive and SARWATCH is not cancelled, SAR action commences at the overdue time. This is a legal obligation on the pilot.',
+  reference: 'AIP ENR 1.10 / GEN 3.6 — SAR'
 },
 
 {
   question: 'A missed approach must be initiated when:',
   options: [
-    'A. The aircraft descends below the published MDA — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Any of the following: reaching DA without required visual reference; reaching MAP on a non-precision approach without required visual reference',
-    'C. Visibility is below 600 m at any point on the approach and this applies to all IFR operations in Australian airspace',
-    'D. The ILS glideslope deviates more than half scale according to current CASR and AIP requirements'
+    'The DA or MAP is reached without the required visual reference, or ATC instructs a go-around',
+    'The aircraft momentarily descends below the published MDA during the step-down',
+    'The in-flight visibility falls below 600 m at any point during the approach',
+    'The ILS glideslope indication deviates by more than half-scale on final'
   ],
-  correct: 1,
-  explanation: 'A missed approach must be initiated when: (1) the DA is reached without establishing required visual reference on a 3D approach; (2) the MAP is reached without required visual reference on a 2D approach; (3) ATC instructs a go-around; (4) the aircraft is not in a position to make a safe landing; or (5) any other factor creates doubt about a safe landing. Initiating a missed approach is always the safe option when in doubt.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.13'
+  correct: 0,
+  explanation: 'A missed approach is mandatory when: the DA is reached on a 3D approach, or the MAP on a 2D approach, without the required visual reference; ATC instructs a go-around; the aircraft is not positioned for a safe landing; or any factor casts doubt on a safe landing. When in doubt, going around is the safe option.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.13'
 },
 
 {
-  question: 'The "alternate aerodrome weather minimum" for a destination alternate is:',
+  question: 'For a destination alternate served by an instrument approach the pilot can conduct, the alternate weather minima are:',
   options: [
-    'A. The same as the published approach minima at the alternate — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The published approach minima for the alternate plus 300 ft and 1,500 m visibility — ensuring a reasonable probability of completing the approach on arrival',
-    'C. A ceiling of at least 1,500 ft and visibility of 5 km at the alternate and this applies to all IFR operations in Australian airspace',
-    'D. There are no specific alternate weather minima — the pilot uses discretion according to current CASR and AIP requirements'
+    'The alternate minima published on the approach chart for that procedure',
+    'The same as the published landing minima at the alternate, with no increment',
+    'A fixed increment of 300 ft and 1,500 m added to the published approach minima',
+    'A ceiling of at least 1,500 ft and a visibility of 5 km, regardless of the approach'
   ],
-  correct: 1,
-  explanation: 'Alternate aerodrome weather minima = the published approach minima for the best available instrument approach at the alternate + 300 ft ceiling and 1,500 m visibility. This buffer accounts for weather uncertainty during the transit time from destination to alternate. The forecast weather at the alternate at ETA must meet or exceed these alternate minima.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.14 / AIP ENR 1.1'
+  correct: 0,
+  explanation: 'Under the current AIP (ENR 1.1 10.7.2.10), for an aerodrome served by an IAP the pilot can conduct, the alternate minima are those published on the approach chart (ENR 1.5 Section 6). By day only, where there is no usable IAP, the alternate minima are the LSALT for the final route segment plus 500 ft and a visibility of 8 km. There is no universal \'+300 ft / +1,500 m\' addition.',
+  reference: 'AIP ENR 1.1 10.7.2.10 / ENR 1.5 Sec 6'
 },
 
 {
   question: 'IFR separation standards from other IFR aircraft are provided by:',
   options: [
-    'A. The pilot — IFR aircraft must maintain their own separation from all traffic',
-    'B. ATC in controlled airspace — ATC is responsible for IFR-to-IFR separation',
-    'C. Only above FL180 — below FL180 pilots maintain their own separation',
-    'D. The TCAS system — pilots follow TCAS resolution advisories for all IFR separation'
+    'ATC in controlled airspace, ATC is responsible for IFR-to-IFR separation',
+    'The pilot, IFR aircraft must maintain their own separation from all traffic',
+    'Only above FL180, below FL180 pilots maintain their own separation',
+    'The TCAS system, pilots follow TCAS resolution advisories for all IFR separation'
   ],
-  correct: 1,
+  correct: 0,
   explanation: 'ATC provides separation between IFR aircraft in controlled airspace. In Class G (uncontrolled) airspace, IFR aircraft receive no separation service — the pilot is responsible for collision avoidance. In controlled airspace (Class A, C, D, E), ATC maintains IFR-to-IFR separation and in Class C also separates IFR from VFR.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.15'
 },
 
 {
-  question: 'The "Pilot Activated Lighting" (PAL) system at non-controlled aerodromes is activated by:',
+  question: 'Pilot Activated Lighting (PAL) at a non-controlled aerodrome is activated by:',
   options: [
-    'A. Calling ATC to switch on the lights — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The aerodrome operator when an IFR aircraft is inbound and this applies to all IFR operations in Australian airspace',
-    'C. A dedicated PAL frequency published in ERSA — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Transmitting a specified number of times on the CTAF frequency within a defined time — the number of transmissions selects the intensity level'
+    'Calling air traffic control on the area frequency to request that the runway lighting be switched on for arrival',
+    'The aerodrome operator manually, once an IFR aircraft reports inbound to the field',
+    'Selecting a dedicated PAL frequency that is published separately for each aerodrome',
+    'Transmitting a set number of times on the published CTAF within a defined period, the count selecting intensity'
   ],
   correct: 3,
-  explanation: 'PAL (Pilot Activated Lighting): the pilot transmits the specified number of times on the published CTAF frequency within 5 seconds. Typically: 5 transmissions = high intensity, 3 = medium, 1 = low. The lights activate for approximately 15 minutes. PAL details including frequency and activation sequence are published in ERSA for each aerodrome.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.16 / AIP ENR 1.14'
+  explanation: 'PAL is activated by keying the transmitter the specified number of times on the published CTAF within about 5 seconds (commonly 5 = high, 3 = medium, 1 = low intensity). The lights remain on for roughly 15 minutes. Activation details are published in ERSA for each aerodrome.',
+  reference: 'AIP ENR 1.14 / ERSA — PAL'
 },
 
 {
   question: 'Visual Approach Slope Indicator (VASI) provides:',
   options: [
-    'A. Lateral guidance to the runway centreline',
-    'B. Distance information to the runway threshold',
-    'C. A visual glidepath reference — typically 2 bars providing on-slope (white/white=high, red/white=on slope, red/red=low indication)',
-    'D. Touchdown zone marking information as approved by CASA under current regulations'
+    'A visual glidepath reference',
+    'Distance information to the runway threshold',
+    'Lateral guidance to the runway centreline',
+    'Touchdown zone marking information'
   ],
-  correct: 2,
-  explanation: 'VASI provides visual approach slope guidance. Standard 2-bar VASI: all white = too high; red over white = on slope (about 3°); all red = too low. PAPI (Precision Approach Path Indicator) works similarly: 4 whites = high; 3 white 1 red = slightly high; 2 white 2 red = on slope; 1 white 3 red = slightly low; 4 red = low. These supplement but do not replace instrument approaches.',
+  correct: 0,
+  explanation: 'VASI provides visual approach slope guidance. Standard 2-bar VASI: all white = too high; red over white = on slope (about 3°); all red = too low. PAPI (Precision Approach Path Indicator) works similarly: 4 whites = high; 3 white 1 red = slightly high; 2 white 2 red = on slope; 1 white 3 red = slightly low; 4 red = low. These supplement but do not replace instrument approaches. Typically 2 bars providing on-slope (white/white=high, red/white=on slope, red/red=low indication).',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.17'
 },
 
 {
   question: 'A SID (Standard Instrument Departure) procedure:',
   options: [
-    'A. Is optional — pilots may choose to fly their own departure route',
-    'B. Must be flown as published unless ATC issues a different clearance — it provides obstacle clearance and standardised routing from the aerodrome into the en-route structure',
-    'C. Only applies to jet aircraft above 5700 kg',
-    'D. Is a noise abatement procedure that may be declined if operationally inconvenient with appropriate ATC clearance obtained'
+    'Is optional, pilots may choose to fly their own departure route',
+    'Must be flown as published unless ATC issues a different clearance, providing obstacle clearance and standard routing',
+    'Only applies to jet aircraft above 5700 kg',
+    'Is a noise abatement procedure that may be declined if operationally inconvenient with appropriate ATC clearance obtained'
   ],
   correct: 1,
-  explanation: 'A SID must be flown as published unless ATC specifically amends the clearance. SIDs provide: guaranteed obstacle clearance (typically 35 ft/nm gradient minimum), traffic flow management, and standardised routing. When cleared for a SID, the pilot must comply with all altitude constraints, speed limits, and routing unless amended by ATC.',
+  explanation: 'A SID must be flown as published unless ATC specifically amends the clearance. SIDs provide: guaranteed obstacle clearance (typically 200 ft/nm (3.3%) gradient minimum), traffic flow management, and standardised routing. When cleared for a SID, the pilot must comply with all altitude constraints, speed limits, and routing unless amended by ATC.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.18 / AIP ENR 1.1'
 },
 
 {
   question: 'A STAR (Standard Terminal Arrival Route):',
   options: [
-    'A. Is an optional procedure used only when VMC exists',
-    'B. Must always be followed all the way to touchdown',
-    'C. Is only used at international aerodromes',
-    'D. Provides a standardised routing from the en-route structure to the initial approach fix'
+    'Is an optional procedure used only when visual meteorological conditions exist at the field',
+    'Must always be flown all the way to touchdown once the arrival has been commenced',
+    'Is provided only at major international aerodromes and not at domestic ports',
+    'Provides a standardised routing from the en-route structure to the initial approach fix'
   ],
   correct: 3,
   explanation: 'A STAR is a published ATC procedure linking the en-route structure to the IAF of an instrument approach. When cleared for a STAR, the pilot must comply with all published altitude constraints, speed limits, and routing. ATC may amend the STAR (radar vectors, "direct to" waypoints). STARs reduce RT workload and provide predictable traffic flow.',
@@ -319,25 +319,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The holding pattern entry procedure depends on:',
+  question: 'The holding-pattern entry to be used is determined by:',
   options: [
-    'A. The aircraft\'s heading relative to the holding fix on arrival — determining whether to use direct, teardrop, or parallel entry to remain within the protected holding airspace',
-    'B. Aircraft performance category only — entry type varies by aircraft size — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The pilot\'s preference for the most comfortable turn direction and this applies to all IFR operations in Australian airspace',
-    'D. ATC instruction issued individually for each holding entry — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The aircraft\'s heading relative to the inbound track as it arrives over the fix',
+    'The aircraft performance category alone, with the entry type varying by aircraft size',
+    'The pilot\'s preference for whichever turn direction is the more comfortable',
+    'An individual ATC instruction issued for every holding entry in controlled airspace'
   ],
   correct: 0,
-  explanation: 'ICAO standard holding entries depend on the aircraft heading on arrival at the holding fix relative to the holding pattern protected airspace: Direct entry (sector 1): fly straight to the fix and turn onto outbound; Parallel entry (sector 2): fly outbound parallel, then turn back to the fix; Offset/teardrop entry (sector 3): turn 30° towards the inbound track, fly for approximately 1 minute, then turn to intercept inbound. The sectors are defined relative to the inbound track.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.18 / ICAO PANS-OPS'
+  explanation: 'ICAO holding entries are chosen from the aircraft\'s heading relative to the inbound track, divided by a line 70 degrees to that track: Sector 1 = parallel entry; Sector 2 = offset (teardrop) entry; Sector 3 = direct entry. Selecting the correct entry keeps the aircraft within the protected holding area.',
+  reference: 'AIP ENR 1.5 / ICAO PANS-OPS — holding entries'
 },
 
 {
   question: 'The transponder code for radio failure is:',
   options: [
-    'A. 7700',
-    'B. 7500',
-    'C. 2000',
-    'D. 7600'
+    '7700',
+    '7500',
+    '2000',
+    '7600'
   ],
   correct: 3,
   explanation: '7600 is the transponder code for radio failure (communications failure/NORDO). 7700 = emergency; 7500 = unlawful interference/hijack; 2000 = entering controlled airspace without a discrete squawk code. Squawking 7600 alerts ATC on radar that the aircraft has lost communications.',
@@ -345,25 +345,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'On the ground at a controlled aerodrome, the use of transponder radar is:',
+  question: 'While an aircraft is on the ground at a controlled aerodrome, the use of radar is:',
   options: [
-    'A. Unrestricted — ground radar can always be used provided the pilot holds a current medical certificate',
-    'B. Prohibited entirely at all aerodromes',
-    'C. Limited — radar may not be used for approach control purposes while on the ground at a controlled aerodrome, though surface movement radar is permitted',
-    'D. At pilot discretion — radar use is an ATC decision only as approved by CASA under current regulations'
+    'Unrestricted, because ground radar may be used for any purpose at any aerodrome',
+    'Prohibited entirely, as radar may not be operated while an aircraft is on the ground',
+    'Entirely at the pilot\'s discretion, since all use of radar on the ground is decided case by case by the flight crew',
+    'Limited; it may not be used for approach-control purposes on the ground, though surface movement radar is permitted'
   ],
-  correct: 2,
-  explanation: 'CASR limits the use of radar while an aircraft is on the ground at a controlled aerodrome for approach control purposes. Surface movement radar (SMR) may be used for ground movement. Approach radar (ASR, PAR) is used for airborne aircraft. This prevents ground equipment interference with approach radar systems.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.20'
+  correct: 3,
+  explanation: 'Radar used for approach control (e.g. ASR/PAR) applies to airborne aircraft, not aircraft on the ground at a controlled aerodrome. Surface movement radar may be used for ground manoeuvring. This separation of function avoids interference with the approach radar picture.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.20'
 },
 
 {
   question: 'The reporting requirement for an IFR aircraft at the boundary of controlled airspace or at a compulsory reporting point is:',
   options: [
-    'A. Reporting is optional if radar identified',
-    'B. The pilot must report position, level, and estimated time to the next compulsory reporting point',
-    'C. Only required when the pilot changes altitude',
-    'D. Required only when leaving controlled airspace'
+    'Reporting is optional once the aircraft has been identified by ATC on radar',
+    'The pilot must report position, level, and estimated time to the next compulsory reporting point',
+    'A report is only required when the pilot initiates a change of altitude or level',
+    'A report is required only at the point of leaving controlled airspace, not the boundary'
   ],
   correct: 1,
   explanation: 'Compulsory reporting points (solid triangle on charts) require position reports from all IFR aircraft: callsign, position, time, level, and next reporting point ETA. On-request points (open triangle) only need a report when ATC specifically requests one. In radar-identified environments, ATC may suspend compulsory reports.',
@@ -373,75 +373,75 @@ export const irexQuestions: {
 {
   question: 'When must an IFR aircraft report a significant change to its estimated arrival time?',
   options: [
-    'A. Any change at all must be reported immediately',
-    'B. When the estimated arrival at a reporting point differs from the filed plan by more than 3 minutes',
-    'C. When the ETA differs by more than 5 minutes from the filed estimate',
-    'D. ETA changes only need to be reported if the destination changes'
+    'Any change at all to the estimate must be reported to ATC immediately without a threshold',
+    'When the estimated arrival at a reporting point differs from the filed plan by more than 2 minutes',
+    'When the ETA differs by more than 5 minutes from the filed estimate',
+    'ETA changes only need to be reported if the destination changes'
   ],
   correct: 1,
-  explanation: 'AIP requires IFR aircraft to notify ATC of changes to ETAs at waypoints when the revised ETA differs by more than 3 minutes from the last notified ETA. This allows ATC to maintain accurate separation and sequencing. In high-density airspace, even smaller variations may require notification.',
+  explanation: 'AIP requires IFR aircraft to notify ATC of changes to ETAs at waypoints when the revised ETA differs by more than 2 minutes from the last notified ETA. This allows ATC to maintain accurate separation and sequencing. In high-density airspace, even smaller variations may require notification.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.4 / AIP ENR 1.6'
 },
 
 {
   question: 'At a non-controlled aerodrome, the IFR reporting requirements include:',
   options: [
-    'A. No specific reporting requirements — Class G has no ATC',
-    'B. The pilot must make position broadcasts on CTAF and report arrival to FSS or JRCC to close the flight plan',
-    'C. Reporting to the nearest controlled aerodrome only',
-    'D. Self-announce only when other traffic is heard on frequency'
+    'There are no specific reporting requirements, since Class G airspace is not served by ATC',
+    'The pilot must make position broadcasts on CTAF and report arrival to ATS or JRCC to close the flight plan',
+    'Reports are made only to the nearest controlled aerodrome and not on the local CTAF',
+    'Self-announce broadcasts are made only when other conflicting traffic is first heard on the local frequency'
   ],
   correct: 1,
-  explanation: 'IFR operations at non-controlled aerodromes: the pilot makes CTAF broadcasts for traffic awareness, and must report arrival and close the IFR flight plan with FSS (Flight Service Station) or JRCC to prevent SAR action. All IFR procedures (approach minimums, missed approach) apply regardless of the lack of ATC.',
+  explanation: 'IFR operations at non-controlled aerodromes: the pilot makes CTAF broadcasts for traffic awareness, and must report arrival and close the IFR flight plan with ATS or the JRCC to prevent SAR action. All IFR procedures (approach minimums, missed approach) apply regardless of the lack of ATC.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.6 / AIP ENR 1.1'
 },
 
 {
-  question: 'The minimum meteorological conditions for IFR take-off are:',
+  question: 'For an IFR take-off in an aeroplane that is not a qualifying multi-engine aeroplane, the take-off minima are:',
   options: [
-    'A. Any conditions — there are no take-off minima under IFR — this is the correct regulatory position',
-    'B. Visibility must be at least the published take-off minima for the aerodrome, or 800 m RVR if no minima are published',
-    'C. Ceiling above 200 ft and visibility above 400 m RVR and this applies to all IFR operations in Australian airspace',
-    'D. The same as the landing minima at the departure aerodrome according to current CASR and AIP requirements'
-  ],
-  correct: 1,
-  explanation: 'IFR take-off minima: the visibility must meet the published take-off minima for the aerodrome. If no take-off minima are published, a default of 800 m RVR applies. Take-off below minima is not permitted as the pilot must have sufficient visibility to maintain directional control on the runway and clear obstacles in the event of a rejected take-off or engine failure after take-off.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.4.1 / AIP ENR 1.1'
-},
-
-{
-  question: 'The "noise abatement procedure" at an aerodrome:',
-  options: [
-    'A. Is optional — pilot may use any departure track for safety reasons at any time — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Must be followed as published unless safety requires deviation — the pilot\'s primary obligation is always safety, but noise abatement procedures should otherwise be complied with',
-    'C. Applies only to commercial aircraft — general aviation is exempt from noise abatement procedures and this applies to all IFR operations in Australian airspace',
-    'D. Is an ATC instruction that overrides all other departure and safety requirements — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
-  ],
-  correct: 1,
-  explanation: 'Noise abatement procedures must be followed as published. However, safety always takes precedence — if following the noise procedure would compromise safety (e.g., engine failure, severe turbulence), the pilot may deviate. When deviating, the pilot assumes responsibility for obstacle clearance and must advise ATC. Published procedures are designed with appropriate safety margins.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.18 / AIP ENR 1.1'
-},
-
-{
-  question: 'A "circling approach" is required when:',
-  options: [
-    'A. The aircraft is too high on final approach — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Visibility is below the straight-in minima and this applies to all IFR operations in Australian airspace',
-    'C. The final approach track of the instrument approach is not aligned within 30° of the runway in use, or when the pilot needs to land on a',
-    'D. ATC requires a 360° orbit for sequencing according to current CASR and AIP requirements'
+    'Nil, because no take-off minima are prescribed for flight under the IFR',
+    'A cloud ceiling above 200 ft together with a visibility of at least 400 m RVR',
+    'A cloud ceiling of 300 ft and a visibility of 2,000 m',
+    'The same minima that apply to landing at the departure aerodrome that day'
   ],
   correct: 2,
-  explanation: 'Circling is required when the instrument approach does not align with the runway to be used — the approach final track differs by more than 30° from the runway heading, or the pilot needs to land on a different runway. The pilot descends to MCA (Minimum Circling Altitude), acquires visual reference, and manoeuvres visually to land. Higher minima apply for circling than straight-in approaches.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.4 / AIP ENR 1.5'
+  explanation: 'Under Part 91 MOS the take-off minima for an aeroplane that is not a qualifying multi-engine aeroplane are a cloud ceiling of 300 ft and visibility of 2,000 m (s 15.06). A qualifying multi-engine aeroplane may use 800 m, reducible to 550 m with specified lighting and standby power (s 15.05) — so 800 m is the multi-engine figure, not a general default. A take-off must not commence below the applicable minima.',
+  reference: 'Part 91 MOS 15.05 / 15.06'
+},
+
+{
+  question: 'A published noise abatement procedure at an aerodrome:',
+  options: [
+    'Is optional at all times, since the pilot may use any departure track for any reason',
+    'Must be followed as published, unless the pilot must deviate for safety, which always takes precedence',
+    'Applies only to air transport aircraft, with general aviation aircraft exempt',
+    'Is an ATC instruction that overrides the pilot\'s own obstacle-clearance and safety obligations'
+  ],
+  correct: 1,
+  explanation: 'Noise abatement procedures are followed as published, but safety has priority: if compliance would compromise safety (e.g. engine failure, terrain, severe turbulence) the pilot may deviate and then assumes responsibility for obstacle clearance, advising ATC. The published procedures are designed with normal safety margins.',
+  reference: 'AIP ENR 1.1 — noise abatement'
+},
+
+{
+  question: 'A circling approach is required when:',
+  options: [
+    'The aircraft becomes too high to complete a normal descent profile on the final approach segment to the runway',
+    'The reported visibility is below the published straight-in landing minima',
+    'ATC requires the aircraft to fly a 360-degree orbit for traffic sequencing',
+    'The final approach track is not within about 30 degrees of the runway, or another runway is required'
+  ],
+  correct: 3,
+  explanation: 'Circling is flown when the instrument approach is not aligned with the landing runway, the final approach track differs from the runway by more than about 30 degrees, or the pilot must land on a different runway. The pilot descends to the circling minima, becomes visual, and manoeuvres within the circling area to land. Circling minima are higher than straight-in minima.',
+  reference: 'AIP ENR 1.5 — circling'
 },
 
 {
   question: 'The speed limit below 10,000 ft AMSL for IFR operations in Australian airspace is:',
   options: [
-    'A. 250 kt IAS',
-    'B. 200 kt IAS',
-    'C. 300 kt IAS',
-    'D. No speed restriction below 10,000 ft for IFR operations'
+    '250 kt IAS',
+    '200 kt IAS',
+    '300 kt IAS',
+    'No speed restriction below 10,000 ft for IFR operations'
   ],
   correct: 0,
   explanation: 'All aircraft in Australian airspace below 10,000 ft AMSL must not exceed 250 kt IAS, unless specific authorisation is obtained from ATC. This applies to IFR operations as well as VFR. The restriction improves safety margins for traffic conflict avoidance and TCAS effectiveness at lower altitudes.',
@@ -451,12 +451,12 @@ export const irexQuestions: {
 {
   question: 'The maximum speed in a holding pattern below 14,000 ft in Australian airspace is:',
   options: [
-    'A. 200 kt IAS',
-    'B. 250 kt IAS',
-    'C. 230 kt IAS',
-    'D. No specific holding speed — pilots use best holding speed for aircraft type'
+    '200 kt IAS',
+    '250 kt IAS',
+    'No specific holding speed, pilots use best holding speed for aircraft type',
+    '230 kt IAS'
   ],
-  correct: 2,
+  correct: 3,
   explanation: 'Australian AIP holding speed limits: at or below 14,000 ft — maximum 230 kt IAS; above 14,000 ft to 20,000 ft — 240 kt IAS; above 20,000 ft — 265 kt IAS (or Mach 0.83). Pilots should aim to fly at the published holding speed for their aircraft category. Exceeding holding speeds expands the protected airspace and may compromise separation.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.8 / AIP ENR 1.5'
 },
@@ -464,23 +464,23 @@ export const irexQuestions: {
 {
   question: 'The maximum speed during an instrument approach procedure (unless otherwise specified) is:',
   options: [
-    'A. Aircraft category dependent — Category A: 100 kt, Category B: 135 kt, Category C: 180 kt on final',
-    'B. 250 kt IAS at all stages',
-    'C. Initial segment: no specific limit; intermediate/final: 185 kt IAS; missed approach: 185 kt IAS',
-    'D. 140 kt IAS throughout the approach'
+    'Aircraft category dependent, with maximum circling speeds of Category A 100 kt, B 135 kt and C 180 kt',
+    '250 kt IAS at all stages',
+    'Initial segment: no specific limit; intermediate/final: 185 kt IAS; missed approach: 185 kt IAS',
+    '140 kt IAS throughout the approach'
   ],
   correct: 0,
-  explanation: 'Instrument approach speed limits are aircraft category dependent. Maximum speeds on final approach: Category A (Vat <91 kt): 100 kt; Category B (91-120 kt): 135 kt; Category C (121-140 kt): 180 kt; Category D (141-165 kt): 185 kt. These limits ensure aircraft remain within the protected airspace of the approach procedure design. Slower speeds improve obstacle clearance margins.',
+  explanation: 'Approach speed limits are category-dependent. Maximum circling speeds are Cat A 100, B 135, C 180, D 205, E 240 kt; maximum final-approach speeds are Cat A 100, B 130, C 160, D 185, E 230 kt. The pilot stays within the band for the category to remain inside the protected area.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.8 / AIP ENR 1.5'
 },
 
 {
   question: 'ATC speed restrictions during approach are cancelled when:',
   options: [
-    'A. The aircraft reaches the FAF',
-    'B. The pilot decides the restriction is no longer needed',
-    'C. Speed restrictions are never cancelled — they apply until landing',
-    'D. ATC specifically cancels the restriction, or the aircraft is transferred to tower frequency'
+    'The aircraft reaches the FAF',
+    'The pilot decides the restriction is no longer needed',
+    'Speed restrictions are never cancelled at all, since they continue to apply right up until the aircraft lands',
+    'ATC specifically cancels the restriction, or the aircraft is transferred to tower frequency'
   ],
   correct: 3,
   explanation: 'ATC-issued speed restrictions remain in effect until ATC cancels them or the aircraft is transferred to a different frequency. When ATC says "cancel speed restrictions," the pilot reverts to normal approach speed. Speed restrictions for procedural separation must be strictly adhered to — unilateral pilot deviation from an ATC speed restriction without permission is not permitted.',
@@ -490,10 +490,10 @@ export const irexQuestions: {
 {
   question: '"LSALT" (Lowest Safe Altitude) for an IFR route is defined as:',
   options: [
-    'A. 1,000 ft above the highest obstacle within the relevant protected area (typically 5 nm each side of track in Australia)',
-    'B. 1,000 ft above all terrain and obstacles within 25 nm of the planned track',
-    'C. The altitude at which the aircraft is clear of cloud',
-    'D. The minimum instrument approach altitude for the destination'
+    '1,000 ft above the highest obstacle within the relevant protected area (typically 5 nm each side of track in Australia)',
+    '1,000 ft above all terrain and obstacles lying within 25 nm either side of the planned track on the chart at all times',
+    'The altitude at which the aircraft is first clear of cloud and able to proceed visually',
+    'The minimum published instrument approach altitude for the destination aerodrome in use'
   ],
   correct: 0,
   explanation: 'LSALT provides 1,000 ft clearance above all terrain and obstacles within the relevant protected area of the route. For IFR en-route in Australia, the protected area is typically 5 nm each side of the track centreline. LSALT is the minimum altitude for en-route IFR flight to ensure safe terrain clearance. In high terrain areas, published LSALTs may be found on ERC charts.',
@@ -501,77 +501,77 @@ export const irexQuestions: {
 },
 
 {
-  question: 'To calculate LSALT for a route not specified in AIP charts, the pilot must:',
+  question: 'To calculate an LSALT for a route segment not published on charts, the pilot must:',
   options: [
-    'A. Use the QNH from the departure aerodrome plus 1,000 ft provided the pilot holds a current medical certificate',
-    'B. Identify the highest obstacle within 5 nm each side of the planned track (or the relevant protected area) and add 1,000 ft — rounding up to the next 100 ft',
-    'C. Contact ATC for an assigned IFR altitude',
-    'D. Use the ERSA highest grid LSALT for the quadrant'
+    'Add 1,000 ft to the departure aerodrome QNH and use the result as the safe altitude',
+    'Take the highest obstacle within the protected area either side of track, add 1,000 ft, and round up to the next 100 ft',
+    'Request an assigned IFR level from ATC for the entire route, relying on that in place of calculating any LSALT',
+    'Use the ERSA grid LSALT for the relevant quadrant without making any further check'
   ],
   correct: 1,
-  explanation: 'Pilot-calculated LSALT: identify the highest obstacle (terrain or man-made) within 5 nm each side of the planned track, add 1,000 ft, and round up to the next 100 ft. In mountainous areas or areas with obstacles exceeding 5,000 ft AMSL, additional clearance may be required. The calculated LSALT must then be checked against any published LSALTs for the route.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.3.1 / AIP ENR 1.7'
+  explanation: 'A pilot-calculated LSALT takes the highest terrain or obstacle within the protected area each side of track, adds 1,000 ft for obstacle clearance, and rounds up to the next 100 ft. Greater clearance applies over high terrain. The result is checked against any published LSALT for the route.',
+  reference: 'AIP GEN 3.3 / ENR 1.7 — LSALT'
 },
 
 {
-  question: 'Descent below LSALT under IFR is only permitted when:',
+  question: 'Under the IFR, descent below the LSALT/MSA is permitted only when the aircraft is:',
   options: [
-    'A. VMC exists below the LSALT',
-    'B. Established on an instrument approach procedure, has received an ATC clearance to descend, is in visual contact with the destination aerodrome, or other specific AIP conditions are met',
-    'C. The aircraft is radar identified and ATC has issued a descent clearance below LSALT provided the pilot holds a current medical certificate',
-    'D. The pilot determines it is safe based on available terrain clearance'
+    'In VMC that happens to exist somewhere below the lowest safe altitude',
+    'Established on an instrument approach, cleared by ATC, in VMC by day, or meeting another AIP condition',
+    'Radar-identified, with ATC having issued any form of descent clearance',
+    'Assessed by the pilot personally to have adequate terrain clearance on whatever evidence happens to be available'
   ],
   correct: 1,
-  explanation: 'Descent below LSALT under IFR is only permitted when one of the following applies: (1) established on a published instrument approach procedure; (2) ATC has issued a specific descent clearance; (3) the aerodrome is in sight (day only, when permitted by AIP); (4) other specific conditions in AIP are met. Descent below LSALT without authorisation is a serious violation that removes terrain clearance protection.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.3.6 / AIP ENR 1.7'
+  explanation: 'Descent below LSALT/MSA under the IFR is only permitted when authorised — captured by the \'VIVAT\' conditions: Visual approach/departure, Instrument approach/departure, VMC by day, ATC clearance, or Take-off/landing. Descending below LSALT outside these conditions removes assured terrain clearance.',
+  reference: 'AIP GEN 3.3 — minimum heights (VIVAT)'
 },
 
 {
-  question: 'The "RNP" (Required Navigation Performance) value specifies:',
+  question: 'The RNP (Required Navigation Performance) value for a route or procedure specifies:',
   options: [
-    'A. The maximum acceptable cross-track error in nautical miles with a 95% probability — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The minimum GPS accuracy required for IFR flight — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The maximum deviation from the centreline on an instrument approach — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The navigation accuracy required for a specific route or procedure, expressed as a distance in nautical miles within which the aircraft must remain for 95% of the flight time'
+    'The maximum acceptable cross-track error in nautical miles, at a 95% containment probability',
+    'The minimum GPS receiver accuracy that must be installed before any IFR flight',
+    'The maximum deviation from centreline permitted on an instrument approach segment',
+    'The navigation accuracy, in nautical miles, the aircraft must hold for 95% of the flight time'
   ],
   correct: 3,
-  explanation: 'RNP is a statement of navigation performance — it defines the accuracy AND integrity monitoring requirement for a procedure or route. RNP X means the aircraft must remain within X nautical miles of centreline for 95% of the time, AND the navigation system must alert the crew if this accuracy cannot be assured. RNP 10 (en-route oceanic), RNP 1 (terminal), RNP 0.3 or less (approaches). Unlike RNAV, RNP requires on-board performance monitoring.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.1.2 / AIP ENR 1.7'
+  explanation: 'RNP states both the required navigation accuracy and an on-board performance-monitoring/alerting requirement. RNP X means the aircraft stays within X nm of the centreline for 95% of the time and the system warns the crew if that cannot be assured (e.g. RNP 10 oceanic, RNP 1 terminal, RNP 0.3 approach). This monitoring requirement is what distinguishes RNP from plain RNAV.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.1.2 / AIP ENR 1.7'
 },
 
 {
-  question: 'The "initial approach fix" (IAF) to "final approach fix" (FAF) segment is called:',
+  question: 'The segment from the initial approach fix (IAF) to the intermediate fix (IF) is called:',
   options: [
-    'A. The final approach segment',
-    'B. The intermediate approach segment',
-    'C. The initial approach segment',
-    'D. The missed approach segment'
+    'The final approach segment',
+    'The initial approach segment',
+    'The intermediate approach segment',
+    'The missed approach segment'
   ],
   correct: 1,
-  explanation: 'Instrument approach segments: Initial approach (from IAF to IF or FAF); Intermediate approach (from IF to FAF — aligns aircraft with final course, slows and configures aircraft); Final approach (from FAF to MDA/DA or missed approach point); Missed approach (from MAP to holding or other clearance). The intermediate segment is the "funnel" that aligns the aircraft with the final approach course.',
+  explanation: 'Approach segments run IAF to IF (initial), IF to FAF (intermediate), FAF to MAP/DA (final), then the missed approach. The initial segment manoeuvres the aircraft from the IAF toward the intermediate fix and the final approach course.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.3 / ICAO PANS-OPS'
 },
 
 {
-  question: 'The "PEC" (Pilot Equipment Correction) when applied to a DA gives:',
+  question: 'An aircraft operating minimum (AOM) derived from a published DA represents:',
   options: [
-    'A. A higher DA to account for instrument error only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The actual operational minimum — the DA adjusted for specific aircraft instrument errors, giving the altitude the crew uses rather than the published procedure DA',
-    'C. A lower DA to account for more accurate avionics equipment on board and this applies to all IFR operations in Australian airspace',
-    'D. An additional safety margin added by the operator above the published procedure DA according to current CASR and AIP requirements'
+    'The operational minimum the crew actually flies, the published DA adjusted for the relevant corrections',
+    'A higher decision altitude that corrects for altimeter instrument error alone',
+    'A lower decision altitude that the crew justifies by the more accurate avionics that are fitted to the aircraft',
+    'An extra margin the operator adds above the published procedure decision altitude'
   ],
-  correct: 1,
-  explanation: 'PEC (Pilot Equipment Correction) accounts for the difference between the pilot\\\'s altimeter reading and the approach chart datum. When applied to the published DA, it gives the AOM (Aircraft Operations Minimum) — what the pilot actually flies. PEC may be zero, positive, or negative depending on the altimeter calibration. AOM = DA + PEC. This ensures the correct obstacle clearance is maintained.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.5 / AIP ENR 1.5'
+  correct: 0,
+  explanation: 'The operational minimum a crew flies is the published procedure minimum adjusted by any pressure-error and operator/aircraft corrections, established for each aerodrome; it is not a more accurate avionics allowance or an arbitrary extra margin.',
+  reference: 'AIP ENR 1.5 / Part 91 MOS'
 },
 
 {
   question: 'The normal gradient for the final approach segment of an instrument approach is:',
   options: [
-    'A. 2.5° (approximately 4.4% or 265 ft/nm)',
-    'B. 3° (approximately 5.2% or 318 ft/nm)',
-    'C. 3.5° (approximately 6.1% or 370 ft/nm)',
-    'D. The gradient is not standardised — it varies by procedure design'
+    '2.5° (approximately 4.4% or 265 ft/nm)',
+    '3° (approximately 5.2% or 318 ft/nm)',
+    '3.5° (approximately 6.1% or 370 ft/nm)',
+    'The gradient is not standardised, it varies by procedure design'
   ],
   correct: 1,
   explanation: 'The standard final approach gradient is 5.2% (approximately 3° or 318 ft/nm). ILS glideslopes are typically set at 3°. This gradient is designed to provide safe obstacle clearance while remaining within normal aircraft performance. Steeper gradients (up to 6.5%) may be published where terrain or obstacles require it. Non-precision approach descent angles are published on the approach chart.',
@@ -579,38 +579,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Tracking tolerance requirements when utilising ground-based navigation aids under IFR are:',
+  question: 'Tracking tolerances for IFR navigation are:',
   options: [
-    'A. ±5 nm for en-route, ±2 nm for terminal as approved by CASA under current regulations',
-    'B. ±1 nm at all times',
-    'C. There are no prescribed tracking tolerances — pilots use best judgment',
-    'D. Defined in AIP for each navigation aid type — VOR: ±5° (approximately ±5 nm at 60 nm); NDB: ±5°; GPS: ±2 nm en-route, ±1 nm terminal'
+    'Plus or minus 5 nm en-route and plus or minus 2 nm in the terminal area',
+    'Plus or minus 1 nm, applied uniformly across every single phase of flight conducted under the IFR at all times',
+    'Not prescribed at all, with the pilot relying on best judgement throughout',
+    'Defined per aid in the AIP, with NDB and VOR by angular deviation and RNP by the published RNP value'
   ],
   correct: 3,
-  explanation: 'AIP tracking tolerances for IFR navigation: VOR ±5° (equates to approximately ±5 nm at 60 nm from station); NDB ±5°; GNSS en-route ±5 nm (RNP 10) or better; GNSS terminal ±1 nm (RNP 1). Pilots must maintain within these tolerances — exceeding them requires immediate corrective action and may compromise separation from obstacles or controlled airspace boundaries.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.7 / AIP ENR 1.7'
+  explanation: 'The AIP and Part 91 MOS prescribe deviation tolerances by aid: NDB plus or minus 5 degrees; VOR/LOC half-scale CDI deflection; RNP/RNAV the prescribed RNP value; DME plus or minus 2 nm; visual 1 nm. Exceeding a tolerance requires correction and, in controlled airspace, an immediate report to ATC.',
+  reference: 'AIP ENR 1.1 / Part 91 MOS'
 },
 
 {
-  question: 'The position fixing requirements under IFR in Australian airspace include:',
+  question: 'IFR position-fixing in Australian airspace requires the pilot to:',
   options: [
-    'A. Fix at least every 30 minutes using any available navigation aid — this is the correct regulatory position',
-    'B. Fixes at all compulsory reporting points, and at intervals not exceeding the AIP-specified interval for the navigation aid type being used',
-    'C. Continuous GPS monitoring is the only acceptable position fixing method and this applies to all IFR operations in Australian airspace',
-    'D. Position fixing is only required in controlled airspace according to current CASR and AIP requirements'
+    'Take a fix at least every 30 minutes using whatever navigation aid is available',
+    'Fix at all compulsory reporting points and within the AIP-specified interval for the aid in use',
+    'Rely on continuous GPS monitoring alone as the only acceptable method of fixing position along the route',
+    'Take fixes only while operating inside controlled airspace, not in Class G'
   ],
   correct: 1,
-  explanation: 'IFR position fixing: the pilot must take fixes at all compulsory reporting points and at the intervals specified in AIP for the navigation type being used (e.g., NDB: maximum 60 nm or 60 minutes; VOR: at each station passage; GNSS: continuous). Regular fixes allow the pilot to detect navigation errors and correct track before safety is compromised.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.1 / AIP ENR 1.7'
+  explanation: 'The pilot must obtain fixes at all compulsory reporting points and at intervals no greater than those specified in AIP for the navigation type in use (e.g. NDB by time/distance limit; VOR at station passage; GNSS continuous). Regular fixing lets navigation errors be detected and corrected before terrain or airspace clearance is compromised.',
+  reference: 'AIP ENR 1.1 — IFR navigation'
 },
 
 {
   question: 'Aircraft performance category for IFR operations is determined by:',
   options: [
-    'A. Aircraft MTOW only',
-    'B. 1.3 × Vso (Vat) — the approach threshold speed at maximum certificated landing weight',
-    'C. Maximum cruise speed',
-    'D. Aircraft type as listed in the operations manual'
+    'The aircraft maximum take-off weight only, taken from the type certificate data sheet',
+    '1.3 × Vso (Vat), the approach threshold speed at maximum certificated landing weight',
+    'The maximum cruise speed of the aircraft in its en-route cruise configuration',
+    'The aircraft type as listed in the operator\'s operations manual fleet table'
   ],
   correct: 1,
   explanation: 'Aircraft performance category = Vat = 1.3 × Vso at maximum certificated landing weight. Categories: A (<91 kt), B (91-120 kt), C (121-140 kt), D (141-165 kt), E (>165 kt). Category determines: approach speed limits, minimum circling radii, protected airspace sizes for approaches, and applicable minima. Most light training aircraft are Category A.',
@@ -618,25 +618,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The visual references required to continue below DA or past the MAP are:',
+  question: 'To continue below the DA or past the MAP, the required visual reference is:',
   options: [
-    'A. The runway lights only',
-    'B. Any lights visible ahead of the aircraft',
-    'C. At least one of the following must be clearly visible: approach lights, runway threshold, touchdown zone, runway or runway markings, VASI/PAPI, or the runway itself',
-    'D. The runway threshold and touchdown zone must both be visible provided the pilot holds a current medical certificate'
+    'The runway edge lights in sight, and no other approach or runway feature counts',
+    'Any lights at all that happen to be visible somewhere ahead of the aircraft on approach',
+    'At least one of the approach lights, threshold, touchdown zone, runway or its markings, or PAPI/VASIS',
+    'Both the runway threshold and the touchdown zone visible together'
   ],
   correct: 2,
-  explanation: 'Required visual references to continue below DA/past MAP: the pilot must be able to clearly identify at least one of the following: approach lighting system; runway threshold/threshold markings; threshold lights; runway end identifier lights (REIL); visual approach slope indicator; touchdown zone/markings/lights; runway/runway markings; runway lights. A vague impression of the runway environment is not sufficient.',
-  reference: 'AIP ENR 1.5 — Instrument Approach Procedures'
+  explanation: 'To continue below DA / past the MAP the pilot must clearly identify at least one of: the approach lighting system; runway threshold, markings or lights; runway end identifier lights; PAPI/VASI; touchdown zone or its markings/lights; or the runway and its markings. A vague impression of the runway environment is not sufficient.',
+  reference: 'AIP ENR 1.5 — instrument approaches'
 },
 
 {
   question: 'The freezing level in clear air is calculated using a lapse rate of:',
   options: [
-    'A. 2°C per 1,000 ft',
-    'B. 3°C per 1,000 ft',
-    'C. 1.5°C per 1,000 ft',
-    'D. 1°C per 1,000 ft'
+    '2°C per 1,000 ft',
+    '3°C per 1,000 ft',
+    '1.5°C per 1,000 ft',
+    '1°C per 1,000 ft'
   ],
   correct: 1,
   explanation: 'In clear air (dry adiabatic), temperature decreases at approximately 3°C per 1,000 ft. To find the freezing level: if OAT at the surface is +15°C, the freezing level is at 15 ÷ 3 = 5,000 ft. In cloud (moist adiabatic), the lapse rate is 1.5°C per 1,000 ft — lower than in clear air because condensation releases latent heat.',
@@ -646,10 +646,10 @@ export const irexQuestions: {
 {
   question: 'The freezing level in cloud is calculated using a lapse rate of:',
   options: [
-    'A. 3°C per 1,000 ft',
-    'B. 1.5°C per 1,000 ft',
-    'C. 2°C per 1,000 ft',
-    'D. 1°C per 1,000 ft'
+    '3°C per 1,000 ft',
+    '1.5°C per 1,000 ft',
+    '2°C per 1,000 ft',
+    '1°C per 1,000 ft'
   ],
   correct: 1,
   explanation: 'In cloud, condensation releases latent heat, slowing the cooling rate. The moist adiabatic lapse rate is approximately 1.5°C per 1,000 ft. If the temperature at cloud base is 0°C, you will not encounter the freezing level within the cloud — it is already at 0°C at cloud base. Understanding this difference is critical for icing prediction in IFR operations.',
@@ -659,10 +659,10 @@ export const irexQuestions: {
 {
   question: 'Given OAT at 2,000 ft of +12°C in clear air, the approximate freezing level is:',
   options: [
-    'A. 6,000 ft',
-    'B. 4,000 ft',
-    'C. 8,000 ft',
-    'D. 10,000 ft'
+    '6,000 ft',
+    '4,000 ft',
+    '8,000 ft',
+    '10,000 ft'
   ],
   correct: 0,
   explanation: 'Freezing level from 2,000 ft at +12°C in clear air (3°C/1,000 ft lapse rate): distance to reach 0°C = 12 ÷ 3 = 4,000 ft above current position. Freezing level = 2,000 + 4,000 = 6,000 ft.',
@@ -672,10 +672,10 @@ export const irexQuestions: {
 {
   question: 'Given temperature at cloud base (5,000 ft) of +6°C, the approximate freezing level within cloud is:',
   options: [
-    'A. 9,000 ft',
-    'B. 7,000 ft',
-    'C. 8,000 ft',
-    'D. 11,000 ft'
+    '9,000 ft',
+    '7,000 ft',
+    '8,000 ft',
+    '11,000 ft'
   ],
   correct: 0,
   explanation: 'Within cloud, lapse rate is 1.5°C per 1,000 ft. Distance to reach 0°C from +6°C = 6 ÷ 1.5 = 4,000 ft above cloud base. Freezing level = 5,000 + 4,000 = 9,000 ft.',
@@ -683,25 +683,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The conditions most likely to produce severe airframe icing are:',
+  question: 'Severe airframe icing is most likely in:',
   options: [
-    'A. Light drizzle at temperatures below −20°C — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Any cloud at temperatures below −30°C where ice crystals are present and this applies to all IFR operations in Australian airspace',
-    'C. Temperatures between −30°C and −40°C in cumulonimbus cloud — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Temperatures between 0°C and −10°C in stratiform cloud with high liquid water content, or in freezing rain and freezing drizzle (supercooled large droplets)'
+    'Light drizzle at temperatures below minus 20 degrees Celsius',
+    'Any cloud below minus 30 degrees Celsius where ice crystals predominate',
+    'Temperatures between minus 30 and minus 40 degrees Celsius within the body of a cumulonimbus cloud',
+    '0 to minus 10 degrees in stratiform cloud with high liquid water content, or in freezing rain or drizzle'
   ],
   correct: 3,
-  explanation: 'Severe icing most likely in: 0°C to −10°C range in stratiform cloud with high liquid water content; freezing rain or freezing drizzle (supercooled large droplets — SLD) at any sub-zero temperature; heavy snow. Below −20°C, droplets tend to freeze before contact. Above −10°C, temperatures are borderline for ice formation. SLD icing is the most hazardous — large drops spread across the aerofoil beyond ice protection coverage.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4'
+  explanation: 'Severe icing is most likely between 0 and -10C in stratiform cloud with high liquid water content, and in freezing rain or freezing drizzle (supercooled large droplets). Below about -20C droplets tend to freeze before contact. SLD icing is the most hazardous because the large drops spread aft of the protected leading edges.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.4'
 },
 
 {
   question: 'Observation of cumulus clouds embedded in stratus (embedded CB) during IFR flight is significant because:',
   options: [
-    'A. Embedded CBs are less hazardous than visible CBs',
-    'B. Embedded CBs only produce light turbulence and moderate icing',
-    'C. Embedded CBs are detected by the GNSS system as weather obstacles',
-    'D. Embedded CBs cannot be detected visually in IMC — they create severe turbulence, icing, hail'
+    'Embedded CBs are less hazardous than visible CBs',
+    'Embedded CBs only produce light turbulence and moderate icing',
+    'Embedded CBs are reliably detected by the aircraft GNSS system as weather obstacles lying ahead',
+    'Embedded CBs cannot be detected visually in IMC, they create severe turbulence, icing, hail'
   ],
   correct: 3,
   explanation: 'Embedded CBs are cumulonimbus hidden within layered cloud — invisible in IMC. Without weather radar, the IFR pilot has no warning before penetrating the cell. All CB hazards apply: severe turbulence (structural damage risk), severe icing, hail, lightning, strong updrafts and downdrafts. Weather radar is essential for IFR operations in convective areas.',
@@ -709,38 +709,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Clear Air Turbulence (CAT) is most commonly found:',
+  question: 'Clear air turbulence (CAT) is most commonly found:',
   options: [
-    'A. Near the tropopause in the vicinity of the jet stream, characterised by strong wind shear — it occurs in clear air without visual warning',
-    'B. In cumulus cloud at altitudes below 10,000 ft — this is the correct regulatory position',
-    'C. Only over mountainous terrain at any altitude and this applies to all IFR operations in Australian airspace',
-    'D. In the lower levels of the atmosphere below 5,000 ft according to current CASR and AIP requirements'
+    'Near the tropopause around the jet stream, in clear air with strong shear and no visual warning',
+    'In cumulus cloud at altitudes well below 10,000 ft above mean sea level and near the terrain',
+    'Only over mountainous terrain, and there at any altitude',
+    'In the lower atmosphere below 5,000 ft, close to the surface'
   ],
   correct: 0,
-  explanation: 'Clear Air Turbulence (CAT) occurs most frequently near the jet stream at upper levels (FL250–FL450), associated with strong horizontal and vertical wind shear. It occurs in clear air with no visual cues — no cloud, no precipitation. It can be severe or extreme, potentially causing structural damage. SIGMETs are issued for CAT. Avoidance based on PIREPs and forecasts is the primary defence.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4'
+  explanation: 'CAT occurs most often near the jet stream at upper levels (around FL250-FL450), associated with strong horizontal and vertical wind shear, in clear air with no cloud or precipitation cue. It can reach severe intensity. SIGMETs are issued for CAT, and forecasts and AIREPs are the main means of avoidance.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.4'
 },
 
 {
   question: 'The probability of microburst activity is highest when:',
   options: [
-    'A. Light rain is falling from stratus cloud — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Heavy precipitation is falling from cumulonimbus or towering cumulus, virga is observed, or conditions show strong surface heating with moderate moisture',
-    'C. The temperature dew point spread is greater than 10°C and this applies to all IFR operations in Australian airspace',
-    'D. Microbursts only occur in tropical regions — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Light rain is falling steadily from layered stratus cloud',
+    'Heavy precipitation or virga falls from CB/TCU, or strong surface heating meets moderate moisture',
+    'The temperature and dew-point spread is consistently greater than 10 degrees Celsius all day',
+    'Only in tropical regions, never in temperate Australian airspace'
   ],
   correct: 1,
-  explanation: 'Microburst probability is highest in: heavy precipitation from CB/TCU; virga (precipitation evaporating before reaching ground — evaporative cooling intensifies downdraft); strong surface heating (>30°C) with moderate moisture; high-based thunderstorms. SIGMETs and PIREPs are essential. Low-level windshear alerting systems at major aerodromes provide real-time warnings.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4'
+  explanation: 'Microburst risk is highest with heavy precipitation from cumulonimbus or towering cumulus, virga (evaporative cooling intensifies the downdraft), and strong surface heating with moderate moisture. SIGMETs, AIREPs and low-level wind-shear alerting systems at major aerodromes provide warning.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.4'
 },
 
 {
   question: 'The seasonal variation most relevant to IFR operations in southern Australia is:',
   options: [
-    'A. Tropical cyclones — common in winter south of 30°S',
-    'B. Dust devils are the primary IFR hazard in southern Australia',
-    'C. Active frontal weather during winter and spring — cold fronts bring severe turbulence, icing, and embedded CB',
-    'D. Southern Australia has no seasonal variation in weather patterns'
+    'Tropical cyclones, which are most common over southern Australia during the winter months',
+    'Dust devils, which are the primary instrument-flight hazard across southern Australia',
+    'Active frontal weather during winter and spring, cold fronts bring severe turbulence, icing, and embedded CB',
+    'Southern Australia experiences no seasonal variation in its weather patterns through the year'
   ],
   correct: 2,
   explanation: 'Southern Australia seasonal IFR hazards: Winter/spring — active cold fronts with associated CB, severe turbulence, icing, and reduced ceilings; mountain wave over the Alps; radiation fog in stable high-pressure systems. Summer — afternoon convection and thunderstorms, particularly over inland areas; dust storms reducing visibility. Jet stream is most active in winter at lower latitudes.',
@@ -750,10 +750,10 @@ export const irexQuestions: {
 {
   question: 'The jet stream is significant for IFR operations because:',
   options: [
-    'A. It improves fuel efficiency only — no hazards are associated with it',
-    'B. It produces significant CAT on the cyclonic (cold) side and at the edges, strong headwinds/tailwinds affecting fuel planning',
-    'C. The jet stream is only found above FL500 and does not affect normal IFR operations',
-    'D. The jet stream only affects supersonic aircraft'
+    'It improves fuel efficiency only, with no associated clear-air turbulence or significant wind hazard of any kind',
+    'It produces significant CAT on the cyclonic (cold) side and at the edges, strong headwinds/tailwinds affecting fuel planning',
+    'The jet stream is found only above FL500 and so has no effect on normal IFR operations',
+    'The jet stream only affects supersonic aircraft cruising high in the lower stratosphere'
   ],
   correct: 1,
   explanation: 'Jet stream IFR implications: CAT (severe on cyclonic/cold side and at edges); wind speeds up to 300 kt requiring fuel planning revision; tropopause height changes (higher in subtropical jet, lower in polar front jet); embedded CB in associated frontal systems. Flying parallel to jet stream core in the warmer air (anticyclonic side) minimises CAT while utilising tailwind benefit.',
@@ -763,231 +763,231 @@ export const irexQuestions: {
 {
   question: 'A tropical cyclone affecting an IFR route would typically cause:',
   options: [
-    'A. Extremely severe turbulence, icing, microbursts, and lightning throughout a very large area — IFR operations should be avoided within the broad area of influence',
-    'B. Clear skies and smooth conditions outside the eye wall',
-    'C. Turbulence only in the wall cloud — IFR is acceptable at distance as approved by CASA under current regulations',
-    'D. Tropical cyclones only affect surface operations, not IFR flights as approved by CASA under current regulations'
+    'Extreme turbulence, icing, microbursts and lightning over a very large area, to be avoided',
+    'Clear skies and smooth conditions everywhere outside the eye wall',
+    'Turbulence only within the wall cloud, so flying IFR is perfectly acceptable at a moderate distance',
+    'Effects confined to surface operations, with no impact on IFR flights'
   ],
   correct: 0,
-  explanation: 'Tropical cyclones present extreme hazards across a very wide area: feeder bands contain embedded CB 1,000 km or more from the centre; extreme turbulence throughout; severe icing; microbursts; lightning. IFR operations in or near a tropical cyclone should not be attempted. Seasonal awareness (November to April in northern Australia) is essential for IFR flight planning.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.1.1'
+  explanation: 'A tropical cyclone produces hazards over a very wide area: feeder bands with embedded cumulonimbus extending hundreds of kilometres from the centre, extreme turbulence, severe icing, microbursts and lightning. IFR flight in or near a cyclone should not be attempted. The northern-Australian cyclone season (about November to April) is a planning consideration.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.1.1'
 },
 
 {
-  question: 'The meteorological requirements for conducting an IFR flight include obtaining:',
+  question: 'The meteorological information required for an IFR flight includes:',
   options: [
-    'A. A METAR from the destination only provided the pilot holds a current medical certificate',
-    'B. Only the TAF for the destination aerodrome as approved by CASA under current regulations',
-    'C. An ARFOR and/or SIGMET for the route; TAFs for departure, destination and alternates; SIGMETs and AIRMETs; NOTAMS; pilot reports (PIREPs)',
-    'D. Any available internet weather forecast'
+    'A METAR for the destination aerodrome only',
+    'Only the TAF for the destination aerodrome',
+    'ARFOR/SIGMET for the route, TAFs for departure/destination/alternates, NOTAMs and AIREPs',
+    'Any weather forecast that happens to be available from a public internet source on the day'
   ],
   correct: 2,
-  explanation: 'IFR meteorological requirements: ARFOR covering the route; TAFs for departure, destination, and all planned alternates; current METARs; SIGMETs and AIRMETs for the route; relevant NOTAMs; available PIREPs. This comprehensive picture allows assessment of departure weather, en-route conditions, destination weather at ETA, and alternate viability.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.1'
+  explanation: 'IFR planning requires the area forecast (ARFOR) and any SIGMET for the route, TAFs for departure, destination and all planned alternates, current METARs, relevant NOTAMs and available AIREPs. Together these let the pilot assess departure, en-route, destination-at-ETA and alternate conditions.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.1'
 },
 
 {
-  question: 'When interpreting a TAF for IFR planning, the significant concern is:',
+  question: 'When interpreting a destination TAF for IFR planning, the key question is:',
   options: [
-    'A. Whether VFR is possible at the destination provided the pilot holds a current medical certificate',
-    'B. Whether the forecast weather at ETA meets or exceeds the approach minima — if below minima, an alternate with suitable weather must be nominated',
-    'C. Cloud base only — visibility is not relevant for IFR',
-    'D. The temperature forecast for icing risk only'
+    'Whether visual flight rules conditions are possible at the destination',
+    'Whether the forecast at ETA meets the approach minima, otherwise an alternate is required',
+    'The forecast cloud base only, since visibility is irrelevant under the IFR',
+    'Only the forecast temperature, taken as the single indicator of icing risk'
   ],
   correct: 1,
-  explanation: 'IFR TAF interpretation: the critical question is whether the forecast weather at ETA meets the approach minima (ceiling above DA/MDA and visibility above the published minimum). If the TAF shows weather at or below approach minima at ETA, a suitable alternate must be nominated with sufficient fuel to divert. TEMPO and BECMG groups can indicate periods of reduced weather requiring analysis.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
+  explanation: 'The critical question is whether the forecast at ETA meets the approach minima (cloud base above the DA/MDA and visibility above the published minimum). If the TAF shows conditions at or below minima at ETA, an alternate with suitable weather and the fuel to divert must be provided. INTER/TEMPO and BECMG groups must be analysed for periods below minima.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.2'
 },
 
 {
   question: 'The VOLMET service provides IFR pilots with:',
   options: [
-    'A. Continuous HF and VHF broadcast of METARs and TAFs for specified aerodromes — used to update weather information in flight without contacting ATC',
-    'B. Volcanic ash hazard warnings only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Upper wind and temperature forecasts for cruise altitude planning and this applies to all IFR operations in Australian airspace',
-    'D. VOLMET is only available in European airspace — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'A continuous HF/VHF broadcast of METARs and TAFs for nominated aerodromes, to update weather in flight',
+    'Volcanic ash hazard warnings issued for the relevant flight information region only',
+    'Upper-wind and temperature forecasts intended only for cruise-level flight planning',
+    'A broadcast service available only within European airspace, and not anywhere within Australia'
   ],
   correct: 0,
-  explanation: 'VOLMET broadcasts current METARs and TAFs for nominated aerodromes on continuous HF/VHF radio. IFR pilots use VOLMET to check destination and alternate weather updates en-route. NAIPS online access before departure provides the primary weather picture; VOLMET provides updates during flight. VOLMET frequencies and covered aerodromes are listed in AIP.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.6 / AIP COM'
+  explanation: 'VOLMET continuously broadcasts current METARs and TAFs for nominated aerodromes on HF/VHF, letting IFR pilots update destination and alternate weather en-route without calling ATC. NAIPS provides the pre-flight picture; VOLMET supplies in-flight updates. Frequencies and aerodromes covered are listed in AIP.',
+  reference: 'AIP GEN/COM — VOLMET'
 },
 
 {
-  question: 'The pilot obligation to report variations to forecast weather conditions means:',
+  question: 'The pilot\'s obligation to report variations from forecast weather is to:',
   options: [
-    'A. The pilot should report significant variations from forecast weather to ATC or FSS',
-    'B. The pilot must report when conditions are better than forecast',
-    'C. Reports are only required when declaring an emergency',
-    'D. Weather reporting is exclusively ATC\'s responsibility — pilots are not required to report weather'
+    'Report significant variations from the forecast to ATC or Flightwatch',
+    'Report only when conditions turn out better than forecast',
+    'Report only when an emergency is being declared',
+    'Make no report, since weather reporting is solely ATC\'s responsibility'
   ],
   correct: 0,
-  explanation: 'Pilots have an obligation to report significant weather variations from forecast: unexpected icing, moderate or severe turbulence, CB activity, windshear, microbursts, or unusually poor visibility. These PIREPs (Pilot Reports) are reported to ATC or FSS and relayed to other crews and weather forecasters. PIREPs are often the most timely and accurate weather data available in the en-route environment.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.7 / AIP MET'
+  explanation: 'Pilots should report significant departures from forecast, such as unexpected icing, moderate or severe turbulence, CB activity, windshear or markedly reduced visibility. These AIREPs are passed to ATC and relayed to other crews and forecasters, and are often the most timely en-route weather data available.',
+  reference: 'AIP ENR/GEN — in-flight reporting'
 },
 
 {
-  question: 'Sources for altimeter QNH during IFR operations include:',
+  question: 'Acceptable in-flight sources of altimeter QNH under the IFR include:',
   options: [
-    'A. Area QNH broadcasts only',
-    'B. ATC, ATIS, AWIS, VOLMET, area QNH broadcasts on ATS frequencies — the pilot should update QNH as frequently as possible to maintain accurate terrain clearance',
-    'C. QNH must be obtained from the departure aerodrome only and cannot be changed en-route',
-    'D. GPS altitude can be used in lieu of QNH in remote areas provided the pilot holds a current medical certificate'
+    'Area QNH broadcasts on the flight information service frequencies, and no other source',
+    'ATC, ATIS, AWIS, area QNH broadcasts and VOLMET, updated regularly to keep terrain clearance accurate',
+    'The departure aerodrome QNH only, which is not permitted to be changed while en-route',
+    'GPS-derived altitude, used in place of a QNH altimeter setting in remote areas'
   ],
   correct: 1,
-  explanation: 'IFR QNH sources: ATC (primary in controlled airspace); ATIS (at controlled aerodromes); AWIS (at non-controlled aerodromes); area QNH broadcasts on FIS frequencies; VOLMET; and pre-flight NAIPS. QNH should be updated regularly — significant differences between departure QNH and current QNH create altitude errors. "From high to low, look out below."',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.3 / AIP ENR 1.7'
+  explanation: 'IFR QNH comes from ATC (controlled airspace), ATIS (controlled aerodromes), AWIS (non-controlled aerodromes), area QNH broadcasts on FIS frequencies, VOLMET and pre-flight NAIPS. QNH should be updated regularly: flying from high to low pressure without resetting it leaves the aircraft lower than indicated.',
+  reference: 'AIP ENR 1.7 — altimeter setting'
 },
 
 {
-  question: 'How does temperature significantly below ISA affect altimeter accuracy?',
+  question: 'In air significantly colder than ISA, the pressure altimeter:',
   options: [
-    'A. The altimeter reads lower than actual altitude — the aircraft is lower than indicated in cold air, requiring altitude corrections on approaches to maintain obstacle clearance',
-    'B. The altimeter reads higher than actual altitude — the aircraft is higher than indicated — this is the correct regulatory position',
-    'C. Temperature has no effect on a calibrated altimeter with QNH correctly set and this applies to all IFR operations in Australian airspace',
-    'D. Cold temperatures cause altimeters to over-read only above FL100 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Over-reads, so true altitude is lower than indicated, requiring corrections on approaches',
+    'Under-reads, so the aircraft is actually higher than the indicated altitude',
+    'Is unaffected, once the correct QNH has been set',
+    'Over-reads, but only at levels above FL100'
   ],
   correct: 0,
-  explanation: 'Cold temperature effect: the altimeter is calibrated for ISA. In air colder than ISA, pressure levels are compressed closer together — the altimeter over-reads. This means the aircraft is at a LOWER true altitude than indicated. "From high to low, look out below" — flying from high QNH to low QNH, or in cold temperatures, the actual obstacle clearance is less than the altimeter shows. Temperature corrections are required for approach procedures in cold weather.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.9 / AIP ENR 1.7'
+  explanation: 'The altimeter is calibrated to ISA. In colder-than-ISA air the pressure levels are compressed, so the altimeter over-reads (indicates higher than the true altitude) and the aircraft is actually LOWER than indicated, \'from high to low, or hot to cold, look out below.\' Temperature corrections are applied to approach minima, step-downs and missed-approach altitudes on cold days.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.9 / AIP ENR 1.7'
 },
 
 {
-  question: 'A SIGMET covering your planned route indicates severe icing. The appropriate action is:',
+  question: 'A SIGMET on your planned route forecasts severe icing. The appropriate action is to:',
   options: [
-    'A. Assess the aircraft\'s ice protection capability, reroute or select an alternate altitude to avoid the severe icing area, and if avoidance is not possible consider diverting to an alternate route',
-    'B. Proceed — SIGMETs are advisory only and require no pilot action — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Continue and activate ice protection equipment only when ice accumulation is observed and this applies to all IFR operations in Australian airspace',
-    'D. Descend below the freezing level immediately and continue on the planned track — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Assess the aircraft\'s ice protection and reroute or change level to avoid the area, diverting if it cannot be avoided',
+    'Proceed entirely unchanged, treating the SIGMET as advisory information that requires no operational response',
+    'Continue as planned and switch on the ice protection only once ice is actually seen to accumulate',
+    'Descend below the forecast freezing level immediately and continue along the planned track'
   ],
   correct: 0,
-  explanation: 'A severe icing SIGMET requires a careful go/no-go assessment: review the aircraft\\\'s ice protection system (none, de-ice, anti-ice, FIKI certified); obtain PIREPs for pilot reports of actual conditions; consider altitude or route changes to avoid the area; if the aircraft is not equipped for the forecast icing intensity, do not depart or divert. Operating in conditions beyond the aircraft\\\'s certification is illegal and potentially fatal.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4'
+  explanation: 'A severe-icing SIGMET demands a go/no-go assessment: review the aircraft\'s ice protection (none, de-ice, anti-ice, FIKI), seek AIREPs of actual conditions, and change route or level to avoid the area. If the aircraft is not certified for the forecast intensity, do not depart, or divert. Operating beyond the certification is illegal and dangerous.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.4'
 },
 
 {
-  question: 'Frontal weather associated with an active cold front typically produces which IFR hazards?',
+  question: 'An active cold front typically produces which IFR hazards?',
   options: [
-    'A. Smooth stratiform cloud with light icing only',
-    'B. No hazards — cold fronts produce VFR conditions provided the pilot holds a current medical certificate',
-    'C. A narrow band of severe turbulence, embedded CB with extreme turbulence and icing, heavy precipitation, windshear on approach, and rapid weather change',
-    'D. Only light turbulence and moderate rain'
+    'Smooth stratiform cloud bringing no more than light rime icing and otherwise steady conditions',
+    'No significant hazards, since cold fronts generally produce fine VFR conditions behind them',
+    'A narrow band of severe turbulence with embedded CB, heavy precipitation, icing and low-level windshear',
+    'Only light turbulence accompanied by moderate, steady rain along the frontal zone'
   ],
   correct: 2,
-  explanation: 'Active cold front IFR hazards: severe turbulence in and near CB; embedded CBs in the frontal cloud; severe icing between 0°C and −20°C levels; heavy precipitation reducing visibility; windshear at low levels on approach (especially within 1,000 ft of touchdown); rapid weather change after frontal passage; squall lines ahead of the front. Pre-frontal planning must account for these hazards along the route.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.1.1'
+  explanation: 'An active cold front brings severe turbulence in and near CB, embedded cumulonimbus, severe icing in the 0 to -20C band, heavy precipitation reducing visibility, low-level windshear on approach, rapid post-frontal change and possible pre-frontal squall lines. These must be planned for along the route.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.1.1'
 },
 
 {
-  question: 'The turbulence intensity report "SEV TURB" in a PIREP means:',
+  question: 'A report of \'SEV TURB\' (severe turbulence) describes turbulence that:',
   options: [
-    'A. Turbulence occasionally caused large changes in altitude or attitude',
-    'B. Turbulence abrupt, large changes in altitude/attitude — momentary loss of aircraft control, with large airspeed variations, structural damage possible',
-    'C. Turbulence that caused passengers and crew to be thrown around the cabin',
-    'D. Any turbulence that required use of the autopilot provided the pilot holds a current medical certificate'
+    'Occasionally causes small, erratic changes in altitude or attitude that are easily corrected',
+    'Causes abrupt, large changes in altitude or attitude, momentary loss of control and possible structural damage',
+    'Merely presses the occupants intermittently against their seat belts without affecting aircraft control',
+    'Simply makes use of the autopilot advisable for passenger comfort'
   ],
   correct: 1,
-  explanation: 'Turbulence intensity: Light = slight erratic control changes; Moderate = similar to light but with greater intensity, changes in altitude/attitude; Severe = abrupt, large changes in altitude/attitude, momentary loss of control, large airspeed variations, structural damage possible; Extreme = aircraft impossible to control, structural damage imminent. Severe or extreme turbulence requires immediate altitude change and PIREP report.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4 / AIP MET'
+  explanation: 'Turbulence intensity: light = slight erratic changes; moderate = larger changes in altitude/attitude but control retained; severe = abrupt large changes, momentary loss of control, large airspeed variation, structural damage possible; extreme = aircraft impossible to control, damage likely. Severe or extreme turbulence warrants an immediate level change and an AIREP.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.4'
 },
 
 {
   question: 'Rime ice forms when:',
   options: [
-    'A. Large supercooled water droplets freeze on contact with the airframe',
-    'B. Small supercooled water droplets freeze quickly on contact, trapping air and forming a rough, opaque, white deposit — typically encountered in stratiform cloud',
-    'C. Ice crystals at high altitude accumulate on the windscreen only as approved by CASA under current regulations',
-    'D. Rain falls through a cold layer and freezes on the airframe'
+    'Large supercooled water droplets freeze slowly on contact, spreading rearward to form clear glaze ice',
+    'Small supercooled water droplets freeze quickly on contact, trapping air and forming a rough, opaque, white deposit',
+    'Ice crystals at high altitude accumulate on the windscreen and the leading edges in cloud',
+    'Rain falls through a sub-zero layer and freezes on the airframe as freezing rain'
   ],
   correct: 1,
-  explanation: 'Rime ice: forms from small supercooled droplets (fog, light cloud) that freeze quickly, trapping air. Result: rough, white, brittle, opaque ice. Encountered mainly in stratiform cloud. Less aerodynamically damaging than clear ice but can still significantly disrupt airflow. Typically less severe than clear ice for the same exposure time.',
+  explanation: 'Rime ice: forms from small supercooled droplets (fog, light cloud) that freeze quickly, trapping air. Result: rough, white, brittle, opaque ice. Encountered mainly in stratiform cloud. Less aerodynamically damaging than clear ice but can still significantly disrupt airflow. Typically less severe than clear ice for the same exposure time. Typically encountered in stratiform cloud.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4'
 },
 
 {
-  question: 'Clear (glaze) ice is more hazardous than rime ice because:',
+  question: 'Frost on the wing surfaces before an IFR departure:',
   options: [
-    'A. Clear ice is always heavier',
-    'B. Clear ice melts at lower temperatures',
-    'C. Clear ice affects only the windscreen — not the wings',
-    'D. Clear ice forms from large supercooled droplets that spread before freezing'
+    'Improves lift slightly by smoothing the upper wing surface for the take-off roll',
+    'May be left in place if it is less than about 5 mm thick',
+    'Affects the aircraft only once it is airborne and in cloud',
+    'Must be removed before flight, as even a thin layer disrupts airflow over the wing'
   ],
   correct: 3,
-  explanation: 'Clear (glaze) ice: large supercooled droplets impact the aerofoil and spread before freezing, creating smooth, dense, transparent ice. It is extremely hard and difficult to remove. It spreads beyond the ice protection system coverage. It severely disrupts the aerofoil shape causing significant lift reduction and drag increase. Associated with freezing rain, freezing drizzle, and heavy cloud with large droplets. Most hazardous form of structural icing.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4'
+  explanation: 'Even a thin layer of frost roughens the wing and disrupts the boundary layer, reducing lift and raising the stall speed, so it must be removed before flight. This is the clean-aircraft principle.',
+  reference: 'BOM meteorology / AIP ENR 1.5'
 },
 
 {
-  question: 'Mixed ice is a combination of:',
+  question: 'Mixed ice forms when:',
   options: [
-    'A. Rime ice and clear ice — occurring when the aircraft is in areas with both large and small supercooled droplets, producing rough, hard ice with poor',
-    'B. Snow and rain on the airframe — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Ice formed at altitude mixed with water formed at lower altitude and this applies to all IFR operations in Australian airspace',
-    'D. Ground frost and airframe ice — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Rime and clear ice forming together where large and small supercooled droplets coexist',
+    'Snow and rain freeze together on the airframe surfaces',
+    'Ice formed high at altitude mixes with water that has formed at the lower levels below',
+    'Ground frost combines with airframe ice accreted in flight'
   ],
   correct: 0,
-  explanation: 'Mixed ice occurs when rime and clear ice conditions coexist — both large and small supercooled droplets are present. The result is a rough, hard ice deposit with characteristics of both types. Mixed ice is common in layer cloud at the freezing level boundary. It combines the poor aerodynamics of rime with the hardness and coverage area of clear ice.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4'
+  explanation: 'Mixed ice forms where rime and clear-ice conditions coexist, with both large and small supercooled droplets present. The deposit is rough and hard, combining the poor aerodynamics of rime with the hardness and spread of clear ice, and is common in layer cloud around the freezing level.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.4'
 },
 
 {
   question: 'Forecast turbulence probability is highest along routes that:',
   options: [
-    'A. Track east-west across Australia at all altitudes',
-    'B. Fly above FL250 in clear air as approved by CASA under current regulations',
-    'C. Route over water at all times as approved by CASA under current regulations',
-    'D. Cross the jet stream, traverse mountain ranges, pass through or near frontal systems, or enter areas of forecast CB activity'
+    'Track generally east-west across the Australian continent, regardless of the cruising altitude flown',
+    'Cruise above FL250 in clear air, well away from any cloud or frontal activity',
+    'Route entirely over water, avoiding any overflight of land for the whole journey',
+    'Cross the jet stream, traverse mountain ranges, pass near frontal systems, or enter forecast CB activity'
   ],
   correct: 3,
-  explanation: 'High turbulence probability route factors: crossing or flying near the jet stream (CAT); traversing mountain ranges (mountain wave, rotor turbulence); frontal zones (wind shear, embedded CB); areas of forecast CB (extreme turbulence); strong surface heating areas (afternoon convection). Route selection and altitude choice can significantly reduce turbulence exposure.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.5'
+  explanation: 'Turbulence is most likely where a route crosses or nears the jet stream (CAT), traverses mountains (mountain wave and rotor), passes through frontal zones (shear and embedded CB) or enters forecast CB areas. Route and level selection can materially reduce exposure.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.5'
 },
 
 {
-  question: 'When weather conditions at the planned destination deteriorate below approach minima after the flight commences:',
+  question: 'If destination weather deteriorates below approach minima after departure, the pilot should:',
   options: [
-    'A. The pilot must divert immediately to the alternate — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The pilot must declare a fuel emergency and land at the nearest aerodrome — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The pilot assesses whether the alternate is still suitable (weather above alternate minima), recalculates fuel (destination approach + missed approach + alternate + final reserve), and plans accordingly',
-    'D. The flight may continue — IFR pilots must always attempt an approach at the destination first — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Divert immediately to the nominated alternate without making any further fuel, weather or terrain assessment first',
+    'Declare a fuel emergency and land at the nearest aerodrome regardless',
+    'Check the alternate is still above minima, recompute fuel for approach, missed, alternate and reserve, then plan on that basis',
+    'Continue regardless, since an IFR pilot must always attempt the destination approach first'
   ],
   correct: 2,
-  explanation: 'Deteriorating destination weather: (1) Check alternate is still above alternate minima; (2) Calculate fuel: remaining fuel must cover destination approach + missed approach + diversion to alternate + final reserve; (3) If fuel is adequate and alternate is suitable, continue; (4) If fuel margin is marginal, make diversion decision early while options exist. The "point of no return" — when minimum diversion fuel is reached — must be anticipated and acted upon proactively.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.4 / AIP ENR 1.1'
+  explanation: 'On deteriorating destination weather: confirm the alternate remains above its minima; recompute fuel so the remaining fuel covers a destination approach, a missed approach, diversion to the alternate and final reserve; and if the margin is marginal, make the diversion decision early. The point at which minimum diversion fuel is reached must be anticipated and acted on.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.2.4 / AIP ENR 1.1'
 },
 
 {
-  question: 'The effect of turbulence on fuel burn during IFR operations is:',
+  question: 'The effect of moderate-to-severe turbulence on IFR fuel burn is that it:',
   options: [
-    'A. Turbulence reduces fuel burn by increasing drag — this is the correct regulatory position',
-    'B. Turbulence has no effect on fuel burn if airspeed is maintained and this applies to all IFR operations in Australian airspace',
-    'C. Moderate to severe turbulence increases fuel burn due to higher power settings required, altitude deviations, and speed variations',
-    'D. Turbulence only affects fuel burn for propeller aircraft according to current CASR and AIP requirements'
+    'Reduces fuel burn overall, because the added airframe drag slows the aircraft down',
+    'Has no effect, provided the airspeed is held constant',
+    'Increases fuel burn through higher power settings, altitude deviations and speed changes',
+    'Affects fuel burn only in propeller-driven aircraft'
   ],
   correct: 2,
-  explanation: 'Turbulence increases fuel burn: the pilot may need higher power to maintain speed in downdrafts; altitude deviations mean flying at non-optimum cruise altitudes; unplanned routing around weather increases distance; holding may be required. IFR fuel planning should include turbulence contingency fuel in convective weather. This is particularly important when destination alternates are distant.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4'
+  explanation: 'Turbulence raises fuel burn: higher power may be needed to hold speed in downdraughts, altitude deviations force non-optimum cruise levels, and weather avoidance adds track miles and possible holding. Convective-weather planning should include turbulence contingency fuel, especially where alternates are distant.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.4'
 },
 
 {
-  question: 'Ground frost on the aircraft before departure under IFR:',
+  question: 'Ground frost on the aircraft before an IFR departure:',
   options: [
-    'A. Only affects aerodynamics if more than 1 cm thick',
-    'B. Frost on the fuselage is irrelevant — only leading edge frost matters provided the pilot holds a current medical certificate',
-    'C. The aircraft anti-icing system will remove frost during the take-off roll',
-    'D. Any frost, snow, or ice on lifting surfaces must be completely removed before take-off — even a light coating of frost can significantly reduce lift and increase stall speed'
+    'Only affects aerodynamics if it is more than 1 cm thick',
+    'Is irrelevant on the fuselage; only leading-edge frost matters',
+    'Will be cleared by the anti-icing system automatically during the take-off roll itself',
+    'Must be fully removed from the lifting surfaces before take-off, as light frost still cuts lift'
   ],
   correct: 3,
-  explanation: 'Clean aircraft concept: any frost, ice, or snow on lifting surfaces must be removed before flight. Even a thin layer of frost (like coarse sandpaper) can reduce CLmax by 30%, increase stall speed significantly, and delay or prevent normal rotation. Anti-icing systems on many light aircraft are not designed to remove ground frost — ground de-icing fluid must be applied before departure in freezing conditions.',
-  reference: 'CASR Part 91 / AIP ENR 1.1'
+  explanation: 'Under the clean-aircraft principle, all frost, snow or ice must be removed from lifting surfaces before flight. A thin layer of frost, rough like coarse sandpaper, can cut maximum lift coefficient by around 30%, raise the stall speed and impair rotation. Many light-aircraft anti-icing systems will not remove ground frost, so de-icing fluid must be applied in freezing conditions.',
+  reference: 'Part 91 MOS / AIP ENR 1.1 — clean aircraft'
 },
 
 {
   question: 'A SIGMET issued for "SEV ICE (FZRA)" means:',
   options: [
-    'A. Severe icing from frost and rain — ground icing conditions only',
-    'B. Freezing rain associated with a severe weather system',
-    'C. FZRA indicates freezing temperatures in rain shadow areas',
-    'D. Severe icing from freezing rain in the area — the most hazardous icing type involving supercooled large droplets'
+    'Severe icing from frost and rain, indicating ground icing conditions present at the aerodrome only',
+    'Freezing rain associated with a severe weather system somewhere within the forecast area',
+    'FZRA indicates freezing temperatures occurring in rain-shadow areas to the lee of terrain',
+    'Severe icing from freezing rain in the area, the most hazardous icing type involving supercooled large droplets'
   ],
   correct: 3,
   explanation: 'SEV ICE (FZRA) = Severe Icing due to Freezing Rain. Freezing rain produces supercooled large droplets (SLD) — the most hazardous icing type. Ice accretion rates can be extremely rapid, exceeding the capacity of any ice protection system. Freezing rain typically occurs when warm rain falls through a sub-zero layer. Avoidance is the only safe strategy.',
@@ -995,64 +995,64 @@ export const irexQuestions: {
 },
 
 {
-  question: 'When obtaining weather updates in flight for an IFR route, the pilot should use:',
+  question: 'To obtain weather updates in flight on an IFR route, the pilot should use:',
   options: [
-    'A. Only the pre-flight weather forecast — in-flight weather updates are not required — this is the correct regulatory position',
-    'B. VOLMET broadcasts; ATC or FSS for updated weather; onboard weather radar; PIREPs from other aircraft; ATIS when within range of the destination',
-    'C. Only onboard weather radar — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Weather updates are only required when an emergency occurs according to current CASR and AIP requirements'
+    'Only the pre-flight forecast, since in-flight weather updates are simply not required under the IFR',
+    'VOLMET, ATC or Flightwatch, onboard weather radar, AIREPs from other aircraft, and ATIS near the destination',
+    'Only the onboard weather radar, disregarding ATIS, VOLMET and every other source',
+    'No updates at all, unless an emergency arises in flight'
   ],
   correct: 1,
-  explanation: 'In-flight weather update sources: VOLMET (continuous HF/VHF broadcast of METARs and TAFs); ATC or FSS (request updated weather information); onboard weather radar (identify precipitation areas and CB); PIREPs from other aircraft (most current real-world conditions); ATIS when within range of destination. Proactive weather updating allows timely diversion decisions.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.6'
+  explanation: 'In-flight weather sources include VOLMET (continuous METAR/TAF broadcast), ATC or Flightwatch for updated information, onboard weather radar for precipitation and CB, AIREPs from other aircraft, and destination ATIS once in range. Updating proactively allows timely diversion decisions.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.6'
 },
 
 {
-  question: 'The turbulence penetration speed (VB) is used in severe turbulence because:',
+  question: 'The turbulence penetration speed (VB) is used in severe turbulence because it:',
   options: [
-    'A. It maximises aircraft speed to transit the turbulent area quickly — this is the correct regulatory position',
-    'B. VB is the same as Vno for all aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. VB increases control authority in turbulence — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. It minimises structural loads — fast enough to maintain positive control but below manoeuver speed where full control deflection could damage the airframe,'
+    'Maximises airspeed so the aircraft transits the turbulent area in the shortest possible time, minimising exposure',
+    'Is identical to the normal operating limit speed Vno for every aircraft type',
+    'Increases the available control authority for manoeuvring while flying in turbulence',
+    'Minimises gust loads while keeping positive control, below the speed where full inputs could overstress the airframe'
   ],
   correct: 3,
-  explanation: 'VB (turbulence penetration speed): recommended speed for flight in severe turbulence or extreme gusts. Too fast and gust loads may damage the structure; too slow and stall/control is lost. VB is the design gust speed — at or below VB, the aircraft structure can withstand the maximum design gust load. For most aircraft, VB is between Vno and Vne. Specific values are published in the AFM.',
+  explanation: 'VB is the recommended speed for severe turbulence or extreme gusts. Too fast and gust loads may overstress the structure; too slow and stall or loss of control results. At or below VB the structure can absorb the maximum design gust load. VB usually lies between Vno and Vne and is published in the AFM.',
   reference: 'AIP ENR 1.1 / Aircraft Flight Manual'
 },
 
 {
-  question: 'Mountain wave turbulence is most severe in the:',
+  question: 'Mountain-wave turbulence is most severe in the:',
   options: [
-    'A. Wave crest area — above the mountain tops as approved by CASA under current regulations',
-    'B. Rotor zone — below the mountain crest level on the lee side, where violent, unpredictable turbulence occurs in a region of reverse flow',
-    'C. Windward side of the range at all levels as approved by CASA under current regulations',
-    'D. Above the tropopause'
+    'The wave-crest region marked by lenticular cloud, lying well above the level of the mountain tops',
+    'Rotor zone below crest level on the lee side, where violent, unpredictable turbulence and reverse flow occur',
+    'The windward side of the range, where the air is forced to rise, at every level',
+    'In the stable air above the tropopause, well clear of the terrain below'
   ],
   correct: 1,
-  explanation: 'Mountain wave rotor zone: the most hazardous area is the rotor — a rotating mass of air below the mountain crest on the lee side. The rotor contains the most violent turbulence in the wave system (extreme turbulence possible). Lenticular clouds mark wave crests and indicate wave activity. Rotors are often marked by fractus or roll clouds. IFR aircraft should maintain altitude above the rotor zone when crossing mountain ranges in wave conditions.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.1.1'
+  explanation: 'The rotor, a rotating mass of air below crest level on the lee side, holds the most violent turbulence in a wave system and can reach extreme intensity. Lenticular cloud marks the wave crests and roll or fractus cloud marks the rotor. IFR aircraft should cross ranges well above the rotor zone in wave conditions.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.1.1'
 },
 
 {
-  question: 'The NDB (Non-Directional Beacon) transmits:',
+  question: 'A Non-Directional Beacon (NDB) transmits:',
   options: [
-    'A. Directional signals on 360 radials from the station — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. An omnidirectional signal in the LF/MF band — the aircraft\'s ADF receiver determines the bearing to the station by measuring the signal arrival direction',
-    'C. A highly directional beam similar to a VOR but on lower frequencies and this applies to all IFR operations in Australian airspace',
-    'D. Signals only on the published NDB frequency during daylight hours according to current CASR and AIP requirements'
+    'Directional signals transmitted along 360 separate radials outward from the station',
+    'An omnidirectional LF/MF signal; the aircraft\'s ADF derives the bearing from the signal\'s arrival direction',
+    'A narrow directional beam similar to a VOR, but simply broadcast on the lower LF/MF frequencies instead',
+    'Usable signals only on its published frequency during the hours of daylight'
   ],
   correct: 1,
-  explanation: 'NDB transmits a non-directional (omnidirectional) signal in the LF/MF band (190–1750 kHz). The aircraft\\\'s Automatic Direction Finder (ADF) receiver detects the direction from which the signal arrives and displays it on the ADF indicator as a relative bearing. Unlike VOR, the NDB does not transmit directional information — the aircraft receiver determines the bearing.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.2 / AIP ENR'
+  explanation: 'An NDB radiates a non-directional LF/MF signal (about 190-1750 kHz). The aircraft\'s ADF detects the direction the signal arrives from and shows it as a relative bearing. Unlike a VOR, the NDB carries no directional information; the receiver determines the bearing.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.2'
 },
 
 {
   question: '"Coastal refraction" affecting NDB signals occurs because:',
   options: [
-    'A. NDB signals travel faster over sea than land — when signals cross a coastline at an angle, they are refracted',
-    'B. Sea water absorbs NDB signals reducing range',
-    'C. Coastal fog reflects NDB signals causing multiple indications',
-    'D. Coastal refraction only affects VHF signals, not LF/MF NDB signals'
+    'NDB signals travel faster over sea than land, when signals cross a coastline at an angle, they are refracted',
+    'Sea water absorbs NDB signals strongly, reducing the usable range out over the ocean',
+    'Coastal fog reflects the NDB signal back, causing several conflicting bearing indications at once',
+    'Coastal refraction affects only VHF signals such as VOR, and not LF/MF NDB signals'
   ],
   correct: 0,
   explanation: 'Coastal refraction: LF/MF signals propagate at different velocities over sea versus land. When the signal path crosses a coast at an angle (not perpendicular), the wave front is refracted. The error is greatest when the signal crosses the coast at a shallow angle and when the station is over land or sea while the aircraft is on the opposite medium. Errors can be several degrees — significant for NDB approaches.',
@@ -1060,64 +1060,64 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The effect of thunderstorms on NDB navigation is:',
+  question: 'The effect of thunderstorms on NDB navigation is that:',
   options: [
-    'A. Thunderstorms cause the ADF needle to deflect towards the lightning discharge — the static electrical disturbances are similar in frequency to NDB signals and',
-    'B. Thunderstorms have no effect on NDB — it is a ground-based system — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Thunderstorms only affect NDB at night — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Thunderstorms reduce NDB range but not bearing accuracy — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The ADF needle is deflected toward the lightning discharge, whose static lies in the same band as the NDB',
+    'There is no effect at all, since the NDB is a robust ground-based navigation system',
+    'NDB bearing indications are affected only during the hours of darkness, and not by any daytime storms',
+    'NDB range is reduced by storms, but the bearing accuracy itself is never affected'
   ],
   correct: 0,
-  explanation: 'Thunderstorms cause ADF bearing errors: lightning discharges produce electromagnetic signals in the LF/MF range — the same band as NDB. The ADF cannot distinguish between the NDB signal and lightning static, causing the needle to oscillate and point toward CB activity rather than the NDB. This is a significant safety consideration for NDB approaches in convective weather.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.2'
+  explanation: 'Lightning radiates electromagnetic energy in the LF/MF band, the same band as the NDB, so the ADF cannot distinguish the two and the needle oscillates or points toward the storm rather than the beacon. This is a serious consideration for NDB approaches in convective weather.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.2'
 },
 
 {
   question: 'Loss of NDB signal integrity is indicated by:',
   options: [
-    'A. The ADF needle pointing to a fixed bearing as approved by CASA under current regulations',
-    'B. The ADF frequency display going blank',
-    'C. The ADF needle rotating, oscillating wildly, or pointing erratically — indicating unreliable signal. An "Off" flag, if fitted, may appear',
-    'D. The NDB ident tone stopping — no other indication'
+    'The ADF needle settling steadily and firmly onto a single fixed bearing',
+    'The ADF frequency display going completely blank, with no bearing or ident shown at all',
+    'The ADF needle rotating, oscillating or pointing erratically; an OFF flag may appear if fitted',
+    'The NDB ident tone stopping, with no other indication available'
   ],
   correct: 2,
-  explanation: 'NDB signal integrity loss: primary indication is erratic, rotating, or oscillating ADF needle. The needle may point toward lightning or rotate freely with no reliable indication. Some ADF equipment has a warning flag (similar to VOR OFF flag). Identification: the NDB identification morse code should be continuously audible — loss of ident tone indicates signal loss or station off the air.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.2'
+  explanation: 'The primary sign is an erratic, rotating or oscillating ADF needle giving no reliable indication; some equipment also has a warning flag. The NDB ident (Morse) should be continuously audible, so loss of the ident also signals loss of signal or a station off the air.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.2'
 },
 
 {
-  question: 'Errors when turning with an ADF/NDB occur because:',
+  question: 'ADF/NDB turning errors occur because:',
   options: [
-    'A. The ADF antenna rotates with the aircraft causing bearing changes — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The ADF relative bearing is referenced to the aircraft nose — when the aircraft turns, the heading changes and therefore the relative bearing to the NDB changes even if the aircraft has not moved relative to the station',
-    'C. The NDB signal strength varies with aircraft bank angle — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Turning errors only occur with NDB stations below 200 kHz — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The ADF antenna itself physically rotates with the aircraft, altering the indicated bearing',
+    'Relative bearing is referenced to the nose, so turning changes it without the position changing',
+    'The NDB signal strength varies with the aircraft\'s bank angle',
+    'Turning errors arise only with NDB stations transmitting below 200 kHz'
   ],
   correct: 1,
-  explanation: 'ADF turning errors: relative bearing is measured from the aircraft\\\'s nose (magnetic heading). When the aircraft turns, the heading changes and therefore the relative bearing changes — even if the aircraft has not moved relative to the NDB. To convert relative bearing to magnetic bearing: MB to station = MH + RB. This calculation must be repeated after each heading change. Pilots must account for heading changes when using ADF for tracking.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.2'
+  explanation: 'Relative bearing is measured from the aircraft\'s nose (heading). When the heading changes in a turn, the relative bearing changes even though the aircraft has not moved relative to the beacon. Convert with magnetic bearing to station = magnetic heading + relative bearing, recomputing after each heading change.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.2'
 },
 
 {
   question: 'NDB station passage is indicated by:',
   options: [
-    'A. The ADF needle pointing to 180° (tail of aircraft) as approved by CASA under current regulations',
-    'B. A steady 000° indication for 30 seconds',
-    'C. Rapid rotation or oscillation of the ADF needle from the direct ahead position to various angles as the aircraft passes over or abeam the station',
-    'D. The DME reading zero'
+    'The ADF needle pointing steadily to 180 degrees, directly off the tail of the aircraft',
+    'A steady 000-degree indication held for about 30 seconds',
+    'Rapid swinging or oscillation of the ADF needle as the aircraft passes over or abeam the station',
+    'The DME distance reading falling to exactly zero'
   ],
   correct: 2,
-  explanation: 'NDB station passage: as the aircraft passes over the NDB, the signal angle changes very rapidly. The ADF needle swings erratically as the aircraft crosses overhead. After passing, the needle settles pointing to the tail position (180° if on a direct overhead track). The moment of maximum needle oscillation is the station passage indicator.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.2'
+  explanation: 'As the aircraft crosses the NDB the bearing changes very rapidly and the ADF needle swings erratically; the moment of maximum oscillation marks station passage. After passing, the needle settles toward the tail position (180 degrees relative if directly overhead).',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.2'
 },
 
 {
   question: 'To fly to an NDB with 20° right drift correction applied, the aircraft heading is 090° and the ADF needle reads 340°. The aircraft is:',
   options: [
-    'A. Right of the desired track',
-    'B. Left of the desired track',
-    'C. The ADF reading confirms the correct track',
-    'D. On the desired track to the NDB with 20° WCA applied'
+    'Right of the desired track',
+    'Left of the desired track',
+    'The ADF reading confirms the correct track',
+    'On the desired track to the NDB with 20° WCA applied'
   ],
   correct: 3,
   explanation: 'MB to station = MH + RB = 090 + 340 = 430 − 360 = 070°M. If the desired track to the NDB is 070° and the heading is 090° (20° right correction for wind from the right), this is correct. The relative bearing of 340° means the NDB is 20° to the left of the nose — consistent with flying a heading 20° to the right of track to correct for drift.',
@@ -1127,10 +1127,10 @@ export const irexQuestions: {
 {
   question: 'Given heading 180°M and ADF relative bearing 270°, the magnetic bearing to the NDB is:',
   options: [
-    'A. 090°M',
-    'B. 270°M',
-    'C. 450°M (090°M)',
-    'D. 180°M'
+    '090°M',
+    '270°M',
+    '450°M (090°M)',
+    '180°M'
   ],
   correct: 2,
   explanation: 'MB to station = MH + RB = 180 + 270 = 450 − 360 = 090°M. The NDB bears 090°M from the aircraft (due east). The aircraft is due west of the station. The ADF needle pointing 270° (left of nose) while heading south confirms the station is due east.',
@@ -1140,10 +1140,10 @@ export const irexQuestions: {
 {
   question: 'The VOR (VHF Omnidirectional Range) operates in the frequency band:',
   options: [
-    'A. VHF 108.0–117.95 MHz',
-    'B. LF/MF 190–1750 kHz',
-    'C. UHF 960–1215 MHz',
-    'D. HF 3–30 MHz'
+    'VHF 108.0–117.95 MHz',
+    'LF/MF 190–1750 kHz',
+    'UHF 960–1215 MHz',
+    'HF 3–30 MHz'
   ],
   correct: 0,
   explanation: 'VOR operates in the VHF band: 108.0–117.95 MHz. This band is shared with ILS (108.0–111.95 MHz). Frequencies ending in odd tenths (108.1, 108.3, etc.) are ILS; even tenths (108.2, 108.4, etc.) are VOR in the 108–112 MHz range. Above 112 MHz, all are VOR. VHF propagation is line-of-sight — range depends on aircraft altitude.',
@@ -1153,10 +1153,10 @@ export const irexQuestions: {
 {
   question: '"Scalloping" of the VOR CDI is:',
   options: [
-    'A. Steady CDI deflection indicating off-course',
-    'B. The CDI centering sequence during VOR approach',
-    'C. A rapid side-to-side oscillation of the CDI needle caused by multipath signal interference',
-    'D. Scalloping is a normal feature of VOR operation'
+    'A steady CDI deflection to one side that simply indicates the aircraft is off course',
+    'The automatic CDI centring sequence that occurs during a VOR instrument approach',
+    'A rapid side-to-side oscillation of the CDI needle caused by multipath signal interference',
+    'A normal feature of VOR operation that requires no correction by the pilot'
   ],
   correct: 2,
   explanation: 'VOR scalloping: rapid oscillation of the CDI caused by multipath interference (signals reflecting off terrain or structures), close proximity to the VOR (cone of confusion overhead), or signal propagation issues. Scalloping makes the VOR unreliable for navigation. It is most common in mountainous terrain and very close to the station. The aircraft should deviate or use an alternate navaid.',
@@ -1164,38 +1164,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'VOR signal integrity loss is indicated by:',
+  question: 'Loss of VOR signal integrity is indicated by:',
   options: [
-    'A. A red "OFF" warning flag appearing on the VOR indicator — indicating the received signal is too weak or unreliable to provide a usable indication',
-    'B. The CDI needle deflecting to full scale — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The frequency display blanking — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The DME disconnecting — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'A red OFF warning flag on the VOR indicator, showing the signal is too weak or unreliable to use',
+    'The CDI needle deflecting smoothly across to full scale and then simply staying there',
+    'The receiver\'s frequency display going blank',
+    'The associated DME disconnecting from the receiver'
   ],
   correct: 0,
-  explanation: 'VOR signal integrity: when the received signal falls below minimum usable strength or the 30 Hz reference is not received, a red "OFF" warning flag appears on the VOR CDI/RMI. Navigation from a VOR with an OFF flag is unreliable and must not be used for instrument approaches. The flag can also appear during VOR station passage (cone of confusion).',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.4'
+  explanation: 'When the received VOR signal falls below usable strength, or the 30 Hz reference is lost, a red OFF flag appears on the CDI/RMI and the indication must not be used, including for an approach. The flag can also appear momentarily overhead in the cone of confusion.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.4'
 },
 
 {
   question: 'VOR station passage is indicated by:',
   options: [
-    'A. Rapid CDI reversal and possible OFF flag — as the aircraft passes overhead, the TO/FROM indicator flips and the CDI deflects',
-    'B. The DME reading zero — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The CDI centering permanently and this applies to all IFR operations in Australian airspace',
-    'D. A verbal station identification tone according to current CASR and AIP requirements'
+    'Rapid CDI reversal and possible OFF flag',
+    'The DME reading zero',
+    'The CDI centering permanently',
+    'A verbal station identification tone'
   ],
   correct: 0,
-  explanation: 'VOR station passage (cone of confusion): directly overhead the VOR, the reference signal becomes unreliable. The CDI may deflect rapidly and the TO/FROM indicator reverses. An OFF flag may briefly appear. This is the VOR station passage indication — after crossing, the TO indicator changes to FROM. The cone of confusion radius depends on aircraft altitude (approximately equal to altitude above the station).',
+  explanation: 'VOR station passage (cone of confusion): directly overhead the VOR, the reference signal becomes unreliable. The CDI may deflect rapidly and the TO/FROM indicator reverses. An OFF flag may briefly appear. This is the VOR station passage indication — after crossing, the TO indicator changes to FROM. The cone of confusion radius depends on aircraft altitude (approximately equal to altitude above the station). As the aircraft passes overhead, the TO/FROM indicator flips and the CDI deflects.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.4'
 },
 
 {
   question: 'When flying FROM a VOR on the 090° radial (heading approximately 090°), the OBS should be set to:',
   options: [
-    'A. 270° with a FROM indication',
-    'B. 090° with a FROM indication',
-    'C. 090° with a TO indication',
-    'D. 270° with a TO indication'
+    '270° with a FROM indication',
+    '090° with a FROM indication',
+    '090° with a TO indication',
+    '270° with a TO indication'
   ],
   correct: 1,
   explanation: 'Flying outbound on the 090° radial (FROM the station heading east): set OBS to 090°. The indicator shows FROM — confirming you are tracking on the 090° radial away from the station. If the aircraft drifts north of the radial, the CDI deflects left (fly left). If drifting south, CDI deflects right (fly right). This gives correct command sense for FROM tracking.',
@@ -1205,23 +1205,23 @@ export const irexQuestions: {
 {
   question: 'When tracking TO a VOR on the 270° radial (heading approximately 090°), the OBS should be set to:',
   options: [
-    'A. 090° with a FROM indication',
-    'B. 090° with a TO indication',
-    'C. 270° with a TO indication',
-    'D. 270° with a FROM indication'
+    '090 degrees with a FROM indication',
+    '270 degrees with a TO indication',
+    '090 degrees with a TO indication',
+    '270 degrees with a FROM indication'
   ],
   correct: 2,
-  explanation: 'Flying inbound to a VOR on the 270° radial (coming from the west, heading east 090°): set OBS to 270°. The indicator shows TO — you are tracking inbound on the 270° radial toward the station. CDI provides correct steering: needle right = fly right, needle left = fly left. Setting TO with a FROM selection (or vice versa) gives reverse sensing — a significant error.',
+  explanation: 'To track inbound to the station along the 270 radial, the inbound course is 090 (the reciprocal of the radial). Setting OBS 090 gives a TO indication with normal CDI sensing, so the pilot flies toward the needle. Setting OBS 270 would show FROM with reversed sensing.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.6'
 },
 
 {
   question: 'An aircraft is at heading 045° with the VOR OBS set to 180° and showing a TO indication with CDI deflected 2 dots right. The aircraft is:',
   options: [
-    'A. Right of the 180° inbound track — fly left to intercept',
-    'B. Left of the 180° inbound track — fly right to intercept',
-    'C. On the 180° track — the deflection is within tolerance',
-    'D. The CDI is in reverse sensing — the aircraft cannot determine position'
+    'Right of the 180° inbound track, fly left to intercept',
+    'Left of the 180° inbound track, fly right to intercept',
+    'On the 180° track, the deflection is within tolerance',
+    'The CDI is in reverse sensing, the aircraft cannot determine position'
   ],
   correct: 1,
   explanation: 'OBS 180° with TO selected and heading 045°: this is an intercept situation, not tracking. The CDI is deflected right with a TO flag. With a TO selection, CDI right = fly right (toward the 180° inbound track). The aircraft is currently left of the 180° inbound course. The 045° heading is an intercept heading — turn right to intercept the 180° inbound track.',
@@ -1229,77 +1229,77 @@ export const irexQuestions: {
 },
 
 {
-  question: 'DME "slant range" error is most significant when:',
+  question: 'DME slant-range error is most significant when:',
   options: [
-    'A. The aircraft is far from the station — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The aircraft is directly overhead or close to the station at low altitude — slant range equals actual altitude and reads significantly more than zero',
-    'C. The aircraft is flying at high altitude across the country and this applies to all IFR operations in Australian airspace',
-    'D. Slant range error is constant regardless of position according to current CASR and AIP requirements'
+    'The aircraft is at long slant range from the station, flying low down near the horizon',
+    'The aircraft is close to the station at altitude, where slant range reads well above zero overhead',
+    'The aircraft is at high altitude tracking across the country',
+    'Never, since slant-range error is constant regardless of position'
   ],
   correct: 1,
-  explanation: 'DME slant range: DME measures the straight-line distance (slant range) from aircraft to ground transponder — not ground distance. When flying directly overhead the station, DME reads altitude in nm (approximately), not zero. At 10,000 ft directly overhead, DME reads ~1.6 nm. At distance, slant range error becomes negligible — a 30 nm ground distance at 10,000 ft has slant range of ~30.04 nm (negligible error).',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.9'
+  explanation: 'DME measures the straight-line (slant) distance to the ground station, not ground distance. Directly overhead it reads approximately the aircraft\'s height in nm rather than zero (about 1.6 nm at 10,000 ft). At range the error is negligible (30 nm ground at 10,000 ft is about 30.04 nm slant).',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.9'
 },
 
 {
-  question: 'When not tracking directly to or from the DME station, the DME reading:',
+  question: 'When not tracking directly to or from a DME station, the DME reading:',
   options: [
-    'A. Does not change at the rate corresponding to groundspeed along track — the rate of change of DME depends on the angle between the track and the bearing to the station',
-    'B. Is always accurate — DME reads slant range regardless of track provided the pilot holds a current medical certificate',
-    'C. Must be corrected for magnetic variation',
-    'D. Is unreliable and cannot be used for navigation'
+    'Does not change at groundspeed; the rate depends on the angle between track and the bearing to the station',
+    'Is always accurate to groundspeed, since DME reads slant range regardless of the track flown',
+    'Must be corrected for magnetic variation before use',
+    'Becomes unusable and cannot support navigation at all'
   ],
   correct: 0,
-  explanation: 'DME when not tracking directly to/from station: the distance changes slowly when tracking at 90° to the bearing, and normally when tracking directly to/from. For example, an aircraft tracking 90° to the station at 20 nm will show minimal DME change over a significant distance flown. This must be considered when using DME for position fixing — DME arcs are valid, but speed checks based on DME rate change only apply on direct tracks.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.9'
+  explanation: 'DME distance changes most slowly when tracking at 90 degrees to the bearing and at the full rate only when tracking directly to or from the station. This matters for position fixing: DME arcs remain valid, but groundspeed checks from DME rate are only meaningful on direct tracks.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.9'
 },
 
 {
   question: 'The ILS (Instrument Landing System) components are:',
   options: [
-    'A. Localiser (lateral guidance), glideslope (vertical guidance), and marker beacons (distance) — typically inner, middle, and outer markers',
-    'B. Localiser, glideslope, and GNSS overlay',
-    'C. VOR, DME, and approach lighting provided the pilot holds a current medical certificate',
-    'D. Localiser and glideslope only — marker beacons are optional'
+    'Localiser (lateral guidance), glideslope (vertical guidance), and marker beacons (distance)',
+    'Localiser, glideslope, and a GNSS overlay that provides the distance information',
+    'A VOR, a co-located DME, and the runway approach lighting system',
+    'Localiser and glideslope only, with the marker beacons being optional extras'
   ],
   correct: 0,
-  explanation: 'ILS components: (1) Localiser (LOC) — VHF 108–112 MHz, provides lateral guidance aligned with runway centreline, ±2.5° full-scale deflection; (2) Glideslope (GP) — UHF, provides vertical guidance typically at 3°, ±0.7° full-scale; (3) Marker beacons — OM (outer marker, 4–7 nm), MM (middle marker, ~0.5 nm), IM (inner marker, close to threshold) providing distance fixes. Some systems replace markers with DME.',
+  explanation: 'ILS components: (1) Localiser (LOC) — VHF 108–112 MHz, provides lateral guidance aligned with runway centreline, ±2.5° full-scale deflection; (2) Glideslope (GP) — UHF, provides vertical guidance typically at 3°, ±0.7° full-scale; (3) Marker beacons — OM (outer marker, 4–7 nm), MM (middle marker, ~0.5 nm), IM (inner marker, close to threshold) providing distance fixes. Some systems replace markers with DME. Typically inner, middle, and outer markers.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.10'
 },
 
 {
   question: 'Glideslope fluctuations on an ILS approach may be caused by:',
   options: [
-    'A. Aircraft flying too fast — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Glideslope fluctuations are normal — they do not indicate a problem and this applies to all IFR operations in Australian airspace',
-    'C. Interference from reflecting objects near the glideslope antenna (vehicles, buildings, terrain), multiple path signals',
-    'D. Fluctuations are caused by strong crosswinds according to current CASR and AIP requirements'
+    'The aircraft simply flying faster than the recommended final approach speed on the procedure',
+    'Nothing, since glideslope fluctuations are entirely normal',
+    'Multipath interference from vehicles, buildings or terrain reflecting the signal near the antenna',
+    'Strong crosswinds acting on the airframe during the approach'
   ],
   correct: 2,
-  explanation: 'ILS glideslope fluctuations: caused by multipath interference from terrain, buildings, or vehicles near the glideslope antenna. Large vehicles crossing the runway (hold short lines are critical for ILS protection) can deflect the signal. Heavy rain can also cause minor fluctuations. Significant or sudden glideslope fluctuations should prompt the pilot to revert to a non-precision approach or execute a missed approach.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.10'
+  explanation: 'Glideslope fluctuations are typically multipath effects from terrain, buildings or large vehicles near the antenna (why ILS-sensitive holding points exist), and heavy rain can cause minor effects. Significant or sudden fluctuations should prompt reversion to a non-precision approach or a missed approach.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.10'
 },
 
 {
-  question: 'An ILS "course reversal" indication occurs when:',
+  question: 'On the back course of a localiser, the CDI:',
   options: [
-    'A. The aircraft is established on the localiser back beam',
-    'B. The aircraft overshoots the localiser and re-intercepts from the other side provided the pilot holds a current medical certificate',
-    'C. Course reversal occurs when the VOR fails during ILS approach',
-    'D. Flying on the back course of the ILS (opposite direction to the runway heading) causes reversed CDI sensing — right deflection means fly left if following normal ILS navigation'
+    'Indicates the aircraft is correctly established on the localiser back beam',
+    'Shows the aircraft has overshot the localiser and is re-intercepting from the other side',
+    'Fails because the VOR receiver has dropped out during the ILS approach',
+    'Has reversed sensing, so a right deflection requires a correction to the left'
   ],
   correct: 3,
-  explanation: 'ILS back course: the localiser transmits both forward and back course signals. When flying inbound on the back course (reciprocal runway direction), the CDI deflects in the opposite direction to what\\\'s needed — right deflection means the aircraft is to the right of centreline, but to correct you fly left (opposite to normal). Back course approaches are NOT standard ILS approaches and require awareness of reversed sensing.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.10'
+  explanation: 'A localiser radiates a usable signal on its back course (the reciprocal direction). Flown inbound on the back course with normal navigation, the CDI sensing is reversed: a right deflection means correct to the left. Back-course tracking therefore requires deliberate awareness of the reversed sense.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.10'
 },
 
 {
   question: 'The outer marker on an ILS approach provides:',
   options: [
-    'A. The final approach fix for glideslope intercept',
-    'B. A position fix approximately 4–7 nm from the threshold, typically where the glideslope is intercepted',
-    'C. The missed approach point',
-    'D. Confirmation that the aircraft is established on the localiser'
+    'The final approach fix, at which the glideslope intercept normally occurs',
+    'A position fix approximately 4–7 nm from the threshold, typically where the glideslope is intercepted',
+    'The missed approach point for the instrument approach procedure',
+    'Confirmation that the aircraft is correctly established on the localiser centreline inbound'
   ],
   correct: 1,
   explanation: 'Outer Marker (OM): located approximately 4–7 nm from threshold, coinciding with the point where the glideslope is intercepted at the initial descent altitude. OM audio: continuous low-pitched dashes (-- --). Marker light: blue. Middle Marker (MM): ~0.5 nm from threshold at DA height, audio: alternating dot-dash (·-·-), light: amber. Inner Marker: close to threshold (Cat II/III), audio: rapid dots (····), light: white.',
@@ -1309,10 +1309,10 @@ export const irexQuestions: {
 {
   question: 'The ILS glideslope is typically set at:',
   options: [
-    'A. 2.5°',
-    'B. 3.5°',
-    'C. 4.0°',
-    'D. 3.0°'
+    '2.5°',
+    '3.5°',
+    '4.0°',
+    '3.0°'
   ],
   correct: 3,
   explanation: 'Standard ILS glideslope angle is 3.0° — equating to approximately 318 ft/nm descent rate. At typical approach speed of 130 kt, this is ~800 ft/min. Steeper glideslopes (3.5°–5.5°) are published where terrain or obstacles require. The 3° glideslope corresponds well to normal approach technique and VASl/PAPI indications.',
@@ -1322,23 +1322,23 @@ export const irexQuestions: {
 {
   question: 'The rated coverage of a VOR must be checked before use because:',
   options: [
-    'A. VOR coverage is the same everywhere in Australia — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. VOR coverage only varies at night — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. VOR usability varies with aircraft altitude and distance — the rated coverage specifies the minimum altitude and maximum distance at which reliable guidance is provided',
-    'D. Coverage ratings are only relevant for ILS, not VOR — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'VOR coverage is effectively identical at every location throughout Australian airspace',
+    'VOR coverage is fully reliable by day, but it changes and noticeably degrades only during the hours of darkness',
+    'Usability varies with altitude and distance; the rated coverage sets the minimum altitude and maximum reliable range',
+    'Coverage ratings are published for the ILS only and have no application to the VOR at all'
   ],
   correct: 2,
-  explanation: 'VOR rated coverage: each VOR has a specified service volume — the altitude and range combinations within which the signal is reliable. Below the minimum altitude or beyond maximum range, the signal may be too weak or unreliable even though the receiver may not show an OFF flag. AIP lists rated coverage for each VOR. Always verify the VOR is within its rated coverage for the planned flight.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.1'
+  explanation: 'Each VOR has a published service volume, the altitude/range combinations within which the signal is reliable. Below the minimum altitude or beyond the maximum range the signal may be unreliable even without an OFF flag. AIP lists the rated coverage; confirm the VOR is within it for the intended use.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.1'
 },
 
 {
   question: 'A "DME arc" procedure requires the pilot to:',
   options: [
-    'A. Fly a straight course maintaining constant DME distance',
-    'B. Increase DME distance during descent',
-    'C. A DME arc is only used in radar environments',
-    'D. Maintain a constant slant range from the DME station — the aircraft tracks a curved path'
+    'Fly a straight course while maintaining a constant DME distance from the station',
+    'Increase the DME distance steadily during the descent on final',
+    'A DME arc procedure is only used within a radar surveillance environment',
+    'Maintain a constant slant range from the DME station, the aircraft tracks a curved path'
   ],
   correct: 3,
   explanation: 'DME arc: the aircraft maintains a constant DME distance from the station while flying a curved path. Lead radials are published to help anticipate the turn to final. Technique: fly the heading that keeps DME constant — if DME is increasing, turn toward the station; if decreasing, turn away. DME arcs are used as approach transition routes, connecting the en-route structure to the final approach course.',
@@ -1346,51 +1346,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The NDB frequency band (LF/MF) is susceptible to which propagation errors that VHF navaids (VOR) are not?',
+  question: 'Compared with VHF aids such as the VOR, the LF/MF NDB is additionally susceptible to:',
   options: [
-    'A. Altitude errors — LF/MF signals behave differently at altitude — this is the correct regulatory position',
-    'B. Precipitation static only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. VOR and NDB are equally susceptible to all propagation errors according to current CASR and AIP requirements',
-    'D. Night effect — at night, LF/MF signals travel further as sky waves, interfering with ground waves from distant stations and causing bearing errors'
+    'Altitude errors, because LF/MF signals behave differently with increasing height',
+    'Precipitation static interference, and no other additional propagation error',
+    'Nothing extra at all, since the VOR and the NDB are affected equally by every propagation error',
+    'The night effect, where after dark LF/MF sky waves from distant stations interfere with the ground wave'
   ],
   correct: 3,
-  explanation: 'Night effect: at night, the ionosphere lowers and reflects LF/MF sky waves back to earth, potentially from very distant stations. These sky waves interfere with the ground wave from the NDB, causing ADF bearing oscillation and errors. Maximum effect at dawn/dusk. VHF signals (VOR) penetrate the ionosphere and are not affected by sky wave. NDB reliability decreases significantly at night, especially near dawn/dusk.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.2'
+  explanation: 'At night the ionosphere reflects LF/MF sky waves back to earth from distant stations; these interfere with the local ground wave and make the ADF needle oscillate and read in error, worst around dawn and dusk. VHF VOR signals pass through the ionosphere and are unaffected, so NDB reliability falls at night.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.2'
 },
 
 {
-  question: 'Given an aircraft heading of 360°M and the VOR OBS set to 180°, if the CDI is showing 2 dots left deflection with a FROM indication, the aircraft is:',
+  question: 'Heading 360 M, VOR OBS 180, CDI 2 dots left with a FROM indication. The aircraft is:',
   options: [
-    'A. 2° east of the 180° radial from the station — with a FROM indication and 2 dots left, the aircraft is to the right of the 180° radial (east side)',
-    'B. 2° west of the 180° radial from the station provided the pilot holds a current medical certificate',
-    'C. On the 182° radial',
-    'D. The indication is in reverse sensing — OBS must be set to the aircraft heading'
+    'West of the 180-degree radial from the station',
+    'East of the 180-degree radial from the station',
+    'Established on the 182-degree radial from the station',
+    'In reverse sensing, so the OBS must be reset to the aircraft heading'
   ],
   correct: 0,
-  explanation: 'OBS 180° / FROM / CDI 2 dots left / heading 360°: with FROM selected, CDI left = aircraft is to the right of the 180° radial (toward 170° radial side — east side). The 180° radial runs due south from the station. Aircraft heading 360° (north) is tracking away from the station. The aircraft is east of the 180° south radial. To track the 180° radial, turn left.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.5'
+  explanation: 'Orient to the OBS setting of 180 (facing south). With FROM, the CDI needle points toward the selected radial: a left needle puts the 180 radial to the east, so the aircraft lies to the west of it. Heading 360 with OBS 180 gives reversed steering sensing, but position is found geometrically: the aircraft is west of the 180 radial.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.5'
 },
 
 {
-  question: 'To determine if the aircraft is abeam a VOR station, the pilot should:',
+  question: 'To determine when the aircraft is abeam a VOR, the pilot should:',
   options: [
-    'A. Look out the window for the VOR aerial — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Wait until the DME reads the expected distance and this applies to all IFR operations in Australian airspace',
-    'C. The VOR cannot determine when the aircraft is abeam the station according to current CASR and AIP requirements',
-    'D. Set the OBS to 090° or 270° (depending on which side the VOR is) — when the CDI centers and shows FROM, the aircraft is abeam the station'
+    'Look out of the cockpit window to sight the VOR ground aerial below',
+    'Wait until the DME happens to read the expected abeam distance',
+    'Accept that the VOR simply cannot indicate when the aircraft is abeam the station at all',
+    'Set the OBS to 090 or 270; when the CDI centres with FROM, the aircraft is abeam the station'
   ],
   correct: 3,
-  explanation: 'Determining VOR abeam position: set the OBS to 090° (if VOR is to the right) or 270° (if to the left). When the CDI centres and shows FROM, the aircraft is directly abeam the VOR (the aircraft is on the 090° or 270° radial). This technique is used for timing checks, position fixes, and procedure turning points.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.8'
+  explanation: 'Setting the OBS to 090 (VOR to the right) or 270 (VOR to the left) and waiting for the CDI to centre with a FROM indication shows the aircraft is on that radial, i.e. directly abeam the station. The technique is used for timing checks, fixes and procedure-turn points.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.8'
 },
 
 {
   question: 'NDB pilot navigation tolerance for IFR operations is:',
   options: [
-    'A. ±2°',
-    'B. ±5°',
-    'C. ±10°',
-    'D. ±1° per nm from the station'
+    '±2°',
+    '±5°',
+    '±10°',
+    '±1° per nm from the station'
   ],
   correct: 1,
   explanation: 'NDB pilot navigation tolerance: ±5° of the required bearing. This is the acceptable deviation before corrective action is required. At 60 nm from an NDB, 5° equals approximately 5 nm off course — consistent with the 1-in-60 rule. Instrument approach procedures using NDB are designed with tolerances accounting for this navigation accuracy.',
@@ -1400,10 +1400,10 @@ export const irexQuestions: {
 {
   question: 'The ILS localiser full-scale CDI deflection represents:',
   options: [
-    'A. 2° from centreline',
-    'B. 5° from centreline',
-    'C. 10° from centreline',
-    'D. 2.5° from centreline'
+    '2° from centreline',
+    '5° from centreline',
+    '10° from centreline',
+    '2.5° from centreline'
   ],
   correct: 3,
   explanation: 'ILS localiser: full-scale CDI deflection = ±2.5° from centreline at the runway threshold (the course width is designed to equal 350 ft each side at threshold). Each dot on the CDI represents approximately 1.25°. Compare with VOR where full-scale = ±10°. The narrower localiser sensitivity provides more precise lateral guidance for the approach.',
@@ -1413,10 +1413,10 @@ export const irexQuestions: {
 {
   question: 'The ILS glideslope full-scale CDI deflection represents:',
   options: [
-    'A. 0.5° from the glidepath',
-    'B. 0.7° from the glidepath',
-    'C. 1.5° from the glidepath',
-    'D. 3° from the glidepath'
+    '0.5° from the glidepath',
+    '0.7° from the glidepath',
+    '1.5° from the glidepath',
+    '3° from the glidepath'
   ],
   correct: 1,
   explanation: 'ILS glideslope full-scale deflection = ±0.7° from the glidepath (above or below). Each dot represents approximately 0.35°. The tight glideslope sensitivity means even small angular deviations result in significant altitude errors at distance — at 10 nm from threshold, 0.7° error = approximately 700 ft.',
@@ -1426,49 +1426,49 @@ export const irexQuestions: {
 {
   question: 'The GNSS space segment consists of:',
   options: [
-    'A. Ground control stations monitoring satellite health — this is the correct regulatory position',
-    'B. The aircraft receiver and antenna and this applies to all IFR operations in Australian airspace',
-    'C. A constellation of satellites orbiting the Earth — transmitting timing signals used by receivers to calculate position',
-    'D. The augmentation systems (SBAS, GBAS) according to current CASR and AIP requirements'
+    'The network of ground control stations that continuously monitor and update satellite health',
+    'The aircraft\'s own GNSS receiver together with its mounted antenna',
+    'A constellation of satellites transmitting timing signals that receivers use to compute position',
+    'The augmentation systems such as SBAS and GBAS that improve accuracy'
   ],
   correct: 2,
-  explanation: 'GNSS space segment: the satellite constellation (GPS uses 24+ satellites in 6 orbital planes, 20,200 km altitude, 12-hour orbits). Each satellite transmits precise timing signals on two frequencies (L1 and L2). The receiver measures the time each signal takes to arrive and calculates its distance (pseudo-range) from each satellite. With 4+ satellites, a 3D position fix is obtained.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.1'
+  explanation: 'The space segment is the satellite constellation (GPS: 24+ satellites, six planes, about 20,200 km, 12-hour orbits) broadcasting precise timing signals. The receiver measures each signal\'s travel time to derive a pseudo-range, and four or more pseudo-ranges yield a 3D fix.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.1'
 },
 
 {
   question: 'The GNSS control segment is responsible for:',
   options: [
-    'A. Monitoring satellite health and orbit accuracy, uploading corrections to satellites, and managing the satellite constellation',
-    'B. Aircraft navigation calculations — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Providing augmentation signals to improve accuracy and this applies to all IFR operations in Australian airspace',
-    'D. Issuing RAIM predictions to pilots according to current CASR and AIP requirements'
+    'Monitoring satellite health and orbits, uploading corrections, and managing the constellation',
+    'Performing the aircraft\'s navigation calculations in flight',
+    'Providing the augmentation signals that improve the positioning accuracy for the user',
+    'Issuing RAIM availability predictions to pilots before flight'
   ],
   correct: 0,
-  explanation: 'GNSS control segment: a network of ground monitoring stations tracks all satellites, measures signal quality, checks ephemeris (orbit) data, and uploads correction data (clock corrections, ephemeris updates) to each satellite. The master control station coordinates the entire system. Control segment integrity ensures the system provides accurate and reliable positioning.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.1'
+  explanation: 'Ground monitoring stations track every satellite, check the orbit (ephemeris) and clock data, and upload corrections via the master control station. A healthy control segment is what keeps the broadcast positions accurate and reliable.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.1'
 },
 
 {
-  question: 'The "pseudo random code" (C/A code) transmitted by GPS satellites is used to:',
+  question: 'The pseudo-random (C/A) code transmitted by GPS satellites allows the receiver to:',
   options: [
-    'A. Encrypt the GPS signal for military use — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Identify the satellite transmitting the signal and this applies to all IFR operations in Australian airspace',
-    'C. Provide position data directly to the receiver according to current CASR and AIP requirements',
-    'D. Allow the receiver to measure the time of arrival of the signal — by comparing the received code with an identical internally generated'
+    'Encrypt the GPS signal so that only authorised military receivers are ever able to read it',
+    'Identify which particular satellite in the constellation is transmitting',
+    'Receive a fully computed position fix directly from the satellite itself',
+    'Measure signal travel time by matching the received code against an identical internally generated one'
   ],
   correct: 3,
-  explanation: 'C/A (Coarse/Acquisition) code: a pseudo-random noise (PRN) code unique to each GPS satellite. The receiver generates an identical code and compares it with the received signal — the delay between the two codes equals the signal travel time. Multiplied by the speed of light, this gives the pseudo-range. Four pseudo-ranges from four satellites allow a 3D position calculation.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.1'
+  explanation: 'The C/A code is a pseudo-random sequence unique to each satellite. The receiver generates the same code and slides it to match the received one; the time offset is the signal travel time, which multiplied by the speed of light gives the pseudo-range. Four pseudo-ranges give a 3D position.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.1'
 },
 
 {
   question: 'RAIM (Receiver Autonomous Integrity Monitoring) in a GNSS receiver:',
   options: [
-    'A. Monitors the integrity of the GNSS position fix by using redundant satellites',
-    'B. Increases the accuracy of GNSS by using additional satellites',
-    'C. Provides backup navigation if GNSS fails',
-    'D. RAIM is only available in military GPS receivers'
+    'Monitors the integrity of the GNSS position fix by using redundant satellites',
+    'Increases the accuracy of the GNSS fix by making use of additional satellites',
+    'Provides backup navigation if GNSS fails',
+    'RAIM is only available in military GPS receivers'
   ],
   correct: 0,
   explanation: 'RAIM: an algorithm within the GNSS receiver that uses redundant satellite measurements to detect when one satellite is providing erroneous data. Fault Detection (FD) requires 5 satellites; Fault Detection and Exclusion (FDE) requires 6 satellites. If RAIM cannot guarantee the required navigation accuracy, it alerts the pilot. No RAIM = navigation accuracy is unknown — do not use for IFR.',
@@ -1476,25 +1476,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The WGS-84 coordinate system is used by GNSS because:',
+  question: 'GNSS uses the WGS-84 coordinate system because it:',
   options: [
-    'A. It is a globally consistent Earth-centred coordinate system — all GNSS satellites and receivers use the same datum, ensuring position consistency worldwide',
-    'B. It is the Australian national datum and all charts use WGS-84 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. WGS-84 provides greater accuracy than other coordinate systems and this applies to all IFR operations in Australian airspace',
-    'D. WGS-84 is required by ICAO for all navigation charts — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Is a single Earth-centred datum used by all GNSS satellites and receivers, giving consistent positions worldwide',
+    'Is the Australian national survey datum on which all local aeronautical charts and procedures are based',
+    'Is simply a more accurate coordinate system than any of the alternatives available',
+    'Is mandated by ICAO specifically and only for the production of navigation charts'
   ],
   correct: 0,
-  explanation: 'WGS-84 (World Geodetic System 1984) is the reference coordinate system for all GNSS. It defines the shape of the Earth (ellipsoid) and the reference frame for coordinates. GPS calculates positions in WGS-84. Aviation charts and procedures are published in WGS-84. This global consistency eliminates datum shift errors that would occur if different reference systems were used. Australia\\\'s aeronautical charts have been converted to WGS-84.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.1'
+  explanation: 'WGS-84 is the global reference frame for GNSS: it defines the Earth ellipsoid and the coordinate datum in which positions are computed and charted. Using one common datum removes the datum-shift errors that would arise from mixing reference systems; Australian charts are published in WGS-84.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.1'
 },
 
 {
   question: 'PDOP (Position Dilution of Precision) affects GNSS navigation by:',
   options: [
-    'A. Reducing the number of satellites available',
-    'B. PDOP affects speed and altitude but not horizontal position',
-    'C. Describing the geometric arrangement of visible satellites — poor satellite geometry',
-    'D. PDOP is only relevant for military GPS applications'
+    'Reducing the number of satellites available',
+    'PDOP affects the speed and altitude readout, but not the horizontal position at all',
+    'Describing the geometric arrangement of visible satellites, poor satellite geometry',
+    'PDOP is only relevant for military GPS applications'
   ],
   correct: 2,
   explanation: 'PDOP (Position Dilution of Precision): measures satellite geometry quality. Satellites bunched together give poor geometry (high PDOP, worse accuracy); satellites spread across the sky give good geometry (low PDOP, better accuracy). PDOP multiplies the ranging errors — HDOP × range error = horizontal accuracy. PDOP below 4 is required for most IFR operations. RAIM prediction tools check PDOP to predict approach availability.',
@@ -1504,10 +1504,10 @@ export const irexQuestions: {
 {
   question: 'The four navigation performance requirements for GNSS are:',
   options: [
-    'A. Speed, accuracy, reliability, and range',
-    'B. Accuracy, integrity, availability, and continuity of service',
-    'C. Position, velocity, time, and attitude',
-    'D. Horizontal, vertical, approach, and oceanic performance'
+    'Speed, accuracy, reliability, and range',
+    'Accuracy, integrity, availability, and continuity of service',
+    'Position, velocity, time, and attitude',
+    'Horizontal, vertical, approach, and oceanic performance'
   ],
   correct: 1,
   explanation: 'GNSS navigation performance requirements: Accuracy (position error within stated limits); Integrity (ability to provide timely warnings of unacceptable accuracy); Availability (probability system is usable at required accuracy and integrity when needed); Continuity (probability operation will be uninterrupted during approach). All four must be met for IFR operations. RAIM primarily addresses integrity.',
@@ -1517,49 +1517,49 @@ export const irexQuestions: {
 {
   question: 'GNSS integrity for IFR operations is provided by:',
   options: [
-    'A. Periodic government checks of satellite accuracy — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The ATC radar system cross-checking GNSS position — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Integrity is inherent in the GPS signal — no additional monitoring is needed according to current CASR and AIP requirements',
-    'D. RAIM (on-board monitoring); SBAS/ABAS (satellite-based augmentation providing external integrity monitoring); procedural compliance (cross-checking with other navaids)'
+    'Periodic government checks of overall satellite accuracy',
+    'The ATC radar system cross-checking the GNSS position',
+    'Nothing extra is needed, since the integrity is inherent in the GPS signal itself',
+    'RAIM on board, SBAS/ABAS augmentation, and procedural cross-checking with other navaids'
   ],
   correct: 3,
-  explanation: 'GNSS integrity means: RAIM (Receiver Autonomous Integrity Monitoring) — on-board algorithm; SBAS (Satellite Based Augmentation System, e.g., WAAS, SBAS) — external reference stations monitor satellites and broadcast corrections and integrity data; ABAS (Aircraft-Based Augmentation) — uses aircraft sensors (baro-aiding) to supplement GNSS. For IFR approaches, RAIM with SBAS or FDE is required.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.2'
+  explanation: 'Integrity is the timely warning of unusable accuracy. It is delivered by RAIM (a receiver algorithm using redundant satellites, with FDE to exclude a faulty one), by augmentation such as SBAS/ABAS, and by procedural cross-checks against other aids. An approach requires RAIM (with FDE or SBAS) to be available.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.2'
 },
 
 {
-  question: 'GNSS errors that degrade accuracy include:',
+  question: 'Errors that degrade GNSS accuracy include:',
   options: [
-    'A. Magnetic variation and compass deviation only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Ephemeris errors (satellite orbit), clock errors (satellite clock drift), atmospheric/ionospheric delays, multipath, receiver noise, and selective availability',
-    'C. Only ionospheric errors — all other GNSS errors are corrected by the control segment and this applies to all IFR operations in Australian airspace',
-    'D. GNSS errors are negligible — the system is accurate to 1 metre at all times according to current CASR and AIP requirements'
+    'Magnetic variation and compass deviation only, with no satellite-based errors involved at all',
+    'Ephemeris and satellite-clock errors, ionospheric and tropospheric delay, multipath, and receiver noise',
+    'Only ionospheric error, with all others removed by the control segment',
+    'None of significance, since GNSS is accurate to one metre at all times'
   ],
   correct: 1,
-  explanation: 'GNSS error sources: Ephemeris (satellite position uncertainty); Clock (satellite/receiver timing); Atmospheric/ionospheric (signal slowing through ionosphere and troposphere); Multipath (signal reflecting off buildings/terrain before reaching antenna); Receiver noise (electronic noise); Selective Availability (SA — deliberate degradation, now off). Total error budget typically <10 m with WAAS/SBAS augmentation and <100 m standalone. SBAS corrections primarily address atmospheric and satellite errors.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.3'
+  explanation: 'GNSS error sources include satellite orbit (ephemeris) and clock errors, signal delay through the ionosphere and troposphere, multipath from reflective surfaces, and receiver noise. Augmentation such as SBAS corrects mainly the satellite and atmospheric components, bringing total error to a few metres. (Selective Availability, a former deliberate degradation, is no longer applied.)',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.3'
 },
 
 {
-  question: 'GNSS multipath errors are caused by:',
+  question: 'GNSS multipath error is caused by:',
   options: [
-    'A. The GNSS signal arriving at the antenna via reflections from terrain, buildings, or the aircraft structure',
-    'B. Multiple satellites transmitting on the same frequency — this is the correct regulatory position',
-    'C. Multiple aircraft using the same GNSS frequency and this applies to all IFR operations in Australian airspace',
-    'D. Signal interference from onboard electronics according to current CASR and AIP requirements'
+    'The signal reaching the antenna via reflections off terrain, buildings or the aircraft structure',
+    'Several satellites transmitting on exactly the same frequency',
+    'Several aircraft inadvertently sharing the same GNSS frequency at exactly the same time',
+    'Interference radiated by the aircraft\'s own onboard electronics'
   ],
   correct: 0,
-  explanation: 'Multipath: GNSS signals reflect off hard surfaces (hangars, terrain, aircraft fuselage) before reaching the antenna. The reflected signal travels an additional path, arriving slightly later than the direct signal. The receiver cannot distinguish the two and incorporates the error into the pseudo-range calculation. Multipath is most significant near buildings, on the ground, and in mountainous terrain. Antenna placement minimises multipath.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.3'
+  explanation: 'A reflected signal travels a longer path and arrives slightly after the direct one; the receiver cannot separate them and the extra delay corrupts the pseudo-range. Multipath is worst near buildings, on the ground and in mountainous terrain, and is reduced by good antenna placement.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.3'
 },
 
 {
   question: 'When GNSS displays a "RAIM not available" warning during approach, the pilot must:',
   options: [
-    'A. Continue the approach — RAIM warnings are advisory only',
-    'B. Switch to backup GNSS receiver',
-    'C. Not use GNSS for the approach — execute a missed approach or use an alternate navaid if available',
-    'D. Contact ATC for a GNSS integrity verification'
+    'Continue the approach as planned, since RAIM warnings are advisory information only',
+    'Switch to the backup GNSS receiver and continue the approach normally',
+    'Not use GNSS for the approach, execute a missed approach or use an alternate navaid if available',
+    'Contact ATC and request a GNSS integrity verification before continuing'
   ],
   correct: 2,
   explanation: 'RAIM not available: if RAIM is not available before the FAF, the approach must not be commenced using GNSS. If RAIM fails during the approach, execute a missed approach immediately. RAIM unavailability means the receiver cannot detect a satellite failure or signal degradation — the position may be significantly in error without any warning. Non-GNSS approaches or diversion are the alternatives.',
@@ -1569,10 +1569,10 @@ export const irexQuestions: {
 {
   question: 'The GNSS receiver indication "2D navigation" means:',
   options: [
-    'A. Only 3 satellites are being tracked — altitude cannot be independently determined',
-    'B. The system is providing 2-dimensional position accuracy',
-    'C. The display is showing a 2D map view',
-    'D. 2D navigation is the normal mode for all GNSS receivers'
+    'Only 3 satellites are being tracked, altitude cannot be independently determined',
+    'The system is providing 2-dimensional position accuracy',
+    'The display is showing a 2D map view',
+    '2D navigation is simply the normal operating mode for all GNSS receivers in use'
   ],
   correct: 0,
   explanation: '2D navigation mode: when fewer than 4 satellites are visible for independent 3D position fixing, the receiver may use barometric altitude input to maintain navigation — this is "baro-aiding." In 2D mode, the vertical position is derived from the altimeter rather than calculated from GNSS. RAIM function may be degraded. Many IFR approach certifications require 3D navigation mode.',
@@ -1580,38 +1580,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Dead reckoning (DR) mode in a GNSS receiver is activated when:',
+  question: 'Dead-reckoning (DR) mode in a GNSS receiver is entered when:',
   options: [
-    'A. The pilot selects it for improved accuracy — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The GNSS database is out of date and this applies to all IFR operations in Australian airspace',
-    'C. Insufficient satellites are available for a position fix — the receiver uses the last valid position combined with aircraft heading and',
-    'D. DR mode is always active as a backup — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The pilot deliberately selects this mode to obtain improved navigation accuracy along the planned route',
+    'The loaded navigation database has passed its 28-day expiry date during the flight',
+    'Too few satellites are available for a fix, so the receiver estimates position from the last fix, heading and speed',
+    'It runs continuously in the background at all times as an automatic position backup'
   ],
   correct: 2,
-  explanation: 'DR (Dead Reckoning) mode: activated automatically when fewer satellites than required for RAIM are available. The receiver uses heading and speed sensors (or last calculated velocity) to estimate position from the last valid GPS fix. DR accuracy degrades rapidly (errors accumulate). Do not use for IFR once DR mode is active — position uncertainty is unknown. Time in DR mode and estimated error should be displayed.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.5'
+  explanation: 'DR mode is entered automatically when too few satellites are available for a RAIM-supported fix. The receiver propagates the last valid position using heading and speed, and accuracy decays quickly, so DR must not be used for IFR. The unit should display DR status and elapsed time.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.5'
 },
 
 {
-  question: 'A GNSS receiver showing "database out of date" during flight means:',
+  question: 'A GNSS \'database out of date\' indication in flight means:',
   options: [
-    'A. The receiver cannot navigate — all functions are suspended — this is the correct regulatory position',
-    'B. The GNSS signal is degraded — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. An updated database must be loaded before any IFR flight according to current CASR and AIP requirements',
-    'D. The navigation database (waypoints, procedures, airports) has expired — the aircraft can still navigate to manually entered coordinates, but published'
+    'The receiver can no longer navigate at all and so automatically suspends every one of its navigation functions',
+    'The live satellite signal being received has degraded below a usable strength',
+    'Simply that a current database must be loaded before commencing any IFR flight',
+    'The navigation database has expired; manual coordinates may still be navigated, but stored procedures must not be used'
   ],
   correct: 3,
-  explanation: 'Out-of-date database: the GNSS navigation database (procedures, waypoints, airspace) is updated every 28 days (AIRAC cycle). An expired database may contain outdated or incorrect procedure data. In flight with an expired database: use manual waypoint entry if possible; do not use stored approach procedures without cross-checking against current charts; preferably use an alternate navaid. For IFR operations, a current database is required.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.5'
+  explanation: 'The navigation database is updated each 28-day AIRAC cycle. An expired database may hold outdated procedure or waypoint data: navigate by manually entered coordinates if necessary, do not use stored approaches without cross-checking current charts, and prefer an alternate aid. A current database is required for IFR.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.5'
 },
 
 {
   question: 'The baro-aiding function in a GNSS receiver:',
   options: [
-    'A. Provides backup barometric altitude display if the altimeter fails',
-    'B. Corrects GPS altitude for temperature error',
-    'C. Uses the aircraft barometric altimeter input to supplement GNSS satellite geometry',
-    'D. Baro-aiding is only used in helicopter GNSS systems'
+    'Provides a backup barometric altitude display in the event that the altimeter fails',
+    'Corrects GPS altitude for temperature error',
+    'Uses the aircraft barometric altimeter input to supplement GNSS satellite geometry',
+    'Baro-aiding is only used in helicopter GNSS systems'
   ],
   correct: 2,
   explanation: 'Baro-aiding: connects the aircraft barometric altimeter to the GNSS receiver, providing altitude data equivalent to an additional "satellite." This improves RAIM availability (reduces minimum satellite requirement from 5 to 4 for FD) and allows approach operations with one fewer satellite. Failure of baro-aiding increases the minimum satellite requirement for RAIM and may reduce approach availability.',
@@ -1619,90 +1619,90 @@ export const irexQuestions: {
 },
 
 {
-  question: 'GNSS CDI sensitivity changes during an approach from en-route to approach mode because:',
+  question: 'GNSS CDI sensitivity changes through an approach because:',
   options: [
-    'A. The GPS signal becomes stronger near the runway — this is the correct regulatory position',
-    'B. CDI sensitivity is fixed by the aircraft manufacturer and this applies to all IFR operations in Australian airspace',
-    'C. Sensitivity changes only occur on GNSS approaches, not VOR or NDB according to current CASR and AIP requirements',
-    'D. The CDI scaling changes from ±5 nm (en-route) to ±1 nm (terminal) to ±0.3 nm (approach) as the aircraft approaches the FAF'
+    'The GPS signal grows progressively stronger as the runway is approached on final',
+    'Sensitivity is fixed permanently by the aircraft or avionics manufacturer',
+    'Scaling changes happen only on GNSS approaches, and never on any VOR or NDB approach of any kind at all',
+    'The scaling tightens from plus/minus 5 nm en-route to plus/minus 1 nm terminal to plus/minus 0.3 nm on final'
   ],
   correct: 3,
-  explanation: 'GNSS CDI scaling (sensitivity): En-route: ±5 nm (±2 nm for some); Terminal (within 30 nm): ±1 nm; Initial/Intermediate approach: ±1 nm; Final approach (FAF to MAP): ±0.3 nm (LNAV) or angular (LPV). The receiver automatically scales the CDI as the aircraft progresses through each segment. Automatic waypoint sequencing coincides with sensitivity changes. If CDI does not scale automatically, the approach must be abandoned.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.6'
+  explanation: 'The receiver automatically rescales the CDI by segment: about plus/minus 5 nm en-route, plus/minus 1 nm in the terminal/intermediate area, and plus/minus 0.3 nm (or angular for LPV) on final, with waypoint sequencing. If the CDI does not rescale as expected, the approach must be abandoned.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.6'
 },
 
 {
-  question: 'RAIM availability for a planned approach must be checked:',
+  question: 'RAIM availability for a planned GNSS approach must be checked:',
   options: [
-    'A. Only immediately before commencing the approach — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. RAIM is always available — no pre-flight check is needed and this applies to all IFR operations in Australian airspace',
-    'C. During pre-flight planning using a RAIM prediction service — checking availability for the planned ETA at the destination, accounting for predicted',
-    'D. ATC checks RAIM availability and advises pilots — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Only in the very final moments immediately before the approach is actually commenced on final approach',
+    'Never, because RAIM is continuously available and needs no advance checking',
+    'In pre-flight planning, using a RAIM prediction service for the ETA at destination and including satellite NOTAMs',
+    'By air traffic control, who check RAIM availability and pass it to the pilot'
   ],
   correct: 2,
-  explanation: 'RAIM prediction: the pilot must check RAIM availability before flight using services such as NAIPS RAIM prediction or online tools (e.g., FAA SAPT). RAIM availability depends on satellite geometry at the specific time and location. Satellite outages (NOTAMs) must be included in the prediction. If RAIM is predicted unavailable, an alternate navaid or destination must be planned.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.4'
+  explanation: 'RAIM availability depends on satellite geometry at the time and place, so it is predicted pre-flight (e.g. NAIPS RAIM prediction) for the planned ETA, with current satellite outage NOTAMs included. If RAIM is predicted unavailable, an alternate aid or destination must be planned.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.4'
 },
 
 {
-  question: 'GNSS requirements for RNP instrument approach operations include:',
+  question: 'GNSS requirements for an RNP instrument approach include:',
   options: [
-    'A. Basic GPS receiver with current database — this is the correct regulatory position',
-    'B. GNSS with moving map display only and this applies to all IFR operations in Australian airspace',
-    'C. A certified GNSS receiver with RAIM (or SBAS), a current navigation database, the approach must be loaded from the database',
-    'D. Any GPS receiver with approach capability mode according to current CASR and AIP requirements'
+    'A basic non-certified GPS receiver is quite sufficient, provided only that its database is kept current',
+    'A GNSS unit fitted with a moving-map display but no further IFR capability',
+    'A certified IFR GNSS receiver with RAIM or SBAS, a current database, and the approach loaded from that database',
+    'Any GPS receiver at all, so long as it offers some form of approach-capability mode'
   ],
   correct: 2,
-  explanation: 'GNSS approach requirements: (1) GNSS receiver certified for IFR approaches (TSO-C129a or C196 for LNAV; TSO-C145/146 for SBAS LPV); (2) Current navigation database; (3) Approach loaded from database — not manually entered; (4) RAIM verified available (or SBAS providing integrity); (5) Receiver must automatically arm approach mode and scale CDI. Un-approved GPS cannot be used as primary means for IFR approaches.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.4'
+  explanation: 'An RNP approach requires an IFR-approach-certified receiver (e.g. TSO-C129a/C196 for LNAV, C145/C146 for SBAS LPV), a current navigation database, the approach selected from the database (not hand-entered), verified RAIM/SBAS integrity, and automatic approach-mode arming and CDI scaling. Non-approved GPS may not be used as the primary means.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.4'
 },
 
 {
-  question: 'The indications that should prompt an immediate missed approach during a GNSS approach are:',
+  question: 'During a GNSS approach, an immediate missed approach is required on:',
   options: [
-    'A. Any CDI deflection greater than 1 dot — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. RAIM warning or RAIM not available; loss of approach mode; integrity alert; arrival at DA/MDA without required visual reference; any safety concern',
-    'C. GPS receiver losing display brightness and this applies to all IFR operations in Australian airspace',
-    'D. GNSS approaches do not require missed approach criteria — continue to lowest point according to current CASR and AIP requirements'
+    'Any CDI deflection of more than one dot occurring at any single point on the approach',
+    'A RAIM warning or unavailability, loss of approach mode, an integrity alert, or reaching minima without visual reference',
+    'The GPS receiver display merely losing some of its screen brightness during the approach',
+    'Nothing at all is required, because these GNSS approaches carry no defined missed-approach criteria of any kind'
   ],
   correct: 1,
-  explanation: 'Immediate missed approach on GNSS approach: (1) RAIM warning or alert during approach; (2) Loss of approach mode (CDI scaling does not change as expected); (3) Navigation integrity alert; (4) Arrival at DA (LPV) or MAP (LNAV) without required visual reference; (5) Doubt about position accuracy; (6) ATC missed approach instruction. Any loss of integrity indication on approach requires immediate go-around.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.7'
+  explanation: 'Go around immediately for: a RAIM warning or RAIM-not-available, failure of the CDI to enter/scale approach mode, any integrity alert, reaching the DA (LPV) or MAP (LNAV) without the required visual reference, doubt over position accuracy, or an ATC instruction.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.7'
 },
 
 {
   question: 'Satellite unserviceability affects RAIM prediction because:',
   options: [
-    'A. Fewer satellites reduces GPS signal strength — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Removing a satellite from the constellation changes the geometry — potentially reducing RAIM availability at specific times and locations. NOTAMs for satellite outages must be incorporated into RAIM predictions',
-    'C. Unserviceable satellites transmit incorrect data that the receiver ignores — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. RAIM predictions cannot account for satellite outages — pilots must carry alternate navaids at all times — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Fewer operating satellites simply weakens the overall strength of the received GPS signal',
+    'Changing the constellation can reduce RAIM availability at certain times, so satellite outage NOTAMs matter',
+    'An unserviceable satellite transmits faulty data that the receiver automatically ignores',
+    'RAIM prediction cannot account for outages at all, so an alternate aid is required on every single flight'
   ],
   correct: 1,
-  explanation: 'Satellite NOTAMs: when a satellite is unserviceable (for maintenance or anomaly), the RAIM prediction must include this information. The reduced constellation may create gaps in RAIM availability at certain times/locations — typically lasting 30–90 minutes. Pilots must obtain satellite NOTAMs before IFR GNSS flights and use them in RAIM prediction tools. This is particularly important for remote area operations with limited alternate navaid options.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.9'
+  explanation: 'Taking a satellite out of the constellation changes the geometry and can open gaps in RAIM availability (often 30-90 minutes) at particular times and places. Satellite outage NOTAMs must therefore be fed into the RAIM prediction, especially for remote operations with few alternate aids.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.9'
 },
 
 {
-  question: 'A 3D instrument approach operation utilising vertical guidance from the aircraft navigation system on a 2D procedure (e.g., LNAV/VNAV) means:',
+  question: 'On an LNAV/VNAV approach flown with advisory vertical guidance, the operation:',
   options: [
-    'A. The pilot has converted a 2D approach into a full ILS equivalent — this is the correct regulatory position',
-    'B. The aircraft uses GNSS-computed vertical guidance as advisory only — the approach is still procedurally a 2D approach with MDA, but the vertical deviation',
-    'C. Lower minima apply because vertical guidance is provided and this applies to all IFR operations in Australian airspace',
-    'D. The approach uses ILS glideslope with GNSS for lateral guidance according to current CASR and AIP requirements'
+    'The pilot has effectively converted the 2D approach into a full ILS-equivalent procedure',
+    'Remains a 2D operation flown to an MDA, with the vertical guidance advisory only and not used to descend below MDA',
+    'Lower minima now apply to the approach because vertical guidance is being provided',
+    'The approach uses an actual ILS glideslope, with the GNSS supplying only the lateral course guidance instead'
   ],
   correct: 1,
-  explanation: 'LNAV/VNAV (advisory vertical): the GNSS provides computed vertical guidance (using barometric input or SBAS) as an advisory — helping fly a stabilised path. However, the approach remains procedurally a 2D operation: MDA applies (not DA), and the MAP is the procedural missed approach point. The advisory vertical guidance must NOT be used to descend below MDA. This is distinct from LPV approaches which use SBAS vertical guidance with a true DA.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.3.1'
+  explanation: 'Advisory vertical guidance (from baro or SBAS) helps fly a stabilised path, but procedurally the approach is still 2D: an MDA applies (not a DA) and the procedural MAP is used. The advisory path must not be used to descend below the MDA. This differs from an LPV, which has true SBAS vertical guidance and a DA.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.3.1'
 },
 
 {
   question: 'The parallel offset function on a GNSS receiver during IFR operations:',
   options: [
-    'A. Is commonly used to offset from controlled airspace',
-    'B. May be used on any segment if cleared by ATC',
-    'C. Must not be used during approach operations — using a parallel offset shifts the CDI reference from the published approach course, compromising obstacle clearance',
-    'D. Parallel offset is automatically disabled by certified IFR GPS receivers with appropriate ATC clearance obtained'
+    'Is commonly used to offset from controlled airspace',
+    'May be used on any segment if cleared by ATC',
+    'Must not be used during approach operations, since a parallel offset shifts the CDI off the published course',
+    'Parallel offset is automatically disabled by certified IFR GPS receivers with appropriate ATC clearance obtained'
   ],
   correct: 2,
   explanation: 'Parallel offset on IFR approach: if parallel offset is active during an approach, the CDI is referenced to an offset track rather than the published approach course. The obstacle clearance is only guaranteed for the published course — a parallel offset moves the aircraft off the protected area. Pilots must ensure parallel offset is cancelled before commencing any instrument approach.',
@@ -1710,25 +1710,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The RAIM prediction parameters that must be considered for an IFR GNSS approach include:',
+  question: 'The RAIM prediction inputs required for an IFR GNSS approach are:',
   options: [
-    'A. Geographic position (latitude/longitude), date and time of planned approach, any satellite NOTAMs',
-    'B. Aircraft weight and airspeed — this is the correct regulatory position',
-    'C. Local terrain height and magnetic variation and this applies to all IFR operations in Australian airspace',
-    'D. Aircraft equipment type and manufacturer according to current CASR and AIP requirements'
+    'Geographic position, the date and time of the planned approach, and any current satellite NOTAMs',
+    'The aircraft\'s all-up weight and its planned approach airspeed on the day',
+    'The local terrain height around the aerodrome and the magnetic variation that applies there',
+    'The aircraft\'s avionics equipment type and the receiver manufacturer\'s name'
   ],
   correct: 0,
-  explanation: 'RAIM prediction inputs: (1) Location (aerodrome lat/long for approach RAIM); (2) Date and time of planned approach (satellite geometry is time-dependent); (3) Any satellite NOTAMs (unserviceable or maneuvering satellites); (4) Required accuracy/protection level for approach type. Online tools (NAIPS, FAA SAPT) accept these inputs and predict RAIM availability for the specified window.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.4'
+  explanation: 'RAIM availability depends on satellite geometry, so prediction needs the location (aerodrome lat/long), the date and time of the planned approach, and current satellite outage NOTAMs, together with the protection level for the approach type. Tools such as NAIPS accept these and return availability for the window.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.4'
 },
 
 {
   question: 'Automatic waypoint sequencing in a GNSS approach means:',
   options: [
-    'A. The receiver automatically advances from one waypoint to the next as the aircraft reaches each point',
-    'B. The pilot manually selects each waypoint as it is reached',
-    'C. Waypoints are sequenced by ATC instruction only',
-    'D. Automatic sequencing is only available in glass cockpit aircraft'
+    'The receiver automatically advances from one waypoint to the next as the aircraft reaches each point',
+    'The pilot manually selects each successive waypoint in turn as it is reached on the approach',
+    'Waypoints are sequenced only on an instruction passed by air traffic control',
+    'Automatic sequencing is available only in glass-cockpit equipped aircraft'
   ],
   correct: 0,
   explanation: 'Automatic waypoint sequencing: when a GNSS approach is loaded from the database and the receiver is in approach mode, it automatically sequences through each waypoint (IAF → IF → FAF → MAP) as the aircraft passes them. Manual intervention is only required if the pilot needs to fly a holding pattern, discontinue the approach, or if the receiver fails to sequence. Failure of auto-sequencing requires the pilot to manually select the next waypoint or execute a missed approach.',
@@ -1736,38 +1736,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The GNSS "masking" function refers to:',
+  question: 'The GNSS receiver \'mask angle\' refers to:',
   options: [
-    'A. Blocking GNSS signals from being used for military targeting — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Masking is the process of selecting the best 4 satellites for navigation and this applies to all IFR operations in Australian airspace',
-    'C. A function that prevents GNSS from operating in restricted airspace — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The minimum elevation angle above the horizon at which satellites are used — satellites at very low elevation angles have longer atmospheric signal paths and higher error'
+    'Deliberately blocking GNSS signals to prevent their use for any military targeting purpose',
+    'The receiver\'s process of selecting the best four satellites for the navigation solution',
+    'A function that prevents the GNSS from operating at all inside restricted airspace areas',
+    'The minimum elevation above the horizon at which satellites are used in the position solution'
   ],
   correct: 3,
-  explanation: 'Masking angle: the minimum elevation angle (above horizon) at which the GNSS receiver will use satellite signals. Low-elevation satellites have signals that travel a longer path through the atmosphere, experiencing more ionospheric and tropospheric delay, and are more susceptible to multipath from terrain. Typical mask angles: 5°–15°. Higher mask angles improve accuracy but reduce the number of usable satellites — potentially reducing RAIM availability.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.1'
+  explanation: 'The mask angle is the lowest elevation above the horizon at which the receiver will use a satellite (typically 5-15 degrees). Low-elevation signals travel further through the atmosphere (more ionospheric/tropospheric delay) and pick up more terrain multipath. Raising the mask improves accuracy but reduces usable satellites, which can lower RAIM availability.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.2.1'
 },
 
 {
-  question: 'When planning an IFR flight, route limitations to consider include:',
+  question: 'Tracking 100 degrees M below the transition altitude in Class G airspace, a valid IFR cruising level is:',
   options: [
-    'A. Aircraft passenger capacity only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only fuel requirements — routing is at pilot discretion and this applies to all IFR operations in Australian airspace',
-    'C. Minimum en-route altitudes (MEA/LSALT), aircraft performance at those altitudes, available navigation aids, controlled airspace structure',
-    'D. Route limitations are only relevant for commercial operations according to current CASR and AIP requirements'
+    '4,000 ft',
+    '6,000 ft',
+    '3,000 ft',
+    '8,000 ft'
   ],
   correct: 2,
-  explanation: 'IFR route planning limitations: (1) Minimum En-Route Altitude (MEA) or LSALT — terrain clearance; (2) Aircraft performance at planned altitudes (oxygen requirements above 10,000 ft, pressurisation); (3) Navigation aid availability and rated coverage along the route; (4) Airspace structure (prohibited, restricted areas); (5) Required navigation performance (RNP) capabilities for the route; (6) Alternate aerodrome requirements.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.1.1'
+  explanation: 'Below the transition altitude in Class G, tracks 000-179 degrees M use odd thousands (3,000, 5,000, 7,000 ft) and tracks 180-359 degrees M use even thousands. Tracking 100 degrees M, 3,000 ft is valid; the even-thousand levels are not.',
+  reference: 'AIP ENR 1.7'
 },
 
 {
   question: 'The table of cruising altitudes/levels for IFR in Australian airspace follows which rule?',
   options: [
-    'A. Below transition altitude: odd thousands of feet (1,000, 3,000 etc.) for tracks 000–179°M',
-    'B. Odd hundreds of feet for all IFR tracks',
-    'C. Flight levels only — altitude is not used for IFR',
-    'D. ATC assigns all IFR cruising levels — pilots have no choice'
+    'Below the transition altitude, odd thousands of feet (1,000, 3,000 etc.) for tracks 000-179 degrees M',
+    'Odd hundreds of feet are used for all IFR tracks regardless of the direction of flight',
+    'Flight levels only are used; altitude is never used for IFR cruising',
+    'ATC assigns every IFR cruising level, so the pilot has no choice in it'
   ],
   correct: 0,
   explanation: 'IFR cruising levels in Australia: below transition altitude (10,000 ft) in Class G: odd thousands (1,000, 3,000, 5,000 ft) for 000–179°M; even thousands (2,000, 4,000, 6,000 ft) for 180–359°M. In controlled airspace, ATC assigns levels. Above transition altitude: semi-circular rule applies — odd FLs (FL110, FL130) for 000–179°; even FLs (FL100, FL120) for 180–359°.',
@@ -1775,103 +1775,103 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An IFR alternate aerodrome is required when:',
+  question: 'An IFR destination alternate is required when:',
   options: [
-    'A. Always — every IFR flight must nominate an alternate — this is the correct regulatory position',
-    'B. Only for night flights — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The destination weather forecast for the period from 1 hour before to 1 hour after ETA shows conditions at or below alternate meteorological',
-    'D. Only for flights over water — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Always, since every IFR flight without exception must nominate a suitable destination alternate aerodrome',
+    'Only when the flight is conducted at night, never during daylight hours',
+    'Arrival is during, or within 30 minutes before the forecast start of, conditions at or below the alternate minima',
+    'Only when the route involves an extended segment flown over water'
   ],
   correct: 2,
-  explanation: 'Alternate requirement: an IFR alternate is required when: (1) Destination forecast for ETA ±1 hour is at or below alternate meteorological minima; (2) Destination has no instrument approach procedure; (3) Destination approach or airport lighting requires personnel in attendance and no assurance they will be available; (4) AIP or aircraft AFM requires one. If weather is clearly above minima, a formal alternate may not be required — but prudent planning always considers an alternate.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.1 / AIP ENR 1.1'
+  explanation: 'Under AIP ENR 1.1 10.7.2 an alternate is required when arrival will be during the currency of, or up to 30 minutes before the forecast commencement of, below-alternate-minima conditions (cloud, visibility, a 30% PROB of restricting weather, out-of-limit wind, or thunderstorms); also when there is no usable IAP or lighting/attendance cannot be assured.',
+  reference: 'AIP ENR 1.1 10.7 — alternate requirements'
 },
 
 {
   question: 'Alternate aerodrome requirements in terms of navigation aids or approach procedures require:',
   options: [
-    'A. The alternate must have an ILS approach procedure',
-    'B. The alternate must have a published instrument approach and forecast weather above alternate minima for the planned arrival window',
-    'C. The alternate must have an instrument approach compatible with the aircraft\'s avionics and weather above alternate minima',
-    'D. Any aerodrome with a published approach is acceptable regardless of forecast weather'
+    'The alternate must have an ILS approach procedure',
+    'The alternate must have a published instrument approach and forecast weather above alternate minima for the planned arrival window',
+    'The alternate must have an instrument approach compatible with the aircraft\'s avionics and weather above alternate minima',
+    'Any aerodrome with a published approach is acceptable regardless of forecast weather'
   ],
   correct: 2,
-  explanation: 'Alternate approach procedure requirements: the alternate must have an instrument approach procedure that the aircraft can fly using its installed navigation equipment. If the aircraft has only NDB equipment, the alternate must have an NDB approach. The forecast weather at the alternate at ETA must meet the alternate meteorological minima for that approach (published minima + 300 ft and 1,500 m).',
+  explanation: 'The alternate must have an instrument approach the aircraft can fly with its installed equipment (e.g. an NDB-only aircraft needs an NDB approach), and the forecast at ETA must meet the alternate minima published on the chart for that approach.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.1 / AIP ENR 1.1'
 },
 
 {
-  question: 'Alternate aerodrome lighting requirements under AIP include:',
+  question: 'Alternate aerodrome lighting requirements for a night IFR diversion are that:',
   options: [
-    'A. No lighting is required for day alternates — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only approach lighting is required — runway edge lights are optional and this applies to all IFR operations in Australian airspace',
-    'C. The alternate must have runway lighting available when it is expected to be used — for night operations, a certified aerodrome with runway lighting operable during',
-    'D. PAL systems cannot be used to satisfy alternate lighting requirements according to current CASR and AIP requirements'
+    'No lighting at all is required, even for a planned night diversion',
+    'Only approach lighting is needed, with runway edge lighting being optional',
+    'The alternate must have runway lighting available for the planned arrival, operable through the diversion window',
+    'A pilot-activated lighting system can never be used to satisfy the alternate lighting requirement'
   ],
   correct: 2,
-  explanation: 'Alternate lighting: for night alternate operations, the aerodrome must have suitable runway lighting available during the planned diversion window. PAL (Pilot Activated Lighting) is acceptable provided the published activation sequence works on arrival. The aerodrome entry in ERSA specifies lighting availability. Ensure personnel in attendance requirements are met if the approach procedure specifies this.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.1 / AIP ENR 1.1'
+  explanation: 'For a night alternate the aerodrome must have suitable runway lighting available during the planned diversion window. PAL is acceptable provided its published activation works on arrival, and any \'personnel in attendance\' condition for the approach must be satisfied. ERSA states the lighting available at each aerodrome.',
+  reference: 'AIP ENR 1.1 10.7 — alternate lighting'
 },
 
 {
-  question: 'Weather reports must be available for the alternate during the planned diversion period because:',
+  question: 'Weather reports must be available for the alternate during the diversion window because:',
   options: [
-    'A. ATC requires weather reports to issue clearances to the alternate — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Weather reports are only required for the destination, not alternates and this applies to all IFR operations in Australian airspace',
-    'C. Weather reports for alternates are obtained from online weather services only according to current CASR and AIP requirements',
-    'D. Current weather at the alternate must be assessable when approaching the destination — if the alternate weather is below minima when diversion is needed, the pilot must'
+    'ATC requires the weather reports before it will issue any clearance to divert to the alternate',
+    'Weather reports are needed only for the destination aerodrome itself, and never for a nominated alternate',
+    'Alternate weather reports are simply pulled from public online weather services on the day',
+    'Current alternate weather must be assessable near destination; if below minima at diversion, another aerodrome is needed'
   ],
   correct: 3,
-  explanation: 'Alternate weather reports: the pilot must be able to determine alternate weather during the planned diversion window. If the alternate has no weather reporting (no METAR, AWIS, or ATIS) during the planned period, the pilot cannot confirm the alternate is usable at diversion time. AIP specifies which aerodromes have weather reporting and at what hours — this must be checked in pre-flight planning.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.1 / AIP ENR 1.1'
+  explanation: 'The pilot must be able to determine the alternate\'s actual weather during the planned diversion period. If the alternate has no reporting (METAR/AWIS/ATIS) over that window, its usability cannot be confirmed. AIP/ERSA show which aerodromes report weather and when, and this is checked in planning.',
+  reference: 'AIP ENR 1.1 10.7 — alternate weather'
 },
 
 {
-  question: 'The "divert time" consideration for selecting an alternate means:',
+  question: 'The \'divert time\' consideration when selecting an alternate means that:',
   options: [
-    'A. The alternate must be within 30 minutes flying time — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The alternate must be reachable with the planned fuel — the flight time from destination to alternate must be covered by the contingency and diversion fuel carried',
-    'C. Divert time is not a regulatory requirement — pilots use judgment and this applies to all IFR operations in Australian airspace',
-    'D. ATC determines the divert time based on traffic — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The alternate must lie within 30 minutes\' flying time of the destination',
+    'The alternate must be reachable on the planned fuel, with diversion and contingency fuel covering the flight time',
+    'Divert time is not a regulatory matter at all; the pilot relies entirely on their own personal judgement',
+    'ATC sets the allowable divert time according to the prevailing traffic situation'
   ],
   correct: 1,
-  explanation: 'Divert time consideration: the alternate must be reachable from the destination. Fuel calculation must include: arrival fuel at destination + missed approach + climb to cruise + transit to alternate + alternate approach + final reserve. If the alternate is too far, the fuel requirement becomes impractical and a closer alternate should be selected. AIP also specifies maximum divert times for some operations.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.1 / AIP ENR 1.1'
+  explanation: 'The alternate must be reachable from the destination on the fuel carried: the plan must cover arrival at the destination, a missed approach, transit to the alternate, an approach there and final reserve. If the alternate is too distant the fuel becomes impractical and a closer one should be chosen.',
+  reference: 'AIP ENR 1.1 10.7 / Part 91 MOS 19 — fuel'
 },
 
 {
-  question: 'Holding fuel requirements for weather at the destination are determined by:',
+  question: 'Holding fuel for weather at the destination is determined by:',
   options: [
-    'A. A fixed 30-minute holding allowance for all IFR flights — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. ATC determines holding fuel — pilots do not need to calculate it and this applies to all IFR operations in Australian airspace',
-    'C. Holding fuel is only required for night operations — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The expected delay based on destination weather forecast — if weather is below minima at ETA, holding fuel must cover the expected delay until conditions'
+    'A fixed 30-minute holding allowance applied to every IFR flight regardless of forecast',
+    'ATC, which determines the required holding fuel so the pilot need not calculate it',
+    'Whether the operation is being conducted at night, since holding fuel is purely a night-time-only requirement',
+    'The expected delay from the destination forecast; holding fuel must cover the delay until conditions improve to minima'
   ],
   correct: 3,
-  explanation: 'Weather holding fuel: based on the destination forecast. If the TAF shows conditions improving after ETA, calculate holding fuel to cover the improvement period. If forecast shows sustained below-minima conditions, plan to divert rather than hold. Holding fuel burn must be calculated at holding speed and altitude. When holding fuel is exhausted to diversion fuel level, divert immediately regardless of weather.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.2'
+  explanation: 'Weather holding fuel is based on the destination forecast: if conditions are forecast to improve after ETA, carry fuel to cover that delay; if sustained below-minima conditions are forecast, plan to divert rather than hold. Burn is computed at holding speed and level, and on reaching minimum diversion fuel the aircraft diverts regardless of weather.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.2.2'
 },
 
 {
   question: 'Holding fuel for traffic is required when:',
   options: [
-    'A. Expected delays due to traffic sequencing are anticipated — based on ATIS, NOTAMs, or ATC advisories about delays',
-    'B. The destination is a busy international airport — this is the correct regulatory position',
-    'C. Holding fuel for traffic is never separately calculated and this applies to all IFR operations in Australian airspace',
-    'D. Traffic holding only applies to commercial operations according to current CASR and AIP requirements'
+    'Anticipated traffic-sequencing delays are expected, based on ATIS, NOTAMs or ATC advice of delays',
+    'The destination happens to be a busy international airport, regardless of any delay advice',
+    'Never, since holding fuel for traffic is not separately considered in flight planning',
+    'Only for commercial air-transport operations, never for private operations'
   ],
   correct: 0,
-  explanation: 'Traffic holding fuel: at busy aerodromes, holding delays are predictable (peak times, special events). Pilots should plan holding fuel based on expected delays — ATIS may advise delays, NOTAMs may indicate busy periods. A conservative approach is to plan 30–45 minutes of holding fuel when operating into major aerodromes during peak periods, or when ATC has indicated expected delays.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.2'
+  explanation: 'Traffic-holding fuel is planned where delays are predictable: peak periods, special events, or when ATIS/NOTAMs/ATC indicate delays. A common conservative figure is 30-45 minutes when operating into major aerodromes at busy times or when ATC has advised expected delays.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.2.2'
 },
 
 {
   question: 'When planning the last segment of an IFR route as "NGT VFR" (Night VFR), the pilot must consider:',
   options: [
-    'A. Only the night rating requirement',
-    'B. Pilot night recency requirements (3 night takeoffs and landings in 90 days)',
-    'C. Night VFR requires no additional planning beyond day VFR',
-    'D. NGT VFR planning is the same as IFR planning'
+    'Only the night rating requirement',
+    'Pilot night recency requirements (3 night takeoffs and landings in 90 days)',
+    'Night VFR requires no additional planning at all beyond ordinary day VFR',
+    'NGT VFR planning is the same as IFR planning'
   ],
   correct: 1,
   explanation: 'NGT VFR planning requirements: (1) Pilot night recency — 3 takeoffs and landings in the preceding 90 days at night; (2) Alternate requirements — a night VFR alternate may be required; (3) Airways clearance — if the NGT VFR segment is in controlled airspace, an airways clearance is still required; (4) Night VMC must be maintained; (5) Lighting at destination must be confirmed available.',
@@ -1879,90 +1879,90 @@ export const irexQuestions: {
 },
 
 {
-  question: 'RAIM prediction implications for operational requirements mean:',
+  question: 'The operational implication of a RAIM prediction is that:',
   options: [
-    'A. RAIM is advisory only — operational decisions are not affected — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. If RAIM is predicted unavailable for the planned approach, the pilot must plan an alternate navaid or alternate aerodrome with a suitable non-GNSS approach',
-    'C. RAIM prediction only affects military operations and this applies to all IFR operations in Australian airspace',
-    'D. A backup GPS receiver automatically resolves RAIM unavailability according to current CASR and AIP requirements'
+    'RAIM is advisory only, so the operational planning decisions are not affected by its prediction at all',
+    'If RAIM is predicted unavailable, the pilot must plan an alternate navaid or an aerodrome with a non-GNSS approach',
+    'RAIM prediction is relevant only to military GNSS operations, not to civil IFR',
+    'A backup GPS receiver on board automatically resolves any RAIM unavailability'
   ],
   correct: 1,
-  explanation: 'RAIM prediction operational impact: if RAIM prediction shows unavailability during the planned approach window, the pilot must: (1) Plan an alternate navaid (VOR, ILS, NDB) if available at the destination; (2) Delay departure to depart within the RAIM-available window; (3) Nominate an alternate with a non-GNSS approach. This is particularly significant for remote aerodromes with only GNSS approaches available.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.5'
+  explanation: 'If RAIM is predicted unavailable for the approach window, the pilot must plan a non-GNSS approach (VOR/ILS/NDB) at the destination, retime the departure into a RAIM-available window, or nominate an alternate with a non-GNSS approach. This matters most at remote aerodromes served only by GNSS approaches.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.2.5'
 },
 
 {
-  question: 'The minimum obstacle clearance on a missed approach procedure is:',
+  question: 'Maintaining 160 kt IAS at 5,000 ft (using about 2% per 1,000 ft), the true airspeed is approximately:',
   options: [
-    'A. 200 ft above all obstacles',
-    'B. 50 ft above the most critical obstacle in the missed approach area — based on the missed approach gradient (typically 2.5% or greater)',
-    'C. 1,000 ft above the highest terrain within 5 nm',
-    'D. Same as the final approach segment clearance with appropriate ATC clearance obtained'
+    '160 kt',
+    '176 kt',
+    '200 kt',
+    '150 kt'
   ],
   correct: 1,
-  explanation: 'Missed approach obstacle clearance: the minimum gradient in the missed approach segment is approximately 2.5% (approximately 152 ft/nm), providing at least 50 ft clearance above obstacles in the protected area. The initial missed approach requires wings level climb on the missed approach track until reaching the specified altitude. Turns should only be initiated at the published altitude to remain within the protected area.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.3.2 / ICAO PANS-OPS'
+  explanation: 'TAS rises above IAS with altitude by roughly 2% per 1,000 ft. At 5,000 ft: 160 times (1 + 0.02 times 5) = 160 times 1.1 = about 176 kt. TAS is used for groundspeed and ETA planning.',
+  reference: 'AIP GEN 2.1 / navigation'
 },
 
 {
   question: 'The minimum circling altitude (MCA) is higher than the straight-in MDA because:',
   options: [
-    'A. Circling requires more fuel — a higher altitude allows time for fuel management — this is the correct regulatory position',
-    'B. MCA is always 500 ft higher than MDA regardless of obstacles and this applies to all IFR operations in Australian airspace',
-    'C. Circling at higher altitude provides better visibility of the runway — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Circling involves manoeuvring visually outside the final approach protected area — the MCA provides obstacle clearance for the larger circling area, which extends further'
+    'Circling burns more fuel, and the higher altitude allows time for fuel management',
+    'The MCA is always exactly 500 ft above the MDA, regardless of the obstacles present',
+    'Circling at a higher altitude simply gives the pilot a better view of the runway',
+    'Circling is flown outside the final-approach protected area, so the MCA clears the circling area'
   ],
   correct: 3,
-  explanation: 'Circling MCA: the circling manoeuvre takes the aircraft around the aerodrome at low altitude. The circling area radius depends on aircraft category and the protected area is larger than the straight-in final approach area. MCA must provide 300 ft clearance above the highest obstacle in the circling area. MCA is always equal to or higher than straight-in MDA, reflecting the larger protected area and its terrain.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.3.3'
+  explanation: 'Circling takes the aircraft around the aerodrome within a protected area larger than the straight-in final segment. The MCA gives the required obstacle clearance (300 ft for Cat A/B, more for higher categories) over that larger area, so it is always equal to or higher than the straight-in MDA.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.3.3'
 },
 
 {
   question: 'Circling minimum altitudes differ by aircraft category because:',
   options: [
-    'A. Faster aircraft have higher stall speeds requiring more altitude — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Category differences reflect passenger capacity — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. All aircraft categories use the same circling MCA — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Faster aircraft fly larger circling radii — the circling protected area increases with aircraft speed, potentially encountering higher obstacles further from the runway'
+    'Faster aircraft have higher stall speeds, which is what demands more altitude',
+    'The category differences simply reflect the aircraft\'s passenger capacity',
+    'There is no difference, since all aircraft categories use the same circling MCA',
+    'Faster aircraft fly larger circling radii, so the protected area grows with approach category'
   ],
   correct: 3,
-  explanation: 'Circling radii by category: Cat A: 1.68 nm; Cat B: 2.66 nm; Cat C: 4.20 nm; Cat D: 5.28 nm. Faster aircraft (higher categories) fly larger circles, potentially over terrain further from the runway. The published MCA is the highest required for any category — but the specific MCA for each category may differ at aerodromes with critical terrain on only one side.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.3.3 / AIP ENR 1.5'
+  explanation: 'Circling radii increase with category (Cat A 1.68, B 2.66, C 4.20, D 5.28, E 6.94 nm). Faster aircraft circle wider and may overfly terrain further from the runway, so higher-category minima can be higher. The chart publishes the MCA for each category.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.3.3 / AIP ENR 1.5'
 },
 
 {
-  question: 'After take-off under IFR, establishing the aircraft on track requires:',
+  question: 'After take-off under the IFR, establishing the aircraft on track requires that:',
   options: [
-    'A. The aircraft may fly any heading until reaching cruise altitude',
-    'B. The aircraft must follow the published SID or departure instruction exactly — deviating from the cleared departure route without ATC clearance violates IFR separation',
-    'C. Only the final cruise heading matters — departure track is at pilot discretion',
-    'D. The aircraft follows the SID only if ATC specifically requests it'
-  ],
-  correct: 2,
-  explanation: 'IFR track establishment after take-off: the pilot must follow the SID if published and cleared. If no SID applies, establish on the cleared route before the specified point. Obstacle clearance during the SID is based on following the published procedure — deviating from the SID without authorisation removes the obstacle protection. ATC may provide radar vectors to the first waypoint.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.3.4'
-},
-
-{
-  question: 'The requirements to establish above LSALT after take-off include:',
-  options: [
-    'A. No specific requirements — the aircraft climbs to LSALT at normal rate — this is the correct regulatory position',
-    'B. The aircraft must establish above LSALT before proceeding on the IFR route — the SID or ATC clearance specifies the required altitude and track',
-    'C. LSALT must be reached within 10 minutes of take-off and this applies to all IFR operations in Australian airspace',
-    'D. LSALT only applies after leaving the aerodrome control zone according to current CASR and AIP requirements'
+    'The aircraft may fly any heading at all until it reaches its cruising altitude',
+    'The aircraft follows the published SID or departure instruction unless ATC amends it',
+    'Only the final cruise heading matters; the departure track is left to pilot discretion',
+    'The aircraft follows the SID only if ATC specifically asks for it on the day'
   ],
   correct: 1,
-  explanation: 'Establishing above LSALT: the SID provides obstacle clearance from the aerodrome to the point where the aircraft reaches LSALT (or the procedure\\\'s initial level). If the aircraft cannot reach the SID minimum altitude by the required position (due to performance limitations), departure may not be possible. This is particularly relevant for performance-limited aircraft at high-altitude aerodromes or in high-density altitude conditions.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.3.5 / AIP ENR 1.7'
+  explanation: 'Where a SID is published and cleared it must be flown; otherwise the aircraft establishes on the cleared route by the specified point. SID obstacle clearance assumes the published procedure is followed, so deviating without authorisation removes that protection. ATC may instead vector to the first waypoint.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.3.4'
+},
+
+{
+  question: 'The requirement to establish above LSALT after take-off is that:',
+  options: [
+    'There are no specific requirements at all; the aircraft simply climbs toward the LSALT at a normal rate',
+    'The aircraft must reach the SID or clearance altitude on the specified track before proceeding on the IFR route',
+    'LSALT must be reached within exactly 10 minutes of becoming airborne',
+    'LSALT applies only after the aircraft has left the aerodrome control zone'
+  ],
+  correct: 1,
+  explanation: 'The SID (or departure procedure/clearance) provides obstacle clearance from the aerodrome up to the point the aircraft reaches LSALT or the procedure\'s initial level. A performance-limited aircraft that cannot make the SID gradient/altitude by the required position may be unable to depart, which matters at high or hot/high aerodromes.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.3.5 / AIP ENR 1.7'
 },
 
 {
   question: 'The holding pattern inbound leg time below 14,000 ft is:',
   options: [
-    'A. 2 minutes',
-    'B. 1 minute',
-    'C. 1.5 minutes',
-    'D. As published on the chart'
+    '2 minutes',
+    '1 minute',
+    '1.5 minutes',
+    'As published on the chart'
   ],
   correct: 1,
   explanation: 'Standard holding pattern leg time: at or below 14,000 ft: 1 minute; above 14,000 ft: 1.5 minutes. The outbound leg is timed to achieve a 1-minute inbound leg (wind correction applied to outbound leg time). Longer or shorter legs may be published on holding charts for specific procedures. The 1-minute inbound ensures the holding pattern fits within the protected airspace.',
@@ -1972,75 +1972,75 @@ export const irexQuestions: {
 {
   question: 'In a right-hand holding pattern, all turns are:',
   options: [
-    'A. To the left',
-    'B. To the right',
-    'C. The first turn is right, the second is left',
-    'D. In the direction providing shortest path to the protected side'
+    'To the right',
+    'To the left',
+    'The first turn is right, the second is left',
+    'In the direction providing shortest path to the protected side'
   ],
-  correct: 1,
-  explanation: 'Standard holding is left-hand (all turns left). Non-standard holding is right-hand (all turns right) — published on charts when terrain or traffic requires it. In right-hand holding: the aircraft turns right from inbound to outbound and right from outbound back to inbound. The mnemonic: "hold on the side the turns are toward."',
+  correct: 0,
+  explanation: 'Standard holding is right-hand (all turns to the right). Non-standard holding is left-hand (all turns to the left) and is published on charts where terrain or traffic requires it. In a right-hand pattern the aircraft turns right from inbound to outbound and right again onto the inbound leg.',
   reference: 'AIP ENR 1.5 — Holding Procedures'
 },
 
 {
-  question: 'Holding pattern entry procedures — the teardrop (offset) entry is used when arriving from:',
+  question: 'The teardrop (offset) holding entry is used when arriving from:',
   options: [
-    'A. The inbound track plus/minus 70° — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Any direction when wind is strong and this applies to all IFR operations in Australian airspace',
-    'C. Sector 3 — arriving from a heading that would take the aircraft into the non-protected side of the holding pattern if a direct entry were flown',
-    'D. The teardrop entry is only used for right-hand holds according to current CASR and AIP requirements'
+    'The inbound track plus or minus 70 degrees on the holding side',
+    'Any direction at all, whenever the wind happens to be strong',
+    'Sector 2, where a direct entry would take the aircraft onto the non-holding side of the pattern',
+    'Only right-hand (non-standard) holding patterns use it, and never the standard left-hand ones'
   ],
   correct: 2,
-  explanation: 'Teardrop (offset) entry: used when arriving from sector 3 (the area on the non-holding side of the inbound track, beyond 110° from the inbound track). Procedure: at the fix, turn to a heading 30° off the inbound track toward the holding side; fly outbound for approximately 1 minute; turn to intercept the inbound track. This keeps the aircraft within the protected airspace during entry.',
-  reference: 'AIP ENR 1.5 / ICAO PANS-OPS — Holding'
+  explanation: 'The teardrop is the Sector 2 (offset) entry. At the fix, turn to a heading about 30 degrees off the inbound track toward the holding side, fly outbound (up to about 1.5 minutes), then turn to intercept the inbound track, keeping the aircraft within the protected area. (Sector 1 = parallel, Sector 3 = direct.)',
+  reference: 'AIP ENR 1.5 / ICAO PANS-OPS — holding entries'
 },
 
 {
   question: 'The direct entry to a holding pattern is appropriate when arriving from:',
   options: [
-    'A. Any direction',
-    'B. Sector 1 — within ±70° of the inbound track on the holding side. The aircraft flies over the fix, turns in the holding direction, and proceeds on the outbound leg',
-    'C. Only when specifically cleared by ATC',
-    'D. Direct entry is only for aircraft with speed above 250 kt provided the pilot holds a current medical certificate'
+    'Any direction at all, since the direct entry is genuinely suitable for every possible arrival angle',
+    'Sector 3, within about 70 degrees of the inbound track, flying over the fix and turning in the holding direction',
+    'Only when ATC has specifically cleared a direct entry for the aircraft',
+    'Only for aircraft with a true airspeed above 250 kt in the hold'
   ],
   correct: 1,
-  explanation: 'Direct entry (sector 1): the aircraft arrives at the fix on a heading within 70° of the inbound track on the holding side. Procedure: fly over the fix, turn in the holding direction (left for standard hold, right for non-standard), and proceed outbound. The most straightforward entry — the turn naturally keeps the aircraft within the protected area.',
-  reference: 'AIP ENR 1.5 / ICAO PANS-OPS — Holding'
+  explanation: 'Direct entry (Sector 3): arriving within about 70 degrees of the inbound track on the holding side, the aircraft flies over the fix, turns in the holding direction (right for standard, left for non-standard) and proceeds outbound. It is the simplest entry, the turn keeping the aircraft inside the protected area. (Sector 1 = parallel, Sector 2 = teardrop.)',
+  reference: 'AIP ENR 1.5 / ICAO PANS-OPS — holding entries'
 },
 
 {
   question: 'The parallel entry to a holding pattern is appropriate when arriving from:',
   options: [
-    'A. Any direction when the pilot prefers it',
-    'B. Directly opposite the inbound track (180° off)',
-    'C. Parallel entry is prohibited in Australian airspace',
-    'D. Sector 2 — arriving from the non-holding side, within approximately 110° of the inbound track'
+    'Any direction at all, used whenever the pilot happens to prefer it',
+    'Directly opposite the inbound track, arriving 180 degrees off the inbound',
+    'A parallel entry is prohibited within Australian airspace and so is never actually used',
+    'Sector 1, arriving from the non-holding side, within approximately 110° of the inbound track'
   ],
   correct: 3,
-  explanation: 'Parallel entry (sector 2): used when arriving from the non-holding side, within 110° of the inbound track. Procedure: at the fix, turn to fly outbound parallel to the inbound track (on the non-holding side) for approximately 1 minute; then turn in the holding direction to intercept the inbound track. The turn-in gets the aircraft established on the inbound leg from the correct side.',
+  explanation: 'Parallel entry (sector 1): used when arriving from the non-holding side, within 110° of the inbound track. Procedure: at the fix, turn to fly outbound parallel to the inbound track (on the non-holding side) for approximately 1 minute; then turn in the holding direction to intercept the inbound track. The turn-in gets the aircraft established on the inbound leg from the correct side.',
   reference: 'AIP ENR 1.5 / ICAO PANS-OPS — Holding'
 },
 
 {
-  question: 'When correcting for wind in a holding pattern, the pilot adjusts:',
+  question: 'To correct for wind in a holding pattern, the pilot adjusts:',
   options: [
-    'A. The inbound track only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Speed only — heading corrections are not used in holding and this applies to all IFR operations in Australian airspace',
-    'C. The outbound time and/or heading to achieve a 1-minute inbound leg — if the inbound was shorter than 1 minute, add time on outbound',
-    'D. The aircraft stops correcting for wind when in holding according to current CASR and AIP requirements'
+    'Only the inbound track is adjusted, leaving the outbound leg of the hold entirely uncorrected for wind',
+    'Only the airspeed, since heading corrections are not used in a holding pattern',
+    'The outbound time and/or heading to achieve a 1-minute inbound leg, adding outbound time if the inbound was short',
+    'Nothing, because the pilot stops correcting for wind once established in the hold'
   ],
   correct: 2,
-  explanation: 'Holding wind correction: (1) Time correction — if inbound leg is short (tailwind on inbound), add time on outbound; if inbound is long (headwind), reduce outbound time; (2) Track correction — apply triple the wind correction angle on the outbound leg, single WCA on inbound. The goal is a 1-minute inbound leg tracking the inbound course. This maximises fuel efficiency and maintains the aircraft within protected airspace.',
-  reference: 'AIP ENR 1.5 — Holding Procedures'
+  explanation: 'Wind is corrected by timing and heading: shorten or lengthen the outbound leg so the inbound leg is 1 minute (1.5 above 14,000 ft), and apply roughly triple the inbound wind-correction angle on the outbound leg. The aim is to track the inbound course and stay within protected airspace.',
+  reference: 'AIP ENR 1.5 — holding'
 },
 
 {
   question: 'The IFR fuel planning calculation must include:',
   options: [
-    'A. Flight fuel only',
-    'B. Flight fuel plus 10% contingency only',
-    'C. Taxi/start fuel + flight fuel (departure to destination) + contingency fuel + alternate fuel',
-    'D. Fuel planning requirements are only for commercial operations'
+    'Flight fuel only, from departure to the destination aerodrome',
+    'Flight fuel plus a flat ten percent contingency allowance only',
+    'Taxi/start fuel + flight fuel (departure to destination) + contingency fuel + alternate fuel',
+    'Detailed fuel planning is required only for commercial air-transport operations'
   ],
   correct: 2,
   explanation: 'IFR fuel calculation: (1) Taxi and start; (2) Flight fuel (planned route); (3) Contingency (typically 5% or specific requirement); (4) Alternate fuel if alternate required; (5) Additional holding fuel if destination delays expected; (6) Final reserve (30 min for turbine, 45 min for piston at normal cruise). Total = minimum departure fuel. Actual fuel should include a reasonable margin above minimum.',
@@ -2048,25 +2048,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'When the destination weather deteriorates after departure and the alternate is also below alternate minima, the pilot should:',
+  question: 'If the destination deteriorates below minima after departure and the alternate is also below alternate minima, the pilot should:',
   options: [
-    'A. Declare MAYDAY if fuel is critical; otherwise advise ATC immediately, request weather for alternative aerodromes',
-    'B. Continue to destination and attempt an approach — this is the correct regulatory position',
-    'C. Return to departure aerodrome and this applies to all IFR operations in Australian airspace',
-    'D. Declare MAYDAY and wait for weather to improve according to current CASR and AIP requirements'
+    'Advise ATC at once and request weather for other aerodromes in range, declaring MAYDAY if fuel becomes critical',
+    'Continue on to the destination anyway and simply attempt the published approach there as was planned',
+    'Turn back and return to the departure aerodrome regardless of distance',
+    'Declare a MAYDAY immediately and hold while waiting for the weather to improve'
   ],
   correct: 0,
-  explanation: 'Both destination and alternate below minima: this is a serious situation requiring immediate action. Contact ATC: request weather for all available aerodromes in range; identify the best option (highest weather, most fuel to get there); if fuel critical, declare MAYDAY. The key is acting early — waiting until fuel forces a decision removes all options. A declared emergency means ATC will provide maximum assistance and expedite.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.4'
+  explanation: 'With both destination and alternate below minima, act early: tell ATC, request weather for all aerodromes in range, and pick the best option on weather and reachable fuel; declare MAYDAY if fuel is critical. Waiting until fuel forces the decision removes the options; a declared emergency brings maximum ATC assistance.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.2.4'
 },
 
 {
   question: 'An IFR flight planning requirement specific to flight into remote areas is:',
   options: [
-    'A. No special requirements — remote areas are the same as any other airspace',
-    'B. Remote areas require a flight plan to be filed 24 hours in advance',
-    'C. Only commercial operators need additional planning for remote areas',
-    'D. Additional contingency fuel for unreliable weather forecasts; SARTIME filing; ELT serviceability confirmation'
+    'No special requirements at all, since the remote areas are treated just the same as any other airspace',
+    'Remote areas require a flight plan to be filed 24 hours in advance',
+    'Only commercial operators need additional planning for remote areas',
+    'Additional contingency fuel for unreliable weather forecasts; SARTIME filing; ELT serviceability confirmation'
   ],
   correct: 3,
   explanation: 'Remote area IFR planning: (1) Additional contingency fuel (weather forecasts less reliable); (2) File SARTIME with JRCC; (3) Confirm GNSS RAIM availability (limited alternate navaids); (4) ELT serviceable and registered; (5) Survival equipment (water, first aid, signalling) appropriate to terrain; (6) Communication plan — HF radio or satellite phone; (7) Consider an alternate closer than legal minimum if conditions require.',
@@ -2074,51 +2074,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The significance of the "transition level" for IFR flight planning is:',
+  question: 'The significance of the transition level for IFR planning is that:',
   options: [
-    'A. It is the lowest flight level available for cruising — when climbing through the transition level, the altimeter is changed from QNH to 1013 hPa and',
-    'B. It marks the boundary of controlled airspace — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The transition level is the altitude where IFR must begin and this applies to all IFR operations in Australian airspace',
-    'D. It is only relevant for international flights — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'It is the lowest available cruising flight level; climbing through it, the altimeter changes from QNH to 1013 hPa',
+    'It marks the lateral boundary of the controlled airspace for IFR flights operating at that aerodrome',
+    'It is the altitude at which flight under the IFR must begin after departure',
+    'It is relevant only to international flights, not to domestic IFR operations'
   ],
   correct: 0,
-  explanation: 'Transition level: the lowest available flight level above the transition altitude. In Australia, it varies with QNH but is always above 10,000 ft. Climbing: change to 1013 hPa when passing through the transition layer. Descending: change from 1013 to QNH when passing through the transition level. This ensures IFR aircraft using the same pressure reference can be safely separated on cruising levels.',
-  reference: 'AIP ENR 1.7 — Altimetry'
+  explanation: 'The transition level is the lowest flight level usable above the transition altitude (10,000 ft in Australia), varying with QNH. Climbing, set 1013 hPa passing through the transition layer; descending, set QNH passing the transition level. A common reference lets aircraft on cruising levels be separated reliably.',
+  reference: 'AIP ENR 1.7 — altimetry'
 },
 
 {
-  question: 'NGT VFR alternate requirements differ from IFR alternate requirements because:',
+  question: 'Night-VFR alternate requirements differ from IFR because:',
   options: [
-    'A. NGT VFR requires no alternate — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. NGT VFR alternates must be reachable in VMC — the alternate must have forecast night VMC during the planned arrival window, runway lighting',
-    'C. NGT VFR alternates require an ILS only and this applies to all IFR operations in Australian airspace',
-    'D. NGT VFR and IFR alternates have identical requirements according to current CASR and AIP requirements'
+    'Night VFR requires no destination alternate to be nominated under any circumstances',
+    'The night-VFR alternate needs forecast night VMC and runway lighting, as no IAP may be used',
+    'A night-VFR alternate must be served specifically by an ILS approach procedure',
+    'Night-VFR and IFR alternate requirements are in every respect completely identical'
   ],
   correct: 1,
-  explanation: 'NGT VFR alternate: the alternate must be reachable in night VMC conditions. Unlike IFR, the pilot must maintain visual contact with the ground — instrument approaches cannot be used (unless the pilot also holds an instrument rating). The alternate must have runway lighting, forecast night VMC, and be reachable with available fuel. This significantly restricts alternate selection for NGT VFR compared to IFR.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.2.3 / CASR Part 91'
+  explanation: 'A night-VFR alternate must be reachable in night VMC: the pilot must stay visual and cannot rely on an instrument approach (unless instrument-rated). So the alternate needs forecast night VMC and runway lighting through the arrival window and must be reachable on fuel, which restricts the choice compared with IFR.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.2.3 / Part 91'
 },
 
 {
-  question: 'When conducting an IFR approach to a non-controlled aerodrome, the pilot must:',
+  question: 'Conducting an IFR approach to a non-controlled aerodrome, the pilot must:',
   options: [
-    'A. Request ATC approach clearance on the CTAF frequency',
-    'B. Obtain and set the current QNH (from AWIS or last ATC contact); make CTAF position broadcasts throughout the approach; fly the published procedure; and close the IFR flight plan on arrival',
-    'C. Non-controlled aerodromes cannot be IFR destinations',
-    'D. IFR approaches at non-controlled aerodromes require a dedicated approach controller provided the pilot holds a current medical certificate'
+    'Request an ATC approach clearance on the CTAF frequency before commencing the published procedure there',
+    'Set the current QNH, make CTAF broadcasts throughout, fly the published procedure, and close the plan on arrival',
+    'Treat it as impossible, since non-controlled aerodromes cannot be IFR destinations',
+    'Wait for a dedicated approach controller, who is required for any such approach'
   ],
   correct: 1,
-  explanation: 'IFR at non-controlled aerodrome: (1) Obtain QNH from AWIS or calculation; (2) Make CTAF broadcasts announcing inbound, joining, final, runway clear; (3) Fly the published instrument approach procedure — no ATC clearance is given, the pilot is responsible for the approach; (4) Apply published minima; (5) Close the flight plan on arrival by contacting FSS or JRCC.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.6 / AIP ENR 1.1'
+  explanation: 'There is no approach clearance at a non-controlled aerodrome: obtain and set QNH (AWIS or calculation), broadcast position on the CTAF through the approach, fly the published procedure to its minima as pilot-in-command, and close the flight plan on arrival via ATS/Flightwatch.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.6 / AIP ENR 1.1'
 },
 
 {
   question: 'When weather at the destination is below approach minima and holding fuel is insufficient to wait for improvement, the pilot should:',
   options: [
-    'A. Attempt the approach anyway — minima are conservative',
-    'B. Execute the approach from a lower altitude to improve chances of breaking out',
-    'C. Circle at MCA until fuel is critical then declare emergency',
-    'D. Declare MINIMUM FUEL to ATC if not already done; request immediate clearance to the alternate; divert without delay'
+    'Attempt the approach anyway, on the basis that the published minima are deliberately set conservatively',
+    'Execute the approach from a lower altitude to improve chances of breaking out',
+    'Circle at MCA until fuel is critical then declare emergency',
+    'Declare MINIMUM FUEL to ATC if not already done; request immediate clearance to the alternate; divert without delay'
   ],
   correct: 3,
   explanation: 'Diversion decision: when holding fuel is exhausted to the diversion fuel level, divert immediately. Do not attempt the approach hoping for improvement — the consequences of a missed approach below diversion fuel are severe. Declare MINIMUM FUEL if not already done. Diversion fuel = transit + alternate approach + final reserve minimum. Once diversion fuel is reached, there is no discretion — divert.',
@@ -2126,25 +2126,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The flight instruments required for IFR flight in a piston aeroplane include:',
+  question: 'The flight instruments required for IFR in a piston aeroplane are:',
   options: [
-    'A. Attitude indicator, airspeed indicator, altimeter, and directional indicator — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Any combination of instruments that allows the pilot to maintain altitude and heading and this applies to all IFR operations in Australian airspace',
-    'C. The same as VFR — IFR requires no additional instruments — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. A complete group including: magnetic compass, airspeed indicator, altimeter (with subscale), attitude indicator, directional indicator (or HSI), turn coordinator, vertical speed indicator'
+    'Only an attitude indicator, an ASI, an altimeter and a directional indicator are strictly required',
+    'Any combination of instruments that lets the pilot hold altitude and heading',
+    'Exactly the same as for VFR, since IFR requires no additional instruments',
+    'A full panel of compass, ASI, altimeter with subscale, attitude indicator, DI or HSI, turn coordinator and VSI'
   ],
   correct: 3,
-  explanation: 'IFR instrument requirements: (1) Airspeed indicator; (2) Altimeter (with adjustable subscale); (3) Magnetic compass; (4) Attitude indicator; (5) Heading indicator/DI or HSI; (6) Turn and slip indicator or turn coordinator; (7) Vertical speed indicator; (8) Radio altimeter (some operations); plus radio navigation equipment for the planned route and approach. Failure of any primary flight instrument requires immediate consideration of return or diversion.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.1 / CASR Part 91'
+  explanation: 'Part 91 MOS Ch 26 requires for aeroplane IFR an approved GNSS, ASI, altimeter (subscale), VSI, attitude indicator, directional gyro, turn-and-slip/turn coordinator, magnetic compass, OAT and clock, plus the radio-navigation equipment for the route and approach. Loss of a primary instrument prompts a return or diversion decision.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.1 / Part 91 MOS 26.08'
 },
 
 {
   question: 'The attitude indicator (AI) is particularly critical for IFR because:',
   options: [
-    'A. It is the only instrument that shows airspeed',
-    'B. The AI is not critical — the altimeter and ASI can substitute',
-    'C. It provides an artificial horizon reference when the natural horizon is invisible',
-    'D. The AI is required only for ILS approaches'
+    'It is the only instrument that shows airspeed',
+    'The AI is not really that critical, as the altimeter and ASI can substitute',
+    'It provides an artificial horizon reference when the natural horizon is invisible',
+    'The AI is required only for ILS approaches'
   ],
   correct: 2,
   explanation: 'AI in IMC: without outside visual reference, the AI is the primary means of maintaining attitude. All other instruments are cross-checked against the AI. Failure in IMC requires partial panel technique: use the turn coordinator for bank, altimeter and VSI for pitch. Partial panel flying is significantly more workload-intensive and less precise — diversion or request for vectors to VMC is strongly advisable.',
@@ -2152,38 +2152,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The limitation of a vacuum-driven (suction) attitude indicator is:',
+  question: 'A limitation of a vacuum-driven attitude indicator is that:',
   options: [
-    'A. It only works in level flight — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Vacuum AIs are less accurate than electric AIs and this applies to all IFR operations in Australian airspace',
-    'C. It may tumble (topple) if the vacuum fails or during prolonged unusual attitudes, and the erection rate after tumbling is slow',
-    'D. Vacuum AIs cannot show bank angles beyond 30° according to current CASR and AIP requirements'
+    'It functions only in straight-and-level flight and never in turns',
+    'It is inherently rather less accurate than a modern electrically driven attitude indicator',
+    'It can topple if the vacuum fails or in prolonged unusual attitudes, and re-erects only slowly afterwards',
+    'It cannot display any bank angle beyond about 30 degrees'
   ],
   correct: 2,
-  explanation: 'Vacuum AI limitations: (1) Vacuum failure — AI erects by suction; if vacuum pump fails, the gyro spins down gradually. The AI may appear normal for several minutes before becoming unreliable; (2) Toppling — prolonged unusual attitude or aerobatics can tumble the gyro. After toppling, the AI takes 2–5 minutes to re-erect and may show a false horizon; (3) No direct vacuum failure warning on some aircraft. Pilot must cross-check with electric turn coordinator.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.1'
+  explanation: 'If the vacuum source fails the gyro spins down gradually and may read plausibly for some minutes before becoming unreliable; prolonged unusual attitudes can topple it, after which it re-erects over several minutes and may show a false horizon. Some installations give no vacuum-failure warning, so cross-check the electric turn coordinator.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.1'
 },
 
 {
-  question: 'The directional indicator (DI) or heading indicator must be aligned with the magnetic compass:',
+  question: 'The directional indicator (DI) must be realigned with the magnetic compass:',
   options: [
-    'A. Only before flight — DIs are accurate throughout the flight without adjustment — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Every 10-15 minutes during cruise — DIs precess due to bearing friction and Earth rotation, and must be realigned with the magnetic compass on a straight level unaccelerated heading',
-    'C. Only when entering controlled airspace — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. DI alignment is automatic — no pilot action required — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Only before flight, since the DI then stays accurate throughout without any further adjustment',
+    'Every 10 to 15 minutes in straight, level, unaccelerated flight, as the gyro slowly precesses',
+    'Only when entering controlled airspace, and at no other time in the flight',
+    'Never, because DI alignment is fully automatic and needs no pilot action'
   ],
   correct: 1,
-  explanation: 'DI precession: the directional gyro drifts from the set heading due to: (1) Bearing friction (mechanical precession); (2) Earth\\\'s rotation (apparent precession — more significant at high latitudes); (3) Aircraft manoeuvres. Rate: typically 2–3° per 10 minutes. Must be aligned with the magnetic compass in straight and level flight (not in a turn) every 10–15 minutes. Failure to align results in accumulating heading error.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.1'
+  explanation: 'A directional gyro drifts from bearing friction (mechanical precession) and Earth\'s rotation (apparent precession, worse at high latitude), typically a few degrees per ten minutes. Realign it with the compass in straight, level, unaccelerated flight every 10-15 minutes, never in a turn, or heading error accumulates.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.1'
 },
 
 {
   question: 'The turn coordinator provides which information that the attitude indicator cannot during partial-panel flying?',
   options: [
-    'A. Airspeed information',
-    'B. Rate of turn and coordination (slip/skid) — it remains functional if the AI fails',
-    'C. Altitude information',
-    'D. The turn coordinator provides no additional information beyond the AI'
+    'Airspeed information',
+    'Rate of turn and coordination (slip/skid), it remains functional if the AI fails',
+    'Altitude information',
+    'The turn coordinator provides no additional information beyond the AI'
   ],
   correct: 1,
   explanation: 'Turn coordinator for partial panel: the turn coordinator is typically electrically powered (independent of vacuum AI). When the vacuum AI fails, the turn coordinator provides: (1) Rate of turn information — maintain standard rate (3°/sec) for timed turns; (2) Coordination — ball indicates slip/skid. Combined with altimeter (pitch reference), ASI (speed), and compass (direction), the turn coordinator enables partial panel IFR flight.',
@@ -2193,10 +2193,10 @@ export const irexQuestions: {
 {
   question: 'A standard rate turn (Rate 1) in instrument flying is:',
   options: [
-    'A. 1.5°/second',
-    'B. 2°/second',
-    'C. 3°/second — completing a 360° turn in 2 minutes',
-    'D. 5°/second'
+    '1.5 degrees per second, taking four minutes for a 360 degree turn',
+    '2 degrees per second, completing a 360 degree turn in three minutes',
+    '3 degrees per second, completing a full 360 degree turn in exactly two minutes',
+    '5 degrees per second, completing a 360 degree turn in 72 seconds'
   ],
   correct: 2,
   explanation: 'Standard rate (Rate 1) = 3°/second = 180° in 60 seconds = 360° in 2 minutes. For timed turns: turn time (seconds) = heading change (degrees) ÷ 3. Standard rate bank angle ≈ (TAS in kt ÷ 10) + 7°. At 120 kt TAS: bank ≈ 12 + 7 = 19°. All timed turn calculations in IFR use standard rate. Half-standard rate (1.5°/sec) is used for small corrections.',
@@ -2204,77 +2204,77 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "five Ts" instrument approach technique stands for:',
+  question: 'If the pitot tube becomes completely blocked (ram inlet and drain), the airspeed indicator will:',
   options: [
-    'A. Track, Timing, Temperature, Turbulence, Touchdown',
-    'B. Target, Transition, Track, Threshold, Touchdown',
-    'C. Time, Turn, Throttle, Talk, Track — a systematic checklist used at each fix on an instrument approach to ensure no action is missed',
-    'D. The five Ts is a VFR technique only as approved by CASA under current regulations'
+    'Immediately drop to and remain at zero airspeed',
+    'Continue to read the correct indicated airspeed throughout the flight',
+    'Behave like an altimeter, over-reading in a climb and under-reading in a descent',
+    'Begin to read true airspeed in place of indicated airspeed'
   ],
   correct: 2,
-  explanation: 'Five Ts at each fix/waypoint: (1) Time — note time over fix; (2) Turn — initiate any required heading change; (3) Throttle — set power for the segment; (4) Talk — make required position report or ATC call; (5) Track — verify on correct track for next segment. Applied at: IAF, IF, FAF, MAP. This systematic approach prevents missed actions during the high-workload approach phase.',
-  reference: 'IFR technique — instrument flying best practice'
+  explanation: 'With the pitot fully blocked, the trapped ram pressure cannot change, so as static pressure falls in a climb the ASI shows an increasing false airspeed, and in a descent a decreasing one, behaving like an altimeter. A blocked ram inlet with an open drain instead drops the ASI to zero.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.1'
 },
 
 {
-  question: 'On a non-precision approach, the aircraft should reach the MDA:',
+  question: 'On a non-precision approach the aircraft should reach the MDA:',
   options: [
-    'A. At the MAP — not before',
-    'B. Before the MAP, with sufficient time to assess visual reference — then fly level at MDA until the MAP or visual contact is established',
-    'C. The MDA can be reached at any point on the approach',
-    'D. MDA should be reached at the FAF provided the pilot holds a current medical certificate'
+    'Exactly at the MAP, with no earlier point anywhere on the approach being at all acceptable',
+    'Before the MAP, with time to assess visual reference, then level at MDA until the MAP or visual contact',
+    'At any point on the approach, since the position does not matter',
+    'At the FAF, descending no further for the rest of the approach'
   ],
   correct: 1,
-  explanation: 'Non-precision MDA technique: the pilot should reach MDA (but not below) before the MAP, allowing time to level off and assess visual contact. Flying below MDA is not permitted. If the aircraft reaches the MAP still at MDA without visual reference, execute a missed approach. Some pilots use a "dive and drive" technique (descend steeply to MDA, then level) — a stabilised constant descent is preferred as it better represents the approach path to the runway.',
-  reference: 'AIP ENR 1.5 — Instrument Approaches'
+  explanation: 'Reaching MDA (but not below) before the MAP gives time to level off and look for visual reference. If the MAP is reached at MDA without that reference, a missed approach is flown. A stabilised constant-descent profile to the MDA is preferred over a \'dive and drive\'.',
+  reference: 'AIP ENR 1.5 — instrument approaches'
 },
 
 {
-  question: 'The "missed approach point" (MAP) on a non-precision approach is:',
+  question: 'The missed approach point (MAP) on a non-precision approach is:',
   options: [
-    'A. The point at which DA is reached on a precision approach — this is the correct regulatory position',
-    'B. The point beyond which visual reference must have been established — it may be defined by time from FAF, DME, or a waypoint',
-    'C. The furthest point from the runway on the approach procedure and this applies to all IFR operations in Australian airspace',
-    'D. MAP is defined as 1 nm before the runway threshold on all approaches according to current CASR and AIP requirements'
+    'The point at which the DA is reached on a precision approach',
+    'The point beyond which visual reference must already exist; set by time from the FAF, by DME or by a waypoint',
+    'The furthest point from the runway on the whole approach procedure',
+    'A fixed point that lies exactly 1 nm before the runway threshold on every single instrument approach'
   ],
   correct: 1,
-  explanation: 'MAP (Missed Approach Point): on a 2D (non-precision) approach, the point at which the missed approach must be initiated if the required visual reference has not been established. The MAP is defined on the approach chart as: a fix (NDB, VOR, DME fix), time from FAF, or waypoint (GNSS). The MAP is where the obstruction clearance surface ends for the approach procedure — beyond the MAP, obstruction clearance is not guaranteed at MDA.',
+  explanation: 'On a 2D approach the MAP is where a missed approach must begin if the required visual reference has not been established. It is charted as a fix, a time from the FAF, or a GNSS waypoint, and marks where the approach obstacle-clearance surface ends, so beyond it clearance at MDA is not assured.',
   reference: 'AIP ENR 1.5 / ICAO PANS-OPS'
 },
 
 {
-  question: 'The "visual segment" of an instrument approach begins:',
+  question: 'The visual segment of an instrument approach begins:',
   options: [
-    'A. At the IAF — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. When the runway lights become visible at 5 nm and this applies to all IFR operations in Australian airspace',
-    'C. Visual segment begins at the MAP only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. At the point where the pilot sights the required visual references (DA/MDA) and transitions from instrument to visual flying to complete the landing'
+    'At the initial approach fix, entirely regardless of the prevailing visual meteorological conditions',
+    'When the runway lights first become visible at about 5 nm from touchdown',
+    'Only at the missed approach point, and at no earlier stage of the approach',
+    'Where the required visual references are sighted at or above DA/MDA and the pilot transitions to visual flight'
   ],
   correct: 3,
-  explanation: 'Visual segment: once the pilot sights the required visual references at or above DA/MDA, transition from instrument to visual flying commences. The pilot must maintain visual reference continuously — if visual reference is lost, immediately execute a missed approach. The visual segment is not the same as breaking out of cloud — the required specific visual references must be clearly identifiable.',
-  reference: 'AIP ENR 1.5 — Instrument Approaches'
+  explanation: 'The visual segment starts when the required visual references are clearly identified at or above the DA/MDA and the pilot transitions from instruments to visual flying. Visual reference must then be maintained continuously; if it is lost, an immediate missed approach is flown. Simply breaking out of cloud is not enough, the specified references must be seen.',
+  reference: 'AIP ENR 1.5 — instrument approaches'
 },
 
 {
-  question: 'A "stabilised approach" criterion for instrument approaches requires:',
+  question: 'A stabilised approach for an instrument approach requires that:',
   options: [
-    'A. At 500 ft AGL: correct configuration, stable speed within defined band, correct descent rate, on glidepath/glideslope, aligned with runway',
-    'B. Only that the aircraft is on the correct approach path at the FAF — this is the correct regulatory position',
-    'C. The approach is only considered unstable if the glideslope is more than 2 dots off and this applies to all IFR operations in Australian airspace',
-    'D. Stabilisation criteria only apply to commercial operations according to current CASR and AIP requirements'
+    'By 500 ft AGL, with correct configuration, stable speed, correct descent rate, on glidepath and aligned with the runway',
+    'Only that the aircraft is on the correct approach path as it crosses the FAF',
+    'The approach is treated as unstable only if the glideslope is more than 2 dots off',
+    'Stabilisation criteria apply solely to commercial air-transport IFR operations, and never to private ones'
   ],
   correct: 0,
-  explanation: 'Stabilised approach criteria (at 500 ft AGL in IMC, 300 ft in VMC): (1) Aircraft in landing configuration; (2) Speed within defined band (typically Vapp ±10 kt); (3) Descent rate 500–1000 fpm for 3° glideslope; (4) On approach path (glideslope within 1 dot, localiser within 1 dot); (5) Aligned with runway ±5°. Failure of ANY criterion by 500 ft = immediate go-around. Non-stabilised approaches are a major cause of controlled flight into terrain.',
-  reference: 'AIP ENR 1.5 / ICAO CFIT prevention'
+  explanation: 'By the stabilisation gate (about 500 ft AGL in IMC) the aircraft should be in landing configuration, at a stable speed (about Vapp +/-10 kt), at a normal descent rate, within about 1 dot of the glidepath/localiser and aligned with the runway. If any criterion is not met, go around. Unstable approaches are a leading CFIT factor.',
+  reference: 'AIP ENR 1.5 / CFIT prevention'
 },
 
 {
   question: 'An ILS Category I approach has published minima of:',
   options: [
-    'A. Minima vary by aerodrome and aircraft equipment',
-    'B. DA 200 ft and RVR 800 m',
-    'C. DA 200 ft and RVR 550 m',
-    'D. DA 100 ft and RVR 400 m'
+    'Minima vary by aerodrome and aircraft equipment',
+    'DA 200 ft and RVR 800 m',
+    'DA 200 ft and RVR 550 m',
+    'A fixed DA of 100 ft and RVR of 400 m'
   ],
   correct: 0,
   explanation: 'ILS Cat I minima: typically DA at 200 ft (60 m) above threshold, RVR 550 m minimum, but minima are aerodrome-specific and may be higher based on obstacles, approach lighting, runway markings. Cat II: DA 100 ft (30 m), RVR 300 m — requires certified equipment and flight deck crew. Cat III: lower DA or no DA, RVR 75–200 m — highly specialized equipment and certifications required. Always use published minima from current charts, not generalised values.',
@@ -2282,38 +2282,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'During a circling approach, if visual reference is lost:',
+  question: 'During a circling approach, if visual reference is lost the pilot should:',
   options: [
-    'A. Immediately execute a climbing turn toward the runway (in the direction of the approach) and climb to the circling MCA — then recommence the approach or proceed as cleared',
-    'B. Continue to the runway using estimated position',
-    'C. Descend to the runway level and attempt to locate the runway visually provided the pilot holds a current medical certificate',
-    'D. Fly a standard rate turn in the direction of the hold'
+    'Make an immediate climbing turn toward the runway, climb to the circling MCA, then fly the missed approach or as cleared',
+    'Continue toward the runway using only the last estimated position from before the visual reference was lost',
+    'Descend to runway level and attempt to locate the runway visually from there',
+    'Fly a standard-rate turn in the direction of the published holding pattern'
   ],
   correct: 0,
-  explanation: 'Loss of visual reference during circling: (1) Immediately commence a climbing turn toward the runway used for the approach (maintaining aircraft on the safe side over the aerodrome); (2) Climb to the published circling MCA or missed approach altitude; (3) Proceed on the missed approach procedure or as cleared by ATC. The turn toward the runway (over the aerodrome) keeps the aircraft over the safest terrain. Do NOT continue visually — the approach must be discontinued.',
-  reference: 'AIP ENR 1.5 — Circling Approach Procedures'
+  explanation: 'On losing visual reference while circling, turn toward the runway (keeping the aircraft over the aerodrome and the safest terrain), climb to the circling MCA or missed-approach altitude, and fly the missed approach or follow ATC. The approach must be discontinued, not continued visually.',
+  reference: 'AIP ENR 1.5 — circling'
 },
 
 {
-  question: 'The visual circling manoeuvre must remain within:',
+  question: 'The visual circling manoeuvre must remain:',
   options: [
-    'A. 5 nm of the aerodrome — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. 3 nm of the runway threshold for all approach categories and this applies to all IFR operations in Australian airspace',
-    'C. 10 nm of the aerodrome reference point at all times during circling according to current CASR and AIP requirements',
-    'D. The published circling radius for the aircraft\'s approach category — Cat A 1.68 nm, Cat B 2.66 nm, Cat C 4.20 nm, Cat D 5.28 nm'
+    'Within 5 nm of the aerodrome, regardless of the aircraft category',
+    'Within 3 nm of the runway threshold for every approach category',
+    'Within 10 nm of the aerodrome reference point throughout the circling',
+    'Within the published circling radius for the aircraft\'s approach category'
   ],
   correct: 3,
-  explanation: 'Circling radius limits by category: Cat A 1.68 nm, Cat B 2.66 nm, Cat C 4.20 nm, Cat D 5.28 nm. The published MCA provides obstacle clearance within these radii. Manoeuvring outside the published radius removes obstacle protection — even if the runway is in sight. The circling procedure must be flown at the minimum safe altitude and within the category radius.',
-  reference: 'AIP ENR 1.5 / ICAO PANS-OPS — Circling'
+  explanation: 'Obstacle protection during circling is only assured inside the category circling radius (Cat A 1.68, B 2.66, C 4.20, D 5.28, E 6.94 nm). Manoeuvring outside that radius removes the protection even with the runway in sight, so circling is flown at the MCA and within the category radius.',
+  reference: 'AIP ENR 1.5 / ICAO PANS-OPS — circling'
 },
 
 {
   question: 'Conducting an ILS approach, the outer marker (OM) audio indication is:',
   options: [
-    'A. Continuous low-pitched dashes (-- --)',
-    'B. Continuous high-pitched tone (dot dot dot)',
-    'C. Alternating dot-dash (·-·-)',
-    'D. Rapid dots (·····)'
+    'Continuous low-pitched dashes (-- --)',
+    'Continuous high-pitched tone (dot dot dot)',
+    'Alternating dot-dash (·-·-)',
+    'Rapid dots (·····)'
   ],
   correct: 0,
   explanation: 'Marker beacon audio: Outer Marker (OM) = continuous low-pitched dashes (-- --) at 400 Hz; blue light. Middle Marker (MM) = alternating dot-dash (·-·-) at 1,300 Hz; amber light. Inner Marker (IM) = rapid dots (·····) at 3,000 Hz; white light. The OM is the glideslope intercept fix; MM is approximately DA height; IM is close to the threshold.',
@@ -2321,51 +2321,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'When cleared for an ILS approach and the glideslope flag appears after glideslope intercept:',
+  question: 'If the glideslope flag appears after glideslope intercept on an ILS approach, the pilot should:',
   options: [
-    'A. Continue — glideslope flags are common and can be ignored on short final provided the pilot holds a current medical certificate',
-    'B. Descend to the MDA published for the ILS and look for the runway',
-    'C. Request ATC to confirm glideslope serviceability before continuing',
-    'D. Immediately abandon the precision approach and execute a missed approach or convert to a non-precision approach using the localiser only (if localiser-only minima are published)'
+    'Continue anyway, since glideslope warning flags are common and can simply be ignored on short final',
+    'Descend to the ILS-published MDA and look for the runway environment',
+    'Ask ATC to confirm glideslope serviceability before deciding to continue',
+    'Abandon the precision approach, going around or reverting to localiser-only minima if those are published'
   ],
   correct: 3,
-  explanation: 'Glideslope failure during approach: if the glideslope flag appears after glideslope intercept, the glideslope is unreliable. Options: (1) Execute a missed approach; (2) Convert to a localiser-only (LOC) approach if published — fly to the higher LOC-only minima using step-down fixes. Do not continue descending on a failed glideslope — vertical guidance may be providing incorrect guidance. ATC should be informed.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.10'
+  explanation: 'A glideslope flag means the vertical guidance is unreliable and must not be followed. Either go around, or continue as a localiser-only (LOC) non-precision approach to the higher LOC minima using the step-down fixes, if those minima are published. ATC should be advised.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.10'
 },
 
 {
-  question: 'The "ATIS" information must be obtained before conducting an IFR approach because:',
+  question: 'ATIS must be obtained before an IFR approach because it:',
   options: [
-    'A. ATIS information is required by ATC before issuing an approach clearance provided the pilot holds a current medical certificate',
-    'B. ATIS is only required for commercial operations',
-    'C. ATIS provides current wind, QNH, active runway, approach in use, significant weather, and NOTAMs — essential for approach briefing, altimeter setting, and approach selection',
-    'D. ATIS must be obtained but need not be reported to ATC'
+    'Is required by ATC before it will issue any approach clearance to the aircraft',
+    'Is required only for commercial air-transport operations, never for private or aerial-work flights',
+    'Gives current wind, QNH, runway and approach in use, weather and NOTAMs, all needed for the briefing and minima',
+    'Must be obtained but never needs to be reported to ATC on first contact'
   ],
   correct: 2,
-  explanation: 'ATIS for IFR approach: provides current QNH (critical for correct approach minima); active runway and approach in use; wind (crosswind check); significant weather (windshear, CB, low visibility); relevant NOTAMs (localiser/glideslope outages, runway condition). Pilot reports the ATIS code to ATC on first contact — ATC confirms the pilot has current information. If ATIS is not available, request QNH and active runway from ATC or FSS.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.1 / AIP ENR 1.6'
+  explanation: 'ATIS supplies the current QNH (for correct minima), the runway and approach in use, wind for a crosswind check, significant weather such as wind-shear, and relevant NOTAMs (e.g. aid outages). The pilot passes the ATIS code to ATC on first contact; if ATIS is unavailable, request QNH and runway from ATC or Flightwatch.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.1 / AIP ENR 1.6'
 },
 
 {
-  question: 'The purpose of the approach briefing before commencing an instrument approach is:',
+  question: 'The purpose of the approach briefing before an instrument approach is:',
   options: [
-    'A. A regulatory requirement that serves no practical purpose — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The approach briefing is only required when both pilots are flying — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. To review the approach procedure and mentally prepare: IAF position, approach track, altitude constraints, DA/MDA, missed approach procedure, minimum fuel at MAP, decision criteria',
-    'D. Briefings are only required for the first approach to a new aerodrome — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'It is purely a box-ticking regulatory requirement that serves no real practical purpose in the cockpit',
+    'The approach briefing is required only when two pilots are operating together',
+    'To review the procedure, IAF, track, altitude limits, DA/MDA, missed approach and criteria before the workload rises',
+    'Briefings are needed only for a first approach to an unfamiliar aerodrome'
   ],
   correct: 2,
-  explanation: 'Approach briefing purpose: reviewing the procedure before commencing reduces workload during the approach, prevents missed altitude constraints, ensures the missed approach procedure is known, confirms the aircraft is correctly configured, and establishes decision criteria (fuel, weather, equipment). A thorough briefing: I = Ident (navaid), A = Altitude (DA/MDA), T = Time (FAF to MAP), M = Missed approach procedure, A = Alternate plan.',
-  reference: 'IFR best practice — approach briefing'
+  explanation: 'Briefing the approach beforehand lowers in-approach workload, fixes the altitude constraints and missed-approach procedure in mind, confirms configuration, and sets the decision criteria (fuel, weather, equipment). A common structure covers ident, altitudes/minima, timing, missed approach and the alternate plan.',
+  reference: 'AIP ENR 1.5'
 },
 
 {
   question: 'The technique for transitioning from instrument to visual flying at DA on an ILS approach is:',
   options: [
-    'A. Divert all attention to outside visual references and ignore instruments',
-    'B. Transition gradually — look outside for visual references while maintaining instrument crosscheck',
-    'C. Stop instrument scanning as soon as one visual reference is sighted',
-    'D. Hand control to the autopilot when transitioning to visual'
+    'Divert all of the pilot\'s attention to outside visual references and ignore the flight instruments',
+    'Transition gradually, look outside for visual references while maintaining instrument crosscheck',
+    'Stop instrument scanning as soon as one visual reference is sighted',
+    'Hand control to the autopilot when transitioning to visual'
   ],
   correct: 1,
   explanation: 'DA transition technique: at DA, look outside for required visual references while continuing instrument crosscheck. If references are sighted: transition to visual flying, continue stabilised approach. Do not abandon all instrument reference immediately — continue to cross-check instruments during the visual segment, particularly in marginal conditions where visual references may deteriorate. If visual reference is lost, execute missed approach immediately.',
@@ -2375,10 +2375,10 @@ export const irexQuestions: {
 {
   question: 'The "constant descent final approach" (CDFA) technique on non-precision approaches:',
   options: [
-    'A. Requires the aircraft to be at MDA when crossing the FAF',
-    'B. Involves flying a continuous 3° (or published angle) descent from the FAF to the runway threshold',
-    'C. CDFA can only be used on GNSS approaches',
-    'D. CDFA results in higher minima than conventional step-down approaches'
+    'Requires the aircraft to be at MDA when crossing the FAF',
+    'Involves flying a continuous 3° (or published angle) descent from the FAF to the runway threshold',
+    'CDFA can only be used on GNSS approaches',
+    'A CDFA results in noticeably higher minima than the conventional step-down approaches do'
   ],
   correct: 1,
   explanation: 'CDFA technique: fly a continuous descent from FAF to the runway, targeting the runway threshold as the aim point. The descent angle is calculated from the approach chart (typically 3°). When the aircraft reaches the altitude corresponding to MDA, if visual reference is not established — execute a missed approach (treat MDA as DA). Benefits: stabilised approach profile, no step-downs to manage, better visual acquisition geometry, reduced CFIT risk.',
@@ -2386,77 +2386,77 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The primary cause of Controlled Flight Into Terrain (CFIT) on instrument approaches is:',
+  question: 'The primary cause of Controlled Flight Into Terrain on instrument approaches is:',
   options: [
-    'A. Weather below minima — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Navigation system failure — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Spatial disorientation causing the pilot to descend below the approach profile, compounded by confusion about position, failure to follow the published procedure',
-    'D. CFIT only occurs on non-precision approaches — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Weather conditions that simply happen to be below the published approach minima at the time on the day',
+    'Sudden failure of the aircraft\'s primary navigation system during the approach',
+    'Descending below the profile, often with disorientation or position confusion and not flying the published procedure',
+    'It occurs only on non-precision approaches and never on precision approaches'
   ],
   correct: 2,
-  explanation: 'CFIT causes: (1) Descending below DA/MDA without visual reference; (2) Spatial disorientation (believing the aircraft is higher than it is); (3) Not following the published procedure (improper descent profile, wrong altitudes); (4) Failure to execute a timely missed approach; (5) Inadequate approach briefing; (6) High workload leading to missed altitude calls. CFIT remains one of the leading causes of fatal accidents in IFR operations globally.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX best practice'
+  explanation: 'CFIT typically follows descent below the DA/MDA or profile without visual reference, spatial disorientation (believing the aircraft is higher than it is), not flying the published altitudes, or a delayed missed approach, often with inadequate briefing and high workload. It remains a leading cause of fatal IFR accidents.',
+  reference: 'Part 61 MOS Sch 3 IREX — CFIT'
 },
 
 {
-  question: 'The IFR "instrument crosscheck" involves:',
+  question: 'The IFR instrument crosscheck (scan) involves:',
   options: [
-    'A. Only monitoring the AI — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Looking at each instrument once per minute and this applies to all IFR operations in Australian airspace',
-    'C. Monitoring only the AI and altimeter — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. A systematic scan of all primary flight instruments — AI (primary attitude), ASI (power/pitch), altimeter (pitch/altitude), DI (heading), VSI (pitch)'
+    'Monitoring only the attitude indicator, to the deliberate exclusion of all of the other instruments',
+    'Glancing at each instrument just once every minute or so in turn',
+    'Monitoring only the attitude indicator and the altimeter together',
+    'A systematic scan of all primary instruments centred on the attitude indicator, never fixating on one'
   ],
   correct: 3,
-  explanation: 'Instrument crosscheck (scan): primary scan includes AI, ASI, altimeter, DI, VSI. Navigation instruments (CDI, ADF) are added during approach. The "hub and spoke" scan: AI is the hub — it is the primary source of attitude information. After checking AI, scan to each supporting instrument and return to AI. No instrument should be fixated upon for more than 2–3 seconds. A proper scan detects deviations before they become significant.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.1 / IFR technique'
+  explanation: 'The scan radiates from the attitude indicator (the hub) out to the supporting instruments, ASI, altimeter, DI and VSI, and back, with no instrument fixated for more than a couple of seconds; navigation displays are added on approach. A good scan catches deviations before they grow.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.1'
 },
 
 {
-  question: 'When conducting an NDB approach at night, particular caution is required because:',
+  question: 'An NDB approach at night needs particular caution because:',
   options: [
-    'A. Night effect causes NDB bearing errors; lightning from any convective activity attracts the ADF needle',
-    'B. NDB signals are weaker at night — this is the correct regulatory position',
-    'C. NDB approaches are prohibited at night and this applies to all IFR operations in Australian airspace',
-    'D. Night has no additional effect on NDB approaches according to current CASR and AIP requirements'
+    'Night effect causes NDB bearing errors, and lightning from any convective activity attracts the ADF needle',
+    'NDB ground signals are simply weaker during the hours of darkness than by day',
+    'NDB instrument approaches are prohibited entirely during the hours of darkness across Australia',
+    'Night makes no additional difference at all to NDB navigation'
   ],
   correct: 0,
-  explanation: 'NDB night approach challenges: (1) Night effect increases bearing errors from sky wave interference; (2) Lightning-prone areas deflect ADF needle toward electrical storms; (3) Night visual transition at MDA requires identifying the correct runway and approach lighting in the context of other ground lighting — visual illusions are more common at night; (4) Circling at night presents the greatest challenge — restricted visibility of obstacles.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.2 / night approach considerations'
+  explanation: 'At night, sky-wave interference (night effect) increases ADF bearing errors and any nearby electrical activity pulls the needle toward the storm. The visual transition at the MDA is also harder among other ground lighting, and night circling is especially demanding, so an NDB approach at night demands extra caution.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.2'
 },
 
 {
-  question: 'On an instrument approach chart, a "D" with a circle around it means:',
+  question: 'In a holding pattern associated with an approach limited to Category A and B aircraft only, the maximum holding speed at or below 14,000 ft is:',
   options: [
-    'A. DME is required for the approach',
-    'B. Distance (DME) information is available at that fix and may be used as an alternative or supplement',
-    'C. A danger area exists at that position',
-    'D. Descent is authorised at that point'
+    '170 kt IAS',
+    '210 kt IAS',
+    '230 kt IAS',
+    '250 kt IAS'
   ],
   correct: 0,
-  explanation: 'On instrument approach charts, "D" in a circle (ⓓ) indicates DME distance is available at that fix. DME may be used to supplement or replace a timing fix, or as an alternative means of identifying the fix. Where DME is mandatory for the procedure (e.g., the only means of identifying a step-down fix), this is separately indicated.',
-  reference: 'AIP GEN 3.4 — Chart Symbology'
+  explanation: 'The general maximum holding speed at or below 14,000 ft is 230 kt IAS, but where the holding is associated with an approach limited to Category A and B aircraft only, the maximum reduces to 170 kt IAS, keeping the slower aircraft within a tighter protected area.',
+  reference: 'AIP ENR 1.5'
 },
 
 {
   question: 'The minimum altitude at which a procedure turn may be initiated is:',
   options: [
-    'A. MDA',
-    'B. 1,000 ft above the aerodrome as approved by CASA under current regulations',
-    'C. The procedure turn altitude published on the approach chart — typically the altitude at the IAF or as specified on the chart',
-    'D. LSALT for the area'
+    'The minimum descent altitude (MDA) published for the procedure',
+    '1,000 ft above the aerodrome elevation in all cases',
+    'The procedure turn altitude published on the approach chart',
+    'The LSALT calculated for the surrounding area'
   ],
   correct: 2,
-  explanation: 'Procedure turn altitude: the chart specifies the altitude at which the procedure turn (outbound reversal) is flown. This is the protected obstacle clearance altitude for the reversal manoeuvre. Do not descend below the published procedure turn altitude until established inbound and past the FAF (or the next step-down fix). The procedure turn must be completed within the specified distance (typically 10 nm) from the fix.',
+  explanation: 'Procedure turn altitude: the chart specifies the altitude at which the procedure turn (outbound reversal) is flown. This is the protected obstacle clearance altitude for the reversal manoeuvre. Do not descend below the published procedure turn altitude until established inbound and past the FAF (or the next step-down fix). The procedure turn must be completed within the specified distance (typically 10 nm) from the fix. Typically the altitude at the IAF or as specified on the chart.',
   reference: 'AIP ENR 1.5 — Instrument Approach Procedures'
 },
 
 {
   question: 'The minimum obstacle clearance provided during the initial approach segment is:',
   options: [
-    'A. 300 m (approximately 1,000 ft) above obstacles in the initial approach protected area',
-    'B. 100 ft above obstacles',
-    'C. 500 ft above obstacles',
-    'D. 35 ft per nautical mile gradient from the IAF'
+    '300 m (approximately 1,000 ft) above obstacles in the initial approach protected area',
+    '100 ft above the obstacles in the protected area',
+    '500 ft above the obstacles in the protected area',
+    'A 35 ft per nautical mile climb gradient measured outward from the IAF onward'
   ],
   correct: 0,
   explanation: 'ICAO instrument approach obstacle clearance: Initial approach segment: 300 m (984 ft) above obstacles in the primary area, decreasing to 0 at the edge of the secondary area. Intermediate segment: 150 m (492 ft) in primary area. Final approach segment: non-precision 75 m (246 ft), precision 15-60 m depending on category. These clearances assume the published procedure is followed exactly.',
@@ -2464,38 +2464,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'A "VOR/DME" approach differs from a "VOR" approach in that:',
+  question: 'A VOR/DME approach differs from a VOR approach in that:',
   options: [
-    'A. VOR/DME approaches have lower minima — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. DME is required to identify step-down fixes or the missed approach point — without serviceable DME, the pilot must fly the VOR-only procedure if published, or',
-    'C. VOR/DME approaches are more accurate than VOR-only and this applies to all IFR operations in Australian airspace',
-    'D. There is no practical difference between VOR and VOR/DME approaches according to current CASR and AIP requirements'
+    'These VOR/DME approaches simply carry lower published landing minima than the VOR-only approaches do',
+    'DME is needed to identify step-down fixes or the MAP; without it the VOR-only procedure is flown if published',
+    'VOR/DME approaches are inherently more accurate than VOR-only approaches',
+    'There is no practical difference between a VOR and a VOR/DME approach'
   ],
   correct: 1,
-  explanation: 'VOR/DME approach: DME distances are published as step-down fix identifiers and/or the MAP position. If DME is unserviceable: (1) Check if the approach has published time-based fixes as alternatives; (2) If no alternative identification method is published, the approach cannot be conducted without DME. The approach chart specifies which fixes require DME and which can be alternatively identified.',
-  reference: 'AIP ENR 1.5 — Instrument Approach Procedures'
+  explanation: 'On a VOR/DME approach the DME defines step-down fixes and/or the MAP. If the DME is unserviceable, the approach can only continue if time-based or other fix identification is published; otherwise the VOR-only procedure (if charted) must be flown to its own minima. The chart states which fixes need DME.',
+  reference: 'AIP ENR 1.5 — instrument approaches'
 },
 
 {
-  question: 'The "segment" between the intermediate approach fix (IF) and the final approach fix (FAF) is called:',
+  question: 'The approach segment between the intermediate fix (IF) and the final approach fix (FAF) is:',
   options: [
-    'A. The initial approach segment — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The final approach segment and this applies to all IFR operations in Australian airspace',
-    'C. The transition segment — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The intermediate approach segment — used to align the aircraft with the final approach track, reduce speed, and configure for approach'
+    'The initial approach segment, flown from the IAF toward the intermediate fix on the procedure',
+    'The final approach segment, flown from the FAF toward the runway',
+    'A transition segment linking the en-route structure to the approach',
+    'The intermediate segment, used to align with final, reduce speed and configure for the approach'
   ],
   correct: 3,
-  explanation: 'Intermediate segment: from IF to FAF. Purpose: (1) Configure aircraft for approach (landing configuration or approach configuration); (2) Reduce speed to approach speed; (3) Align with final approach track (less than 30° change from intermediate to final); (4) Complete approach checklist. The intermediate segment ends at the FAF where final descent commences. Obstacle clearance is 150 m in the primary area.',
+  explanation: 'The intermediate segment runs from the IF to the FAF. It is where the aircraft aligns with the final approach track (less than 30 degrees change), slows to approach speed, configures, and completes the checklist, before final descent begins at the FAF.',
   reference: 'ICAO PANS-OPS / AIP ENR 1.5'
 },
 
 {
   question: 'A "feeder route" on an instrument approach chart is:',
   options: [
-    'A. The published missed approach route',
-    'B. The glideslope intercept track',
-    'C. A route that connects the en-route structure to the IAF — specifying track, altitude',
-    'D. A feeder route is the same as a STAR'
+    'The published missed approach route that is flown after a go-around from the MAP',
+    'The glideslope intercept track on the final approach',
+    'A route that connects the en-route structure to the IAF, specifying track, altitude',
+    'A feeder route is simply another name for a STAR'
   ],
   correct: 2,
   explanation: 'Feeder routes: published tracks from specific en-route fixes or airways to the IAF (or holding fix) of an instrument approach. They specify track (magnetic), minimum altitude, and distance. Feeder routes allow structured traffic flow from various directions to the approach sequence. They ensure obstacle clearance during the transition from en-route to approach phase.',
@@ -2503,38 +2503,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "decision altitude" (DA) on an ILS approach is measured from:',
+  question: 'The decision altitude (DA) on an ILS approach is referenced to:',
   options: [
-    'A. The aerodrome elevation (height above aerodrome) with appropriate ATC clearance obtained',
-    'B. The ILS transmitter elevation',
-    'C. Mean sea level (AMSL) — the altimeter reading with QNH set. The equivalent "decision height" (DH) is measured from the threshold elevation',
-    'D. Ground level directly below the aircraft'
+    'The aerodrome elevation, expressed as a height measured above the aerodrome reference point itself',
+    'The elevation of the ILS transmitter site itself',
+    'Mean sea level, read on the altimeter with QNH set; the decision height is referenced to the threshold',
+    'The ground level lying directly beneath the aircraft'
   ],
   correct: 2,
-  explanation: 'DA vs DH: Decision Altitude (DA) is referenced to Mean Sea Level (AMSL) — the altimeter with QNH gives DA. Decision Height (DH) is referenced to the runway threshold elevation. DA = DH + threshold elevation. Approach charts may publish both. Pilots fly to the DA shown on their altimeter (QNH set). DH is the radio altimeter reading if a radio altimeter is installed.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.8 / AIP ENR 1.5'
+  explanation: 'A DA is referenced to mean sea level and read on the QNH altimeter; the related decision height (DH) is referenced to the threshold elevation, so DA = DH + threshold elevation. The pilot flies to the DA on the altimeter, while a radio altimeter (if fitted) shows height.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.8 / AIP ENR 1.5'
 },
 
 {
-  question: 'Temperature correction to approach altitudes is required when OAT is:',
+  question: 'When a cold-temperature correction is applied on an approach, it is added to:',
   options: [
-    'A. Any temperature below ISA — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only below −20°C at the destination — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Significantly below ISA (typically more than −15°C below ISA) — the correction is significant in cold climates where altimeter errors can place the aircraft below the',
-    'D. Temperature corrections are never required — QNH corrects all altitude errors according to current CASR and AIP requirements'
+    'The QNH setting only, leaving all of the published procedure altitudes themselves unchanged',
+    'The aircraft indicated airspeed flown on the final approach segment',
+    'The published procedure altitudes, including step-downs, the MDA or DA and the missed-approach altitudes',
+    'Only the final approach fix crossing altitude, and no other altitude'
   ],
   correct: 2,
-  explanation: 'Temperature correction threshold: significant corrections are required when temperatures are substantially below ISA. ICAO recommends corrections when temperature is 0°C or below. The error at −15°C is approximately 7%; at −30°C approximately 15%. For approach minima of 300 ft, a 15% error = 45 ft — significant for obstacle clearance. CASA requires temperature corrections for 3D approaches in cold conditions.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.9 / AIP ENR 1.7'
+  explanation: 'When applied (aerodrome temperature below 0 degrees), the correction from the AIP/ICAO table is added to the published procedure altitudes, the step-down fixes, the MDA or DA and the missed-approach altitudes, restoring true obstacle clearance. En-route QNH-set altitudes are flown normally.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.9 / AIP ENR 1.7'
 },
 
 {
   question: 'The approximate freezing level can be calculated from the surface temperature using:',
   options: [
-    'A. Surface temperature (°C) ÷ 3 × 1,000 ft (in clear air) or surface temperature ÷ 1.5 × 1,000 ft (in cloud)',
-    'B. Surface temperature ÷ 2 in thousands of feet',
-    'C. Surface temperature ÷ 2°C per 1,000 ft = freezing level in thousands of feet',
-    'D. Freezing level cannot be calculated without upper air data'
+    'Surface temperature (°C) ÷ 3 × 1,000 ft (in clear air) or surface temperature ÷ 1.5 × 1,000 ft (in cloud)',
+    'Surface temperature ÷ 2 in thousands of feet',
+    'Surface temperature divided by 2°C per 1,000 ft gives the freezing level in thousands of feet',
+    'Freezing level cannot be calculated without upper air data'
   ],
   correct: 0,
   explanation: 'Freezing level calculation: In clear air (3°C/1,000 ft): surface temp ÷ 3 = freezing level in thousands of feet. Surface +21°C = 21÷3 = 7,000 ft. In cloud (1.5°C/1,000 ft): from cloud base temperature. Example: cloud base 4,000 ft at +3°C: freezing level = 4,000 + (3÷1.5 × 1,000) = 4,000 + 2,000 = 6,000 ft.',
@@ -2544,10 +2544,10 @@ export const irexQuestions: {
 {
   question: 'When temperature at 5,000 ft is +9°C (in clear air), the freezing level is approximately:',
   options: [
-    'A. 5,000 ft',
-    'B. 8,000 ft',
-    'C. 11,000 ft',
-    'D. 14,000 ft'
+    '5,000 ft',
+    '8,000 ft',
+    '11,000 ft',
+    '14,000 ft'
   ],
   correct: 1,
   explanation: 'From 5,000 ft at +9°C in clear air (3°C/1,000 ft lapse rate): distance to freezing = 9 ÷ 3 = 3,000 ft above 5,000 ft. Freezing level = 5,000 + 3,000 = 8,000 ft.',
@@ -2555,77 +2555,77 @@ export const irexQuestions: {
 },
 
 {
-  question: 'A PIREP reporting "SEV TURB FL350 NEAR JET" indicates:',
+  question: 'A report of \'SEV TURB FL350 NEAR JET\' indicates:',
   options: [
-    'A. Severe turbulence at FL350 in the vicinity of the jet stream — other aircraft should treat this as a SIGMET-level hazard and plan to deviate or use an',
-    'B. Moderate turbulence close to FL350 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Only affects heavy aircraft at FL350 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The turbulence was brief and the conditions have improved according to current CASR and AIP requirements'
+    'Severe turbulence at FL350 near the jet stream, a hazard to be avoided by deviation or level change',
+    'Moderate turbulence somewhere close to FL350 along the planned route',
+    'Turbulence that affects only heavy aircraft when operating at FL350',
+    'Turbulence that was only brief and transient, with the conditions now reported as fully improved'
   ],
   correct: 0,
-  explanation: 'PIREP SEV TURB: severe turbulence causes abrupt, large changes in altitude and attitude with momentary loss of control. Structural damage is possible. Near the jet stream at FL350 is a classic CAT (Clear Air Turbulence) location — jet stream core with strong wind shear. This PIREP should be treated with urgency: request weather avoid routing or altitude change. Turbulence penetration speed (VB) if unavoidable.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4'
+  explanation: 'Severe turbulence causes abrupt large changes in altitude and attitude with possible loss of control and structural damage. At FL350 near the jet stream it is classic clear-air turbulence from strong shear, so an AIREP of it should prompt a routeing or level change, using turbulence-penetration speed if it cannot be avoided.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.4'
 },
 
 {
-  question: 'In which cloud type is the most severe aircraft icing most likely to be encountered?',
+  question: 'Within a thunderstorm cell, the most severe airframe icing typically occurs:',
   options: [
-    'A. Cumulonimbus (CB) at the freezing level — particularly in the updraft region where supercooled large water droplets are concentrated',
-    'B. Cirrus (CI) at high altitude provided the pilot holds a current medical certificate',
-    'C. Stratus (ST) below 2,000 ft provided the pilot holds a current medical certificate',
-    'D. Altocumulus castellanus (ACC) at mid-levels'
+    'Near the freezing level, where powerful updraughts carry high liquid water content past 0 degrees',
+    'Near the cloud top, which is composed almost entirely of relatively harmless ice crystals',
+    'Below the cloud base, in the clear air beneath the storm',
+    'Only in the dissipating anvil, well away from the active updraught core'
   ],
   correct: 0,
-  explanation: 'Most severe icing in CB: the updraft in a CB carries large amounts of supercooled water to great heights. The freezing level area in the updraft has the highest liquid water content. Ice accretion rates can be extreme — overwhelming any ice protection system in seconds. Also severe: cumulonimbus anvil region (hail); embedded CB in stratus. Cirrus contains only ice crystals — icing is possible but generally less severe.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.4'
+  explanation: 'A cumulonimbus updraught lifts large volumes of supercooled water, giving very high liquid water content around the freezing level and extreme accretion rates that overwhelm ice protection. The glaciated upper cloud is mostly ice crystals (less adhesion); below cloud base there is little cloud water.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2.4'
 },
 
 {
-  question: 'A weather observation at the destination shows "TS" in the weather group. This indicates:',
+  question: 'A destination observation showing \'TS\' in the weather group indicates:',
   options: [
-    'A. Tropospheric stratification — layered cloud — this is the correct regulatory position',
-    'B. Thunderstorm — a cumulonimbus cloud is present at or near the aerodrome. IFR approach operations should be considered very carefully',
-    'C. Temperature/Soaring conditions and this applies to all IFR operations in Australian airspace',
-    'D. TS indicates transitional showers only according to current CASR and AIP requirements'
+    'Tropospheric stratification, indicating layered cloud across the aerodrome',
+    'A thunderstorm, with cumulonimbus at or near the aerodrome at the planned arrival time',
+    'Temperature and soaring conditions that are favourable for gliding',
+    'Transitional showers that are passing through the aerodrome area'
   ],
   correct: 1,
-  explanation: 'METAR weather code TS = Thunderstorm. CB is overhead or in the aerodrome vicinity. This indicates: severe turbulence on approach (particularly in the low-level windshear zone); lightning hazard to ground operations; windshear on final; possible extreme downdrafts; hail risk. An IFR approach in TS conditions requires extreme caution — delaying the approach or diverting is often the safest option.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2 / AIP MET'
+  explanation: 'TS denotes a thunderstorm, with cumulonimbus over or near the aerodrome: expect severe turbulence and windshear on final, possible extreme downdraughts and hail, and a lightning hazard to ground operations. Delaying the approach or diverting is often the safest course.',
+  reference: 'Part 61 MOS Sch 3 IREX 3.2 / AIP MET'
 },
 
 {
-  question: 'When a VOR DME approach requires the aircraft to cross the VOR station, what indication should the pilot expect?',
+  question: 'Crossing the VOR on a VOR/DME approach, the pilot should expect:',
   options: [
-    'A. DME reads 0.0 and CDI centers — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. ATIS will announce VOR station passage and this applies to all IFR operations in Australian airspace',
-    'C. The glideslope activates at station passage — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. CDI oscillates and possibly OFF flag, then TO/FROM reverses — confirming VOR station passage. DME reads the altitude-dependent slant range (not zero)'
+    'The DME to read exactly 0.0 nm and the CDI to centre itself precisely while overhead the VOR station',
+    'The ATIS broadcast to announce the moment of VOR station passage',
+    'The ILS glideslope to activate at the point of station passage',
+    'The CDI to oscillate with a possible OFF flag and the TO/FROM to reverse, while DME reads slant range, not zero'
   ],
   correct: 3,
-  explanation: 'VOR station passage: CDI oscillates as the aircraft passes through the cone of confusion, TO/FROM reverses. DME at station passage reads the slant range equal to the aircraft altitude (at 6,000 ft overhead, DME reads approximately 1 nm). This confirms overhead passage. The pilot should note the time and confirm the reversal occurred as expected before commencing final approach descent.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.4 / 5.1.9'
+  explanation: 'Passing overhead, the aircraft enters the cone of confusion: the CDI oscillates (an OFF flag may flicker) and the TO/FROM reverses, confirming station passage. The DME shows the slant range, roughly the aircraft\'s height in nm overhead, not zero. Note the time and confirm the reversal before descending on final.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.4 / 5.1.9'
 },
 
 {
   question: 'The ILS signal is protected by:',
   options: [
-    'A. Airport security only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only the glideslope requires protection — localiser is unaffected by ground traffic and this applies to all IFR operations in Australian airspace',
-    'C. Critical and sensitive areas — vehicles and aircraft must hold clear of these areas during ILS approaches to prevent signal multipath interference',
-    'D. The ILS signal is self-correcting and does not require protection areas according to current CASR and AIP requirements'
+    'Only the general airport security measures that are in place around the field perimeter itself',
+    'Only the glideslope; the localiser is unaffected by passing ground traffic',
+    'Critical and sensitive areas; aircraft and vehicles hold clear during ILS approaches to prevent multipath',
+    'Nothing, since the ILS signal is self-correcting and needs no protection'
   ],
   correct: 2,
-  explanation: 'ILS protection areas: (1) Critical area — immediately adjacent to localiser and glideslope antennas. Vehicles and aircraft must hold clear to prevent interference. Marked with ILS holdlines on taxiways; (2) Sensitive area — larger area where metallic objects affect signal quality. ATC enforces holding requirements during Cat I/II/III operations. Aircraft waiting to depart must hold at ILS holdline, not at the runway holdline.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.10 / AIP ENR 1.5'
+  explanation: 'ILS critical and sensitive areas surround the localiser and glideslope antennas; metallic objects there cause multipath. During ILS approaches, traffic holds at the ILS holding point (further back than the runway holding point), and ATC enforces this, especially for lower-category operations.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.10 / AIP ENR 1.5'
 },
 
 {
   question: 'GNSS SBAS (Satellite-Based Augmentation System) improves GNSS performance by:',
   options: [
-    'A. Adding more satellites to the GPS constellation',
-    'B. SBAS only improves GNSS accuracy in controlled airspace',
-    'C. Providing differential corrections and integrity data broadcast from geostationary satellites',
-    'D. SBAS reduces satellite geometry errors by repositioning satellites'
+    'Adding more satellites to the GPS constellation',
+    'SBAS only improves GNSS accuracy in controlled airspace',
+    'Providing differential corrections and integrity data broadcast from geostationary satellites',
+    'SBAS reduces satellite geometry errors directly by physically repositioning the satellites'
   ],
   correct: 2,
   explanation: 'SBAS: a network of ground reference stations measure GPS errors and generate correction messages. These are uplinked to geostationary satellites and broadcast to all SBAS-equipped receivers. Benefits: (1) Improved accuracy (1–3 m); (2) Independent integrity monitoring; (3) Enables LPV (Localiser Performance with Vertical guidance) approaches with DA as low as 200 ft; (4) Reduces RAIM satellite requirements. Australia does not have SBAS coverage but work on it is ongoing (SBAS trial has been conducted).',
@@ -2633,25 +2633,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An NDB bearing of 090° relative with heading 270° places the NDB:',
+  question: 'With a relative bearing of 090 and a magnetic heading of 270, the NDB lies:',
   options: [
-    'A. Ahead of the aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. To the right of the aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Due east of the aircraft — relative bearing 090 means the NDB is 90 degrees clockwise from the nose. With heading 270 (west), 90 degrees clockwise from the nose points due north. MB to station = MH + RB = 270 + 090 = 360 = due north',
-    'D. Behind the aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Directly ahead of the aircraft, right on the nose',
+    'To the right of the aircraft, lying somewhere near the 3 o\'clock relative position',
+    'Due north of the aircraft (magnetic bearing = heading + relative bearing = 270 + 090 = 360)',
+    'Behind the aircraft, near the tail at the 6 o\'clock position'
   ],
   correct: 2,
-  explanation: 'MB to station = MH + RB = 270 + 090 = 360° = 000°M. The NDB is due north (000°M) from the aircraft. The aircraft is heading west (270°M) with the NDB bearing at 90° relative (to the right of the nose = north, which is 90° right of a westerly heading). To fly to the station, turn right (north).',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.3'
+  explanation: 'Magnetic bearing to the station = magnetic heading + relative bearing = 270 + 090 = 360, i.e. due north. Heading west with a relative bearing of 090 (90 degrees right of the nose) points to the north, so the aircraft turns right to track to the NDB.',
+  reference: 'Part 61 MOS Sch 3 IREX 5.1.3'
 },
 
 {
   question: 'Given heading 090°M and ADF reads 270° relative — the aircraft is tracking directly:',
   options: [
-    'A. Toward the NDB',
-    'B. Away from the NDB on the 090° radial',
-    'C. Away from NDB on the 270° bearing from the station',
-    'D. Parallel to the NDB — abeam to the left'
+    'Toward the NDB',
+    'Away from the NDB on the 090° radial',
+    'Away from NDB on the 270° bearing from the station',
+    'Parallel to the NDB, abeam to the left'
   ],
   correct: 3,
   explanation: 'Heading 090°M, RB 270°: MB to station = 090 + 270 = 360° = 000°M. The NDB is due north. The aircraft heading east (090°) with the NDB to the north is flying parallel to the station — the NDB is abeam to the left (north). RB 270° = the NDB is at the 9 o\\\'clock position (directly left of the aircraft heading east).',
@@ -2659,51 +2659,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Under IFR, if ATC instructs "descend to 5,000 ft" and LSALT for the route is 6,000 ft, the pilot should:',
+  question: 'If ATC instructs \'descend to 5,000 ft\' but the route LSALT is 6,000 ft, the pilot should:',
   options: [
-    'A. Comply immediately — ATC clearance overrides LSALT — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Descend to 5,500 ft as a compromise — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Query ATC: "Unable, LSALT 6,000 ft" — ATC clearance to descend below LSALT authorises the descent only if ATC has confirmed terrain clearance through radar or other means',
-    'D. Request an IFR clearance cancellation and descend visually — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Comply with it at once, since an ATC clearance will always take priority over any published route LSALT',
+    'Split the difference and descend only to 5,500 ft as a sensible compromise level',
+    'Query it (\'unable, LSALT 6,000\') unless ATC has confirmed terrain clearance by radar or the aircraft is on a procedure',
+    'Cancel the IFR clearance entirely and descend visually below the LSALT to 5,000 ft'
   ],
   correct: 2,
-  explanation: 'ATC clearance below LSALT: in controlled airspace, ATC only issues clearances below LSALT when they have confirmed obstacle clearance (radar identification, confirmed terrain data, or the aircraft is established on an instrument procedure). If ATC clears you below LSALT unexpectedly, query it — confirm they are aware of the terrain or that you are radar identified. Never blindly descend below LSALT without understanding why it is safe to do so.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.3.6 / AIP ENR 1.7'
+  explanation: 'ATC issues clearances below LSALT only when terrain clearance is assured (radar identification, an instrument procedure, or confirmed terrain data). An unexpected clearance below LSALT should be queried to confirm why it is safe; the pilot does not descend below LSALT without understanding the basis.',
+  reference: 'Part 61 MOS Sch 3 IREX 4.3.6 / AIP ENR 1.7'
 },
 
 {
-  question: 'The IFR requirement to notify ATC of significant changes to ETA applies to changes of more than:',
+  question: 'Unless ATC assigns a discrete code, the SSR transponder code for an IFR flight in controlled airspace is:',
   options: [
-    'A. 1 minute',
-    'B. 5 minutes',
-    'C. 10 minutes',
-    'D. 3 minutes'
+    'Code 1200, the standard VFR conspicuity code',
+    'Code 2000, used by IFR flights outside controlled airspace',
+    'Code 7600, reserved for radio communication failure',
+    'Code 3000, the IFR code when no discrete code is assigned'
   ],
   correct: 3,
-  explanation: 'AIP position reporting: IFR aircraft must notify ATC when the estimated time over a reporting point (compulsory or on request) changes by more than 3 minutes from the last notified estimate. This allows ATC to maintain accurate separation and sequencing. In high-density airspace, even smaller changes may require notification if they affect separation.',
+  explanation: 'Standard SSR codes: 3000 for IFR in controlled airspace (and Class E) when no discrete code is assigned; 2000 for IFR outside controlled airspace; 1200 for VFR. ATC assigns discrete codes for identification, and 7500/7600/7700 are the emergency codes.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.4 / AIP ENR 1.6'
 },
 
 {
-  question: 'The published "alternate meteorological minima" for planning purposes requires the forecast weather at the alternate to be above:',
+  question: 'By day, for a destination alternate with no instrument approach the pilot can conduct, the alternate minima are:',
   options: [
-    'A. Published approach minima plus 300 ft ceiling and 1,500 m visibility',
-    'B. The published approach minima',
-    'C. 1,500 ft ceiling and 8 km visibility regardless of approach type',
-    'D. VFR conditions only'
+    'The published approach minima increased by 300 ft and 1,500 m visibility',
+    'The alternate minima published on the approach chart for that aerodrome',
+    'The LSALT for the final route segment plus 500 ft, with a visibility of 8 km',
+    'Standard VFR conditions only, with no instrument minima applicable'
   ],
-  correct: 0,
-  explanation: 'Alternate met minima: for planning purposes, the forecast at the alternate for the planned arrival time must be at or above: the published approach minima + 300 ft ceiling + 1,500 m visibility. This buffer ensures a reasonable probability of successfully completing the approach if diversion is required. If the forecast is below alternate minima, a different alternate must be selected.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.14 / AIP ENR 1.1'
+  correct: 2,
+  explanation: 'Under AIP ENR 1.1 10.7.2.10, by day where the alternate has no usable IAP, the alternate minima are the LSALT for the final route segment plus 500 ft and a visibility of 8 km. Where the alternate has an IAP the pilot can conduct, the chart-published alternate minima apply instead. There is no universal +300 ft / 1,500 m rule.',
+  reference: 'AIP ENR 1.1 10.7.2.10'
 },
 
 {
   question: 'The maximum height at which ATC may provide approach control service in Australia is:',
   options: [
-    'A. FL245',
-    'B. FL180',
-    'C. FL600',
-    'D. FL100'
+    'FL245',
+    'FL180',
+    'FL600',
+    'FL100'
   ],
   correct: 0,
   explanation: 'Australian controlled airspace structure: Class A airspace above FL245 is for IFR only. Approach control typically provides service from the base of controlled airspace up to FL245 (upper limit of Class C/E in Australian TCAs). The upper limit of individual terminal areas varies — published in AIP ERSA and on ERC charts. Area control provides service in Class A above FL245.',
@@ -2713,10 +2713,10 @@ export const irexQuestions: {
 {
   question: 'A compulsory reporting point is indicated on a navigation chart by:',
   options: [
-    'A. An open triangle',
-    'B. A solid (filled) triangle',
-    'C. A circle with a cross',
-    'D. A flag symbol'
+    'An open triangle',
+    'A solid (filled) triangle',
+    'A circle with a cross',
+    'A flag symbol'
   ],
   correct: 1,
   explanation: 'Chart symbols: Compulsory reporting point (CRP) = solid/filled triangle — all IFR aircraft must report when passing. On-request reporting point (ORP) = open triangle — report only when requested by ATC. Compulsory reports must include: callsign, position, time, level, and next reporting point. In radar-identified environments, ATC may suspend compulsory position reports.',
@@ -2724,25 +2724,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'When receiving an airways clearance, the pilot must read back:',
+  question: 'When reading back an airways clearance, the pilot must read back:',
   options: [
-    'A. All clearance items including: callsign, cleared route/SID, level(s), departure frequency, transponder code',
-    'B. The entire clearance word for word — this is the correct regulatory position',
-    'C. Only the transponder code and this applies to all IFR operations in Australian airspace',
-    'D. Only the first and last items of the clearance according to current CASR and AIP requirements'
+    'All clearance items, being callsign, route or SID, levels, departure frequency and transponder code',
+    'The entire clearance, word for word, exactly as it was originally transmitted by the controller',
+    'Only the assigned transponder code, with no other items at all',
+    'Only the first and the last items of the clearance as received'
   ],
   correct: 0,
-  explanation: 'Clearance readback requirements: all operationally significant items must be read back: cleared route or SID; cruising level; any level restrictions; departure frequency; transponder code; any other conditional or specific instructions. The readback allows ATC to identify errors before the aircraft is committed to the clearance. Incorrect readback without ATC correction is a hazardous communication failure.',
-  reference: 'AIP ENR 1.1 — Radiotelephony'
+  explanation: 'All operationally significant items are read back, the route or SID, levels and any restrictions, departure frequency and transponder code, so ATC can catch an error before the aircraft acts on it. An uncorrected incorrect readback is a serious communication hazard.',
+  reference: 'AIP ENR 1.1 — radiotelephony'
 },
 
 {
   question: 'An airways clearance "cleared direct ALPHA, maintain FL160" when the filed route is via BRAVO, CHARLIE, ALPHA means:',
   options: [
-    'A. The pilot should fly via BRAVO and CHARLIE to ALPHA',
-    'B. The pilot continues on the filed route but climbs direct to FL160',
-    'C. The clearance authorises a direct track from the current position to ALPHA at FL160',
-    'D. Direct clearances are only valid in Class A airspace'
+    'The pilot should fly via BRAVO and CHARLIE to ALPHA',
+    'The pilot continues on the originally filed route but climbs direct to FL160',
+    'The clearance authorises a direct track from the current position to ALPHA at FL160',
+    'Direct clearances are only valid in Class A airspace'
   ],
   correct: 2,
   explanation: '"Cleared direct" clearance: the pilot flies a direct track to the nominated fix, regardless of the filed route. All intermediate fixes on the filed route between current position and the direct fix are cancelled. The pilot should: (1) Program the direct track in the FMS/GPS; (2) Note time saved and any fuel implications; (3) Update SARTIME if applicable; (4) Advise ATC of any "unable" constraints (airspace, terrain, equipment).',
@@ -2750,103 +2750,103 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The phrase "cleared ILS runway 34L approach" means:',
+  question: 'The instruction \'cleared ILS runway 34L approach\' means:',
   options: [
-    'A. The pilot is cleared to intercept the ILS and land on runway 34L — this is the correct regulatory position',
-    'B. Cleared to land on 34L using any approach — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The pilot is cleared to conduct the ILS approach procedure for runway 34L — the landing clearance is separate and is issued by the tower at an appropriate',
-    'D. Cleared for ILS only if the glideslope is serviceable — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The pilot is cleared both to intercept the ILS and to land on runway 34L',
+    'The pilot is cleared to land on 34L using any approach of their choosing',
+    'The pilot is cleared to fly the ILS procedure to runway 34L; the landing clearance is issued separately by the tower',
+    'The pilot is cleared for the ILS only if the glideslope is found to be fully serviceable on intercept'
   ],
   correct: 2,
-  explanation: 'Approach clearance vs landing clearance: "Cleared ILS runway 34L approach" authorises flying the ILS procedure to the runway. The landing clearance ("Cleared to land runway 34L") is issued separately by tower, typically when the aircraft is on final inside approximately 5 nm. If landing clearance has not been received by a reasonable point on final, the pilot should query ATC.',
-  reference: 'AIP ENR 1.1 — ATC Phraseology'
+  explanation: 'An approach clearance authorises flying the published procedure to the runway; it is not a landing clearance. The tower issues \'cleared to land\' separately, usually on final inside about 5 nm. If no landing clearance has been received by a reasonable point on final, the pilot queries ATC.',
+  reference: 'AIP ENR 1.1 — ATC phraseology'
 },
 
 {
-  question: 'When conducting an IFR flight in Class G airspace, the pilot must:',
+  question: 'Conducting an IFR flight in Class G airspace, the pilot must:',
   options: [
-    'A. Maintain VFR conditions — IFR is not permitted in Class G — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Contact ATC for radar separation at all times and this applies to all IFR operations in Australian airspace',
-    'C. Obtain and comply with an airways clearance; maintain IFR procedures; provide own terrain separation; operate at IFR cruising levels; file an IFR flight plan',
-    'D. IFR in Class G requires CASA special permission — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Maintain VFR conditions throughout, on the basis that IFR is not permitted in Class G airspace',
+    'Contact ATC for radar separation from all other traffic at all times within the area',
+    'File an IFR flight plan and fly IFR levels and procedures, providing own separation from terrain and traffic',
+    'Obtain special permission from CASA before conducting any IFR flight in Class G airspace'
   ],
   correct: 2,
-  explanation: 'IFR in Class G: IFR is permitted in uncontrolled airspace. Requirements: (1) Must obtain airways clearance before commencing IFR; (2) Comply with IFR procedures (reporting, altimetry, cruising levels); (3) ATC does NOT provide terrain separation in Class G — pilot is responsible for LSALT compliance; (4) ATC does NOT provide separation from other IFR aircraft in Class G — traffic awareness is the pilot\\\'s responsibility.',
-  reference: 'AIP ENR 1.4 / CASR Part 91'
+  explanation: 'IFR is permitted in Class G, but it is non-controlled: there is no airways clearance and ATC does not separate aircraft, providing only a traffic information service. The pilot files a flight plan, complies with IFR procedures, levels and reporting, and remains responsible for terrain (LSALT) and traffic separation.',
+  reference: 'AIP ENR 1.4 / Part 91 — Class G'
 },
 
 {
   question: 'The instrument rating proficiency check (IRPC) assesses:',
   options: [
-    'A. Only instrument approaches',
-    'B. Ground knowledge only — no flight assessment is required',
-    'C. Instrument flying in the aircraft category including: normal IFR operations, instrument approaches',
-    'D. IRPC only checks the most recent year\'s approaches — older proficiency is not assessed'
+    'Only instrument approaches',
+    'Instrument flying in the aircraft category, including normal IFR operations and instrument approaches',
+    'Ground knowledge only, no flight assessment is required',
+    'The IRPC only checks the most recent year\'s approaches, and older proficiency is not assessed at all'
   ],
-  correct: 2,
+  correct: 1,
   explanation: 'IRPC content: the proficiency check covers the full scope of IFR operations including: instrument departure and en-route navigation; instrument approaches (typically at least one precision and one non-precision); missed approach; holding; unusual attitude recovery; partial panel flying (vacuum failure simulation); emergency equipment and procedures. The check must be conducted in the aircraft category.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.1.2 / CASR Part 61'
 },
 
 {
-  question: 'GNSS "integrity" differs from "accuracy" in that:',
+  question: 'GNSS integrity differs from accuracy in that integrity:',
   options: [
-    'A. Accuracy is about speed; integrity is about position',
-    'B. Integrity is the ability of the system to provide timely warnings when the navigation solution should not be trusted — accuracy measures how close the position is to truth; integrity monitors whether that accuracy is within required limits',
-    'C. Integrity applies to ILS only; accuracy applies to GNSS',
-    'D. They are synonymous terms used interchangeably in GNSS documentation'
+    'Measures how close the computed position is to the true position at any moment',
+    'Applies only to ILS approaches, whereas accuracy applies only to GNSS receivers',
+    'Means the same thing as accuracy, the two being fully interchangeable terms',
+    'Is the system ability to warn the pilot promptly when the position should not be trusted'
   ],
   correct: 3,
-  explanation: 'Accuracy vs integrity: Accuracy is the statistical measure of position error. Integrity is the system\\\'s ability to detect and warn the pilot when accuracy has degraded below required levels within a specified time (Time to Alert). For IFR approaches, high integrity is more critical than raw accuracy — the system must warn the pilot of degraded performance before they can fly into terrain. RAIM provides integrity monitoring.',
+  explanation: 'Accuracy is how close the computed position is to truth. Integrity is the ability to detect a fault and warn the pilot within the time-to-alert when accuracy has degraded below requirements. A position can be accurate yet lack integrity monitoring; RAIM and SBAS provide GNSS integrity for IFR.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.2'
 },
 
 {
-  question: 'Holding pattern protected airspace is designed around:',
+  question: 'Holding-pattern protected airspace is designed around:',
   options: [
-    'A. A standard rate turn with no wind and 1-minute legs — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The aircraft category wingspan only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. A 2 nm radius from the holding fix — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The holding pattern including maximum entry and holding speeds, wind envelope (up to approximately 130 kt), standard or non-standard turn direction, and leg times'
+    'A standard-rate turn flown in nil wind, using one-minute legs only throughout',
+    'The wingspan of the relevant aircraft category, and nothing more',
+    'A simple fixed radius of 2 nm drawn around the holding fix',
+    'Maximum holding speed, turn direction, leg times and a wind allowance for the pattern'
   ],
   correct: 3,
-  explanation: 'Holding protected airspace: designed to contain aircraft within the defined airspace for all aircraft types and wind conditions within limits. The protected area extends beyond the theoretical holding pattern to accommodate wind effects. Pilots must stay within prescribed speeds and times to remain within the protected area. Exceeding holding speeds or times may take the aircraft outside the protected area.',
-  reference: 'ICAO PANS-OPS / AIP ENR 1.5 — Holding'
+  explanation: 'The protected area is built to contain any aircraft flown within the published maximum holding speed and leg times, in the correct turn direction, with an allowance for wind, so it extends beyond the nominal pattern. Exceeding the holding speeds or times can take the aircraft outside the protected airspace.',
+  reference: 'ICAO PANS-OPS / AIP ENR 1.5 — holding'
 },
 
 {
-  question: 'The "approach ban" rule in CASR means:',
+  question: 'The \'approach ban\' for IFR flights means:',
   options: [
-    'A. Approaches are banned in weather below published minima — this is the correct regulatory position',
-    'B. If at 1,000 ft AAL (above aerodrome level) the RVR is below the approach ban visibility, the approach must not be continued below 1,000 ft',
-    'C. The approach ban only applies to commercial operations and this applies to all IFR operations in Australian airspace',
-    'D. All instrument approaches require prior ATC approval according to current CASR and AIP requirements'
+    'All approaches are simply banned outright whenever the prevailing weather is below the published minima',
+    'The approach ban applies only to commercial air-transport operations and no others',
+    'Every instrument approach requires prior ATC approval before it may begin',
+    'Below 1,000 ft above aerodrome elevation must not be flown if the TDZ RVR is continually below the landing minima'
   ],
-  correct: 1,
-  explanation: 'Approach ban: CASR Part 91 states that if, at 1,000 ft above the aerodrome level, the reported RVR is below the approach ban distance (typically the landing minima visibility), the approach must not be continued below 1,000 ft. This prevents committing to a low approach when visibility is already reported below minimums. The approach ban is in addition to, not a replacement for, DA/MDA compliance.',
-  reference: 'CASR Part 91 / AIP ENR 1.5'
+  correct: 3,
+  explanation: 'Under Part 91 the approach ban applies at aerodromes with ATC where RVR is reported: the aircraft must not descend below 1,000 ft above aerodrome elevation if the TDZ RVR is continually below the landing minima. If the RVR falls below minima only after passing 1,000 ft, the approach may be continued.',
+  reference: 'CASR Part 91 Ch 16 / AIP ENR 1.5'
 },
 
 {
-  question: 'An aircraft conducts an ILS approach and reaches DA with only approach lights visible. The pilot may:',
+  question: 'On an instrument approach in Australia, reaching DA/MDA with only the approach lights visible, the pilot may continue to land only if:',
   options: [
-    'A. Continue below DA — approach lights are a required visual reference',
-    'B. Not continue — the full runway environment must be visible at DA provided the pilot holds a current medical certificate',
-    'C. Continue to landing using only approach lights — no further visual reference is needed',
-    'D. Continue below DA to 100 ft above TDZE (touchdown zone elevation) using approach lights as reference only, then must see the runway environment to continue to landing'
+    'The approach lights are clearly identifiable with the landing runway and the flight visibility is at least that specified',
+    'The approach lights alone are always a sufficient visual reference to continue all the way down to a landing',
+    'Descent may continue to 100 ft above the touchdown zone on the lights alone',
+    'The approach must always be discontinued unless the full runway is in sight'
   ],
-  correct: 3,
-  explanation: 'Approach lights and DA: if only the approach light system (ALS) is visible at DA, the pilot MAY continue below DA but ONLY to 100 ft above the TDZE. Below 100 ft TDZE, the pilot must be able to see the runway environment (lights, markings, threshold) to continue to landing. This provision allows brief transition through low cloud/fog base at the runway threshold while maintaining safety margins.',
-  reference: 'CASR Part 91 / AIP ENR 1.5'
+  correct: 0,
+  explanation: 'In Australia, continuation below DA/MDA requires the required visual reference (the runway threshold, approach lights, or markings identifiable with the landing runway) clearly visible and the flight visibility not less than that specified for the procedure; otherwise a missed approach is flown.',
+  reference: 'AIP ENR 1.5'
 },
 
 {
   question: 'The "time limit" for an airways clearance that has not been used is:',
   options: [
-    'A. 1 hour from issue',
-    'B. 30 minutes from the expected departure time in the clearance',
-    'C. Clearances do not expire — they remain valid until cancelled',
-    'D. 2 hours from the filed EOBT'
+    '1 hour from issue',
+    '30 minutes from the expected departure time in the clearance',
+    'Clearances do not expire, they remain valid until cancelled',
+    '2 hours from the filed EOBT'
   ],
   correct: 3,
   explanation: 'Airways clearance validity: a clearance (including an IFR flight plan that supports it) is valid for 2 hours from the EOBT (Estimated Off-Blocks Time). If the aircraft does not depart within 2 hours, the clearance and flight plan lapse. The pilot must re-file and re-obtain clearance. If departure is delayed significantly, advising ATC early allows them to re-sequence the flight and issue a revised clearance with updated EOBT.',
@@ -2854,38 +2854,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The primary hazard of structural icing for IFR aircraft is:',
+  question: 'The primary hazard of structural icing for an IFR aircraft is:',
   options: [
-    'A. Increased weight, disrupted airflow over wings reducing lift, altered stall characteristics, blocked pitot-static ports causing instrument errors',
-    'B. Increased fuel consumption only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Reduced visibility through the windscreen only and this applies to all IFR operations in Australian airspace',
-    'D. Ice only forms on the windscreen and has no aerodynamic effect according to current CASR and AIP requirements'
+    'Added weight and disrupted airflow cut lift and raise stall speed, plus blocked pitot-static causing instrument errors',
+    'An increase in fuel consumption only, with no other significant aerodynamic effect on the airframe in flight',
+    'A reduction in visibility through the windscreen only, with no other effect',
+    'Ice forming only on the windscreen, with no aerodynamic effect on the aircraft at all'
   ],
   correct: 0,
-  explanation: 'Structural icing hazards: increased weight (30 kg of ice possible on light aircraft); disrupted laminar flow reducing lift and increasing stall speed; stall characteristics altered (unpredictable stall); blocked pitot (false airspeed/altitude indications); carburetor icing; propeller imbalance/vibration; antennas affected. Icing accidents are often fatal due to rapid accumulation in severe conditions.',
-  reference: 'AIP ENR 1.5 / BOM meteorology guidance'
+  explanation: 'Ice adds weight and, more importantly, disrupts the airflow, reducing lift, raising the stall speed and altering stall behaviour, which may become sudden; blocked pitot or static ports give false airspeed and altitude. In severe conditions accretion can be rapid and accidents are often fatal.',
+  reference: 'AIP ENR 1.5 / BOM meteorology'
 },
 
 {
   question: 'Structural icing requires:',
   options: [
-    'A. Temperatures below -40°C — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only freezing rain — cloud does not cause structural icing and this applies to all IFR operations in Australian airspace',
-    'C. Visible moisture (cloud, freezing rain, freezing drizzle) and temperatures between 0°C and approximately -40°C — most severe between 0°C and -20°C',
-    'D. Temperatures above 0°C and high humidity — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Air temperatures below minus 40 degrees Celsius before it can occur at all',
+    'Only freezing rain, since cloud alone does not cause structural icing',
+    'Visible moisture and temperatures between about 0 and minus 40 degrees, most severe from 0 to minus 20',
+    'Temperatures above 0 degrees Celsius combined with consistently high humidity in the surrounding air'
   ],
   correct: 2,
-  explanation: 'Structural icing requires two conditions simultaneously: (1) visible moisture — in cloud, freezing rain, freezing drizzle, or wet snow; (2) temperatures between 0°C and approximately -40°C (supercooled water droplets exist to about -40°C). Most severe icing between 0°C and -20°C. Clear ice from freezing rain can be severe at temperatures just below 0°C.',
+  explanation: 'Two conditions must coincide: visible moisture (cloud, freezing rain or drizzle, wet snow) and a temperature between about 0 and -40C, where supercooled water can exist. The most severe icing is between 0 and -20C, and clear ice from freezing rain can be severe just below 0C.',
   reference: 'AIP GEN 2.2 / BOM meteorology'
 },
 
 {
   question: '"Clear ice" (glaze ice) on aircraft is more hazardous than "rime ice" because:',
   options: [
-    'A. Clear ice is dense, heavy, and conforms closely to the airfoil shape — it is difficult to detect, harder to remove',
-    'B. Rime ice is heavier than clear ice',
-    'C. Clear ice forms only on the windscreen; rime ice forms on wings',
-    'D. There is no significant difference between clear and rime ice hazards'
+    'Clear ice is dense and heavy and conforms closely to the airfoil, it is hard to detect and to remove',
+    'Rime ice is significantly heavier than clear ice of the same thickness',
+    'Clear ice forms only on the windscreen; rime ice forms on wings',
+    'There is no significant difference between the clear and rime ice hazards in practice'
   ],
   correct: 0,
   explanation: 'Clear (glaze) ice: formed from large supercooled water droplets (freezing rain, drizzle) or temperatures just below 0°C. Dense, transparent, heavy, adheres strongly, difficult to detect. Rime ice: formed from small droplets in cloud at lower temperatures — opaque, granular, lighter, brittle. Clear ice is more hazardous: heavier load, harder to remove, more severe aerodynamic disruption.',
@@ -2893,25 +2893,25 @@ export const irexQuestions: {
 },
 
 {
-  question: '"Freezing level" as reported in aviation weather means:',
+  question: 'The \'freezing level\' in aviation weather is:',
   options: [
-    'A. The altitude at which cloud tops are found',
-    'B. The altitude (or range of altitudes) at which the free air temperature is 0°C — above which temperatures are sub-zero and supercooled water and ice exist in clouds',
-    'C. The altitude at which precipitation changes from rain to snow provided the pilot holds a current medical certificate',
-    'D. The height of the tropopause'
+    'The altitude at which the tops of the cloud layers are generally found',
+    'The altitude (or band) where free-air temperature is 0 degrees, above which supercooled water and ice exist',
+    'The altitude at which falling precipitation changes from rain into snow as it continues to descend',
+    'The height of the tropopause above the location in question'
   ],
   correct: 1,
-  explanation: 'Freezing level: altitude where free air temperature = 0°C. Above the freezing level, liquid water droplets in cloud become supercooled (still liquid but below 0°C) — contact with an aircraft surface causes immediate freezing. The freezing level is reported in forecasts (SIGMET, TAF, SIGWX charts) and varies with season and latitude. Icing risk exists from the freezing level down to where temperatures are warm enough to melt ice.',
+  explanation: 'The freezing level is where the free-air temperature is 0C. Above it, cloud water droplets are supercooled (liquid below 0C) and freeze on contact with the airframe. It is given in forecasts and SIGWX charts and varies with season and latitude.',
   reference: 'BOM meteorology / AIP ENR 1.5'
 },
 
 {
   question: 'A "SIGMET" for icing in the IREX context means:',
   options: [
-    'A. A Significant Meteorological Information message — issued for severe or extreme icing',
-    'B. A routine weather forecast',
-    'C. A terminal forecast for an individual aerodrome',
-    'D. A SIGMET is only issued for volcanic ash'
+    'A Significant Meteorological Information message, issued for severe or extreme icing',
+    'A routine periodic weather forecast for the area',
+    'A terminal aerodrome forecast issued for a single individual aerodrome',
+    'A SIGMET is issued only for volcanic ash, not for icing'
   ],
   correct: 0,
   explanation: 'SIGMET (Significant Meteorological Information): issued by meteorological watch offices for significant in-flight weather hazards including: severe icing, severe turbulence, severe mountain wave, sandstorm/duststorm, volcanic ash, tropical cyclone. For IFR, SIGMETs are mandatory reading during pre-flight planning and should be monitored in flight (VOLMET, ATIS, ATC).',
@@ -2919,38 +2919,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Supercooled Large Droplets (SLD) in icing conditions are particularly hazardous because:',
+  question: 'Supercooled large droplets (SLD) are particularly hazardous because:',
   options: [
-    'A. They only form above FL200 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. SLD conditions always coincide with severe turbulence and this applies to all IFR operations in Australian airspace',
-    'C. SLD only affects propeller-driven aircraft according to current CASR and AIP requirements',
-    'D. SLD (freezing rain, freezing drizzle) create rapid clear ice accretion that can extend beyond the protected areas of the wing'
+    'They form only above FL200, well up into the normal cruising levels',
+    'They always occur together with severe airframe turbulence within the very same cloud mass',
+    'They affect only propeller-driven aircraft and never jet aircraft at all',
+    'Freezing rain and drizzle that build clear ice rapidly and can extend aft of the wing\'s protected areas'
   ],
   correct: 3,
-  explanation: 'SLD icing (supercooled large droplets — freezing drizzle FZDZ, freezing rain FZRA): droplets are large enough to impact and spread aft of the leading edge protected area, accreting ice on unprotected surfaces. This creates a "runback" ice ridge behind the boot/heater that severely disrupts wing aerodynamics. SLD certification requirements were added to EASA/FAA regulations after several accidents.',
+  explanation: 'SLD (freezing drizzle, freezing rain) are large enough to strike and run back behind the protected leading edges, building a clear-ice ridge on unprotected surfaces that badly disrupts the aerofoil. Specific SLD certification requirements followed several accidents.',
   reference: 'BOM meteorology / CASA SLD guidance'
 },
 
 {
-  question: 'The most dangerous phase for icing encounters during an IFR flight is typically:',
+  question: 'The most dangerous phase for an icing encounter on an IFR flight is typically:',
   options: [
-    'A. Descent and approach in moist conditions near the freezing level — the aircraft is slower (less kinetic de-icing), power is reduced',
-    'B. Cruise at high altitude where temperatures are lowest — this is the correct regulatory position',
-    'C. Climb through cloud is always the most dangerous phase and this applies to all IFR operations in Australian airspace',
-    'D. Takeoff in cold temperatures — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Cruise at high altitude, where the outside air temperatures are at their very lowest',
+    'The climb through cloud, which is always the most dangerous phase',
+    'The take-off run in cold ambient temperatures at the aerodrome',
+    'Descent and approach near the freezing level, where the aircraft is slower and power is reduced'
   ],
-  correct: 0,
-  explanation: 'Icing during descent/approach: the aircraft decelerates (less aerodynamic heating), power reduces, configuration changes (flap, gear), and approach demands precision — all while potentially accumulating ice. Additionally, stall speed increases with ice and the stall may be sudden and unpredictable. Descending through the freezing level into a warmer layer melts wing ice but can temporarily worsen icing.',
+  correct: 3,
+  explanation: 'On descent and approach the aircraft slows (less aerodynamic heating), power is reduced and configuration changes, all while ice may be accreting and the stall speed rising, during a phase demanding precision. Descending into warmer air eventually melts ice but can briefly worsen the encounter.',
   reference: 'CASA IFR guidance / BOM meteorology'
 },
 
 {
   question: 'Thunderstorm avoidance for IFR aircraft requires:',
   options: [
-    'A. Flying through the clear area between two thunderstorm cells is always safe',
-    'B. Only avoid the dark-coloured cells — white cells are safe to penetrate',
-    'C. A minimum of 20 nm lateral separation from active thunderstorm cells — hail, severe turbulence',
-    'D. Thunderstorms can be penetrated at FL200 and above'
+    'Flying through the clear area between two thunderstorm cells is always perfectly safe',
+    'Only avoid the dark-coloured cells, white cells are safe to penetrate',
+    'A minimum of 20 nm lateral separation from active thunderstorm cells, hail, severe turbulence',
+    'Thunderstorms can be penetrated at FL200 and above'
   ],
   correct: 2,
   explanation: 'Thunderstorm avoidance: 20 nm lateral minimum from individual cells; greater separation from squall lines. Hazards extend beyond visible cloud: severe to extreme turbulence (CAT in anvil outflow), large hail (can fall 20+ nm from storm), severe icing, windshear (microbursts). The area between two cells may have violent convergent winds. Never attempt to fly under the anvil of a mature CB.',
@@ -2958,25 +2958,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The IFR significance of a "TAF" (Terminal Area Forecast) is:',
+  question: 'The IFR significance of a TAF (aerodrome forecast) is that it:',
   options: [
-    'A. TAFs are only for VFR planning — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. TAFs provide the forecast weather at a specific aerodrome used to determine if IFR approach is expected to be possible at ETA, whether an alternate is required',
-    'C. TAFs are replaced by PIREPs for IFR planning — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. TAFs provide only wind information for IFR — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'It is a product intended only for VFR flight-planning purposes, and not used for IFR planning at all',
+    'A forecast for a specific aerodrome, used to judge approach feasibility at ETA and the need for an alternate',
+    'Is a product that is entirely replaced by pilot reports for IFR planning purposes',
+    'Is a product that supplies only the forecast wind information for an IFR flight'
   ],
   correct: 1,
-  explanation: 'TAF (Terminal Area Forecast): 24 or 30-hour aerodrome forecast used for IFR planning to: determine if conditions at destination will be above IFR minima; assess whether an alternate is required; check alternate minima compliance. Key elements: wind, visibility, weather, cloud. TAF is valid for the period shown — check validity covers ETA ±1 hour. AMD (amended) TAFs update when conditions differ significantly.',
-  reference: 'AIP GEN 3.5'
+  explanation: 'A TAF is the aerodrome forecast used in IFR planning to judge whether conditions at the destination will be above minima at ETA, whether an alternate is required, and whether alternate minima are met. Check that its validity covers the arrival window; amended TAFs are issued when conditions change significantly.',
+  reference: 'AIP GEN 3.5 — TAF'
 },
 
 {
   question: 'An IFR TAF includes "TEMPO FM1400 3000 -RA BKN008" — the significance for an IFR approach at 1430 is:',
   options: [
-    'A. No significance — TEMPO means it is only a temporary improvement',
-    'B. TEMPO conditions can be ignored for IFR planning',
-    'C. BKN008 means broken cloud at 8,000 ft',
-    'D. From 1400, temporarily expect 3 km visibility in light rain with broken cloud at 800 ft'
+    'No real significance, since TEMPO simply means it is only a temporary improvement',
+    'TEMPO conditions can be ignored for IFR planning',
+    'BKN008 means broken cloud at 8,000 ft',
+    'From 1400, temporarily expect 3 km visibility in light rain with broken cloud at 800 ft'
   ],
   correct: 3,
   explanation: 'TEMPO: temporary fluctuations lasting less than one hour each, total time less than half the forecast period. "TEMPO FM1400 3000 -RA BKN008": from 1400, temporary 3,000m visibility, light rain, broken cloud at 800 ft AGL. At 1430, these conditions may exist — 800 ft cloud base may be at or below many approach minima. Must consider alternate requirement and carry appropriate fuel.',
@@ -2984,77 +2984,77 @@ export const irexQuestions: {
 },
 
 {
-  question: '"Low-level wind shear" (LLWS) is most hazardous during:',
+  question: 'Low-level wind shear is most hazardous during:',
   options: [
-    'A. High-altitude cruise — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Climb through FL100 and this applies to all IFR operations in Australian airspace',
-    'C. LLWS only affects helicopters according to current CASR and AIP requirements',
-    'D. Approach and landing — an abrupt change in wind speed and/or direction at low altitude causes rapid changes in airspeed and'
+    'High-altitude cruise flight, well above the terminal area and clear of all of the terrain',
+    'The climb through about FL100 shortly after departure',
+    'Only helicopter operations, with no effect on aeroplanes at all',
+    'Approach and landing, where an abrupt low-level wind change causes a rapid airspeed loss near the ground'
   ],
   correct: 3,
-  explanation: 'LLWS on approach: aircraft configured for landing (slow, high drag) has limited energy to recover from sudden airspeed loss. A headwind-to-tailwind shear causes: initially high airspeed/altitude (risk of high approach), then sudden airspeed loss and altitude loss — potential undershoot. LLWS warnings (PIREP, wind shear alert systems at major airports) should trigger a go-around if encountered. Add wind shear safety margin to approach speed.',
-  reference: 'AIP ENR 1.5 / ICAO Wind Shear guidance'
+  explanation: 'On approach the aircraft is slow and high-drag with little excess energy. A headwind-to-tailwind shear first lifts the aircraft above path (airspeed rises), then causes a sudden airspeed and altitude loss and an undershoot risk. A wind-shear alert or AIREP should prompt a go-around, and a shear margin is added to approach speed.',
+  reference: 'AIP ENR 1.5 — wind shear'
 },
 
 {
-  question: 'A "microburst" is particularly dangerous for IFR aircraft because:',
+  question: 'A microburst is particularly dangerous for an IFR aircraft because:',
   options: [
-    'A. Microbursts only affect aircraft below 200 ft — this is the correct regulatory position',
-    'B. Microbursts are easily detected on weather radar and this applies to all IFR operations in Australian airspace',
-    'C. Microbursts only occur over water — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. A microburst creates a brief but intense downburst and outflow — an aircraft penetrating it experiences a headwind increase then a rapid'
+    'Microbursts affect only aircraft operating below about 200 ft AGL',
+    'Microbursts are easily and reliably detected in good time on standard airborne weather radar',
+    'Microbursts occur only over water and never form over land areas',
+    'A brief, intense downburst; penetrating it gives a headwind gain then a rapid tailwind loss of airspeed'
   ],
   correct: 3,
-  explanation: 'Microburst: intense, small-scale downburst (0.5–3 nm diameter). Penetrating a microburst: (1) headwind increase — airspeed increases, aircraft rises above glidepath; pilot reduces power; (2) crossing the downburst center — strong downdraft; (3) tailwind — airspeed rapidly decreases, aircraft below path, low energy. Total airspeed change can exceed 50 kt over less than 1 nm. Recovery requires full power and may be impossible at low altitude.',
-  reference: 'AIP ENR 1.5 / ICAO microburst guidance'
+  explanation: 'A microburst is a small (about 0.5-3 nm), intense downburst. Crossing it, the aircraft meets an increasing headwind (airspeed up, may climb), then the core downdraught, then a tailwind with rapid airspeed and altitude loss; the total change can exceed 50 kt over under a mile, and recovery may be impossible low down. Full power and go-around are essential.',
+  reference: 'AIP ENR 1.5 — microburst'
 },
 
 {
-  question: 'Convective SIGMETs (or SIGMETs for CB/TS) should be obtained:',
+  question: 'Convective SIGMETs (for CB/TS) should be obtained:',
   options: [
-    'A. Only during summer months',
-    'B. During pre-flight planning and updated in-flight via VOLMET/ATIS/datalink — convective weather is dynamic and can develop rapidly, requiring constant monitoring',
-    'C. Only for oceanic flights',
-    'D. Convective SIGMETs are only for jet aircraft above FL200 provided the pilot holds a current medical certificate'
+    'Only during the summer months of the year, and not at any other time of year',
+    'Obtained in planning and updated in flight via VOLMET, ATIS or datalink, as it changes fast',
+    'Only for flights that are conducted over oceanic areas',
+    'Only for jet aircraft when operating above FL200 en-route'
   ],
   correct: 1,
-  explanation: 'Convective SIGMETs: essential for any IFR flight in areas where thunderstorms are forecast or occurring. Convective weather is highly dynamic — a clear corridor may close in minutes. Monitor VOLMET broadcasts, request updates from ATC, use onboard weather radar if available. Never assume the forecast is still valid without checking updates.',
-  reference: 'AIP GEN 3.5'
+  explanation: 'Convective weather is highly dynamic, a clear corridor can close in minutes, so SIGMETs for CB/TS are obtained in planning and updated in flight (VOLMET, ATIS, ATC, onboard radar). The forecast should never be assumed still valid without checking for updates.',
+  reference: 'AIP GEN 3.5 — SIGMET'
 },
 
 {
   question: 'In-flight icing — the correct action when encountering unexpected icing is:',
   options: [
-    'A. Maintain altitude and report to ATC',
-    'B. Increase airspeed to shed the ice through aerodynamic forces',
-    'C. Reduce power and descend slowly through the icing layer',
-    'D. Activate all available ice protection equipment immediately, request a different altitude'
+    'Maintain altitude and report to ATC',
+    'Increase airspeed to try to shed the accreted ice through aerodynamic forces',
+    'Reduce power and descend slowly through the icing layer',
+    'Activate all available ice protection equipment immediately, request a different altitude'
   ],
   correct: 3,
-  explanation: 'Icing encounter: (1) Activate ice protection immediately (pneumatic boots, anti-ice heat); (2) Note icing intensity (trace, light, moderate, severe); (3) Request altitude change — colder air above may have less moisture; warmer air below (above freezing) will melt ice; (4) Advise ATC; (5) File PIREP; (6) Consider diversion. Do not wait — ice accumulates rapidly. Severe icing: immediate escape required.',
+  explanation: 'Icing encounter: (1) Activate ice protection immediately (pneumatic boots, anti-ice heat); (2) Note icing intensity (trace, light, moderate, severe); (3) Request altitude change — colder air above may have less moisture; warmer air below (above freezing) will melt ice; (4) Advise ATC; (5) File an AIREP; (6) Consider diversion. Do not wait — ice accumulates rapidly. Severe icing: immediate escape required.',
   reference: 'CASR Part 91 / AIP ENR 1.5'
 },
 
 {
-  question: 'Mountain wave turbulence (CAT associated with orographic lifting) can be encountered:',
+  question: 'Mountain-wave turbulence can be encountered:',
   options: [
-    'A. Downstream of mountains for hundreds of kilometres at altitude — the rotor zone below the wave crests is the most severe, but',
-    'B. Only directly over the mountain — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Only below the cloud tops and this applies to all IFR operations in Australian airspace',
-    'D. Mountain wave only occurs in winter according to current CASR and AIP requirements'
+    'Downstream of mountains for hundreds of kilometres at altitude, the rotor zone below the crests being most severe',
+    'Only in the air lying directly over the mountain ridge crest, not anywhere downstream along the lee',
+    'Only at levels below the tops of the associated orographic cloud',
+    'Only during the winter months of the year, never in the warmer seasons'
   ],
   correct: 0,
-  explanation: 'Mountain wave: forms when stable air crosses a mountain range with sufficient wind speed and appropriate direction. Waves propagate downstream (100s of km at altitude). Rotor zone (below wave crest, often below the lenticular): most severe turbulence, disorganised, dangerous to light aircraft. Wave crests: smoother but very strong vertical currents (1,000s fpm). Clear air turbulence can extend to FL400.',
+  explanation: 'When stable air crosses a range with sufficient wind, waves propagate downstream for hundreds of kilometres and can reach high levels. The rotor below the wave crests holds the most severe, disorganised turbulence, while the crests are smoother but contain very strong vertical currents; associated CAT can extend to high flight levels.',
   reference: 'BOM meteorology / AIP ENR 1.5'
 },
 
 {
   question: 'The tropopause significance for IFR high-altitude operations is:',
   options: [
-    'A. The tropopause is irrelevant to IFR operations',
-    'B. The tropopause marks the maximum altitude for IFR flight',
-    'C. Above the tropopause, icing is more severe',
-    'D. The tropopause marks the top of the troposphere where temperature stops decreasing with altitude'
+    'The tropopause is essentially irrelevant to IFR operations',
+    'The tropopause marks the absolute maximum altitude at which IFR flight is permitted',
+    'Above the tropopause, airframe icing becomes more severe',
+    'The tropopause marks the top of the troposphere where temperature stops decreasing with altitude'
   ],
   correct: 3,
   explanation: 'Tropopause: temperature lapse ceases, marks top of weather (most). IFR significance: (1) CAT most common near the tropopause — temperature gradients and wind shear at jet stream level; (2) The jet stream is located at/near tropopause; (3) Above tropopause (stratosphere): temperature increases with altitude; severe turbulence less common but volcanic ash can reside there. High-altitude flight plans route around/below CAT areas.',
@@ -3062,51 +3062,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'A "PIREP" (Pilot Report) for IFR operations is valuable because:',
+  question: 'An AIREP (in-flight weather report) is valuable for IFR because it:',
   options: [
-    'A. PIREPs provide real-time reports of actual conditions encountered at specific altitudes, locations, and times',
-    'B. PIREPs replace official weather forecasts for IFR planning — this is the correct regulatory position',
-    'C. PIREPs are only filed by commercial operators and this applies to all IFR operations in Australian airspace',
-    'D. PIREPs are only useful for VFR pilots according to current CASR and AIP requirements'
+    'Gives real-time reports of the conditions actually encountered at a place, level and time',
+    'Replaces the official weather forecasts for IFR planning',
+    'It is filed only by commercial operators on the day, and never by any private pilots',
+    'Is useful only for flight conducted under the VFR'
   ],
   correct: 0,
-  explanation: 'PIREPs (Pilot Weather Reports): IFR pilots should both use available PIREPs during planning/en-route and file PIREPs when encountering significant weather. PIREPs are often the most current weather data available between scheduled observations. Reporting icing, turbulence, cloud tops/bases, or unexpected conditions helps other pilots and improves forecasting. Filing PIREPs is a professional responsibility.',
-  reference: 'AIP GEN 3.5'
+  explanation: 'AIREPs report the conditions a crew actually meets (icing, turbulence, cloud, wind) at a given place, level and time, often the most current data between scheduled observations. Pilots should use available AIREPs and file their own when significant conditions are met.',
+  reference: 'AIP GEN 3.5 — in-flight reports'
 },
 
 {
-  question: 'The "SIGWX" (Significant Weather) chart used for IFR high-level planning shows:',
+  question: 'The SIGWX (significant weather) chart for high-level IFR planning shows:',
   options: [
-    'A. Only wind information — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Low-level weather below 10,000 ft only and this applies to all IFR operations in Australian airspace',
-    'C. SIGWX charts are only for oceanic operations according to current CASR and AIP requirements',
-    'D. Significant weather features at high altitude including jet streams, areas of CAT, CB/TS areas, tropopause height, and icing areas'
+    'Only the forecast upper wind information across the area at high level',
+    'Only low-level weather features lying below 10,000 ft',
+    'Only the weather lying over the oceanic flight sectors and the remote routes at altitude',
+    'Significant high-level weather such as jet streams, areas of CAT, CB/TS, tropopause height and icing'
   ],
   correct: 3,
-  explanation: 'SIGWX charts (available for high level FL250–FL630 and low level): depict significant weather including CB/TS areas and tops, severe turbulence areas (CAT), severe icing, jet streams (position, altitude, max wind), tropopause heights, and volcanic ash. Used for high-level IFR flight planning to select routes avoiding major hazards. AIP GEN 3.4 and BOM provide chart access.',
+  explanation: 'A high-level SIGWX chart depicts CB/TS areas and tops, severe-turbulence (CAT) areas, severe icing, jet streams (position, level and maximum wind), tropopause heights and volcanic ash, so high-level IFR routes can be chosen to avoid the major hazards.',
   reference: 'AIP GEN 3.4 / BOM SIGWX'
 },
 
 {
   question: 'Radiation fog is most likely to affect IFR departures:',
   options: [
-    'A. During summer afternoons — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. During early morning hours after a clear night with light winds — radiation fog forms when the ground cools by radiation, chilling the air layer above the dew point',
-    'C. Only at coastal aerodromes — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Radiation fog only forms in winter above 3,000 ft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'During summer afternoons, in the warmest and most convective part of the whole day',
+    'Early morning after a clear, calm night, as the ground cools and chills the air to its dew point',
+    'Only at coastal aerodromes that lie immediately close to the open sea',
+    'Only during the winter season, and then only above about 3,000 ft AMSL'
   ],
   correct: 1,
-  explanation: 'Radiation fog: forms overnight/early morning after clear skies (no insulation blanket), light winds (1–5 kt disperses without mixing, calm means fog thickens), moist air. Dense, shallow fog layer. IFR significance: can reduce visibility to near zero at aerodrome level. Burns off morning — sun heats surface. IFR departures in radiation fog require instrument departure and may be below minima until cleared.',
+  explanation: 'Radiation fog forms overnight and early morning after a clear night with light wind and moist air, as the ground radiates heat and cools the air to its dew point. It is dense and shallow and can drop visibility to near zero at aerodrome level, usually burning off as the sun heats the surface.',
   reference: 'BOM meteorology / AIP GEN 2.2'
 },
 
 {
   question: 'Advection fog differs from radiation fog for IFR planning because:',
   options: [
-    'A. Advection fog is less dense than radiation fog',
-    'B. Advection fog only forms at sea',
-    'C. Advection fog is caused by moist warm air moving over a cooler surface',
-    'D. Advection fog always clears by 1000 local time'
+    'Advection fog is less dense than radiation fog',
+    'Advection fog only forms at sea',
+    'Advection fog is caused by moist warm air moving over a cooler surface',
+    'Advection fog reliably clears by about 1000 hours local time'
   ],
   correct: 2,
   explanation: 'Advection fog: warm moist air advects (moves) over a cool surface — common on coastal areas when onshore winds bring maritime air over a cool land surface or ocean current. Can cover hundreds of square kilometres, persist all day regardless of solar heating, and develop rapidly. Coastal aerodromes (e.g. Sydney, Melbourne) regularly experience advection fog. Unlike radiation fog it does not burn off predictably.',
@@ -3114,77 +3114,77 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The IFR weather minimum for a "Category A" aircraft on a straight-in ILS approach is typically:',
+  question: 'On a given ILS approach, the published straight-in DA is:',
   options: [
-    'A. Ceiling 500 ft, visibility 1 km',
-    'B. Ceiling 1,000 ft and visibility 3 km for all aircraft',
-    'C. ILS minima are fixed at DH 100 ft worldwide',
-    'D. Defined by the published approach plate — typically DH 200 ft and RVR 550 m for CAT I ILS'
+    'Lower for higher-category (faster) aircraft, to give them more room',
+    'Set individually by each pilot according to the aircraft weight on the day',
+    'Always exactly 200 ft above the threshold at every aerodrome worldwide',
+    'The same regardless of aircraft category, while circling minima increase with category'
   ],
   correct: 3,
-  explanation: 'Approach minima are published for each specific approach procedure at each aerodrome. They are NOT generic. For ILS, CAT I minimum is DH ≥200 ft and RVR ≥550 m — but the published approach plate may have higher minima based on the obstacle environment, approach lighting, and navaid quality at that specific runway. Always use the published plate minima.',
+  explanation: 'The straight-in DA/MDA for a procedure does not change with aircraft category. What varies by category (A to E) is the circling minima and the speed-related visibility values, so a Cat A and a Cat C aircraft fly the same straight-in DA but different circling minima.',
   reference: 'AIP ENR 1.5'
 },
 
 {
-  question: 'The altimeter error in cold temperatures affects IFR approaches by:',
+  question: 'The theoretical maximum range of a VHF aid such as a VOR depends mainly on:',
   options: [
-    'A. In cold temperatures the altimeter reads higher than actual altitude — the aircraft is lower than indicated, reducing obstacle clearance margins on approach',
-    'B. Cold temperatures cause the altimeter to read lower than actual — the aircraft is higher than indicated so no correction is required',
-    'C. Cold temperature errors only affect altimeters above FL200',
-    'D. Modern altimeters automatically compensate for temperature'
+    'The line-of-sight distance, increasing with the height of both the aircraft and the transmitter',
+    'The transmitter power alone, independent of the aircraft altitude flown',
+    'The frequency that is selected, with lower frequencies always giving the greater range',
+    'The magnetic variation between the aircraft and the ground station'
   ],
   correct: 0,
-  explanation: 'Cold temperature altimeter error: the altimeter is calibrated for ISA. When temperature is below ISA, air is denser — the pressure levels are lower than standard. Result: the altimeter OVER-reads — actual altitude is LESS than indicated. This means the aircraft is LOWER than the altimeter shows. In very cold conditions (-30°C or below), the error can be hundreds of feet. Cold temperature corrections must be applied to minimum altitudes.',
-  reference: 'AIP ENR 1.5 / ICAO cold temperature correction tables'
+  explanation: 'VHF is line-of-sight, so usable range grows with the height of the aircraft and of the transmitter; a common approximation is 1.23 times the sum of the square roots of the two heights in feet, giving range in nm. Within the rated coverage the signal is reliable.',
+  reference: 'AIP GEN 1.5 / ENR 4.1'
 },
 
 {
-  question: 'The cold temperature correction formula for IFR is applied when:',
+  question: 'Cold-temperature correction to approach altitudes is applied:',
   options: [
-    'A. When the aerodrome temperature is below 0°C — corrections are published in AIP and increase with temperature deviation below ISA and',
-    'B. Only when temperature is below -20°C — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Cold temperature corrections are optional and this applies to all IFR operations in Australian airspace',
-    'D. Only for jet aircraft above FL100 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'When the aerodrome temperature is below 0 degrees; the correction grows with the temperature depression below ISA',
+    'Only when the aerodrome temperature falls below minus 20 degrees Celsius',
+    'Never, since the cold-temperature corrections are considered entirely optional for the pilot to apply',
+    'Only for jet aircraft when operating above FL100 on the approach'
   ],
   correct: 0,
-  explanation: 'Cold temperature corrections (AIP ENR 1.5 Table): when aerodrome temperature is below 0°C, apply corrections to: procedure altitudes, MDA/H, and DA/H. The correction increases with temperature depression below ISA and with height above the aerodrome (more air column affected). Always ADD the correction to published altitudes. e.g. if MDA is 500 ft AAL and correction for -15°C at 400 ft = +70 ft, fly MDA of 570 ft AAL.',
-  reference: 'AIP ENR 1.5 / ICAO cold temperature tables'
+  explanation: 'When the aerodrome temperature is below 0C, corrections from the AIP/ICAO table are ADDED to procedure altitudes, the MDA/DA and missed-approach altitudes. The correction increases with the temperature depression below ISA and with height above the aerodrome.',
+  reference: 'AIP ENR 1.5 / ICAO cold-temperature tables'
 },
 
 {
-  question: 'A "METAR" for IFR approach planning purposes must be:',
+  question: 'A METAR used for IFR approach planning should be:',
   options: [
-    'A. Issued within the previous 6 hours — this is the correct regulatory position',
-    'B. As current as possible — the observation time should be noted and the interval since observation considered',
-    'C. Issued within 30 minutes to be valid for IFR approaches and this applies to all IFR operations in Australian airspace',
-    'D. METARs are not used for IFR — only TAFs are relevant according to current CASR and AIP requirements'
+    'Issued within the previous 6 hours for it to be considered acceptable for IFR planning use',
+    'As current as possible, with the observation time noted and the interval since the observation considered',
+    'Issued within the last 30 minutes in order to be valid for any IFR approach',
+    'Not used for IFR planning at all, since only TAFs are relevant'
   ],
   correct: 1,
-  explanation: 'METARs (routine observations every 30 min at major airports, hourly at others) give the most recent observed conditions. For IFR approaches: use the most recent METAR/SPECI (special observation) to assess current conditions against minima. If the METAR is old, conditions may have changed — request an update from ATC or ATIS. A SPECI is issued when conditions cross significant thresholds.',
-  reference: 'AIP GEN 3.5'
+  explanation: 'A METAR (or SPECI) gives the most recent observed conditions to compare against minima. Note the observation time; if it is old, request an update from ATC or ATIS, since conditions may have changed. A SPECI is issued when conditions cross significant thresholds.',
+  reference: 'AIP GEN 3.5 — METAR'
 },
 
 {
-  question: 'Freezing rain (FZRA) encountered on an IFR approach should result in:',
+  question: 'Freezing rain (FZRA) encountered on an IFR approach should prompt:',
   options: [
-    'A. Continuing the approach with anti-ice on — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. An immediate go-around and avoidance — freezing rain causes extremely rapid clear ice accumulation that can overwhelm all but the most advanced de-icing systems',
-    'C. Slowing to minimum approach speed to reduce ice accretion and this applies to all IFR operations in Australian airspace',
-    'D. Freezing rain only affects unheated surfaces and is manageable with standard anti-ice according to current CASR and AIP requirements'
+    'Continuing the approach with the anti-ice system merely selected',
+    'An immediate go-around and avoidance, as freezing rain builds clear ice very fast',
+    'Slowing to the minimum approach speed to reduce the ice accretion rate',
+    'Treating it as manageable, since it affects only unheated surfaces'
   ],
   correct: 1,
-  explanation: 'Freezing rain (FZRA): supercooled large droplets of rain that freeze on contact. Causes extremely rapid clear ice accretion — can accumulate an inch or more per minute on unprotected surfaces. Most aircraft ice protection systems are NOT certified for FZRA conditions. Encountering FZRA: immediate escape required. Divert — do not continue approach. FZRA is a genuine emergency situation.',
+  explanation: 'Freezing rain is supercooled large droplets that freeze on contact, building clear ice extremely rapidly on unprotected surfaces, beyond the capacity of most ice-protection systems (few are certified for it). The correct response is to escape immediately and divert, not continue the approach.',
   reference: 'BOM meteorology / CASA icing guidance'
 },
 
 {
   question: 'The wind component "crosswind" limitation for IFR approaches:',
   options: [
-    'A. There are no crosswind limits for IFR approaches',
-    'B. Demonstrated crosswind limits are published in the AFM — exceeding the demonstrated limit is not approved',
-    'C. The standard crosswind limit for all IFR aircraft is 20 kt',
-    'D. Crosswind only matters after the aircraft breaks out of cloud'
+    'There are no crosswind limits at all for IFR instrument approaches',
+    'Demonstrated crosswind limits are published in the AFM, exceeding the demonstrated limit is not approved',
+    'The standard crosswind limit for all IFR aircraft is a fixed 20 kt',
+    'Crosswind only matters once the aircraft has actually broken out of cloud and become visual'
   ],
   correct: 1,
   explanation: 'Crosswind limits: AFM/POH publishes demonstrated crosswind component. In IMC, crosswind is more hazardous as there is no visual horizon, the aircraft must maintain instrument scan while correcting for drift, and at DA/H the transition to visual may reveal unexpected drift. Strong gusty crosswind in IMC: consider going around and waiting for conditions to improve.',
@@ -3194,10 +3194,10 @@ export const irexQuestions: {
 {
   question: 'Upper wind forecasts (winds aloft) are used in IFR flight planning to:',
   options: [
-    'A. Calculate true airspeed, groundspeed, fuel burn, ETA, and determine optimum cruise altitude',
-    'B. Determine ground-based wind speeds only',
-    'C. Winds aloft are only used for weather avoidance, not planning',
-    'D. Upper winds are not available in Australia for IFR planning'
+    'Calculate true airspeed, groundspeed, fuel burn, ETA, and determine optimum cruise altitude',
+    'Determine ground-based wind speeds only',
+    'Winds aloft are only ever used for weather avoidance, and not for the flight planning',
+    'Upper winds are not available in Australia for IFR planning'
   ],
   correct: 0,
   explanation: 'Upper wind forecasts (available from BOM for flight levels): used for: groundspeed and ETA calculation; fuel planning; choosing optimum altitude (strong tailwind may justify a lower/higher than standard level); identifying jet stream position; and turbulence assessment (strong wind shear = CAT risk). Upper winds are typically reported as true direction and knots for each flight level.',
@@ -3205,51 +3205,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'A TAF reading "BECMG 1416 VRB05KT 9999 BKN030" means:',
+  question: 'A TAF group \'BECMG 1416 VRB05KT 9999 BKN030\' means:',
   options: [
-    'A. A temporary improvement between 1400 and 1600 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Wind variable 5 kt, and cloud broken at 30,000 ft permanently and this applies to all IFR operations in Australian airspace',
-    'C. Between 1400 and 1600, variable wind 5 kt, visibility 9,999 m (or greater), broken cloud at 3,000 ft — conditions becoming (permanently changing to) this by 1600',
-    'D. Conditions will deteriorate between 1400 and 1600 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'A temporary improvement occurring only between 1400 and 1600 hours, then reverting',
+    'Variable wind at 5 kt with broken cloud at 30,000 ft, forecast to last permanently',
+    'Between 1400 and 1600 weather becomes variable wind 5 kt, 10 km plus visibility, broken cloud at 3,000 ft',
+    'Conditions that are forecast to deteriorate steadily right through the 1400 to 1600 period'
   ],
   correct: 2,
-  explanation: 'BECMG (becoming): the weather will change to the described conditions permanently between the times shown (1400–1600 local). After 1600, conditions are expected to be: variable 5 kt, visibility 9,999 m (practical maximum), broken cloud 3,000 ft. BKN030 = broken cloud at 3,000 ft AGL. For IFR planning at ETA 1700: assume these post-BECMG conditions apply.',
-  reference: 'AIP GEN 3.5'
+  explanation: 'BECMG denotes a permanent change to the stated conditions occurring between the times given (1400-1600). After that the conditions are variable wind 5 kt, visibility 10 km or more (9999), broken cloud at 3,000 ft AGL. For an ETA after 1600, plan on these conditions.',
+  reference: 'AIP GEN 3.5 — TAF'
 },
 
 {
-  question: 'Cloud base reported in a METAR as "OVC006" in relation to IFR operations means:',
+  question: 'A METAR reporting \'OVC006\' means, for IFR operations:',
   options: [
-    'A. Overcast cloud at 60,000 ft',
-    'B. Overcast cloud at 600 ft AGL — likely below many IFR approach minima; the pilot should check published minima before committing to the approach',
-    'C. Overcast cloud covering 6 oktas of sky provided the pilot holds a current medical certificate',
-    'D. Overcast cloud at 6,000 ft'
+    'Overcast cloud at 60,000 ft above the aerodrome elevation',
+    'Overcast at 600 ft AGL, which is likely below many IFR landing minima',
+    'Overcast cloud that is covering 6 oktas of the sky',
+    'Overcast cloud at 6,000 ft above the ground level'
   ],
   correct: 1,
-  explanation: 'METAR cloud codes: OVC = overcast (8 oktas); 006 = 600 ft AGL (multiply by 100). OVC006 = overcast at 600 ft. For IFR: compare to published approach minima. If DH is 200 ft, a 600 ft ceiling should permit the approach. If MDA is 700 ft (NDB approach), a 600 ft ceiling means no approach possible. Cloud base must be ABOVE MDA/DH for a successful approach.',
-  reference: 'AIP GEN 3.5'
+  explanation: 'OVC = overcast (8 oktas) and 006 = 600 ft AGL (the figure times 100). At 600 ft the ceiling may be above an ILS DA (about 200 ft) but below a non-precision MDA (e.g. 700 ft). The cloud base must be above the relevant minimum for the approach to succeed.',
+  reference: 'AIP GEN 3.5 — METAR'
 },
 
 {
-  question: 'Jet stream turbulence (CAT — Clear Air Turbulence) associated with the jet stream is most severe:',
+  question: 'Clear-air turbulence around a jet stream is most severe:',
   options: [
-    'A. In the core of the jet stream where winds are strongest — this is the correct regulatory position',
-    'B. On the polar (cold) side and below the jet core where the temperature gradient and wind shear are greatest',
-    'C. CAT is equally distributed around the jet stream and this applies to all IFR operations in Australian airspace',
-    'D. CAT is only found above the jet stream according to current CASR and AIP requirements'
+    'In the very core of the jet stream itself, where the prevailing winds are at their strongest',
+    'On the cold (polar) side and below the jet core, where the temperature gradient and wind shear are greatest',
+    'Spread evenly all around the jet stream in every direction',
+    'Only above the jet stream, and never below the jet core'
   ],
   correct: 1,
-  explanation: 'CAT associated with jet streams: most severe on the cold (polar/poleward) side and below the jet core. The cyclonic shear zone (cold side) has the greatest temperature and wind gradients. Avoiding the jet: route on the warm (equatorial) side when possible. Forecasts show CAT areas on SIGWX charts. Reporting CAT via PIREP helps others avoid it.',
+  explanation: 'CAT is worst on the cold (poleward) side and below the jet core, where the temperature and wind-shear gradients are greatest. Routing on the warm side reduces exposure; SIGWX charts show CAT areas and AIREPs help others avoid it.',
   reference: 'BOM meteorology / AIP ENR 1.5'
 },
 
 {
   question: 'The "dew point spread" (temperature minus dew point) indicates:',
   options: [
-    'A. The likelihood of thunderstorm development',
-    'B. The relative humidity — a spread of 2°C or less indicates near-saturation (high fog/cloud risk)',
-    'C. The wind chill factor',
-    'D. Dew point spread is used only for runway surface condition assessment'
+    'The likelihood of thunderstorm development',
+    'The relative humidity, a spread of 2°C or less indicates near-saturation (high fog/cloud risk)',
+    'The wind chill factor',
+    'Dew point spread is used only for the runway surface condition assessment on the day'
   ],
   correct: 1,
   explanation: 'Dew point spread: the difference between temperature and dew point. Spread of 2°C or less = high risk of fog, low cloud, mist. Spread = 0 = saturated air = fog or cloud. In IFR planning: if aerodrome temperature/dew point spread is forecast to narrow to 2°C or less during the intended arrival time, low visibility conditions are possible.',
@@ -3257,103 +3257,103 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An "AIRMET" differs from a "SIGMET" in that:',
+  question: 'On a TAF, the difference between INTER and TEMPO variations is:',
   options: [
-    'A. AIRMETs are more severe than SIGMETs',
-    'B. AIRMETs are only issued for oceanic areas',
-    'C. AIRMETs cover lower-level weather (below FL100) of meteorological significance to light aircraft operations',
-    'D. There is no difference — AIRMET and SIGMET are interchangeable terms'
+    'INTER and TEMPO mean the same thing and may be used interchangeably',
+    'TEMPO variations each last less than 30 minutes, while INTER variations last longer',
+    'INTER applies to wind only, while TEMPO applies to visibility only',
+    'INTER variations last less than 30 minutes each; TEMPO variations last 30 minutes up to an hour'
   ],
-  correct: 2,
-  explanation: 'AIRMET (Airmen\\\'s Meteorological Information): lower-level, less severe than SIGMET, covering moderate (not severe) icing/turbulence, IFR conditions (visibility <3 km or ceiling <1,000 ft), mountain obscuration, etc. Applies mainly below FL100. In some countries AIRMETs are called "low-level SIGMETs." In Australia: SIGMETs are the primary hazard product — check AIP GEN for current Australian AIRMET/SIGMET terminology.',
-  reference: 'AIP GEN 3.5'
+  correct: 3,
+  explanation: 'INTER (intermittent) denotes fluctuations expected to last less than 30 minutes each; TEMPO (temporary) denotes fluctuations of 30 minutes up to an hour each. They drive holding and alternate decisions: thunderstorms forecast INTER require 30 minutes holding fuel, TEMPO 60 minutes.',
+  reference: 'AIP GEN 3.5 / BOM'
 },
 
 {
-  question: 'A "SPECI" (Special Meteorological Observation) is issued when:',
+  question: 'A SPECI (special observation) is issued when:',
   options: [
-    'A. A SPECI replaces the normal METAR schedule — this is the correct regulatory position',
-    'B. SPECIs are only issued at international airports and this applies to all IFR operations in Australian airspace',
-    'C. A SPECI is only issued when requested by ATC according to current CASR and AIP requirements',
-    'D. Conditions change significantly between routine observations — such as visibility dropping below or rising above certain thresholds,'
+    'A SPECI permanently replaces the normal routine METAR observation schedule at the aerodrome involved',
+    'SPECIs are issued only at the major international airports',
+    'A SPECI is issued only when it is specifically requested by ATC',
+    'Conditions change significantly between routine observations, such as visibility crossing a defined threshold'
   ],
   correct: 3,
-  explanation: 'SPECI (Special observation): issued when conditions change significantly — e.g. visibility crosses 800 m, 1,500 m, 3,000 m, or 5,000 m thresholds; wind shear onset; thunderstorm occurrence; significant cloud change. For IFR: SPECIs provide warning that conditions may now be below minima (or have improved to above minima). Check time of observation when using SPECI for approach planning.',
+  explanation: 'A SPECI is issued when conditions change significantly between routine observations, for example visibility crossing 800/1500/3000/5000 m thresholds, the onset of wind shear or a thunderstorm, or a major cloud change, warning that conditions may now be below (or back above) minima. Note its observation time.',
   reference: 'AIP GEN 3.5 / ICAO Annex 3'
 },
 
 {
-  question: 'The effect of temperature on ILS glide slope intercept altitude means:',
+  question: 'The effect of cold temperature on the ILS glideslope intercept altitude is that:',
   options: [
-    'A. Warmer temperatures cause the glide slope to be higher than standard — this is the correct regulatory position',
-    'B. Temperature has no effect on ILS glide slope and this applies to all IFR operations in Australian airspace',
-    'C. Hot temperatures cause the glide slope to descend below the runway according to current CASR and AIP requirements',
-    'D. In cold temperatures, the glide slope intercept altitude (pressure altitude) is lower in geometric terms than indicated'
+    'Warmer temperatures make the glideslope intercept higher than the published standard angle',
+    'Temperature has no effect at all on the ILS glideslope',
+    'Hot temperatures make the glideslope descend below the runway level',
+    'In cold air the glideslope intercept altitudes are geometrically lower than the chart figures indicate'
   ],
   correct: 3,
-  explanation: 'Cold temperature effect on ILS: the glide slope is defined by the radio beam (geometric angle unchanged) but the crossing altitudes on the approach chart are QNH altitudes, which in cold conditions are geometrically lower than indicated. An aircraft on the glide slope is actually lower than the chart altitudes suggest. PAPI showing high (4 white) when on the ILS in cold temperatures is expected — use the ILS glide slope, not PAPI, as the primary vertical reference.',
-  reference: 'AIP ENR 1.5 / ICAO cold temperature guidance'
+  explanation: 'The glideslope beam angle is fixed, but the chart crossing altitudes are QNH altitudes that, in cold air, are geometrically lower than indicated, so an aircraft on the glideslope is lower than the chart figures suggest. PAPI may read high when on the ILS in cold conditions; use the glideslope as the primary vertical reference.',
+  reference: 'AIP ENR 1.5 / ICAO cold-temperature guidance'
 },
 
 {
   question: 'The concept of "conditional forecasts" (TEMPO, BECMG, PROB) in TAFs means:',
   options: [
-    'A. These elements are the most reliable parts of the TAF',
-    'B. PROB30 conditions can be ignored for IFR planning',
-    'C. Only BECMG elements affect IFR planning',
-    'D. TEMPO (temporary), BECMG (becoming), and PROB (probability — 30% or 40%) modify the base forecast'
+    'These conditional elements are in fact the most reliable parts of the whole aerodrome TAF',
+    'TEMPO (temporary), BECMG (becoming), and PROB (probability, 30% or 40%) modify the base forecast',
+    'Only the BECMG elements have any effect on IFR flight planning',
+    'PROB30 conditions may be ignored entirely for IFR planning purposes'
   ],
-  correct: 3,
+  correct: 1,
   explanation: 'For IFR alternate planning: if any TAF element (including TEMPO or PROB30/40) indicates conditions may fall below landing minima during the planned arrival window, consider carrying alternate fuel. PROB30 = 30% probability; PROB40 = 40%. Operators and regulations differ — some require alternates if TEMPO/BECMG shows below minima; others require it only for BECMG and TEMPO, not PROB30. Check applicable regulations.',
   reference: 'AIP GEN 3.5 / CASR Part 91'
 },
 
 {
-  question: 'The standard atmosphere (ISA) sea level temperature and lapse rate used for IFR flight planning is:',
+  question: 'The ISA sea-level temperature and lapse rate used in IFR planning are:',
   options: [
-    'A. 25°C at sea level, lapse rate 3°C per 1,000 ft — this is the correct regulatory position',
-    'B. 0°C at sea level, lapse rate 1°C per 1,000 ft and this applies to all IFR operations in Australian airspace',
-    'C. 15°C at sea level with no standard lapse rate according to current CASR and AIP requirements',
-    'D. 15°C at sea level, lapse rate 1.98°C per 1,000 ft (approximately 2°C/1,000 ft) to the tropopause at approximately 36,000 ft'
+    '25 degrees at sea level, with a lapse rate of about 3 degrees per 1,000 ft up to the tropopause',
+    '0 degrees at sea level, with a lapse rate of 1 degree per 1,000 ft',
+    '15 degrees at sea level, with no standard lapse rate defined',
+    '15 degrees at sea level with a lapse rate of about 2 degrees per 1,000 ft to the tropopause near 36,000 ft'
   ],
   correct: 3,
-  explanation: 'ISA: sea level temperature 15°C, pressure 1013.25 hPa, density 1.225 kg/m³. Lapse rate: 1.98°C per 1,000 ft (approximately 2°C/1,000 ft) to the tropopause at FL360 (-56.5°C). Used for: density altitude calculation, performance calculations, icing level estimates, and pressure altitude conversions. ISA deviation (ISA+/ISA-) describes actual temperature relative to standard.',
+  explanation: 'ISA is 15C and 1013.25 hPa at sea level, with a lapse rate of 1.98C (about 2C) per 1,000 ft to the tropopause near FL360 (-56.5C). It underpins density-altitude, performance, freezing-level and pressure-altitude calculations, with ISA deviation describing the actual temperature relative to standard.',
   reference: 'ICAO Standard Atmosphere / AIP GEN 2.1'
 },
 
 {
-  question: 'The VOLMET broadcast provides IFR pilots with:',
+  question: 'RVSM requirements in Australian airspace apply within the band:',
   options: [
-    'A. Only departure aerodrome weather — this is the correct regulatory position',
-    'B. VOLMET is only available on HF for oceanic flights and this applies to all IFR operations in Australian airspace',
-    'C. Continuous HF/VHF meteorological broadcasts of METARs and/or TAFs for a specified group of aerodromes',
-    'D. VOLMET provides weather for the next 24 hours only according to current CASR and AIP requirements'
+    'From FL180 up to FL290, where most jet traffic operates en-route',
+    'From FL290 to FL410 inclusive, where 1,000 ft separation is used',
+    'From FL245 up to FL600, covering the whole of the upper airspace',
+    'Above FL410 only, where the traffic density is at its greatest'
   ],
-  correct: 2,
-  explanation: 'VOLMET: continuous voice meteorological broadcasts on VHF (regional) and HF (international) for groups of aerodromes — typically current METARs and/or TAFs. Australian VOLMET: various frequencies covering major aerodromes. IFR pilots monitor VOLMET to update destination/alternate weather, particularly when nearing top of descent. Digital datalink (ACARS, ATIS D-ATIS) supplements VOLMET.',
-  reference: 'AIP GEN 3.5 / AIP COM 1.1'
+  correct: 1,
+  explanation: 'RVSM applies from FL290 to FL410 inclusive, where approved aircraft are separated vertically by 1,000 ft instead of 2,000 ft, increasing the usable levels.',
+  reference: 'MOS 7.1.1 / AIP GEN 1.5'
 },
 
 {
-  question: 'Wind shear alert systems (LLWAS — Low Level Wind Shear Alert System) at major aerodromes provide:',
+  question: 'Low-level wind-shear alert systems (LLWAS) at major aerodromes provide:',
   options: [
-    'A. Only departure wind information — this is the correct regulatory position',
-    'B. LLWAS measures upper-level winds only and this applies to all IFR operations in Australian airspace',
-    'C. LLWAS systems are not used in Australia according to current CASR and AIP requirements',
-    'D. Real-time detection of surface wind variations between sensors around the aerodrome perimeter'
+    'Only the departure wind information for the currently active runway',
+    'Measurements of the upper-level winds only, and not the surface winds',
+    'Nothing useful in Australia, since the LLWAS systems are simply not installed anywhere here',
+    'Real-time detection of surface wind variations between sensors placed around the aerodrome perimeter'
   ],
   correct: 3,
-  explanation: 'LLWAS: network of wind sensors around the aerodrome. When sensors detect significant variation (wind shear alert threshold exceeded), ATC broadcasts: "Wind shear alert, [sector] boundary wind [direction/speed]." IFR significance: add a safety margin to approach speed, be prepared to go around, brief crew. Doppler weather radar also detects microbursts at some major airports.',
-  reference: 'AIP AD section / ICAO wind shear guidance'
+  explanation: 'An LLWAS is a network of perimeter wind sensors; when the variation between them exceeds a threshold, ATC issues a wind-shear alert with the boundary wind. The pilot adds a margin to approach speed, briefs a go-around and stays ready to execute it; Doppler radar also detects microbursts at some aerodromes.',
+  reference: 'AIP AD / ICAO wind-shear guidance'
 },
 
 {
   question: 'The "lifting condensation level" (LCL) in IFR meteorology represents:',
   options: [
-    'A. The altitude at which rising air reaches its dew point and condensation begins',
-    'B. The maximum altitude for IFR operations',
-    'C. The freezing level altitude',
-    'D. The altitude at which jet streams form'
+    'The altitude at which rising air reaches its dew point and condensation begins',
+    'The maximum altitude at which any IFR operations may be conducted',
+    'The altitude of the freezing level in the atmosphere',
+    'The altitude at which jet streams typically form'
   ],
   correct: 0,
   explanation: 'LCL: the altitude at which a rising parcel of air cools to its dew point, condensation begins, and cloud base forms. A low LCL (small temp/dew point spread) = low cloud bases = IFR conditions possible. A high LCL with deep instability = high-based CB with severe turbulence at altitude. LCL is used to estimate cumulus/CB base heights in forecasting.',
@@ -3363,10 +3363,10 @@ export const irexQuestions: {
 {
   question: 'Instrument meteorological conditions (IMC) at a non-controlled aerodrome require:',
   options: [
-    'A. No special procedures — pilots can land whenever they choose',
-    'B. Only a VFR licence is required for IMC operations at uncontrolled aerodromes',
-    'C. The pilot must hold an instrument rating with currency, the aircraft must be IFR equipped, a flight plan must be filed',
-    'D. IMC operations are not permitted at non-controlled aerodromes'
+    'No special procedures apply at all, since pilots may simply land there at any time whenever they choose',
+    'Only a VFR licence is required for IMC operations at uncontrolled aerodromes',
+    'The pilot must hold an instrument rating with currency, the aircraft must be IFR equipped, a flight plan must be filed',
+    'IMC operations are not permitted at non-controlled aerodromes'
   ],
   correct: 2,
   explanation: 'IMC at non-controlled aerodrome: requires current instrument rating and currency, IFR-equipped aircraft, flight plan filed (activating SAR coverage and providing traffic information), available published instrument approach procedure, and self-announced positions on CTAF. Without a published approach, an IFR descent to aerodrome is not authorised unless visual descent from MSA is possible.',
@@ -3376,205 +3376,205 @@ export const irexQuestions: {
 {
   question: 'The VOR (VHF Omnidirectional Range) provides:',
   options: [
-    'A. Distance and bearing to the station',
-    'B. Magnetic bearing FROM the VOR station — the OBS is set to select the desired radial, and the CDI indicates deviation from that radial',
-    'C. Vertical guidance for precision approaches',
-    'D. Aircraft position in latitude/longitude as approved by CASA under current regulations'
+    'Distance and bearing to the station together, presented as a single combined readout',
+    'Magnetic bearing from the station; the OBS selects the radial and the CDI shows deviation from it',
+    'Vertical guidance for a precision approach to the runway',
+    'Aircraft position directly in latitude and longitude'
   ],
   correct: 1,
-  explanation: 'VOR provides magnetic bearing from the station (radial). The OBS selects the desired radial. CDI shows left/right deviation. TO/FROM flag: TO = the selected course leads TO the station; FROM = flying away from station on selected radial. VOR operates 108–117.95 MHz. A single VOR gives one position line; two VORs give a fix.',
-  reference: 'AIP ENR 4.1'
+  explanation: 'A VOR gives magnetic bearing information as radials from the station. The OBS selects the desired radial, the CDI shows left/right deviation, and the TO/FROM flag shows whether the selected course leads to or from the station. One VOR gives a position line; two give a fix.',
+  reference: 'AIP ENR 4.1 — VOR'
 },
 
 {
-  question: 'The VOR CDI "full scale deflection" represents:',
+  question: 'Full-scale deflection of a VOR CDI represents:',
   options: [
-    'A. 5 nm off course',
-    'B. ±2° from the selected course',
-    'C. Full scale varies with distance from the station as approved by CASA under current regulations',
-    'D. ±10° from the selected course — each dot of deflection represents approximately 2°; full scale = 10° off course at any distance from the station'
+    'A fixed distance of 5 nm off the course, regardless of the slant range to the station',
+    'Plus or minus 2 degrees from the selected course at the CDI extremes',
+    'A value that varies with the aircraft\'s distance from the station',
+    'Plus or minus 10 degrees from the selected course, about 2 degrees per dot, constant at any distance'
   ],
   correct: 3,
-  explanation: 'VOR CDI sensitivity: full scale (5 dots) = ±10° from selected course. Each dot ≈ 2°. Unlike an ILS localiser (which narrows physically), the VOR CDI angular sensitivity is constant regardless of distance — but the physical distance represented by 10° is much greater far from the station than close to it.',
-  reference: 'AIP ENR 4.1'
+  explanation: 'VOR CDI sensitivity is angular and constant: full scale is about plus or minus 10 degrees from the selected course, roughly 2 degrees per dot. Unlike a localiser it does not narrow with range, so 10 degrees represents a far greater physical distance far from the station than close in.',
+  reference: 'AIP ENR 4.1 — VOR'
 },
 
 {
-  question: 'Flying "FROM" a VOR on a specific radial, the OBS should be set to:',
+  question: 'Where the forecast area QNH is used for an instrument approach (no closer QNH available), the published minima must be:',
   options: [
-    'A. The radial being flown (the bearing FROM the station) — the TO/FROM indicator will show FROM',
-    'B. The reciprocal of the desired radial — this is the correct regulatory position',
-    'C. Magnetic track to the next waypoint and this applies to all IFR operations in Australian airspace',
-    'D. True heading of the aircraft according to current CASR and AIP requirements'
-  ],
-  correct: 0,
-  explanation: 'Flying FROM a VOR: set OBS to the outbound radial (bearing FROM the station). TO/FROM shows FROM. CDI needle: fly toward the needle to re-intercept the radial. Common error: setting the OBS to the reciprocal (inbound course) creates reverse sensing — the needle deflects away from the correct direction.',
-  reference: 'AIP ENR 4.1'
-},
-
-{
-  question: 'VOR "scalloping" or "course roughness" is caused by:',
-  options: [
-    'A. Pilot errors in setting the OBS — this is the correct regulatory position',
-    'B. Atmospheric refraction at high altitude and this applies to all IFR operations in Australian airspace',
-    'C. Multipath interference — the VOR signal reflects off terrain, buildings, or other objects causing erratic CDI fluctuations',
-    'D. Interference from nearby NDB stations according to current CASR and AIP requirements'
+    'Used unchanged, since the area QNH is treated as an accurate aerodrome QNH',
+    'Decreased by 100 ft, to allow for the area QNH tolerance on the approach',
+    'Increased by 50 ft, because the area QNH is less precise than a local QNH',
+    'Replaced entirely by the standard 1013 hPa setting for the whole approach'
   ],
   correct: 2,
-  explanation: 'VOR scalloping: CDI makes rapid, irregular left-right movements rather than steady tracking. Caused by multipath — reflected signals arriving at the aircraft from different directions, creating phase interference. Reduce OBS-induced roughness by tracking the average deflection. Report significant scalloping — it may indicate a facility fault. Scalloping increases in mountainous terrain and at long range.',
-  reference: 'AIP ENR 4.1'
+  explanation: 'Before the IAF the pilot sets the actual aerodrome QNH, the forecast aerodrome (TAF) QNH, or the forecast area QNH. When the forecast area QNH is used the minima are increased by 50 ft; setting an actual aerodrome QNH where charts assume forecast QNH allows a 100 ft reduction.',
+  reference: 'AIP ENR 1.5 5.3 / Part 91 MOS 14.03'
 },
 
 {
-  question: 'The NDB (Non-Directional Beacon) provides:',
+  question: 'To operate in RVSM airspace, approval is required for:',
   options: [
-    'A. A magnetic bearing TO the station, displayed as the ADF needle pointing toward the beacon',
-    'B. A course line to fly outbound from the station',
-    'C. Distance to the station in nm',
-    'D. Both distance and bearing — the same as a VOR/DME'
+    'Both the aircraft and the operator, with appropriately trained crew',
+    'The aircraft only, since its equipment provides the accuracy',
+    'The operator only, as a company-level authorisation to enter',
+    'Neither, provided the aircraft carries a serviceable transponder'
   ],
   correct: 0,
-  explanation: 'NDB/ADF: the ADF needle points toward the NDB. The magnetic bearing to the station = aircraft magnetic heading + relative bearing (ADF needle reading). NDB approaches track the needle TO the beacon on approach. The ADF does not provide a CDI like VOR — it provides a relative bearing display. Errors include: quadrantal error, coastal refraction, night effect, thunderstorm bearing errors.',
-  reference: 'AIP ENR 4.1'
+  explanation: 'RVSM approval covers the aircraft\'s height-keeping capability, the operator, and crew training and procedures (CASR 91.655); a serviceable transponder alone is not enough.',
+  reference: 'MOS 7.1.2 / AIP GEN 1.5 / CASR 91.655'
 },
 
 {
-  question: 'NDB "coastal refraction" affects ADF bearings when:',
+  question: 'An RVSM-approved aircraft must carry, for height-keeping accuracy:',
   options: [
-    'A. Flying over mountains — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Flying at night reduces coastal refraction and this applies to all IFR operations in Australian airspace',
-    'C. Coastal refraction only affects VHF signals according to current CASR and AIP requirements',
-    'D. The radio wave crosses a coastline at an oblique angle — the change in ground conductivity at the coast bends the radio wave, causing a'
+    'Just a single altimeter together with one serviceable transponder for the flight',
+    'A radio altimeter and a weather radar for use in the cruise',
+    'An approved GNSS receiver acting as the sole height reference',
+    'Two independent altimetry systems, an automatic altitude-keeping system and altitude alerting'
   ],
   correct: 3,
-  explanation: 'Coastal refraction (coastal effect): LF/MF radio waves bend when crossing a coast obliquely due to the difference in conductivity between land and water. The wave bends toward the coast, making the aircraft think the NDB is in a slightly different direction. Error is greatest at oblique angles (45°), minimum when crossing perpendicular. For NDB approaches near the coast: be aware of possible bearing error.',
-  reference: 'AIP ENR 4.1'
+  explanation: 'RVSM aircraft carry two independent altitude-measuring systems, an automatic altitude-keeping system able to hold the level, and altitude alerting, so the assigned level is held within the tight RVSM tolerance.',
+  reference: 'MOS 7.1.3 / AIP GEN 1.5'
 },
 
 {
-  question: 'NDB bearing errors during thunderstorms occur because:',
+  question: 'A non-RVSM-approved aircraft that must transit the FL290-FL410 band will be:',
   options: [
-    'A. Thunderstorms increase the power of the NDB signal — this is the correct regulatory position',
-    'B. The magnetic field from thunderstorms rotates the ADF compass card and this applies to all IFR operations in Australian airspace',
-    'C. Thunderstorms have no effect on NDB/ADF systems according to current CASR and AIP requirements',
-    'D. Lightning discharges on the same frequency as the NDB confuse the ADF — the needle deflects toward lightning rather than the beacon'
-  ],
-  correct: 3,
-  explanation: 'Thunderstorm effect on ADF: lightning produces strong LF/MF energy on the same frequencies as NDBs. The ADF receiver may home on lightning strikes rather than the beacon — the needle deflects toward the storm. This is a well-known hazard of NDB navigation in areas of thunderstorm activity. In CB-active areas, NDB bearings are unreliable. Cross-check with other navigation systems.',
-  reference: 'AIP ENR 4.1'
-},
-
-{
-  question: 'The "night effect" on NDB bearings occurs because:',
-  options: [
-    'A. NDB transmitters reduce power at night',
-    'B. Night reduces the ground conductivity affecting the NDB signal',
-    'C. At night, the ionosphere descends and reflects LF/MF signals from distant transmitters back to earth',
-    'D. Night effect is most severe at midday'
-  ],
-  correct: 2,
-  explanation: 'Night effect: at night, the D and E ionospheric layers combine, reflecting MF/LF signals that normally travel along the ground. Reflected signals from distant transmitters arrive at the same frequency as the local NDB, causing interference. ADF needle becomes unsteady or deflects away from the NDB. Night effect is worst at dawn and dusk. Use other navigation methods when NDB is unreliable at night.',
-  reference: 'AIP ENR 4.1'
-},
-
-{
-  question: '"Quadrantal error" in ADF/NDB systems is caused by:',
-  options: [
-    'A. The pilot setting the wrong frequency — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Night-time ionospheric refraction affecting the NDB ground wave signal accuracy and this applies to all IFR operations in Australian airspace',
-    'C. Coastal refraction when the NDB signal crosses a coastline at an oblique angle — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The aircraft\'s metallic fuselage re-radiating the NDB signal and distorting the directional reading — error is maximum when the NDB is approximately 45° from the aircraft heading'
-  ],
-  correct: 3,
-  explanation: 'Quadrantal error: the aircraft fuselage acts as a secondary antenna, distorting the directional properties of the loop antenna. Error is maximum (up to ±5°) when the NDB is approximately 45° from the aircraft heading, and minimum when beam-on (0°/180°) or directly ahead/behind (90°/270°). Corrected by ADF compensator coils. Some error typically remains — treat NDB bearings as approximate.',
-  reference: 'AIP ENR 4.1'
-},
-
-{
-  question: 'DME "slant range" error is greatest when:',
-  options: [
-    'A. Directly overhead or very close to the DME station and at high altitude — slant range includes altitude above ground, so the indicated distance is',
-    'B. At maximum range from the DME station — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Flying at low altitude away from the station and this applies to all IFR operations in Australian airspace',
-    'D. Slant range error is constant regardless of position according to current CASR and AIP requirements'
-  ],
-  correct: 0,
-  explanation: 'DME slant range: DME measures the straight-line (slant) distance from aircraft to ground transponder, not the ground distance. Error = sqrt(D²ground + H²). At 10,000 ft altitude directly overhead the station: DME reads 10,000 ft = 1.6 nm, but ground distance = 0. At practical distances (>5 nm), slant range error is negligible (typically <0.1 nm for most approaches). Error matters most when directly overhead.',
-  reference: 'AIP ENR 4.1'
-},
-
-{
-  question: 'A "DME arc" procedure requires the aircraft to:',
-  options: [
-    'A. Fly directly to the DME station — this is the correct regulatory position',
-    'B. Maintain a constant DME distance from the station while tracking an arc to intercept the final approach course',
-    'C. Fly at a constant altitude using DME distance and this applies to all IFR operations in Australian airspace',
-    'D. DME arcs are only used for departure procedures according to current CASR and AIP requirements'
+    'Permitted to use 1,000 ft separation just like approved aircraft',
+    'Separated from all other traffic by 2,000 ft vertically',
+    'Refused any clearance into that band under all circumstances',
+    'Required only to squawk a discrete code and then self-separate'
   ],
   correct: 1,
-  explanation: 'DME arc: a curved path at constant DME distance from the station, used to transition from arrival to final approach course. Technique: use "lead radial" to begin turning to the final approach course; adjust heading by 10–20° increments to maintain the arc distance. As the arc is flown, the VOR radials should rotate steadily. Lead radial calculation: arc radius ÷ 10 = lead radial.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
+  explanation: 'A non-approved aircraft is separated by 2,000 ft from other traffic in the band, since it cannot be assured of holding the level to RVSM accuracy; ATC accommodates it with the larger separation where traffic permits.',
+  reference: 'MOS 7.1.2 / AIP GEN 1.5'
 },
 
 {
-  question: 'GNSS (Global Navigation Satellite System) position accuracy for IFR approaches depends on:',
+  question: 'If an RVSM-approved aircraft loses the redundancy needed for RVSM while in the band, the pilot should:',
   options: [
-    'A. Only the number of satellites in view — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Aircraft altitude only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Satellite geometry (PDOP), number of satellites tracked, signal quality, RAIM availability, and for approaches the augmentation system (SBAS or GBAS)',
-    'D. GNSS accuracy is fixed at ±10 m globally — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Continue at the assigned level, since one system is sufficient',
+    'Descend immediately below FL290 without advising ATC at all',
+    'Advise ATC and request a level outside the RVSM band or increased separation',
+    'Switch off the transponder to prevent a conflicting altitude readout'
   ],
   correct: 2,
-  explanation: 'GNSS IFR accuracy factors: satellite geometry (PDOP — Position Dilution of Precision); number of satellites tracked (minimum 4 for 3D); signal quality; RAIM (Receiver Autonomous Integrity Monitoring) for NPA; SBAS (WAAS/GRAS) for APV/LPV; GBAS for CAT I/II/III precision. All must meet required performance levels for the intended operation. Pre-flight RAIM prediction is mandatory for IFR.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 9613'
+  explanation: 'Losing RVSM capability means the level can no longer be assured to RVSM accuracy, so the pilot tells ATC and requests a level outside the band or greater separation; continuing silently or descending without a clearance is unsafe.',
+  reference: 'MOS 7.1.5 / AIP GEN 1.5'
 },
 
 {
-  question: 'RAIM (Receiver Autonomous Integrity Monitoring) in GNSS provides:',
+  question: 'Tracking from an area of high QNH into an area of significantly lower QNH without updating the altimeter setting, the aircraft will be:',
   options: [
-    'A. An internal check of GNSS integrity — the receiver monitors satellite consistency and alerts the pilot if the position cannot be trusted to the required accuracy',
-    'B. A backup VOR receiver — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Enhanced signal strength from satellites — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. RAIM corrects for ionospheric delay automatically — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Lower than the altitude indicated, because the altimeter over-reads, the basis of from high to low look out below',
+    'Higher than the altitude indicated, because the altimeter under-reads when in the lower pressure air',
+    'At exactly the altitude indicated, since changes in QNH do not affect the reading',
+    'Unable to indicate any altitude at all until a current QNH has been set'
   ],
   correct: 0,
-  explanation: 'RAIM: using redundant satellite signals (typically 5+ satellites), the GNSS receiver can detect if one satellite is providing erroneous data and either exclude it or generate an integrity alarm. For IFR NPA approaches: RAIM must be available at and after the FAF. RAIM prediction (pre-flight) forecasts availability. RAIM failure: cannot use GNSS for that phase of flight — must have alternative navigation.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 9613'
+  explanation: 'An altimeter left on an old, higher QNH over-reads as the aircraft moves into lower-pressure air, so the true altitude is lower than indicated, the basis of from high to low, look out below. Below the transition altitude the IFR pilot resets to the local QNH within 100 nm or the area QNH.',
+  reference: 'AIP ENR 1.7'
 },
 
 {
-  question: 'The GPS "WAAS" or Australian "GRAS" augmentation system provides:',
+  question: 'Quadrantal error in an ADF/NDB system is caused by:',
   options: [
-    'A. A backup GPS constellation — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. An entirely separate navigation system independent of GPS and this applies to all IFR operations in Australian airspace',
-    'C. SBAS reduces GPS range to 100 nm — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Satellite-Based Augmentation System (SBAS) — ground stations monitor GPS satellites and broadcast corrections and integrity data via a geostationary satellite'
+    'The pilot selecting the wrong frequency on the ADF receiver before the bearing is actually used',
+    'Night-time ionospheric refraction affecting the LF/MF ground-wave signal',
+    'Coastal refraction as the signal crosses a coastline obliquely',
+    'The metal fuselage re-radiating the signal and distorting the bearing, greatest near 45 degrees off the nose'
   ],
   correct: 3,
-  explanation: 'SBAS (WAAS in USA, GRAS in Australia, EGNOS in Europe): ground reference stations monitor GPS, detect errors and ionospheric effects, and uplink corrections to a geostationary satellite which broadcasts integrity and correction data on the GPS frequency. Enables APV (approach with vertical guidance) and LPV approaches with DH as low as 200 ft. Requires SBAS-capable FMS/GPS.',
-  reference: 'AIP ENR 1.5'
+  explanation: 'The fuselage acts as a secondary radiator that distorts the loop antenna\'s directional sense. The error is greatest when the beacon is about 45 degrees off the nose and least beam-on or dead ahead/astern; compensator coils reduce it but some residual error means NDB bearings are treated as approximate.',
+  reference: 'AIP ENR 4.1 — ADF'
 },
 
 {
-  question: 'For a GPS RNAV approach, "CDI sensitivity" changes to:',
+  question: 'The key difference between an RNAV system and an RNP system is that an RNP system:',
   options: [
-    'A. Changes in phases: en-route ±2 nm; terminal ±1 nm; approach ±0.3 nm at the FAF, narrowing to ±0.1 nm (or ±0.05 nm for RNP approaches) on the final segment',
-    'B. Stays at ±5 nm throughout — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. CDI sensitivity is fixed at ±0.3 nm for all RNAV approaches and this applies to all IFR operations in Australian airspace',
-    'D. CDI sensitivity is pilot-selectable during the approach — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Uses only ground-based navigation aids to compute its position',
+    'Provides on-board performance monitoring and alerting of navigation accuracy',
+    'Does not require any satellite positioning at all to operate',
+    'Can be used only in oceanic airspace and never on an approach'
+  ],
+  correct: 1,
+  explanation: 'RNP is RNAV with on-board performance monitoring and alerting: the system continuously checks its own navigation performance and warns the crew if it can no longer meet the required accuracy. Plain RNAV has no such self-monitoring.',
+  reference: 'MOS 6.1.1'
+},
+
+{
+  question: 'On a 3-degree approach slope at a groundspeed of 140 kt, the approximate rate of descent required is:',
+  options: [
+    'About 350 ft per minute',
+    'About 700 ft per minute',
+    'About 1,050 ft per minute',
+    'About 1,400 ft per minute'
+  ],
+  correct: 1,
+  explanation: 'A useful rule for a 3-degree slope is rate of descent equals groundspeed times five. At 140 kt: 140 x 5 = 700 ft/min. The required rate of descent therefore changes directly with groundspeed.',
+  reference: 'ICAO Doc 8168 / AIP ENR 1.5'
+},
+
+{
+  question: 'GNSS position accuracy for IFR approaches depends on:',
+  options: [
+    'Only the number of satellites that are currently in view',
+    'Only the aircraft\'s altitude at the particular time',
+    'Satellite geometry (PDOP), satellite count, signal quality, RAIM, and the augmentation system used',
+    'Nothing, since the GNSS accuracy is fixed at plus or minus 10 m everywhere worldwide'
+  ],
+  correct: 2,
+  explanation: 'Accuracy depends on satellite geometry (PDOP), the number of satellites tracked (at least four for 3D), signal quality, RAIM availability for non-precision approaches, and SBAS/GBAS augmentation for approaches with vertical guidance. Pre-flight RAIM prediction is required for IFR.',
+  reference: 'AIP ENR 1.5 / ICAO Doc 9613'
+},
+
+{
+  question: 'At FL100 the outside air temperature is 0 degrees C. Using an ISA lapse of 2 degrees per 1,000 ft, the ISA deviation is:',
+  options: [
+    'ISA +5',
+    'ISA -5',
+    'ISA +10',
+    'ISA 0'
   ],
   correct: 0,
-  explanation: 'RNAV CDI phases (GNSS receiver): en-route (±2 nm full scale), terminal (±1 nm from 30 nm to FAF), approach active (±0.3 nm when approach mode activates near FAF). For RNP APCH: ±0.1 nm on final approach segment (some to ±0.05 nm). The tightening sensitivity requires precise tracking as the approach progresses — deviations that are acceptable en-route are not acceptable on final.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 9613'
+  explanation: 'ISA temperature at FL100 is 15 minus 2 times 10 = -5 degrees C. The actual OAT of 0 degrees C is 5 degrees warmer than ISA, so the deviation is ISA +5. ISA deviation is used in true-airspeed and performance calculations.',
+  reference: 'ICAO Standard Atmosphere / AIP GEN 2.1'
+},
+
+{
+  question: 'By the one-in-sixty rule, an aircraft 2 nm off the desired track after travelling 60 nm has a tracking error of about:',
+  options: [
+    'About 1 degree off the desired track',
+    'About 5 degrees off the desired track',
+    'About 6 degrees off the desired track',
+    'About 2 degrees off the desired track'
+  ],
+  correct: 3,
+  explanation: 'The one-in-sixty rule states that 1 nm off track over 60 nm is about 1 degree, so 2 nm off over 60 nm is about 2 degrees. To regain track the pilot doubles the closing angle, or uses angle off equals 60 times distance off divided by distance gone.',
+  reference: 'Navigation - one-in-sixty rule'
+},
+
+{
+  question: 'An RNP AR (authorisation required) approach differs from a standard RNP APCH in that it:',
+  options: [
+    'Requires no navigation database at all, being flown purely on the raw GNSS data alone',
+    'May be flown by any IFR aircraft without any special approval',
+    'Needs specific operator and aircraft authorisation and supports tighter RNP values and curved paths',
+    'Is available only to VFR aircraft operating into controlled airspace'
+  ],
+  correct: 2,
+  explanation: 'RNP AR procedures need specific authorisation of the operator and aircraft because they use tighter containment (RNP values below the standard 0.3) and may include curved RF legs close to terrain; they are not available to an aircraft that lacks that authorisation.',
+  reference: 'MOS 6.2'
 },
 
 {
   question: 'The "FMS" (Flight Management System) for IFR operations must have a current:',
   options: [
-    'A. Annual calibration certificate',
-    'B. Navigation database with current AIRAC cycle — the database must be current for the period of flight',
-    'C. ATC-issued database approval',
-    'D. Pilot-entered waypoints override the need for a current database'
+    'An annual avionics calibration certificate held on file',
+    'Navigation database with current AIRAC cycle, the database must be current for the period of flight',
+    'An ATC-issued database approval for the flight',
+    'Pilot-entered waypoints that simply override any need to hold a current navigation database'
   ],
   correct: 1,
   explanation: 'FMS/GNSS navigation database: AIRAC cycle = 28 days. For IFR approaches and procedures, the database must be current (valid AIRAC cycle). Using an expired database for IFR approaches is generally not permitted (some operators have procedures for using a non-current database with restrictions). Current database ensures procedures, navaids, and waypoints reflect the latest published data.',
@@ -3582,77 +3582,77 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The ILS marker beacon sequence on a standard ILS approach is:',
+  question: 'The ILS marker beacon sequence inbound on a standard ILS is:',
   options: [
-    'A. Middle marker, then outer marker — this is the correct regulatory position',
-    'B. Inner marker first, then middle marker, then outer marker and this applies to all IFR operations in Australian airspace',
-    'C. Outer marker (OM) at approximately 4–7 nm, middle marker (MM) at approximately 0.5–1 nm from threshold, inner marker (IM)',
-    'D. Only one marker is used on modern ILS installations according to current CASR and AIP requirements'
+    'The middle marker is the first to be reached, and only then is the outer marker reached',
+    'Inner marker first, then the middle, then the outer marker',
+    'Outer marker about 4-7 nm out, middle marker about 0.5-1 nm from threshold, then the inner marker',
+    'Only a single marker is used on modern ILS installations'
   ],
   correct: 2,
-  explanation: 'ILS markers (approach to runway): (1) OM (outer marker) — 4–7 nm, 400 Hz dashes, BLUE light; (2) MM (middle marker) — approximately 0.5–1 nm from threshold near DH, 1,300 Hz dots and dashes, AMBER light; (3) IM (inner marker) — near runway, 3,000 Hz dots, WHITE light (CAT II/III only). Many modern installations replace markers with DME or GNSS fix identification.',
+  explanation: 'Inbound the order is outer marker (about 4-7 nm, 400 Hz dashes, blue), middle marker (about 0.5-1 nm near DH, 1300 Hz dot-dash, amber), then inner marker (near the threshold, 3000 Hz dots, white, Cat II/III). Many modern installations replace markers with DME or GNSS fixes.',
   reference: 'AIP ENR 4.1'
 },
 
 {
-  question: 'GNSS approaches requiring "baro-aiding" use:',
+  question: 'On an RNP APCH (RNAV GNSS) chart, the LNAV, LNAV/VNAV and LPV minima differ in that:',
   options: [
-    'A. A barometric altimeter to substitute for one GPS satellite',
-    'B. Barometric altitude input to the GPS receiver as a substitute for a geometric altitude satellite measurement',
-    'C. Baro-aiding is only used for VOR approaches',
-    'D. Baro-aiding provides horizontal position accuracy'
+    'They are simply three different names for the very same minima',
+    'LNAV always gives the lowest minima and LPV always the highest',
+    'LNAV is lateral-only to an MDA, while LNAV/VNAV and LPV add vertical guidance to a DA',
+    'Only the LNAV line may ever be flown by an aircraft that has no autopilot'
   ],
-  correct: 1,
-  explanation: 'Baro-aiding: the GPS receiver uses barometric altitude (from the air data computer or altimeter) as a pseudo-range input equivalent to one satellite. This improves the RAIM computation and reduces the minimum satellite requirement. For baro-aided GPS approaches, the altimeter setting must be correct — an incorrect QNH setting causes vertical errors. Critical in cold temperatures where altimetry errors are present.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 9613'
+  correct: 2,
+  explanation: 'LNAV is a 2D (lateral-only) approach to an MDA; LNAV/VNAV adds barometric vertical guidance and LPV adds SBAS vertical guidance, both 3D approaches flown to a DA with progressively lower minima.',
+  reference: 'MOS 6.2.14 / 6.2.17'
 },
 
 {
-  question: 'The localiser course width (total) for an ILS is approximately:',
+  question: 'Special alternate weather minima (lower than standard) are available at certain aerodromes only for aircraft that have:',
   options: [
-    'A. 10° total (±5°) provided the pilot holds a current medical certificate',
-    'B. 20° total (±10°) provided the pilot holds a current medical certificate',
-    'C. 5° total (±2.5°) — narrower course widths are achievable but the standard full-scale deflection is ±2.5° from centreline',
-    'D. The course width is the same as a VOR radial'
+    'A single VHF radio together with a current GNSS database',
+    'An autopilot coupled to the approach and a radio altimeter both fitted',
+    'Dual ILS/VOR approach capability, with duplicated LOC, GP and VOR plus DME or GNSS',
+    'Any GNSS receiver certified for RNP approaches to LNAV minima'
   ],
   correct: 2,
-  explanation: 'ILS localiser course width: adjusted at installation to be approximately ±2.5° from centreline at full-scale CDI deflection — approximately 700 ft wide at threshold. Some short runways may have narrower widths (as small as ±2°) to maintain the physical width of approximately 700 ft at threshold. Course width is published on approach charts.',
+  explanation: 'Special alternate minima, lower than the standard alternate minima, are published for specified approaches at some airports and may be used only by aircraft with dual ILS/VOR capability: duplicated localiser, glidepath and VOR, plus duplicated DME or GNSS (or single DME and single GNSS). They revert to standard minima when local met or the tower service is unavailable.',
+  reference: 'AIP ENR 1.5 6.2 / Part 91 MOS 8.08'
+},
+
+{
+  question: 'The ILS glideslope has a false glideslope at approximately:',
+  options: [
+    'About 3 degrees above the true glide slope path',
+    'About 9 degrees, three times the true angle; following it gives an excessively steep approach',
+    'About 1 degree below the true glide slope path',
+    'Nowhere at all, since false glide slopes simply do not exist on any modern ILS installation'
+  ],
+  correct: 1,
+  explanation: 'The glideslope signal has lobes; the first false (upper) slope is about three times the true angle (about 9 degrees for a 3-degree ILS). Intercepting from above risks capturing it, so the glideslope is always intercepted from below, level or slightly low.',
   reference: 'AIP ENR 4.1 / ICAO Annex 10'
 },
 
 {
-  question: 'The ILS glide slope has a "false glide slope" at approximately:',
+  question: 'A Category II ILS approach requires:',
   options: [
-    'A. 3° above the true glide slope — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. 1° below the true glide slope — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Approximately 9° — three times the true glide slope angle; the false glide slope is at 9° (for a 3° ILS) and if followed would result in an excessively steep approach',
-    'D. False glide slopes do not exist on modern ILS — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
-  ],
-  correct: 2,
-  explanation: 'ILS glide slope false slopes: the glide slope signal has multiple lobes. The first false (upper) glide slope is at approximately 3× the true angle (9° for a standard 3° GS). If the aircraft attempts to intercept from above the glide slope, it may intercept the false glide slope instead. Always intercept the ILS glide slope from below — fly level or slightly below the glide path to ensure you intercept the correct lobe.',
-  reference: 'AIP ENR 4.1 / ICAO Annex 10'
-},
-
-{
-  question: 'The "Category II" ILS approach requires:',
-  options: [
-    'A. Only a single pilot with current instrument rating — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. DH 100–200 ft and RVR 300 m, plus specific aircraft certification, avionics qualification (flight director or autopilot), specific pilot training and currency',
-    'C. CAT II is available to any aircraft with a working ILS receiver and this applies to all IFR operations in Australian airspace',
-    'D. CAT II has no specific training requirements beyond CAT I — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Only a single pilot who holds a current instrument rating, with no further training or condition required',
+    'DH 100-200 ft and RVR 300 m, plus aircraft certification, qualified avionics, and specific crew training and currency',
+    'Availability to any aircraft that is fitted with a working ILS receiver',
+    'No specific training or currency requirements beyond those needed for CAT I'
   ],
   correct: 1,
-  explanation: 'CAT II ILS: DH 100–200 ft, RVR 300 m minimum. Requirements: (1) Aircraft: certified for CAT II, dual ILS receivers, CAT II autopilot/flight director; (2) Crew: specific CAT II training and currency; (3) Aerodrome: CAT II lighting (approach and runway), monitoring, obstacle clearance; (4) RVR reporting equipment. CAT II is not available at most Australian regional airports.',
-  reference: 'AIP ENR 1.5 / CASR Part 91'
+  explanation: 'Cat II (DH 100-200 ft, RVR about 300 m) needs an aircraft certified for Cat II with the required avionics (autopilot/flight director, dual receivers), specifically trained and current crew, suitable aerodrome lighting and monitoring, and RVR reporting. It is unavailable at most Australian regional aerodromes.',
+  reference: 'AIP ENR 1.5 / Part 91'
 },
 
 {
   question: 'A "course reversal" on an instrument approach procedure is used to:',
   options: [
-    'A. Align the aircraft with the final approach course when arriving from a direction opposite to the approach',
-    'B. Allow the aircraft to reverse course and return to the departure aerodrome',
-    'C. Course reversal is only used for NDB approaches',
-    'D. A course reversal is the same as a missed approach'
+    'Align the aircraft with the final approach course when arriving from a direction opposite to the approach',
+    'Allow the aircraft to reverse its course completely and then return to the departure aerodrome',
+    'Course reversal is only used for NDB approaches',
+    'A course reversal is the same as a missed approach'
   ],
   correct: 0,
   explanation: 'Course reversal: when arriving from the "wrong side" (opposite direction to the final approach), a course reversal reverses the aircraft\\\'s direction onto the final approach track. Types: (1) Procedure turn (PT) — 45° turn then 180° turn back; (2) Racetrack (holding-type) with outbound then inbound; (3) Base turn. No course reversal when "NoPT" published or when radar-vectored to final.',
@@ -3660,155 +3660,155 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "NoPT" notation on an approach chart means:',
+  question: 'The \'NoPT\' notation on an approach chart means:',
   options: [
-    'A. No pilot training required for this approach — this is the correct regulatory position',
-    'B. No precision available on this approach and this applies to all IFR operations in Australian airspace',
-    'C. Night operations permitted according to current CASR and AIP requirements',
-    'D. No Procedure Turn — the procedure turn (course reversal) is not authorised when arriving via the specified routing'
+    'No additional pilot training is required in order to fly this particular approach',
+    'No precision vertical guidance is available on this approach',
+    'Night operations are specifically permitted at this aerodrome',
+    'No Procedure Turn; the course reversal is not authorised when arriving via the specified routing'
   ],
   correct: 3,
-  explanation: '"NoPT" (No Procedure Turn): when arriving from a specified direction (e.g. radar vectors, or via a specified STAR or routing), a procedure turn is not required and not authorised — the aircraft proceeds directly to the approach from the given routing. Flying a procedure turn when NoPT is specified would take the aircraft outside the protected airspace.',
+  explanation: 'NoPT means the procedure turn (course reversal) is neither required nor authorised when arriving via the specified routing (e.g. radar vectors or a nominated STAR); the aircraft proceeds straight in. Flying a procedure turn anyway would take it outside the protected airspace.',
   reference: 'AIP ENR 1.5'
 },
 
 {
   question: 'An RNP 0.3 designation on an RNAV approach means:',
   options: [
-    'A. The approach requires a minimum aircraft speed of 0.3 Mach — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The approach can only be used within 0.3 nm of the airport and this applies to all IFR operations in Australian airspace',
-    'C. The Required Navigation Performance value of 0.3 — the aircraft navigation system must maintain the aircraft within ±0.3 nm of the centreline 95% of the time',
-    'D. RNP 0.3 means 3 satellites are required — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The approach requires a minimum aircraft speed of Mach 0.3 throughout the procedure',
+    'The approach may only be used within 0.3 nm of the airport itself',
+    'An RNP value of 0.3; the system must keep the aircraft within 0.3 nm of centreline 95% of the time',
+    'That exactly three satellites are required to fly the approach'
   ],
   correct: 2,
-  explanation: 'RNP value: total system error must be within the RNP value (in nm) at least 95% of the time, with an alarm limit (typically 2× the RNP value) for the monitoring and alerting system. RNP 0.3: track keeping within 0.3 nm (95%), alert at 0.6 nm. RNP approaches require OPMA — the system alerts the crew if the RNP cannot be maintained. Higher RNP numbers = less precise (RNP 4 is en-route oceanic).',
+  explanation: 'RNP 0.3 requires the total system error to stay within 0.3 nm at least 95% of the time, with on-board performance monitoring and alerting (alarm typically at twice the RNP value, here 0.6 nm). Larger RNP numbers are less precise (RNP 4 is oceanic en-route).',
   reference: 'ICAO Doc 9613 / AIP ENR 1.5'
 },
 
 {
-  question: 'The "accuracy" of GNSS position for IFR approaches is typically:',
+  question: 'The accuracy of GNSS position for IFR approaches is typically:',
   options: [
-    'A. ±10 nm — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Exactly ±1 m at all times and this applies to all IFR operations in Australian airspace',
-    'C. Approximately ±10–30 m for standard GPS (95%); SBAS improves this to approximately ±3–7 m horizontal, ±3–5 m vertical (95%)',
-    'D. GPS accuracy for IFR is the same as for VFR flight according to current CASR and AIP requirements'
+    'About plus or minus 10 nm, regardless of the conditions',
+    'Exactly plus or minus 1 m at all times, with absolutely no variation at any point',
+    'About 10-30 m for standard GPS (95%), improving to about 3-7 m horizontal with SBAS',
+    'Exactly the same accuracy as is used for VFR flight'
   ],
   correct: 2,
-  explanation: 'GPS accuracy: standalone GPS (SPS) approximately ±10–30 m horizontal (95%). With SBAS: approximately ±3–7 m horizontal, ±3–5 m vertical (95%). GBAS (ground-based augmentation): precision approach accuracy (sub-metre). For IFR: the approach procedure design and the required navigation performance value account for the GPS accuracy plus all other system errors. RAIM or SBAS integrity monitoring is required for IFR use.',
+  explanation: 'Standalone GPS is about 10-30 m horizontal (95%); SBAS improves this to roughly 3-7 m horizontal and 3-5 m vertical, and GBAS gives near precision-approach accuracy. Procedure design and the RNP value account for these errors, and RAIM or SBAS integrity is required for IFR use.',
   reference: 'ICAO Doc 9613 / AIP ENR 1.5'
 },
 
 {
-  question: 'A "VOR/DME" approach uses:',
+  question: 'On an LNAV/VNAV (Baro-VNAV) approach, the vertical path is sensitive to:',
   options: [
-    'A. VOR for both lateral and vertical guidance — this is the correct regulatory position',
-    'B. DME for lateral guidance only and this applies to all IFR operations in Australian airspace',
-    'C. VOR for lateral (course) guidance and DME for distance determination of step-down fixes, FAF, and MAP position',
-    'D. VOR/DME approaches are the same as ILS approaches according to current CASR and AIP requirements'
+    'The aircraft\'s groundspeed as it passes the final approach fix',
+    'The local QNH and the outside air temperature, both of which must be valid',
+    'The number of GNSS satellites that happen to be in view at the time',
+    'The position of the heading bug that is set on the autopilot'
   ],
-  correct: 2,
-  explanation: 'VOR/DME approach: uses VOR for lateral guidance (track to/from station) and DME for distance. DME provides: crossing altitudes at specific distances, FAF identification, MAP identification (e.g. "MAP at 2.5 DME"), and step-down fix identification. More accurate than VOR alone for timing-based approaches. Requires both VOR and DME to be operative and identified.',
-  reference: 'AIP ENR 1.5'
+  correct: 1,
+  explanation: 'Baro-VNAV computes the path from barometric altitude, so it needs an accurate local QNH and is affected by temperature; in very cold air the real path is lower, and a published low-temperature limit applies below which Baro-VNAV guidance is not used.',
+  reference: 'MOS 6.2.13 / 6.2.17'
 },
 
 {
-  question: 'The "on-course" indication of a VOR when the CDI is centred means:',
+  question: 'A centred VOR CDI (\'on course\') means the aircraft is:',
   options: [
-    'A. The aircraft is on the selected radial regardless of heading',
-    'B. The aircraft is heading directly to the VOR station',
-    'C. The aircraft is on the selected course — but heading may differ due to wind; the CDI shows position deviation from the course line, not heading error',
-    'D. On-course means heading equals the selected OBS value as approved by CASA under current regulations'
+    'On the selected radial, regardless of the actual aircraft heading being flown at the time',
+    'Heading directly toward the VOR station at that moment',
+    'On the selected course; the heading may differ for drift, as the CDI shows position not heading',
+    'Heading exactly equal to the selected OBS value at the time'
   ],
   correct: 2,
-  explanation: 'VOR CDI centred: aircraft is ON the selected radial — regardless of heading. In a crosswind, the aircraft must fly a wind correction angle (WCA) to maintain the radial. The CDI shows positional deviation from the radial, not heading. Centred CDI with correct WCA applied = tracking the radial. Common error: chasing the needle (aggressive corrections overshoot the radial).',
+  explanation: 'A centred CDI means the aircraft is on the selected radial; in a crosswind it must hold a wind-correction angle, so its heading differs from the course. The CDI shows positional deviation from the radial, not heading error; chasing the needle tends to overshoot.',
   reference: 'AIP ENR 4.1'
 },
 
 {
-  question: 'When transitioning from VOR en-route to an ILS approach, the pilot should:',
+  question: 'Transitioning from VOR en-route to an ILS approach, the pilot should:',
   options: [
-    'A. Switch the navigation display from VOR to ILS (LOC) mode on the CDI/HSI before reaching the ILS intercept point',
-    'B. Leave the OBS set to the VOR course throughout — this is the correct regulatory position',
-    'C. The radio automatically switches from VOR to ILS and this applies to all IFR operations in Australian airspace',
-    'D. Set the OBS to 000 when transitioning to ILS according to current CASR and AIP requirements'
+    'Select the ILS frequency and switch the CDI/HSI to LOC mode before the intercept point',
+    'Leave the OBS set to the VOR course throughout the ILS approach',
+    'Do nothing, since the radio switches itself from VOR to ILS automatically',
+    'Set the OBS to 000 degrees when transitioning to the ILS'
   ],
   correct: 0,
-  explanation: 'VOR-to-ILS transition: the pilot must select the ILS frequency on the NAV radio and ensure the CDI/HSI is in LOC (ILS) mode, not VOR mode. ILS localiser sensitivity (±2.5° full scale) is much more sensitive than VOR (±10° full scale). If the CDI remains in VOR mode during an ILS approach, deviations will appear small even when significantly off centreline — the ILS CDI will appear almost always centred.',
+  explanation: 'The pilot tunes and identifies the ILS and ensures the display is in localiser mode, not VOR. The localiser (about plus/minus 2.5 degrees full scale) is far more sensitive than a VOR (plus/minus 10 degrees), so leaving it in VOR mode would make large deviations look small.',
   reference: 'AIP ENR 4.1'
 },
 
 {
-  question: 'Instrument approach procedures are designed with "obstacle clearance surfaces" that assume:',
+  question: 'Instrument approach obstacle-clearance surfaces assume that:',
   options: [
-    'A. The aircraft is flown with autopilot only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. A 500 ft buffer above all obstacles regardless of technique — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The aircraft is flown within specific tolerances of the published procedure — lateral containment within XTT (cross-track tolerance), altitude within published crossing tolerances',
-    'D. The pilot can deviate freely within the approach segment — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The aircraft is flown using the autopilot only, never by hand',
+    'A 500 ft buffer always exists above every obstacle, regardless of the technique flown',
+    'The aircraft is flown within the published lateral and vertical tolerances of the procedure',
+    'The pilot may deviate freely within the approach segment'
   ],
   correct: 2,
-  explanation: 'Approach obstacle clearance: procedures are designed with protected areas based on navigation accuracy and assumed flight technique. Flying outside the lateral or vertical tolerances places the aircraft in terrain that may not have been checked for obstacle clearance. A CDI deflection of more than one dot below MDA, or flying early at a step-down, could place the aircraft below the obstacle clearance surface.',
+  explanation: 'Protected areas are built around the navigation accuracy and assumed flight technique. Flying outside the lateral or vertical tolerances, e.g. more than a dot off below MDA or descending early at a step-down, can place the aircraft in terrain not assessed for clearance.',
   reference: 'ICAO Doc 8168 / AIP ENR 1.5'
 },
 
 {
-  question: 'The "ADF relative bearing" is:',
+  question: 'The ADF relative bearing is:',
   options: [
-    'A. The magnetic bearing to the NDB station — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The angle measured clockwise from the aircraft nose to the direction of the NDB — add this to the magnetic heading to get the magnetic bearing to the station',
-    'C. The bearing from the NDB to the aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The track the aircraft must fly to reach the NDB — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The magnetic bearing measured directly from the aircraft straight across to the NDB ground station',
+    'The clockwise angle from the nose to the NDB; add it to the heading to get the magnetic bearing to the station',
+    'The bearing measured from the NDB station back toward the aircraft',
+    'The track the aircraft must actually fly to reach the NDB station'
   ],
   correct: 1,
-  explanation: 'ADF relative bearing: angle from aircraft nose (0°) to the NDB, read clockwise. To find magnetic bearing to station: MH + RB (if sum >360°, subtract 360°). Example: heading 090°M, ADF reads 270° relative bearing → bearing to station = 090 + 270 = 360°M (due north). The ADF needle always points at the station — the pilot must add heading to convert to magnetic bearing.',
+  explanation: 'Relative bearing is the angle measured clockwise from the aircraft\'s nose to the NDB. Magnetic bearing to the station = magnetic heading + relative bearing (subtract 360 if over). For example, heading 090 with RB 270 gives 360, due north.',
   reference: 'AIP ENR 4.1'
 },
 
 {
-  question: 'GPS "PDOP" (Position Dilution of Precision) affects navigation accuracy because:',
+  question: 'Flying an RNP APCH to LNAV minima with a receiver that is not SBAS-augmented requires:',
   options: [
-    'A. PDOP measures satellite geometry — a low PDOP (1–2) means satellites are well spread across the sky providing good geometry and precise position fixing',
-    'B. A high PDOP means more satellites are available — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. PDOP only affects vertical accuracy — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. PDOP is not relevant to IFR GPS approaches — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'RAIM, or an equivalent fault-detection function, to be available',
+    'A continuous datalink connection maintained to the ATC unit',
+    'Two independent VOR receivers operating as a cross-check',
+    'No integrity checking at all, since GNSS is always fully reliable'
   ],
   correct: 0,
-  explanation: 'PDOP (Position Dilution of Precision): quantifies the effect of satellite geometry on position accuracy. Low PDOP (1–2) = good geometry = accurate position. High PDOP (>6) = poor geometry = large position errors for the same satellite measurement errors. Satellites spread across the sky (including one overhead) give best geometry. PDOP is monitored by RAIM — a high PDOP contributes to RAIM alerting.',
-  reference: 'ICAO Doc 9613'
+  explanation: 'Without SBAS, the receiver relies on RAIM to detect a faulty satellite signal; RAIM must be available, confirmed by pre-flight prediction, for the approach to be flown. SBAS provides the integrity where it is available.',
+  reference: 'MOS 6.2.7 / 6.2.11 / 4.2.5'
 },
 
 {
-  question: 'An IFR aircraft is radar vectored to the ILS final approach course. The controller says "turn right heading 280, intercept localiser, cleared ILS runway 25." The pilot should:',
+  question: 'Radar-vectored to the ILS with \'turn right heading 280, intercept localiser, cleared ILS runway 25\', the pilot should:',
   options: [
-    'A. Turn to 280°, intercept and track the localiser centreline inbound, confirm glide slope establishment, complete the approach checks, and maintain the approach to DH',
-    'B. Turn to 280° and then turn immediately to 250° runway heading provided the pilot holds a current medical certificate',
-    'C. Request a holding pattern before intercepting the localiser provided the pilot holds a current medical certificate',
-    'D. Set OBS to 250° and arm the approach mode on autopilot, but not descend until the outer marker'
+    'Turn to 280, intercept and track the localiser inbound, check glideslope capture, and fly the approach to DH',
+    'Turn to heading 280 and then immediately turn again to 250 to take up the assigned runway heading',
+    'Request a holding pattern before intercepting the localiser',
+    'Set OBS 250, arm the approach, but not descend until the outer marker'
   ],
   correct: 0,
-  explanation: 'Radar vector to ILS: turn to assigned heading (280°), tune/identify ILS, intercept the localiser (CDI begins to centre), then roll onto the approach course (250° runway heading with any WCA). As localiser establishes, check glide slope indicator — do not descend below the current assigned altitude until established on glide slope and cleared. Complete approach items. Fly ILS to DH.',
-  reference: 'AIP ENR 1.1 / AIP ENR 1.5'
+  explanation: 'Turn to the assigned 280 heading, tune and identify the ILS, intercept the localiser as the CDI centres and track inbound (about 250 with any wind correction), confirm glideslope capture (not descending below the assigned altitude until established and cleared), complete the checks and fly to DH.',
+  reference: 'AIP ENR 1.1 / ENR 1.5'
 },
 
 {
-  question: 'The "approach plate" (instrument approach chart) legend for "CAT" refers to:',
+  question: 'On an approach chart, the aircraft \'CAT\' (category) refers to:',
   options: [
-    'A. The aircraft\'s maximum certified landing weight category assigned by CASA — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The approach category for weather minimums — CAT I, II, or III for precision approaches and this applies to all IFR operations in Australian airspace',
-    'C. The aircraft\'s approach category based on Vat (1.3 × Vso) — determining circling radii and applicable minima: Cat A <91 kt, Cat B 91–120 kt, Cat C 121–140 kt, Cat D 141–165 kt',
-    'D. The category of IFR certification required — basic, intermediate, or advanced — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The maximum certified landing weight category as it is assigned by CASA to the type',
+    'The weather-minima category for precision approaches, CAT I, II or III',
+    'The approach category from Vat (1.3 Vso), Cat A under 91 kt, B 91-120, C 121-140, D 141-165 kt',
+    'The level of IFR certification required, basic, intermediate or advanced'
   ],
   correct: 2,
-  explanation: 'Aircraft approach category (Cat A–E): based on Vat = 1.3 × Vso (stall speed in landing configuration). Cat A: Vat <91 kt; Cat B: 91–120 kt; Cat C: 121–140 kt; Cat D: 141–165 kt; Cat E: >165 kt. Different categories have different circling radii and may have different minima. Most light aircraft (PA-28, C172, DA40) are Cat A.',
+  explanation: 'Aircraft approach category is based on Vat (1.3 times the stall speed in the landing configuration): Cat A under 91 kt, B 91-120, C 121-140, D 141-165, E above 165 kt. The category sets the circling radius and may set different minima. Most light aircraft are Cat A.',
   reference: 'AIP ENR 1.5 / ICAO Doc 8168'
 },
 
 {
   question: 'When an RNAV(GNSS) approach chart shows "LNAV/VNAV" minima, this means:',
   options: [
-    'A. The approach requires both VOR and GNSS',
-    'B. LNAV only — vertical is not available on this approach',
-    'C. LNAV/VNAV is the same as an ILS Category II approach',
-    'D. LNAV/VNAV: lateral navigation (GNSS) combined with vertical navigation (barometric VNAV from the FMS)'
+    'The approach requires both a VOR receiver and a GNSS receiver to be used',
+    'LNAV guidance only, since the vertical guidance is simply not available on this particular approach',
+    'LNAV/VNAV is exactly the same thing as an ILS Category II precision approach',
+    'LNAV/VNAV, being lateral navigation (GNSS) combined with vertical navigation (barometric VNAV from the FMS)'
   ],
   correct: 3,
   explanation: 'LNAV/VNAV: Lateral Navigation (GNSS) + Vertical Navigation (baro-VNAV). The FMS computes a vertical path using barometric altitude. Classified as APV (APproach with Vertical guidance) — not precision, not non-precision. Uses DA/H (not MDA). Minima typically higher than LPV but lower than LNAV (MDA). Requires FMS with VNAV capability and compatible aircraft certification.',
@@ -3818,10 +3818,10 @@ export const irexQuestions: {
 {
   question: 'The "LNAV" minima row on an RNAV(GNSS) approach chart is used when:',
   options: [
-    'A. The aircraft has SBAS capability',
-    'B. The aircraft cannot achieve LNAV/VNAV or LPV — LNAV provides lateral guidance only',
-    'C. LNAV provides the lowest available minima',
-    'D. LNAV is used for Category II approaches'
+    'The aircraft has full SBAS (space-based augmentation) capability available',
+    'The aircraft cannot achieve LNAV/VNAV or LPV, LNAV provides lateral guidance only',
+    'LNAV provides the lowest available minima on the chart',
+    'LNAV minima are used only for Category II approaches'
   ],
   correct: 1,
   explanation: 'LNAV (Lateral Navigation) only: the lowest level of RNAV(GNSS) approach. Provides lateral guidance only — no vertical guidance from the avionics. Flown to MDA. Used when SBAS (for LPV) and baro-VNAV (for LNAV/VNAV) are not available or not authorised. LNAV minima are the highest (worst) of the RNAV approach options.',
@@ -3829,181 +3829,181 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "ILS sensitivity" principle means that at 10 nm from the threshold on localiser:',
+  question: 'ILS localiser sensitivity means that, as the aircraft nears the runway:',
   options: [
-    'A. One dot of CDI deflection (2°) represents a physical displacement of approximately 350 ft',
-    'B. The CDI is most sensitive at 10 nm',
-    'C. The ILS signal is not receivable beyond 10 nm',
-    'D. The CDI shows distance in miles at 10 nm'
+    'A given needle deflection represents a smaller physical distance from the centreline',
+    'The localiser becomes progressively less sensitive near the threshold',
+    'The localiser needle begins to display distance to run in nautical miles',
+    'A given deflection represents the same physical distance at every range'
   ],
   correct: 0,
-  explanation: 'ILS angular sensitivity: at 10 nm, 1° angular deviation = 10 nm × tan(1°) ≈ 1,000 ft. At 1 nm, 1° ≈ 100 ft. The ILS CDI always shows angular deviation — the same needle deflection represents increasing physical accuracy as the aircraft approaches the runway. This is why strict tracking at the outer marker translates to precise centreline at the inner marker.',
-  reference: 'AIP ENR 4.1'
+  explanation: 'Localiser guidance is angular and the beam narrows toward the runway, so the same needle deflection corresponds to a smaller lateral distance as range decreases; finer corrections are needed on short final, and the localiser is more sensitive than a VOR.',
+  reference: 'AIP ENR 4.1 / ICAO Annex 10'
 },
 
 {
-  question: 'The VOR "cone of silence" (station passage) is indicated by:',
+  question: 'Tracking directly toward a DME station, the distance reduces from 30 nm to 20 nm in 4 minutes. The groundspeed is approximately:',
   options: [
-    'A. The CDI swinging to full deflection before centring — this is the correct regulatory position',
-    'B. The ADF needle pointing to 180° and this applies to all IFR operations in Australian airspace',
-    'C. A GPWS alert when directly over the VOR according to current CASR and AIP requirements',
-    'D. TO/FROM flag flickering or flagging (signal unreliable), CDI becoming erratic as the aircraft is directly over the VOR'
+    '100 kt',
+    '120 kt',
+    '200 kt',
+    '150 kt'
   ],
   correct: 3,
-  explanation: 'VOR cone of silence: directly above the VOR, the signal is weak and unreliable. As the aircraft approaches overhead: TO/FROM flag flickers then flags (off); CDI becomes erratic. After passing overhead: TO changes to FROM (if OBS set to current course). The CDI behaviour during station passage confirms the aircraft has crossed the VOR. Do not make navigation decisions during station passage.',
-  reference: 'AIP ENR 4.1'
+  explanation: 'Closing 10 nm (30 to 20) in 4 minutes is 2.5 nm per minute, which is 2.5 times 60 = 150 kt groundspeed. A DME groundspeed check is valid only when tracking directly to or from the station.',
+  reference: 'Navigation - DME groundspeed'
 },
 
 {
-  question: 'The correct instrument cross-check sequence during an ILS approach is:',
+  question: 'The correct instrument cross-check during an ILS approach is:',
   options: [
-    'A. Alternate between altimeter and airspeed only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Focus entirely on the localiser CDI and ignore the glide slope — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. A rapid scan covering: attitude indicator (primary pitch/bank), altimeter (altitude trend), ASI (speed), VSI (rate of descent), heading indicator, and both localiser and glide slope CDIs',
-    'D. Watch the glide slope exclusively and use autopilot for localiser — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Alternating only between the altimeter and the airspeed indicator throughout the whole approach',
+    'Focusing entirely on the localiser CDI and ignoring the glideslope',
+    'A rapid scan of the attitude indicator, altimeter, ASI, VSI, heading and both the localiser and glideslope',
+    'Watching the glideslope alone and leaving the localiser to the autopilot'
   ],
   correct: 2,
-  explanation: 'ILS approach instrument scan: attitude indicator (AI) is primary — pitch for rate of descent, bank for localiser tracking; cross-check ASI (approach speed), altimeter (height), VSI (rate). Simultaneously monitor both localiser (lateral) and glide slope (vertical) CDIs. Do not fixate on either CDI — excessive focus on localiser leads to glide slope deviation and vice versa. Continuous scan to DH.',
-  reference: 'AIP ENR 1.5 / CASA IFR guidance'
-},
-
-{
-  question: 'When an approach requires "DME required" and DME is unserviceable, the pilot must:',
-  options: [
-    'A. Not conduct the approach — if the chart specifies DME as required and the aircraft DME is unserviceable, the approach cannot be safely flown and an alternative procedure or diversion is required',
-    'B. Continue the approach at a higher altitude as a precaution — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Use GPS distance to substitute for DME without specific approval — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Conduct the approach at pilot discretion if familiar with the aerodrome — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
-  ],
-  correct: 0,
-  explanation: '"DME required": the procedure cannot be safely conducted without DME (for fix identification, MAP location, or step-down fix crossing). If the aircraft DME is unserviceable, the pilot must select an approach that does not require DME (if available) or divert. ATC radar can provide position advisory information but this does not substitute for a required DME in the approach design.',
+  explanation: 'The attitude indicator is primary (pitch for descent rate, bank for tracking), cross-checked against ASI, altimeter and VSI, while both the localiser and glideslope are monitored. Fixating on one CDI lets the other drift, so a continuous scan is maintained to DH.',
   reference: 'AIP ENR 1.5'
 },
 
 {
-  question: 'The "GNSS substitute" for traditional navaid identification is:',
+  question: 'If an approach is annotated \'DME required\' and the DME is unserviceable, the pilot must:',
   options: [
-    'A. GNSS/FMS waypoints are identified by database name — the pilot verifies the correct approach is loaded by checking: approach name, aerodrome, runway',
-    'B. The pilot must always identify navaids by Morse code regardless of GNSS — this is the correct regulatory position',
-    'C. GNSS automatically identifies all navaids by cross-checking and this applies to all IFR operations in Australian airspace',
-    'D. GNSS approaches do not require any identification procedures according to current CASR and AIP requirements'
+    'Not conduct it; the required DME is unavailable, so divert or fly another procedure',
+    'Continue the approach but fly it at a deliberately higher altitude as a precaution',
+    'Use GPS distance in place of the required DME without any specific approval',
+    'Conduct it at the pilot own discretion if familiar with the aerodrome layout'
   ],
   correct: 0,
-  explanation: 'GNSS approach verification: instead of tuning and identifying a VOR/NDB by ident, for GNSS approaches: select the correct approach from the FMS database; verify the approach, aerodrome, runway, and date; check that the aircraft position agrees with expected position (chart comparison); verify RAIM/integrity. The FMS database entry effectively substitutes for Morse code identification.',
+  explanation: 'If DME is required for fix identification, the MAP or step-down crossings, the procedure cannot be flown safely without it. The pilot selects an approach not requiring DME, if available, or diverts. Radar advisory information does not substitute for a required DME built into the procedure.',
   reference: 'AIP ENR 1.5'
 },
 
 {
-  question: 'The IFR fuel requirement for a flight to a destination with an alternate includes:',
+  question: 'For a GNSS approach, identification of the procedure is achieved by:',
   options: [
-    'A. Taxi fuel + trip fuel (destination) + alternate fuel (destination to alternate) + final reserve',
-    'B. Taxi fuel only — this is the correct regulatory position',
-    'C. Trip fuel plus 10% contingency only and this applies to all IFR operations in Australian airspace',
-    'D. Only enough fuel to reach the destination according to current CASR and AIP requirements'
+    'Verifying the loaded approach by name, aerodrome and runway, which replaces Morse identification',
+    'Always identifying the navaids by Morse code regardless of the GNSS',
+    'Relying on the GNSS receiver to identify all of the navaids by an automatic cross-check',
+    'Skipping identification entirely, since GNSS approaches need none'
   ],
   correct: 0,
-  explanation: 'IFR fuel: taxi fuel + trip fuel to destination + fuel from destination to alternate + final reserve (fixed reserve — typically 45 min for piston, 30 min for turbine at holding speed at 1,500 ft) + contingency (5–10% or minimum amount for unforeseen routing) + any required holding fuel. The calculation must ensure the planned fuel is not less than the minimum required.',
-  reference: 'CASR Part 91 / AIP ENR 1.1'
+  explanation: 'Instead of tuning and identifying a ground aid, the pilot selects the approach from the database and verifies the approach name, aerodrome, runway and currency, and that the displayed position agrees with the chart. The verified database entry substitutes for Morse identification.',
+  reference: 'AIP ENR 1.5'
 },
 
 {
-  question: 'The "final reserve fuel" for a piston-engined IFR aircraft is:',
+  question: 'For an IFR flight requiring an alternate: trip fuel 70 min, fuel to the alternate 25 min, fixed reserve 45 min and taxi 5 min. The minimum fuel required, in time, is:',
   options: [
-    'A. 30 minutes at cruise power — this is the correct regulatory position',
-    'B. 45 minutes at holding speed at 1,500 ft above destination — the minimum fuel that must remain on landing',
-    'C. 1 hour at economy cruise and this applies to all IFR operations in Australian airspace',
-    'D. Final reserve is 10% of trip fuel according to current CASR and AIP requirements'
+    '145 minutes',
+    '120 minutes',
+    '115 minutes',
+    '95 minutes'
+  ],
+  correct: 0,
+  explanation: 'Minimum fuel = taxi + trip + alternate + fixed reserve = 5 + 70 + 25 + 45 = 145 minutes. IFR company fuel policy expresses fuel in minutes, and the aircraft must not depart with less than this minimum.',
+  reference: 'Part 91 MOS 19 / AIP ENR 1.1'
+},
+
+{
+  question: 'The final reserve fuel for a piston-engined IFR aircraft is:',
+  options: [
+    '30 minutes of fuel calculated at normal cruise power setting',
+    '45 minutes at holding speed at 1,500 ft above destination, the minimum that must remain on landing',
+    'One hour of fuel, calculated at the economy cruise power setting for the conditions',
+    'A figure equal to 10 per cent of the total trip fuel burn'
   ],
   correct: 1,
-  explanation: 'Final reserve fuel (piston): 45 minutes at holding speed at 1,500 ft above destination aerodrome (or alternate, whichever has higher elevation). This is an absolute minimum — landing with less than final reserve is an emergency fuel situation. Turbine aircraft: 30 minutes. The final reserve exists to ensure fuel remains for an unexpected second approach or late routing change.',
-  reference: 'CASR Part 91 / AIP ENR 1.1'
+  explanation: 'For a piston aircraft the final reserve is 45 minutes at holding speed at 1,500 ft above the destination (or alternate, whichever is higher). It is an absolute minimum, landing with less is an emergency-fuel situation; the turbine figure is 30 minutes.',
+  reference: 'Part 91 MOS 19 / AIP ENR 1.1'
 },
 
 {
-  question: 'When is an IFR alternate NOT required for a flight plan?',
+  question: 'A Trend Type Forecast (TTF) appended to a METAR or SPECI is:',
   options: [
-    'A. An alternate is always required for IFR — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. When the destination is within 50 nm and this applies to all IFR operations in Australian airspace',
-    'C. Alternates are not required for day IFR flights according to current CASR and AIP requirements',
-    'D. When the destination TAF (or equivalent) for the period ETA-1 hour to ETA+1 hour forecasts cloud above 2,000 ft and visibility above 8 km'
+    'A 24-hour aerodrome forecast that simply replaces the TAF entirely',
+    'A forecast of the upper winds along the planned route',
+    'A long-range outlook that is valid for the next 12 hours',
+    'A short-term trend (about 3 hours) used for arrival planning at that aerodrome'
   ],
   correct: 3,
-  explanation: 'Alternate not required (1-2-3 rule): if from ETA -1hr to ETA +1hr the TAF forecasts: ceiling above 2,000 ft (or 1,000 ft above the lowest approach minimum, whichever is greater) AND visibility above specified minima AND the aerodrome has at least one instrument approach available. Check CASR Part 91 for exact thresholds — these are approximate values; actual requirements depend on approach types available.',
-  reference: 'CASR Part 91 / AIP ENR 1.1'
+  explanation: 'A TTF is a trend forecast attached to a routine or special observation at certain aerodromes, valid for about 3 hours and describing expected changes. Where a current TTF is held it may be used in place of the TAF for arrival and alternate planning.',
+  reference: 'AIP GEN 3.5 / BOM'
 },
 
 {
-  question: 'The "alternate fuel" calculation assumes:',
+  question: 'The alternate fuel calculation assumes fuel to:',
   options: [
-    'A. Fuel to return to departure aerodrome — this is the correct regulatory position',
-    'B. A fixed 1-hour fuel addition and this applies to all IFR operations in Australian airspace',
-    'C. Fuel to fly from the destination missed approach point to the alternate aerodrome and conduct an approach and landing',
-    'D. Alternate fuel = 50% of trip fuel according to current CASR and AIP requirements'
+    'Fly all the way back to the departure aerodrome from the destination missed approach',
+    'Add a fixed one-hour fuel quantity to the flight plan total',
+    'Fly from the destination missed approach to the alternate and complete an approach and landing',
+    'An amount equal to 50 per cent of the planned trip fuel burn'
   ],
   correct: 2,
-  explanation: 'Alternate fuel: from the destination (after a missed approach — at the missed approach point altitude) to the alternate, plus the approach at the alternate, plus fuel to land. Calculated using: expected altitude, forecast wind and temperature, aircraft fuel burn at that altitude/power setting. The route may not be direct — airways routing or SID/STAR requirements may affect the distance.',
-  reference: 'CASR Part 91 / AIP ENR 1.1'
+  explanation: 'Alternate fuel covers flight from the destination (after a missed approach) to the alternate, the approach there and the landing, computed at the expected level with forecast wind and temperature. The routing may not be direct, so airways or SID/STAR distances are allowed for.',
+  reference: 'Part 91 MOS 19 / AIP ENR 1.1'
 },
 
 {
   question: 'An IFR flight plan\\\'s "fuel endurance" item should reflect:',
   options: [
-    'A. Total usable fuel on board expressed as flying time — typically to the point at which final reserve fuel will be exhausted (i.e',
-    'B. Trip fuel only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Only the fuel to reach the alternate and this applies to all IFR operations in Australian airspace',
-    'D. Fuel endurance need not be accurate on IFR flight plans according to current CASR and AIP requirements'
+    'Total usable fuel on board expressed as flying time',
+    'Trip fuel only',
+    'Only the fuel to reach the alternate',
+    'Fuel endurance need not be accurate on IFR flight plans'
   ],
   correct: 0,
-  explanation: 'Fuel endurance on flight plan: total usable fuel expressed as hours and minutes of flight. This activates the correct SAR timeline — if the aircraft is overdue, SAR will know approximately when the aircraft ran out of fuel. It is important that fuel endurance is realistic — not an overestimate (delays SAR) or underestimate (triggers premature SAR response).',
+  explanation: 'Fuel endurance on flight plan: total usable fuel expressed as hours and minutes of flight. This activates the correct SAR timeline — if the aircraft is overdue, SAR will know approximately when the aircraft ran out of fuel. It is important that fuel endurance is realistic — not an overestimate (delays SAR) or underestimate (triggers premature SAR response). To the point at which final reserve fuel would be exhausted.',
   reference: 'AIP ENR 1.10'
 },
 
 {
-  question: 'The "LSALT" (Lowest Safe Altitude) for IFR en-route flight is:',
+  question: 'The highest obstacle within the protected area of a route segment is 4,250 ft. In non-mountainous terrain, the LSALT for that segment is:',
   options: [
-    'A. The minimum altitude anywhere in Australia for IFR flight — this is the correct regulatory position',
-    'B. 5,000 ft AMSL in all cases — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The lowest altitude that provides at least 1,000 ft (or 2,000 ft in mountainous areas) obstacle clearance within a specified distance of the route',
-    'D. LSALT equals the MEA on all airways — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    '4,250 ft',
+    '5,000 ft',
+    '5,300 ft',
+    '6,250 ft'
   ],
   correct: 2,
-  explanation: 'LSALT: Lowest Safe Altitude — provides the specified vertical buffer (1,000 ft in flat terrain, 2,000 ft in mountainous) above the highest obstacle within the specified lateral corridor (typically ±5 nm of the route). Displayed on ERC (En-Route Charts) for each segment. The IFR cruising level must be at or above LSALT unless on an airway with a published MEA.',
-  reference: 'AIP ENR 1.1 / ERC charts'
+  explanation: 'Add 1,000 ft obstacle clearance to the highest obstacle (4,250 + 1,000 = 5,250 ft) and round up to the next 100 ft, giving 5,300 ft. In mountainous terrain the buffer is 2,000 ft.',
+  reference: 'AIP ENR 1.7 / GEN 3.3'
 },
 
 {
-  question: 'The difference between LSALT and MEA (Minimum En-Route Altitude) is:',
+  question: 'The difference between LSALT and MEA is that:',
   options: [
-    'A. They are the same — LSALT and MEA are interchangeable — this is the correct regulatory position',
-    'B. MEA provides both obstacle clearance AND guaranteed navigation signal reception (VOR/NDB) over the full route segment',
-    'C. MEA is always lower than LSALT and this applies to all IFR operations in Australian airspace',
-    'D. MEA applies to arrivals only; LSALT applies to departures according to current CASR and AIP requirements'
+    'Nothing at all, since the LSALT and the MEA are simply fully interchangeable terms',
+    'MEA gives both obstacle clearance and assured navigation-signal reception over the segment',
+    'MEA is always lower than the LSALT on a segment',
+    'MEA applies to arrivals and LSALT to departures only'
   ],
   correct: 1,
-  explanation: 'MEA (Minimum En-Route Altitude): airway altitude that guarantees (1) 1,000 ft obstacle clearance (2,000 ft mountainous) AND (2) adequate navigation signal coverage from the relevant navaid for the entire route segment. LSALT: provides only the obstacle clearance component. If flying above MEA, expect navigation signals. At LSALT only, navigation signals may be marginal or absent.',
-  reference: 'AIP ENR 3.1 / ICAO Doc 8168'
+  explanation: 'MEA guarantees both the obstacle clearance (1,000 ft, or 2,000 ft mountainous) and adequate navigation-signal coverage for the whole segment. LSALT provides only the obstacle-clearance component, so at LSALT the navigation signal may be marginal or absent.',
+  reference: 'AIP ENR 3.1'
 },
 
 {
-  question: 'An IFR pilot who calculates that fuel at destination will be 45 minutes above final reserve should:',
+  question: 'A pilot who calculates fuel at the destination will be 45 minutes above final reserve should:',
   options: [
-    'A. Continue — 45 minutes above final reserve is adequate contingency; monitor fuel consumption against plan and reassess at regular intervals',
-    'B. Declare minimum fuel to ATC immediately',
-    'C. Divert to the alternate immediately provided the pilot holds a current medical certificate',
-    'D. 45 minutes above final reserve is insufficient — refuel en-route'
+    'Continue; 45 minutes above final reserve is adequate, monitoring consumption against plan and reassessing',
+    'Declare minimum fuel to ATC straight away as a precaution',
+    'Divert to the nominated alternate immediately on reaching it',
+    'Treat it as insufficient and land to take on more fuel at an en-route aerodrome along the way'
   ],
   correct: 0,
-  explanation: 'Fuel state: 45 minutes above final reserve at destination is adequate (above the minimum required). Monitor fuel consumption against planned consumption throughout the flight. Compare actual fuel remaining against plan at checkpoints. If consumption is higher than planned, recalculate and consider earlier diversion. Declare "minimum fuel" when fuel remaining only allows completion of current flight without diversion.',
-  reference: 'CASR Part 91 / ICAO fuel management'
+  explanation: 'Forty-five minutes above final reserve is above the minimum, so the flight continues while consumption is monitored against the plan at checkpoints. If burn is higher than planned, recompute and consider an earlier diversion; \'minimum fuel\' is declared only when no diversion fuel remains.',
+  reference: 'Part 91 MOS 19 / fuel management'
 },
 
 {
   question: 'The IFR "minimum fuel" declaration to ATC means:',
   options: [
-    'A. The aircraft is declaring a fuel emergency',
-    'B. The aircraft has only 10 minutes of fuel remaining',
-    'C. The aircraft has fuel to complete the flight as planned but has no fuel to divert',
-    'D. Minimum fuel is only declared by commercial operators'
+    'The aircraft is declaring a fuel emergency',
+    'The aircraft has only 10 minutes of fuel remaining',
+    'The aircraft has fuel to complete the flight as planned but has no fuel to divert',
+    'Minimum fuel is only ever declared by the commercial air-transport operators'
   ],
   correct: 2,
   explanation: '"Minimum fuel": indicates that fuel state is such that the aircraft must land without undue delay but does not constitute an emergency. ATC should provide the most direct routing and expedite the approach. "Minimum fuel" is NOT a distress call — it is an advisory. If the fuel situation deteriorates to the point where fuel exhaustion before landing is possible, declare a MAYDAY (emergency).',
@@ -4011,51 +4011,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'IFR route selection considers which of the following factors?',
+  question: 'IFR route selection considers:',
   options: [
-    'A. Shortest distance only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only the first available airway on the chart — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Available airways and off-airway routes, LSALT/MEA compliance, navaid coverage, airspace classification, alternate aerodrome availability along the route, weather avoidance options',
-    'D. ATC will always assign the optimal route in the clearance — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The shortest distance between the points, and nothing else',
+    'Only the first available airway shown on the chart',
+    'Airways and off-airway routes, LSALT/MEA, navaid coverage, airspace, alternates and weather avoidance',
+    'Nothing, since ATC always assigns the single most optimal route in the clearance anyway'
   ],
   correct: 2,
-  explanation: 'IFR route selection: directness vs fuel vs weather vs alternates vs airspace. Factors: preferred airways and routes; LSALT on off-airway segments; MEA for navaid coverage; weather (avoiding forecast icing/turbulence areas); alternate placement along route; airspace restrictions (prohibited, restricted, danger areas); fuel efficiency (altitude for best groundspeed with forecast winds).',
-  reference: 'AIP ENR 1.1 / ERC charts'
+  explanation: 'Route selection balances directness, fuel, weather and airspace: preferred airways and off-airway segments, LSALT/MEA, navaid coverage, airspace restrictions, alternate placement along the route, and the level that gives the best wind and avoids forecast icing or turbulence.',
+  reference: 'AIP ENR 1.1 / ERC'
 },
 
 {
-  question: 'The "critical point" (CP) or "equal time point" (ETP) on an IFR flight is:',
+  question: 'The critical point (equal time point) on an IFR flight is:',
   options: [
-    'A. The point on the route from which it takes equal time to proceed to destination as to return to the departure or an en-route alternate',
-    'B. The point of no return from which the aircraft cannot return to departure — this is the correct regulatory position',
-    'C. The point at which maximum range is achieved and this applies to all IFR operations in Australian airspace',
-    'D. The midpoint of the route regardless of wind according to current CASR and AIP requirements'
+    'The point from which it takes equal time to continue to destination or return to departure or an alternate',
+    'The point of no return, beyond which the aircraft simply cannot get back to its departure point',
+    'The point at which the aircraft achieves its maximum range',
+    'The geometric midpoint of the route, regardless of the wind'
   ],
   correct: 0,
-  explanation: 'ETP/CP (Equal Time Point/Critical Point): calculated from ETP = D × GS_H ÷ (GS_O + GS_H) where D = route distance, GS_H = groundspeed homeward, GS_O = groundspeed onward. With a headwind on departure, the ETP is before the midpoint; with a tailwind, it is after. Used to decide: if a diversion is needed at the ETP, return to departure and proceed to destination take the same time.',
-  reference: 'AIP ENR 1.1 / CPL/ATPL flight planning'
+  explanation: 'The ETP/critical point is where it takes equal time to proceed to the destination or return to departure (or an en-route alternate). With a headwind outbound it lies before the midpoint; with a tailwind, after it. It is a time-based decision point, computed from the home and onward groundspeeds.',
+  reference: 'AIP ENR 1.1 / flight planning'
 },
 
 {
-  question: 'The "point of no return" (PNR) differs from the ETP because:',
+  question: 'The point of no return (PNR) differs from the ETP in that:',
   options: [
-    'A. They are the same — PNR and ETP are interchangeable — this is the correct regulatory position',
-    'B. The PNR is the furthest point along the route from which the aircraft can return to the departure with a specified fuel reserve',
-    'C. The PNR is always further from departure than the ETP and this applies to all IFR operations in Australian airspace',
-    'D. The PNR only applies to oceanic flights according to current CASR and AIP requirements'
+    'Nothing at all, since the PNR and the ETP are in fact simply fully interchangeable terms',
+    'The PNR is the furthest point from which the aircraft can still return to departure with its reserves',
+    'The PNR is always further from departure than the ETP',
+    'The PNR applies only to oceanic operations, not domestic ones'
   ],
   correct: 1,
-  explanation: 'PNR: fuel-based — how far along the route can the aircraft go and still return with reserves? ETP: time-based — where on the route does equal time apply to proceed or return? With a headwind out: PNR < ETP (fuel runs out before equal time). With a tailwind out: PNR > ETP. PNR formula: PNR time = E × GS_H ÷ (GS_O + GS_H) where E = endurance.',
-  reference: 'AIP ENR 1.1'
+  explanation: 'The PNR is fuel-based: the furthest point from which the aircraft can return to departure and still keep its reserves. The ETP is time-based. With a headwind outbound the PNR is before the ETP; with a tailwind, after it.',
+  reference: 'AIP ENR 1.1 / flight planning'
 },
 
 {
   question: 'An IFR flight plan shows "F/3+30" in the fuel field — this means:',
   options: [
-    'A. Fuel type F and flight time 3 hours 30 minutes',
-    'B. The fuel flow rate is 3.30 litres per minute',
-    'C. Fuel endurance of 3 hours 30 minutes total — the total usable fuel expressed as flying time',
-    'D. Fuel on board is 330 litres'
+    'Fuel type F is carried, with a flight time of 3 hours 30 minutes',
+    'The planned fuel flow rate is exactly 3.30 litres for every minute that is flown',
+    'Fuel endurance of 3 hours 30 minutes total, the total usable fuel expressed as flying time',
+    'The fuel on board is 330 litres of usable fuel'
   ],
   correct: 2,
   explanation: '"F/3+30" on a flight plan (ICAO format): fuel endurance = 3 hours 30 minutes. This is the total flying time available from the fuel on board (usable fuel ÷ fuel flow at planned power). SAR uses this to determine when the aircraft would run out of fuel in the event it is overdue. Accuracy is important — a SAR aircraft will not search beyond this time window initially.',
@@ -4063,51 +4063,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'When checking NOTAMS for an IFR flight, which items are most critical?',
+  question: 'The most critical NOTAMs to check for an IFR flight are:',
   options: [
-    'A. Airport opening hours only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Weather NOTAMs only — all other NOTAMs are advisory — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. NOTAMs for aircraft above MTOW 5,700 kg only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Navaid serviceability (ILS, VOR, NDB), approach and departure procedure amendments, runway/taxiway closures, airspace restrictions, aerodrome lighting serviceability'
+    'Only the published opening and closing hours of the destination aerodrome on the day in question',
+    'Only the weather-related NOTAMs, since all other NOTAMs are merely advisory',
+    'Only those NOTAMs affecting aircraft above 5,700 kg maximum take-off weight',
+    'Navaid serviceability, procedure amendments, runway and taxiway closures, airspace restrictions and lighting'
   ],
   correct: 3,
-  explanation: 'Critical IFR NOTAMs: navaid outages (ILS unserviceable = no precision approach); approach procedure changes (minimums, constraints); runway/taxiway unavailability; approach lighting unserviceable (raises minima); airspace restrictions along route; aerodrome closures; GNSS interference notices; bird hazard NOTAMs. Check destination AND alternate NOTAMs — a NOTAM making the alternate\\\'s only approach unavailable requires a different alternate.',
+  explanation: 'Critical IFR NOTAMs include navaid outages (e.g. ILS unserviceable removes the precision approach), approach/departure procedure amendments, runway or taxiway closures, approach-lighting unserviceability (which raises minima), airspace restrictions and GNSS interference. Check destination and alternate, an outage at the alternate may force a different one.',
   reference: 'AIP GEN 3.1'
 },
 
 {
-  question: 'The IFR pre-flight weather minima check requires the pilot to confirm:',
+  question: 'The IFR pre-flight weather check requires the pilot to confirm:',
   options: [
-    'A. Only that the departure aerodrome is VFR — this is the correct regulatory position',
-    'B. Only destination weather — other conditions are irrelevant for pre-flight and this applies to all IFR operations in Australian airspace',
-    'C. Weather is only checked for commercial IFR flights according to current CASR and AIP requirements',
-    'D. Departure conditions are above departure minima; en-route weather is acceptable; destination forecast is above minima at ETA'
+    'Only that the departure aerodrome is in VFR conditions',
+    'Only the destination weather, since the other conditions along the route do not really matter',
+    'Nothing, since weather is only checked for commercial IFR flights',
+    'Departure above departure minima, en-route weather acceptable, and destination forecast above minima at ETA'
   ],
   correct: 3,
-  explanation: 'IFR weather pre-flight check: (1) Departure: can the aircraft depart IFR? Check METAR, ceiling/visibility vs published departure minima; (2) En-route: SIGMET/AIRMET for icing, turbulence, CB; upper winds; (3) Destination: TAF for ETA window vs approach minima; (4) Alternate: TAF vs alternate minima; (5) Fuel: sufficient for worst-case including holding and alternate.',
-  reference: 'CASR Part 91 / AIP ENR 1.1'
+  explanation: 'The check covers departure (against departure minima), en-route hazards (SIGMET icing, turbulence, CB, winds), the destination forecast at ETA against approach minima, the alternate against alternate minima, and that fuel covers the worst case including holding and the alternate.',
+  reference: 'Part 91 MOS / AIP ENR 1.1'
 },
 
 {
-  question: 'The ATIS message code letter significance for IFR arrival is:',
+  question: 'The significance of the ATIS code letter for an IFR arrival is that:',
   options: [
-    'A. Used to identify the pilot on initial contact — this is the correct regulatory position',
-    'B. The ATIS code letter is only required for departures and this applies to all IFR operations in Australian airspace',
-    'C. On first contact with approach/arrival control, the pilot reports the ATIS code letter confirming receipt of current ATIS',
-    'D. ATIS code letters are used by ATC for billing purposes according to current CASR and AIP requirements'
+    'It is used by ATC to identify the individual pilot on first radio contact on frequency',
+    'The ATIS code letter is required only for departing aircraft',
+    'On first contact, the pilot reports the ATIS code letter to confirm receipt of the current ATIS',
+    'ATIS code letters are used by ATC for billing purposes'
   ],
   correct: 2,
-  explanation: 'ATIS and IFR arrival: obtain ATIS before calling approach/arrival. On initial call: "[callsign], [position], [altitude], information [code letter]." ATC confirms the code: "Roger, information [letter] current." If ATIS has updated, ATC says "information [new letter] is current" and the pilot must obtain and confirm the new ATIS. Having current ATIS ensures the pilot knows the in-use runway and approach type.',
+  explanation: 'The pilot obtains ATIS before calling approach and reports the code letter on first contact; ATC confirms it is current or advises a newer one to obtain. This ensures the pilot has the in-use runway, approach and conditions before being sequenced.',
   reference: 'AIP ENR 1.1'
 },
 
 {
   question: 'An IFR flight to a destination with no published instrument approach procedure:',
   options: [
-    'A. May descend to circuit height provided the pilot has the aerodrome in sight from the LSALT',
-    'B. May only descend below the LSALT when the pilot can comply with VFR requirements — conducting a visual descent from LSALT in VMC to land',
-    'C. May conduct a non-precision approach using GPS regardless of publication',
-    'D. Is not permitted under CASR Part 91'
+    'May descend to circuit height provided the pilot has the aerodrome in sight from the LSALT',
+    'May descend below the LSALT only when able to comply with VFR, conducting a visual descent in VMC to land',
+    'May conduct a non-precision approach using GPS regardless of publication',
+    'Is not permitted at all under CASR Part 91'
   ],
   correct: 1,
   explanation: 'IFR to aerodrome without instrument approach: the aircraft can fly IFR to the LSALT. If at LSALT the aerodrome is visible and VMC exists (can maintain VMC for the remainder), the pilot can cancel IFR and descend visually (VFR). If VMC cannot be maintained from LSALT, descent is not authorised — the aircraft must hold, divert, or continue to an aerodrome with a published approach.',
@@ -4115,25 +4115,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The IFR "departure minima" are relevant because:',
+  question: 'IFR departure minima are relevant because they:',
   options: [
-    'A. They specify the weather conditions below which IFR departure may not be authorised at specific aerodromes',
-    'B. They are the minimum fuel for departure — this is the correct regulatory position',
-    'C. Departure minima only apply to commercial operators and this applies to all IFR operations in Australian airspace',
-    'D. No departure minima exist for IFR flights in Australia according to current CASR and AIP requirements'
+    'Set the weather below which an IFR departure may not be authorised at a particular aerodrome',
+    'Specify the minimum fuel that is required before an IFR departure',
+    'Apply only to commercial air-transport operators, and not at all to private operations',
+    'Do not exist, since no departure minima apply to IFR flights in Australia'
   ],
   correct: 0,
-  explanation: 'Departure minima: at some aerodromes, specific ceiling/visibility minima must be met before an IFR departure (ensuring safe return if an issue arises immediately after departure). Published departure minima account for the terrain environment and available approach procedures. In the absence of published departure minima, standard requirements apply — usually ensuring visual departure is possible or that IFR departure ODP (obstacle departure procedure) can be followed.',
-  reference: 'AIP ENR 1.5 / CASR Part 91'
+  explanation: 'At some aerodromes a ceiling/visibility must be met before an IFR departure, reflecting the terrain and available return options. Where none is published, standard requirements apply, typically ensuring a visual departure or that the obstacle departure procedure can be flown.',
+  reference: 'AIP ENR 1.5 / Part 91'
 },
 
 {
   question: 'En-route IFR position reports to ATC (when required) include:',
   options: [
-    'A. Only the aircraft callsign',
-    'B. Position reports are never required in Australian IFR',
-    'C. Aircraft callsign, position (fix name), time over fix, altitude, next fix and ETA, and the fix after next',
-    'D. Only altitude reports are required — position is tracked by radar'
+    'Only the aircraft callsign is reported, with no other items required at all',
+    'Position reports are never required at all in Australian IFR operations',
+    'Aircraft callsign, position (fix name), time over fix, altitude, next fix and ETA, and the fix after next',
+    'Only altitude reports are required, since the aircraft position is continuously tracked by radar'
   ],
   correct: 2,
   explanation: 'IFR position report (non-radar or when ATC requests): "[callsign] over [fix] at [time] [altitude]. Estimating [next fix] at [time]. Next [following fix]." In radar environments, ATC may advise "radar identified, no position reports required" — but altitude reports on reaching cleared level and reports at compulsory reporting points in some areas are still required.',
@@ -4141,38 +4141,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An airways clearance that includes "climb to and maintain FL130, expect FL180 15 minutes after departure" means:',
+  question: 'A clearance \'climb to and maintain FL130, expect FL180 15 minutes after departure\' means the aircraft is:',
   options: [
-    'A. The aircraft is cleared to FL130 and should plan fuel and performance for the initial climb to FL130; the "expect FL180" is not a clearance',
-    'B. The aircraft is cleared to FL180 immediately — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The aircraft should climb directly to FL180 and this applies to all IFR operations in Australian airspace',
-    'D. "Expect" instructions are mandatory and must be flown according to current CASR and AIP requirements'
+    'Cleared to FL130 and planning for FL180; the \'expect FL180\' is advisory, not a clearance to climb',
+    'Cleared to climb to FL180 immediately after becoming airborne',
+    'Required to climb directly to FL180 once it is airborne',
+    'Bound by the \'expect FL180\' instruction exactly as if it were already a firm clearance'
   ],
   correct: 0,
-  explanation: '"Expect" altitude: a planning advisory allowing the crew to compute fuel and performance for the anticipated higher level, but NOT a clearance. The aircraft must remain at the last assigned altitude (FL130) until ATC issues an actual "climb to FL180" clearance. If radio failure occurs: fly the "expect" altitude at the expected time — this is the intention of the "expect" message.',
+  explanation: 'An \'expect\' level lets the crew plan fuel and performance for the anticipated level but is not a clearance; the aircraft stays at FL130 until ATC issues the climb. In the event of radio failure, the expected level is flown at the expected time.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'The IFR contingency fuel component covers:',
+  question: 'IFR contingency fuel covers:',
   options: [
-    'A. Extra fuel for the return trip home — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Contingency fuel is only required for over-water flights and this applies to all IFR operations in Australian airspace',
-    'C. Unforeseen deviations from planned route or altitude, weather avoidance, ATC re-routing, higher-than-planned fuel burn, or other operational contingencies',
-    'D. Contingency fuel = final reserve fuel × 2 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Extra fuel carried solely for an eventual return trip back to the departure point',
+    'Only over-water flights, where it is a special requirement',
+    'Unforeseen deviations, weather avoidance, ATC re-routing, or higher-than-planned fuel burn',
+    'An amount equal to twice the final reserve fuel'
   ],
   correct: 2,
-  explanation: 'Contingency fuel: covers unforeseen events — unexpected headwinds, ATC re-routing adding track distance, deviation around weather, higher-than-forecast fuel burn, or holding at destination. Typically 5% of trip fuel or the amount consumed in 5 minutes of cruise at cruise power (whichever is greater). Operators may have higher company requirements.',
-  reference: 'CASR Part 91 / ICAO Doc 9976'
+  explanation: 'Contingency fuel covers unforeseen events: unexpected headwinds, ATC re-routing, weather deviation, higher-than-forecast burn or short holding. It is commonly 5% of trip fuel or the fuel for a few minutes of cruise, whichever is greater, with operators sometimes carrying more.',
+  reference: 'Part 91 MOS 19 / ICAO Doc 9976'
 },
 
 {
   question: 'When an IFR aircraft is given "direct to" routing by ATC cutting across the filed route:',
   options: [
-    'A. The pilot may accept without checking terrain clearance — ATC is responsible',
-    'B. Direct routing cannot be accepted in IFR',
-    'C. Direct routing is automatically approved once the aircraft is radar identified',
-    'D. The pilot must verify that the direct routing remains at or above the applicable LSALT or MEA for the new track before accepting'
+    'The pilot may accept without checking terrain clearance, ATC is responsible',
+    'Direct routing cannot be accepted in IFR',
+    'Direct routing is automatically approved as soon as the aircraft has been radar identified by ATC',
+    'The pilot must verify the direct routing stays at or above the applicable LSALT or MEA before accepting it'
   ],
   correct: 3,
   explanation: '"Direct to" ATC re-routing: the pilot must check that the new direct track is at or above LSALT/MEA. ATC provides radar services but the pilot must monitor terrain clearance. If the new direct track crosses terrain that requires a higher altitude, advise ATC: "[callsign], confirm [altitude] provides terrain clearance on direct routing — if not request [higher altitude]." Accept only if terrain clearance is confirmed.',
@@ -4180,51 +4180,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "holding fuel" addition to IFR fuel planning allows for:',
+  question: 'To descend 6,000 ft over a track distance of 15 nm at a groundspeed of 150 kt, the rate of descent required is approximately:',
   options: [
-    'A. Anticipated holding at destination or en-route — if ATC delays are expected',
-    'B. Fuel for the entire flight including alternates',
-    'C. Holding fuel is already included in final reserve',
-    'D. Holding fuel is only required for turbine aircraft'
+    '1,000 ft/min',
+    '600 ft/min',
+    '1,500 ft/min',
+    '750 ft/min'
   ],
   correct: 0,
-  explanation: 'Holding fuel: separate from final reserve — if delays at destination are anticipated (common at major airports during peak periods or poor weather), additional holding fuel should be calculated. Holding fuel = anticipated hold time × fuel flow at holding speed and altitude. If holding fuel is exhausted and the approach cannot be completed, the aircraft must divert to the alternate.',
-  reference: 'CASR Part 91 / ICAO Doc 9976'
+  explanation: 'At 150 kt, 15 nm takes 15/150 hour = 6 minutes. Descending 6,000 ft in 6 minutes needs 6,000/6 = 1,000 ft per minute. Rate of descent equals the height to lose divided by the time available.',
+  reference: 'Navigation - descent planning'
 },
 
 {
-  question: 'The importance of checking the "effective date" of an approach chart before an IFR flight:',
+  question: 'Why must the effective date of an approach chart be checked before an IFR flight?',
   options: [
-    'A. Charts do not expire — all charts are permanently valid',
-    'B. Procedure changes take effect on the AIRAC date — using an out-of-date chart risks flying a superseded procedure with incorrect minima, waypoints or course. Always verify the chart effective date matches the current AIRAC cycle',
-    'C. Charts only need checking if a NOTAM has been issued for that aerodrome',
-    'D. Chart dates are advisory only — procedures rarely change'
+    'Charts never expire, so the printed effective date is purely informational',
+    'The effective date matters only if a NOTAM has been issued for that aerodrome',
+    'Chart dates are advisory only, since published instrument procedures rarely change',
+    'Procedures change on the AIRAC date; an outdated chart may show superseded minima or tracks'
   ],
   correct: 3,
-  explanation: 'AIRAC (Aeronautical Information Regulation And Control): standardised 28-day cycle for publishing aeronautical information changes. Approach procedures change frequently — new obstacles found, navaid changes, course amendments, new procedures published. Using an outdated chart on an IFR approach is potentially dangerous. Always verify chart currency before flight — check the effective date against today\\\'s date.',
+  explanation: 'Instrument procedures change on the 28-day AIRAC cycle (new obstacles, navaid or course changes). An out-of-date chart may show superseded minima, waypoints or tracks, so the chart effective date must match the current AIRAC cycle.',
   reference: 'AIP GEN 3.3 / AIRAC cycle'
 },
 
 {
-  question: 'An IFR flight plan that includes a "Y" or "Z" type flight plan indicates:',
+  question: 'A \'Y\' or \'Z\' type IFR flight plan indicates:',
   options: [
-    'A. A composite flight plan — "Y" = first IFR then VFR; "Z" = first VFR then IFR; these require specific handling at the transition point',
-    'B. A yellow or zebra-coded special flight as approved by CASA under current regulations',
-    'C. An experimental flight plan format',
-    'D. Y and Z are not used in Australian flight plans'
+    'A composite plan, where Y is IFR then VFR and Z is VFR then IFR, each handled at the transition point',
+    'A flight that is coded yellow or zebra, indicating special ATC handling',
+    'An experimental or trial flight-plan format used only on very rare occasions in practice',
+    'Codes that are not used in Australian flight plans at all'
   ],
   correct: 0,
-  explanation: 'Composite flight plan (ICAO): "Y" = begins IFR, changes to VFR (e.g. departs IFR, cancels IFR en-route and continues VFR); "Z" = begins VFR, activates IFR (departs VFR, later picks up IFR clearance en-route). "I" = IFR throughout; "V" = VFR throughout. The transition point and time must be specified. Used when operating conditions warrant changing flight rules during the flight.',
+  explanation: 'A composite flight plan changes flight rules en-route: Y begins IFR and changes to VFR; Z begins VFR and activates IFR; I is IFR throughout and V is VFR throughout. The transition point and time are specified.',
   reference: 'AIP ENR 1.10'
 },
 
 {
   question: 'The "TAS" used for IFR flight planning differs from "IAS" because:',
   options: [
-    'A. TAS is always slower than IAS',
-    'B. TAS (True Airspeed) corrects IAS for air density changes with altitude',
-    'C. TAS is the airspeed used for ATC communication',
-    'D. IAS and TAS are the same at all altitudes'
+    'TAS is always slower than IAS',
+    'TAS (True Airspeed) corrects IAS for air density changes with altitude',
+    'TAS is the airspeed that is used for ATC radio communication',
+    'IAS and TAS are the same at all altitudes'
   ],
   correct: 1,
   explanation: 'TAS vs IAS: IAS is what the pitot-static system measures (dynamic pressure). TAS = IAS corrected for air density and temperature. At altitude, lower density means higher TAS for same IAS. Approximate: TAS ≈ IAS × (1 + 0.02 × altitude in thousands of feet). For flight planning, TAS (not IAS) is used to calculate groundspeed and ETA with wind. IAS is used for aircraft handling and ATC speed instructions.',
@@ -4234,10 +4234,10 @@ export const irexQuestions: {
 {
   question: 'An IFR pilot tracking an airway observes that groundspeed is lower than planned, resulting in higher fuel burn per track mile. The correct action is:',
   options: [
-    'A. Increase power to maintain schedule',
-    'B. Continue as planned — variations are expected on IFR flights',
-    'C. Declare minimum fuel immediately to ATC',
-    'D. Recalculate fuel to destination and alternate; compare remaining fuel against required minimum'
+    'Increase the power setting to maintain the originally planned schedule to the destination',
+    'Continue as planned, variations are expected on IFR flights',
+    'Declare minimum fuel immediately to ATC',
+    'Recalculate fuel to destination and alternate; compare remaining fuel against required minimum'
   ],
   correct: 3,
   explanation: 'Fuel management: if groundspeed is below plan, fuel at destination will be less than planned. Recalculate: fuel remaining ÷ fuel flow = endurance; compare to required fuel (trip + alternate + final reserve + contingency). If fuel is becoming marginal, earlier diversion is more efficient (closer alternative uses less fuel). Do not wait until minimum fuel — proactive diversion planning is required.',
@@ -4247,10 +4247,10 @@ export const irexQuestions: {
 {
   question: 'The "clearance void time" on an IFR departure clearance means:',
   options: [
-    'A. The time by which the aircraft must land at destination',
-    'B. The time at which the IFR flight plan becomes active',
-    'C. Clearance void times are only issued for international flights',
-    'D. The time by which the aircraft must be airborne, after which the clearance expires and must be obtained again'
+    'The time by which the aircraft must land at its destination aerodrome',
+    'The time at which the IFR flight plan first becomes active within the ATC computer system',
+    'Clearance void times are only issued for international flights',
+    'The time by which the aircraft must be airborne; after it, the clearance lapses and must be reissued'
   ],
   correct: 3,
   explanation: 'Clearance void time: ATC clears the pilot for IFR departure with a void time (e.g. "clearance void if not airborne by 1435"). If not airborne by 1435, the clearance has expired and cannot be used. The pilot must contact ATC to obtain a new clearance. If radio contact is impossible, the pilot must not depart. If airborne and clearance expires, activate NORDO (7600) procedures.',
@@ -4260,10 +4260,10 @@ export const irexQuestions: {
 {
   question: 'ERC (En-Route Chart) designations for IFR airways in Australia use:',
   options: [
-    'A. Letter "A" for all airways regardless of altitude',
-    'B. Numbers only — no letters are used on ERCs',
-    'C. Airways are not depicted on ERCs — only on TACs',
-    'D. Letters designating airway type and altitude — "B" (blue) for low-level airways'
+    'The letter A is used for all airways regardless of their altitude',
+    'Numbers only, no letters are used on ERCs',
+    'Airways are not depicted on ERCs, only on TACs',
+    'Letters designating airway type and altitude, "B" (blue) for low-level airways'
   ],
   correct: 3,
   explanation: 'Australian ERC airways: low-level airways use various designators (B, G, R, T, V etc.) for specific route types. Upper airways designated with "A" and number (A1, A464 etc.). Each airway segment shows: track, distance, LSALT or MEA, any altitude restrictions. Pilots choose airways based on direction, altitude requirements, and navaid coverage. ERSA and ERC (L/H) are the primary IFR route documents.',
@@ -4271,25 +4271,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An IFR crew performing the descent checks must include:',
+  question: 'The IFR descent checks must include:',
   options: [
-    'A. Only altimeter setting update — this is the correct regulatory position',
-    'B. Descent checks are optional for single-pilot IFR and this applies to all IFR operations in Australian airspace',
-    'C. Only fuel check and QNH are required for descent according to current CASR and AIP requirements',
-    'D. Obtaining destination ATIS, setting destination QNH, reviewing approach to be used, briefing the approach'
+    'Only an update of the altimeter pressure setting',
+    'Nothing at all, since the descent checks are entirely optional for single-pilot IFR',
+    'Obtain destination ATIS, set the QNH, confirm the approach and runway, and brief the approach',
+    'Only a fuel check and the QNH setting for the descent'
   ],
-  correct: 3,
-  explanation: 'IFR descent checks: (1) Obtain ATIS (approach in use, weather, QNH); (2) Set QNH on altimeter; (3) Confirm approach type and runway; (4) Complete approach briefing (chart review); (5) Calculate Vref/approach speeds; (6) Check fuel against plan; (7) Review alternate weather if close to minima; (8) Descent checklist. Good crew management allocates roles for workload during descent.',
+  correct: 2,
+  explanation: 'Descent preparation obtains ATIS, sets QNH, confirms the approach and runway, completes the approach briefing, computes approach speeds, checks fuel against plan and reviews the alternate if conditions are near minima, all before the workload rises on approach.',
   reference: 'AIP ENR 1.5 / SOPs'
 },
 
 {
   question: 'The holding fuel required for an IFR aircraft holding at FL100 at 180 KTAS:',
   options: [
-    'A. Cannot be calculated without the fuel flow figure from the AFM',
-    'B. Holding fuel is always 10% of trip fuel regardless of aircraft type',
-    'C. Holding at FL100 uses the same fuel as cruise',
-    'D. Is calculated as: fuel flow (from performance data at FL100, holding speed) × time of anticipated hold'
+    'It cannot be calculated at all without the fuel flow figure from the AFM',
+    'Holding fuel is always 10% of the trip fuel regardless of the aircraft type',
+    'Holding at FL100 uses the same fuel as cruise',
+    'It is calculated from the fuel flow (FL100, holding speed) times the anticipated hold time'
   ],
   correct: 3,
   explanation: 'Holding fuel calculation: fuel flow at holding altitude and speed (from AFM/POH performance section) × holding time anticipated. Different from cruise fuel flow — holding is typically slower speed, higher configuration drag possible, and different power setting. Always use AFM figures. For planning when hold time is uncertain, use a reasonable estimate (30 min minimum is common) and carry adequate reserves.',
@@ -4297,155 +4297,155 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An IFR filed cruising level of FL130 requires the pilot to request a level change if:',
+  question: 'A pilot at FL130 should request a level change when:',
   options: [
-    'A. Forecast icing at FL130 cannot be avoided, turbulence at FL130 is forecast as severe, fuel planning benefits from a different level, or ATC',
-    'B. The pilot feels uncomfortable at FL130 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Level changes are not permitted on IFR flights and this applies to all IFR operations in Australian airspace',
-    'D. Level changes require a new flight plan submission according to current CASR and AIP requirements'
+    'Forecast icing or severe turbulence at FL130 cannot be avoided, fuel favours another level, or ATC requires it',
+    'The pilot simply feels a little uncomfortable at FL130 for no particular operational reason today',
+    'Never, since level changes are simply not permitted on IFR flights',
+    'Only after the submission of an entirely new flight plan'
   ],
   correct: 0,
-  explanation: 'Level change requests: ATC expects pilots to request level changes when conditions warrant — icing, turbulence, mechanical issue, fuel optimization, or ATC-initiated. Format: "[callsign], request climb to FL150 due icing at FL130." ATC will approve, deny, or give a different level based on traffic. Pilots should not remain in hazardous conditions when a safe alternative exists.',
-  reference: 'AIP ENR 1.1 / CASR Part 91'
+  explanation: 'ATC expects a level-change request when conditions warrant, icing, turbulence, a defect, fuel optimisation, or an ATC need, with a stated reason. ATC approves, denies or offers an alternative on traffic. The pilot should not stay in hazardous conditions when a safe level is available.',
+  reference: 'AIP ENR 1.1 / Part 91'
 },
 
 {
-  question: 'The significance of "compulsory reporting points" on IFR routes is:',
+  question: 'The significance of compulsory reporting points on IFR routes is that they:',
   options: [
-    'A. Compulsory reporting points (depicted with a solid triangle on charts) require a position report even when radar identified',
-    'B. These are only reporting points for emergency services — this is the correct regulatory position',
-    'C. Reporting at these points is optional when in radar contact and this applies to all IFR operations in Australian airspace',
-    'D. Compulsory reporting only applies above FL200 according to current CASR and AIP requirements'
+    'Require a position report even when the aircraft is radar identified, unlike on-request points',
+    'Are reporting points that are used only by the emergency and rescue services en-route',
+    'Need a position report only when the aircraft is in radar contact',
+    'Apply as compulsory reports only above FL200'
   ],
   correct: 0,
-  explanation: 'Compulsory reporting points (solid triangle on ERC): require a position report regardless of radar contact. On-request points (open triangle) are only reported when requested by ATC. Compulsory points are selected for significant airway intersections, sector boundaries, or areas of coverage limitation. Even in radar contact, if a compulsory point is specified, the pilot reports.',
-  reference: 'AIP ENR 1.1 / ERC charts'
+  explanation: 'A compulsory reporting point requires a position report regardless of radar contact, whereas an on-request point is reported only when ATC asks. They sit at significant intersections, boundaries or coverage limits to maintain the traffic picture.',
+  reference: 'AIP ENR 1.1 / ERC'
 },
 
 {
-  question: 'When planning an IFR flight, the "sector safe altitude" (SSA) is used to:',
+  question: 'The sector safe altitude (SSA/MSA) on an approach chart is used to:',
   options: [
-    'A. Define the lowest IFR cruising level in that sector — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Define the upper limit for VFR aircraft in each sector and this applies to all IFR operations in Australian airspace',
-    'C. Provide a quick-reference emergency altitude — if position is uncertain or an emergency descent is required, the SSA guarantees 1,000 ft clearance',
-    'D. SSA is the same as FL100 in all sectors — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Define the lowest IFR cruising level that simply happens to be available within that one sector',
+    'Define the upper limit for VFR aircraft within each charted sector',
+    'An emergency reference altitude giving 1,000 ft clearance when position is uncertain or a descent is needed',
+    'It is simply FL100 in every sector drawn around the navaid'
   ],
   correct: 2,
-  explanation: 'SSA (Sector Safe Altitude, also called MSA — Minimum Sector Altitude): depicted as a ring around the reference navaid (ILS, VOR, NDB) divided into sectors. Provides 1,000 ft obstacle clearance within 25 nm. Used as emergency reference only — not for normal operations. In an emergency descent or position uncertainty, SSA gives a quick, safe altitude reference without requiring detailed chart analysis.',
+  explanation: 'The SSA/MSA is a ring (usually 25 nm) around the reference navaid, divided into sectors, each giving 1,000 ft obstacle clearance. It is an emergency reference for position uncertainty or an emergency descent, not a normal operating altitude.',
   reference: 'ICAO Doc 8168 / AIP ENR 1.5'
 },
 
 {
-  question: 'The instrument rating privileges under CASR Part 61 allow the holder to:',
+  question: 'The instrument rating under CASR Part 61 allows the holder to:',
   options: [
-    'A. Fly any aircraft in any conditions without restriction — this is the correct regulatory position',
-    'B. Act as pilot-in-command or co-pilot of an aircraft under IFR, conducting instrument approaches and departures in instrument meteorological',
-    'C. Only fly IFR in Class C airspace and this applies to all IFR operations in Australian airspace',
-    'D. Fly IFR only with a safety pilot on board according to current CASR and AIP requirements'
+    'Fly any aircraft at all in any weather conditions whatsoever, entirely without any restriction',
+    'Act as pilot-in-command or co-pilot under the IFR and conduct instrument approaches and departures in IMC',
+    'Fly IFR only within Class C airspace and nowhere else',
+    'Fly IFR only when a safety pilot is also carried on board'
   ],
   correct: 1,
-  explanation: 'Instrument Rating (IR) privileges: PIC or co-pilot under IFR in IMC; conduct instrument approaches (ILS, VOR, NDB, RNAV) to published minima; conduct SID/STAR procedures; operate in Class A, B, C, D, E (IFR) airspace. Subject to: currency (instrument approach in the past 90 days), aircraft type endorsement, and applicable medical certificate.',
-  reference: 'CASR Part 61.680 / CASR Part 61 MOS'
+  explanation: 'The instrument rating allows acting as PIC or co-pilot under the IFR in IMC, flying published instrument approaches and SID/STAR procedures, subject to currency, the relevant aircraft endorsement and a valid medical. It is not an unrestricted privilege.',
+  reference: 'CASR Part 61.680 / Part 61 MOS'
 },
 
 {
-  question: 'IFR instrument currency requires the pilot to have completed, within the preceding 90 days:',
+  question: 'The radio communications equipment required for an IFR flight must:',
   options: [
-    'A. 3 instrument approaches in actual IMC only — this is the correct regulatory position',
-    'B. 10 hours of instrument flight time and this applies to all IFR operations in Australian airspace',
-    'C. At least 3 instrument approaches (in actual or simulated IMC, or in an approved flight simulator), and holds and intercepts',
-    'D. Currency is annual — once per year only according to current CASR and AIP requirements'
+    'Be a single handheld transceiver carried as a backup only',
+    'Provide two-way communication on the frequencies required for the route, all serviceable',
+    'Include HF radio on every flight regardless of the area flown',
+    'Be optional wherever the flight happens to remain under radar coverage throughout'
   ],
-  correct: 2,
-  explanation: 'IR currency (CASR Part 61 MOS): in the preceding 90 days, at least 3 instrument approaches to the lowest published minimums, plus holding patterns and intercepting and tracking courses (radials). Can be completed in actual IMC, simulated IMC (with safety pilot), or an approved flight simulator/FTD. If expired, must complete recurrency with an approved testing officer.',
-  reference: 'CASR Part 61 MOS Schedule 3'
+  correct: 1,
+  explanation: 'An IFR flight must carry serviceable radio able to maintain two-way communication on the frequencies needed for the route and airspace; in remote areas where VHF coverage is inadequate, HF (or an approved alternative) is also required.',
+  reference: 'CASR Part 91 / MOS 3.1.3'
 },
 
 {
   question: 'Class A airspace in Australia is:',
   options: [
-    'A. The area immediately surrounding all controlled airports — this is the correct regulatory position',
-    'B. All airspace above FL180 (18,000 ft) — IFR only, all aircraft require ATC clearance, VMC flight is not permitted',
-    'C. Class A is only in Australian oceanic airspace and this applies to all IFR operations in Australian airspace',
-    'D. Class A begins at 10,000 ft AMSL according to current CASR and AIP requirements'
+    'The control area lying immediately around every single controlled airport across the country',
+    'All airspace at and above FL245, IFR only, with ATC clearance required and VMC operations not permitted',
+    'Found only within Australian oceanic airspace, and nowhere else',
+    'Airspace beginning at 10,000 ft AMSL across the country'
   ],
   correct: 1,
-  explanation: 'Class A airspace: IFR only — VFR is not permitted. All aircraft require ATC clearance. ATC provides separation between all aircraft. In Australia: all airspace above FL180. Also designated in high-density terminal areas (Upper Control Areas). Turbulence, wake turbulence, and traffic conflicts are managed entirely by ATC in Class A.',
-  reference: 'CASR Part 71 / AIP ENR 1.4'
+  explanation: 'In Australia, Class A is at and above FL245 (with some designated upper terminal areas). It is IFR only, VFR is not permitted, every aircraft requires an ATC clearance, and ATC separates all traffic.',
+  reference: 'AIP ENR 1.4 / CASR Part 71'
 },
 
 {
-  question: 'Class E airspace is significant for IFR operations because:',
+  question: 'Class E airspace is significant for IFR because it is:',
   options: [
-    'A. Class E is restricted to military operations — this is the correct regulatory position',
-    'B. Class E is uncontrolled — no ATC separation is provided and this applies to all IFR operations in Australian airspace',
-    'C. Class E is controlled airspace — IFR aircraft require ATC clearance and receive separation from other IFR traffic',
-    'D. Class E prohibits IFR flight below FL100 according to current CASR and AIP requirements'
+    'Airspace that is restricted to military operations only',
+    'Uncontrolled airspace, with no ATC separation service provided to any of the aircraft',
+    'Controlled for IFR, where IFR aircraft need a clearance and are separated from other IFR traffic',
+    'A class of airspace that prohibits IFR flight below FL100'
   ],
   correct: 2,
-  explanation: 'Class E: controlled airspace for IFR aircraft. IFR: requires clearance, receives IFR-IFR separation. VFR: may enter without clearance, maintains own separation. An IFR aircraft in Class E may be sharing airspace with VFR aircraft — ATC provides information but not guaranteed separation. IFR-VFR separation is the pilot\\\'s responsibility in Class E regarding VFR aircraft.',
+  explanation: 'Class E is controlled for IFR: IFR aircraft need a clearance and receive IFR-to-IFR separation. VFR may enter without a clearance and self-separate, so an IFR aircraft may share Class E with VFR traffic that ATC is not separating it from.',
   reference: 'CASR Part 71 / AIP ENR 1.4'
 },
 
 {
-  question: 'Class G airspace IFR operations require:',
+  question: 'On an RNP procedure, a \'radius to fix\' (RF) leg requires the aircraft to fly:',
   options: [
-    'A. ATC clearance — Class G is fully controlled airspace — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. No ATC clearance since Class G is uncontrolled, but the pilot must file an IFR flight plan, maintain LSALT, self-announce on the appropriate frequency, and take full responsibility for terrain clearance and traffic separation',
-    'C. A special uncontrolled IFR endorsement beyond the standard instrument rating — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. VFR conditions at all times — IFR is not permitted in Class G — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'A straight track running directly between two named waypoints',
+    'A heading held until intercepting the next radial from a VOR',
+    'A curved path of constant radius to the next fix, holding the arc precisely',
+    'Any path the crew chooses, provided the next fix is overflown'
   ],
-  correct: 1,
-  explanation: 'Class G IFR: uncontrolled airspace — no ATC clearance required. Pilot responsibilities: file flight plan (activates SAR), maintain IFR currency, use IFR-equipped aircraft, broadcast on CTAF, maintain self-separation from other traffic. There is no ATC separation guarantee in Class G. The IFR instrument approach to an uncontrolled aerodrome in Class G is entirely the pilot\\\'s responsibility.',
-  reference: 'CASR Part 71 / AIP ENR 1.4'
+  correct: 2,
+  explanation: 'An RF leg is a constant-radius curved path joining two fixes, flown by the RNP system to a defined turn radius, letting procedures follow precise curved tracks around terrain or airspace. A straight geodesic between fixes is a track-to-fix (TF) leg.',
+  reference: 'MOS 6.2.4'
 },
 
 {
-  question: 'The ATC transponder squawk code "7700" indicates:',
+  question: 'The transponder code 7700 indicates:',
   options: [
-    'A. Hijack — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Emergency (general) — loss of aircraft control, medical emergency, fire, any life-threatening situation requiring',
-    'C. Communication failure and this applies to all IFR operations in Australian airspace',
-    'D. TCAS resolution advisory according to current CASR and AIP requirements'
+    'Unlawful interference or a hijack of the aircraft in progress',
+    'A general emergency, such as loss of control, fire or a medical or other life-threatening situation',
+    'A radio communication failure, with the aircraft now operating completely without radios',
+    'A TCAS resolution advisory currently in progress'
   ],
   correct: 1,
-  explanation: 'Transponder emergency codes: 7700 = general emergency (aviate, navigate, communicate — squawk 7700 as soon as possible in any emergency); 7600 = communication failure (NORDO); 7500 = unlawful interference (hijack). 7700 activates ATC emergency procedures — controllers give absolute priority and co-ordinate with emergency services. Do not select 7700 accidentally.',
+  explanation: '7700 is the general emergency code, selected as soon as practicable in any emergency; 7600 is radio failure and 7500 is unlawful interference. Squawking 7700 triggers ATC emergency handling and priority. It must not be selected inadvertently.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'Mode C transponder altitude reporting is required in Australian controlled airspace because:',
+  question: 'Mode C transponder altitude reporting is required in controlled airspace because:',
   options: [
-    'A. It provides ATC with the aircraft\'s pressure altitude encoded from the static system, allowing radar displays to show altitude alongside the transponder return — essential for IFR separation and surveillance',
-    'B. It provides the aircraft with real-time traffic information from other transponders — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. It allows the aircraft to communicate with TCAS-equipped aircraft automatically — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Mode C is required only above FL290 in RVSM airspace for separation purposes — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'It encodes the aircraft\'s pressure altitude with the transponder reply, so radar shows altitude for separation',
+    'It gives the aircraft real-time traffic information from the other transponders that are nearby',
+    'It lets the aircraft communicate automatically with TCAS-equipped aircraft',
+    'It is required only above FL290 within RVSM airspace for separation'
   ],
   correct: 0,
-  explanation: 'Mode C (altitude encoding transponder): the aircraft\\\'s static pressure altitude is encoded and transmitted with each transponder reply. ATC radar displays show the aircraft identification and altitude. Essential for: IFR separation in Class C, D, E; TCAS in equipped aircraft; Airservices TAAATS radar surveillance. Required in most controlled airspace and is mandated for IFR flight.',
-  reference: 'CASR Part 91 / AIP ENR 1.6'
+  explanation: 'Mode C encodes the aircraft\'s static pressure altitude and transmits it with each reply, so the radar display shows identity and altitude together, essential for IFR separation and surveillance and for TCAS in equipped aircraft. It is mandated for IFR in most controlled airspace.',
+  reference: 'Part 91 / AIP ENR 1.6'
 },
 
 {
-  question: 'ADS-B (Automatic Dependent Surveillance — Broadcast) differs from Mode C because:',
+  question: 'ADS-B differs from Mode C in that:',
   options: [
-    'A. ADS-B requires radar interrogation to respond — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. ADS-B uses HF radio frequencies and has longer range than Mode C radar — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. ADS-B continuously broadcasts the aircraft\'s GNSS-derived position, altitude, groundspeed, and identity without requiring radar interrogation — functioning beyond radar range and providing other aircraft with traffic information',
-    'D. ADS-B only works in Class A airspace and cannot be received by other aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'It requires an active radar interrogation before it will respond at all',
+    'It uses HF radio frequencies and has a greater range than Mode C radar',
+    'It continuously broadcasts GNSS position, altitude and identity without interrogation, beyond radar range',
+    'It works only within Class A airspace, and so cannot be received by any other nearby aircraft'
   ],
   correct: 2,
-  explanation: 'ADS-B (out): aircraft GNSS receiver continuously broadcasts position, altitude, groundspeed, track, and identification. ATC ground stations receive the broadcast without radar interrogation — works beyond radar range. Traffic displays (TCAS, EFB apps) in other aircraft can show surrounding ADS-B traffic. Australia mandated ADS-B in controlled airspace above certain altitudes.',
-  reference: 'AIP ENR 1.6 / CASR Part 91'
+  explanation: 'ADS-B Out continuously broadcasts the aircraft\'s GNSS position, altitude, speed, track and identity. Ground stations receive it without interrogation, so it works beyond radar range, and other aircraft can display the traffic. Australia mandates ADS-B in controlled airspace above set levels.',
+  reference: 'AIP ENR 1.6 / Part 91'
 },
 
 {
   question: 'The "separation minima" between IFR aircraft in radar-controlled airspace is typically:',
   options: [
-    'A. 5 nm horizontally and 1,000 ft vertically at all altitudes',
-    'B. 10 nm horizontally at all times',
-    'C. Separation is only vertical — 1,000 ft at all times',
-    'D. Varies by airspace type and phase of flight — en-route 5 nm/1,000 ft (1,000 ft below FL290, 2,000 ft above)'
+    '5 nm horizontally and 1,000 ft vertically at every single altitude without any exception applied',
+    '10 nm horizontally between IFR aircraft at all times',
+    'Separation is provided only vertically, 1,000 ft at all altitudes',
+    'Varies by airspace type and phase of flight, en-route 5 nm/1,000 ft (1,000 ft below FL290, 2,000 ft above)'
   ],
   correct: 3,
   explanation: 'Radar separation: en-route typically 5 nm horizontal or 1,000 ft vertical (2,000 ft at and above FL290). Terminal area: 3 nm horizontal or 1,000 ft vertical. Approaches: wake turbulence categories apply — heavy behind heavy 4 nm, light behind heavy up to 6 nm. Non-radar: 10 minutes or distance-based procedural separation. These are ICAO standards; actual values depend on specific Australian ATC procedures.',
@@ -4453,64 +4453,64 @@ export const irexQuestions: {
 },
 
 {
-  question: 'When operating IFR in Australian high-density airspace, the pilot must:',
+  question: 'Operating IFR in Australian high-density controlled airspace, the pilot must:',
   options: [
-    'A. Fly faster than 250 KIAS at all times — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only maintain radio watch during approaches — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. IFR pilots have no specific speed restrictions — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Comply with speed restrictions (250 KIAS below 10,000 ft), maintain assigned altitudes and headings, read back all clearances, respond promptly to ATC instructions'
+    'Fly faster than 250 KIAS at all times while in the area',
+    'Maintain a radio watch only during the approach phase of flight',
+    'Nothing at all, since IFR pilots have no specific speed restrictions whatever below 10,000 ft AGL',
+    'Comply with the 250 KIAS limit below 10,000 ft, hold assigned levels and headings, and read back clearances'
   ],
   correct: 3,
-  explanation: 'IFR in controlled airspace obligations: 250 KIAS maximum below 10,000 ft (CASR 91.249) unless higher speed authorised; maintain assigned levels; comply with ATC instructions immediately; readback clearances; report unable if any instruction cannot be complied with; maintain continuous radio watch; report significant weather.',
-  reference: 'CASR Part 91 / AIP ENR 1.1'
+  explanation: 'Obligations include the 250 KIAS limit below 10,000 ft (unless authorised otherwise), maintaining assigned levels and headings, immediate compliance with ATC, reading back clearances, reporting \'unable\' when an instruction cannot be met, and a continuous radio watch.',
+  reference: 'Part 91 / AIP ENR 1.1'
 },
 
 {
-  question: 'The "ATC clearance readback" obligation requires IFR pilots to:',
+  question: 'A \'navigation specification\' in the PBN concept (e.g. RNP 1, RNAV 5) defines:',
   options: [
-    'A. Read back only if ATC requests it — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only read back route clearances — altitude and headings need not be read back and this applies to all IFR operations in Australian airspace',
-    'C. A single "wilco" acknowledges all clearances without readback — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Read back all clearances containing altitude, heading, route, squawk, and any safety-critical instructions — verbatim for critical items; ATC listens and will correct any error'
+    'The performance and functional requirements for aircraft and crew on a route or procedure',
+    'The radio frequency that simply must be used while on that particular route',
+    'The minimum cloud base that is required to fly the procedure',
+    'The maximum number of aircraft permitted on the route at once'
   ],
-  correct: 3,
-  explanation: 'Readback requirement: all safety-critical ATC clearances must be read back — level clearances, heading instructions, route clearances, runway crossing, transponder codes, hold short instructions. ATC listens for readback accuracy. If the readback is wrong, ATC corrects it: "Negative, I say again FL130, report reaching." This closed-loop communication prevents errors.',
-  reference: 'AIP ENR 1.1 / ICAO Doc 4444'
+  correct: 0,
+  explanation: 'A navigation specification sets the required accuracy and the aircraft and crew functional requirements for a route or procedure; an RNP specification additionally requires on-board performance monitoring and alerting, whereas an RNAV specification does not.',
+  reference: 'MOS 6.1.2 / 6.2.1'
 },
 
 {
   question: 'An IFR pilot who does not understand an ATC clearance should:',
   options: [
-    'A. Request clarification immediately using phrases such as "Say again", "Confirm clearance", or "Say again all after" — never fly an unclear clearance as misunderstanding ATC instructions has caused accidents',
-    'B. Attempt to interpret the clearance and fly what they think was said — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Acknowledge with callsign and fly what seems most logical for the route — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Advise ATC that the radio is malfunctioning — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Request clarification at once (\'say again\', \'confirm clearance\'); never fly a clearance not understood',
+    'Interpret the clearance as best they can and fly what they think was said',
+    'Acknowledge with the callsign, then fly whatever course seems the most logical for the route',
+    'Advise ATC that the aircraft radio appears to be malfunctioning'
   ],
   correct: 0,
-  explanation: 'Unclear clearance: always clarify before acting. Common phrases: "Say again [callsign]"; "Confirm I am cleared to [repeat understood clearance]"; "Request clarification." Flying a misunderstood clearance is a risk to safety — particularly if ATC expects the aircraft at a different altitude or heading. Never assume. The few seconds to clarify prevents potential airspace infringements.',
+  explanation: 'Clarify before acting, using phrases like \'say again\' or \'confirm cleared to...\'. Flying a misunderstood clearance risks an airspace or separation problem, since ATC may expect a different level or heading; the few seconds to confirm are always worth it.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'The requirement for IFR pilots to report "operations normal" when overdue refers to:',
+  question: 'For an RNP X specification, the system keeps the aircraft within X nm for 95% of the time and also provides containment to:',
   options: [
-    'A. If an IFR aircraft has not arrived or cancelled its flight plan within 30 minutes of ETA, SAR action is triggered — the pilot must cancel on arrival to prevent unnecessary SAR mobilisation',
-    'B. A report required every 15 minutes in non-radar airspace — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. An optional report to advise ATC that the aircraft is proceeding normally — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. A military requirement that does not apply to civil IFR operations — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Exactly the same X nm at all of the other times as well',
+    'Half of the RNP value (0.5X nm) for the remaining time',
+    'An unlimited distance, since only the 95% figure actually matters',
+    'Twice the RNP value (2X nm) as the total containment limit'
   ],
-  correct: 0,
-  explanation: 'SARTIME/SAR action: an IFR flight plan activates SAR coverage. If the aircraft does not arrive within the specified time and has not cancelled, SAR is initiated. The pilot MUST cancel: on landing (call ATC/JRCC or designated point) or cancel before ETA if proceeding to alternate. Failure to cancel can trigger costly and unnecessary searches.',
-  reference: 'AIP ENR 1.10'
+  correct: 3,
+  explanation: 'The RNP value is the 95% lateral accuracy; the system also provides containment to twice that value (2X nm), and the on-board monitoring alerts the crew if that performance can no longer be assured.',
+  reference: 'MOS 6.2.2 / 6.2.3'
 },
 
 {
   question: 'An IFR aircraft experiences TCAS RA (Resolution Advisory) during an ATC-assigned climb. The pilot must:',
   options: [
-    'A. Follow the TCAS RA immediately — TCAS RA takes priority over ATC instructions in this situation',
-    'B. Notify ATC and continue the ATC-assigned climb',
-    'C. TCAS RA can be overridden by ATC at any time',
-    'D. TCAS RA applies only on the ground'
+    'Follow the TCAS RA immediately, TCAS RA takes priority over ATC instructions in this situation',
+    'Notify ATC of the RA and then continue the ATC-assigned climb just as instructed',
+    'A TCAS RA can be overridden by an ATC instruction at any time',
+    'A TCAS RA applies only while the aircraft is on the ground'
   ],
   correct: 0,
   explanation: 'TCAS RA vs ATC: TCAS RA (Resolution Advisory) must be followed immediately, even if it contradicts ATC. The manoeuvre commanded by TCAS is coordinated with the other aircraft\\\'s TCAS to provide separation. After RA resolved, return to ATC clearance and advise "clear of conflict, returning to assigned altitude." ATC does not know about TCAS RAs in real time.',
@@ -4518,51 +4518,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The difference between "airways" and "off-airway routes" for IFR is:',
+  question: 'Maintaining 150 kt IAS at FL100, the approximate true airspeed (using about 2% per 1,000 ft) is:',
   options: [
-    'A. Airways have published MEAs guaranteeing navaid coverage and obstacle clearance',
-    'B. Off-airway routes provide lower minima than airways',
-    'C. Off-airway routes are prohibited for IFR flight',
-    'D. Both airways and off-airway routes have the same MEA'
+    '180 kt',
+    '150 kt',
+    '165 kt',
+    '195 kt'
   ],
   correct: 0,
-  explanation: 'Airways: coded routes (B, G, R etc.) with published MEA — guarantees navaid coverage, obstacle clearance, and ATC separation. Off-airway routes: direct routes between navaids or waypoints, using LSALT (obstacle clearance only — no navaid coverage guarantee). IFR can use either; off-airway requires GNSS or navigating by dead reckoning between navaids if signal may be marginal.',
-  reference: 'AIP ENR 3.1 / ERC charts'
+  explanation: 'TAS rises above IAS with altitude as air density falls, by roughly 2% per 1,000 ft. At FL100: 150 times (1 + 0.02 times 10) = 150 times 1.2 = about 180 kt. TAS is used for groundspeed and ETA planning.',
+  reference: 'AIP GEN 2.1 / navigation'
 },
 
 {
-  question: 'A "special use airspace" (SUA) restriction relevant to IFR pilots includes:',
+  question: 'Special-use airspace relevant to IFR pilots includes:',
   options: [
-    'A. SUA is only relevant to VFR pilots — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. IFR aircraft are exempt from all airspace restrictions and this applies to all IFR operations in Australian airspace',
-    'C. Restricted areas (R), prohibited areas (P), and danger areas (D) — IFR pilots must remain clear of R and P areas unless specifically authorised',
-    'D. SUA only affects aircraft above FL180 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Special-use airspace is relevant only to VFR pilots and is never relevant to any of the IFR pilots',
+    'IFR aircraft are exempt from all special-use airspace restrictions',
+    'Restricted (R), prohibited (P) and danger (D) areas; R and P must be avoided unless specifically authorised',
+    'SUA affects only aircraft that are operating above FL180'
   ],
   correct: 2,
-  explanation: 'Special use airspace for IFR: Prohibited (P) — flight not permitted under any circumstances; Restricted (R) — flight prohibited unless specific clearance obtained from controlling authority; Danger (D) — advisory, flight permitted but hazardous activity may occur. All are depicted on ERCs with altitudes and hours of activation. Check NOTAMs for current activation status.',
+  explanation: 'Prohibited (P) areas may not be entered; restricted (R) areas need a clearance from the controlling authority; danger (D) areas are advisory but contain hazardous activity. All are charted with levels and hours, and NOTAMs give current activation.',
   reference: 'CASR Part 71 / AIP ENR 5.1'
 },
 
 {
-  question: 'The "airways crossing" clearance (OCTA — Outside Controlled Airspace) requires:',
+  question: 'Crossing a low-level airway under the IFR requires:',
   options: [
-    'A. No clearance — airways can be crossed without ATC contact — this is the correct regulatory position',
-    'B. Only a position report to ATC and this applies to all IFR operations in Australian airspace',
-    'C. A specific ATC clearance to enter the controlled airspace of the airway — the pilot must obtain the clearance before entering',
-    'D. Airways crossing clearances are only required at night according to current CASR and AIP requirements'
+    'No clearance is needed at all, since the airways may be crossed without any ATC contact',
+    'Only a position report passed to ATC before crossing',
+    'A specific ATC clearance to enter the controlled airspace of the airway, obtained before entering',
+    'A crossing clearance only during the hours of darkness'
   ],
   correct: 2,
-  explanation: 'Airways crossing: a low-level airway is Class E (controlled) airspace. To cross an airway, the IFR pilot must obtain a crossing clearance from the appropriate ATC unit before entering the airway\\\'s controlled airspace. The pilot calls ATC, advises intention, and waits for clearance. The clearance includes the crossing track, altitude, and time or position to cross.',
+  explanation: 'A low-level airway is controlled (Class E) airspace, so the pilot obtains a crossing clearance from ATC before entering it, giving the crossing track, level and the time or position to cross.',
   reference: 'AIP ENR 1.1 / CASR Part 71'
 },
 
 {
   question: 'Wake turbulence categories for IFR approach sequencing are based on:',
   options: [
-    'A. Maximum Certified Take-Off Weight (MCTOW) — Super (A380): >560,000 kg; Heavy: >136,000 kg',
-    'B. Aircraft speed only',
-    'C. Aircraft wingspan only',
-    'D. Engine type — jets generate more wake turbulence than propeller aircraft'
+    'Maximum certified take-off weight, with Super (e.g. A380) above 560,000 kg and Heavy above 136,000 kg',
+    'Aircraft speed only',
+    'Aircraft wingspan only',
+    'Engine type, since jet aircraft generate more wake turbulence than propeller-driven aircraft'
   ],
   correct: 0,
   explanation: 'ICAO wake turbulence categories: Super (A380), Heavy (Boeing 747, 777 etc.), Medium (B737, A320 etc.), Light. ATC applies wake turbulence separation on approach — Light behind Heavy: 6 nm minimum on approach. The wake extends behind and below the aircraft on the approach path. Most hazardous in calm wind conditions. IFR pilots at uncontrolled airports must self-apply wake turbulence separation.',
@@ -4572,10 +4572,10 @@ export const irexQuestions: {
 {
   question: 'IFR operations during a "volcanic ash" event require:',
   options: [
-    'A. Increase speed to transit the ash cloud quickly',
-    'B. Volcanic ash can be penetrated at FL200 and above where concentration is lower',
-    'C. Only aircraft with special filters need to avoid volcanic ash',
-    'D. Avoid volcanic ash completely — ash particles cause engine flame-out, damage compressor blades, block fuel nozzles'
+    'Increase speed to transit the ash cloud quickly',
+    'Volcanic ash can safely be penetrated at FL200 and above, where the ash concentration is much lower',
+    'Only aircraft with special filters need to avoid volcanic ash',
+    'Avoid volcanic ash completely; ash causes engine flame-out, damages compressor blades, blocks fuel nozzles'
   ],
   correct: 3,
   explanation: 'Volcanic ash: extreme hazard to all aircraft. Silicon ash melts in jet engines creating glass that re-solidifies on turbine blades — causes engine flame-out. Piston: can cause engine damage, fuel system blockage. Clogs pitot-static, blocks visibility. Volcanic ash SIGMETs are issued by VAAC (Volcanic Ash Advisory Centre). Treat ash avoidance as absolute — no penetration regardless of apparent conditions.',
@@ -4583,38 +4583,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "ATC emergency descent" procedure (emergency descent from high altitude) requires the pilot to:',
+  question: 'An emergency descent from high altitude requires the pilot to:',
   options: [
-    'A. Immediately land at the nearest airfield — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only advise ATC after reaching a safe altitude and this applies to all IFR operations in Australian airspace',
-    'C. Emergency descent requires co-pilot action only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Advise ATC immediately, squawk 7700, obtain emergency descent clearance, apply emergency descent technique per AFM, turn to minimise conflict with traffic'
+    'Immediately divert and land at the nearest available airfield without any further delay',
+    'Advise ATC only after the aircraft has reached a safe altitude',
+    'Leave the emergency descent entirely to the co-pilot to handle',
+    'Advise ATC, squawk 7700, get an emergency-descent clearance, use the AFM technique and avoid traffic'
   ],
   correct: 3,
-  explanation: 'Emergency descent (pressurisation failure, rapid decompression, fire): Crew oxygen masks on; disconnect autopilot; establish emergency descent (max speed permitted); squawk 7700; advise ATC (altitude, nature of emergency, intentions); if assigned heading cannot be maintained safely, advise ATC. ATC will clear airspace below. Descend to 10,000 ft or cabin safe altitude.',
-  reference: 'CASR Part 91 / AFM emergency procedures'
+  explanation: 'On decompression or fire: oxygen on, establish the AFM emergency descent, squawk 7700 and advise ATC of the level, the nature of the emergency and intentions, and turn if needed to avoid conflicting traffic while ATC clears the airspace below; level off at a safe altitude.',
+  reference: 'Part 91 / AFM emergency procedures'
 },
 
 {
   question: 'An IFR pilot who inadvertently enters prohibited airspace should:',
   options: [
-    'A. Continue as quickly as possible to minimise time in the area',
-    'B. Exit the prohibited area immediately by the most direct route; advise ATC immediately; squawk 7700 if unable to contact ATC; report the airspace infringement as required',
-    'C. Circle until ATC acknowledges the infringement',
-    'D. File an incident report after landing — no immediate action required provided the pilot holds a current medical certificate'
+    'Continue straight on through the area as quickly as possible to minimise the time spent inside',
+    'Exit by the most direct route at once, advise ATC, squawk 7700 if no contact, and report the infringement',
+    'Circle in the area until ATC acknowledges the infringement',
+    'Take no immediate action and file a report after landing'
   ],
   correct: 1,
-  explanation: 'Inadvertent airspace infringement: (1) Exit immediately by most direct route; (2) Advise ATC: "[callsign] inadvertently entered [area], exiting [direction] immediately"; (3) Follow ATC instructions; (4) File mandatory occurrence report (MOR) with ATSB and CASA. Prohibited areas protect critical national infrastructure — even unintentional entry may trigger response. Prevention: thorough pre-flight route planning.',
-  reference: 'CASR Part 91 / AIP ENR 5.1'
+  explanation: 'Leave the area immediately by the most direct route, tell ATC what happened and follow instructions, squawk 7700 if ATC cannot be raised, and file the required occurrence report. Prohibited areas protect critical infrastructure, so prevention through careful route planning is essential.',
+  reference: 'Part 91 / AIP ENR 5.1'
 },
 
 {
   question: 'The "Aerodrome Traffic Zone" (ATZ) and instrument approach relationship is:',
   options: [
-    'A. ATZ extends to 10,000 ft AGL',
-    'B. ATZ is only relevant for helicopter operations',
-    'C. The ATZ surrounds a controlled or registered aerodrome and extends to 1,500 ft AGL',
-    'D. ATZ boundaries prohibit IFR approaches'
+    'The ATZ extends right up to 10,000 ft AGL all the way around the aerodrome',
+    'ATZ is only relevant for helicopter operations',
+    'The ATZ surrounds a controlled or registered aerodrome and extends to 1,500 ft AGL',
+    'ATZ boundaries prohibit IFR approaches'
   ],
   correct: 2,
   explanation: 'ATZ (Aerodrome Traffic Zone): the airspace surrounding an aerodrome in which special operating rules apply. Diameter and height vary. For IFR arrivals: at a controlled aerodrome, ATC manages ATZ entry; at uncontrolled aerodrome, IFR pilot must broadcast on CTAF. The approach profile should have the aircraft established, configured, and visual (if breaking VMC) within the ATZ area on approach.',
@@ -4622,38 +4622,38 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An IFR flight under positive radar control receives "resume own navigation" from ATC. This means:',
+  question: 'When ATC instructs \'resume own navigation\', it means the aircraft is:',
   options: [
-    'A. The aircraft is cleared to any altitude — this is the correct regulatory position',
-    'B. The aircraft is no longer being radar vectored — the pilot must now navigate independently using filed route or ATC-assigned route',
-    'C. The radar service has been terminated and this applies to all IFR operations in Australian airspace',
-    'D. "Resume own navigation" means return to departure according to current CASR and AIP requirements'
+    'Cleared to climb or descend freely to any altitude that the pilot now chooses',
+    'No longer being radar vectored; the pilot navigates using the filed or ATC-assigned route',
+    'Having its radar service terminated by ATC',
+    'Required to return to its departure aerodrome'
   ],
   correct: 1,
-  explanation: '"Resume own navigation": ATC ceases radar heading assignments. The pilot navigates to the next clearance limit using: filed route, ATC-assigned routing, or cleared direct to a fix. Position awareness must be maintained — the pilot is now responsible for own navigation while ATC continues providing ATC separation. The pilot should confirm position before resuming.',
+  explanation: 'ATC has stopped assigning headings; the pilot now navigates to the next clearance limit by the filed route, an assigned route, or cleared-direct to a fix, while ATC continues to provide separation. The pilot confirms position before resuming.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'The concept of "threat and error management" (TEM) in IFR operations addresses:',
+  question: 'Using the VH-OZY aircraft, the lowest RNP approach minima the aircraft is approved to use are:',
   options: [
-    'A. Aircraft performance limitations only — this is the correct regulatory position',
-    'B. Engine failure procedures only and this applies to all IFR operations in Australian airspace',
-    'C. Proactively identifying threats (weather, terrain, system failures, ATC complexities) before they lead to errors',
-    'D. TEM is only relevant for multi-crew operations according to current CASR and AIP requirements'
+    'LNAV/VNAV (Baro-VNAV) minima, using the barometric vertical guidance of the GNSS units',
+    'LPV minima, on the basis that the TSO-C146a units are SBAS-capable approach receivers',
+    'LNAV minima only, as the data sheet limits the GNSS units to RNP APCH (LNAV only)',
+    'Any RNP APCH minima at all, since two IFR-approved GNSS units are fitted to the aircraft'
   ],
   correct: 2,
-  explanation: 'TEM (Threat and Error Management): a proactive safety model. Threats: external factors (weather, terrain, busy airspace) and organizational factors that require pre-emptive management. Errors: mistakes or deviations that can be recognised and corrected. Undesired Aircraft States: dangerous conditions resulting from uncorrected errors. IFR pilots should brief threats before flight and actively manage them throughout.',
-  reference: 'ICAO Human Factors / AIP ENR 1.5'
+  explanation: 'The VH-OZY data sheet states the GNSS units are capable of RNAV 5/2/1, RNP 2/1 and RNP APCH (LNAV only). The aircraft may therefore fly an RNP APCH only to the LNAV (2D) minima; it is not approved for LNAV/VNAV (Baro-VNAV) or LPV minima even though the receivers carry a TSO-C146a marking.',
+  reference: 'IREX Aircraft Data Sheet VH-OZY / AIP ENR 1.5'
 },
 
 {
   question: 'Australian IFR "airways clearance" delivery frequency procedures require:',
   options: [
-    'A. Clearances are only given on the tower frequency',
-    'B. At major aerodromes, clearance delivery is on a dedicated frequency before contacting ground or tower',
-    'C. IFR clearances must be obtained 2 hours before departure',
-    'D. No specific procedure — the pilot calls whichever ATC frequency is available'
+    'Clearances are only given on the tower frequency',
+    'At major aerodromes, clearance delivery is on a dedicated frequency before contacting ground or tower',
+    'IFR clearances must be obtained 2 hours before departure',
+    'No specific procedure, the pilot simply calls whichever ATC frequency happens to be available'
   ],
   correct: 1,
   explanation: 'Clearance delivery at major Australian airports (Sydney, Melbourne, Brisbane etc.): dedicated clearance delivery frequency. Obtain clearance BEFORE taxi. At smaller controlled aerodromes: ground frequency. At uncontrolled aerodromes with IFR flight plans: obtain clearance by phone from the relevant ATC unit, or arrange pre-flight clearance. Never depart IFR without a valid clearance (in controlled airspace).',
@@ -4661,77 +4661,77 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The IFR "lost communications" hold procedure requires:',
+  question: 'The IFR lost-communications procedure requires the pilot to:',
   options: [
-    'A. Immediate diversion to VFR conditions — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Hold indefinitely until radio contact is re-established and this applies to all IFR operations in Australian airspace',
-    'C. B: At the clearance limit or last assigned holding fix, hold for the time shown in the published lost communications procedure, then commence the',
-    'D. Squawk 7600, land immediately at the nearest aerodrome according to current CASR and AIP requirements'
+    'Make an immediate diversion away toward VFR conditions wherever that is possible',
+    'Hold indefinitely at the fix until radio contact is restored',
+    'Hold at the clearance limit for the published time, then commence the approach to arrive by ETA',
+    'Squawk 7600 and land immediately at the nearest aerodrome'
   ],
   correct: 2,
-  explanation: 'Lost communications hold procedure (AIP ENR 1.1): (1) Squawk 7600; (2) Attempt contact on all frequencies; (3) Continue to destination; (4) At ETA (from flight plan, or last ATC-provided ETA, whichever is later), commence approach; (5) Land as soon as practicable. ATC will sequence traffic knowing the aircraft will arrive at ETA and commence an approach. The key: fly to destination and attempt approach at planned ETA.',
+  explanation: 'On losing communications, squawk 7600, try all frequencies, continue to the destination, and at the planned ETA (or the last ATC-advised time, whichever is later) commence an approach and land as soon as practicable; ATC sequences other traffic on this expectation.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'A "pilot deviation" report must be filed when an IFR pilot:',
+  question: 'A mandatory occurrence (pilot deviation) report is required when an IFR aircraft:',
   options: [
-    'A. Any time the aircraft varies from planned track by more than 2 nm — this is the correct regulatory position',
-    'B. Deviation reports are only filed by commercial operators and this applies to all IFR operations in Australian airspace',
-    'C. Deviation reports are voluntary in Australia — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. When the aircraft unintentionally penetrates controlled airspace without clearance, violates an ATC instruction, or is involved in a separation incident'
+    'Any time at all that the aircraft varies from track by more than 2 nm',
+    'Such deviation reports are filed only by commercial operators',
+    'Such deviation reports are considered entirely voluntary for all of the pilots right across Australia',
+    'Penetrates controlled airspace without clearance, breaches an ATC instruction, or in a separation incident'
   ],
   correct: 3,
-  explanation: 'Mandatory Occurrence Reports (MOR): required for incidents including airspace infringement, ATC instruction deviation, near collision, terrain proximity event, emergency equipment used, navigation equipment failure leading to loss of separation. Filed with ATSB within the required timeframe. Just culture: reporting improves safety; ATSB investigates systemic causes, not pilot blame.',
+  explanation: 'Mandatory occurrence reports cover airspace infringements, breaches of an ATC instruction, near collisions, terrain-proximity events, use of emergency equipment and navigation failures causing loss of separation, filed with the ATSB. A just-culture approach focuses on systemic causes, not blame.',
   reference: 'CASR Part 201 / AIP GEN 3.6'
 },
 
 {
-  question: 'The IFR requirement for "distance measuring equipment" (DME) carriage in Class A airspace:',
+  question: 'On an RNP/LNAV approach, the lateral course deviation is displayed as:',
   options: [
-    'A. DME is optional in Class A — this is the correct regulatory position',
-    'B. DME is required for Class A airspace in Australia — the combination of transponder with Mode C and DME',
-    'C. DME is only required above FL250 and this applies to all IFR operations in Australian airspace',
-    'D. GPS replaces the DME requirement in all airspace according to current CASR and AIP requirements'
+    'Angular deviation that narrows in toward the runway, as on an ILS',
+    'A simple left or right flag, with no scale of any kind',
+    'Linear deviation in nautical miles that does not narrow toward the runway',
+    'Distance to run only, with no track-keeping information shown'
   ],
-  correct: 1,
-  explanation: 'Equipment requirements vary by airspace and route. In Australian Class A airspace, the combination of requirements for transponder (Mode C), communication equipment, and navigation equipment (which may include DME for certain routes) must be met. Check AIP ENR 1.1 and CASR Part 91 for current carriage requirements — these are subject to change as surveillance technology evolves.',
-  reference: 'CASR Part 91 / AIP ENR 1.6'
+  correct: 2,
+  explanation: 'RNP/LNAV lateral guidance is linear (a fixed full-scale deflection in nm) and does not become more sensitive nearer the runway, unlike an ILS localiser or an LPV whose angular guidance narrows on final, so the pilot allows for this when tracking.',
+  reference: 'MOS 6.2.18'
 },
 
 {
-  question: 'The aeronautical decision making (ADM) model for IFR pilots facing deteriorating weather is:',
+  question: 'The aeronautical decision-making approach to deteriorating weather is to:',
   options: [
-    'A. Continue into deteriorating weather and declare emergency if needed — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Request ATC to manage the weather routing entirely — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Only turn back if the destination is below minima — otherwise continue — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. B: Recognise the threat early (weather below forecast); assess options (divert, hold, continue); consider fuel, alternate availability, and pilot currency; make a timely decision'
+    'Continue into the deteriorating weather and declare an emergency only if needed',
+    'Ask ATC to manage the weather routing entirely on the pilot\'s behalf',
+    'Turn back only if the destination is below minima, otherwise continue the approach there regardless',
+    'Recognise the threat early, weigh diverting, holding or continuing against fuel and alternate, and decide in time'
   ],
   correct: 3,
-  explanation: 'IFR ADM with weather: the "plan ahead" principle — identify deteriorating weather before it becomes a crisis. Options when destination weather is falling: (1) Continue if alternate has good weather and fuel allows; (2) Divert earlier while fuel and weather are favourable; (3) Hold for expected improvement; (4) Return to departure. The worst outcome: arriving destination below minima with inadequate fuel for alternate.',
+  explanation: 'Good ADM identifies deteriorating weather before it becomes a crisis and weighs the options, continue if the alternate is good and fuel allows, divert early while conditions and fuel are favourable, hold for forecast improvement, or return, the worst case being arrival below minima with too little fuel to divert.',
   reference: 'CASA ADM guidance / AIP ENR 1.5'
 },
 
 {
-  question: 'When ATC says "maintain FL150 until further advised," the phrase "until further advised" means:',
+  question: 'When ATC says \'maintain FL150 until further advised\', it means the aircraft:',
   options: [
-    'A. The aircraft can descend when ready — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The aircraft can deviate ±500 ft from FL150 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. "Until further advised" means the instruction expires in 10 minutes according to current CASR and AIP requirements',
-    'D. The aircraft must remain at FL150 until ATC issues a new altitude instruction — there is no automatic permission to leave FL150 for any reason other than ATC'
+    'May descend from FL150 whenever the pilot is ready to do so',
+    'May deviate up to 500 ft either side of FL150 freely',
+    'May treat the instruction as simply expiring after about 10 minutes have actually passed',
+    'Must hold FL150 until ATC issues a new altitude, leaving it only for safety with ATC advised'
   ],
   correct: 3,
-  explanation: '"Maintain FL150 until further advised": absolute — the aircraft must hold FL150. Even if the pilot wants to climb/descend for weather, turbulence, or efficiency, FL150 must be maintained until ATC issues new instructions. Exception: safety/emergency — advise ATC "unable FL150" with reason. ATC will then issue a new clearance. Proactively request a level change rather than wait for conditions to deteriorate.',
+  explanation: 'The instruction is absolute: FL150 is held until ATC issues a new level, even if the pilot would prefer another level for weather or efficiency. The only exception is a safety or emergency need, when the pilot advises \'unable FL150\' with a reason and ATC issues a new clearance.',
   reference: 'AIP ENR 1.1'
 },
 
 {
   question: 'An IFR approach at a controlled aerodrome requires the pilot to obtain:',
   options: [
-    'A. B: Approach clearance from the appropriate ATC unit (approach control or tower as applicable) before commencing the approach',
-    'B. Only the current ATIS',
-    'C. Approach clearance is not required for IFR — the filed flight plan authorises the approach',
-    'D. Only tower clearance after breaking out of cloud'
+    'Approach clearance from the appropriate ATC unit (approach control or tower) before commencing the approach',
+    'Only the current ATIS',
+    'Approach clearance is not required for IFR, since the filed flight plan itself authorises the approach',
+    'Only tower clearance after breaking out of cloud'
   ],
   correct: 0,
   explanation: 'IFR approach clearance: must be obtained from approach control (or tower at smaller aerodromes) before commencing the approach. The clearance specifies: approach type, runway, altitude to maintain until established, or vectors. "Cleared ILS runway 16" is the approach clearance. Without it, descent on the approach profile is not authorised. At uncontrolled aerodromes: self-position and broadcast.',
@@ -4739,77 +4739,77 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The instrument rating "recency" requirement differs from "currency" in that:',
+  question: 'Instrument-rating recency differs from currency in that:',
   options: [
-    'A. They are the same — recency and currency mean the same thing — this is the correct regulatory position',
-    'B. Currency is the short-term recent flight experience requirement; recency is the broader concept of maintaining skills through regular practice',
-    'C. Recency refers to medical certificate validity; currency refers to flight hours and this applies to all IFR operations in Australian airspace',
-    'D. Currency applies to VFR; recency applies to IFR only according to current CASR and AIP requirements'
+    'Nothing at all, since the recency and the currency in fact mean exactly the very same thing in practice',
+    'Currency is the short-term recent-experience requirement; recency is keeping skills sharp via regular checks',
+    'Recency refers to medical certificate validity and currency to flight hours',
+    'Currency applies only to VFR flight, while recency applies only to IFR'
   ],
   correct: 1,
-  explanation: 'IFR currency (CASR Part 61): 3 approaches in 90 days maintains the currency. Recency/proficiency checks: operators (CASR Part 121, 135) require periodic proficiency checks (typically 6-monthly); private IR holders may not have this requirement but should consider periodic proficiency training. CASA also requires a BFR (Biennial Flight Review) at 2-year intervals for all licence holders.',
-  reference: 'CASR Part 61 / CASR Part 121 / CASR Part 135'
+  explanation: 'Currency is the short-term recent-experience requirement, while recency/proficiency is the broader maintenance of skill through regular practice and proficiency checks. Licence holders also complete a flight review every two years.',
+  reference: 'CASR Part 61 — recency'
 },
 
 {
-  question: 'Australian "noise abatement procedures" at major airports affect IFR departures by:',
+  question: 'Noise abatement procedures at major airports affect IFR departures by:',
   options: [
-    'A. Noise procedures are only for VFR aircraft — this is the correct regulatory position',
-    'B. Noise abatement means all aircraft must depart at maximum power to climb quickly and this applies to all IFR operations in Australian airspace',
-    'C. B: Specifying particular SIDs, turns, power reduction altitudes, and speed restrictions designed to reduce noise in residential areas',
-    'D. Noise abatement only applies between 2300 and 0600 according to current CASR and AIP requirements'
+    'Noise procedures apply only to lighter VFR aircraft and never to any of the actual IFR departures',
+    'Requiring all aircraft to depart at maximum power so as to climb quickly',
+    'Specifying SIDs, turns, power-reduction altitudes and speed restrictions to cut noise over residential areas',
+    'Applying only between 2300 and 0600 local time, and at no other time'
   ],
   correct: 2,
-  explanation: 'Noise abatement departure procedures (NADP): published for major airports. May specify: specific SID (routing avoiding populated areas); power reduction altitude; speed restrictions (maintain 250 KIAS until clear of area); prohibited turns in certain areas. IFR departures must comply unless safety is compromised. If safety requires deviation from NADP, advise ATC immediately.',
-  reference: 'AIP AD (aerodrome specific) / ICAO noise procedures'
+  explanation: 'Noise-abatement departure procedures may specify a particular SID, a power-reduction altitude, speed restrictions and avoidance of certain turns to reduce noise over populated areas. IFR departures comply unless safety requires otherwise, in which case ATC is advised.',
+  reference: 'AIP AD / ICAO noise procedures'
 },
 
 {
-  question: 'The "frequency change" during an IFR flight requires the pilot to:',
+  question: 'When ATC issues a frequency change, the pilot should:',
   options: [
-    'A. Change frequency any time the previous ATC sector does not respond — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. When ATC issues a frequency change, acknowledge the new frequency and callsign, switch frequency, and immediately call the new unit with position and altitude — never change frequency without ATC instruction except in emergency',
-    'C. Frequency changes are automatic in modern IFR aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The pilot can change frequency when desired without ATC instruction — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Change frequency whenever the previous ATC sector does not promptly respond to a first radio call',
+    'Acknowledge frequency and callsign, switch and call the new unit; never change without ATC except in emergency',
+    'Nothing, since frequency changes happen automatically in modern aircraft',
+    'Change frequency whenever the pilot wishes, without any ATC instruction'
   ],
   correct: 1,
-  explanation: 'Frequency change: ATC-directed. When instructed to change: (1) Read back frequency and call sign; (2) Switch to new frequency; (3) Call immediately: "[callsign], [altitude], approaching [fix]" or as appropriate. Never leave a frequency without authorisation (creates communication gap — ATC may be trying to pass safety information). Exception: emergency or complete communication failure.',
+  explanation: 'On an ATC frequency change, read back the frequency and callsign, switch, and call the new unit promptly with position and level. A frequency is not left without authorisation (it opens a communication gap where ATC may be passing safety information), except in an emergency or total communication failure.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'The NOTAM KILO (K) series in Australian IFR flight planning covers:',
+  question: 'Having tracked 120 nm and finding the aircraft 6 nm left of the intended track, the track error is approximately:',
   options: [
-    'A. Airport closure NOTAMs only',
-    'B. K NOTAMs only apply to helicopter operations',
-    'C. B: Checklist-format NOTAMs covering a wide range of items at specific aerodromes',
-    'D. K NOTAMs are only issued for international aerodromes'
+    '1 degree',
+    '3 degrees',
+    '6 degrees',
+    '10 degrees'
   ],
-  correct: 2,
-  explanation: 'NOTAM formats vary; Australian NOTAMs use ICAO format. For IFR: any NOTAM affecting approach availability (navaid unserviceable, approach lighting unserviceable, runway closure, ILS glideslope unserviceable) is critical. NOTAM sources: NAIPS (National Aeronautical Information Processing System) for Australian NOTAMs. Always check full NOTAM package for destination, en-route, and alternates.',
-  reference: 'AIP GEN 3.1 / NAIPS'
+  correct: 1,
+  explanation: 'By the one-in-sixty rule, track error in degrees equals (distance off track x 60) divided by distance flown: (6 x 60) / 120 = 3 degrees. Doubling the correction would regain track by the same distance ahead.',
+  reference: 'Navigation - one-in-sixty rule'
 },
 
 {
-  question: 'ATIS "D-ATIS" (Digital ATIS) available at some Australian airports provides:',
+  question: 'D-ATIS (digital ATIS) at some Australian airports provides:',
   options: [
-    'A. A recorded weather observation 24 hours old — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. D-ATIS only provides wind information and this applies to all IFR operations in Australian airspace',
-    'C. B: Digital ATIS transmitted via ACARS or VHF datalink — provides the same ATIS information as voice ATIS but in text format to the cockpit display',
-    'D. D-ATIS is only available on international flights according to current CASR and AIP requirements'
+    'A recorded weather observation that is already 24 hours old',
+    'Only the wind information for the aerodrome, and nothing more',
+    'Digital ATIS sent by ACARS or VHF datalink, giving the voice ATIS information in text form',
+    'A datalink service that happens to be available only on international flight sectors'
   ],
   correct: 2,
-  explanation: 'D-ATIS: automatic digital transmission of current ATIS information to suitably equipped aircraft. Displayed as text on EFB, MCDU, or datalink display. Same content as voice ATIS — QNH, wind, visibility, weather, active runway, approach in use, code letter. Benefits: reduces read-back errors; crew can refer back to text; reduces VHF frequency congestion during busy periods.',
-  reference: 'AIP COM / AIP AD (aerodrome specific)'
+  explanation: 'D-ATIS sends the current ATIS to equipped aircraft as text on a datalink display, the same content as voice ATIS (QNH, wind, weather, runway, approach and code letter). It reduces read-back errors and frequency congestion and lets the crew refer back to the text.',
+  reference: 'AIP COM / AIP AD'
 },
 
 {
   question: 'Spatial disorientation in IMC occurs because:',
   options: [
-    'A. The instruments are unreliable in cloud',
-    'B. Spatial disorientation is a myth — experienced pilots are immune',
-    'C. Spatial disorientation only occurs during night VFR flight',
-    'D. The vestibular system (inner ear) cannot accurately sense attitude in the absence of visual references'
+    'The flight instruments become unreliable when flying in cloud',
+    'Spatial disorientation is a myth, and experienced instrument pilots are simply immune to its effects',
+    'Spatial disorientation only occurs during night VFR flight',
+    'The vestibular system (inner ear) cannot accurately sense attitude in the absence of visual references'
   ],
   correct: 3,
   explanation: 'Spatial disorientation: the vestibular system senses rotation using semicircular canals (angular acceleration) and linear acceleration using otolith organs. In cloud: the inner ear provides false information after sustained turns (the leans), and the "graveyard spiral" (a balanced turn perceived as straight and level). Instrument flying discipline — trust the instruments, not your body — is the only reliable counter.',
@@ -4819,244 +4819,244 @@ export const irexQuestions: {
 {
   question: '"The leans" illusion in IMC is caused by:',
   options: [
-    'A. The aircraft banking due to an asymmetric load',
-    'B. The leans only occur during night VFR flight',
-    'C. The leans are caused by fatigue and can be resolved by resting',
-    'D. After an undetected gradual roll into a bank, the semicircular canals adapt (stop sensing the roll)'
+    'The aircraft entering a bank as the result of an asymmetric fuel or cargo load distribution',
+    'The leans only occur during night VFR flight',
+    'The leans are caused by fatigue and can be resolved by resting',
+    'After an undetected gradual roll into a bank, the semicircular canals adapt (stop sensing the roll)'
   ],
   correct: 3,
   explanation: '"The leans": after an undetected slow roll (below the semicircular canal threshold of approximately 2°/sec), the inner ear adapts — perceives the banked attitude as wings level. When the pilot corrects back to actual wings level (instruments), the correction feels like rolling to a new bank. The pilot feels banked even though instruments show wings level. The body leans toward the perceived "down." Resolution: trust the instruments, resist the urge to lean.',
-  reference: 'CASA Human Factors guidance'
+  reference: 'Part 61 MOS Sch 3 IREX 8.1'
 },
 
 {
-  question: 'The "graveyard spiral" in instrument flight begins when:',
+  question: 'The graveyard spiral in instrument flight begins when:',
   options: [
-    'A. The aircraft enters a thunderstorm — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. A graveyard spiral can only occur during aerobatic manoeuvres — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. An undetected bank develops; the nose drops in the bank (lift vector tilted); the pilot pulls back increasing g-load in the turn, tightening the spiral rather than recovering',
-    'D. The spiral is caused by trim imbalance during IFR cruise — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The aircraft inadvertently flying straight into an active embedded thunderstorm cell in cloud',
+    'It can only ever occur during aerobatic manoeuvres in flight',
+    'An undetected bank develops, the nose drops, and pulling back tightens the spiral instead of recovering',
+    'It is caused by a trim imbalance developing during the cruise'
   ],
   correct: 2,
-  explanation: 'Graveyard spiral: (1) Undetected bank (instrument inattention or in-cloud); (2) Nose drops — pilot pulls back (natural reaction to apparent descent) but this increases g in the bank — increasing bank angle; (3) Airspeed builds; (4) Pilot may reduce power (feels fast) making it worse. Recovery: level the wings FIRST, then ease out of descent gently. Pulling back while banked worsens the spiral.',
-  reference: 'CASA Human Factors guidance'
+  explanation: 'An undetected bank lets the nose drop; the natural pull-back increases g in the turn, steepening the bank and building speed, and reducing power makes it worse. Recovery is to level the wings first, then ease gently out of the descent; pulling back while banked deepens the spiral.',
+  reference: 'Part 61 MOS Sch 3 IREX 8.1'
 },
 
 {
-  question: 'The "somatogravic illusion" during a rapid acceleration in IMC causes the pilot to perceive:',
+  question: 'The somatogravic illusion during rapid acceleration in IMC causes the pilot to perceive:',
   options: [
-    'A. A left bank when accelerating — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Increased altitude indication on the altimeter and this applies to all IFR operations in Australian airspace',
-    'C. A nose-high pitch attitude (climb) during rapid acceleration — the otolith organs interpret the forward acceleration as a backward tilt (climbing)',
-    'D. The somatogravic illusion only occurs in helicopters according to current CASR and AIP requirements'
+    'A left bank developing whenever the aircraft accelerates forward',
+    'An increased altitude reading shown on the aircraft altimeter',
+    'A nose-high climbing attitude, as the otoliths read forward acceleration as a backward tilt',
+    'An illusion that occurs only in helicopter operations, and never in aeroplanes'
   ],
   correct: 2,
-  explanation: 'Somatogravic illusion: the otolith organs sense linear acceleration the same way as pitch change. Rapid forward acceleration = felt as nose-high pitch. The pilot pushes forward to "level" the perceived pitch-up. This is responsible for accidents during go-arounds in poor visibility where the pilot pushes forward into terrain while feeling they are climbing. Trust the instruments — do not respond to body sensations.',
-  reference: 'CASA Human Factors guidance'
+  explanation: 'The otolith organs sense linear acceleration like a pitch change, so a rapid forward acceleration feels nose-high. The pilot may push forward to \'level\' it, which has caused accidents on go-arounds in poor visibility. The defence is to trust the instruments, not the sensation.',
+  reference: 'Part 61 MOS Sch 3 IREX 8.1'
 },
 
 {
-  question: 'Cockpit workload management during an IFR approach at night in IMC requires:',
+  question: 'To guard against a GNSS mode error during an RNP approach, the pilot should:',
   options: [
-    'A. B: Prioritising aviate-navigate-communicate; completing approach briefing and checklists before the FAF',
-    'B. The pilot to complete all administrative tasks during the approach',
-    'C. Only a single instrument needs monitoring on final approach',
-    'D. Workload management is only relevant for multi-crew operations'
+    'Confirm the receiver sequences to approach mode with the correct CDI sensitivity armed before the FAF',
+    'Switch the receiver to manual leg mode so the approach is flown without automatic sequencing',
+    'Accept whatever mode is displayed, since an IFR-approved receiver always selects the correct mode',
+    'Disable the RAIM alerting on final so a marginal prediction cannot interrupt the approach'
   ],
   correct: 0,
-  explanation: 'IFR approach workload management: briefing complete before IAF; checklists done by FAF (gear down, flap set, speed stable); approach mode set; missed approach briefed and altitude set; approach descent profile calculated. Below 1,000 ft: sterile cockpit — no non-essential calls or tasks. Single pilot IFR at night requires disciplined prioritisation: fly first, then navigate, then communicate.',
-  reference: 'CASA IFR guidance / AIP ENR 1.5'
+  explanation: 'A mode error is a classic GNSS human-factors trap. The pilot must confirm the receiver auto-sequences from terminal into approach mode, with the tighter CDI sensitivity (scaling) armed, before the final approach fix. Flying an approach with the receiver still in en-route or terminal mode gives the wrong containment and deviation scaling.',
+  reference: 'Part 61 MOS Sch 3 IREX 8.1.4 / AIP ENR 1.5'
 },
 
 {
-  question: 'Fatigue in IFR operations is particularly hazardous because:',
+  question: 'The transponder fitted to VH-OZY is:',
   options: [
-    'A. Fatigue degrades vigilance, decision-making speed, information processing, and fine motor skills',
-    'B. Fatigue improves concentration by forcing pilots to focus',
-    'C. Fatigue only affects physical abilities, not cognitive performance',
-    'D. IFR flight rules require only physical health checks, not fatigue assessment'
+    'A Mode S transponder with ADS-B OUT, broadcasting an extended squitter position message',
+    'A Mode A transponder only, providing an identity code but no pressure-altitude information',
+    'A Mode C transponder, encoding pressure altitude but without any ADS-B OUT capability',
+    'A Mode S transponder without ADS-B, needing a separate ADS-B OUT unit to be installed'
   ],
   correct: 0,
-  explanation: 'Fatigue and IFR: instrument flight demands high cognitive load — simultaneous management of attitude, navigation, communications, weather avoidance, and checklist items. Fatigue degrades: vigilance (instrument scan deteriorates); decision making (slower, poorer quality); attention (task shedding); memory (forget checklist items). Self-assessment of fatigue is unreliable — fatigued pilots underestimate their impairment.',
-  reference: 'CASA fatigue management / ICAO Human Factors'
+  explanation: 'The data sheet lists a Mode S transponder (ADS-B OUT). Mode S provides selective addressing and altitude reporting, and the ADS-B OUT function broadcasts the aircraft\'s GNSS-derived position and other data via the 1090 MHz extended squitter for ATC surveillance.',
+  reference: 'IREX Aircraft Data Sheet VH-OZY / AIP GEN 1.5'
 },
 
 {
-  question: '"Confirmation bias" in IFR weather decision-making means:',
+  question: 'The take-off and landing wind limits given on the VH-OZY data sheet are:',
   options: [
-    'A. Correctly confirming weather from multiple sources',
-    'B. The tendency to seek information that confirms a pre-existing plan rather than objectively evaluating all data',
-    'C. Confirmation bias is only relevant for air traffic controllers',
-    'D. Confirmation bias improves decision making by filtering unnecessary information'
+    'A crosswind of 10 kt maximum and a tailwind of 20 kt maximum for take-off or landing',
+    'A crosswind of 20 kt maximum and a tailwind of 10 kt maximum for take-off or landing',
+    'A crosswind of 25 kt maximum for take-off or landing, with no tailwind limit published',
+    'A crosswind of 15 kt maximum and a tailwind of 5 kt maximum for take-off or landing'
   ],
   correct: 1,
-  explanation: 'Confirmation bias: humans selectively notice information confirming what they already believe or plan. An IFR pilot planning to land at destination: may discount bad weather updates ("it\\\'ll clear"); overweight hopeful PIREPs; underweight adverse forecasts. Counter: actively seek disconfirming evidence; ask "what would make me divert?" before departure and honestly assess against actual conditions.',
-  reference: 'ICAO Human Factors / CASA ADM guidance'
+  explanation: 'VH-OZY is limited to a maximum crosswind component of 20 kt and a maximum tailwind component of 10 kt for take-off or landing. The pilot must resolve the reported wind into head/tail and crosswind components against the runway in use and confirm both limits are satisfied before selecting that runway.',
+  reference: 'IREX Aircraft Data Sheet VH-OZY'
 },
 
 {
-  question: 'The "get-there-itis" attitude hazard in IFR operations:',
+  question: 'VH-OZY has no oxygen and is not pressurised. The main consequence for IFR flight planning is that:',
   options: [
-    'A. Is helpful — motivating pilots to complete flights efficiently',
-    'B. Causes pilots to press on toward destination despite deteriorating conditions, low fuel, or other warning signs',
-    'C. Get-there-itis only affects new instrument pilots',
-    'D. Is easily identified and never affects experienced pilots'
+    'It may still be planned to any altitude, since oxygen is only required in pressurised aircraft',
+    'Sustained cruise must be planned at altitudes where supplemental oxygen is not required',
+    'It is restricted to flight below 5,000 ft at all times so that no oxygen requirement can arise',
+    'Oxygen only becomes relevant above FL250, so the limitation has no practical planning effect'
   ],
   correct: 1,
-  explanation: 'Get-there-itis (press-on-itis): one of the most dangerous ADM hazards. External pressures (schedule, passengers, cost) drive the pilot to continue despite objective warning signs. Manifestations: descending below minima "just to have a look"; pressing on with low fuel; continuing into deteriorating conditions. Counter: pre-flight personal minimums; brief yourself that diversion is always an option.',
-  reference: 'CASA ADM / ICAO Human Factors'
+  explanation: 'Without oxygen equipment the aircraft cannot be planned for sustained operations at cabin altitudes where supplemental oxygen would be required. For an unpressurised aeroplane this effectively caps practical cruising altitude in the low levels (broadly at or only briefly above 10,000 ft), which in turn constrains cruise-level selection against terrain LSALT and the forecast freezing level.',
+  reference: 'CASR Part 91 MOS / IREX Aircraft Data Sheet VH-OZY'
 },
 
 {
-  question: '"Crew resource management" (CRM) in single-pilot IFR means:',
+  question: 'Because VH-OZY has no de-icing or anti-icing equipment, the IFR flight must be planned so that:',
   options: [
-    'A. CRM only applies to multi-crew aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Managing all available resources effectively — ATC, weather services, automation and checklists — to safely manage single-pilot workload in IFR operations',
-    'C. Single-pilot IFR does not require CRM training and this applies to all IFR operations in Australian airspace',
-    'D. CRM in single-pilot operations means flying with a safety pilot at all times according to current CASR and AIP requirements'
+    'Flight through forecast icing is acceptable provided the weather radar is used to skirt the worst cells',
+    'The route and levels avoid forecast or known airframe icing, with a climb or descent kept available to escape it',
+    'Icing in cloud may be entered briefly as long as pitot heat and the autopilot both remain serviceable',
+    'Climbing to the highest available cruising level is always the correct escape from any icing encountered'
   ],
   correct: 1,
-  explanation: 'Single-pilot CRM: the pilot is the sole crew member — must manage: avionics (FMS, autopilot); communications (ATC, weather); navigation (position awareness); checklist compliance; weather monitoring; and decision making simultaneously. CRM principles: workload management (prioritise tasks); situation awareness (what is happening, what will happen); decision making (DECIDE model); use all available resources (ATC vectors, wx services).',
-  reference: 'ICAO Human Factors / CASA CRM guidance'
+  explanation: 'An aircraft with no ice protection must not be planned into known or forecast airframe icing. The pilot uses the forecast freezing level and cloud to keep the route and cruising level clear of icing, and retains an altitude change (commonly a descent into above-zero air, or a climb clear of cloud) as an escape if icing is met.',
+  reference: 'CASR Part 91 / IREX Aircraft Data Sheet VH-OZY'
 },
 
 {
-  question: 'Hypoxia during IFR flight at high altitude is insidious because:',
+  question: 'VH-OZY has one VOR/ILS and one fixed-card ADF. For planning special alternate weather minima (lower than standard) at a destination, this means the aircraft:',
   options: [
-    'A. Hypoxia causes immediately obvious symptoms easy to recognise',
-    'B. Hypoxia only affects pilots above FL250',
-    'C. Hypoxia symptoms always include severe headache which triggers corrective action',
-    'D. Mild hypoxia (onset above 10,000 ft) causes euphoria, impaired judgment, and reduced night vision without the pilot being aware'
+    'Qualifies, because a single serviceable ILS receiver is all that special alternate minima require',
+    'Qualifies, because the two fitted GNSS units satisfy the dual-navigation-aid requirement',
+    'Qualifies for ILS special minima but is excluded from VOR or GNSS special alternate minima',
+    'Does not qualify, as special alternate minima require duplicated ILS/VOR approach capability'
   ],
   correct: 3,
-  explanation: 'Hypoxia in IFR: above 10,000 ft partial pressure of oxygen decreases. Symptoms of mild hypoxia: slight euphoria, overconfidence, impaired judgment, fine motor deterioration — the pilot feels well or better than normal. Night vision degrades from 5,000 ft. The danger: the pilot does not recognise the impairment and continues making increasingly poor decisions. Use supplemental oxygen above 10,000 ft.',
-  reference: 'CASR Part 91 / CASA Human Factors'
+  explanation: 'Special alternate minima lower than the standard alternate minima are available only to aircraft with duplicated ILS/VOR approach capability (independent receivers for the relevant aid). VH-OZY has a single VOR/ILS and a single ADF, so it must plan on the standard alternate minima.',
+  reference: 'AIP ENR 1.5 / IREX Aircraft Data Sheet VH-OZY'
 },
 
 {
-  question: 'Instrument scan technique for single-pilot IFR uses:',
+  question: 'The Coriolis illusion in IMC is produced when the pilot:',
   options: [
-    'A. A systematic cross-check pattern centred on the attitude indicator — scanning in a regular pattern (radial scan, selective radial, or T-scan) to include AI, ASI, altimeter, VSI, HI',
-    'B. Fixed gaze on the attitude indicator only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Looking out the window for visual references while in cloud — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The pilot alternates between the left and right instrument panels — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Moves the head during a sustained turn, producing a strong false sensation of tumbling or rotating',
+    'Stares at a single stationary light until it gradually appears to move about in the dark sky',
+    'Accelerates rapidly and feels a false nose-up pitching sensation',
+    'Mistakes a sloping cloud bank for the true natural horizon'
   ],
   correct: 0,
-  explanation: 'IFR scan technique: the attitude indicator (AI) is the primary flight instrument — all others are supporting. Scan patterns: (1) Selective radial: reference AI, check supporting instrument, return to AI; (2) T-scan: AI→ASI→AI→altimeter→AI→VSI; (3) Radial scan radiating outward from AI. The scan must be regular and systematic — fixation on one instrument (especially during approach) leads to other instruments going unchecked.',
-  reference: 'CASA IFR training / FAA instrument flying handbook'
+  explanation: 'Moving the head during a prolonged constant turn stimulates the semicircular canals in another plane, producing a powerful, disorienting sensation of tumbling or rotating. The defence is to avoid sudden head movements in IMC and to trust the attitude indicator.',
+  reference: 'Part 61 MOS Sch 3 IREX 8.1'
 },
 
 {
-  question: 'The "expectation bias" during instrument approach causes pilots to:',
+  question: 'Expectation bias during an instrument approach causes pilots to:',
   options: [
-    'A. See what they expect to see rather than what is actually there — a pilot expecting to see runway lights may briefly mistake other lights',
-    'B. Correctly anticipate runway environment — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Expectation bias improves accuracy during approaches and this applies to all IFR operations in Australian airspace',
-    'D. Expectation bias only occurs during first solo IFR flights according to current CASR and AIP requirements'
+    'See what they expect rather than what is there, e.g. mistaking other lights for runway lights',
+    'Correctly anticipate the runway environment on every approach',
+    'Improve the overall accuracy of their instrument approaches',
+    'Experience an effect that can occur only on a pilot\'s very first solo IFR flight'
   ],
   correct: 0,
-  explanation: 'Expectation bias on approach: the pilot knows the runway is "somewhere ahead" and strongly expects to see it. At minimums, lights glimpsed through thin cloud or mist may be briefly identified as approach/runway lights when they are not. This can lead to continuing below DH/MDA without genuine required visual reference. Discipline: if not definitively visual with the required references, go around — no guessing.',
+  explanation: 'Strongly expecting the runway ahead, a pilot may briefly take other lights seen through mist as approach or runway lights and continue below minima without genuine visual reference. The discipline is simple: if not definitely visual with the required references, go around.',
   reference: 'ICAO CFIT guidance / CASA Human Factors'
 },
 
 {
-  question: 'Task shedding during high IFR workload (approach in IMC at night) means:',
+  question: 'On an IFR navigation chart, a compulsory reporting point is identified by:',
   options: [
-    'A. Delegating tasks to passengers — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Under cognitive overload, the pilot unconsciously stops monitoring secondary tasks (fuel check, non-essential comms, checklists) to focus on the immediate task',
-    'C. Task shedding improves workload management — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Task shedding only occurs during emergencies — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'An open (unfilled) triangle, the same symbol that also marks an on-request reporting point',
+    'A solid (filled) triangle, whereas an on-request reporting point is shown by an open triangle',
+    'A circled cross, which is also the symbol used for the position of en-route radio navigation aids',
+    'A five-letter name printed in italics, with no symbol drawn at the waypoint position itself'
   ],
   correct: 1,
-  explanation: 'Task shedding: when cognitive capacity is overwhelmed, the brain reduces load by stopping lower-priority task processing. In IFR: pilot focused on glide slope and localiser may forget to set missed approach altitude, confirm gear, or monitor fuel. Prevention: complete all tasks before the critical phase; use checklists; recognise when workload is becoming excessive and slow down (ask ATC for vectors/holding if needed).',
-  reference: 'ICAO Human Factors / CASA CRM guidance'
+  explanation: 'On Australian and ICAO charts a compulsory reporting point is shown as a solid (filled) triangle and an on-request (non-compulsory) reporting point as an open (unfilled) triangle. A position report is made passing a compulsory point unless ATC has advised that reports are not required (for example under radar).',
+  reference: 'AIP GEN 3.3 / chart legend'
 },
 
 {
-  question: 'The importance of "sterile cockpit discipline" at 1,000 ft AAL during an IFR approach:',
+  question: 'Under the IFR by day, a pilot may commence a visual approach only when:',
   options: [
-    'A. Only relevant for commercial aircraft',
-    'B. Relevant to all IFR operations — below 1,000 ft AAL is the highest risk phase where pilot workload and attentional demands peak',
-    'C. Below 1,000 ft AAL, non-essential tasks and communications are minimised — full attention on aircraft control, approach execution, and runway environment acquisition',
-    'D. Sterile cockpit only applies during take-off, not approach'
+    'Cleared by ATC, regardless of cloud or visibility, since the clearance removes the IFR minima',
+    'Within 5 nm of the aerodrome with the runway lighting in sight, at any reported visibility',
+    'Clear of cloud, in sight of ground or water, with flight visibility at least 5,000 m by day',
+    'Below the lowest cloud base shown on the TAF, even when the aerodrome is not yet in sight'
   ],
   correct: 2,
-  explanation: 'Sterile cockpit (1,000 ft AAL in IMC): the approach phase is statistically the highest risk phase of IFR flight — CFIT and approach accidents are disproportionately common. Complete focus is required. Non-essential activities distract from the critical task of monitoring instruments, visual transition, and making the go-around decision. Exception: safety-critical communications (ATC clearance changes, emergency) must still be handled.',
-  reference: 'CASR Part 91 / ICAO flight safety'
+  explanation: 'For a day visual approach under the IFR the aircraft must be clear of cloud, in sight of ground or water, with flight visibility not less than 5,000 m, and either the aerodrome or a preceding aircraft in sight as required. The pilot then provides own separation from terrain. Night visual approach criteria are more restrictive.',
+  reference: 'AIP ENR 1.5'
 },
 
 {
-  question: 'The "automation surprise" concept in IFR glass cockpit operations refers to:',
+  question: 'Automation surprise in glass-cockpit IFR operations refers to:',
   options: [
-    'A. An unexpected equipment failure — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Automation surprise is only experienced by inexperienced pilots and this applies to all IFR operations in Australian airspace',
-    'C. Modern automation never surprises pilots because it always works correctly according to current CASR and AIP requirements',
-    'D. Situations where the automation (FMS, autopilot) does something unexpected — mode changes, unexpected routing, missed waypoint sequencing'
+    'An unexpected mechanical failure of a single piece of cockpit equipment in flight',
+    'An effect experienced only by relatively inexperienced pilots',
+    'Nothing, since modern automation never surprises the pilot',
+    'Automation doing something unexpected, such as a mode change, odd routing or a missed waypoint'
   ],
   correct: 3,
-  explanation: 'Automation surprise: as automation becomes more capable, pilots may not fully understand all the mode logic. The FMS "arms" an approach, arms a mode, or changes its own routing without an obvious cue — pilot is unaware until the aircraft does something unexpected. Prevention: actively monitor automation (mode control panel, FMA), understand what mode is active and why, and be prepared to take manual control.',
+  explanation: 'As automation grows more capable, pilots may not grasp all the mode logic, so the system can change mode or routing without an obvious cue and the pilot only notices when the aircraft does something unexpected. Monitoring the mode annunciations and knowing the active mode prevents it.',
   reference: 'ICAO Human Factors / CASA automation guidance'
 },
 
 {
-  question: 'The "two-challenge rule" in single-pilot IFR operations recommends:',
+  question: 'The fuel policy on the VH-OZY data sheet specifies that fuel reserves are carried in accordance with:',
   options: [
-    'A. Challenging ATC twice if a clearance seems incorrect — this is the correct regulatory position',
-    'B. The two-challenge rule requires two pilots and this applies to all IFR operations in Australian airspace',
-    'C. Before taking action on an unusual ATC clearance or when something seems wrong, the pilot should mentally challenge the situation at least twice',
-    'D. Challenge rules are only for military operations according to current CASR and AIP requirements'
+    'A fixed-litres reserve under the older fuel rules, with quantities planned and recorded in litres of usable fuel',
+    'A fixed 30-minute holding allowance added to every IFR flight regardless of the operation type',
+    'CASR Part 91 MOS Chapter 19 Table 19.02(2), or CASR Part 135 MOS Chapter 7, with all fuel in minutes',
+    'The operator\'s own discretion, since the data sheet leaves the fuel reserve policy entirely unspecified'
   ],
   correct: 2,
-  explanation: 'Single-pilot IFR self-monitoring: without a co-pilot, the single pilot must self-challenge. Before accepting an unusual clearance or executing an action that seems wrong: pause and re-evaluate. "Is this what ATC actually said?" "Does this make sense for the flight?" Read back the clearance — if ATC corrects it, your perception was wrong. Build habits of self-checking to compensate for the lack of a second set of eyes.',
-  reference: 'ICAO Human Factors / CASA single pilot IFR guidance'
+  explanation: 'The data sheet sets the company fuel policy as CASR Part 91 MOS Chapter 19 Table 19.02(2) for aeroplanes below 5,700 kg under the IFR, or CASR Part 135 MOS Chapter 7. Each question states whether the flight is a Part 91 or Part 135 operation. All fuel is in minutes, holding consumption equals cruise consumption, and no allowance is added for taxi, approaches or overshoots.',
+  reference: 'CASR Part 91 MOS Ch 19 / CASR Part 135 MOS Ch 7 / IREX Aircraft Data Sheet VH-OZY'
 },
 
 {
-  question: 'The "dark cockpit" concept in IFR operations refers to:',
+  question: 'In RNP navigation, the total system error (TSE) is made up of:',
   options: [
-    'A. Switching off cockpit lighting for fuel saving',
-    'B. Flying at night without interior lighting',
-    'C. An operational philosophy where warnings and cautions not requiring immediate action are cleared or dimmed',
-    'D. Dark cockpit is an abnormal procedure for electrical failures'
+    'Flight technical error alone, since pilot or autopilot tracking is the only real error source',
+    'Navigation system error alone, being the difference between the true and the computed position',
+    'Path definition error, navigation system error and flight technical error, combined together',
+    'Path definition error alone, set by how accurately the procedure is coded into the database'
   ],
   correct: 2,
-  explanation: 'Dark cockpit: the concept that annunciators should be clear/off during normal operations. Any new illuminated warning is immediately obvious against a dark background. Applied to IFR: after completing checklists, all abnormal warnings should be addressed or acknowledged — a clean display means normal. A new warning stands out. Applied broadly: maintain an organised, uncluttered cockpit to notice anomalies quickly.',
-  reference: 'ICAO Human Factors / modern aircraft design philosophy'
+  explanation: 'Total system error is the combination of path definition error (PDE, how accurately the desired path is defined), navigation system error (NSE or PEE, the difference between estimated and true position) and flight technical error (FTE, how accurately the crew or autopilot flies the computed path). For an RNP X specification the TSE must stay within X nm for 95% of the flight time.',
+  reference: 'AIP ENR / Part 61 MOS Sch 3 IREX 6.2.3'
 },
 
 {
   question: 'The "instrument flying" recovery from an unusual attitude in IMC requires:',
   options: [
-    'A. Pull back and apply full power immediately',
-    'B. Always apply maximum power and pitch to wings level',
-    'C. Use autopilot to recover — never hand-fly an unusual attitude',
-    'D. For nose-low unusual attitude: reduce power, roll wings level, ease nose up — do not pull back while banked'
+    'Pull back firmly on the controls and apply full power without any delay',
+    'Always apply maximum power and pitch up firmly to bring the wings level',
+    'Use the autopilot to recover from it, and never once attempt to hand-fly out of any unusual attitude',
+    'For a nose-low unusual attitude, reduce power, roll wings level, ease the nose up, not pulling back while banked'
   ],
   correct: 3,
   explanation: 'Unusual attitude recovery: NOSE LOW (spiral dive): power idle (prevent over-speed), roll wings level, ease nose up gradually (avoid high-g pull). NOSE HIGH (approaching stall): power full, roll wings level, ease nose toward horizon. The critical rule: LEVEL WINGS FIRST. Pulling back while banked increases g-load in the spiral and worsens the nose-low situation. Simultaneous pitch and roll corrections can generate high structural loads.',
-  reference: 'CASA IFR training / FAA instrument flying handbook'
+  reference: 'AIP ENR 1.5 / MOS 2.3.1'
 },
 
 {
-  question: 'When an IFR pilot becomes uncertain of position ("lost") in IMC, the first action is:',
+  question: 'On becoming uncertain of position in IMC, the IFR pilot\'s first action is to:',
   options: [
-    'A. Immediately declare MAYDAY and descend to visual flight — this is the correct regulatory position',
-    'B. Maintain last assigned altitude or MSA (whichever is higher), maintain last known heading, advise ATC immediately with position uncertainty',
-    'C. Make turns to try to identify landmarks through cloud breaks and this applies to all IFR operations in Australian airspace',
-    'D. Reduce power and slow down to buy time — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Immediately declare a MAYDAY and begin descending at once to try to regain visual flight',
+    'Maintain MSA or assigned altitude (whichever is higher) and the last heading, and advise ATC at once',
+    'Make turns to try to spot landmarks through any cloud breaks',
+    'Reduce power and slow down in order to buy more time'
   ],
   correct: 1,
-  explanation: 'Position uncertainty in IMC: (1) Climb or maintain to MSA immediately if not already at or above; (2) Maintain assigned heading; (3) Advise ATC: "[callsign] uncertain of position, request assistance"; (4) ATC will initiate radar identification (squawk a given code, identify on radar). Do not descend until position is confirmed. Descending in IMC without knowing position is extremely dangerous.',
-  reference: 'AIP ENR 1.1 / CASR Part 91'
+  explanation: 'Climb to or hold the MSA (or assigned altitude, whichever is higher), keep the last heading, and tell ATC at once so radar identification can begin. Descending in IMC without a confirmed position is extremely dangerous.',
+  reference: 'AIP ENR 1.1 / Part 91'
 },
 
 {
   question: 'Controlled Flight Into Terrain (CFIT) prevention strategies for IFR pilots include:',
   options: [
-    'A. Avoiding CFIT is solely the responsibility of ATC radar',
-    'B. CFIT only occurs in mountainous areas — flat terrain is safe',
-    'C. EGPWS is always available on IFR aircraft and eliminates CFIT risk',
-    'D. Maintaining strict altitude discipline, never descending below published minimums, terrain awareness'
+    'Avoiding CFIT is solely the responsibility of ATC and of its ground-based radar service alone',
+    'CFIT only occurs in mountainous areas, flat terrain is safe',
+    'EGPWS is always available on IFR aircraft and eliminates CFIT risk',
+    'Maintaining strict altitude discipline, never descending below published minimums, terrain awareness'
   ],
   correct: 3,
   explanation: 'CFIT prevention: (1) Know MSA before descent; (2) Never descend below published altitudes without clearance/visual; (3) GPWS/EGPWS — respond to ALL terrain alerts immediately (terrain, terrain, pull up — PULL UP); (4) Cross-check GPS/FMS position against chart; (5) Do not continue approach if unstabilised; (6) Go around if in doubt — the runway is still there after a go-around. CFIT is the #1 cause of fatal IFR accidents.',
@@ -5066,10 +5066,10 @@ export const irexQuestions: {
 {
   question: 'The immediate response to a GPWS "TERRAIN, TERRAIN, PULL UP" warning is:',
   options: [
-    'A. Check the terrain on the navigation display before responding',
-    'B. Immediately pitch up to maximum angle and apply maximum power — no questions asked; do not delay to check the display',
-    'C. Advise ATC and continue the current approach',
-    'D. The pilot uses judgment — if they believe the alert is false, they continue'
+    'Check the terrain on the navigation display before responding',
+    'Immediately pitch up to the maximum angle and apply maximum power; do not delay to check the display',
+    'Advise ATC and continue the current approach',
+    'The pilot uses their own judgment, and if they believe the alert is false they continue'
   ],
   correct: 1,
   explanation: 'GPWS "TERRAIN PULL UP" — do not delay, do not question: (1) Immediately apply maximum power; (2) Pitch up aggressively to maximum angle of attack (just below stall); (3) Retract gear (if in gear-up clean configuration faster); (4) Advise ATC; (5) Maintain climb until clear. False alerts are rare and the cost of responding to a false alert (brief discomfort) is infinitely less than the cost of not responding to a real one.',
@@ -5077,51 +5077,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The significance of "pre-flight personal minimums" for IFR pilots is:',
+  question: 'Pressure error correction (PEC) applied to a decision altitude (DA) is used to determine the:',
   options: [
-    'A. Personal minimums are always lower than published minimums — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Personal minimums are illegal — only published minima may be used and this applies to all IFR operations in Australian airspace',
-    'C. Personal minimums are the same as aircraft category minimums — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Personal minimums (self-imposed higher minimums than legally required) account for individual proficiency, currency, aircraft familiarity, and operational experience'
+    'True altitude of the aircraft at the missed approach point, corrected for non-standard temperature',
+    'Height of the obstacle clearance surface beneath the final approach segment of the procedure',
+    'Difference between the local QNH and the forecast area QNH in use at the destination aerodrome',
+    'The aerodrome operating minima (AOM), the altimeter reading at which the missed approach is begun'
   ],
   correct: 3,
-  explanation: 'Personal minimums: the published minima represent the legal floor, not necessarily a safe floor for every pilot in every situation. Factors affecting personal minimums: IFR currency (recent practice improves performance); aircraft familiarity (unfamiliar aircraft = higher minimums); single vs multi-pilot; known vs unknown aerodrome; quality of approach aids available; fatigue state. Setting personal minimums ABOVE published is always legal and often advisable.',
-  reference: 'CASA ADM guidance / ICAO Human Factors'
+  explanation: 'At approach speed and configuration the static system has a position (pressure) error, so the altimeter does not read exactly the DA. The pressure error correction is applied to the DA to give the aerodrome operating minima (AOM), the indicated altitude at which the pilot must begin the missed approach if the required visual reference is not available.',
+  reference: 'AIP ENR 1.5 / Part 61 MOS Sch 3 IREX 4.4.5'
 },
 
 {
-  question: 'Effective single-pilot IFR decision making uses the "DECIDE" model, which stands for:',
+  question: 'From a human performance perspective, the benefit of a continuous descent final approach (CDFA) on a 2D approach is that it:',
   options: [
-    'A. Determine, Establish, Cancel, Initiate, Document, Evaluate — this is the correct regulatory position',
-    'B. DECIDE is an acronym for the ILS approach checklist only and this applies to all IFR operations in Australian airspace',
-    'C. The DECIDE model is for air traffic controllers only according to current CASR and AIP requirements',
-    'D. Detect (change), Estimate (significance), Choose (best outcome), Identify (action), Do (action), Evaluate (outcome)'
+    'Removes the need to set a missed approach altitude, reducing the number of actions for the pilot',
+    'Allows the aircraft to descend below the MDA a little earlier, giving more time to sight the runway',
+    'Eliminates the need to monitor altitude on final, because the rate of descent is fixed throughout',
+    'Gives a stabilised, constant descent that lowers workload and the CFIT risk of dive-and-drive'
   ],
   correct: 3,
-  explanation: 'DECIDE model: (D) Detect that a change has occurred; (E) Estimate the significance of the change; (C) Choose the desired outcome; (I) Identify the best action to achieve the outcome; (D) Do the action; (E) Evaluate the outcome. Practical IFR use: weather deteriorating (Detect); assess impact on fuel/alternate (Estimate); decide to divert (Choose); select alternate (Identify); divert (Do); confirm alternate is acceptable (Evaluate).',
-  reference: 'CASA ADM / FAA ADM handbook'
+  explanation: 'A CDFA flies the final segment as a single continuous, stabilised descent toward the MDA/DA rather than the \'dive and drive\' step-down method. From a human-performance view this reduces workload and distraction close to the ground, keeps the aircraft stabilised, and cuts the controlled-flight-into-terrain risk associated with repeated low-level level-offs in the dive-and-drive technique.',
+  reference: 'AIP ENR 1.5 / Part 61 MOS Sch 3 IREX 8.1.5'
 },
 
 {
-  question: 'The "startle response" during an IFR emergency (such as GPWS alert on approach) is managed by:',
+  question: 'A destination TAF shows a TEMPO with visibility and cloud below the landing minima at the ETA. The IFR requirement is to:',
   options: [
-    'A. The startle response improves reaction time and should be amplified — this is the correct regulatory position',
-    'B. Startle response is eliminated by experience alone and this applies to all IFR operations in Australian airspace',
-    'C. The startle response is harmless and does not require management according to current CASR and AIP requirements',
-    'D. Training to automatic responses (muscle memory) for critical actions — "pull up," "go around" drills must be rehearsed until they are instinctive so that the'
+    'Disregard the TEMPO, as a temporary deterioration below minima does not affect IFR planning',
+    'Carry 30 minutes of holding fuel, the allowance that applies to any TEMPO below the minima',
+    'Plan a departure alternate only, since the TEMPO affects the arrival and not the departure',
+    'Provide an alternate, or carry holding fuel for the 60 minutes that a TEMPO below minima requires'
   ],
   correct: 3,
-  explanation: 'Startle and surprise: an unexpected event triggers a freeze/fight/flight response — cognitive processing is briefly inhibited. For GPWS, windshear warning, or other critical IFR emergencies: trained automatic responses bypass the cognitive delay. This is why regular simulator training for critical scenarios is essential — the trained response (power up, pitch up) executes automatically before the cognitive system processes the situation.',
-  reference: 'ICAO Human Factors / CASA simulator training'
+  explanation: 'A TEMPO forecasting conditions below the alternate or landing minima at the ETA requires the flight to either nominate a suitable alternate or carry additional holding fuel. The allowance is 60 minutes for a TEMPO; an INTER requires 30 minutes. The pilot reads the change groups against the planned arrival time to decide which applies.',
+  reference: 'AIP ENR 1.5'
 },
 
 {
   question: 'When should an IFR pilot consider requesting an "immediate approach" from ATC?',
   options: [
-    'A. On every IFR flight to reduce waiting time',
-    'B. Immediate approach is only for commercial operators',
-    'C. When an emergency or urgency exists (medical, fuel, mechanical) requiring expedited approach handling',
-    'D. ATC automatically sequences all IFR aircraft as immediate approaches'
+    'On every IFR flight, simply in order to reduce the time spent waiting around for handling',
+    'Immediate approach is only for commercial operators',
+    'When an emergency or urgency exists (medical, fuel, mechanical) requiring expedited approach handling',
+    'ATC automatically sequences all IFR aircraft as immediate approaches'
   ],
   correct: 2,
   explanation: '"Immediate approach" request: indicates the aircraft requires expedited handling. Reasons: fuel emergency, medical, mechanical issue, weather deterioration. ATC will provide priority sequencing — other aircraft may be instructed to orbit, hold, or extend. For declared emergencies (MAYDAY): ATC automatically provides immediate approach. For minimum fuel: advise "minimum fuel" and request expedite.',
@@ -5129,77 +5129,77 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "minimum fuel" declaration to ATC indicates:',
+  question: 'A GNSS operating procedure that safeguards against navigation error is to:',
   options: [
-    'A. The pilot has calculated the fuel state means any additional delay cannot be accepted without declaring MAYDAY',
-    'B. An emergency requiring immediate landing — this is the correct regulatory position',
-    'C. The aircraft has less than 30 minutes fuel remaining and this applies to all IFR operations in Australian airspace',
-    'D. Minimum fuel is the same as declaring an emergency according to current CASR and AIP requirements'
+    'Disable RAIM so the receiver does not generate alerts on approach',
+    'Verify the loaded approach against the chart and confirm the active leg sequences correctly',
+    'Enter all the waypoints manually by latitude and longitude for each separate approach',
+    'Ignore any database currency warning if the route looks correct'
   ],
-  correct: 0,
-  explanation: '"Minimum fuel" to ATC: advisory that the fuel state is such that any additional delay cannot be accepted. It is NOT a MAYDAY — it is informational. ATC should minimise delays but minimum fuel does not trigger emergency services. If the situation deteriorates to the point where a safe landing cannot be assured, MAYDAY FUEL should be declared immediately.',
-  reference: 'AIP ENR 1.1'
+  correct: 1,
+  explanation: 'Before and during a GNSS approach the pilot confirms the loaded procedure matches the published chart, checks the active waypoint and that legs sequence correctly, and monitors integrity (RAIM/SBAS); these checks guard against loading the wrong procedure or a database error.',
+  reference: 'MOS 8.1.4'
 },
 
 {
-  question: 'The "MAYDAY FUEL" declaration means:',
+  question: 'A \'MAYDAY FUEL\' declaration means:',
   options: [
-    'A. The aircraft has exactly 45 minutes fuel remaining — this is the correct regulatory position',
-    'B. The aircraft has exceeded its maximum range and this applies to all IFR operations in Australian airspace',
-    'C. MAYDAY FUEL is only used by commercial operators according to current CASR and AIP requirements',
-    'D. The pilot is declaring a fuel emergency — the aircraft may not be able to reach an aerodrome with fuel to spare'
+    'The aircraft has exactly 45 minutes of usable fuel still remaining on board at the present time',
+    'The aircraft has now exceeded its maximum operating range',
+    'A distress call used only by commercial operators, not private pilots',
+    'A fuel emergency declaration; the aircraft may not reach a suitable aerodrome with safe fuel remaining'
   ],
   correct: 3,
-  explanation: 'MAYDAY FUEL: a full MAYDAY distress call specifically for fuel emergency. Declares that landing at the nearest suitable aerodrome is essential for safety. ATC clears the aircraft immediately for approach, activates emergency services, and coordinates resources. Any pilot facing a genuine fuel emergency must declare MAYDAY without hesitation.',
+  explanation: 'MAYDAY FUEL is a full distress call for a fuel emergency: landing at the nearest suitable aerodrome is essential. ATC clears the aircraft immediately, alerts emergency services and coordinates priority. A genuine fuel emergency must be declared without hesitation.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'The IFR fuel planning requirement for a domestic piston aircraft includes:',
+  question: 'Maintaining 700 ft per minute on climb-out at a groundspeed of 120 kt gives a climb gradient of about:',
   options: [
-    'A. Enough fuel to reach the destination only — this is the correct regulatory position',
-    'B. Only fuel to destination plus 30 minutes and this applies to all IFR operations in Australian airspace',
-    'C. Fuel for: taxi, departure, en-route, approach at destination, missed approach, flight to alternate, approach at alternate, holding',
-    'D. IFR fuel planning is the same as VFR according to current CASR and AIP requirements'
+    '200 ft per nm',
+    '250 ft per nm',
+    '350 ft per nm',
+    '420 ft per nm'
   ],
   correct: 2,
-  explanation: 'IFR fuel: taxi + departure + en route + destination approach + missed approach + alternate flight + alternate approach + hold (30 min at 1,500 ft) + final reserve (piston: 45 min; turbine: 30 min at holding speed). Final reserve must not be planned to be used — it is for unforeseen contingencies.',
-  reference: 'CASR Part 91'
+  explanation: 'Gradient in ft per nm equals (rate of climb x 60) divided by groundspeed: (700 x 60) / 120 = 350 ft per nm. This must meet or exceed any published SID gradient (standard 200 ft per nm) for obstacle clearance.',
+  reference: 'AIP ENR 1.5 - climb gradient'
 },
 
 {
-  question: 'Crew Resource Management (CRM) in single-pilot IFR operations means:',
+  question: 'A GNSS landing system (GLS) approach obtains its precision guidance from:',
   options: [
-    'A. The solo IFR pilot must use all available resources — ATC, automation, checklists, briefings, and a structured decision-making process — to manage workload safely',
-    'B. CRM only applies to multi-crew aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Single-pilot IFR requires twice the qualifications of multi-crew and this applies to all IFR operations in Australian airspace',
-    'D. CRM is only for airline operations — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'A ground-based augmentation system (GBAS) broadcasting corrections locally',
+    'The barometric altimeter once it is corrected for temperature',
+    'A conventional ILS glideslope transmitter sited at the threshold',
+    'The aircraft\'s own inertial reference system operating alone'
   ],
   correct: 0,
-  explanation: 'Single-pilot CRM: the solo IFR pilot manages all roles — pilot flying, pilot monitoring, navigator, communicator, decision-maker. Effective use of automation (autopilot, FMS) reduces physical workload allowing mental management. Structured briefings and checklists are the single-pilot equivalent of crew coordination.',
-  reference: 'ICAO Human Factors / CASA HF materials'
+  explanation: 'A GLS uses a local ground-based augmentation system (GBAS): a ground station measures GNSS errors and broadcasts corrections to nearby aircraft, giving ILS-like precision guidance, valid only within the GBAS service volume.',
+  reference: 'MOS 5.3.3 / 5.3.4'
 },
 
 {
-  question: 'The "sterile cockpit" principle for IFR below 10,000 ft means:',
+  question: 'If the static source becomes blocked during a climb, the altimeter, VSI and ASI will:',
   options: [
-    'A. The cockpit must be physically clean and tidy before each flight',
-    'B. During critical phases below 10,000 ft, non-essential tasks and communications should be avoided — the pilot\'s full attention should be on aircraft control and safety',
-    'C. During critical phases below 10,000 ft including approach and landing, non-essential tasks and communications should be minimised so the pilot\'s full attention remains on aircraft control',
-    'D. Only the captain may communicate below 10,000 ft — the co-pilot must remain silent'
+    'All three continue to read entirely normally, since they rely on the pitot source',
+    'All three read progressively higher than normal as the aircraft climbs',
+    'Altimeter freezes at the blockage level, VSI reads zero, and the ASI under-reads in the climb',
+    'All three fail completely and display warning flags to the pilot'
   ],
   correct: 2,
-  explanation: 'Sterile cockpit: below 10,000 ft, avoid non-essential tasks — unnecessary radio chat, non-essential passenger interaction, paperwork, or complex FMS reprogramming. These activities divert attention during the highest-risk phases. If an urgent task arises: level off first, complete the task, then continue the profile.',
-  reference: 'ICAO Human Factors / AIP ENR 1.5'
+  explanation: 'With the static source blocked, the altimeter freezes at the level where the blockage occurred, the VSI reads zero (no change in static pressure is sensed), and the ASI is in error, under-reading in a climb and over-reading in a descent. Selecting the alternate static source restores normal indications.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.1'
 },
 
 {
   question: 'The "6 Ts" technique at fixes in IFR stands for:',
   options: [
-    'A. Turn, Throttle, Track, Time, Talk, Transponder',
-    'B. The 6 Ts is only used for VFR navigation',
-    'C. Time (note time overhead), Turn (to new heading), Throttle (set power), Twist',
-    'D. Turn, Terrain, Traffic, Track, Time, Transponder'
+    'Turn, Throttle, Track, Time, Talk, Transponder',
+    'The 6 Ts is only used for VFR navigation',
+    'Time (note time overhead), Turn (to new heading), Throttle (set power), Twist',
+    'Turn, then Terrain, Traffic, Track, Time and finally the Transponder'
   ],
   correct: 2,
   explanation: '5 or 6 Ts at each fix: Time (note), Turn (to outbound/new heading), Throttle (set holding/approach power), Twist (set OBS to inbound course), Talk (report position if required), Timer (start for outbound leg). This structured approach prevents missed actions at the busiest phase of IFR.',
@@ -5207,155 +5207,155 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "IFR position report" format PTNE stands for:',
+  question: 'In the southern hemisphere, accelerating on an easterly or westerly heading causes the magnetic compass to indicate:',
   options: [
-    'A. Pressure, Temperature, Navigation, Equipment — this is the correct regulatory position',
-    'B. Pilot, Track, Navigation, Equipment and this applies to all IFR operations in Australian airspace',
-    'C. PTNE is not a standard Australian aviation term according to current CASR and AIP requirements',
-    'D. Position, Time, Next fix, Estimated time to next fix — the core of an IFR position report in non-radar airspace'
+    'A turn toward the north, exactly as in the northern hemisphere',
+    'No error, since acceleration does not affect the magnetic compass',
+    'A decrease in the indicated heading of about 30 degrees',
+    'A turn toward the south, the dip being toward the south magnetic pole'
   ],
   correct: 3,
-  explanation: 'Position report: P = position (fix name); T = time over fix; N = next fix; E = estimated time at next fix. In practice reports also include altitude/FL and the fix after next. Example: "Melbourne Centre, VH-XYZ, PADME at time 47, FL120, next fix YGTH at 58."',
-  reference: 'AIP ENR 1.1'
+  explanation: 'Acceleration error appears on easterly and westerly headings as the compass card swings toward the nearer dip pole. In the southern hemisphere that is the south magnetic pole, so accelerating indicates a turn toward south and decelerating toward north, the reverse of the northern-hemisphere ANDS rule. The error is nil on north and south headings.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.1'
 },
 
 {
-  question: 'The "continuation bias" (get-home-itis) in IFR leads to:',
+  question: 'GLS guidance from a GBAS ground station is valid:',
   options: [
-    'A. Improved decision-making under pressure — this is the correct regulatory position',
-    'B. Pilots continuing into deteriorating conditions — the desire to complete the flight overrides rational risk assessment',
-    'C. Pilots diverting prematurely and this applies to all IFR operations in Australian airspace',
-    'D. Continuation bias only affects VFR pilots according to current CASR and AIP requirements'
+    'Anywhere within the same flight information region as the station',
+    'Across the whole of Australian airspace simultaneously',
+    'Only above FL100, regardless of the distance from the station',
+    'Only within the published service volume of that GBAS station'
   ],
-  correct: 1,
-  explanation: 'Continuation bias: the strong psychological tendency to continue a planned course of action rather than abandon or modify it. In IFR: continuing past decision points, pressing toward a destination despite worsening weather or fuel concerns. Counter: establish decision points before flight and commit to using them.',
-  reference: 'CASA HF materials / ICAO Human Factors'
+  correct: 3,
+  explanation: 'GBAS corrections are accurate only near the station that measured them, so GLS guidance is valid solely within the published service volume; beyond that distance the corrections no longer apply.',
+  reference: 'MOS 5.3.5'
 },
 
 {
-  question: 'An IFR approach "briefing card" or approach plate should be reviewed:',
+  question: 'An IFR approach briefing should be completed:',
   options: [
-    'A. After establishing on the ILS — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The approach plate is only reviewed if weather is below minima and this applies to all IFR operations in Australian airspace',
-    'C. Before the top of descent — confirming: correct chart, course, step-down altitudes, DA/DH or MDA/H, missed approach procedure, and go-around power',
-    'D. Approach plates are only required for training flights according to current CASR and AIP requirements'
+    'Only after the aircraft is already fully established on the ILS approach inbound to land',
+    'Only when the weather at the destination is forecast below minima',
+    'Before top of descent, confirming chart, course, altitudes, minima, missed approach and go-around power',
+    'Only for training flights, and never for normal line operations'
   ],
   correct: 2,
-  explanation: 'Approach brief timing: complete before top of descent when workload is manageable. Cover: chart validity; aerodrome identification; runway and approach type; inbound course; step-down altitudes; FAF; DA/DH or MDA/H; required visual reference; missed approach procedure; field elevation; go-around power.',
+  explanation: 'The briefing is done before top of descent, while workload is low: confirm the correct and current chart, the inbound course, step-down altitudes and the FAF, the DA/MDA and required visual reference, the missed approach and field elevation, and the go-around power.',
   reference: 'AIP ENR 1.5'
 },
 
 {
-  question: 'When conducting a circling approach in IMC, if visual contact with the aerodrome is lost:',
+  question: 'A ground-based augmentation system (GBAS) consists of:',
   options: [
-    'A. Immediately execute the missed approach — climb to the missed approach altitude',
-    'B. Continue the circle and hope to reacquire the aerodrome',
-    'C. Descend to the runway and feel for the ground',
-    'D. Request ATC radar vectors'
+    'A single satellite that rebroadcasts corrections to all aircraft',
+    'An airborne receiver only, with no ground equipment required',
+    'Ground reference receivers, a processing facility and a VHF data broadcast to aircraft',
+    'A network of NDBs linked together to provide vertical guidance on the approach'
   ],
-  correct: 0,
-  explanation: 'Loss of visual during circling: IMMEDIATE missed approach. Turn toward the landing runway first (if required by procedure), then climb to missed approach altitude on the published missed approach track. The circling procedure has NO terrain clearance guarantee in IMC — visual contact must be maintained throughout. Loss of visual = go around without delay.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
+  correct: 2,
+  explanation: 'A GBAS uses several precisely surveyed ground reference receivers, a central processing and monitoring facility, and a VHF data broadcast that sends differential corrections and integrity data to GBAS-equipped aircraft within the service volume for GLS approaches.',
+  reference: 'MOS 5.3.3 / 5.3.4'
 },
 
 {
   question: 'An IFR approach at night without approach lighting is more demanding because:',
   options: [
-    'A. Night has no effect on IFR approaches — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Visual reference acquisition at DA/DH or MDA/H is more difficult — the pilot must identify the runway from runway edge lights alone, depth perception is reduced',
-    'C. Approach lighting is always available at night — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Night IFR requires lower minima than day — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Night has no real practical effect at all on the conduct of an IFR approach to a lit runway',
+    'Visual acquisition at minima is harder, the runway found from edge lights alone with poor depth perception',
+    'Approach lighting is always available at every aerodrome during the night',
+    'Night IFR is permitted to use lower minima than are used by day'
   ],
   correct: 1,
-  explanation: 'Night approaches: without approach lighting, the visual segment is entirely runway edge lights and threshold lights. Depth perception is poor at night. The "black hole" effect causes pilots to fly lower than on normal visual approaches. Check NOTAM for lighting serviceability.',
+  explanation: 'Without approach lighting the visual segment relies on runway edge and threshold lights, and depth perception is poor at night, so the runway is harder to identify at the minima and a black-hole tendency to go low exists. Lighting serviceability should be checked by NOTAM.',
   reference: 'AIP ENR 1.5'
 },
 
 {
-  question: 'The "black hole approach" illusion at night causes pilots to:',
+  question: 'The black-hole illusion at night causes pilots to:',
   options: [
-    'A. Fly too high on approach — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Fly too low — over dark featureless terrain with only runway lights visible, the brain creates a false sense that the aircraft is higher than it',
-    'C. The black hole illusion has no effect on IFR pilots and this applies to all IFR operations in Australian airspace',
-    'D. Black hole illusion only affects VFR pilots — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The pilot to fly far too high all the way down throughout the whole of the approach',
+    'Fly too low over dark featureless terrain, the few visible lights giving a false sense of height',
+    'It has no real effect on instrument-rated pilots at all',
+    'It affects only VFR pilots and never IFR pilots'
   ],
   correct: 1,
-  explanation: 'Black hole illusion: approaching over dark featureless terrain at night, visual cues suggest a high approach — leading the pilot to push the nose down. The actual glidepath is dangerously low. Mitigation: use all available glidepath aids (PAPI, glide slope, radar altimeter); never rely solely on visual reference in a black hole environment.',
+  explanation: 'Approaching over dark featureless terrain with only runway lights visible, the cues suggest the aircraft is high, so the pilot lowers the nose onto a dangerously low path. The defence is to use every glidepath aid available (PAPI, glideslope, radio altimeter) rather than visual cues alone.',
   reference: 'ICAO Human Factors / AIP ENR 1.5'
 },
 
 {
-  question: 'A TAWS (Terrain Awareness and Warning System) alert on approach requires:',
+  question: 'The two fundamental properties of a gyroscope used in flight instruments are:',
   options: [
-    'A. Immediate response — maximum power, maximum pitch up, and wings level until clear of the terrain warning',
-    'B. Acknowledging the warning and continuing the approach — this is the correct regulatory position',
-    'C. Only a slight power increase and this applies to all IFR operations in Australian airspace',
-    'D. TAWS warnings are routinely false and can be ignored according to current CASR and AIP requirements'
+    'Rigidity in space and precession',
+    'Magnetism and magnetic dip',
+    'Pressure differential and lag',
+    'Resonance and aerodynamic damping'
   ],
   correct: 0,
-  explanation: 'GPWS/TAWS alert: IMMEDIATE action — do not hesitate. Standard response: TOGA power, maximum pitch to achieve maximum climb rate, wings level. Do not descend. Do not attempt to verify visually. Advise ATC "going around, TAWS warning." Treat all TAWS alerts as genuine.',
-  reference: 'AIP ENR 1.5 / ICAO CFIT guidance'
+  explanation: 'A spinning gyro shows rigidity in space (it holds its spin-axis orientation, used by the attitude indicator and DI) and precession (a force on the rim acts 90 degrees later in the direction of spin, used by the turn indicator). Friction and Earth rotation cause unwanted precession, so the DI is realigned with the compass.',
+  reference: 'Part 61 MOS Sch 3 IREX 2.3.1'
 },
 
 {
-  question: 'The "CFIT" (Controlled Flight Into Terrain) threat is highest during:',
+  question: 'The risk of controlled flight into terrain (CFIT) is highest during:',
   options: [
-    'A. High altitude cruise in clear conditions — this is the correct regulatory position',
-    'B. Approach and landing phases in IMC, especially during non-precision approaches at night or in mountainous terrain',
-    'C. CFIT only affects aircraft without weather radar and this applies to all IFR operations in Australian airspace',
-    'D. CFIT is not a significant risk in modern aviation according to current CASR and AIP requirements'
+    'High-altitude cruise flight in clear, stable and smooth weather conditions well en-route',
+    'Approach and landing in IMC, especially non-precision approaches at night or in mountainous terrain',
+    'Only aircraft that are not fitted with any weather radar',
+    'It is no longer a significant risk in modern aviation'
   ],
   correct: 1,
-  explanation: 'CFIT: fully controlled aircraft flying into terrain. Highest risk: approach phase in IMC, especially NDB and VOR non-precision approaches in mountainous terrain; circling approaches at night; descending below minimum altitudes due to pressure, fatigue, or workload. Prevention: strict LSALT/altitude discipline, TAWS/GPWS use, and never compromise minimum altitudes.',
-  reference: 'ICAO CFIT task force / AIP ENR 1.5'
+  explanation: 'CFIT, a controlled aircraft flown into terrain, is most likely on approach in IMC, particularly non-precision approaches in mountainous terrain, circling at night, or descending below minimum altitudes under pressure or workload. Altitude discipline and TAWS/GPWS use are the defences.',
+  reference: 'ICAO CFIT guidance / AIP ENR 1.5'
 },
 
 {
-  question: 'When the ATIS reports RVR below published landing minima, the IFR pilot should:',
+  question: 'On a DME arc procedure, a published lead radial is used to:',
   options: [
-    'A. Continue the approach and assess conditions visually',
-    'B. Request a lower approach category',
-    'C. Apply the approach ban — do not commence the approach if RVR is below minima',
-    'D. RVR below minima is only a recommendation, not a rule'
+    'Mark the point at which the aircraft must begin its descent on the arc',
+    'Identify the missed approach point at the end of the arc',
+    'Warn the pilot to begin the turn off the arc onto the final approach course',
+    'Define the minimum safe altitude while established on the arc'
   ],
   correct: 2,
-  explanation: 'Approach ban: if reported or observed RVR/visibility is below published minima before reaching DA/H or MDA/H, the approach must not be continued. The reported conditions represent actual aerodrome conditions. Commencing an approach when reported RVR is already below minima is a breach of CASR Part 91.',
-  reference: 'CASR Part 91 / AIP ENR 1.5'
+  explanation: 'A lead radial is published shortly before the final approach course so the pilot anticipates and begins the turn off the arc in time to roll out established on final, rather than overshooting the inbound course.',
+  reference: 'AIP ENR 1.5 / ICAO PANS-OPS'
 },
 
 {
-  question: 'When flying an ILS approach and the localiser shows full-scale deflection below 500 ft AGL, the pilot should:',
+  question: 'If the ILS localiser shows full-scale deflection below 500 ft AGL, the pilot should:',
   options: [
-    'A. Apply full aileron correction and continue provided the pilot holds a current medical certificate',
-    'B. Immediately go around — full-scale localiser deflection at low altitude is a severely unstabilised approach that cannot result in a safe landing',
-    'C. Continue to MDA and assess',
-    'D. Full scale deflection is acceptable below 500 ft as approved by CASA under current regulations'
+    'Apply full aileron correction and continue the approach to land',
+    'Go around immediately; full-scale deflection at low altitude is a severely unstabilised approach',
+    'Continue down to the MDA and assess the situation from there',
+    'Accept it, since full-scale deflection is perfectly acceptable below 500 ft on final'
   ],
   correct: 1,
-  explanation: 'Full scale localiser deflection at low altitude: the aircraft is approximately 700 ft laterally off centreline at threshold. At 500 ft AGL on a 3° glide slope the aircraft is about 1 nm from the runway. This is a completely unstabilised approach — immediate go-around. No recovery from this position can result in a safe landing.',
+  explanation: 'Full-scale localiser deflection means roughly 700 ft off centreline at the threshold; at 500 ft on a 3-degree path the aircraft is about a mile out and grossly unstabilised. No recovery from there gives a safe landing, so an immediate go-around is the only correct action.',
   reference: 'AIP ENR 1.5'
 },
 
 {
   question: 'The required visual reference that allows continuation below MDA/H must be:',
   options: [
-    'A. Any light visible ahead of the aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only the runway centreline markings visible through the forward windscreen and this applies to all IFR operations in Australian airspace',
-    'C. Any airport light visible in the general direction of the runway environment — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Sufficient to determine the aircraft\'s position and rate of descent relative to the runway — typically approach lights, threshold lights, runway markings, PAPI/VASI, or touchdown zone'
+    'Any light visible ahead of the aircraft',
+    'Only the runway centreline markings visible through the forward windscreen',
+    'Any airport light visible in the general direction of the runway environment',
+    'Sufficient to determine the aircraft\'s position and rate of descent relative to the runway'
   ],
   correct: 3,
-  explanation: 'Required visual reference below MDA/H: must allow the pilot to assess position and flight path to the runway. CASR specifies what constitutes required visual reference — approach lighting systems (within 300 m), threshold lights, threshold markings, PAPI/VASI, touchdown zone. If none of these is visible, go around.',
+  explanation: 'Required visual reference below MDA/H: must allow the pilot to assess position and flight path to the runway. CASR specifies what constitutes required visual reference — approach lighting systems (within 300 m), threshold lights, threshold markings, PAPI/VASI, touchdown zone. If none of these is visible, go around. Typically approach lights, threshold lights, runway markings, PAPI/VASI, or touchdown zone.',
   reference: 'CASR Part 91 / AIP ENR 1.5'
 },
 
 {
   question: 'When an IFR aircraft is given "radar identified," ATC can provide:',
   options: [
-    'A. Weather radar information only',
-    'B. Radar identification only confirms the transponder works',
-    'C. Radar identification means the aircraft is in Class A airspace',
-    'D. Traffic information, radar separation, terrain warnings (if MSAW equipped), vectors, and position information'
+    'Only weather radar information, and nothing else that is of any real use to the pilot',
+    'Radar identification only confirms the transponder works',
+    'Radar identification means the aircraft is in Class A airspace',
+    'Traffic information, radar separation, terrain warnings if MSAW equipped, vectors and position'
   ],
   correct: 3,
   explanation: 'Radar identification enables: radar separation; traffic information; MSAW terrain alerts; vectoring; position information. The pilot benefits from a dramatically higher level of service. Loss of radar identification: ATC advises and reverts to procedural separation.',
@@ -5363,51 +5363,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "graveyard spiral" in IMC results from:',
+  question: 'Usable fuel on board is 180 litres and the cruise burn is 45 litres per hour. The fuel endurance is:',
   options: [
-    'A. An undetected increasing bank angle in cloud — the pilot applies back pressure trying to maintain altitude, tightening the spiral',
-    'B. Flying too slowly in cloud — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Engine failure in IMC and this applies to all IFR operations in Australian airspace',
-    'D. The graveyard spiral only occurs in high-performance aircraft according to current CASR and AIP requirements'
+    '3 hours',
+    '4 hours',
+    '4 hours 30 minutes',
+    '3 hours 30 minutes'
+  ],
+  correct: 1,
+  explanation: 'Fuel endurance = usable fuel divided by burn rate = 180 / 45 = 4 hours. Endurance is the total flying time available and is entered on the flight plan for SAR purposes.',
+  reference: 'AIP ENR 1.10'
+},
+
+{
+  question: 'An IFR pilot suffering spatial disorientation in IMC should:',
+  options: [
+    'Trust the physical sensations that are felt and then manoeuvre the aircraft accordingly',
+    'Reduce power and slow the aircraft right down immediately',
+    'Open a door or window to try to get an outside visual reference',
+    'Trust the instruments completely, ignore the sensations, and set wings level on the attitude indicator'
+  ],
+  correct: 3,
+  explanation: 'The vestibular system is unreliable in IMC and cannot tell a coordinated turn from straight flight, so the attitude indicator is the only trustworthy reference. The recovery is to focus on the AI, set wings level, and climb gently, trusting the instruments over the body.',
+  reference: 'ICAO Human Factors / AIP ENR 1.5'
+},
+
+{
+  question: 'To descend from 5,000 ft to 2,000 ft over a track distance of 12 nm, the descent gradient is:',
+  options: [
+    '250 ft/nm',
+    '300 ft/nm',
+    '200 ft/nm',
+    '150 ft/nm'
   ],
   correct: 0,
-  explanation: 'Graveyard spiral: in a banked turn in IMC, the pilot may not recognise the bank. Back pressure tightens the spiral. Airspeed increases. Recovery: reduce power, level the wings using the AI (not the altimeter), then gently pull level. Do not pull while banked — this worsens the spiral.',
-  reference: 'ICAO Human Factors / AIP ENR 1.5'
-},
-
-{
-  question: 'An IFR pilot experiencing spatial disorientation in IMC should:',
-  options: [
-    'A. Trust physical sensations and manoeuvre accordingly — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Reduce power and slow the aircraft immediately and this applies to all IFR operations in Australian airspace',
-    'C. Open the door to get a visual reference — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Trust the instruments completely — ignore all physical sensations. Establish wings-level attitude using the attitude indicator as primary reference'
-  ],
-  correct: 3,
-  explanation: 'Spatial disorientation: the vestibular system is unreliable in IMC — it cannot distinguish between coordinated turns and straight flight. The ONLY reliable reference in IMC is the attitude indicator. Recovery: focus on AI, establish wings level, gentle climb. "Trust the instruments" is fundamental instrument flying.',
-  reference: 'ICAO Human Factors / AIP ENR 1.5'
-},
-
-{
-  question: 'When the ILS glide slope becomes unreliable below the outer marker, the recommended action is:',
-  options: [
-    'A. Continue the approach trusting the localiser only as approved by CASA under current regulations',
-    'B. Declare an emergency and request radar vectors',
-    'C. Use the PAPI as the primary glide path reference',
-    'D. Revert to a localiser-only (non-precision) approach using published LOC minima — treat the glide slope as unserviceable and fly the LOC procedure'
-  ],
-  correct: 3,
-  explanation: 'Unreliable glide slope: if the GS signal is erratic (possible false capture, oscillation), revert to LOC-only procedure. Use the published LOC minima (higher than ILS). The localiser remains reliable. Chasing an unreliable glide slope at low altitude is extremely dangerous.',
-  reference: 'AIP ENR 1.5'
+  explanation: 'Descent gradient = height to lose divided by track distance = 3,000 ft over 12 nm = 250 ft per nm. Comparing this with aircraft performance confirms the descent point and rate are achievable.',
+  reference: 'ICAO Doc 8168 / navigation'
 },
 
 {
   question: 'An IFR pilot noting the aircraft\\\'s DME has failed should:',
   options: [
-    'A. Continue the flight without informing ATC',
-    'B. Advise ATC of the DME failure — this affects what approaches and procedures are available',
-    'C. Only advise ATC if the destination requires DME',
-    'D. DME failure is not required to be reported'
+    'Continue the flight without informing ATC at all about the DME unit failure',
+    'Advise ATC of the DME failure, this affects what approaches and procedures are available',
+    'Only advise ATC if the destination requires DME',
+    'DME failure is not required to be reported'
   ],
   correct: 1,
   explanation: 'DME failure: advise ATC. Implications: DME-required approaches unavailable; some position reporting affected. ATC may modify the clearance or suggest alternative procedures. Concealing equipment failures in IFR operations is a significant safety risk.',
@@ -5415,194 +5415,194 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The published missed approach altitude must be reached:',
+  question: 'The published missed-approach altitude must be reached:',
   options: [
-    'A. Before turning to the missed approach course — this is the correct regulatory position',
-    'B. Only if ATC requests it and this applies to all IFR operations in Australian airspace',
-    'C. The missed approach altitude is advisory only according to current CASR and AIP requirements',
-    'D. As soon as possible after initiating the go-around — the aircraft climbs to the missed approach altitude to ensure obstacle clearance'
+    'Only before the aircraft turns onto the published missed approach course, and at no other time',
+    'Only when ATC specifically requests that the aircraft climb',
+    'It is merely advisory, so it does not need to be reached',
+    'As soon as possible after the go-around, climbing to the missed approach altitude for obstacle clearance'
   ],
   correct: 3,
-  explanation: 'Missed approach altitude: provides obstacle clearance for the published missed approach track. Must be reached as part of the procedure. Never descend below the missed approach altitude until cleared by ATC. If go-around initiated before MAP: climb and fly to the MAP before commencing the missed approach turn.',
+  explanation: 'The missed-approach altitude gives obstacle clearance on the published missed-approach track and is climbed to as part of the procedure; the aircraft does not descend below it until ATC clears it. If the go-around is begun before the MAP, fly to the MAP before the missed-approach turn.',
   reference: 'AIP ENR 1.5 / ICAO Doc 8168'
 },
 
 {
-  question: 'Radio failure (NORDO) in IFR flight requires the pilot to:',
+  question: 'A PAPI on a normal approach slope shows the pilot:',
   options: [
-    'A. Squawk 7600, maintain last assigned altitude or MEA whichever is higher, proceed on the filed route, execute the published approach at the ETA, land and notify ATC immediately',
-    'B. Descend immediately to VMC and continue VFR — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Fly in circles until another aircraft establishes visual contact and this applies to all IFR operations in Australian airspace',
-    'D. Declare an emergency and land at the nearest aerodrome regardless of clearance according to current CASR and AIP requirements'
+    'Two white lights together with two red lights',
+    'Four white lights arranged in a straight row',
+    'Four red lights arranged in a straight row',
+    'Three white lights together with one red light'
   ],
   correct: 0,
-  explanation: 'NORDO IFR: (1) Squawk 7600; (2) Maintain last assigned altitude or MEA; (3) Proceed on last cleared route or filed flight plan; (4) At destination ETA, execute the published approach; (5) Land and notify ATC immediately. ATC will clear the airspace around the expected NORDO aircraft route.',
-  reference: 'AIP ENR 1.1'
+  explanation: 'A PAPI is a row of four lights: on slope shows two white (far side) and two red (near side). More white means too high (three or four white) and more red means too low, with four red well below the slope.',
+  reference: 'AIP AD / MOS 2.3.17'
 },
 
 {
-  question: 'An IFR flight planning to land at an aerodrome where METAR shows "VV004" should expect:',
+  question: 'A METAR showing \'VV004\' means the pilot should expect:',
   options: [
-    'A. Broken cloud at 400 ft',
-    'B. Variable visibility of 4,000 m provided the pilot holds a current medical certificate',
-    'C. Vertical visibility 400 ft — indicating obscured sky (fog, mist, smoke). The effective ceiling is 400 ft, well below most IFR minima',
-    'D. VV004 means very good visibility'
+    'Broken cloud at 400 ft above the aerodrome elevation at the time of arrival',
+    'A variable surface visibility of 4,000 m at the field',
+    'Vertical visibility of 400 ft into an obscured sky (fog/mist), acting as a ceiling well below most minima',
+    'Very good visibility, entirely suitable for a normal straight-in instrument approach to land'
   ],
   correct: 2,
-  explanation: 'VV (Vertical Visibility): used when the sky is obscured and cloud layers cannot be determined. "VV004" = vertical visibility 400 ft. This effectively acts as the ceiling for IFR purposes. 400 ft vertical visibility is below most approach minima and would likely require a go-around.',
+  explanation: 'VV is used when the sky is obscured and cloud layers cannot be assessed; VV004 is a vertical visibility of 400 ft, which effectively acts as the ceiling. At 400 ft it is below most approach minima and would likely require a missed approach.',
   reference: 'AIP GEN 2.1'
 },
 
 {
-  question: 'IFR training flights under simulated IMC (hood/foggles) require:',
+  question: 'IFR training under simulated IMC (hood) requires:',
   options: [
-    'A. A safety pilot with at least a PPL to maintain outside visual lookout while the student flies under the hood',
-    'B. The student to be IFR rated — this is the correct regulatory position',
-    'C. The safety pilot only needs a student pilot certificate and this applies to all IFR operations in Australian airspace',
-    'D. No safety pilot is required if flying above FL100 according to current CASR and AIP requirements'
+    'A safety pilot holding at least a PPL to keep a visual lookout while the student flies under the hood',
+    'The student flying under the hood must already hold a current instrument rating themselves',
+    'The safety pilot to hold only a student pilot certificate',
+    'No safety pilot at all, provided the flight is above FL100'
   ],
   correct: 0,
-  explanation: 'Simulated IMC training: the student flies under the hood while the safety pilot maintains visual lookout and is responsible for collision avoidance. The safety pilot must hold at least a PPL and be current. The safety pilot is PIC unless the student is already rated — they take control if any visual hazard arises.',
-  reference: 'CASR Part 61 / CASR Part 91'
+  explanation: 'The student flies under the hood while a safety pilot maintains the outside lookout and is responsible for collision avoidance. The safety pilot must hold at least a PPL and be current, and takes control if any visual hazard arises.',
+  reference: 'CASR Part 61 / Part 91'
 },
 
 {
-  question: 'A "SPECI" weather report is issued when:',
+  question: 'On a PAPI, an indication changing to three red and one white, then four red, tells the pilot the aircraft is:',
   options: [
-    'A. Significant changes in weather occur between scheduled observations — such as visibility dropping below 800 m, ceiling dropping below 1,500 ft, or',
-    'B. A scheduled hourly METAR is due — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. SPECI is issued for military operations only and this applies to all IFR operations in Australian airspace',
-    'D. SPECIs are only issued at major international airports according to current CASR and AIP requirements'
-  ],
-  correct: 0,
-  explanation: 'SPECI (Special Observation): issued between regular METAR times when significant aeronautical weather changes occur. Triggers: visibility below 800 m or recovering above 800 m; ceiling below 1,500 ft or recovering; wind change; onset of thunderstorm or freezing precipitation. SPECIs are critical for IFR pilots who rely on current conditions.',
-  reference: 'AIP GEN 2.1'
-},
-
-{
-  question: 'Holding fuel above destination while waiting for weather to improve must be managed so that:',
-  options: [
-    'A. The PIC can hold indefinitely if fuel permits — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. ATC will advise when fuel is critical — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. When fuel reaches the "divert fuel" level (fuel to reach alternate + complete alternate approach + final reserve), the diversion commences regardless of',
-    'D. The pilot waits until visual conditions develop before diverting according to current CASR and AIP requirements'
+    'On the correct approach slope and should simply be maintained',
+    'Above the slope and continuing to get higher still',
+    'Below the slope and getting progressively lower',
+    'Exactly at the elevation of the runway threshold'
   ],
   correct: 2,
-  explanation: 'Holding fuel management: calculate "divert fuel" — fuel to fly to alternate, complete the alternate approach, and land with final reserve. When fuel reaches this level, commence the diversion regardless of destination conditions. Declare "minimum fuel" to ATC before this point. Never enter a situation where the alternate is no longer achievable.',
-  reference: 'CASR Part 91 / AIP ENR 1.1'
+  explanation: 'More red than white means below slope: three red and one white is slightly low and four red is well below; the pilot adjusts to regain two white and two red. Increasing white would indicate progressively high.',
+  reference: 'AIP AD / MOS 2.3.17'
 },
 
 {
-  question: 'The "instrument cross-check" (scan) technique in IFR is critical because:',
+  question: 'The T-VASIS approach slope system indicates \'on slope\' when the pilot sees:',
   options: [
-    'A. No single instrument provides complete flight information — systematic cross-checking detects instrument failures through disagreement, prevents fixation on one instrument',
-    'B. One instrument provides all information needed — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Cross-check is only needed when flying on autopilot — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The attitude indicator provides all required information — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The horizontal bar of lights only, with no fly-up or fly-down lights',
+    'All of the available lights illuminated brightly together',
+    'A single red light positioned just to the left of the centreline',
+    'Two white lights and two red lights set in a single row'
   ],
   correct: 0,
-  explanation: 'Instrument cross-check: selective radial scan ensures all relevant instruments are checked regularly. Benefits: detects failed instruments through disagreement; prevents fixation; maintains awareness of energy state, path, and heading simultaneously. A disciplined scan is fundamental to instrument flying.',
-  reference: 'AIP ENR 1.5'
+  explanation: 'T-VASIS shows the horizontal bar alone when on slope; \'fly-down\' lights appear above the bar when high and \'fly-up\' lights below it when low, with more lights as the deviation grows. (Two white/two red is the PAPI, a different system.)',
+  reference: 'AIP AD / MOS 2.3.17'
 },
 
 {
-  question: 'The IFR "SARTIME" must be cancelled because:',
+  question: 'A limitation of visual approach slope guidance (PAPI/T-VASIS) is that it:',
   options: [
-    'A. SARTIME cancellation confirms the aircraft has enough fuel',
-    'B. SARTIME only applies to VFR flights as approved by CASA under current regulations',
-    'C. Failure to cancel SARTIME triggers a search and rescue response — unnecessary SAR operations waste resources and endanger SAR crews',
-    'D. Cancelling SARTIME is optional for IFR flights on a flight plan'
+    'Provides reliable slope guidance from any direction around the field',
+    'Guarantees full obstacle clearance throughout the entire descent',
+    'Is valid only within a limited azimuth and range of the runway',
+    'Removes the need for any instrument approach in poor weather'
   ],
   correct: 2,
-  explanation: 'SARTIME: time at which SAR action will commence if contact has not been made. Always cancel on landing or through ATC. Failing to cancel triggers an unnecessary and costly SAR. For IFR on an ATC flight plan the flight plan itself may provide SAR coverage — confirm local procedures.',
-  reference: 'AIP ENR 1.10'
+  explanation: 'The lights give correct slope information only within a defined azimuth and out to a limited distance; outside that the indication is unreliable. The system is a visual slope aid and does not by itself assure obstacle clearance beyond the protected area.',
+  reference: 'AIP AD / MOS 2.3.17'
 },
 
 {
-  question: 'The benefit of a "stabilised approach" over an unstabilised approach in IFR is:',
+  question: 'An aerodrome served by PAL may be nominated as an alternate provided the aircraft has:',
   options: [
-    'A. Stabilised approaches allow lower minima — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Consistent energy management and flight path control — reducing workload during the critical final segment and providing better capacity to transition to visual',
-    'C. Stabilised approaches are only required for commercial pilots and this applies to all IFR operations in Australian airspace',
-    'D. Unstabilised approaches are acceptable if the pilot is experienced according to current CASR and AIP requirements'
+    'Dual VHF, or single VHF with HF and 30 minutes holding fuel',
+    'A serviceable autopilot that is capable of flying the approach',
+    'At least two pilots both qualified for night flying operations',
+    'Permission obtained from the aerodrome operator beforehand'
+  ],
+  correct: 0,
+  explanation: 'A PAL aerodrome can be an alternate with no responsible person on the ground if the aircraft carries dual VHF, or single VHF plus HF with 30 minutes holding fuel to allow ground staff to be alerted should the VHF fail.',
+  reference: 'AIP ENR 1.1 / MOS 2.3.16'
+},
+
+{
+  question: 'The benefit of a stabilised approach over an unstabilised one is:',
+  options: [
+    'It allows the pilot to use approach minima that are noticeably lower than those actually published',
+    'Consistent energy and flight-path control that lowers workload on final and eases the transition to visual',
+    'It is required only of commercial pilots, not private ones',
+    'An unstabilised approach is fine if the pilot is experienced'
   ],
   correct: 1,
-  explanation: 'Stabilised approach: at the gate altitude (1,000 ft in IMC), established on path, speed, configuration, and power. An unstabilised approach requires corrections throughout, increasing workload precisely when it should be decreasing. Studies show unstabilised approaches are a major factor in approach and landing accidents.',
+  explanation: 'A stabilised approach is established on path, speed, configuration and power by the gate (about 1,000 ft in IMC), so the final segment needs few corrections and the workload falls when it matters most, with better capacity to go visual. Unstabilised approaches are a major factor in approach-and-landing accidents.',
   reference: 'AIP ENR 1.5 / ICAO CFIT guidance'
 },
 
 {
-  question: 'When ATC issues "own navigation approved," the pilot should:',
+  question: 'An Aerodrome Frequency Response Unit (AFRU) responds to three microphone clicks within five seconds by:',
   options: [
-    'A. Fly any route chosen to the destination — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Accept without verification — ATC is responsible for the route and this applies to all IFR operations in Australian airspace',
-    'C. Confirm the route to be flown (direct to destination or resume flight plan) and verify the direct track is above LSALT and clear of restricted airspace',
-    'D. "Own navigation approved" cancels the IFR clearance — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Switching on the runway lighting for a period of thirty minutes',
+    'Connecting the pilot directly through to the nearest ATC unit',
+    'Transmitting a voice identification of that particular aerodrome',
+    'Changing the CTAF over to the area frequency automatically'
   ],
   correct: 2,
-  explanation: '"Own navigation approved": ATC releases the aircraft from vectoring. The pilot confirms routing (e.g. "direct YSSY" or "resuming flight plan"). Verify the track is above LSALT and clear of restricted airspace before accepting. If any issue exists, advise ATC.',
-  reference: 'AIP ENR 1.1'
+  explanation: 'Three mic clicks within five seconds make the AFRU transmit the aerodrome\'s voice identification, confirming the pilot has selected the correct CTAF; it also answers a transmission over two seconds with a tone or voice ID, confirming the radio works on the right frequency.',
+  reference: 'AIP GEN 3.4'
 },
 
 {
-  question: 'The "intermediate approach segment" of an instrument approach:',
+  question: 'The somatogyral illusion in IMC arises because the semicircular canals:',
   options: [
-    'A. Is the final descent to MDA/H — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Begins at the runway threshold — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Connects the initial approach segment to the final approach segment — the aircraft configures for the approach and aligns with the final approach course,',
-    'D. The intermediate segment only exists on precision approaches according to current CASR and AIP requirements'
+    'Stop sensing a prolonged steady turn, so stopping the turn feels like turning the other way',
+    'Sense a forward acceleration as a nose-high pitching movement',
+    'Detect a true horizon reliably even when none is actually visible outside the aircraft',
+    'Become steadily more accurate the longer that a turn is maintained'
+  ],
+  correct: 0,
+  explanation: 'After a prolonged constant-rate turn the semicircular canals stop signalling rotation, so the turn feels to have stopped; rolling out then gives a false sensation of turning the other way, the basis of the graveyard spin. Trusting the instruments is the defence.',
+  reference: 'MOS 8.1.2'
+},
+
+{
+  question: 'Autokinesis can mislead a pilot at night when:',
+  options: [
+    'Bright sunlight reflects upward from a layer of cloud below',
+    'Two aircraft pass in opposite directions at the same level',
+    'A single stationary light, stared at in the dark, appears to move',
+    'The landing light illuminates falling rain ahead of the aircraft'
   ],
   correct: 2,
-  explanation: 'Intermediate approach segment: between the intermediate fix (IF) and the FAF. The aircraft aligns with the final approach course, reduces speed, configures (gear, flaps as required), and stabilises on the approach profile. Configuration should be complete before the FAF.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
+  explanation: 'Staring at an isolated stationary light against a dark background for several seconds makes it appear to move, which can prompt unnecessary control inputs. Scanning the whole field of view rather than fixating prevents it.',
+  reference: 'MOS 8.1.3'
 },
 
 {
-  question: 'RNAV approach "LNAV" minima apply when:',
+  question: 'A STAR altitude constraint of \'AT OR ABOVE FL180\' at a fix means the aircraft must:',
   options: [
-    'A. Lateral and vertical guidance are both available — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. LNAV minima are lower than LNAV/VNAV and this applies to all IFR operations in Australian airspace',
-    'C. LNAV applies to ILS approaches only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Only lateral navigation is used — no vertical guidance. The approach is flown as a non-precision approach to MDA/H using GNSS lateral guidance only'
-  ],
-  correct: 3,
-  explanation: 'LNAV: lateral navigation only (GNSS-derived), non-precision approach to MDA. LNAV/VNAV adds barometric vertical navigation (Baro-VNAV) — APV approach to DA. LPV adds SBAS vertical guidance. Each line has different minima — LNAV highest (MDA), LPV lowest (DA similar to ILS CAT I).',
-  reference: 'AIP ENR 1.5'
-},
-
-{
-  question: 'A "VNAV" altitude constraint of "AT OR ABOVE FL180" on a STAR means:',
-  options: [
-    'A. The aircraft must cross that fix at exactly FL180 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The aircraft must cross the specified fix at FL180 or higher — the FMS computes a path to meet this constraint and the aircraft may not descend',
-    'C. AT OR ABOVE constraints are advisory only and this applies to all IFR operations in Australian airspace',
-    'D. The constraint applies only in Class A airspace according to current CASR and AIP requirements'
+    'Cross that fix at exactly FL180, with neither a higher nor a lower level being permitted',
+    'Cross the fix at FL180 or higher; the FMS computes a path to meet it and the aircraft may not be lower',
+    'Treat the AT OR ABOVE constraint as advisory information only',
+    'Apply the constraint only when operating within Class A airspace'
   ],
   correct: 1,
-  explanation: 'AT OR ABOVE altitude constraint: the aircraft must be at or above the published altitude at that fix. The FMS computes a path to meet all constraints. Constraints are mandatory on STARs with vertical profile. Advise ATC immediately if a constraint cannot be met.',
+  explanation: 'An \'at or above\' constraint requires the aircraft to be at or above the published level at that fix; the FMS builds a descent path that satisfies all constraints. Such constraints on a STAR profile are mandatory, and ATC is advised at once if one cannot be met.',
   reference: 'AIP ENR 1.5'
 },
 
 {
-  question: 'When planning IFR flight in high terrain, the pilot should check:',
+  question: 'Planning IFR flight over high terrain, the pilot should check:',
   options: [
-    'A. Only the airway MEA — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only the aerodrome elevation at the destination and this applies to all IFR operations in Australian airspace',
-    'C. LSALT for the specific track, grid LSALT in off-airway areas, SID/STAR altitude requirements, approach MSA, icing levels',
-    'D. LSALT is only relevant for VFR operations according to current CASR and AIP requirements'
+    'Only the published airway MEA for each one of the planned route segments en-route',
+    'Only the aerodrome elevation figure at the destination',
+    'LSALT for the track, grid LSALT off-airway, SID/STAR altitudes, approach MSA and icing levels',
+    'Nothing, since LSALT is relevant only to VFR flight'
   ],
   correct: 2,
-  explanation: 'High terrain IFR planning: LSALT for the track (on-airway and off-airway), SID gradient requirements, approach MSA, forecast icing (can the aircraft operate safely at LSALT?), and performance margin at high/hot conditions. At high density altitude LSALT may not be achievable with full fuel — plan accordingly.',
+  explanation: 'Over high terrain the pilot checks the track LSALT (and grid LSALT off-airway), SID gradient and altitude requirements, the approach MSA, and forecast icing levels, while confirming the aircraft can actually achieve LSALT, since at high or hot/high conditions a full-fuel climb to LSALT may be marginal.',
   reference: 'AIP ENR 1.1 / ERC'
 },
 
 {
   question: 'The "departure alternate" is required when:',
   options: [
-    'A. Take-off weather is at or below approach minima at the departure aerodrome',
-    'B. Departure alternate is never required',
-    'C. Only for international flights',
-    'D. Departure alternate is required for all IFR flights'
+    'Take-off weather is at or below approach minima at the departure aerodrome',
+    'Departure alternate is never required',
+    'Only for international flights',
+    'A departure alternate is required for all IFR flights without exception'
   ],
   correct: 0,
   explanation: 'Departure alternate: required when take-off weather is below published approach minima at the departure aerodrome. If the aircraft must return (engine failure, pressurisation loss), the departure aerodrome may not be landable. Distance limit: typically 1 hour flying time.',
@@ -5610,90 +5610,90 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Frost on aircraft surfaces before departure is hazardous because:',
+  question: 'A \'false horizon\' illusion can occur when:',
   options: [
-    'A. Frost only adds weight and has no aerodynamic effect — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Even a thin layer on lifting surfaces disrupts the smooth laminar boundary layer — increasing stall speed by up to 30% and significantly reducing lift',
-    'C. Frost is only hazardous if it is more than 1 cm thick and this applies to all IFR operations in Australian airspace',
-    'D. Frost is only a concern for jet aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The attitude indicator is the only reference being used',
+    'Sloping cloud tops or scattered ground lights are taken as the true horizon',
+    'The aircraft is established straight and level in clear air',
+    'The pilot scans the flight instruments in a regular, disciplined pattern'
   ],
   correct: 1,
-  explanation: 'Frost on wings: the rough crystalline texture trips the boundary layer early, increasing stall speed significantly (up to 30–35%). Even a thin white frost coating on a critical surface can cause an accident on take-off. "Clean aircraft concept": all frost, ice, and snow must be removed from control surfaces, wings, and stabiliser before flight.',
-  reference: 'AIP ENR 1.5 / CASR Part 91'
+  explanation: 'A sloping cloud bank, an overcast that is not level, or ground lights merging with stars can be mistaken for the horizon, leading the pilot to align the aircraft with the false reference. Believing the attitude indicator prevents it.',
+  reference: 'MOS 8.1.3'
 },
 
 {
-  question: 'Wind shear on approach is most hazardous because:',
+  question: 'The \'flicker effect\' that can cause disorientation is produced by:',
   options: [
-    'A. A sudden change in wind speed or direction alters the aircraft lift instantaneously — headwind-to-tailwind shear causes sudden airspeed and lift loss leaving little time for recovery below 500 ft AGL',
-    'B. It only affects large aircraft — light aircraft are immune to wind shear effects — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Wind shear increases approach airspeed making landings more difficult to control — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Wind shear only occurs above 5,000 ft and is not significant on final approach — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
-  ],
-  correct: 0,
-  explanation: 'Wind shear on approach: headwind-to-tailwind = sudden airspeed loss = undershoot risk. Microburst sequence: headwind (airspeed up), downdraft, then tailwind (airspeed loss) — extremely dangerous. Pirep-advised shear: add 10–15 kt to approach speed, or delay/divert.',
-  reference: 'AIP ENR 1.5'
-},
-
-{
-  question: 'The "continuous descent final approach" (CDFA) technique on a non-precision approach:',
-  options: [
-    'A. Requires a glide slope signal',
-    'B. CDFA cannot be used for non-precision approaches',
-    'C. Involves flying a constant angle descent from the FAF to the runway without levelling at MDA',
-    'D. CDFA only applies to RNAV approaches with VNAV'
-  ],
-  correct: 2,
-  explanation: 'CDFA: the pilot calculates a descent gradient from FAF altitude to the runway threshold and flies it continuously without levelling at MDA. If the runway environment is not sighted at the published DA (calculated from MDA), a go-around is executed. Advantages: stable approach, reduced level-off confusion, better energy management.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
-},
-
-{
-  question: 'The "approach category" for an aircraft is determined by:',
-  options: [
-    'A. Maximum landing weight',
-    'B. 1.3 × Vso (stall speed in landing configuration) at maximum certified landing weight',
-    'C. Maximum cruising speed only',
-    'D. Approach category is assigned by ATC'
-  ],
-  correct: 1,
-  explanation: 'Approach category: Vat = 1.3 × Vso at maximum certified landing weight. Higher category aircraft require wider obstacle clearance areas and often have higher minima. Published minima are listed by category on the chart.',
-  reference: 'ICAO Doc 8168 / AIP ENR 1.5'
-},
-
-{
-  question: 'The IFR "personal minima" concept involves:',
-  options: [
-    'A. Limiting flights to always CAVOK',
-    'B. Personal minima are lower than regulatory minima for experienced pilots',
-    'C. Personal minima are set by the operator, not the pilot',
-    'D. A pilot setting their own operating minimums above the published regulatory minimums'
+    'A steady, unchanging light source that is viewed over a long period',
+    'The complete absence of any external light at all at night',
+    'Two navigation lights of very slightly different colours',
+    'Sunlight or a strobe flickering at low frequency, such as through a propeller'
   ],
   correct: 3,
-  explanation: 'Personal minima: self-imposed limits above published legal minimums. Examples: not flying below 500 ft ceiling until 100 IFR hours logged; maintaining 1 nm above published minimum visibility. As experience and currency increase, personal minima may be lowered toward published minimums. This is responsible risk management.',
-  reference: 'CASA HF materials / ICAO Human Factors'
+  explanation: 'Light flickering at a low frequency, such as sunlight through a propeller disc or a strobe reflecting in cloud, can cause distraction, discomfort or disorientation. Reducing the flicker, by changing power or heading or turning off a strobe in cloud, relieves it.',
+  reference: 'MOS 8.1.3'
 },
 
 {
-  question: 'When an IFR aircraft is cleared for an approach and the aerodrome goes below minima before the FAF, the correct action is:',
+  question: 'A relative-motion illusion occurs when the pilot:',
   options: [
-    'A. Apply the approach ban — do not continue the approach. Advise ATC, request holding or diversion clearance',
-    'B. Continue to FAF — conditions may improve — this is the correct regulatory position',
-    'C. Continue to MDA and assess visually and this applies to all IFR operations in Australian airspace',
-    'D. Declare emergency and continue regardless according to current CASR and AIP requirements'
+    'Correctly judges the closure rate of converging traffic ahead',
+    'Perceives movement of another object as movement of their own aircraft',
+    'Reads the groundspeed directly from the navigation display',
+    'Feels no sensation of motion while flying straight and level'
+  ],
+  correct: 1,
+  explanation: 'When an adjacent aircraft or drifting cloud moves, the pilot may perceive it as their own aircraft moving and make an unnecessary correction; cross-checking the flight instruments confirms the actual aircraft state.',
+  reference: 'MOS 8.1.3'
+},
+
+{
+  question: 'At a height of 3,000 ft on a day 10 deg C colder than ISA, the cold-temperature correction to add (about 4 ft per 1,000 ft per deg C below ISA) is approximately:',
+  options: [
+    'About 40 ft',
+    'About 80 ft',
+    'About 120 ft',
+    'About 200 ft'
+  ],
+  correct: 2,
+  explanation: 'Using about 4 ft per 1,000 ft per degree below ISA: 4 x 3 x 10 = 120 ft. The altimeter over-reads in cold air, so the correction is added to the published altitude to preserve obstacle clearance.',
+  reference: 'AIP ENR 1.7 / ICAO cold-temperature correction'
+},
+
+{
+  question: 'For a night VFR flight on the last route segment, an alternate aerodrome within one hour is required unless the destination:',
+  options: [
+    'Has an NDB/VOR (with a capable aircraft and competent pilot) or an approved GNSS is used',
+    'Has no published instrument approach procedure available at all',
+    'Is always required regardless of the navigation aids that happen to be available',
+    'Requires an alternate only when the flight is for hire or reward'
   ],
   correct: 0,
-  explanation: 'Approach ban before FAF: if conditions are below minima, the approach must not be commenced. Notify ATC: "holding for weather improvement" or "request diversion clearance." Monitor fuel carefully. Do not attempt the approach hoping conditions will improve — if below minima at FAF, they are likely below minima at DA/H too.',
-  reference: 'CASR Part 91 / AIP ENR 1.5'
+  explanation: 'Night VFR requires an alternate within one hour unless the destination is served by an NDB or VOR with a suitably equipped aircraft and competent pilot, or an approved GNSS is carried and the pilot is competent in its use.',
+  reference: 'AIP ENR 1.1 / MOS 4.2.3'
+},
+
+{
+  question: 'The mandatory electrical lighting that must be serviceable for an IFR flight by night includes:',
+  options: [
+    'Landing lights only, used during the approach and landing',
+    'A single cockpit dome light, with no other lighting needed',
+    'Position lights, an anti-collision light, instrument lighting and a serviceable torch',
+    'Strobe lights only, switched on whenever the aircraft is in controlled airspace'
+  ],
+  correct: 2,
+  explanation: 'Night IFR requires serviceable position (navigation) lights, an anti-collision light (beacon or strobes), illumination for the flight instruments, and an independent torch as a backup against an electrical failure.',
+  reference: 'CASR Part 91 / MOS 3.1.2'
 },
 
 {
   question: 'When briefing a missed approach, the essential elements are:',
   options: [
-    'A. Only the missed approach altitude',
-    'B. Only the go-around power setting',
-    'C. The missed approach brief is not required if weather is above minima',
-    'D. Initial climb action (TOGA power, positive rate, gear up); missed approach heading or track'
+    'Only the missed approach altitude',
+    'Only the go-around power setting',
+    'The missed approach brief is not required at all if the weather is above the minima',
+    'Initial climb action (TOGA power, positive rate, gear up); missed approach heading or track'
   ],
   correct: 3,
   explanation: 'Missed approach brief: (1) Initial actions — TOGA, positive climb, gear; (2) Track/heading; (3) Altitude; (4) Subsequent routing; (5) Communications. Brief BEFORE the approach, not during the go-around. The go-around is not the time to consult the chart.',
@@ -5701,155 +5701,155 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The IFR "alternate minima" for a precision approach alternate are typically:',
+  question: 'The key operational difference between a DA (decision altitude) and an MDA (minimum descent altitude) is:',
   options: [
-    'A. Identical to the destination approach minima',
-    'B. Higher than the destination approach minima — typically ceiling 600 ft and RVR/visibility 2 km',
-    'C. VFR conditions only',
-    'D. The same as the circling minima'
+    'An MDA may be flown below momentarily during the go-around, but a DA may not',
+    'A momentary descent below DA is accepted as the go-around begins, but never below an MDA',
+    'They are the same, the two terms being fully interchangeable on charts',
+    'A DA applies only to GNSS approaches and an MDA only to ILS approaches'
   ],
   correct: 1,
-  explanation: 'Alternate minima: higher than straight-in minima to provide a reliable diversion option. For a precision approach alternate: typically ceiling 600 ft and RVR 2 km (varies by published minima). Always check the specific published alternate minima for each aerodrome.',
-  reference: 'CASR Part 91 / AIP ENR 1.1'
+  explanation: 'A DA is used on approaches with vertical guidance (ILS, LNAV/VNAV, LPV): the go-around starts at the DA and a momentary descent below it during the transition is accepted. An MDA is used on non-precision (2D) approaches: the aircraft must not descend below it at all, levelling there until the MAP or visual.',
+  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
 },
 
 {
-  question: 'A VOR approach chart note "circling MDA 1,200 ft" with straight-in MDA 900 ft means:',
+  question: 'A VOR approach with straight-in MDA 900 ft and circling MDA 1,200 ft means the aircraft:',
   options: [
-    'A. The pilot may circle at 900 ft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Both minima apply simultaneously — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. The straight-in approach may descend to 900 ft on the published final course — but if a circling manoeuvre is required, the aircraft must maintain 1,200 ft',
-    'D. The 1,200 ft circling MDA replaces the 900 ft for all operations according to current CASR and AIP requirements'
+    'May circle at the 900 ft straight-in MDA freely',
+    'Has both minima applying at the same time throughout the approach',
+    'May descend to 900 ft on the final course, but must hold 1,200 ft if a circling manoeuvre is required',
+    'Uses the 1,200 ft circling MDA in place of the 900 ft straight-in figure for everything'
   ],
   correct: 2,
-  explanation: 'Straight-in vs circling MDA: if the aircraft can track straight to the landing runway on the approach course (alignment ≤30°), it may descend to the lower straight-in MDA. If circling is required, the higher circling MDA applies throughout. Never descend to straight-in MDA then circle — use circling MDA from the outset.',
+  explanation: 'If the approach aligns with the landing runway (within about 30 degrees) the lower straight-in MDA may be used; if a circling manoeuvre is needed the higher circling MDA applies throughout. The aircraft does not descend to the straight-in MDA and then circle.',
   reference: 'AIP ENR 1.5 / ICAO Doc 8168'
 },
 
 {
-  question: 'When executing a missed approach, "climbing right turn to 3,000 ft" means:',
+  question: 'A missed-approach instruction \'climbing right turn to 3,000 ft\' means:',
   options: [
-    'A. Turn right first then climb',
-    'B. Simultaneously apply go-around power, establish climb attitude, and begin the right turn — the climb and turn occur together from the MAP',
-    'C. Climb to 3,000 ft then turn right provided the pilot holds a current medical certificate',
-    'D. The turn direction is at pilot\ provided the pilot holds a current medical certificate'
+    'Turn to the right first, and only then begin to climb away from the MAP afterward',
+    'Apply go-around power, set the climb attitude, and begin the right turn together from the MAP',
+    'Climb all the way up to 3,000 ft and only then turn right',
+    'Choose the turn direction at the pilot\'s own discretion'
   ],
   correct: 1,
-  explanation: 'Simultaneous climb and turn: "climbing right turn to 3,000 ft" = right bank applied during the climb, beginning at the MAP. Delaying the turn until reaching altitude takes the aircraft outside the protected area. Follow the published procedure precisely.',
+  explanation: 'The climb and the turn are made together from the MAP: go-around power, climb attitude and the right bank applied at once. Delaying the turn until reaching altitude would take the aircraft outside the protected area, so the published procedure is flown precisely.',
   reference: 'AIP ENR 1.5 / ICAO Doc 8168'
 },
 
 {
-  question: 'When ILS marker beacons are identified, the outer marker at approximately 4–7 nm indicates:',
+  question: 'Overhead a fix at 1420 with the next fix 60 nm ahead at a groundspeed of 120 kt, the ETA for the next fix is:',
   options: [
-    'A. The missed approach point',
-    'B. The runway threshold',
-    'C. The outer marker is 1 nm from threshold',
-    'D. The position where the glide slope should be intercepted from below'
+    '1440',
+    '1500',
+    '1435',
+    '1450'
   ],
   correct: 3,
-  explanation: 'Outer marker (OM): 400 Hz, dashes, blue light, approximately 4–7 nm from threshold. Marks the approximate glide slope intercept altitude (where the aircraft should begin the final descent). Provides a cross-check of the altimeter — the published crossing altitude should match the altimeter reading.',
-  reference: 'AIP ENR 4.1'
+  explanation: 'At 120 kt, 60 nm takes 60/120 hour = 30 minutes. Adding 30 minutes to 1420 gives an ETA of 1450. Revised estimates are passed to ATC when the estimate changes by more than 2 minutes.',
+  reference: 'Navigation - time and distance'
 },
 
 {
-  question: 'An IFR flight cancelled SARTIME is important to complete because:',
+  question: 'To lose 4,500 ft on a 3-degree descent path (about 300 ft per nm), descent should begin approximately:',
   options: [
-    'A. SARTIME cancellation confirms the aircraft has enough fuel — this is the correct regulatory position',
-    'B. Failure to cancel triggers a search and rescue response — unnecessary SAR operations waste resources and endanger SAR crews',
-    'C. SARTIME only applies to VFR flights and this applies to all IFR operations in Australian airspace',
-    'D. Cancelling SARTIME is optional according to current CASR and AIP requirements'
+    '5 nm before the point',
+    '10 nm before the point',
+    '15 nm before the point',
+    '25 nm before the point'
   ],
-  correct: 1,
-  explanation: 'SARTIME: time at which SAR action will commence if contact has not been made. Always cancel on landing or through ATC flight plan closure. Failing to cancel triggers an unnecessary and costly SAR mobilisation.',
-  reference: 'AIP ENR 1.10'
-},
-
-{
-  question: 'The maximum holding speed below FL140 in Australia is:',
-  options: [
-    'A. 230 KIAS — exceeding this risks the aircraft departing the protected holding airspace and losing obstacle clearance',
-    'B. 200 KIAS — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. 250 KIAS and this applies to all IFR operations in Australian airspace',
-    'D. There is no IFR holding speed limit according to current CASR and AIP requirements'
-  ],
-  correct: 0,
-  explanation: 'Holding speed limits: 230 KIAS at FL140 and below; 240 KIAS FL140–200; 265 KIAS FL200–340; 0.83M above FL340. These protect the aircraft within the obstacle-cleared holding pattern. Exceeding them means the aircraft may exit the protected area.',
+  correct: 2,
+  explanation: 'A 3-degree path descends about 300 ft per nm, so distance equals height to lose divided by 300: 4,500 / 300 = 15 nm. Planning top of descent this way keeps the aircraft on a constant, stabilised path.',
   reference: 'ICAO Doc 8168 / AIP ENR 1.5'
 },
 
 {
-  question: 'An IFR clearance readback should include:',
+  question: 'Landing on runway 18 (180 deg M) with the wind 210 deg M at 30 kt, the crosswind component is approximately:',
   options: [
-    'A. Only the squawk code',
-    'B. All safety-critical elements: clearance limit, route, altitude, transponder code',
-    'C. Only altitude and squawk',
-    'D. Clearances do not require readback if acknowledged with callsign'
+    'About 10 kt',
+    'About 15 kt',
+    'About 20 kt',
+    'About 26 kt'
   ],
   correct: 1,
-  explanation: 'Full clearance readback: read back ALL elements — clearance limit, route, altitude, transponder code. ATC confirms the readback and corrects errors. Omitting elements risks misunderstood clearances leading to altitude busts, wrong routing, or runway incursions.',
-  reference: 'AIP ENR 1.1 / ICAO Annex 11'
+  explanation: 'The wind is 30 degrees off the runway heading. Crosswind equals wind speed times the sine of the angle: 30 x sin 30 = 30 x 0.5 = 15 kt. The headwind component is 30 x cos 30, about 26 kt.',
+  reference: 'Navigation - wind components'
 },
 
 {
-  question: 'A "direct" holding entry is appropriate when arriving at the fix from:',
+  question: 'Departing with 4 hours endurance, after 2 hours 30 minutes airborne the fuel remaining is:',
   options: [
-    'A. Any direction',
-    'B. Directly along the inbound track from behind',
-    'C. The holding side from any angle',
-    'D. The non-holding side, within approximately 70° of the outbound heading'
-  ],
-  correct: 3,
-  explanation: 'Direct entry: used when arriving within approximately 70° of the outbound heading on the non-holding side. Cross the fix, turn to the outbound heading, and fly the hold normally. The geometry ensures the aircraft remains within the protected area.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
-},
-
-{
-  question: 'Wind correction in holding is applied as:',
-  options: [
-    'A. The inbound leg only — this is the correct regulatory position',
-    'B. Only the outbound leg timing and this applies to all IFR operations in Australian airspace',
-    'C. Wind correction is not required in holding according to current CASR and AIP requirements',
-    'D. Triple the inbound WCA on the outbound leg (in the opposite direction), and the standard WCA on the inbound leg'
-  ],
-  correct: 3,
-  explanation: 'Hold wind correction: inbound — apply WCA to track published inbound course. Outbound — apply triple the inbound WCA in the opposite direction (allows for wind during the two turns). Outbound leg timing adjusted so the inbound leg is approximately 1 minute (below FL140) or 1.5 minutes (above FL140).',
-  reference: 'AIP ENR 1.5'
-},
-
-{
-  question: 'The IREX "instrument currency" requirement for maintaining instrument rating privileges is:',
-  options: [
-    'A. 100 hours IFR per year — this is the correct regulatory position',
-    'B. 6 instrument approaches (and associated holding, tracking, and interception tasks) in the preceding 6 months',
-    'C. One instrument approach per year and this applies to all IFR operations in Australian airspace',
-    'D. Currency is only maintained by flying actual IMC according to current CASR and AIP requirements'
+    '2 hours',
+    '1 hour 30 minutes',
+    '1 hour',
+    '2 hours 30 minutes'
   ],
   correct: 1,
-  explanation: 'Instrument currency: CASR Part 61 requires 6 instrument approaches in the preceding 6 months to exercise instrument rating privileges. If currency lapses, a proficiency check with an authorised examiner is required. Actual IMC approaches, simulated approaches with safety pilot, and simulator approaches all qualify.',
-  reference: 'CASR Part 61'
+  explanation: 'Endurance remaining = total endurance minus time airborne = 4 h 00 minus 2 h 30 = 1 h 30. This is compared against the fuel required to destination plus alternate plus final reserve.',
+  reference: 'Part 91 MOS 19 / AIP ENR 1.1'
 },
 
 {
-  question: 'An IFR approach at a circling-only aerodrome (no straight-in minima) requires the pilot to:',
+  question: 'An aircraft covers 40 nm in 20 minutes. Its groundspeed is:',
   options: [
-    'A. Fly the instrument approach to MDA then land straight ahead — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Request special approach minima from ATC — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Circling-only approaches are not available in Australia — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Fly the instrument approach to circling MDA maintaining visual contact with the aerodrome, manoeuvre visually to position for landing on the appropriate runway'
+    '100 kt',
+    '80 kt',
+    '150 kt',
+    '120 kt'
   ],
   correct: 3,
-  explanation: 'Circling-only approach: the instrument procedure aligns with no runway. The pilot descends to circling MDA, acquires the aerodrome visually, manoeuvres within the circling area (radius depends on category), and lands. Visual contact must be maintained throughout. If contact is lost: immediate missed approach.',
+  explanation: 'Groundspeed = distance divided by time = 40 nm in 20 minutes = 40 times (60/20) = 120 kt. The time-speed-distance relationship underlies groundspeed checks and revised estimates.',
+  reference: 'Navigation - time, speed and distance'
+},
+
+{
+  question: 'At a groundspeed of 200 kt, the time to fly the 50 nm remaining to a fix is:',
+  options: [
+    '10 minutes',
+    '15 minutes',
+    '20 minutes',
+    '25 minutes'
+  ],
+  correct: 1,
+  explanation: 'Time equals distance divided by groundspeed. 50 nm at 200 kt is 50/200 hours = 0.25 hour = 15 minutes. The same time-speed-distance relationship underlies revised estimates passed to ATC.',
+  reference: 'Navigation - time, speed and distance'
+},
+
+{
+  question: 'On an instrument approach, reaching the tracking tolerance means the pilot must:',
+  options: [
+    'Discontinue the approach and go around, as the aircraft may be leaving protected airspace',
+    'Increase speed in order to regain the centreline more quickly',
+    'Descend earlier than planned to make up for the tracking error that was encountered',
+    'Ignore the deviation, provided the runway is in sight ahead'
+  ],
+  correct: 0,
+  explanation: 'If course deviation reaches the tracking tolerance for the aid in use (for example full-scale on a non-precision approach), the aircraft may be at or beyond the edge of the protected area, so the approach is discontinued and the missed approach flown.',
+  reference: 'AIP ENR 1.5 / MOS 4.4.7'
+},
+
+{
+  question: 'An IFR approach at a circling-only aerodrome requires the pilot to:',
+  options: [
+    'Fly the approach to MDA and then land straight ahead on the procedure track',
+    'Request special straight-in approach minima from ATC for a runway',
+    'Treat it as entirely unavailable, since the circling-only approaches simply do not exist in Australia',
+    'Fly the procedure to circling MDA, stay visual with the aerodrome, and manoeuvre to land on the chosen runway'
+  ],
+  correct: 3,
+  explanation: 'The instrument procedure aligns with no runway, so the pilot descends to the circling MDA, acquires the aerodrome visually, manoeuvres within the category circling area and lands. Visual contact must be kept throughout; if it is lost, an immediate missed approach is flown.',
   reference: 'AIP ENR 1.5'
 },
 
 {
   question: 'When ATC advises "expect the ILS approach, runway 34" during descent planning, the pilot should:',
   options: [
-    'A. Brief the ILS RWY 34 approach during the descent while workload is manageable',
-    'B. Delay briefing until the final clearance is issued',
-    'C. Only brief the approach at the outer marker',
-    'D. The approach brief is ATC\'s responsibility — the pilot only needs to listen'
+    'Brief the ILS RWY 34 approach during the descent while workload is manageable',
+    'Delay briefing until the final clearance is issued',
+    'Only brief the approach at the outer marker',
+    'The approach brief is ATC\'s responsibility, the pilot only needs to listen'
   ],
   correct: 0,
   explanation: '"Expect ILS 34": brief the approach now during descent. Load the approach in avionics, review the chart (confirm correct, check altitudes, DA/H, missed approach). When ATC issues the final clearance, confirm it matches the briefed approach. Briefing late (at the IAF or outer marker) creates excessive workload at a critical phase.',
@@ -5857,51 +5857,51 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The IFR concept of "aviate, navigate, communicate" establishes priority because:',
+  question: 'The \'aviate, navigate, communicate\' priority exists because:',
   options: [
-    'A. Aircraft control (aviate) is always the first priority — an uncontrolled aircraft cannot be navigated or communicated from. Navigation second ensures terrain clearance',
-    'B. Communication is the most important task in IFR — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Navigation is always the highest priority in IFR — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. All three priorities are equal in instrument flight — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Control of the aircraft comes first, ahead of navigation and then communication',
+    'Communication is the single most important task throughout an IFR flight',
+    'Navigation is always the very highest priority during IFR flight at all times',
+    'All three priorities are treated as exactly equal during instrument flight'
   ],
   correct: 0,
-  explanation: 'Aviate-Navigate-Communicate: (1) Aviate — maintain control, correct attitude, safe altitude; (2) Navigate — know where you are, where you\\\'re going, terrain clearance; (3) Communicate — inform ATC, request help. In an emergency, do not let ATC communications distract from aircraft control. A controlled aircraft talking can always be helped; an uncontrolled one cannot.',
+  explanation: 'Aircraft control comes first, an uncontrolled aircraft cannot be navigated or talked about; navigation is second to keep terrain and airspace clearance; communication is third. In an emergency, ATC calls must not distract from flying the aircraft.',
   reference: 'ICAO Human Factors / AIP ENR 1.5'
 },
 
 {
-  question: 'Temperature correction for cold weather on instrument approaches is applied because:',
+  question: 'With a surface temperature of +21 degrees C in clear air, the approximate freezing level is:',
   options: [
-    'A. Cold air makes the altimeter read high — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Temperature correction is only required above FL200 and this applies to all IFR operations in Australian airspace',
-    'C. Modern altimeters automatically correct for temperature according to current CASR and AIP requirements',
-    'D. Cold temperatures make the altimeter read HIGHER than actual altitude — published approach altitudes correspond to lower actual altitudes in very'
+    '5,000 ft',
+    '6,000 ft',
+    '7,000 ft',
+    '9,000 ft'
   ],
-  correct: 3,
-  explanation: 'Cold temperature altimeter error: in air colder than ISA, the altimeter reads HIGHER than actual altitude. At very cold temperatures (-20°C, -30°C or below), this error becomes significant. Temperature corrections must be applied to minimum altitudes on approaches when temperature is significantly below ISA.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
+  correct: 2,
+  explanation: 'In clear air the lapse rate is about 3 degrees per 1,000 ft, so the freezing level is 21/3 = 7,000 ft. Freezing-level awareness is essential for icing avoidance on climb and descent.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.3'
 },
 
 {
-  question: 'A "conditional clearance" such as "after the landing Airbus, line up and wait" requires:',
+  question: 'With a true airspeed of 150 kt and a 30 kt headwind component, the groundspeed is:',
   options: [
-    'A. Lining up immediately regardless of the Airbus position — this is the correct regulatory position',
-    'B. Identifying the specified aircraft, ensuring it has touched down and cleared the runway (or the condition is met), then executing the clearance',
-    'C. Requesting confirmation before any movement and this applies to all IFR operations in Australian airspace',
-    'D. Conditional clearances are not used in Australian operations according to current CASR and AIP requirements'
+    '180 kt',
+    '120 kt',
+    '150 kt',
+    '100 kt'
   ],
   correct: 1,
-  explanation: 'Conditional clearance: do not act until the stated condition is met. Must: (1) identify the referenced aircraft visually; (2) confirm the condition is satisfied; (3) then execute. If the condition cannot be confirmed: query ATC before moving. Runway incursions have resulted from pilots misidentifying conditional clearance conditions.',
-  reference: 'AIP ENR 1.1'
+  explanation: 'Groundspeed = TAS minus the headwind component = 150 minus 30 = 120 kt (a tailwind would be added). Groundspeed drives the ETA and fuel calculations.',
+  reference: 'Navigation - groundspeed'
 },
 
 {
   question: 'An IFR pilot receiving weather below minima while established on the approach should:',
   options: [
-    'A. Continue to DA/H and assess on arrival',
-    'B. Descend below DA/H hoping for improvement',
-    'C. Continue the descent at a slower rate',
-    'D. Execute a missed approach at DA/H if required visual reference is not established'
+    'Continue down to DA/H and then assess the prevailing conditions on arrival',
+    'Descend below DA/H hoping for improvement',
+    'Continue the descent at a slower rate',
+    'Execute a missed approach at DA/H if required visual reference is not established'
   ],
   correct: 3,
   explanation: 'Below minima during approach: the approach ban applies at DA/H or MDA/H. If required visual reference is not established at DA/H: immediate go-around. Do not descend further. Reported weather below minima means the approach is unlikely to succeed and below-minima descent risks CFIT.',
@@ -5911,10 +5911,10 @@ export const irexQuestions: {
 {
   question: 'The "HAT" (Height Above Touchdown) on an approach chart represents:',
   options: [
-    'A. Height above the aerodrome reference point',
-    'B. Height above terrain',
-    'C. DA/DH or MDA/H expressed as a height above the touchdown zone elevation',
-    'D. HAT is the same as field elevation'
+    'The height measured directly above the aerodrome reference point',
+    'Height above terrain',
+    'DA/DH or MDA/H expressed as a height above the touchdown zone elevation',
+    'HAT is the same as field elevation'
   ],
   correct: 2,
   explanation: 'HAT: Height Above Touchdown zone elevation. Published alongside the MSL altitude for DA/DH and MDA. For example: "DA 750 ft (HAT 243 ft)" — the DA is 750 ft MSL which is 243 ft above the touchdown zone. HAT helps pilots understand how much runway they will see at the decision point.',
@@ -5922,25 +5922,25 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "five Ts" at a fix on an IFR approach are:',
+  question: 'The benefit of flying an instrument approach coupled to the autopilot is that it:',
   options: [
-    'A. Turn (to appropriate heading), Time (start timer), Twist (OBS to inbound course), Throttle (set approach power), Talk (report if required)',
-    'B. Turn, Time, Target, Track, Transmit provided the pilot holds a current medical certificate',
-    'C. Terrain, Traffic, Transponder, Track, Time as approved by CASA under current regulations',
-    'D. The five Ts are only used in the USA provided the pilot holds a current medical certificate'
+    'Removes the pilot\'s responsibility to monitor the approach at all',
+    'Reduces workload and improves tracking accuracy, freeing capacity to monitor',
+    'Allows the published minima to be disregarded once coupled',
+    'Guarantees the approach without any need to brief or configure'
   ],
-  correct: 0,
-  explanation: '5 Ts at each fix: Turn (heading), Time (start timer for outbound leg), Twist (OBS to inbound course), Throttle (set approach power), Talk (report if required). Some add a sixth T: Track (confirm CDI). This structured checklist prevents missing items during the highest workload phase.',
-  reference: 'AIP ENR 1.5'
+  correct: 1,
+  explanation: 'A coupled approach reduces pilot workload and holds the lateral and vertical path accurately, freeing the pilot to monitor instruments, raw data and the approach progress; the pilot remains responsible and ready to disconnect and fly manually if needed.',
+  reference: 'MOS 8.1.5'
 },
 
 {
   question: 'An IFR pilot whose autopilot disconnects unexpectedly at low altitude in IMC should:',
   options: [
-    'A. Continue looking at the autopilot panel to diagnose the problem',
-    'B. Disconnect all automation and return to the hold',
-    'C. Disengage the autothrottle as well and fly manually with appropriate ATC clearance obtained',
-    'D. Immediately take manual control and maintain aircraft attitude and flight path — do not look for the reason until aircraft control is assured'
+    'Continue looking at the autopilot panel to diagnose the problem',
+    'Disconnect all automation and return to the hold',
+    'Disengage the autothrottle as well and fly manually with appropriate ATC clearance obtained',
+    'Immediately take manual control and maintain attitude and flight path, before looking for the reason'
   ],
   correct: 3,
   explanation: 'Autopilot unexpected disconnect: immediate priority is aircraft control — grip controls, establish and maintain correct attitude, check instruments. Only after control is assured: assess why the autopilot disconnected, decide whether to re-engage or continue manually, advise ATC if required. Distraction during AP disconnect has caused accidents.',
@@ -5950,10 +5950,10 @@ export const irexQuestions: {
 {
   question: 'The IFR "descent via STAR" instruction requires compliance with:',
   options: [
-    'A. Only the final altitude in the clearance',
-    'B. Only the speed constraints — altitudes are advisory',
-    'C. Constraints only apply if the FMS is in VNAV mode',
-    'D. ALL published altitude and speed constraints on the STAR while descending to the cleared altitude'
+    'Only the final altitude that is given in the clearance, not the others',
+    'Only the speed constraints, since all of the altitude constraints are merely advisory',
+    'Constraints only apply if the FMS is in VNAV mode',
+    'ALL published altitude and speed constraints on the STAR while descending to the cleared altitude'
   ],
   correct: 3,
   explanation: '"Descend via STAR": comply with ALL published altitude AND speed constraints on the STAR while descending to the cleared altitude. The FMS computes a path to meet all constraints. If a constraint cannot be met, advise ATC immediately.',
@@ -5963,10 +5963,10 @@ export const irexQuestions: {
 {
   question: 'When the ATIS broadcasts "ILS LOC only, glideslope unserviceable," the pilot should:',
   options: [
-    'A. Convert to a localiser-only (LOC) non-precision approach using the published LOC minima',
-    'B. Fly the ILS approach using normal precision approach minima',
-    'C. Cancel the IFR flight plan and land VFR',
-    'D. Request radar vectoring to a visual approach only'
+    'Convert to a localiser-only (LOC) non-precision approach using the published LOC minima',
+    'Fly the ILS approach using the normal full precision approach landing minima',
+    'Cancel the IFR flight plan and land VFR',
+    'Request radar vectoring to a visual approach only'
   ],
   correct: 0,
   explanation: 'ILS with inoperative glide slope (LOC approach): localiser provides lateral guidance only. Published LOC minima apply (typically 300–600 ft higher than ILS). The approach becomes non-precision: track the localiser inbound, descend per the published LOC procedure, level at MDA/H, and execute missed approach if runway environment not sighted at MAP.',
@@ -5974,103 +5974,90 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The IFR "early diversion decision" principle means:',
+  question: 'The \'early diversion decision\' principle means:',
   options: [
-    'A. Always divert before reaching the destination — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Only divert after the first missed approach and this applies to all IFR operations in Australian airspace',
-    'C. Diversion decisions are made by ATC, not the pilot according to current CASR and AIP requirements',
-    'D. Making the divert decision before fuel becomes critically marginal — diverting from cruise altitude with ample fuel is far safer than a missed'
+    'Always diverting before ever actually reaching the planned destination aerodrome',
+    'Diverting only after the first missed approach has actually been flown',
+    'Leaving the diversion decision entirely up to ATC controllers to make',
+    'Deciding to divert before fuel becomes marginal, while ample fuel still remains in the cruise'
   ],
   correct: 3,
-  explanation: 'Early diversion: plan decision points before departure ("if destination METAR at ETA-30 min shows X, divert"). The earlier the diversion decision, the more fuel available for the alternate approach and contingencies. Late decisions (after missed approach with minimum fuel) severely constrain options and create emergency conditions.',
-  reference: 'CASR Part 91 / CASA HF materials'
+  explanation: 'Decision points are set before flight (\'if the METAR at ETA minus 30 shows X, divert\'). The earlier the decision, the more fuel remains for the alternate and contingencies; a late decision after a missed approach on minimum fuel removes options and creates an emergency.',
+  reference: 'Part 91 / CASA HF materials'
 },
 
 {
-  question: 'When an IFR aircraft is given "direct to destination" by ATC, the pilot should:',
+  question: 'The published missed-approach procedure provides obstacle clearance only if the aircraft:',
   options: [
-    'A. Always accept — direct routes save fuel — this is the correct regulatory position',
-    'B. Accept without verification — ATC is responsible for the route and this applies to all IFR operations in Australian airspace',
-    'C. Direct routings are never appropriate in IFR operations according to current CASR and AIP requirements',
-    'D. Verify the direct track is above LSALT, clear of restricted airspace, weather acceptable, and fuel sufficient before accepting'
-  ],
-  correct: 3,
-  explanation: '"Direct to destination": the pilot verifies LSALT for the direct track, restricted airspace, weather, and fuel. ATC may not know the aircraft\\\'s performance, fuel state, or weather avoidance needs. If any issue exists, decline: "Unable direct, request [alternative]." Critical in mountainous terrain.',
-  reference: 'AIP ENR 1.1'
-},
-
-{
-  question: 'A VOR approach chart showing "circling MDA 1,200 ft" with a straight-in MDA of 900 ft means:',
-  options: [
-    'A. The pilot may circle at 900 ft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. The straight-in approach may descend to 900 ft on the final course — but if a circling manoeuvre is required after the approach, the aircraft must maintain',
-    'C. Both minima apply simultaneously — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The 1,200 ft circling MDA replaces the 900 ft for all operations according to current CASR and AIP requirements'
-  ],
-  correct: 1,
-  explanation: 'Straight-in vs circling MDA: if the aircraft can track straight to the landing runway on the published approach course (alignment ≤30°), it may descend to the lower straight-in MDA. If a circling manoeuvre is required (runway not aligned), the higher circling MDA applies throughout the manoeuvre. Never descend to straight-in MDA and then circle — use circling MDA from the outset if circling.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
-},
-
-{
-  question: 'An IFR holding entry "direct" is used when the aircraft arrives at the holding fix:',
-  options: [
-    'A. From any direction — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Direct entry is always used regardless of arrival direction and this applies to all IFR operations in Australian airspace',
-    'C. From within the sector where flying directly into the hold (turning to the outbound heading) keeps the aircraft within the protected holding area',
-    'D. Direct entry is only used in published holding procedures according to current CASR and AIP requirements'
+    'Descends right down to the MDA before commencing the climb',
+    'Turns in any convenient direction toward the chosen alternate',
+    'Follows the published track and achieves the specified climb gradient',
+    'Maintains the approach speed throughout the entire climb-out'
   ],
   correct: 2,
-  explanation: 'Holding entry sectors: at the fix, the pilot selects entry based on arrival direction. Direct entry: arrival within approximately 70° of the outbound heading on the non-holding side. Teardrop entry: arrival within approximately 110° on the non-holding side. Parallel entry: arrival from behind the inbound leg on the holding side. The correct entry keeps the aircraft within the protected area.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
+  explanation: 'Obstacle clearance on the missed approach is assured only along the published track at or above the design climb gradient (nominally 2.5%, higher where charted); deviating from the track or failing to achieve the gradient voids the protection.',
+  reference: 'ICAO Doc 8168 / MOS 4.3.2'
 },
 
 {
-  question: 'The "teardrop" holding entry is used when the aircraft arrives at the holding fix:',
+  question: 'Approaching runway 27 (270 deg M) with the wind 240 deg M at 30 kt, the headwind component is approximately:',
   options: [
-    'A. From the holding side, roughly from ahead',
-    'B. From the non-holding side, at an angle that makes a direct entry unsuitable',
-    'C. Teardrop entry is used from any direction if preferred',
-    'D. Teardrop only applies to NDB holds'
+    'About 10 kt',
+    'About 15 kt',
+    'About 21 kt',
+    'About 26 kt'
+  ],
+  correct: 3,
+  explanation: 'The wind is 30 degrees off the runway heading. Headwind equals wind speed times the cosine of the angle: 30 x cos 30 = 30 x 0.87, about 26 kt. The crosswind component is 30 x sin 30, about 15 kt.',
+  reference: 'Navigation - wind components'
+},
+
+{
+  question: 'An aircraft burns 80 litres in 1 hour 20 minutes. The fuel burn rate is:',
+  options: [
+    '50 L/hr',
+    '60 L/hr',
+    '80 L/hr',
+    '45 L/hr'
   ],
   correct: 1,
-  explanation: 'Teardrop entry: arrival at the fix from the non-holding side at approximately 110° arc. Procedure: cross the fix, fly outbound at heading 30° toward the holding side for 1 minute (approximately), then turn in the same direction as the hold back to intercept the inbound leg. This keeps the aircraft within the protected holding area when a direct entry would overshoot.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
+  explanation: 'Burn rate = fuel used divided by time = 80 litres in 80 minutes = 1 litre per minute = 60 litres per hour. The burn rate underlies endurance and fuel-required calculations.',
+  reference: 'Flight planning - fuel'
 },
 
 {
-  question: 'The "parallel" holding entry is used when the aircraft arrives at the holding fix:',
+  question: 'With QNH 1023 hPa at an aerodrome of elevation 500 ft, the pressure altitude is approximately (about 30 ft per hPa):',
   options: [
-    'A. From the holding side — the aircraft flies outbound parallel to the inbound leg',
-    'B. Directly along the inbound track, from behind',
-    'C. Parallel entry is used when inbound on the approach',
-    'D. Only jets use parallel holding entries'
+    '200 ft',
+    '800 ft',
+    '500 ft',
+    '300 ft'
   ],
   correct: 0,
-  explanation: 'Parallel entry: arrival from the holding side (roughly behind the outbound leg). Procedure: cross the fix, fly outbound parallel to the inbound leg (but in the opposite direction) for approximately 1 minute, then turn away from the holding side (more than 180°) to intercept the inbound leg. The aircraft stays within the protected area by flying well outside the hold then turning inbound.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
+  explanation: 'Pressure altitude = elevation + (1013 minus QNH) times about 30 ft per hPa = 500 + (1013 minus 1023) times 30 = 500 minus 300 = 200 ft. With QNH above 1013 the pressure altitude is below the elevation.',
+  reference: 'AIP ENR 1.7 / GEN 2.1'
 },
 
 {
-  question: 'Wind correction in a holding pattern is applied to:',
+  question: 'Having flown 90 nm and found the aircraft 3 nm off track, the track error by the one-in-sixty rule is about:',
   options: [
-    'A. The inbound leg only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Both the inbound and outbound legs — on the inbound leg, a WCA is applied to maintain the published inbound track',
-    'C. Only the outbound leg timing and this applies to all IFR operations in Australian airspace',
-    'D. Wind correction is not required in holding as turns compensate according to current CASR and AIP requirements'
+    '1 degree',
+    '2 degrees',
+    '3 degrees',
+    '5 degrees'
   ],
   correct: 1,
-  explanation: 'Hold wind correction: inbound leg — apply WCA to track the published inbound course. Outbound leg — apply triple the inbound WCA in the opposite direction (to allow for wind during the two turns). Outbound leg timing: adjusted so the inbound leg is approximately 1 minute (below FL140) or 1.5 minutes (above FL140). Achieving the correct inbound leg length confirms the corrections are working.',
-  reference: 'AIP ENR 1.5'
+  explanation: 'Track error in degrees = (distance off times 60) divided by distance flown = (3 times 60)/90 = 2 degrees. Doubling the correction angle would regain track over a similar distance ahead.',
+  reference: 'Navigation - one-in-sixty rule'
 },
 
 {
   question: 'The IFR "SARTIME" for a flight without ATC flight plan monitoring should be:',
   options: [
-    'A. Set to departure time',
-    'B. SARTIME is optional for short IFR flights',
-    'C. SARTIME is always 6 hours regardless of flight duration',
-    'D. Set to the estimated arrival time plus a reasonable buffer (e.g. 30 minutes)'
+    'Set to departure time',
+    'SARTIME is optional for short IFR flights',
+    'SARTIME is always a fixed 6 hours, regardless of the flight duration',
+    'Set to the estimated arrival time plus a reasonable buffer (e.g. 30 minutes)'
   ],
   correct: 3,
   explanation: 'SARTIME: estimated time of arrival plus a buffer (typically 30–60 min). Too short and normal delays trigger unnecessary SAR; too long and a genuine emergency may not be detected quickly. For IFR on an ATC flight plan: the flight plan itself provides SAR coverage — SARTIME may be included in the flight plan or filed separately with the AFTN.',
@@ -6080,10 +6067,10 @@ export const irexQuestions: {
 {
   question: 'On an IFR approach chart, the note "Procedure not authorised when XYZ NDB unserviceable" means:',
   options: [
-    'A. The NDB is optional for the approach — it improves accuracy but is not required',
-    'B. The approach minima are raised when the NDB is unserviceable but the procedure may still be conducted',
-    'C. The XYZ NDB is essential for identifying a critical fix — without it the approach cannot be safely conducted and must not be commenced',
-    'D. The restriction only applies to aircraft without GPS equipment on board'
+    'The NDB is optional for the approach, it improves accuracy but is not required',
+    'The approach minima are raised when the NDB is unserviceable but the procedure may still be conducted',
+    'The NDB is essential for identifying a critical fix; without it the approach is not safe and must not be commenced',
+    'The restriction only applies to aircraft without GPS equipment on board'
   ],
   correct: 2,
   explanation: 'Navaid required: when an approach chart states the procedure requires a specific navaid, that navaid is critical for the procedure\\\'s obstacle clearance — typically defining a fix that has no other means of identification. Check NOTAM before flight. If the navaid becomes unserviceable during flight: divert to an aerodrome with a serviceable approach.',
@@ -6091,207 +6078,194 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The IFR "minimum off-route altitude" (MORA) on a Jeppesen chart provides:',
+  question: 'The minimum off-route altitude (MORA) on a chart provides:',
   options: [
-    'A. The minimum altitude for on-route IFR — this is the correct regulatory position',
-    'B. MORA is not used in Australian operations and this applies to all IFR operations in Australian airspace',
-    'C. Obstacle clearance of 1,000 ft (2,000 ft in mountainous terrain) within a grid square when flying off published airways',
-    'D. MORA provides the minimum altitude above cloud according to current CASR and AIP requirements'
+    'The minimum altitude for flying along any single published airway route segment on the chart',
+    'A value that is simply not used in Australian operations at all',
+    'Obstacle clearance of 1,000 ft (2,000 ft in mountains) within a grid square when off published airways',
+    'The minimum altitude required for any flight conducted above cloud'
   ],
   correct: 2,
-  explanation: 'MORA (Minimum Off-Route Altitude): published in grid squares on Jeppesen charts. Provides clearance above terrain and obstacles within the grid square (1,000 ft non-mountainous, 2,000 ft mountainous). Useful when deviating from airways (weather avoidance). Not identical to Australian LSALT but serves the same purpose. Always use the highest applicable value when off-airways.',
-  reference: 'Jeppesen chart legend / AIP ENR 1.1'
+  explanation: 'MORA is published in grid squares and gives obstacle clearance within the square (1,000 ft, or 2,000 ft in mountainous terrain), useful when deviating off airways for weather. It serves the same purpose as LSALT off-airway; use the highest applicable value.',
+  reference: 'Chart legend / AIP ENR 1.1'
 },
 
 {
   question: 'Instrument approach procedures are designed assuming the aircraft has:',
   options: [
-    'A. All systems fully functional at all times — this is the correct regulatory position',
-    'B. Maximum engine power available throughout and this applies to all IFR operations in Australian airspace',
-    'C. Engines operating at normal power, normal manoeuvring capability, and standard performance for the published approach category',
-    'D. No performance assumptions are made in procedure design according to current CASR and AIP requirements'
+    'All of the aircraft systems remaining fully functional at every single moment of the flight',
+    'Maximum engine power being available throughout the whole approach',
+    'Engines at normal power, normal manoeuvring and standard performance for the published approach category',
+    'No performance assumptions being made at all in the design'
   ],
   correct: 2,
-  explanation: 'Approach procedure design assumptions: normal aircraft performance for the approach category. A single-engine missed approach changes the climb gradient capability significantly — published missed approach obstacle clearance may not be achievable. For engine-out or abnormal configuration approaches, the pilot should assess performance against published missed approach gradient requirements before commencing.',
+  explanation: 'Procedures assume normal performance for the approach category. An engine-out missed approach changes the climb gradient markedly, so the published missed-approach clearance may not be achievable; the pilot assesses performance against the gradient before commencing an abnormal-configuration approach.',
   reference: 'ICAO Doc 8168 / AIP ENR 1.5'
 },
 
 {
-  question: 'The VOR/DME "position fix" accuracy depends on:',
+  question: 'VOR/DME position-fix accuracy depends on:',
   options: [
-    'A. The geometry of the radial and DME arc intersection — accuracy is best when the radial and arc cross at approximately 90°',
-    'B. Only on VOR signal strength — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Position fix accuracy is always 0.5 nm regardless of geometry and this applies to all IFR operations in Australian airspace',
-    'D. Accuracy depends only on DME distance according to current CASR and AIP requirements'
+    'The geometry of the radial and DME-arc intersection, best when they cross near 90 degrees',
+    'Only the strength of the received VOR signal at the time',
+    'A fixed 0.5 nm in all cases, regardless of the crossing geometry of the fix',
+    'Only the DME distance measured from the ground station'
   ],
   correct: 0,
-  explanation: 'VOR/DME fix geometry: the intersection of a radial (angular measure from the station) and a DME circle provides a fix. Best accuracy: radial perpendicular to the DME arc (90° crossing). Poor geometry: nearly parallel tracks produce a long, thin error ellipse. For IFR, VOR/DME accuracy is generally adequate at normal ranges, but the geometry principle applies to all intersecting LOPs.',
+  explanation: 'A fix is the intersection of a radial and a DME circle; accuracy is best when they cross near 90 degrees and worst when nearly parallel, which produces a long, thin error ellipse. The same geometry principle applies to any pair of intersecting position lines.',
   reference: 'AIP ENR 4.1'
 },
 
 {
-  question: 'An IFR flight operating in RVSM (Reduced Vertical Separation Minima) airspace requires:',
+  question: 'With a crosswind component of 15 kt and a TAS of 150 kt, the approximate wind correction angle is:',
   options: [
-    'A. Only Mode C transponder — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Any aircraft may operate in RVSM without special approval and this applies to all IFR operations in Australian airspace',
-    'C. RVSM-approved aircraft (with accurate altimeters and autopilot capable of maintaining ±65 ft), RVSM-approved operator, and crew trained in RVSM procedures',
-    'D. RVSM airspace does not exist in Australian FIR — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    '3 degrees',
+    '9 degrees',
+    '6 degrees',
+    '12 degrees'
   ],
   correct: 2,
-  explanation: 'RVSM (FL290–FL410): 1,000 ft vertical separation between approved aircraft. Requirements: aircraft with two independent altitude measurement systems, automatic altitude-keeping system (autopilot), altitude alerting, and ADS-B or Mode C. The operator and crew must be RVSM approved. Non-RVSM aircraft must be separated by 2,000 ft from all traffic in this band.',
-  reference: 'AIP ENR 1.1'
+  explanation: 'Wind correction angle is approximately 60 times the crosswind component divided by TAS = 60 times 15/150 = 6 degrees. The aircraft is headed into wind by this angle to track the desired course.',
+  reference: 'Navigation - wind correction angle'
 },
 
 {
-  question: 'A "conditional clearance" from ATC such as "after the landing Airbus, line up and wait" requires the pilot to:',
+  question: 'A conditional clearance such as \'after the landing Airbus, line up and wait\' requires the pilot to:',
   options: [
-    'A. Identify the specified aircraft (the landing Airbus), ensure it has touched down and is clear of the runway or the condition is met, then line up as instructed',
-    'B. Line up immediately regardless of Airbus position — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Request confirmation before moving — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. Conditional clearances are not used in Australia — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'Identify the landing Airbus, confirm it has landed and cleared (or the condition is met), then line up',
+    'Line up on the runway immediately, without regard for the position of the landing Airbus',
+    'Request confirmation from ATC before moving at all',
+    'Treat it as invalid, since conditional clearances are not used here'
   ],
   correct: 0,
-  explanation: 'Conditional clearance: do not act until the stated condition is met. Must: (1) identify the referenced aircraft visually; (2) confirm the condition is satisfied (aircraft has landed and cleared, or passed); (3) then execute the clearance. If the condition cannot be confirmed: query ATC before moving. Runway incursions have resulted from pilots misidentifying or ignoring conditional clearance requirements.',
+  explanation: 'A conditional clearance is acted on only once the stated condition is met: visually identify the referenced aircraft, confirm it has landed and cleared (or passed), then execute. If the condition cannot be confirmed, query ATC before moving, runway incursions have followed misidentification.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'The published "departure procedure gradient" on a SID must be achieved by the aircraft because:',
+  question: 'The published climb gradient on a SID must be achieved because:',
   options: [
-    'A. It is a recommendation only',
-    'B. Gradients only apply to jet aircraft',
-    'C. The gradient provides obstacle clearance on the SID — if the aircraft cannot achieve the published climb gradient',
-    'D. The gradient is ATC\'s minimum — pilots may climb slower if conditions permit'
+    'It is only a recommendation to pilots and not a firm requirement',
+    'Such gradients apply only to jet-powered aircraft, not piston types',
+    'The gradient gives obstacle clearance; if the aircraft cannot achieve it, that SID is unavailable',
+    'It is merely an ATC minimum, so the pilots may freely choose to climb slower if they wish'
   ],
   correct: 2,
-  explanation: 'SID climb gradient: the minimum required to maintain obstacle clearance. Standard gradient: 200 ft/nm (3.3%). Higher gradients published where terrain requires. If the aircraft cannot achieve the gradient (weight, temperature, engine out), that SID is not available to the flight. The pilot must advise ATC and arrange an alternative — not attempt to use the SID and hope for the best.',
+  explanation: 'The SID gradient (standard 200 ft/nm, higher where terrain demands) is the minimum for obstacle clearance. If the aircraft cannot achieve it (weight, temperature, engine out), that SID is not available; the pilot advises ATC and arranges an alternative rather than attempting it.',
   reference: 'AIP ENR 1.5 / ICAO Doc 8168'
 },
 
 {
-  question: 'When an IFR pilot is cleared for an approach and the aerodrome goes below minima before the FAF, the correct action is:',
+  question: 'Under the IFR, a single-engine aircraft:',
   options: [
-    'A. Continue to FAF — conditions may improve — this is the correct regulatory position',
-    'B. Continue to MDA and assess visually and this applies to all IFR operations in Australian airspace',
-    'C. Apply the approach ban — do not continue the approach if current conditions are below published minima',
-    'D. Declare emergency and continue regardless according to current CASR and AIP requirements'
+    'May never be operated under the IFR in any circumstances at all',
+    'May fly in private operations under the IFR, but carrying passengers for hire in IMC is restricted',
+    'Has exactly the same operational IFR privileges as a twin-engine aircraft does in IMC',
+    'Is limited to flight only above FL200 whenever it is operating under the IFR'
   ],
-  correct: 2,
-  explanation: 'Approach ban before FAF: if ATC or ATIS advises conditions are below minima, the approach must not be commenced (or continued past the IAF). Notify ATC: "holding for weather improvement" or "request diversion clearance." Monitor fuel carefully. Do not attempt the approach hoping conditions will improve by the time you reach DA/H — if below minima at FAF, they are likely below minima at DA/H too.',
-  reference: 'CASR Part 91 / AIP ENR 1.5'
+  correct: 1,
+  explanation: 'Single-engine IFR is permitted for private operations, but because of the consequences of an engine failure in IMC, carrying passengers for hire or reward in IMC is restricted under the applicable rules; the pilot must weigh terrain, weather and height throughout.',
+  reference: 'CASR Part 91 / MOS 4.1.1'
 },
 
 {
-  question: 'The instrument rating "proficiency check" (IPC) is required when:',
+  question: 'An aircraft \'cleared to FL120 via flight-planned route\' must maintain:',
   options: [
-    'A. Instrument currency has lapsed — the pilot has not completed 6 approaches (and associated tasks) in the preceding 6 months',
-    'B. Every 6 months regardless of currency — this is the correct regulatory position',
-    'C. Only before the annual flight review and this applies to all IFR operations in Australian airspace',
-    'D. IPCs are only required for commercial pilots according to current CASR and AIP requirements'
+    'The exact filed route and the cleared level, which is where ATC expects the aircraft',
+    'Maintain any altitude up to FL120 as preferred by the pilot',
+    'Reach FL120 only after top of climb, any altitude during the climb',
+    'Treat the filed route as advisory, with the pilot selecting the track'
   ],
   correct: 0,
-  explanation: 'IPC (Instrument Proficiency Check): required when instrument currency lapses (less than 6 approaches in 6 months). The check is conducted by an authorised flight examiner (AFE) or authorised testing officer (ATO) and covers the full range of instrument operations — holds, approaches (precision and non-precision), partial panel, emergencies. Passing restores IFR privileges.',
-  reference: 'CASR Part 61'
+  explanation: 'A clearance is an instruction: maintain the cleared level and the filed route until ATC amends it. Deviating, e.g. for weather, without advising ATC breaks the separation agreement, so the pilot requests a deviation and states the offset and rejoin estimate.',
+  reference: 'AIP ENR 1.1 / Part 91'
 },
 
 {
-  question: 'An aircraft "cleared to FL120 via flight planned route" must maintain:',
+  question: 'Australian ATC surveillance includes:',
   options: [
-    'A. The exact routing of the filed flight plan and cruise at FL120 — ATC expects the aircraft on that track at that altitude',
-    'B. Any altitude up to FL120 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. FL120 only after top of climb — any altitude during climb and this applies to all IFR operations in Australian airspace',
-    'D. The filed route advisory only — pilot selects track according to current CASR and AIP requirements'
+    'Primary radar, secondary radar (Mode A/C/S), ADS-B and multilateration',
+    'Only primary radar coverage, right across the whole country',
+    'Only ADS-B, and then only at the lower altitudes en-route',
+    'Radar only, and only within the capital-city terminal areas'
   ],
   correct: 0,
-  explanation: 'IFR clearance compliance: the clearance is an instruction, not advice. Maintain the cleared altitude and the filed route unless ATC issues an amended clearance. Deviating (e.g. weather avoidance) without advising ATC breaks the separation agreement. Advise ATC immediately: "request deviation [left/right] of track by [X] miles for weather, estimate rejoining in [X] minutes."',
-  reference: 'AIP ENR 1.1 / CASR Part 91'
-},
-
-{
-  question: 'The "ATC surveillance" system in Australia includes:',
-  options: [
-    'A. Primary radar (PSR), secondary surveillance radar (SSR/Mode A/C/S), ADS-B (Automatic Dependent Surveillance-Broadcast), and multilateration',
-    'B. Only primary radar — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Only ADS-B at low altitudes and this applies to all IFR operations in Australian airspace',
-    'D. Radar is only available in capital city terminal areas according to current CASR and AIP requirements'
-  ],
-  correct: 0,
-  explanation: 'Australian surveillance: PSR (primary radar, skin returns); SSR Mode A/C/S (transponder-based, provides identity and altitude); ADS-B (GPS-derived position broadcast by aircraft — Airservices Australia has extensive ground station coverage); multilateration (MLAT, uses transponder signals from multiple receivers). Together these provide surveillance to lower altitudes and more remote areas than radar alone.',
+  explanation: 'Surveillance combines primary radar (skin returns), secondary radar (transponder Mode A/C/S, giving identity and altitude), ADS-B (GPS position broadcast, with wide ground-station coverage) and multilateration. Together they extend surveillance to lower levels and more remote areas than radar alone.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'An ADS-B equipped IFR aircraft in Australian airspace must:',
+  question: 'The radio navigation equipment that must be carried for an IFR flight is determined by:',
   options: [
-    'A. Operate ADS-B continuously when operating in specified ADS-B airspace — transmitting GPS-derived position, altitude, track, groundspeed',
-    'B. Only activate ADS-B in controlled airspace — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. ADS-B is voluntary for all GA aircraft and this applies to all IFR operations in Australian airspace',
-    'D. ADS-B replaces the Mode C transponder requirement according to current CASR and AIP requirements'
+    'The personal preference of the pilot in command on the day',
+    'The navigation systems required for the planned route and approaches',
+    'The colour of the airspace as it is shown on the chart',
+    'Whether the flight is being conducted by day or by night'
   ],
-  correct: 0,
-  explanation: 'ADS-B in Australia: mandatory above FL290 (since 2017) and progressively required in lower airspace. ADS-B OUT broadcasts position, altitude, velocity, and identity — no interrogation needed. Provides surveillance in areas without radar. ADS-B IN (receiving traffic) provides airborne situational awareness. The transponder (Mode C/S) still required for non-ADS-B equipped aircraft and as backup.',
-  reference: 'AIP ENR 1.1 / CASR Part 91'
+  correct: 1,
+  explanation: 'The aircraft must carry the navigation systems needed for the intended route and the approaches to be flown (for example VOR/DME, or an approved GNSS), all serviceable; the requirement follows the route and procedures, not pilot preference.',
+  reference: 'CASR Part 91 / MOS 3.1.4'
 },
 
 {
   question: 'A "speed restriction" on an approach chart of "210 kt maximum" before the FAF applies to:',
   options: [
-    'A. The published maximum indicated airspeed the aircraft must not exceed in that approach segment — mandatory unless ATC explicitly advises otherwise, ensuring the aircraft remains within the obstacle clearance protected area',
-    'B. The aircraft\'s maximum certified manoeuvring speed and applies only to turbulent conditions — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Only to jet aircraft — piston and turboprop aircraft are exempt from published speed restrictions — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. An advisory target speed only — pilots may exceed it at their discretion — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'The published maximum indicated airspeed for that approach segment, mandatory unless ATC advises otherwise',
+    'The aircraft\'s maximum certified manoeuvring speed and applies only to turbulent conditions',
+    'Only to jet aircraft, piston and turboprop aircraft are exempt from published speed restrictions',
+    'An advisory target speed only, pilots may exceed it at their discretion'
   ],
   correct: 0,
-  explanation: 'Approach speed restrictions: mandatory unless ATC advises otherwise. Published to ensure the aircraft remains within the designed obstacle clearance area for its category and to allow ATC sequencing. Exceeding published speeds may take the aircraft outside the protected area. At the FAF: reduce to final approach speed. If unable to comply: advise ATC.',
+  explanation: 'Approach speed restrictions: mandatory unless ATC advises otherwise. Published to ensure the aircraft remains within the designed obstacle clearance area for its category and to allow ATC sequencing. Exceeding published speeds may take the aircraft outside the protected area. At the FAF: reduce to final approach speed. If unable to comply: advise ATC. Ensuring the aircraft remains within the obstacle clearance protected area.',
   reference: 'AIP ENR 1.5 / ICAO Doc 8168'
 },
 
 {
-  question: 'When executing a missed approach in IMC with a "climbing right turn to 3,000 ft" instruction:',
+  question: 'A true track of 130 degrees in an area of 11 degrees East variation corresponds to a magnetic track of:',
   options: [
-    'A. Turn right first then climb',
-    'B. Simultaneously apply go-around power, establish climb attitude, and begin the right turn',
-    'C. Climb to 3,000 ft then turn right',
-    'D. The turn direction is at pilot\'s discretion regardless of the published procedure'
+    '141 degrees',
+    '119 degrees',
+    '130 degrees',
+    '111 degrees'
   ],
   correct: 1,
-  explanation: 'Simultaneous climb and turn: the missed approach procedure is flown exactly as published. "Climbing right turn to 3,000 ft" = right bank applied during the climb. The turn begins immediately. Delaying the turn until reaching altitude may take the aircraft outside the protected area (which assumes the turn starts at the MAP). Follow the published procedure precisely.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
+  explanation: 'Variation east, magnetic least: magnetic track = true track minus easterly variation = 130 minus 11 = 119 degrees. Westerly variation is added (variation west, magnetic best).',
+  reference: 'Navigation - magnetic variation'
 },
 
 {
-  question: 'The IFR "approach ban" at MDA/H for a non-precision approach means:',
+  question: 'The standard (ISA) temperature at FL100 is approximately:',
   options: [
-    'A. The pilot must not commence the approach',
-    'B. The approach ban only applies to CAT II and III approaches',
-    'C. Once the aircraft reaches MDA/H without the required visual reference, the missed approach must be executed',
-    'D. The approach ban allows a 100 ft descent below MDA/H'
+    'Plus 5 degrees C',
+    'Plus 15 degrees C',
+    'Minus 15 degrees C',
+    'Minus 5 degrees C'
   ],
-  correct: 2,
-  explanation: 'MDA/H approach ban: at MDA/H on a non-precision approach, if the required visual reference is not established, execute the missed approach IMMEDIATELY. Do not hover at MDA hoping for better visibility. Do not descend further. The MDA exists because descending lower risks obstacle contact. The missed approach is the ONLY safe option.',
-  reference: 'CASR Part 91 / AIP ENR 1.5'
+  correct: 3,
+  explanation: 'ISA is 15 degrees C at mean sea level, decreasing about 2 degrees C per 1,000 ft. At FL100 (10,000 ft): 15 minus (2 x 10) = minus 5 degrees C. Comparing actual OAT with ISA gives the ISA deviation used for performance and altimetry.',
+  reference: 'ICAO Standard Atmosphere'
 },
 
 {
-  question: 'Which statement about IFR flight in Class G airspace is correct?',
+  question: 'To lose 1,500 ft in 3 minutes, the rate of descent required is:',
   options: [
-    'A. IFR flight in Class G is uncontrolled — no ATC service is provided, no separation exists',
-    'B. IFR flight in Class G provides ATC separation from all traffic',
-    'C. Class G only exists below 1,000 ft AGL',
-    'D. VFR pilots must remain clear of IFR aircraft in Class G'
+    '500 ft/min',
+    '300 ft/min',
+    '750 ft/min',
+    '1,000 ft/min'
   ],
   correct: 0,
-  explanation: 'Class G IFR: legal but uncontrolled. Requirements: IREX/instrument rating, IFR equipped aircraft, filed flight plan (activates SAR coverage), operating at LSALT or above. ATC provides no service — no radar, no separation, no terrain warnings. Self-announce on appropriate frequency. This is one of the highest-risk operating environments for IFR pilots in Australia.',
-  reference: 'AIP ENR 1.4 / CASR Part 91'
+  explanation: 'Rate of descent = height to lose divided by time = 1,500 ft in 3 minutes = 500 ft per minute. The descent is planned so this rate keeps the aircraft on the desired profile.',
+  reference: 'Navigation - descent planning'
 },
 
 {
   question: 'A GNSS approach "LPV" (Localiser Performance with Vertical guidance) provides:',
   options: [
-    'A. The same minima as a standard ILS',
-    'B. LPV is only available on military aircraft',
-    'C. SBAS-augmented GNSS lateral and vertical guidance with performance approaching CAT I ILS',
-    'D. LPV approaches use ILS glide slope combined with GPS lateral'
+    'The same minima as a standard ILS',
+    'LPV is only available on military aircraft',
+    'SBAS-augmented GNSS lateral and vertical guidance with performance approaching CAT I ILS',
+    'LPV approaches use the ILS glide slope combined with GPS lateral guidance'
   ],
   correct: 2,
   explanation: 'LPV (Localiser Performance with Vertical guidance): uses SBAS (Satellite Based Augmentation System — in Australia this is the SBAS trial system) to provide highly accurate lateral and vertical guidance. With sufficient SBAS coverage, LPV minima can be as low as CAT I ILS (200 ft DA, RVR 550 m). The aircraft must have SBAS-capable avionics and the approach must be listed as LPV in the database.',
@@ -6299,103 +6273,103 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "parallel" holding entry is used when arriving at the fix from:',
+  question: 'An altimeter set to 1013 hPa when the actual QNH is 1003 hPa (about 30 ft per hPa) will:',
   options: [
-    'A. Directly along the inbound track, from behind',
-    'B. Parallel entry is used when inbound on the approach',
-    'C. Only jets use parallel holding entries provided the pilot holds a current medical certificate',
-    'D. The holding side — the aircraft flies outbound parallel to the inbound leg then turns away from the holding side to intercept the inbound track'
+    'Read about 300 ft too low, so the aircraft is higher than indicated',
+    'Read about 300 ft too high, so the aircraft is lower than indicated',
+    'Read correctly, since QNH does not affect the altimeter',
+    'Read about 30 ft too high, a negligible error in practice'
   ],
-  correct: 3,
-  explanation: 'Parallel entry: arrival from the holding side (roughly behind the outbound leg). Procedure: cross the fix, fly outbound parallel to the inbound leg for approximately 1 minute, then turn away from the holding side to intercept the inbound leg. The aircraft stays within the protected area.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
+  correct: 1,
+  explanation: 'The set pressure (1013) is 10 hPa higher than the actual QNH (1003). At about 30 ft per hPa the altimeter over-reads by roughly 300 ft, so the aircraft is about 300 ft lower than indicated, a hazard near terrain.',
+  reference: 'AIP ENR 1.7 - altimetry'
 },
 
 {
-  question: 'A "teardrop" holding entry is used when arriving at the fix from:',
+  question: 'Flying at a groundspeed of 120 kt for 18 minutes, the distance covered is:',
   options: [
-    'A. The holding side, roughly from ahead — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. Teardrop entry is used from any direction if preferred and this applies to all IFR operations in Australian airspace',
-    'C. Teardrop only applies to NDB holds — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. The non-holding side, at an angle that makes a direct entry unsuitable — the aircraft flies a brief outbound leg angled 30° toward the holding side,'
-  ],
-  correct: 3,
-  explanation: 'Teardrop entry: arrival at the fix from the non-holding side at approximately 110° arc. Procedure: cross the fix, fly outbound at heading 30° toward the holding side for 1 minute, then turn in the same direction as the hold back to intercept the inbound leg.',
-  reference: 'AIP ENR 1.5 / ICAO Doc 8168'
-},
-
-{
-  question: 'A "no-gyro approach" is requested when:',
-  options: [
-    'A. The aircraft has no GPS — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. No-gyro approaches are only conducted in simulators and this applies to all IFR operations in Australian airspace',
-    'C. The directional gyro (heading indicator) has failed — ATC provides turn commands ("turn left/right") instead of specific headings',
-    'D. A no-gyro approach uses NDB only according to current CASR and AIP requirements'
+    '24 nm',
+    '30 nm',
+    '36 nm',
+    '42 nm'
   ],
   correct: 2,
-  explanation: 'No-gyro approach: if the heading indicator fails in IMC, the pilot requests a no-gyro approach. ATC watches the radar return and issues "turn left/right" and "stop turn" commands. The pilot uses the turn coordinator to maintain standard rate turns. A workable emergency procedure.',
+  explanation: 'Distance equals groundspeed times time. 120 kt for 18 minutes (0.3 hour) gives 120 x 0.3 = 36 nm. Reliable groundspeed and timing keep position estimates accurate between fixes.',
+  reference: 'Navigation - time, speed and distance'
+},
+
+{
+  question: 'A no-gyro approach is requested when:',
+  options: [
+    'The aircraft is simply not fitted with any GPS receiver',
+    'No-gyro approaches are only ever conducted within flight simulators on the ground',
+    'The heading indicator has failed, so ATC gives turn commands instead of specific headings',
+    'A no-gyro approach is simply another name for an NDB approach'
+  ],
+  correct: 2,
+  explanation: 'If the directional gyro fails in IMC, the pilot requests a no-gyro approach: ATC watches the radar return and issues \'turn left/right\' and \'stop turn\', and the pilot flies standard-rate turns on the turn coordinator. It is a practical partial-panel emergency procedure.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'The "fly-by" waypoint differs from a "fly-over" waypoint in that:',
+  question: 'A fly-by waypoint differs from a fly-over waypoint in that:',
   options: [
-    'A. At a fly-by waypoint the aircraft begins the turn before reaching the waypoint to anticipate the track change',
-    'B. Fly-by and fly-over waypoints are identical — this is the correct regulatory position',
-    'C. Fly-by waypoints are only used on STARs and this applies to all IFR operations in Australian airspace',
-    'D. Fly-over waypoints require ATC permission according to current CASR and AIP requirements'
+    'At a fly-by waypoint the turn begins before the waypoint to anticipate the track change',
+    'Fly-by and fly-over waypoints are entirely identical to each other in every way',
+    'Fly-by waypoints are used only on STARs and nowhere else',
+    'Fly-over waypoints require specific ATC permission each time'
   ],
   correct: 0,
-  explanation: 'Fly-by (open symbol): turn begins before the waypoint — the FMS calculates a lead turn to smoothly transition to the next leg. Fly-over (circled symbol): must cross the waypoint before turning — required where obstacle clearance mandates crossing the fix. An incorrect early turn at a fly-over waypoint violates obstacle clearance.',
+  explanation: 'At a fly-by waypoint the FMS starts a lead turn before the fix to roll smoothly onto the next leg. At a fly-over waypoint the aircraft must cross the fix before turning, used where obstacle clearance requires it; turning early at a fly-over waypoint breaches that clearance.',
   reference: 'ICAO Doc 8168 / AIP ENR 1.5'
 },
 
 {
-  question: 'An RVSM-approved aircraft operating at FL350 with 1,000 ft separation from adjacent traffic is:',
+  question: 'With 96 litres of usable fuel and a cruise burn of 32 litres per hour, the endurance is:',
   options: [
-    'A. Operating with insufficient separation — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'B. RVSM does not apply above FL310 — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. 1,000 ft at FL350 requires special ATC clearance each time according to current CASR and AIP requirements',
-    'D. Operating correctly — RVSM (Reduced Vertical Separation Minima) permits 1,000 ft separation between FL290 and FL410 for approved aircraft and operators,'
+    '2 hours',
+    '2 hours 30 minutes',
+    '3 hours',
+    '3 hours 30 minutes'
   ],
-  correct: 3,
-  explanation: 'RVSM: 1,000 ft vertical separation between FL290 and FL410 for RVSM-approved aircraft. Before RVSM, 2,000 ft separation was required above FL290 — halving the available flight levels. RVSM approval requires: aircraft with precise altimetry, altitude-keeping autopilot, RVSM-approved operator, and trained crew.',
+  correct: 2,
+  explanation: 'Endurance equals usable fuel divided by fuel flow: 96 / 32 = 3 hours. Required reserves (including the fixed final reserve) must be subtracted before working out the time available for the planned flight.',
+  reference: 'Flight planning - fuel'
+},
+
+{
+  question: 'When ATC issues \'speed 250 kt by 10 DME\', the pilot must:',
+  options: [
+    'Be at 250 kt by the time the aircraft reaches 10 DME from the named station',
+    'Slow to 250 kt well before reaching 10 DME from the station',
+    'Slow to 250 kt only after passing 10 DME from the station',
+    'Treat the 250 kt by 10 DME instruction as advisory information only'
+  ],
+  correct: 0,
+  explanation: 'The aircraft must be established at 250 kt as it passes 10 DME, so the deceleration is planned to be complete by that point, not begun there. ATC uses such constraints for sequencing, and the pilot advises at once if unable to comply.',
   reference: 'AIP ENR 1.1'
 },
 
 {
-  question: 'When ATC issues "speed 250 kt by 10 DME" on an approach, the pilot must:',
+  question: 'An en-route alternate (ERA) differs from a destination alternate in that:',
   options: [
-    'A. Be established at 250 kt by the time the aircraft reaches 10 DME from the named station — complying with the speed constraint at the specified position',
-    'B. Slow to 250 kt before reaching 10 DME from the station — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Slow to 250 kt after passing 10 DME — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. 250 kt by 10 DME is advisory only — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
+    'An en-route alternate is for an emergency before destination, a suitable aerodrome reachable from the route',
+    'An ERA is required only for those flights that are conducted right out over the deep open ocean',
+    'An ERA is exactly the same thing as the nominated destination alternate',
+    'An ERA is required only for turbojet-powered aircraft, not piston types'
   ],
   correct: 0,
-  explanation: 'Speed constraint by position: "speed 250 kt by 10 DME" — the aircraft must be at 250 kt when passing 10 DME. Plan the deceleration to achieve the speed before the fix, not at it. ATC uses these constraints for sequencing. If unable to comply, advise ATC immediately.',
-  reference: 'AIP ENR 1.1'
-},
-
-{
-  question: 'The IFR "en-route alternate" (ERA) differs from the destination alternate because:',
-  options: [
-    'A. An ERA is nominated for en-route emergencies — a suitable aerodrome accessible from along the route if diversion is required before destination',
-    'B. ERA is only required for oceanic flights — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. ERA and destination alternate are the same thing and this applies to all IFR operations in Australian airspace',
-    'D. ERA is only required for turbojet aircraft — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
-  ],
-  correct: 0,
-  explanation: 'ERA (En-Route Alternate): an aerodrome planned along or near the route where the aircraft could divert if an emergency requires immediate landing before destination. Used in ETOPS planning and remote area operations. Must be within a specified distance/time of the route and have suitable facilities and forecast conditions.',
-  reference: 'CASR Part 91 / AIP ENR 1.1'
+  explanation: 'An ERA is an aerodrome along or near the route where the aircraft could divert if an emergency forces a landing before the destination, used in extended-range and remote-area planning. It must be within the specified distance of the route with suitable facilities and forecast conditions.',
+  reference: 'Part 91 / AIP ENR 1.1'
 },
 
 {
   question: 'When a SID contains "climb via SID to FL100," it means:',
   options: [
-    'A. Climb to 1,000 ft and wait for further clearance',
-    'B. Follow the lateral route of the SID and ALL published altitude and speed constraints while climbing to FL100',
-    'C. Climb directly to FL100 without following the SID route',
-    'D. Only the altitude constraint at the end of the SID applies'
+    'Climb to 1,000 ft and wait for further clearance',
+    'Follow the lateral route of the SID and ALL published altitude and speed constraints up to FL100',
+    'Climb directly to FL100 without following the lateral SID route at all',
+    'Only the single altitude constraint at the very end of the SID is the one that applies'
   ],
   correct: 1,
   explanation: '"Climb via SID": comply with ALL published altitude constraints (AT, AT OR ABOVE, AT OR BELOW) and speed restrictions on the SID while climbing to the cleared altitude. This is different from "climb to FL100, proceed direct" — via SID means follow the procedure exactly.',
@@ -6405,10 +6379,10 @@ export const irexQuestions: {
 {
   question: 'An IFR flight plan "overdue aircraft" procedure is initiated when:',
   options: [
-    'A. The aircraft is 5 minutes late to destination',
-    'B. The aircraft has not arrived or made contact within the specified time after ETA',
-    'C. Only when the pilot has not filed a flight plan',
-    'D. Overdue procedures only apply to VFR flights'
+    'The aircraft is reported just 5 minutes late arriving at the destination',
+    'The aircraft has not arrived or made contact within the specified time after ETA',
+    'Only when the pilot has not filed any flight plan at all',
+    'Overdue procedures apply only to VFR flights, not IFR'
   ],
   correct: 1,
   explanation: 'Overdue aircraft: if the aircraft does not arrive or cancel by ETA + tolerance (typically 30 min), ATC/JRCC initiates: uncertainty phase, alert phase, distress phase (SAR mobilisation). Always cancel on arrival.',
@@ -6418,10 +6392,10 @@ export const irexQuestions: {
 {
   question: 'A GNSS integrity failure alert during an approach requires:',
   options: [
-    'A. Continue the approach monitoring the alert',
-    'B. Only discontinue if the alert persists for more than 30 seconds',
-    'C. Request ATC radar guidance and continue',
-    'D. Immediately execute the missed approach — a GNSS integrity alert means the navigation solution cannot be trusted'
+    'Continue the approach as planned, while simply monitoring the ongoing integrity alert',
+    'Only discontinue if the alert persists for more than 30 seconds',
+    'Request ATC radar guidance and continue',
+    'Immediately execute the missed approach; a GNSS integrity alert means the position cannot be trusted'
   ],
   correct: 3,
   explanation: 'GNSS integrity alert: immediate missed approach. An integrity alert means GPS position may have an error exceeding approach tolerances. Published minima assume GPS is within RAIM limits. Continuing with a GNSS integrity warning risks flying into terrain. Advise ATC and use alternate approach/navaid.',
@@ -6429,42 +6403,29 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The IFR "proficiency check" (IPC) is required when:',
+  question: 'On a 3-degree approach path (about 300 ft per nm), the height above the threshold at 5 nm to run is approximately:',
   options: [
-    'A. Instrument currency has lapsed — the pilot has not completed 6 approaches in the preceding 6 months',
-    'B. Every 6 months regardless of currency — this is the correct regulatory position',
-    'C. Only before the annual flight review and this applies to all IFR operations in Australian airspace',
-    'D. IPCs are only required for commercial pilots according to current CASR and AIP requirements'
-  ],
-  correct: 0,
-  explanation: 'IPC required when instrument currency lapses (less than 6 approaches in 6 months). The check is conducted by an authorised flight examiner covering the full range of instrument operations — holds, approaches (precision and non-precision), partial panel, emergencies. Passing restores IFR privileges.',
-  reference: 'CASR Part 61'
-},
-
-{
-  question: 'A "contact approach" may be requested by the pilot when:',
-  options: [
-    'A. The pilot can remain clear of cloud with at least 1 SM flight visibility and reasonably expects to continue to the aerodrome — it is an alternative to the IFR procedure at pilot request with ATC approval',
-    'B. Weather is below VFR minima and the pilot needs special authorisation to land — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'C. Only when the published instrument approach is unserviceable or not available — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements',
-    'D. ATC assigns a contact approach when radar coverage is unavailable — this does not represent the correct regulatory position under CASR Part 91 and AIP requirements'
-  ],
-  correct: 0,
-  explanation: 'Contact approach: pilot-initiated when clear of cloud with ≥1 SM visibility and expects to continue. ATC separates the aircraft from other IFR traffic. Pilot is responsible for terrain and obstacle clearance. Advantage: may allow lower and more direct approach than published procedure.',
-  reference: 'CASR Part 91 / AIP ENR 1.5'
-},
-
-{
-  question: 'Instrument approach procedures are designed assuming the aircraft:',
-  options: [
-    'A. Has all systems fully functional',
-    'B. Has maximum engine power throughout',
-    'C. Has engines operating at normal power and standard performance for the published approach category',
-    'D. No performance assumptions are made in procedure design'
+    'About 900 ft',
+    'About 1,200 ft',
+    'About 1,500 ft',
+    'About 1,800 ft'
   ],
   correct: 2,
-  explanation: 'Approach procedure design assumptions: normal aircraft performance for the approach category. A single-engine missed approach changes climb gradient capability significantly — published missed approach obstacle clearance may not be achievable. Assess performance against published missed approach gradient requirements before commencing in abnormal configuration.',
+  explanation: 'On a 3-degree path the aircraft loses about 300 ft per nm, so at 5 nm the height above the threshold elevation is about 5 x 300 = 1,500 ft. Checking height against distance confirms the aircraft is on profile.',
   reference: 'ICAO Doc 8168 / AIP ENR 1.5'
+},
+
+{
+  question: 'An IFR aircraft in Australia may be cleared for a visual approach when:',
+  options: [
+    'The visibility is below the published landing minima and the pilot requests special handling from ATC',
+    'The published instrument approach is unserviceable, and the pilot may proceed only in that single case',
+    'Within 30 nm by day, clear of cloud and in sight of ground or water with at least 5,000 m visibility',
+    'Radar coverage happens to be unavailable at the destination aerodrome and the pilot needs guidance'
+  ],
+  correct: 2,
+  explanation: 'An IFR pilot may discontinue the IAP for a visual approach when, by day, within 30 nm, clear of cloud and in sight of ground or water with visibility at least 5,000 m (or the aerodrome in sight); by night the aircraft stays at not below LSALT/MSA or step until established. These are the Australian visual-approach criteria.',
+  reference: 'AIP ENR 1.5 / GEN 3.4'
 },
 
 ]
