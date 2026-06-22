@@ -42,7 +42,8 @@ export default function Home() {
 
         {/* HERO */}
         <section style={{ position: 'relative', height: '100vh', minHeight: '650px', display: 'flex', flexDirection: 'column', overflow: 'hidden', margin: 0, padding: 0 }}>
-          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/IMG_4488.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center 35%', filter: 'brightness(0.52)' }} />
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/IMG_4488.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center 35%' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(8,20,40,0.35) 0%, rgba(8,20,40,0.55) 55%, rgba(8,20,40,0.85) 100%)' }} />
           <nav style={{ position: 'relative', zIndex: 10, padding: '1.25rem 2.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div>
               <span style={{ fontSize: '22px', fontWeight: '800', color: 'white' }}>V1</span>
@@ -58,16 +59,20 @@ export default function Home() {
           </nav>
           <div style={{ position: 'relative', zIndex: 1, flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 2.5rem' }}>
             <div style={{ maxWidth: '800px' }}>
-              <p style={{ fontSize: '11px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.65)', marginBottom: '1.25rem', fontWeight: '700', textTransform: 'uppercase' }}>Australia&apos;s Pilot Exam Prep Platform</p>
-              <h1 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: '800', color: 'white', marginBottom: '1.5rem', lineHeight: 1.05, letterSpacing: '-2px' }}>
+              <p style={{ fontSize: '11px', letterSpacing: '0.32em', color: 'rgba(255,255,255,0.55)', marginBottom: '1.5rem', fontWeight: '500', textTransform: 'uppercase' }}>Australia&apos;s Pilot Exam Prep Platform</p>
+              <h1 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: '800', color: 'white', marginBottom: '1.5rem', lineHeight: 1.04, letterSpacing: '-2px' }}>
                 Your Journey to the<br />Flight Deck Starts Here.
               </h1>
-              <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.72)', maxWidth: '520px', margin: '0 auto 2.5rem', lineHeight: 1.8 }}>
+              <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.72)', maxWidth: '520px', margin: '0 auto 2.5rem', lineHeight: 1.7 }}>
                 Expert-reviewed questions aligned to real CASA references. Every PPL, CPL, ATPL and IREX exam covered.
               </p>
-              <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+              <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1.5rem' }}>
                 <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '700', textDecoration: 'none' }}>Start Free Trial</a>
                 <a href="#pricing" style={{ background: 'rgba(255,255,255,0.1)', color: 'white', border: '2px solid rgba(255,255,255,0.3)', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '600', textDecoration: 'none' }}>See Pricing</a>
+              </div>
+              <div style={{ fontSize: '13px', color: 'rgba(255,255,255,0.55)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '7px' }}>
+                <span style={{ display: 'inline-flex', width: '15px', height: '15px', borderRadius: '50%', border: '1.5px solid rgba(255,255,255,0.5)', alignItems: 'center', justifyContent: 'center', fontSize: '9px', lineHeight: 1 }}>✓</span>
+                Aligned to the current CASA Part 61 MOS
               </div>
             </div>
           </div>
