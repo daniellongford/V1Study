@@ -202,19 +202,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An IFR flight notification (flight plan) submitted to ATC remains valid for:',
-  options: [
-    '2 hours after the proposed departure time, after which it must be re-filed or amended',
-    '24 hours from the proposed departure time, after which it is automatically renewed',
-    'An indefinite period, lasting until the pilot actively cancels the flight plan with air traffic control by radio',
-    '30 minutes after the proposed departure time, matching the SARTIME buffer'
-  ],
-  correct: 0,
-  explanation: 'A filed IFR flight notification lapses 2 hours after the nominated departure time (EOBT). If the flight has not departed within that window the plan must be re-filed or amended, so ATC is not holding capacity for an aircraft that has not got airborne.',
-  reference: 'AIP ENR 1.10 — flight notification'
-},
-
-{
   question: 'On an IFR flight, the pilot\'s obligation regarding cancellation of SAR (SARWATCH) is:',
   options: [
     'None, because terminating SAR is solely the responsibility of air traffic control',
@@ -969,16 +956,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Ground frost on the aircraft before an IFR departure:',
+  question: 'A destination TAF for an IFR arrival at 2220 contains \'TEMPO 2218/2300 9999 BKN008\' and \'PROB30 2214/2223 0300 FG BKN001\'. The operational requirement is to:',
   options: [
-    'Only affects aerodynamics if it is more than 1 cm thick',
-    'Is irrelevant on the fuselage; only leading-edge frost matters',
-    'Will be cleared by the anti-icing system automatically during the take-off roll itself',
-    'Must be fully removed from the lifting surfaces before take-off, as light frost still cuts lift'
+    'Make no provision, since the TEMPO forecasts 10 km visibility',
+    'Make no provision, since PROB30 conditions may be disregarded in planning',
+    'Delay departure until the forecast fog has cleared at the destination',
+    'Provide an alternate, or carry holding fuel, as conditions at the ETA are below the alternate minima'
   ],
   correct: 3,
-  explanation: 'Under the clean-aircraft principle, all frost, snow or ice must be removed from lifting surfaces before flight. A thin layer of frost, rough like coarse sandpaper, can cut maximum lift coefficient by around 30%, raise the stall speed and impair rotation. Many light-aircraft anti-icing systems will not remove ground frost, so de-icing fluid must be applied in freezing conditions.',
-  reference: 'Part 91 MOS / AIP ENR 1.1 — clean aircraft'
+  explanation: 'At the 2220 ETA the PROB30 forecasts fog with 300 m visibility and cloud at 100 ft, and the TEMPO forecasts cloud at 800 ft, both below the alternate minima. When the forecast at the ETA, including TEMPO, INTER or PROB30/40, is below the alternate minima, the flight must provide for an alternate or, for a TEMPO or INTER, carry the required holding fuel. The 10 km visibility in the TEMPO does not remove the requirement because the PROB30 fog and the low cloud still apply, and PROB30 conditions below the minima cannot be disregarded.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
 },
 
 {
@@ -1892,7 +1879,7 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Maintaining 160 kt IAS at 5,000 ft (using about 2% per 1,000 ft), the true airspeed is approximately:',
+  question: 'Maintaining 160 kt IAS at 5,000 ft, the true airspeed is approximately:',
   options: [
     '160 kt',
     '176 kt',
@@ -2269,16 +2256,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An ILS Category I approach has published minima of:',
+  question: 'The lowest decision height and visibility to which a standard Category I ILS approach may be flown are:',
   options: [
-    'Minima vary by aerodrome and aircraft equipment',
-    'DA 200 ft and RVR 800 m',
-    'DA 200 ft and RVR 550 m',
-    'A fixed DA of 100 ft and RVR of 400 m'
+    'A decision height of 200 ft and a visibility (RVR) of 550 m',
+    'A decision height of 100 ft and an RVR of 300 m',
+    'A decision height of 50 ft with no visibility requirement',
+    'No defined lower limit, since Category I minima are unrestricted'
   ],
   correct: 0,
-  explanation: 'ILS Cat I minima: typically DA at 200 ft (60 m) above threshold, RVR 550 m minimum, but minima are aerodrome-specific and may be higher based on obstacles, approach lighting, runway markings. Cat II: DA 100 ft (30 m), RVR 300 m — requires certified equipment and flight deck crew. Cat III: lower DA or no DA, RVR 75–200 m — highly specialized equipment and certifications required. Always use published minima from current charts, not generalised values.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.8 / AIP ENR 1.5'
+  explanation: 'Category I is the standard precision-approach category, flown to a decision height no lower than 200 ft and a visibility or RVR no less than 550 m. Lower decision heights require Category II (below 200 ft) or Category III, with additional aircraft, crew and ground-equipment certification. The minima published for a particular runway may be higher than this floor.',
+  reference: 'AIP ENR 1.5 / CASR Part 61 MOS Schedule 3 — IREX 2.3.8'
 },
 
 {
@@ -2646,15 +2633,15 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Given heading 090°M and ADF reads 270° relative — the aircraft is tracking directly:',
+  question: 'Heading 090°M, the fixed-card ADF needle points to 270° relative. The NDB is:',
   options: [
-    'Toward the NDB',
-    'Away from the NDB on the 090° radial',
-    'Away from NDB on the 270° bearing from the station',
-    'Parallel to the NDB, abeam to the left'
+    'Directly ahead of the aircraft, on the nose',
+    'Directly behind the aircraft, off the tail',
+    'Abeam to the right, off the right wingtip',
+    'Abeam to the left, off the left wingtip'
   ],
   correct: 3,
-  explanation: 'Heading 090°M, RB 270°: MB to station = 090 + 270 = 360° = 000°M. The NDB is due north. The aircraft heading east (090°) with the NDB to the north is flying parallel to the station — the NDB is abeam to the left (north). RB 270° = the NDB is at the 9 o\\\'clock position (directly left of the aircraft heading east).',
+  explanation: 'Magnetic bearing to the station = heading + relative bearing = 090 + 270 = 360°M, due north. With the aircraft heading 090°M (east), a station due north lies 90° to the left, abeam off the left wingtip. A 270° relative bearing always places the station abeam to the left.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.3'
 },
 
@@ -2841,16 +2828,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "time limit" for an airways clearance that has not been used is:',
+  question: 'An IFR departure is delayed well beyond the planned departure time submitted with the flight notification. Before departing, the pilot must:',
   options: [
-    '1 hour from issue',
-    '30 minutes from the expected departure time in the clearance',
-    'Clearances do not expire, they remain valid until cancelled',
-    '2 hours from the filed EOBT'
+    'Do nothing, since a submitted flight notification has no expiry',
+    'Depart on the original plan, since ATS automatically updates the times',
+    'Cancel the notification and operate VFR for the delayed departure',
+    'Amend or re-submit the flight notification so ATS holds the correct times'
   ],
   correct: 3,
-  explanation: 'Airways clearance validity: a clearance (including an IFR flight plan that supports it) is valid for 2 hours from the EOBT (Estimated Off-Blocks Time). If the aircraft does not depart within 2 hours, the clearance and flight plan lapse. The pilot must re-file and re-obtain clearance. If departure is delayed significantly, advising ATC early allows them to re-sequence the flight and issue a revised clearance with updated EOBT.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.11 / AIP ENR 1.10'
+  explanation: 'A flight notification is held by ATS with the planned departure and arrival times, which drive separation planning and SAR alerting. If departure is delayed substantially, the pilot amends or re-submits the notification so those times stay accurate; otherwise SAR could be triggered or the plan may lapse. ATS does not update the times automatically.',
+  reference: 'AIP GEN / CASR Part 61 MOS Schedule 3 — IREX 2.3.11'
 },
 
 {
@@ -2945,16 +2932,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Thunderstorm avoidance for IFR aircraft requires:',
+  question: 'A line of active thunderstorms lies across the planned IFR route. The correct action is to:',
   options: [
-    'Flying through the clear area between two thunderstorm cells is always perfectly safe',
-    'Only avoid the dark-coloured cells, white cells are safe to penetrate',
-    'A minimum of 20 nm lateral separation from active thunderstorm cells, hail, severe turbulence',
-    'Thunderstorms can be penetrated at FL200 and above'
+    'Penetrate at right angles at reduced speed, using weather radar to pick a path between the cells',
+    'Climb above the cells, since thunderstorm tops rarely exceed normal cruising levels',
+    'Deviate to remain well clear of the cells, avoiding flight beneath the anvil or between closely spaced cells',
+    'Descend and continue beneath the cloud base, keeping the ground in sight'
   ],
   correct: 2,
-  explanation: 'Thunderstorm avoidance: 20 nm lateral minimum from individual cells; greater separation from squall lines. Hazards extend beyond visible cloud: severe to extreme turbulence (CAT in anvil outflow), large hail (can fall 20+ nm from storm), severe icing, windshear (microbursts). The area between two cells may have violent convergent winds. Never attempt to fly under the anvil of a mature CB.',
-  reference: 'AIP ENR 1.5 / BOM CB guidance'
+  explanation: 'Thunderstorms contain severe turbulence, hail, icing, lightning and microbursts that can exceed the aircraft\'s structural and performance limits. They are avoided by deviating around the cells with a generous margin, not penetrated even with weather radar, not over-flown beneath the anvil and not threaded between closely spaced cells. Tops can reach well above normal cruising levels, and flying beneath a cell exposes the aircraft to downbursts and hail.',
+  reference: 'AIP / CASR Part 61 MOS Schedule 3 — IREX 3.1.1, 3.2.4'
 },
 
 {
@@ -3530,7 +3517,7 @@ export const irexQuestions: {
 },
 
 {
-  question: 'At FL100 the outside air temperature is 0 degrees C. Using an ISA lapse of 2 degrees per 1,000 ft, the ISA deviation is:',
+  question: 'At FL100 the outside air temperature is 0 degrees C. The ISA deviation is:',
   options: [
     'ISA +5',
     'ISA -5',
@@ -3543,16 +3530,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'By the one-in-sixty rule, an aircraft 2 nm off the desired track after travelling 60 nm has a tracking error of about:',
+  question: 'An IFR aircraft is fitted with an NDB, a VOR and an approved GNSS. Ranked from the highest order of track-keeping precision to the lowest, the correct order is:',
   options: [
-    'About 1 degree off the desired track',
-    'About 5 degrees off the desired track',
-    'About 6 degrees off the desired track',
-    'About 2 degrees off the desired track'
+    'NDB, then VOR, then GNSS',
+    'VOR, then GNSS, then NDB',
+    'The three systems give equal track-keeping precision when serviceable',
+    'GNSS, then VOR, then NDB'
   ],
   correct: 3,
-  explanation: 'The one-in-sixty rule states that 1 nm off track over 60 nm is about 1 degree, so 2 nm off over 60 nm is about 2 degrees. To regain track the pilot doubles the closing angle, or uses angle off equals 60 times distance off divided by distance gone.',
-  reference: 'Navigation - one-in-sixty rule'
+  explanation: 'Tracking tolerances are set per aid by their order of precision. GNSS/RNP gives the tightest track-keeping, bounded by the RNP value with on-board performance monitoring; the VOR is next, with angular CDI deviation; the NDB is the least precise, carrying a wider pilot tolerance and greater susceptibility to bearing error. So the order is GNSS, then VOR, then NDB.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.7'
 },
 
 {
@@ -3894,16 +3881,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'For an IFR flight requiring an alternate: trip fuel 70 min, fuel to the alternate 25 min, fixed reserve 45 min and taxi 5 min. The minimum fuel required, in time, is:',
+  question: 'An IFR flight in a piston aeroplane has 80 minutes of trip fuel and 5 minutes of taxi fuel. The destination TAF carries a TEMPO with visibility below the landing minimum at the ETA, so the pilot nominates an alternate 25 minutes\' flight time away. Using the alternate and the fixed final reserve for a piston aeroplane, the minimum fuel required, in minutes, is:',
   options: [
-    '145 minutes',
-    '120 minutes',
-    '115 minutes',
-    '95 minutes'
+    '155 minutes',
+    '215 minutes',
+    '140 minutes',
+    '110 minutes'
   ],
   correct: 0,
-  explanation: 'Minimum fuel = taxi + trip + alternate + fixed reserve = 5 + 70 + 25 + 45 = 145 minutes. IFR company fuel policy expresses fuel in minutes, and the aircraft must not depart with less than this minimum.',
-  reference: 'Part 91 MOS 19 / AIP ENR 1.1'
+  explanation: 'Nominating an alternate provides for the TEMPO deterioration, so holding fuel is not also carried for it. The fixed final reserve for a piston aeroplane is 45 minutes at holding speed 1,500 ft above the destination. Minimum fuel, in minutes, = taxi 5 + trip 80 + alternate 25 + fixed reserve 45 = 155. Adding a further 60 minutes of TEMPO holding on top of the alternate (215) over-provides, since the alternate already covers the forecast deterioration; using 30 minutes in place of the 45-minute piston reserve (140) under-provides; omitting the fixed reserve altogether (110) is unsafe.',
+  reference: 'AIP ENR 1.1 / Part 91 MOS Ch 19'
 },
 
 {
@@ -4518,7 +4505,7 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Maintaining 150 kt IAS at FL100, the approximate true airspeed (using about 2% per 1,000 ft) is:',
+  question: 'Maintaining 150 kt IAS at FL100, the approximate true airspeed is:',
   options: [
     '180 kt',
     '150 kt',
@@ -4609,16 +4596,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "Aerodrome Traffic Zone" (ATZ) and instrument approach relationship is:',
+  question: 'An IFR aircraft in radar-controlled airspace suffers a total transponder failure. The correct procedure is to:',
   options: [
-    'The ATZ extends right up to 10,000 ft AGL all the way around the aerodrome',
-    'ATZ is only relevant for helicopter operations',
-    'The ATZ surrounds a controlled or registered aerodrome and extends to 1,500 ft AGL',
-    'ATZ boundaries prohibit IFR approaches'
+    'Continue normally, since ATC primary radar still shows the aircraft',
+    'Squawk 7600 on the failed transponder and continue, expecting ATC to keep the aircraft radar identified',
+    'Advise ATC, who may apply increased separation, re-route the aircraft, or require it to leave the surveillance airspace',
+    'Descend below radar coverage and proceed visually, since surveillance separation no longer applies'
   ],
   correct: 2,
-  explanation: 'ATZ (Aerodrome Traffic Zone): the airspace surrounding an aerodrome in which special operating rules apply. Diameter and height vary. For IFR arrivals: at a controlled aerodrome, ATC manages ATZ entry; at uncontrolled aerodrome, IFR pilot must broadcast on CTAF. The approach profile should have the aircraft established, configured, and visual (if breaking VMC) within the ATZ area on approach.',
-  reference: 'AIP ENR 1.4 / CASR Part 71'
+  explanation: 'Secondary surveillance radar depends on the transponder for identity and Mode C altitude. With the transponder failed it can transmit no code at all, so ATC loses that data and must apply procedural or increased separation, may re-route the aircraft, or may require it to leave the surveillance airspace. The pilot advises ATC promptly so the appropriate separation can be arranged.',
+  reference: 'AIP ENR 1.6 / CASR Part 61 MOS Schedule 3 — IREX 2.3.19'
 },
 
 {
@@ -4739,16 +4726,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Instrument-rating recency differs from currency in that:',
+  question: 'An instrument-rated pilot has not flown the required number of instrument approaches in the preceding 90 days. To exercise instrument-rating privileges again, the pilot must:',
   options: [
-    'Nothing, since the recency and the currency in fact mean exactly the very same thing',
-    'Currency is the short-term recent-experience requirement, while recency keeps skills sharp via regular checks',
-    'Recency refers to medical certificate validity and currency to flight hours',
-    'Currency applies only to VFR flight, while recency applies only to IFR'
+    'Wait until the next 12-monthly proficiency check falls due and re-sit it before flying under the IFR again',
+    'Regain recency by flying the required instrument approaches, in the aircraft or an approved simulator, with a suitably qualified pilot',
+    'Do nothing, since the 12-monthly proficiency check already covers recency',
+    'Have the missed approaches signed off by ATC during a normal IFR flight to restore recent experience'
   ],
   correct: 1,
-  explanation: 'Currency is the short-term recent-experience requirement, while recency/proficiency is the broader maintenance of skill through regular practice and proficiency checks. Licence holders also complete a flight review every two years.',
-  reference: 'CASR Part 61 — recency'
+  explanation: 'Recent experience and the instrument proficiency check are separate requirements. The proficiency check is required every 12 months, while recent experience requires a set number of instrument approaches in the preceding 90 days. If recency lapses it is regained by flying the required approaches, in the aircraft or an approved flight simulator, with an appropriately qualified pilot, without re-sitting the proficiency check.',
+  reference: 'CASR 61.870 / CASR Part 61 MOS Schedule 3 — IREX 2.1.2'
 },
 
 {
@@ -4778,16 +4765,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Having tracked 120 nm and finding the aircraft 6 nm left of the intended track, the track error is approximately:',
+  question: 'Tracking toward an NDB and intending to intercept the 090°M inbound track from the left of it, the pilot chooses a 30° intercept. The heading to steer is:',
   options: [
-    '1 degree',
-    '3 degrees',
-    '6 degrees',
-    '10 degrees'
+    '060°M',
+    '120°M',
+    '090°M',
+    '150°M'
   ],
   correct: 1,
-  explanation: 'By the one-in-sixty rule, track error in degrees equals (distance off track x 60) divided by distance flown: (6 x 60) / 120 = 3 degrees. Doubling the correction would regain track by the same distance ahead.',
-  reference: 'Navigation - one-in-sixty rule'
+  explanation: 'From the left of the desired inbound track the aircraft turns right across it. A 30° intercept of the 090°M track is flown on a heading of 090 + 30 = 120°M. The aircraft holds 120°M until the ADF shows the inbound track has been reached, then turns onto 090°M to track to the NDB.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.3'
 },
 
 {
@@ -4804,55 +4791,55 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Spatial disorientation in IMC occurs because:',
+  question: 'A destination TAF includes \'INTER 2214/2300 4000 SHRA BKN010\' and the landing minimum is 4,500 m visibility. For an arrival at 2230 the pilot must:',
   options: [
-    'The flight instruments become unreliable when flying in cloud',
-    'Spatial disorientation is a myth, and experienced instrument pilots are immune to its effects',
-    'Spatial disorientation only occurs during night VFR flight',
-    'The vestibular system of the inner ear cannot sense attitude without visual references'
+    'Make no provision, since an INTER may be disregarded for planning',
+    'Carry 60 minutes of holding fuel, as for any forecast variation',
+    'Nominate an alternate only, since holding is not permitted for an INTER',
+    'Carry 30 minutes of holding fuel or nominate an alternate for the INTER'
   ],
   correct: 3,
-  explanation: 'Spatial disorientation: the vestibular system senses rotation using semicircular canals (angular acceleration) and linear acceleration using otolith organs. In cloud: the inner ear provides false information after sustained turns (the leans), and the "graveyard spiral" (a balanced turn perceived as straight and level). Instrument flying discipline — trust the instruments, not your body — is the only reliable counter.',
-  reference: 'CASA Human Factors / AIP ENR 1.5'
+  explanation: 'An INTER (variations lasting under 30 minutes each) that takes a condition below the landing minimum must be provided for. The forecast 4,000 m visibility is below the 4,500 m minimum during the arrival window, so the pilot carries 30 minutes of holding fuel or nominates an alternate. A TEMPO would require 60 minutes; an INTER requires 30.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
 },
 
 {
-  question: '"The leans" illusion in IMC is caused by:',
+  question: 'A piston IFR flight has 110 minutes of trip fuel and 5 minutes of taxi fuel. The destination forecast is CAVOK and no alternate is required. The minimum fuel required, in minutes, is:',
   options: [
-    'The aircraft entering a bank as the result of an asymmetric fuel or cargo load distribution',
-    'The leans only occur during night VFR flight',
-    'The leans are caused by fatigue and can be resolved by resting',
-    'After an undetected gradual roll into a bank, the semicircular canals stop sensing it'
+    '115 minutes',
+    '205 minutes',
+    '140 minutes',
+    '160 minutes'
   ],
   correct: 3,
-  explanation: '"The leans": after an undetected slow roll (below the semicircular canal threshold of approximately 2°/sec), the inner ear adapts — perceives the banked attitude as wings level. When the pilot corrects back to actual wings level (instruments), the correction feels like rolling to a new bank. The pilot feels banked even though instruments show wings level. The body leans toward the perceived "down." Resolution: trust the instruments, resist the urge to lean.',
-  reference: 'Part 61 MOS Sch 3 IREX 8.1'
+  explanation: 'With no alternate and no holding required, minimum fuel = taxi 5 + trip 110 + fixed final reserve 45 = 160 minutes. The fixed final reserve for a piston aeroplane is 45 minutes and is always carried. 115 omits the reserve, 140 uses 30 minutes instead of 45, and 205 adds holding that the CAVOK forecast does not require.',
+  reference: 'Part 91 MOS Ch 19 / AIP ENR 1.1'
 },
 
 {
-  question: 'The graveyard spiral in instrument flight begins when:',
+  question: 'On an IFR visual approach by day, once the pilot reports \'visual\', responsibility for terrain and obstacle clearance:',
   options: [
-    'The aircraft inadvertently flying straight into an active embedded thunderstorm cell in cloud',
-    'It can only ever occur during aerobatic manoeuvres in flight',
-    'An undetected bank develops, the nose drops, and pulling back tightens the spiral instead of recovering',
-    'It is caused by a trim imbalance developing during the cruise'
+    'Remains entirely with ATC, who keep terrain clearance throughout',
+    'Is shared equally between the pilot and ATC',
+    'Passes to the pilot, who must stay clear of cloud and in sight of the ground',
+    'No longer applies once the aircraft is below the LSALT'
   ],
   correct: 2,
-  explanation: 'An undetected bank lets the nose drop; the natural pull-back increases g in the turn, steepening the bank and building speed, and reducing power makes it worse. Recovery is to level the wings first, then ease gently out of the descent; pulling back while banked deepens the spiral.',
-  reference: 'Part 61 MOS Sch 3 IREX 8.1'
+  explanation: 'On a visual approach the pilot accepts responsibility for terrain and obstacle clearance and must maintain visual reference to the ground or water and remain clear of cloud. ATC continues to provide traffic separation but not terrain clearance.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.4'
 },
 
 {
-  question: 'The somatogravic illusion during rapid acceleration in IMC causes the pilot to perceive:',
+  question: 'An instrument approach chart is annotated \'GNSS or DME required\'. The aircraft has serviceable GNSS but the DME is unserviceable. The pilot may:',
   options: [
-    'A left bank developing whenever the aircraft accelerates forward',
-    'An increased altitude reading shown on the aircraft altimeter',
-    'A false nose-high climbing attitude',
-    'An illusion that occurs only in helicopter operations, and never in aeroplanes'
+    'Not conduct the approach, since DME is mandatory for it',
+    'Conduct it only with continuous ATC radar monitoring',
+    'Conduct the approach, since the chart allows GNSS as an alternative to the DME',
+    'Substitute the ADF for the unserviceable DME'
   ],
   correct: 2,
-  explanation: 'The otolith organs sense linear acceleration like a pitch change, so a rapid forward acceleration feels nose-high. The pilot may push forward to \'level\' it, which has caused accidents on go-arounds in poor visibility. The defence is to trust the instruments, not the sensation.',
-  reference: 'Part 61 MOS Sch 3 IREX 8.1'
+  explanation: 'Where a chart specifies \'GNSS or DME required\', either satisfies the requirement, so with serviceable GNSS the approach may be flown. This differs from a chart annotated \'DME required\', where DME is the only acceptable means and the approach cannot be flown without it.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.9'
 },
 
 {
@@ -4934,42 +4921,42 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The Coriolis illusion in IMC is produced when the pilot:',
+  question: 'An IFR flight tracks 250°M with a route LSALT of 7,500 ft. The forecast freezing level is 9,500 ft with icing in cloud above it. The most suitable cruising level is:',
   options: [
-    'Moves the head during a sustained turn, producing a strong false sensation of tumbling or rotating',
-    'Stares at a single stationary light until it gradually appears to move about in the dark sky',
-    'Accelerates rapidly and feels a false nose-up pitching sensation',
-    'Mistakes a sloping cloud bank for the true natural horizon'
+    '8,000 ft',
+    '10,000 ft',
+    '7,000 ft',
+    '9,000 ft'
   ],
   correct: 0,
-  explanation: 'Moving the head during a prolonged constant turn stimulates the semicircular canals in another plane, producing a powerful, disorienting sensation of tumbling or rotating. The defence is to avoid sudden head movements in IMC and to trust the attitude indicator.',
-  reference: 'Part 61 MOS Sch 3 IREX 8.1'
+  explanation: 'The level must be at or above the LSALT (7,500 ft), a valid IFR level for the track (250°M is 180-359°M, so even thousands below the transition altitude), and below the freezing level (9,500 ft) to avoid the forecast icing. Only 8,000 ft meets all three: 10,000 ft is above the freezing level in the icing layer, 7,000 ft is below the LSALT, and 9,000 ft is an odd level (wrong for a westerly track).',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 4.1.1'
 },
 
 {
-  question: 'Expectation bias during an instrument approach causes pilots to:',
+  question: 'An IFR destination\'s only instrument approach is an NDB approach. On navigation-aid grounds, an alternate is NOT required provided:',
   options: [
-    'See what they expect rather than what is there, e.g. mistaking other lights for runway lights',
-    'Correctly anticipate the runway environment on every approach',
-    'Improve the overall accuracy of their instrument approaches',
-    'Experience an effect that can occur only on a pilot\'s very first solo IFR flight'
+    'The aircraft has a serviceable ADF able to fly the NDB approach',
+    'The aircraft carries GNSS, regardless of the approach type available',
+    'There is also a VOR somewhere in the surrounding area',
+    'An alternate is always required whenever only an NDB approach exists'
   ],
   correct: 0,
-  explanation: 'Strongly expecting the runway ahead, a pilot may briefly take other lights seen through mist as approach or runway lights and continue below minima without genuine visual reference. The discipline is simple: if not definitely visual with the required references, go around.',
-  reference: 'ICAO CFIT guidance / CASA Human Factors'
+  explanation: 'An alternate is required on navigation-aid grounds when the aircraft cannot fly the available instrument approach. With a serviceable ADF the NDB approach can be flown, so no alternate is needed on those grounds, subject to weather, lighting and other requirements. Carrying GNSS does not help unless the approach is GNSS-based, and a VOR elsewhere is irrelevant to flying the NDB approach.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 4.2.1'
 },
 
 {
-  question: 'On an IFR navigation chart, a compulsory reporting point is identified by:',
+  question: 'On an IFR navigation chart a waypoint is drawn as an open (unfilled) triangle. On passing it, the pilot must:',
   options: [
-    'An open (unfilled) triangle, the same symbol that also marks an on-request reporting point',
-    'A solid triangle, whereas an on-request reporting point is shown by an open triangle',
-    'A circled cross, which is also the symbol used for the position of en-route radio navigation aids',
-    'A five-letter name printed in italics, with no symbol drawn at the waypoint position itself'
+    'Always make a position report, as for any charted waypoint',
+    'Report only if requested by ATC, since an open triangle marks an on-request reporting point',
+    'Report only when operating outside controlled airspace',
+    'Make no report, since an open triangle is a visual-only waypoint'
   ],
   correct: 1,
-  explanation: 'On Australian and ICAO charts a compulsory reporting point is shown as a solid (filled) triangle and an on-request (non-compulsory) reporting point as an open (unfilled) triangle. A position report is made passing a compulsory point unless ATC has advised that reports are not required (for example under radar).',
-  reference: 'AIP GEN 3.3 / chart legend'
+  explanation: 'A solid (filled) triangle marks a compulsory reporting point, where a position report is always required. An open (unfilled) triangle marks an on-request reporting point, reported only when ATC asks for it. Identifying the symbol determines the reporting obligation.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.5'
 },
 
 {
@@ -4986,16 +4973,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Automation surprise in glass-cockpit IFR operations refers to:',
+  question: 'In Class G airspace outside radar coverage, an IFR aircraft\'s transponder should be set to:',
   options: [
-    'An unexpected mechanical failure of a single piece of cockpit equipment in flight',
-    'An effect experienced only by relatively inexperienced pilots',
-    'Nothing, since modern automation never surprises the pilot',
-    'Automation doing something unexpected, such as a mode change, odd routing or a missed waypoint'
+    'Standby, since there is no radar to interrogate the transponder',
+    '1200, the VFR conspicuity code',
+    '7600, the code reserved for radio failure',
+    '2000, the IFR code outside controlled airspace, transmitting Mode C altitude'
   ],
   correct: 3,
-  explanation: 'As automation grows more capable, pilots may not grasp all the mode logic, so the system can change mode or routing without an obvious cue and the pilot only notices when the aircraft does something unexpected. Monitoring the mode annunciations and knowing the active mode prevents it.',
-  reference: 'ICAO Human Factors / CASA automation guidance'
+  explanation: 'An IFR flight squawks 2000 outside controlled airspace (3000 inside) with Mode C on, even outside radar coverage, because ADS-B and adjacent surveillance may still use the reply. 1200 is the VFR code and 7600 is reserved for radio failure.',
+  reference: 'AIP ENR 1.6 / CASR Part 61 MOS Schedule 3 — IREX 2.3.19'
 },
 
 {
@@ -5272,16 +5259,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The black-hole illusion at night causes pilots to:',
+  question: 'A destination TAF for the ETA includes \'TEMPO 4000 RA BKN012\'. The landing minimum is 4,500 m visibility and a 1,000 ft cloud base. The TEMPO means the pilot must plan for:',
   options: [
-    'The pilot to fly far too high all the way down throughout the whole of the approach',
-    'Fly too low over dark featureless terrain, the few visible lights giving a false sense of height',
-    'It has no real effect on instrument-rated pilots',
-    'It affects only VFR pilots and never IFR pilots'
+    'No provision, since the cloud base remains above the minimum',
+    '60 minutes of holding fuel, or an alternate, for the below-minima TEMPO',
+    '30 minutes of holding fuel, as for an INTER',
+    'An immediate diversion at top of descent'
   ],
   correct: 1,
-  explanation: 'Approaching over dark featureless terrain with only runway lights visible, the cues suggest the aircraft is high, so the pilot lowers the nose onto a dangerously low path. The defence is to use every glidepath aid available (PAPI, glideslope, radio altimeter) rather than visual cues alone.',
-  reference: 'ICAO Human Factors / AIP ENR 1.5'
+  explanation: 'A TEMPO (variations lasting 30 minutes up to an hour) below the landing minimum must be provided for with 60 minutes of holding fuel or an alternate. The visibility (4,000 m) is below the 4,500 m minimum, which triggers the requirement even though the cloud base (1,200 ft) stays above its minimum. An INTER would require 30 minutes.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
 },
 
 {
@@ -5376,16 +5363,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An IFR pilot suffering spatial disorientation in IMC should:',
+  question: 'A piston IFR flight has 95 minutes of trip fuel and 5 minutes of taxi fuel. The destination TAF has an INTER below the landing minimum and the pilot carries holding fuel rather than nominating an alternate. The minimum fuel, in minutes, is:',
   options: [
-    'Trust the physical sensations that are felt and then manoeuvre the aircraft accordingly',
-    'Reduce power and slow the aircraft right down immediately',
-    'Open a door or window to try to get an outside visual reference',
-    'Trust the instruments completely, ignore the sensations, and set wings level on the attitude indicator'
+    '205 minutes',
+    '145 minutes',
+    '130 minutes',
+    '175 minutes'
   ],
   correct: 3,
-  explanation: 'The vestibular system is unreliable in IMC and cannot tell a coordinated turn from straight flight, so the attitude indicator is the only trustworthy reference. The recovery is to focus on the AI, set wings level, and climb gently, trusting the instruments over the body.',
-  reference: 'ICAO Human Factors / AIP ENR 1.5'
+  explanation: 'An INTER below minima requires 30 minutes of holding fuel (a TEMPO would be 60). Minimum fuel = taxi 5 + trip 95 + INTER holding 30 + fixed final reserve 45 = 175 minutes. 205 wrongly uses 60-minute TEMPO holding, 145 omits the holding, and 130 omits the 45-minute fixed reserve.',
+  reference: 'Part 91 MOS Ch 19 / AIP ENR 1.1'
 },
 
 {
@@ -5545,29 +5532,29 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The somatogyral illusion in IMC arises because the semicircular canals:',
+  question: 'An IFR aircraft is cleared for a visual approach by day. If the pilot loses visual reference to the ground in reducing visibility, the pilot must:',
   options: [
-    'Stop sensing a prolonged steady turn, so stopping the turn feels like turning the other way',
-    'Sense a forward acceleration as a nose-high pitching movement',
-    'Detect a true horizon reliably even when none is visible outside the aircraft',
-    'Become steadily more accurate the longer that a turn is maintained'
+    'Revert to instrument flight, climb for terrain if needed, and advise ATC',
+    'Continue visually at the same level until the runway appears',
+    'Descend to circuit height to get below the cloud',
+    'Continue, since a visual approach clearance remains valid regardless of conditions'
   ],
   correct: 0,
-  explanation: 'After a prolonged constant-rate turn the semicircular canals stop signalling rotation, so the turn feels to have stopped; rolling out then gives a false sensation of turning the other way, the basis of the graveyard spin. Trusting the instruments is the defence.',
-  reference: 'MOS 8.1.2'
+  explanation: 'A visual approach requires continuous visual reference to the ground or water. If that reference is lost, the pilot reverts to instrument flight, climbs as needed for terrain clearance, and advises ATC. The clearance does not authorise continued descent without visual reference.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.4'
 },
 
 {
-  question: 'Autokinesis can mislead a pilot at night when:',
+  question: 'ATC instructs an IFR aircraft to \'squawk ident\'. The pilot should:',
   options: [
-    'Bright sunlight reflects upward from a layer of cloud below',
-    'Two aircraft pass in opposite directions at the same level',
-    'A single stationary light, stared at in the dark, appears to move',
-    'The landing light illuminates falling rain ahead of the aircraft'
+    'Change the transponder to standby briefly, then back to the assigned code',
+    'Read back the assigned code and select the next discrete code',
+    'Press the IDENT button once, which highlights the aircraft\'s return on the controller\'s display',
+    'Squawk 7700 momentarily to confirm the aircraft\'s identity'
   ],
   correct: 2,
-  explanation: 'Staring at an isolated stationary light against a dark background for several seconds makes it appear to move, which can prompt unnecessary control inputs. Scanning the whole field of view rather than fixating prevents it.',
-  reference: 'MOS 8.1.3'
+  explanation: '\'Squawk ident\' means press the transponder IDENT feature once, which momentarily highlights the aircraft\'s return on the controller\'s display so it can be identified. It does not involve changing the code, selecting standby, or using an emergency code.',
+  reference: 'AIP ENR 1.6 / CASR Part 61 MOS Schedule 3 — IREX 2.3.19'
 },
 
 {
@@ -5610,46 +5597,46 @@ export const irexQuestions: {
 },
 
 {
-  question: 'A \'false horizon\' illusion can occur when:',
+  question: 'A destination TAF for the ETA includes \'TEMPO 6000 FU\' (smoke reducing visibility to 6,000 m). The landing minimum visibility for the approach is 5,000 m. This TEMPO:',
   options: [
-    'The attitude indicator is the only reference being used',
-    'Sloping cloud tops or scattered ground lights are taken as the true horizon',
-    'The aircraft is established straight and level in clear air',
-    'The pilot scans the flight instruments in a regular, disciplined pattern'
+    'Requires 60 minutes of holding fuel for the TEMPO period',
+    'Requires no alternate or holding fuel for the destination',
+    'Requires an alternate, since smoke is forecast at the destination',
+    'Prohibits the approach until the forecast smoke has cleared'
   ],
   correct: 1,
-  explanation: 'A sloping cloud bank, an overcast that is not level, or ground lights merging with stars can be mistaken for the horizon, leading the pilot to align the aircraft with the false reference. Believing the attitude indicator prevents it.',
-  reference: 'MOS 8.1.3'
+  explanation: 'Provision for a TEMPO is required only when it takes a condition below the landing or alternate minimum. Here the TEMPO visibility (6,000 m) stays above the 5,000 m minimum, so no alternate or holding is required on that basis. The presence of smoke alone does not trigger a requirement, and the figure must be checked against the minimum rather than reacting to the word \'TEMPO\'.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
 },
 
 {
-  question: 'The \'flicker effect\' that can cause disorientation is produced by:',
+  question: 'By night, an IFR aircraft may be cleared for a visual approach only when:',
   options: [
-    'A steady, unchanging light source that is viewed over a long period',
-    'The complete absence of any external light at night',
-    'Two navigation lights of very slightly different colours',
-    'Sunlight or a strobe flickering at low frequency, such as through a propeller'
+    'The same conditions as a day visual approach apply, with no additional night requirement',
+    'The surface wind at the destination is forecast to be calm',
+    'The pilot cancels IFR before commencing the approach',
+    'Within the prescribed distance, with the aerodrome lighting in sight, staying at or above the LSALT until established'
   ],
   correct: 3,
-  explanation: 'Light flickering at a low frequency, such as sunlight through a propeller disc or a strobe reflecting in cloud, can cause distraction, discomfort or disorientation. Reducing the flicker, by changing power or heading or turning off a strobe in cloud, relieves it.',
-  reference: 'MOS 8.1.3'
+  explanation: 'A night visual approach carries stricter conditions than by day. The aircraft must be within the prescribed distance with the aerodrome or its lighting in sight, and must not descend below the LSALT, MSA or relevant step-down altitude until established on a visual descent path to the runway.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 4.4.4'
 },
 
 {
-  question: 'A relative-motion illusion occurs when the pilot:',
+  question: 'An IFR flight tracks 100°M with a route LSALT of 9,000 ft. The forecast freezing level is 8,500 ft with icing in cloud above it, and the valid odd levels are 9,000 ft and 11,000 ft. The pilot should:',
   options: [
-    'Correctly judges the closure rate of converging traffic ahead',
-    'Perceives movement of another object as movement of their own aircraft',
-    'Reads the groundspeed directly from the navigation display',
-    'Feels no sensation of motion while flying straight and level'
+    'Plan 8,000 ft to remain below the freezing level',
+    'Plan 9,000 ft, the lowest valid level at or above the LSALT',
+    'Plan 11,000 ft for the greatest terrain clearance',
+    'Descend below the LSALT to remain clear of cloud and icing'
   ],
   correct: 1,
-  explanation: 'When an adjacent aircraft or drifting cloud moves, the pilot may perceive it as their own aircraft moving and make an unnecessary correction; cross-checking the flight instruments confirms the actual aircraft state.',
-  reference: 'MOS 8.1.3'
+  explanation: 'With the freezing level (8,500 ft) below the LSALT (9,000 ft), no valid cruising level lies below it, so icing cannot be avoided simply by choosing a lower level. The pilot plans the lowest valid level at or above the LSALT for the track (9,000 ft, odd for 000-179°M) and manages the route and conditions to avoid icing. 8,000 ft is below the LSALT, 11,000 ft adds unnecessary exposure, and descending below the LSALT is never acceptable.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 4.1.1'
 },
 
 {
-  question: 'At a height of 3,000 ft on a day 10 deg C colder than ISA, the cold-temperature correction to add (about 4 ft per 1,000 ft per deg C below ISA) is approximately:',
+  question: 'At a height of 3,000 ft on a day 10 deg C colder than ISA, the cold-temperature correction to add is approximately:',
   options: [
     'About 40 ft',
     'About 80 ft',
@@ -5753,7 +5740,7 @@ export const irexQuestions: {
 },
 
 {
-  question: 'To lose 4,500 ft on a 3-degree descent path (about 300 ft per nm), descent should begin approximately:',
+  question: 'To lose 4,500 ft on a 3-degree descent path, descent should begin approximately:',
   options: [
     '5 nm before the point',
     '10 nm before the point',
@@ -6026,7 +6013,7 @@ export const irexQuestions: {
 },
 
 {
-  question: 'With QNH 1023 hPa at an aerodrome of elevation 500 ft, the pressure altitude is approximately (about 30 ft per hPa):',
+  question: 'With QNH 1023 hPa at an aerodrome of elevation 500 ft, the pressure altitude is approximately:',
   options: [
     '200 ft',
     '800 ft',
@@ -6039,16 +6026,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Having flown 90 nm and found the aircraft 3 nm off track, the track error by the one-in-sixty rule is about:',
+  question: 'Inbound to a VOR with the OBS set to 360 and a TO indication, the CDI shows a left deflection. The aircraft is:',
   options: [
-    '1 degree',
-    '2 degrees',
-    '3 degrees',
-    '5 degrees'
+    'West of the inbound course, and a turn right regains track',
+    'East of the inbound course, and a turn left regains track',
+    'Overhead the station, since a TO flag means passing the VOR',
+    'On course, since a single dot of deflection is within tolerance'
   ],
   correct: 1,
-  explanation: 'Track error in degrees = (distance off times 60) divided by distance flown = (3 times 60)/90 = 2 degrees. Doubling the correction angle would regain track over a similar distance ahead.',
-  reference: 'Navigation - one-in-sixty rule'
+  explanation: 'With the OBS set to the inbound course (360) and a TO indication, the CDI acts as a command bar: a left needle means fly left to recentre, so the aircraft is right of the selected course. Tracking 360 northbound, right of course is to the east, so a left turn regains the inbound track.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.5'
 },
 
 {
@@ -6221,16 +6208,16 @@ export const irexQuestions: {
 },
 
 {
-  question: 'A true track of 130 degrees in an area of 11 degrees East variation corresponds to a magnetic track of:',
+  question: 'An IFR flight tracks 080°M with a route LSALT of 6,200 ft. The forecast freezing level is 8,000 ft and icing is forecast in cloud above the freezing level. The most suitable cruising level is:',
   options: [
-    '141 degrees',
-    '119 degrees',
-    '130 degrees',
-    '111 degrees'
+    '9,000 ft',
+    '7,000 ft',
+    '6,000 ft',
+    '8,000 ft'
   ],
   correct: 1,
-  explanation: 'Variation east, magnetic least: magnetic track = true track minus easterly variation = 130 minus 11 = 119 degrees. Westerly variation is added (variation west, magnetic best).',
-  reference: 'Navigation - magnetic variation'
+  explanation: 'The cruising level must be at or above the LSALT (6,200 ft), a valid IFR level for the track (080°M is 000-179°M, so odd thousands below the transition altitude), and clear of the forecast icing. With icing in cloud above the freezing level of 8,000 ft, the level should sit below it. Only 7,000 ft meets all three: 9,000 ft is above the freezing level in the icing layer, 6,000 ft is below the LSALT, and 8,000 ft is an even level (wrong for an easterly track) sitting at the freezing level.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 4.1.1'
 },
 
 {
@@ -6273,7 +6260,7 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An altimeter set to 1013 hPa when the actual QNH is 1003 hPa (about 30 ft per hPa) will:',
+  question: 'An altimeter set to 1013 hPa when the actual QNH is 1003 hPa will:',
   options: [
     'Read about 300 ft too low, so the aircraft is higher than indicated',
     'Read about 300 ft too high, so the aircraft is lower than indicated',
@@ -6403,7 +6390,7 @@ export const irexQuestions: {
 },
 
 {
-  question: 'On a 3-degree approach path (about 300 ft per nm), the height above the threshold at 5 nm to run is approximately:',
+  question: 'On a 3-degree approach path, the height above the threshold at 5 nm to run is approximately:',
   options: [
     'About 900 ft',
     'About 1,200 ft',
@@ -6426,6 +6413,97 @@ export const irexQuestions: {
   correct: 2,
   explanation: 'An IFR pilot may discontinue the IAP for a visual approach when, by day, within 30 nm, clear of cloud and in sight of ground or water with visibility at least 5,000 m (or the aerodrome in sight); by night the aircraft stays at not below LSALT/MSA or step until established. These are the Australian visual-approach criteria.',
   reference: 'AIP ENR 1.5 / GEN 3.4'
+},
+
+{
+  question: 'A piston IFR flight has 70 minutes of trip fuel and 5 minutes of taxi fuel. An alternate 30 minutes away is required, and the destination TAF has no TEMPO or INTER. The minimum fuel, in minutes, is:',
+  options: [
+    '105 minutes',
+    '210 minutes',
+    '135 minutes',
+    '150 minutes'
+  ],
+  correct: 3,
+  explanation: 'An alternate is required but there is no TEMPO or INTER, so no weather holding is added. Minimum fuel = taxi 5 + trip 70 + alternate 30 + fixed final reserve 45 = 150 minutes. 105 omits the reserve, 135 uses 30 minutes instead of 45, and 210 adds 60 minutes of holding that is not required.',
+  reference: 'Part 91 MOS Ch 19 / AIP ENR 1.1'
+},
+
+{
+  question: 'An IFR alternate is planned using a GNSS (RNP APCH) approach. The RAIM availability for the alternate must be:',
+  options: [
+    'Ignored, since RAIM is only relevant at the destination',
+    'Checked only after the decision to divert has been made',
+    'Confirmed available for the ETA at the alternate during planning',
+    'Guaranteed by ATC before any diversion is commenced'
+  ],
+  correct: 2,
+  explanation: 'When the alternate\'s instrument approach relies on GNSS, RAIM availability for the ETA at the alternate must be confirmed during planning. If RAIM is predicted unavailable, the alternate cannot be used on GNSS and another alternate must be chosen.',
+  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.4'
+},
+
+{
+  question: 'When an alternate is nominated for an IFR flight, the destination TAF must be valid for a period covering:',
+  options: [
+    'The planned ETA at the destination only',
+    'Two hours either side of the planned ETA',
+    'From departure time until the planned ETA',
+    'From 30 minutes before to 60 minutes after the planned ETA'
+  ],
+  correct: 3,
+  explanation: 'For planning, the destination TAF must be valid from 30 minutes before to 60 minutes after the ETA. If the TAF does not cover that window the conditions are treated as not forecast, and provision must be made. A nominated alternate\'s TAF must likewise be valid for 60 minutes after the ETA at the alternate.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
+},
+
+{
+  question: 'A destination TAF forecasts the crosswind to exceed the aircraft\'s maximum demonstrated crosswind at the ETA, with no other adverse weather. The pilot must:',
+  options: [
+    'Make no provision, since crosswind is not a cloud or visibility item',
+    'Carry 30 minutes of holding fuel to wait for the wind to ease',
+    'Provide an alternate, since the forecast crosswind would prevent a landing',
+    'Reduce the approach speed to handle the stronger crosswind'
+  ],
+  correct: 2,
+  explanation: 'Alternate planning considers wind as well as cloud and visibility. If the forecast crosswind at the ETA exceeds the aircraft\'s maximum demonstrated crosswind, a safe landing is not assured, so an alternate is required.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 4.2.1'
+},
+
+{
+  question: 'A destination TAF for the ETA includes \'PROB30 TEMPO 1000 TSRA BKN004\'. For the IFR flight this means the pilot must:',
+  options: [
+    'Make no provision, since it is only a PROB30',
+    'Carry 30 minutes of holding fuel for the showers',
+    'Plan to hold until the thunderstorm passes, with no alternate',
+    'Provide an alternate, since the forecast is below the landing minima'
+  ],
+  correct: 3,
+  explanation: 'A PROB30 TEMPO of a thunderstorm bringing 1,000 m visibility and cloud at 400 ft is below the landing minima during the arrival window, so an alternate must be provided. A thunderstorm cannot safely be held out, and a PROB of below-minima conditions is not disregarded.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
+},
+
+{
+  question: 'A destination TAF has \'PROB30 0300 FG\' (fog, 300 m) below the landing minima at the ETA. For this PROB30 the pilot must:',
+  options: [
+    'Provide an alternate, since a PROB30 of conditions below the minima requires one',
+    'Carry 30 minutes of holding fuel, as for an INTER',
+    'Carry 60 minutes of holding fuel, as for a TEMPO',
+    'Make no provision, since PROB30 is below the planning threshold'
+  ],
+  correct: 0,
+  explanation: 'A PROB30 or PROB40 of conditions below the landing or alternate minima requires an alternate. The holding-fuel option (30 minutes for an INTER, 60 for a TEMPO) applies to those variations, not to a PROB of fog, and a PROB30 is not disregarded in planning.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
+},
+
+{
+  question: 'A destination TAF contains \'BECMG 0608 3000 BR\' bringing visibility to 3,000 m, below the 4,500 m landing minimum, completing before the ETA. For planning, the post-BECMG conditions are:',
+  options: [
+    'A temporary variation needing only 30 minutes of holding fuel',
+    'The prevailing forecast at the ETA, so an alternate is required',
+    'Able to be disregarded, since BECMG changes occur gradually',
+    'Relevant only after the aircraft has landed'
+  ],
+  correct: 1,
+  explanation: 'BECMG describes a permanent change to a new prevailing condition. Once complete, those conditions apply for the rest of the TAF, so a BECMG to below-minima visibility before the ETA means the destination is forecast below minima at arrival, and an alternate is required. It is not a temporary variation.',
+  reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
 },
 
 ]
