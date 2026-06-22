@@ -178,7 +178,7 @@ export const irexQuestions: {
 {
   question: 'On a day well below ISA, an approach chart publishes an MDA of 1,200 ft. With no temperature correction applied, the aircraft\'s true altitude at the indicated MDA will be:',
   options: [
-    'Lower than 1,200 ft, so a correction must be added to preserve obstacle clearance',
+    'Lower than 1,200 ft, so a temperature correction must be added',
     'Exactly 1,200 ft, because the QNH setting already corrects for temperature error',
     'Higher than 1,200 ft, giving additional obstacle clearance with no correction needed',
     'Unaffected, because temperature corrections apply only above the transition altitude'
@@ -232,7 +232,7 @@ export const irexQuestions: {
   options: [
     'The DA or MAP is reached without the required visual reference, or ATC instructs a go-around',
     'The aircraft momentarily descends below the published MDA during the step-down',
-    'The in-flight visibility falls below 600 m at any point during the approach',
+    'The in-flight visibility falls below 600 m during the approach',
     'The ILS glideslope indication deviates by more than half-scale on final'
   ],
   correct: 0,
@@ -373,7 +373,7 @@ export const irexQuestions: {
 {
   question: 'When must an IFR aircraft report a significant change to its estimated arrival time?',
   options: [
-    'Any change at all to the estimate must be reported to ATC immediately without a threshold',
+    'Any change to the estimate must be reported to ATC immediately without a threshold',
     'When the estimated arrival at a reporting point differs from the filed plan by more than 2 minutes',
     'When the ETA differs by more than 5 minutes from the filed estimate',
     'ETA changes only need to be reported if the destination changes'
@@ -413,7 +413,7 @@ export const irexQuestions: {
   question: 'A published noise abatement procedure at an aerodrome:',
   options: [
     'Is optional at all times, since the pilot may use any departure track for any reason',
-    'Must be followed as published, unless the pilot must deviate for safety, which always takes precedence',
+    'Must be followed as published, unless the pilot must deviate for safety',
     'Applies only to air transport aircraft, with general aviation aircraft exempt',
     'Is an ATC instruction that overrides the pilot\'s own obstacle-clearance and safety obligations'
   ],
@@ -465,7 +465,7 @@ export const irexQuestions: {
   question: 'The maximum speed during an instrument approach procedure (unless otherwise specified) is:',
   options: [
     'Aircraft category dependent, with maximum circling speeds of Category A 100 kt, B 135 kt and C 180 kt',
-    '250 kt IAS at all stages',
+    '250 kt IAS at every stage',
     'Initial segment: no specific limit; intermediate/final: 185 kt IAS; missed approach: 185 kt IAS',
     '140 kt IAS throughout the approach'
   ],
@@ -479,7 +479,7 @@ export const irexQuestions: {
   options: [
     'The aircraft reaches the FAF',
     'The pilot decides the restriction is no longer needed',
-    'Speed restrictions are never cancelled at all, since they continue to apply right up until the aircraft lands',
+    'Speed restrictions are never cancelled, since they continue to apply right up until the aircraft lands',
     'ATC specifically cancels the restriction, or the aircraft is transferred to tower frequency'
   ],
   correct: 3,
@@ -490,7 +490,7 @@ export const irexQuestions: {
 {
   question: '"LSALT" (Lowest Safe Altitude) for an IFR route is defined as:',
   options: [
-    '1,000 ft above the highest obstacle within the relevant protected area (typically 5 nm each side of track in Australia)',
+    '1,000 ft above the highest obstacle within the protected area, typically 5 nm each side of track',
     '1,000 ft above all terrain and obstacles lying within 25 nm either side of the planned track on the chart at all times',
     'The altitude at which the aircraft is first clear of cloud and able to proceed visually',
     'The minimum published instrument approach altitude for the destination aerodrome in use'
@@ -555,7 +555,7 @@ export const irexQuestions: {
 {
   question: 'An aircraft operating minimum (AOM) derived from a published DA represents:',
   options: [
-    'The operational minimum the crew actually flies, the published DA adjusted for the relevant corrections',
+    'The operational minimum the crew flies, the published DA adjusted for the relevant corrections',
     'A higher decision altitude that corrects for altimeter instrument error alone',
     'A lower decision altitude that the crew justifies by the more accurate avionics that are fitted to the aircraft',
     'An extra margin the operator adds above the published procedure decision altitude'
@@ -583,7 +583,7 @@ export const irexQuestions: {
   options: [
     'Plus or minus 5 nm en-route and plus or minus 2 nm in the terminal area',
     'Plus or minus 1 nm, applied uniformly across every single phase of flight conducted under the IFR at all times',
-    'Not prescribed at all, with the pilot relying on best judgement throughout',
+    'Not prescribed, with the pilot relying on best judgement throughout',
     'Defined per aid in the AIP, with NDB and VOR by angular deviation and RNP by the published RNP value'
   ],
   correct: 3,
@@ -595,7 +595,7 @@ export const irexQuestions: {
   question: 'IFR position-fixing in Australian airspace requires the pilot to:',
   options: [
     'Take a fix at least every 30 minutes using whatever navigation aid is available',
-    'Fix at all compulsory reporting points and within the AIP-specified interval for the aid in use',
+    'Fix compulsory reporting points and within the AIP-specified interval for the aid in use',
     'Rely on continuous GPS monitoring alone as the only acceptable method of fixing position along the route',
     'Take fixes only while operating inside controlled airspace, not in Class G'
   ],
@@ -608,7 +608,7 @@ export const irexQuestions: {
   question: 'Aircraft performance category for IFR operations is determined by:',
   options: [
     'The aircraft maximum take-off weight only, taken from the type certificate data sheet',
-    '1.3 × Vso (Vat), the approach threshold speed at maximum certificated landing weight',
+    '1.3 × Vso (Vat), the threshold speed at maximum certificated landing weight',
     'The maximum cruise speed of the aircraft in its en-route cruise configuration',
     'The aircraft type as listed in the operator\'s operations manual fleet table'
   ],
@@ -621,7 +621,7 @@ export const irexQuestions: {
   question: 'To continue below the DA or past the MAP, the required visual reference is:',
   options: [
     'The runway edge lights in sight, and no other approach or runway feature counts',
-    'Any lights at all that happen to be visible somewhere ahead of the aircraft on approach',
+    'Any lights that happen to be visible somewhere ahead of the aircraft on approach',
     'At least one of the approach lights, threshold, touchdown zone, runway or its markings, or PAPI/VASIS',
     'Both the runway threshold and the touchdown zone visible together'
   ],
@@ -750,8 +750,8 @@ export const irexQuestions: {
 {
   question: 'The jet stream is significant for IFR operations because:',
   options: [
-    'It improves fuel efficiency only, with no associated clear-air turbulence or significant wind hazard of any kind',
-    'It produces significant CAT on the cyclonic (cold) side and at the edges, strong headwinds/tailwinds affecting fuel planning',
+    'It improves fuel efficiency only, with no associated clear-air turbulence or significant wind hazard',
+    'It produces clear-air turbulence on the cold side and strong winds that affect fuel planning',
     'The jet stream is found only above FL500 and so has no effect on normal IFR operations',
     'The jet stream only affects supersonic aircraft cruising high in the lower stratosphere'
   ],
@@ -841,8 +841,8 @@ export const irexQuestions: {
 {
   question: 'In air significantly colder than ISA, the pressure altimeter:',
   options: [
-    'Over-reads, so true altitude is lower than indicated, requiring corrections on approaches',
-    'Under-reads, so the aircraft is actually higher than the indicated altitude',
+    'Over-reads, so the true altitude is lower than the altitude indicated',
+    'Under-reads, so the aircraft is higher than the indicated altitude',
     'Is unaffected, once the correct QNH has been set',
     'Over-reads, but only at levels above FL100'
   ],
@@ -856,7 +856,7 @@ export const irexQuestions: {
   options: [
     'Assess the aircraft\'s ice protection and reroute or change level to avoid the area, diverting if it cannot be avoided',
     'Proceed entirely unchanged, treating the SIGMET as advisory information that requires no operational response',
-    'Continue as planned and switch on the ice protection only once ice is actually seen to accumulate',
+    'Continue as planned and switch on the ice protection only once ice is seen to accumulate',
     'Descend below the forecast freezing level immediately and continue along the planned track'
   ],
   correct: 0,
@@ -894,7 +894,7 @@ export const irexQuestions: {
   question: 'Rime ice forms when:',
   options: [
     'Large supercooled water droplets freeze slowly on contact, spreading rearward to form clear glaze ice',
-    'Small supercooled water droplets freeze quickly on contact, trapping air and forming a rough, opaque, white deposit',
+    'Small supercooled droplets freeze quickly on contact, trapping air to form rough, opaque, white ice',
     'Ice crystals at high altitude accumulate on the windscreen and the leading edges in cloud',
     'Rain falls through a sub-zero layer and freezes on the airframe as freezing rain'
   ],
@@ -947,7 +947,7 @@ export const irexQuestions: {
   options: [
     'Divert immediately to the nominated alternate without making any further fuel, weather or terrain assessment first',
     'Declare a fuel emergency and land at the nearest aerodrome regardless',
-    'Check the alternate is still above minima, recompute fuel for approach, missed, alternate and reserve, then plan on that basis',
+    'Check the alternate is still above minima, then recompute fuel for the approach, missed approach, alternate and reserve',
     'Continue regardless, since an IFR pilot must always attempt the destination approach first'
   ],
   correct: 2,
@@ -997,10 +997,10 @@ export const irexQuestions: {
 {
   question: 'To obtain weather updates in flight on an IFR route, the pilot should use:',
   options: [
-    'Only the pre-flight forecast, since in-flight weather updates are simply not required under the IFR',
+    'Only the pre-flight forecast, since in-flight weather updates are not required under the IFR',
     'VOLMET, ATC or Flightwatch, onboard weather radar, AIREPs from other aircraft, and ATIS near the destination',
     'Only the onboard weather radar, disregarding ATIS, VOLMET and every other source',
-    'No updates at all, unless an emergency arises in flight'
+    'No updates, unless an emergency arises in flight'
   ],
   correct: 1,
   explanation: 'In-flight weather sources include VOLMET (continuous METAR/TAF broadcast), ATC or Flightwatch for updated information, onboard weather radar for precipitation and CB, AIREPs from other aircraft, and destination ATIS once in range. Updating proactively allows timely diversion decisions.',
@@ -1024,7 +1024,7 @@ export const irexQuestions: {
   question: 'Mountain-wave turbulence is most severe in the:',
   options: [
     'The wave-crest region marked by lenticular cloud, lying well above the level of the mountain tops',
-    'Rotor zone below crest level on the lee side, where violent, unpredictable turbulence and reverse flow occur',
+    'The rotor zone below crest level on the lee side of the range',
     'The windward side of the range, where the air is forced to rise, at every level',
     'In the stable air above the tropopause, well clear of the terrain below'
   ],
@@ -1038,7 +1038,7 @@ export const irexQuestions: {
   options: [
     'Directional signals transmitted along 360 separate radials outward from the station',
     'An omnidirectional LF/MF signal; the aircraft\'s ADF derives the bearing from the signal\'s arrival direction',
-    'A narrow directional beam similar to a VOR, but simply broadcast on the lower LF/MF frequencies instead',
+    'A narrow directional beam similar to a VOR, but broadcast on the lower LF/MF frequencies instead',
     'Usable signals only on its published frequency during the hours of daylight'
   ],
   correct: 1,
@@ -1063,7 +1063,7 @@ export const irexQuestions: {
   question: 'The effect of thunderstorms on NDB navigation is that:',
   options: [
     'The ADF needle is deflected toward the lightning discharge, whose static lies in the same band as the NDB',
-    'There is no effect at all, since the NDB is a robust ground-based navigation system',
+    'There is no effect, since the NDB is a robust ground-based navigation system',
     'NDB bearing indications are affected only during the hours of darkness, and not by any daytime storms',
     'NDB range is reduced by storms, but the bearing accuracy itself is never affected'
   ],
@@ -1076,7 +1076,7 @@ export const irexQuestions: {
   question: 'Loss of NDB signal integrity is indicated by:',
   options: [
     'The ADF needle settling steadily and firmly onto a single fixed bearing',
-    'The ADF frequency display going completely blank, with no bearing or ident shown at all',
+    'The ADF frequency display going completely blank, with no bearing or ident shown',
     'The ADF needle rotating, oscillating or pointing erratically; an OFF flag may appear if fitted',
     'The NDB ident tone stopping, with no other indication available'
   ],
@@ -1089,7 +1089,7 @@ export const irexQuestions: {
   question: 'ADF/NDB turning errors occur because:',
   options: [
     'The ADF antenna itself physically rotates with the aircraft, altering the indicated bearing',
-    'Relative bearing is referenced to the nose, so turning changes it without the position changing',
+    'Relative bearing is measured from the nose, so a turn changes it without the aircraft moving',
     'The NDB signal strength varies with the aircraft\'s bank angle',
     'Turning errors arise only with NDB stations transmitting below 200 kHz'
   ],
@@ -1153,7 +1153,7 @@ export const irexQuestions: {
 {
   question: '"Scalloping" of the VOR CDI is:',
   options: [
-    'A steady CDI deflection to one side that simply indicates the aircraft is off course',
+    'A steady CDI deflection to one side that indicates the aircraft is off course',
     'The automatic CDI centring sequence that occurs during a VOR instrument approach',
     'A rapid side-to-side oscillation of the CDI needle caused by multipath signal interference',
     'A normal feature of VOR operation that requires no correction by the pilot'
@@ -1166,8 +1166,8 @@ export const irexQuestions: {
 {
   question: 'Loss of VOR signal integrity is indicated by:',
   options: [
-    'A red OFF warning flag on the VOR indicator, showing the signal is too weak or unreliable to use',
-    'The CDI needle deflecting smoothly across to full scale and then simply staying there',
+    'A red OFF warning flag on the VOR indicator',
+    'The CDI needle deflecting smoothly across to full scale and then staying there',
     'The receiver\'s frequency display going blank',
     'The associated DME disconnecting from the receiver'
   ],
@@ -1232,7 +1232,7 @@ export const irexQuestions: {
   question: 'DME slant-range error is most significant when:',
   options: [
     'The aircraft is at long slant range from the station, flying low down near the horizon',
-    'The aircraft is close to the station at altitude, where slant range reads well above zero overhead',
+    'The aircraft is close to the station and at altitude',
     'The aircraft is at high altitude tracking across the country',
     'Never, since slant-range error is constant regardless of position'
   ],
@@ -1247,7 +1247,7 @@ export const irexQuestions: {
     'Does not change at groundspeed; the rate depends on the angle between track and the bearing to the station',
     'Is always accurate to groundspeed, since DME reads slant range regardless of the track flown',
     'Must be corrected for magnetic variation before use',
-    'Becomes unusable and cannot support navigation at all'
+    'Becomes unusable and cannot support navigation'
   ],
   correct: 0,
   explanation: 'DME distance changes most slowly when tracking at 90 degrees to the bearing and at the full rate only when tracking directly to or from the station. This matters for position fixing: DME arcs remain valid, but groundspeed checks from DME rate are only meaningful on direct tracks.',
@@ -1257,7 +1257,7 @@ export const irexQuestions: {
 {
   question: 'The ILS (Instrument Landing System) components are:',
   options: [
-    'Localiser (lateral guidance), glideslope (vertical guidance), and marker beacons (distance)',
+    'Localiser for lateral guidance, glideslope for vertical guidance, and marker beacons for distance',
     'Localiser, glideslope, and a GNSS overlay that provides the distance information',
     'A VOR, a co-located DME, and the runway approach lighting system',
     'Localiser and glideslope only, with the marker beacons being optional extras'
@@ -1270,7 +1270,7 @@ export const irexQuestions: {
 {
   question: 'Glideslope fluctuations on an ILS approach may be caused by:',
   options: [
-    'The aircraft simply flying faster than the recommended final approach speed on the procedure',
+    'The aircraft flying faster than the recommended final approach speed on the procedure',
     'Nothing, since glideslope fluctuations are entirely normal',
     'Multipath interference from vehicles, buildings or terrain reflecting the signal near the antenna',
     'Strong crosswinds acting on the airframe during the approach'
@@ -1286,7 +1286,7 @@ export const irexQuestions: {
     'Indicates the aircraft is correctly established on the localiser back beam',
     'Shows the aircraft has overshot the localiser and is re-intercepting from the other side',
     'Fails because the VOR receiver has dropped out during the ILS approach',
-    'Has reversed sensing, so a right deflection requires a correction to the left'
+    'Reversed, so a right needle deflection requires a correction to the left'
   ],
   correct: 3,
   explanation: 'A localiser radiates a usable signal on its back course (the reciprocal direction). Flown inbound on the back course with normal navigation, the CDI sensing is reversed: a right deflection means correct to the left. Back-course tracking therefore requires deliberate awareness of the reversed sense.',
@@ -1325,7 +1325,7 @@ export const irexQuestions: {
     'VOR coverage is effectively identical at every location throughout Australian airspace',
     'VOR coverage is fully reliable by day, but it changes and noticeably degrades only during the hours of darkness',
     'Usability varies with altitude and distance; the rated coverage sets the minimum altitude and maximum reliable range',
-    'Coverage ratings are published for the ILS only and have no application to the VOR at all'
+    'Coverage ratings are published for the ILS only and have no application to the VOR'
   ],
   correct: 2,
   explanation: 'Each VOR has a published service volume, the altitude/range combinations within which the signal is reliable. Below the minimum altitude or beyond the maximum range the signal may be unreliable even without an OFF flag. AIP lists the rated coverage; confirm the VOR is within it for the intended use.',
@@ -1350,8 +1350,8 @@ export const irexQuestions: {
   options: [
     'Altitude errors, because LF/MF signals behave differently with increasing height',
     'Precipitation static interference, and no other additional propagation error',
-    'Nothing extra at all, since the VOR and the NDB are affected equally by every propagation error',
-    'The night effect, where after dark LF/MF sky waves from distant stations interfere with the ground wave'
+    'Nothing extra, since the VOR and the NDB are affected equally by every propagation error',
+    'The night effect, where after dark sky waves from distant stations interfere with the ground wave'
   ],
   correct: 3,
   explanation: 'At night the ionosphere reflects LF/MF sky waves back to earth from distant stations; these interfere with the local ground wave and make the ADF needle oscillate and read in error, worst around dawn and dusk. VHF VOR signals pass through the ionosphere and are unaffected, so NDB reliability falls at night.',
@@ -1376,7 +1376,7 @@ export const irexQuestions: {
   options: [
     'Look out of the cockpit window to sight the VOR ground aerial below',
     'Wait until the DME happens to read the expected abeam distance',
-    'Accept that the VOR simply cannot indicate when the aircraft is abeam the station at all',
+    'Accept that the VOR cannot indicate when the aircraft is abeam the station',
     'Set the OBS to 090 or 270; when the CDI centres with FROM, the aircraft is abeam the station'
   ],
   correct: 3,
@@ -1478,9 +1478,9 @@ export const irexQuestions: {
 {
   question: 'GNSS uses the WGS-84 coordinate system because it:',
   options: [
-    'Is a single Earth-centred datum used by all GNSS satellites and receivers, giving consistent positions worldwide',
+    'It is a single Earth-centred datum used by all GNSS satellites and receivers',
     'Is the Australian national survey datum on which all local aeronautical charts and procedures are based',
-    'Is simply a more accurate coordinate system than any of the alternatives available',
+    'Is a more accurate coordinate system than any of the alternatives available',
     'Is mandated by ICAO specifically and only for the production of navigation charts'
   ],
   correct: 0,
@@ -1492,7 +1492,7 @@ export const irexQuestions: {
   question: 'PDOP (Position Dilution of Precision) affects GNSS navigation by:',
   options: [
     'Reducing the number of satellites available',
-    'PDOP affects the speed and altitude readout, but not the horizontal position at all',
+    'PDOP affects the speed and altitude readout, but not the horizontal position',
     'Describing the geometric arrangement of visible satellites, poor satellite geometry',
     'PDOP is only relevant for military GPS applications'
   ],
@@ -1530,7 +1530,7 @@ export const irexQuestions: {
 {
   question: 'Errors that degrade GNSS accuracy include:',
   options: [
-    'Magnetic variation and compass deviation only, with no satellite-based errors involved at all',
+    'Magnetic variation and compass deviation only, with no satellite-based errors involved',
     'Ephemeris and satellite-clock errors, ionospheric and tropospheric delay, multipath, and receiver noise',
     'Only ionospheric error, with all others removed by the control segment',
     'None of significance, since GNSS is accurate to one metre at all times'
@@ -1572,7 +1572,7 @@ export const irexQuestions: {
     'Only 3 satellites are being tracked, altitude cannot be independently determined',
     'The system is providing 2-dimensional position accuracy',
     'The display is showing a 2D map view',
-    '2D navigation is simply the normal operating mode for all GNSS receivers in use'
+    '2D navigation is the normal operating mode for all GNSS receivers in use'
   ],
   correct: 0,
   explanation: '2D navigation mode: when fewer than 4 satellites are visible for independent 3D position fixing, the receiver may use barometric altitude input to maintain navigation — this is "baro-aiding." In 2D mode, the vertical position is derived from the altimeter rather than calculated from GNSS. RAIM function may be degraded. Many IFR approach certifications require 3D navigation mode.',
@@ -1584,7 +1584,7 @@ export const irexQuestions: {
   options: [
     'The pilot deliberately selects this mode to obtain improved navigation accuracy along the planned route',
     'The loaded navigation database has passed its 28-day expiry date during the flight',
-    'Too few satellites are available for a fix, so the receiver estimates position from the last fix, heading and speed',
+    'Too few satellites are available, so the receiver estimates position from the last fix, heading and speed',
     'It runs continuously in the background at all times as an automatic position backup'
   ],
   correct: 2,
@@ -1595,7 +1595,7 @@ export const irexQuestions: {
 {
   question: 'A GNSS \'database out of date\' indication in flight means:',
   options: [
-    'The receiver can no longer navigate at all and so automatically suspends every one of its navigation functions',
+    'The receiver can no longer navigate and so automatically suspends every one of its navigation functions',
     'The live satellite signal being received has degraded below a usable strength',
     'Simply that a current database must be loaded before commencing any IFR flight',
     'The navigation database has expired; manual coordinates may still be navigated, but stored procedures must not be used'
@@ -1623,7 +1623,7 @@ export const irexQuestions: {
   options: [
     'The GPS signal grows progressively stronger as the runway is approached on final',
     'Sensitivity is fixed permanently by the aircraft or avionics manufacturer',
-    'Scaling changes happen only on GNSS approaches, and never on any VOR or NDB approach of any kind at all',
+    'Scaling changes happen only on GNSS approaches, and never on any VOR or NDB approach',
     'The scaling tightens from plus/minus 5 nm en-route to plus/minus 1 nm terminal to plus/minus 0.3 nm on final'
   ],
   correct: 3,
@@ -1634,7 +1634,7 @@ export const irexQuestions: {
 {
   question: 'RAIM availability for a planned GNSS approach must be checked:',
   options: [
-    'Only in the very final moments immediately before the approach is actually commenced on final approach',
+    'Only in the very final moments immediately before the approach is commenced on final approach',
     'Never, because RAIM is continuously available and needs no advance checking',
     'In pre-flight planning, using a RAIM prediction service for the ETA at destination and including satellite NOTAMs',
     'By air traffic control, who check RAIM availability and pass it to the pilot'
@@ -1650,7 +1650,7 @@ export const irexQuestions: {
     'A basic non-certified GPS receiver is quite sufficient, provided only that its database is kept current',
     'A GNSS unit fitted with a moving-map display but no further IFR capability',
     'A certified IFR GNSS receiver with RAIM or SBAS, a current database, and the approach loaded from that database',
-    'Any GPS receiver at all, so long as it offers some form of approach-capability mode'
+    'Any GPS receiver, so long as it offers some form of approach-capability mode'
   ],
   correct: 2,
   explanation: 'An RNP approach requires an IFR-approach-certified receiver (e.g. TSO-C129a/C196 for LNAV, C145/C146 for SBAS LPV), a current navigation database, the approach selected from the database (not hand-entered), verified RAIM/SBAS integrity, and automatic approach-mode arming and CDI scaling. Non-approved GPS may not be used as the primary means.',
@@ -1663,7 +1663,7 @@ export const irexQuestions: {
     'Any CDI deflection of more than one dot occurring at any single point on the approach',
     'A RAIM warning or unavailability, loss of approach mode, an integrity alert, or reaching minima without visual reference',
     'The GPS receiver display merely losing some of its screen brightness during the approach',
-    'Nothing at all is required, because these GNSS approaches carry no defined missed-approach criteria of any kind'
+    'Nothing is required, because these GNSS approaches carry no defined missed-approach criteria'
   ],
   correct: 1,
   explanation: 'Go around immediately for: a RAIM warning or RAIM-not-available, failure of the CDI to enter/scale approach mode, any integrity alert, reaching the DA (LPV) or MAP (LNAV) without the required visual reference, doubt over position accuracy, or an ATC instruction.',
@@ -1673,10 +1673,10 @@ export const irexQuestions: {
 {
   question: 'Satellite unserviceability affects RAIM prediction because:',
   options: [
-    'Fewer operating satellites simply weakens the overall strength of the received GPS signal',
-    'Changing the constellation can reduce RAIM availability at certain times, so satellite outage NOTAMs matter',
+    'Fewer operating satellites weakens the overall strength of the received GPS signal',
+    'Changing the constellation can reduce RAIM availability at certain times',
     'An unserviceable satellite transmits faulty data that the receiver automatically ignores',
-    'RAIM prediction cannot account for outages at all, so an alternate aid is required on every single flight'
+    'RAIM prediction cannot account for outages, so an alternate aid is required on every single flight'
   ],
   correct: 1,
   explanation: 'Taking a satellite out of the constellation changes the geometry and can open gaps in RAIM availability (often 30-90 minutes) at particular times and places. Satellite outage NOTAMs must therefore be fed into the RAIM prediction, especially for remote operations with few alternate aids.',
@@ -1687,7 +1687,7 @@ export const irexQuestions: {
   question: 'On an LNAV/VNAV approach flown with advisory vertical guidance, the operation:',
   options: [
     'The pilot has effectively converted the 2D approach into a full ILS-equivalent procedure',
-    'Remains a 2D operation flown to an MDA, with the vertical guidance advisory only and not used to descend below MDA',
+    'Remains a 2D operation flown to an MDA, with the vertical guidance advisory only',
     'Lower minima now apply to the approach because vertical guidance is being provided',
     'The approach uses an actual ILS glideslope, with the GNSS supplying only the lateral course guidance instead'
   ],
@@ -1740,7 +1740,7 @@ export const irexQuestions: {
   options: [
     'Deliberately blocking GNSS signals to prevent their use for any military targeting purpose',
     'The receiver\'s process of selecting the best four satellites for the navigation solution',
-    'A function that prevents the GNSS from operating at all inside restricted airspace areas',
+    'A function that prevents the GNSS from operating inside restricted airspace areas',
     'The minimum elevation above the horizon at which satellites are used in the position solution'
   ],
   correct: 3,
@@ -1765,7 +1765,7 @@ export const irexQuestions: {
   question: 'The table of cruising altitudes/levels for IFR in Australian airspace follows which rule?',
   options: [
     'Below the transition altitude, odd thousands of feet (1,000, 3,000, 5,000) for tracks 000-179 degrees M',
-    'Odd hundreds of feet are used for all IFR tracks, regardless of the direction of flight at all',
+    'Odd hundreds of feet are used for all IFR tracks, regardless of the direction of flight',
     'Flight levels only are used; altitude is never used for IFR cruising',
     'ATC assigns every IFR cruising level, so the pilot has no choice in it'
   ],
@@ -1803,7 +1803,7 @@ export const irexQuestions: {
 {
   question: 'Alternate aerodrome lighting requirements for a night IFR diversion are that:',
   options: [
-    'No lighting at all is required, even for a planned night diversion',
+    'No lighting is required, even for a planned night diversion',
     'Only approach lighting is needed, with runway edge lighting being optional',
     'The alternate must have runway lighting available for the planned arrival, operable through the diversion window',
     'A pilot-activated lighting system can never be used to satisfy the alternate lighting requirement'
@@ -1818,7 +1818,7 @@ export const irexQuestions: {
   options: [
     'ATC requires the weather reports before it will issue any clearance to divert to the alternate',
     'Weather reports are needed only for the destination aerodrome itself, and never for a nominated alternate',
-    'Alternate weather reports are simply pulled from public online weather services on the day',
+    'Alternate weather reports are pulled from public online weather services on the day',
     'Current alternate weather must be assessable near destination; if below minima at diversion, another aerodrome is needed'
   ],
   correct: 3,
@@ -1831,7 +1831,7 @@ export const irexQuestions: {
   options: [
     'The alternate must lie within 30 minutes\' flying time of the destination',
     'The alternate must be reachable on the planned fuel, with diversion and contingency fuel covering the flight time',
-    'Divert time is not a regulatory matter at all; the pilot relies entirely on their own personal judgement',
+    'Divert time is not a regulatory matter; the pilot relies entirely on their own personal judgement',
     'ATC sets the allowable divert time according to the prevailing traffic situation'
   ],
   correct: 1,
@@ -1869,8 +1869,8 @@ export const irexQuestions: {
   question: 'When planning the last segment of an IFR route as "NGT VFR" (Night VFR), the pilot must consider:',
   options: [
     'Only the night rating requirement',
-    'Pilot night recency requirements (3 night takeoffs and landings in 90 days)',
-    'Night VFR requires no additional planning at all beyond ordinary day VFR',
+    'Pilot night recency, requiring 3 night take-offs and landings in 90 days',
+    'Night VFR requires no additional planning beyond ordinary day VFR',
     'NGT VFR planning is the same as IFR planning'
   ],
   correct: 1,
@@ -1881,7 +1881,7 @@ export const irexQuestions: {
 {
   question: 'The operational implication of a RAIM prediction is that:',
   options: [
-    'RAIM is advisory only, so the operational planning decisions are not affected by its prediction at all',
+    'RAIM is advisory only, so the operational planning decisions are not affected by its prediction',
     'If RAIM is predicted unavailable, the pilot must plan an alternate navaid or an aerodrome with a non-GNSS approach',
     'RAIM prediction is relevant only to military GNSS operations, not to civil IFR',
     'A backup GPS receiver on board automatically resolves any RAIM unavailability'
@@ -1909,8 +1909,8 @@ export const irexQuestions: {
   options: [
     'Circling burns more fuel, and the higher altitude allows time for fuel management',
     'The MCA is always exactly 500 ft above the MDA, regardless of the obstacles present',
-    'Circling at a higher altitude simply gives the pilot a better view of the runway',
-    'Circling is flown outside the final-approach protected area, so the MCA clears the circling area'
+    'Circling at a higher altitude gives the pilot a better view of the runway',
+    'Circling is flown outside the final-approach protected area, so the MCA clears the larger circling area'
   ],
   correct: 3,
   explanation: 'Circling takes the aircraft around the aerodrome within a protected area larger than the straight-in final segment. The MCA gives the required obstacle clearance (300 ft for Cat A/B, more for higher categories) over that larger area, so it is always equal to or higher than the straight-in MDA.',
@@ -1921,7 +1921,7 @@ export const irexQuestions: {
   question: 'Circling minimum altitudes differ by aircraft category because:',
   options: [
     'Faster aircraft have higher stall speeds, which is what demands more altitude',
-    'The category differences simply reflect the aircraft\'s passenger capacity',
+    'The category differences reflect the aircraft\'s passenger capacity',
     'There is no difference, since all aircraft categories use the same circling MCA',
     'Faster aircraft fly larger circling radii, so the protected area grows with approach category'
   ],
@@ -1933,7 +1933,7 @@ export const irexQuestions: {
 {
   question: 'After take-off under the IFR, establishing the aircraft on track requires that:',
   options: [
-    'The aircraft may fly any heading at all until it reaches its cruising altitude',
+    'The aircraft may fly any heading until it reaches its cruising altitude',
     'The aircraft follows the published SID or departure instruction unless ATC amends it',
     'Only the final cruise heading matters; the departure track is left to pilot discretion',
     'The aircraft follows the SID only if ATC specifically asks for it on the day'
@@ -1946,7 +1946,7 @@ export const irexQuestions: {
 {
   question: 'The requirement to establish above LSALT after take-off is that:',
   options: [
-    'There are no specific requirements at all; the aircraft simply climbs toward the LSALT at a normal rate',
+    'There are no specific requirements; the aircraft climbs toward the LSALT at a normal rate',
     'The aircraft must reach the SID or clearance altitude on the specified track before proceeding on the IFR route',
     'LSALT must be reached within exactly 10 minutes of becoming airborne',
     'LSALT applies only after the aircraft has left the aerodrome control zone'
@@ -1986,8 +1986,8 @@ export const irexQuestions: {
   question: 'The teardrop (offset) holding entry is used when arriving from:',
   options: [
     'The inbound track plus or minus 70 degrees on the holding side',
-    'Any direction at all, whenever the wind happens to be strong',
-    'Sector 2, where a direct entry would take the aircraft onto the non-holding side of the pattern',
+    'Any direction, whenever the wind happens to be strong',
+    'Sector 2, where a direct entry would put the aircraft on the non-holding side',
     'Only right-hand (non-standard) holding patterns use it, and never the standard left-hand ones'
   ],
   correct: 2,
@@ -1998,7 +1998,7 @@ export const irexQuestions: {
 {
   question: 'The direct entry to a holding pattern is appropriate when arriving from:',
   options: [
-    'Any direction at all, since the direct entry is genuinely suitable for every possible arrival angle',
+    'Any direction, since the direct entry is suitable for every possible arrival angle',
     'Sector 3, within about 70 degrees of the inbound track, flying over the fix and turning in the holding direction',
     'Only when ATC has specifically cleared a direct entry for the aircraft',
     'Only for aircraft with a true airspeed above 250 kt in the hold'
@@ -2011,9 +2011,9 @@ export const irexQuestions: {
 {
   question: 'The parallel entry to a holding pattern is appropriate when arriving from:',
   options: [
-    'Any direction at all, used whenever the pilot happens to prefer it',
+    'Any direction, used whenever the pilot happens to prefer it',
     'Directly opposite the inbound track, arriving 180 degrees off the inbound',
-    'A parallel entry is prohibited within Australian airspace and so is never actually used',
+    'A parallel entry is prohibited within Australian airspace and so is never used',
     'Sector 1, arriving from the non-holding side, within approximately 110° of the inbound track'
   ],
   correct: 3,
@@ -2026,7 +2026,7 @@ export const irexQuestions: {
   options: [
     'Only the inbound track is adjusted, leaving the outbound leg of the hold entirely uncorrected for wind',
     'Only the airspeed, since heading corrections are not used in a holding pattern',
-    'The outbound time and/or heading to achieve a 1-minute inbound leg, adding outbound time if the inbound was short',
+    'The outbound time and heading, to achieve a 1-minute inbound leg',
     'Nothing, because the pilot stops correcting for wind once established in the hold'
   ],
   correct: 2,
@@ -2039,7 +2039,7 @@ export const irexQuestions: {
   options: [
     'Flight fuel only, from departure to the destination aerodrome',
     'Flight fuel plus a flat ten percent contingency allowance only',
-    'Taxi/start fuel + flight fuel (departure to destination) + contingency fuel + alternate fuel',
+    'Taxi and start fuel, flight fuel, contingency fuel, and alternate fuel',
     'Detailed fuel planning is required only for commercial air-transport operations'
   ],
   correct: 2,
@@ -2051,7 +2051,7 @@ export const irexQuestions: {
   question: 'If the destination deteriorates below minima after departure and the alternate is also below alternate minima, the pilot should:',
   options: [
     'Advise ATC at once and request weather for other aerodromes in range, declaring MAYDAY if fuel becomes critical',
-    'Continue on to the destination anyway and simply attempt the published approach there as was planned',
+    'Continue on to the destination anyway and attempt the published approach there as was planned',
     'Turn back and return to the departure aerodrome regardless of distance',
     'Declare a MAYDAY immediately and hold while waiting for the weather to improve'
   ],
@@ -2063,7 +2063,7 @@ export const irexQuestions: {
 {
   question: 'An IFR flight planning requirement specific to flight into remote areas is:',
   options: [
-    'No special requirements at all, since the remote areas are treated just the same as any other airspace',
+    'No special requirements, since the remote areas are treated just the same as any other airspace',
     'Remote areas require a flight plan to be filed 24 hours in advance',
     'Only commercial operators need additional planning for remote areas',
     'Additional contingency fuel for unreliable weather forecasts; SARTIME filing; ELT serviceability confirmation'
@@ -2168,7 +2168,7 @@ export const irexQuestions: {
   question: 'The directional indicator (DI) must be realigned with the magnetic compass:',
   options: [
     'Only before flight, since the DI then stays accurate throughout without any further adjustment',
-    'Every 10 to 15 minutes in straight, level, unaccelerated flight, as the gyro slowly precesses',
+    'Every 10 to 15 minutes in straight, level, unaccelerated flight',
     'Only when entering controlled airspace, and at no other time in the flight',
     'Never, because DI alignment is fully automatic and needs no pilot action'
   ],
@@ -2181,7 +2181,7 @@ export const irexQuestions: {
   question: 'The turn coordinator provides which information that the attitude indicator cannot during partial-panel flying?',
   options: [
     'Airspeed information',
-    'Rate of turn and coordination (slip/skid), it remains functional if the AI fails',
+    'Rate of turn and coordination, which stay available if the AI fails',
     'Altitude information',
     'The turn coordinator provides no additional information beyond the AI'
   ],
@@ -2219,8 +2219,8 @@ export const irexQuestions: {
 {
   question: 'On a non-precision approach the aircraft should reach the MDA:',
   options: [
-    'Exactly at the MAP, with no earlier point anywhere on the approach being at all acceptable',
-    'Before the MAP, with time to assess visual reference, then level at MDA until the MAP or visual contact',
+    'Exactly at the MAP, with no earlier point anywhere on the approach being acceptable',
+    'Before the MAP, leaving time to assess visual reference, then level at MDA',
     'At any point on the approach, since the position does not matter',
     'At the FAF, descending no further for the rest of the approach'
   ],
@@ -2310,10 +2310,10 @@ export const irexQuestions: {
 {
   question: 'Conducting an ILS approach, the outer marker (OM) audio indication is:',
   options: [
-    'Continuous low-pitched dashes (-- --)',
-    'Continuous high-pitched tone (dot dot dot)',
-    'Alternating dot-dash (·-·-)',
-    'Rapid dots (·····)'
+    'Continuous low-pitched dashes',
+    'Continuous high-pitched tone',
+    'Alternating dot-dash tone',
+    'Rapid high-pitched dots'
   ],
   correct: 0,
   explanation: 'Marker beacon audio: Outer Marker (OM) = continuous low-pitched dashes (-- --) at 400 Hz; blue light. Middle Marker (MM) = alternating dot-dash (·-·-) at 1,300 Hz; amber light. Inner Marker (IM) = rapid dots (·····) at 3,000 Hz; white light. The OM is the glideslope intercept fix; MM is approximately DA height; IM is close to the threshold.',
@@ -2323,7 +2323,7 @@ export const irexQuestions: {
 {
   question: 'If the glideslope flag appears after glideslope intercept on an ILS approach, the pilot should:',
   options: [
-    'Continue anyway, since glideslope warning flags are common and can simply be ignored on short final',
+    'Continue anyway, since glideslope warning flags are common and can be ignored on short final',
     'Descend to the ILS-published MDA and look for the runway environment',
     'Ask ATC to confirm glideslope serviceability before deciding to continue',
     'Abandon the precision approach, going around or reverting to localiser-only minima if those are published'
@@ -2388,7 +2388,7 @@ export const irexQuestions: {
 {
   question: 'The primary cause of Controlled Flight Into Terrain on instrument approaches is:',
   options: [
-    'Weather conditions that simply happen to be below the published approach minima at the time on the day',
+    'Weather conditions that happen to be below the published approach minima at the time on the day',
     'Sudden failure of the aircraft\'s primary navigation system during the approach',
     'Descending below the profile, often with disorientation or position confusion and not flying the published procedure',
     'It occurs only on non-precision approaches and never on precision approaches'
@@ -2415,9 +2415,9 @@ export const irexQuestions: {
   question: 'An NDB approach at night needs particular caution because:',
   options: [
     'Night effect causes NDB bearing errors, and lightning from any convective activity attracts the ADF needle',
-    'NDB ground signals are simply weaker during the hours of darkness than by day',
+    'NDB ground signals are weaker during the hours of darkness than by day',
     'NDB instrument approaches are prohibited entirely during the hours of darkness across Australia',
-    'Night makes no additional difference at all to NDB navigation'
+    'Night makes no additional difference to NDB navigation'
   ],
   correct: 0,
   explanation: 'At night, sky-wave interference (night effect) increases ADF bearing errors and any nearby electrical activity pulls the needle toward the storm. The visual transition at the MDA is also harder among other ground lighting, and night circling is especially demanding, so an NDB approach at night demands extra caution.',
@@ -2466,7 +2466,7 @@ export const irexQuestions: {
 {
   question: 'A VOR/DME approach differs from a VOR approach in that:',
   options: [
-    'These VOR/DME approaches simply carry lower published landing minima than the VOR-only approaches do',
+    'These VOR/DME approaches carry lower published landing minima than the VOR-only approaches do',
     'DME is needed to identify step-down fixes or the MAP; without it the VOR-only procedure is flown if published',
     'VOR/DME approaches are inherently more accurate than VOR-only approaches',
     'There is no practical difference between a VOR and a VOR/DME approach'
@@ -2495,7 +2495,7 @@ export const irexQuestions: {
     'The published missed approach route that is flown after a go-around from the MAP',
     'The glideslope intercept track on the final approach',
     'A route that connects the en-route structure to the IAF, specifying track, altitude',
-    'A feeder route is simply another name for a STAR'
+    'A feeder route is another name for a STAR'
   ],
   correct: 2,
   explanation: 'Feeder routes: published tracks from specific en-route fixes or airways to the IAF (or holding fix) of an instrument approach. They specify track (magnetic), minimum altitude, and distance. Feeder routes allow structured traffic flow from various directions to the approach sequence. They ensure obstacle clearance during the transition from en-route to approach phase.',
@@ -2570,7 +2570,7 @@ export const irexQuestions: {
 {
   question: 'Within a thunderstorm cell, the most severe airframe icing typically occurs:',
   options: [
-    'Near the freezing level, where powerful updraughts carry high liquid water content past 0 degrees',
+    'Near the freezing level, in the strongest updraughts',
     'Near the cloud top, which is composed almost entirely of relatively harmless ice crystals',
     'Below the cloud base, in the clear air beneath the storm',
     'Only in the dissipating anvil, well away from the active updraught core'
@@ -2637,7 +2637,7 @@ export const irexQuestions: {
   options: [
     'Directly ahead of the aircraft, right on the nose',
     'To the right of the aircraft, lying somewhere near the 3 o\'clock relative position',
-    'Due north of the aircraft (magnetic bearing = heading + relative bearing = 270 + 090 = 360)',
+    'Due north of the aircraft, since heading 270 plus relative 090 gives 360',
     'Behind the aircraft, near the tail at the 6 o\'clock position'
   ],
   correct: 2,
@@ -2663,7 +2663,7 @@ export const irexQuestions: {
   options: [
     'Comply with it at once, since an ATC clearance will always take priority over any published route LSALT',
     'Split the difference and descend only to 5,500 ft as a sensible compromise level',
-    'Query it (\'unable, LSALT 6,000\') unless ATC has confirmed terrain clearance by radar or the aircraft is on a procedure',
+    'Query it unless ATC has confirmed terrain clearance by radar or the aircraft is on a procedure',
     'Cancel the IFR clearance entirely and descend visually below the LSALT to 5,000 ft'
   ],
   correct: 2,
@@ -2714,7 +2714,7 @@ export const irexQuestions: {
   question: 'A compulsory reporting point is indicated on a navigation chart by:',
   options: [
     'An open triangle',
-    'A solid (filled) triangle',
+    'A solid triangle',
     'A circle with a cross',
     'A flag symbol'
   ],
@@ -2726,9 +2726,9 @@ export const irexQuestions: {
 {
   question: 'When reading back an airways clearance, the pilot must read back:',
   options: [
-    'All clearance items, being callsign, route or SID, levels, departure frequency and transponder code',
+    'The callsign, route or SID, levels, departure frequency and transponder code',
     'The entire clearance, word for word, exactly as it was originally transmitted by the controller',
-    'Only the assigned transponder code, with no other items at all',
+    'Only the assigned transponder code, with no other items',
     'Only the first and the last items of the clearance as received'
   ],
   correct: 0,
@@ -2781,7 +2781,7 @@ export const irexQuestions: {
     'Only instrument approaches',
     'Instrument flying in the aircraft category, including normal IFR operations and instrument approaches',
     'Ground knowledge only, no flight assessment is required',
-    'The IRPC only checks the most recent year\'s approaches, and older proficiency is not assessed at all'
+    'The IRPC only checks the most recent year\'s approaches, and older proficiency is not assessed'
   ],
   correct: 1,
   explanation: 'IRPC content: the proficiency check covers the full scope of IFR operations including: instrument departure and en-route navigation; instrument approaches (typically at least one precision and one non-precision); missed approach; holding; unusual attitude recovery; partial panel flying (vacuum failure simulation); emergency equipment and procedures. The check must be conducted in the aircraft category.',
@@ -2817,7 +2817,7 @@ export const irexQuestions: {
 {
   question: 'The \'approach ban\' for IFR flights means:',
   options: [
-    'All approaches are simply banned outright whenever the prevailing weather is below the published minima',
+    'All approaches are banned outright whenever the prevailing weather is below the published minima',
     'The approach ban applies only to commercial air-transport operations and no others',
     'Every instrument approach requires prior ATC approval before it may begin',
     'Below 1,000 ft above aerodrome elevation must not be flown if the TDZ RVR is continually below the landing minima'
@@ -2859,7 +2859,7 @@ export const irexQuestions: {
     'Added weight and disrupted airflow cut lift and raise stall speed, plus blocked pitot-static causing instrument errors',
     'An increase in fuel consumption only, with no other significant aerodynamic effect on the airframe in flight',
     'A reduction in visibility through the windscreen only, with no other effect',
-    'Ice forming only on the windscreen, with no aerodynamic effect on the aircraft at all'
+    'Ice forming only on the windscreen, with no aerodynamic effect on the aircraft'
   ],
   correct: 0,
   explanation: 'Ice adds weight and, more importantly, disrupts the airflow, reducing lift, raising the stall speed and altering stall behaviour, which may become sudden; blocked pitot or static ports give false airspeed and altitude. In severe conditions accretion can be rapid and accidents are often fatal.',
@@ -2869,7 +2869,7 @@ export const irexQuestions: {
 {
   question: 'Structural icing requires:',
   options: [
-    'Air temperatures below minus 40 degrees Celsius before it can occur at all',
+    'Air temperatures below minus 40 degrees Celsius before it can occur',
     'Only freezing rain, since cloud alone does not cause structural icing',
     'Visible moisture and temperatures between about 0 and minus 40 degrees, most severe from 0 to minus 20',
     'Temperatures above 0 degrees Celsius combined with consistently high humidity in the surrounding air'
@@ -2885,7 +2885,7 @@ export const irexQuestions: {
     'Clear ice is dense and heavy and conforms closely to the airfoil, it is hard to detect and to remove',
     'Rime ice is significantly heavier than clear ice of the same thickness',
     'Clear ice forms only on the windscreen; rime ice forms on wings',
-    'There is no significant difference between the clear and rime ice hazards in practice'
+    'There is no significant difference between the clear and rime ice hazards'
   ],
   correct: 0,
   explanation: 'Clear (glaze) ice: formed from large supercooled water droplets (freezing rain, drizzle) or temperatures just below 0°C. Dense, transparent, heavy, adheres strongly, difficult to detect. Rime ice: formed from small droplets in cloud at lower temperatures — opaque, granular, lighter, brittle. Clear ice is more hazardous: heavier load, harder to remove, more severe aerodynamic disruption.',
@@ -2896,7 +2896,7 @@ export const irexQuestions: {
   question: 'The \'freezing level\' in aviation weather is:',
   options: [
     'The altitude at which the tops of the cloud layers are generally found',
-    'The altitude (or band) where free-air temperature is 0 degrees, above which supercooled water and ice exist',
+    'The altitude or band where the free-air temperature is 0°C',
     'The altitude at which falling precipitation changes from rain into snow as it continues to descend',
     'The height of the tropopause above the location in question'
   ],
@@ -2923,7 +2923,7 @@ export const irexQuestions: {
   options: [
     'They form only above FL200, well up into the normal cruising levels',
     'They always occur together with severe airframe turbulence within the very same cloud mass',
-    'They affect only propeller-driven aircraft and never jet aircraft at all',
+    'They affect only propeller-driven aircraft and never jet aircraft',
     'Freezing rain and drizzle that build clear ice rapidly and can extend aft of the wing\'s protected areas'
   ],
   correct: 3,
@@ -2937,7 +2937,7 @@ export const irexQuestions: {
     'Cruise at high altitude, where the outside air temperatures are at their very lowest',
     'The climb through cloud, which is always the most dangerous phase',
     'The take-off run in cold ambient temperatures at the aerodrome',
-    'Descent and approach near the freezing level, where the aircraft is slower and power is reduced'
+    'Descent and approach near the freezing level'
   ],
   correct: 3,
   explanation: 'On descent and approach the aircraft slows (less aerodynamic heating), power is reduced and configuration changes, all while ice may be accreting and the stall speed rising, during a phase demanding precision. Descending into warmer air eventually melts ice but can briefly worsen the encounter.',
@@ -2960,7 +2960,7 @@ export const irexQuestions: {
 {
   question: 'The IFR significance of a TAF (aerodrome forecast) is that it:',
   options: [
-    'It is a product intended only for VFR flight-planning purposes, and not used for IFR planning at all',
+    'It is a product intended only for VFR flight-planning purposes, and not used for IFR planning',
     'A forecast for a specific aerodrome, used to judge approach feasibility at ETA and the need for an alternate',
     'Is a product that is entirely replaced by pilot reports for IFR planning purposes',
     'Is a product that supplies only the forecast wind information for an IFR flight'
@@ -2973,7 +2973,7 @@ export const irexQuestions: {
 {
   question: 'An IFR TAF includes "TEMPO FM1400 3000 -RA BKN008" — the significance for an IFR approach at 1430 is:',
   options: [
-    'No real significance, since TEMPO simply means it is only a temporary improvement',
+    'No real significance, since TEMPO means it is only a temporary improvement',
     'TEMPO conditions can be ignored for IFR planning',
     'BKN008 means broken cloud at 8,000 ft',
     'From 1400, temporarily expect 3 km visibility in light rain with broken cloud at 800 ft'
@@ -2988,8 +2988,8 @@ export const irexQuestions: {
   options: [
     'High-altitude cruise flight, well above the terminal area and clear of all of the terrain',
     'The climb through about FL100 shortly after departure',
-    'Only helicopter operations, with no effect on aeroplanes at all',
-    'Approach and landing, where an abrupt low-level wind change causes a rapid airspeed loss near the ground'
+    'Only helicopter operations, with no effect on aeroplanes',
+    'Approach and landing, near the ground'
   ],
   correct: 3,
   explanation: 'On approach the aircraft is slow and high-drag with little excess energy. A headwind-to-tailwind shear first lifts the aircraft above path (airspeed rises), then causes a sudden airspeed and altitude loss and an undershoot risk. A wind-shear alert or AIREP should prompt a go-around, and a shear margin is added to approach speed.',
@@ -3000,7 +3000,7 @@ export const irexQuestions: {
   question: 'A microburst is particularly dangerous for an IFR aircraft because:',
   options: [
     'Microbursts affect only aircraft operating below about 200 ft AGL',
-    'Microbursts are easily and reliably detected in good time on standard airborne weather radar',
+    'Microbursts are easily and reliably detected on standard airborne weather radar',
     'Microbursts occur only over water and never form over land areas',
     'A brief, intense downburst; penetrating it gives a headwind gain then a rapid tailwind loss of airspeed'
   ],
@@ -3064,7 +3064,7 @@ export const irexQuestions: {
 {
   question: 'An AIREP (in-flight weather report) is valuable for IFR because it:',
   options: [
-    'Gives real-time reports of the conditions actually encountered at a place, level and time',
+    'Gives real-time reports of the conditions encountered at a place, level and time',
     'Replaces the official weather forecasts for IFR planning',
     'It is filed only by commercial operators on the day, and never by any private pilots',
     'Is useful only for flight conducted under the VFR'
@@ -3091,7 +3091,7 @@ export const irexQuestions: {
   question: 'Radiation fog is most likely to affect IFR departures:',
   options: [
     'During summer afternoons, in the warmest and most convective part of the whole day',
-    'Early morning after a clear, calm night, as the ground cools and chills the air to its dew point',
+    'Early morning after a clear, calm night',
     'Only at coastal aerodromes that lie immediately close to the open sea',
     'Only during the winter season, and then only above about 3,000 ft AMSL'
   ],
@@ -3156,9 +3156,9 @@ export const irexQuestions: {
   question: 'A METAR used for IFR approach planning should be:',
   options: [
     'Issued within the previous 6 hours for it to be considered acceptable for IFR planning use',
-    'As current as possible, with the observation time noted and the interval since the observation considered',
+    'As current as possible, with the observation time noted',
     'Issued within the last 30 minutes in order to be valid for any IFR approach',
-    'Not used for IFR planning at all, since only TAFs are relevant'
+    'Not used for IFR planning, since only TAFs are relevant'
   ],
   correct: 1,
   explanation: 'A METAR (or SPECI) gives the most recent observed conditions to compare against minima. Note the observation time; if it is old, request an update from ATC or ATIS, since conditions may have changed. A SPECI is issued when conditions cross significant thresholds.',
@@ -3181,10 +3181,10 @@ export const irexQuestions: {
 {
   question: 'The wind component "crosswind" limitation for IFR approaches:',
   options: [
-    'There are no crosswind limits at all for IFR instrument approaches',
+    'There are no crosswind limits for IFR instrument approaches',
     'Demonstrated crosswind limits are published in the AFM, exceeding the demonstrated limit is not approved',
     'The standard crosswind limit for all IFR aircraft is a fixed 20 kt',
-    'Crosswind only matters once the aircraft has actually broken out of cloud and become visual'
+    'Crosswind only matters once the aircraft has broken out of cloud and become visual'
   ],
   correct: 1,
   explanation: 'Crosswind limits: AFM/POH publishes demonstrated crosswind component. In IMC, crosswind is more hazardous as there is no visual horizon, the aircraft must maintain instrument scan while correcting for drift, and at DA/H the transition to visual may reveal unexpected drift. Strong gusty crosswind in IMC: consider going around and waiting for conditions to improve.',
@@ -3221,7 +3221,7 @@ export const irexQuestions: {
   question: 'A METAR reporting \'OVC006\' means, for IFR operations:',
   options: [
     'Overcast cloud at 60,000 ft above the aerodrome elevation',
-    'Overcast at 600 ft AGL, which is likely below many IFR landing minima',
+    'Overcast at 600 ft AGL',
     'Overcast cloud that is covering 6 oktas of the sky',
     'Overcast cloud at 6,000 ft above the ground level'
   ],
@@ -3234,7 +3234,7 @@ export const irexQuestions: {
   question: 'Clear-air turbulence around a jet stream is most severe:',
   options: [
     'In the very core of the jet stream itself, where the prevailing winds are at their strongest',
-    'On the cold (polar) side and below the jet core, where the temperature gradient and wind shear are greatest',
+    'On the cold side and below the jet core',
     'Spread evenly all around the jet stream in every direction',
     'Only above the jet stream, and never below the jet core'
   ],
@@ -3247,7 +3247,7 @@ export const irexQuestions: {
   question: 'The "dew point spread" (temperature minus dew point) indicates:',
   options: [
     'The likelihood of thunderstorm development',
-    'The relative humidity, a spread of 2°C or less indicates near-saturation (high fog/cloud risk)',
+    'The relative humidity; a spread of 2°C or less indicates near-saturation',
     'The wind chill factor',
     'Dew point spread is used only for the runway surface condition assessment on the day'
   ],
@@ -3286,7 +3286,7 @@ export const irexQuestions: {
   question: 'The effect of cold temperature on the ILS glideslope intercept altitude is that:',
   options: [
     'Warmer temperatures make the glideslope intercept higher than the published standard angle',
-    'Temperature has no effect at all on the ILS glideslope',
+    'Temperature has no effect on the ILS glideslope',
     'Hot temperatures make the glideslope descend below the runway level',
     'In cold air the glideslope intercept altitudes are geometrically lower than the chart figures indicate'
   ],
@@ -3299,7 +3299,7 @@ export const irexQuestions: {
   question: 'The concept of "conditional forecasts" (TEMPO, BECMG, PROB) in TAFs means:',
   options: [
     'These conditional elements are in fact the most reliable parts of the whole aerodrome TAF',
-    'TEMPO (temporary), BECMG (becoming), and PROB (probability, 30% or 40%) modify the base forecast',
+    'TEMPO, BECMG and PROB groups modify the base forecast',
     'Only the BECMG elements have any effect on IFR flight planning',
     'PROB30 conditions may be ignored entirely for IFR planning purposes'
   ],
@@ -3325,7 +3325,7 @@ export const irexQuestions: {
   question: 'RVSM requirements in Australian airspace apply within the band:',
   options: [
     'From FL180 up to FL290, where most jet traffic operates en-route',
-    'From FL290 to FL410 inclusive, where 1,000 ft separation is used',
+    'From FL290 to FL410 inclusive',
     'From FL245 up to FL600, covering the whole of the upper airspace',
     'Above FL410 only, where the traffic density is at its greatest'
   ],
@@ -3339,7 +3339,7 @@ export const irexQuestions: {
   options: [
     'Only the departure wind information for the currently active runway',
     'Measurements of the upper-level winds only, and not the surface winds',
-    'Nothing useful in Australia, since the LLWAS systems are simply not installed anywhere here',
+    'Nothing useful in Australia, since the LLWAS systems are not installed anywhere here',
     'Real-time detection of surface wind variations between sensors placed around the aerodrome perimeter'
   ],
   correct: 3,
@@ -3363,7 +3363,7 @@ export const irexQuestions: {
 {
   question: 'Instrument meteorological conditions (IMC) at a non-controlled aerodrome require:',
   options: [
-    'No special procedures apply at all, since pilots may simply land there at any time whenever they choose',
+    'No special procedures apply, since pilots may land there at any time whenever they choose',
     'Only a VFR licence is required for IMC operations at uncontrolled aerodromes',
     'The pilot must hold an instrument rating with currency, the aircraft must be IFR equipped, a flight plan must be filed',
     'IMC operations are not permitted at non-controlled aerodromes'
@@ -3455,7 +3455,7 @@ export const irexQuestions: {
   question: 'If an RVSM-approved aircraft loses the redundancy needed for RVSM while in the band, the pilot should:',
   options: [
     'Continue at the assigned level, since one system is sufficient',
-    'Descend immediately below FL290 without advising ATC at all',
+    'Descend immediately below FL290 without advising ATC',
     'Advise ATC and request a level outside the RVSM band or increased separation',
     'Switch off the transponder to prevent a conflicting altitude readout'
   ],
@@ -3467,10 +3467,10 @@ export const irexQuestions: {
 {
   question: 'Tracking from an area of high QNH into an area of significantly lower QNH without updating the altimeter setting, the aircraft will be:',
   options: [
-    'Lower than the altitude indicated, because the altimeter over-reads, the basis of from high to low look out below',
+    'Lower than the altitude indicated, because the altimeter over-reads',
     'Higher than the altitude indicated, because the altimeter under-reads when in the lower pressure air',
     'At exactly the altitude indicated, since changes in QNH do not affect the reading',
-    'Unable to indicate any altitude at all until a current QNH has been set'
+    'Unable to indicate any altitude until a current QNH has been set'
   ],
   correct: 0,
   explanation: 'An altimeter left on an old, higher QNH over-reads as the aircraft moves into lower-pressure air, so the true altitude is lower than indicated, the basis of from high to low, look out below. Below the transition altitude the IFR pilot resets to the local QNH within 100 nm or the area QNH.',
@@ -3480,7 +3480,7 @@ export const irexQuestions: {
 {
   question: 'Quadrantal error in an ADF/NDB system is caused by:',
   options: [
-    'The pilot selecting the wrong frequency on the ADF receiver before the bearing is actually used',
+    'The pilot selecting the wrong frequency on the ADF receiver before the bearing is used',
     'Night-time ionospheric refraction affecting the LF/MF ground-wave signal',
     'Coastal refraction as the signal crosses a coastline obliquely',
     'The metal fuselage re-radiating the signal and distorting the bearing, greatest near 45 degrees off the nose'
@@ -3495,7 +3495,7 @@ export const irexQuestions: {
   options: [
     'Uses only ground-based navigation aids to compute its position',
     'Provides on-board performance monitoring and alerting of navigation accuracy',
-    'Does not require any satellite positioning at all to operate',
+    'Does not require any satellite positioning to operate',
     'Can be used only in oceanic airspace and never on an approach'
   ],
   correct: 1,
@@ -3521,7 +3521,7 @@ export const irexQuestions: {
   options: [
     'Only the number of satellites that are currently in view',
     'Only the aircraft\'s altitude at the particular time',
-    'Satellite geometry (PDOP), satellite count, signal quality, RAIM, and the augmentation system used',
+    'Satellite geometry, satellite count, signal quality, RAIM and the augmentation system',
     'Nothing, since the GNSS accuracy is fixed at plus or minus 10 m everywhere worldwide'
   ],
   correct: 2,
@@ -3558,7 +3558,7 @@ export const irexQuestions: {
 {
   question: 'An RNP AR (authorisation required) approach differs from a standard RNP APCH in that it:',
   options: [
-    'Requires no navigation database at all, being flown purely on the raw GNSS data alone',
+    'Requires no navigation database, being flown purely on the raw GNSS data alone',
     'May be flown by any IFR aircraft without any special approval',
     'Needs specific operator and aircraft authorisation and supports tighter RNP values and curved paths',
     'Is available only to VFR aircraft operating into controlled airspace'
@@ -3574,7 +3574,7 @@ export const irexQuestions: {
     'An annual avionics calibration certificate held on file',
     'Navigation database with current AIRAC cycle, the database must be current for the period of flight',
     'An ATC-issued database approval for the flight',
-    'Pilot-entered waypoints that simply override any need to hold a current navigation database'
+    'Pilot-entered waypoints that override any need to hold a current navigation database'
   ],
   correct: 1,
   explanation: 'FMS/GNSS navigation database: AIRAC cycle = 28 days. For IFR approaches and procedures, the database must be current (valid AIRAC cycle). Using an expired database for IFR approaches is generally not permitted (some operators have procedures for using a non-current database with restrictions). Current database ensures procedures, navaids, and waypoints reflect the latest published data.',
@@ -3586,7 +3586,7 @@ export const irexQuestions: {
   options: [
     'The middle marker is the first to be reached, and only then is the outer marker reached',
     'Inner marker first, then the middle, then the outer marker',
-    'Outer marker about 4-7 nm out, middle marker about 0.5-1 nm from threshold, then the inner marker',
+    'Outer marker about 4-7 nm out, then middle marker about 0.5-1 nm from threshold, then inner marker',
     'Only a single marker is used on modern ILS installations'
   ],
   correct: 2,
@@ -3597,7 +3597,7 @@ export const irexQuestions: {
 {
   question: 'On an RNP APCH (RNAV GNSS) chart, the LNAV, LNAV/VNAV and LPV minima differ in that:',
   options: [
-    'They are simply three different names for the very same minima',
+    'They are three different names for the very same minima',
     'LNAV always gives the lowest minima and LPV always the highest',
     'LNAV is lateral-only to an MDA, while LNAV/VNAV and LPV add vertical guidance to a DA',
     'Only the LNAV line may ever be flown by an aircraft that has no autopilot'
@@ -3626,7 +3626,7 @@ export const irexQuestions: {
     'About 3 degrees above the true glide slope path',
     'About 9 degrees, three times the true angle; following it gives an excessively steep approach',
     'About 1 degree below the true glide slope path',
-    'Nowhere at all, since false glide slopes simply do not exist on any modern ILS installation'
+    'Nowhere, since false glide slopes do not exist on any modern ILS installation'
   ],
   correct: 1,
   explanation: 'The glideslope signal has lobes; the first false (upper) slope is about three times the true angle (about 9 degrees for a 3-degree ILS). Intercepting from above risks capturing it, so the glideslope is always intercepted from below, level or slightly low.',
@@ -3689,7 +3689,7 @@ export const irexQuestions: {
   question: 'The accuracy of GNSS position for IFR approaches is typically:',
   options: [
     'About plus or minus 10 nm, regardless of the conditions',
-    'Exactly plus or minus 1 m at all times, with absolutely no variation at any point',
+    'Exactly plus or minus 1 m at all times, with absolutely no variation',
     'About 10-30 m for standard GPS (95%), improving to about 3-7 m horizontal with SBAS',
     'Exactly the same accuracy as is used for VFR flight'
   ],
@@ -3716,7 +3716,7 @@ export const irexQuestions: {
   options: [
     'On the selected radial, regardless of the actual aircraft heading being flown at the time',
     'Heading directly toward the VOR station at that moment',
-    'On the selected course; the heading may differ for drift, as the CDI shows position not heading',
+    'On the selected course; the heading may differ for drift',
     'Heading exactly equal to the selected OBS value at the time'
   ],
   correct: 2,
@@ -3756,7 +3756,7 @@ export const irexQuestions: {
     'The magnetic bearing measured directly from the aircraft straight across to the NDB ground station',
     'The clockwise angle from the nose to the NDB; add it to the heading to get the magnetic bearing to the station',
     'The bearing measured from the NDB station back toward the aircraft',
-    'The track the aircraft must actually fly to reach the NDB station'
+    'The track the aircraft must fly to reach the NDB station'
   ],
   correct: 1,
   explanation: 'Relative bearing is the angle measured clockwise from the aircraft\'s nose to the NDB. Magnetic bearing to the station = magnetic heading + relative bearing (subtract 360 if over). For example, heading 090 with RB 270 gives 360, due north.',
@@ -3769,7 +3769,7 @@ export const irexQuestions: {
     'RAIM, or an equivalent fault-detection function, to be available',
     'A continuous datalink connection maintained to the ATC unit',
     'Two independent VOR receivers operating as a cross-check',
-    'No integrity checking at all, since GNSS is always fully reliable'
+    'No integrity checking, since GNSS is always fully reliable'
   ],
   correct: 0,
   explanation: 'Without SBAS, the receiver relies on RAIM to detect a faulty satellite signal; RAIM must be available, confirmed by pre-flight prediction, for the approach to be flown. SBAS provides the integrity where it is available.',
@@ -3806,9 +3806,9 @@ export const irexQuestions: {
   question: 'When an RNAV(GNSS) approach chart shows "LNAV/VNAV" minima, this means:',
   options: [
     'The approach requires both a VOR receiver and a GNSS receiver to be used',
-    'LNAV guidance only, since the vertical guidance is simply not available on this particular approach',
+    'LNAV guidance only, since the vertical guidance is not available on this particular approach',
     'LNAV/VNAV is exactly the same thing as an ILS Category II precision approach',
-    'LNAV/VNAV, being lateral navigation (GNSS) combined with vertical navigation (barometric VNAV from the FMS)'
+    'Lateral navigation by GNSS combined with vertical navigation from barometric VNAV'
   ],
   correct: 3,
   explanation: 'LNAV/VNAV: Lateral Navigation (GNSS) + Vertical Navigation (baro-VNAV). The FMS computes a vertical path using barometric altitude. Classified as APV (APproach with Vertical guidance) — not precision, not non-precision. Uses DA/H (not MDA). Minima typically higher than LPV but lower than LNAV (MDA). Requires FMS with VNAV capability and compatible aircraft certification.',
@@ -3870,7 +3870,7 @@ export const irexQuestions: {
 {
   question: 'If an approach is annotated \'DME required\' and the DME is unserviceable, the pilot must:',
   options: [
-    'Not conduct it; the required DME is unavailable, so divert or fly another procedure',
+    'Do not conduct it; divert or fly another procedure that does not need DME',
     'Continue the approach but fly it at a deliberately higher altitude as a precaution',
     'Use GPS distance in place of the required DME without any specific approval',
     'Conduct it at the pilot own discretion if familiar with the aerodrome layout'
@@ -3883,7 +3883,7 @@ export const irexQuestions: {
 {
   question: 'For a GNSS approach, identification of the procedure is achieved by:',
   options: [
-    'Verifying the loaded approach by name, aerodrome and runway, which replaces Morse identification',
+    'Verifying the loaded approach by name, aerodrome and runway',
     'Always identifying the navaids by Morse code regardless of the GNSS',
     'Relying on the GNSS receiver to identify all of the navaids by an automatic cross-check',
     'Skipping identification entirely, since GNSS approaches need none'
@@ -3922,10 +3922,10 @@ export const irexQuestions: {
 {
   question: 'A Trend Type Forecast (TTF) appended to a METAR or SPECI is:',
   options: [
-    'A 24-hour aerodrome forecast that simply replaces the TAF entirely',
+    'A 24-hour aerodrome forecast that replaces the TAF entirely',
     'A forecast of the upper winds along the planned route',
     'A long-range outlook that is valid for the next 12 hours',
-    'A short-term trend (about 3 hours) used for arrival planning at that aerodrome'
+    'A short-term trend forecast, valid about 3 hours, used for arrival planning'
   ],
   correct: 3,
   explanation: 'A TTF is a trend forecast attached to a routine or special observation at certain aerodromes, valid for about 3 hours and describing expected changes. Where a current TTF is held it may be used in place of the TAF for arrival and alternate planning.',
@@ -3974,7 +3974,7 @@ export const irexQuestions: {
 {
   question: 'The difference between LSALT and MEA is that:',
   options: [
-    'Nothing at all, since the LSALT and the MEA are simply fully interchangeable terms',
+    'Nothing, since the LSALT and the MEA are fully interchangeable terms',
     'MEA gives both obstacle clearance and assured navigation-signal reception over the segment',
     'MEA is always lower than the LSALT on a segment',
     'MEA applies to arrivals and LSALT to departures only'
@@ -4027,7 +4027,7 @@ export const irexQuestions: {
   question: 'The critical point (equal time point) on an IFR flight is:',
   options: [
     'The point from which it takes equal time to continue to destination or return to departure or an alternate',
-    'The point of no return, beyond which the aircraft simply cannot get back to its departure point',
+    'The point of no return, beyond which the aircraft cannot get back to its departure point',
     'The point at which the aircraft achieves its maximum range',
     'The geometric midpoint of the route, regardless of the wind'
   ],
@@ -4039,7 +4039,7 @@ export const irexQuestions: {
 {
   question: 'The point of no return (PNR) differs from the ETP in that:',
   options: [
-    'Nothing at all, since the PNR and the ETP are in fact simply fully interchangeable terms',
+    'Nothing, since the PNR and the ETP are in fact fully interchangeable terms',
     'The PNR is the furthest point from which the aircraft can still return to departure with its reserves',
     'The PNR is always further from departure than the ETP',
     'The PNR applies only to oceanic operations, not domestic ones'
@@ -4065,10 +4065,10 @@ export const irexQuestions: {
 {
   question: 'The most critical NOTAMs to check for an IFR flight are:',
   options: [
-    'Only the published opening and closing hours of the destination aerodrome on the day in question',
+    'Only the published opening and closing hours of the destination aerodrome',
     'Only the weather-related NOTAMs, since all other NOTAMs are merely advisory',
     'Only those NOTAMs affecting aircraft above 5,700 kg maximum take-off weight',
-    'Navaid serviceability, procedure amendments, runway and taxiway closures, airspace restrictions and lighting'
+    'Navaid serviceability, procedure amendments, runway or taxiway closures, and airspace restrictions'
   ],
   correct: 3,
   explanation: 'Critical IFR NOTAMs include navaid outages (e.g. ILS unserviceable removes the precision approach), approach/departure procedure amendments, runway or taxiway closures, approach-lighting unserviceability (which raises minima), airspace restrictions and GNSS interference. Check destination and alternate, an outage at the alternate may force a different one.',
@@ -4107,7 +4107,7 @@ export const irexQuestions: {
     'May descend to circuit height provided the pilot has the aerodrome in sight from the LSALT',
     'May descend below the LSALT only when able to comply with VFR, conducting a visual descent in VMC to land',
     'May conduct a non-precision approach using GPS regardless of publication',
-    'Is not permitted at all under CASR Part 91'
+    'Is not permitted under CASR Part 91'
   ],
   correct: 1,
   explanation: 'IFR to aerodrome without instrument approach: the aircraft can fly IFR to the LSALT. If at LSALT the aerodrome is visible and VMC exists (can maintain VMC for the remainder), the pilot can cancel IFR and descend visually (VFR). If VMC cannot be maintained from LSALT, descent is not authorised — the aircraft must hold, divert, or continue to an aerodrome with a published approach.',
@@ -4119,7 +4119,7 @@ export const irexQuestions: {
   options: [
     'Set the weather below which an IFR departure may not be authorised at a particular aerodrome',
     'Specify the minimum fuel that is required before an IFR departure',
-    'Apply only to commercial air-transport operators, and not at all to private operations',
+    'Apply only to commercial air-transport operators, and not to private operations',
     'Do not exist, since no departure minima apply to IFR flights in Australia'
   ],
   correct: 0,
@@ -4130,9 +4130,9 @@ export const irexQuestions: {
 {
   question: 'En-route IFR position reports to ATC (when required) include:',
   options: [
-    'Only the aircraft callsign is reported, with no other items required at all',
-    'Position reports are never required at all in Australian IFR operations',
-    'Aircraft callsign, position (fix name), time over fix, altitude, next fix and ETA, and the fix after next',
+    'Only the aircraft callsign is reported, with no other items required',
+    'Position reports are never required in Australian IFR operations',
+    'Callsign, position, time over the fix, altitude, the next fix and ETA, then the following fix',
     'Only altitude reports are required, since the aircraft position is continuously tracked by radar'
   ],
   correct: 2,
@@ -4208,10 +4208,10 @@ export const irexQuestions: {
 {
   question: 'A \'Y\' or \'Z\' type IFR flight plan indicates:',
   options: [
-    'A composite plan, where Y is IFR then VFR and Z is VFR then IFR, each handled at the transition point',
+    'A composite plan, where Y is IFR then VFR and Z is VFR then IFR',
     'A flight that is coded yellow or zebra, indicating special ATC handling',
-    'An experimental or trial flight-plan format used only on very rare occasions in practice',
-    'Codes that are not used in Australian flight plans at all'
+    'An experimental or trial flight-plan format used only on very rare occasions',
+    'Codes that are not used in Australian flight plans'
   ],
   correct: 0,
   explanation: 'A composite flight plan changes flight rules en-route: Y begins IFR and changes to VFR; Z begins VFR and activates IFR; I is IFR throughout and V is VFR throughout. The transition point and time are specified.',
@@ -4222,9 +4222,9 @@ export const irexQuestions: {
   question: 'The "TAS" used for IFR flight planning differs from "IAS" because:',
   options: [
     'TAS is always slower than IAS',
-    'TAS (True Airspeed) corrects IAS for air density changes with altitude',
+    'TAS corrects IAS for air density changes with altitude',
     'TAS is the airspeed that is used for ATC radio communication',
-    'IAS and TAS are the same at all altitudes'
+    'IAS and TAS are the same at every altitude'
   ],
   correct: 1,
   explanation: 'TAS vs IAS: IAS is what the pitot-static system measures (dynamic pressure). TAS = IAS corrected for air density and temperature. At altitude, lower density means higher TAS for same IAS. Approximate: TAS ≈ IAS × (1 + 0.02 × altitude in thousands of feet). For flight planning, TAS (not IAS) is used to calculate groundspeed and ETA with wind. IAS is used for aircraft handling and ATC speed instructions.',
@@ -4263,7 +4263,7 @@ export const irexQuestions: {
     'The letter A is used for all airways regardless of their altitude',
     'Numbers only, no letters are used on ERCs',
     'Airways are not depicted on ERCs, only on TACs',
-    'Letters designating airway type and altitude, "B" (blue) for low-level airways'
+    'Letters designating airway type and altitude, with B for low-level airways'
   ],
   correct: 3,
   explanation: 'Australian ERC airways: low-level airways use various designators (B, G, R, T, V etc.) for specific route types. Upper airways designated with "A" and number (A1, A464 etc.). Each airway segment shows: track, distance, LSALT or MEA, any altitude restrictions. Pilots choose airways based on direction, altitude requirements, and navaid coverage. ERSA and ERC (L/H) are the primary IFR route documents.',
@@ -4274,7 +4274,7 @@ export const irexQuestions: {
   question: 'The IFR descent checks must include:',
   options: [
     'Only an update of the altimeter pressure setting',
-    'Nothing at all, since the descent checks are entirely optional for single-pilot IFR',
+    'Nothing, since the descent checks are entirely optional for single-pilot IFR',
     'Obtain destination ATIS, set the QNH, confirm the approach and runway, and brief the approach',
     'Only a fuel check and the QNH setting for the descent'
   ],
@@ -4286,10 +4286,10 @@ export const irexQuestions: {
 {
   question: 'The holding fuel required for an IFR aircraft holding at FL100 at 180 KTAS:',
   options: [
-    'It cannot be calculated at all without the fuel flow figure from the AFM',
+    'It cannot be calculated without the fuel flow figure from the AFM',
     'Holding fuel is always 10% of the trip fuel regardless of the aircraft type',
     'Holding at FL100 uses the same fuel as cruise',
-    'It is calculated from the fuel flow (FL100, holding speed) times the anticipated hold time'
+    'It is calculated from the holding fuel flow times the anticipated hold time'
   ],
   correct: 3,
   explanation: 'Holding fuel calculation: fuel flow at holding altitude and speed (from AFM/POH performance section) × holding time anticipated. Different from cruise fuel flow — holding is typically slower speed, higher configuration drag possible, and different power setting. Always use AFM figures. For planning when hold time is uncertain, use a reasonable estimate (30 min minimum is common) and carry adequate reserves.',
@@ -4300,8 +4300,8 @@ export const irexQuestions: {
   question: 'A pilot at FL130 should request a level change when:',
   options: [
     'Forecast icing or severe turbulence at FL130 cannot be avoided, fuel favours another level, or ATC requires it',
-    'The pilot simply feels a little uncomfortable at FL130 for no particular operational reason today',
-    'Never, since level changes are simply not permitted on IFR flights',
+    'The pilot feels a little uncomfortable at FL130, for no particular operational reason',
+    'Never, since level changes are not permitted on IFR flights',
     'Only after the submission of an entirely new flight plan'
   ],
   correct: 0,
@@ -4312,7 +4312,7 @@ export const irexQuestions: {
 {
   question: 'The significance of compulsory reporting points on IFR routes is that they:',
   options: [
-    'Require a position report even when the aircraft is radar identified, unlike on-request points',
+    'They require a position report even when the aircraft is radar identified',
     'Are reporting points that are used only by the emergency and rescue services en-route',
     'Need a position report only when the aircraft is in radar contact',
     'Apply as compulsory reports only above FL200'
@@ -4325,10 +4325,10 @@ export const irexQuestions: {
 {
   question: 'The sector safe altitude (SSA/MSA) on an approach chart is used to:',
   options: [
-    'Define the lowest IFR cruising level that simply happens to be available within that one sector',
+    'Define the lowest IFR cruising level that happens to be available within that one sector',
     'Define the upper limit for VFR aircraft within each charted sector',
     'An emergency reference altitude giving 1,000 ft clearance when position is uncertain or a descent is needed',
-    'It is simply FL100 in every sector drawn around the navaid'
+    'It is FL100 in every sector drawn around the navaid'
   ],
   correct: 2,
   explanation: 'The SSA/MSA is a ring (usually 25 nm) around the reference navaid, divided into sectors, each giving 1,000 ft obstacle clearance. It is an emergency reference for position uncertainty or an emergency descent, not a normal operating altitude.',
@@ -4338,7 +4338,7 @@ export const irexQuestions: {
 {
   question: 'The instrument rating under CASR Part 61 allows the holder to:',
   options: [
-    'Fly any aircraft at all in any weather conditions whatsoever, entirely without any restriction',
+    'Fly any aircraft in any weather conditions, entirely without any restriction',
     'Act as pilot-in-command or co-pilot under the IFR and conduct instrument approaches and departures in IMC',
     'Fly IFR only within Class C airspace and nowhere else',
     'Fly IFR only when a safety pilot is also carried on board'
@@ -4416,7 +4416,7 @@ export const irexQuestions: {
 {
   question: 'Mode C transponder altitude reporting is required in controlled airspace because:',
   options: [
-    'It encodes the aircraft\'s pressure altitude with the transponder reply, so radar shows altitude for separation',
+    'It encodes the aircraft\'s pressure altitude with the transponder reply',
     'It gives the aircraft real-time traffic information from the other transponders that are nearby',
     'It lets the aircraft communicate automatically with TCAS-equipped aircraft',
     'It is required only above FL290 within RVSM airspace for separation'
@@ -4429,7 +4429,7 @@ export const irexQuestions: {
 {
   question: 'ADS-B differs from Mode C in that:',
   options: [
-    'It requires an active radar interrogation before it will respond at all',
+    'It requires an active radar interrogation before it will respond',
     'It uses HF radio frequencies and has a greater range than Mode C radar',
     'It continuously broadcasts GNSS position, altitude and identity without interrogation, beyond radar range',
     'It works only within Class A airspace, and so cannot be received by any other nearby aircraft'
@@ -4444,8 +4444,8 @@ export const irexQuestions: {
   options: [
     '5 nm horizontally and 1,000 ft vertically at every single altitude without any exception applied',
     '10 nm horizontally between IFR aircraft at all times',
-    'Separation is provided only vertically, 1,000 ft at all altitudes',
-    'Varies by airspace type and phase of flight, en-route 5 nm/1,000 ft (1,000 ft below FL290, 2,000 ft above)'
+    'Separation is provided only vertically, 1,000 ft at every altitude',
+    'Varies by airspace and phase of flight; en-route 5 nm or 1,000 ft, and 2,000 ft at and above FL290'
   ],
   correct: 3,
   explanation: 'Radar separation: en-route typically 5 nm horizontal or 1,000 ft vertical (2,000 ft at and above FL290). Terminal area: 3 nm horizontal or 1,000 ft vertical. Approaches: wake turbulence categories apply — heavy behind heavy 4 nm, light behind heavy up to 6 nm. Non-radar: 10 minutes or distance-based procedural separation. These are ICAO standards; actual values depend on specific Australian ATC procedures.',
@@ -4457,7 +4457,7 @@ export const irexQuestions: {
   options: [
     'Fly faster than 250 KIAS at all times while in the area',
     'Maintain a radio watch only during the approach phase of flight',
-    'Nothing at all, since IFR pilots have no specific speed restrictions whatever below 10,000 ft AGL',
+    'Nothing, since IFR pilots have no specific speed restrictions whatever below 10,000 ft AGL',
     'Comply with the 250 KIAS limit below 10,000 ft, hold assigned levels and headings, and read back clearances'
   ],
   correct: 3,
@@ -4469,7 +4469,7 @@ export const irexQuestions: {
   question: 'A \'navigation specification\' in the PBN concept (e.g. RNP 1, RNAV 5) defines:',
   options: [
     'The performance and functional requirements for aircraft and crew on a route or procedure',
-    'The radio frequency that simply must be used while on that particular route',
+    'The radio frequency that must be used while on that particular route',
     'The minimum cloud base that is required to fly the procedure',
     'The maximum number of aircraft permitted on the route at once'
   ],
@@ -4481,7 +4481,7 @@ export const irexQuestions: {
 {
   question: 'An IFR pilot who does not understand an ATC clearance should:',
   options: [
-    'Request clarification at once (\'say again\', \'confirm clearance\'); never fly a clearance not understood',
+    'Request clarification at once, and never fly a clearance that is not understood',
     'Interpret the clearance as best they can and fly what they think was said',
     'Acknowledge with the callsign, then fly whatever course seems the most logical for the route',
     'Advise ATC that the aircraft radio appears to be malfunctioning'
@@ -4494,9 +4494,9 @@ export const irexQuestions: {
 {
   question: 'For an RNP X specification, the system keeps the aircraft within X nm for 95% of the time and also provides containment to:',
   options: [
-    'Exactly the same X nm at all of the other times as well',
+    'Exactly the same X nm at the other times as well',
     'Half of the RNP value (0.5X nm) for the remaining time',
-    'An unlimited distance, since only the 95% figure actually matters',
+    'An unlimited distance, since only the 95% figure matters',
     'Twice the RNP value (2X nm) as the total containment limit'
   ],
   correct: 3,
@@ -4546,7 +4546,7 @@ export const irexQuestions: {
 {
   question: 'Crossing a low-level airway under the IFR requires:',
   options: [
-    'No clearance is needed at all, since the airways may be crossed without any ATC contact',
+    'No clearance is needed, since the airways may be crossed without any ATC contact',
     'Only a position report passed to ATC before crossing',
     'A specific ATC clearance to enter the controlled airspace of the airway, obtained before entering',
     'A crossing clearance only during the hours of darkness'
@@ -4559,7 +4559,7 @@ export const irexQuestions: {
 {
   question: 'Wake turbulence categories for IFR approach sequencing are based on:',
   options: [
-    'Maximum certified take-off weight, with Super (e.g. A380) above 560,000 kg and Heavy above 136,000 kg',
+    'Maximum certified take-off weight, with Super above 560,000 kg and Heavy above 136,000 kg',
     'Aircraft speed only',
     'Aircraft wingspan only',
     'Engine type, since jet aircraft generate more wake turbulence than propeller-driven aircraft'
@@ -4639,8 +4639,8 @@ export const irexQuestions: {
   options: [
     'LNAV/VNAV (Baro-VNAV) minima, using the barometric vertical guidance of the GNSS units',
     'LPV minima, on the basis that the TSO-C146a units are SBAS-capable approach receivers',
-    'LNAV minima only, as the data sheet limits the GNSS units to RNP APCH (LNAV only)',
-    'Any RNP APCH minima at all, since two IFR-approved GNSS units are fitted to the aircraft'
+    'LNAV minima only, since the GNSS units support RNP APCH to LNAV only',
+    'Any RNP APCH minima, since two IFR-approved GNSS units are fitted to the aircraft'
   ],
   correct: 2,
   explanation: 'The VH-OZY data sheet states the GNSS units are capable of RNAV 5/2/1, RNP 2/1 and RNP APCH (LNAV only). The aircraft may therefore fly an RNP APCH only to the LNAV (2D) minima; it is not approved for LNAV/VNAV (Baro-VNAV) or LPV minima even though the receivers carry a TSO-C146a marking.',
@@ -4653,7 +4653,7 @@ export const irexQuestions: {
     'Clearances are only given on the tower frequency',
     'At major aerodromes, clearance delivery is on a dedicated frequency before contacting ground or tower',
     'IFR clearances must be obtained 2 hours before departure',
-    'No specific procedure, the pilot simply calls whichever ATC frequency happens to be available'
+    'No specific procedure, the pilot calls whichever ATC frequency happens to be available'
   ],
   correct: 1,
   explanation: 'Clearance delivery at major Australian airports (Sydney, Melbourne, Brisbane etc.): dedicated clearance delivery frequency. Obtain clearance BEFORE taxi. At smaller controlled aerodromes: ground frequency. At uncontrolled aerodromes with IFR flight plans: obtain clearance by phone from the relevant ATC unit, or arrange pre-flight clearance. Never depart IFR without a valid clearance (in controlled airspace).',
@@ -4676,9 +4676,9 @@ export const irexQuestions: {
 {
   question: 'A mandatory occurrence (pilot deviation) report is required when an IFR aircraft:',
   options: [
-    'Any time at all that the aircraft varies from track by more than 2 nm',
+    'Any time that the aircraft varies from track by more than 2 nm',
     'Such deviation reports are filed only by commercial operators',
-    'Such deviation reports are considered entirely voluntary for all of the pilots right across Australia',
+    'Such deviation reports are considered entirely voluntary for all of the pilots across Australia',
     'Penetrates controlled airspace without clearance, breaches an ATC instruction, or in a separation incident'
   ],
   correct: 3,
@@ -4690,7 +4690,7 @@ export const irexQuestions: {
   question: 'On an RNP/LNAV approach, the lateral course deviation is displayed as:',
   options: [
     'Angular deviation that narrows in toward the runway, as on an ILS',
-    'A simple left or right flag, with no scale of any kind',
+    'A simple left or right flag, with no scale',
     'Linear deviation in nautical miles that does not narrow toward the runway',
     'Distance to run only, with no track-keeping information shown'
   ],
@@ -4717,8 +4717,8 @@ export const irexQuestions: {
   options: [
     'May descend from FL150 whenever the pilot is ready to do so',
     'May deviate up to 500 ft either side of FL150 freely',
-    'May treat the instruction as simply expiring after about 10 minutes have actually passed',
-    'Must hold FL150 until ATC issues a new altitude, leaving it only for safety with ATC advised'
+    'May treat the instruction as expiring after about 10 minutes have passed',
+    'Must hold FL150 until ATC issues a new level, except for a safety need'
   ],
   correct: 3,
   explanation: 'The instruction is absolute: FL150 is held until ATC issues a new level, even if the pilot would prefer another level for weather or efficiency. The only exception is a safety or emergency need, when the pilot advises \'unable FL150\' with a reason and ATC issues a new clearance.',
@@ -4728,7 +4728,7 @@ export const irexQuestions: {
 {
   question: 'An IFR approach at a controlled aerodrome requires the pilot to obtain:',
   options: [
-    'Approach clearance from the appropriate ATC unit (approach control or tower) before commencing the approach',
+    'Approach clearance from the appropriate ATC unit before commencing the approach',
     'Only the current ATIS',
     'Approach clearance is not required for IFR, since the filed flight plan itself authorises the approach',
     'Only tower clearance after breaking out of cloud'
@@ -4741,7 +4741,7 @@ export const irexQuestions: {
 {
   question: 'Instrument-rating recency differs from currency in that:',
   options: [
-    'Nothing at all, since the recency and the currency in fact mean exactly the very same thing in practice',
+    'Nothing, since the recency and the currency in fact mean exactly the very same thing',
     'Currency is the short-term recent-experience requirement; recency is keeping skills sharp via regular checks',
     'Recency refers to medical certificate validity and currency to flight hours',
     'Currency applies only to VFR flight, while recency applies only to IFR'
@@ -4795,7 +4795,7 @@ export const irexQuestions: {
   options: [
     'A recorded weather observation that is already 24 hours old',
     'Only the wind information for the aerodrome, and nothing more',
-    'Digital ATIS sent by ACARS or VHF datalink, giving the voice ATIS information in text form',
+    'Digital ATIS sent by ACARS or VHF datalink in text form',
     'A datalink service that happens to be available only on international flight sectors'
   ],
   correct: 2,
@@ -4807,9 +4807,9 @@ export const irexQuestions: {
   question: 'Spatial disorientation in IMC occurs because:',
   options: [
     'The flight instruments become unreliable when flying in cloud',
-    'Spatial disorientation is a myth, and experienced instrument pilots are simply immune to its effects',
+    'Spatial disorientation is a myth, and experienced instrument pilots are immune to its effects',
     'Spatial disorientation only occurs during night VFR flight',
-    'The vestibular system (inner ear) cannot accurately sense attitude in the absence of visual references'
+    'The vestibular system of the inner ear cannot sense attitude without visual references'
   ],
   correct: 3,
   explanation: 'Spatial disorientation: the vestibular system senses rotation using semicircular canals (angular acceleration) and linear acceleration using otolith organs. In cloud: the inner ear provides false information after sustained turns (the leans), and the "graveyard spiral" (a balanced turn perceived as straight and level). Instrument flying discipline — trust the instruments, not your body — is the only reliable counter.',
@@ -4822,7 +4822,7 @@ export const irexQuestions: {
     'The aircraft entering a bank as the result of an asymmetric fuel or cargo load distribution',
     'The leans only occur during night VFR flight',
     'The leans are caused by fatigue and can be resolved by resting',
-    'After an undetected gradual roll into a bank, the semicircular canals adapt (stop sensing the roll)'
+    'After an undetected gradual roll into a bank, the semicircular canals stop sensing it'
   ],
   correct: 3,
   explanation: '"The leans": after an undetected slow roll (below the semicircular canal threshold of approximately 2°/sec), the inner ear adapts — perceives the banked attitude as wings level. When the pilot corrects back to actual wings level (instruments), the correction feels like rolling to a new bank. The pilot feels banked even though instruments show wings level. The body leans toward the perceived "down." Resolution: trust the instruments, resist the urge to lean.',
@@ -4847,7 +4847,7 @@ export const irexQuestions: {
   options: [
     'A left bank developing whenever the aircraft accelerates forward',
     'An increased altitude reading shown on the aircraft altimeter',
-    'A nose-high climbing attitude, as the otoliths read forward acceleration as a backward tilt',
+    'A false nose-high climbing attitude',
     'An illusion that occurs only in helicopter operations, and never in aeroplanes'
   ],
   correct: 2,
@@ -4963,7 +4963,7 @@ export const irexQuestions: {
   question: 'On an IFR navigation chart, a compulsory reporting point is identified by:',
   options: [
     'An open (unfilled) triangle, the same symbol that also marks an on-request reporting point',
-    'A solid (filled) triangle, whereas an on-request reporting point is shown by an open triangle',
+    'A solid triangle, whereas an on-request reporting point is shown by an open triangle',
     'A circled cross, which is also the symbol used for the position of en-route radio navigation aids',
     'A five-letter name printed in italics, with no symbol drawn at the waypoint position itself'
   ],
@@ -5016,7 +5016,7 @@ export const irexQuestions: {
   options: [
     'Flight technical error alone, since pilot or autopilot tracking is the only real error source',
     'Navigation system error alone, being the difference between the true and the computed position',
-    'Path definition error, navigation system error and flight technical error, combined together',
+    'Path definition error, navigation system error and flight technical error',
     'Path definition error alone, set by how accurately the procedure is coded into the database'
   ],
   correct: 2,
@@ -5041,7 +5041,7 @@ export const irexQuestions: {
   question: 'On becoming uncertain of position in IMC, the IFR pilot\'s first action is to:',
   options: [
     'Immediately declare a MAYDAY and begin descending at once to try to regain visual flight',
-    'Maintain MSA or assigned altitude (whichever is higher) and the last heading, and advise ATC at once',
+    'Maintain the MSA or assigned altitude, whichever is higher, keep the last heading, and advise ATC at once',
     'Make turns to try to spot landmarks through any cloud breaks',
     'Reduce power and slow down in order to buy more time'
   ],
@@ -5082,7 +5082,7 @@ export const irexQuestions: {
     'True altitude of the aircraft at the missed approach point, corrected for non-standard temperature',
     'Height of the obstacle clearance surface beneath the final approach segment of the procedure',
     'Difference between the local QNH and the forecast area QNH in use at the destination aerodrome',
-    'The aerodrome operating minima (AOM), the altimeter reading at which the missed approach is begun'
+    'The aerodrome operating minima, the altimeter reading at which the missed approach is begun'
   ],
   correct: 3,
   explanation: 'At approach speed and configuration the static system has a position (pressure) error, so the altimeter does not read exactly the DA. The pressure error correction is applied to the DA to give the aerodrome operating minima (AOM), the indicated altitude at which the pilot must begin the missed approach if the required visual reference is not available.',
@@ -5118,9 +5118,9 @@ export const irexQuestions: {
 {
   question: 'When should an IFR pilot consider requesting an "immediate approach" from ATC?',
   options: [
-    'On every IFR flight, simply in order to reduce the time spent waiting around for handling',
+    'On every IFR flight, in order to reduce the time spent waiting around for handling',
     'Immediate approach is only for commercial operators',
-    'When an emergency or urgency exists (medical, fuel, mechanical) requiring expedited approach handling',
+    'When an emergency or urgency requires expedited approach handling',
     'ATC automatically sequences all IFR aircraft as immediate approaches'
   ],
   correct: 2,
@@ -5170,7 +5170,7 @@ export const irexQuestions: {
 {
   question: 'A GNSS landing system (GLS) approach obtains its precision guidance from:',
   options: [
-    'A ground-based augmentation system (GBAS) broadcasting corrections locally',
+    'A ground-based augmentation system broadcasting corrections locally',
     'The barometric altimeter once it is corrected for temperature',
     'A conventional ILS glideslope transmitter sited at the threshold',
     'The aircraft\'s own inertial reference system operating alone'
@@ -5198,7 +5198,7 @@ export const irexQuestions: {
   options: [
     'Turn, Throttle, Track, Time, Talk, Transponder',
     'The 6 Ts is only used for VFR navigation',
-    'Time (note time overhead), Turn (to new heading), Throttle (set power), Twist',
+    'Time, Turn, Throttle and Twist',
     'Turn, then Terrain, Traffic, Track, Time and finally the Transponder'
   ],
   correct: 2,
@@ -5261,7 +5261,7 @@ export const irexQuestions: {
 {
   question: 'An IFR approach at night without approach lighting is more demanding because:',
   options: [
-    'Night has no real practical effect at all on the conduct of an IFR approach to a lit runway',
+    'Night has no real practical effect on the conduct of an IFR approach to a lit runway',
     'Visual acquisition at minima is harder, the runway found from edge lights alone with poor depth perception',
     'Approach lighting is always available at every aerodrome during the night',
     'Night IFR is permitted to use lower minima than are used by day'
@@ -5276,7 +5276,7 @@ export const irexQuestions: {
   options: [
     'The pilot to fly far too high all the way down throughout the whole of the approach',
     'Fly too low over dark featureless terrain, the few visible lights giving a false sense of height',
-    'It has no real effect on instrument-rated pilots at all',
+    'It has no real effect on instrument-rated pilots',
     'It affects only VFR pilots and never IFR pilots'
   ],
   correct: 1,
@@ -5404,7 +5404,7 @@ export const irexQuestions: {
 {
   question: 'An IFR pilot noting the aircraft\\\'s DME has failed should:',
   options: [
-    'Continue the flight without informing ATC at all about the DME unit failure',
+    'Continue the flight without informing ATC about the DME unit failure',
     'Advise ATC of the DME failure, this affects what approaches and procedures are available',
     'Only advise ATC if the destination requires DME',
     'DME failure is not required to be reported'
@@ -5445,7 +5445,7 @@ export const irexQuestions: {
   options: [
     'Broken cloud at 400 ft above the aerodrome elevation at the time of arrival',
     'A variable surface visibility of 4,000 m at the field',
-    'Vertical visibility of 400 ft into an obscured sky (fog/mist), acting as a ceiling well below most minima',
+    'Vertical visibility of 400 ft into a sky obscured by fog or mist',
     'Very good visibility, entirely suitable for a normal straight-in instrument approach to land'
   ],
   correct: 2,
@@ -5459,7 +5459,7 @@ export const irexQuestions: {
     'A safety pilot holding at least a PPL to keep a visual lookout while the student flies under the hood',
     'The student flying under the hood must already hold a current instrument rating themselves',
     'The safety pilot to hold only a student pilot certificate',
-    'No safety pilot at all, provided the flight is above FL100'
+    'No safety pilot, provided the flight is above FL100'
   ],
   correct: 0,
   explanation: 'The student flies under the hood while a safety pilot maintains the outside lookout and is responsible for collision avoidance. The safety pilot must hold at least a PPL and be current, and takes control if any visual hazard arises.',
@@ -5469,7 +5469,7 @@ export const irexQuestions: {
 {
   question: 'On a PAPI, an indication changing to three red and one white, then four red, tells the pilot the aircraft is:',
   options: [
-    'On the correct approach slope and should simply be maintained',
+    'On the correct approach slope and should be maintained',
     'Above the slope and continuing to get higher still',
     'Below the slope and getting progressively lower',
     'Exactly at the elevation of the runway threshold'
@@ -5521,7 +5521,7 @@ export const irexQuestions: {
 {
   question: 'The benefit of a stabilised approach over an unstabilised one is:',
   options: [
-    'It allows the pilot to use approach minima that are noticeably lower than those actually published',
+    'It allows the pilot to use approach minima that are noticeably lower than those published',
     'Consistent energy and flight-path control that lowers workload on final and eases the transition to visual',
     'It is required only of commercial pilots, not private ones',
     'An unstabilised approach is fine if the pilot is experienced'
@@ -5549,7 +5549,7 @@ export const irexQuestions: {
   options: [
     'Stop sensing a prolonged steady turn, so stopping the turn feels like turning the other way',
     'Sense a forward acceleration as a nose-high pitching movement',
-    'Detect a true horizon reliably even when none is actually visible outside the aircraft',
+    'Detect a true horizon reliably even when none is visible outside the aircraft',
     'Become steadily more accurate the longer that a turn is maintained'
   ],
   correct: 0,
@@ -5626,7 +5626,7 @@ export const irexQuestions: {
   question: 'The \'flicker effect\' that can cause disorientation is produced by:',
   options: [
     'A steady, unchanging light source that is viewed over a long period',
-    'The complete absence of any external light at all at night',
+    'The complete absence of any external light at night',
     'Two navigation lights of very slightly different colours',
     'Sunlight or a strobe flickering at low frequency, such as through a propeller'
   ],
@@ -5664,8 +5664,8 @@ export const irexQuestions: {
 {
   question: 'For a night VFR flight on the last route segment, an alternate aerodrome within one hour is required unless the destination:',
   options: [
-    'Has an NDB/VOR (with a capable aircraft and competent pilot) or an approved GNSS is used',
-    'Has no published instrument approach procedure available at all',
+    'Has an NDB, VOR or approved GNSS that the aircraft and pilot can use',
+    'Has no published instrument approach procedure available',
     'Is always required regardless of the navigation aids that happen to be available',
     'Requires an alternate only when the flight is for hire or reward'
   ],
@@ -5692,8 +5692,8 @@ export const irexQuestions: {
   options: [
     'Only the missed approach altitude',
     'Only the go-around power setting',
-    'The missed approach brief is not required at all if the weather is above the minima',
-    'Initial climb action (TOGA power, positive rate, gear up); missed approach heading or track'
+    'The missed approach brief is not required if the weather is above the minima',
+    'Initial climb actions, then the missed approach heading or track'
   ],
   correct: 3,
   explanation: 'Missed approach brief: (1) Initial actions — TOGA, positive climb, gear; (2) Track/heading; (3) Altitude; (4) Subsequent routing; (5) Communications. Brief BEFORE the approach, not during the go-around. The go-around is not the time to consult the chart.',
@@ -5820,7 +5820,7 @@ export const irexQuestions: {
 {
   question: 'On an instrument approach, reaching the tracking tolerance means the pilot must:',
   options: [
-    'Discontinue the approach and go around, as the aircraft may be leaving protected airspace',
+    'Discontinue the approach and go around',
     'Increase speed in order to regain the centreline more quickly',
     'Descend earlier than planned to make up for the tracking error that was encountered',
     'Ignore the deviation, provided the runway is in sight ahead'
@@ -5835,7 +5835,7 @@ export const irexQuestions: {
   options: [
     'Fly the approach to MDA and then land straight ahead on the procedure track',
     'Request special straight-in approach minima from ATC for a runway',
-    'Treat it as entirely unavailable, since the circling-only approaches simply do not exist in Australia',
+    'Treat it as entirely unavailable, since the circling-only approaches do not exist in Australia',
     'Fly the procedure to circling MDA, stay visual with the aerodrome, and manoeuvre to land on the chosen runway'
   ],
   correct: 3,
@@ -5924,7 +5924,7 @@ export const irexQuestions: {
 {
   question: 'The benefit of flying an instrument approach coupled to the autopilot is that it:',
   options: [
-    'Removes the pilot\'s responsibility to monitor the approach at all',
+    'Removes the pilot\'s responsibility to monitor the approach',
     'Reduces workload and improves tracking accuracy, freeing capacity to monitor',
     'Allows the published minima to be disregarded once coupled',
     'Guarantees the approach without any need to brief or configure'
@@ -5963,7 +5963,7 @@ export const irexQuestions: {
 {
   question: 'When the ATIS broadcasts "ILS LOC only, glideslope unserviceable," the pilot should:',
   options: [
-    'Convert to a localiser-only (LOC) non-precision approach using the published LOC minima',
+    'Convert to a localiser-only non-precision approach using the published LOC minima',
     'Fly the ILS approach using the normal full precision approach landing minima',
     'Cancel the IFR flight plan and land VFR',
     'Request radar vectoring to a visual approach only'
@@ -5976,8 +5976,8 @@ export const irexQuestions: {
 {
   question: 'The \'early diversion decision\' principle means:',
   options: [
-    'Always diverting before ever actually reaching the planned destination aerodrome',
-    'Diverting only after the first missed approach has actually been flown',
+    'Always diverting before ever reaching the planned destination aerodrome',
+    'Diverting only after the first missed approach has been flown',
     'Leaving the diversion decision entirely up to ATC controllers to make',
     'Deciding to divert before fuel becomes marginal, while ample fuel still remains in the cruise'
   ],
@@ -6057,7 +6057,7 @@ export const irexQuestions: {
     'Set to departure time',
     'SARTIME is optional for short IFR flights',
     'SARTIME is always a fixed 6 hours, regardless of the flight duration',
-    'Set to the estimated arrival time plus a reasonable buffer (e.g. 30 minutes)'
+    'Set to the estimated arrival time plus a reasonable buffer'
   ],
   correct: 3,
   explanation: 'SARTIME: estimated time of arrival plus a buffer (typically 30–60 min). Too short and normal delays trigger unnecessary SAR; too long and a genuine emergency may not be detected quickly. For IFR on an ATC flight plan: the flight plan itself provides SAR coverage — SARTIME may be included in the flight plan or filed separately with the AFTN.',
@@ -6081,7 +6081,7 @@ export const irexQuestions: {
   question: 'The minimum off-route altitude (MORA) on a chart provides:',
   options: [
     'The minimum altitude for flying along any single published airway route segment on the chart',
-    'A value that is simply not used in Australian operations at all',
+    'A value that is not used in Australian operations',
     'Obstacle clearance of 1,000 ft (2,000 ft in mountains) within a grid square when off published airways',
     'The minimum altitude required for any flight conducted above cloud'
   ],
@@ -6096,7 +6096,7 @@ export const irexQuestions: {
     'All of the aircraft systems remaining fully functional at every single moment of the flight',
     'Maximum engine power being available throughout the whole approach',
     'Engines at normal power, normal manoeuvring and standard performance for the published approach category',
-    'No performance assumptions being made at all in the design'
+    'No performance assumptions being made in the design'
   ],
   correct: 2,
   explanation: 'Procedures assume normal performance for the approach category. An engine-out missed approach changes the climb gradient markedly, so the published missed-approach clearance may not be achievable; the pilot assesses performance against the gradient before commencing an abnormal-configuration approach.',
@@ -6132,9 +6132,9 @@ export const irexQuestions: {
 {
   question: 'A conditional clearance such as \'after the landing Airbus, line up and wait\' requires the pilot to:',
   options: [
-    'Identify the landing Airbus, confirm it has landed and cleared (or the condition is met), then line up',
+    'Identify the landing Airbus, confirm it has landed and cleared, then line up on the runway',
     'Line up on the runway immediately, without regard for the position of the landing Airbus',
-    'Request confirmation from ATC before moving at all',
+    'Request confirmation from ATC before moving',
     'Treat it as invalid, since conditional clearances are not used here'
   ],
   correct: 0,
@@ -6158,7 +6158,7 @@ export const irexQuestions: {
 {
   question: 'Under the IFR, a single-engine aircraft:',
   options: [
-    'May never be operated under the IFR in any circumstances at all',
+    'May never be operated under the IFR in any circumstances',
     'May fly in private operations under the IFR, but carrying passengers for hire in IMC is restricted',
     'Has exactly the same operational IFR privileges as a twin-engine aircraft does in IMC',
     'Is limited to flight only above FL200 whenever it is operating under the IFR'
@@ -6171,7 +6171,7 @@ export const irexQuestions: {
 {
   question: 'An aircraft \'cleared to FL120 via flight-planned route\' must maintain:',
   options: [
-    'The exact filed route and the cleared level, which is where ATC expects the aircraft',
+    'The exact filed route and the cleared level',
     'Maintain any altitude up to FL120 as preferred by the pilot',
     'Reach FL120 only after top of climb, any altitude during the climb',
     'Treat the filed route as advisory, with the pilot selecting the track'
@@ -6184,8 +6184,8 @@ export const irexQuestions: {
 {
   question: 'Australian ATC surveillance includes:',
   options: [
-    'Primary radar, secondary radar (Mode A/C/S), ADS-B and multilateration',
-    'Only primary radar coverage, right across the whole country',
+    'Primary radar, secondary radar with Mode A/C/S, ADS-B and multilateration',
+    'Only primary radar coverage, across the whole country',
     'Only ADS-B, and then only at the lower altitudes en-route',
     'Radar only, and only within the capital-city terminal areas'
   ],
@@ -6278,7 +6278,7 @@ export const irexQuestions: {
     'Read about 300 ft too low, so the aircraft is higher than indicated',
     'Read about 300 ft too high, so the aircraft is lower than indicated',
     'Read correctly, since QNH does not affect the altimeter',
-    'Read about 30 ft too high, a negligible error in practice'
+    'Read about 30 ft too high, a negligible error'
   ],
   correct: 1,
   explanation: 'The set pressure (1013) is 10 hPa higher than the actual QNH (1003). At about 30 ft per hPa the altimeter over-reads by roughly 300 ft, so the aircraft is about 300 ft lower than indicated, a hazard near terrain.',
@@ -6301,10 +6301,10 @@ export const irexQuestions: {
 {
   question: 'A no-gyro approach is requested when:',
   options: [
-    'The aircraft is simply not fitted with any GPS receiver',
+    'The aircraft is not fitted with any GPS receiver',
     'No-gyro approaches are only ever conducted within flight simulators on the ground',
     'The heading indicator has failed, so ATC gives turn commands instead of specific headings',
-    'A no-gyro approach is simply another name for an NDB approach'
+    'A no-gyro approach is another name for an NDB approach'
   ],
   correct: 2,
   explanation: 'If the directional gyro fails in IMC, the pilot requests a no-gyro approach: ATC watches the radar return and issues \'turn left/right\' and \'stop turn\', and the pilot flies standard-rate turns on the turn coordinator. It is a practical partial-panel emergency procedure.',
@@ -6354,7 +6354,7 @@ export const irexQuestions: {
   question: 'An en-route alternate (ERA) differs from a destination alternate in that:',
   options: [
     'An en-route alternate is for an emergency before destination, a suitable aerodrome reachable from the route',
-    'An ERA is required only for those flights that are conducted right out over the deep open ocean',
+    'An ERA is required only for those flights that are conducted out over the deep open ocean',
     'An ERA is exactly the same thing as the nominated destination alternate',
     'An ERA is required only for turbojet-powered aircraft, not piston types'
   ],
@@ -6368,7 +6368,7 @@ export const irexQuestions: {
   options: [
     'Climb to 1,000 ft and wait for further clearance',
     'Follow the lateral route of the SID and ALL published altitude and speed constraints up to FL100',
-    'Climb directly to FL100 without following the lateral SID route at all',
+    'Climb directly to FL100 without following the lateral SID route',
     'Only the single altitude constraint at the very end of the SID is the one that applies'
   ],
   correct: 1,
@@ -6381,7 +6381,7 @@ export const irexQuestions: {
   options: [
     'The aircraft is reported just 5 minutes late arriving at the destination',
     'The aircraft has not arrived or made contact within the specified time after ETA',
-    'Only when the pilot has not filed any flight plan at all',
+    'Only when the pilot has not filed any flight plan',
     'Overdue procedures apply only to VFR flights, not IFR'
   ],
   correct: 1,
@@ -6392,7 +6392,7 @@ export const irexQuestions: {
 {
   question: 'A GNSS integrity failure alert during an approach requires:',
   options: [
-    'Continue the approach as planned, while simply monitoring the ongoing integrity alert',
+    'Continue the approach as planned, while monitoring the ongoing integrity alert',
     'Only discontinue if the alert persists for more than 30 seconds',
     'Request ATC radar guidance and continue',
     'Immediately execute the missed approach; a GNSS integrity alert means the position cannot be trusted'
