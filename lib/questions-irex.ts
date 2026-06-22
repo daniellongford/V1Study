@@ -267,19 +267,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Visual Approach Slope Indicator (VASI) provides:',
-  options: [
-    'A visual glidepath reference',
-    'Distance information to the runway threshold',
-    'Lateral guidance to the runway centreline',
-    'Touchdown zone marking information'
-  ],
-  correct: 0,
-  explanation: 'VASI provides visual approach slope guidance. Standard 2-bar VASI: all white = too high; red over white = on slope (about 3°); all red = too low. PAPI (Precision Approach Path Indicator) works similarly: 4 whites = high; 3 white 1 red = slightly high; 2 white 2 red = on slope; 1 white 3 red = slightly low; 4 red = low. These supplement but do not replace instrument approaches. Typically 2 bars providing on-slope (white/white=high, red/white=on slope, red/red=low indication).',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 2.3.17'
-},
-
-{
   question: 'A SID (Standard Instrument Departure) procedure:',
   options: [
     'Is optional, pilots may choose to fly their own departure route',
@@ -1021,19 +1008,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'A Non-Directional Beacon (NDB) transmits:',
-  options: [
-    'Directional signals transmitted along 360 separate radials outward from the station',
-    'An omnidirectional LF/MF signal, from which the aircraft\'s ADF derives the bearing',
-    'A narrow directional beam similar to a VOR, but broadcast on the lower LF/MF frequencies instead',
-    'Usable signals only on its published frequency during the hours of daylight'
-  ],
-  correct: 1,
-  explanation: 'An NDB radiates a non-directional LF/MF signal (about 190-1750 kHz). The aircraft\'s ADF detects the direction the signal arrives from and shows it as a relative bearing. Unlike a VOR, the NDB carries no directional information; the receiver determines the bearing.',
-  reference: 'Part 61 MOS Sch 3 IREX 5.1.2'
-},
-
-{
   question: '"Coastal refraction" affecting NDB signals occurs because:',
   options: [
     'NDB signals travel faster over sea than land, when signals cross a coastline at an angle, they are refracted',
@@ -1437,19 +1411,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The pseudo-random (C/A) code transmitted by GPS satellites allows the receiver to:',
-  options: [
-    'Encrypt the GPS signal so that only authorised military receivers are ever able to read it',
-    'Identify which particular satellite in the constellation is transmitting',
-    'Receive a fully computed position fix directly from the satellite itself',
-    'Measure signal travel time by matching the received code against an identical internally generated one'
-  ],
-  correct: 3,
-  explanation: 'The C/A code is a pseudo-random sequence unique to each satellite. The receiver generates the same code and slides it to match the received one; the time offset is the signal travel time, which multiplied by the speed of light gives the pseudo-range. Four pseudo-ranges give a 3D position.',
-  reference: 'Part 61 MOS Sch 3 IREX 5.2.1'
-},
-
-{
   question: 'RAIM (Receiver Autonomous Integrity Monitoring) in a GNSS receiver:',
   options: [
     'Monitors the integrity of the GNSS position fix by using redundant satellites',
@@ -1460,32 +1421,6 @@ export const irexQuestions: {
   correct: 0,
   explanation: 'RAIM: an algorithm within the GNSS receiver that uses redundant satellite measurements to detect when one satellite is providing erroneous data. Fault Detection (FD) requires 5 satellites; Fault Detection and Exclusion (FDE) requires 6 satellites. If RAIM cannot guarantee the required navigation accuracy, it alerts the pilot. No RAIM = navigation accuracy is unknown — do not use for IFR.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.1 / 5.2.4'
-},
-
-{
-  question: 'GNSS uses the WGS-84 coordinate system because it:',
-  options: [
-    'It is a single Earth-centred datum used by all GNSS satellites and receivers',
-    'Is the Australian national survey datum on which all local aeronautical charts and procedures are based',
-    'Is a more accurate coordinate system than any of the alternatives available',
-    'Is mandated by ICAO specifically and only for the production of navigation charts'
-  ],
-  correct: 0,
-  explanation: 'WGS-84 is the global reference frame for GNSS: it defines the Earth ellipsoid and the coordinate datum in which positions are computed and charted. Using one common datum removes the datum-shift errors that would arise from mixing reference systems; Australian charts are published in WGS-84.',
-  reference: 'Part 61 MOS Sch 3 IREX 5.2.1'
-},
-
-{
-  question: 'PDOP (Position Dilution of Precision) affects GNSS navigation by:',
-  options: [
-    'Reducing the number of satellites available',
-    'PDOP affects the speed and altitude readout, but not the horizontal position',
-    'Describing the geometric arrangement of visible satellites, poor satellite geometry',
-    'PDOP is only relevant for military GPS applications'
-  ],
-  correct: 2,
-  explanation: 'PDOP (Position Dilution of Precision): measures satellite geometry quality. Satellites bunched together give poor geometry (high PDOP, worse accuracy); satellites spread across the sky give good geometry (low PDOP, better accuracy). PDOP multiplies the ranging errors — HDOP × range error = horizontal accuracy. PDOP below 4 is required for most IFR operations. RAIM prediction tools check PDOP to predict approach availability.',
-  reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.1'
 },
 
 {
@@ -1720,19 +1655,6 @@ export const irexQuestions: {
   correct: 0,
   explanation: 'Automatic waypoint sequencing: when a GNSS approach is loaded from the database and the receiver is in approach mode, it automatically sequences through each waypoint (IAF → IF → FAF → MAP) as the aircraft passes them. Manual intervention is only required if the pilot needs to fly a holding pattern, discontinue the approach, or if the receiver fails to sequence. Failure of auto-sequencing requires the pilot to manually select the next waypoint or execute a missed approach.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.2.6'
-},
-
-{
-  question: 'The GNSS receiver \'mask angle\' refers to:',
-  options: [
-    'Deliberately blocking GNSS signals to prevent their use for any military targeting purpose',
-    'The receiver\'s process of selecting the best four satellites for the navigation solution',
-    'A function that prevents the GNSS from operating inside restricted airspace areas',
-    'The minimum elevation above the horizon at which satellites are used in the position solution'
-  ],
-  correct: 3,
-  explanation: 'The mask angle is the lowest elevation above the horizon at which the receiver will use a satellite (typically 5-15 degrees). Low-elevation signals travel further through the atmosphere (more ionospheric/tropospheric delay) and pick up more terrain multipath. Raising the mask improves accuracy but reduces usable satellites, which can lower RAIM availability.',
-  reference: 'Part 61 MOS Sch 3 IREX 5.2.1'
 },
 
 {
@@ -2243,19 +2165,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'A stabilised approach for an instrument approach requires that:',
-  options: [
-    'By 500 ft AGL, with correct configuration, stable speed, correct descent rate, on glidepath and aligned with the runway',
-    'Only that the aircraft is on the correct approach path as it crosses the FAF',
-    'The approach is treated as unstable only if the glideslope is more than 2 dots off',
-    'Stabilisation criteria apply solely to commercial air-transport IFR operations, and never to private ones'
-  ],
-  correct: 0,
-  explanation: 'By the stabilisation gate (about 500 ft AGL in IMC) the aircraft should be in landing configuration, at a stable speed (about Vapp +/-10 kt), at a normal descent rate, within about 1 dot of the glidepath/localiser and aligned with the runway. If any criterion is not met, go around. Unstable approaches are a leading CFIT factor.',
-  reference: 'AIP ENR 1.5 / CFIT prevention'
-},
-
-{
   question: 'The lowest decision height and visibility to which a standard Category I ILS approach may be flown are:',
   options: [
     'A decision height of 200 ft and a visibility (RVR) of 550 m',
@@ -2334,19 +2243,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The purpose of the approach briefing before an instrument approach is:',
-  options: [
-    'It is purely a box-ticking regulatory requirement that serves no real practical purpose in the cockpit',
-    'The approach briefing is required only when two pilots are operating together',
-    'To review the procedure, IAF, track, altitude limits, DA/MDA, missed approach and criteria before the workload rises',
-    'Briefings are needed only for a first approach to an unfamiliar aerodrome'
-  ],
-  correct: 2,
-  explanation: 'Briefing the approach beforehand lowers in-approach workload, fixes the altitude constraints and missed-approach procedure in mind, confirms configuration, and sets the decision criteria (fuel, weather, equipment). A common structure covers ident, altitudes/minima, timing, missed approach and the alternate plan.',
-  reference: 'AIP ENR 1.5'
-},
-
-{
   question: 'The technique for transitioning from instrument to visual flying at DA on an ILS approach is:',
   options: [
     'Divert all of the pilot\'s attention to outside visual references and ignore the flight instruments',
@@ -2370,32 +2266,6 @@ export const irexQuestions: {
   correct: 1,
   explanation: 'CDFA technique: fly a continuous descent from FAF to the runway, targeting the runway threshold as the aim point. The descent angle is calculated from the approach chart (typically 3°). When the aircraft reaches the altitude corresponding to MDA, if visual reference is not established — execute a missed approach (treat MDA as DA). Benefits: stabilised approach profile, no step-downs to manage, better visual acquisition geometry, reduced CFIT risk.',
   reference: 'AIP ENR 1.5 — Non-Precision Approach Techniques'
-},
-
-{
-  question: 'The primary cause of Controlled Flight Into Terrain on instrument approaches is:',
-  options: [
-    'Weather conditions that happen to be below the published approach minima at the time on the day',
-    'Sudden failure of the aircraft\'s primary navigation system during the approach',
-    'Descending below the profile, often with disorientation or position confusion and not flying the published procedure',
-    'It occurs only on non-precision approaches and never on precision approaches'
-  ],
-  correct: 2,
-  explanation: 'CFIT typically follows descent below the DA/MDA or profile without visual reference, spatial disorientation (believing the aircraft is higher than it is), not flying the published altitudes, or a delayed missed approach, often with inadequate briefing and high workload. It remains a leading cause of fatal IFR accidents.',
-  reference: 'Part 61 MOS Sch 3 IREX — CFIT'
-},
-
-{
-  question: 'The IFR instrument crosscheck (scan) involves:',
-  options: [
-    'Monitoring only the attitude indicator, to the deliberate exclusion of all of the other instruments',
-    'Glancing at each instrument just once every minute or so in turn',
-    'Monitoring only the attitude indicator and the altimeter together',
-    'A systematic scan of all primary instruments centred on the attitude indicator, never fixating on one'
-  ],
-  correct: 3,
-  explanation: 'The scan radiates from the attitude indicator (the hub) out to the supporting instruments, ASI, altimeter, DI and VSI, and back, with no instrument fixated for more than a couple of seconds; navigation displays are added on approach. A good scan catches deviations before they grow.',
-  reference: 'Part 61 MOS Sch 3 IREX 2.3.1'
 },
 
 {
@@ -3465,19 +3335,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Quadrantal error in an ADF/NDB system is caused by:',
-  options: [
-    'The pilot selecting the wrong frequency on the ADF receiver before the bearing is used',
-    'Night-time ionospheric refraction affecting the LF/MF ground-wave signal',
-    'Coastal refraction as the signal crosses a coastline obliquely',
-    'The metal fuselage re-radiating the signal and distorting the bearing, greatest near 45 degrees off the nose'
-  ],
-  correct: 3,
-  explanation: 'The fuselage acts as a secondary radiator that distorts the loop antenna\'s directional sense. The error is greatest when the beacon is about 45 degrees off the nose and least beam-on or dead ahead/astern; compensator coils reduce it but some residual error means NDB bearings are treated as approximate.',
-  reference: 'AIP ENR 4.1 — ADF'
-},
-
-{
   question: 'The key difference between an RNAV system and an RNP system is that an RNP system:',
   options: [
     'Uses only ground-based navigation aids to compute its position',
@@ -3735,19 +3592,6 @@ export const irexQuestions: {
   correct: 2,
   explanation: 'Protected areas are built around the navigation accuracy and assumed flight technique. Flying outside the lateral or vertical tolerances, e.g. more than a dot off below MDA or descending early at a step-down, can place the aircraft in terrain not assessed for clearance.',
   reference: 'ICAO Doc 8168 / AIP ENR 1.5'
-},
-
-{
-  question: 'The ADF relative bearing is:',
-  options: [
-    'The magnetic bearing measured directly from the aircraft straight across to the NDB ground station',
-    'The clockwise angle from the nose to the NDB, added to the heading to give the magnetic bearing',
-    'The bearing measured from the NDB station back toward the aircraft',
-    'The track the aircraft must fly to reach the NDB station'
-  ],
-  correct: 1,
-  explanation: 'Relative bearing is the angle measured clockwise from the aircraft\'s nose to the NDB. Magnetic bearing to the station = magnetic heading + relative bearing (subtract 360 if over). For example, heading 090 with RB 270 gives 360, due north.',
-  reference: 'AIP ENR 4.1'
 },
 
 {
@@ -4401,19 +4245,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Mode C transponder altitude reporting is required in controlled airspace because:',
-  options: [
-    'It encodes the aircraft\'s pressure altitude with the transponder reply',
-    'It gives the aircraft real-time traffic information from the other transponders that are nearby',
-    'It lets the aircraft communicate automatically with TCAS-equipped aircraft',
-    'It is required only above FL290 within RVSM airspace for separation'
-  ],
-  correct: 0,
-  explanation: 'Mode C encodes the aircraft\'s static pressure altitude and transmits it with each reply, so the radar display shows identity and altitude together, essential for IFR separation and surveillance and for TCAS in equipped aircraft. It is mandated for IFR in most controlled airspace.',
-  reference: 'Part 91 / AIP ENR 1.6'
-},
-
-{
   question: 'ADS-B differs from Mode C in that:',
   options: [
     'It requires an active radar interrogation before it will respond',
@@ -4687,19 +4518,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The aeronautical decision-making approach to deteriorating weather is to:',
-  options: [
-    'Continue into the deteriorating weather and declare an emergency only if needed',
-    'Ask ATC to manage the weather routing entirely on the pilot\'s behalf',
-    'Turn back only if the destination is below minima, otherwise continue the approach there regardless',
-    'Recognise the threat early, weigh diverting, holding or continuing against fuel and alternate, and decide in time'
-  ],
-  correct: 3,
-  explanation: 'Good ADM identifies deteriorating weather before it becomes a crisis and weighs the options, continue if the alternate is good and fuel allows, divert early while conditions and fuel are favourable, hold for forecast improvement, or return, the worst case being arrival below minima with too little fuel to divert.',
-  reference: 'CASA ADM guidance / AIP ENR 1.5'
-},
-
-{
   question: 'When ATC says \'maintain FL150 until further advised\', it means the aircraft:',
   options: [
     'May descend from FL150 whenever the pilot is ready to do so',
@@ -4775,19 +4593,6 @@ export const irexQuestions: {
   correct: 1,
   explanation: 'From the left of the desired inbound track the aircraft turns right across it. A 30° intercept of the 090°M track is flown on a heading of 090 + 30 = 120°M. The aircraft holds 120°M until the ADF shows the inbound track has been reached, then turns onto 090°M to track to the NDB.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 5.1.3'
-},
-
-{
-  question: 'D-ATIS (digital ATIS) at some Australian airports provides:',
-  options: [
-    'A recorded weather observation that is already 24 hours old',
-    'Only the wind information for the aerodrome, and nothing more',
-    'Digital ATIS sent by ACARS or VHF datalink in text form',
-    'A datalink service that happens to be available only on international flight sectors'
-  ],
-  correct: 2,
-  explanation: 'D-ATIS sends the current ATIS to equipped aircraft as text on a datalink display, the same content as voice ATIS (QNH, wind, weather, runway, approach and code letter). It reduces read-back errors and frequency congestion and lets the crew refer back to the text.',
-  reference: 'AIP COM / AIP AD'
 },
 
 {
@@ -5038,19 +4843,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Controlled Flight Into Terrain (CFIT) prevention strategies for IFR pilots include:',
-  options: [
-    'Avoiding CFIT is solely the responsibility of ATC and of its ground-based radar service alone',
-    'CFIT only occurs in mountainous areas, flat terrain is safe',
-    'EGPWS is always available on IFR aircraft and eliminates CFIT risk',
-    'Maintaining strict altitude discipline, never descending below published minimums, terrain awareness'
-  ],
-  correct: 3,
-  explanation: 'CFIT prevention: (1) Know MSA before descent; (2) Never descend below published altitudes without clearance/visual; (3) GPWS/EGPWS — respond to ALL terrain alerts immediately (terrain, terrain, pull up — PULL UP); (4) Cross-check GPS/FMS position against chart; (5) Do not continue approach if unstabilised; (6) Go around if in doubt — the runway is still there after a go-around. CFIT is the #1 cause of fatal IFR accidents.',
-  reference: 'ICAO CFIT guidance / AIP ENR 1.5'
-},
-
-{
   question: 'The immediate response to a GPWS "TERRAIN, TERRAIN, PULL UP" warning is:',
   options: [
     'Check the terrain on the navigation display before responding',
@@ -5074,19 +4866,6 @@ export const irexQuestions: {
   correct: 3,
   explanation: 'At approach speed and configuration the static system has a position (pressure) error, so the altimeter does not read exactly the DA. The pressure error correction is applied to the DA to give the aerodrome operating minima (AOM), the indicated altitude at which the pilot must begin the missed approach if the required visual reference is not available.',
   reference: 'AIP ENR 1.5 / Part 61 MOS Sch 3 IREX 4.4.5'
-},
-
-{
-  question: 'From a human performance perspective, the benefit of a continuous descent final approach (CDFA) on a 2D approach is that it:',
-  options: [
-    'Removes the need to set a missed approach altitude, reducing the number of actions for the pilot',
-    'Allows the aircraft to descend below the MDA a little earlier, giving more time to sight the runway',
-    'Eliminates the need to monitor altitude on final, because the rate of descent is fixed throughout',
-    'Gives a stabilised, constant descent that lowers workload and the CFIT risk of dive-and-drive'
-  ],
-  correct: 3,
-  explanation: 'A CDFA flies the final segment as a single continuous, stabilised descent toward the MDA/DA rather than the \'dive and drive\' step-down method. From a human-performance view this reduces workload and distraction close to the ground, keeps the aircraft stabilised, and cuts the controlled-flight-into-terrain risk associated with repeated low-level level-offs in the dive-and-drive technique.',
-  reference: 'AIP ENR 1.5 / Part 61 MOS Sch 3 IREX 8.1.5'
 },
 
 {
@@ -5181,19 +4960,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The "6 Ts" technique at fixes in IFR stands for:',
-  options: [
-    'Turn, Throttle, Track, Time, Talk, Transponder',
-    'The 6 Ts is only used for VFR navigation',
-    'Time, Turn, Throttle and Twist',
-    'Turn, then Terrain, Traffic, Track, Time and finally the Transponder'
-  ],
-  correct: 2,
-  explanation: '5 or 6 Ts at each fix: Time (note), Turn (to outbound/new heading), Throttle (set holding/approach power), Twist (set OBS to inbound course), Talk (report position if required), Timer (start for outbound leg). This structured approach prevents missed actions at the busiest phase of IFR.',
-  reference: 'AIP ENR 1.5'
-},
-
-{
   question: 'In the southern hemisphere, accelerating on an easterly or westerly heading causes the magnetic compass to indicate:',
   options: [
     'A turn toward the north, exactly as in the northern hemisphere',
@@ -5220,19 +4986,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An IFR approach briefing should be completed:',
-  options: [
-    'Only after the aircraft is already fully established on the ILS approach inbound to land',
-    'Only when the weather at the destination is forecast below minima',
-    'Before top of descent, confirming chart, course, altitudes, minima, missed approach and go-around power',
-    'Only for training flights, and never for normal line operations'
-  ],
-  correct: 2,
-  explanation: 'The briefing is done before top of descent, while workload is low: confirm the correct and current chart, the inbound course, step-down altitudes and the FAF, the DA/MDA and required visual reference, the missed approach and field elevation, and the go-around power.',
-  reference: 'AIP ENR 1.5'
-},
-
-{
   question: 'A ground-based augmentation system (GBAS) consists of:',
   options: [
     'A single satellite that rebroadcasts corrections to all aircraft',
@@ -5246,19 +4999,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'An IFR approach at night without approach lighting is more demanding because:',
-  options: [
-    'Night has no real practical effect on the conduct of an IFR approach to a lit runway',
-    'Visual acquisition at minima is harder, the runway found from edge lights alone with poor depth perception',
-    'Approach lighting is always available at every aerodrome during the night',
-    'Night IFR is permitted to use lower minima than are used by day'
-  ],
-  correct: 1,
-  explanation: 'Without approach lighting the visual segment relies on runway edge and threshold lights, and depth perception is poor at night, so the runway is harder to identify at the minima and a black-hole tendency to go low exists. Lighting serviceability should be checked by NOTAM.',
-  reference: 'AIP ENR 1.5'
-},
-
-{
   question: 'A destination TAF for the ETA includes \'TEMPO 4000 RA BKN012\'. The landing minimum is 4,500 m visibility and a 1,000 ft cloud base. The TEMPO means the pilot must plan for:',
   options: [
     'No provision, since the cloud base remains above the minimum',
@@ -5269,32 +5009,6 @@ export const irexQuestions: {
   correct: 1,
   explanation: 'A TEMPO (variations lasting 30 minutes up to an hour) below the landing minimum must be provided for with 60 minutes of holding fuel or an alternate. The visibility (4,000 m) is below the 4,500 m minimum, which triggers the requirement even though the cloud base (1,200 ft) stays above its minimum. An INTER would require 30 minutes.',
   reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 3.2.2'
-},
-
-{
-  question: 'The two fundamental properties of a gyroscope used in flight instruments are:',
-  options: [
-    'Rigidity in space and precession',
-    'Magnetism and magnetic dip',
-    'Pressure differential and lag',
-    'Resonance and aerodynamic damping'
-  ],
-  correct: 0,
-  explanation: 'A spinning gyro shows rigidity in space (it holds its spin-axis orientation, used by the attitude indicator and DI) and precession (a force on the rim acts 90 degrees later in the direction of spin, used by the turn indicator). Friction and Earth rotation cause unwanted precession, so the DI is realigned with the compass.',
-  reference: 'Part 61 MOS Sch 3 IREX 2.3.1'
-},
-
-{
-  question: 'The risk of controlled flight into terrain (CFIT) is highest during:',
-  options: [
-    'High-altitude cruise flight in clear, stable and smooth weather conditions well en-route',
-    'Approach and landing in IMC, especially non-precision approaches at night or in mountainous terrain',
-    'Only aircraft that are not fitted with any weather radar',
-    'It is no longer a significant risk in modern aviation'
-  ],
-  correct: 1,
-  explanation: 'CFIT, a controlled aircraft flown into terrain, is most likely on approach in IMC, particularly non-precision approaches in mountainous terrain, circling at night, or descending below minimum altitudes under pressure or workload. Altitude discipline and TAWS/GPWS use are the defences.',
-  reference: 'ICAO CFIT guidance / AIP ENR 1.5'
 },
 
 {
@@ -5350,19 +5064,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Usable fuel on board is 180 litres and the cruise burn is 45 litres per hour. The fuel endurance is:',
-  options: [
-    '3 hours',
-    '4 hours',
-    '4 hours 30 minutes',
-    '3 hours 30 minutes'
-  ],
-  correct: 1,
-  explanation: 'Fuel endurance = usable fuel divided by burn rate = 180 / 45 = 4 hours. Endurance is the total flying time available and is entered on the flight plan for SAR purposes.',
-  reference: 'AIP ENR 1.10'
-},
-
-{
   question: 'A piston IFR flight has 95 minutes of trip fuel and 5 minutes of taxi fuel. The destination TAF has an INTER below the landing minimum and the pilot carries holding fuel rather than nominating an alternate. The minimum fuel, in minutes, is:',
   options: [
     '205 minutes',
@@ -5412,19 +5113,6 @@ export const irexQuestions: {
   correct: 3,
   explanation: 'The missed-approach altitude gives obstacle clearance on the published missed-approach track and is climbed to as part of the procedure; the aircraft does not descend below it until ATC clears it. If the go-around is begun before the MAP, fly to the MAP before the missed-approach turn.',
   reference: 'AIP ENR 1.5 / ICAO Doc 8168'
-},
-
-{
-  question: 'A PAPI on a normal approach slope shows the pilot:',
-  options: [
-    'Two white lights together with two red lights',
-    'Four white lights arranged in a straight row',
-    'Four red lights arranged in a straight row',
-    'Three white lights together with one red light'
-  ],
-  correct: 0,
-  explanation: 'A PAPI is a row of four lights: on slope shows two white (far side) and two red (near side). More white means too high (three or four white) and more red means too low, with four red well below the slope.',
-  reference: 'AIP AD / MOS 2.3.17'
 },
 
 {
@@ -5503,19 +5191,6 @@ export const irexQuestions: {
   correct: 0,
   explanation: 'A PAL aerodrome can be an alternate with no responsible person on the ground if the aircraft carries dual VHF, or single VHF plus HF with 30 minutes holding fuel to allow ground staff to be alerted should the VHF fail.',
   reference: 'AIP ENR 1.1 / MOS 2.3.16'
-},
-
-{
-  question: 'The benefit of a stabilised approach over an unstabilised one is:',
-  options: [
-    'It allows the pilot to use approach minima that are noticeably lower than those published',
-    'Consistent energy and flight-path control that lowers workload on final and eases the transition to visual',
-    'It is required only of commercial pilots, not private ones',
-    'An unstabilised approach is fine if the pilot is experienced'
-  ],
-  correct: 1,
-  explanation: 'A stabilised approach is established on path, speed, configuration and power by the gate (about 1,000 ft in IMC), so the final segment needs few corrections and the workload falls when it matters most, with better capacity to go visual. Unstabilised approaches are a major factor in approach-and-landing accidents.',
-  reference: 'AIP ENR 1.5 / ICAO CFIT guidance'
 },
 
 {
@@ -5766,45 +5441,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Departing with 4 hours endurance, after 2 hours 30 minutes airborne the fuel remaining is:',
-  options: [
-    '2 hours',
-    '1 hour 30 minutes',
-    '1 hour',
-    '2 hours 30 minutes'
-  ],
-  correct: 1,
-  explanation: 'Endurance remaining = total endurance minus time airborne = 4 h 00 minus 2 h 30 = 1 h 30. This is compared against the fuel required to destination plus alternate plus final reserve.',
-  reference: 'Part 91 MOS 19 / AIP ENR 1.1'
-},
-
-{
-  question: 'An aircraft covers 40 nm in 20 minutes. Its groundspeed is:',
-  options: [
-    '100 kt',
-    '80 kt',
-    '150 kt',
-    '120 kt'
-  ],
-  correct: 3,
-  explanation: 'Groundspeed = distance divided by time = 40 nm in 20 minutes = 40 times (60/20) = 120 kt. The time-speed-distance relationship underlies groundspeed checks and revised estimates.',
-  reference: 'Navigation - time, speed and distance'
-},
-
-{
-  question: 'At a groundspeed of 200 kt, the time to fly the 50 nm remaining to a fix is:',
-  options: [
-    '10 minutes',
-    '15 minutes',
-    '20 minutes',
-    '25 minutes'
-  ],
-  correct: 1,
-  explanation: 'Time equals distance divided by groundspeed. 50 nm at 200 kt is 50/200 hours = 0.25 hour = 15 minutes. The same time-speed-distance relationship underlies revised estimates passed to ATC.',
-  reference: 'Navigation - time, speed and distance'
-},
-
-{
   question: 'On an instrument approach, reaching the tracking tolerance means the pilot must:',
   options: [
     'Discontinue the approach and go around',
@@ -5841,19 +5477,6 @@ export const irexQuestions: {
   correct: 0,
   explanation: '"Expect ILS 34": brief the approach now during descent. Load the approach in avionics, review the chart (confirm correct, check altitudes, DA/H, missed approach). When ATC issues the final clearance, confirm it matches the briefed approach. Briefing late (at the IAF or outer marker) creates excessive workload at a critical phase.',
   reference: 'AIP ENR 1.5'
-},
-
-{
-  question: 'The \'aviate, navigate, communicate\' priority exists because:',
-  options: [
-    'Control of the aircraft comes first, ahead of navigation and then communication',
-    'Communication is the single most important task throughout an IFR flight',
-    'Navigation is always the very highest priority during IFR flight at all times',
-    'All three priorities are treated as exactly equal during instrument flight'
-  ],
-  correct: 0,
-  explanation: 'Aircraft control comes first, an uncontrolled aircraft cannot be navigated or talked about; navigation is second to keep terrain and airspace clearance; communication is third. In an emergency, ATC calls must not distract from flying the aircraft.',
-  reference: 'ICAO Human Factors / AIP ENR 1.5'
 },
 
 {
@@ -5909,19 +5532,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The benefit of flying an instrument approach coupled to the autopilot is that it:',
-  options: [
-    'Removes the pilot\'s responsibility to monitor the approach',
-    'Reduces workload and improves tracking accuracy, freeing capacity to monitor',
-    'Allows the published minima to be disregarded once coupled',
-    'Guarantees the approach without any need to brief or configure'
-  ],
-  correct: 1,
-  explanation: 'A coupled approach reduces pilot workload and holds the lateral and vertical path accurately, freeing the pilot to monitor instruments, raw data and the approach progress; the pilot remains responsible and ready to disconnect and fly manually if needed.',
-  reference: 'MOS 8.1.5'
-},
-
-{
   question: 'An IFR pilot whose autopilot disconnects unexpectedly at low altitude in IMC should:',
   options: [
     'Continue looking at the autopilot panel to diagnose the problem',
@@ -5961,19 +5571,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'The \'early diversion decision\' principle means:',
-  options: [
-    'Always diverting before ever reaching the planned destination aerodrome',
-    'Diverting only after the first missed approach has been flown',
-    'Leaving the diversion decision entirely up to ATC controllers to make',
-    'Deciding to divert before fuel becomes marginal, while ample fuel still remains in the cruise'
-  ],
-  correct: 3,
-  explanation: 'Decision points are set before flight (\'if the METAR at ETA minus 30 shows X, divert\'). The earlier the decision, the more fuel remains for the alternate and contingencies; a late decision after a missed approach on minimum fuel removes options and creates an emergency.',
-  reference: 'Part 91 / CASA HF materials'
-},
-
-{
   question: 'The published missed-approach procedure provides obstacle clearance only if the aircraft:',
   options: [
     'Descends right down to the MDA before commencing the climb',
@@ -6010,19 +5607,6 @@ export const irexQuestions: {
   correct: 1,
   explanation: 'Burn rate = fuel used divided by time = 80 litres in 80 minutes = 1 litre per minute = 60 litres per hour. The burn rate underlies endurance and fuel-required calculations.',
   reference: 'Flight planning - fuel'
-},
-
-{
-  question: 'With QNH 1023 hPa at an aerodrome of elevation 500 ft, the pressure altitude is approximately:',
-  options: [
-    '200 ft',
-    '800 ft',
-    '500 ft',
-    '300 ft'
-  ],
-  correct: 0,
-  explanation: 'Pressure altitude = elevation + (1013 minus QNH) times about 30 ft per hPa = 500 + (1013 minus 1023) times 30 = 500 minus 300 = 200 ft. With QNH above 1013 the pressure altitude is below the elevation.',
-  reference: 'AIP ENR 1.7 / GEN 2.1'
 },
 
 {
@@ -6101,19 +5685,6 @@ export const irexQuestions: {
   correct: 0,
   explanation: 'A fix is the intersection of a radial and a DME circle; accuracy is best when they cross near 90 degrees and worst when nearly parallel, which produces a long, thin error ellipse. The same geometry principle applies to any pair of intersecting position lines.',
   reference: 'AIP ENR 4.1'
-},
-
-{
-  question: 'With a crosswind component of 15 kt and a TAS of 150 kt, the approximate wind correction angle is:',
-  options: [
-    '3 degrees',
-    '9 degrees',
-    '6 degrees',
-    '12 degrees'
-  ],
-  correct: 2,
-  explanation: 'Wind correction angle is approximately 60 times the crosswind component divided by TAS = 60 times 15/150 = 6 degrees. The aircraft is headed into wind by this angle to track the desired course.',
-  reference: 'Navigation - wind correction angle'
 },
 
 {
@@ -6234,19 +5805,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'To lose 1,500 ft in 3 minutes, the rate of descent required is:',
-  options: [
-    '500 ft/min',
-    '300 ft/min',
-    '750 ft/min',
-    '1,000 ft/min'
-  ],
-  correct: 0,
-  explanation: 'Rate of descent = height to lose divided by time = 1,500 ft in 3 minutes = 500 ft per minute. The descent is planned so this rate keeps the aircraft on the desired profile.',
-  reference: 'Navigation - descent planning'
-},
-
-{
   question: 'A GNSS approach "LPV" (Localiser Performance with Vertical guidance) provides:',
   options: [
     'The same minima as a standard ILS',
@@ -6273,19 +5831,6 @@ export const irexQuestions: {
 },
 
 {
-  question: 'Flying at a groundspeed of 120 kt for 18 minutes, the distance covered is:',
-  options: [
-    '24 nm',
-    '30 nm',
-    '36 nm',
-    '42 nm'
-  ],
-  correct: 2,
-  explanation: 'Distance equals groundspeed times time. 120 kt for 18 minutes (0.3 hour) gives 120 x 0.3 = 36 nm. Reliable groundspeed and timing keep position estimates accurate between fixes.',
-  reference: 'Navigation - time, speed and distance'
-},
-
-{
   question: 'A no-gyro approach is requested when:',
   options: [
     'The aircraft is not fitted with any GPS receiver',
@@ -6309,19 +5854,6 @@ export const irexQuestions: {
   correct: 0,
   explanation: 'At a fly-by waypoint the FMS starts a lead turn before the fix to roll smoothly onto the next leg. At a fly-over waypoint the aircraft must cross the fix before turning, used where obstacle clearance requires it; turning early at a fly-over waypoint breaches that clearance.',
   reference: 'ICAO Doc 8168 / AIP ENR 1.5'
-},
-
-{
-  question: 'With 96 litres of usable fuel and a cruise burn of 32 litres per hour, the endurance is:',
-  options: [
-    '2 hours',
-    '2 hours 30 minutes',
-    '3 hours',
-    '3 hours 30 minutes'
-  ],
-  correct: 2,
-  explanation: 'Endurance equals usable fuel divided by fuel flow: 96 / 32 = 3 hours. Required reserves (including the fixed final reserve) must be subtracted before working out the time available for the planned flight.',
-  reference: 'Flight planning - fuel'
 },
 
 {
