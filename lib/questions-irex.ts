@@ -61,13 +61,13 @@ export const irexQuestions: {
 {
   question: 'When conducting an IFR flight, the pilot must obtain an airways clearance:',
   options: [
-    'Before departure, a clearance must be obtained before commencing any IFR flight in controlled or uncontrolled airspace',
+    'Before entering controlled airspace; in Class G no airways clearance is issued and the pilot provides own separation',
     'Only when entering Class C airspace, because a clearance is not needed for any other class and can be requested in the air',
-    'Before entering controlled airspace and before commencing the IFR flight in Class G',
+    'Before commencing any IFR flight, including one conducted wholly within Class G uncontrolled airspace',
     'Only when the flight is planned to operate above FL180 in the upper information region'
   ],
   correct: 0,
-  explanation: 'An IFR clearance must be obtained before commencing an IFR flight. In controlled airspace, ATC issues the clearance and provides separation. In Class G (uncontrolled) airspace, the pilot must obtain an airways clearance via radio before commencing IFR and must comply with IFR procedures throughout.',
+  explanation: 'An airways clearance is required before entering controlled airspace (Class A, C, D or E as IFR), where ATC issues the clearance and provides separation. In Class G (uncontrolled) airspace no airways clearance is issued; the IFR pilot operates without an ATC clearance and provides own separation, while still complying with IFR procedures and flight notification.',
   reference: 'AIP ENR 1.1 / CASR Part 91'
 },
 
@@ -428,7 +428,7 @@ export const irexQuestions: {
     'The aircraft becomes too high to complete a normal descent profile on the final approach segment to the runway',
     'The reported visibility is below the published straight-in landing minima',
     'ATC requires the aircraft to fly a 360-degree orbit for traffic sequencing',
-    'The final approach track is not within about 30 degrees of the runway, or another runway is required'
+    'The final approach track is not within about 30 degrees of the runway, or a different runway must be used for landing'
   ],
   correct: 3,
   explanation: 'Circling is flown when the instrument approach is not aligned with the landing runway, the final approach track differs from the runway by more than about 30 degrees, or the pilot must land on a different runway. The pilot descends to the circling minima, becomes visual, and manoeuvres within the circling area to land. Circling minima are higher than straight-in minima.',
@@ -516,13 +516,13 @@ export const irexQuestions: {
 {
   question: 'Under the IFR, descent below the LSALT/MSA is permitted only when the aircraft is:',
   options: [
-    'In VMC that happens to exist somewhere below the lowest safe altitude',
-    'Established on an instrument approach, cleared by ATC, in VMC by day, or meeting another AIP condition',
-    'Radar-identified, with ATC having issued any form of descent clearance',
+    'Below the LSALT whenever the pilot can see the ground, by day or by night',
+    'Established on an instrument or visual approach, assigned a level by ATC in controlled airspace, or in VMC by day',
+    'Issued any descent clearance by ATC, regardless of the airspace class or terrain responsibility',
     'Assessed by the pilot personally to have adequate terrain clearance on whatever evidence happens to be available'
   ],
   correct: 1,
-  explanation: 'Descent below LSALT/MSA under the IFR is only permitted when authorised — captured by the \'VIVAT\' conditions: Visual approach/departure, Instrument approach/departure, VMC by day, ATC clearance, or Take-off/landing. Descending below LSALT outside these conditions removes assured terrain clearance.',
+  explanation: 'Descent below LSALT/MSA under the IFR is only permitted when authorised, captured by the \'VIVAT\' conditions: Visual approach/departure, Instrument approach/departure, VMC by day, ATC-assigned level in controlled airspace, or Take-off/landing. Merely seeing the ground, a descent clearance that does not assure terrain clearance (as in Class G), or the pilot\'s own assessment do not authorise it.',
   reference: 'AIP GEN 3.3 — minimum heights (VIVAT)'
 },
 
@@ -1764,8 +1764,8 @@ export const irexQuestions: {
 {
   question: 'The table of cruising altitudes/levels for IFR in Australian airspace follows which rule?',
   options: [
-    'Below the transition altitude, odd thousands of feet (1,000, 3,000 etc.) for tracks 000-179 degrees M',
-    'Odd hundreds of feet are used for all IFR tracks regardless of the direction of flight',
+    'Below the transition altitude, odd thousands of feet (1,000, 3,000, 5,000) for tracks 000-179 degrees M',
+    'Odd hundreds of feet are used for all IFR tracks, regardless of the direction of flight at all',
     'Flight levels only are used; altitude is never used for IFR cruising',
     'ATC assigns every IFR cruising level, so the pilot has no choice in it'
   ],
@@ -2284,8 +2284,8 @@ export const irexQuestions: {
 {
   question: 'During a circling approach, if visual reference is lost the pilot should:',
   options: [
-    'Make an immediate climbing turn toward the runway, climb to the circling MCA, then fly the missed approach or as cleared',
-    'Continue toward the runway using only the last estimated position from before the visual reference was lost',
+    'Make a climbing turn toward the runway, climb to the circling MCA, then fly the missed approach unless ATC directs otherwise',
+    'Continue toward the runway using only the last estimated position from just before the visual reference was lost',
     'Descend to runway level and attempt to locate the runway visually from there',
     'Fly a standard-rate turn in the direction of the published holding pattern'
   ],
@@ -4404,7 +4404,7 @@ export const irexQuestions: {
   question: 'The transponder code 7700 indicates:',
   options: [
     'Unlawful interference or a hijack of the aircraft in progress',
-    'A general emergency, such as loss of control, fire or a medical or other life-threatening situation',
+    'A general emergency such as loss of control, an engine fire, or a serious medical emergency',
     'A radio communication failure, with the aircraft now operating completely without radios',
     'A TCAS resolution advisory currently in progress'
   ],
