@@ -14,7 +14,7 @@ export const ADMIN_EMAILS: string[] = [
 // subscription required. These users skip checkout at signup and are
 // never charged. They still create an account with this exact email.
 export const FREE_ACCESS_EMAILS: string[] = [
-  // 'instructor@flightschool.com.au',
+  'lachlanholmes@icloud.com',
 ]
 
 // Licences not yet released — shown but locked with a "Coming soon" state.
