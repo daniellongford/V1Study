@@ -37,14 +37,6 @@ const PLAN_ACCESS: Record<string, string[]> = {
   FULL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Human Factors', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology', 'Navigation', 'Flight Planning', 'Air Law', 'Instrument Rating'],
 }
 
-const TRIAL_LIMITS: Record<string, number> = {
-  'PPL Theory': 15,
-  'Instrument Rating': 10,
-}
-function getTrialLimit(subject: string): number {
-  return TRIAL_LIMITS[subject] || 5
-}
-
 // Licences not yet released — shown but locked with a "Coming soon" state
 const COMING_SOON_LICENCES = ['ATPL']
 
@@ -70,8 +62,8 @@ export default function Dashboard() {
   const [bestScores, setBestScores] = useState<Record<string, number>>({})
   const [plan, setPlan] = useState<string | null>(null)
   const [planStatus, setPlanStatus] = useState<string | null>(null)
+  const [trialEnd, setTrialEnd] = useState<string | null>(null)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [trialUsage, setTrialUsage] = useState<Record<string, number>>({})
   const isMobile = useIsMobile()
 
   useEffect(() => {
@@ -82,7 +74,6 @@ export default function Dashboard() {
         setUser(data.user)
         loadScores(data.user.id)
         loadPlan(data.user.id)
-        loadTrialUsage(data.user.id)
         setLoading(false)
       }
     })
@@ -91,25 +82,14 @@ export default function Dashboard() {
   async function loadPlan(userId: string) {
     const { data } = await supabase
       .from('subscriptions')
-      .select('plan, status')
+      .select('plan, status, trial_end')
       .eq('user_id', userId)
       .in('status', ['active', 'cancelling'])
       .single()
     if (data) {
       setPlan(data.plan)
       setPlanStatus(data.status)
-    }
-  }
-
-  async function loadTrialUsage(userId: string) {
-    const { data } = await supabase
-      .from('trial_usage')
-      .select('subject, questions_used')
-      .eq('user_id', userId)
-    if (data) {
-      const usage: Record<string, number> = {}
-      data.forEach((row: any) => { usage[row.subject] = row.questions_used })
-      setTrialUsage(usage)
+      setTrialEnd(data.trial_end ?? null)
     }
   }
 
@@ -143,11 +123,9 @@ export default function Dashboard() {
     return PLAN_ACCESS[plan]?.includes(subject) ?? false
   }
 
-  function getTrialStatus(subject: string): { used: number; limit: number; exhausted: boolean } {
-    const used = trialUsage[subject] || 0
-    const limit = getTrialLimit(subject)
-    return { used, limit, exhausted: used >= limit }
-  }
+  // Days remaining in the Stripe free trial (if any)
+  const trialDaysLeft = trialEnd ? Math.max(0, Math.ceil((new Date(trialEnd).getTime() - Date.now()) / (1000 * 60 * 60 * 24))) : 0
+  const inTrial = trialDaysLeft > 0
 
   if (loading) return (
     <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif' }}>
@@ -218,6 +196,19 @@ export default function Dashboard() {
           )}
         </div>
 
+        {/* TRIAL BANNER */}
+        {inTrial && (
+          <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '12px', padding: '14px 18px', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
+            <div>
+              <div style={{ fontSize: '13px', fontWeight: '700', color: '#1e3a8a', marginBottom: '2px' }}>
+                Free trial — {trialDaysLeft} day{trialDaysLeft !== 1 ? 's' : ''} left
+              </div>
+              <div style={{ fontSize: '12px', color: '#3b5fa4' }}>You&apos;ll be charged when your trial ends. Cancel anytime before then.</div>
+            </div>
+            <a href="/pricing" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '8px 16px', textDecoration: 'none', fontWeight: '600', fontSize: '13px', flexShrink: 0 }}>Manage plan</a>
+          </div>
+        )}
+
         {/* LICENCE TABS */}
         <div style={{ display: 'flex', gap: '8px', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
           {Object.keys(subjectsByLicence).map((licence) => (
@@ -233,7 +224,6 @@ export default function Dashboard() {
             const best = bestScores[subject]
             const hasPassed = best !== undefined && best >= passMark
             const accessible = hasAccess(subject)
-            const trial = getTrialStatus(subject)
             const comingSoon = COMING_SOON_LICENCES.includes(selectedLicence) && !isAdmin
 
             if (comingSoon) {
@@ -263,28 +253,22 @@ export default function Dashboard() {
                       Best: {best}%{hasPassed ? ' ✓' : ''}
                     </div>
                   )}
-                  {!accessible && trial.exhausted && <div style={{ fontSize: '11px', color: '#94a3b8' }}>Trial complete</div>}
-                  {!accessible && !trial.exhausted && trial.used > 0 && <div style={{ fontSize: '11px', color: '#64748b' }}>{trial.used}/{trial.limit} used</div>}
-                  {!accessible && !trial.exhausted && trial.used === 0 && <div style={{ fontSize: '11px', color: '#94a3b8' }}>{trial.limit} free questions</div>}
+                  {!accessible && <div style={{ fontSize: '11px', color: '#94a3b8' }}>Locked</div>}
                 </div>
                 <div>
                   <div style={{ fontSize: '14px', fontWeight: '600', color: '#0a1628', lineHeight: 1.3, marginBottom: '4px' }}>{subject}</div>
                   <div style={{ fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>
-                    {accessible ? '10 questions · Pass mark ' + passMark + '%' : trial.exhausted ? 'Trial complete — subscribe for unlimited access' : `${trial.limit - trial.used} trial questions remaining`}
+                    {accessible ? '10 questions · Pass mark ' + passMark + '%' : 'Subscribe to unlock this exam'}
                   </div>
                 </div>
                 {accessible ? (
                   <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
                     Start Quiz →
                   </button>
-                ) : trial.exhausted ? (
-                  <a href="/pricing" style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
-                    Subscribe to continue →
-                  </a>
                 ) : (
-                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', minHeight: '44px' }}>
-                    Start free trial →
-                  </button>
+                  <a href="/pricing" style={{ background: 'white', color: '#0a1628', border: '2px solid #2563eb', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
+                    Subscribe to unlock →
+                  </a>
                 )}
               </div>
             )
