@@ -75,7 +75,11 @@ export async function POST(request: NextRequest) {
     const plan = PRICE_TO_PLAN[priceId] || null
 
     await supabase.from('subscriptions')
-      .update({ status, plan })
+      .update({
+        status,
+        plan,
+        trial_end: subscription.trial_end ? new Date(subscription.trial_end * 1000).toISOString() : null,
+      })
       .eq('stripe_subscription_id', subscription.id)
   }
 
