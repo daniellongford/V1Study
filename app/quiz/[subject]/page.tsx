@@ -1,22 +1,18 @@
 'use client'
 import { useState, useEffect, useRef, use } from 'react'
 import { supabase } from '../../../lib/supabase'
-import { freeQuestions } from '../../../lib/questions'
 import { FULL_BANKS, getLicence } from '../../../lib/question-banks'
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 function findBank(subject: string): any[] {
-  // Try full bank first (subscribed users), fall back to free questions
+  // All access is plan-gated (full access during trial), so always serve the
+  // full audited bank. No separate free-question pool.
   const full = FULL_BANKS[subject]
   if (full && full.length > 0) return full
-  if (freeQuestions[subject]) return freeQuestions[subject]
   const lower = subject.toLowerCase().trim()
   for (const key of Object.keys(FULL_BANKS)) {
     if (key.toLowerCase().trim() === lower && FULL_BANKS[key].length > 0) return FULL_BANKS[key]
-  }
-  for (const key of Object.keys(freeQuestions)) {
-    if (key.toLowerCase().trim() === lower) return freeQuestions[key]
   }
   return []
 }
@@ -108,8 +104,19 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const ADMIN_EMAILS = ['daniel.longford1@gmail.com']
   const licenceComingSoon = COMING_SOON_LICENCES.includes(getLicence(subject))
 
+  // Which subjects each plan unlocks
+  const PLAN_ACCESS: Record<string, string[]> = {
+    PPL: ['PPL Theory'],
+    CPL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law'],
+    ATPL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Aerodynamics and Systems', 'Performance and Loading', 'Flight Planning', 'Air Law'],
+    IREX: ['Instrument Rating'],
+    FULL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Aerodynamics and Systems', 'Performance and Loading', 'Flight Planning', 'Air Law', 'Instrument Rating'],
+  }
+
   const [isAdmin, setIsAdmin] = useState(false)
   const [authChecked, setAuthChecked] = useState(false)
+  const [accessChecked, setAccessChecked] = useState(false)
+  const [hasAccess, setHasAccess] = useState(false)
 
   const [questions, setQuestions] = useState<any[]>([])
   const [currentIdx, setCurrentIdx] = useState(0)
@@ -129,11 +136,42 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const userIdRef = useRef<string | null>(null)
 
   useEffect(() => {
-    supabase.auth.getUser().then(({ data }) => {
-      setIsAdmin(data.user?.email ? ADMIN_EMAILS.includes(data.user.email) : false)
+    async function checkAccess() {
+      const { data } = await supabase.auth.getUser()
+      const user = data.user
+      const admin = user?.email ? ADMIN_EMAILS.includes(user.email) : false
+      setIsAdmin(admin)
       setAuthChecked(true)
-    })
-  }, [])
+
+      if (admin) {
+        setHasAccess(true)
+        setAccessChecked(true)
+        return
+      }
+
+      if (!user) {
+        setHasAccess(false)
+        setAccessChecked(true)
+        return
+      }
+
+      // Check active/trialing subscription covers this subject
+      const { data: sub } = await supabase
+        .from('subscriptions')
+        .select('plan, status')
+        .eq('user_id', user.id)
+        .eq('status', 'active')
+        .single()
+
+      if (sub && PLAN_ACCESS[sub.plan]?.includes(subject)) {
+        setHasAccess(true)
+      } else {
+        setHasAccess(false)
+      }
+      setAccessChecked(true)
+    }
+    checkAccess()
+  }, [subject])
 
   useEffect(() => {
     if (!subject) return
@@ -248,8 +286,21 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
     </main>
   )
 
+  // ── No subscription access ──────────────────────────────────────────────────
+  if (accessChecked && !hasAccess && !licenceComingSoon) return (
+    <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
+      <div style={{ background: 'white', borderRadius: '16px', padding: '2.5rem', maxWidth: '440px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
+        <div style={{ fontSize: '13px', color: '#94a3b8', fontFamily: 'monospace', marginBottom: '12px', letterSpacing: '0.08em' }}>{subject}</div>
+        <h1 style={{ fontSize: '22px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Subscribe to access this exam</h1>
+        <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1.5rem', lineHeight: 1.6 }}>Start your 7 day free trial to unlock this subject and start practising. You won&apos;t be charged until day 7.</p>
+        <a href="/pricing" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 28px', textDecoration: 'none', fontWeight: '600', fontSize: '14px', display: 'inline-block', marginBottom: '12px' }}>View plans</a>
+        <div><a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '13px' }}>Back to dashboard</a></div>
+      </div>
+    </main>
+  )
+
   // ── Loading ────────────────────────────────────────────────────────────────
-  if (loading || !subject || questions.length === 0) return (
+  if (loading || !subject || !accessChecked || questions.length === 0) return (
     <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif', flexDirection: 'column', gap: '1rem' }}>
       <p style={{ color: '#64748b', fontSize: '16px' }}>Loading questions...</p>
       <a href="/dashboard" style={{ color: '#2563eb', textDecoration: 'none' }}>Back to dashboard</a>
