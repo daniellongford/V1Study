@@ -103,6 +103,14 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const resolvedParams = use(params)
   const subject = decodeURIComponent(resolvedParams.subject || '')
 
+  // Licences not yet released — block direct URL access with a coming soon screen
+  const COMING_SOON_LICENCES = ['ATPL']
+  const ADMIN_EMAILS = ['daniel.longford1@gmail.com']
+  const licenceComingSoon = COMING_SOON_LICENCES.includes(getLicence(subject))
+
+  const [isAdmin, setIsAdmin] = useState(false)
+  const [authChecked, setAuthChecked] = useState(false)
+
   const [questions, setQuestions] = useState<any[]>([])
   const [currentIdx, setCurrentIdx] = useState(0)
   const [answered, setAnswered] = useState(false)
@@ -119,6 +127,13 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const sessionIndicesRef = useRef<number[]>([])
   const resetRef = useRef(false)
   const userIdRef = useRef<string | null>(null)
+
+  useEffect(() => {
+    supabase.auth.getUser().then(({ data }) => {
+      setIsAdmin(data.user?.email ? ADMIN_EMAILS.includes(data.user.email) : false)
+      setAuthChecked(true)
+    })
+  }, [])
 
   useEffect(() => {
     if (!subject) return
@@ -220,6 +235,18 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   }
 
   // ── Progress pill ──────────────────────────────────────────────────────────
+
+  // ── Coming soon (licence not yet released) ──────────────────────────────────
+  if (licenceComingSoon && authChecked && !isAdmin) return (
+    <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
+      <div style={{ background: 'white', borderRadius: '16px', padding: '2.5rem', maxWidth: '440px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
+        <div style={{ fontSize: '13px', color: '#94a3b8', fontFamily: 'monospace', marginBottom: '12px', letterSpacing: '0.08em' }}>{subject}</div>
+        <h1 style={{ fontSize: '22px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Coming soon</h1>
+        <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1.5rem', lineHeight: 1.6 }}>This exam is being finalised and will be available shortly. Thanks for your patience.</p>
+        <a href="/dashboard" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 28px', textDecoration: 'none', fontWeight: '600', fontSize: '14px', display: 'inline-block' }}>Back to dashboard</a>
+      </div>
+    </main>
+  )
 
   // ── Loading ────────────────────────────────────────────────────────────────
   if (loading || !subject || questions.length === 0) return (
