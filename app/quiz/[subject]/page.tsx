@@ -421,6 +421,8 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
             {currentIdx < questions.length - 1 ? 'Next question →' : 'See results →'}
           </button>
         )}
+
+        {answered && <FlagPanel question={q} subject={subject} userId={userIdRef.current} />}
       </div>
     </main>
   )
@@ -504,6 +506,109 @@ function AiHelpPanel({ question, subject }: { question: any; subject: string }) 
           )}
         </div>
       )}
+    </div>
+  )
+}
+
+// ── Flag Question Panel ───────────────────────────────────────────────────────
+
+function FlagPanel({ question, subject, userId }: { question: any; subject: string; userId: string | null }) {
+  const [open, setOpen] = useState(false)
+  const [reason, setReason] = useState('')
+  const [otherText, setOtherText] = useState('')
+  const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
+
+  const reasons = [
+    'Incorrect answer',
+    'Typo or unclear wording',
+    'More than one correct answer',
+    'Out of date / not current CASA',
+    'Other',
+  ]
+
+  async function handleSubmit() {
+    if (!reason) return
+    setLoading(true)
+    const finalReason = reason === 'Other' ? (otherText.trim() || 'Other') : reason
+    try {
+      await fetch('/api/flag-question', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId,
+          subject,
+          question: question.question,
+          correctAnswer: question.options[question.correct],
+          reason: finalReason,
+        }),
+      })
+      setSent(true)
+    } catch (e) {
+      setSent(true)
+    }
+    setLoading(false)
+  }
+
+  if (sent) {
+    return (
+      <div style={{ marginTop: '12px', textAlign: 'center', fontSize: '12px', color: '#64748b' }}>
+        ✓ Thanks — this question has been flagged for review.
+      </div>
+    )
+  }
+
+  if (!open) {
+    return (
+      <div style={{ marginTop: '12px', textAlign: 'center' }}>
+        <button
+          onClick={() => setOpen(true)}
+          style={{ background: 'none', border: 'none', color: '#94a3b8', fontSize: '12px', cursor: 'pointer', textDecoration: 'underline' }}
+        >
+          ⚑ Flag this question
+        </button>
+      </div>
+    )
+  }
+
+  return (
+    <div style={{ marginTop: '12px', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '10px', padding: '1rem' }}>
+      <div style={{ fontSize: '13px', fontWeight: '600', color: '#0a1628', marginBottom: '10px' }}>What&apos;s wrong with this question?</div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '10px' }}>
+        {reasons.map((r) => (
+          <button
+            key={r}
+            onClick={() => setReason(r)}
+            style={{ textAlign: 'left', padding: '8px 12px', borderRadius: '8px', border: reason === r ? '2px solid #2563eb' : '1px solid #e2e8f0', background: reason === r ? '#eff6ff' : 'white', fontSize: '13px', color: '#0a1628', cursor: 'pointer' }}
+          >
+            {r}
+          </button>
+        ))}
+      </div>
+      {reason === 'Other' && (
+        <textarea
+          placeholder="Tell us more..."
+          value={otherText}
+          onChange={e => setOtherText(e.target.value)}
+          rows={2}
+          style={{ width: '100%', padding: '8px 12px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '13px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '10px' }}
+        />
+      )}
+      <div style={{ display: 'flex', gap: '8px' }}>
+        <button
+          onClick={handleSubmit}
+          disabled={!reason || loading}
+          style={{ background: !reason || loading ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '9px 18px', fontSize: '13px', fontWeight: '600', cursor: !reason || loading ? 'not-allowed' : 'pointer' }}
+        >
+          {loading ? 'Sending...' : 'Submit flag'}
+        </button>
+        <button
+          onClick={() => { setOpen(false); setReason(''); setOtherText('') }}
+          style={{ background: 'none', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '9px 14px', fontSize: '13px', color: '#64748b', cursor: 'pointer' }}
+        >
+          Cancel
+        </button>
+      </div>
     </div>
   )
 }
