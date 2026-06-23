@@ -46,10 +46,10 @@ function SignUpInner() {
       return
     }
 
-    // 1a. Complimentary accounts skip checkout entirely
+    // 1a. Complimentary accounts skip checkout entirely — sign in and go straight to dashboard
     if (FREE_ACCESS_EMAILS.includes(email)) {
-      setMessage('Account created. Please check your email to confirm, then log in.')
-      setLoading(false)
+      await supabase.auth.signInWithPassword({ email, password })
+      window.location.href = '/dashboard'
       return
     }
 
