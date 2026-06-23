@@ -31,20 +31,20 @@ export default function ContactPage() {
 
   return (
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
-      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: 'clamp(0.875rem, 3vw, 1rem) clamp(1.25rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <a href="/" style={{ textDecoration: 'none' }}>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
         </a>
-        <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: 'clamp(1.25rem, 4vw, 2rem)', alignItems: 'center' }}>
           <a href="/login" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Login</a>
           <a href="/signup" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Sign up free</a>
         </div>
       </nav>
 
-      <div style={{ maxWidth: '600px', margin: '0 auto', padding: '4rem 2rem' }}>
-        <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <h1 style={{ fontSize: '36px', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>Get in touch</h1>
+      <div style={{ maxWidth: '600px', margin: '0 auto', padding: 'clamp(2.5rem, 6vw, 4rem) clamp(1.25rem, 4vw, 2rem)' }}>
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 3rem)' }}>
+          <h1 style={{ fontSize: 'clamp(28px, 7vw, 36px)', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>Get in touch</h1>
           <p style={{ fontSize: '16px', color: '#64748b' }}>Have a question about V1 Study? We&apos;re here to help.</p>
         </div>
 
@@ -62,7 +62,7 @@ export default function ContactPage() {
         </div>
 
         {!sent ? (
-          <div style={{ background: 'white', borderRadius: '16px', padding: '2rem', border: '1px solid #e2e8f0' }}>
+          <div style={{ background: 'white', borderRadius: '16px', padding: 'clamp(1.5rem, 5vw, 2rem)', border: '1px solid #e2e8f0' }}>
             <h2 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', marginBottom: '1.5rem' }}>Send a message</h2>
             <div style={{ marginBottom: '1rem' }}>
               <label style={{ fontSize: '13px', fontWeight: '600', color: '#374151', display: 'block', marginBottom: '6px' }}>Your name</label>
@@ -81,7 +81,7 @@ export default function ContactPage() {
             </button>
           </div>
         ) : (
-          <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '2rem', textAlign: 'center' }}>
+          <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '16px', padding: 'clamp(1.5rem, 5vw, 2rem)', textAlign: 'center' }}>
             <div style={{ fontSize: '48px', marginBottom: '1rem' }}>✉️</div>
             <h2 style={{ fontSize: '20px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Message sent!</h2>
             <p style={{ fontSize: '14px', color: '#64748b' }}>We&apos;ll get back to you within 24 hours.</p>
