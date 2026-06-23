@@ -124,6 +124,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const sessionIndicesRef = useRef<number[]>([])
   const resetRef = useRef(false)
   const userIdRef = useRef<string | null>(null)
+  const userEmailRef = useRef<string | null>(null)
 
   useEffect(() => {
     async function checkAccess() {
@@ -180,6 +181,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
       try {
         const { data: { user } } = await supabase.auth.getUser()
         userIdRef.current = user?.id ?? null
+        userEmailRef.current = user?.email ?? null
 
         const seen = user ? await loadSeen(user.id, subject) : []
         setSeenCount(seen.length)
@@ -422,7 +424,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
           </button>
         )}
 
-        {answered && <FlagPanel question={q} subject={subject} userId={userIdRef.current} />}
+        {answered && <FlagPanel question={q} subject={subject} userId={userIdRef.current} userEmail={userEmailRef.current} />}
       </div>
     </main>
   )
@@ -512,7 +514,7 @@ function AiHelpPanel({ question, subject }: { question: any; subject: string }) 
 
 // ── Flag Question Panel ───────────────────────────────────────────────────────
 
-function FlagPanel({ question, subject, userId }: { question: any; subject: string; userId: string | null }) {
+function FlagPanel({ question, subject, userId, userEmail }: { question: any; subject: string; userId: string | null; userEmail: string | null }) {
   const [open, setOpen] = useState(false)
   const [reason, setReason] = useState('')
   const [otherText, setOtherText] = useState('')
@@ -537,6 +539,7 @@ function FlagPanel({ question, subject, userId }: { question: any; subject: stri
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           userId,
+          userEmail,
           subject,
           question: question.question,
           correctAnswer: question.options[question.correct],
