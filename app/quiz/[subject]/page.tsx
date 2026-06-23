@@ -275,8 +275,8 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
 
   // ── Coming soon (licence not yet released) ──────────────────────────────────
   if (licenceComingSoon && authChecked && !isAdmin) return (
-    <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
-      <div style={{ background: 'white', borderRadius: '16px', padding: '2.5rem', maxWidth: '440px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
+    <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 'clamp(1.25rem, 4vw, 2rem)' }}>
+      <div style={{ background: 'white', borderRadius: '16px', padding: 'clamp(1.5rem, 5vw, 2.5rem)', maxWidth: '440px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
         <div style={{ fontSize: '13px', color: '#94a3b8', fontFamily: 'monospace', marginBottom: '12px', letterSpacing: '0.08em' }}>{subject}</div>
         <h1 style={{ fontSize: '22px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Coming soon</h1>
         <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1.5rem', lineHeight: 1.6 }}>This exam is being finalised and will be available shortly. Thanks for your patience.</p>
@@ -287,8 +287,8 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
 
   // ── No subscription access ──────────────────────────────────────────────────
   if (accessChecked && !hasAccess && !licenceComingSoon) return (
-    <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
-      <div style={{ background: 'white', borderRadius: '16px', padding: '2.5rem', maxWidth: '440px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
+    <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 'clamp(1.25rem, 4vw, 2rem)' }}>
+      <div style={{ background: 'white', borderRadius: '16px', padding: 'clamp(1.5rem, 5vw, 2.5rem)', maxWidth: '440px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
         <div style={{ fontSize: '13px', color: '#94a3b8', fontFamily: 'monospace', marginBottom: '12px', letterSpacing: '0.08em' }}>{subject}</div>
         <h1 style={{ fontSize: '22px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Subscribe to access this exam</h1>
         <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1.5rem', lineHeight: 1.6 }}>Start your 7 day free trial to unlock this subject and start practising. You won&apos;t be charged until day 7.</p>
@@ -310,8 +310,8 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   if (finished) {
     const pct = Math.round(finalScore / questions.length * 100)
     return (
-      <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
-        <div style={{ background: 'white', borderRadius: '16px', padding: '2.5rem', maxWidth: '500px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
+      <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 'clamp(1.25rem, 4vw, 2rem)' }}>
+        <div style={{ background: 'white', borderRadius: '16px', padding: 'clamp(1.5rem, 5vw, 2.5rem)', maxWidth: '500px', width: '100%', border: '1px solid #e2e8f0', textAlign: 'center' }}>
           <div style={{ fontSize: '13px', color: '#94a3b8', fontFamily: 'monospace', marginBottom: '8px' }}>{subject}</div>
           <div style={{ fontSize: '56px', fontWeight: '800', color: '#1e3a6e', fontFamily: 'monospace' }}>{pct}</div>
           <div style={{ fontSize: '16px', color: '#64748b', marginBottom: '8px' }}>percent</div>
@@ -354,7 +354,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
 
   return (
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
-      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: 'clamp(0.875rem, 3vw, 1rem) clamp(1.25rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
@@ -365,7 +365,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         </div>
       </nav>
 
-      <div style={{ maxWidth: '700px', margin: '0 auto', padding: '2rem' }}>
+      <div style={{ maxWidth: '700px', margin: '0 auto', padding: 'clamp(1.25rem, 4vw, 2rem)' }}>
         <div style={{ marginBottom: '6px', fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>
           Question {currentIdx + 1} of {questions.length}
         </div>
@@ -373,7 +373,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
           <div style={{ height: '100%', background: '#2563eb', borderRadius: '99px', width: `${(currentIdx / questions.length) * 100}%`, transition: 'width 0.4s' }} />
         </div>
 
-        <div style={{ background: 'white', borderRadius: '12px', padding: '1.5rem', border: '1px solid #e2e8f0', marginBottom: '1rem' }}>
+        <div style={{ background: 'white', borderRadius: '12px', padding: 'clamp(1.25rem, 4vw, 1.5rem)', border: '1px solid #e2e8f0', marginBottom: '1rem' }}>
           <div style={{ fontSize: '11px', fontWeight: '600', color: '#2563eb', marginBottom: '10px', fontFamily: 'monospace' }}>{subject}</div>
           <div style={{ fontSize: '16px', fontWeight: '600', color: '#0a1628', lineHeight: 1.55, marginBottom: '1.25rem' }}>{q.question}</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
