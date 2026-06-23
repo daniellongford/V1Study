@@ -8,7 +8,7 @@ const supabase = createClient(
 
 export async function POST(request: NextRequest) {
   try {
-    const { userId, subject, question, correctAnswer, reason } = await request.json()
+    const { userId, userEmail, subject, question, correctAnswer, reason } = await request.json()
 
     // Save to Supabase
     await supabase.from('flagged_questions').insert({
@@ -30,16 +30,19 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({
         from: 'V1 Study <support@v1study.com.au>',
         to: 'support@v1study.com.au',
+        reply_to: userEmail || undefined,
         subject: `Flagged Question — ${subject}`,
         html: `
           <div style="font-family: system-ui, sans-serif; max-width: 600px; margin: 0 auto; padding: 2rem;">
             <h2 style="color: #dc2626;">⚠️ Question Flagged for Review</h2>
             <p><strong>Subject:</strong> ${subject}</p>
+            <p><strong>Flagged by:</strong> ${userEmail || 'Unknown'}</p>
             <p><strong>Reason:</strong> ${reason || 'No reason provided'}</p>
             <p><strong>Correct answer:</strong> ${correctAnswer}</p>
             <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; margin-top: 1rem;">
               <strong>Question:</strong><br/>${question}
             </div>
+            <p style="font-size: 12px; color: #94a3b8; margin-top: 1.5rem;">Reply directly to this email to respond to ${userEmail || 'the student'}.</p>
           </div>
         `,
       }),
