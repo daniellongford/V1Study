@@ -164,9 +164,6 @@ export async function POST(request: NextRequest) {
       status: subscription.status === 'trialing' || subscription.status === 'active' ? 'active' : 'inactive',
       trial_end: subscription.trial_end ? new Date(subscription.trial_end * 1000).toISOString() : null,
     }, { onConflict: 'user_id' })
-
-    // Send welcome email
-    await sendWelcomeEmail(email, plan, subscription.trial_end ?? null)
   }
 
   if (event.type === 'customer.subscription.created' || event.type === 'customer.subscription.updated') {
@@ -185,6 +182,21 @@ export async function POST(request: NextRequest) {
         trial_end: subscription.trial_end ? new Date(subscription.trial_end * 1000).toISOString() : null,
       })
       .eq('stripe_subscription_id', subscription.id)
+
+    // Send the welcome email once, when the subscription is first created
+    if (event.type === 'customer.subscription.created' && plan) {
+      try {
+        const customer = await stripe.customers.retrieve(subscription.customer as string)
+        if (customer && !('deleted' in customer)) {
+          const custEmail = (customer as Stripe.Customer).email
+          if (custEmail) {
+            await sendWelcomeEmail(custEmail, plan, subscription.trial_end ?? null)
+          }
+        }
+      } catch (e) {
+        console.error('Welcome email (sub.created) failed:', e)
+      }
+    }
   }
 
   if (event.type === 'customer.subscription.deleted') {
