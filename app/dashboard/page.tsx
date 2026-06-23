@@ -45,6 +45,12 @@ function getTrialLimit(subject: string): number {
   return TRIAL_LIMITS[subject] || 5
 }
 
+// Licences not yet released — shown but locked with a "Coming soon" state
+const COMING_SOON_LICENCES = ['ATPL']
+
+// Admin override — these accounts can access coming-soon licences for testing
+const ADMIN_EMAILS = ['daniel.longford1@gmail.com']
+
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false)
   useEffect(() => {
@@ -129,7 +135,10 @@ export default function Dashboard() {
     window.location.href = '/'
   }
 
+  const isAdmin = user?.email ? ADMIN_EMAILS.includes(user.email) : false
+
   function hasAccess(subject: string): boolean {
+    if (isAdmin) return true
     if (!plan) return false
     return PLAN_ACCESS[plan]?.includes(subject) ?? false
   }
@@ -225,6 +234,25 @@ export default function Dashboard() {
             const hasPassed = best !== undefined && best >= passMark
             const accessible = hasAccess(subject)
             const trial = getTrialStatus(subject)
+            const comingSoon = COMING_SOON_LICENCES.includes(selectedLicence) && !isAdmin
+
+            if (comingSoon) {
+              return (
+                <div key={subject} style={{ background: 'white', borderRadius: '10px', padding: '1.25rem', border: '1px solid #e2e8f0', boxShadow: '0 1px 3px rgba(0,0,0,0.06)', display: 'flex', flexDirection: 'column', gap: '10px', opacity: 0.85 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <div style={{ fontSize: '11px', fontWeight: '700', color: '#94a3b8', fontFamily: 'monospace', letterSpacing: '0.06em', background: '#f1f5f9', padding: '3px 8px', borderRadius: '4px' }}>{code}</div>
+                    <div style={{ fontSize: '11px', fontWeight: '600', color: '#64748b', background: '#f1f5f9', padding: '3px 10px', borderRadius: '99px' }}>Coming soon</div>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '14px', fontWeight: '600', color: '#0a1628', lineHeight: 1.3, marginBottom: '4px' }}>{subject}</div>
+                    <div style={{ fontSize: '11px', color: '#94a3b8', fontFamily: 'monospace' }}>Pass mark {passMark}%</div>
+                  </div>
+                  <button disabled style={{ background: '#f1f5f9', color: '#94a3b8', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'not-allowed', letterSpacing: '0.02em', minHeight: '44px' }}>
+                    Coming soon
+                  </button>
+                </div>
+              )
+            }
 
             return (
               <div key={subject} style={{ background: 'white', borderRadius: '10px', padding: '1.25rem', border: '1px solid #cbd5e1', boxShadow: '0 1px 3px rgba(0,0,0,0.06)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
