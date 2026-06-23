@@ -62,6 +62,12 @@ export default function Dashboard() {
         loadScores(data.user.id)
         loadPlan(data.user.id)
         setLoading(false)
+        // Fire the welcome email if it hasn't been sent yet (route checks + dedupes)
+        fetch('/api/welcome-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ userId: data.user.id, email: data.user.email }),
+        }).catch(() => {})
       }
     })
   }, [])
