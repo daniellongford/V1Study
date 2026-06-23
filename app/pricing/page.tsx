@@ -70,7 +70,7 @@ export default function PricingPage() {
 
   return (
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
-      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: 'clamp(0.875rem, 3vw, 1rem) clamp(1.25rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <a href="/" style={{ textDecoration: 'none' }}>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
@@ -87,7 +87,7 @@ export default function PricingPage() {
         </div>
       </nav>
 
-      <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '3rem 2rem' }}>
+      <div style={{ maxWidth: '1100px', margin: '0 auto', padding: 'clamp(2rem, 5vw, 3rem) clamp(1.25rem, 4vw, 2rem)' }}>
 
         {/* CURRENT PLAN BANNER */}
         {currentPlan && (
@@ -101,8 +101,8 @@ export default function PricingPage() {
         )}
 
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <h1 style={{ fontSize: '40px', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>{currentPlan ? 'Upgrade your plan' : 'Simple, transparent pricing'}</h1>
-          <p style={{ fontSize: '18px', color: '#64748b', maxWidth: '600px', margin: '0 auto' }}>{currentPlan ? 'Unlock more exams by upgrading to a higher plan.' : 'Every plan includes a 7 day free trial. Full access from day one.'}</p>
+          <h1 style={{ fontSize: 'clamp(28px, 7vw, 40px)', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>{currentPlan ? 'Upgrade your plan' : 'Simple, transparent pricing'}</h1>
+          <p style={{ fontSize: 'clamp(15px, 4vw, 18px)', color: '#64748b', maxWidth: '600px', margin: '0 auto' }}>{currentPlan ? 'Unlock more exams by upgrading to a higher plan.' : 'Every plan includes a 7 day free trial. Full access from day one.'}</p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(200px,1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
@@ -139,7 +139,7 @@ export default function PricingPage() {
 
         {/* CANCEL */}
         {currentPlan && !cancelDone && (
-          <div style={{ background: 'white', borderRadius: '12px', padding: '1.5rem 2rem', border: '1px solid #e2e8f0', marginBottom: '2rem' }}>
+          <div style={{ background: 'white', borderRadius: '12px', padding: 'clamp(1.25rem, 4vw, 1.5rem) clamp(1.25rem, 4vw, 2rem)', border: '1px solid #e2e8f0', marginBottom: '2rem' }}>
             <h3 style={{ fontSize: '15px', fontWeight: '700', color: '#0a1628', marginBottom: '4px' }}>Cancel subscription</h3>
             <p style={{ fontSize: '13px', color: '#64748b', marginBottom: '1rem' }}>You can cancel at any time. You will retain access until the end of your current billing period. For assistance contact <a href="mailto:support@v1study.com.au" style={{ color: '#2563eb' }}>support@v1study.com.au</a></p>
             <button onClick={handleCancel} disabled={cancelLoading} style={{ background: 'none', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '8px 20px', fontSize: '13px', fontWeight: '600', color: '#64748b', cursor: cancelLoading ? 'not-allowed' : 'pointer' }}>
@@ -155,7 +155,7 @@ export default function PricingPage() {
           </div>
         )}
 
-        <div style={{ background: 'white', borderRadius: '12px', padding: '2rem', border: '1px solid #e2e8f0', textAlign: 'center' }}>
+        <div style={{ background: 'white', borderRadius: '12px', padding: 'clamp(1.5rem, 5vw, 2rem)', border: '1px solid #e2e8f0', textAlign: 'center' }}>
           {user ? (
             <>
               <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Need help choosing?</h3>
