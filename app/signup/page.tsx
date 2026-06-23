@@ -74,8 +74,8 @@ function SignUpInner() {
   }
 
   return (
-    <main style={{ minHeight: '100vh', background: 'linear-gradient(180deg,#eff6ff 0%,#ffffff 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif', padding: '2rem' }}>
-      <div style={{ background: 'white', borderRadius: '16px', padding: '2.5rem', width: '100%', maxWidth: '460px', border: '1px solid #e2e8f0' }}>
+    <main style={{ minHeight: '100vh', background: 'linear-gradient(180deg,#eff6ff 0%,#ffffff 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif', padding: 'clamp(1rem, 4vw, 2rem)' }}>
+      <div style={{ background: 'white', borderRadius: '16px', padding: 'clamp(1.5rem, 5vw, 2.5rem)', width: '100%', maxWidth: '460px', border: '1px solid #e2e8f0' }}>
         <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
           <div style={{ marginBottom: '8px' }}>
             <span style={{ fontSize: '24px', fontWeight: '800', color: '#2563eb' }}>V1</span>
