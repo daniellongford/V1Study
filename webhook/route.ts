@@ -116,22 +116,44 @@ export async function POST(request: NextRequest) {
 
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session
-    const email = session.customer_email
     const subscriptionId = session.subscription as string
+    if (!subscriptionId) return NextResponse.json({ received: true })
 
-    if (!email || !subscriptionId) return NextResponse.json({ received: true })
+    // Resolve email — Stripe may put it in customer_email, customer_details,
+    // or only on the customer record. Check all of them.
+    let email = session.customer_email || session.customer_details?.email || null
 
-    // Get price ID from subscription
+    // Get the subscription (also used to look up the customer email if needed)
     const subscription = await stripe.subscriptions.retrieve(subscriptionId)
     const priceId = subscription.items.data[0]?.price?.id
     const plan = PRICE_TO_PLAN[priceId]
     if (!plan) return NextResponse.json({ received: true })
 
+    // Fallback: pull email from the Stripe customer record
+    if (!email && session.customer) {
+      try {
+        const customer = await stripe.customers.retrieve(session.customer as string)
+        if (customer && !('deleted' in customer)) {
+          email = (customer as Stripe.Customer).email || null
+        }
+      } catch (e) {
+        console.error('Customer lookup failed:', e)
+      }
+    }
+
+    if (!email) {
+      console.error('No email found on checkout session', session.id)
+      return NextResponse.json({ received: true })
+    }
+
     // Find user by email
     const { data: userData } = await supabase.auth.admin.listUsers()
     const users = userData?.users as any[]
-    const user = users?.find((u: any) => u.email === email)
-    if (!user) return NextResponse.json({ received: true })
+    const user = users?.find((u: any) => u.email?.toLowerCase() === email!.toLowerCase())
+    if (!user) {
+      console.error('No matching user for email', email)
+      return NextResponse.json({ received: true })
+    }
 
     // Save subscription
     await supabase.from('subscriptions').upsert({
