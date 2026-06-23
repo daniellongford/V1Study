@@ -120,7 +120,7 @@ export const irexQuestions: {
   ],
   correct: 0,
   explanation: 'IAF (Initial Approach Fix) is the point that defines the beginning of the initial approach segment. The aircraft transitions from the en-route phase to the approach phase at the IAF. Multiple IAFs may be published to facilitate arrivals from different directions.',
-  reference: 'AIP GEN 3.4 / ICAO PANS-OPS'
+  reference: 'AIP ENR 1.5 / ICAO PANS-OPS'
 },
 
 {
@@ -133,7 +133,7 @@ export const irexQuestions: {
   ],
   correct: 0,
   explanation: 'FAF (Final Approach Fix) is the point at which the final approach segment begins for a non-precision approach (NDB, VOR, GNSS 2D). It defines where the final descent to MDA commences. On a precision approach (ILS), the glideslope intercept point serves a similar function but is not formally called the FAF.',
-  reference: 'AIP GEN 3.4 / ICAO PANS-OPS'
+  reference: 'AIP ENR 1.5 / ICAO PANS-OPS'
 },
 
 {
@@ -262,8 +262,8 @@ export const irexQuestions: {
     'Transmitting a set number of times on the published CTAF within a defined period, the count selecting intensity'
   ],
   correct: 3,
-  explanation: 'PAL is activated by keying the transmitter the specified number of times on the published CTAF within about 5 seconds (commonly 5 = high, 3 = medium, 1 = low intensity). The lights remain on for roughly 15 minutes. Activation details are published in ERSA for each aerodrome.',
-  reference: 'AIP ENR 1.14 / ERSA — PAL'
+  explanation: 'PAL is activated by keying the transmitter the published number of times on the aerodrome\'s CTAF within the specified period; the number of transmissions selects the lighting intensity. The lights then remain on for a set time before extinguishing and may be re-activated. The activation count, frequency, intensity steps and on-time vary by aerodrome and are published in ERSA for each location.',
+  reference: 'ERSA FAC / AIP ENR 1.1 Para 10.7.4'
 },
 
 {
@@ -2356,7 +2356,7 @@ export const irexQuestions: {
   ],
   correct: 2,
   explanation: 'Feeder routes: published tracks from specific en-route fixes or airways to the IAF (or holding fix) of an instrument approach. They specify track (magnetic), minimum altitude, and distance. Feeder routes allow structured traffic flow from various directions to the approach sequence. They ensure obstacle clearance during the transition from en-route to approach phase.',
-  reference: 'AIP GEN 3.4 / ICAO PANS-OPS'
+  reference: 'AIP ENR 1.5 / ICAO PANS-OPS'
 },
 
 {
@@ -2733,7 +2733,7 @@ export const irexQuestions: {
   ],
   correct: 2,
   explanation: 'Two conditions must coincide: visible moisture (cloud, freezing rain or drizzle, wet snow) and a temperature between about 0 and -40C, where supercooled water can exist. The most severe icing is between 0 and -20C, and clear ice from freezing rain can be severe just below 0C.',
-  reference: 'AIP GEN 2.2 / BOM meteorology'
+  reference: 'BOM meteorology / AIP GEN 3.5'
 },
 
 {
@@ -2941,7 +2941,7 @@ export const irexQuestions: {
   ],
   correct: 3,
   explanation: 'A high-level SIGWX chart depicts CB/TS areas and tops, severe-turbulence (CAT) areas, severe icing, jet streams (position, level and maximum wind), tropopause heights and volcanic ash, so high-level IFR routes can be chosen to avoid the major hazards.',
-  reference: 'AIP GEN 3.4 / BOM SIGWX'
+  reference: 'AIP GEN 3.5 / BOM SIGWX'
 },
 
 {
@@ -2954,7 +2954,7 @@ export const irexQuestions: {
   ],
   correct: 1,
   explanation: 'Radiation fog forms overnight and early morning after a clear night with light wind and moist air, as the ground radiates heat and cools the air to its dew point. It is dense and shallow and can drop visibility to near zero at aerodrome level, usually burning off as the sun heats the surface.',
-  reference: 'BOM meteorology / AIP GEN 2.2'
+  reference: 'BOM meteorology / AIP GEN 3.5'
 },
 
 {
@@ -3058,7 +3058,7 @@ export const irexQuestions: {
   ],
   correct: 0,
   explanation: 'Upper wind forecasts (available from BOM for flight levels): used for: groundspeed and ETA calculation; fuel planning; choosing optimum altitude (strong tailwind may justify a lower/higher than standard level); identifying jet stream position; and turbulence assessment (strong wind shear = CAT risk). Upper winds are typically reported as true direction and knots for each flight level.',
-  reference: 'AIP GEN 3.4 / BOM upper wind forecasts'
+  reference: 'AIP GEN 3.5 / BOM upper wind forecasts'
 },
 
 {
@@ -3110,7 +3110,7 @@ export const irexQuestions: {
   ],
   correct: 1,
   explanation: 'Dew point spread: the difference between temperature and dew point. Spread of 2°C or less = high risk of fog, low cloud, mist. Spread = 0 = saturated air = fog or cloud. In IFR planning: if aerodrome temperature/dew point spread is forecast to narrow to 2°C or less during the intended arrival time, low visibility conditions are possible.',
-  reference: 'BOM meteorology / AIP GEN 2.2'
+  reference: 'BOM meteorology / AIP GEN 3.5'
 },
 
 {
@@ -4033,7 +4033,7 @@ export const irexQuestions: {
   ],
   correct: 3,
   explanation: 'Instrument procedures change on the 28-day AIRAC cycle (new obstacles, navaid or course changes). An out-of-date chart may show superseded minima, waypoints or tracks, so the chart effective date must match the current AIRAC cycle.',
-  reference: 'AIP GEN 3.3 / AIRAC cycle'
+  reference: 'AIP GEN 3.1 / AIRAC cycle'
 },
 
 {
@@ -4501,7 +4501,7 @@ export const irexQuestions: {
   ],
   correct: 3,
   explanation: 'Mandatory occurrence reports cover airspace infringements, breaches of an ATC instruction, near collisions, terrain-proximity events, use of emergency equipment and navigation failures causing loss of separation, filed with the ATSB. A just-culture approach focuses on systemic causes, not blame.',
-  reference: 'CASR Part 201 / AIP GEN 3.6'
+  reference: 'AIP ENR 1.14 / Transport Safety Investigation Act'
 },
 
 {
@@ -5944,7 +5944,7 @@ export const irexQuestions: {
   ],
   correct: 2,
   explanation: 'An IFR pilot may discontinue the IAP for a visual approach when, by day, within 30 nm, clear of cloud and in sight of ground or water with visibility at least 5,000 m (or the aerodrome in sight); by night the aircraft stays at not below LSALT/MSA or step until established. These are the Australian visual-approach criteria.',
-  reference: 'AIP ENR 1.5 / GEN 3.4'
+  reference: 'AIP ENR 1.5'
 },
 
 {
