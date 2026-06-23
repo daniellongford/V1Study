@@ -112,10 +112,6 @@ export default function Dashboard() {
     return PLAN_ACCESS[plan]?.includes(subject) ?? false
   }
 
-  // Days remaining in the Stripe free trial (if any)
-  const trialDaysLeft = trialEnd ? Math.max(0, Math.ceil((new Date(trialEnd).getTime() - Date.now()) / (1000 * 60 * 60 * 24))) : 0
-  const inTrial = trialDaysLeft > 0
-
   if (loading) return (
     <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif' }}>
       <p style={{ color: '#64748b' }}>Loading...</p>
@@ -184,19 +180,6 @@ export default function Dashboard() {
             </a>
           )}
         </div>
-
-        {/* TRIAL BANNER */}
-        {inTrial && (
-          <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '12px', padding: '14px 18px', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
-            <div>
-              <div style={{ fontSize: '13px', fontWeight: '700', color: '#1e3a8a', marginBottom: '2px' }}>
-                Free trial — {trialDaysLeft} day{trialDaysLeft !== 1 ? 's' : ''} left
-              </div>
-              <div style={{ fontSize: '12px', color: '#3b5fa4' }}>You&apos;ll be charged when your trial ends. Cancel anytime before then.</div>
-            </div>
-            <a href="/pricing" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '8px 16px', textDecoration: 'none', fontWeight: '600', fontSize: '13px', flexShrink: 0 }}>Manage plan</a>
-          </div>
-        )}
 
         {/* LICENCE TABS */}
         <div style={{ display: 'flex', gap: '8px', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
