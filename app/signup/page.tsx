@@ -2,6 +2,7 @@
 import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { supabase } from '../../lib/supabase'
+import { FREE_ACCESS_EMAILS } from '../../lib/access'
 
 const PLANS = [
   { name: 'PPL Pack', price: '$9.99', priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz', blurb: 'PPL Theory exam' },
@@ -41,6 +42,13 @@ function SignUpInner() {
     const { data, error } = await supabase.auth.signUp({ email, password })
     if (error) {
       setMessage(error.message)
+      setLoading(false)
+      return
+    }
+
+    // 1a. Complimentary accounts skip checkout entirely
+    if (FREE_ACCESS_EMAILS.includes(email)) {
+      setMessage('Account created. Please check your email to confirm, then log in.')
       setLoading(false)
       return
     }
@@ -149,7 +157,7 @@ function SignUpInner() {
         </div>
 
         {message && (
-          <div style={{ background: '#fff1f2', border: '1px solid #fca5a5', borderRadius: '8px', padding: '10px 14px', fontSize: '13px', color: '#b91c1c', marginBottom: '1rem' }}>
+          <div style={{ background: message.startsWith('Account created') ? '#f0fdf4' : '#fff1f2', border: message.startsWith('Account created') ? '1px solid #bbf7d0' : '1px solid #fca5a5', borderRadius: '8px', padding: '10px 14px', fontSize: '13px', color: message.startsWith('Account created') ? '#15803d' : '#b91c1c', marginBottom: '1rem' }}>
             {message}
           </div>
         )}
