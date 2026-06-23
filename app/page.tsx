@@ -121,7 +121,7 @@ export default function Home() {
               {[
                 { plan: 'PPL Pack', price: '$9.99', priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz', features: ['PPL Theory exam', 'Unlimited practice questions', 'Full explanations', 'CASA references'], popular: false },
                 { plan: 'CPL Pack', price: '$19.99', priceId: 'price_1TIP6XCbt27bkqBv9CypW42J', features: ['PPL + all 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], popular: true },
-                { plan: 'ATPL Pack', price: '$29.99', priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn', features: ['CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], popular: false },
+                { plan: 'ATPL Pack', price: '$29.99', priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn', features: ['CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], popular: false, comingSoon: true },
               ].map(function (item) {
                 return (
                   <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '2rem', border: item.popular ? '2px solid #2563eb' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
@@ -141,9 +141,15 @@ export default function Home() {
                         )
                       })}
                     </div>
-                    <a href={`/signup?plan=${item.priceId}`} style={{ display: 'block', background: item.popular ? '#2563eb' : 'transparent', color: item.popular ? 'white' : '#0a1628', border: item.popular ? '2px solid #2563eb' : '2px solid #e2e8f0', borderRadius: '7px', padding: '12px', fontWeight: '700', textDecoration: 'none', textAlign: 'center', fontSize: '14px' }}>
-                      Start free trial
-                    </a>
+                    {(item as any).comingSoon ? (
+                      <div style={{ display: 'block', background: '#f1f5f9', color: '#94a3b8', border: '2px solid #f1f5f9', borderRadius: '7px', padding: '12px', fontWeight: '700', textAlign: 'center', fontSize: '14px' }}>
+                        Coming soon
+                      </div>
+                    ) : (
+                      <a href={`/signup?plan=${item.priceId}`} style={{ display: 'block', background: item.popular ? '#2563eb' : 'transparent', color: item.popular ? 'white' : '#0a1628', border: item.popular ? '2px solid #2563eb' : '2px solid #e2e8f0', borderRadius: '7px', padding: '12px', fontWeight: '700', textDecoration: 'none', textAlign: 'center', fontSize: '14px' }}>
+                        Start free trial
+                      </a>
+                    )}
                   </div>
                 )
               })}
