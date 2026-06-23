@@ -60,13 +60,17 @@ export async function POST(request: NextRequest) {
       stripe_customer_id: session.customer as string,
       stripe_subscription_id: subscriptionId,
       plan,
-      status: 'active',
+      status: subscription.status === 'trialing' || subscription.status === 'active' ? 'active' : 'inactive',
+      trial_end: subscription.trial_end ? new Date(subscription.trial_end * 1000).toISOString() : null,
     }, { onConflict: 'user_id' })
   }
 
-  if (event.type === 'customer.subscription.updated') {
+  if (event.type === 'customer.subscription.created' || event.type === 'customer.subscription.updated') {
     const subscription = event.data.object as Stripe.Subscription
-    const status = subscription.status === 'active' ? 'active' : 'inactive'
+    // Both 'active' and 'trialing' grant full access. Anything else (past_due,
+    // canceled, unpaid, incomplete) removes access.
+    const grantsAccess = subscription.status === 'active' || subscription.status === 'trialing'
+    const status = grantsAccess ? 'active' : 'inactive'
     const priceId = subscription.items.data[0]?.price?.id
     const plan = PRICE_TO_PLAN[priceId] || null
 
