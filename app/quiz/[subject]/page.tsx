@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef, use } from 'react'
 import { supabase } from '../../../lib/supabase'
 import { FULL_BANKS, getLicence } from '../../../lib/question-banks'
+import { PLAN_ACCESS, COMING_SOON_LICENCES, isAdmin as checkAdmin, hasFreeAccess as checkFreeAccess } from '../../../lib/access'
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -100,18 +101,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   const subject = decodeURIComponent(resolvedParams.subject || '')
 
   // Licences not yet released — block direct URL access with a coming soon screen
-  const COMING_SOON_LICENCES = ['ATPL']
-  const ADMIN_EMAILS = ['daniel.longford1@gmail.com']
   const licenceComingSoon = COMING_SOON_LICENCES.includes(getLicence(subject))
-
-  // Which subjects each plan unlocks
-  const PLAN_ACCESS: Record<string, string[]> = {
-    PPL: ['PPL Theory'],
-    CPL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law'],
-    ATPL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Aerodynamics and Systems', 'Performance and Loading', 'Flight Planning', 'Air Law'],
-    IREX: ['Instrument Rating'],
-    FULL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Aerodynamics and Systems', 'Performance and Loading', 'Flight Planning', 'Air Law', 'Instrument Rating'],
-  }
 
   const [isAdmin, setIsAdmin] = useState(false)
   const [authChecked, setAuthChecked] = useState(false)
@@ -139,11 +129,18 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
     async function checkAccess() {
       const { data } = await supabase.auth.getUser()
       const user = data.user
-      const admin = user?.email ? ADMIN_EMAILS.includes(user.email) : false
+      const admin = checkAdmin(user?.email)
       setIsAdmin(admin)
       setAuthChecked(true)
 
       if (admin) {
+        setHasAccess(true)
+        setAccessChecked(true)
+        return
+      }
+
+      // Complimentary free-access accounts
+      if (checkFreeAccess(user?.email)) {
         setHasAccess(true)
         setAccessChecked(true)
         return
