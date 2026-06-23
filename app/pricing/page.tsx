@@ -5,7 +5,7 @@ import { supabase } from '../../lib/supabase'
 const plans = [
   { name: 'PPL Pack', price: '$9.99', period: 'per month', priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz', planKey: 'PPL', description: 'The foundation of flight. Master the core theory required to earn your Private Pilot Licence.', features: ['PPL Theory exam', 'Unlimited practice questions', 'Full explanations', 'CASA references', 'Progress tracking'] },
   { name: 'CPL Pack', price: '$19.99', period: 'per month', priceId: 'price_1TIP6XCbt27bkqBv9CypW42J', planKey: 'CPL', description: 'All 7 CASA subjects. Built for pilots serious about going professional.', features: ['PPL + all 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA syllabus aligned'] },
-  { name: 'ATPL Pack', price: '$29.99', period: 'per month', priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn', planKey: 'ATPL', description: 'The highest standard in Australian pilot licensing. All 7 subjects for pilots bound for the airlines.', features: ['PPL + CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA MOS aligned'] },
+  { name: 'ATPL Pack', price: '$29.99', period: 'per month', priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn', planKey: 'ATPL', comingSoon: true, description: 'The highest standard in Australian pilot licensing. All 7 subjects for pilots bound for the airlines.', features: ['PPL + CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA MOS aligned'] },
   { name: 'IREX Standalone', price: '$14.99', period: 'per month', priceId: 'price_1TIPDdCbt27bkqBvZzwkYthb', planKey: 'IREX', description: 'Cleared for the clouds. Everything you need to pass the CASA Instrument Rating Exam.', features: ['IREX exam only', 'Unlimited practice questions', 'Full explanations', 'CASA references', 'Progress tracking'] },
   { name: 'Full Access', price: '$34.99', period: 'per month', priceId: 'price_1TIPBvCbt27bkqBvv4fUShu3', planKey: 'FULL', description: 'Every exam covered — the complete V1 Study experience.', features: ['All 16 exams included', 'PPL + CPL + ATPL + IREX', 'Unlimited practice questions', 'Priority support', 'CASA MOS aligned'] },
 ]
@@ -120,13 +120,19 @@ export default function PricingPage() {
                   </div>
                 ))}
               </div>
-              <button
-                onClick={() => plan.planKey !== currentPlan && handleCheckout(plan.priceId)}
-                disabled={loading === plan.priceId || plan.planKey === currentPlan}
-                style={{ width: '100%', background: plan.planKey === currentPlan ? '#f8fafc' : '#2563eb', color: plan.planKey === currentPlan ? '#64748b' : 'white', border: plan.planKey === currentPlan ? '1px solid #e2e8f0' : 'none', borderRadius: '8px', padding: '10px', fontWeight: '600', cursor: plan.planKey === currentPlan ? 'default' : loading === plan.priceId ? 'not-allowed' : 'pointer', fontSize: '14px' }}
-              >
-                {buttonText(plan)}
-              </button>
+              {(plan as any).comingSoon ? (
+                <button disabled style={{ width: '100%', background: '#f1f5f9', color: '#94a3b8', border: 'none', borderRadius: '8px', padding: '10px', fontWeight: '600', cursor: 'not-allowed', fontSize: '14px' }}>
+                  Coming soon
+                </button>
+              ) : (
+                <button
+                  onClick={() => plan.planKey !== currentPlan && handleCheckout(plan.priceId)}
+                  disabled={loading === plan.priceId || plan.planKey === currentPlan}
+                  style={{ width: '100%', background: plan.planKey === currentPlan ? '#f8fafc' : '#2563eb', color: plan.planKey === currentPlan ? '#64748b' : 'white', border: plan.planKey === currentPlan ? '1px solid #e2e8f0' : 'none', borderRadius: '8px', padding: '10px', fontWeight: '600', cursor: plan.planKey === currentPlan ? 'default' : loading === plan.priceId ? 'not-allowed' : 'pointer', fontSize: '14px' }}
+                >
+                  {buttonText(plan)}
+                </button>
+              )}
             </div>
           ))}
         </div>
