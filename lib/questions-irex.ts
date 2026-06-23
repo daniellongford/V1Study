@@ -440,7 +440,7 @@ export const irexQuestions: {
   options: [
     'Aircraft category dependent, with maximum circling speeds of Category A 100 kt, B 135 kt and C 180 kt',
     '250 kt IAS at every stage',
-    'Initial segment: no specific limit; intermediate/final: 185 kt IAS; missed approach: 185 kt IAS',
+    '185 kt IAS in every segment, including the missed approach and circling',
     '140 kt IAS throughout the approach'
   ],
   correct: 0,
@@ -613,7 +613,7 @@ export const irexQuestions: {
     '1°C per 1,000 ft'
   ],
   correct: 1,
-  explanation: 'In clear air (dry adiabatic), temperature decreases at approximately 3°C per 1,000 ft. To find the freezing level: if OAT at the surface is +15°C, the freezing level is at 15 ÷ 3 = 5,000 ft. In cloud (moist adiabatic), the lapse rate is 1.5°C per 1,000 ft — lower than in clear air because condensation releases latent heat.',
+  explanation: 'In clear air, temperature decreases at approximately 3°C per 1,000 ft. To find the freezing level: if the surface OAT is +15°C, the freezing level is at 15 / 3 = 5,000 ft. In cloud the cooling is slower, about 1.5°C per 1,000 ft, because condensation releases latent heat.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.3'
 },
 
@@ -626,7 +626,7 @@ export const irexQuestions: {
     '1°C per 1,000 ft'
   ],
   correct: 1,
-  explanation: 'In cloud, condensation releases latent heat, slowing the cooling rate. The moist adiabatic lapse rate is approximately 1.5°C per 1,000 ft. If the temperature at cloud base is 0°C, you will not encounter the freezing level within the cloud — it is already at 0°C at cloud base. Understanding this difference is critical for icing prediction in IFR operations.',
+  explanation: 'In cloud, condensation releases latent heat and slows the cooling to about 1.5°C per 1,000 ft, compared with about 3°C per 1,000 ft in clear air. If the temperature at cloud base is already 0°C, the freezing level is at the cloud base. This difference is critical for icing prediction in IFR operations.',
   reference: 'CASR Part 61 MOS Schedule 3 — IREX 3.2.3'
 },
 
@@ -857,7 +857,7 @@ export const irexQuestions: {
     'Occasionally causes small, erratic changes in altitude or attitude that are easily corrected',
     'Causes abrupt, large changes in altitude or attitude, momentary loss of control and possible structural damage',
     'Merely presses the occupants intermittently against their seat belts without affecting aircraft control',
-    'Simply makes use of the autopilot advisable for passenger comfort'
+    'Makes autopilot use advisable mainly for passenger comfort'
   ],
   correct: 1,
   explanation: 'Turbulence intensity: light = slight erratic changes; moderate = larger changes in altitude/attitude but control retained; severe = abrupt large changes, momentary loss of control, large airspeed variation, structural damage possible; extreme = aircraft impossible to control, damage likely. Severe or extreme turbulence warrants an immediate level change and an AIREP.',
@@ -1519,7 +1519,7 @@ export const irexQuestions: {
   options: [
     'The receiver can no longer navigate and so automatically suspends every one of its navigation functions',
     'The live satellite signal being received has degraded below a usable strength',
-    'Simply that a current database must be loaded before commencing any IFR flight',
+    'That a current navigation database must be loaded before any IFR flight',
     'The navigation database has expired, so stored procedures must not be used though manual coordinates remain available'
   ],
   correct: 3,
@@ -1569,7 +1569,7 @@ export const irexQuestions: {
 {
   question: 'GNSS requirements for an RNP instrument approach include:',
   options: [
-    'A basic non-certified GPS receiver is quite sufficient, provided only that its database is kept current',
+    'A basic non-certified GPS receiver is sufficient, provided its database is kept current',
     'A GNSS unit fitted with a moving-map display but no further IFR capability',
     'A certified IFR GNSS receiver with RAIM or SBAS, a current database, and the approach loaded from that database',
     'Any GPS receiver, so long as it offers some form of approach-capability mode'
@@ -2160,7 +2160,7 @@ export const irexQuestions: {
     'Where the required visual references are sighted at or above DA/MDA and the pilot transitions to visual flight'
   ],
   correct: 3,
-  explanation: 'The visual segment starts when the required visual references are clearly identified at or above the DA/MDA and the pilot transitions from instruments to visual flying. Visual reference must then be maintained continuously; if it is lost, an immediate missed approach is flown. Simply breaking out of cloud is not enough, the specified references must be seen.',
+  explanation: 'The visual segment starts when the required visual references are clearly identified at or above the DA/MDA and the pilot transitions from instruments to visual flying. Visual reference must then be maintained continuously; if it is lost, an immediate missed approach is flown. Breaking out of cloud alone is not enough; the specified references must be seen.',
   reference: 'AIP ENR 1.5 — instrument approaches'
 },
 
@@ -4435,7 +4435,7 @@ export const irexQuestions: {
     'Descend below radar coverage and proceed visually, since surveillance separation no longer applies'
   ],
   correct: 2,
-  explanation: 'Secondary surveillance radar depends on the transponder for identity and Mode C altitude. With the transponder failed it can transmit no code at all, so ATC loses that data and must apply procedural or increased separation, may re-route the aircraft, or may require it to leave the surveillance airspace. The pilot advises ATC promptly so the appropriate separation can be arranged.',
+  explanation: 'Secondary surveillance radar depends on the transponder for identity and Mode C altitude. With the transponder failed it can transmit no code, so ATC loses that data and must apply procedural or increased separation, may re-route the aircraft, or may require it to leave the surveillance airspace. The pilot advises ATC promptly so the appropriate separation can be arranged.',
   reference: 'AIP ENR 1.6 / CASR Part 61 MOS Schedule 3 — IREX 2.3.19'
 },
 
@@ -5306,7 +5306,7 @@ export const irexQuestions: {
     'Descend below the LSALT to remain clear of cloud and icing'
   ],
   correct: 1,
-  explanation: 'With the freezing level (8,500 ft) below the LSALT (9,000 ft), no valid cruising level lies below it, so icing cannot be avoided simply by choosing a lower level. The pilot plans the lowest valid level at or above the LSALT for the track (9,000 ft, odd for 000-179°M) and manages the route and conditions to avoid icing. 8,000 ft is below the LSALT, 11,000 ft adds unnecessary exposure, and descending below the LSALT is never acceptable.',
+  explanation: 'With the freezing level (8,500 ft) below the LSALT (9,000 ft), no valid cruising level lies below it, so icing cannot be avoided by choosing a lower level. The pilot plans the lowest valid level at or above the LSALT for the track (9,000 ft, odd for 000-179°M) and manages the route and conditions to avoid icing. 8,000 ft is below the LSALT, 11,000 ft adds unnecessary exposure, and descending below the LSALT is never acceptable.',
   reference: 'AIP ENR 1.1 / CASR Part 61 MOS Schedule 3 — IREX 4.1.1'
 },
 
@@ -5371,7 +5371,7 @@ export const irexQuestions: {
     'A DA applies only to GNSS approaches and an MDA only to ILS approaches'
   ],
   correct: 1,
-  explanation: 'A DA is used on approaches with vertical guidance (ILS, LNAV/VNAV, LPV): the go-around starts at the DA and a momentary descent below it during the transition is accepted. An MDA is used on non-precision (2D) approaches: the aircraft must not descend below it at all, levelling there until the MAP or visual.',
+  explanation: 'A DA is used on approaches with vertical guidance (ILS, LNAV/VNAV, LPV): the go-around starts at the DA and a momentary descent below it during the transition is accepted. An MDA is used on non-precision (2D) approaches: the aircraft must not descend below it, levelling there until the MAP or visual.',
   reference: 'AIP ENR 1.5 / ICAO Doc 8168'
 },
 
@@ -6054,7 +6054,7 @@ export const irexQuestions: {
 {
   question: 'For an IFR arrival, the forecast cloud at the ETA triggers an alternate requirement when it is:',
   options: [
-    'Any trace of cloud at all below the alternate minimum',
+    'Any amount of cloud below the alternate minimum',
     'More than SCT, that is BKN or OVC, below the alternate minimum',
     'Only OVC, and never BKN, below the alternate minimum',
     'FEW or SCT cloud forecast below the alternate minimum'
@@ -6068,7 +6068,7 @@ export const irexQuestions: {
   question: 'An IFR aircraft navigating with a GNSS receiver certified only to TSO-C129/129a must, for navigation to a destination alternate:',
   options: [
     'Use the same C129 GNSS to navigate to the alternate',
-    'Carry no alternate at all, provided a GNSS is fitted',
+    'Carry no alternate, provided a GNSS is fitted',
     'Plan navigation to the alternate by another means, such as ADF or VOR',
     'Fit a second TSO-C129 GNSS receiver as a backup'
   ],
