@@ -56,19 +56,19 @@ export default function ProgressPage() {
 
   return (
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
-      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: '1rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: 'clamp(0.875rem, 3vw, 1rem) clamp(1.25rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
         </div>
-        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: 'clamp(1rem, 4vw, 1.5rem)', alignItems: 'center' }}>
           <a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Study</a>
           <a href="/progress" style={{ color: '#2563eb', textDecoration: 'none', fontSize: '14px', fontWeight: '600' }}>Progress</a>
           <a href="/pricing" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Upgrade</a>
         </div>
       </nav>
 
-      <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem' }}>
+      <div style={{ maxWidth: '900px', margin: '0 auto', padding: 'clamp(1.25rem, 4vw, 2rem)' }}>
         <h1 style={{ fontSize: '26px', fontWeight: '700', color: '#0a1628', marginBottom: '4px' }}>Your Progress</h1>
         <p style={{ fontSize: '15px', color: '#64748b', marginBottom: '2rem' }}>Track your performance across all subjects.</p>
 
@@ -87,8 +87,8 @@ export default function ProgressPage() {
                 { label: 'Average score', value: avg + '%' },
                 { label: 'Pass rate', value: passRate + '%' },
               ].map((s) => (
-                <div key={s.label} style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0', textAlign: 'center', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-                  <div style={{ fontSize: '28px', fontWeight: '700', color: '#0a1628', fontFamily: 'monospace' }}>{s.value}</div>
+                <div key={s.label} style={{ background: 'white', borderRadius: '12px', padding: 'clamp(0.75rem, 3vw, 1.25rem) 0.5rem', border: '1px solid #e2e8f0', textAlign: 'center', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
+                  <div style={{ fontSize: 'clamp(22px, 6vw, 28px)', fontWeight: '700', color: '#0a1628', fontFamily: 'monospace' }}>{s.value}</div>
                   <div style={{ fontSize: '12px', color: '#94a3b8', marginTop: '4px' }}>{s.label}</div>
                 </div>
               ))}
