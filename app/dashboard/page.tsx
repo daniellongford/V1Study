@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
+import { PLAN_ACCESS, COMING_SOON_LICENCES, isAdmin as checkAdmin, hasFreeAccess as checkFreeAccess } from '../../lib/access'
 
 const subjectsByLicence: Record<string, { subject: string; code: string; passMark: number }[]> = {
   PPL: [
@@ -28,20 +29,6 @@ const subjectsByLicence: Record<string, { subject: string; code: string; passMar
     { subject: 'Instrument Rating', code: 'IREX', passMark: 70 },
   ],
 }
-
-const PLAN_ACCESS: Record<string, string[]> = {
-  PPL: ['PPL Theory'],
-  CPL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law'],
-  ATPL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Human Factors', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology', 'Navigation', 'Flight Planning', 'Air Law'],
-  IREX: ['Instrument Rating'],
-  FULL: ['PPL Theory', 'Human Factors', 'Aerodynamics', 'Aircraft General Knowledge', 'Meteorology', 'Navigation', 'Operations Performance Planning', 'Flight Rules and Air Law', 'Human Factors', 'Aerodynamics and Systems', 'Performance and Loading', 'Meteorology', 'Navigation', 'Flight Planning', 'Air Law', 'Instrument Rating'],
-}
-
-// Licences not yet released — shown but locked with a "Coming soon" state
-const COMING_SOON_LICENCES = ['ATPL']
-
-// Admin override — these accounts can access coming-soon licences for testing
-const ADMIN_EMAILS = ['daniel.longford1@gmail.com']
 
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false)
@@ -115,10 +102,12 @@ export default function Dashboard() {
     window.location.href = '/'
   }
 
-  const isAdmin = user?.email ? ADMIN_EMAILS.includes(user.email) : false
+  const isAdmin = checkAdmin(user?.email)
+  const hasFreeAccess = checkFreeAccess(user?.email)
 
   function hasAccess(subject: string): boolean {
     if (isAdmin) return true
+    if (hasFreeAccess) return true
     if (!plan) return false
     return PLAN_ACCESS[plan]?.includes(subject) ?? false
   }
