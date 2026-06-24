@@ -96,9 +96,9 @@ export const pplaQuestions: {
     question: 'Each occupant of an aircraft must occupy a seat with the seat belt fastened:',
     options: [
       'during taxiing, take-off and landing, and when directed by the pilot in command',
-      'only when flying above 5,000 ft AMSL',
-      'only when flying over water',
-      'at all times the engine is running',
+      'only when the aircraft is flying above 5,000 ft above mean sea level',
+      'only when the aircraft is flying over water beyond gliding distance',
+      'at all times that the engine is running, including on the ground',
     ],
     correct: 0,
     explanation: 'A seat must be occupied with the belt fastened during taxiing, take-off and landing, and whenever the pilot in command directs. In cruise the belt may be loosened when the PIC permits.',
@@ -108,9 +108,9 @@ export const pplaQuestions: {
     question: 'As pilot in command, your legal responsibility regarding the carriage of a passenger\'s dog is that you:',
     options: [
       'must be satisfied the safety of the flight will not be adversely affected',
-      'have no responsibility because the animal is not yours',
-      'must muzzle the animal and seat it beside a passenger',
-      'may only carry it in an approved cargo pod',
+      'have no responsibility at all because the animal is not yours',
+      'must muzzle the animal and seat it next to a passenger',
+      'may only carry it inside an approved cargo pod or hold',
     ],
     correct: 0,
     explanation: 'The pilot in command is responsible for the safety of the flight, including any animal carried. The PIC must be satisfied that carriage of the animal will not adversely affect safety.',
@@ -119,10 +119,10 @@ export const pplaQuestions: {
   {
     question: 'Cargo may be carried on an unoccupied passenger seat of an aeroplane with MTOW below 5,700 kg provided it is restrained and does not exceed:',
     options: [
-      '45 kg in all cases',
-      '100 kg evenly distributed',
+      '45 kg in all cases, regardless of the seat or the aircraft',
+      '100 kg, provided the load is evenly distributed on the seat',
       '77 kg, unless a higher approved seat-loading scheme applies',
-      'the weight of an average adult',
+      'the weight of an average adult passenger for that seat',
     ],
     correct: 2,
     explanation: 'Cargo on an unoccupied passenger seat must be evenly distributed over the squab, restrained, and not exceed 77 kg unless a specifically approved seat-loading scheme permits more.',
@@ -131,9 +131,9 @@ export const pplaQuestions: {
   {
     question: 'An aircraft is \'in the vicinity of\' a non-controlled aerodrome when it is within a horizontal distance of:',
     options: [
-      '20 nm and below 5,000 ft',
-      '25 nm and below the transition layer',
-      '5 nm and below 3,000 ft AGL',
+      '20 nm and below 5,000 ft, regardless of the circuit pattern in use',
+      '25 nm and below the transition layer at the aerodrome',
+      '5 nm and below 3,000 ft AGL at any time of the day',
       '10 nm and at a height that could result in conflict with circuit operations',
     ],
     correct: 3,
@@ -227,10 +227,10 @@ export const pplaQuestions: {
   {
     question: 'During interception in an ADIZ, the intercepting aircraft signals you to land at its aerodrome. By day, to indicate compliance you should:',
     options: [
-      'rock your wings and continue on track',
-      'squawk 7700 and maintain altitude',
+      'rock your wings firmly and continue on the original track',
+      'squawk the code 7700 and maintain your present altitude',
       'lower the landing gear and follow the intercepting aircraft',
-      'raise the gear and orbit the aerodrome',
+      'raise the landing gear and orbit over the aerodrome',
     ],
     correct: 2,
     explanation: 'To acknowledge an instruction to land, the intercepted aircraft lowers its landing gear, follows the intercepting aircraft, and lands if the runway is suitable.',
@@ -239,9 +239,9 @@ export const pplaQuestions: {
   {
     question: 'Which documents must be carried on an Australian-registered aeroplane during a private VFR flight?',
     options: [
-      'only the pilot\'s licence and medical certificate',
-      'only the aircraft flight manual',
-      'Certificate of Registration only',
+      'only the pilot\'s licence and current medical certificate, nothing else',
+      'only the aircraft flight manual kept in the cockpit',
+      'the Certificate of Registration on its own, with no other papers',
       'Certificate of Registration, Certificate of Airworthiness and the maintenance release',
     ],
     correct: 3,
@@ -251,10 +251,10 @@ export const pplaQuestions: {
   {
     question: 'A horizontal white dumbbell displayed in the signal area of an aerodrome means:',
     options: [
-      'the aerodrome is closed to all operations',
+      'the aerodrome is completely closed to all flight operations',
       'movement of aircraft is confined to paved or hard surfaces only',
-      'gliding is in progress',
-      'right-hand circuits are in force',
+      'glider launching and gliding is in progress at the field',
+      'right-hand circuits are in force on all of the runways',
     ],
     correct: 1,
     explanation: 'A white dumbbell indicates that aircraft movements (take-off, landing and taxiing) are confined to paved, sealed or otherwise hard surfaces only.',
@@ -264,9 +264,9 @@ export const pplaQuestions: {
     question: 'A white cross displayed on the movement area of an aerodrome indicates that the:',
     options: [
       'area or runway is unserviceable and must not be used',
-      'aerodrome is for emergency use only',
-      'runway is a glider launch area',
-      'circuit direction has reversed',
+      'aerodrome is reserved for emergency use only',
+      'runway is being used as a glider launch area',
+      'circuit direction has now been reversed',
     ],
     correct: 0,
     explanation: 'A white cross marks an unserviceable runway, taxiway or portion of the movement area, which must not be used by aircraft.',
@@ -275,9 +275,9 @@ export const pplaQuestions: {
   {
     question: 'A series of white chevrons pointing toward a runway threshold marks an area that is:',
     options: [
-      'a displaced threshold available for take-off',
-      'the touchdown zone',
-      'a helicopter landing site',
+      'a displaced threshold that is available for take-off',
+      'the runway touchdown zone',
+      'a marked helicopter landing site',
       'unusable for taxi, take-off or landing (a blast pad/stopway)',
     ],
     correct: 3,
@@ -287,10 +287,10 @@ export const pplaQuestions: {
   {
     question: 'A displaced runway threshold, marked by arrows along the centreline leading to a solid transverse bar, means that the paved area before the bar:',
     options: [
-      'may not be used for any operation',
-      'is available for landing only',
+      'may not be used for any flight operation at all',
+      'is available for use when landing only, not for take-off',
       'may be used for take-off and roll-out but not for landing',
-      'is a taxiway',
+      'is a taxiway leading onto the main runway',
     ],
     correct: 2,
     explanation: 'At a displaced threshold the paved surface before the threshold bar is available for take-off and for the landing roll-out, but landings must not touch down before the displaced threshold.',
@@ -311,10 +311,10 @@ export const pplaQuestions: {
   {
     question: 'In a non-controlled aerodrome circuit, the \'dead side\' is the area:',
     options: [
-      'at the upwind end where aircraft hold before departure',
-      'downwind of the runway at circuit height',
+      'at the upwind end of the runway where aircraft hold before departing',
+      'downwind of the runway at the normal circuit height for the field',
       'on the non-circuit side of the runway, used to descend before joining crosswind',
-      'over the runway at half circuit height',
+      'directly over the runway at half of the normal circuit height',
     ],
     correct: 2,
     explanation: 'The dead side is the side of the runway opposite the active circuit. Aircraft may use it to descend to circuit height before crossing the upwind end to join crosswind.',
@@ -335,10 +335,10 @@ export const pplaQuestions: {
   {
     question: 'You are tracking VFR in Class G airspace at 4,500 ft. The minimum flight visibility and distance from cloud required is:',
     options: [
-      '8 km visibility and clear of cloud',
+      '8 km visibility and remaining clear of cloud throughout the flight',
       '5 km visibility, 1,500 m horizontally and 1,000 ft vertically from cloud',
-      '5 km visibility and clear of cloud',
-      '3 km visibility, 600 m from cloud',
+      '5 km visibility and remaining clear of cloud with the surface in sight',
+      '3 km visibility with at least 600 m horizontal separation from cloud',
     ],
     correct: 1,
     explanation: 'In Class G below 10,000 ft (above 3,000 ft AMSL or 1,000 ft AGL) VMC requires 5 km visibility and separation of 1,500 m horizontally and 1,000 ft vertically from cloud.',
@@ -347,10 +347,10 @@ export const pplaQuestions: {
   {
     question: 'Operating VFR by day in Class G at 1,200 ft AGL (below 3,000 ft AMSL), the minimum requirement is:',
     options: [
-      '8 km visibility and 1,500 m from cloud',
+      '8 km visibility and at least 1,500 m horizontally from cloud',
       '5,000 m visibility and clear of cloud with the surface in sight',
-      '5 km visibility and 1,000 ft from cloud',
-      '3 km visibility and clear of cloud',
+      '5 km visibility and at least 1,000 ft vertically from cloud',
+      '3 km visibility while simply remaining clear of all cloud',
     ],
     correct: 1,
     explanation: 'In Class G at or below 3,000 ft AMSL or 1,000 ft AGL (whichever is higher), VFR by day requires 5,000 m visibility, clear of cloud, and the surface in sight.',
@@ -359,10 +359,10 @@ export const pplaQuestions: {
   {
     question: 'When tracking VFR outside controlled airspace, the maximum tracking tolerance you must remain within to avoid infringing controlled airspace is generally:',
     options: [
-      '5 nm either side of track at all times',
-      '10 nm either side of track',
+      '5 nm either side of the planned track at all times during the flight',
+      '10 nm either side of the planned track regardless of position',
       '1 nm either side of track when within 50 nm of the navigation aid or fix',
-      'half the distance to the boundary',
+      'half the distance to the controlled airspace boundary at any time',
     ],
     correct: 2,
     explanation: 'VFR pilots must apply published tracking tolerances (commonly 1 nm) to ensure they do not enter adjacent controlled airspace without a clearance.',
@@ -431,10 +431,10 @@ export const pplaQuestions: {
   {
     question: 'A pilot is required to obtain a meteorological forecast before:',
     options: [
-      'every flight including local circuits',
-      'flights longer than three hours only',
+      'every flight, including local circuits at the home field',
+      'flights that are longer than three hours in duration only',
       'any flight beyond the vicinity of the departure aerodrome',
-      'flights conducted at night only',
+      'flights that are conducted at night-time only, not by day',
     ],
     correct: 2,
     explanation: 'A forecast must be obtained for any flight other than one that remains in the vicinity of the departure aerodrome. Operational and weather briefing is a pre-flight responsibility of the PIC.',
@@ -444,9 +444,9 @@ export const pplaQuestions: {
     question: 'Which aircraft accident must be reported immediately to the ATSB?',
     options: [
       'one involving death, serious injury, or destruction of/serious damage to the aircraft',
-      'any flight that lands at an alternate aerodrome',
-      'any flight delayed more than 30 minutes',
-      'a flight where the autopilot was unserviceable',
+      'any flight that simply lands at an alternate aerodrome for weather',
+      'any flight that is delayed by more than 30 minutes from its plan',
+      'a flight where the autopilot was simply found to be unserviceable in the cruise',
     ],
     correct: 0,
     explanation: 'Immediately reportable matters include accidents involving death or serious injury, or destruction of or serious damage to the aircraft. These are reported to the ATSB under the Transport Safety Investigation Act.',
@@ -479,10 +479,10 @@ export const pplaQuestions: {
   {
     question: 'A passenger requests to carry a firearm on a private VFR flight. The pilot in command:',
     options: [
-      'may never carry a firearm under any circumstances',
+      'may never carry a firearm on board under any circumstances at all',
       'must ensure the firearm is unloaded and carriage complies with the applicable rules',
-      'may carry it loaded if the passenger holds a licence',
-      'has no responsibility for items passengers bring aboard',
+      'may carry it loaded provided the passenger holds a current firearms licence',
+      'has no responsibility for the items that passengers bring aboard',
     ],
     correct: 1,
     explanation: 'Carriage and discharge of firearms is regulated. The PIC must ensure any firearm is unloaded and that its carriage complies with the relevant rules and security requirements.',
@@ -551,10 +551,10 @@ export const pplaQuestions: {
   {
     question: 'You divert to a remote area and become uncertain of your fuel reaching the destination with required reserves. To declare a fuel emergency you transmit:',
     options: [
-      'PAN PAN and the word MINIMUM FUEL',
+      'PAN PAN PAN and the words MINIMUM FUEL',
       'MAYDAY MAYDAY MAYDAY and the words FUEL EMERGENCY',
-      'a routine position report',
-      'SECURITE FUEL',
+      'a routine in-flight position report',
+      'SECURITE and the word FUEL',
     ],
     correct: 1,
     explanation: 'A fuel state requiring priority handling and a guaranteed landing is declared with a MAYDAY \'FUEL EMERGENCY\'. \'Minimum fuel\' is an advisory that no undue delay can be accepted but is not yet an emergency.',
@@ -575,9 +575,9 @@ export const pplaQuestions: {
   {
     question: 'An instrument fitted to the aeroplane is found unserviceable but is not required for the flight. The correct action is to:',
     options: [
-      'remove the instrument before flight',
-      'cancel the flight in all cases',
-      'ignore it as no action is required',
+      'remove the unserviceable instrument from the panel before the flight',
+      'cancel the flight in all cases until the instrument is repaired',
+      'ignore it completely, since no action is required for the flight',
       'placard it inoperative and confirm the flight may proceed under the rules',
     ],
     correct: 3,
@@ -587,10 +587,10 @@ export const pplaQuestions: {
   {
     question: 'Special VFR may be requested in a control zone when:',
     options: [
-      'the pilot does not hold a radio endorsement',
-      'the aircraft has no transponder',
+      'the pilot lacks a radio endorsement and wishes to transit the control zone visually',
+      'the aircraft has no transponder fitted and cannot squawk the assigned code',
       'weather is below VMC but the pilot can remain clear of cloud in sight of ground or water',
-      'flight is conducted above 10,000 ft',
+      'the flight is conducted above 10,000 ft, where the VMC distance criteria no longer apply',
     ],
     correct: 2,
     explanation: 'A Special VFR clearance lets a VFR aircraft operate in a control zone in conditions below the normal VMC minima, remaining clear of cloud and in sight of the ground or water, subject to ATC clearance.',
@@ -611,10 +611,10 @@ export const pplaQuestions: {
   {
     question: 'In Class D airspace, a VFR aircraft:',
     options: [
-      'needs no clearance below 2,500 ft',
+      'needs no clearance whatsoever when operating below 2,500 ft AGL',
       'requires a clearance and is given traffic information on other VFR aircraft',
-      'is separated from all other VFR aircraft by ATC',
-      'may not operate at all',
+      'is separated from all other VFR aircraft directly by ATC',
+      'may not operate within the Class D airspace at all',
     ],
     correct: 1,
     explanation: 'In Class D a VFR flight needs a clearance and is given traffic information on other VFR aircraft, but ATC does not separate VFR aircraft from each other; the pilot remains responsible for separation by see-and-avoid.',
@@ -623,9 +623,9 @@ export const pplaQuestions: {
   {
     question: 'A CTAF is established at certain non-controlled aerodromes so that pilots can:',
     options: [
-      'obtain an airways clearance from ATC',
-      'receive radar separation',
-      'obtain a met forecast',
+      'obtain an airways clearance from air traffic control before entering',
+      'receive radar separation from a controller monitoring the frequency',
+      'obtain a meteorological forecast for the destination aerodrome',
       'broadcast intentions and maintain a listening watch to arrange their own separation',
     ],
     correct: 3,
@@ -635,9 +635,9 @@ export const pplaQuestions: {
   {
     question: 'Recent experience for carrying passengers as a PPL holder requires, in the preceding 90 days, at least:',
     options: [
-      'one flight review',
-      'ten hours total flying',
-      'a check flight with an instructor',
+      'one flight review completed with an approved testing officer',
+      'ten hours of total flying experience in the preceding period',
+      'a check flight flown with an instructor in the same period',
       'three take-offs and three landings in the same category of aircraft',
     ],
     correct: 3,
@@ -647,10 +647,10 @@ export const pplaQuestions: {
   {
     question: 'The privileges of a PPL with aeroplane category rating allow the holder to:',
     options: [
-      'be paid to carry passengers for hire',
+      'be paid to carry passengers for hire or reward on a commercial basis',
       'act as pilot in command of an aeroplane in a private operation without remuneration',
-      'conduct charter operations',
-      'conduct aerial work for reward',
+      'conduct charter operations for reward once suitably endorsed',
+      'conduct aerial work for reward, such as survey or mustering',
     ],
     correct: 1,
     explanation: 'A PPL permits acting as pilot in command in private (non-remunerated) operations. Flying for hire, charter and aerial work require a CPL or ATPL and an air operator\'s authorisation.',
@@ -672,9 +672,9 @@ export const pplaQuestions: {
     question: 'A NOTAM is issued to advise pilots of:',
     options: [
       'the establishment, condition or change of a facility, hazard or procedure essential to flight',
-      'the long-term amendment cycle of the AIP and charts',
-      'the published timetables of scheduled airline services',
-      'the routine periodic maintenance schedule of aids',
+      'the long-term amendment cycle of the AIP and the aeronautical charts that are in use',
+      'the published timetables of scheduled airline services across the country',
+      'the routine periodic maintenance schedule of the ground navigation aids',
     ],
     correct: 0,
     explanation: 'A NOTAM gives timely notice of the establishment, condition or change of any aeronautical facility, service, procedure or hazard, the knowledge of which is essential to flight operations.',
@@ -695,9 +695,9 @@ export const pplaQuestions: {
   {
     question: 'A pilot must report a \'hazard to navigation\' such as:',
     options: [
-      'every cloud encountered en route',
-      'each frequency change',
-      'a normal diversion for weather',
+      'every cloud encountered along the planned route during the flight',
+      'each routine frequency change made during a normal cruise',
+      'a normal diversion around weather that is part of the plan',
       'an unserviceable navigation aid or an obstruction encountered in flight',
     ],
     correct: 3,
@@ -707,10 +707,10 @@ export const pplaQuestions: {
   {
     question: 'Operating to or from a certified aerodrome with an active CTAF(R), you must:',
     options: [
-      'obtain a clearance from ATC',
+      'obtain a clearance from air traffic control before entering',
       'carry and use a serviceable radio on the designated CTAF',
-      'squawk 7600',
-      'remain above 2,000 ft AGL',
+      'squawk the code 7600 on the transponder throughout',
+      'remain at or above 2,000 ft AGL within the area',
     ],
     correct: 1,
     explanation: 'At a CTAF(R) (radio carriage and use mandatory) the pilot must carry and use a serviceable radio on the designated frequency and make the standard broadcasts.',
@@ -719,10 +719,10 @@ export const pplaQuestions: {
   {
     question: 'Two heavier-than-air aircraft are on final approach to the same runway. Right of way belongs to the:',
     options: [
-      'higher aircraft',
-      'faster aircraft',
+      'higher aircraft, which is presumed to have a better view of the runway',
+      'faster aircraft, since it will clear the runway sooner for the others',
       'lower aircraft, provided it does not cut in front of one on short final',
-      'aircraft that called first',
+      'aircraft that made the first inbound call on the common traffic frequency',
     ],
     correct: 2,
     explanation: 'The lower aircraft on approach has right of way, but must not use this to cut in front of an aircraft that is on a final approach to land. Power-driven aircraft still give way to gliders.',
@@ -731,10 +731,10 @@ export const pplaQuestions: {
   {
     question: 'A \'SECURITE\' prefix (security call) before a radio transmission would be required when:',
     options: [
-      'declaring a distress condition',
+      'declaring a distress condition that needs immediate assistance',
       'broadcasting a hazard or safety message of concern to other aircraft',
-      'requesting an airways clearance',
-      'cancelling SAR',
+      'requesting an airways clearance to enter controlled airspace',
+      'cancelling search and rescue after a safe arrival',
     ],
     correct: 1,
     explanation: 'A safety/security broadcast (SECURITE) carries a message concerning the safety of navigation or important meteorological warnings, of lower priority than distress and urgency.',
@@ -743,9 +743,9 @@ export const pplaQuestions: {
   {
     question: 'Survival equipment (such as life jackets) must be carried when an aeroplane flies over water beyond:',
     options: [
-      '50 nm from the coast in all cases',
-      'any distance over water',
-      '100 nm from the departure aerodrome',
+      '50 nm from the coast in all cases, regardless of the route',
+      'any distance at all when flying over open water',
+      '100 nm from the departure aerodrome along the planned track',
       'gliding distance from land (or as specified for the operation)',
     ],
     correct: 3,
@@ -756,7 +756,7 @@ export const pplaQuestions: {
     question: 'You plan to drop parachutists from your aeroplane. This activity:',
     options: [
       'is regulated and requires compliance with the parachuting rules and any approvals',
-      'may be conducted under a standard PPL with no further requirement',
+      'may be conducted under a standard PPL with no further requirement at all',
       'is prohibited for private operations',
       'requires only a NOTAM',
     ],
@@ -767,10 +767,10 @@ export const pplaQuestions: {
   {
     question: 'The AIP, in its complete form for VFR use, comprises the AIP Book together with:',
     options: [
-      'the aircraft flight manual',
-      'the operator\'s operations manual',
+      'the aircraft flight manual carried on board the aeroplane',
+      'the operator\'s operations manual for the company flights',
       'ERSA, the Departure and Approach Procedures, and aeronautical charts',
-      'CAO 48 only',
+      'Civil Aviation Order 48 dealing with flight and duty times',
     ],
     correct: 2,
     explanation: 'The AIP suite for VFR includes the AIP Book, ERSA, DAP, and the aeronautical charts (such as WAC, VNC and VTC), amended on the AIRAC cycle.',
@@ -803,9 +803,9 @@ export const pplaQuestions: {
   {
     question: 'The pilot in command\'s authority over an aircraft means the PIC:',
     options: [
-      'must defer to the most senior passenger',
-      'shares authority equally with ATC',
-      'may delegate command to any passenger',
+      'must defer to the most senior passenger on board for all major decisions',
+      'shares authority equally with air traffic control at all times',
+      'may delegate command to any passenger holding a current licence',
       'has final authority on the operation and disposition of the aircraft while in command',
     ],
     correct: 3,
@@ -815,10 +815,10 @@ export const pplaQuestions: {
   {
     question: 'A Certificate of Airworthiness for an aircraft remains in force:',
     options: [
-      'for 12 months from issue only',
+      'for exactly 12 months from the date it was first issued and no longer',
       'while the aircraft is maintained in accordance with the applicable requirements',
-      'for 100 hours of operation',
-      'until the aircraft changes ownership',
+      'for a fixed period of 100 hours of operation, then must be renewed',
+      'until the aircraft is sold or otherwise changes its ownership',
     ],
     correct: 1,
     explanation: 'A Certificate of Airworthiness continues in force provided the aircraft is maintained in an airworthy condition in accordance with the applicable maintenance requirements.',
@@ -827,10 +827,10 @@ export const pplaQuestions: {
   {
     question: 'At a non-controlled aerodrome, the recommended overfly height to observe the windsock and circuit before joining, where terrain permits, is:',
     options: [
-      'at the circuit altitude',
+      'at the normal published circuit altitude',
       'at least 500 ft above the circuit altitude',
-      '2,000 ft AGL',
-      '1,000 ft AGL',
+      'at exactly 2,000 ft above ground level',
+      'at exactly 1,000 ft above ground level',
     ],
     correct: 1,
     explanation: 'When joining an unfamiliar non-controlled aerodrome, overflying at least 500 ft above circuit height (typically 1,500 ft AGL if circuit is 1,000 ft AGL) lets the pilot check the wind indicator and traffic before descending on the dead side.',
@@ -851,10 +851,10 @@ export const pplaQuestions: {
   {
     question: 'The lowest height at which a VFR aeroplane may fly over a populous area (other than for take-off or landing) is:',
     options: [
-      '500 ft AGL',
-      '2,000 ft AMSL',
+      '500 ft above ground level anywhere over the built-up area',
+      '2,000 ft above mean sea level regardless of the terrain',
       '1,000 ft above the highest obstacle within 600 m horizontally',
-      '300 ft above ground level',
+      '300 ft above ground level over the populous area',
     ],
     correct: 2,
     explanation: 'Over a populous area an aircraft must not fly below 1,000 ft above the highest feature within a horizontal radius of 600 m, except when taking off or landing.',
@@ -899,9 +899,9 @@ export const pplaQuestions: {
   {
     question: 'Most significant weather occurs in the troposphere because that layer:',
     options: [
-      'has constant temperature with height',
-      'lies above the tropopause',
-      'contains the ozone layer',
+      'has a constant temperature with height that suppresses vertical motion',
+      'lies above the tropopause where the air is warmed by the ozone layer',
+      'contains the ozone layer, which absorbs most of the incoming radiation',
       'contains nearly all the atmosphere\'s water vapour and is where vertical mixing occurs',
     ],
     correct: 3,
@@ -911,10 +911,10 @@ export const pplaQuestions: {
   {
     question: 'Surface air temperature for aviation is measured:',
     options: [
-      'on the runway surface in direct sun',
+      'on the runway surface itself in direct summer sunlight',
       'in a shaded, ventilated screen about 1.2 m above the ground',
-      'at cockpit level on the apron',
-      'at the top of the control tower',
+      'at cockpit level out on the open apron in the sun',
+      'at the top of the aerodrome control tower building',
     ],
     correct: 1,
     explanation: 'Standard surface temperature is measured in a shaded, ventilated Stevenson screen about 1.2 m above ground. The actual temperature just above a sunlit runway can be considerably higher.',
@@ -936,9 +936,9 @@ export const pplaQuestions: {
     question: 'Relative humidity is best described as the ratio of:',
     options: [
       'water vapour present to the maximum the air could hold at that temperature',
-      'water vapour to dry air by mass',
-      'dew point to temperature',
-      'liquid water to vapour in a cloud',
+      'the mass of water vapour present to the mass of the dry air in the sample',
+      'the dew point temperature to the actual air temperature',
+      'the liquid water content to the water vapour within a cloud',
     ],
     correct: 0,
     explanation: 'Relative humidity is the amount of water vapour present expressed as a percentage of the maximum the air could hold at that temperature. As temperature falls toward the dew point, RH rises toward 100%.',
@@ -959,10 +959,10 @@ export const pplaQuestions: {
   {
     question: 'For a given pressure, air density decreases when:',
     options: [
-      'temperature decreases',
-      'pressure increases',
+      'the air temperature falls towards freezing',
+      'the surrounding air pressure increases',
       'temperature increases or humidity increases',
-      'humidity decreases',
+      'the humidity of the air decreases sharply',
     ],
     correct: 2,
     explanation: 'Warm air and moist air are less dense than cold, dry air at the same pressure (water vapour is lighter than dry air). Lower density raises density height and degrades performance.',
@@ -971,10 +971,10 @@ export const pplaQuestions: {
   {
     question: 'Cloud amount in an aviation forecast or report is given in:',
     options: [
-      'tenths of the sky',
-      'a percentage',
+      'tenths of the sky covered',
+      'a percentage of the sky',
       'oktas (eighths of the sky covered)',
-      'metres of base',
+      'metres of cloud base',
     ],
     correct: 2,
     explanation: 'Cloud cover is reported in oktas (eighths): FEW 1–2, SCT 3–4, BKN 5–7 and OVC 8. The ceiling is the lowest BKN or OVC layer.',
@@ -984,9 +984,9 @@ export const pplaQuestions: {
     question: 'In a coded report, \'BKN015\' indicates a layer that is:',
     options: [
       'broken (5-7 oktas) with a base of 1,500 ft',
-      'blowing snow at 15 ft',
-      'broken at 150 ft',
-      'scattered at 1,500 ft',
+      'blowing snow reducing visibility at 15 ft',
+      'broken cloud with a base of only 150 ft',
+      'scattered cloud with a base at 1,500 ft',
     ],
     correct: 0,
     explanation: 'BKN means 5–7 oktas (broken); the three figures give the base in hundreds of feet, so 015 is 1,500 ft. Cloud bases in METAR/TAF are referenced to aerodrome level.',
@@ -995,10 +995,10 @@ export const pplaQuestions: {
   {
     question: 'Cumulonimbus cloud is associated with:',
     options: [
-      'continuous light rain and smooth air',
+      'continuous light rain falling from smooth, calm air',
       'thunderstorms, severe turbulence, hail and lightning',
-      'persistent low stratus',
-      'clear skies and good visibility',
+      'persistent low stratus cloud and drizzle',
+      'clear skies and very good visibility all round',
     ],
     correct: 1,
     explanation: 'Cumulonimbus is the thunderstorm cloud: severe turbulence, strong up and downdraughts, hail, lightning, icing and windshear. Aircraft should give it a wide berth.',
@@ -1007,9 +1007,9 @@ export const pplaQuestions: {
   {
     question: 'Nimbostratus cloud typically produces:',
     options: [
-      'isolated heavy showers',
-      'lightning and hail',
-      'light intermittent drizzle only',
+      'isolated heavy showers separated by bright clear spells',
+      'frequent lightning and large damaging hail',
+      'light, intermittent drizzle from a thin layer',
       'continuous moderate to heavy rain over a wide area',
     ],
     correct: 3,
@@ -1031,9 +1031,9 @@ export const pplaQuestions: {
   {
     question: 'Lenticular (lens-shaped) cloud forming downwind of a mountain range indicates:',
     options: [
-      'fog formation',
-      'a warm front approaching',
-      'stable smooth conditions everywhere',
+      'fog forming on the surface in the early morning',
+      'a warm front slowly approaching from the west',
+      'stable, smooth conditions across the whole area',
       'mountain wave activity and possible severe turbulence',
     ],
     correct: 3,
@@ -1080,9 +1080,9 @@ export const pplaQuestions: {
     question: 'A \'gust\' differs from a \'squall\' in that a gust is a:',
     options: [
       'brief sudden increase in wind speed, whereas a squall is sustained for at least a minute',
-      'sustained wind change, whereas a squall is momentary',
-      'change of wind direction only',
-      'decrease in wind speed',
+      'sustained change in the wind, whereas a squall lasts for only a brief moment',
+      'change of wind direction only, with no change in the wind speed',
+      'decrease in wind speed, whereas a squall is an increase in speed',
     ],
     correct: 0,
     explanation: 'A gust is a rapid, short-lived increase in wind speed. A squall is a stronger, more sustained event: speed rising by at least 16 kt to at least 22 kt and lasting for at least a minute.',
@@ -1140,9 +1140,9 @@ export const pplaQuestions: {
     question: 'An occluded front forms when:',
     options: [
       'a cold front overtakes a warm front, lifting the warm air clear of the surface',
-      'two warm fronts merge',
-      'a high-pressure ridge builds',
-      'a trough dissipates',
+      'two warm fronts merge and the warmer air sinks to the surface',
+      'a high-pressure ridge builds and the isobars spread further apart',
+      'a trough dissipates as the cold air is undercut by warmer air',
     ],
     correct: 0,
     explanation: 'An occlusion occurs when a faster cold front catches the warm front ahead of it, lifting the warm sector off the surface. The weather combines features of both fronts, often with extensive cloud and rain.',
@@ -1151,9 +1151,9 @@ export const pplaQuestions: {
   {
     question: 'For a thunderstorm to develop, the three ingredients required are:',
     options: [
-      'low humidity, stability and subsidence',
-      'an inversion, dry air and high pressure',
-      'fog, calm wind and clear skies',
+      'low humidity, stability and widespread gentle subsidence',
+      'a strong inversion, very dry air and high surface pressure',
+      'fog, calm winds and clear skies under a high-pressure system',
       'high moisture content, instability and a lifting (trigger) mechanism',
     ],
     correct: 3,
@@ -1175,10 +1175,10 @@ export const pplaQuestions: {
   {
     question: 'When flying near thunderstorms, the recommended minimum distance to remain clear of a cell is:',
     options: [
-      '2 nm',
+      '2 nm in all directions',
       'at least 10 nm, passing on the upwind side',
-      '5 nm on the downwind side',
-      'clear of cloud only',
+      '5 nm, passing on the downwind side',
+      'remaining clear of cloud only',
     ],
     correct: 1,
     explanation: 'Aircraft should remain at least 10 nm from a thunderstorm, preferring the upwind side, because hail and turbulence are thrown well beyond the visible cloud and downwind of the cell.',
@@ -1187,9 +1187,9 @@ export const pplaQuestions: {
   {
     question: 'Carburettor icing is most likely under conditions of:',
     options: [
-      'very cold dry air below −20°C',
-      'hot dry desert air',
-      'temperatures above +40°C',
+      'very cold, dry air at outside temperatures well below minus 20 C',
+      'hot, dry desert air with very low relative humidity',
+      'outside air temperatures consistently above plus 40 C',
       'high humidity with outside air temperatures roughly between −10°C and +30°C',
     ],
     correct: 3,
@@ -1200,9 +1200,9 @@ export const pplaQuestions: {
     question: 'Airframe icing requires the presence of:',
     options: [
       'supercooled liquid water at temperatures around 0°C to −20°C',
-      'ice crystals only',
-      'dry air below −40°C',
-      'warm rain above +5°C',
+      'dry ice crystals suspended in the air at almost any temperature',
+      'very dry air at temperatures well below minus 40 degrees C',
+      'warm rain falling through air at temperatures above plus 5 C',
     ],
     correct: 0,
     explanation: 'Airframe icing needs supercooled liquid water droplets, most likely between 0°C and −20°C (most severe 0°C to −15°C). Below about −20°C cloud is mostly ice crystals, which do not adhere readily.',
@@ -1223,10 +1223,10 @@ export const pplaQuestions: {
   {
     question: 'Radiation fog typically forms:',
     options: [
-      'on windy overcast nights',
+      'on windy, overcast nights with a strong gradient wind',
       'on clear, calm nights with light wind and moist air over land',
-      'over the open ocean during the day',
-      'ahead of an advancing cold front',
+      'over the open ocean during the heat of the day',
+      'ahead of an advancing cold front in rising air',
     ],
     correct: 1,
     explanation: 'Radiation fog forms overnight when clear skies allow the ground to cool by radiation, chilling the moist air above to its dew point. Light wind (about 5–7 kt) provides the gentle mixing needed; calm or strong winds inhibit it.',
@@ -1248,9 +1248,9 @@ export const pplaQuestions: {
     question: 'A moist airflow crossing a mountain range usually produces:',
     options: [
       'a lower cloud base and precipitation on the windward slope',
-      'clearer skies on the windward slope',
-      'most cloud on the leeward slope',
-      'fog only at the summit',
+      'noticeably clearer skies along the whole windward slope',
+      'most of the cloud forming on the sheltered leeward slope',
+      'fog forming only right at the summit of the range',
     ],
     correct: 0,
     explanation: 'Air forced up the windward slope cools and condenses, giving a lower cloud base, cloud and precipitation there. Descending leeward air warms and dries (the foehn effect), so the lee side is usually clearer.',
@@ -1283,10 +1283,10 @@ export const pplaQuestions: {
   {
     question: 'You receive a TAF for your destination. A TAF is a:',
     options: [
-      'report of the conditions actually observed now',
-      'forecast of upper winds only',
+      'report of the weather conditions actually observed at the aerodrome right now',
+      'forecast of the upper winds and temperatures along the planned route only',
       'statement of the expected meteorological conditions at an aerodrome for a set period',
-      'warning of severe en route weather',
+      'warning of severe en route weather such as thunderstorms and icing',
     ],
     correct: 2,
     explanation: 'A Terminal Aerodrome Forecast (TAF) states the conditions expected at an aerodrome over its validity period (commonly issued as TAF3). A METAR is an actual observation; a SIGMET warns of severe en route phenomena.',
@@ -1295,10 +1295,10 @@ export const pplaQuestions: {
   {
     question: 'In a TAF, the change group \'TEMPO\' indicates conditions expected to last, on each occasion, for:',
     options: [
-      'more than 60 minutes continuously',
+      'more than 60 minutes continuously through the period',
       'less than 60 minutes (and recurring) within the period',
-      'the whole validity period',
-      'less than 30 minutes only',
+      'the whole of the validity period without a break',
+      'less than 30 minutes only on a single occasion',
     ],
     correct: 1,
     explanation: 'TEMPO denotes temporary fluctuations expected to last less than 60 minutes on each occasion and, in aggregate, less than half the period. INTER denotes fluctuations lasting less than 30 minutes each.',
@@ -1319,10 +1319,10 @@ export const pplaQuestions: {
   {
     question: 'In a TAF, \'BECMG 2204/2206\' describes a change that is:',
     options: [
-      'a temporary 30-minute fluctuation',
+      'a temporary fluctuation lasting less than 30 minutes on each occasion',
       'a permanent gradual change occurring between 0400 and 0600 UTC on the 22nd',
-      'valid only at 0400 UTC',
-      'a probability of 30%',
+      'a change that is valid only at 0400 UTC on the day in question',
+      'a 30 per cent probability of the change occurring within the period',
     ],
     correct: 1,
     explanation: 'BECMG indicates a permanent change taking place gradually across the stated window (here 0400–0600 UTC on the 22nd). After the window the new conditions prevail.',
@@ -1331,10 +1331,10 @@ export const pplaQuestions: {
   {
     question: '\'CAVOK\' may be used in a report or forecast only when visibility is at least:',
     options: [
-      '8 km with scattered low cloud',
-      '5 km clear of cloud',
+      '8 km, with only scattered low cloud and light precipitation present',
+      '5 km clear of cloud, with the surface in sight throughout the flight',
       '10 km, with no cloud below 5,000 ft or the highest MSA, and no significant weather',
-      '10 km with broken cloud at 2,000 ft',
+      '10 km, with broken cloud permitted at or above 2,000 ft',
     ],
     correct: 2,
     explanation: 'CAVOK (ceiling and visibility OK) requires visibility 10 km or more, no cloud below 5,000 ft (or the highest minimum sector altitude, whichever is greater) and no cumulonimbus, and no significant weather.',
@@ -1355,10 +1355,10 @@ export const pplaQuestions: {
   {
     question: 'A SIGMET is issued to warn of:',
     options: [
-      'routine aerodrome surface conditions and circuit details',
+      'routine aerodrome surface conditions and the local circuit details for all pilots',
       'severe en route weather such as thunderstorms, severe turbulence, severe icing or volcanic ash',
-      'forecast upper winds and temperatures for planning',
-      'the published start and end of daylight for the area',
+      'forecast upper winds and temperatures for use in cruise planning only',
+      'the published start and end of daylight for the area being flown',
     ],
     correct: 1,
     explanation: 'A SIGMET warns of significant en route phenomena hazardous to all aircraft: severe turbulence or icing, thunderstorms, tropical cyclones, severe mountain waves, volcanic ash and the like. It is valid up to 4 hours (6 for cyclones and ash).',
@@ -1367,10 +1367,10 @@ export const pplaQuestions: {
   {
     question: 'Moderate-intensity en route weather (such as moderate turbulence or icing) is most likely found in the:',
     options: [
-      'SIGMET',
-      'METAR',
+      'SIGMET issued for the whole flight information region',
+      'METAR for the destination aerodrome only',
       'Graphical Area Forecast (GAF) or an AIRMET',
-      'ATIS',
+      'ATIS broadcast at the destination aerodrome',
     ],
     correct: 2,
     explanation: 'SIGMET covers only severe phenomena. Moderate conditions are carried in the Graphical Area Forecast and, where applicable, an AIRMET, which supplements the GAF.',
@@ -1379,9 +1379,9 @@ export const pplaQuestions: {
   {
     question: 'The Graphical Area Forecast (GAF) replaced the ARFOR and provides:',
     options: [
-      'actual observed conditions at one aerodrome',
-      'a forecast for a single runway',
-      'upper-wind temperatures only',
+      'the actual observed conditions at a single named aerodrome',
+      'a forecast covering just one runway at the destination aerodrome',
+      'the forecast upper-wind temperatures along the route only',
       'a graphical depiction of expected weather, cloud and visibility over an area',
     ],
     correct: 3,
@@ -1451,10 +1451,10 @@ export const pplaQuestions: {
   {
     question: 'You are planning a coastal flight near Coffs Harbour on a clear summer afternoon with light winds. The most likely local wind effect to expect near the coast is a:',
     options: [
-      'strong offshore gale',
-      'persistent advection fog',
+      'strong offshore gale blowing out to sea all afternoon',
+      'persistent advection fog rolling in across the coast',
       'sea breeze setting in from the east during the afternoon',
-      'mountain wave',
+      'mountain wave forming downwind of the coastal ranges',
     ],
     correct: 2,
     explanation: 'On a clear, lightly-windy summer afternoon, daytime heating over the land drives a sea breeze onshore (from the cooler water). Pilots should expect a wind shift and possible turbulence along the sea-breeze front.',
@@ -1475,10 +1475,10 @@ export const pplaQuestions: {
   {
     question: 'You plan to arrive at Wagga Wagga when the TAF shows \'BKN008\'. For a VFR flight this matters because:',
     options: [
-      'broken cloud at 800 ft has no effect on a VFR plan',
+      'broken cloud at 800 ft has no real effect on the plan for a daytime VFR flight',
       'broken cloud at 800 ft is below the VFR alternate criterion and may need holding or an alternate',
-      'you must climb above the cloud and press on regardless',
-      'the reported cloud automatically forces a diversion',
+      'you must simply climb above the broken cloud at 800 ft and continue on regardless',
+      'the broken cloud at 800 ft automatically forces an immediate diversion elsewhere',
     ],
     correct: 1,
     explanation: 'Cloud more than SCT below 1,500 ft (or visibility below 8 km) at the destination triggers the VFR alternate requirement. BKN008 (5–7 oktas at 800 ft) is below 1,500 ft, so the pilot must carry holding fuel or plan an alternate.',
@@ -1500,9 +1500,9 @@ export const pplaQuestions: {
     question: 'Conditions favourable to the formation of frost on an aircraft parked overnight are:',
     options: [
       'a clear, calm night with the surface temperature falling below 0°C',
-      'a windy overcast night',
-      'a warm humid evening',
-      'continuous light rain',
+      'a windy, overcast night with the surface temperature staying mild',
+      'a warm, humid evening with the temperature well above freezing',
+      'continuous light rain keeping the airframe wet but above freezing',
     ],
     correct: 0,
     explanation: 'Frost forms by deposition on clear, calm nights when the surface cools below freezing. Frost on the wings must be removed before flight because it disrupts airflow and reduces lift markedly.',
@@ -1511,10 +1511,10 @@ export const pplaQuestions: {
   {
     question: 'An aircraft reports continuous moderate turbulence en route. The pilot should consider submitting:',
     options: [
-      'a NOTAM',
-      'a maintenance release entry',
+      'a NOTAM advising other pilots of the turbulence encountered',
+      'a maintenance release entry recording the rough conditions',
       'an AIREP (in-flight report) to assist other aircraft and forecasters',
-      'a SIGMET',
+      'a SIGMET warning all aircraft of the severe weather hazard',
     ],
     correct: 2,
     explanation: 'Pilots encountering significant conditions such as turbulence, icing or windshear should pass an in-flight report (AIREP), which helps forecasters and warns other aircraft. SIGMETs are issued by the meteorological office, not pilots.',
@@ -1535,9 +1535,9 @@ export const pplaQuestions: {
   {
     question: 'On a hot day, the actual temperature just above a black bitumen runway compared with the official shade temperature is likely to be:',
     options: [
-      'the same',
-      'significantly lower',
-      'unrelated to the surface',
+      'the same, because the surface does not affect the air temperature',
+      'significantly lower, because the dark surface radiates heat away',
+      'unrelated to the surface and governed only by the shade reading',
       'significantly higher, increasing density height near the surface',
     ],
     correct: 3,
@@ -1548,9 +1548,9 @@ export const pplaQuestions: {
     question: 'You see towering cumulus building rapidly into an overcast on a hot, humid afternoon over inland terrain. This most likely signals:',
     options: [
       'developing thunderstorms and the need to avoid the area',
-      'clearing weather',
-      'fog forming',
-      'a stable inversion',
+      'clearing weather and improving conditions for the rest of the flight',
+      'fog forming at the surface later in the cooling afternoon',
+      'a stable inversion that will keep the air smooth and calm',
     ],
     correct: 0,
     explanation: 'Rapidly building towering cumulus in moist, unstable, heated air is the cumulus stage of thunderstorm development. The pilot should anticipate storms, severe turbulence and windshear, and avoid the area.',
@@ -1571,9 +1571,9 @@ export const pplaQuestions: {
   {
     question: 'Subsidence within a high-pressure system is associated with:',
     options: [
-      'frequent thunderstorms',
-      'persistent heavy rain',
-      'strong frontal activity',
+      'frequent thunderstorms and heavy convective showers',
+      'persistent heavy rain over a wide area for days',
+      'strong frontal activity with gusty surface winds',
       'generally stable, fine weather with little cloud',
     ],
     correct: 3,
@@ -1583,10 +1583,10 @@ export const pplaQuestions: {
   {
     question: 'Mountain waves can produce severe turbulence downstream of a range when the wind at ridge level is at least:',
     options: [
-      'calm',
+      'calm or very light at all levels above and around the range',
       'about 25 kt and roughly perpendicular to the range, with a stable layer',
-      'light and parallel to the range',
-      'from below the ridge',
+      'light and blowing parallel to the line of the mountain range',
+      'rising from below the ridge line on the windward side only',
     ],
     correct: 1,
     explanation: 'Lee (mountain) waves form when a strong wind (roughly 25 kt or more) blows nearly perpendicular to a range with a stable layer above. Severe turbulence and strong vertical currents can persist many miles downstream.',
@@ -1596,9 +1596,9 @@ export const pplaQuestions: {
     question: 'Virga is best described as:',
     options: [
       'precipitation that evaporates before reaching the ground',
-      'fog over water',
-      'fine drizzle from stratus',
-      'hail thrown from a storm',
+      'patchy fog forming over water in the early morning',
+      'fine drizzle falling steadily from a layer of stratus',
+      'hail thrown out of the top of a building thunderstorm',
     ],
     correct: 0,
     explanation: 'Virga is precipitation falling from cloud that evaporates before reaching the surface, often seen as trailing wisps beneath the cloud base. It can be associated with downdraughts.',
@@ -1619,10 +1619,10 @@ export const pplaQuestions: {
   {
     question: 'On descent into an inland aerodrome late on a clear winter afternoon, with the temperature and dew point converging and wind light, you should anticipate:',
     options: [
-      'strong gusty winds',
-      'building thunderstorms',
+      'strong and gusty surface winds across the field',
+      'building thunderstorms over the inland terrain',
       'radiation fog or mist forming around last light',
-      'severe icing at low level',
+      'severe airframe icing at the lower levels',
     ],
     correct: 2,
     explanation: 'A clear sky, light wind and a closing temperature/dew-point spread near last light are classic radiation-fog conditions. The pilot should plan to arrive with margin or carry holding fuel or an alternate.',
@@ -1643,10 +1643,10 @@ export const pplaQuestions: {
   {
     question: 'Which condition makes a layer of air unstable, encouraging convection and cumulus development?',
     options: [
-      'a strong temperature inversion capping the layer aloft',
-      'widespread subsidence and sinking air within a high',
+      'a strong temperature inversion aloft that caps the layer and prevents rising air',
+      'widespread subsidence and gently sinking air within a slow-moving high-pressure system',
       'the environment cools quickly with height, so a rising parcel stays warmer than its surroundings',
-      'a shallow surface layer of overnight radiation fog',
+      'a shallow surface layer of overnight radiation fog forming under clear, calm skies',
     ],
     correct: 2,
     explanation: 'A layer is unstable when the surrounding air cools rapidly with height. A parcel that is nudged upward then stays warmer and lighter than its surroundings, so it keeps rising, encouraging convection and cumulus cloud.',
@@ -1655,10 +1655,10 @@ export const pplaQuestions: {
   {
     question: 'Hail encountered well clear of the visible thunderstorm cloud is possible because hail can be:',
     options: [
-      'produced only within stratus',
+      'produced only within layered stratus cloud well away from any storm',
       'thrown out of the top and downwind of the cell beyond the cloud edge',
-      'carried up by a sea breeze',
-      'formed in clear air',
+      'carried up to the aircraft by a strong afternoon sea breeze',
+      'formed directly in clear air without any cloud being present',
     ],
     correct: 1,
     explanation: 'Strong updraughts can eject hail from the upper part of a storm so it falls well beyond the visible cloud, especially downwind. This is one reason to keep at least 10 nm clear of cumulonimbus.',
@@ -1680,9 +1680,9 @@ export const pplaQuestions: {
     question: 'A line of longitude (meridian) runs:',
     options: [
       'from the North Pole to the South Pole, indicating true north-south',
-      'east-west around the earth',
-      'parallel to the equator',
-      'only across the Southern Hemisphere',
+      'east to west right around the earth, parallel to the equator',
+      'parallel to the equator at a constant distance from it',
+      'only across the Southern Hemisphere below the equator',
     ],
     correct: 0,
     explanation: 'Meridians of longitude join the poles and run true north–south; they converge at the poles. Parallels of latitude run east–west and are equally spaced.',
@@ -1715,10 +1715,10 @@ export const pplaQuestions: {
   {
     question: 'Local Mean Time (LMT) differs from standard time because LMT is based on:',
     options: [
-      'the time zone boundary',
-      'the equation of time only',
+      'the boundary of the local standard time zone, not the sun',
+      'the equation of time alone, which varies through the year',
       'the actual longitude of the place, at 4 minutes of time per degree',
-      'UTC plus a fixed 10 hours',
+      'UTC plus a fixed offset of ten hours for the whole country',
     ],
     correct: 2,
     explanation: 'LMT depends on longitude: the earth rotates 15° per hour, so 1° equals 4 minutes of time. Places east of a reference meridian have a later LMT.',
@@ -1823,9 +1823,9 @@ export const pplaQuestions: {
   {
     question: 'You find you are a few miles left of your planned track partway along a leg. The practical VFR response is to:',
     options: [
-      'continue on the original heading and hope to regain track',
-      'turn directly toward the destination, abandoning the planned track',
-      'descend to get a better view of the ground',
+      'continue on the original heading and simply hope to regain the planned track soon',
+      'turn directly toward the destination, abandoning the planned track entirely',
+      'descend to get a much better view of the ground and look for a landmark',
       'alter heading to the right toward your track and confirm position with a positive ground fix',
     ],
     correct: 3,
@@ -1958,7 +1958,7 @@ export const pplaQuestions: {
       'TO indication',
       'flag showing OFF',
       'FROM indication',
-      'the needle deflected fully to one side',
+      'fully deflected needle',
     ],
     correct: 2,
     explanation: 'Tracking away from a VOR on a radial gives a FROM indication when the selected course matches the radial. A TO indication means the selected course leads toward the station.',
@@ -1968,9 +1968,9 @@ export const pplaQuestions: {
     question: 'A VOR provides the pilot with:',
     options: [
       'a magnetic bearing to or from the station, independent of heading',
-      'distance to the station',
-      'groundspeed',
-      'a true bearing only',
+      'the slant distance to the ground station in nautical miles',
+      'the aircraft groundspeed measured along the selected track',
+      'a true bearing to or from the station, independent of heading',
     ],
     correct: 0,
     explanation: 'A VOR gives bearing information (radials) referenced to magnetic north and independent of aircraft heading. Distance comes from co-located DME; the VOR itself gives no distance.',
@@ -1980,9 +1980,9 @@ export const pplaQuestions: {
     question: 'DME provides:',
     options: [
       'slant distance to the station in nautical miles',
-      'magnetic bearing to the station',
-      'true track',
-      'groundspeed only',
+      'the magnetic bearing to the station',
+      'the aircraft\'s true track',
+      'the groundspeed only',
     ],
     correct: 0,
     explanation: 'Distance Measuring Equipment gives the slant range (line-of-sight distance) to the ground station. At low level near the station the slant range is close to the ground distance; directly overhead it reads the aircraft height.',
@@ -1991,10 +1991,10 @@ export const pplaQuestions: {
   {
     question: 'A GNSS (GPS) receiver determines position by:',
     options: [
-      'triangulating two ground beacons',
-      'measuring magnetic bearing and distance',
+      'triangulating bearings taken from two ground beacons',
+      'measuring a magnetic bearing and a distance to a beacon',
       'measuring its distance from several satellites simultaneously',
-      'dead reckoning from the last fix',
+      'dead reckoning forward from the last known position fix',
     ],
     correct: 2,
     explanation: 'A GNSS receiver computes position by measuring the time of signals from multiple satellites and resolving its distance from each. At least four satellites are needed for a three-dimensional fix with time.',
@@ -2003,9 +2003,9 @@ export const pplaQuestions: {
   {
     question: 'The direct-reading magnetic compass in the Southern Hemisphere shows an acceleration error such that, when accelerating on an easterly or westerly heading, the compass:',
     options: [
-      'indicates a turn toward the north',
-      'reads correctly',
-      'shows no change',
+      'indicates a turn toward the north as the heavy end of the needle leads',
+      'reads correctly, because acceleration has no effect south of the equator',
+      'shows no change until the aircraft is established in a steady turn',
       'indicates a turn toward the south (apparent turn toward the nearer pole\'s reading)',
     ],
     correct: 3,
@@ -2027,9 +2027,9 @@ export const pplaQuestions: {
   {
     question: 'When turning onto a southerly heading in the Southern Hemisphere, the direct-reading compass tends to:',
     options: [
-      'lead the turn',
-      'read exactly',
-      'spin continuously',
+      'lead the turn, so you must roll out early before the figure',
+      'read exactly, with no turning error on a southerly heading',
+      'spin continuously and give no usable indication at all',
       'lag the turn, so you roll out late (undershoot the figure)',
     ],
     correct: 3,
@@ -2063,9 +2063,9 @@ export const pplaQuestions: {
   {
     question: 'Magnetic dip causes the direct-reading compass needle to:',
     options: [
-      'always read 5° high',
-      'point to true north',
-      'be unaffected by latitude',
+      'always read about 5 degrees high regardless of the heading',
+      'point accurately to true north rather than to magnetic north',
+      'be completely unaffected by the aircraft\'s latitude on earth',
       'tilt from horizontal, more steeply nearer the magnetic poles',
     ],
     correct: 3,
@@ -2099,10 +2099,10 @@ export const pplaQuestions: {
   {
     question: 'The angle of convergence of meridians:',
     options: [
-      'is constant everywhere',
+      'is exactly constant everywhere across the globe',
       'increases toward the poles and is zero at the equator',
-      'is greatest at the equator',
-      'applies only to lines of latitude',
+      'is greatest right at the equator and least at the poles',
+      'applies only to the lines of latitude, not longitude',
     ],
     correct: 1,
     explanation: 'Meridians are parallel at the equator and converge to meet at the poles, so convergence increases with latitude. This affects great-circle versus rhumb-line tracks over long distances.',
@@ -2111,10 +2111,10 @@ export const pplaQuestions: {
   {
     question: 'A rhumb line (the line of constant track angle drawn on a Mercator-type chart) between two points is:',
     options: [
-      'the shortest distance',
-      'always shorter than the great circle',
+      'always the shortest possible distance between the two points on the chart',
+      'always noticeably shorter than the equivalent great circle',
       'a straight line of constant track but slightly longer than the great circle',
-      'identical to the great circle except near the equator',
+      'identical to the great circle except very near the equator',
     ],
     correct: 2,
     explanation: 'A rhumb line crosses every meridian at the same angle and plots as a straight line on a Mercator chart, easy to steer but slightly longer than the great circle. Over the short legs of a PPL flight the difference is negligible.',
@@ -2147,9 +2147,9 @@ export const pplaQuestions: {
   {
     question: 'A heading of 360°M is being flown and the fixed-card ADF reads 270 (relative). The NDB lies:',
     options: [
-      'ahead of the aircraft',
-      'behind the aircraft',
-      'to the right (east)',
+      'directly ahead of the aircraft, on a magnetic bearing of 360 M',
+      'directly behind the aircraft, on a magnetic bearing of 180 M',
+      'to the right (east) of the aircraft, on a magnetic bearing of 090 M',
       'to the left (west) of the aircraft, on a magnetic bearing of 270°M',
     ],
     correct: 3,
@@ -2219,9 +2219,9 @@ export const pplaQuestions: {
   {
     question: 'Tracking by \'mental dead reckoning\', the most reliable way to confirm you are on track is to:',
     options: [
-      'follow a road in roughly the right direction',
-      'maintain heading and ignore the ground',
-      'rely on the GNSS map alone without cross-check',
+      'follow a road that runs in roughly the right direction',
+      'maintain the heading and ignore the ground below entirely',
+      'rely on the GNSS moving map display alone without any cross-check',
       'positively identify ground features against the chart at planned intervals',
     ],
     correct: 3,
@@ -2232,9 +2232,9 @@ export const pplaQuestions: {
     question: 'The \'top of descent\' point is chosen so that:',
     options: [
       'a planned descent rate and groundspeed bring the aircraft to circuit height at the destination',
-      'the aircraft descends immediately after departure',
-      'descent always begins overhead the destination',
-      'the descent uses maximum rate at all times',
+      'the aircraft begins descending immediately after departure from the cruise level',
+      'descent always begins when overhead the destination aerodrome',
+      'the descent uses the maximum available rate throughout',
     ],
     correct: 0,
     explanation: 'Top of descent is calculated from the height to lose, the planned rate of descent and the groundspeed, so the aircraft arrives at circuit height with the airfield in sight, avoiding a rushed approach.',
@@ -2255,10 +2255,10 @@ export const pplaQuestions: {
   {
     question: 'A ground feature that makes an excellent navigation fix is one that is:',
     options: [
-      'one of many similar features',
-      'only visible at night',
+      'one of many similar features that are hard to tell apart from the air',
+      'visible only at night when its surrounding lights can be seen',
       'unique, prominent and unmistakable, such as a large river junction or town',
-      'small and easily confused with others',
+      'small and easily confused with other features along the route',
     ],
     correct: 2,
     explanation: 'Good fixes are unique and prominent so they cannot be confused with similar features: coastlines, major river bends, large towns, prominent ranges and the like. Relying on ambiguous features causes navigation errors.',
@@ -2291,10 +2291,10 @@ export const pplaQuestions: {
   {
     question: 'You are flying a track of 215°M at 115 kt TAS with a forecast wind of 270°M/25. Without a computer, you can reasonably expect:',
     options: [
-      'a tailwind and left drift',
+      'a tailwind component increasing groundspeed and left drift',
       'a headwind component reducing groundspeed and right (starboard) drift',
-      'no drift and increased groundspeed',
-      'a pure crosswind with no speed change',
+      'no drift at all and a noticeably increased groundspeed',
+      'a pure crosswind with no change in the groundspeed',
     ],
     correct: 1,
     explanation: 'The wind (from 270°M) is forward and from the right of a 215°M track, so it has a headwind component (reducing groundspeed) and produces right drift. The pilot heads right of track and uses the lower groundspeed for timing.',
@@ -2376,9 +2376,9 @@ export const pplaQuestions: {
     question: 'The principal advantage of area navigation (GNSS) over tracking a single ground beacon is that it allows the aircraft to:',
     options: [
       'fly direct between any defined waypoints, not just to and from beacons',
-      'navigate without any electrical power',
-      'ignore lowest safe altitudes',
-      'operate without a chart',
+      'navigate accurately without any electrical power on board',
+      'ignore the lowest safe altitudes along the planned route',
+      'operate safely without carrying any chart at all',
     ],
     correct: 0,
     explanation: 'Area navigation lets the aircraft fly direct tracks between defined waypoints anywhere within coverage, rather than being constrained to tracks defined by ground stations. The pilot must still apply LSALT, airspace rules and a visual cross-check under VFR.',
@@ -2387,10 +2387,10 @@ export const pplaQuestions: {
   {
     question: 'A GNSS receiver warns that its position information may be unreliable. The VFR pilot should:',
     options: [
-      'continue relying solely on the GNSS',
+      'continue relying solely on the GNSS and ignore the warning shown',
       'revert to visual navigation and dead reckoning and cross-check position',
-      'land immediately in all cases',
-      'disable the warning',
+      'land immediately in all cases at the nearest available field',
+      'disable the warning and carry on without any cross-check',
     ],
     correct: 1,
     explanation: 'A VFR pilot does not depend on the GNSS as the sole means of navigation. If the receiver warns that its position may be unreliable, revert to visual navigation and dead reckoning and cross-check position against the ground and chart.',
@@ -2472,9 +2472,9 @@ export const pplaQuestions: {
     question: 'An aeroplane will stall when the:',
     options: [
       'critical angle of attack is exceeded, regardless of airspeed or attitude',
-      'airspeed falls below a fixed figure in all conditions',
-      'nose is raised above the horizon',
-      'engine power is reduced to idle',
+      'airspeed falls below one fixed figure in all flight conditions',
+      'nose is raised well above the horizon during the climb out',
+      'engine power is reduced all the way back to flight idle',
     ],
     correct: 0,
     explanation: 'The stall is an angle-of-attack event: exceeding the critical angle separates the airflow and destroys lift. This can happen at any airspeed and any attitude, including in a steep turn or a high-speed pull-up.',
@@ -2483,10 +2483,10 @@ export const pplaQuestions: {
   {
     question: 'As angle of attack increases up to the stall, the lift produced by the wing:',
     options: [
-      'decreases steadily throughout',
+      'decreases steadily throughout the whole increase in angle of attack',
       'increases progressively until the critical angle, then decreases sharply',
-      'remains constant',
-      'increases only after the stall',
+      'remains constant regardless of the angle of attack that is reached',
+      'increases only after the critical angle of attack has been exceeded',
     ],
     correct: 1,
     explanation: 'Lift rises with angle of attack up to the critical angle, where it peaks; beyond that the flow separates and lift drops abruptly. Drag continues to rise rapidly through this range.',
@@ -2507,10 +2507,10 @@ export const pplaQuestions: {
   {
     question: 'Induced drag is the drag that results from:',
     options: [
-      'skin friction over the airframe surfaces',
+      'skin friction acting over the external surfaces of the airframe',
       'the production of lift, and is greatest at low speed and high angle of attack',
-      'the shape and frontal area of the aircraft',
-      'interference between airflow over the wing and fuselage',
+      'the shape and the frontal area of the aircraft pushing through air',
+      'interference between the airflow over the wing and the fuselage',
     ],
     correct: 1,
     explanation: 'Induced drag is a by-product of lift, created by the wingtip vortices and downwash. It is greatest at low speed and high angle of attack, and decreases as speed increases and angle of attack reduces.',
@@ -2543,9 +2543,9 @@ export const pplaQuestions: {
   {
     question: 'Lowering flap normally produces:',
     options: [
-      'an increase in lift and a decrease in drag',
-      'a decrease in lift and an increase in drag',
-      'no change to lift or drag',
+      'an increase in lift together with a useful and helpful decrease in drag',
+      'a decrease in lift together with an increase in total drag',
+      'no change to either the lift or the drag of the wing',
       'an increase in both lift and drag and a lower nose attitude for a given speed',
     ],
     correct: 3,
@@ -2555,10 +2555,10 @@ export const pplaQuestions: {
   {
     question: 'Lowering flap on the approach allows a steeper descent path mainly because the:',
     options: [
-      'increase in lift flattens the approach',
+      'increase in lift noticeably flattens the approach path',
       'increase in drag steepens the glide for the same airspeed',
-      'reduction in weight lowers the nose',
-      'propeller thrust is increased',
+      'reduction in weight allows the nose to drop lower',
+      'propeller thrust is automatically increased on approach',
     ],
     correct: 1,
     explanation: 'The extra drag from flap means more height must be lost to maintain a given airspeed, so the approach path steepens. This lets the pilot clear obstacles and aim closer to the threshold while keeping a safe speed.',
@@ -2568,9 +2568,9 @@ export const pplaQuestions: {
     question: 'For maximum glide range with the engine inoperative, the pilot should fly at the:',
     options: [
       'speed giving the best lift/drag ratio (best glide speed)',
-      'lowest possible airspeed near the stall',
-      'highest safe airspeed',
-      'speed for maximum rate of climb',
+      'lowest possible airspeed, just above the stall',
+      'highest safe airspeed available',
+      'speed for the maximum rate of climb',
     ],
     correct: 0,
     explanation: 'Best glide range is achieved at the best lift/drag ratio speed, where total drag is least. Flying faster or slower than this increases drag and shortens the glide; a tailwind extends the achievable ground range.',
@@ -2579,10 +2579,10 @@ export const pplaQuestions: {
   {
     question: 'In a level turn, the stalling speed compared with straight-and-level flight is:',
     options: [
-      'lower, because lift is reduced',
-      'unchanged, because angle of attack is fixed',
+      'lower, because the lift required is noticeably reduced',
+      'unchanged, because the angle of attack stays fixed',
       'higher, because the load factor (and required lift) increases',
-      'lower, because the wings are banked',
+      'lower, because the wings are banked over in the turn',
     ],
     correct: 2,
     explanation: 'In a turn the wings must produce more lift than weight to provide the turning force, raising the load factor. Higher load factor raises the stalling speed, which is why a steep turn at low speed is dangerous.',
@@ -2652,9 +2652,9 @@ export const pplaQuestions: {
     question: 'Adverse yaw experienced when rolling into a turn is caused by the:',
     options: [
       'downgoing aileron producing more drag than the upgoing aileron',
-      'rudder being applied too early',
-      'increased lift on the lower wing',
-      'propeller slipstream over the fin',
+      'rudder being applied a little too early in the rolling turn',
+      'increased lift acting on the lower wing during the roll',
+      'propeller slipstream striking the fin during the manoeuvre',
     ],
     correct: 0,
     explanation: 'The downgoing aileron increases lift and induced drag on that wing, yawing the nose away from the intended turn. Rudder is applied in the direction of roll to balance this adverse yaw.',
@@ -2663,10 +2663,10 @@ export const pplaQuestions: {
   {
     question: 'The purpose of trim is to:',
     options: [
-      'increase the maximum lift of the wing',
-      'replace the primary flight controls',
+      'increase the maximum lift the wing can produce before the stall',
+      'replace the primary flight controls during normal cruising flight',
       'relieve the steady control force needed to hold a desired attitude or speed',
-      'lower the stalling speed',
+      'lower the stalling speed of the aircraft in the landing configuration',
     ],
     correct: 2,
     explanation: 'Trim removes the steady stick force the pilot would otherwise hold, letting the aircraft maintain a chosen attitude or speed hands-off. It does not change the control authority, only the residual force required.',
@@ -2675,9 +2675,9 @@ export const pplaQuestions: {
   {
     question: 'As power is increased in a typical single-engine aeroplane, the nose tends to:',
     options: [
-      'pitch down with no yaw',
-      'remain unaffected',
-      'roll without any pitch change',
+      'pitch down with no yaw at all as power is applied',
+      'remain completely unaffected by the change in power',
+      'roll one way without any pitch change occurring',
       'pitch up and yaw, requiring trim and rudder adjustment',
     ],
     correct: 3,
@@ -2687,10 +2687,10 @@ export const pplaQuestions: {
   {
     question: 'The difference between the angle of climb and the rate of climb is that the angle of climb is concerned with:',
     options: [
-      'height gained per unit time',
-      'airspeed in the climb only',
+      'height gained per unit of time, important for reaching cruise quickly',
+      'the airspeed held in the climb, with no reference to height gained',
       'height gained per distance over the ground, important for obstacle clearance',
-      'fuel used in the climb',
+      'the fuel used in the climb to a given altitude over the ground',
     ],
     correct: 2,
     explanation: 'Angle of climb is height gained per horizontal distance, flown at the best angle speed (Vx) to clear obstacles. Rate of climb is height gained per minute, flown at the best rate speed (Vy) to reach altitude soonest.',
@@ -2700,9 +2700,9 @@ export const pplaQuestions: {
     question: 'Best angle of climb (Vx) is used to:',
     options: [
       'clear an obstacle by gaining the most height in the shortest ground distance',
-      'reach a cruise altitude in the least time',
-      'achieve the best fuel economy',
-      'obtain the highest true airspeed',
+      'reach the planned cruise altitude in the least possible time',
+      'achieve the best fuel economy for the climb to altitude',
+      'obtain the highest possible true airspeed during the whole climb',
     ],
     correct: 0,
     explanation: 'Vx gives the steepest climb path over the ground and is used to clear obstacles after take-off. Vy gives the greatest height gain per minute and is used once obstacles are cleared.',
@@ -2723,9 +2723,9 @@ export const pplaQuestions: {
   {
     question: 'Wake turbulence (wingtip vortices) generated by a large aeroplane is strongest when that aeroplane is:',
     options: [
-      'light, in cruise configuration at high speed',
-      'on the ground with engines off',
-      'descending with full flap at high speed',
+      'light and in the cruise configuration at a high airspeed',
+      'parked on the ground with all of its engines switched off',
+      'descending with full flap extended at a high airspeed',
       'heavy, clean and slow, such as just after take-off or on approach',
     ],
     correct: 3,
@@ -2735,9 +2735,9 @@ export const pplaQuestions: {
   {
     question: 'The primary control hazard from encountering the wingtip vortex of a larger aircraft is:',
     options: [
-      'a pitch-down beyond elevator authority',
-      'loss of all engine power',
-      'reversal of the controls',
+      'a pitch-down that goes beyond the available elevator authority',
+      'a complete loss of all engine power on the affected aircraft',
+      'a full reversal of the controls so they work the wrong way',
       'a sudden uncommanded roll that may exceed available aileron authority',
     ],
     correct: 3,
@@ -2783,10 +2783,10 @@ export const pplaQuestions: {
   {
     question: 'Lift produced by a wing depends on, among other factors, the:',
     options: [
-      'all-up weight of the aircraft considered on its own',
+      'all-up weight of the aircraft considered entirely on its own in flight',
       'air density, the square of the true airspeed, the wing area and the lift coefficient',
-      'fuel quantity on board and the engine power output',
-      'outside air temperature and humidity considered alone',
+      'fuel quantity on board and the engine power being produced',
+      'outside air temperature and the humidity considered alone',
     ],
     correct: 1,
     explanation: 'Lift equals the lift coefficient times one half the air density times the square of the speed times the wing area. The lift coefficient depends on aerofoil shape and angle of attack; the pilot varies lift mainly through angle of attack and speed.',
@@ -2795,9 +2795,9 @@ export const pplaQuestions: {
   {
     question: 'Loading an aeroplane with the centre of gravity toward the aft limit will generally make the aircraft:',
     options: [
-      'more stable and heavier in pitch',
-      'unaffected in stability',
-      'impossible to trim in level flight',
+      'more longitudinally stable and noticeably heavier to control in pitch',
+      'unaffected, because the centre of gravity has no effect on stability',
+      'impossible to trim for level flight at any normal cruising speed',
       'less longitudinally stable and lighter in pitch, with a lower stalling speed',
     ],
     correct: 3,
@@ -2808,9 +2808,9 @@ export const pplaQuestions: {
     question: 'Loading an aeroplane with the centre of gravity toward the forward limit tends to:',
     options: [
       'increase longitudinal stability and stall speed, and make the elevator heavier',
-      'reduce stability and make the elevator lighter',
-      'have no effect on handling',
-      'lower the stalling speed significantly',
+      'reduce the stability and make the elevator feel noticeably lighter',
+      'have no effect at all on the handling of the aeroplane',
+      'lower the stalling speed of the aircraft quite significantly',
     ],
     correct: 0,
     explanation: 'A forward CG increases stability and the down-force needed from the tail, raising the stall speed and the elevator force. Take-off and landing distances increase, and at the extreme the elevator may lack authority to flare.',
@@ -2831,10 +2831,10 @@ export const pplaQuestions: {
   {
     question: 'Dihedral (the upward angle of the wings) is designed mainly to improve:',
     options: [
-      'longitudinal stability in pitch',
+      'longitudinal stability in pitch about the lateral axis',
       'lateral stability, helping the aircraft recover from a sideslip',
-      'directional stability in yaw',
-      'maximum lift at the stall',
+      'directional stability in yaw about the normal axis',
+      'the maximum lift the wing can produce at the stall',
     ],
     correct: 1,
     explanation: 'Dihedral gives lateral stability: when the aircraft sideslips, the lower wing meets the airflow at a greater effective angle of attack and produces more lift, rolling the wings back toward level.',
@@ -2855,10 +2855,10 @@ export const pplaQuestions: {
   {
     question: 'Washout (a reduction in wing incidence toward the tip) is used so that, at the stall, the:',
     options: [
-      'wingtips stall first to drop a wing',
-      'stall is delayed indefinitely',
+      'wingtips stall first and tend to drop a wing sharply at the stall',
+      'stall is delayed indefinitely no matter how high the angle of attack',
       'wing root stalls first while the ailerons near the tip remain effective',
-      'aircraft pitches up sharply',
+      'aircraft pitches up sharply and enters a deep stall',
     ],
     correct: 2,
     explanation: 'Washout makes the root reach the critical angle before the tip, so the inboard wing stalls first. This preserves aileron effectiveness and gives gentle stall behaviour with roll control retained into the stall.',
@@ -2867,9 +2867,9 @@ export const pplaQuestions: {
   {
     question: 'The first indication of an approaching stall in most training aeroplanes is:',
     options: [
-      'a sudden increase in airspeed',
-      'a nose-down pitch with no warning',
-      'a loss of all control effectiveness',
+      'a sudden and noticeable increase in the aircraft\'s airspeed',
+      'a sharp nose-down pitch that occurs with no warning at all',
+      'a complete loss of all control effectiveness in every axis',
       'a stall warning and aerodynamic buffet as airflow begins to separate',
     ],
     correct: 3,
@@ -2879,10 +2879,10 @@ export const pplaQuestions: {
   {
     question: 'To recover from a stall, the immediate and most important action is to:',
     options: [
-      'increase back pressure to raise the nose',
-      'apply full opposite aileron',
+      'increase the back pressure in order to raise the nose',
+      'apply full opposite aileron to lift the dropped wing',
       'reduce the angle of attack by moving the control column forward',
-      'increase power before lowering the nose',
+      'increase the power first, before lowering the nose at all',
     ],
     correct: 2,
     explanation: 'Because the stall is caused by exceeding the critical angle of attack, recovery requires reducing that angle by lowering the nose. Power is then added to minimise height loss while the wing regains lift.',
@@ -2891,10 +2891,10 @@ export const pplaQuestions: {
   {
     question: 'A spin is best described as a:',
     options: [
-      'high-speed spiral dive with both wings flying',
+      'high-speed spiral dive with both wings still fully flying and unstalled',
       'stalled condition with autorotation, one wing more deeply stalled than the other',
-      'balanced steep turn',
-      'stall with the wings unstalled',
+      'balanced steep turn flown at a constant speed and bank',
+      'stall in which both wings remain unstalled and flying',
     ],
     correct: 1,
     explanation: 'In a spin both wings are stalled but one more deeply than the other, producing autorotation with yaw and roll. Recovery generally requires closing the throttle, applying opposite rudder and easing the stick forward to unstall the wings.',
@@ -2903,9 +2903,9 @@ export const pplaQuestions: {
   {
     question: 'During a glide at the best lift/drag speed, lowering the landing gear and flap will:',
     options: [
-      'extend the glide distance',
-      'have no effect on the glide path',
-      'reduce the rate of descent',
+      'extend the glide distance by reducing the total drag of the aircraft',
+      'have no effect on the glide path or the distance covered',
+      'reduce the rate of descent and flatten out the glide path',
       'increase drag and steepen the glide, reducing the distance covered',
     ],
     correct: 3,
@@ -2916,9 +2916,9 @@ export const pplaQuestions: {
     question: 'The stalling speed of an aeroplane increases when:',
     options: [
       'weight or load factor increases, or flap is raised',
-      'weight decreases',
-      'flap is lowered',
-      'the aircraft enters ground effect',
+      'the aircraft weight decreases in the cruise',
+      'the flap is lowered on the approach to land',
+      'the aircraft enters into ground effect',
     ],
     correct: 0,
     explanation: 'Higher weight or load factor (as in a turn or pull-up), and a clean configuration (flap up), all raise the indicated stalling speed. Lowering flap and reducing weight lower it.',
@@ -2927,9 +2927,9 @@ export const pplaQuestions: {
   {
     question: 'On take-off in a tailwheel aeroplane, as the tail is raised the nose tends to yaw, partly due to the:',
     options: [
-      'increase in wing lift',
-      'reduction in elevator authority',
-      'lowering of the flaps',
+      'increase in wing lift as the tail is raised on the take-off run',
+      'reduction in elevator authority as the speed builds up on the roll',
+      'lowering of the flaps part way through the take-off run',
       'gyroscopic effect of the propeller as its plane is pitched forward',
     ],
     correct: 3,
@@ -2939,10 +2939,10 @@ export const pplaQuestions: {
   {
     question: 'In a steady climb, the forces are arranged so that:',
     options: [
-      'lift exceeds weight',
-      'thrust equals drag exactly as in level flight',
+      'the lift produced by the wing clearly exceeds the aircraft weight in the climb',
+      'the thrust exactly equals the total drag, just as it does in level flight',
       'thrust must overcome drag plus a component of weight acting along the flight path',
-      'weight acts only downward with no component along the path',
+      'weight acts only straight downward with no component along the path',
     ],
     correct: 2,
     explanation: 'In a climb part of the weight acts rearward along the inclined flight path, so thrust must exceed level-flight drag to maintain speed. Lift is slightly less than weight because weight\'s component perpendicular to the path is reduced.',
@@ -2975,10 +2975,10 @@ export const pplaQuestions: {
   {
     question: 'During a go-around at high density altitude and high weight, the most significant aerodynamic concern is the:',
     options: [
-      'decreased stalling speed in the thinner, less dense air',
-      'reduction in total drag at a given indicated airspeed',
+      'decreased stalling speed in the thinner, much less dense air aloft',
+      'reduction in total drag at any given indicated airspeed',
       'reduced climb performance and a higher true airspeed for a given indicated speed',
-      'increase in the engine power available for the climb',
+      'increase in the engine power available for the climb out',
     ],
     correct: 2,
     explanation: 'High density altitude reduces power and climb performance while raising the true airspeed needed for a given indicated speed, so the aircraft accelerates and climbs sluggishly. The pilot must manage drag (flap/gear) carefully and avoid an excessive nose-up attitude.',
@@ -2987,10 +2987,10 @@ export const pplaQuestions: {
   {
     question: 'The relative airflow over a wing is, in straight-and-level unaccelerated flight, in a direction:',
     options: [
-      'vertically upward through the wing',
+      'vertically upward through the wing toward the sky',
       'opposite and parallel to the flight path of the aircraft',
-      'along the chord line at all times',
-      'downward at the stalling angle',
+      'along the chord line of the wing at all times',
+      'downward through the wing at the stalling angle',
     ],
     correct: 1,
     explanation: 'Relative airflow is equal and opposite to the aircraft\'s flight path. The angle between this airflow and the chord line is the angle of attack, which the pilot controls mainly with the elevator.',
@@ -3000,9 +3000,9 @@ export const pplaQuestions: {
     question: 'A wing-mounted vortex generator or stall strip is fitted to:',
     options: [
       'control where and how the wing stalls, improving stall behaviour',
-      'increase the never-exceed speed',
-      'reduce the empty weight',
-      'replace the need for flaps',
+      'increase the never-exceed speed of the aircraft in the cruise',
+      'reduce the empty weight of the wing and the airframe',
+      'replace the need for flaps during take-off and landing',
     ],
     correct: 0,
     explanation: 'Devices such as stall strips and vortex generators manage the airflow so the wing stalls progressively and predictably, often root-first, preserving aileron control and giving clear stall warning.',
@@ -3023,9 +3023,9 @@ export const pplaQuestions: {
   {
     question: 'If the bank angle is increased in a level turn, to maintain altitude the pilot must:',
     options: [
-      'reduce back pressure',
-      'apply forward pressure to lower the nose',
-      'reduce power only',
+      'reduce the back pressure and allow the nose to fall',
+      'apply forward pressure to lower the nose in the turn',
+      'reduce the engine power only and hold the attitude',
       'increase back pressure to raise the angle of attack and total lift',
     ],
     correct: 3,
@@ -3059,10 +3059,10 @@ export const pplaQuestions: {
   {
     question: 'The thrust required from the propeller to maintain level flight is least at the:',
     options: [
-      'stalling speed',
-      'never-exceed speed',
+      'stalling speed of the aircraft when clean',
+      'never-exceed speed marked on the dial',
       'minimum-drag speed (best lift/drag ratio)',
-      'best rate-of-climb speed',
+      'best rate-of-climb speed for the climb',
     ],
     correct: 2,
     explanation: 'Thrust required equals drag in level flight, so it is least at the minimum-drag speed. Flying faster or slower than this increases drag and the thrust (and power) needed to maintain height.',
@@ -3071,9 +3071,9 @@ export const pplaQuestions: {
   {
     question: 'A vortex (wake turbulence) hazard is least likely when following an aircraft that is:',
     options: [
-      'heavy, slow and clean on approach',
-      'heavy at low speed just after lift-off',
-      'large and configured for landing',
+      'heavy, slow and clean while on the final approach to land',
+      'heavy and at low speed just after lifting off the runway',
+      'large and fully configured for landing with gear and flap',
       'light, in cruise, at high speed with flap and gear retracted',
     ],
     correct: 3,
@@ -3095,10 +3095,10 @@ export const pplaQuestions: {
   {
     question: 'Frost on the upper surface of a wing is hazardous because it:',
     options: [
-      'adds significant weight only',
-      'improves lift by roughening the surface',
+      'adds significant weight to the wing that the engine cannot overcome on take-off',
+      'improves lift by roughening the surface and energising the boundary layer',
       'disrupts the airflow and can prevent the wing from producing enough lift to fly',
-      'affects only the control surfaces',
+      'affects only the control surfaces and has no effect on the main wing',
     ],
     correct: 2,
     explanation: 'Even a thin layer of frost roughens the wing, thickening the boundary layer and causing early flow separation, which can reduce maximum lift enough to prevent or delay take-off. All frost must be removed before flight.',
@@ -3107,10 +3107,10 @@ export const pplaQuestions: {
   {
     question: 'The further (secondary) effect of holding aileron to maintain a banked attitude is a tendency to:',
     options: [
-      'pitch up sharply',
+      'pitch up sharply and climb away from the turn',
       'yaw and develop into a spiral descent if not corrected',
-      'increase airspeed only',
-      'reduce the angle of bank',
+      'increase the airspeed only, with no other effect',
+      'reduce the angle of bank back towards level',
     ],
     correct: 1,
     explanation: 'Sustained bank causes a yaw toward the lower wing and, uncorrected, the nose drops and speed builds in a spiral descent. Coordinated use of rudder and elevator, or returning to level, prevents this.',
@@ -3119,10 +3119,10 @@ export const pplaQuestions: {
   {
     question: 'On the back of the drag curve (below minimum-drag speed), an attempt to maintain height by raising the nose without adding power will:',
     options: [
-      'increase speed',
-      'reduce drag',
+      'increase the airspeed, as the lower drag allows the aircraft to accelerate',
+      'reduce the total drag and allow a higher cruising speed to be held',
       'increase drag and reduce speed further, possibly leading to a stall',
-      'have no effect on speed',
+      'have no effect on the speed, because the drag is already at its minimum',
     ],
     correct: 2,
     explanation: 'Below minimum-drag speed, raising the nose increases induced drag and decays speed further, requiring still more angle of attack. Without added power this can lead to a stall, which is why approach speed and power are managed together.',
@@ -3131,10 +3131,10 @@ export const pplaQuestions: {
   {
     question: 'The angle of attack at which an aerofoil produces its best lift-to-drag ratio is:',
     options: [
-      'the critical (stalling) angle',
+      'the critical or stalling angle of attack of the wing',
       'a relatively low angle, well below the stalling angle',
-      'zero degrees',
-      'close to 16 degrees',
+      'zero degrees angle of attack in level flight',
+      'an angle close to 16 degrees, near the stall',
     ],
     correct: 1,
     explanation: 'Best lift/drag occurs at a moderate, relatively low angle of attack, corresponding to the minimum-drag speed. The stalling angle (about 16 degrees) gives maximum lift coefficient but very high drag, not the best ratio.',
@@ -3156,9 +3156,9 @@ export const pplaQuestions: {
     question: 'An aeroplane that returns to its trimmed attitude after a disturbance, without pilot input, is said to be:',
     options: [
       'statically and dynamically stable in that axis',
-      'neutrally stable',
-      'statically unstable',
-      'controllable but not stable',
+      'neutrally stable about the disturbed axis',
+      'statically unstable in that particular axis',
+      'controllable but not actually stable at all',
     ],
     correct: 0,
     explanation: 'Positive static stability is the initial tendency to return toward the trimmed state; positive dynamic stability means the resulting oscillations damp out over time. A well-behaved trainer is stable in pitch, roll and yaw.',
@@ -3168,9 +3168,9 @@ export const pplaQuestions: {
     question: 'Raising flap during a go-around must be done carefully because retracting flap:',
     options: [
       'reduces lift and raises the stalling speed, risking a sink or stall',
-      'increases lift and lowers the stalling speed',
-      'has no aerodynamic effect at low speed',
-      'reduces drag without changing the lift',
+      'increases the lift and lowers the stalling speed of the wing',
+      'has no real aerodynamic effect at the low go-around speed',
+      'reduces the drag without changing the lift of the wing',
     ],
     correct: 0,
     explanation: 'Retracting flap reduces the lift coefficient and raises the stalling speed. During a go-around at low speed this can cause the aircraft to sink or stall, so flap is retracted in stages as speed and climb are established.',
@@ -3179,10 +3179,10 @@ export const pplaQuestions: {
   {
     question: 'The chord line of an aerofoil is the:',
     options: [
-      'curved upper surface of the wing',
+      'curved upper surface of the wing from front to back',
       'straight line from the leading edge to the trailing edge',
-      'line of the relative airflow',
-      'line joining the wingtips',
+      'line of the relative airflow meeting the wing',
+      'straight line joining the two wingtips together',
     ],
     correct: 1,
     explanation: 'The chord line joins the leading and trailing edges of the aerofoil section. The angle between the chord line and the relative airflow is the angle of attack, the key parameter controlling lift and the stall.',
@@ -3191,10 +3191,10 @@ export const pplaQuestions: {
   {
     question: 'An aircraft is established in a stable glide. If a tailwind is present, the glide range over the ground will be:',
     options: [
-      'less than in still air',
-      'the same as in still air',
+      'less than in still air, because the tailwind shortens the glide',
+      'the same as in still air, since wind has no effect on a glide',
       'greater than in still air, although the airspeed for best glide is unchanged',
-      'maximised by flying slower than best glide speed',
+      'maximised by flying noticeably slower than the best glide speed',
     ],
     correct: 2,
     explanation: 'Best-glide airspeed depends on the aircraft, not the wind, but a tailwind carries the aircraft further over the ground for the same height loss. A headwind reduces ground range, and in strong headwinds a slightly higher speed can improve distance.',
@@ -3203,9 +3203,9 @@ export const pplaQuestions: {
   {
     question: 'The effect of increasing weight on the best glide (minimum-drag) airspeed is that the speed:',
     options: [
-      'decreases',
-      'is unaffected and the ratio improves',
-      'halves',
+      'decreases, and the best glide ratio gets noticeably worse',
+      'is unaffected, while the glide ratio actually improves',
+      'halves, and the glide angle becomes twice as steep',
       'increases, although the maximum glide ratio stays about the same',
     ],
     correct: 3,
@@ -3215,9 +3215,9 @@ export const pplaQuestions: {
   {
     question: 'In a sustained level turn, if the pilot fails to add back pressure as bank increases, the most likely result is that the:',
     options: [
-      'aircraft climbs',
-      'stall speed decreases',
-      'turn rate decreases to zero',
+      'aircraft climbs gently as the lift increases through the turn',
+      'stalling speed decreases once the aircraft is banked into the turn',
+      'turn rate decreases to zero and the aircraft flies straight ahead',
       'nose drops and the aircraft begins to lose height and gain speed',
     ],
     correct: 3,
@@ -3228,9 +3228,9 @@ export const pplaQuestions: {
     question: 'Interference drag is produced by:',
     options: [
       'the mixing of airflow where components such as the wing and fuselage join',
-      'skin friction over a smooth surface',
-      'the production of lift at the wingtips',
-      'the frontal area of the aircraft alone',
+      'skin friction acting over a smooth external surface of the airframe',
+      'the production of lift in the form of vortices at the wingtips',
+      'the frontal area of the aircraft pushing through the air alone',
     ],
     correct: 0,
     explanation: 'Interference drag arises where airflows from different parts of the aircraft meet and interfere, such as wing-fuselage and strut junctions. Fairings are used to smooth these junctions and reduce the drag, which is one component of parasite drag.',
@@ -3241,8 +3241,8 @@ export const pplaQuestions: {
     options: [
       'high-speed spiral dive',
       'stall and spin (a stall/spin departure)',
-      'a steady, balanced climbing turn',
-      'a reduction in the stalling speed',
+      'steady, balanced climbing turn',
+      'reduction in the stalling speed',
     ],
     correct: 1,
     explanation: 'A skidding or over-banked climbing turn at low speed and high power, with high angle of attack, can stall the inner wing and depart into a spin with little height to recover. Coordinated, gentle turns at a safe speed prevent this classic accident.',
@@ -3276,9 +3276,9 @@ export const pplaQuestions: {
     question: 'Full throttle height for a normally aspirated engine is the altitude at which:',
     options: [
       'the throttle is fully open and the engine can no longer maintain its rated manifold pressure',
-      'the engine produces maximum power for the climb',
-      'the mixture must be set fully rich',
-      'the supercharger cuts in automatically',
+      'the engine produces its maximum rated power for the climb up to that altitude',
+      'the mixture must be set fully rich to prevent detonation',
+      'the supercharger cuts in automatically to restore lost power',
     ],
     correct: 0,
     explanation: 'At full throttle height the throttle is wide open yet the thinning air prevents the engine maintaining rated manifold pressure, so power falls off above it. For a normally aspirated engine this is effectively at sea level for full power.',
@@ -3288,9 +3288,9 @@ export const pplaQuestions: {
     question: 'The purpose of supercharging or turbocharging a piston engine is to:',
     options: [
       'maintain manifold pressure and engine power as altitude increases',
-      'reduce the fuel flow required at high power',
-      'lower the cylinder head temperature in the climb',
-      'increase the propeller RPM for take-off',
+      'reduce the fuel flow that is required at a high power setting',
+      'lower the cylinder head temperature during a sustained climb',
+      'increase the propeller RPM available for the take-off run',
     ],
     correct: 0,
     explanation: 'A supercharger or turbocharger compresses the intake air so the engine can keep its manifold pressure, and therefore its power, as the aircraft climbs and the outside air becomes less dense. Common methods are an engine-driven (geared) supercharger or an exhaust-driven turbocharger.',
@@ -3311,10 +3311,10 @@ export const pplaQuestions: {
   {
     question: 'If manifold pressure rises above the maximum permitted (an overboost) on a supercharged engine, the pilot should:',
     options: [
-      'increase RPM only',
-      'enrich the mixture and continue',
+      'increase the engine RPM only and leave the throttle alone',
+      'enrich the fuel/air mixture and simply continue the climb',
       'reduce the throttle to bring manifold pressure within limits',
-      'ignore it if power feels normal',
+      'ignore it altogether if the power still feels about normal',
     ],
     correct: 2,
     explanation: 'Overboost can damage the engine through excessive cylinder pressures, so the pilot reduces the throttle to bring manifold pressure back within limits and notes the occurrence for maintenance assessment.',
@@ -3324,9 +3324,9 @@ export const pplaQuestions: {
     question: 'Carburettor heat is applied to:',
     options: [
       'melt or prevent carburettor ice by directing warm air to the carburettor',
-      'increase engine power for take-off',
-      'lean the mixture automatically',
-      'cool the cylinder heads',
+      'increase the engine power available for the take-off and the climb',
+      'lean the fuel/air mixture automatically as the altitude increases',
+      'cool the cylinder heads when they are running too hot in the climb',
     ],
     correct: 0,
     explanation: 'Carburettor heat routes warm air to the carburettor to remove or prevent ice in the venturi and throttle area. Because the warm air is less dense, applying carb heat reduces power and effectively richens the mixture.',
@@ -3335,10 +3335,10 @@ export const pplaQuestions: {
   {
     question: 'Applying carburettor heat normally causes the engine to:',
     options: [
-      'gain power',
+      'gain power, as the warmer air improves combustion efficiency',
       'lose some power and run slightly richer due to warmer, less dense air',
-      'run leaner and hotter',
-      'stop immediately',
+      'run leaner and hotter, as the warm air reduces the fuel flow',
+      'stop immediately, because warm air cannot support combustion',
     ],
     correct: 1,
     explanation: 'Warm intake air is less dense, so the same throttle setting produces less power and a richer mixture. A brief rise in roughness as ice clears, followed by smoother running and recovering RPM, confirms ice was present.',
@@ -3347,9 +3347,9 @@ export const pplaQuestions: {
   {
     question: 'The danger of advancing the throttle in steps without first diagnosing suspected carburettor icing is that:',
     options: [
-      'the engine will overspeed',
-      'the oil pressure will rise dangerously',
-      'the mixture becomes too lean',
+      'the engine will suddenly overspeed well beyond its RPM limit',
+      'the oil pressure will rise to a dangerously high reading on the gauge',
+      'the fuel/air mixture becomes far too lean for the power being set',
       'ice may continue to build until the engine fails despite the throttle movements',
     ],
     correct: 3,
@@ -3360,9 +3360,9 @@ export const pplaQuestions: {
     question: 'Detonation in a piston engine is:',
     options: [
       'an almost instantaneous, uncontrolled burning of the mixture that raises pressures',
-      'the normal smooth progressive burning of the mixture',
-      'ignition of the mixture only by the spark plug as designed',
-      'a condition caused only by running too rich a mixture',
+      'the normal, smooth and progressive burning of the fuel/air mixture',
+      'ignition of the mixture only by the spark plug, exactly as designed',
+      'a condition that is caused only by running far too rich a mixture',
     ],
     correct: 0,
     explanation: 'Detonation is the spontaneous, explosive burning of the remaining mixture rather than a smooth flame front, raising cylinder pressures and temperatures and risking engine damage. It is promoted by low-octane fuel, high power, high CHT and a lean mixture.',
@@ -3371,10 +3371,10 @@ export const pplaQuestions: {
   {
     question: 'Pre-ignition differs from detonation in that pre-ignition is:',
     options: [
-      'always caused by low fuel pressure',
-      'a normal part of the engine cycle',
+      'always caused by low fuel pressure in the lines to the engine',
+      'a normal and designed part of the four-stroke engine cycle',
       'ignition of the mixture before the spark, usually by a local hot spot',
-      'prevented by leaning the mixture',
+      'prevented entirely by leaning the mixture during the cruise',
     ],
     correct: 2,
     explanation: 'Pre-ignition is premature ignition of the charge by a hot spot (such as a glowing deposit or overheated plug) before the spark fires. Like detonation it can rapidly damage the engine through excessive heat and pressure.',
@@ -3397,7 +3397,7 @@ export const pplaQuestions: {
     options: [
       'a normal cruise condition',
       'that the mixture is too rich',
-      'an over-reading instrument that can be ignored',
+      'an over-reading instrument fault that can simply be ignored',
       'a serious developing problem requiring a precautionary landing',
     ],
     correct: 3,
@@ -3407,10 +3407,10 @@ export const pplaQuestions: {
   {
     question: 'If the engine oil filter becomes blocked, the:',
     options: [
-      'oil supply stops completely',
-      'oil pressure falls to zero',
+      'oil supply to the engine stops completely and at once',
+      'oil pressure shown on the gauge falls right down to zero',
       'bypass valve opens so unfiltered oil still lubricates the engine',
-      'engine continues with fully filtered oil',
+      'engine continues to run on fully filtered oil as normal',
     ],
     correct: 2,
     explanation: 'A blocked filter causes the bypass (relief) valve to open, allowing unfiltered oil to continue circulating so the engine is not starved of lubrication, though contaminants are no longer removed.',
@@ -3419,9 +3419,9 @@ export const pplaQuestions: {
   {
     question: 'A magneto check before take-off (switching from BOTH to each magneto in turn) confirms that:',
     options: [
-      'the alternator is charging',
-      'the oil pressure is correct',
-      'the mixture is set for take-off',
+      'the engine-driven alternator is charging the battery correctly',
+      'the oil pressure is correct for the power being set on run-up',
+      'the fuel/air mixture has been set correctly for the take-off',
       'each ignition system is working and the RPM drop is within limits',
     ],
     correct: 3,
@@ -3432,9 +3432,9 @@ export const pplaQuestions: {
     question: 'Aircraft piston engines use two magnetos and two spark plugs per cylinder primarily to provide:',
     options: [
       'ignition redundancy and more complete, even combustion',
-      'greater fuel economy only',
-      'automatic mixture control',
-      'supercharging',
+      'greater fuel economy only, with no real safety benefit',
+      'fully automatic control of the fuel/air mixture',
+      'supercharging of the intake air at high altitude',
     ],
     correct: 0,
     explanation: 'Dual ignition gives redundancy if one system fails and, by igniting the charge from two points, produces faster, more complete and even combustion with better power and smoothness.',
@@ -3443,10 +3443,10 @@ export const pplaQuestions: {
   {
     question: 'Fuel vaporisation (vapour lock) in the fuel lines is most likely when:',
     options: [
-      'the fuel is cold and dense',
+      'the fuel sitting in the lines is cold and dense during cool weather',
       'fuel becomes hot and forms vapour, interrupting the flow to the engine',
-      'the tanks are completely full',
-      'the mixture is set fully rich',
+      'the fuel tanks have been filled completely to the filler caps',
+      'the mixture control has been set fully rich for the climb',
     ],
     correct: 1,
     explanation: 'Hot fuel can vaporise in the lines or pump, interrupting the liquid fuel supply and causing rough running or stoppage. Using the boost pump and selecting a cooler tank or fuller line helps clear it.',
@@ -3468,9 +3468,9 @@ export const pplaQuestions: {
     question: 'The white arc on the airspeed indicator represents the:',
     options: [
       'flap operating range, from the stall in landing configuration to the maximum flap speed',
-      'normal cruising range',
-      'caution range to be used only in smooth air',
-      'never-exceed speed',
+      'normal cruising range, from the flaps-up stall to the cruise limit speed',
+      'caution range above normal cruise, to be used only in smooth air with care',
+      'never-exceed range above which structural damage may occur in any conditions',
     ],
     correct: 0,
     explanation: 'The white arc runs from the stall speed with flap extended (Vs0) up to the maximum flap-extended speed (Vfe). The pilot keeps speed within this arc whenever flap is deployed.',
@@ -3515,9 +3515,9 @@ export const pplaQuestions: {
   {
     question: 'If the pitot tube becomes blocked (drain hole clear) while the static source remains open, in a climb the airspeed indicator will:',
     options: [
-      'under-read',
-      'read correctly',
-      'read zero',
+      'under-read, because the trapped pitot pressure decreases with height',
+      'read correctly, because only the static side affects the indication',
+      'read zero, because no dynamic pressure can reach the instrument',
       'over-read, behaving like an altimeter as static pressure falls',
     ],
     correct: 3,
@@ -3527,10 +3527,10 @@ export const pplaQuestions: {
   {
     question: 'If the static source becomes blocked while the pitot remains clear, in a climb the airspeed indicator will:',
     options: [
-      'over-read, because trapped static is lower than ambient',
+      'over-read, because the trapped static is lower than the ambient',
       'under-read, because the trapped static pressure exceeds the actual ambient',
-      'continue to read correctly despite the blockage',
-      'indicate the true airspeed instead of the indicated',
+      'continue to read correctly in spite of the static blockage',
+      'indicate the true airspeed instead of the indicated airspeed',
     ],
     correct: 1,
     explanation: 'A blocked static source traps the higher pressure from the lower altitude, so as the aircraft climbs the ASI under-reads, the altimeter freezes and the VSI reads zero. Selecting the alternate static source restores normal indications.',
@@ -3540,9 +3540,9 @@ export const pplaQuestions: {
     question: 'Selecting the alternate static source (which senses cabin pressure) typically causes the altimeter and ASI to:',
     options: [
       'read slightly high, because cabin pressure is a little below ambient static',
-      'read slightly low, because cabin pressure exceeds ambient',
-      'read exactly correct with no error introduced',
-      'fail completely and freeze at the last value',
+      'read slightly low, because cabin pressure exceeds the ambient static',
+      'read exactly correct, with no error of any kind introduced',
+      'fail completely and freeze at the last indicated value',
     ],
     correct: 0,
     explanation: 'Cabin static pressure is generally a little lower than the true external static, so the altimeter and ASI tend to over-read slightly when the alternate source is used. The pilot allows for this small error.',
@@ -3551,10 +3551,10 @@ export const pplaQuestions: {
   {
     question: 'The vertical speed indicator (VSI) suffers from lag, which means it:',
     options: [
-      'reads the wrong sign',
-      'cannot show level flight',
+      'reads the wrong sign during a climb or a descent',
+      'cannot show level flight at any point in the cruise',
       'shows the rate of climb or descent only after a short delay',
-      'is unaffected by static blockage',
+      'is completely unaffected by a blocked static source',
     ],
     correct: 2,
     explanation: 'The VSI relies on a calibrated leak from a static-fed capsule, so it indicates a trend after a brief delay. An instantaneous VSI (IVSI) uses an accelerometer pump to reduce this lag and show changes promptly.',
@@ -3599,9 +3599,9 @@ export const pplaQuestions: {
   {
     question: 'A bubble in the direct-reading compass is significant because it:',
     options: [
-      'improves damping',
-      'has no effect on accuracy',
-      'increases the magnetic strength',
+      'improves the damping of the compass and steadies the card',
+      'has no effect at all on the accuracy of the indication',
+      'increases the magnetic strength of the compass needle',
       'allows excessive oscillation and indicates a fluid leak or fault',
     ],
     correct: 3,
@@ -3611,10 +3611,10 @@ export const pplaQuestions: {
   {
     question: 'The pendulous mounting of the compass magnet assembly, combined with magnetic dip, is the cause of:',
     options: [
-      'position error',
+      'position error in the indication',
       'acceleration and turning errors',
-      'instrument lag',
-      'parallax error',
+      'instrument lag on the indication',
+      'parallax error when reading it',
     ],
     correct: 1,
     explanation: 'Because the magnet system hangs slightly below its pivot and is tilted by magnetic dip, accelerations and turns deflect it, producing the acceleration and turning errors that are most pronounced near the north–south headings.',
@@ -3623,10 +3623,10 @@ export const pplaQuestions: {
   {
     question: 'A compass correction card is used to convert:',
     options: [
-      'true heading to magnetic heading',
-      'indicated airspeed to true airspeed',
+      'a true heading into a magnetic heading by applying the local variation',
+      'an indicated airspeed into a true airspeed by applying air density',
       'the magnetic heading to the compass heading to steer (allowing for deviation)',
-      'pressure height to density height',
+      'a pressure height into a density height by applying the temperature',
     ],
     correct: 2,
     explanation: 'The compass deviation card lists the compass reading to steer for each magnetic heading, correcting for the aircraft\'s own magnetic influences. Variation (true to magnetic) is taken from the chart, not the card.',
@@ -3636,9 +3636,9 @@ export const pplaQuestions: {
     question: 'A fixed-pitch propeller may overspeed if the aircraft is:',
     options: [
       'dived at high power, where reduced load lets the RPM rise above the limit',
-      'climbed steeply at low power',
-      'flown level at cruise RPM',
-      'held on the ground at idle',
+      'climbed steeply at low power, where the high load slows the propeller',
+      'flown straight and level at the normal cruise RPM setting',
+      'held on the ground at idle with the brakes firmly applied',
     ],
     correct: 0,
     explanation: 'In a dive at high power the propeller meets reduced aerodynamic load, so RPM can rise beyond limits. The pilot reduces power and/or raises the nose to control the overspeed and protect the engine.',
@@ -3647,10 +3647,10 @@ export const pplaQuestions: {
   {
     question: 'A stall warning device typically operates by sensing the:',
     options: [
-      'airspeed dropping below a fixed value',
+      'airspeed dropping below a fixed value set for the aircraft type',
       'change in airflow direction (and angle of attack) near the wing leading edge',
-      'engine RPM falling',
-      'flap position',
+      'engine RPM falling below the normal range during the approach',
+      'flap position selector reaching the fully extended setting',
     ],
     correct: 1,
     explanation: 'Most stall warners use a leading-edge vane or pressure port that detects the airflow shift as angle of attack increases toward the critical angle, sounding a warning before the stall. It is angle-of-attack based, not a fixed airspeed.',
@@ -3659,10 +3659,10 @@ export const pplaQuestions: {
   {
     question: 'A typical wing-leveller or autopilot includes a cut-out (disconnect) so that the:',
     options: [
-      'autopilot cannot be switched off in flight',
-      'trim runs to full deflection automatically',
+      'autopilot cannot be switched off by the pilot while in flight',
+      'trim runs automatically to its full deflection when engaged',
       'pilot can immediately revert to manual control if the autopilot misbehaves',
-      'engine is protected from overboost',
+      'engine is protected from an overboost at high power settings',
     ],
     correct: 2,
     explanation: 'An autopilot must have a quick disconnect, allowing the pilot to take manual control instantly if a malfunction or runaway occurs. The pilot must know its limitations and how to override it.',
@@ -3696,9 +3696,9 @@ export const pplaQuestions: {
     question: 'VHF radio range increases with:',
     options: [
       'altitude, because the signal is line-of-sight',
-      'lower altitude',
-      'higher humidity',
-      'time of day',
+      'lower altitude, where the air is denser near the ground',
+      'higher humidity in the air along the signal path',
+      'the time of day at which the radio is used',
     ],
     correct: 0,
     explanation: 'Being line-of-sight, VHF range is limited by the horizon and terrain, so it increases with the height of the aircraft. At low level near hills, VHF reception can be lost.',
@@ -3707,9 +3707,9 @@ export const pplaQuestions: {
   {
     question: 'Reception of NDB (low and medium frequency) signals is most prone to error:',
     options: [
-      'at midday',
-      'at high VHF-equivalent altitudes',
-      'over flat terrain only',
+      'at midday, when the sun is highest over the route',
+      'at high, VHF-equivalent altitudes well above the terrain',
+      'over flat terrain only, where the ground wave is strong',
       'at night, when sky-wave interference and other effects increase',
     ],
     correct: 3,
@@ -3731,10 +3731,10 @@ export const pplaQuestions: {
   {
     question: 'Before a radio transmission, the squelch control is correctly set so that it:',
     options: [
-      'is turned fully up to block all signals',
+      'is turned fully up so that it blocks all incoming signals',
       'just silences background noise without cutting off weak signals',
-      'is left fully open with constant noise',
-      'increases transmitter power',
+      'is left fully open with a constant background noise',
+      'increases the transmitter power for a stronger signal',
     ],
     correct: 1,
     explanation: 'Squelch is adjusted to suppress the background hiss while still allowing weak but readable signals through. Over-tightening squelch can cut off distant or weak transmissions.',
@@ -3755,10 +3755,10 @@ export const pplaQuestions: {
   {
     question: 'A limitation a pilot must remember when using GNSS for VFR navigation is that:',
     options: [
-      'GNSS removes the need to monitor fuel',
+      'GNSS removes the need to monitor the fuel and the time during the flight',
       'the pilot must still maintain situational awareness and be able to navigate visually',
-      'GNSS guarantees terrain clearance',
-      'GNSS position can never be in error',
+      'GNSS guarantees terrain clearance along the whole planned route',
+      'GNSS position information can never be in error or unavailable',
     ],
     correct: 1,
     explanation: 'GNSS is a powerful aid but can suffer signal loss, integrity warnings or input errors. The VFR pilot must retain situational awareness, cross-check with the chart and ground features, and apply lowest safe altitudes.',
@@ -3768,9 +3768,9 @@ export const pplaQuestions: {
     question: 'The exhaust gas temperature (EGT) gauge is used by the pilot to:',
     options: [
       'set the mixture accurately by reference to the peak EGT',
-      'measure oil temperature',
-      'indicate manifold pressure',
-      'detect carburettor ice directly',
+      'measure the temperature of the engine oil in the sump',
+      'indicate the manifold pressure in the inlet system',
+      'detect carburettor ice directly as it forms in the venturi',
     ],
     correct: 0,
     explanation: 'As the mixture is leaned, EGT rises to a peak at the chemically correct ratio and then falls. The pilot uses the peak to set an efficient mixture, typically running slightly rich of peak for cooling at higher power.',
@@ -3779,10 +3779,10 @@ export const pplaQuestions: {
   {
     question: 'Cylinder head temperature (CHT) that is too high can be reduced by:',
     options: [
-      'leaning the mixture aggressively',
-      'closing the cowl flaps',
+      'leaning the fuel/air mixture aggressively to reduce the heat produced',
+      'closing the cowl flaps to keep more airflow over the engine',
       'enriching the mixture, reducing power, or increasing airspeed for better cooling',
-      'increasing the angle of attack at low speed',
+      'increasing the angle of attack and slowing right down at low speed',
     ],
     correct: 2,
     explanation: 'High CHT is relieved by a richer mixture (the extra fuel cools the charge), lower power, opening cowl flaps where fitted, and lowering the nose for more cooling airflow. Sustained high CHT risks detonation and engine damage.',
@@ -3792,9 +3792,9 @@ export const pplaQuestions: {
     question: 'A magneto check that shows no RPM drop when switching from BOTH to a single magneto indicates:',
     options: [
       'a possible fault such as a live (hot) magneto or earthing problem',
-      'a perfectly healthy ignition system',
-      'that the mixture is too lean',
-      'normal operation and no action needed',
+      'a perfectly healthy ignition system with nothing to fix',
+      'that the fuel/air mixture is too lean for the power set',
+      'normal operation, so that no further action is needed',
     ],
     correct: 0,
     explanation: 'Some drop is expected on each magneto; no drop at all suggests an earthing (P-lead) fault that could leave the magneto live even with the switch off, a hazard during hand-turning. It should be reported for maintenance.',
@@ -3803,10 +3803,10 @@ export const pplaQuestions: {
   {
     question: 'A constant-speed (variable-pitch) propeller allows the pilot to:',
     options: [
-      'change the engine displacement',
+      'change the engine displacement to suit the altitude being flown',
       'select an RPM that the propeller governor then maintains by changing blade pitch',
-      'alter the fuel octane',
-      'lock the blades at a fixed coarse angle only',
+      'alter the octane rating of the fuel being burned in the cylinders',
+      'lock the propeller blades at a single fixed coarse angle only',
     ],
     correct: 1,
     explanation: 'A constant-speed unit uses a governor to vary blade pitch so a selected RPM is held as power and airspeed change, keeping the engine and propeller efficient. Fixed-pitch propellers cannot do this.',
@@ -3815,9 +3815,9 @@ export const pplaQuestions: {
   {
     question: 'The altimeter is essentially an aneroid (barometric) instrument that measures:',
     options: [
-      'dynamic pressure from the pitot tube',
-      'the difference between pitot and static',
-      'cabin pressure only',
+      'the dynamic pressure sensed directly from the pitot tube',
+      'the difference between the pitot pressure and the static',
+      'the cabin pressure only, taken from inside the aircraft',
       'static pressure and displays it as a height using the subscale setting',
     ],
     correct: 3,
@@ -3839,10 +3839,10 @@ export const pplaQuestions: {
   {
     question: 'The serviceability of the pitot-static instruments before flight can be checked by:',
     options: [
-      'tapping the instrument panel firmly before flight',
+      'tapping the instrument panel firmly with a finger before flight',
       'checking the altimeter reads elevation on QNH and the ASI reads zero',
-      'running the engine to full power on the ground',
-      'observing the compass settle after a turn',
+      'running the engine up to full power while on the ground',
+      'observing the compass settle down after a turn on the apron',
     ],
     correct: 1,
     explanation: 'On the ground with local QNH set, the altimeter should read aerodrome elevation, the ASI should read zero (no wind through the pitot) and the VSI zero. Discrepancies indicate a blockage or instrument fault.',
@@ -3863,10 +3863,10 @@ export const pplaQuestions: {
   {
     question: 'The purpose of a fuse or circuit breaker in the aircraft electrical system is to:',
     options: [
-      'increase the available voltage',
-      'charge the battery',
+      'increase the available voltage so that the avionics receive more power',
+      'charge the aircraft battery from the alternator during the flight',
       'protect the circuit by interrupting current if an overload or fault occurs',
-      'drive the starter motor',
+      'drive the starter motor when the engine is being started up',
     ],
     correct: 2,
     explanation: 'Fuses and circuit breakers open the circuit when current exceeds a safe value, protecting wiring and equipment from a fault. A breaker that repeatedly trips should not be forcibly held in, as this risks fire.',
@@ -3888,9 +3888,9 @@ export const pplaQuestions: {
     question: 'A mixture set too lean at high power can cause:',
     options: [
       'high cylinder head temperatures and detonation',
-      'an overspeed of the propeller',
-      'excessive oil consumption only',
-      'carburettor icing',
+      'a sudden overspeed of the propeller',
+      'excessive engine oil consumption only',
+      'severe carburettor icing',
     ],
     correct: 0,
     explanation: 'An over-lean mixture at high power raises combustion temperatures and promotes detonation, which can damage the engine. At high power settings the mixture is kept rich enough to provide a cooling margin.',
@@ -3899,10 +3899,10 @@ export const pplaQuestions: {
   {
     question: 'Antennas for VHF communication are most effective when they are:',
     options: [
-      'as short as possible regardless of frequency',
-      'mounted inside a metal compartment',
+      'as short as possible, regardless of the frequency in use',
+      'mounted inside a closed metal compartment of the airframe',
       'correctly matched to the frequency and unobstructed by the airframe',
-      'painted a bright colour',
+      'painted a bright and easily visible colour on the outside',
     ],
     correct: 2,
     explanation: 'Antenna efficiency depends on its length matching the wavelength and on a clear field of view; metal structure can shadow or detune it. A damaged or poorly sited antenna reduces transmission and reception range.',
@@ -3911,10 +3911,10 @@ export const pplaQuestions: {
   {
     question: 'On the airspeed indicator, the lower end of the green arc corresponds to the:',
     options: [
-      'never-exceed speed',
+      'never-exceed speed marked by the red line on the dial',
       'clean stall speed (Vs1) in the cruise configuration',
-      'maximum flap speed',
-      'best glide speed',
+      'maximum speed at which flap may be extended in flight',
+      'best glide speed for the aircraft with the engine idle',
     ],
     correct: 1,
     explanation: 'The bottom of the green arc is Vs1, the stalling speed in the clean configuration at maximum weight. The bottom of the white arc is Vs0, the stalling speed with flap extended, which is lower.',
@@ -3923,9 +3923,9 @@ export const pplaQuestions: {
   {
     question: 'The benefit of an instantaneous vertical speed indicator (IVSI) over a basic VSI is that it:',
     options: [
-      'is unaffected by a static blockage',
-      'also displays airspeed',
-      'needs no static source',
+      'is completely unaffected by a blocked static source',
+      'also displays the aircraft airspeed on the same dial',
+      'needs no static source connected to work correctly',
       'shows the rate of climb or descent with much less lag',
     ],
     correct: 3,
@@ -3935,9 +3935,9 @@ export const pplaQuestions: {
   {
     question: 'A propeller that produces less thrust per revolution at high density altitude does so because:',
     options: [
-      'the blades change pitch automatically',
-      'the engine RPM is limited',
-      'the fuel flow is reduced',
+      'the blades change their pitch automatically as the air gets thinner',
+      'the engine RPM is automatically limited as the altitude increases',
+      'the fuel flow to the engine is reduced by the mixture control',
       'the thinner air provides less mass for the blades to accelerate rearward',
     ],
     correct: 3,
@@ -3947,10 +3947,10 @@ export const pplaQuestions: {
   {
     question: 'You notice the ammeter showing a continuous discharge in flight. This indicates that the:',
     options: [
-      'battery is fully charged',
-      'alternator is overcharging the battery',
+      'battery is fully charged and the whole system is working correctly',
+      'alternator is overcharging the battery and should be switched off',
       'alternator is not meeting the electrical load and the battery is discharging',
-      'electrical system is operating normally',
+      'electrical system is operating completely normally in the cruise',
     ],
     correct: 2,
     explanation: 'A continuous discharge means the alternator output is insufficient or has failed, so the battery is supplying the load and depleting. The pilot reduces electrical load and plans to land before the battery is exhausted.',
@@ -3959,10 +3959,10 @@ export const pplaQuestions: {
   {
     question: 'Before flight, the radio is tested for serviceability by:',
     options: [
-      'transmitting a long count on the emergency frequency',
+      'transmitting a long count on the emergency frequency before the departure',
       'confirming a satisfactory two-way check or correct receipt of the ATIS where available',
-      'switching it on only after take-off',
-      'relying on the previous flight\'s serviceability',
+      'switching it on only after the aircraft has become airborne',
+      'relying on the previous flight\'s serviceability of the radio',
     ],
     correct: 1,
     explanation: 'A pre-flight radio check confirms transmit and receive serviceability, for example by a radio check with a ground station or receiving the ATIS broadcast clearly. A serviceable radio is required where carriage and use is mandatory.',
@@ -3972,9 +3972,9 @@ export const pplaQuestions: {
     question: 'Power attenuation of a radio signal with distance means that, as range increases, the signal:',
     options: [
       'weakens, eventually becoming unreadable beyond the effective range',
-      'strengthens',
-      'changes frequency',
-      'becomes line-of-sight only at close range',
+      'strengthens steadily as the aircraft flies further away',
+      'changes frequency as the distance from the station grows',
+      'becomes line-of-sight only when the aircraft is nearby',
     ],
     correct: 0,
     explanation: 'Signal strength falls with distance (attenuation), so beyond the effective range the transmission becomes too weak to read. Higher transmitter power, altitude and a clear path extend usable range.',
@@ -3983,10 +3983,10 @@ export const pplaQuestions: {
   {
     question: 'Hypoxia is best defined as a condition in which the:',
     options: [
-      'blood contains too much carbon dioxide',
-      'pilot breathes too rapidly',
+      'blood contains far too much carbon dioxide for the body to process',
+      'pilot breathes far too rapidly and washes out the carbon dioxide',
       'body tissues, particularly the brain, receive an inadequate supply of oxygen',
-      'cabin pressure is too high',
+      'cabin pressure becomes too high for the body to tolerate safely',
     ],
     correct: 2,
     explanation: 'Hypoxia is an oxygen deficiency in the body tissues, most critically the brain. It becomes significant with altitude as the partial pressure of oxygen falls, impairing judgement and performance, often without the pilot realising.',
@@ -3995,10 +3995,10 @@ export const pplaQuestions: {
   {
     question: 'An insidious danger of hypoxia is that the affected pilot often experiences:',
     options: [
-      'sharp pain that prompts immediate action',
+      'sharp physical pain that prompts the pilot to act immediately',
       'a false sense of well-being and impaired judgement, masking the problem',
-      'an obvious and sudden loss of vision only',
-      'no change in night vision',
+      'an obvious and sudden loss of vision with clear warning signs',
+      'no change at all in the pilot\'s night vision or alertness',
     ],
     correct: 1,
     explanation: 'Early hypoxia commonly brings euphoria, overconfidence and reduced self-criticism, so the pilot does not recognise the deterioration. Night vision is among the first faculties affected, even at moderate altitude.',
@@ -4055,10 +4055,10 @@ export const pplaQuestions: {
   {
     question: 'The recommended action to combat hyperventilation in flight is to:',
     options: [
-      'breathe faster to restore oxygen',
+      'breathe noticeably faster in order to restore the oxygen level',
       'consciously slow the breathing rate, for example by talking or counting aloud',
-      'climb to a higher altitude',
-      'take a deep breath and hold it for as long as possible',
+      'climb to a higher altitude where the air is cooler and thinner',
+      'take one deep breath and hold it for as long as is possible',
     ],
     correct: 1,
     explanation: 'Slowing the breathing rate restores normal carbon dioxide levels, relieving the symptoms. Because hypoxia and hyperventilation feel similar, a pilot at altitude should also confirm an adequate oxygen supply.',
@@ -4067,9 +4067,9 @@ export const pplaQuestions: {
   {
     question: 'As an aircraft climbs, gases trapped in body cavities will:',
     options: [
-      'contract as the cabin altitude increases',
-      'remain unchanged regardless of altitude',
-      'liquefy within the body cavities',
+      'contract steadily as the cabin altitude increases with height',
+      'remain completely unchanged regardless of the altitude flown',
+      'liquefy within the body cavities as the pressure falls',
       'expand, causing discomfort in the ears, sinuses, teeth and gut',
     ],
     correct: 3,
@@ -4079,9 +4079,9 @@ export const pplaQuestions: {
   {
     question: 'Difficulty equalising ear pressure is most likely to occur on:',
     options: [
-      'climb, when pressure is increasing',
-      'the take-off roll',
-      'taxiing only',
+      'climb, when the increasing cabin pressure squeezes the middle ear',
+      'the take-off roll, while the aircraft is still on the ground',
+      'taxiing only, before any change in the cabin altitude occurs',
       'descent, when the eustachian tube must let air back into the middle ear',
     ],
     correct: 3,
@@ -4115,10 +4115,10 @@ export const pplaQuestions: {
   {
     question: 'The minimum period that must elapse between consuming alcohol and acting as a flight crew member is:',
     options: [
-      '2 hours',
-      '12 hours in all cases',
+      '2 hours, provided no more than two standard drinks were consumed',
+      '12 hours in all cases, regardless of how much was consumed',
       '8 hours, and the blood alcohol level must be below the prescribed limit',
-      '24 hours',
+      '24 hours, after which any quantity of alcohol is acceptable',
     ],
     correct: 2,
     explanation: 'The rule requires at least 8 hours from \'bottle to throttle\' and a blood (or breath) alcohol concentration below the prescribed limit. Even within these limits, residual effects can impair performance.',
@@ -4127,10 +4127,10 @@ export const pplaQuestions: {
   {
     question: 'A pilot who is free of measurable blood alcohol but suffering a hangover should recognise that the hangover:',
     options: [
-      'has no effect once blood alcohol is zero',
-      'improves concentration',
+      'has no effect at all on flying ability once the blood alcohol level is zero',
+      'actually improves concentration and steadiness once the alcohol has cleared',
       'can still impair judgement, coordination and performance even at zero blood alcohol',
-      'only affects vision',
+      'affects only the pilot\'s vision and has no other impact on performance',
     ],
     correct: 2,
     explanation: 'Hangover effects, including dehydration, headache, fatigue and impaired judgement, persist after blood alcohol has returned to zero. The pilot should not fly until fully recovered, not merely until sober.',
@@ -4140,9 +4140,9 @@ export const pplaQuestions: {
     question: 'Alcohol is eliminated from the body at an approximately fixed rate, which means that:',
     options: [
       'only time will reduce the blood alcohol level; coffee and food do not speed it up',
-      'strong coffee accelerates the process',
-      'exercise removes alcohol quickly',
-      'a cold shower restores full performance',
+      'drinking strong black coffee accelerates the breakdown of the alcohol',
+      'vigorous exercise removes the alcohol from the bloodstream quickly',
+      'a cold shower and fresh air restore the pilot to full performance',
     ],
     correct: 0,
     explanation: 'The liver metabolises alcohol at a roughly constant rate regardless of coffee, food, exercise or showers. Only the passage of time lowers the blood alcohol level and reverses impairment.',
@@ -4151,9 +4151,9 @@ export const pplaQuestions: {
   {
     question: 'Common over-the-counter medications such as antihistamines and nasal decongestants are a concern for pilots because they can:',
     options: [
-      'improve reaction time',
-      'have no side effects',
-      'only affect digestion',
+      'improve the pilot\'s reaction time',
+      'have no side effects whatsoever',
+      'only affect the pilot\'s digestion',
       'cause drowsiness and impair performance',
     ],
     correct: 3,
@@ -4163,10 +4163,10 @@ export const pplaQuestions: {
   {
     question: 'A pilot taking any new medication should, before flying:',
     options: [
-      'assume it is safe if bought without prescription',
+      'assume it is safe to use if it was bought without a prescription',
       'obtain a clearance from a DAME and ensure there are no impairing side effects',
-      'take a double dose to ensure effectiveness',
-      'fly to test the effects personally',
+      'take a double dose of it to ensure that it is fully effective',
+      'fly first to personally test the effects of the medication',
     ],
     correct: 1,
     explanation: 'A pilot must not fly when on medication unless a DAME has confirmed it is acceptable, because the underlying condition and the drug\'s side effects can both impair safety.',
@@ -4176,9 +4176,9 @@ export const pplaQuestions: {
     question: 'After donating blood, a pilot should avoid flying for a period because the donation can:',
     options: [
       'reduce the blood\'s oxygen-carrying capacity and cause light-headedness',
-      'improve a pilot\'s tolerance to altitude',
-      'increase the pilot\'s reaction speed',
-      'have no measurable physiological effect',
+      'improve a pilot\'s tolerance to altitude and to hypoxia',
+      'increase the pilot\'s reaction speed and overall alertness',
+      'have no measurable physiological effect on the pilot',
     ],
     correct: 0,
     explanation: 'Giving blood temporarily lowers the blood\'s oxygen-carrying capacity and can cause light-headedness, so the regulations require a waiting period before flying. The other options describe effects a donation does not produce.',
@@ -4187,10 +4187,10 @@ export const pplaQuestions: {
   {
     question: 'Carbon monoxide poisoning in a light aircraft most commonly arises from:',
     options: [
-      'fuel vapour in the tanks',
+      'fuel vapour escaping from the tanks into the cabin',
       'exhaust gas leaking into the cabin heating system',
-      'high cabin altitude',
-      'the avionics cooling fan',
+      'the high cabin altitude reached during the cruise',
+      'the avionics cooling fan running behind the panel',
     ],
     correct: 1,
     explanation: 'Cabin heat is often drawn over the exhaust muffler, so a crack in the exhaust can introduce odourless carbon monoxide into the cabin. CO binds to haemoglobin far more readily than oxygen, causing hypoxia.',
@@ -4199,9 +4199,9 @@ export const pplaQuestions: {
   {
     question: 'Early symptoms of carbon monoxide poisoning include:',
     options: [
-      'sharp chest pain only',
-      'improved alertness',
-      'ringing in the ears only',
+      'a sharp chest pain and nothing else',
+      'a noticeable improvement in alertness',
+      'a faint ringing in the ears only',
       'headache, drowsiness, dizziness and nausea',
     ],
     correct: 3,
@@ -4212,9 +4212,9 @@ export const pplaQuestions: {
     question: 'On suspecting carbon monoxide in the cabin, the pilot should:',
     options: [
       'turn off cabin heat, open the vents, use oxygen and land as soon as practicable',
-      'close all vents and windows to keep the cabin sealed',
-      'increase the cabin heat to clear the contamination',
-      'continue the flight and monitor the symptoms',
+      'close all the vents and windows to keep the cabin sealed and warm',
+      'increase the cabin heat to try to clear the contamination away',
+      'continue the flight as planned and just monitor the symptoms',
     ],
     correct: 0,
     explanation: 'Immediate actions are to shut off the heater (the likely source), ventilate with fresh air, use supplemental oxygen if available, and land promptly for medical attention, because CO effects worsen with continued exposure.',
@@ -4223,9 +4223,9 @@ export const pplaQuestions: {
   {
     question: 'In dim light, peripheral (off-centre) vision is more sensitive than central vision because the:',
     options: [
-      'cone cells dominate the periphery',
-      'central fovea has the most rods',
-      'colour receptors are most active at night',
+      'cone cells, which dominate the periphery, are most active in dim light',
+      'central fovea contains the highest concentration of rod cells',
+      'colour receptors of the eye are most active and sensitive at night',
       'rod cells, concentrated away from the centre of the retina, work better in low light',
     ],
     correct: 3,
@@ -4247,10 +4247,10 @@ export const pplaQuestions: {
   {
     question: 'Empty-field (or empty-sky) myopia occurs when, with nothing to focus on, the eyes:',
     options: [
-      'focus at infinity, sharpening distant vision',
+      'focus at infinity, sharpening the view of distant aircraft and terrain',
       'relax to focus a short distance ahead, so distant traffic may be missed',
-      'become more sensitive to colour',
-      'cannot focus at all',
+      'become noticeably more sensitive to colour in the dim light',
+      'cannot focus on anything at all until a target appears',
     ],
     correct: 1,
     explanation: 'In a featureless sky the eyes default to a resting focus only a metre or two away, so distant aircraft can go unseen until close. Deliberately focusing on a distant object or a wingtip helps re-set the eyes.',
@@ -4259,10 +4259,10 @@ export const pplaQuestions: {
   {
     question: 'An effective visual scanning technique to detect other aircraft and reduce the mid-air collision risk is to:',
     options: [
-      'sweep the eyes rapidly and continuously across the windscreen',
-      'stare at the horizon continuously',
+      'sweep the eyes rapidly and continuously across the whole of the windscreen',
+      'stare fixedly at the horizon continuously throughout the whole flight',
       'move the eyes in short, regular steps across the sky, pausing to focus in each sector',
-      'rely on the GNSS traffic display alone',
+      'rely on the GNSS traffic display alone to spot other aircraft',
     ],
     correct: 2,
     explanation: 'The eye can only detect movement and detail when momentarily still, so a systematic scan in small steps with a brief pause in each sector is far more effective than a continuous sweep. An aircraft on a collision course shows no relative movement, making it hard to see.',
@@ -4271,10 +4271,10 @@ export const pplaQuestions: {
   {
     question: 'An aircraft on a steady collision course with your own will appear to:',
     options: [
-      'move steadily across the windscreen',
-      'descend below the horizon',
+      'move steadily across the windscreen from one side',
+      'descend slowly below the horizon ahead of you',
       'remain stationary in the windscreen while growing larger',
-      'flash intermittently',
+      'flash on and off intermittently in the distance',
     ],
     correct: 2,
     explanation: 'A constant relative bearing means the conflicting aircraft stays in the same spot on the windscreen and simply enlarges, giving little to attract the eye until late. This is why a disciplined scan and \'see-and-avoid\' have limits.',
@@ -4295,9 +4295,9 @@ export const pplaQuestions: {
   {
     question: 'The somatogravic illusion, in which acceleration is felt as a nose-up pitch, is a particular hazard:',
     options: [
-      'during a steady cruise in clear daylight conditions',
-      'while taxiing slowly on the ground',
-      'in a stabilised, constant-speed descent',
+      'during a steady cruise in clear and bright daylight conditions',
+      'while taxiing slowly along the ground before take-off',
+      'in a stabilised, constant-speed descent toward the field',
       'on take-off into darkness or poor visibility, tempting a nose-down input',
     ],
     correct: 3,
@@ -4308,9 +4308,9 @@ export const pplaQuestions: {
     question: 'The illusion known as \'the leans\' is:',
     options: [
       'a false sensation of bank after a gradual roll goes unnoticed',
-      'an accurate sense of the aircraft\'s attitude',
-      'caused only by hypoxia',
-      'unique to night flying',
+      'an accurate sense of the aircraft\'s true attitude in cloud',
+      'a sensation that is caused only by the onset of hypoxia',
+      'a sensation that is unique to flying at night in the dark',
     ],
     correct: 0,
     explanation: 'A slow roll below the sensory threshold may not be felt, so when the pilot returns to level it feels like banking the other way (the leans). The pilot believes the wings are level only by reference to the attitude indicator.',
@@ -4319,10 +4319,10 @@ export const pplaQuestions: {
   {
     question: 'On a dark night approach to a runway that slopes up away from the threshold, the pilot is likely to perceive that the aircraft is:',
     options: [
-      'lower and shallower than the true path',
+      'lower and shallower than the true approach path being flown',
       'higher and steeper than it really is, tempting a low approach',
-      'exactly on the correct path',
-      'too fast',
+      'exactly on the correct approach path to the runway',
+      'flying noticeably faster than the planned approach speed',
     ],
     correct: 1,
     explanation: 'An up-sloping runway makes the approach look too high, so the pilot tends to fly a shallower, lower approach than intended, risking undershoot. A down-sloping runway has the opposite effect. Approach guidance and instruments counter the illusion.',
@@ -4331,10 +4331,10 @@ export const pplaQuestions: {
   {
     question: 'The \'black hole\' approach illusion occurs when, on a night approach over featureless dark terrain or water, the pilot tends to:',
     options: [
-      'fly too high',
-      'maintain a perfect glide path automatically',
+      'fly an approach that is too high because the dark terrain looks deceptively close',
+      'maintain a perfect glide path automatically without any visual references',
       'fly an approach that is too low because the lack of visual cues distorts perception',
-      'experience improved depth perception',
+      'experience improved depth perception from the bright runway lights ahead',
     ],
     correct: 2,
     explanation: 'With no intervening lights or features between the aircraft and the runway, the pilot loses depth and slope cues and commonly flies dangerously low. Using instruments and any approach guidance prevents controlled flight into terrain.',
@@ -4344,9 +4344,9 @@ export const pplaQuestions: {
     question: 'The autokinetic illusion is the apparent:',
     options: [
       'movement of a stationary light when stared at in the dark',
-      'tilting of the horizon in cloud',
-      'change of airspeed during acceleration',
-      'spinning sensation after a turn',
+      'tilting of the horizon while flying through thick cloud',
+      'change in airspeed felt during a strong acceleration',
+      'spinning sensation experienced just after a steep turn',
     ],
     correct: 0,
     explanation: 'Staring at a single stationary light against a dark background for several seconds makes it appear to move (autokinesis). Scanning rather than fixating, and cross-checking with other references, avoids being misled.',
@@ -4355,9 +4355,9 @@ export const pplaQuestions: {
   {
     question: 'The basic cause of motion sickness is:',
     options: [
-      'an empty stomach',
-      'high cabin temperature alone',
-      'carbon monoxide',
+      'an empty stomach combined with low cabin humidity and dehydration',
+      'high cabin temperature alone, with no other contributing factor',
+      'carbon monoxide leaking into the cabin from the heating system',
       'conflicting signals from the eyes, inner ear and other senses about motion',
     ],
     correct: 3,
@@ -4367,9 +4367,9 @@ export const pplaQuestions: {
   {
     question: 'A practical measure to reduce motion sickness in flight is to:',
     options: [
-      'read charts continuously to stay occupied',
-      'close all vents and increase cabin heat',
-      'make frequent abrupt manoeuvres',
+      'read charts continuously in order to stay occupied',
+      'close all the vents and increase the cabin heat fully',
+      'make frequent and abrupt manoeuvres to distract yourself',
       'look outside at the horizon, increase ventilation and fly smoothly',
     ],
     correct: 3,
@@ -4391,10 +4391,10 @@ export const pplaQuestions: {
   {
     question: 'Negative g, such as in a sustained push-over, tends to cause:',
     options: [
-      'grey-out and blackout',
+      'grey-out and blackout as the blood drains from the head',
       'a sensation of blood rushing to the head, with possible \'redout\'',
-      'improved tolerance to acceleration',
-      'no effect on vision',
+      'an improved tolerance to acceleration during the manoeuvre',
+      'no effect at all on the pilot\'s vision or awareness',
     ],
     correct: 1,
     explanation: 'Negative g forces blood toward the head, producing discomfort, a feeling of congestion and possible reddening of vision (redout). It is uncomfortable and disorienting and is avoided in normal flight.',
@@ -4403,10 +4403,10 @@ export const pplaQuestions: {
   {
     question: 'The partial pressure of oxygen at altitude is the key factor in hypoxia because the body:',
     options: [
-      'needs a higher percentage of oxygen with height',
-      'is unaffected by pressure changes',
+      'needs a higher percentage of oxygen in the air as the aircraft climbs higher',
+      'is completely unaffected by the falling pressure of the air with height',
       'depends on the pressure of oxygen, not just its percentage, to load it into the blood',
-      'uses carbon dioxide for energy',
+      'uses carbon dioxide rather than oxygen for energy at high altitude',
     ],
     correct: 2,
     explanation: 'Oxygen remains about 21 percent of the atmosphere with height, but the falling total pressure reduces oxygen\'s partial pressure, so less is driven into the blood. This is why hypoxia develops with altitude despite the unchanged percentage.',
@@ -4439,10 +4439,10 @@ export const pplaQuestions: {
   {
     question: 'The checklist IMSAFE used for a pilot\'s pre-flight self-assessment stands for illness, medication, stress, alcohol, fatigue and:',
     options: [
-      'equipment',
+      'equipment carried on the flight',
       'eating (nutrition and hydration)',
-      'experience',
-      'environment',
+      'experience on the aircraft type',
+      'environment around the aerodrome',
     ],
     correct: 1,
     explanation: 'IMSAFE prompts a pilot to check Illness, Medication, Stress, Alcohol, Fatigue and Eating (adequate nutrition and hydration, sometimes given as Emotion). It is a simple fitness-for-flight self-check.',
@@ -4463,9 +4463,9 @@ export const pplaQuestions: {
   {
     question: 'The effect of fatigue on a pilot includes:',
     options: [
-      'sharper concentration',
-      'improved short-term memory',
-      'increased situational awareness',
+      'sharper concentration and a faster reaction time',
+      'improved short-term memory for clearances and figures',
+      'increased situational awareness across the whole flight',
       'slowed reactions, reduced attention and poorer judgement',
     ],
     correct: 3,
@@ -4475,10 +4475,10 @@ export const pplaQuestions: {
   {
     question: 'The relationship between arousal (stress) and performance is best described as:',
     options: [
-      'performance always rises with more stress',
+      'performance always rises steadily as the level of stress and arousal increases',
       'performance is best at a moderate level of arousal and falls off when too low or too high',
-      'stress has no effect on performance',
-      'performance is best at maximum stress',
+      'stress and arousal have no measurable effect on a pilot\'s performance',
+      'performance is best when stress and arousal are kept at their maximum',
     ],
     correct: 1,
     explanation: 'Performance follows an inverted-U: too little arousal leads to boredom and inattention, an optimum level sharpens performance, and excessive stress causes overload, narrowed attention and errors.',
@@ -4488,9 +4488,9 @@ export const pplaQuestions: {
     question: 'Under high stress or workload, a common and dangerous effect on a pilot\'s attention is:',
     options: [
       'attention narrowing (fixation) on one task while others are neglected',
-      'an even spread of attention across all tasks',
-      'improved monitoring of all instruments',
-      'perfect prioritisation',
+      'an even and balanced spread of attention across all the tasks',
+      'improved monitoring of every instrument in the cockpit at once',
+      'perfect prioritisation of all the competing tasks at hand',
     ],
     correct: 0,
     explanation: 'High stress narrows attention so the pilot may fixate on one problem and miss other important cues, such as flying the aircraft. Prioritising tasks (aviate, navigate, communicate) and using checklists counters overload.',
@@ -4499,10 +4499,10 @@ export const pplaQuestions: {
   {
     question: 'In Threat and Error Management for single-pilot operations, a \'threat\' is:',
     options: [
-      'an action by the pilot that deviates from their intentions',
-      'the final undesired aircraft state that results',
+      'an action by the pilot that deviates from their own original intentions',
+      'the final undesired aircraft state that eventually results from it',
       'a condition outside the pilot\'s control that increases complexity, such as weather',
-      'a normal checklist item completed correctly',
+      'a normal checklist item that is completed correctly in turn',
     ],
     correct: 2,
     explanation: 'Threats are external conditions (weather, traffic, terrain, aircraft malfunctions) that the pilot must manage. Errors are actions or inactions by the pilot. Both, if unmanaged, can lead to an undesired aircraft state.',
@@ -4511,10 +4511,10 @@ export const pplaQuestions: {
   {
     question: 'In Threat and Error Management, an \'error\' is:',
     options: [
-      'an external weather condition along the route',
+      'an external weather condition encountered along the planned route',
       'an action or inaction by the pilot that causes a deviation from intentions',
-      'a fully serviceable aircraft system or component',
-      'a procedure that is correctly and fully flown',
+      'a fully serviceable aircraft system or component in normal use',
+      'a procedure that is correctly and completely flown by the pilot',
     ],
     correct: 1,
     explanation: 'An error is a crew (here, pilot) action or inaction that departs from what was intended or expected, such as a mis-set altimeter or a missed checklist item. Detecting and trapping errors early prevents an undesired aircraft state.',
@@ -4524,9 +4524,9 @@ export const pplaQuestions: {
     question: 'An \'undesired aircraft state\' in TEM is:',
     options: [
       'a position, speed or configuration that clearly reduces safety margins',
-      'any normal, expected phase of the flight',
-      'a correctly executed and stabilised go-around',
-      'a planned diversion carried out as briefed',
+      'any normal, expected phase of the flight that goes to plan',
+      'a correctly executed and fully stabilised go-around manoeuvre',
+      'a planned diversion that is carried out exactly as briefed',
     ],
     correct: 0,
     explanation: 'An undesired aircraft state is a safety-reducing condition such as being off track, too low, too fast, or low on fuel, that arises from unmanaged threats or errors. Recovering to a safe state takes priority over diagnosing the cause.',
@@ -4535,10 +4535,10 @@ export const pplaQuestions: {
   {
     question: 'The use of checklists and standard operating procedures helps a single pilot to:',
     options: [
-      'increase workload unnecessarily',
-      'replace the need for situational awareness',
+      'increase the workload unnecessarily and slow down all routine operations',
+      'replace the need for situational awareness and any active monitoring at all',
       'prevent and trap errors by ensuring critical actions are completed in the right sequence',
-      'eliminate all threats',
+      'eliminate all threats and errors from every phase of the flight',
     ],
     correct: 2,
     explanation: 'Checklists and SOPs are a primary defence against error, ensuring critical actions are done and confirmed, especially under stress or distraction. They support, but do not replace, the pilot\'s monitoring and judgement.',
@@ -4547,9 +4547,9 @@ export const pplaQuestions: {
   {
     question: 'A pilot feels pressure to complete a flight despite deteriorating weather, in order to keep an appointment. This \'get-there-itis\' is an example of:',
     options: [
-      'a sound operational reason to continue the flight',
-      'a hazard entirely outside the pilot\'s control',
-      'a threat arising from an aircraft system fault',
+      'a sound operational reason to continue the flight as planned',
+      'a hazard that is entirely outside the pilot\'s own control',
+      'a threat that arises from a fault in an aircraft system',
       'a self-imposed pressure that distorts decision-making and must be resisted',
     ],
     correct: 3,
@@ -4560,9 +4560,9 @@ export const pplaQuestions: {
     question: 'Situational awareness is best described as:',
     options: [
       'an accurate mental picture of the aircraft and its developing situation',
-      'memorising the aircraft\'s emergency checklist',
-      'flying the aircraft solely by reference to instruments',
-      'relying on the autopilot to manage the flight',
+      'memorising the aircraft\'s full emergency checklist by heart',
+      'flying the aircraft solely by reference to the instruments',
+      'relying on the autopilot alone to manage the whole flight',
     ],
     correct: 0,
     explanation: 'Situational awareness is keeping an up-to-date and accurate mental model of position, fuel, weather, traffic and aircraft state, and projecting how it will evolve. Losing it is a precursor to many accidents.',
@@ -4571,9 +4571,9 @@ export const pplaQuestions: {
   {
     question: 'Short-term (working) memory is limited, which means a pilot should:',
     options: [
-      'commit all instructions to memory',
-      'ignore the limitation under stress',
-      'avoid using checklists',
+      'commit all instructions to memory and avoid writing anything down',
+      'ignore the limitation, since stress improves the recall of instructions',
+      'avoid using checklists, relying instead on memory of the sequence',
       'write down clearances and use aids rather than rely on memory for long sequences',
     ],
     correct: 3,
@@ -4583,10 +4583,10 @@ export const pplaQuestions: {
   {
     question: 'A pilot recovering from a head cold should be cautious about flying mainly because:',
     options: [
-      'a head cold improves the body\'s oxygen uptake',
-      'a cold sharpens the pilot\'s senses and reactions',
+      'a head cold actually improves the body\'s uptake of oxygen at altitude',
+      'a cold sharpens the pilot\'s senses and speeds up their reactions',
       'congestion can block the ears and sinuses, making pressure hard to equalise',
-      'there is no flight-safety concern from a cold',
+      'there is no real flight-safety concern arising from a head cold',
     ],
     correct: 2,
     explanation: 'Upper respiratory congestion can block the eustachian tubes and sinus openings, so pressure cannot equalise on descent, causing severe pain or barotrauma. Decongestants used to fly may themselves impair performance.',
@@ -4595,10 +4595,10 @@ export const pplaQuestions: {
   {
     question: 'Dehydration in flight can be a problem because it:',
     options: [
-      'improves heat tolerance',
+      'improves the pilot\'s tolerance to heat in the cabin',
       'reduces alertness and concentration and worsens fatigue',
-      'has no effect on performance',
-      'increases night vision',
+      'has no measurable effect on the pilot\'s performance',
+      'noticeably increases the pilot\'s night vision in the dark',
     ],
     correct: 1,
     explanation: 'Dehydration, common in dry cockpits and hot conditions, causes headache, fatigue and reduced concentration, compounding other stressors. Pilots should drink water regularly and recognise the early symptoms.',
@@ -4607,9 +4607,9 @@ export const pplaQuestions: {
   {
     question: 'Flicker vertigo can be triggered by:',
     options: [
-      'steady cockpit lighting',
-      'a clear, dark night sky',
-      'a constant engine note',
+      'steady, unchanging cockpit lighting on a long flight',
+      'a clear, dark night sky with no flickering light',
+      'a constant, steady engine note during the cruise',
       'sunlight flickering through a slowly turning propeller',
     ],
     correct: 3,
@@ -4620,9 +4620,9 @@ export const pplaQuestions: {
     question: 'The graveyard spiral is an illusion in which a pilot in a prolonged turn:',
     options: [
       'no longer senses the turn and, on levelling, feels a turn the other way',
-      'accurately senses the turn throughout the manoeuvre',
-      'experiences clearly improved spatial orientation',
-      'feels a strong, unmistakable climb',
+      'accurately senses the turn throughout the whole manoeuvre',
+      'experiences a clearly improved sense of spatial orientation',
+      'feels a strong and unmistakable climb during the turn',
     ],
     correct: 0,
     explanation: 'After a sustained turn the balance organs adapt and the sensation of turning fades; rolling level then feels like a turn the opposite way, so the pilot may re-bank into the original spiral, losing height. Reference to the attitude indicator breaks the illusion.',
@@ -4631,10 +4631,10 @@ export const pplaQuestions: {
   {
     question: 'A pilot\'s decision to divert when faced with worsening weather is supported by following a structured decision process, the key first step of which is to:',
     options: [
-      'act immediately without analysis',
+      'act immediately on instinct without any analysis at all',
       'recognise that a change has occurred and that a decision is required',
-      'continue the original plan regardless',
-      'wait until fuel is critical',
+      'continue with the original plan regardless of the weather',
+      'wait until the fuel state becomes critical before acting',
     ],
     correct: 1,
     explanation: 'Structured decision-making (for example the DECIDE model) begins with detecting that the situation has changed and a decision is needed, then estimating, choosing, identifying actions, doing and evaluating. Early recognition gives the most options.',
@@ -4679,10 +4679,10 @@ export const pplaQuestions: {
   {
     question: 'A pilot experiencing anxiety or significant emotional stress before a flight should recognise that it may:',
     options: [
-      'have no effect on flying ability',
-      'improve decision-making',
+      'have no effect at all on the pilot\'s ability to fly the aircraft',
+      'improve decision-making by sharpening the pilot\'s focus',
       'impair concentration and judgement, and reconsider whether to fly',
-      'only affect passengers',
+      'only affect the passengers rather than the pilot in command',
     ],
     correct: 2,
     explanation: 'Anxiety, depression and life stress (such as bereavement or relationship problems) impair concentration, judgement and attention. The IMSAFE self-check prompts the pilot to weigh emotional state in the go/no-go decision.',
@@ -4727,10 +4727,10 @@ export const pplaQuestions: {
   {
     question: 'The \'basic empty weight\' of an aircraft typically includes:',
     options: [
-      'Only the bare airframe with no fluids',
-      'The aircraft plus its maximum payload',
+      'Only the bare airframe with no fluids on board at all',
+      'The aircraft together with its maximum allowable payload',
       'The airframe, engine, fixed equipment, unusable fuel and full oil',
-      'The aircraft loaded ready for take-off with fuel',
+      'The aircraft loaded ready for take-off with fuel on board',
     ],
     correct: 2,
     explanation: 'Basic empty weight includes the structure, powerplant, fixed equipment, unusable fuel and usually full operating fluids such as oil. It excludes payload and usable fuel.',
@@ -4739,10 +4739,10 @@ export const pplaQuestions: {
   {
     question: 'The maximum landing weight is generally lower than the maximum take-off weight because:',
     options: [
-      'Fuel weighs more on landing than on take-off',
+      'Fuel weighs noticeably more on landing than it does on take-off',
       'The landing gear and structure must absorb the impact loads of touchdown',
-      'The aircraft flies slower on the approach',
-      'Air density is always lower at the destination',
+      'The aircraft flies more slowly on the approach to land',
+      'Air density is always lower at the destination aerodrome',
     ],
     correct: 1,
     explanation: 'Maximum landing weight protects the structure and gear from touchdown loads, so it is often set below the take-off weight. Fuel burn during the flight normally brings the aircraft within the landing limit.',
@@ -4751,10 +4751,10 @@ export const pplaQuestions: {
   {
     question: 'The likely result of attempting a take-off above the maximum take-off weight is:',
     options: [
-      'A shorter take-off run',
-      'An increased rate of climb',
+      'A noticeably shorter take-off run on the runway',
+      'An increased rate of climb after lifting off',
       'A longer take-off run and a reduced rate and angle of climb',
-      'No effect, provided the runway is sealed',
+      'No effect at all, provided the runway is sealed',
     ],
     correct: 2,
     explanation: 'Excess weight increases the take-off distance required and reduces climb performance, as well as overstressing the structure. There is no performance benefit from overloading.',
@@ -4764,9 +4764,9 @@ export const pplaQuestions: {
     question: 'Loading an aeroplane with its centre of gravity aft of the aft limit will tend to:',
     options: [
       'Reduce longitudinal stability and make the aircraft prone to over-controlling',
-      'Greatly increase the control forces in pitch',
-      'Make the aircraft very stable and sluggish',
-      'Lower the stall speed and improve safety',
+      'Greatly increase the control forces needed in pitch during flight',
+      'Make the aircraft very stable and sluggish to manoeuvre in pitch',
+      'Lower the stall speed and noticeably improve the safety margin',
     ],
     correct: 0,
     explanation: 'An aft CG reduces longitudinal stability, lightens the controls and can make the aircraft difficult to recover from a stall or upset. It is a hazardous condition.',
@@ -4776,9 +4776,9 @@ export const pplaQuestions: {
     question: 'An aircraft has an empty weight of 760 kg and a load brings the total to 1,060 kg with a CG of 2.30 m. If the CG limits are 2.20 m to 2.45 m, the aircraft is:',
     options: [
       'Within limits, because 2.30 m lies between 2.20 m and 2.45 m',
-      'Outside the forward limit',
-      'Outside the aft limit',
-      'Outside limits because it exceeds 1,000 kg',
+      'Outside the forward CG limit for the aircraft',
+      'Outside the aft CG limit for the aircraft',
+      'Outside limits, because it exceeds 1,000 kg all-up',
     ],
     correct: 0,
     explanation: 'The loaded CG of 2.30 m lies between the forward limit (2.20 m) and the aft limit (2.45 m), so the aircraft is in balance. The 1,000 kg figure is not a stated weight limit.',
@@ -4967,9 +4967,9 @@ export const pplaQuestions: {
   {
     question: 'At a pressure height of 4,000 ft the outside air temperature is +17°C. The ISA deviation is:',
     options: [
-      '-10°C',
-      '+17°C',
-      '0°C',
+      'minus 10 C, because ISA at that height is plus 27 C',
+      'plus 17 C, the same as the outside air temperature',
+      'zero, because the air is at the standard temperature',
       '+10°C, because ISA at that height is +7°C',
     ],
     correct: 3,
@@ -4992,9 +4992,9 @@ export const pplaQuestions: {
     question: 'The four methods listed in the syllabus for determining density height include density-altitude charts, a manual computer, flight-manual charts and:',
     options: [
       'Mathematics, by calculation from pressure height and temperature',
-      'Reading it directly from the area QNH',
-      'Estimating it from the cloud base',
-      'Reading it from the aircraft tachometer',
+      'Reading it directly off the area QNH given in the forecast',
+      'Estimating it roughly from the height of the cloud base',
+      'Reading it straight from the aircraft engine tachometer',
     ],
     correct: 0,
     explanation: 'Density height can be found by chart, navigation computer, flight-manual graph, or calculated from pressure height and ISA deviation. The QNH, cloud base and tachometer do not give density height.',
@@ -5028,9 +5028,9 @@ export const pplaQuestions: {
     question: 'A wet or slushy runway surface will generally cause the take-off distance to:',
     options: [
       'Increase, because of greater rolling resistance and reduced acceleration',
-      'Decrease, because the surface is smoother',
-      'Remain unchanged from a dry runway',
-      'Decrease, because of better tyre grip',
+      'Decrease, because the wet surface is smoother for the tyres',
+      'Remain unchanged from the figure for a dry sealed runway',
+      'Decrease, because the water gives the tyres better grip',
     ],
     correct: 0,
     explanation: 'Water, slush or soft surfaces increase rolling resistance and retard acceleration, lengthening the take-off run. Slush also adds drag and can affect retraction.',
@@ -5039,9 +5039,9 @@ export const pplaQuestions: {
   {
     question: 'Frost on the wings of an aeroplane before take-off is hazardous because it:',
     options: [
-      'Adds useful weight to improve traction',
-      'Improves the smoothness of the wing surface',
-      'Only affects the aircraft above 10,000 ft',
+      'Adds useful weight to the wing to improve ground traction',
+      'Improves the smoothness of the wing\'s upper surface',
+      'Only affects the aircraft once it climbs above 10,000 ft',
       'Disrupts the airflow and reduces lift, increasing the stall speed',
     ],
     correct: 3,
@@ -5051,10 +5051,10 @@ export const pplaQuestions: {
   {
     question: 'Soon after lift-off you climb out of ground effect. The immediate aerodynamic effect is:',
     options: [
-      'A reduction in induced drag',
+      'A useful reduction in induced drag as the aircraft climbs away',
       'An increase in induced drag, which can reduce climb performance',
-      'An increase in available engine power',
-      'A decrease in the stall speed',
+      'An increase in the engine power available for the climb',
+      'A decrease in the stall speed as the aircraft leaves the ground',
     ],
     correct: 1,
     explanation: 'Within ground effect induced drag is reduced; climbing out of it restores normal induced drag, which can make a marginally performing aircraft struggle to keep climbing. Engine power is unaffected.',
@@ -5063,10 +5063,10 @@ export const pplaQuestions: {
   {
     question: 'Encountering windshear on short final, such as a sudden loss of headwind, will typically cause:',
     options: [
-      'A gain of indicated airspeed and ballooning',
-      'No change, because windshear affects only take-off',
+      'A gain of indicated airspeed and a tendency to balloon high',
+      'No change at all, because windshear only affects the take-off',
       'A loss of indicated airspeed and a tendency to sink below the approach path',
-      'A reduction in the rate of descent',
+      'A reduction in the rate of descent on the final approach',
     ],
     correct: 2,
     explanation: 'A sudden decrease in headwind reduces indicated airspeed and lift, causing the aircraft to sink. The pilot must add power and pitch to recover the approach path.',
@@ -5076,9 +5076,9 @@ export const pplaQuestions: {
     question: 'Reducing aircraft weight for take-off will:',
     options: [
       'Shorten the take-off distance and improve the climb gradient',
-      'Lengthen the take-off distance',
-      'Have no effect on take-off performance',
-      'Increase the lift-off airspeed required',
+      'Lengthen the take-off distance needed on the runway',
+      'Have no real effect on the take-off performance at all',
+      'Increase the lift-off airspeed that is required',
     ],
     correct: 0,
     explanation: 'Lower weight reduces the lift-off airspeed and the distance to achieve it, and improves the climb gradient. Weight is one of the most significant performance variables.',
@@ -5089,7 +5089,7 @@ export const pplaQuestions: {
     options: [
       'The length of runway plus any usable clearway available for the take-off',
       'The distance the aircraft actually needs to take off',
-      'The landing distance available reduced by safety factors',
+      'The landing distance available reduced by the safety factors',
       'The distance from the holding point to the runway',
     ],
     correct: 0,
@@ -5135,10 +5135,10 @@ export const pplaQuestions: {
   {
     question: 'A take-off safety speed quoted by a performance chart is the speed that should be achieved by the aircraft:',
     options: [
-      'On the ground at the start of the take-off roll',
+      'On the ground at the very start of the take-off roll',
       'At a defined screen height after lift-off to ensure adequate climb and control',
-      'At the top of climb in the cruise',
-      'Only during a baulked landing',
+      'At the top of the climb once established in the cruise',
+      'Only during a baulked landing or a go-around manoeuvre near the ground',
     ],
     correct: 1,
     explanation: 'The take-off safety speed provides an adequate margin above the stall and good control and climb at the screen height after lift-off. It is a climb-out reference, not a ground or cruise speed.',
@@ -5171,10 +5171,10 @@ export const pplaQuestions: {
   {
     question: 'A headwind on a long cruise leg will, compared with still air, reduce the aircraft\'s:',
     options: [
-      'Indicated airspeed',
-      'Fuel flow per hour',
+      'Indicated airspeed shown on the cockpit dial',
+      'Fuel flow per hour burned by the engine',
       'Range over the ground for the fuel carried',
-      'True airspeed',
+      'True airspeed flown through the air',
     ],
     correct: 2,
     explanation: 'A headwind lowers groundspeed, so less distance is covered for the same fuel and time, reducing range over the ground. Indicated and true airspeed and fuel flow are unchanged by wind.',
@@ -5243,9 +5243,9 @@ export const pplaQuestions: {
   {
     question: 'When calculating the fuel required for a flight, you should determine fuel for:',
     options: [
-      'Only the trip distance',
-      'Only the trip plus taxi',
-      'The reserve alone',
+      'Only the trip distance to the destination aerodrome itself',
+      'Only the trip fuel plus the fuel needed to taxi out before departure',
+      'The fixed reserve alone, with the trip fuel added on later',
       'Taxi, trip, any holding or alternate, plus the fixed reserve',
     ],
     correct: 3,
@@ -5303,10 +5303,10 @@ export const pplaQuestions: {
   {
     question: 'The equi-time point (ETP) between two aerodromes is the point from which it would take:',
     options: [
-      'less time to return than to continue to the destination',
-      'less fuel to continue than to return',
+      'noticeably less time to return to the departure point than to continue onward',
+      'noticeably less fuel to continue to the destination than to turn back and return',
       'the same time to fly on to the destination as to return to the departure aerodrome',
-      'the same distance to each aerodrome regardless of wind',
+      'exactly the same distance to each aerodrome regardless of the wind that day',
     ],
     correct: 2,
     explanation: 'The ETP is the position from which the time to continue to the destination equals the time to return to the departure aerodrome. It is used to decide which way to divert if a problem occurs en route.',
@@ -5327,10 +5327,10 @@ export const pplaQuestions: {
   {
     question: 'You are en route and must decide the option requiring the least fuel. The correct way to decide between continuing, returning or diverting is to:',
     options: [
-      'Always continue to the destination',
+      'Always continue to the planned destination no matter what happens',
       'Compare the fuel needed for each option against the fuel remaining, including reserves',
-      'Always return to the departure aerodrome',
-      'Choose the shortest still-air distance regardless of wind',
+      'Always return to the departure aerodrome regardless of the wind',
+      'Choose the shortest still-air distance regardless of the actual wind effect',
     ],
     correct: 1,
     explanation: 'The least-fuel decision compares the actual fuel required for each option, allowing for wind and reserves, against fuel on board. Wind can make the geographically longer option the cheaper one.',
@@ -5339,10 +5339,10 @@ export const pplaQuestions: {
   {
     question: 'Situations that may require calculation of a PNR include flights:',
     options: [
-      'Within the circuit at the home aerodrome',
+      'Within the circuit area at the home aerodrome only',
       'To a destination where weather or fuel could force a return decision',
-      'Of less than 10 NM in still air',
-      'Where an autopilot is fitted',
+      'Of less than 10 NM in completely still-air conditions',
+      'Where an autopilot is fitted and serviceable for the trip',
     ],
     correct: 1,
     explanation: 'PNR planning matters where destination conditions are uncertain, such as marginal weather or no alternate, so the pilot knows the last point to commit. It is irrelevant to circuits or very short flights.',
@@ -5364,9 +5364,9 @@ export const pplaQuestions: {
     question: 'When assessing an ALA for a light aeroplane, an important consideration in addition to runway length is:',
     options: [
       'the surface condition, slope and obstacle clearance on the approach and departure',
-      'the number of aircraft normally based at the field',
-      'the straight-line distance to the nearest town',
-      'the published circuit direction at the field',
+      'the total number of other aircraft that are normally based at the field',
+      'the straight-line distance to the nearest large town or city',
+      'the published circuit direction in use at the aerodrome',
     ],
     correct: 0,
     explanation: 'ALA suitability depends on surface, slope, width and clear approach and departure gradients as well as length. Cosmetic or unrelated factors do not affect suitability.',
@@ -5399,10 +5399,10 @@ export const pplaQuestions: {
   {
     question: 'You are planning the cruise levels for a VFR navigation flight. Levels should be selected to:',
     options: [
-      'Always be exactly 1,000 ft above the ground',
+      'Always be exactly 1,000 ft above the ground along the entire planned route',
       'Comply with the table of cruising levels and provide terrain and airspace clearance',
-      'Match the destination aerodrome elevation',
-      'Be as high as the aircraft can climb regardless of oxygen',
+      'Match the elevation of the destination aerodrome being used',
+      'Be as high as the aircraft can climb, regardless of oxygen needs',
     ],
     correct: 1,
     explanation: 'Cruise levels must comply with the hemispherical table where applicable and keep the aircraft clear of terrain and controlled airspace. Arbitrary heights or maximum altitude without oxygen are not acceptable.',
@@ -5411,10 +5411,10 @@ export const pplaQuestions: {
   {
     question: 'A flight plan completed for a VFR navigation flight should account for:',
     options: [
-      'only the direct track distance to the destination',
-      'only the fuel required for the trip leg itself',
+      'only the direct track distance from departure to the destination',
+      'only the fuel required for the trip leg, with nothing held in reserve',
       'route, levels, fuel with reserves, weight and balance, and a latest departure time',
-      'the passenger seating arrangement on its own',
+      'the passenger seating arrangement and baggage layout on its own',
     ],
     correct: 2,
     explanation: 'A complete VFR plan covers route and level selection, total fuel with reserves, weight and balance, and a latest departure time to finish in daylight. A track distance alone is insufficient.',
@@ -5423,9 +5423,9 @@ export const pplaQuestions: {
   {
     question: 'During flight you find your groundspeed is lower than planned. Revising your estimates, you should:',
     options: [
-      'Ignore it because the plan was made carefully',
-      'Increase the cruise level to catch up',
-      'Cancel SARTIME to avoid confusion',
+      'Ignore it, because the plan was made carefully before departure',
+      'Increase the cruise level in an attempt to catch up the time',
+      'Cancel the SARTIME to avoid any confusion with the authorities',
       'Recalculate the ETA for the next fixes and check fuel against the new times',
     ],
     correct: 3,
@@ -5448,9 +5448,9 @@ export const pplaQuestions: {
     question: 'All items of information in ERSA that are relevant to a planned VFR day flight should be:',
     options: [
       'Reviewed and applied during planning and as needed in flight',
-      'Ignored unless flying at night',
-      'Used only by commercial pilots',
-      'Memorised once and never re-checked',
+      'Ignored entirely unless the flight is being conducted at night',
+      'Used only by commercial pilots flying for hire or reward',
+      'Memorised once at the start and then never re-checked again',
     ],
     correct: 0,
     explanation: 'Relevant ERSA information, such as aerodrome data, procedures and warnings, must be reviewed and applied for the specific flight. ERSA is amended regularly, so it is re-checked each time.',
@@ -5459,10 +5459,10 @@ export const pplaQuestions: {
   {
     question: 'The communication and emergency equipment required to be carried on a flight is determined by the:',
     options: [
-      'Colour of the aircraft',
+      'Colour and the registration markings painted on the aircraft',
       'Type of operation, the airspace and the route being flown',
-      'Pilot\'s total flying hours',
-      'Day of the week',
+      'Pilot\'s total number of flying hours logged to date',
+      'Day of the week on which the flight is being made',
     ],
     correct: 1,
     explanation: 'Required equipment, such as radio, transponder and survival gear, depends on the operation, airspace and route. It does not depend on cosmetic factors or the pilot\'s experience level.',
@@ -5471,10 +5471,10 @@ export const pplaQuestions: {
   {
     question: 'A pilot\'s pre-flight responsibility regarding the aircraft\'s documents and condition is to:',
     options: [
-      'Rely on the previous pilot\'s word that all is well',
-      'Check only the fuel quantity',
+      'Rely on the previous pilot\'s word that all of the aircraft is well',
+      'Check only the fuel quantity on board before the flight begins',
       'Confirm the maintenance release is valid and the required documents are available',
-      'Inspect the aircraft only if it was parked overnight',
+      'Inspect the aircraft only if it happened to be parked overnight',
     ],
     correct: 2,
     explanation: 'The pilot in command must satisfy themselves the maintenance release is valid, required documents are present and the aircraft is airworthy before flight. This cannot be delegated by assumption.',
@@ -5495,9 +5495,9 @@ export const pplaQuestions: {
   {
     question: 'A loading calculation shows the take-off weight is within limits but the centre of gravity is just aft of the aft limit. You should:',
     options: [
-      'Depart, because the weight is within limits',
-      'Add fuel to bring the CG forward',
-      'Ignore the CG because it is only just outside',
+      'Depart anyway, because the take-off weight is within the limits',
+      'Add more fuel in order to bring the CG forward again',
+      'Ignore the CG, because it is only just outside the aft limit',
       'Move load forward, such as baggage or a passenger, and re-check the CG',
     ],
     correct: 3,
@@ -5531,10 +5531,10 @@ export const pplaQuestions: {
   {
     question: 'A landing chart gives a landing distance required of 520 m and the runway LDA is 600 m. The landing is:',
     options: [
-      'Not acceptable, because no margin is allowed',
+      'Not acceptable, because no safety margin at all is allowed on landing',
       'Acceptable, because the distance required is less than the distance available',
-      'Acceptable only with a tailwind',
-      'Dependent on the take-off distance available',
+      'Acceptable only if there is a tailwind component on the runway',
+      'Dependent entirely on the take-off distance available at the field',
     ],
     correct: 1,
     explanation: 'With LDR (520 m) less than LDA (600 m), the landing fits within the available distance with margin. The take-off distance is irrelevant to the landing assessment.',
@@ -5555,10 +5555,10 @@ export const pplaQuestions: {
   {
     question: 'Higher density height affects landing performance by:',
     options: [
-      'Decreasing the touchdown true airspeed',
-      'Having no effect on landing',
+      'Decreasing the true airspeed of the aircraft at the touchdown',
+      'Having no effect at all on the landing performance',
       'Increasing the true airspeed at touchdown and the landing distance',
-      'Reducing the threshold indicated airspeed',
+      'Reducing the threshold indicated airspeed on the approach',
     ],
     correct: 2,
     explanation: 'At high density height the true airspeed for a given indicated approach speed is higher, so the aircraft touches down faster over the ground and uses more runway. The indicated approach speed is unchanged.',
@@ -5567,10 +5567,10 @@ export const pplaQuestions: {
   {
     question: 'You estimate a crosswind component near the aircraft\'s demonstrated crosswind limit. The safest decision is to:',
     options: [
-      'Land on the planned runway regardless',
+      'Land on the originally planned runway regardless of the wind',
       'Choose a more into-wind runway if available, or delay the landing',
-      'Increase the approach speed by 30 kt',
-      'Use full flap to reduce the crosswind effect',
+      'Increase the approach speed by a full 30 kt for safety',
+      'Use full flap in order to reduce the crosswind effect',
     ],
     correct: 1,
     explanation: 'When the crosswind approaches the demonstrated limit, selecting a more favourable runway or delaying is the conservative choice. Excess speed and full flap do not overcome a crosswind near the limit.',
@@ -5580,9 +5580,9 @@ export const pplaQuestions: {
     question: 'You compute a top of descent so as to arrive at circuit height comfortably. Starting the descent too late will result in:',
     options: [
       'Arriving high and fast, requiring a steeper descent or an orbit to lose height',
-      'Arriving low and slow',
-      'No effect, because the autopilot will manage it',
-      'A shorter overall flight time and less fuel',
+      'Arriving low and slow, well below the planned circuit height',
+      'No effect at all, because the autopilot will manage the descent',
+      'A shorter overall flight time and a useful saving in fuel',
     ],
     correct: 0,
     explanation: 'Descending too late leaves the aircraft high and fast near the aerodrome, forcing a steep descent or extra manoeuvring. Planning the top of descent from rate of descent and groundspeed avoids this.',
@@ -5603,9 +5603,9 @@ export const pplaQuestions: {
   {
     question: 'The most accurate way to determine the fuel flow to use for planning is to:',
     options: [
-      'Assume a round figure that sounds reasonable',
-      'Use the figure for a different aircraft type',
-      'Estimate from the size of the fuel tanks',
+      'Assume a round figure for the fuel flow that simply sounds reasonable',
+      'Use the fuel-flow figure published for a different aircraft type',
+      'Estimate the fuel flow from the physical size of the fuel tanks',
       'Use the aircraft manufacturer\'s data or recorded consumption for the aircraft',
     ],
     correct: 3,
@@ -5675,9 +5675,9 @@ export const pplaQuestions: {
   {
     question: 'A climb gradient of 5% means the aircraft gains:',
     options: [
-      '5 ft for every 1,000 ft travelled',
-      '50 ft for every 100 ft travelled',
-      '5 NM for every 100 NM travelled in height',
+      '5 ft of height for every 1,000 ft travelled',
+      '50 ft of height for every 100 ft travelled',
+      '5 NM for every 100 NM travelled along the ground',
       '5 ft of height for every 100 ft travelled over the ground',
     ],
     correct: 3,
@@ -5688,9 +5688,9 @@ export const pplaQuestions: {
     question: 'A go-around (baulked landing) is most safely flown by:',
     options: [
       'Applying full power, establishing a climb and retracting flap and gear in stages',
-      'Retracting all flap immediately at low speed',
-      'Holding the nose down to gain speed before climbing',
-      'Continuing to descend until the runway is recovered',
+      'Retracting all the flap immediately while still at a dangerously low speed',
+      'Holding the nose down to gain speed before starting the climb',
+      'Continuing to descend until the runway can be recovered ahead',
     ],
     correct: 0,
     explanation: 'A go-around requires prompt full power, a positive climb, and staged configuration changes to avoid sinking. Dumping all flap at low speed or delaying the climb is hazardous.',
@@ -5699,10 +5699,10 @@ export const pplaQuestions: {
   {
     question: 'The \'latest departure time\' on a VFR plan is determined mainly by:',
     options: [
-      'The opening time of the destination cafe',
-      'The aircraft\'s empty weight',
+      'The opening time of the cafe at the destination aerodrome',
+      'The empty weight of the aircraft being flown that day',
       'The need to complete the flight by last light with reserves intact',
-      'The transponder code allocated',
+      'The transponder code that has been allocated for the flight',
     ],
     correct: 2,
     explanation: 'For VFR by day the latest departure time ensures the flight finishes by last light with fuel reserves intact. It is unrelated to weight or transponder codes.',
@@ -5711,9 +5711,9 @@ export const pplaQuestions: {
   {
     question: 'You realise mid-flight that a stronger-than-forecast headwind will mean arriving after last light if you continue. You should:',
     options: [
-      'Continue and complete the flight in darkness',
-      'Climb to fly faster and beat the sunset',
-      'Reduce power to save fuel and accept the late arrival',
+      'Continue on and complete the rest of the flight in darkness after last light',
+      'Climb higher to fly faster and try to beat the sunset',
+      'Reduce power to save fuel and simply accept the late arrival',
       'Divert or land at a suitable aerodrome to remain within daylight and fuel limits',
     ],
     correct: 3,
@@ -5723,10 +5723,10 @@ export const pplaQuestions: {
   {
     question: 'You are planning a flight near the coast at Coffs Harbour and expect a sea-breeze change in the afternoon. For take-off and landing planning this matters because it can:',
     options: [
-      'Alter the aircraft\'s empty weight',
+      'Alter the empty weight of the aircraft before departure',
       'Change the favoured runway and the headwind or crosswind component',
-      'Change the fixed fuel reserve required',
-      'Change the maximum take-off weight',
+      'Change the fixed fuel reserve that must be carried',
+      'Change the maximum take-off weight allowed for the strip',
     ],
     correct: 1,
     explanation: 'A wind change such as a sea breeze alters the favoured runway and the wind components, affecting take-off and landing distances and circuit direction. It does not change weight or reserve requirements.',
@@ -5735,10 +5735,10 @@ export const pplaQuestions: {
   {
     question: 'A performance calculation should always be based on the:',
     options: [
-      'Best conditions of the day to be optimistic',
-      'Standard atmosphere regardless of the actual weather',
+      'Best conditions of the day, so the figures look optimistic',
+      'Standard atmosphere, regardless of the actual weather on the day',
       'Conditions forecast or expected for the actual time and place of the operation',
-      'Conditions at the departure aerodrome only',
+      'Conditions at the departure aerodrome only, ignoring the rest',
     ],
     correct: 2,
     explanation: 'Performance must be assessed for the actual expected conditions of temperature, pressure, wind and surface at the time and place. Optimistic or standard assumptions can leave the aircraft short of performance.',
@@ -5748,9 +5748,9 @@ export const pplaQuestions: {
     question: 'The correct sequence for entering a take-off or landing performance chart is:',
     options: [
       'shade temperature, then airfield pressure height, then slope, then wind, then weight or distance',
-      'weight first, then wind, then slope, then temperature',
-      'airfield pressure height, then weight, then temperature, then slope',
-      'wind, then temperature, then weight, then airfield pressure height',
+      'the aircraft weight first, then the wind, then the slope, then the temperature',
+      'the airfield pressure height, then the weight, then the temperature, then slope',
+      'the wind, then the temperature, then the weight, then the airfield pressure height',
     ],
     correct: 0,
     explanation: 'Performance charts are entered in a fixed order from the start point: shade temperature, airfield pressure height, slope, wind, then read weight or distance against the correct surface curve.',
@@ -5759,10 +5759,10 @@ export const pplaQuestions: {
   {
     question: 'A take-off chart states a distance factor of 1.15. The distance read from the chart should be:',
     options: [
-      'multiplied by 1.15 again to add the safety factor',
+      'multiplied by 1.15 once again in order to add the required safety factor',
       'used as it is, because the 1.15 factor is already included in the chart distance',
-      'divided by 1.15 to remove the factor',
-      'ignored, because the factor only applies to landing',
+      'divided by 1.15 in order to remove the built-in factor',
+      'ignored entirely, because the factor only applies to a landing',
     ],
     correct: 1,
     explanation: 'The 1.15 factor is already built into the distances the chart produces, so the chart output is the factored (gross) distance. Applying 1.15 a second time is a common error.',
@@ -5771,10 +5771,10 @@ export const pplaQuestions: {
   {
     question: 'On a take-off weight chart, the maximum permitted take-off weight is:',
     options: [
-      'always the structural maximum, regardless of the distance available',
-      'always the distance-limited weight from the chart',
+      'always the structural maximum take-off weight, regardless of the distance that is available',
+      'always the distance-limited weight read directly from the take-off weight chart only',
       'the lesser of the distance-limited weight from the chart and the climb-limited (structural) maximum',
-      'the greater of the distance-limited and climb-limited weights',
+      'the greater of the distance-limited weight and the climb-limited structural maximum',
     ],
     correct: 2,
     explanation: 'The take-off weight must not exceed either the distance-limited weight read from the chart or the printed climb-limited (structural) maximum, so the lower of the two governs.',
@@ -5819,10 +5819,10 @@ export const pplaQuestions: {
   {
     question: 'On these landing distance charts, the landing distance required is read:',
     options: [
-      'by entering the chart with the landing weight',
-      'as a single fixed value for every aerodrome',
+      'by entering the landing distance chart with the landing weight to read it directly',
+      'as a single fixed value that applies to every aerodrome and runway',
       'independently of landing weight, while the maximum landing weight is separately climb-limited',
-      'only after multiplying by the weight ratio',
+      'only after multiplying the chart figure by the landing-weight ratio',
     ],
     correct: 2,
     explanation: 'On these charts the landing distance required does not vary with landing weight, so weight is not an entry. The maximum landing weight is a separate climb-limited check.',
@@ -5867,10 +5867,10 @@ export const pplaQuestions: {
   {
     question: 'In Loading System Alpha the fuel tank is on the datum, so adding fuel:',
     options: [
-      'increases both the weight and the moment index',
-      'moves the index forward without changing the weight',
+      'increases both the total weight and the moment index together',
+      'moves the index forward without changing the total weight at all',
       'increases weight but does not change the moment index, a vertical move on the envelope',
-      'has no effect on either weight or index',
+      'has no effect on either the total weight or the moment index of the aircraft',
     ],
     correct: 2,
     explanation: 'Because the fuel is on the datum, adding or burning fuel changes weight only and the plotted point moves straight up or down the weight scale at constant index.',
@@ -5988,9 +5988,9 @@ export const pplaQuestions: {
     question: 'In Loading System Charlie, the engine oil is:',
     options: [
       'added separately, because the basic empty weight excludes it',
-      'already included in the basic empty weight',
-      'ignored, as it is too small to matter',
-      'added only for the landing calculation',
+      'already fully included in the basic empty weight figure',
+      'ignored completely, as it is too small to really matter',
+      'added only for the landing weight calculation, not take-off',
     ],
     correct: 0,
     explanation: 'In Charlie the basic empty weight does not include the oil, so the oil weight and its index unit are added as a separate line in the load sheet.',
