@@ -55,29 +55,29 @@ export default function Home() {
         {/* HERO */}
         <section style={{ position: 'relative', height: '100vh', minHeight: '650px', display: 'flex', flexDirection: 'column', overflow: 'hidden', margin: 0, padding: 0 }}>
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/IMG_4488.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center 35%' }} />
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(8,20,40,0.15) 0%, rgba(8,20,40,0.30) 55%, rgba(8,20,40,0.60) 100%)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(8,20,40,0.30) 0%, rgba(8,20,40,0.40) 55%, rgba(8,20,40,0.65) 100%)' }} />
           <nav style={{ position: 'relative', zIndex: 10, padding: isMobile ? '1rem 1.25rem' : '1.25rem 2.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div>
-              <span style={{ fontSize: isMobile ? '20px' : '22px', fontWeight: '800', color: 'white' }}>V1</span>
-              <span style={{ fontSize: isMobile ? '20px' : '22px', fontWeight: '800', color: 'rgba(255,255,255,0.85)' }}> Study</span>
-              {!isMobile && <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.4)', fontStyle: 'italic', marginTop: '1px' }}>V1. Rotate. Pass.</div>}
+              <span style={{ fontSize: isMobile ? '20px' : '22px', fontWeight: '800', color: 'white', textShadow: '0 1px 8px rgba(0,0,0,0.4)' }}>V1</span>
+              <span style={{ fontSize: isMobile ? '20px' : '22px', fontWeight: '800', color: 'rgba(255,255,255,0.85)', textShadow: '0 1px 8px rgba(0,0,0,0.4)' }}> Study</span>
+              {!isMobile && <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)', fontStyle: 'italic', marginTop: '1px' }}>V1. Rotate. Pass.</div>}
             </div>
             <div style={{ display: 'flex', gap: isMobile ? '1rem' : '2rem', alignItems: 'center' }}>
-              {!isMobile && <a href="#exams" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Exams</a>}
-              {!isMobile && <a href="#pricing" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Pricing</a>}
-              <a href="/login" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none', fontSize: '14px' }}>Login</a>
-              <a href="/signup" style={{ color: 'white', textDecoration: 'none', fontSize: '14px', fontWeight: isMobile ? '600' : '400' }}>Sign up</a>
+              {!isMobile && <a href="#exams" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'none', fontSize: '14px', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>Exams</a>}
+              {!isMobile && <a href="#pricing" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'none', fontSize: '14px', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>Pricing</a>}
+              <a href="/login" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'none', fontSize: '14px', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>Login</a>
+              <a href="/signup" style={{ color: 'white', textDecoration: 'none', fontSize: '14px', fontWeight: isMobile ? '600' : '400', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>Sign up</a>
             </div>
           </nav>
           <div style={{ position: 'relative', zIndex: 1, flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: isMobile ? '0 1.5rem' : '0 2.5rem' }}>
             <div style={{ maxWidth: '800px' }}>
-              <p style={{ fontSize: '14px', letterSpacing: '0.32em', color: 'rgba(255,255,255,0.7)', marginBottom: '2.5rem', fontWeight: '500', textTransform: 'uppercase', lineHeight: 1.6 }}>Australia&apos;s Pilot Exam Prep Platform</p>
+              <p style={{ fontSize: 'clamp(14px, 3vw, 30px)', letterSpacing: '0.28em', color: 'rgba(255,255,255,0.85)', marginBottom: '2.5rem', fontWeight: '600', textTransform: 'uppercase', lineHeight: 1.5, textShadow: '0 2px 16px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.4)' }}>Australia&apos;s Pilot Exam Prep Platform</p>
               <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: '1rem', justifyContent: 'center', marginBottom: '1.5rem' }}>
-                <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '700', textDecoration: 'none' }}>Start Free Trial</a>
-                <a href="#pricing" style={{ background: 'rgba(255,255,255,0.1)', color: 'white', border: '2px solid rgba(255,255,255,0.3)', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '600', textDecoration: 'none' }}>See Pricing</a>
+                <a href="/signup" style={{ background: 'rgba(255,255,255,0.12)', color: 'white', border: '2px solid rgba(255,255,255,0.4)', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '600', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}>Start Free Trial</a>
+                <a href="#pricing" style={{ background: 'rgba(255,255,255,0.12)', color: 'white', border: '2px solid rgba(255,255,255,0.4)', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '600', textDecoration: 'none', textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}>See Pricing</a>
               </div>
-              <div style={{ fontSize: '13px', color: 'rgba(255,255,255,0.55)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '7px' }}>
-                <span style={{ display: 'inline-flex', width: '15px', height: '15px', borderRadius: '50%', border: '1.5px solid rgba(255,255,255,0.5)', alignItems: 'center', justifyContent: 'center', fontSize: '9px', lineHeight: 1, flexShrink: 0 }}>✓</span>
+              <div style={{ fontSize: '13px', color: 'rgba(255,255,255,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '7px', textShadow: '0 1px 6px rgba(0,0,0,0.5)' }}>
+                <span style={{ display: 'inline-flex', width: '15px', height: '15px', borderRadius: '50%', border: '1.5px solid rgba(255,255,255,0.6)', alignItems: 'center', justifyContent: 'center', fontSize: '9px', lineHeight: 1, flexShrink: 0 }}>✓</span>
                 Aligned to the current CASA Part 61 MOS
               </div>
             </div>
