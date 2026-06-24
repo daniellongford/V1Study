@@ -71,13 +71,7 @@ export default function Home() {
           </nav>
           <div style={{ position: 'relative', zIndex: 1, flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: isMobile ? '0 1.5rem' : '0 2.5rem' }}>
             <div style={{ maxWidth: '800px' }}>
-              <p style={{ fontSize: '11px', letterSpacing: '0.32em', color: 'rgba(255,255,255,0.55)', marginBottom: '1.5rem', fontWeight: '500', textTransform: 'uppercase' }}>Australia&apos;s Pilot Exam Prep Platform</p>
-              <h1 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: '800', color: 'white', marginBottom: '1.5rem', lineHeight: 1.04, letterSpacing: '-2px' }}>
-                From First Exam<br />to Flight Deck.
-              </h1>
-              <p style={{ fontSize: isMobile ? '16px' : '18px', color: 'rgba(255,255,255,0.72)', maxWidth: '500px', margin: '0 auto 2.5rem', lineHeight: 1.7 }}>
-                Clear, exam-ready practice for every CASA theory exam — from PPL to ATPL, plus IREX.
-              </p>
+              <p style={{ fontSize: '14px', letterSpacing: '0.32em', color: 'rgba(255,255,255,0.7)', marginBottom: '2.5rem', fontWeight: '500', textTransform: 'uppercase', lineHeight: 1.6 }}>Australia&apos;s Pilot Exam Prep Platform</p>
               <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: '1rem', justifyContent: 'center', marginBottom: '1.5rem' }}>
                 <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '700', textDecoration: 'none' }}>Start Free Trial</a>
                 <a href="#pricing" style={{ background: 'rgba(255,255,255,0.1)', color: 'white', border: '2px solid rgba(255,255,255,0.3)', borderRadius: '7px', padding: '14px 36px', fontSize: '15px', fontWeight: '600', textDecoration: 'none' }}>See Pricing</a>
