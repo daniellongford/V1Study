@@ -1821,15 +1821,15 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.7.1 PNVC',
   },
   {
-    question: 'An aircraft is 6 nm left of track having flown 60 nm of a 120 nm leg. The total heading alteration to reach the destination is approximately:',
+    question: 'You find you are a few miles left of your planned track partway along a leg. The practical VFR response is to:',
     options: [
-      '6° right',
-      '3° right',
-      '9° left',
-      '12° right',
+      'continue on the original heading and hope to regain track',
+      'turn directly toward the destination, abandoning the planned track',
+      'descend to get a better view of the ground',
+      'alter heading to the right toward your track and confirm position with a positive ground fix',
     ],
     correct: 3,
-    explanation: 'Track error so far = (6 ÷ 60) × 60 = 6°. Closing angle for the remaining 60 nm = (6 ÷ 60) × 60 = 6°. Total correction = 6° + 6° = 12° to the right to track direct to the destination.',
+    explanation: 'If you drift off track, turn back toward your planned track and re-establish position using a positive ground fix. A VFR pilot keeps track visually rather than relying on precise track-error calculations.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.7.1 PNVC',
   },
   {
