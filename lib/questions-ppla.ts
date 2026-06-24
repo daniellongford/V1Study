@@ -566,10 +566,10 @@ export const pplaQuestions: {
       'attitude indicator and heading indicator',
       'artificial horizon and turn coordinator',
       'airspeed indicator, altimeter and direct-reading magnetic compass',
-      'instrument landing system receiver',
+      'turn-and-slip indicator and vertical speed indicator only',
     ],
     correct: 2,
-    explanation: 'For VFR by day the minimum instruments include an ASI, an altimeter and a direct-reading magnetic compass, plus a timepiece. Gyroscopic flight instruments are required for IFR and night VFR.',
+    explanation: 'The minimum flight instruments for day VFR are an airspeed indicator, an altimeter and a direct-reading magnetic compass. Gyroscopic attitude and heading instruments are not part of this minimum required set.',
     reference: 'CASR Part 91 MOS',
   },
   {
@@ -605,7 +605,7 @@ export const pplaQuestions: {
       'VMC only',
     ],
     correct: 0,
-    explanation: 'Class C requires an airways clearance for all flights; VFR aircraft are separated from IFR and given traffic on other VFR. A serviceable transponder is required.',
+    explanation: 'In Class C airspace a VFR flight needs an airways clearance and a serviceable transponder. ATC then separates the flight from other controlled traffic and passes traffic information on nearby VFR aircraft.',
     reference: 'AIP ENR 1.4',
   },
   {
@@ -617,7 +617,7 @@ export const pplaQuestions: {
       'may not operate at all',
     ],
     correct: 1,
-    explanation: 'Class D requires a clearance for all flights. ATC provides traffic information between VFR aircraft (not separation) and separates IFR from IFR and IFR from SVFR.',
+    explanation: 'In Class D a VFR flight needs a clearance and is given traffic information on other VFR aircraft, but ATC does not separate VFR aircraft from each other; the pilot remains responsible for separation by see-and-avoid.',
     reference: 'AIP ENR 1.4',
   },
   {
@@ -1445,7 +1445,7 @@ export const pplaQuestions: {
       'temperature multiplied by 200 ft',
     ],
     correct: 2,
-    explanation: 'Cumulus cloud base is estimated as the temperature/dew-point spread in °C multiplied by about 400 ft, because the parcel cools at roughly 3°C/1,000 ft (dry adiabatic) while the dew point falls at about 0.5°C/1,000 ft.',
+    explanation: 'Cumulus cloud base is estimated as the temperature/dew-point spread in degrees C multiplied by about 400 ft. As the air rises it cools and its dew point falls, and the two close at roughly 2.5 degrees C per 1,000 ft.',
     reference: 'BOM Manual of Meteorology',
   },
   {
@@ -1477,7 +1477,7 @@ export const pplaQuestions: {
     options: [
       'broken cloud at 800 ft has no effect on a VFR plan',
       'broken cloud at 800 ft is below the VFR alternate criterion and may need holding or an alternate',
-      'you must climb above the cloud and continue IFR',
+      'you must climb above the cloud and press on regardless',
       'the reported cloud automatically forces a diversion',
     ],
     correct: 1,
@@ -1645,11 +1645,11 @@ export const pplaQuestions: {
     options: [
       'a strong temperature inversion capping the layer aloft',
       'widespread subsidence and sinking air within a high',
-      'the environmental lapse rate exceeding the adiabatic lapse rate of a rising parcel',
+      'the environment cools quickly with height, so a rising parcel stays warmer than its surroundings',
       'a shallow surface layer of overnight radiation fog',
     ],
     correct: 2,
-    explanation: 'Air is unstable when the surrounding temperature falls with height faster than a rising parcel cools adiabatically, so a displaced parcel keeps rising. This favours convection, cumulus and showers.',
+    explanation: 'A layer is unstable when the surrounding air cools rapidly with height. A parcel that is nudged upward then stays warmer and lighter than its surroundings, so it keeps rising, encouraging convection and cumulus cloud.',
     reference: 'BOM Manual of Meteorology',
   },
   {
@@ -1958,7 +1958,7 @@ export const pplaQuestions: {
       'TO indication',
       'flag showing OFF',
       'FROM indication',
-      'reverse-sensing TO indication',
+      'the needle deflected fully to one side',
     ],
     correct: 2,
     explanation: 'Tracking away from a VOR on a radial gives a FROM indication when the selected course matches the radial. A TO indication means the selected course leads toward the station.',
@@ -2049,15 +2049,15 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.7.1 PNVC',
   },
   {
-    question: 'A point of no return (PNR) calculation tells the pilot:',
+    question: 'Dead reckoning navigation is based on the principle that, knowing your starting point, you can find your present position from:',
     options: [
-      'the halfway point in still air between the aerodromes',
-      'the last point on track from which a safe return is possible within fuel reserves',
-      'the destination estimated time of arrival in still air',
-      'the top of the climb to the planned cruising level',
+      'the fuel remaining and the engine power set',
+      'the direction and distance travelled since the last positive fix',
+      'the outside air temperature and the altimeter setting',
+      'radio bearings taken from two ground stations only',
     ],
     correct: 1,
-    explanation: 'The PNR is the furthest point at which the aircraft can turn back and reach a suitable landing point with required reserves intact. Beyond the PNR the flight is committed onward.',
+    explanation: 'Dead reckoning relies on knowing the direction and the distance flown since the last positive fix. Holding a steady heading and groundspeed lets the pilot work out track made good and distance covered, and so the present position.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.7.1 PNVC',
   },
   {
@@ -2354,7 +2354,7 @@ export const pplaQuestions: {
       'clearance from controlled airspace only',
       'the most fuel-efficient height',
       'terrain and obstacle clearance along the route',
-      'separation from IFR traffic',
+      'separation from other VFR traffic',
     ],
     correct: 2,
     explanation: 'LSALT ensures a minimum clearance above terrain and obstacles within a defined corridor either side of track. The chosen VFR cruise level must be at or above LSALT and comply with the cruising-level table.',
@@ -2373,7 +2373,7 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.7.1 PNVC',
   },
   {
-    question: 'The principal advantage of area navigation (RNAV/GNSS) over tracking a single ground beacon is that it allows the aircraft to:',
+    question: 'The principal advantage of area navigation (GNSS) over tracking a single ground beacon is that it allows the aircraft to:',
     options: [
       'fly direct between any defined waypoints, not just to and from beacons',
       'navigate without any electrical power',
@@ -2385,7 +2385,7 @@ export const pplaQuestions: {
     reference: 'AIP GEN 1.5',
   },
   {
-    question: 'A GNSS receiver indicates a loss of integrity (a RAIM warning). The VFR pilot should:',
+    question: 'A GNSS receiver warns that its position information may be unreliable. The VFR pilot should:',
     options: [
       'continue relying solely on the GNSS',
       'revert to visual navigation and dead reckoning and cross-check position',
@@ -2393,7 +2393,7 @@ export const pplaQuestions: {
       'disable the warning',
     ],
     correct: 1,
-    explanation: 'A GNSS integrity warning means the position may be unreliable. A VFR pilot must always be able to navigate by visual reference and dead reckoning, so revert to those and confirm position by ground features.',
+    explanation: 'A VFR pilot does not depend on the GNSS as the sole means of navigation. If the receiver warns that its position may be unreliable, revert to visual navigation and dead reckoning and cross-check position against the ground and chart.',
     reference: 'AIP GEN 1.5',
   },
   {
@@ -3241,8 +3241,8 @@ export const pplaQuestions: {
     options: [
       'high-speed spiral dive',
       'stall and spin (a stall/spin departure)',
-      'Dutch roll',
-      'tuck-under',
+      'a steady, balanced climbing turn',
+      'a reduction in the stalling speed',
     ],
     correct: 1,
     explanation: 'A skidding or over-banked climbing turn at low speed and high power, with high angle of attack, can stall the inner wing and depart into a spin with little height to recover. Coordinated, gentle turns at a safe speed prevent this classic accident.',
@@ -3285,27 +3285,27 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.2.4 PAKA',
   },
   {
-    question: 'The purpose of supercharging (or turbocharging) a piston engine is to:',
+    question: 'The purpose of supercharging or turbocharging a piston engine is to:',
     options: [
-      'cool the engine at high power settings',
-      'increase the fuel octane rating',
-      'reduce propeller overspeed',
-      'maintain manifold pressure and power at higher altitudes by compressing the intake air',
+      'maintain manifold pressure and engine power as altitude increases',
+      'reduce the fuel flow required at high power',
+      'lower the cylinder head temperature in the climb',
+      'increase the propeller RPM for take-off',
     ],
-    correct: 3,
-    explanation: 'A supercharger or turbocharger compresses the intake air so the engine can maintain sea-level manifold pressure and power to a higher altitude (the critical altitude). It does not change the fuel quality or cooling directly.',
+    correct: 0,
+    explanation: 'A supercharger or turbocharger compresses the intake air so the engine can keep its manifold pressure, and therefore its power, as the aircraft climbs and the outside air becomes less dense. Common methods are an engine-driven (geared) supercharger or an exhaust-driven turbocharger.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.2.4 PAKA',
   },
   {
-    question: 'The device used to limit the boost produced by a turbocharger and prevent overboosting is the:',
+    question: 'The device used to limit the boost of a supercharged or turbocharged engine, and so prevent overboosting, is the:',
     options: [
-      'mixture control',
       'wastegate',
+      'mixture control',
       'magneto switch',
       'oil cooler',
     ],
-    correct: 1,
-    explanation: 'The wastegate diverts exhaust gas around the turbine to regulate the boost and protect the engine from overboost. If engine limits are exceeded due to overboost, the pilot reduces manifold pressure immediately.',
+    correct: 0,
+    explanation: 'The wastegate limits how much the intake system is boosted by controlling the exhaust gas driving the turbocharger. A wastegate malfunction shows up as manifold pressure that is too high (overboost) or that cannot be maintained.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.2.4 PAKA',
   },
   {
@@ -3749,7 +3749,7 @@ export const pplaQuestions: {
       'four satellites',
     ],
     correct: 3,
-    explanation: 'A three-dimensional position plus time solution needs at least four satellites. Additional satellites improve accuracy and allow integrity monitoring (RAIM) to detect a faulty signal.',
+    explanation: 'Three satellites fix latitude and longitude; a fourth resolves the receiver clock error to give a three-dimensional fix. Additional satellites improve accuracy and let the receiver check the integrity of the signals.',
     reference: 'AIP GEN 1.5',
   },
   {
@@ -4713,18 +4713,6 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
   },
   {
-    question: 'The \'datum\' used in an aircraft loading system is:',
-    options: [
-      'A reference point from which all arms are measured',
-      'Always located at the aircraft\'s centre of gravity',
-      'The maximum take-off weight of the aircraft',
-      'The point where the wing meets the fuselage',
-    ],
-    correct: 0,
-    explanation: 'The datum is an arbitrary reference point, defined by the manufacturer, from which all arms are measured. It is not necessarily at the CG or any physical feature.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
-  },
-  {
     question: 'The zero fuel weight (ZFW) of an aeroplane is the weight of the aircraft:',
     options: [
       'Including full fuel but no passengers',
@@ -4749,30 +4737,6 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
   },
   {
-    question: 'An \'index unit\' in a loading system is used to:',
-    options: [
-      'Measure the aircraft\'s airspeed',
-      'Indicate the fuel quantity remaining',
-      'Simplify moment calculations by scaling moments to manageable numbers',
-      'Show the outside air temperature',
-    ],
-    correct: 2,
-    explanation: 'Index units are scaled moments (for example moment divided by a constant) that keep the numbers small and reduce arithmetic errors on a loading graph. They are not a speed, fuel or temperature value.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
-  },
-  {
-    question: 'The maximum structural take-off weight of an aeroplane is:',
-    options: [
-      'The weight below which the aircraft cannot fly',
-      'The empty weight plus oil',
-      'The maximum weight permitted for taxiing only',
-      'The greatest weight at which the aircraft may begin its take-off run',
-    ],
-    correct: 3,
-    explanation: 'Maximum structural take-off weight is the certificated upper limit at the start of the take-off run. Exceeding it overstresses the structure and degrades performance.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
     question: 'The maximum landing weight is generally lower than the maximum take-off weight because:',
     options: [
       'Fuel weighs more on landing than on take-off',
@@ -4782,18 +4746,6 @@ export const pplaQuestions: {
     ],
     correct: 1,
     explanation: 'Maximum landing weight protects the structure and gear from touchdown loads, so it is often set below the take-off weight. Fuel burn during the flight normally brings the aircraft within the landing limit.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
-    question: 'The \'climb weight limit\' for a take-off is the maximum weight at which the aircraft can:',
-    options: [
-      'Achieve the required climb gradient after take-off',
-      'Taxi without overheating the brakes',
-      'Be parked on a sloping apron',
-      'Reach its maximum cruise speed',
-    ],
-    correct: 0,
-    explanation: 'The climb weight limit ensures the aeroplane can meet the certificated climb-gradient requirement after take-off, given the conditions. It can be more limiting than the structural weight on a hot, high day.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
   },
   {
@@ -4821,18 +4773,6 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
   },
   {
-    question: 'A \'floor loading limit\' specified for a cargo area is the maximum:',
-    options: [
-      'Total weight of the whole aircraft',
-      'Volume of cargo that will physically fit',
-      'Number of passengers permitted',
-      'Weight per unit area the floor structure can safely support',
-    ],
-    correct: 3,
-    explanation: 'A floor loading limit, often expressed in kg per square metre, prevents a concentrated load from damaging the floor structure. It is independent of the overall aircraft weight limits.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
-  },
-  {
     question: 'An aircraft has an empty weight of 760 kg and a load brings the total to 1,060 kg with a CG of 2.30 m. If the CG limits are 2.20 m to 2.45 m, the aircraft is:',
     options: [
       'Within limits, because 2.30 m lies between 2.20 m and 2.45 m',
@@ -4843,18 +4783,6 @@ export const pplaQuestions: {
     correct: 0,
     explanation: 'The loaded CG of 2.30 m lies between the forward limit (2.20 m) and the aft limit (2.45 m), so the aircraft is in balance. The 1,000 kg figure is not a stated weight limit.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
-    question: 'Two occupants weighing 170 kg sit at an arm of 2.0 m. Their combined moment about the datum is:',
-    options: [
-      '85 kg·m',
-      '170 kg·m',
-      '3.4 kg·m',
-      '340 kg·m',
-    ],
-    correct: 3,
-    explanation: 'Moment equals weight times arm, so 170 kg multiplied by 2.0 m gives 340 kg·m. The arm is applied to the total weight of the load item.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
   },
   {
     question: 'An aircraft weighs 900 kg with a total moment of 1,980 kg·m about the datum. Its centre of gravity is at:',
@@ -4903,18 +4831,6 @@ export const pplaQuestions: {
     correct: 2,
     explanation: 'Volume equals weight divided by specific gravity: 150 divided by 0.72 is about 208 litres. Carrying fuel as a weight is essential for the loading calculation.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
-  },
-  {
-    question: 'A loading system gives the empty aircraft an index of -260 and the loaded items a combined index of +90. The take-off index used to enter the CG envelope is:',
-    options: [
-      '-350',
-      '-170',
-      '+350',
-      '+170',
-    ],
-    correct: 1,
-    explanation: 'Indices are added algebraically: -260 plus +90 equals -170. The resulting index and weight are plotted on the CG envelope to confirm the aircraft is in balance.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
   },
   {
     question: 'The never-exceed speed of an aeroplane is denoted:',
@@ -5085,18 +5001,6 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.3',
   },
   {
-    question: 'An increase in headwind component for take-off will:',
-    options: [
-      'Increase the take-off distance required',
-      'Decrease the take-off distance required',
-      'Have no effect on the take-off distance',
-      'Increase the lift-off groundspeed',
-    ],
-    correct: 1,
-    explanation: 'A headwind reduces the groundspeed needed to reach lift-off airspeed, shortening the take-off distance. A tailwind has the opposite effect.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
     question: 'A tailwind component during take-off will:',
     options: [
       'Decrease the take-off distance required',
@@ -5121,18 +5025,6 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
   },
   {
-    question: 'Taking off from a runway with an up-slope (uphill), compared with level, will tend to:',
-    options: [
-      'Decrease the take-off distance required',
-      'Increase the take-off distance required',
-      'Have no effect on the take-off distance',
-      'Reduce the lift-off airspeed',
-    ],
-    correct: 1,
-    explanation: 'An up-slope opposes acceleration, increasing the take-off distance. A down-slope assists acceleration on take-off, though it lengthens the landing distance.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
     question: 'A wet or slushy runway surface will generally cause the take-off distance to:',
     options: [
       'Increase, because of greater rolling resistance and reduced acceleration',
@@ -5154,18 +5046,6 @@ export const pplaQuestions: {
     ],
     correct: 3,
     explanation: 'Even thin frost roughens the wing, disrupting airflow, reducing lift and increasing the stall speed, which can prevent a safe take-off. Frost must be removed before flight.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
-    question: 'A higher aerodrome elevation, all else equal, affects take-off performance by:',
-    options: [
-      'Decreasing density height and shortening the take-off distance',
-      'Having no effect because elevation is not in the charts',
-      'Improving the rate of climb after take-off',
-      'Increasing density height and lengthening the take-off distance',
-    ],
-    correct: 3,
-    explanation: 'Higher elevation means lower air pressure and density, raising density height and degrading take-off and climb performance. Charts account for elevation through pressure height.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
   },
   {
@@ -5313,18 +5193,6 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.5',
   },
   {
-    question: 'At a groundspeed of 120 kt, a descent at 500 ft/min from 6,000 ft to sea level will cover a ground distance of about:',
-    options: [
-      '24 NM',
-      '12 NM',
-      '6 NM',
-      '48 NM',
-    ],
-    correct: 0,
-    explanation: 'The descent takes 12 minutes (6,000 divided by 500). At 120 kt that is 2 NM per minute, so 24 NM. Combining rate of descent and groundspeed gives the distance to start down.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.5',
-  },
-  {
     question: 'A climb chart gives a rate of climb of 600 ft/min. Climbing from 1,500 ft to 7,500 ft will take approximately:',
     options: [
       '6 minutes',
@@ -5357,19 +5225,19 @@ export const pplaQuestions: {
       '15 minutes',
     ],
     correct: 1,
-    explanation: 'Under Part 91 MOS Chapter 19, Table 19.02 Item 1, a piston or turboprop aeroplane below 5,700 kg under VFR by day carries a 30-minute final reserve. Night VFR and IFR require 45 minutes.',
+    explanation: 'Under Part 91 MOS Chapter 19, Table 19.02 Item 1, a piston or turboprop aeroplane below 5,700 kg operating VFR by day carries a 30-minute fixed reserve. The 45-minute figure is the trap and does not apply to day VFR.',
     reference: 'Part 91 MOS Chapter 19',
   },
   {
-    question: 'The fixed fuel reserve for the same aeroplane flown at night under the night VFR rating is:',
+    question: 'An aeroplane burns 30 litres per hour. The day VFR fixed reserve of 30 minutes that it must carry is:',
     options: [
-      '45 minutes',
-      '30 minutes',
-      '20 minutes',
-      '60 minutes',
+      '15 litres',
+      '30 litres',
+      '45 litres',
+      '10 litres',
     ],
     correct: 0,
-    explanation: 'Table 19.02 sets a 45-minute final reserve for night VFR in a piston or turboprop aeroplane below 5,700 kg, more than the 30 minutes for day VFR, because of the reduced options at night.',
+    explanation: 'The fixed reserve is 30 minutes of fuel at the planned flow: 30 litres per hour for half an hour is 15 litres. This reserve must still be in the tanks on landing and is never planned as usable trip fuel.',
     reference: 'Part 91 MOS Chapter 19',
   },
   {
@@ -5414,7 +5282,7 @@ export const pplaQuestions: {
       'Taken out of the fixed reserve',
       'Carried in addition to the trip fuel and the fixed reserve',
       'An alternative to carrying any reserve',
-      'Only required for IFR flights',
+      'Only required when an alternate aerodrome is nominated',
     ],
     correct: 1,
     explanation: 'Holding or alternate fuel is carried in addition to trip fuel and the fixed reserve, never drawn from the reserve. The reserve remains untouched as the final safety margin.',
@@ -5433,15 +5301,15 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.6',
   },
   {
-    question: 'A headwind on the outbound leg will move the equi-time point (ETP):',
+    question: 'The equi-time point (ETP) between two aerodromes is the point from which it would take:',
     options: [
-      'Towards the destination',
-      'To exactly the midpoint',
-      'Towards the departure aerodrome',
-      'Beyond the destination',
+      'less time to return than to continue to the destination',
+      'less fuel to continue than to return',
+      'the same time to fly on to the destination as to return to the departure aerodrome',
+      'the same distance to each aerodrome regardless of wind',
     ],
     correct: 2,
-    explanation: 'With a headwind outbound (tailwind on return), it is quicker to go back, so the ETP moves towards the departure point. The ETP always moves towards the into-wind end of the route.',
+    explanation: 'The ETP is the position from which the time to continue to the destination equals the time to return to the departure aerodrome. It is used to decide which way to divert if a problem occurs en route.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.6',
   },
   {
@@ -5507,13 +5375,13 @@ export const pplaQuestions: {
   {
     question: 'For a VFR day navigation flight, the appropriate chart for low-level visual navigation in many areas is the:',
     options: [
-      'Instrument approach chart for the destination',
+      'Aerodrome ground movement chart for the destination',
       'Enroute high-level chart',
       'Aircraft loading graph',
       'Visual Navigation Chart or VFR equivalent at a suitable scale',
     ],
     correct: 3,
-    explanation: 'Visual charts such as the VNC, VTC and WAC are used for VFR navigation, chosen for the appropriate scale and detail. Instrument and high-level charts are for IFR operations.',
+    explanation: 'Visual charts such as the VNC, VTC and WAC are used for VFR navigation, chosen for a suitable scale and detail. Aerodrome movement charts and high-level enroute charts are not used for low-level visual navigation.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.4',
   },
   {
@@ -5613,18 +5481,6 @@ export const pplaQuestions: {
     reference: 'CASR Part 91',
   },
   {
-    question: 'On a hot day at a high-elevation ALA, your chart shows the take-off distance required exceeds the distance available at full load. The safest plan is to:',
-    options: [
-      'Depart at midday with full load to save time',
-      'Off-load weight and depart in the cooler part of the day',
-      'Use a downwind take-off to shorten the run',
-      'Accept the figures because charts are conservative',
-    ],
-    correct: 1,
-    explanation: 'Reducing weight and operating when it is cooler both lower the take-off distance required and improve climb. A downwind take-off or ignoring an exceedance increases the risk.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
     question: 'You calculate that, after holding for forecast weather, you would land with less than the fixed reserve. You must:',
     options: [
       'Carry more fuel, nominate an alternate, or delay the flight',
@@ -5721,18 +5577,6 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
   },
   {
-    question: 'On a take-off chart, increasing the pressure height entered (for example departing a higher aerodrome) will normally give a take-off distance that is:',
-    options: [
-      'Shorter',
-      'Unchanged',
-      'Reduced to zero',
-      'Longer',
-    ],
-    correct: 3,
-    explanation: 'Higher pressure height means lower air density and reduced performance, so the chart returns a longer take-off distance. Pressure height and temperature are the primary chart entries for density effects.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
-  },
-  {
     question: 'You compute a top of descent so as to arrive at circuit height comfortably. Starting the descent too late will result in:',
     options: [
       'Arriving high and fast, requiring a steeper descent or an orbit to lose height',
@@ -5817,18 +5661,6 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
   },
   {
-    question: 'If the fuel allowance limits you to 229 litres but full tanks hold 250 litres, you should:',
-    options: [
-      'Fill the tanks and accept the small overweight',
-      'Remove a seat to allow full fuel',
-      'Carry less than full fuel so the take-off weight stays within limits',
-      'Fill the tanks and burn off the excess on the ground',
-    ],
-    correct: 2,
-    explanation: 'When full fuel would exceed the weight limit, the aircraft is fuelled to less than full so it remains within the maximum take-off weight. Overweight operations are not permitted.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
-  },
-  {
     question: 'Near the weight or CG limits, the safest practice for loading a light aircraft is to:',
     options: [
       'Always use the lowest standard weight',
@@ -5839,42 +5671,6 @@ export const pplaQuestions: {
     correct: 1,
     explanation: 'Near the limits, using actual measured weights gives the most accurate and safest loading. Optimistic assumptions can put a light aircraft over its limits.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
-  },
-  {
-    question: 'You are loading a four-seat aircraft. Placing the heaviest passengers in the rear seats and baggage in the rear locker risks:',
-    options: [
-      'Moving the centre of gravity forward of the forward limit',
-      'Reducing the take-off weight',
-      'Improving longitudinal stability excessively',
-      'Moving the centre of gravity aft of the aft limit',
-    ],
-    correct: 3,
-    explanation: 'Concentrating heavy loads aft drives the CG rearward, potentially past the aft limit and reducing stability. Loads should be distributed to keep the CG within the envelope.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
-    question: 'Before flight you confirm both the take-off weight and the centre of gravity are within limits. This confirms the aircraft is:',
-    options: [
-      'Correctly loaded, though performance must still be checked for the conditions',
-      'Guaranteed to meet all climb requirements regardless of conditions',
-      'Exempt from performance-chart checks',
-      'Below its empty weight',
-    ],
-    correct: 0,
-    explanation: 'Confirming weight and CG within limits means the aircraft is correctly loaded, but climb and runway performance must still be checked against the conditions. Loading and performance are separate checks.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
-    question: 'A take-off climb-gradient requirement becomes more critical as:',
-    options: [
-      'Weight decreases and the air cools',
-      'The runway gets longer',
-      'Weight, temperature and density height increase',
-      'The headwind increases',
-    ],
-    correct: 2,
-    explanation: 'Higher weight, temperature and density height all reduce climb performance, making the climb-gradient requirement harder to meet and possibly limiting the weight. A longer runway or headwind does not fix a climb-gradient shortfall.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
   },
   {
     question: 'A climb gradient of 5% means the aircraft gains:',
@@ -5889,18 +5685,6 @@ export const pplaQuestions: {
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
   },
   {
-    question: 'At a groundspeed equivalent to about 6,000 ft per minute over the ground, a 5% climb gradient gives a rate of climb of approximately:',
-    options: [
-      '600 ft/min',
-      '300 ft/min',
-      '150 ft/min',
-      '3,000 ft/min',
-    ],
-    correct: 1,
-    explanation: '5% of 6,000 ft per minute is 300 ft/min. Rate of climb equals the gradient multiplied by the groundspeed expressed in feet per minute, linking obstacle clearance to performance.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
     question: 'A go-around (baulked landing) is most safely flown by:',
     options: [
       'Applying full power, establishing a climb and retracting flap and gear in stages',
@@ -5911,54 +5695,6 @@ export const pplaQuestions: {
     correct: 0,
     explanation: 'A go-around requires prompt full power, a positive climb, and staged configuration changes to avoid sinking. Dumping all flap at low speed or delaying the climb is hazardous.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
-  },
-  {
-    question: 'When using a loading system, after plotting the zero fuel weight and take-off weight points on the CG envelope, both points must:',
-    options: [
-      'Lie exactly on the forward limit',
-      'Lie within the boundaries of the envelope',
-      'Be above the maximum take-off weight line',
-      'Coincide with each other',
-    ],
-    correct: 1,
-    explanation: 'Both the zero-fuel-weight and take-off-weight points must fall inside the CG envelope to confirm the aircraft is in balance throughout the fuel burn. If either falls outside, the load must be rearranged.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
-  },
-  {
-    question: 'As fuel burns off during a flight from tanks located near the centre of gravity, the effect on the CG during the flight is:',
-    options: [
-      'Small, because the fuel is close to the centre of gravity',
-      'Always a large forward movement',
-      'Always a large aft movement',
-      'Zero, because fuel has no weight',
-    ],
-    correct: 0,
-    explanation: 'Burning fuel from tanks located near the CG produces only a small CG shift; tanks well forward or aft of the CG cause larger movements. Checking both ZFW and TOW points captures this.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
-  },
-  {
-    question: 'The conditions on which a take-off chart\'s quoted flap setting, power and safety speed are based must be:',
-    options: [
-      'Ignored, because charts include large margins',
-      'Changed to suit the pilot\'s preference',
-      'Matched in practice, or the achieved performance may differ from the chart',
-      'Applied only above 5,000 ft',
-    ],
-    correct: 2,
-    explanation: 'Chart figures assume a specific flap, power and technique; achieving the charted distance requires using those conditions. Using a different technique invalidates the predicted performance.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
-  },
-  {
-    question: 'You want to know fuel for climb, cruise and descent separately. The most reliable source for these figures is:',
-    options: [
-      'The aircraft flight manual performance charts and tables',
-      'A rule of thumb from another pilot',
-      'The area forecast',
-      'The aircraft compass deviation card',
-    ],
-    correct: 0,
-    explanation: 'Climb, cruise and descent time, distance and fuel are extracted from the flight manual charts and tables for the aircraft. Forecasts and deviation cards contain no performance data.',
-    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.5',
   },
   {
     question: 'The \'latest departure time\' on a VFR plan is determined mainly by:',
@@ -6006,6 +5742,270 @@ export const pplaQuestions: {
     ],
     correct: 2,
     explanation: 'Performance must be assessed for the actual expected conditions of temperature, pressure, wind and surface at the time and place. Optimistic or standard assumptions can leave the aircraft short of performance.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
+  },
+  {
+    question: 'The correct sequence for entering a take-off or landing performance chart is:',
+    options: [
+      'shade temperature, then airfield pressure height, then slope, then wind, then weight or distance',
+      'weight first, then wind, then slope, then temperature',
+      'airfield pressure height, then weight, then temperature, then slope',
+      'wind, then temperature, then weight, then airfield pressure height',
+    ],
+    correct: 0,
+    explanation: 'Performance charts are entered in a fixed order from the start point: shade temperature, airfield pressure height, slope, wind, then read weight or distance against the correct surface curve.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
+  },
+  {
+    question: 'A take-off chart states a distance factor of 1.15. The distance read from the chart should be:',
+    options: [
+      'multiplied by 1.15 again to add the safety factor',
+      'used as it is, because the 1.15 factor is already included in the chart distance',
+      'divided by 1.15 to remove the factor',
+      'ignored, because the factor only applies to landing',
+    ],
+    correct: 1,
+    explanation: 'The 1.15 factor is already built into the distances the chart produces, so the chart output is the factored (gross) distance. Applying 1.15 a second time is a common error.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
+  },
+  {
+    question: 'On a take-off weight chart, the maximum permitted take-off weight is:',
+    options: [
+      'always the structural maximum, regardless of the distance available',
+      'always the distance-limited weight from the chart',
+      'the lesser of the distance-limited weight from the chart and the climb-limited (structural) maximum',
+      'the greater of the distance-limited and climb-limited weights',
+    ],
+    correct: 2,
+    explanation: 'The take-off weight must not exceed either the distance-limited weight read from the chart or the printed climb-limited (structural) maximum, so the lower of the two governs.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
+  },
+  {
+    question: 'Using the take-off weight chart: aerodrome elevation 2,500 ft, QNH 997 hPa, OAT minus 5 degrees C, level sealed runway, 5 kt headwind, TODA 550 m. With a structural limit of 1,090 kg, the maximum take-off weight is closest to:',
+    options: [
+      '1,090 kg',
+      '1,045 kg',
+      '890 kg',
+      '975 kg',
+    ],
+    correct: 3,
+    explanation: 'Pressure height = 2,500 + 30 x (1013 - 997) = 2,980, so use 3,000 ft. Entering 3,000 ft, minus 5 degrees C, level slope and 5 kt headwind against TODA 550 m gives about 975 kg, which is below the 1,090 kg structural limit, so 975 kg governs.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
+  },
+  {
+    question: 'Using the take-off weight chart: pressure height 3,500 ft, OAT plus 20 degrees C, 2 per cent downslope, 10 kt headwind, take-off weight 850 kg. The take-off distance required is closest to:',
+    options: [
+      '500 m',
+      '350 m',
+      '700 m',
+      '900 m',
+    ],
+    correct: 0,
+    explanation: 'Entering plus 20 degrees C, 3,500 ft, 2 per cent downslope and a 10 kt headwind for 850 kg gives a take-off distance required of about 500 m. The downslope and headwind both reduce the distance.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
+  },
+  {
+    question: 'A runway has a downslope. Compared with a level runway, this downslope will:',
+    options: [
+      'lengthen both the take-off and the landing distance',
+      'shorten the take-off distance but lengthen the landing distance',
+      'shorten both the take-off and the landing distance',
+      'lengthen the take-off distance but shorten the landing distance',
+    ],
+    correct: 1,
+    explanation: 'Slope sense flips between the two cases: a downslope assists acceleration on take-off (shorter run) but means the aircraft must stop while running downhill on landing (longer distance).',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
+  },
+  {
+    question: 'On these landing distance charts, the landing distance required is read:',
+    options: [
+      'by entering the chart with the landing weight',
+      'as a single fixed value for every aerodrome',
+      'independently of landing weight, while the maximum landing weight is separately climb-limited',
+      'only after multiplying by the weight ratio',
+    ],
+    correct: 2,
+    explanation: 'On these charts the landing distance required does not vary with landing weight, so weight is not an entry. The maximum landing weight is a separate climb-limited check.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
+  },
+  {
+    question: 'The wind is 30 degrees off the runway centreline at 20 kt, and the chart\'s maximum crosswind is 15 kt. The crosswind component is closest to:',
+    options: [
+      '17 kt, which exceeds the limit',
+      '20 kt, the full wind speed',
+      '5 kt, well within the limit',
+      '10 kt, which is within the 15 kt limit',
+    ],
+    correct: 3,
+    explanation: 'Crosswind component = wind speed x sine of the angle = 20 x sin 30 = 20 x 0.5 = 10 kt, within the 15 kt limit. The headwind component would be 20 x cos 30, about 17 kt.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
+  },
+  {
+    question: 'The wind is 40 degrees off the runway at 25 kt, the chart\'s maximum crosswind is 15 kt, and the crosswind component works out at about 16 kt. The operation is:',
+    options: [
+      'not permitted on that runway, regardless of the distance available',
+      'permitted, because the distance chart governs',
+      'permitted, because 16 kt rounds down to 15',
+      'permitted only if the headwind component is also high',
+    ],
+    correct: 0,
+    explanation: 'Crosswind component = 25 x sin 40, about 16 kt, which exceeds the 15 kt chart limit, so the take-off or landing is not permitted on that runway even if the distance is adequate.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
+  },
+  {
+    question: 'In Loading System Alpha, which items lie aft of the datum (shifting the moment index positive)?',
+    options: [
+      'Row 1 and the nose locker',
+      'Row 2, Row 3 and the rear locker',
+      'the fuel tank only',
+      'Row 1 and the fuel tank',
+    ],
+    correct: 1,
+    explanation: 'In Alpha, Row 1 and the nose locker are forward of the datum, Row 2, Row 3 and the rear locker are aft, and the fuel tank sits on the datum.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'In Loading System Alpha the fuel tank is on the datum, so adding fuel:',
+    options: [
+      'increases both the weight and the moment index',
+      'moves the index forward without changing the weight',
+      'increases weight but does not change the moment index, a vertical move on the envelope',
+      'has no effect on either weight or index',
+    ],
+    correct: 2,
+    explanation: 'Because the fuel is on the datum, adding or burning fuel changes weight only and the plotted point moves straight up or down the weight scale at constant index.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'Loading System Alpha: empty 1,050 kg, Row 1 150 kg, Row 2 160 kg, Row 3 120 kg, nose 40 kg, then fuel 113 kg. The zero fuel weight and take-off weight are:',
+    options: [
+      '1,633 kg and 1,746 kg',
+      '1,407 kg and 1,520 kg',
+      '1,520 kg and 1,520 kg',
+      '1,520 kg and 1,633 kg',
+    ],
+    correct: 3,
+    explanation: 'Zero fuel weight = 1,050 + 150 + 160 + 120 + 40 = 1,520 kg. Take-off weight = 1,520 + 113 = 1,633 kg, which sits on the maximum take-off weight limit but inside the envelope, so it is in balance.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'Loading System Bravo differs from Alpha and Charlie in that its weights and arms are in:',
+    options: [
+      'pounds and inches, not kilograms and millimetres',
+      'kilograms and millimetres, like the others',
+      'kilograms and inches',
+      'pounds and millimetres',
+    ],
+    correct: 0,
+    explanation: 'Bravo is worked in imperial units, pounds and inches, while Alpha and Charlie are metric. Mixing the unit systems is a common error.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'In Loading System Bravo, 35 US gallons of fuel at 6 lb per gallon weighs:',
+    options: [
+      '222 lb',
+      '210 lb',
+      '105 lb',
+      '270 lb',
+    ],
+    correct: 1,
+    explanation: '35 x 6 = 210 lb. Converting US gallons to pounds before reading the moment is the step most often missed in Bravo problems; full standard tanks of 37 gallons would be 222 lb.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'In Loading System Bravo, the front seats (arm 91 in) carry 300 lb. The moment/1000 for that row is:',
+    options: [
+      '2.73',
+      '273',
+      '27.3',
+      '33.0',
+    ],
+    correct: 2,
+    explanation: 'Moment/1000 = weight x arm / 1000 = 300 x 91 / 1000 = 27.3.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'A Bravo loading gives a take-off weight of 2,192 lb, with a Normal-category limit of 2,200 lb and a Utility-category limit of 1,850 lb. The aircraft is:',
+    options: [
+      'permitted in both the Normal and Utility categories',
+      'not permitted in either category',
+      'permitted in the Utility category only',
+      'permitted in the Normal category only',
+    ],
+    correct: 3,
+    explanation: '2,192 lb is below the Normal limit (2,200) but above the Utility limit (1,850), so the loading is legal in the Normal category only.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'In Loading System Charlie, where 1 index unit = 100 kg.mm, 140 kg in Row 1 at an arm of 2,750 mm gives:',
+    options: [
+      '3,850 index units',
+      '385 index units',
+      '38,500 index units',
+      '2,890 index units',
+    ],
+    correct: 0,
+    explanation: 'Index units = weight x arm / 100 = 140 x 2,750 / 100 = 3,850.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'In Loading System Charlie, the zero fuel weight is 1,014 kg with 30,060 index units. The centre of gravity is at:',
+    options: [
+      '3,150 mm aft of datum',
+      '2,964 mm aft of datum',
+      '296 mm aft of datum',
+      '2,650 mm aft of datum',
+    ],
+    correct: 1,
+    explanation: 'CG = index units x 100 / weight = 30,060 x 100 / 1,014, about 2,964 mm aft of datum, which must lie between the forward and aft limits.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'A Charlie loading gives a take-off CG of 3,016 mm, just behind the aft limit of about 3,004 mm. The correct fix is to:',
+    options: [
+      'add fuel, which sits aft of the datum',
+      'add baggage to the rear locker',
+      'remove about 10 kg from the rear baggage and re-check',
+      'do nothing, as it is only just outside',
+    ],
+    correct: 2,
+    explanation: 'An aft-CG condition is corrected by removing load behind the CG, here the rear baggage at arm 4,210 mm, or adding load forward. About 10 kg out of the rear baggage brings the CG back to the limit.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'When working any loading system, if the take-off weight exceeds the maximum take-off weight the loading is:',
+    options: [
+      'acceptable provided the centre of gravity is within limits',
+      'acceptable if the overload is small',
+      'checked for balance before any decision is made',
+      'rejected regardless of where the centre of gravity lies',
+    ],
+    correct: 3,
+    explanation: 'Weight is checked first: a loading over the maximum take-off weight is rejected no matter where the CG sits. Only once the weight is within limits is the balance checked.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.2',
+  },
+  {
+    question: 'In Loading System Charlie, the engine oil is:',
+    options: [
+      'added separately, because the basic empty weight excludes it',
+      'already included in the basic empty weight',
+      'ignored, as it is too small to matter',
+      'added only for the landing calculation',
+    ],
+    correct: 0,
+    explanation: 'In Charlie the basic empty weight does not include the oil, so the oil weight and its index unit are added as a separate line in the load sheet.',
+    reference: 'Part 61 MOS Schedule 3 Unit 1.9.1 POPC 2.1',
+  },
+  {
+    question: 'The wind is 30 degrees off the runway at 20 kt. The headwind component used to enter the chart is closest to:',
+    options: [
+      '10 kt',
+      '17 kt',
+      '20 kt',
+      '14 kt',
+    ],
+    correct: 1,
+    explanation: 'Headwind component = wind speed x cosine of the angle = 20 x cos 30, about 17 kt. The crosswind component would be 20 x sin 30 = 10 kt.',
     reference: 'Part 61 MOS Schedule 3 Unit 1.9.2 POPA 2.4',
   },
 ];
