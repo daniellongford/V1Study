@@ -503,9 +503,11 @@ function AiHelpPanel({ question, subject, selectedAnswer }: { question: any; sub
             </button>
           </div>
           {response && (
-            <div style={{ background: 'white', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '1rem', fontSize: '13px', color: '#1e3a6e', lineHeight: 1.65 }}>
-              <div style={{ fontSize: '10px', fontWeight: '700', color: '#2563eb', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
-              {response}
+            <div style={{ background: 'white', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '1rem', fontSize: '13px', color: '#1e3a6e', lineHeight: 1.7 }}>
+              <div style={{ fontSize: '10px', fontWeight: '700', color: '#2563eb', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
+              {response.split(/\n\s*\n|\n/).filter((p: string) => p.trim()).map((para: string, i: number) => (
+                <p key={i} style={{ margin: i === 0 ? '0' : '0.75rem 0 0 0' }}>{para.trim()}</p>
+              ))}
             </div>
           )}
         </div>
