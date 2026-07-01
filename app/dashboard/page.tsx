@@ -330,9 +330,11 @@ function ContactSection({ isMobile, userEmail }: { isMobile: boolean; userEmail?
               {aiLoading ? 'Thinking...' : 'Ask →'}
             </button>
             {aiResponse && (
-              <div style={{ marginTop: '1rem', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1rem', fontSize: '14px', color: '#0a1628', lineHeight: 1.65 }}>
-                <div style={{ fontSize: '11px', fontWeight: '700', color: '#94a3b8', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
-                {aiResponse}
+              <div style={{ marginTop: '1rem', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1rem', fontSize: '14px', color: '#0a1628', lineHeight: 1.7 }}>
+                <div style={{ fontSize: '11px', fontWeight: '700', color: '#94a3b8', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
+                {aiResponse.split(/\n\s*\n|\n/).filter((p: string) => p.trim()).map((para: string, i: number) => (
+                  <p key={i} style={{ margin: i === 0 ? '0' : '0.75rem 0 0 0' }}>{para.trim()}</p>
+                ))}
               </div>
             )}
           </>
