@@ -411,7 +411,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
               <div style={{ fontSize: '10px', fontFamily: 'monospace', color: '#2563eb', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Reference — verify this yourself</div>
               <div style={{ fontSize: '12px', color: '#3b82f6', fontFamily: 'monospace' }}>{q.reference}</div>
             </div>
-            <AiHelpPanel question={q} subject={subject} />
+            <AiHelpPanel question={q} subject={subject} selectedAnswer={selectedAnswer} />
           </div>
         )}
 
@@ -432,7 +432,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
 
 // ── AI Help Panel (unchanged) ─────────────────────────────────────────────────
 
-function AiHelpPanel({ question, subject }: { question: any; subject: string }) {
+function AiHelpPanel({ question, subject, selectedAnswer }: { question: any; subject: string; selectedAnswer: number | null }) {
   const [open, setOpen] = useState(false)
   const [userMessage, setUserMessage] = useState('')
   const [response, setResponse] = useState('')
@@ -452,6 +452,8 @@ function AiHelpPanel({ question, subject }: { question: any; subject: string }) 
             question: question.question,
             options: question.options,
             correctAnswer: question.options[question.correct],
+            studentAnswer: selectedAnswer !== null ? question.options[selectedAnswer] : null,
+            studentWasCorrect: selectedAnswer !== null ? selectedAnswer === question.correct : null,
             explanation: question.explanation,
             reference: question.reference,
             subject,
