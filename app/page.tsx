@@ -125,9 +125,9 @@ export default function Home() {
 
             <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3,1fr)', gap: '1.25rem', marginBottom: '1.25rem' }}>
               {[
-                { plan: 'PPL Pack', price: '$9.99', priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz', features: ['PPL Theory exam', 'Unlimited practice questions', 'Full explanations', 'CASA references'], popular: false },
-                { plan: 'CPL Pack', price: '$19.99', priceId: 'price_1TIP6XCbt27bkqBv9CypW42J', features: ['PPL + all 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], popular: true },
-                { plan: 'ATPL Pack', price: '$29.99', priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn', features: ['CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], popular: false, comingSoon: true },
+                { plan: 'PPL Pack', price: '$9.99', priceId: 'price_1UDInpCdMFoMcdWhqFI4pXIR', features: ['PPL Theory exam', 'Unlimited practice questions', 'Full explanations', 'CASA references'], popular: false },
+                { plan: 'CPL Pack', price: '$19.99', priceId: 'price_1UDInpCdMFoMcdWhYQDoUP5y', features: ['PPL + all 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], popular: true },
+                { plan: 'ATPL Pack', price: '$29.99', priceId: 'price_1UDInvCdMFoMcdWh7m6hD1NW', features: ['CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], popular: false, comingSoon: true },
               ].map(function (item) {
                 return (
                   <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '2rem', border: item.popular ? '2px solid #2563eb' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
@@ -163,8 +163,8 @@ export default function Home() {
 
             <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(2,1fr)', gap: '1.25rem', maxWidth: '706px', margin: '0 auto' }}>
               {[
-                { plan: 'IREX Standalone', price: '$14.99', priceId: 'price_1TIPDdCbt27bkqBvZzwkYthb', features: ['IREX exam only', 'Unlimited practice questions', 'Full explanations', 'CASA references'] },
-                { plan: 'Full Access', price: '$34.99', priceId: 'price_1TIPBvCbt27bkqBvv4fUShu3', features: ['Every exam included', 'PPL + CPL + ATPL + IREX', 'Unlimited practice questions', 'Priority support'] },
+                { plan: 'IREX Standalone', price: '$14.99', priceId: 'price_1UDInpCdMFoMcdWhwvavh1ks', features: ['IREX exam only', 'Unlimited practice questions', 'Full explanations', 'CASA references'] },
+                { plan: 'Full Access', price: '$34.99', priceId: 'price_1UDInpCdMFoMcdWhHEFjZJuT', features: ['Every exam included', 'PPL + CPL + ATPL + IREX', 'Unlimited practice questions', 'Priority support'] },
               ].map(function (item) {
                 return (
                   <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '2rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
