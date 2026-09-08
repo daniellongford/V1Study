@@ -83,7 +83,23 @@ export default function Dashboard() {
       setPlan(data.plan)
       setPlanStatus(data.status)
       setTrialEnd(data.trial_end ?? null)
+      return
     }
+    // No row yet — check Stripe directly and create it if they've subscribed
+    try {
+      const { data: { user: u } } = await supabase.auth.getUser()
+      if (!u?.email) return
+      const res = await fetch('/api/sync-subscription', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId, email: u.email }),
+      })
+      const sync = await res.json()
+      if (sync?.synced && sync.plan) {
+        setPlan(sync.plan)
+        setPlanStatus('active')
+      }
+    } catch {}
   }
 
   async function loadScores(userId: string) {
