@@ -35,10 +35,13 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: `Webhook error: ${err.message}` }, { status: 400 })
   }
 
+  console.log('[webhook] event', event.type, event.id)
+
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session
     const subscriptionId = session.subscription as string
-    if (!subscriptionId) return NextResponse.json({ received: true })
+    console.log('[webhook] checkout session', session.id, 'subscription', subscriptionId)
+    if (!subscriptionId) { console.log('[webhook] exit: no subscriptionId'); return NextResponse.json({ received: true }) }
 
     // Resolve email — Stripe may put it in customer_email, customer_details,
     // or only on the customer record. Check all of them.
@@ -48,7 +51,8 @@ export async function POST(request: NextRequest) {
     const subscription = await stripe.subscriptions.retrieve(subscriptionId)
     const priceId = subscription.items.data[0]?.price?.id
     const plan = PRICE_TO_PLAN[priceId]
-    if (!plan) return NextResponse.json({ received: true })
+    console.log('[webhook] priceId', priceId, 'plan', plan, 'status', subscription.status, 'email', email)
+    if (!plan) { console.log('[webhook] exit: unknown priceId', priceId, 'known:', Object.keys(PRICE_TO_PLAN)); return NextResponse.json({ received: true }) }
 
     // Fallback: pull email from the Stripe customer record
     if (!email && session.customer) {
@@ -76,12 +80,13 @@ export async function POST(request: NextRequest) {
       if (users.length < 1000) break
     }
     if (!user) {
-      console.error('No matching user for email', email)
+      console.error('[webhook] exit: no matching user for email', email)
       return NextResponse.json({ received: true })
     }
+    console.log('[webhook] user found', user.id)
 
     // Save subscription
-    await supabase.from('subscriptions').upsert({
+    const { error: upsertError } = await supabase.from('subscriptions').upsert({
       user_id: user.id,
       stripe_customer_id: session.customer as string,
       stripe_subscription_id: subscriptionId,
@@ -89,6 +94,8 @@ export async function POST(request: NextRequest) {
       status: subscription.status === 'trialing' || subscription.status === 'active' ? 'active' : 'inactive',
       trial_end: subscription.trial_end ? new Date(subscription.trial_end * 1000).toISOString() : null,
     }, { onConflict: 'user_id' })
+    if (upsertError) console.error('[webhook] upsert FAILED', upsertError)
+    else console.log('[webhook] subscription saved for', user.id, plan)
   }
 
   if (event.type === 'customer.subscription.created' || event.type === 'customer.subscription.updated') {
