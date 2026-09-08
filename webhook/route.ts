@@ -67,10 +67,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ received: true })
     }
 
-    // Find user by email
-    const { data: userData } = await supabase.auth.admin.listUsers()
-    const users = userData?.users as any[]
-    const user = users?.find((u: any) => u.email?.toLowerCase() === email!.toLowerCase())
+    // Find user by email — page through all users (default listUsers only returns 50)
+    let user: any = null
+    for (let page = 1; page <= 50 && !user; page++) {
+      const { data: userData } = await supabase.auth.admin.listUsers({ page, perPage: 1000 })
+      const users = (userData?.users as any[]) || []
+      user = users.find((u: any) => u.email?.toLowerCase() === email!.toLowerCase()) || null
+      if (users.length < 1000) break
+    }
     if (!user) {
       console.error('No matching user for email', email)
       return NextResponse.json({ received: true })
