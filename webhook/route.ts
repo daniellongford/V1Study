@@ -12,11 +12,11 @@ const supabase = createClient(
 )
 
 const PRICE_TO_PLAN: Record<string, string> = {
-  'price_1TIP96Cbt27bkqBv9ULJdyTz': 'PPL',
-  'price_1TIP6XCbt27bkqBv9CypW42J': 'CPL',
-  'price_1TIPAiCbt27bkqBvEItgo0gn': 'ATPL',
-  'price_1TIPDdCbt27bkqBvZzwkYthb': 'IREX',
-  'price_1TIPBvCbt27bkqBvv4fUShu3': 'FULL',
+  'price_1UDInpCdMFoMcdWhqFI4pXIR': 'PPL',
+  'price_1UDInpCdMFoMcdWhYQDoUP5y': 'CPL',
+  'price_1UDInvCdMFoMcdWh7m6hD1NW': 'ATPL',
+  'price_1UDInpCdMFoMcdWhwvavh1ks': 'IREX',
+  'price_1UDInpCdMFoMcdWhHEFjZJuT': 'FULL',
 }
 
 export async function POST(request: NextRequest) {
