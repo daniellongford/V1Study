@@ -5,11 +5,11 @@ import { supabase } from '../../lib/supabase'
 import { FREE_ACCESS_EMAILS } from '../../lib/access'
 
 const PLANS = [
-  { name: 'PPL Pack', price: '$9.99', priceId: 'price_1TIP96Cbt27bkqBv9ULJdyTz', blurb: 'PPL Theory exam' },
-  { name: 'CPL Pack', price: '$19.99', priceId: 'price_1TIP6XCbt27bkqBv9CypW42J', blurb: 'PPL + all 7 CPL exams' },
-  { name: 'ATPL Pack', price: '$29.99', priceId: 'price_1TIPAiCbt27bkqBvEItgo0gn', blurb: 'CPL + all 7 ATPL exams', comingSoon: true },
-  { name: 'IREX Standalone', price: '$14.99', priceId: 'price_1TIPDdCbt27bkqBvZzwkYthb', blurb: 'IREX exam only' },
-  { name: 'Full Access', price: '$34.99', priceId: 'price_1TIPBvCbt27bkqBvv4fUShu3', blurb: 'Every exam included' },
+  { name: 'PPL Pack', price: '$9.99', priceId: 'price_1UDInpCdMFoMcdWhqFI4pXIR', blurb: 'PPL Theory exam' },
+  { name: 'CPL Pack', price: '$19.99', priceId: 'price_1UDInpCdMFoMcdWhYQDoUP5y', blurb: 'PPL + all 7 CPL exams' },
+  { name: 'ATPL Pack', price: '$29.99', priceId: 'price_1UDInvCdMFoMcdWh7m6hD1NW', blurb: 'CPL + all 7 ATPL exams', comingSoon: true },
+  { name: 'IREX Standalone', price: '$14.99', priceId: 'price_1UDInpCdMFoMcdWhwvavh1ks', blurb: 'IREX exam only' },
+  { name: 'Full Access', price: '$34.99', priceId: 'price_1UDInpCdMFoMcdWhHEFjZJuT', blurb: 'Every exam included' },
 ]
 
 function SignUpInner() {
@@ -18,7 +18,7 @@ function SignUpInner() {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [selectedPlan, setSelectedPlan] = useState<string>('price_1TIP6XCbt27bkqBv9CypW42J')
+  const [selectedPlan, setSelectedPlan] = useState<string>('price_1UDInpCdMFoMcdWhYQDoUP5y')
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState('')
   const [agreed, setAgreed] = useState(false)
