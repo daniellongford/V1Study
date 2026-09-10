@@ -1,6 +1,16 @@
 export const metadata = {
+  metadataBase: new URL('https://v1study.com.au'),
   title: 'V1 Study',
-  description: 'Australian Pilot Exam Prep',
+  description:
+    'Practice questions for every CASA pilot exam. PPL, CPL, ATPL and IREX, written to the Part 61 MOS with full explanations and references. 7 day free trial.',
+  openGraph: {
+    title: 'V1 Study',
+    description:
+      'Practice questions for every CASA pilot exam. PPL, CPL, ATPL and IREX, written to the Part 61 MOS with full explanations and references. 7 day free trial.',
+    url: 'https://v1study.com.au',
+    siteName: 'V1 Study',
+    type: 'website',
+  },
 }
 
 export const viewport = {
