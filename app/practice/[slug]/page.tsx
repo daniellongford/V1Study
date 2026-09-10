@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { PRACTICE, getPractice } from '../../../lib/practice-content'
+import PracticeQuestion from './PracticeQuestion'
 
 const BASE = 'https://v1study.com.au'
 
@@ -35,7 +36,6 @@ export default async function PracticePage({ params }: { params: Promise<{ slug:
   if (!entry) notFound()
 
   const { question } = entry
-  const letters = ['A', 'B', 'C', 'D']
   const signupHref = `/signup?plan=${entry.plan}`
 
   const licenceNote: Record<string, string> = {
@@ -82,44 +82,7 @@ export default async function PracticePage({ params }: { params: Promise<{ slug:
           {entry.intro}
         </p>
 
-        <section style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', padding: 'clamp(1.25rem, 4vw, 1.5rem)', boxShadow: '0 1px 3px rgba(0,0,0,0.06)' }}>
-          <div style={{ fontSize: '11px', fontWeight: '700', color: '#94a3b8', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '10px' }}>
-            Example question
-          </div>
-
-          <p style={{ fontSize: '16px', fontWeight: '600', color: '#0a1628', lineHeight: 1.5, marginBottom: '1rem' }}>
-            {question.question}
-          </p>
-
-          {question.options.map((opt, i) => {
-            const isCorrect = i === question.correct
-            return (
-              <div
-                key={i}
-                style={{
-                  display: 'flex', gap: '12px', alignItems: 'flex-start',
-                  border: `1px solid ${isCorrect ? '#16a34a' : '#e2e8f0'}`,
-                  background: isCorrect ? '#f0fdf4' : 'white',
-                  color: isCorrect ? '#14532d' : '#334155',
-                  borderRadius: '8px', padding: '11px 14px', marginBottom: '8px',
-                  fontSize: '14px', lineHeight: 1.45,
-                }}
-              >
-                <span style={{ fontWeight: '700', color: isCorrect ? '#16a34a' : '#64748b', minWidth: '18px' }}>{letters[i]}</span>
-                <span>{opt}</span>
-              </div>
-            )
-          })}
-
-          <div style={{ marginTop: '0.75rem', fontSize: '14px', color: '#475569', lineHeight: 1.6 }}>
-            {question.explanation}
-            {question.reference && (
-              <div style={{ fontSize: '12px', color: '#2563eb', fontFamily: 'monospace', marginTop: '6px' }}>
-                Reference: {question.reference}
-              </div>
-            )}
-          </div>
-        </section>
+        <PracticeQuestion question={question} />
 
         <div style={{ marginTop: '2rem', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
           <a href={signupHref} style={{ display: 'inline-block', background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 24px', fontWeight: '600', fontSize: '15px', textDecoration: 'none' }}>
