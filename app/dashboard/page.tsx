@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
 import { PLAN_ACCESS, COMING_SOON_LICENCES, isAdmin as checkAdmin, hasFreeAccess as checkFreeAccess } from '../../lib/access'
-import { getExamConfig } from '../../lib/exam-config'
 
 const subjectsByLicence: Record<string, { subject: string; code: string; passMark: number }[]> = {
   PPL: [
@@ -42,14 +41,6 @@ const LICENCE_NAMES: Record<string, string> = {
 const F = "'Barlow', system-ui, -apple-system, sans-serif"
 const FD = "'Barlow Semi Condensed', 'Barlow', system-ui, sans-serif"
 const C = { ground: '#eef1f5', paper: '#ffffff', ink: '#0a1628', rule: '#dde3ea', muted: '#5f6c7b', faint: '#98a4b3', blue: '#2563eb', pass: '#15803d' }
-
-function durationWords(minutes: number): string {
-  const h = Math.floor(minutes / 60)
-  const m = minutes % 60
-  const hs = h === 0 ? '' : h === 1 ? '1 hour' : `${h} hours`
-  const ms = m === 0 ? '' : `${m} minutes`
-  return [hs, ms].filter(Boolean).join(' ')
-}
 
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false)
@@ -260,7 +251,6 @@ export default function Dashboard() {
             const attempted = best !== undefined
             const passed = attempted && best >= passMark
             const accessible = hasAccess(subject)
-            const cfg = getExamConfig(subject)
             const dim = comingSoon || !accessible
             const isLast = idx === currentSubjects.length - 1
 
@@ -291,9 +281,6 @@ export default function Dashboard() {
             const subjectCell = (
               <div style={{ minWidth: 0 }}>
                 <div style={{ fontSize: '17px', fontWeight: 600, lineHeight: 1.2, color: dim ? C.faint : C.ink }}>{subject}</div>
-                <div style={{ fontSize: '14px', color: dim ? C.faint : C.muted, marginTop: '3px' }}>
-                  {code}, {Math.min(cfg.questions, 999)} questions in {durationWords(cfg.minutes)}, pass mark {passMark}%
-                </div>
               </div>
             )
 
@@ -381,7 +368,7 @@ function AskSection({ isMobile }: { isMobile: boolean }) {
         </div>
       )}
       <div style={{ marginTop: '14px', fontSize: '14px', color: C.muted }}>
-        Prefer to talk to a person? <a href="/contact" className="v1-link" style={{ color: C.ink, fontWeight: 600, textDecoration: 'none', borderBottom: `1.5px solid ${C.ink}`, paddingBottom: '1px' }}>Email support</a>
+        Prefer to talk to a person? <a href="mailto:support@v1study.com.au" className="v1-link" style={{ color: C.ink, fontWeight: 600, textDecoration: 'none', borderBottom: `1.5px solid ${C.ink}`, paddingBottom: '1px' }}>Email support</a>
       </div>
     </section>
   )
