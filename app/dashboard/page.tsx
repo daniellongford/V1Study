@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
 import { PLAN_ACCESS, COMING_SOON_LICENCES, isAdmin as checkAdmin, hasFreeAccess as checkFreeAccess } from '../../lib/access'
+import { getExamConfig, formatDuration } from '../../lib/exam-config'
 
 const subjectsByLicence: Record<string, { subject: string; code: string; passMark: number }[]> = {
   PPL: [
@@ -256,9 +257,17 @@ export default function Dashboard() {
                   </div>
                 </div>
                 {accessible ? (
-                  <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
-                    Start Quiz →
-                  </button>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    <button onClick={() => window.location.href = '/quiz/' + encodeURIComponent(subject)} style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px' }}>
+                      Start Quiz →
+                    </button>
+                    <button onClick={() => window.location.href = '/exam/' + encodeURIComponent(subject)} style={{ background: 'white', color: '#0a1628', border: '1px solid #0a1628', borderRadius: '6px', padding: '10px 12px', fontSize: '14px', fontWeight: '600', cursor: 'pointer', letterSpacing: '0.02em', minHeight: '44px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
+                      <span>Timed Exam →</span>
+                      <span style={{ fontSize: '11px', fontWeight: '500', color: '#64748b', fontFamily: 'monospace' }}>
+                        {getExamConfig(subject).questions} questions · {formatDuration(getExamConfig(subject).minutes)}
+                      </span>
+                    </button>
+                  </div>
                 ) : (
                   <a href="/pricing" style={{ background: 'white', color: '#0a1628', border: '2px solid #2563eb', borderRadius: '6px', padding: '12px', fontSize: '14px', fontWeight: '600', textAlign: 'center', textDecoration: 'none', display: 'block', minHeight: '44px', lineHeight: '20px' }}>
                     Subscribe to unlock →
