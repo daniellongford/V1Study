@@ -303,7 +303,7 @@ export default function Dashboard() {
         </div>
 
         {/* ASK */}
-        <AskSection isMobile={isMobile} />
+        <AskSection isMobile={isMobile} userEmail={user?.email || ''} />
 
         {/* FOOT */}
         <div style={{ marginTop: '3.5rem', paddingTop: '1.25rem', borderTop: `1px solid ${C.rule}`, display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', fontSize: '13px', color: C.faint }}>
@@ -317,10 +317,36 @@ export default function Dashboard() {
 
 // ── Ask section ───────────────────────────────────────────────────────────────
 
-function AskSection({ isMobile }: { isMobile: boolean }) {
+function AskSection({ isMobile, userEmail }: { isMobile: boolean; userEmail: string }) {
   const [message, setMessage] = useState('')
   const [response, setResponse] = useState('')
   const [loading, setLoading] = useState(false)
+  const [emailOpen, setEmailOpen] = useState(false)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState(userEmail)
+  const [emailMessage, setEmailMessage] = useState('')
+  const [emailSending, setEmailSending] = useState(false)
+  const [emailSent, setEmailSent] = useState(false)
+
+  useEffect(() => { if (userEmail && !email) setEmail(userEmail) }, [userEmail]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  async function handleEmailSend() {
+    if (!name.trim() || !email.trim() || !emailMessage.trim() || emailSending) return
+    setEmailSending(true)
+    try {
+      const res = await fetch('/api/support-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message: emailMessage }),
+      })
+      const data = await res.json()
+      if (data.success) setEmailSent(true)
+      else alert('Something went wrong. Please email us directly at support@v1study.com.au')
+    } catch {
+      alert('Something went wrong. Please email us directly at support@v1study.com.au')
+    }
+    setEmailSending(false)
+  }
 
   async function handleAsk() {
     if (!message.trim() || loading) return
@@ -368,8 +394,32 @@ function AskSection({ isMobile }: { isMobile: boolean }) {
         </div>
       )}
       <div style={{ marginTop: '14px', fontSize: '14px', color: C.muted }}>
-        Prefer to talk to a person? <a href="mailto:support@v1study.com.au" className="v1-link" style={{ color: C.ink, fontWeight: 600, textDecoration: 'none', borderBottom: `1.5px solid ${C.ink}`, paddingBottom: '1px' }}>Email support</a>
+        Prefer to talk to a person?{' '}
+        <button onClick={() => setEmailOpen(o => !o)} className="v1-link" style={{ background: 'none', border: 0, padding: 0, fontFamily: F, fontSize: '14px', fontWeight: 600, color: C.ink, cursor: 'pointer', borderBottom: `1.5px solid ${C.ink}` }}>
+          {emailOpen ? 'Close' : 'Email support'}
+        </button>
       </div>
+
+      {emailOpen && (
+        <div style={{ marginTop: '14px', background: C.paper, border: `1px solid ${C.rule}`, borderRadius: '8px', padding: '16px' }}>
+          {emailSent ? (
+            <div style={{ fontSize: '15px' }}>Sent. We reply within a day, to {email}.</div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '10px' }}>
+                <input type="text" placeholder="Your name" aria-label="Your name" value={name} onChange={e => setName(e.target.value)} style={{ padding: '10px 12px', border: `1px solid ${C.rule}`, borderRadius: '6px', fontSize: '16px', fontFamily: F, color: C.ink, outline: 'none' }} />
+                <input type="email" placeholder="Your email" aria-label="Your email" value={email} onChange={e => setEmail(e.target.value)} style={{ padding: '10px 12px', border: `1px solid ${C.rule}`, borderRadius: '6px', fontSize: '16px', fontFamily: F, color: C.ink, outline: 'none' }} />
+              </div>
+              <textarea placeholder="How can we help?" aria-label="Message" value={emailMessage} onChange={e => setEmailMessage(e.target.value)} rows={4} style={{ padding: '10px 12px', border: `1px solid ${C.rule}`, borderRadius: '6px', fontSize: '16px', fontFamily: F, color: C.ink, outline: 'none', resize: 'vertical', width: '100%', boxSizing: 'border-box' }} />
+              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                <button onClick={handleEmailSend} disabled={emailSending || !name.trim() || !email.trim() || !emailMessage.trim()} style={{ background: 'none', border: 0, padding: '8px 0', fontSize: '16px', fontWeight: 600, color: emailSending || !name.trim() || !email.trim() || !emailMessage.trim() ? C.faint : C.blue, cursor: emailSending || !name.trim() || !email.trim() || !emailMessage.trim() ? 'default' : 'pointer', minHeight: '44px', fontFamily: F }}>
+                  {emailSending ? 'Sending' : 'Send'}
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
     </section>
   )
 }
