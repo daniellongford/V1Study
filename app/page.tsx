@@ -26,9 +26,9 @@ function IntroAnimation({ onComplete }: { onComplete: () => void }) {
 
   return (
     <div style={{ position: 'fixed', inset: 0, zIndex: 9999, background: '#060e1c', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: phase === 4 ? 0 : 1, transition: phase === 4 ? 'opacity 0.8s ease' : 'none', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-      <div style={{ display: 'flex', alignItems: 'flex-end', lineHeight: 1 }}>
-        <span style={{ fontSize: 'clamp(80px, 18vw, 160px)', fontWeight: '800', color: '#2563eb', letterSpacing: '-4px', opacity: phase >= 1 ? 1 : 0, transform: phase >= 1 ? 'translateY(0px)' : 'translateY(30px)', transition: 'opacity 0.6s ease, transform 0.6s ease', lineHeight: 1 }}>V1</span>
-        <span style={{ fontSize: 'clamp(80px, 18vw, 160px)', fontWeight: '800', color: 'white', letterSpacing: '-4px', opacity: phase >= 2 ? 1 : 0, transform: phase >= 2 ? 'translateY(0px)' : 'translateY(30px)', transition: 'opacity 0.6s ease, transform 0.6s ease', lineHeight: 1, marginLeft: '12px' }}>Study</span>
+      <div style={{ display: 'flex', alignItems: 'flex-end', lineHeight: 1, gap: '18px' }}>
+        <img src="/v1-mark-white.png" alt="V1" style={{ height: 'clamp(70px, 16vw, 140px)', width: 'auto', opacity: phase >= 1 ? 1 : 0, transform: phase >= 1 ? 'translateY(0px)' : 'translateY(30px)', transition: 'opacity 0.6s ease, transform 0.6s ease' }} />
+        <span style={{ fontSize: 'clamp(56px, 12vw, 110px)', fontWeight: '800', color: 'white', letterSpacing: '-3px', opacity: phase >= 2 ? 1 : 0, transform: phase >= 2 ? 'translateY(0px)' : 'translateY(30px)', transition: 'opacity 0.6s ease, transform 0.6s ease', lineHeight: 1, paddingBottom: '8px' }}>Study</span>
       </div>
       <div style={{ marginTop: '20px', fontSize: 'clamp(13px, 2vw, 18px)', fontWeight: '500', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.25em', textTransform: 'uppercase', opacity: phase >= 3 ? 1 : 0, transform: phase >= 3 ? 'translateY(0px)' : 'translateY(10px)', transition: 'opacity 0.5s ease, transform 0.5s ease' }}>
         V1. Rotate. Pass.
@@ -57,10 +57,12 @@ export default function Home() {
           <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/IMG_4488.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center 35%' }} />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(8,20,40,0.30) 0%, rgba(8,20,40,0.40) 55%, rgba(8,20,40,0.65) 100%)' }} />
           <nav style={{ position: 'relative', zIndex: 10, padding: isMobile ? '1rem 1.25rem' : '1.25rem 2.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <div>
-              <span style={{ fontSize: isMobile ? '20px' : '22px', fontWeight: '800', color: 'white', textShadow: '0 1px 8px rgba(0,0,0,0.4)' }}>V1</span>
-              <span style={{ fontSize: isMobile ? '20px' : '22px', fontWeight: '800', color: 'rgba(255,255,255,0.85)', textShadow: '0 1px 8px rgba(0,0,0,0.4)' }}> Study</span>
-              {!isMobile && <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)', fontStyle: 'italic', marginTop: '1px' }}>V1. Rotate. Pass.</div>}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '9px' }}>
+              <img src="/v1-mark-white.png" alt="V1" style={{ height: isMobile ? '26px' : '30px', width: 'auto', display: 'block', filter: 'drop-shadow(0 1px 6px rgba(0,0,0,0.35))' }} />
+              <div>
+                <div style={{ fontSize: isMobile ? '20px' : '22px', fontWeight: '800', color: 'white', textShadow: '0 1px 8px rgba(0,0,0,0.4)', lineHeight: 1 }}>Study</div>
+                {!isMobile && <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)', fontStyle: 'italic', marginTop: '3px' }}>V1. Rotate. Pass.</div>}
+              </div>
             </div>
             <div style={{ display: 'flex', gap: isMobile ? '1rem' : '2rem', alignItems: 'center' }}>
               {!isMobile && <a href="#exams" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'none', fontSize: '14px', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>Exams</a>}
@@ -204,9 +206,9 @@ export default function Home() {
 
         {/* FOOTER */}
         <footer style={{ padding: isMobile ? '1.5rem 1.25rem' : '1.75rem 2.5rem', borderTop: '1px solid #e2e8f0', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', background: 'white', textAlign: isMobile ? 'center' : 'left' }}>
-          <div>
-            <span style={{ fontWeight: '800', color: '#2563eb', fontSize: '16px' }}>V1</span>
-            <span style={{ fontWeight: '800', color: '#0a1628', fontSize: '16px' }}> Study</span>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
+            <img src="/v1-mark-navy.png" alt="V1" style={{ height: '22px', width: 'auto', display: 'block' }} />
+            <span style={{ fontWeight: '800', color: '#0a1628', fontSize: '16px', lineHeight: 1 }}>Study</span>
           </div>
           <p style={{ fontSize: '13px', color: '#94a3b8', margin: 0 }}>© V1 Study · Built for Australian pilots. · <a href="/terms" style={{ color: '#94a3b8', textDecoration: 'none' }}>Terms &amp; Conditions</a></p>
         </footer>
