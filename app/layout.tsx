@@ -1,16 +1,6 @@
 export const metadata = {
-  metadataBase: new URL('https://v1study.com.au'),
   title: 'V1 Study',
-  description:
-    'Practice questions for every CASA pilot exam. PPL, CPL, ATPL and IREX, written to the Part 61 MOS with full explanations and references. 7 day free trial.',
-  openGraph: {
-    title: 'V1 Study',
-    description:
-      'Practice questions for every CASA pilot exam. PPL, CPL, ATPL and IREX, written to the Part 61 MOS with full explanations and references. 7 day free trial.',
-    url: 'https://v1study.com.au',
-    siteName: 'V1 Study',
-    type: 'website',
-  },
+  description: 'Australian Pilot Exam Prep',
 }
 
 export const viewport = {
@@ -30,6 +20,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet" />
         <style>{`
           *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
           html, body { margin: 0; padding: 0; width: 100%; max-width: 100%; overflow-x: hidden; }
