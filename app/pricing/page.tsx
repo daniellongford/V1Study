@@ -107,8 +107,9 @@ export default function PricingPage() {
 
       {/* NAV */}
       <nav style={{ background: C.paper, borderBottom: `1px solid ${C.rule}`, height: '64px', padding: isMobile ? '0 1rem' : '0 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative' }}>
-        <a href={user ? '/dashboard' : '/'} style={{ textDecoration: 'none', fontFamily: FD, fontWeight: 600, fontSize: '24px', letterSpacing: '0.01em', color: C.ink }}>
-          <span style={{ color: C.blue }}>V1</span> Study
+        <a href={user ? '/dashboard' : '/'} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '9px', color: C.ink }}>
+          <img src="/v1-mark-navy.png" alt="V1" style={{ height: '30px', width: 'auto', display: 'block' }} />
+          <span style={{ fontFamily: FD, fontWeight: 600, fontSize: '24px', letterSpacing: '0.01em', lineHeight: 1 }}>Study</span>
         </a>
         {!user ? (
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.75rem' }}>
