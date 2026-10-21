@@ -93,7 +93,7 @@ export default function TermsPage() {
         </a>
         <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
           <a href="/login" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Login</a>
-          <a href="/signup" style={{ color: '#0a1628', textDecoration: 'none', fontSize: '14px', fontWeight: '600' }}>Sign up</a>
+          <a href="/signup" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Sign up</a>
         </div>
       </nav>
 
