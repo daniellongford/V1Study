@@ -87,9 +87,9 @@ export default function TermsPage() {
   return (
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
       <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: 'clamp(0.875rem, 3vw, 1rem) clamp(1.25rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <a href="/" style={{ textDecoration: 'none' }}>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
+        <a href="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+          <img src="/v1-mark-navy.png" alt="V1" style={{ height: '26px', width: 'auto', display: 'block' }} />
+          <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628', lineHeight: 1 }}>Study</span>
         </a>
         <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
           <a href="/login" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Login</a>
@@ -116,9 +116,9 @@ export default function TermsPage() {
       </div>
 
       <footer style={{ padding: '2rem', textAlign: 'center', borderTop: '1px solid #e2e8f0', background: 'white' }}>
-        <div style={{ marginBottom: '0.5rem' }}>
-          <span style={{ fontWeight: '800', color: '#2563eb' }}>V1</span>
-          <span style={{ fontWeight: '800', color: '#0a1628' }}> Study</span>
+        <div style={{ marginBottom: '0.5rem', display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
+          <img src="/v1-mark-navy.png" alt="V1" style={{ height: '22px', width: 'auto', display: 'block' }} />
+          <span style={{ fontWeight: '800', color: '#0a1628', lineHeight: 1 }}>Study</span>
         </div>
         <p style={{ fontSize: '13px', color: '#94a3b8' }}>&copy; V1 Study &middot; Built for Australian pilots. &middot; <a href="/terms" style={{ color: '#94a3b8', textDecoration: 'none' }}>Terms &amp; Conditions</a></p>
       </footer>
