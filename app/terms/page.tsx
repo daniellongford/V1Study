@@ -91,9 +91,9 @@ export default function TermsPage() {
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
         </a>
-        <div style={{ display: 'flex', gap: 'clamp(1rem, 4vw, 1rem)', alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
           <a href="/login" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Login</a>
-          <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '8px 16px', textDecoration: 'none', fontWeight: '600', fontSize: '14px' }}>Sign up free</a>
+          <a href="/signup" style={{ color: '#0a1628', textDecoration: 'none', fontSize: '14px', fontWeight: '600' }}>Sign up</a>
         </div>
       </nav>
 
@@ -101,12 +101,12 @@ export default function TermsPage() {
         <h1 style={{ fontSize: 'clamp(28px, 7vw, 36px)', fontWeight: '800', color: '#0a1628', marginBottom: '0.5rem' }}>Terms and Conditions</h1>
         <p style={{ fontSize: '13px', color: '#94a3b8', marginBottom: '3rem' }}>V1 Study</p>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-          {sections.map((s) => (
-            <div key={s.title} style={{ background: 'white', borderRadius: '12px', padding: 'clamp(1.25rem, 4vw, 1.5rem)', border: '1px solid #e2e8f0' }}>
-              <h2 style={{ fontSize: '15px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>{s.title}</h2>
-              <p style={{ fontSize: '14px', color: '#475569', lineHeight: 1.7, margin: 0 }}>{s.content}</p>
-            </div>
+        <div>
+          {sections.map((s, i) => (
+            <section key={s.title} style={{ paddingTop: i === 0 ? 0 : '1.75rem', marginTop: i === 0 ? 0 : '1.75rem', borderTop: i === 0 ? 'none' : '1px solid #e2e8f0' }}>
+              <h2 style={{ fontSize: '16px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>{s.title}</h2>
+              <p style={{ fontSize: '15px', color: '#475569', lineHeight: 1.7, margin: 0 }}>{s.content}</p>
+            </section>
           ))}
         </div>
 
