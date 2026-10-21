@@ -95,7 +95,7 @@ export default function Home() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(4,1fr)', gap: '1.25rem' }}>
               {[
-                { title: 'PPL', full: 'Private Pilot', sub: 'Licence', exams: '1 combined exam', desc: 'Master the core theory required for your Private Pilot Licence — the essential first step for every aspiring pilot in Australia.' },
+                { title: 'PPL', full: 'Private Pilot', sub: 'Licence', exams: '1 combined exam', desc: 'Master the core theory required for your Private Pilot Licence. The essential first step for every aspiring pilot in Australia.' },
                 { title: 'CPL', full: 'Commercial Pilot', sub: 'Licence', exams: '7 exams', desc: 'All 7 CASA subjects covered in full. Built for pilots who are serious about taking their flying career to a professional level.' },
                 { title: 'ATPL', full: 'Airline Transport Pilots', sub: 'Licence', exams: '7 exams', desc: 'The highest standard in Australian pilot licensing. All 7 subjects for pilots on the path to the airline flight deck.' },
                 { title: 'IREX', full: 'Instrument Rating', sub: 'Exam', exams: '1 exam', desc: 'Everything you need to pass the CASA Instrument Rating Exam and operate confidently in instrument meteorological conditions.' },
@@ -121,75 +121,41 @@ export default function Home() {
         <section id="pricing" style={{ padding: isMobile ? '3rem 1.25rem' : '5rem 2.5rem', background: '#f8fafc' }}>
           <div style={{ maxWidth: '1060px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: isMobile ? '2rem' : '3.5rem' }}>
-              <h2 style={{ fontSize: isMobile ? '26px' : '36px', fontWeight: '800', color: '#0a1628', letterSpacing: '-0.5px' }}>Simple, Transparent Pricing.</h2>
-              <p style={{ fontSize: '16px', color: '#64748b', marginTop: '0.75rem' }}>Every plan includes a 7 day free trial. Full access from day one.</p>
+              <h2 style={{ fontSize: isMobile ? '26px' : '36px', fontWeight: '800', color: '#0a1628', letterSpacing: '-0.5px' }}>Pricing</h2>
+              <p style={{ fontSize: '16px', color: '#64748b', marginTop: '0.75rem' }}>Seven days free on every plan. Cancel anytime.</p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3,1fr)', gap: '1.25rem', marginBottom: '1.25rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(4,1fr)', gap: '1.25rem' }}>
               {[
-                { plan: 'PPL Pack', price: '$9.99', priceId: 'price_1UDInpCdMFoMcdWhqFI4pXIR', features: ['PPL Theory exam', 'Unlimited practice questions', 'Full explanations', 'CASA references'], popular: false },
-                { plan: 'CPL Pack', price: '$19.99', priceId: 'price_1UDInpCdMFoMcdWhYQDoUP5y', features: ['PPL + all 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], popular: true },
-                { plan: 'ATPL Pack', price: '$29.99', priceId: 'price_1UDInvCdMFoMcdWh7m6hD1NW', features: ['CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis'], popular: false, comingSoon: true },
+                { plan: 'PPL Pack', price: '$9.99', priceId: 'price_1UDInpCdMFoMcdWhqFI4pXIR', includes: 'PPL Theory exam', popular: false },
+                { plan: 'CPL Pack', price: '$19.99', priceId: 'price_1UDInpCdMFoMcdWhYQDoUP5y', includes: 'PPL Theory and all 7 CPL exams', popular: true },
+                { plan: 'IREX', price: '$14.99', priceId: 'price_1UDInpCdMFoMcdWhwvavh1ks', includes: 'Instrument Rating Exam only', popular: false },
+                { plan: 'Full Access', price: '$34.99', priceId: 'price_1UDInpCdMFoMcdWhHEFjZJuT', includes: 'PPL, CPL, ATPL and IREX. Priority support.', popular: false },
               ].map(function (item) {
                 return (
-                  <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '2rem', border: item.popular ? '2px solid #2563eb' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column' }}>
-                    {item.popular && (
-                      <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: 'white', color: '#2563eb', border: '2px solid #2563eb', fontSize: '10px', fontWeight: '700', padding: '3px 14px', borderRadius: '99px', whiteSpace: 'nowrap', letterSpacing: '0.08em' }}>MOST POPULAR</div>
-                    )}
-                    <div style={{ fontSize: '12px', fontWeight: '700', color: '#64748b', marginBottom: '1rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>{item.plan}</div>
-                    <div style={{ fontSize: '38px', fontWeight: '800', color: '#0a1628', lineHeight: 1, marginBottom: '0.25rem' }}>{item.price}</div>
-                    <div style={{ fontSize: '12px', color: '#94a3b8', marginBottom: '1.5rem' }}>per month</div>
-                    <div style={{ flex: 1, marginBottom: '1.5rem' }}>
-                      {item.features.map(function (f) {
-                        return (
-                          <div key={f} style={{ fontSize: '13px', color: '#475569', marginBottom: '9px', display: 'flex', alignItems: 'center', gap: '9px' }}>
-                            <span style={{ color: '#2563eb', fontWeight: '800', fontSize: '13px', flexShrink: 0 }}>✓</span>
-                            {f}
-                          </div>
-                        )
-                      })}
+                  <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '1.75rem 1.5rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ fontSize: '12px', fontWeight: '700', color: item.popular ? '#2563eb' : 'transparent', marginBottom: '6px', minHeight: '16px' }}>{item.popular ? 'Most popular' : '.'}</div>
+                    <div style={{ fontSize: '17px', fontWeight: '700', color: '#0a1628', marginBottom: '14px' }}>{item.plan}</div>
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px', marginBottom: '14px' }}>
+                      <span style={{ fontSize: '36px', fontWeight: '800', color: '#0a1628', lineHeight: 1 }}>{item.price}</span>
+                      <span style={{ fontSize: '13px', color: '#94a3b8' }}>per month</span>
                     </div>
-                    {(item as any).comingSoon ? (
-                      <div style={{ display: 'block', background: '#f1f5f9', color: '#94a3b8', border: '2px solid #f1f5f9', borderRadius: '7px', padding: '12px', fontWeight: '700', textAlign: 'center', fontSize: '14px' }}>
-                        Coming soon
-                      </div>
-                    ) : (
-                      <a href={`/signup?plan=${item.priceId}`} style={{ display: 'block', background: item.popular ? '#2563eb' : 'transparent', color: item.popular ? 'white' : '#0a1628', border: item.popular ? '2px solid #2563eb' : '2px solid #e2e8f0', borderRadius: '7px', padding: '12px', fontWeight: '700', textDecoration: 'none', textAlign: 'center', fontSize: '14px' }}>
-                        Start free trial
-                      </a>
-                    )}
+                    <div style={{ fontSize: '14px', color: '#475569', lineHeight: 1.55 }}>{item.includes}</div>
                   </div>
                 )
               })}
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(2,1fr)', gap: '1.25rem', maxWidth: '706px', margin: '0 auto' }}>
-              {[
-                { plan: 'IREX Standalone', price: '$14.99', priceId: 'price_1UDInpCdMFoMcdWhwvavh1ks', features: ['IREX exam only', 'Unlimited practice questions', 'Full explanations', 'CASA references'] },
-                { plan: 'Full Access', price: '$34.99', priceId: 'price_1UDInpCdMFoMcdWhHEFjZJuT', features: ['Every exam included', 'PPL + CPL + ATPL + IREX', 'Unlimited practice questions', 'Priority support'] },
-              ].map(function (item) {
-                return (
-                  <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '2rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
-                    <div style={{ fontSize: '12px', fontWeight: '700', color: '#64748b', marginBottom: '1rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>{item.plan}</div>
-                    <div style={{ fontSize: '38px', fontWeight: '800', color: '#0a1628', lineHeight: 1, marginBottom: '0.25rem' }}>{item.price}</div>
-                    <div style={{ fontSize: '12px', color: '#94a3b8', marginBottom: '1.5rem' }}>per month</div>
-                    <div style={{ flex: 1, marginBottom: '1.5rem' }}>
-                      {item.features.map(function (f) {
-                        return (
-                          <div key={f} style={{ fontSize: '13px', color: '#475569', marginBottom: '9px', display: 'flex', alignItems: 'center', gap: '9px' }}>
-                            <span style={{ color: '#2563eb', fontWeight: '800', fontSize: '13px', flexShrink: 0 }}>✓</span>
-                            {f}
-                          </div>
-                        )
-                      })}
-                    </div>
-                    <a href={`/signup?plan=${item.priceId}`} style={{ display: 'block', background: 'transparent', color: '#0a1628', border: '2px solid #e2e8f0', borderRadius: '7px', padding: '12px', fontWeight: '700', textDecoration: 'none', textAlign: 'center', fontSize: '14px' }}>
-                      Start free trial
-                    </a>
-                  </div>
-                )
-              })}
+            <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+              <a href="/signup" style={{ display: 'inline-block', background: 'white', color: '#0a1628', border: '1px solid #0a1628', borderRadius: '4px', padding: '15px 40px', fontWeight: '600', fontSize: '15px', textDecoration: 'none' }}>
+                Start your 7-day free trial
+              </a>
             </div>
+
+            <p style={{ fontSize: '14px', color: '#64748b', lineHeight: 1.7, marginTop: '1.5rem', textAlign: 'center' }}>
+              Every plan includes unlimited practice questions, full explanations with CASA references, timed exams and progress tracking.
+              <br />ATPL Pack, $29.99 per month, coming soon.
+            </p>
           </div>
         </section>
 
