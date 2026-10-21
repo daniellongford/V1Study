@@ -394,9 +394,9 @@ function AskSection({ isMobile, userEmail }: { isMobile: boolean; userEmail: str
         </div>
       )}
       <div style={{ marginTop: '14px', fontSize: '14px', color: C.muted }}>
-        Prefer to talk to a person?{' '}
+        Contact us at{' '}
         <button onClick={() => setEmailOpen(o => !o)} className="v1-link" style={{ background: 'none', border: 0, padding: 0, fontFamily: F, fontSize: '14px', fontWeight: 600, color: C.ink, cursor: 'pointer', borderBottom: `1.5px solid ${C.ink}` }}>
-          {emailOpen ? 'Close' : 'Email support'}
+          {emailOpen ? 'Close' : 'support@v1study.com.au'}
         </button>
       </div>
 
