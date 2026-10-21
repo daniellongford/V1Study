@@ -3,14 +3,30 @@ import { useState, useEffect } from 'react'
 import { supabase } from '../../lib/supabase'
 
 const plans = [
-  { name: 'PPL Pack', price: '$9.99', period: 'per month', priceId: 'price_1UDInpCdMFoMcdWhqFI4pXIR', planKey: 'PPL', description: 'The foundation of flight. Master the core theory required to earn your Private Pilot Licence.', features: ['PPL Theory exam', 'Unlimited practice questions', 'Full explanations', 'CASA references', 'Progress tracking'] },
-  { name: 'CPL Pack', price: '$19.99', period: 'per month', priceId: 'price_1UDInpCdMFoMcdWhYQDoUP5y', planKey: 'CPL', description: 'All 7 CASA subjects. Built for pilots serious about going professional.', features: ['PPL + all 7 CPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA syllabus aligned'] },
-  { name: 'ATPL Pack', price: '$29.99', period: 'per month', priceId: 'price_1UDInvCdMFoMcdWh7m6hD1NW', planKey: 'ATPL', comingSoon: true, description: 'The highest standard in Australian pilot licensing. All 7 subjects for pilots bound for the airlines.', features: ['PPL + CPL + all 7 ATPL exams', 'Unlimited practice questions', 'Progress tracking', 'Weak area analysis', 'CASA MOS aligned'] },
-  { name: 'IREX Standalone', price: '$14.99', period: 'per month', priceId: 'price_1UDInpCdMFoMcdWhwvavh1ks', planKey: 'IREX', description: 'Cleared for the clouds. Everything you need to pass the CASA Instrument Rating Exam.', features: ['IREX exam only', 'Unlimited practice questions', 'Full explanations', 'CASA references', 'Progress tracking'] },
-  { name: 'Full Access', price: '$34.99', period: 'per month', priceId: 'price_1UDInpCdMFoMcdWhHEFjZJuT', planKey: 'FULL', description: 'Every exam covered — the complete V1 Study experience.', features: ['All 16 exams included', 'PPL + CPL + ATPL + IREX', 'Unlimited practice questions', 'Priority support', 'CASA MOS aligned'] },
+  { name: 'PPL Pack', price: '$9.99', priceId: 'price_1UDInpCdMFoMcdWhqFI4pXIR', planKey: 'PPL', includes: 'PPL Theory. Every question, explanation and CASA reference.' },
+  { name: 'CPL Pack', price: '$19.99', priceId: 'price_1UDInpCdMFoMcdWhYQDoUP5y', planKey: 'CPL', includes: 'PPL Theory and all seven CPL exams.' },
+  { name: 'ATPL Pack', price: '$29.99', priceId: 'price_1UDInvCdMFoMcdWh7m6hD1NW', planKey: 'ATPL', comingSoon: true, includes: 'CPL Pack and all seven ATPL exams.' },
+  { name: 'IREX', price: '$14.99', priceId: 'price_1UDInpCdMFoMcdWhwvavh1ks', planKey: 'IREX', includes: 'The Instrument Rating Exam on its own.' },
+  { name: 'Full Access', price: '$34.99', priceId: 'price_1UDInpCdMFoMcdWhHEFjZJuT', planKey: 'FULL', includes: 'Every exam on the platform: PPL, CPL, ATPL and IREX. Priority support.' },
 ]
 
 const PLAN_RANK: Record<string, number> = { PPL: 1, IREX: 2, CPL: 3, ATPL: 4, FULL: 5 }
+
+// ── Design tokens ─────────────────────────────────────────────────────────────
+const F = "'Barlow', system-ui, -apple-system, sans-serif"
+const FD = "'Barlow Semi Condensed', 'Barlow', system-ui, sans-serif"
+const C = { ground: '#eef1f5', paper: '#ffffff', ink: '#0a1628', rule: '#dde3ea', muted: '#5f6c7b', faint: '#98a4b3', blue: '#2563eb', pass: '#15803d' }
+
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 820)
+    check()
+    window.addEventListener('resize', check)
+    return () => window.removeEventListener('resize', check)
+  }, [])
+  return isMobile
+}
 
 export default function PricingPage() {
   const [user, setUser] = useState<any>(null)
@@ -19,6 +35,8 @@ export default function PricingPage() {
   const [currentPlan, setCurrentPlan] = useState<string | null>(null)
   const [cancelLoading, setCancelLoading] = useState(false)
   const [cancelDone, setCancelDone] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => {
@@ -31,7 +49,7 @@ export default function PricingPage() {
   }, [])
 
   async function handleCheckout(priceId: string) {
-    if (!user) { window.location.href = '/signup'; return }
+    if (!user) { window.location.href = '/signup?plan=' + priceId; return }
     setLoading(priceId)
     try {
       const res = await fetch('/api/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ priceId, email: user.email }) })
@@ -42,7 +60,7 @@ export default function PricingPage() {
   }
 
   async function handleCancel() {
-    if (!confirm('Are you sure you want to cancel your subscription? You will lose access at the end of your billing period.')) return
+    if (!confirm('Cancel your subscription? You keep access until the end of your current billing period.')) return
     setCancelLoading(true)
     try {
       const res = await fetch('/api/cancel', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: user.email }) })
@@ -52,133 +70,162 @@ export default function PricingPage() {
     setCancelLoading(false)
   }
 
+  async function handleSignOut() {
+    await supabase.auth.signOut()
+    window.location.href = '/'
+  }
+
   function isPlanVisible(planKey: string): boolean {
     if (!currentPlan) return true
     if (currentPlan === planKey) return true
     return (PLAN_RANK[planKey] || 0) > (PLAN_RANK[currentPlan] || 0)
   }
 
-  function buttonText(plan: any) {
-    if (loading === plan.priceId) return 'Loading...'
-    if (!userLoaded) return 'Get started'
-    if (!user) return 'Sign up and subscribe'
-    if (currentPlan === plan.planKey) return '✓ Current plan'
-    return 'Upgrade now'
+  function actionText(plan: any) {
+    if (loading === plan.priceId) return 'One moment'
+    if (!userLoaded) return 'Start free trial'
+    if (!user) return 'Start free trial'
+    if (currentPlan === plan.planKey) return 'Your current plan'
+    if (currentPlan) return 'Upgrade'
+    return 'Start free trial'
   }
 
   const visiblePlans = plans.filter(p => isPlanVisible(p.planKey))
+  const current = plans.find(p => p.planKey === currentPlan)
+
+  const navLink = (href: string, label: string, active = false) => (
+    <a href={href} style={{ color: active ? C.ink : C.muted, fontWeight: active ? 600 : 400, textDecoration: 'none', fontSize: '15px', minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}>{label}</a>
+  )
 
   return (
-    <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
-      <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: 'clamp(0.875rem, 3vw, 1rem) clamp(1.25rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <a href="/" style={{ textDecoration: 'none' }}>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
+    <main style={{ minHeight: '100vh', background: C.ground, fontFamily: F, color: C.ink, WebkitFontSmoothing: 'antialiased' }}>
+      <style>{`
+        .v1-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+        :focus-visible { outline: 2px solid ${C.blue}; outline-offset: 2px; }
+      `}</style>
+
+      {/* NAV */}
+      <nav style={{ background: C.paper, borderBottom: `1px solid ${C.rule}`, height: '64px', padding: isMobile ? '0 1rem' : '0 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative' }}>
+        <a href={user ? '/dashboard' : '/'} style={{ textDecoration: 'none', fontFamily: FD, fontWeight: 600, fontSize: '24px', letterSpacing: '0.01em', color: C.ink }}>
+          <span style={{ color: C.blue }}>V1</span> Study
         </a>
-        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-          {user ? (
-            <a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Dashboard</a>
-          ) : (
-            <>
-              <a href="/login" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Login</a>
-              <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '8px 16px', textDecoration: 'none', fontWeight: '600', fontSize: '14px' }}>Sign up free</a>
-            </>
-          )}
-        </div>
+        {!user ? (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1.75rem' }}>
+            {navLink('/login', 'Log in')}
+            <a href="/signup" className="v1-link" style={{ color: C.blue, fontWeight: 600, textDecoration: 'none', fontSize: '15px', minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}>Start free trial</a>
+          </div>
+        ) : isMobile ? (
+          <>
+            <button onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu" style={{ background: 'none', border: `1px solid ${C.rule}`, borderRadius: '4px', padding: '0 12px', cursor: 'pointer', fontSize: '15px', fontWeight: 600, color: C.ink, minWidth: '44px', minHeight: '40px', fontFamily: F }}>
+              {menuOpen ? 'Close' : 'Menu'}
+            </button>
+            {menuOpen && (
+              <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: C.paper, borderBottom: `1px solid ${C.rule}`, padding: '0.5rem 1rem 1rem', display: 'flex', flexDirection: 'column', zIndex: 100 }}>
+                <a href="/dashboard" style={{ color: C.ink, textDecoration: 'none', padding: '12px 0', fontSize: '16px', borderBottom: `1px solid ${C.rule}` }}>Study</a>
+                <a href="/progress" style={{ color: C.ink, textDecoration: 'none', padding: '12px 0', fontSize: '16px', borderBottom: `1px solid ${C.rule}` }}>Progress</a>
+                <a href="/pricing" style={{ color: C.ink, fontWeight: 600, textDecoration: 'none', padding: '12px 0', fontSize: '16px', borderBottom: `1px solid ${C.rule}` }}>Upgrade</a>
+                <div style={{ padding: '12px 0 6px', fontSize: '14px', color: C.faint }}>{user?.email}</div>
+                <button onClick={handleSignOut} style={{ background: 'none', border: 'none', padding: '8px 0', fontSize: '16px', cursor: 'pointer', color: C.muted, textAlign: 'left', fontFamily: F }}>Sign out</button>
+              </div>
+            )}
+          </>
+        ) : (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1.75rem' }}>
+            {navLink('/dashboard', 'Study')}
+            {navLink('/progress', 'Progress')}
+            {navLink('/pricing', 'Upgrade', true)}
+            <span style={{ fontSize: '14px', color: C.faint }}>{user?.email}</span>
+            <button onClick={handleSignOut} style={{ background: 'none', border: `1px solid ${C.rule}`, borderRadius: '4px', padding: '7px 12px', fontSize: '14px', cursor: 'pointer', color: C.muted, fontFamily: F }}>Sign out</button>
+          </div>
+        )}
       </nav>
 
-      <div style={{ maxWidth: '1100px', margin: '0 auto', padding: 'clamp(2rem, 5vw, 3rem) clamp(1.25rem, 4vw, 2rem)' }}>
+      <div style={{ maxWidth: '1040px', margin: '0 auto', padding: isMobile ? '1.75rem 1rem 3rem' : '3rem 2rem 4rem' }}>
 
-        {/* CURRENT PLAN BANNER */}
-        {currentPlan && (
-          <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '1rem 1.5rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
-            <div>
-              <div style={{ fontSize: '13px', fontWeight: '700', color: '#0a1628', marginBottom: '2px' }}>✓ Active Plan — {plans.find(p => p.planKey === currentPlan)?.name}</div>
-              <div style={{ fontSize: '12px', color: '#64748b' }}>{plans.find(p => p.planKey === currentPlan)?.price}/month · Renews automatically</div>
-            </div>
-            <a href="/dashboard" style={{ background: '#0a1628', color: 'white', borderRadius: '8px', padding: '8px 16px', textDecoration: 'none', fontWeight: '600', fontSize: '13px' }}>Back to dashboard →</a>
-          </div>
-        )}
+        {/* HEAD */}
+        <h1 style={{ fontFamily: FD, fontWeight: 600, fontSize: isMobile ? '34px' : '44px', lineHeight: 1, letterSpacing: '-0.005em', margin: '0 0 12px' }}>
+          {currentPlan ? 'Upgrade your plan' : 'Pricing'}
+        </h1>
+        <p style={{ fontSize: '16px', lineHeight: 1.55, color: C.muted, margin: '0 0 1.75rem', maxWidth: '620px' }}>
+          {current
+            ? <>You&rsquo;re on the {current.name}, {current.price} a month. Every plan includes every question, explanation and CASA reference for the exams it covers.</>
+            : <>Seven days free on every plan, then billed monthly in Australian dollars. Cancel from your dashboard at any time.</>}
+        </p>
 
-        <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <h1 style={{ fontSize: 'clamp(28px, 7vw, 40px)', fontWeight: '800', color: '#0a1628', marginBottom: '1rem' }}>{currentPlan ? 'Upgrade your plan' : 'Simple, transparent pricing'}</h1>
-          <p style={{ fontSize: 'clamp(15px, 4vw, 18px)', color: '#64748b', maxWidth: '600px', margin: '0 auto' }}>{currentPlan ? 'Unlock more exams by upgrading to a higher plan.' : 'Every plan includes a 7 day free trial. Full access from day one.'}</p>
-        </div>
+        {/* PLAN LEDGER */}
+        <div style={{ background: C.paper, border: `1px solid ${C.rule}`, borderRadius: '8px', overflow: 'hidden' }}>
+          {visiblePlans.map((plan, idx) => {
+            const isCurrent = plan.planKey === currentPlan
+            const soon = (plan as any).comingSoon
+            const isLast = idx === visiblePlans.length - 1
+            const busy = loading === plan.priceId
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(200px,1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-          {visiblePlans.map((plan) => (
-            <div key={plan.name} style={{ background: 'white', borderRadius: '12px', padding: '1.5rem', border: plan.planKey === currentPlan ? '2px solid #0a1628' : '1px solid #e2e8f0', position: 'relative', display: 'flex', flexDirection: 'column', boxShadow: '0 1px 3px rgba(0,0,0,0.06)' }}>
-              {plan.planKey === currentPlan && <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#0a1628', color: 'white', fontSize: '11px', fontWeight: '700', padding: '3px 12px', borderRadius: '99px', whiteSpace: 'nowrap' }}>CURRENT PLAN</div>}
-              <div style={{ fontSize: '12px', fontWeight: '700', color: '#64748b', marginBottom: '8px', letterSpacing: '0.06em', textTransform: 'uppercase' }}>{plan.name}</div>
-              <div style={{ fontSize: '32px', fontWeight: '800', color: '#0a1628', lineHeight: 1 }}>{plan.price}</div>
-              <div style={{ fontSize: '12px', color: '#94a3b8', marginBottom: '12px' }}>{plan.period}</div>
-              <p style={{ fontSize: '13px', color: '#64748b', marginBottom: '16px', lineHeight: 1.5, flex: 1 }}>{plan.description}</p>
-              <div style={{ marginBottom: '1.5rem' }}>
-                {plan.features.map((f) => (
-                  <div key={f} style={{ fontSize: '13px', color: '#475569', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <span style={{ color: '#2563eb', fontWeight: '700' }}>✓</span> {f}
-                  </div>
-                ))}
+            const nameCell = (
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontSize: '17px', fontWeight: 600, lineHeight: 1.2, color: soon ? C.faint : C.ink }}>{plan.name}</div>
+                <div style={{ fontSize: '14px', color: soon ? C.faint : C.muted, marginTop: '3px' }}>{plan.includes}</div>
               </div>
-              {(plan as any).comingSoon ? (
-                <button disabled style={{ width: '100%', background: '#f1f5f9', color: '#94a3b8', border: 'none', borderRadius: '8px', padding: '10px', fontWeight: '600', cursor: 'not-allowed', fontSize: '14px' }}>
-                  Coming soon
+            )
+            const priceCell = (
+              <div style={{ textAlign: 'right', whiteSpace: 'nowrap' }}>
+                <span style={{ fontFamily: FD, fontWeight: 600, fontSize: '28px', lineHeight: 1, color: soon ? C.faint : C.ink, fontVariantNumeric: 'tabular-nums' }}>{plan.price}</span>
+                <span style={{ fontSize: '14px', color: C.muted, marginLeft: '4px' }}>a month</span>
+              </div>
+            )
+            const action = soon ? (
+              <div style={{ fontSize: '14px', color: C.faint, textAlign: isMobile ? 'left' : 'right' }}>Coming soon</div>
+            ) : isCurrent ? (
+              <div style={{ fontSize: '14px', color: C.pass, fontWeight: 600, textAlign: isMobile ? 'left' : 'right' }}>Your current plan</div>
+            ) : (
+              <div style={{ textAlign: isMobile ? 'left' : 'right' }}>
+                <button onClick={() => handleCheckout(plan.priceId)} disabled={busy} className="v1-link" style={{ background: 'none', border: 0, padding: 0, fontFamily: F, fontSize: '15px', fontWeight: 600, color: busy ? C.faint : C.blue, cursor: busy ? 'default' : 'pointer', minHeight: '44px' }}>
+                  {actionText(plan)}
                 </button>
-              ) : (
-                <button
-                  onClick={() => plan.planKey !== currentPlan && handleCheckout(plan.priceId)}
-                  disabled={loading === plan.priceId || plan.planKey === currentPlan}
-                  style={{ width: '100%', background: plan.planKey === currentPlan ? '#f8fafc' : '#2563eb', color: plan.planKey === currentPlan ? '#64748b' : 'white', border: plan.planKey === currentPlan ? '1px solid #e2e8f0' : 'none', borderRadius: '8px', padding: '10px', fontWeight: '600', cursor: plan.planKey === currentPlan ? 'default' : loading === plan.priceId ? 'not-allowed' : 'pointer', fontSize: '14px' }}
-                >
-                  {buttonText(plan)}
-                </button>
-              )}
-            </div>
-          ))}
+              </div>
+            )
+
+            if (isMobile) return (
+              <div key={plan.planKey} style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '8px 16px', padding: '1rem', borderBottom: isLast ? 'none' : `1px solid ${C.rule}`, alignItems: 'center' }}>
+                {nameCell}
+                {priceCell}
+                <div style={{ gridColumn: '1 / -1' }}>{action}</div>
+              </div>
+            )
+
+            return (
+              <div key={plan.planKey} style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 170px 170px', alignItems: 'center', gap: '1.5rem', padding: '0 1.5rem', minHeight: '76px', borderBottom: isLast ? 'none' : `1px solid ${C.rule}` }}>
+                {nameCell}
+                {priceCell}
+                {action}
+              </div>
+            )
+          })}
         </div>
 
-        {/* CANCEL */}
-        {currentPlan && !cancelDone && (
-          <div style={{ background: 'white', borderRadius: '12px', padding: 'clamp(1.25rem, 4vw, 1.5rem) clamp(1.25rem, 4vw, 2rem)', border: '1px solid #e2e8f0', marginBottom: '2rem' }}>
-            <h3 style={{ fontSize: '15px', fontWeight: '700', color: '#0a1628', marginBottom: '4px' }}>Cancel subscription</h3>
-            <p style={{ fontSize: '13px', color: '#64748b', marginBottom: '1rem' }}>You can cancel at any time. You will retain access until the end of your current billing period. For assistance contact <a href="mailto:support@v1study.com.au" style={{ color: '#2563eb' }}>support@v1study.com.au</a></p>
-            <button onClick={handleCancel} disabled={cancelLoading} style={{ background: 'none', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '8px 20px', fontSize: '13px', fontWeight: '600', color: '#64748b', cursor: cancelLoading ? 'not-allowed' : 'pointer' }}>
-              {cancelLoading ? 'Cancelling...' : 'Cancel subscription'}
-            </button>
-          </div>
-        )}
-
-        {cancelDone && (
-          <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '1.5rem 2rem', marginBottom: '2rem', textAlign: 'center' }}>
-            <div style={{ fontSize: '15px', fontWeight: '700', color: '#0a1628', marginBottom: '4px' }}>Subscription cancelled</div>
-            <p style={{ fontSize: '13px', color: '#64748b' }}>You will retain access until the end of your billing period. We hope to see you back soon.</p>
-          </div>
-        )}
-
-        <div style={{ background: 'white', borderRadius: '12px', padding: 'clamp(1.5rem, 5vw, 2rem)', border: '1px solid #e2e8f0', textAlign: 'center' }}>
-          {user ? (
-            <>
-              <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Need help choosing?</h3>
-              <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1rem' }}>Contact our team at <a href="mailto:support@v1study.com.au" style={{ color: '#2563eb', fontWeight: '600' }}>support@v1study.com.au</a></p>
-              <a href="/dashboard" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 32px', textDecoration: 'none', fontWeight: '600', fontSize: '15px', display: 'inline-block' }}>Back to dashboard →</a>
-            </>
-          ) : (
-            <>
-              <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Not sure which plan is right for you?</h3>
-              <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1rem' }}>Create a free account and explore the platform before subscribing.</p>
-              <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 32px', textDecoration: 'none', fontWeight: '600', fontSize: '15px', display: 'inline-block' }}>Create free account →</a>
-            </>
+        {/* CANCEL / HELP */}
+        <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '14px', color: C.muted, lineHeight: 1.6 }}>
+          {currentPlan && !cancelDone && (
+            <div>
+              Need to stop? You keep access until the end of the billing period.{' '}
+              <button onClick={handleCancel} disabled={cancelLoading} className="v1-link" style={{ background: 'none', border: 0, padding: 0, fontFamily: F, fontSize: '14px', fontWeight: 600, color: C.ink, cursor: cancelLoading ? 'default' : 'pointer' }}>
+                {cancelLoading ? 'Cancelling' : 'Cancel subscription'}
+              </button>
+            </div>
           )}
+          {cancelDone && (
+            <div>Subscription cancelled. You keep access until the end of your billing period.</div>
+          )}
+          <div>
+            Not sure which pack? <a href="mailto:support@v1study.com.au" className="v1-link" style={{ color: C.ink, fontWeight: 600, textDecoration: 'none' }}>Email support</a> and we&rsquo;ll point you at the right one.
+          </div>
+        </div>
+
+        {/* FOOT */}
+        <div style={{ marginTop: '3.5rem', paddingTop: '1.25rem', borderTop: `1px solid ${C.rule}`, display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', fontSize: '13px', color: C.faint }}>
+          <span>© V1 Study. Built for Australian pilots.</span>
+          <a href="/terms" style={{ color: C.faint, textDecoration: 'none' }}>Terms and conditions</a>
         </div>
       </div>
-
-      <footer style={{ padding: '2rem', textAlign: 'center', borderTop: '1px solid #e2e8f0', background: 'white' }}>
-        <div style={{ marginBottom: '0.5rem' }}>
-          <span style={{ fontWeight: '800', color: '#2563eb' }}>V1</span>
-          <span style={{ fontWeight: '800', color: '#0a1628' }}> Study</span>
-        </div>
-        <p style={{ fontSize: '13px', color: '#94a3b8' }}>© V1 Study · Built for Australian pilots. · <a href="/terms" style={{ color: '#94a3b8', textDecoration: 'none' }}>Terms &amp; Conditions</a></p>
-      </footer>
     </main>
   )
 }
