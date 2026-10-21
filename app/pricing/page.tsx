@@ -36,6 +36,7 @@ export default function PricingPage() {
   const [cancelLoading, setCancelLoading] = useState(false)
   const [cancelDone, setCancelDone] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [supportOpen, setSupportOpen] = useState(false)
   const isMobile = useIsMobile()
 
   useEffect(() => {
@@ -216,9 +217,17 @@ export default function PricingPage() {
             <div>Subscription cancelled. You keep access until the end of your billing period.</div>
           )}
           <div>
-            Not sure which pack? <a href="mailto:support@v1study.com.au" className="v1-link" style={{ color: C.ink, fontWeight: 600, textDecoration: 'none' }}>Email support</a> and we&rsquo;ll point you at the right one.
+            Not sure which pack?{' '}
+            <button onClick={() => setSupportOpen(o => !o)} className="v1-link" style={{ background: 'none', border: 0, padding: 0, fontFamily: F, fontSize: '14px', fontWeight: 600, color: C.ink, cursor: 'pointer' }}>
+              {supportOpen ? 'Close' : 'Email support'}
+            </button>
+            {!supportOpen && <> and we&rsquo;ll point you at the right one.</>}
           </div>
         </div>
+
+        {supportOpen && (
+          <SupportForm isMobile={isMobile} userEmail={user?.email || ''} />
+        )}
 
         {/* FOOT */}
         <div style={{ marginTop: '3.5rem', paddingTop: '1.25rem', borderTop: `1px solid ${C.rule}`, display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', fontSize: '13px', color: C.faint }}>
@@ -227,5 +236,60 @@ export default function PricingPage() {
         </div>
       </div>
     </main>
+  )
+}
+
+// ── Support form (same route as the contact page) ─────────────────────────────
+
+function SupportForm({ isMobile, userEmail }: { isMobile: boolean; userEmail: string }) {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState(userEmail)
+  const [message, setMessage] = useState('')
+  const [sending, setSending] = useState(false)
+  const [sent, setSent] = useState(false)
+
+  useEffect(() => { if (userEmail && !email) setEmail(userEmail) }, [userEmail]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  const ready = name.trim() && email.trim() && message.trim() && !sending
+
+  async function send() {
+    if (!ready) return
+    setSending(true)
+    try {
+      const res = await fetch('/api/support-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message }),
+      })
+      const data = await res.json()
+      if (data.success) setSent(true)
+      else alert('Something went wrong. Please email us directly at support@v1study.com.au')
+    } catch {
+      alert('Something went wrong. Please email us directly at support@v1study.com.au')
+    }
+    setSending(false)
+  }
+
+  const field = { padding: '10px 12px', border: `1px solid ${C.rule}`, borderRadius: '6px', fontSize: '16px', fontFamily: F, color: C.ink, outline: 'none', background: C.paper }
+
+  return (
+    <div style={{ marginTop: '14px', maxWidth: '720px', background: C.paper, border: `1px solid ${C.rule}`, borderRadius: '8px', padding: '16px' }}>
+      {sent ? (
+        <div style={{ fontSize: '15px' }}>Sent. We reply within a day, to {email}.</div>
+      ) : (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '10px' }}>
+            <input type="text" placeholder="Your name" aria-label="Your name" value={name} onChange={e => setName(e.target.value)} style={field} />
+            <input type="email" placeholder="Your email" aria-label="Your email" value={email} onChange={e => setEmail(e.target.value)} style={field} />
+          </div>
+          <textarea placeholder="Which exams are you sitting, and when?" aria-label="Message" value={message} onChange={e => setMessage(e.target.value)} rows={4} style={{ ...field, resize: 'vertical', width: '100%', boxSizing: 'border-box' }} />
+          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <button onClick={send} disabled={!ready} style={{ background: 'none', border: 0, padding: '8px 0', fontSize: '16px', fontWeight: 600, color: ready ? C.blue : C.faint, cursor: ready ? 'pointer' : 'default', minHeight: '44px', fontFamily: F }}>
+              {sending ? 'Sending' : 'Send'}
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
   )
 }
