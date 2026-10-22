@@ -65,7 +65,7 @@ export default function PracticeQuestion({ question }: { question: PracticeQuest
             {question.explanation}
           </div>
           {question.reference && (
-            <div style={{ fontSize: '12px', color: '#2563eb', fontFamily: 'monospace', marginTop: '8px' }}>
+            <div style={{ fontSize: '12px', color: '#22629b', fontFamily: 'monospace', marginTop: '8px' }}>
               Reference: {question.reference}
             </div>
           )}

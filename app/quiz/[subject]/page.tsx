@@ -280,7 +280,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         <div style={{ fontSize: '13px', color: '#94a3b8', fontFamily: 'monospace', marginBottom: '12px', letterSpacing: '0.08em' }}>{subject}</div>
         <h1 style={{ fontSize: '22px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Coming soon</h1>
         <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1.5rem', lineHeight: 1.6 }}>This exam is being finalised and will be available shortly. Thanks for your patience.</p>
-        <a href="/dashboard" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 28px', textDecoration: 'none', fontWeight: '600', fontSize: '14px', display: 'inline-block' }}>Back to dashboard</a>
+        <a href="/dashboard" style={{ background: '#22629b', color: 'white', borderRadius: '8px', padding: '12px 28px', textDecoration: 'none', fontWeight: '600', fontSize: '14px', display: 'inline-block' }}>Back to dashboard</a>
       </div>
     </main>
   )
@@ -292,7 +292,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         <div style={{ fontSize: '13px', color: '#94a3b8', fontFamily: 'monospace', marginBottom: '12px', letterSpacing: '0.08em' }}>{subject}</div>
         <h1 style={{ fontSize: '22px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>Subscribe to access this exam</h1>
         <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1.5rem', lineHeight: 1.6 }}>Start your 7 day free trial to unlock this subject and start practising. You won&apos;t be charged until day 7.</p>
-        <a href="/pricing" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 28px', textDecoration: 'none', fontWeight: '600', fontSize: '14px', display: 'inline-block', marginBottom: '12px' }}>View plans</a>
+        <a href="/pricing" style={{ background: '#22629b', color: 'white', borderRadius: '8px', padding: '12px 28px', textDecoration: 'none', fontWeight: '600', fontSize: '14px', display: 'inline-block', marginBottom: '12px' }}>View plans</a>
         <div><a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '13px' }}>Back to dashboard</a></div>
       </div>
     </main>
@@ -302,7 +302,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
   if (loading || !subject || !accessChecked || questions.length === 0) return (
     <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif', flexDirection: 'column', gap: '1rem' }}>
       <p style={{ color: '#64748b', fontSize: '16px' }}>Loading questions...</p>
-      <a href="/dashboard" style={{ color: '#2563eb', textDecoration: 'none' }}>Back to dashboard</a>
+      <a href="/dashboard" style={{ color: '#22629b', textDecoration: 'none' }}>Back to dashboard</a>
     </main>
   )
 
@@ -333,14 +333,14 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
             </div>
           </div>
           <div style={{ display: 'flex', gap: '8px' }}>
-            <button onClick={restart} style={{ flex: 1, background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '11px', fontWeight: '600', cursor: 'pointer', fontSize: '14px' }}>
+            <button onClick={restart} style={{ flex: 1, background: '#22629b', color: 'white', border: 'none', borderRadius: '8px', padding: '11px', fontWeight: '600', cursor: 'pointer', fontSize: '14px' }}>
               Next 10 →
             </button>
             <a href="/dashboard" style={{ flex: 1, background: '#f8fafc', color: '#0a1628', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '11px', fontWeight: '600', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>
               Dashboard
             </a>
           </div>
-          <a href="/progress" style={{ display: 'block', marginTop: '12px', fontSize: '13px', color: '#2563eb', textDecoration: 'none' }}>
+          <a href="/progress" style={{ display: 'block', marginTop: '12px', fontSize: '13px', color: '#22629b', textDecoration: 'none' }}>
             View all progress →
           </a>
         </div>
@@ -356,7 +356,7 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
       <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: 'clamp(0.875rem, 3vw, 1rem) clamp(1.25rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
+          <span style={{ fontSize: '20px', fontWeight: '800', color: '#22629b' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
@@ -370,11 +370,11 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
           Question {currentIdx + 1} of {questions.length}
         </div>
         <div style={{ background: '#e2e8f0', borderRadius: '99px', height: '4px', marginBottom: '1.5rem', overflow: 'hidden' }}>
-          <div style={{ height: '100%', background: '#2563eb', borderRadius: '99px', width: `${(currentIdx / questions.length) * 100}%`, transition: 'width 0.4s' }} />
+          <div style={{ height: '100%', background: '#22629b', borderRadius: '99px', width: `${(currentIdx / questions.length) * 100}%`, transition: 'width 0.4s' }} />
         </div>
 
         <div style={{ background: 'white', borderRadius: '12px', padding: 'clamp(1.25rem, 4vw, 1.5rem)', border: '1px solid #e2e8f0', marginBottom: '1rem' }}>
-          <div style={{ fontSize: '11px', fontWeight: '600', color: '#2563eb', marginBottom: '10px', fontFamily: 'monospace' }}>{subject}</div>
+          <div style={{ fontSize: '11px', fontWeight: '600', color: '#22629b', marginBottom: '10px', fontFamily: 'monospace' }}>{subject}</div>
           <div style={{ fontSize: '16px', fontWeight: '600', color: '#0a1628', lineHeight: 1.55, marginBottom: '1.25rem' }}>{q.question}</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {q.options.map((opt: string, i: number) => {
@@ -404,12 +404,12 @@ export default function QuizPage({ params }: { params: Promise<{ subject: string
         </div>
 
         {answered && (
-          <div style={{ background: '#f0f7ff', border: '1px solid #bfdbfe', borderRadius: '12px', padding: '1.25rem', marginBottom: '1rem' }}>
-            <div style={{ fontSize: '13px', fontWeight: '600', color: '#1d4ed8', marginBottom: '8px' }}>Explanation</div>
+          <div style={{ background: '#eef4f9', border: '1px solid #c5dbec', borderRadius: '12px', padding: '1.25rem', marginBottom: '1rem' }}>
+            <div style={{ fontSize: '13px', fontWeight: '600', color: '#1a4f80', marginBottom: '8px' }}>Explanation</div>
             <p style={{ fontSize: '13px', lineHeight: 1.65, color: '#1e3a6e', marginBottom: '12px' }}>{q.explanation}</p>
-            <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '10px', marginBottom: '12px' }}>
-              <div style={{ fontSize: '10px', fontFamily: 'monospace', color: '#2563eb', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Reference — verify this yourself</div>
-              <div style={{ fontSize: '12px', color: '#3b82f6', fontFamily: 'monospace' }}>{q.reference}</div>
+            <div style={{ borderTop: '1px solid #c5dbec', paddingTop: '10px', marginBottom: '12px' }}>
+              <div style={{ fontSize: '10px', fontFamily: 'monospace', color: '#22629b', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Reference — verify this yourself</div>
+              <div style={{ fontSize: '12px', color: '#3a7fb8', fontFamily: 'monospace' }}>{q.reference}</div>
             </div>
             <AiHelpPanel question={q} subject={subject} selectedAnswer={selectedAnswer} />
           </div>
@@ -469,42 +469,42 @@ function AiHelpPanel({ question, subject, selectedAnswer }: { question: any; sub
   }
 
   return (
-    <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '12px' }}>
+    <div style={{ borderTop: '1px solid #c5dbec', paddingTop: '12px' }}>
       {!open ? (
         <button
           onClick={() => setOpen(true)}
-          style={{ background: 'none', border: '1px solid #2563eb', borderRadius: '8px', padding: '8px 16px', fontSize: '13px', fontWeight: '600', color: '#2563eb', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
+          style={{ background: 'none', border: '1px solid #22629b', borderRadius: '8px', padding: '8px 16px', fontSize: '13px', fontWeight: '600', color: '#22629b', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
         >
           💬 Still confused? Ask for more help
         </button>
       ) : (
         <div>
-          <div style={{ fontSize: '12px', fontWeight: '700', color: '#1d4ed8', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Ask a follow-up question</div>
+          <div style={{ fontSize: '12px', fontWeight: '700', color: '#1a4f80', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Ask a follow-up question</div>
           <textarea
             placeholder={`Ask anything about this question — e.g. "Can you explain why option A is wrong?" or "Give me a real world example"`}
             value={userMessage}
             onChange={e => setUserMessage(e.target.value)}
             rows={3}
-            style={{ width: '100%', padding: '10px 14px', border: '1px solid #bfdbfe', borderRadius: '8px', fontSize: '14px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '8px', background: 'white' }}
+            style={{ width: '100%', padding: '10px 14px', border: '1px solid #c5dbec', borderRadius: '8px', fontSize: '14px', outline: 'none', resize: 'none', fontFamily: 'system-ui,sans-serif', boxSizing: 'border-box', marginBottom: '8px', background: 'white' }}
           />
           <div style={{ display: 'flex', gap: '8px', marginBottom: response ? '12px' : '0' }}>
             <button
               onClick={handleAsk}
               disabled={loading || !userMessage.trim()}
-              style={{ background: loading || !userMessage.trim() ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '9px 18px', fontSize: '13px', fontWeight: '600', cursor: loading || !userMessage.trim() ? 'not-allowed' : 'pointer' }}
+              style={{ background: loading || !userMessage.trim() ? '#94a3b8' : '#22629b', color: 'white', border: 'none', borderRadius: '8px', padding: '9px 18px', fontSize: '13px', fontWeight: '600', cursor: loading || !userMessage.trim() ? 'not-allowed' : 'pointer' }}
             >
               {loading ? 'Thinking...' : 'Ask →'}
             </button>
             <button
               onClick={() => { setOpen(false); setResponse(''); setUserMessage('') }}
-              style={{ background: 'none', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '9px 14px', fontSize: '13px', color: '#64748b', cursor: 'pointer' }}
+              style={{ background: 'none', border: '1px solid #c5dbec', borderRadius: '8px', padding: '9px 14px', fontSize: '13px', color: '#64748b', cursor: 'pointer' }}
             >
               Close
             </button>
           </div>
           {response && (
-            <div style={{ background: 'white', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '1rem', fontSize: '13px', color: '#1e3a6e', lineHeight: 1.7 }}>
-              <div style={{ fontSize: '10px', fontWeight: '700', color: '#2563eb', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
+            <div style={{ background: 'white', border: '1px solid #c5dbec', borderRadius: '8px', padding: '1rem', fontSize: '13px', color: '#1e3a6e', lineHeight: 1.7 }}>
+              <div style={{ fontSize: '10px', fontWeight: '700', color: '#22629b', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>V1 Study Assistant</div>
               {response.split(/\n\s*\n|\n/).filter((p: string) => p.trim()).map((para: string, i: number) => (
                 <p key={i} style={{ margin: i === 0 ? '0' : '0.75rem 0 0 0' }}>{para.trim()}</p>
               ))}
@@ -586,7 +586,7 @@ function FlagPanel({ question, subject, userId, userEmail }: { question: any; su
           <button
             key={r}
             onClick={() => setReason(r)}
-            style={{ textAlign: 'left', padding: '8px 12px', borderRadius: '8px', border: reason === r ? '2px solid #2563eb' : '1px solid #e2e8f0', background: reason === r ? '#eff6ff' : 'white', fontSize: '13px', color: '#0a1628', cursor: 'pointer' }}
+            style={{ textAlign: 'left', padding: '8px 12px', borderRadius: '8px', border: reason === r ? '2px solid #22629b' : '1px solid #e2e8f0', background: reason === r ? '#eaf1f7' : 'white', fontSize: '13px', color: '#0a1628', cursor: 'pointer' }}
           >
             {r}
           </button>
@@ -605,7 +605,7 @@ function FlagPanel({ question, subject, userId, userEmail }: { question: any; su
         <button
           onClick={handleSubmit}
           disabled={!reason || loading}
-          style={{ background: !reason || loading ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '9px 18px', fontSize: '13px', fontWeight: '600', cursor: !reason || loading ? 'not-allowed' : 'pointer' }}
+          style={{ background: !reason || loading ? '#94a3b8' : '#22629b', color: 'white', border: 'none', borderRadius: '8px', padding: '9px 18px', fontSize: '13px', fontWeight: '600', cursor: !reason || loading ? 'not-allowed' : 'pointer' }}
         >
           {loading ? 'Sending...' : 'Submit flag'}
         </button>

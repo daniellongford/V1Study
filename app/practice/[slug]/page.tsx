@@ -60,17 +60,17 @@ export default async function PracticePage({ params }: { params: Promise<{ slug:
 
       <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: 'clamp(0.875rem, 3vw, 1rem) clamp(1.25rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <a href="/" style={{ textDecoration: 'none' }}>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
+          <span style={{ fontSize: '20px', fontWeight: '800', color: '#22629b' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
         </a>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
           <a href="/login" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Login</a>
-          <a href="/signup" style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '8px 16px', textDecoration: 'none', fontWeight: '600', fontSize: '14px' }}>Sign up free</a>
+          <a href="/signup" style={{ background: '#22629b', color: 'white', borderRadius: '8px', padding: '8px 16px', textDecoration: 'none', fontWeight: '600', fontSize: '14px' }}>Sign up free</a>
         </div>
       </nav>
 
       <article style={{ maxWidth: '640px', margin: '0 auto', padding: 'clamp(2.5rem, 6vw, 4rem) clamp(1.25rem, 4vw, 2rem)', flex: 1, width: '100%' }}>
-        <div style={{ display: 'inline-block', fontSize: '11px', fontWeight: '700', color: '#2563eb', fontFamily: 'monospace', letterSpacing: '0.06em', background: '#eff6ff', padding: '3px 8px', borderRadius: '4px', marginBottom: '12px' }}>
+        <div style={{ display: 'inline-block', fontSize: '11px', fontWeight: '700', color: '#22629b', fontFamily: 'monospace', letterSpacing: '0.06em', background: '#eaf1f7', padding: '3px 8px', borderRadius: '4px', marginBottom: '12px' }}>
           {entry.code}
         </div>
 
@@ -85,7 +85,7 @@ export default async function PracticePage({ params }: { params: Promise<{ slug:
         <PracticeQuestion question={question} />
 
         <div style={{ marginTop: '2rem', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-          <a href={signupHref} style={{ display: 'inline-block', background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 24px', fontWeight: '600', fontSize: '15px', textDecoration: 'none' }}>
+          <a href={signupHref} style={{ display: 'inline-block', background: '#22629b', color: 'white', borderRadius: '8px', padding: '12px 24px', fontWeight: '600', fontSize: '15px', textDecoration: 'none' }}>
             Start your 7 day free trial →
           </a>
           <span style={{ fontSize: '13px', color: '#94a3b8' }}>{licenceNote[entry.licence]}</span>
@@ -94,7 +94,7 @@ export default async function PracticePage({ params }: { params: Promise<{ slug:
 
       <footer style={{ padding: '2rem', textAlign: 'center', borderTop: '1px solid #e2e8f0', background: 'white' }}>
         <div style={{ marginBottom: '0.5rem' }}>
-          <span style={{ fontWeight: '800', color: '#2563eb' }}>V1</span>
+          <span style={{ fontWeight: '800', color: '#22629b' }}>V1</span>
           <span style={{ fontWeight: '800', color: '#0a1628' }}> Study</span>
         </div>
         <p style={{ fontSize: '13px', color: '#94a3b8' }}>© V1 Study · Built for Australian pilots. · <a href="/terms" style={{ color: '#94a3b8', textDecoration: 'none' }}>Terms &amp; Conditions</a></p>

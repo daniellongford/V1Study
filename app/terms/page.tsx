@@ -111,7 +111,7 @@ export default function TermsPage() {
         </div>
 
         <div style={{ marginTop: '3rem', textAlign: 'center' }}>
-          <p style={{ fontSize: '13px', color: '#94a3b8' }}>Questions about these terms? Contact us at <a href="mailto:support@v1study.com.au" style={{ color: '#2563eb' }}>support@v1study.com.au</a></p>
+          <p style={{ fontSize: '13px', color: '#94a3b8' }}>Questions about these terms? Contact us at <a href="mailto:support@v1study.com.au" style={{ color: '#22629b' }}>support@v1study.com.au</a></p>
         </div>
       </div>
 

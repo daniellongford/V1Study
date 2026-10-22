@@ -5,7 +5,7 @@ import { supabase } from '../../lib/supabase'
 // ── Design tokens ─────────────────────────────────────────────────────────────
 const F = "'Barlow', system-ui, -apple-system, sans-serif"
 const FD = "'Barlow Semi Condensed', 'Barlow', system-ui, sans-serif"
-const C = { ground: '#eef1f5', paper: '#ffffff', ink: '#0a1628', rule: '#dde3ea', muted: '#5f6c7b', faint: '#98a4b3', blue: '#2563eb', pass: '#15803d' }
+const C = { ground: '#eef1f5', paper: '#ffffff', ink: '#0a1628', rule: '#dde3ea', muted: '#5f6c7b', faint: '#98a4b3', blue: '#22629b', pass: '#15803d' }
 
 const AIR_LAW = ['Flight Rules and Air Law', 'Air Law', 'Air Law Advanced']
 function passMarkFor(subject: string): number {

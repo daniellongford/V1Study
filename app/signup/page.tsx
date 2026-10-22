@@ -74,11 +74,11 @@ function SignUpInner() {
   }
 
   return (
-    <main style={{ minHeight: '100vh', background: 'linear-gradient(180deg,#eff6ff 0%,#ffffff 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif', padding: 'clamp(1rem, 4vw, 2rem)' }}>
+    <main style={{ minHeight: '100vh', background: 'linear-gradient(180deg,#eaf1f7 0%,#ffffff 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif', padding: 'clamp(1rem, 4vw, 2rem)' }}>
       <div style={{ background: 'white', borderRadius: '16px', padding: 'clamp(1.5rem, 5vw, 2.5rem)', width: '100%', maxWidth: '460px', border: '1px solid #e2e8f0' }}>
         <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
           <div style={{ marginBottom: '8px' }}>
-            <span style={{ fontSize: '24px', fontWeight: '800', color: '#2563eb' }}>V1</span>
+            <span style={{ fontSize: '24px', fontWeight: '800', color: '#22629b' }}>V1</span>
             <span style={{ fontSize: '24px', fontWeight: '800', color: '#0a1628' }}> Study</span>
           </div>
           <h1 style={{ fontSize: '22px', fontWeight: '700', color: '#0a1628', marginTop: '1rem' }}>Start your 7 day free trial</h1>
@@ -100,8 +100,8 @@ function SignUpInner() {
                   style={{
                     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                     padding: '12px 14px', borderRadius: '10px', cursor: disabled ? 'not-allowed' : 'pointer',
-                    border: isSelected ? '2px solid #2563eb' : '1px solid #e2e8f0',
-                    background: isSelected ? '#eff6ff' : disabled ? '#f8fafc' : 'white',
+                    border: isSelected ? '2px solid #22629b' : '1px solid #e2e8f0',
+                    background: isSelected ? '#eaf1f7' : disabled ? '#f8fafc' : 'white',
                     textAlign: 'left', opacity: disabled ? 0.6 : 1,
                   }}
                 >
@@ -112,7 +112,7 @@ function SignUpInner() {
                     </div>
                     <div style={{ fontSize: '12px', color: '#94a3b8' }}>{plan.blurb}</div>
                   </div>
-                  <div style={{ fontSize: '15px', fontWeight: '700', color: isSelected ? '#2563eb' : '#0a1628', flexShrink: 0 }}>{plan.price}<span style={{ fontSize: '11px', color: '#94a3b8', fontWeight: '400' }}>/mo</span></div>
+                  <div style={{ fontSize: '15px', fontWeight: '700', color: isSelected ? '#22629b' : '#0a1628', flexShrink: 0 }}>{plan.price}<span style={{ fontSize: '11px', color: '#94a3b8', fontWeight: '400' }}>/mo</span></div>
                 </button>
               )
             })}
@@ -152,7 +152,7 @@ function SignUpInner() {
           />
           <label htmlFor="terms" style={{ fontSize: '13px', color: '#475569', lineHeight: 1.5, cursor: 'pointer' }}>
             I agree to the{' '}
-            <a href="/terms" target="_blank" style={{ color: '#2563eb', fontWeight: '600', textDecoration: 'none' }}>Terms and Conditions</a>
+            <a href="/terms" target="_blank" style={{ color: '#22629b', fontWeight: '600', textDecoration: 'none' }}>Terms and Conditions</a>
           </label>
         </div>
 
@@ -165,7 +165,7 @@ function SignUpInner() {
         <button
           onClick={handleSignUp}
           disabled={loading || !agreed}
-          style={{ width: '100%', background: loading || !agreed ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '13px', fontSize: '15px', fontWeight: '600', cursor: loading || !agreed ? 'not-allowed' : 'pointer', marginBottom: '1rem' }}
+          style={{ width: '100%', background: loading || !agreed ? '#94a3b8' : '#22629b', color: 'white', border: 'none', borderRadius: '8px', padding: '13px', fontSize: '15px', fontWeight: '600', cursor: loading || !agreed ? 'not-allowed' : 'pointer', marginBottom: '1rem' }}
         >
           {loading ? 'Starting your trial...' : 'Start free trial'}
         </button>
@@ -176,7 +176,7 @@ function SignUpInner() {
 
         <p style={{ textAlign: 'center', fontSize: '13px', color: '#64748b' }}>
           Already have an account?{' '}
-          <a href="/login" style={{ color: '#2563eb', fontWeight: '600', textDecoration: 'none' }}>Log in</a>
+          <a href="/login" style={{ color: '#22629b', fontWeight: '600', textDecoration: 'none' }}>Log in</a>
         </p>
       </div>
     </main>

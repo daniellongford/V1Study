@@ -1,5 +1,6 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { TOOLS } from '../lib/tools'
 
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false)
@@ -40,7 +41,18 @@ function IntroAnimation({ onComplete }: { onComplete: () => void }) {
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true)
   const [contentVisible, setContentVisible] = useState(false)
+  const [toolsOpen, setToolsOpen] = useState(false)
+  const toolsRef = useRef<HTMLDivElement | null>(null)
   const isMobile = useIsMobile()
+
+  useEffect(() => {
+    if (!toolsOpen) return
+    const close = (e: MouseEvent) => { if (toolsRef.current && !toolsRef.current.contains(e.target as Node)) setToolsOpen(false) }
+    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape') setToolsOpen(false) }
+    document.addEventListener('mousedown', close)
+    document.addEventListener('keydown', esc)
+    return () => { document.removeEventListener('mousedown', close); document.removeEventListener('keydown', esc) }
+  }, [toolsOpen])
 
   function handleIntroComplete() {
     setShowIntro(false)
@@ -67,6 +79,29 @@ export default function Home() {
             <div style={{ display: 'flex', gap: isMobile ? '1rem' : '2rem', alignItems: 'center' }}>
               {!isMobile && <a href="#exams" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'none', fontSize: '14px', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>Exams</a>}
               {!isMobile && <a href="#pricing" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'none', fontSize: '14px', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>Pricing</a>}
+              {isMobile ? (
+                <a href="/tools" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'none', fontSize: '14px', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>Tools</a>
+              ) : (
+                <div ref={toolsRef} style={{ position: 'relative' }}>
+                  <button onClick={() => setToolsOpen(o => !o)} aria-haspopup="menu" aria-expanded={toolsOpen} style={{ background: 'none', border: 'none', padding: 0, color: 'rgba(255,255,255,0.85)', fontSize: '14px', cursor: 'pointer', fontFamily: 'inherit', textShadow: '0 1px 6px rgba(0,0,0,0.4)', display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                    Tools
+                    <span aria-hidden="true" style={{ display: 'inline-block', width: '6px', height: '6px', borderRight: '1.5px solid currentColor', borderBottom: '1.5px solid currentColor', transform: toolsOpen ? 'rotate(-135deg) translate(-1px, -1px)' : 'rotate(45deg) translateY(-2px)' }} />
+                  </button>
+                  {toolsOpen && (
+                    <div role="menu" style={{ position: 'absolute', top: 'calc(100% + 14px)', left: '50%', transform: 'translateX(-50%)', background: 'white', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '8px 0', minWidth: '260px', boxShadow: '0 12px 32px rgba(10,22,40,0.18)', zIndex: 50 }}>
+                      <div style={{ padding: '6px 16px 8px', fontSize: '11px', color: '#94a3b8' }}>Free</div>
+                      {TOOLS.filter(t => t.free).map(t => (
+                        <a key={t.slug} role="menuitem" href={`/tools/${t.slug}`} style={{ display: 'block', padding: '9px 16px', fontSize: '14px', color: '#0a1628', textDecoration: 'none', fontWeight: '500' }}>{t.name}</a>
+                      ))}
+                      <div style={{ padding: '10px 16px 8px', fontSize: '11px', color: '#94a3b8', borderTop: '1px solid #e2e8f0', marginTop: '6px' }}>Members</div>
+                      {TOOLS.filter(t => !t.free).map(t => (
+                        <a key={t.slug} role="menuitem" href={`/tools/${t.slug}`} style={{ display: 'block', padding: '9px 16px', fontSize: '14px', color: '#0a1628', textDecoration: 'none', fontWeight: '500' }}>{t.name}</a>
+                      ))}
+                      <a role="menuitem" href="/tools" style={{ display: 'block', padding: '10px 16px 6px', fontSize: '13px', color: '#22629b', textDecoration: 'none', fontWeight: '600', borderTop: '1px solid #e2e8f0', marginTop: '6px' }}>All tools</a>
+                    </div>
+                  )}
+                </div>
+              )}
               <a href="/login" style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'none', fontSize: '14px', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>Login</a>
               <a href="/signup" style={{ color: 'white', textDecoration: 'none', fontSize: '14px', fontWeight: isMobile ? '600' : '400', textShadow: '0 1px 6px rgba(0,0,0,0.4)' }}>Sign up</a>
             </div>
@@ -103,8 +138,8 @@ export default function Home() {
                 return (
                   <div key={item.title} style={{ background: '#f8fafc', borderRadius: '12px', padding: '1.75rem 1.5rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
                     <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', margin: '0 0 6px', lineHeight: 1.3, minHeight: isMobile ? 'auto' : '47px' }}>{item.full}<br />{(item as any).sub}</h3>
-                    <div style={{ fontSize: '13px', color: '#2563eb', fontWeight: '600', marginBottom: '0.75rem' }}>{item.exams}</div>
-                    <div style={{ width: '24px', height: '2px', background: '#2563eb', borderRadius: '99px', marginBottom: '0.75rem' }} />
+                    <div style={{ fontSize: '13px', color: '#22629b', fontWeight: '600', marginBottom: '0.75rem' }}>{item.exams}</div>
+                    <div style={{ width: '24px', height: '2px', background: '#22629b', borderRadius: '99px', marginBottom: '0.75rem' }} />
                     <div style={{ fontSize: '14px', color: '#64748b', lineHeight: 1.6 }}>{item.desc}</div>
                   </div>
                 )
@@ -144,7 +179,7 @@ export default function Home() {
                   <div key={item.plan} style={{ background: 'white', borderRadius: '12px', padding: '1.75rem 1.5rem', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
                     <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: '8px', marginBottom: '14px' }}>
                       <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0a1628', margin: 0, lineHeight: 1.3 }}>{item.plan}</h3>
-                      {item.popular && <span style={{ fontSize: '12px', fontWeight: '600', color: '#2563eb', whiteSpace: 'nowrap' }}>Most popular</span>}
+                      {item.popular && <span style={{ fontSize: '12px', fontWeight: '600', color: '#22629b', whiteSpace: 'nowrap' }}>Most popular</span>}
                     </div>
                     <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px', marginBottom: '14px' }}>
                       <span style={{ fontSize: '36px', fontWeight: '800', color: '#0a1628', lineHeight: 1 }}>{item.price}</span>
