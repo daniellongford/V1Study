@@ -113,6 +113,18 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ABOUT */}
+        <section style={{ padding: isMobile ? '3.5rem 1.25rem' : '6rem 2.5rem', background: '#ffffff', borderTop: '1px solid #e2e8f0' }}>
+          <div style={{ maxWidth: '1060px', margin: '0 auto' }}>
+            <div style={{ maxWidth: '640px' }}>
+              <h2 style={{ fontSize: isMobile ? '26px' : '32px', fontWeight: '700', color: '#0a1628', letterSpacing: '-0.3px', margin: '0 0 1rem', lineHeight: 1.15 }}>Made by a pilot. For pilots.</h2>
+              <p style={{ fontSize: '17px', lineHeight: 1.7, color: '#334155', margin: 0 }}>
+                V1 Study is written and maintained by a current Airbus pilot who flew and instructed in general aviation. Most practice material gives you the answer without the reason, and the reason is what gets you through a CASA exam. Every question on V1 Study comes with a worked explanation and the exact CASA reference behind it, so what you learn in practice holds up in the exam room.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* PRICING */}
         <section id="pricing" style={{ padding: isMobile ? '3.5rem 1.25rem' : '6rem 2.5rem', background: '#f8fafc' }}>
           <div style={{ maxWidth: '1060px', margin: '0 auto' }}>
