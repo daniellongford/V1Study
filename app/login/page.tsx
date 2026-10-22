@@ -23,7 +23,7 @@ export default function Login() {
   return (
     <main style={{
       minHeight: '100vh',
-      background: 'linear-gradient(180deg,#eff6ff 0%,#ffffff 100%)',
+      background: 'linear-gradient(180deg,#eaf1f7 0%,#ffffff 100%)',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       fontFamily: 'system-ui,sans-serif',
       padding: '1.25rem',
@@ -34,7 +34,7 @@ export default function Login() {
       }}>
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <div style={{ marginBottom: '8px' }}>
-            <span style={{ fontSize: '24px', fontWeight: '800', color: '#2563eb' }}>V1</span>
+            <span style={{ fontSize: '24px', fontWeight: '800', color: '#22629b' }}>V1</span>
             <span style={{ fontSize: '24px', fontWeight: '800', color: '#0a1628' }}> Study</span>
           </div>
           <p style={{ fontSize: '12px', color: '#64748b', fontStyle: 'italic' }}>V1. Rotate. Pass.</p>
@@ -75,7 +75,7 @@ export default function Login() {
         </div>
 
         <div style={{ textAlign: 'right', marginBottom: '1.5rem' }}>
-          <a href="/forgot-password" style={{ fontSize: '13px', color: '#2563eb', textDecoration: 'none' }}>Forgot your password?</a>
+          <a href="/forgot-password" style={{ fontSize: '13px', color: '#22629b', textDecoration: 'none' }}>Forgot your password?</a>
         </div>
 
         {message && (
@@ -88,7 +88,7 @@ export default function Login() {
           onClick={handleLogin}
           disabled={loading}
           style={{
-            width: '100%', background: loading ? '#94a3b8' : '#2563eb',
+            width: '100%', background: loading ? '#94a3b8' : '#22629b',
             color: 'white', border: 'none', borderRadius: '8px',
             padding: '14px', fontSize: '16px', fontWeight: '600',
             cursor: loading ? 'not-allowed' : 'pointer', marginBottom: '1rem',
@@ -100,7 +100,7 @@ export default function Login() {
 
         <p style={{ textAlign: 'center', fontSize: '14px', color: '#64748b' }}>
           Don&apos;t have an account?{' '}
-          <a href="/signup" style={{ color: '#2563eb', fontWeight: '600', textDecoration: 'none' }}>Sign up free</a>
+          <a href="/signup" style={{ color: '#22629b', fontWeight: '600', textDecoration: 'none' }}>Sign up free</a>
         </p>
       </div>
     </main>

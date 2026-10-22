@@ -23,11 +23,11 @@ export default function ForgotPassword() {
   }
 
   return (
-    <main style={{minHeight:'100vh',background:'linear-gradient(180deg,#eff6ff 0%,#ffffff 100%)',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:'system-ui,sans-serif',padding:'2rem'}}>
+    <main style={{minHeight:'100vh',background:'linear-gradient(180deg,#eaf1f7 0%,#ffffff 100%)',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:'system-ui,sans-serif',padding:'2rem'}}>
       <div style={{background:'white',borderRadius:'16px',padding:'2.5rem',width:'100%',maxWidth:'420px',border:'1px solid #e2e8f0'}}>
         <div style={{textAlign:'center',marginBottom:'2rem'}}>
           <div style={{marginBottom:'8px'}}>
-            <span style={{fontSize:'24px',fontWeight:'800',color:'#2563eb'}}>V1</span>
+            <span style={{fontSize:'24px',fontWeight:'800',color:'#22629b'}}>V1</span>
             <span style={{fontSize:'24px',fontWeight:'800',color:'#0a1628'}}> Study</span>
           </div>
           <p style={{fontSize:'12px',color:'#64748b',fontStyle:'italic'}}>V1. Rotate. Pass.</p>
@@ -65,7 +65,7 @@ export default function ForgotPassword() {
             <button
               onClick={handleReset}
               disabled={loading}
-              style={{width:'100%',background:loading?'#94a3b8':'#2563eb',color:'white',border:'none',borderRadius:'8px',padding:'12px',fontSize:'15px',fontWeight:'600',cursor:loading?'not-allowed':'pointer',marginBottom:'1rem'}}
+              style={{width:'100%',background:loading?'#94a3b8':'#22629b',color:'white',border:'none',borderRadius:'8px',padding:'12px',fontSize:'15px',fontWeight:'600',cursor:loading?'not-allowed':'pointer',marginBottom:'1rem'}}
             >
               {loading ? 'Sending...' : 'Send reset link'}
             </button>
@@ -83,7 +83,7 @@ export default function ForgotPassword() {
         )}
         <p style={{textAlign:'center',fontSize:'13px',color:'#64748b'}}>
           Remember your password?{' '}
-          <a href="/login" style={{color:'#2563eb',fontWeight:'600',textDecoration:'none'}}>Log in</a>
+          <a href="/login" style={{color:'#22629b',fontWeight:'600',textDecoration:'none'}}>Log in</a>
         </p>
       </div>
     </main>

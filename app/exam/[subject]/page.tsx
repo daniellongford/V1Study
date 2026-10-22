@@ -234,7 +234,7 @@ export default function ExamPage({ params }: { params: Promise<{ subject: string
   if (!subject || !accessChecked) return (
     <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'system-ui,sans-serif', flexDirection: 'column', gap: '1rem' }}>
       <p style={{ color: '#64748b', fontSize: '16px' }}>Loading...</p>
-      <a href="/dashboard" style={{ color: '#2563eb', textDecoration: 'none' }}>Back to dashboard</a>
+      <a href="/dashboard" style={{ color: '#22629b', textDecoration: 'none' }}>Back to dashboard</a>
     </main>
   )
 
@@ -249,7 +249,7 @@ export default function ExamPage({ params }: { params: Promise<{ subject: string
       <TopBar />
       <div style={{ maxWidth: '560px', margin: '0 auto', padding: 'clamp(1.5rem, 5vw, 3rem) clamp(1.25rem, 4vw, 2rem)' }}>
         <div style={{ background: 'white', borderRadius: '12px', border: '1px solid #e2e8f0', padding: 'clamp(1.5rem, 5vw, 2.25rem)' }}>
-          <div style={{ fontSize: '11px', fontWeight: '700', color: '#2563eb', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '8px' }}>TIMED EXAM</div>
+          <div style={{ fontSize: '11px', fontWeight: '700', color: '#22629b', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '8px' }}>TIMED EXAM</div>
           <h1 style={{ fontSize: '24px', fontWeight: '700', color: '#0a1628', margin: '0 0 1.25rem' }}>{subject}</h1>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', marginBottom: '1.5rem' }}>
@@ -337,7 +337,7 @@ export default function ExamPage({ params }: { params: Promise<{ subject: string
               {scoreSaved && <div style={{ fontSize: '12px', color: '#10b981', marginTop: '4px' }}>Result saved to your progress</div>}
             </div>
             <div style={{ display: 'flex', gap: '8px', marginLeft: 'auto', flexWrap: 'wrap' }}>
-              <button onClick={() => { setPhase('intro'); setCurrent(0) }} style={{ background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '11px 18px', fontWeight: '600', cursor: 'pointer', fontSize: '14px', minHeight: '44px' }}>Sit again</button>
+              <button onClick={() => { setPhase('intro'); setCurrent(0) }} style={{ background: '#22629b', color: 'white', border: 'none', borderRadius: '8px', padding: '11px 18px', fontWeight: '600', cursor: 'pointer', fontSize: '14px', minHeight: '44px' }}>Sit again</button>
               <a href="/progress" style={{ background: 'white', color: '#0a1628', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '11px 18px', fontWeight: '600', textDecoration: 'none', fontSize: '14px', display: 'inline-flex', alignItems: 'center', minHeight: '44px', boxSizing: 'border-box' }}>Progress</a>
               <a href="/dashboard" style={{ background: 'white', color: '#0a1628', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '11px 18px', fontWeight: '600', textDecoration: 'none', fontSize: '14px', display: 'inline-flex', alignItems: 'center', minHeight: '44px', boxSizing: 'border-box' }}>Dashboard</a>
             </div>
@@ -380,12 +380,12 @@ export default function ExamPage({ params }: { params: Promise<{ subject: string
                 </div>
               </div>
 
-              <div style={{ background: '#f0f7ff', border: '1px solid #bfdbfe', borderRadius: '12px', padding: '1.25rem', marginBottom: '1rem' }}>
-                <div style={{ fontSize: '13px', fontWeight: '600', color: '#1d4ed8', marginBottom: '8px' }}>Explanation</div>
+              <div style={{ background: '#eef4f9', border: '1px solid #c5dbec', borderRadius: '12px', padding: '1.25rem', marginBottom: '1rem' }}>
+                <div style={{ fontSize: '13px', fontWeight: '600', color: '#1a4f80', marginBottom: '8px' }}>Explanation</div>
                 <p style={{ fontSize: '13px', lineHeight: 1.65, color: '#1e3a6e', margin: '0 0 12px' }}>{q.explanation}</p>
-                <div style={{ borderTop: '1px solid #bfdbfe', paddingTop: '10px' }}>
-                  <div style={{ fontSize: '10px', fontFamily: 'monospace', color: '#2563eb', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Reference — verify this yourself</div>
-                  <div style={{ fontSize: '12px', color: '#3b82f6', fontFamily: 'monospace' }}>{q.reference}</div>
+                <div style={{ borderTop: '1px solid #c5dbec', paddingTop: '10px' }}>
+                  <div style={{ fontSize: '10px', fontFamily: 'monospace', color: '#22629b', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Reference — verify this yourself</div>
+                  <div style={{ fontSize: '12px', color: '#3a7fb8', fontFamily: 'monospace' }}>{q.reference}</div>
                 </div>
               </div>
 
@@ -429,7 +429,7 @@ export default function ExamPage({ params }: { params: Promise<{ subject: string
       {/* Exam top bar: subject · timer · finish */}
       <div style={{ position: 'sticky', top: 0, zIndex: 20, background: 'white', borderBottom: '1px solid #e2e8f0', padding: '0.75rem clamp(1rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
         <div style={{ minWidth: 0 }}>
-          <div style={{ fontSize: '10px', fontWeight: '700', color: '#2563eb', fontFamily: 'monospace', letterSpacing: '0.08em' }}>TIMED EXAM</div>
+          <div style={{ fontSize: '10px', fontWeight: '700', color: '#22629b', fontFamily: 'monospace', letterSpacing: '0.08em' }}>TIMED EXAM</div>
           <div style={{ fontSize: '14px', fontWeight: '600', color: '#0a1628', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{subject}</div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -474,9 +474,9 @@ export default function ExamPage({ params }: { params: Promise<{ subject: string
                       key={i}
                       onClick={() => chooseAnswer(i)}
                       aria-pressed={sel}
-                      style={{ background: sel ? '#eff6ff' : 'white', border: sel ? '2px solid #2563eb' : '1px solid #e2e8f0', borderRadius: '8px', padding: sel ? '10px 13px' : '11px 14px', textAlign: 'left', cursor: 'pointer', fontSize: '14px', color: '#0a1628', display: 'flex', alignItems: 'flex-start', gap: '10px', width: '100%', minHeight: '44px' }}
+                      style={{ background: sel ? '#eaf1f7' : 'white', border: sel ? '2px solid #22629b' : '1px solid #e2e8f0', borderRadius: '8px', padding: sel ? '10px 13px' : '11px 14px', textAlign: 'left', cursor: 'pointer', fontSize: '14px', color: '#0a1628', display: 'flex', alignItems: 'flex-start', gap: '10px', width: '100%', minHeight: '44px' }}
                     >
-                      <span style={{ fontFamily: 'monospace', fontSize: '12px', background: sel ? '#2563eb' : '#f1f5f9', color: sel ? 'white' : '#0a1628', borderRadius: '4px', padding: '1px 6px', minWidth: '22px', textAlign: 'center', flexShrink: 0, marginTop: '1px' }}>{letters[i]}</span>
+                      <span style={{ fontFamily: 'monospace', fontSize: '12px', background: sel ? '#22629b' : '#f1f5f9', color: sel ? 'white' : '#0a1628', borderRadius: '4px', padding: '1px 6px', minWidth: '22px', textAlign: 'center', flexShrink: 0, marginTop: '1px' }}>{letters[i]}</span>
                       <span style={{ flex: 1, minWidth: 0 }}>{opt.replace(/^[A-D]\.\s*/, '')}</span>
                     </button>
                   )
@@ -489,7 +489,7 @@ export default function ExamPage({ params }: { params: Promise<{ subject: string
               {current < questions.length - 1 ? (
                 <button onClick={() => goTo(current + 1)} style={{ flex: 1, background: '#0a1628', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontWeight: '600', cursor: 'pointer', fontSize: '14px', minHeight: '44px' }}>Next →</button>
               ) : (
-                <button onClick={() => setPhase('confirm')} style={{ flex: 1, background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontWeight: '600', cursor: 'pointer', fontSize: '14px', minHeight: '44px' }}>Finish exam</button>
+                <button onClick={() => setPhase('confirm')} style={{ flex: 1, background: '#22629b', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontWeight: '600', cursor: 'pointer', fontSize: '14px', minHeight: '44px' }}>Finish exam</button>
               )}
             </div>
           </div>
@@ -524,7 +524,7 @@ function TopBar() {
   return (
     <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: 'clamp(0.875rem, 3vw, 1rem) clamp(1.25rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
       <div>
-        <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
+        <span style={{ fontSize: '20px', fontWeight: '800', color: '#22629b' }}>V1</span>
         <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
       </div>
       <a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '14px' }}>Back to dashboard</a>
@@ -548,7 +548,7 @@ function Gate({ subject, title, body, cta, ctaLabel }: { subject: string; title:
         <div style={{ fontSize: '13px', color: '#94a3b8', fontFamily: 'monospace', marginBottom: '12px', letterSpacing: '0.08em' }}>{subject}</div>
         <h1 style={{ fontSize: '22px', fontWeight: '700', color: '#0a1628', marginBottom: '8px' }}>{title}</h1>
         <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '1.5rem', lineHeight: 1.6 }}>{body}</p>
-        {cta && <a href={cta} style={{ background: '#2563eb', color: 'white', borderRadius: '8px', padding: '12px 28px', textDecoration: 'none', fontWeight: '600', fontSize: '14px', display: 'inline-block', marginBottom: '12px' }}>{ctaLabel}</a>}
+        {cta && <a href={cta} style={{ background: '#22629b', color: 'white', borderRadius: '8px', padding: '12px 28px', textDecoration: 'none', fontWeight: '600', fontSize: '14px', display: 'inline-block', marginBottom: '12px' }}>{ctaLabel}</a>}
         <div><a href="/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '13px' }}>Back to dashboard</a></div>
       </div>
     </main>
@@ -576,7 +576,7 @@ function NavGrid({ count, current, onPick, colorFor, legend, footer }: {
               onClick={() => onPick(i)}
               aria-label={`Go to question ${i + 1}`}
               aria-current={isCurrent ? 'true' : undefined}
-              style={{ background: c.bg, color: c.color, border: `1px solid ${c.border}`, outline: isCurrent ? '2px solid #2563eb' : 'none', outlineOffset: '1px', borderRadius: '6px', height: '36px', fontSize: '12px', fontWeight: '600', cursor: 'pointer', fontFamily: 'monospace', padding: 0 }}
+              style={{ background: c.bg, color: c.color, border: `1px solid ${c.border}`, outline: isCurrent ? '2px solid #22629b' : 'none', outlineOffset: '1px', borderRadius: '6px', height: '36px', fontSize: '12px', fontWeight: '600', cursor: 'pointer', fontFamily: 'monospace', padding: 0 }}
             >
               {i + 1}
             </button>

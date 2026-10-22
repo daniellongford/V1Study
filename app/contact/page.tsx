@@ -33,7 +33,7 @@ export default function ContactPage() {
     <main style={{ minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui,sans-serif' }}>
       <nav style={{ background: 'white', borderBottom: '1px solid #e2e8f0', padding: 'clamp(0.875rem, 3vw, 1rem) clamp(1.25rem, 4vw, 2rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <a href="/" style={{ textDecoration: 'none' }}>
-          <span style={{ fontSize: '20px', fontWeight: '800', color: '#2563eb' }}>V1</span>
+          <span style={{ fontSize: '20px', fontWeight: '800', color: '#22629b' }}>V1</span>
           <span style={{ fontSize: '20px', fontWeight: '800', color: '#0a1628' }}> Study</span>
         </a>
         <div style={{ display: 'flex', gap: 'clamp(1.25rem, 4vw, 2rem)', alignItems: 'center' }}>
@@ -52,7 +52,7 @@ export default function ContactPage() {
           <div style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0', textAlign: 'center' }}>
             <div style={{ fontSize: '24px', marginBottom: '8px' }}>✉️</div>
             <div style={{ fontSize: '13px', fontWeight: '700', color: '#0a1628', marginBottom: '4px' }}>Email</div>
-            <a href="mailto:support@v1study.com.au" style={{ fontSize: '13px', color: '#2563eb', textDecoration: 'none' }}>support@v1study.com.au</a>
+            <a href="mailto:support@v1study.com.au" style={{ fontSize: '13px', color: '#22629b', textDecoration: 'none' }}>support@v1study.com.au</a>
           </div>
           <div style={{ background: 'white', borderRadius: '12px', padding: '1.25rem', border: '1px solid #e2e8f0', textAlign: 'center' }}>
             <div style={{ fontSize: '24px', marginBottom: '8px' }}>⏱️</div>
@@ -76,7 +76,7 @@ export default function ContactPage() {
               <label style={{ fontSize: '13px', fontWeight: '600', color: '#374151', display: 'block', marginBottom: '6px' }}>Message</label>
               <textarea placeholder="How can we help?" value={message} onChange={e => setMessage(e.target.value)} rows={5} style={{ width: '100%', padding: '10px 14px', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '16px', outline: 'none', resize: 'vertical', boxSizing: 'border-box', fontFamily: 'system-ui,sans-serif' }} />
             </div>
-            <button onClick={handleSubmit} disabled={!name || !email || !message || loading} style={{ width: '100%', background: !name || !email || !message ? '#94a3b8' : '#2563eb', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontSize: '15px', fontWeight: '600', cursor: !name || !email || !message ? 'not-allowed' : 'pointer' }}>
+            <button onClick={handleSubmit} disabled={!name || !email || !message || loading} style={{ width: '100%', background: !name || !email || !message ? '#94a3b8' : '#22629b', color: 'white', border: 'none', borderRadius: '8px', padding: '12px', fontSize: '15px', fontWeight: '600', cursor: !name || !email || !message ? 'not-allowed' : 'pointer' }}>
               {loading ? 'Sending...' : 'Send message'}
             </button>
           </div>
@@ -91,7 +91,7 @@ export default function ContactPage() {
 
       <footer style={{ padding: '2rem', textAlign: 'center', borderTop: '1px solid #e2e8f0', background: 'white' }}>
         <div style={{ marginBottom: '0.5rem' }}>
-          <span style={{ fontWeight: '800', color: '#2563eb' }}>V1</span>
+          <span style={{ fontWeight: '800', color: '#22629b' }}>V1</span>
           <span style={{ fontWeight: '800', color: '#0a1628' }}> Study</span>
         </div>
         <p style={{ fontSize: '13px', color: '#94a3b8' }}>© V1 Study · Built for Australian pilots. · <a href="/terms" style={{ color: '#94a3b8', textDecoration: 'none' }}>Terms &amp; Conditions</a></p>

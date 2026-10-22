@@ -40,7 +40,7 @@ const LICENCE_NAMES: Record<string, string> = {
 // ── Design tokens ─────────────────────────────────────────────────────────────
 const F = "'Barlow', system-ui, -apple-system, sans-serif"
 const FD = "'Barlow Semi Condensed', 'Barlow', system-ui, sans-serif"
-const C = { ground: '#eef1f5', paper: '#ffffff', ink: '#0a1628', rule: '#dde3ea', muted: '#5f6c7b', faint: '#98a4b3', blue: '#2563eb', pass: '#15803d' }
+const C = { ground: '#eef1f5', paper: '#ffffff', ink: '#0a1628', rule: '#dde3ea', muted: '#5f6c7b', faint: '#98a4b3', blue: '#22629b', pass: '#15803d' }
 
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false)
@@ -186,6 +186,7 @@ export default function Dashboard() {
               <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: C.paper, borderBottom: `1px solid ${C.rule}`, padding: '0.5rem 1rem 1rem', display: 'flex', flexDirection: 'column', zIndex: 100 }}>
                 <a href="/dashboard" style={{ color: C.ink, fontWeight: 600, textDecoration: 'none', padding: '12px 0', fontSize: '16px', borderBottom: `1px solid ${C.rule}` }}>Study</a>
                 <a href="/progress" style={{ color: C.ink, textDecoration: 'none', padding: '12px 0', fontSize: '16px', borderBottom: `1px solid ${C.rule}` }}>Progress</a>
+                <a href="/tools" style={{ color: C.ink, textDecoration: 'none', padding: '12px 0', fontSize: '16px', borderBottom: `1px solid ${C.rule}` }}>Tools</a>
                 <a href="/pricing" style={{ color: C.ink, textDecoration: 'none', padding: '12px 0', fontSize: '16px', borderBottom: `1px solid ${C.rule}` }}>Upgrade</a>
                 <div style={{ padding: '12px 0 6px', fontSize: '14px', color: C.faint }}>{user?.email}</div>
                 <button onClick={handleSignOut} style={{ background: 'none', border: 'none', padding: '8px 0', fontSize: '16px', cursor: 'pointer', color: C.muted, textAlign: 'left', fontFamily: F }}>Sign out</button>
@@ -196,6 +197,7 @@ export default function Dashboard() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.75rem' }}>
             {navLink('/dashboard', 'Study', true)}
             {navLink('/progress', 'Progress')}
+            {navLink('/tools', 'Tools')}
             {navLink('/pricing', 'Upgrade')}
             <span style={{ fontSize: '14px', color: C.faint }}>{user?.email}</span>
             <button onClick={handleSignOut} style={{ background: 'none', border: `1px solid ${C.rule}`, borderRadius: '4px', padding: '7px 12px', fontSize: '14px', cursor: 'pointer', color: C.muted, fontFamily: F }}>Sign out</button>
