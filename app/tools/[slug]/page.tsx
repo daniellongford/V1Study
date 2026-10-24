@@ -250,60 +250,88 @@ function DensityAltitude() {
 }
 
 // ── 3. Minimum fuel (Part 91) ─────────────────────────────────────────────────
+// Final reserve and contingency follow Part 91 MOS Table 19.02(2), reproduced as Table 2 of AC 91-15 v1.2.
+//   Aeroplane, MTOW 5,700 kg or less (piston or turboprop): day VFR 30 min, night VFR 45, IFR 45; no contingency.
+//   Turbojet, or turboprop over 5,700 kg: 30 min; contingency 5% of trip fuel.
+//   Piston aeroplane over 5,700 kg: 45 min; contingency 5% of trip fuel.
+//   Rotorcraft: VFR 20 min, night VFR 30, IFR 30; no contingency.
+// Final reserve is flown at holding speed, 1,500 ft above the aerodrome, so it uses the holding burn when given.
+function finalReserveMinutes(cat: string, rules: string): number {
+  if (cat === 'light') return rules === 'day' ? 30 : 45
+  if (cat === 'turbine') return 30
+  if (cat === 'heavyPiston') return 45
+  return rules === 'day' ? 20 : 30
+}
+const contingencyPercent = (cat: string) => (cat === 'turbine' || cat === 'heavyPiston' ? 5 : 0)
+
 function MinimumFuel() {
-  const [engine, setEngine] = useState('piston')
+  const [cat, setCat] = useState('light')
+  const [rules, setRules] = useState('day')
   const [unit, setUnit] = useState('L')
   const [burn, setBurn] = useState('')
+  const [holdBurn, setHoldBurn] = useState('')
   const [tripH, setTripH] = useState('')
   const [tripM, setTripM] = useState('')
   const [altM, setAltM] = useState('')
   const [holdM, setHoldM] = useState('')
   const [taxi, setTaxi] = useState('')
-  const [cont, setCont] = useState('')
+  const [addl, setAddl] = useState('')
   const b = n(burn), th = n(tripH) ?? 0, tm = n(tripM) ?? 0
-  const reserveMin = engine === 'piston' ? 45 : 30
+  const reserveMin = finalReserveMinutes(cat, rules)
+  const contPct = contingencyPercent(cat)
   let out = null
   if (b !== null && (th > 0 || tm > 0)) {
+    const hb = n(holdBurn) ?? b
     const tripHrs = th + tm / 60
     const trip = b * tripHrs
-    const fixed = b * reserveMin / 60
+    const contingency = trip * contPct / 100
     const alt = b * ((n(altM) ?? 0) / 60)
-    const hold = b * ((n(holdM) ?? 0) / 60)
+    const reserve = hb * reserveMin / 60
+    const add = n(addl) ?? 0
+    const hold = hb * ((n(holdM) ?? 0) / 60)
     const tx = n(taxi) ?? 0
-    const contingency = trip * ((n(cont) ?? 0) / 100)
-    const total = trip + fixed + alt + hold + tx + contingency
-    out = { trip, fixed, alt, hold, tx, contingency, total, tripHrs }
+    const total = tx + trip + contingency + alt + reserve + add + hold
+    out = { tx, trip, contingency, alt, reserve, add, hold, total, tripHrs, atHolding: n(holdBurn) !== null }
   }
   const u = unit
+  const rulesLabel = rules === 'day' ? (cat === 'rotor' ? 'VFR' : 'day VFR') : rules === 'night' ? 'night VFR' : 'IFR'
   return (
     <>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+        <Choice label="Aircraft" value={cat} onChange={setCat} options={[
+          { v: 'light', l: 'Aeroplane, 5,700 kg or less' },
+          { v: 'turbine', l: 'Turbojet, or turboprop over 5,700 kg' },
+          { v: 'heavyPiston', l: 'Piston over 5,700 kg' },
+          { v: 'rotor', l: 'Rotorcraft' },
+        ]} />
         <Grid cols={2}>
-          <Choice label="Engine" value={engine} onChange={setEngine} options={[{ v: 'piston', l: 'Piston (45 min reserve)' }, { v: 'turbine', l: 'Turbine (30 min reserve)' }]} />
-          <Choice label="Fuel unit" value={unit} onChange={setUnit} options={[{ v: 'L', l: 'Litres' }, { v: 'kg', l: 'Kilograms' }]} />
+          <Choice label="Flight" value={rules} onChange={setRules} options={[{ v: 'day', l: 'Day VFR' }, { v: 'night', l: 'Night VFR' }, { v: 'ifr', l: 'IFR' }]} />
+          <Choice label="Fuel unit" value={unit} onChange={setUnit} options={[{ v: 'L', l: 'Litres' }, { v: 'USG', l: 'US gallons' }, { v: 'kg', l: 'Kilograms' }, { v: 'lb', l: 'Pounds' }]} />
         </Grid>
-        <Grid cols={3}>
+        <Grid cols={4}>
           <Field label="Cruise burn" value={burn} onChange={setBurn} placeholder="e.g. 36" unit={`${u}/h`} />
+          <Field label="Holding burn" value={holdBurn} onChange={setHoldBurn} placeholder="same as cruise" unit={`${u}/h`} />
           <Field label="Trip time, hours" value={tripH} onChange={setTripH} placeholder="2" unit="h" />
           <Field label="Trip time, minutes" value={tripM} onChange={setTripM} placeholder="15" unit="min" />
         </Grid>
         <Grid cols={4}>
-          <Field label="Alternate" value={altM} onChange={setAltM} placeholder="0" unit="min" />
+          <Field label="Destination alternate" value={altM} onChange={setAltM} placeholder="0" unit="min" />
           <Field label="Holding" value={holdM} onChange={setHoldM} placeholder="0" unit="min" />
           <Field label="Taxi" value={taxi} onChange={setTaxi} placeholder="0" unit={u} />
-          <Field label="Contingency" value={cont} onChange={setCont} placeholder="0" unit="% of trip" />
+          <Field label="Additional" value={addl} onChange={setAddl} placeholder="0" unit={u} />
         </Grid>
       </div>
       {out ? (
         <Results rows={[
+          ...(out.tx > 0 ? [{ label: 'Taxi fuel', value: `${fmt(out.tx, 1)} ${u}` }] : []),
           { label: `Trip fuel (${hm(out.tripHrs)})`, value: `${fmt(out.trip, 1)} ${u}` },
-          { label: `Fixed reserve (${reserveMin} min)`, value: `${fmt(out.fixed, 1)} ${u}` },
-          ...(out.alt > 0 ? [{ label: 'Alternate', value: `${fmt(out.alt, 1)} ${u}` }] : []),
-          ...(out.hold > 0 ? [{ label: 'Holding', value: `${fmt(out.hold, 1)} ${u}` }] : []),
-          ...(out.contingency > 0 ? [{ label: 'Contingency', value: `${fmt(out.contingency, 1)} ${u}` }] : []),
-          ...(out.tx > 0 ? [{ label: 'Taxi', value: `${fmt(out.tx, 1)} ${u}` }] : []),
-          { label: 'Minimum fuel required', value: `${fmt(out.total, 1)} ${u}`, big: true },
-        ]} note="Fixed reserve per CASR Part 91 MOS Chapter 19: 45 minutes at cruise rate for piston aeroplanes, 30 minutes for turbine. Alternate, holding, taxi and contingency are included only when you enter them. Check the current MOS and your operator's requirements before flight." />
+          ...(out.contingency > 0 ? [{ label: `Contingency fuel (${contPct}% of trip)`, value: `${fmt(out.contingency, 1)} ${u}` }] : []),
+          ...(out.alt > 0 ? [{ label: 'Destination alternate fuel', value: `${fmt(out.alt, 1)} ${u}` }] : []),
+          { label: `Final reserve fuel (${reserveMin} min, ${rulesLabel}${out.atHolding ? ', at holding burn' : ''})`, value: `${fmt(out.reserve, 1)} ${u}` },
+          ...(out.add > 0 ? [{ label: 'Additional fuel', value: `${fmt(out.add, 1)} ${u}` }] : []),
+          ...(out.hold > 0 ? [{ label: 'Holding fuel', value: `${fmt(out.hold, 1)} ${u}` }] : []),
+          { label: 'Fuel required', value: `${fmt(out.total, 1)} ${u}`, big: true },
+        ]} note={`Final reserve and contingency follow Part 91 MOS Table 19.02(2), as set out in AC 91-15: aeroplanes of 5,700 kg or less (piston or turboprop) carry 30 minutes by day VFR and 45 minutes at night or under IFR, with no contingency; turbojets and turboprops over 5,700 kg carry 30 minutes plus 5% of trip fuel; piston aeroplanes over 5,700 kg carry 45 minutes plus 5%; rotorcraft carry 20 minutes VFR and 30 minutes at night or under IFR. Final reserve is flown at holding speed 1,500 ft above the aerodrome, so enter a holding burn if you have one; otherwise the cruise burn is used, which is conservative. Destination alternate, holding, taxi and additional fuel are included only when you enter them. Exam questions state their own reserve policy; use the figures in the question. Check the current MOS and your operator's requirements before flight.`} />
       ) : <Empty text="Enter a cruise burn and a trip time." />}
     </>
   )
@@ -455,7 +483,7 @@ function PnrEtp() {
         <Results rows={[
           ...(pnr ? [{ label: 'PNR distance from departure', value: `${fmt(pnr.dist)} nm`, big: true }, { label: 'Time to PNR', value: hm(pnr.time) }] : []),
           ...(etp ? [{ label: 'ETP distance from departure', value: `${fmt(etp.dist)} nm`, big: true }, { label: 'Time to ETP', value: hm(etp.time) }] : []),
-        ]} note="PNR: time out = endurance × GS home ÷ (GS out + GS home), with safe endurance excluding fixed reserve. ETP: distance = leg distance × GS home ÷ (GS out + GS home). For an engine-out or depressurised ETP, enter the reduced groundspeeds." />
+        ]} note="PNR: time out = endurance × GS home ÷ (GS out + GS home), with safe endurance excluding final reserve fuel. ETP: distance = leg distance × GS home ÷ (GS out + GS home). For an engine-out or depressurised ETP, enter the reduced groundspeeds." />
       ) : <Empty text="Enter groundspeed out and home, then endurance for PNR or leg distance for ETP." />}
     </>
   )
@@ -599,8 +627,8 @@ export default function ToolPage({ params }: { params: Promise<{ slug: string }>
           <span style={{ fontFamily: FD, fontWeight: 600, fontSize: '24px', letterSpacing: '0.01em', lineHeight: 1 }}>Study</span>
         </a>
         {!user ? (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1.75rem' }}>
-            {navLink('/tools', 'Tools')}
+          <div style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '1.25rem' : '1.75rem', whiteSpace: 'nowrap' }}>
+            {!isMobile && navLink('/tools', 'Tools')}
             {navLink('/login', 'Log in')}
             <a href="/signup" className="v1-link" style={{ color: C.blue, fontWeight: 600, textDecoration: 'none', fontSize: '15px', minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}>Start free trial</a>
           </div>

@@ -12,7 +12,7 @@ export const TOOLS: Tool[] = [
   // Free
   { slug: 'crosswind', name: 'Crosswind calculator', short: 'Headwind and crosswind components for any runway and wind.', free: true },
   { slug: 'density-altitude', name: 'Density altitude', short: 'Pressure altitude and density altitude from elevation, QNH and temperature.', free: true },
-  { slug: 'minimum-fuel', name: 'Minimum fuel', short: 'Trip fuel, fixed reserve and total for a Part 91 flight.', free: true },
+  { slug: 'minimum-fuel', name: 'Minimum fuel', short: 'Trip, final reserve and contingency fuel for a Part 91 flight.', free: true },
   { slug: 'converter', name: 'Unit converter', short: 'Pressure, temperature, mass, fuel, distance, altitude and speed.', free: true },
   // Members
   { slug: 'wind-triangle', name: 'Wind triangle', short: 'Heading, groundspeed and drift from TAS, track and wind.', free: false },
